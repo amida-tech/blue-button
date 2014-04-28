@@ -2,14 +2,14 @@
   "name": "blue-button",
   "version": "0.0.1",
   "description": "Blue Button (CCDA/C32) to JSON Parser.",
-  "main": "/dist/bluebutton.js",
+  "main": "/index.js",
   "directories": {
     "doc": "doc",
     "lib": "lib"
   },
   "scripts": {
     "prepublish": "echo \"Prepublish Build script should go here.\"",
-    "test": "echo \"Testing script should go here.\""
+    "test": "grunt test"
   },
   "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
   "contributors": [{
@@ -23,4 +23,16 @@
   "engines": {
     "node": ">= 0.10.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amida-tech/bluebutton.git"
+  },
+  "keywords": [
+    "bluebutton"
+  ],
+  "bugs": {
+    "url": "https://github.com/amida-tech/blue-button/issues"
+  },
+  "homepage": "https://github.com/amida-tech/blue-button"
 }
+
