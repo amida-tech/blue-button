@@ -26,7 +26,7 @@ bb.validator(?);
 
 ## Link to data model docs in docs/model.md
 
-![JSON based Blue Button data model](./docs/model.md)
+[JSON based Blue Button data model](./docs/model.md)
 
 ## Usage examples
 
@@ -62,6 +62,6 @@ Contributors are welcome. See issues https://github.com/amida-tech/blue-button/i
 
 ## License
 
-![Apache](./LICENSE)
+[Apache](./LICENSE)
 
 todo: references to bb.js and ccda-to-json libraries licenses (both MIT)
