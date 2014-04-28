@@ -1,0 +1,26 @@
+{
+  "name": "blue-button",
+  "version": "0.0.1",
+  "description": "Blue Button (CCDA/C32) to JSON Parser.",
+  "main": "/dist/bluebutton.js",
+  "directories": {
+    "doc": "doc",
+    "lib": "lib"
+  },
+  "scripts": {
+    "prepublish": "echo \"Prepublish Build script should go here.\"",
+    "test": "echo \"Testing script should go here.\""
+  },
+  "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
+  "contributors": [{
+    "name": "Matthew McCall",
+    "email": "matt@amida-tech.com"
+  }, {
+    "name": "Afsin Ustundag",
+    "email": "afsin.ustundag@us.pwc.com"
+  }],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+}
