@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+ 
+<!-- Title: US_Realm_Header_Template -->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
+	xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+	<!-- ******************************************************** CDA Header 
+		******************************************************** -->
+	<realmCode code="US"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<!-- US General Header Template -->
+	<templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+	<!-- *** Note: The next templateId, code and title will differ depending 
+		on what type of document is being sent. *** -->
+	<!-- conforms to the document specific requirements -->
+	<templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+	<id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9"
+		displayName="Summarization of Episode Note"/>
+	<title>Community Health and Hospitals: Health Summary</title>
+	<effectiveTime value="201209150000-0400"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
+	<versionNumber value="1"/>
+	<!-- ******************************************************** CDA Body ******************************************************** -->
+	<component>
+		<structuredBody>
+			<!-- *********************** MEDICAL EQUIPMENT *************************** -->
+			<component>
+				<section>
+					<!-- Medical equipment section -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.23"/>
+					<code code="46264-8" codeSystem="2.16.840.1.113883.6.1"/>
+					<title>MEDICAL EQUIPMENT</title>
+					<text>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Supply/Device</th>
+									<th>Date Supplied</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Automatic implantable cardioverter/defibrillator</td>
+									<td>Nov 1999</td>
+								</tr>
+								<tr>
+									<td>Total hip replacement prosthesis</td>
+									<td>1998</td>
+								</tr>
+								<tr>
+									<td>Wheelchair</td>
+									<td>1999</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<supply classCode="SPLY" moodCode="EVN">
+							<!-- ** Non-medicinal supply activity ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.50"/>
+							<id root="2413773c-2372-4299-bbe6-5b0f60664446"/>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<high value="199911"/>
+							</effectiveTime>
+							<quantity value="2"/>
+							<participant typeCode="PRD">
+								<participantRole classCode="MANU">
+									<!-- ** Product instance ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+									<id root="2413773c-2372-4299-bbe6-5b0f60664489"/>
+									<playingDevice>
+										<code code="72506001" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Automatic implantable cardioverter/defibrillator"
+										/>
+									</playingDevice>
+									<scopingEntity>
+										<id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
+									</scopingEntity>
+								</participantRole>
+							</participant>
+						</supply>
+					</entry>
+					<entry typeCode="DRIV">
+						<supply classCode="SPLY" moodCode="EVN">
+							<!-- ** Non-medicinal supply activity ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.50"/>
+							<id root="230b0ab7-206d-42d8-a947-ab4f63aad795"/>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<center value="1998"/>
+							</effectiveTime>
+							<quantity value="1"/>
+							<participant typeCode="PRD">
+								<participantRole classCode="MANU">
+									<!-- ** Product instance ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+									<id root="eb936010-7b17-11db-9fe1-0800200c9a68"/>
+									<playingDevice>
+										<code code="304120007" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Total hip replacement prosthesis"/>
+									</playingDevice>
+									<scopingEntity>
+										<id root="0abea950-5b40-4b7e-b8d9-2a5ea3ac5500"/>
+										<desc>Good Health Prostheses Company</desc>
+									</scopingEntity>
+								</participantRole>
+							</participant>
+						</supply>
+					</entry>
+					<entry typeCode="DRIV">
+						<supply classCode="SPLY" moodCode="EVN">
+							<!-- ** Non-medicinal supply activity ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.50"/>
+							<id root="c4ffe98e-3cd3-4c54-b5bd-08ecb80379e0"/>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<center value="1999"/>
+							</effectiveTime>
+							<quantity value="1"/>
+							<participant typeCode="PRD">
+								<participantRole classCode="MANU">
+									<!-- ** Product instance ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+									<id root="eb936010-7b17-11db-9fe1-0800200c9a68"/>
+									<playingDevice>
+										<code code="58938008" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Wheelchair"/>
+									</playingDevice>
+									<scopingEntity>
+										<id root="eb936010-7b17-11db-9fe1-0800200c9b67"/>
+										<desc>Good Health Durable Medical Equipment</desc>
+									</scopingEntity>
+								</participantRole>
+							</participant>
+						</supply>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
