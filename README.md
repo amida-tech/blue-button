@@ -12,23 +12,28 @@ THIS IS WORK IN PROGRESS! (see Roadmap below) based on https://github.com/blue-b
 
 After initial re-write we are planning to reintroduce this "fork" back into bluebutton.js community.
 
-## Library interfaces/APIs
+## Library interfaces/APIs (Usage examples)
 
 ``` javascript
 
 var bb = require("./index.js")
 
-bb.parser(?);
+var data = "some xml data here...";
 
-bb.validator(?);
+//parse xml into DOM
+var doc = bb.xml(data);
+
+//get document type (e.g. CCDA) of parsed document
+var type = bb.sense(doc);
+
+//convert document into JSON
+var result = bb.parse(doc);
 
 ```
 
 ## Link to data model docs in docs/model.md
 
 [JSON based Blue Button data model](./docs/model.md)
-
-## Usage examples
 
 ## Goals
 
@@ -54,7 +59,7 @@ bb.validator(?);
 - C32 support reintroduced
 - Full browser support for all functionality
 - Merge back into bluebutton.js repo
-- COmprehensive test for browser environment
+- Comprehensive test for browser environment
 
 ## Contributing
 

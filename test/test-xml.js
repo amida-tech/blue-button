@@ -7,7 +7,7 @@ describe('xml.js test', function () {
 
     it('check parsing', function () {
         //expect(true).to.equal(true);
-        expect(xml.parseXml("<?xml version=\"1.0\"?><root>nothing to see here</root>")).to.be.ok;
+        expect(xml.parse("<?xml version=\"1.0\"?><root>nothing to see here</root>")).to.be.ok;
     });
 });
 
