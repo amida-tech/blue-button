@@ -4,3 +4,7 @@ npm-debug.log
 
 # Mac OSX
 .DS_Store
+
+# Eclipse
+.project
+.settings
