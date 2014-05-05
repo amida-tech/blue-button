@@ -11,10 +11,10 @@
 ####[Demographics](sections/demographics.md) - Draft
 
 ###Optional Sections:
-####[Procedures](sections/procedures.md)
-####[Encounters](sections/encounters.md)
-####[Immunizations](sections/immunizations.md)
-####[Vitals](sections/vitals.md)
+####[Procedures](sections/procedures.md) -TBD
+####[Encounters](sections/encounters.md) -TBD
+####[Immunizations](sections/immunizations.md) -TBD
+####[Vitals](sections/vitals.md) - Draft
 
 ###Unsupported Sections/Components:
 ####Advance Directives
