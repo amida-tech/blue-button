@@ -25,9 +25,9 @@ var Result = {
           "high_unit": {type: string, required: false}
         },
         "category": {
-           "name": "Microbiology",
-           "code": "269934003",
-           "code_system": "SNOMED-CT"
+           "name": {type: string, required: true},
+           "code": {type: string, required: true},
+           "code_system": {type: string, required: true}
         }
       }
 ```
