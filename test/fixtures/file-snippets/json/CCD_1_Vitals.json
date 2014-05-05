@@ -1,0 +1,154 @@
+{
+	"panels": [
+		{
+			"panelName": {
+				"label": "Vital signs",
+				"code": "46680005",
+				"systemName": "SNOMED CT",
+				"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/46680005"
+			},
+			"vitals": [
+				{
+					"vitalName": {
+						"label": "Height",
+						"code": "8302-2",
+						"systemName": "LOINC",
+						"uri": "http://purl.bioontology.org/ontology/LNC/8302-2"
+					},
+					"measuredAt": {
+						"point": "1999-11-14T00:00:00.000Z",
+						"pointResolution": "day"
+					},
+					"physicalQuantity": {
+						"value": 177,
+						"unit": "cm"
+					},
+					"freeTextValue": "177 cm",
+					"interpretations": [
+						"Normal"
+					],
+					"_patient": "https://ccda.smartplatforms.org/patients/0"
+				},
+				{
+					"vitalName": {
+						"label": "Patient Body Weight - Measured",
+						"code": "3141-9",
+						"systemName": "LOINC",
+						"uri": "http://purl.bioontology.org/ontology/LNC/3141-9"
+					},
+					"measuredAt": {
+						"point": "1999-11-14T00:00:00.000Z",
+						"pointResolution": "day"
+					},
+					"physicalQuantity": {
+						"value": 86,
+						"unit": "kg"
+					},
+					"freeTextValue": "86 kg",
+					"interpretations": [
+						"Normal"
+					],
+					"_patient": "https://ccda.smartplatforms.org/patients/0"
+				},
+				{
+					"vitalName": {
+						"label": "Intravascular Systolic",
+						"code": "8480-6",
+						"systemName": "LOINC",
+						"uri": "http://purl.bioontology.org/ontology/LNC/8480-6"
+					},
+					"measuredAt": {
+						"point": "1999-11-14T00:00:00.000Z",
+						"pointResolution": "day"
+					},
+					"physicalQuantity": {
+						"value": 132,
+						"unit": "mm[Hg]"
+					},
+					"freeTextValue": "132/86 mmHg",
+					"interpretations": [
+						"Normal"
+					],
+					"_patient": "https://ccda.smartplatforms.org/patients/0"
+				}
+			],
+			"_patient": "https://ccda.smartplatforms.org/patients/0"
+		},
+		{
+			"panelName": {
+				"label": "Vital signs",
+				"code": "46680005",
+				"systemName": "SNOMED CT",
+				"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/46680005"
+			},
+			"vitals": [
+				{
+					"vitalName": {
+						"label": "Height",
+						"code": "8302-2",
+						"systemName": "LOINC",
+						"uri": "http://purl.bioontology.org/ontology/LNC/8302-2"
+					},
+					"measuredAt": {
+						"point": "2000-04-07T00:00:00.000Z",
+						"pointResolution": "day"
+					},
+					"physicalQuantity": {
+						"value": 177,
+						"unit": "cm"
+					},
+					"freeTextValue": "177 cm",
+					"interpretations": [
+						"Normal"
+					],
+					"_patient": "https://ccda.smartplatforms.org/patients/0"
+				},
+				{
+					"vitalName": {
+						"label": "Patient Body Weight - Measured",
+						"code": "3141-9",
+						"systemName": "LOINC",
+						"uri": "http://purl.bioontology.org/ontology/LNC/3141-9"
+					},
+					"measuredAt": {
+						"point": "2000-04-07T00:00:00.000Z",
+						"pointResolution": "day"
+					},
+					"physicalQuantity": {
+						"value": 88,
+						"unit": "kg"
+					},
+					"freeTextValue": "88 kg",
+					"interpretations": [
+						"Normal"
+					],
+					"_patient": "https://ccda.smartplatforms.org/patients/0"
+				},
+				{
+					"vitalName": {
+						"label": "Intravascular Systolic",
+						"code": "8480-6",
+						"systemName": "LOINC",
+						"uri": "http://purl.bioontology.org/ontology/LNC/8480-6"
+					},
+					"measuredAt": {
+						"point": "2000-04-07T00:00:00.000Z",
+						"pointResolution": "day"
+					},
+					"physicalQuantity": {
+						"value": 145,
+						"unit": "mm[Hg]"
+					},
+					"freeTextValue": "145/88 mmHg",
+					"interpretations": [
+						"Normal"
+					],
+					"_patient": "https://ccda.smartplatforms.org/patients/0"
+				}
+			],
+			"_patient": "https://ccda.smartplatforms.org/patients/0"
+		}
+	],
+	"_patient": "https://ccda.smartplatforms.org/patients/0"
+}
+

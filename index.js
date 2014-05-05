@@ -2,6 +2,6 @@
 
 "use strict";
 
-exports.parser = require("./lib/parser.js");
+exports.parse = require("./lib/parser.js").parse;
 
 exports.validator = require("./lib/validator.js");

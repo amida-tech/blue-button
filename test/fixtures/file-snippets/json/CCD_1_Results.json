@@ -1,0 +1,79 @@
+{
+		"panels": [
+			{
+				"panelName": {
+					"label": "CBC WO DIFFERENTIAL",
+					"code": "43789009",
+					"systemName": "SNOMED CT",
+					"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/43789009"
+				},
+				"results": [
+					{
+						"resultName": {
+							"label": "HGB",
+							"code": "30313-1",
+							"systemName": "LOINC",
+							"uri": "http://purl.bioontology.org/ontology/LNC/30313-1"
+						},
+						"measuredAt": {
+							"point": "2000-03-23T14:30:00.000Z",
+							"pointResolution": "minute"
+						},
+						"physicalQuantity": {
+							"value": 13.2,
+							"unit": "g/dl"
+						},
+						"freeTextValue": "HGB (M 13-18 g/dl; F 12-16\n\t\t\t\t\t\t\t\t\t\t\tg/dl)",
+						"interpretations": [
+							"Normal"
+						],
+						"_patient": "https://ccda.smartplatforms.org/patients/0"
+					},
+					{
+						"resultName": {
+							"label": "WBC",
+							"code": "33765-9",
+							"systemName": "LOINC",
+							"uri": "http://purl.bioontology.org/ontology/LNC/33765-9"
+						},
+						"measuredAt": {
+							"point": "2000-03-23T14:30:00.000Z",
+							"pointResolution": "minute"
+						},
+						"physicalQuantity": {
+							"value": 6.7,
+							"unit": "10+3/ul"
+						},
+						"freeTextValue": "WBC (4.3-10.8 10+3/ul)",
+						"interpretations": [
+							"Normal"
+						],
+						"_patient": "https://ccda.smartplatforms.org/patients/0"
+					},
+					{
+						"resultName": {
+							"label": "PLT",
+							"code": "26515-7",
+							"systemName": "LOINC",
+							"uri": "http://purl.bioontology.org/ontology/LNC/26515-7"
+						},
+						"measuredAt": {
+							"point": "2000-03-23T14:30:00.000Z",
+							"pointResolution": "minute"
+						},
+						"physicalQuantity": {
+							"value": 123,
+							"unit": "10+3/ul"
+						},
+						"freeTextValue": "PLT (135-145 meq/l)",
+						"interpretations": [
+							"Low"
+						],
+						"_patient": "https://ccda.smartplatforms.org/patients/0"
+					}
+				],
+				"_patient": "https://ccda.smartplatforms.org/patients/0"
+			}
+		],
+		"_patient": "https://ccda.smartplatforms.org/patients/0"
+	}

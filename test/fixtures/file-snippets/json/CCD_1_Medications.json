@@ -1,0 +1,49 @@
+{
+	"medicationsReported": [
+		{
+			"route": "RESPIRATORY (INHALATION)",
+			"administrationUnit": {
+			"label": "INHALANT",
+			"code": "C42944",
+			"systemName": "NCI Thesaurus",
+			"uri": "http://nci-thesaurus-look-me-up#C42944"
+			},
+			"freeTextSig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+			"dose": {
+				"value": 1,
+				"unit": "mg/actuat"
+			},
+			"rate": {
+				"value": 90,
+				"unit": "ml/min"
+			},
+			"productName": {
+				"label": "Proventil HFA",
+				"code": "219483",
+				"systemName": "RXNORM",
+				"translations": [
+					{
+						"label": "Proventil 0.09 MG/ACTUAT inhalant solution",
+						"code": "573621",
+						"systemName": "RXNORM",
+						"uri": "http://purl.bioontology.org/ontology/RXNORM/573621"
+					}
+				],
+				"uri": "http://purl.bioontology.org/ontology/RXNORM/219483"
+			},
+			"freeTextProductName": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+			"dateRange": {
+				"low": "2007-01-03T00:00:00.000Z",
+				"lowResolution": "day",
+				"high": "2012-05-15T00:00:00.000Z",
+				"highResolution": "day"
+			},
+			"dosePeriod": {
+				"value": 6,
+				"unit": "h"
+			},
+			"_patient": "https://ccda.smartplatforms.org/patients/0"
+		}
+	],
+	"_patient": "https://ccda.smartplatforms.org/patients/0"
+}

@@ -25,7 +25,10 @@
   },
   "dependencies": {
     "libxmljs": "*",
-    "deep-equal": "*"
+    "deep-equal": "*",
+    "underscore":"1.6.x",
+    "node-uuid": "*",
+    "xdate":"*"
   },
   "devDependencies": {
     "should": "3.1.x",
@@ -39,7 +42,6 @@
     "grunt-contrib-watch": "0.5.x",
     "grunt-coveralls" :"*",
     "grunt-istanbul-coverage" :"*",
-    "underscore": "1.6.x",
     "coveralls": "~2.10.0",
     "mocha-lcov-reporter": "0.0.1"
 },

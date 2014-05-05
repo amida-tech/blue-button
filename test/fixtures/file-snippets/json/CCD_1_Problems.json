@@ -1,0 +1,105 @@
+{
+	"problemConcerns": [
+		{
+			"dateRange": {
+				"low": "2008-01-03T00:00:00.000Z",
+				"lowResolution": "day",
+				"high": "2008-01-03T00:00:00.000Z",
+				"highResolution": "day"
+			},
+			"concernStatus": "completed",
+			"problems": [
+				{
+					"problemType": {
+						"label": "Complaint",
+						"code": "409586006",
+						"systemName": "SNOMED CT",
+						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/409586006"
+					},
+					"problemName": {
+						"label": "Pneumonia",
+						"code": "233604007",
+						"systemName": "SNOMED CT",
+						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/233604007"
+					},
+					"freeTextProblemName": "Pneumonia ",
+					"dateRange": {
+						"low": "2008-01-03T00:00:00.000Z",
+						"lowResolution": "day",
+						"high": "2008-01-03T00:00:00.000Z",
+						"highResolution": "day"
+					},
+					"resolved": false,
+					"ageAtOnset": {
+						"value": 57,
+						"unit": "a"
+					},
+					"problemStatus": {
+					    "label": "Resolved",
+						"code": "413322009",
+						"systemName": "SNOMED CT",
+						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/413322009"
+					},
+					"healthStatus": {
+						"label": "Alive and well",
+						"code": "81323004",
+						"systemName": "SNOMED CT",
+						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/81323004"
+					}
+				}
+			],
+			"_patient": "https://ccda.smartplatforms.org/patients/0"
+		},
+		{
+			"dateRange": {
+				"low": "2007-01-03T00:00:00.000Z",
+				"lowResolution": "day",
+				"high": "2007-01-03T00:00:00.000Z",
+				"highResolution": "day"
+			},
+			"concernStatus": "completed",
+			"problems": [
+				{
+					"problemType": {
+						"label": "Complaint",
+						"code": "409586006",
+						"systemName": "SNOMED CT",
+						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/409586006"
+					},
+					"problemName": {
+						"label": "Asthma",
+						"code": "195967001",
+						"systemName": "SNOMED CT",
+						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/195967001"
+					},
+					"freeTextProblemName": "Asthma",
+					"dateRange": {
+						"low": "2007-01-03T00:00:00.000Z",
+						"lowResolution": "day",
+						"high": "2008-01-03T00:00:00.000Z",
+						"highResolution": "day"
+					},
+					"resolved": false,
+					"ageAtOnset": {
+						"value": 57,
+						"unit": "a"
+					},
+					"problemStatus": {
+						"label": "Active",
+						"code": "55561003",
+						"systemName": "SNOMED CT",
+						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/55561003"
+					},
+					"healthStatus": {
+						"label": "Alive and well",
+						"code": "81323004",
+						"systemName": "SNOMED CT",
+						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/81323004"
+					}
+				}
+			],
+			"_patient": "https://ccda.smartplatforms.org/patients/0"
+		}
+	],
+	"_patient": "https://ccda.smartplatforms.org/patients/0"
+}
