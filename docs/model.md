@@ -6,7 +6,7 @@
 ###Required Sections:
 ####[Allergies](sections/allergies.md) - TBD
 ####[Medications](sections/medications.md) - TBD
-####[Problems](sections/problems.md) - TBD
+####[Problems](sections/problems.md) - Draft
 ####[Results](sections/results.md) - Draft
 ####[Demographics](sections/demographics.md) - Draft
 

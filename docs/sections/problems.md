@@ -11,90 +11,96 @@ var Problems = {
           "identifier": {type:string, required: true},
           "identifier_type": {type:string, required: true}
         }],
-        "status": {type: string, required: true},
+        "negation_indicator": {type: boolean, required: false},
         "name": {type: string, required: true},
         "code": {type: string, required: false},
         "code_system": {type: string, required: false},
-        "value": {type: string, required: false},
-        "unit": {type: string, required: false},
-        "interpretation": {type: string, required: false},
+        "onset_age": {type: string, required: false},
+        "onset_age_units": {type: string, required: false},
+        "status": {type: string, required: false}, 
+        "patient_status": {type: string, required: false},
         ,
-        "category": {
-           "name": {type: string, required: true},
-           "code": {type: string, required: true},
-           "code_system": {type: string, required: true}
-        }
+        "source_list_identifiers": [{
+          "identifier": {type:string, required: true},
+          "identifier_type": {type:string, required: true}
+        }]
       }
 ```
 
-{
-    "date_range": {
-      "start": "2010-03-31T04:00:00.000Z",
-      "end": null
-    },
-    "name": "Asthma unspecified",
-    "status": "Active",
-    "age": null,
-    "code": "195979001",
-    "code_system": "2.16.840.1.113883.6.96"
-  }
-
-
 
 ####Notes
-- Negation indicator saying problem 'wasn't' observed, a rediculous idea but important to watch for.
-- Much like labs, section is a list of objects, need to invert model.
-- Can come in one of two entry Observation formats.  Either Health Status Observation, or Problem Status.
+- Negation indicator saying problem 'wasn't' observed, seems crazy, but important to watch for.
 - Problems can be translated using translation object.
-- Observed vs. Onset, both there and probably worth capturing.
+- Must account for each sub-format and normalize into common model.
+- Need to flip this object so it is granular to the observation level.  The only observation header element which is valuable is an identifier, and a date; the id may be valuable later for matching, and the date represents the time during which the observations were on the problem list.  It's more 'source' data than clinically relevant.
+- Problem type being ignored; seems extraneous for now and semantically subjective.
+- Wrapper 'list' data can be sub object for attribution as source_list.
+- Ignoring text for now, only html reference.
 
-####Vitals.date
-- 1..2
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/effectiveTime
+
+####Problem.date
+- 0..2
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/effectiveTime
 - Should be handled to account for each type of date.
 
-####Vitals.identifiers
+####Problem.identifiers
 - 1..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/id
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/id@root
+- Should be handled by common identifier parser.
 
-####Vitals.status
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/status
-- Should be looked up from set 2.16.840.1.113883.11.20.9.39
-
-####Vitals.name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/displayName
-- Normalization may re-encode this to standard terminology if coded in a common dataset.
-- If not present, and not coded, originalText can be taken from below:
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/originalText
-
-####Vitals.code
+####Problem.negation_indicator
 - 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/code
-- Listed as not required to support uncoded or local datasets.
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation@negationInd
+- Should be assumed to be false for safety reasons if not present; true if it is a negation.
 
-####Vitals.code_system
-- 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/codeSystemName
-- Listed as not required to support uncoded or local datasets.
-- If not present, should attempt to lookup OID name from element below:
-//ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/codeSystem
-
-####Vitals.value
+####Problem.name
 - 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/value@value
-- Reference 2.28 of CDA spec for PQ style.  All I've seen so far.
-- Optional, but results are largely worthless without it.
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@displayName
+- Should always be codified to SNOMED-CT.
+- A translation object is possible instead of SNOMED, to ICD.
+- Not supported: nullFlavor.
+- TODO:  Support lookup of values from coding system.
 
-####Vitals.unit
+####Problem.code
 - 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/value@unit
-- Reference 2.28 of CDA spec for PQ style.  All I've seen so far.
-- Optional, but results are largely worthless without it.
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@code
+- Should always be codified to SNOMED-CT.
+- A translation object is possible instead of SNOMED, to ICD.
+- Not supported: nullFlavor.
+- TODO:  Support lookup of values from coding system.
 
-####Vitals.interpretation
+####Problem.code_system
+- 1..1
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@codeSystem
+- Should always be codified to SNOMED-CT.
+- A translation object is possible instead of SNOMED, to ICD.
+- Not supported: nullFlavor.
+- TODO:  Support lookup of values from coding system.
+
+####Problem.onset_age
 - 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/interpretationCode@code
-- This is limited to a specific code set.  This should be interpreted into a free text value, rather than just taking the code value.
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@value
+- Will need to filter by OID so it doesn't accidentally pull other sub components (2.16.840.1.113883.10.20.22.4.31).
+
+####Problem.onset_age_units
+- 0..1
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@units
+- Will need to filter by OID so it doesn't accidentally pull other sub components (2.16.840.1.113883.10.20.22.4.31).
+- May want to recodify the age units into more readable format (2.16.840.1.113883.11.20.9.21).
+
+####Problem.status
+- 0..*
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@displayName
+- Will need to filter by OID so it doesn't accidentally pull other sub components (2.16.840.1.113883.10.20.22.4.6).
+- Problem status uses 2.16.840.1.113883.3.88.12.80.68 for lookup, it is condition status and can be either active, inactive, or resolved.  can use display name, but should be pushed to use lookup.
+
+###Problem.patient_status
+- 0..*
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@displayName
+- Will need to filter by OID so it doesn't accidentally pull other sub components (2.16.840.1.113883.10.20.22.4.5).
+- Health status uses 2.16.840.1.113883.1.11.20.12 for lookup, can use display name, but should be pushed to use lookup.
+
+####Problem.source_list_identifiers
+- 1..*
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/id@root
 
