@@ -4,17 +4,17 @@
 ###Note:  JSON doesn't currently have a standard schema language; consequently these models are written to be used in a [Mongoose.js]("http://www.mongoosejs.com") compatible schema.
 
 ###Required Sections:
-####[Allergies]("./sections/allergies.md") - TBD
-####[Medications]("./sections/medications.md") - TBD
-####[Problems]("./sections/problems.md") - TBD
-####[Results]("./sections/results.md") - Draft
-####[Demographics]("./sections/demographics.md") - Draft
+####[Allergies](sections/allergies.md) - TBD
+####[Medications](sections/medications.md) - TBD
+####[Problems](sections/problems.md) - TBD
+####[Results](sections/results.md) - Draft
+####[Demographics](sections/demographics.md) - Draft
 
 ###Optional Sections:
-####[Procedures]("./sections/procedures.md")
-####[Encounters]("./sections/encounters.md")
-####[Immunizations]("./sections/immunizations.md")
-####[Vitals]("./sections/vitals.md")
+####[Procedures](sections/procedures.md)
+####[Encounters](sections/encounters.md)
+####[Immunizations](sections/immunizations.md)
+####[Vitals](sections/vitals.md)
 
 ###Unsupported Sections/Components:
 ####Advance Directives

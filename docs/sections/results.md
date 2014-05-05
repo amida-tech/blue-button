@@ -24,10 +24,10 @@ var Result = {
           "high_value": {type: string, required: false},
           "high_unit": {type: string, required: false}
         },
-        "classification": {
-           "name": "Microbiology",
-           "code": "269934003",
-           "code-system": "SNOMED-CT"
+        "category": {
+           "name": {type: string, required: true},
+           "code": {type: string, required: true},
+           "code_system": {type: string, required: true}
         }
       }
 ```
@@ -92,27 +92,38 @@ var Result = {
 
 ####Result.reference_range
 - 0..1
-//ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange
 
 ####Result.reference_range.text
 - 0..1
-//ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/text
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/text
 
 ####Result.reference_range.low_value
 - 0..1
-//ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/low@value
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/low@value
 
 ####Result.reference_range.low_unit
 - 0..1
-//ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/low@unit
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/low@unit
 
 ####Result.reference_range.high_value
 - 0..1
-//ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/high@value
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/high@value
 
 ####Result.reference_range.high_unit
 - 0..1
-//ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/high@unit
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/high@unit
 
+####Result.category.name
+- 1..1
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/code@displayName
+- Can be overwritten based on coding system during normalization.
 
+####Result.category.code
+- 1..1
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/code@code
 
+####Result.category.code_system
+- 1..1
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/code@codeSystemName
+- Can be overwritten based on coding system during normalization.
