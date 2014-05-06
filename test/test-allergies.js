@@ -35,20 +35,19 @@ describe('allergies parser', function() {
     
     it ('spot check', function(done) {
         expect(allergies).to.exist;
-        expect(allergies.problemAct).to.exist;
-        expect(allergies.problemAct).to.have.length(3);
+        expect(allergies).to.have.length(3);
         
-        expect(allergies.problemAct[1].dateRange).to.exist;
-        expect(allergies.problemAct[1].dateRange.point).to.exist;
+        expect(allergies[1].dateRange).to.exist;
+        expect(allergies[1].dateRange.point).to.exist;
 
-        expect(JSON.stringify(allergies.problemAct[1].dateRange.point)).to.equal('"2006-05-01T00:00:00.000Z"');
+        expect(JSON.stringify(allergies[1].dateRange.point)).to.equal('"2006-05-01T00:00:00.000Z"');
 
-        expect(allergies.problemAct[1].observation).to.exist;
-        expect(allergies.problemAct[1].observation.severity).to.equal('Moderate');
-        expect(allergies.problemAct[1].observation.status).to.equal('Active');
+        expect(allergies[1].observation).to.exist;
+        expect(allergies[1].observation.severity).to.equal('Moderate');
+        expect(allergies[1].observation.status).to.equal('Active');
 
-        expect(allergies.problemAct[1].observation.allergen).to.exist;
-        expect(allergies.problemAct[1].observation.allergen.label).to.equal('Codeine');
+        expect(allergies[1].observation.allergen).to.exist;
+        expect(allergies[1].observation.allergen.label).to.equal('Codeine');
         
         done();
     });
