@@ -1,0 +1,96 @@
+{
+		"immunizationsGiven": [
+			{
+				"route": "Intramuscular injection",
+				"date": {
+					"point": "1999-11-01T00:00:00.000Z",
+					"pointResolution": "month"
+				},
+				"_patient": "https://ccda.smartplatforms.org/patients/0",
+				"productName": {
+					"label": "Influenza virus vaccine",
+					"code": "88",
+					"systemName": "OID 2.16.840.1.113883.12.292",
+					"translations": [
+						{
+							"label": "Influenza, seasonal, injectable",
+							"code": "141",
+							"systemName": "OID 2.16.840.1.113883.12.292",
+							"uri": "urn:oid:2.16.840.1.113883.12.292#141"
+						}
+					],
+					"uri": "urn:oid:2.16.840.1.113883.12.292#88"
+				}
+			},
+			{
+				"route": "Intramuscular injection",
+				"date": {
+					"point": "1998-12-15T00:00:00.000Z",
+					"pointResolution": "day"
+				},
+				"_patient": "https://ccda.smartplatforms.org/patients/0",
+				"productName": {
+					"label": "Pneumococcal polysaccharide vaccine",
+					"code": "33",
+					"systemName": "OID 2.16.840.1.113883.12.292",
+					"translations": [
+						{
+							"label": "Pneumococcal NOS",
+							"code": "109",
+							"systemName": "OID 2.16.840.1.113883.12.292",
+							"uri": "urn:oid:2.16.840.1.113883.12.292#109"
+						}
+					],
+					"uri": "urn:oid:2.16.840.1.113883.12.292#33"
+				}
+			}
+		],
+		"immunizationsSkipped": [
+			{
+				"route": "Intramuscular injection",
+				"date": {
+					"point": "1998-12-15T00:00:00.000Z",
+					"pointResolution": "day"
+				},
+				"_patient": "https://ccda.smartplatforms.org/patients/0",
+				"productName": {
+					"label": "Influenza virus vaccine",
+					"code": "88",
+					"systemName": "OID 2.16.840.1.113883.12.292",
+					"translations": [
+						{
+							"label": "Influenza, seasonal, injectable",
+							"code": "141",
+							"systemName": "OID 2.16.840.1.113883.12.292",
+							"uri": "urn:oid:2.16.840.1.113883.12.292#141"
+						}
+					],
+					"uri": "urn:oid:2.16.840.1.113883.12.292#88"
+				}
+			},
+			{
+				"route": "Intramuscular injection",
+				"date": {
+					"point": "1998-12-15T00:00:00.000Z",
+					"pointResolution": "day"
+				},
+				"skippedFor": "Patient Objection",
+				"_patient": "https://ccda.smartplatforms.org/patients/0",
+				"productName": {
+					"label": "Tetanus and diphtheria toxoids - preservative free",
+					"code": "103",
+					"systemName": "OID 2.16.840.1.113883.12.292",
+					"translations": [
+						{
+							"label": "Tetanus and diphtheria toxoids - preservative free",
+							"code": "09",
+							"systemName": "OID 2.16.840.1.113883.12.292",
+							"uri": "urn:oid:2.16.840.1.113883.12.292#09"
+						}
+					],
+					"uri": "urn:oid:2.16.840.1.113883.12.292#103"
+				}
+			}
+		],
+		"_patient": "https://ccda.smartplatforms.org/patients/0"
+	}
