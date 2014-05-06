@@ -9,7 +9,7 @@ var Problems = {
         }],
         "identifiers": [{
           "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: true}
+          "identifier_type": {type:string, required: false}
         }],
         "negation_indicator": {type: boolean, required: false},
         "name": {type: string, required: true},
