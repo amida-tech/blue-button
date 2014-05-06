@@ -206,5 +206,46 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
+    it('Problem Structure - Status', function(done) {
+        for (var i in problems.problems) {
+            var currentProblem = problems.problems[i];
+            if (currentProblem.status) {
+                assert.isString(currentProblem.status, 'Status should be a string');
+                assert.ok(currentProblem.status.length > 0, 'If present, status should have length')
+                assert.includeMembers(['Resolved', 'Active', 'Inactive'], new Array(currentProblem.status), 'Status should be known value');
+            }
+        }
+        done();
+    });
+
+    it('Problem Structure - Patient Status', function(done) {
+        for (var i in problems.problems) {
+            var currentProblem = problems.problems[i];
+            if (currentProblem.patient_status) {
+                assert.isString(currentProblem.patient_status, 'Patient Status should be a string');
+                assert.ok(currentProblem.patient_status.length > 0, 'If present, Patient status should have length')
+                assert.includeMembers(['Alive and well', 'In remission', 'Symptom free', 'Chronically ill', 'Severely ill', 'Disabled', 'Severely disabled'], new Array(currentProblem.patient_status), 'Status should be known value');
+            }
+        }
+        done();
+    });
+
+    it('Problem Structure - Source List Identifiers', function(done) {
+        for (var i in problems.problems) {
+            var currentProblem = problems.problems[i];
+            assert.isDefined(currentProblem.source_list_identifiers, 'SLIs should exist');
+            assert.isArray(currentProblem.source_list_identifiers, 'SLIs should be an array');
+            assert.ok(currentProblem.source_list_identifiers.length > 0, 'SLIs required.');
+
+             for (var ii in currentProblem.source_list_identifiers) {
+                var currentId = currentProblem.source_list_identifiers[ii];
+                assert.isString(currentId.identifier, 'SLIs should be a string');
+                assert.ok(currentId.identifier.length > 0, 'SLIs should have content');
+                //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+            }       
+        }
+        done();
+    });
+
 
 });
