@@ -1,0 +1,76 @@
+{
+	"problemAct": [
+		{
+			"dateRange": {
+				"point": "2007-05-01T00:00:00.000Z",
+				"pointResolution": "day"
+			},
+			"observation": {
+				"allergen": {
+					"label": "ALLERGENIC EXTRACT, PENICILLIN",
+					"code": "314422",
+					"systemName": "RXNORM",
+					"uri": "http://purl.bioontology.org/ontology/RXNORM/314422"
+				},
+				"severity": "Moderate to severe",
+				"status": "Inactive",
+				"reaction": [
+					{
+						"code": "422587007",
+						"label": "Nausea",
+						"codeSystem": "2.16.840.1.113883.6.96",
+						"severity": "Mild"
+					}
+				]
+			}
+		},
+		{
+			"dateRange": {
+				"point": "2006-05-01T00:00:00.000Z",
+				"pointResolution": "day"
+			},
+			"observation": {
+				"allergen": {
+					"label": "Codeine",
+					"code": "2670",
+					"systemName": "RXNORM",
+					"uri": "http://purl.bioontology.org/ontology/RXNORM/2670"
+				},
+				"severity": "Moderate",
+				"status": "Active",
+				"reaction": [
+					{
+						"code": "56018004",
+						"label": "Wheezing",
+						"codeSystem": "2.16.840.1.113883.6.96",
+						"severity": "Mild"
+					}
+				]
+			}
+		},
+		{
+			"dateRange": {
+				"point": "2008-05-01T00:00:00.000Z",
+				"pointResolution": "day"
+			},
+			"observation": {
+				"allergen": {
+					"label": "Aspirin",
+					"code": "1191",
+					"systemName": "RXNORM",
+					"uri": "http://purl.bioontology.org/ontology/RXNORM/1191"
+				},
+				"severity": "Mild to moderate",
+				"status": "Active",
+				"reaction": [
+					{
+						"code": "247472004",
+						"label": "Hives",
+						"codeSystem": "2.16.840.1.113883.6.96",
+						"severity": "Mild to moderate"
+					}
+				]
+			}
+		}
+	]
+}
