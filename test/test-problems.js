@@ -23,7 +23,7 @@ describe('problems parser', function() {
         });
     });
     
-    it('full deep check', function(done) {
+    xit('full deep check', function(done) {
         expect(problems).to.exist;
         var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Problems.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
@@ -33,6 +33,7 @@ describe('problems parser', function() {
     });
     
     it ('spot check', function(done) {
+        console.log(JSON.stringify(problems, null, 4));
         expect(problems).to.exist;
         expect(problems.problemConcerns).to.exist;
         expect(problems.problemConcerns).to.have.length(2);
