@@ -25,26 +25,21 @@ var loadRecord = function(done) {
 }
 
 
+//TODO:  Implement full CCDA comparison when ready.
 
-xdescribe('problems parser', function() {
-    var problems = null;
+describe('Problems - Snippet Comparison', function() {
 
     before(function(done) {
-        var filepath = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Problems.xml');
-        var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {
-            component: 'ccda_problems'
-        }, function(err, result) {
-            problems = result.toJSON();
-            jsutil.deepDelete(problems, '_id');
-            //var json2Write = JSON.stringify(ccd, undefined, '\t');
-            //var jsonFilePath = filepath.replace('.xml', '.json');
-            //fs.writeFileSync(jsonFilePath, json2Write);
+        if (problems === undefined) {
+            loadRecord(function() {
+                done();
+            });
+        } else {
             done();
-        });
+        }
     });
 
-    xit('full deep check', function(done) {
+    it('Deep Equality Check', function(done) {
         expect(problems).to.exist;
         var filepath = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Problems.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
@@ -53,22 +48,11 @@ xdescribe('problems parser', function() {
         done();
     });
 
-    xit('spot check', function(done) {
-        console.log(JSON.stringify(problems, null, 4));
+    it('Shallow Equality Check', function(done) {
+        //console.log(JSON.stringify(problems, null, 4));
         expect(problems).to.exist;
-        expect(problems.problemConcerns).to.exist;
-        expect(problems.problemConcerns).to.have.length(2);
-
-        expect(problems.problemConcerns[1].concernStatus).to.equal('completed');
-        expect(problems.problemConcerns[1].problems).to.exist;
-        expect(problems.problemConcerns[1].problems).to.have.length(1);
-        expect(problems.problemConcerns[1].problems[0].problemName).to.exist;
-        expect(problems.problemConcerns[1].problems[0].problemName.label).to.equal('Asthma');
-        expect(problems.problemConcerns[1].problems[0].dateRange).to.exist;
-        expect(problems.problemConcerns[1].problems[0].dateRange.low).to.exist;
-        expect(JSON.stringify(problems.problemConcerns[1].problems[0].dateRange.low)).to.equal('"2007-01-03T00:00:00.000Z"');
-        expect(problems.problemConcerns[1].problems[0].dateRange.lowResolution).to.equal('day');
-
+        expect(problems.problems).to.exist;
+        expect(problems.problems).to.have.length(2);
         done();
     });
 });
@@ -145,8 +129,10 @@ describe('Problems - Schema Conformance', function() {
 
     it('Problem Structure - Negation', function(done) {
         for (var i in problems.problems) {
-            var currentProblem = problems.problems[i];
-            //TODO:  Add negation indication checking.
+             var currentProblem = problems.problems[i];
+             assert.isDefined(currentProblem.negation_indicator, 'Indicator should exist');
+             assert.isNotNull(currentProblem.negation_indicator, 'Indicator should not be null');
+             assert.isBoolean(currentProblem.negation_indicator, 'Indicator should be boolean');
         }
         done();
     });

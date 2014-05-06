@@ -1,102 +1,64 @@
-{
-	"problemConcerns": [
-		{
-			"dateRange": {
-				"low": "2008-01-03T00:00:00.000Z",
-				"lowResolution": "day",
-				"high": "2008-01-03T00:00:00.000Z",
-				"highResolution": "day"
-			},
-			"concernStatus": "completed",
-			"problems": [
-				{
-					"problemType": {
-						"label": "Complaint",
-						"code": "409586006",
-						"systemName": "SNOMED CT",
-						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/409586006"
-					},
-					"problemName": {
-						"label": "Pneumonia",
-						"code": "233604007",
-						"systemName": "SNOMED CT",
-						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/233604007"
-					},
-					"freeTextProblemName": "Pneumonia ",
-					"dateRange": {
-						"low": "2008-01-03T00:00:00.000Z",
-						"lowResolution": "day",
-						"high": "2008-01-03T00:00:00.000Z",
-						"highResolution": "day"
-					},
-					"resolved": false,
-					"ageAtOnset": {
-						"value": 57,
-						"unit": "a"
-					},
-					"problemStatus": {
-					    "label": "Resolved",
-						"code": "413322009",
-						"systemName": "SNOMED CT",
-						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/413322009"
-					},
-					"healthStatus": {
-						"label": "Alive and well",
-						"code": "81323004",
-						"systemName": "SNOMED CT",
-						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/81323004"
-					}
-				}
-			]
-		},
-		{
-			"dateRange": {
-				"low": "2007-01-03T00:00:00.000Z",
-				"lowResolution": "day",
-				"high": "2007-01-03T00:00:00.000Z",
-				"highResolution": "day"
-			},
-			"concernStatus": "completed",
-			"problems": [
-				{
-					"problemType": {
-						"label": "Complaint",
-						"code": "409586006",
-						"systemName": "SNOMED CT",
-						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/409586006"
-					},
-					"problemName": {
-						"label": "Asthma",
-						"code": "195967001",
-						"systemName": "SNOMED CT",
-						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/195967001"
-					},
-					"freeTextProblemName": "Asthma",
-					"dateRange": {
-						"low": "2007-01-03T00:00:00.000Z",
-						"lowResolution": "day",
-						"high": "2008-01-03T00:00:00.000Z",
-						"highResolution": "day"
-					},
-					"resolved": false,
-					"ageAtOnset": {
-						"value": 57,
-						"unit": "a"
-					},
-					"problemStatus": {
-						"label": "Active",
-						"code": "55561003",
-						"systemName": "SNOMED CT",
-						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/55561003"
-					},
-					"healthStatus": {
-						"label": "Alive and well",
-						"code": "81323004",
-						"systemName": "SNOMED CT",
-						"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/81323004"
-					}
-				}
-			]
-		}
-	]
+ {
+    "problems": [
+        {
+            "date": [
+                {
+                    "date": "2008-01-03T00:00:00.000Z",
+                    "precision": "day"
+                },
+                {
+                    "date": "2008-01-03T00:00:00.000Z",
+                    "precision": "day"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+                }
+            ],
+            "negation_indicator": false,
+            "name": "Pneumonia",
+            "code": "233604007",
+            "code_system": "SNOMED CT",
+            "onset_age": "57",
+            "onset_age_unit": "Year",
+            "status": "Resolved",
+            "patient_status": "Alive and well",
+            "source_list_identifiers": [
+                {
+                    "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                }
+            ]
+        },
+        {
+            "date": [
+                {
+                    "date": "2007-01-03T00:00:00.000Z",
+                    "precision": "day"
+                },
+                {
+                    "date": "2008-01-03T00:00:00.000Z",
+                    "precision": "day"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+                }
+            ],
+            "negation_indicator": true,
+            "name": "Asthma",
+            "code": "195967001",
+            "code_system": "SNOMED CT",
+            "onset_age": "57",
+            "onset_age_unit": "Year",
+            "status": "Active",
+            "patient_status": "Alive and well",
+            "source_list_identifiers": [
+                {
+                    "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                }
+            ]
+        }
+    ]
 }
