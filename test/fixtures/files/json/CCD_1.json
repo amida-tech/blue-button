@@ -398,6 +398,135 @@
         ],
         "_patient": "https://ccda.smartplatforms.org/patients/0"
     },
+    "encounters": [
+                   {
+                       "date": [
+                           {
+                               "date": "2009-02-27T13:00:00.000Z",
+                               "precision": "subsecond"
+                           }
+                       ],
+                       "identifiers": [
+                            {
+                               "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                            }
+                       ],
+                       "locations": [
+                           {
+                               "name": "Community Urgent Care Center",
+                               "type": {
+                                   "name": "Urgent Care Center",
+                                   "code": "1160-1",
+                                   "code_system": "HealthcareServiceLocation",
+                                   "uri": "http://hl7.org/healthcareservice/1160-1"
+                               },
+                               "address": {
+                                   "streetLines": [
+                                       "17 Daws Rd."
+                                   ],
+                                   "city": "Blue Bell",
+                                   "state": "MA",
+                                   "zip": "02368",
+                                   "country": "US"
+                               }
+                           }
+                       ],
+                       "findings": [
+                           {
+                               "name": "Pneumonia",
+                               "code": "233604007",
+                               "system": "2.16.840.1.113883.6.96",
+                               "code_system": "SNOMED CT",
+                               "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/233604007"
+                           }
+                       ],
+                       "name": "Office outpatient visit 15 minutes",
+                       "code": "99213",
+                       "system": "2.16.840.1.113883.6.12",
+                       "code_system": "CPT",
+                       "translations": [
+                           {
+                               "name": "Ambulatory",
+                               "code": "AMB",
+                               "code_system": "HL7ActCode",
+                               "uri": "http://hl7.org/actcode/AMB"
+                           }
+                       ],
+                       "uri": "http://purl.bioontology.org/ontology/CPT/99213"
+                   }
+               ],
+    "allergies": [
+                    {
+                      "date": [{
+                          "date": "2007-05-01T00:00:00.000Z",
+                          "precision": "day"
+                      }],
+                      "identifiers": [
+                      {"identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"}
+                      ],
+                      "name": "ALLERGENIC EXTRACT, PENICILLIN",
+                      "code": "314422",
+                      "code_system": "RXNORM",
+                      "uri": "http://purl.bioontology.org/ontology/RXNORM/314422",
+                      "severity": "Moderate to severe",
+                      "status": "Inactive",
+                      "reaction": [
+                          {
+                              "code": "422587007",
+                              "name": "Nausea",
+                              "codeSystem": "2.16.840.1.113883.6.96",
+                              "severity": "Mild"
+                          }
+                      ]
+                  },
+                  {
+                      "date": [{
+                          "date": "2006-05-01T00:00:00.000Z",
+                          "precision": "day"
+                      }],
+                      "identifiers": [
+                      {"identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"}
+                      ],
+                      "name": "Codeine",
+                      "code": "2670",
+                      "code_system": "RXNORM",
+                      "uri": "http://purl.bioontology.org/ontology/RXNORM/2670",
+                      "severity": "Moderate",
+                      "status": "Active",
+                      "reaction": [
+                          {
+                              "code": "56018004",
+                              "name": "Wheezing",
+                              "codeSystem": "2.16.840.1.113883.6.96",
+                              "severity": "Mild"
+                          }
+                      ]
+                  },
+                  {
+                      "date": [{
+                          "date": "2008-05-01T00:00:00.000Z",
+                          "precision": "day"
+                      }],
+                      "identifiers": [
+                      {"identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"}
+                      ],
+                      "name": "Aspirin",
+                      "code": "1191",
+                      "code_system": "RXNORM",
+                      "uri": "http://purl.bioontology.org/ontology/RXNORM/1191",
+                      "severity": "Mild to moderate",
+                      "status": "Active",
+                      "reaction": [
+                          {
+                              "code": "247472004",
+                              "name": "Hives",
+                              "codeSystem": "2.16.840.1.113883.6.96",
+                              "severity": "Mild to moderate"
+                          }
+                      ]
+                  }
+              ],
+
     "immunizations": {
         "immunizationsGiven": [
             {
