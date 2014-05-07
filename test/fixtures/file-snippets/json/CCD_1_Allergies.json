@@ -4,6 +4,9 @@
 			"date": "2007-05-01T00:00:00.000Z",
 			"precision": "day"
 		}],
+		"identifiers": [
+		{"identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"}
+		],
 		"name": "ALLERGENIC EXTRACT, PENICILLIN",
 		"code": "314422",
 		"code_system": "RXNORM",
@@ -24,6 +27,9 @@
 			"date": "2006-05-01T00:00:00.000Z",
 			"precision": "day"
 		}],
+        "identifiers": [
+        {"identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"}
+        ],
 		"name": "Codeine",
 		"code": "2670",
 		"code_system": "RXNORM",
@@ -44,6 +50,9 @@
 			"date": "2008-05-01T00:00:00.000Z",
 			"precision": "day"
 		}],
+        "identifiers": [
+        {"identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"}
+        ],
 		"name": "Aspirin",
 		"code": "1191",
 		"code_system": "RXNORM",
