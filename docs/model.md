@@ -12,7 +12,7 @@
 
 ###Optional Sections:
 ####[Procedures](sections/procedures.md) -TBD
-####[Encounters](sections/encounters.md) -TBD
+####[Encounters](sections/encounters.md) - Draft
 ####[Immunizations](sections/immunizations.md) -TBD
 ####[Vitals](sections/vitals.md) - Draft
 
