@@ -23,6 +23,7 @@ describe('problems parser', function() {
         });
     });
     
+    /* global xit */
     xit('full deep check', function(done) {
         expect(problems).to.exist;
         var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Problems.json');
