@@ -6,6 +6,11 @@
 				"precision": "subsecond"
 			}
 		],
+		"identifiers": [
+		     {
+		        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+		     }
+		],
 		"locations": [
 			{
 				"name": "Community Urgent Care Center",
@@ -28,11 +33,11 @@
 		],
 		"findings": [
 			{
-				"name": "Finding",
-				"code": "404684003",
+				"name": "Pneumonia",
+				"code": "233604007",
 				"system": "2.16.840.1.113883.6.96",
 				"code_system": "SNOMED CT",
-				"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/404684003"
+				"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/233604007"
 			}
 		],
 		"name": "Office outpatient visit 15 minutes",
