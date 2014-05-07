@@ -9,15 +9,14 @@
 		],
 		"name": "ALLERGENIC EXTRACT, PENICILLIN",
 		"code": "314422",
-		"code_system": "RXNORM",
-		"uri": "http://purl.bioontology.org/ontology/RXNORM/314422",
+		"code_system_name": "RXNORM",
 		"severity": "Moderate to severe",
 		"status": "Inactive",
 		"reaction": [
 			{
 				"code": "422587007",
 				"name": "Nausea",
-				"codeSystem": "2.16.840.1.113883.6.96",
+				"code_system_name": "SNOMED CT",
 				"severity": "Mild"
 			}
 		]
@@ -32,15 +31,14 @@
         ],
 		"name": "Codeine",
 		"code": "2670",
-		"code_system": "RXNORM",
-		"uri": "http://purl.bioontology.org/ontology/RXNORM/2670",
+		"code_system_name": "RXNORM",
 		"severity": "Moderate",
 		"status": "Active",
 		"reaction": [
 			{
 				"code": "56018004",
 				"name": "Wheezing",
-				"codeSystem": "2.16.840.1.113883.6.96",
+				"code_system_name": "SNOMED CT",
 				"severity": "Mild"
 			}
 		]
@@ -55,15 +53,14 @@
         ],
 		"name": "Aspirin",
 		"code": "1191",
-		"code_system": "RXNORM",
-		"uri": "http://purl.bioontology.org/ontology/RXNORM/1191",
+		"code_system_name": "RXNORM",
 		"severity": "Mild to moderate",
 		"status": "Active",
 		"reaction": [
 			{
 				"code": "247472004",
 				"name": "Hives",
-				"codeSystem": "2.16.840.1.113883.6.96",
+				"code_system_name": "SNOMED CT",
 				"severity": "Mild to moderate"
 			}
 		]

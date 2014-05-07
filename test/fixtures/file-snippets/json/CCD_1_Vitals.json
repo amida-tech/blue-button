@@ -4,16 +4,14 @@
             "panelName": {
                 "name": "Vital signs",
                 "code": "46680005",
-                "code_system": "SNOMED CT",
-                "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/46680005"
+                "code_system_name": "SNOMED CT"
             },
             "vitals": [
                 {
                     "vitalName": {
                         "name": "Height",
                         "code": "8302-2",
-                        "code_system": "LOINC",
-                        "uri": "http://purl.bioontology.org/ontology/LNC/8302-2"
+                        "code_system_name": "LOINC"
                     },
                     "measuredAt": [
                         {
@@ -35,8 +33,7 @@
                     "vitalName": {
                         "name": "Patient Body Weight - Measured",
                         "code": "3141-9",
-                        "code_system": "LOINC",
-                        "uri": "http://purl.bioontology.org/ontology/LNC/3141-9"
+                        "code_system_name": "LOINC"
                     },
                     "measuredAt": [
                         {
@@ -58,8 +55,7 @@
                     "vitalName": {
                         "name": "Intravascular Systolic",
                         "code": "8480-6",
-                        "code_system": "LOINC",
-                        "uri": "http://purl.bioontology.org/ontology/LNC/8480-6"
+                        "code_system_name": "LOINC"
                     },
                     "measuredAt": [
                         {
@@ -84,16 +80,14 @@
             "panelName": {
                 "name": "Vital signs",
                 "code": "46680005",
-                "code_system": "SNOMED CT",
-                "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/46680005"
+                "code_system_name": "SNOMED CT"
             },
             "vitals": [
                 {
                     "vitalName": {
                         "name": "Height",
                         "code": "8302-2",
-                        "code_system": "LOINC",
-                        "uri": "http://purl.bioontology.org/ontology/LNC/8302-2"
+                        "code_system_name": "LOINC"
                     },
                     "measuredAt": [
                         {
@@ -115,8 +109,7 @@
                     "vitalName": {
                         "name": "Patient Body Weight - Measured",
                         "code": "3141-9",
-                        "code_system": "LOINC",
-                        "uri": "http://purl.bioontology.org/ontology/LNC/3141-9"
+                        "code_system_name": "LOINC"
                     },
                     "measuredAt": [
                         {
@@ -138,8 +131,7 @@
                     "vitalName": {
                         "name": "Intravascular Systolic",
                         "code": "8480-6",
-                        "code_system": "LOINC",
-                        "uri": "http://purl.bioontology.org/ontology/LNC/8480-6"
+                        "code_system_name": "LOINC"
                     },
                     "measuredAt": [
                         {

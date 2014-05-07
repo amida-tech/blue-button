@@ -12,16 +12,14 @@
             "productName": {
                 "name": "Influenza virus vaccine",
                 "code": "88",
-                "code_system": "OID 2.16.840.1.113883.12.292",
+                "code_system_name": "OID 2.16.840.1.113883.12.292",
                 "translations": [
                     {
                         "name": "Influenza, seasonal, injectable",
                         "code": "141",
-                        "code_system": "OID 2.16.840.1.113883.12.292",
-                        "uri": "urn:oid:2.16.840.1.113883.12.292#141"
+                        "code_system_name": "OID 2.16.840.1.113883.12.292"
                     }
-                ],
-                "uri": "urn:oid:2.16.840.1.113883.12.292#88"
+                ]
             }
         },
         {
@@ -36,16 +34,14 @@
             "productName": {
                 "name": "Pneumococcal polysaccharide vaccine",
                 "code": "33",
-                "code_system": "OID 2.16.840.1.113883.12.292",
+                "code_system_name": "OID 2.16.840.1.113883.12.292",
                 "translations": [
                     {
                         "name": "Pneumococcal NOS",
                         "code": "109",
-                        "code_system": "OID 2.16.840.1.113883.12.292",
-                        "uri": "urn:oid:2.16.840.1.113883.12.292#109"
+                        "code_system_name": "OID 2.16.840.1.113883.12.292"
                     }
-                ],
-                "uri": "urn:oid:2.16.840.1.113883.12.292#33"
+                ]
             }
         }
     ],
@@ -62,16 +58,14 @@
             "productName": {
                 "name": "Influenza virus vaccine",
                 "code": "88",
-                "code_system": "OID 2.16.840.1.113883.12.292",
+                "code_system_name": "OID 2.16.840.1.113883.12.292",
                 "translations": [
                     {
                         "name": "Influenza, seasonal, injectable",
                         "code": "141",
-                        "code_system": "OID 2.16.840.1.113883.12.292",
-                        "uri": "urn:oid:2.16.840.1.113883.12.292#141"
+                        "code_system_name": "OID 2.16.840.1.113883.12.292"
                     }
-                ],
-                "uri": "urn:oid:2.16.840.1.113883.12.292#88"
+                ]
             }
         },
         {
@@ -87,16 +81,14 @@
             "productName": {
                 "name": "Tetanus and diphtheria toxoids - preservative free",
                 "code": "103",
-                "code_system": "OID 2.16.840.1.113883.12.292",
+                "code_system_name": "OID 2.16.840.1.113883.12.292",
                 "translations": [
                     {
                         "name": "Tetanus and diphtheria toxoids - preservative free",
                         "code": "09",
-                        "code_system": "OID 2.16.840.1.113883.12.292",
-                        "uri": "urn:oid:2.16.840.1.113883.12.292#09"
+                        "code_system_name": "OID 2.16.840.1.113883.12.292"
                     }
-                ],
-                "uri": "urn:oid:2.16.840.1.113883.12.292#103"
+                ]
             }
         }
     ],
