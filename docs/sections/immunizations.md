@@ -11,6 +11,8 @@
         "identifier": {type:string, required: true},
         "identifier_type": {type:string, required: true}
      }],
+    "status": {type:string: required: true},
+    "name": {type:string, required: true}
     "product": {
       "name": "Influenza, high dose seasonal",
       "code": "135",
@@ -23,11 +25,18 @@
         "code_system_name": null
       }
     },
-    "route": {
-      "name": "Intramuscular injection",
-      "code": "C28161",
-      "code_system": "2.16.840.1.113883.3.26.1.1",
-      "code_system_name": "NCI Thesaurus"
+    "administration": {
+      "route": {
+      	"name": {type: string, required: false},
+      	"code": {type: string, required: false},
+      	"code_system": {type: string, required: false}
+      },
+      "body_site": {type:string, required: false},
+      "quantity": {
+      	"value": {type:string, required: false},
+      	"units": {type:string, required: false}
+      },
+      "form": {type:string, required:false}
     },
     "instructions": null,
     "education_type": {
@@ -41,22 +50,58 @@
 
 
 ####Notes
-- Mood code event or intent, seems to determine whether or not the doctor thinks they should do it, or whether it is documentation of an event.
+- 'code' may come in, but not on samples and it doesn't define why, so not currently supported.
+- statusCode comes in, but doesn't seem to mean anything.  It is 'completed' in all examples.
+- series, performer, reaction, and refusal reason all seem to be optional.
+- medication series number is either the number administered in a series, or the number to be in pending immunizations; captured as 'sequence_number.'
+- Route code should come from one dataset, but is another in all the samples without a translation object.  Will need to support coded entries as such since the standard is contradictory.
 
 ####Immunization.date
 - 0..2
-- //ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/effectiveTime
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/effectiveTime
 - Should be handled to account for each type of date.
 
 ####Immunization.identifiers
 - 1..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id@root
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id@root
 - Should be handled by common identifier parser.
 
-####Problem.negation_indicator
+####Immunization.status
+- 1..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration@moodCode
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration@negationInd
+- Combination of mood code and negation can determine status of either 'pending', 'refused', or 'complete'.
+
+####Immunization.sequence_number
 - 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation@negationInd
-- Should be assumed to be false for safety reasons if not present; true if it is a negation.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/repeatNumber@value
+- See notes for significance.
+
+####Immunization.administration.route
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/routeCode
+- Coded entry, should be treated like the rest.
+
+####Immunization.administration.body_site
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/approachSiteCode/@value
+- Always coded to SNOMED-CT if present.
+- No demo files, can fake it for now and take displayName.
+
+####Immunization.administration.quantity
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/doseQuantity
+- This is a value/units pair, where units aren't required.
+- If they do come in, they are picked from '2.16.840.1.113883.1.11.12839'
+
+####Immunization.administration.form
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/administrationUnitCode
+- This must be picked from 2.16.840.1.113883.3.88.12.3221.8.11.
+- This code set is probably small enough to keep in memory (~200 entries).
+
+
+
 
 ####Problem.name
 - 1..1
