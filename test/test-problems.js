@@ -22,7 +22,7 @@ var loadRecord = function(done) {
         jsutil.deepDelete(problems, '_id');
         done();
     });
-}
+};
 
 
 //TODO:  Implement full CCDA comparison when ready.
@@ -90,7 +90,7 @@ describe('Problems - Schema Conformance', function() {
                 assert.ok(currentDate.precision.length > 0, 'Precision should have content');
                 assert.includeMembers(['year', 'month', 'day', 'hour', 'minute', 'second', 'subsecond'], new Array(currentDate.precision), 'Precision should be valid');
             }
-        };
+        }
         done();
     });
 
@@ -197,7 +197,7 @@ describe('Problems - Schema Conformance', function() {
             var currentProblem = problems.problems[i];
             if (currentProblem.status) {
                 assert.isString(currentProblem.status, 'Status should be a string');
-                assert.ok(currentProblem.status.length > 0, 'If present, status should have length')
+                assert.ok(currentProblem.status.length > 0, 'If present, status should have length');
                 assert.includeMembers(['Resolved', 'Active', 'Inactive'], new Array(currentProblem.status), 'Status should be known value');
             }
         }
@@ -209,7 +209,7 @@ describe('Problems - Schema Conformance', function() {
             var currentProblem = problems.problems[i];
             if (currentProblem.patient_status) {
                 assert.isString(currentProblem.patient_status, 'Patient Status should be a string');
-                assert.ok(currentProblem.patient_status.length > 0, 'If present, Patient status should have length')
+                assert.ok(currentProblem.patient_status.length > 0, 'If present, Patient status should have length');
                 assert.includeMembers(['Alive and well', 'In remission', 'Symptom free', 'Chronically ill', 'Severely ill', 'Disabled', 'Severely disabled'], new Array(currentProblem.patient_status), 'Status should be known value');
             }
         }
