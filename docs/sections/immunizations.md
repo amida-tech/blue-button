@@ -12,18 +12,17 @@
         "identifier_type": {type:string, required: true}
      }],
     "status": {type:string: required: true},
-    "name": {type:string, required: true}
+    "name": {type:string, required: true},
+    "code": {type:string, required: true},
+    "sequence_number": {type:string, required:false},
     "product": {
-      "name": "Influenza, high dose seasonal",
-      "code": "135",
-      "code_system": "2.16.840.1.113883.12.292",
-      "code_system_name": "CVX",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      }
+      "translations": [{
+        "name": {type:string, required: false},
+        "code": {type:string, required: false},
+        "code_system": {type:string, required: false},
+      }],
+      "lot_number": {type:string, required: false},
+      "manufacturer": {type:string, required: false}
     },
     "administration": {
       "route": {
@@ -38,12 +37,66 @@
       },
       "form": {type:string, required:false}
     },
+    "performer": {
+      "name": {cda_name},
+      "address": {cda_address},
+	  "phone": [{
+        "number": {type: string, required: true},
+        "type": {type: string, required: true}
+      }],
+      "email": [{
+        "address": {type: string, required: true},
+        "type": {type:string, required: true}
+      }],
+      "identifiers": [{
+        "identifier": {type:string, required: true},
+        "identifier_type": {type:string, required: true}
+      }],
+      "organization": [{
+        "name": {type:string, required: false},
+        "address": {cda_address},
+	    "phone": [{
+          "number": {type: string, required: true},
+          "type": {type: string, required: true}
+        }],
+        "email": [{
+          "address": {type: string, required: true},
+          "type": {type:string, required: true}
+        }],
+        "identifiers": [{
+          "identifier": {type:string, required: true},
+          "identifier_type": {type:string, required: true}
+        }]
+     }
+       
+    
+    
+    
+    },
     "instructions": null,
     "education_type": {
       "name": null,
       "code": null,
       "code_system": null
     }
+  }
+  
+var cda_address = {
+    "type": {type: string, required: true},
+    "primary": {type: boolean, required: true},
+    "street": [{type: string, required: true}],
+    "city": {type: string, required: true},
+    "state": {type: string, required: false},
+    "postal_code": {type: string, required: false},
+    "country": {type: string, required: false}
+ }
+ 
+ var cda_name = {
+    "prefix": [{type: string, required: false}],
+    "first": {type: string, required: true},
+    "middle": [{type: string, required: false],
+    "last": {type: string, required: true},
+    "suffix": {type: string, required: false}
   }
 
 ```
@@ -55,6 +108,8 @@
 - series, performer, reaction, and refusal reason all seem to be optional.
 - medication series number is either the number administered in a series, or the number to be in pending immunizations; captured as 'sequence_number.'
 - Route code should come from one dataset, but is another in all the samples without a translation object.  Will need to support coded entries as such since the standard is contradictory.
+- Only supporting manufacturer name for now.  I believe this can have more information attached.
+- Performer just a wrapper for assignedEntity.
 
 ####Immunization.date
 - 0..2
@@ -72,10 +127,45 @@
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration@negationInd
 - Combination of mood code and negation can determine status of either 'pending', 'refused', or 'complete'.
 
+####Immunizations.name
+- 1..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code@displayName
+- Using display name, all of these should be coming in as CVX coded, so no need for code system.  Might want to normalize them.
+
+####Immunizations.code
+- 1..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code@code
+- All of these should be coming in as CVX coded, so no need for code system.  Might want to normalize them.
+
 ####Immunization.sequence_number
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/repeatNumber@value
 - See notes for significance.
+
+####Immunizations.product
+- 0..1
+- No direct mapping
+- This is a catch all for every non-primary attribute of the product.  All elements herein are optional at this point.
+
+####Immunizations.product.translations
+- 0..*
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code/translation
+- This is a coded set and should be supported as such.  Allows for synonyms in the same or other code sets.
+
+####Immunizations.product.lot_number
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/lotNumberText
+
+####Immunizations.product.manufacturer
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturerOrganization/name
+- May support more than just a name element, not sure.  However, just supporting name for now.
+
+
+####Immunization.administration
+- 0..1
+- No direct mapping
+- This is a catch all for every non-primary attribute of the product's delivery.  All elements herein are optional at this point.
 
 ####Immunization.administration.route
 - 0..1
@@ -100,57 +190,70 @@
 - This must be picked from 2.16.840.1.113883.3.88.12.3221.8.11.
 - This code set is probably small enough to keep in memory (~200 entries).
 
-
-
-
-####Problem.name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@displayName
-- Should always be codified to SNOMED-CT.
-- A translation object is possible instead of SNOMED, to ICD.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
-
-####Problem.code
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@code
-- Should always be codified to SNOMED-CT.
-- A translation object is possible instead of SNOMED, to ICD.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
-
-####Problem.code_system
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@codeSystem
-- Should always be codified to SNOMED-CT.
-- A translation object is possible instead of SNOMED, to ICD.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
-
-####Problem.onset_age
+####Immunization.performer
 - 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@value
-- Will need to filter by OID so it doesn't accidentally pull other sub components (2.16.840.1.113883.10.20.22.4.31).
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity
+- http://www.cdapro.com/know/26953 <-- helpful link.
+- This object is impossible; there is practically no information on it's structure in the standard.
+- assignedEntity seems to be the defacto element within, which is also poorly documented.
+- Will attempt to parse what I can based on demo files.  Everything under here is highly speculative.
 
-####Problem.onset_age_units
+####Immunization.performer.id
+- 0..*
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/id
+- Should be parsed using standard identifier parser.
+
+####Immunization.performer.address
 - 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@units
-- Will need to filter by OID so it doesn't accidentally pull other sub components (2.16.840.1.113883.10.20.22.4.31).
-- May want to recodify the age units into more readable format (2.16.840.1.113883.11.20.9.21).
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/addr
+- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
+- Lack of spec makes assumption, one address for this performer.
 
-####Problem.status
+####Immunization.performer.phone
 - 0..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@displayName
-- Will need to filter by OID so it doesn't accidentally pull other sub components (2.16.840.1.113883.10.20.22.4.6).
-- Problem status uses 2.16.840.1.113883.3.88.12.80.68 for lookup, it is condition status and can be either active, inactive, or resolved.  can use display name, but should be pushed to use lookup.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/telecom
+- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
 
-###Problem.patient_status
+####Immunization.performer.email
 - 0..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@displayName
-- Will need to filter by OID so it doesn't accidentally pull other sub components (2.16.840.1.113883.10.20.22.4.5).
-- Health status uses 2.16.840.1.113883.1.11.20.12 for lookup, can use display name, but should be pushed to use lookup.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/telecom
+- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
 
-####Problem.source_list_identifiers
-- 1..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/id@root
+####Immunization.performer.name
+- 0..1?
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/assignedPerson/name
+- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
+- Lack of spec makes assumption, one name for this performer.
 
+####Immunization.performer.organization
+- 0..*
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization
+- Inferred from standard only.
+
+####Immunization.performer.organization.name
+- 0..*
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/name
+- Should just be name value, no need for structured name.
+
+####Immunization.performer.organization.phone
+- 0..*
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/telecom
+- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
+
+####Immunization.performer.organization.email
+- 0..*
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/telecom
+- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
+
+####Immunization.performer.organization.address
+- 0..*
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/addr
+- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
+
+####Immunization.performer.organization.id
+- 0..*
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/id
+- Should be parsed using standard identifier parser.
+
+
+Need, reaction, refusal reason, performer may have education object(?), precondition.
