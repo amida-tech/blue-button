@@ -67,18 +67,8 @@
           "identifier": {type:string, required: true},
           "identifier_type": {type:string, required: true}
         }]
-     }
-       
-    
-    
-    
-    },
-    "instructions": null,
-    "education_type": {
-      "name": null,
-      "code": null,
-      "code_system": null
-    }
+     },
+     "refusal_reason": {type:string, required: false}
   }
   
 var cda_address = {
@@ -110,6 +100,7 @@ var cda_address = {
 - Route code should come from one dataset, but is another in all the samples without a translation object.  Will need to support coded entries as such since the standard is contradictory.
 - Only supporting manufacturer name for now.  I believe this can have more information attached.
 - Performer just a wrapper for assignedEntity.
+- Not supported: patient instructions, precondition, medication supply order, medication dispense, reaction.
 
 ####Immunization.date
 - 0..2
@@ -255,5 +246,7 @@ var cda_address = {
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/id
 - Should be parsed using standard identifier parser.
 
-
-Need, reaction, refusal reason, performer may have education object(?), precondition.
+####Immunization.refusal_reason
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/entryRelationship/observation/code@displayName
+- Should probably be recoded, set small enough.  2.16.840.1.113883.1.11.19717
