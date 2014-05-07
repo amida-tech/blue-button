@@ -85,12 +85,12 @@
 	],
 	"medicalRecordNumbers": [
 		{
-			"root": "2.16.840.1.113883.19.5.99999.2",
-			"extension": "998991"
+			"identifier": "2.16.840.1.113883.19.5.99999.2",
+			"identifier_type": "998991"
 		},
 		{
-			"root": "2.16.840.1.113883.4.1",
-			"extension": "111-00-2330"
+			"identifier": "2.16.840.1.113883.4.1",
+			"identifier_type": "111-00-2330"
 		}
 	],
 	"gender": "Female",

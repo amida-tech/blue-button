@@ -1,51 +1,56 @@
-#Problems
+#Immunizations
 
 ###Object Schema:
 ```
-var Problems = {
-        "date": [{
-          "date":{type: datetime, required: true},
-          "precision":{type:string, required: true}
-        }],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: false}
-        }],
-        "negation_indicator": {type: boolean, required: false},
-        "name": {type: string, required: true},
-        "code": {type: string, required: false},
-        "code_system": {type: string, required: false},
-        "onset_age": {type: string, required: false},
-        "onset_age_unit": {type: string, required: false},
-        "status": {type: string, required: false}, 
-        "patient_status": {type: string, required: false},
-        ,
-        "source_list_identifiers": [{
-          "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: true}
-        }]
+  var Immunizations = {
+    "date": [{
+         "date":{type: datetime, required: true},
+         "precision":{type:string, required: true}
+     }],
+     "identifiers": [{
+        "identifier": {type:string, required: true},
+        "identifier_type": {type:string, required: true}
+     }],
+    "product": {
+      "name": "Influenza, high dose seasonal",
+      "code": "135",
+      "code_system": "2.16.840.1.113883.12.292",
+      "code_system_name": "CVX",
+      "translation": {
+        "name": null,
+        "code": null,
+        "code_system": null,
+        "code_system_name": null
       }
+    },
+    "route": {
+      "name": "Intramuscular injection",
+      "code": "C28161",
+      "code_system": "2.16.840.1.113883.3.26.1.1",
+      "code_system_name": "NCI Thesaurus"
+    },
+    "instructions": null,
+    "education_type": {
+      "name": null,
+      "code": null,
+      "code_system": null
+    }
+  }
+
 ```
 
 
 ####Notes
-- Negation indicator saying problem 'wasn't' observed, seems crazy, but important to watch for.
-- Problems can be translated using translation object.
-- Must account for each sub-format and normalize into common model.
-- Need to flip this object so it is granular to the observation level.  The only observation header element which is valuable is an identifier, and a date; the id may be valuable later for matching, and the date represents the time during which the observations were on the problem list.  It's more 'source' data than clinically relevant.
-- Problem type being ignored; seems extraneous for now and semantically subjective.
-- Wrapper 'list' data can be sub object for attribution as source_list.
-- Ignoring text for now, only html reference.
+- Mood code event or intent, seems to determine whether or not the doctor thinks they should do it, or whether it is documentation of an event.
 
-
-####Problem.date
+####Immunization.date
 - 0..2
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/effectiveTime
+- //ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/effectiveTime
 - Should be handled to account for each type of date.
 
-####Problem.identifiers
+####Immunization.identifiers
 - 1..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/id@root
+- //ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id@root
 - Should be handled by common identifier parser.
 
 ####Problem.negation_indicator

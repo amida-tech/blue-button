@@ -117,7 +117,7 @@
 								<high value="20070103"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
-								<observation classCode="OBS" moodCode="EVN">
+								<observation classCode="OBS" moodCode="EVN" negationInd="true">
 									<!-- ** Problem observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
 									<id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
