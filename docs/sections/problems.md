@@ -9,14 +9,14 @@ var Problems = {
         }],
         "identifiers": [{
           "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: true}
+          "identifier_type": {type:string, required: false}
         }],
         "negation_indicator": {type: boolean, required: false},
         "name": {type: string, required: true},
         "code": {type: string, required: false},
         "code_system": {type: string, required: false},
         "onset_age": {type: string, required: false},
-        "onset_age_units": {type: string, required: false},
+        "onset_age_unit": {type: string, required: false},
         "status": {type: string, required: false}, 
         "patient_status": {type: string, required: false},
         ,

@@ -35,6 +35,7 @@
     "assert": "1.1.x",
     "mocha": "1.17.x",
     "chai": "1.8.x",
+    "chai-datetime": "1.1.x",
     "grunt": "0.4.x",
     "grunt-mocha-test": "0.8.x",
     "grunt-contrib-jshint": "0.8.x",
