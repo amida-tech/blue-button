@@ -16,7 +16,7 @@
 			{
 				"code": "422587007",
 				"name": "Nausea",
-				"codeSystem": "2.16.840.1.113883.6.96",
+				"code_system_name": "SNOMED CT",
 				"severity": "Mild"
 			}
 		]
@@ -38,7 +38,7 @@
 			{
 				"code": "56018004",
 				"name": "Wheezing",
-				"codeSystem": "2.16.840.1.113883.6.96",
+				"code_system_name": "SNOMED CT",
 				"severity": "Mild"
 			}
 		]
@@ -60,7 +60,7 @@
 			{
 				"code": "247472004",
 				"name": "Hives",
-				"codeSystem": "2.16.840.1.113883.6.96",
+				"code_system_name": "SNOMED CT",
 				"severity": "Mild to moderate"
 			}
 		]
