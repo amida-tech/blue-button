@@ -1,0 +1,52 @@
+[
+	{
+		"date": [
+			{
+				"date": "2009-02-27T13:00:00.000Z",
+				"precision": "subsecond"
+			}
+		],
+		"locations": [
+			{
+				"name": "Community Urgent Care Center",
+				"type": {
+					"name": "Urgent Care Center",
+					"code": "1160-1",
+					"code_system": "HealthcareServiceLocation",
+					"uri": "http://hl7.org/healthcareservice/1160-1"
+				},
+				"address": {
+					"streetLines": [
+						"17 Daws Rd."
+					],
+					"city": "Blue Bell",
+					"state": "MA",
+					"zip": "02368",
+					"country": "US"
+				}
+			}
+		],
+		"findings": [
+			{
+				"name": "Finding",
+				"code": "404684003",
+				"system": "2.16.840.1.113883.6.96",
+				"code_system": "SNOMED CT",
+				"uri": "http://purl.bioontology.org/ontology/SNOMEDCT/404684003"
+			}
+		],
+		"name": "Office outpatient visit 15 minutes",
+		"code": "99213",
+		"system": "2.16.840.1.113883.6.12",
+		"code_system": "CPT",
+		"translations": [
+			{
+				"name": "Ambulatory",
+				"code": "AMB",
+				"code_system": "HL7ActCode",
+				"uri": "http://hl7.org/actcode/AMB"
+			}
+		],
+		"uri": "http://purl.bioontology.org/ontology/CPT/99213"
+	}
+]
