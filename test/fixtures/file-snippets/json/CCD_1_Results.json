@@ -26,8 +26,7 @@
                     "freeTextValue": "HGB (M 13-18 g/dl; F 12-16\n\t\t\t\t\t\t\t\t\t\t\tg/dl)",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 },
                 {
                     "resultName": {
@@ -48,8 +47,7 @@
                     "freeTextValue": "WBC (4.3-10.8 10+3/ul)",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 },
                 {
                     "resultName": {
@@ -70,12 +68,9 @@
                     "freeTextValue": "PLT (135-145 meq/l)",
                     "interpretations": [
                         "Low"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 }
-            ],
-            "_patient": "https://ccda.smartplatforms.org/patients/0"
+            ]
         }
-    ],
-    "_patient": "https://ccda.smartplatforms.org/patients/0"
+    ]
 }

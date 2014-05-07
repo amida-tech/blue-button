@@ -93,8 +93,7 @@
         ],
         "gender": "Female",
         "birthTime": "1975-05-01T00:00:00.000Z",
-        "birthTimeResolution": "day",
-        "_patient": "https://ccda.smartplatforms.org/patients/0"
+        "birthTimeResolution": "day"
     },
     "vitals": {
         "panels": [
@@ -124,8 +123,7 @@
                         "freeTextValue": "177 cm",
                         "interpretations": [
                             "Normal"
-                        ],
-                        "_patient": "https://ccda.smartplatforms.org/patients/0"
+                        ]
                     },
                     {
                         "vitalName": {
@@ -146,8 +144,7 @@
                         "freeTextValue": "86 kg",
                         "interpretations": [
                             "Normal"
-                        ],
-                        "_patient": "https://ccda.smartplatforms.org/patients/0"
+                        ]
                     },
                     {
                         "vitalName": {
@@ -168,11 +165,9 @@
                         "freeTextValue": "132/86 mmHg",
                         "interpretations": [
                             "Normal"
-                        ],
-                        "_patient": "https://ccda.smartplatforms.org/patients/0"
+                        ]
                     }
-                ],
-                "_patient": "https://ccda.smartplatforms.org/patients/0"
+                ]
             },
             {
                 "panelName": {
@@ -200,8 +195,7 @@
                         "freeTextValue": "177 cm",
                         "interpretations": [
                             "Normal"
-                        ],
-                        "_patient": "https://ccda.smartplatforms.org/patients/0"
+                        ]
                     },
                     {
                         "vitalName": {
@@ -222,8 +216,7 @@
                         "freeTextValue": "88 kg",
                         "interpretations": [
                             "Normal"
-                        ],
-                        "_patient": "https://ccda.smartplatforms.org/patients/0"
+                        ]
                     },
                     {
                         "vitalName": {
@@ -244,14 +237,11 @@
                         "freeTextValue": "145/88 mmHg",
                         "interpretations": [
                             "Normal"
-                        ],
-                        "_patient": "https://ccda.smartplatforms.org/patients/0"
+                        ]
                     }
-                ],
-                "_patient": "https://ccda.smartplatforms.org/patients/0"
+                ]
             }
-        ],
-        "_patient": "https://ccda.smartplatforms.org/patients/0"
+        ]
     },
     "results": {
         "panels": [
@@ -281,8 +271,7 @@
                         "freeTextValue": "HGB (M 13-18 g/dl; F 12-16\n\t\t\t\t\t\t\t\t\t\t\tg/dl)",
                         "interpretations": [
                             "Normal"
-                        ],
-                        "_patient": "https://ccda.smartplatforms.org/patients/0"
+                        ]
                     },
                     {
                         "resultName": {
@@ -303,8 +292,7 @@
                         "freeTextValue": "WBC (4.3-10.8 10+3/ul)",
                         "interpretations": [
                             "Normal"
-                        ],
-                        "_patient": "https://ccda.smartplatforms.org/patients/0"
+                        ]
                     },
                     {
                         "resultName": {
@@ -325,14 +313,11 @@
                         "freeTextValue": "PLT (135-145 meq/l)",
                         "interpretations": [
                             "Low"
-                        ],
-                        "_patient": "https://ccda.smartplatforms.org/patients/0"
+                        ]
                     }
-                ],
-                "_patient": "https://ccda.smartplatforms.org/patients/0"
+                ]
             }
-        ],
-        "_patient": "https://ccda.smartplatforms.org/patients/0"
+        ]
     },
     "medications": {
         "medicationsReported": [
@@ -374,11 +359,9 @@
                         "date": "2012-05-15T00:00:00.000Z",
                         "precision": "day"
                     }
-                ],
-                "_patient": "https://ccda.smartplatforms.org/patients/0"
+                ]
             }
-        ],
-        "_patient": "https://ccda.smartplatforms.org/patients/0"
+        ]
     },
     "encounters": [
                    {
@@ -510,7 +493,6 @@
                         "precision": "month"
                     }
                 ],
-                "_patient": "https://ccda.smartplatforms.org/patients/0",
                 "productName": {
                     "name": "Influenza virus vaccine",
                     "code": "88",
@@ -532,7 +514,6 @@
                         "precision": "day"
                     }
                 ],
-                "_patient": "https://ccda.smartplatforms.org/patients/0",
                 "productName": {
                     "name": "Pneumococcal polysaccharide vaccine",
                     "code": "33",
@@ -556,7 +537,6 @@
                         "precision": "day"
                     }
                 ],
-                "_patient": "https://ccda.smartplatforms.org/patients/0",
                 "productName": {
                     "name": "Influenza virus vaccine",
                     "code": "88",
@@ -579,7 +559,6 @@
                     }
                 ],
                 "skippedFor": "Patient Objection",
-                "_patient": "https://ccda.smartplatforms.org/patients/0",
                 "productName": {
                     "name": "Tetanus and diphtheria toxoids - preservative free",
                     "code": "103",
@@ -593,8 +572,7 @@
                     ]
                 }
             }
-        ],
-        "_patient": "https://ccda.smartplatforms.org/patients/0"
+        ]
     },
     "socialHistory": {
         "smokingStatuses": [
@@ -613,11 +591,9 @@
                         "date": "2009-02-27T13:00:00.000Z",
                         "precision": "subsecond"
                     }
-                ],
-                "_patient": "https://ccda.smartplatforms.org/patients/0"
+                ]
             }
-        ],
-        "_patient": "https://ccda.smartplatforms.org/patients/0"
+        ]
     },
     "problems": {
         "problems": [
@@ -682,6 +658,5 @@
                 ]
             }
         ]
-    },
-    "_patient": "https://ccda.smartplatforms.org/patients/0"
+    }
 }

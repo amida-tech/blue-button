@@ -92,6 +92,5 @@
 	],
 	"gender": "Female",
 	"birthTime": "1975-05-01T00:00:00.000Z",
-	"birthTimeResolution": "day",
-	"_patient": "https://ccda.smartplatforms.org/patients/0"
+	"birthTimeResolution": "day"
 }

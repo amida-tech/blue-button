@@ -38,9 +38,7 @@
                     "date": "2012-05-15T00:00:00.000Z",
                     "precision": "day"
                 }
-            ],
-            "_patient": "https://ccda.smartplatforms.org/patients/0"
+            ]
         }
-    ],
-    "_patient": "https://ccda.smartplatforms.org/patients/0"
+    ]
 }

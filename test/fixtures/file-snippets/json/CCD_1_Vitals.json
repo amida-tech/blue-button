@@ -26,8 +26,7 @@
                     "freeTextValue": "177 cm",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 },
                 {
                     "vitalName": {
@@ -48,8 +47,7 @@
                     "freeTextValue": "86 kg",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 },
                 {
                     "vitalName": {
@@ -70,11 +68,9 @@
                     "freeTextValue": "132/86 mmHg",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 }
-            ],
-            "_patient": "https://ccda.smartplatforms.org/patients/0"
+            ]
         },
         {
             "panelName": {
@@ -102,8 +98,7 @@
                     "freeTextValue": "177 cm",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 },
                 {
                     "vitalName": {
@@ -124,8 +119,7 @@
                     "freeTextValue": "88 kg",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 },
                 {
                     "vitalName": {
@@ -146,12 +140,9 @@
                     "freeTextValue": "145/88 mmHg",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 }
-            ],
-            "_patient": "https://ccda.smartplatforms.org/patients/0"
+            ]
         }
-    ],
-    "_patient": "https://ccda.smartplatforms.org/patients/0"
+    ]
 }

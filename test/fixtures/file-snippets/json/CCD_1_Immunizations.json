@@ -8,7 +8,6 @@
                     "precision": "month"
                 }
             ],
-            "_patient": "https://ccda.smartplatforms.org/patients/0",
             "productName": {
                 "name": "Influenza virus vaccine",
                 "code": "88",
@@ -30,7 +29,6 @@
                     "precision": "day"
                 }
             ],
-            "_patient": "https://ccda.smartplatforms.org/patients/0",
             "productName": {
                 "name": "Pneumococcal polysaccharide vaccine",
                 "code": "33",
@@ -54,7 +52,6 @@
                     "precision": "day"
                 }
             ],
-            "_patient": "https://ccda.smartplatforms.org/patients/0",
             "productName": {
                 "name": "Influenza virus vaccine",
                 "code": "88",
@@ -77,7 +74,6 @@
                 }
             ],
             "skippedFor": "Patient Objection",
-            "_patient": "https://ccda.smartplatforms.org/patients/0",
             "productName": {
                 "name": "Tetanus and diphtheria toxoids - preservative free",
                 "code": "103",
@@ -91,6 +87,5 @@
                 ]
             }
         }
-    ],
-    "_patient": "https://ccda.smartplatforms.org/patients/0"
+    ]
 }
