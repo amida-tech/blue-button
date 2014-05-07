@@ -40,9 +40,9 @@ describe('immunizations parser', function() {
         expect(immunizations.immunizationsGiven[0].route).to.equal('Intramuscular injection');
         expect(immunizations.immunizationsGiven[0].productName).to.exist;
         expect(immunizations.immunizationsGiven[0].productName.code).to.equal('88');
-        expect(immunizations.immunizationsGiven[0].productName.label).to.equal("Influenza virus vaccine");
-        expect(JSON.stringify(immunizations.immunizationsGiven[0].date.point)).to.equal('"1999-11-01T00:00:00.000Z"');
-        expect(immunizations.immunizationsGiven[0].date.pointResolution).to.equal('month');
+        expect(immunizations.immunizationsGiven[0].productName.name).to.equal("Influenza virus vaccine");
+        expect(JSON.stringify(immunizations.immunizationsGiven[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
+        expect(immunizations.immunizationsGiven[0].date[0].precision).to.equal('month');
         
         done();
     });

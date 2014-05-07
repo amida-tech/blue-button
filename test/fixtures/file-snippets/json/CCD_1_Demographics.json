@@ -9,21 +9,21 @@
 	},
 	"maritalStatus": "Married",
 	"religion": {
-		"label": "Christian (non-Catholic, non-specific)",
+		"name": "Christian (non-Catholic, non-specific)",
 		"code": "1013",
-		"systemName": "OID 2.16.840.1.113883.5.1076",
+		"code_system": "OID 2.16.840.1.113883.5.1076",
 		"uri": "urn:oid:2.16.840.1.113883.5.1076#1013"
 	},
 	"race": {
-		"label": "White",
+		"name": "White",
 		"code": "2106-3",
-		"systemName": "CDC Race",
+		"code_system": "CDC Race",
 		"uri": "http://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.238&code=2106-3"
 	},
 	"ethnicity": {
-		"label": "Not Hispanic or Latino",
+		"name": "Not Hispanic or Latino",
 		"code": "2186-5",
-		"systemName": "CDC Race",
+		"code_system": "CDC Race",
 		"uri": "http://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.238&code=2186-5"
 	},
 	"addresses": [
@@ -85,12 +85,12 @@
 	],
 	"medicalRecordNumbers": [
 		{
-			"root": "2.16.840.1.113883.19.5.99999.2",
-			"extension": "998991"
+			"identifier": "2.16.840.1.113883.19.5.99999.2",
+			"identifier_type": "998991"
 		},
 		{
-			"root": "2.16.840.1.113883.4.1",
-			"extension": "111-00-2330"
+			"identifier": "2.16.840.1.113883.4.1",
+			"identifier_type": "111-00-2330"
 		}
 	],
 	"gender": "Female",
