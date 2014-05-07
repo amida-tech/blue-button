@@ -14,7 +14,7 @@ var Problems = {
         "negation_indicator": {type: boolean, required: false},
         "name": {type: string, required: true},
         "code": {type: string, required: false},
-        "code_system": {type: string, required: false},
+        "code_system_name": {type: string, required: false},
         "onset_age": {type: string, required: false},
         "onset_age_unit": {type: string, required: false},
         "status": {type: string, required: false}, 
@@ -69,9 +69,9 @@ var Problems = {
 - Not supported: nullFlavor.
 - TODO:  Support lookup of values from coding system.
 
-####Problem.code_system
+####Problem.code_system_name
 - 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@codeSystem
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@codeSystemName
 - Should always be codified to SNOMED-CT.
 - A translation object is possible instead of SNOMED, to ICD.
 - Not supported: nullFlavor.

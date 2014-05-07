@@ -18,7 +18,7 @@ var Allergies = {
           {
              "code": {type: string, required: true},
              "name": {type: string, required: true},
-             "codeSystem": {type: string, required: true},
+             "code_system_name": {type: string, required: true},
              "severity": {type: string, required: false},
           }
         ]
@@ -64,7 +64,7 @@ var Allergies = {
 - Not supported: nullFlavor.
 - TODO:  Support lookup of values from coding system.
 
-####Allergy.code_system
+####Allergy.code_system_name
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/participant/participantRole/playingEntity/code@codeSystemName
 - Can be be RXNORM, UNII, or NDF-RT.
@@ -103,9 +103,9 @@ var Allergies = {
 - Not supported: nullFlavor.
 - TODO:  Support lookup of values from coding system.
 
-###Allergy.reaction.codeSystem
+###Allergy.reaction.code_system_name
 - 0..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@codeSystem
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@codeSystemName
 - Should be always 2.16.840.1.113883.6.96.
 - Not supported: nullFlavor.
 - TODO:  Support lookup of values from coding system.

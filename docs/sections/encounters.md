@@ -12,13 +12,13 @@ var Encounters = {
         }],
         "name": {type: string, required: true},
         "code": {type: string, required: true},
-        "code_system": {type:string, required: true},
+        "code_system_name": {type:string, required: true},
         "locations": [{
             "name": {type: string, required:true},
             "type": {
                "name": {type: string, required: true},
                "code": {type: string, required: true},
-               "code_system": {type:string, required: true}
+               "code_system_name": {type:string, required: true}
             }
             address: {
                "streetLines": [{type:string, required: true}],
@@ -31,14 +31,14 @@ var Encounters = {
         findings: [{
             "name": {type: string, required: true},
             "code": {type: string, required: true},
-            "code_system": {type:string, required: true}
+            "code_system_name": {type:string, required: true}
         }]
      }
 ```
 
 
 ####Notes
-- Root name, code and code_system can be translated using translation objects.
+- Root name, code and code_system_name can be translated using translation objects.
 - Location name is optional in the specification but required in this model.
 - Specification supports multiple addresses for a single location.  This model does not.
 - Finding might have a date range, a timestamp, or an additional coded value.  These are currently are not supported.
@@ -71,7 +71,7 @@ var Encounters = {
 - Not supported: nullFlavor.
 - TODO:  Support lookup of values from coding system.
 
-####Encounter.code_system
+####Encounter.code_system_name
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/encounter/code@codeSystemName
 - Can be be RXNORM, UNII, or NDF-RT.
@@ -136,7 +136,7 @@ var Encounters = {
 - //ClinicalDocument/component/structuredBody/component/section/entry/encounter/entryRelationShip/observation/value/@code
 - See Encounter.finding.name.
 
-###Encounter.finding.code_system
+###Encounter.finding.code_system_name
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/encounter/entryRelationShip/observation/value/@codeSystemName
 - See Encounter.finding.name.

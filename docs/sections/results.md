@@ -14,7 +14,7 @@ var Result = {
         "status": {type: string, required: true},
         "name": {type: string, required: true},
         "code": {type: string, required: false},
-        "code_system": {type: string, required: false},
+        "code_system_name": {type: string, required: false},
         "value": {type: string, required: false},
         "unit": {type: string, required: false},
         "reference_range": {
@@ -27,7 +27,7 @@ var Result = {
         "category": {
            "name": {type: string, required: true},
            "code": {type: string, required: true},
-           "code_system": {type: string, required: true}
+           "code_system_name": {type: string, required: true}
         }
       }
 ```
@@ -71,7 +71,7 @@ var Result = {
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/code
 - Listed as not required to support uncoded or local datasets.
 
-####Result.code_system
+####Result.code_system_name
 - 0..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/codeSystemName
 - Listed as not required to support uncoded or local datasets.
@@ -123,7 +123,7 @@ var Result = {
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/code@code
 
-####Result.category.code_system
+####Result.category.code_system_name
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/code@codeSystemName
 - Can be overwritten based on coding system during normalization.
