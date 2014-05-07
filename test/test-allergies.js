@@ -37,10 +37,10 @@ describe('allergies parser', function() {
         expect(allergies).to.exist;
         expect(allergies).to.have.length(3);
         
-        expect(allergies[1].dateRange).to.exist;
-        expect(allergies[1].dateRange).to.have.length(1);
+        expect(allergies[1].date).to.exist;
+        expect(allergies[1].date).to.have.length(1);
 
-        expect(JSON.stringify(allergies[1].dateRange[0].date)).to.equal('"2006-05-01T00:00:00.000Z"');
+        expect(JSON.stringify(allergies[1].date[0].date)).to.equal('"2006-05-01T00:00:00.000Z"');
 
         expect(allergies[1].severity).to.equal('Moderate');
         expect(allergies[1].status).to.equal('Active');
