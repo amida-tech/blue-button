@@ -189,7 +189,7 @@ var cda_address = {
 - assignedEntity seems to be the defacto element within, which is also poorly documented.
 - Will attempt to parse what I can based on demo files.  Everything under here is highly speculative.
 
-####Immunization.performer.id
+####Immunization.performer.identifier
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/id
 - Should be parsed using standard identifier parser.
@@ -249,4 +249,4 @@ var cda_address = {
 ####Immunization.refusal_reason
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/entryRelationship/observation/code@displayName
-- Should probably be recoded, set small enough.  2.16.840.1.113883.1.11.19717
+- Should probably be recoded, set small enough.  2.16.840.1.113883.5.8
