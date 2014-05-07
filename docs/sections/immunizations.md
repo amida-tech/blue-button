@@ -12,10 +12,11 @@
         "identifier_type": {type:string, required: true}
      }],
     "status": {type:string: required: true},
-    "name": {type:string, required: true},
-    "code": {type:string, required: true},
     "sequence_number": {type:string, required:false},
     "product": {
+      "name": {type:string, required: true},
+      "code": {type:string, required: true},
+      "code_system": {type:string, required: true},
       "translations": [{
         "name": {type:string, required: false},
         "code": {type:string, required: false},
@@ -151,7 +152,6 @@ var cda_address = {
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturerOrganization/name
 - May support more than just a name element, not sure.  However, just supporting name for now.
-
 
 ####Immunization.administration
 - 0..1
