@@ -12,20 +12,17 @@
         "religion": {
             "name": "Christian (non-Catholic, non-specific)",
             "code": "1013",
-            "code_system": "OID 2.16.840.1.113883.5.1076",
-            "uri": "urn:oid:2.16.840.1.113883.5.1076#1013"
+            "code_system_name": "OID 2.16.840.1.113883.5.1076"
         },
         "race": {
             "name": "White",
             "code": "2106-3",
-            "code_system": "CDC Race",
-            "uri": "http://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.238&code=2106-3"
+            "code_system_name": "CDC Race"
         },
         "ethnicity": {
             "name": "Not Hispanic or Latino",
             "code": "2186-5",
-            "code_system": "CDC Race",
-            "uri": "http://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.238&code=2186-5"
+            "code_system_name": "CDC Race"
         },
         "addresses": [
             {
@@ -105,16 +102,14 @@
                 "panelName": {
                     "name": "Vital signs",
                     "code": "46680005",
-                    "code_system": "SNOMED CT",
-                    "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/46680005"
+                    "code_system_name": "SNOMED CT"
                 },
                 "vitals": [
                     {
                         "vitalName": {
                             "name": "Height",
                             "code": "8302-2",
-                            "code_system": "LOINC",
-                            "uri": "http://purl.bioontology.org/ontology/LNC/8302-2"
+                            "code_system_name": "LOINC"
                         },
                         "measuredAt": [
                             {
@@ -136,8 +131,7 @@
                         "vitalName": {
                             "name": "Patient Body Weight - Measured",
                             "code": "3141-9",
-                            "code_system": "LOINC",
-                            "uri": "http://purl.bioontology.org/ontology/LNC/3141-9"
+                            "code_system_name": "LOINC"
                         },
                         "measuredAt": [
                             {
@@ -159,8 +153,7 @@
                         "vitalName": {
                             "name": "Intravascular Systolic",
                             "code": "8480-6",
-                            "code_system": "LOINC",
-                            "uri": "http://purl.bioontology.org/ontology/LNC/8480-6"
+                            "code_system_name": "LOINC"
                         },
                         "measuredAt": [
                             {
@@ -185,16 +178,14 @@
                 "panelName": {
                     "name": "Vital signs",
                     "code": "46680005",
-                    "code_system": "SNOMED CT",
-                    "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/46680005"
+                    "code_system_name": "SNOMED CT"
                 },
                 "vitals": [
                     {
                         "vitalName": {
                             "name": "Height",
                             "code": "8302-2",
-                            "code_system": "LOINC",
-                            "uri": "http://purl.bioontology.org/ontology/LNC/8302-2"
+                            "code_system_name": "LOINC"
                         },
                         "measuredAt": [
                             {
@@ -216,8 +207,7 @@
                         "vitalName": {
                             "name": "Patient Body Weight - Measured",
                             "code": "3141-9",
-                            "code_system": "LOINC",
-                            "uri": "http://purl.bioontology.org/ontology/LNC/3141-9"
+                            "code_system_name": "LOINC"
                         },
                         "measuredAt": [
                             {
@@ -239,8 +229,7 @@
                         "vitalName": {
                             "name": "Intravascular Systolic",
                             "code": "8480-6",
-                            "code_system": "LOINC",
-                            "uri": "http://purl.bioontology.org/ontology/LNC/8480-6"
+                            "code_system_name": "LOINC"
                         },
                         "measuredAt": [
                             {
@@ -270,16 +259,14 @@
                 "panelName": {
                     "name": "CBC WO DIFFERENTIAL",
                     "code": "43789009",
-                    "code_system": "SNOMED CT",
-                    "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/43789009"
+                    "code_system_name": "SNOMED CT"
                 },
                 "results": [
                     {
                         "resultName": {
                             "name": "HGB",
                             "code": "30313-1",
-                            "code_system": "LOINC",
-                            "uri": "http://purl.bioontology.org/ontology/LNC/30313-1"
+                            "code_system_name": "LOINC"
                         },
                         "measuredAt": [
                             {
@@ -301,8 +288,7 @@
                         "resultName": {
                             "name": "WBC",
                             "code": "33765-9",
-                            "code_system": "LOINC",
-                            "uri": "http://purl.bioontology.org/ontology/LNC/33765-9"
+                            "code_system_name": "LOINC"
                         },
                         "measuredAt": [
                             {
@@ -324,8 +310,7 @@
                         "resultName": {
                             "name": "PLT",
                             "code": "26515-7",
-                            "code_system": "LOINC",
-                            "uri": "http://purl.bioontology.org/ontology/LNC/26515-7"
+                            "code_system_name": "LOINC"
                         },
                         "measuredAt": [
                             {
@@ -356,8 +341,7 @@
                 "administrationUnit": {
                     "name": "INHALANT",
                     "code": "C42944",
-                    "code_system": "NCI Thesaurus",
-                    "uri": "http://nci-thesaurus-look-me-up#C42944"
+                    "code_system_name": "NCI Thesaurus"
                 },
                 "freeTextSig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
                 "dose": {
@@ -371,16 +355,14 @@
                 "productName": {
                     "name": "Proventil HFA",
                     "code": "219483",
-                    "code_system": "RXNORM",
+                    "code_system_name": "RXNORM",
                     "translations": [
                         {
                             "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
                             "code": "573621",
-                            "code_system": "RXNORM",
-                            "uri": "http://purl.bioontology.org/ontology/RXNORM/573621"
+                            "code_system_name": "RXNORM"
                         }
-                    ],
-                    "uri": "http://purl.bioontology.org/ontology/RXNORM/219483"
+                    ]
                 },
                 "freeTextProductName": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
                 "dateRange": [
@@ -417,8 +399,7 @@
                                "type": {
                                    "name": "Urgent Care Center",
                                    "code": "1160-1",
-                                   "code_system": "HealthcareServiceLocation",
-                                   "uri": "http://hl7.org/healthcareservice/1160-1"
+                                   "code_system_name": "HealthcareServiceLocation"
                                },
                                "address": {
                                    "streetLines": [
@@ -435,24 +416,19 @@
                            {
                                "name": "Pneumonia",
                                "code": "233604007",
-                               "system": "2.16.840.1.113883.6.96",
-                               "code_system": "SNOMED CT",
-                               "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/233604007"
+                               "code_system_name": "SNOMED CT"
                            }
                        ],
                        "name": "Office outpatient visit 15 minutes",
                        "code": "99213",
-                       "system": "2.16.840.1.113883.6.12",
-                       "code_system": "CPT",
+                       "code_system_name": "CPT",
                        "translations": [
                            {
                                "name": "Ambulatory",
                                "code": "AMB",
-                               "code_system": "HL7ActCode",
-                               "uri": "http://hl7.org/actcode/AMB"
+                               "code_system_name": "HL7ActCode"
                            }
-                       ],
-                       "uri": "http://purl.bioontology.org/ontology/CPT/99213"
+                       ]
                    }
                ],
     "allergies": [
@@ -466,8 +442,7 @@
                       ],
                       "name": "ALLERGENIC EXTRACT, PENICILLIN",
                       "code": "314422",
-                      "code_system": "RXNORM",
-                      "uri": "http://purl.bioontology.org/ontology/RXNORM/314422",
+                      "code_system_name": "RXNORM",
                       "severity": "Moderate to severe",
                       "status": "Inactive",
                       "reaction": [
@@ -489,8 +464,7 @@
                       ],
                       "name": "Codeine",
                       "code": "2670",
-                      "code_system": "RXNORM",
-                      "uri": "http://purl.bioontology.org/ontology/RXNORM/2670",
+                      "code_system_name": "RXNORM",
                       "severity": "Moderate",
                       "status": "Active",
                       "reaction": [
@@ -512,8 +486,7 @@
                       ],
                       "name": "Aspirin",
                       "code": "1191",
-                      "code_system": "RXNORM",
-                      "uri": "http://purl.bioontology.org/ontology/RXNORM/1191",
+                      "code_system_name": "RXNORM",
                       "severity": "Mild to moderate",
                       "status": "Active",
                       "reaction": [
@@ -541,16 +514,14 @@
                 "productName": {
                     "name": "Influenza virus vaccine",
                     "code": "88",
-                    "code_system": "OID 2.16.840.1.113883.12.292",
+                    "code_system_name": "OID 2.16.840.1.113883.12.292",
                     "translations": [
                         {
                             "name": "Influenza, seasonal, injectable",
                             "code": "141",
-                            "code_system": "OID 2.16.840.1.113883.12.292",
-                            "uri": "urn:oid:2.16.840.1.113883.12.292#141"
+                            "code_system_name": "OID 2.16.840.1.113883.12.292"
                         }
-                    ],
-                    "uri": "urn:oid:2.16.840.1.113883.12.292#88"
+                    ]
                 }
             },
             {
@@ -565,16 +536,14 @@
                 "productName": {
                     "name": "Pneumococcal polysaccharide vaccine",
                     "code": "33",
-                    "code_system": "OID 2.16.840.1.113883.12.292",
+                    "code_system_name": "OID 2.16.840.1.113883.12.292",
                     "translations": [
                         {
                             "name": "Pneumococcal NOS",
                             "code": "109",
-                            "code_system": "OID 2.16.840.1.113883.12.292",
-                            "uri": "urn:oid:2.16.840.1.113883.12.292#109"
+                            "code_system_name": "OID 2.16.840.1.113883.12.292"
                         }
-                    ],
-                    "uri": "urn:oid:2.16.840.1.113883.12.292#33"
+                    ]
                 }
             }
         ],
@@ -591,16 +560,14 @@
                 "productName": {
                     "name": "Influenza virus vaccine",
                     "code": "88",
-                    "code_system": "OID 2.16.840.1.113883.12.292",
+                    "code_system_name": "OID 2.16.840.1.113883.12.292",
                     "translations": [
                         {
                             "name": "Influenza, seasonal, injectable",
                             "code": "141",
-                            "code_system": "OID 2.16.840.1.113883.12.292",
-                            "uri": "urn:oid:2.16.840.1.113883.12.292#141"
+                            "code_system_name": "OID 2.16.840.1.113883.12.292"
                         }
-                    ],
-                    "uri": "urn:oid:2.16.840.1.113883.12.292#88"
+                    ]
                 }
             },
             {
@@ -616,16 +583,14 @@
                 "productName": {
                     "name": "Tetanus and diphtheria toxoids - preservative free",
                     "code": "103",
-                    "code_system": "OID 2.16.840.1.113883.12.292",
+                    "code_system_name": "OID 2.16.840.1.113883.12.292",
                     "translations": [
                         {
                             "name": "Tetanus and diphtheria toxoids - preservative free",
                             "code": "09",
-                            "code_system": "OID 2.16.840.1.113883.12.292",
-                            "uri": "urn:oid:2.16.840.1.113883.12.292#09"
+                            "code_system_name": "OID 2.16.840.1.113883.12.292"
                         }
-                    ],
-                    "uri": "urn:oid:2.16.840.1.113883.12.292#103"
+                    ]
                 }
             }
         ],
@@ -637,8 +602,7 @@
                 "smokingStatus": {
                     "name": "Former smoker",
                     "code": "8517006",
-                    "code_system": "SNOMED CT",
-                    "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/8517006"
+                    "code_system_name": "SNOMED CT"
                 },
                 "dateRange": [
                     {
@@ -676,7 +640,7 @@
                 "negation_indicator": false,
                 "name": "Pneumonia",
                 "code": "233604007",
-                "code_system": "SNOMED CT",
+                "code_system_name": "SNOMED CT",
                 "onset_age": "57",
                 "onset_age_unit": "Year",
                 "status": "Resolved",
@@ -706,7 +670,7 @@
                 "negation_indicator": false,
                 "name": "Asthma",
                 "code": "195967001",
-                "code_system": "SNOMED CT",
+                "code_system_name": "SNOMED CT",
                 "onset_age": "57",
                 "onset_age_unit": "Year",
                 "status": "Active",
