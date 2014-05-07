@@ -2,17 +2,17 @@
     "panels": [
         {
             "panelName": {
-                "label": "CBC WO DIFFERENTIAL",
+                "name": "CBC WO DIFFERENTIAL",
                 "code": "43789009",
-                "systemName": "SNOMED CT",
+                "code_system": "SNOMED CT",
                 "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/43789009"
             },
             "results": [
                 {
                     "resultName": {
-                        "label": "HGB",
+                        "name": "HGB",
                         "code": "30313-1",
-                        "systemName": "LOINC",
+                        "code_system": "LOINC",
                         "uri": "http://purl.bioontology.org/ontology/LNC/30313-1"
                     },
                     "measuredAt": [
@@ -33,9 +33,9 @@
                 },
                 {
                     "resultName": {
-                        "label": "WBC",
+                        "name": "WBC",
                         "code": "33765-9",
-                        "systemName": "LOINC",
+                        "code_system": "LOINC",
                         "uri": "http://purl.bioontology.org/ontology/LNC/33765-9"
                     },
                     "measuredAt": [
@@ -56,9 +56,9 @@
                 },
                 {
                     "resultName": {
-                        "label": "PLT",
+                        "name": "PLT",
                         "code": "26515-7",
-                        "systemName": "LOINC",
+                        "code_system": "LOINC",
                         "uri": "http://purl.bioontology.org/ontology/LNC/26515-7"
                     },
                     "measuredAt": [

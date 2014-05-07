@@ -10,14 +10,14 @@
             ],
             "_patient": "https://ccda.smartplatforms.org/patients/0",
             "productName": {
-                "label": "Influenza virus vaccine",
+                "name": "Influenza virus vaccine",
                 "code": "88",
-                "systemName": "OID 2.16.840.1.113883.12.292",
+                "code_system": "OID 2.16.840.1.113883.12.292",
                 "translations": [
                     {
-                        "label": "Influenza, seasonal, injectable",
+                        "name": "Influenza, seasonal, injectable",
                         "code": "141",
-                        "systemName": "OID 2.16.840.1.113883.12.292",
+                        "code_system": "OID 2.16.840.1.113883.12.292",
                         "uri": "urn:oid:2.16.840.1.113883.12.292#141"
                     }
                 ],
@@ -34,14 +34,14 @@
             ],
             "_patient": "https://ccda.smartplatforms.org/patients/0",
             "productName": {
-                "label": "Pneumococcal polysaccharide vaccine",
+                "name": "Pneumococcal polysaccharide vaccine",
                 "code": "33",
-                "systemName": "OID 2.16.840.1.113883.12.292",
+                "code_system": "OID 2.16.840.1.113883.12.292",
                 "translations": [
                     {
-                        "label": "Pneumococcal NOS",
+                        "name": "Pneumococcal NOS",
                         "code": "109",
-                        "systemName": "OID 2.16.840.1.113883.12.292",
+                        "code_system": "OID 2.16.840.1.113883.12.292",
                         "uri": "urn:oid:2.16.840.1.113883.12.292#109"
                     }
                 ],
@@ -60,14 +60,14 @@
             ],
             "_patient": "https://ccda.smartplatforms.org/patients/0",
             "productName": {
-                "label": "Influenza virus vaccine",
+                "name": "Influenza virus vaccine",
                 "code": "88",
-                "systemName": "OID 2.16.840.1.113883.12.292",
+                "code_system": "OID 2.16.840.1.113883.12.292",
                 "translations": [
                     {
-                        "label": "Influenza, seasonal, injectable",
+                        "name": "Influenza, seasonal, injectable",
                         "code": "141",
-                        "systemName": "OID 2.16.840.1.113883.12.292",
+                        "code_system": "OID 2.16.840.1.113883.12.292",
                         "uri": "urn:oid:2.16.840.1.113883.12.292#141"
                     }
                 ],
@@ -85,14 +85,14 @@
             "skippedFor": "Patient Objection",
             "_patient": "https://ccda.smartplatforms.org/patients/0",
             "productName": {
-                "label": "Tetanus and diphtheria toxoids - preservative free",
+                "name": "Tetanus and diphtheria toxoids - preservative free",
                 "code": "103",
-                "systemName": "OID 2.16.840.1.113883.12.292",
+                "code_system": "OID 2.16.840.1.113883.12.292",
                 "translations": [
                     {
-                        "label": "Tetanus and diphtheria toxoids - preservative free",
+                        "name": "Tetanus and diphtheria toxoids - preservative free",
                         "code": "09",
-                        "systemName": "OID 2.16.840.1.113883.12.292",
+                        "code_system": "OID 2.16.840.1.113883.12.292",
                         "uri": "urn:oid:2.16.840.1.113883.12.292#09"
                     }
                 ],

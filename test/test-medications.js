@@ -39,7 +39,7 @@ describe('medications parser', function() {
         
         expect(meds.medicationsReported[0].route).to.equal('RESPIRATORY (INHALATION)');
         expect(meds.medicationsReported[0].productName).to.exist;
-        expect(meds.medicationsReported[0].productName.label).to.equal('Proventil HFA');
+        expect(meds.medicationsReported[0].productName.name).to.equal('Proventil HFA');
         expect(meds.medicationsReported[0].productName.code).to.equal('219483');
 
         //expect(meds.medicationsReported[0].productName.code).to.equal('219483');

@@ -3,9 +3,9 @@
         {
             "route": "RESPIRATORY (INHALATION)",
             "administrationUnit": {
-                "label": "INHALANT",
+                "name": "INHALANT",
                 "code": "C42944",
-                "systemName": "NCI Thesaurus",
+                "code_system": "NCI Thesaurus",
                 "uri": "http://nci-thesaurus-look-me-up#C42944"
             },
             "freeTextSig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
@@ -18,14 +18,14 @@
                 "unit": "ml/min"
             },
             "productName": {
-                "label": "Proventil HFA",
+                "name": "Proventil HFA",
                 "code": "219483",
-                "systemName": "RXNORM",
+                "code_system": "RXNORM",
                 "translations": [
                     {
-                        "label": "Proventil 0.09 MG/ACTUAT inhalant solution",
+                        "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
                         "code": "573621",
-                        "systemName": "RXNORM",
+                        "code_system": "RXNORM",
                         "uri": "http://purl.bioontology.org/ontology/RXNORM/573621"
                     }
                 ],

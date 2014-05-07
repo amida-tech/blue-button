@@ -4,16 +4,16 @@
 			"date": "2007-05-01T00:00:00.000Z",
 			"precision": "day"
 		}],
-		"label": "ALLERGENIC EXTRACT, PENICILLIN",
+		"name": "ALLERGENIC EXTRACT, PENICILLIN",
 		"code": "314422",
-		"systemName": "RXNORM",
+		"code_system": "RXNORM",
 		"uri": "http://purl.bioontology.org/ontology/RXNORM/314422",
 		"severity": "Moderate to severe",
 		"status": "Inactive",
 		"reaction": [
 			{
 				"code": "422587007",
-				"label": "Nausea",
+				"name": "Nausea",
 				"codeSystem": "2.16.840.1.113883.6.96",
 				"severity": "Mild"
 			}
@@ -24,16 +24,16 @@
 			"date": "2006-05-01T00:00:00.000Z",
 			"precision": "day"
 		}],
-		"label": "Codeine",
+		"name": "Codeine",
 		"code": "2670",
-		"systemName": "RXNORM",
+		"code_system": "RXNORM",
 		"uri": "http://purl.bioontology.org/ontology/RXNORM/2670",
 		"severity": "Moderate",
 		"status": "Active",
 		"reaction": [
 			{
 				"code": "56018004",
-				"label": "Wheezing",
+				"name": "Wheezing",
 				"codeSystem": "2.16.840.1.113883.6.96",
 				"severity": "Mild"
 			}
@@ -44,16 +44,16 @@
 			"date": "2008-05-01T00:00:00.000Z",
 			"precision": "day"
 		}],
-		"label": "Aspirin",
+		"name": "Aspirin",
 		"code": "1191",
-		"systemName": "RXNORM",
+		"code_system": "RXNORM",
 		"uri": "http://purl.bioontology.org/ontology/RXNORM/1191",
 		"severity": "Mild to moderate",
 		"status": "Active",
 		"reaction": [
 			{
 				"code": "247472004",
-				"label": "Hives",
+				"name": "Hives",
 				"codeSystem": "2.16.840.1.113883.6.96",
 				"severity": "Mild to moderate"
 			}

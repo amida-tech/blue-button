@@ -38,14 +38,14 @@ describe('vitals parser', function() {
         
         expect(vitals.panels[0].vitals).to.have.length(3);
         expect(vitals.panels[0].vitals[0].vitalName).exist;
-        expect(vitals.panels[0].vitals[0].vitalName.label).to.equal('Height');
+        expect(vitals.panels[0].vitals[0].vitalName.name).to.equal('Height');
         expect(vitals.panels[0].vitals[0].physicalQuantity).exist;
         expect(vitals.panels[0].vitals[0].physicalQuantity.value).to.equal(177);
         expect(vitals.panels[0].vitals[0].physicalQuantity.unit).to.equal('cm');
 
         expect(vitals.panels[1].vitals).to.have.length(3);
         expect(vitals.panels[1].vitals[1].vitalName).exist;
-        expect(vitals.panels[1].vitals[1].vitalName.label).to.equal('Patient Body Weight - Measured');
+        expect(vitals.panels[1].vitals[1].vitalName.name).to.equal('Patient Body Weight - Measured');
         expect(vitals.panels[1].vitals[1].physicalQuantity).exist;
         expect(vitals.panels[1].vitals[1].physicalQuantity.value).to.equal(88);
         expect(vitals.panels[1].vitals[1].physicalQuantity.unit).to.equal('kg');
