@@ -4,7 +4,7 @@
 ###Note:  JSON doesn't currently have a standard schema language; consequently these models are written to be used in a [Mongoose.js]("http://www.mongoosejs.com") compatible schema.
 
 ###Required Sections:
-####[Allergies](sections/allergies.md) - TBD
+####[Allergies](sections/allergies.md) - Draft
 ####[Medications](sections/medications.md) - TBD
 ####[Problems](sections/problems.md) - Draft
 ####[Results](sections/results.md) - Draft
