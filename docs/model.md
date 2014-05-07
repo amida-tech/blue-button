@@ -12,13 +12,8 @@
 
 ###Optional Sections:
 ####[Procedures](sections/procedures.md) -TBD
-<<<<<<< HEAD
-####[Encounters](sections/encounters.md) -TBD
-####[Immunizations](sections/immunizations.md) - Draft
-=======
 ####[Encounters](sections/encounters.md) - Draft
-####[Immunizations](sections/immunizations.md) -TBD
->>>>>>> master
+####[Immunizations](sections/immunizations.md) - Draft
 ####[Vitals](sections/vitals.md) - Draft
 
 ###Unsupported Sections/Components:
