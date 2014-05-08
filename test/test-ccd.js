@@ -102,17 +102,17 @@ describe('full ccd parser', function() {
         done();
     });
     
-    xit('immunizations spot check', function(done) {
+    it('immunizations spot check', function(done) {
         expect(ccd.immunizations).to.exist;
-        expect(ccd.immunizations.immunizationsGiven).to.exist;
-        expect(ccd.immunizations.immunizationsGiven).to.have.length(2);
+        expect(ccd.immunizations.immunizations).to.exist;
+        expect(ccd.immunizations.immunizations).to.have.length(4);
         
-        expect(ccd.immunizations.immunizationsGiven[0].route).to.equal('Intramuscular injection');
-        expect(ccd.immunizations.immunizationsGiven[0].productName).to.exist;
-        expect(ccd.immunizations.immunizationsGiven[0].productName.code).to.equal('88');
-        expect(ccd.immunizations.immunizationsGiven[0].productName.name).to.equal("Influenza virus vaccine");
-        expect(JSON.stringify(ccd.immunizations.immunizationsGiven[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
-        expect(ccd.immunizations.immunizationsGiven[0].date[0].precision).to.equal('month');
+        expect(ccd.immunizations.immunizations[0].administration.route.name).to.equal('Intramuscular injection');
+        expect(ccd.immunizations.immunizations[0].product.name).to.exist;
+        expect(ccd.immunizations.immunizations[0].product.code).to.equal('88');
+        expect(ccd.immunizations.immunizations[0].product.name).to.equal("Influenza virus vaccine");
+        expect(JSON.stringify(ccd.immunizations.immunizations[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
+        expect(ccd.immunizations.immunizations[0].date[0].precision).to.equal('month');
         
         done();
     });

@@ -17,7 +17,7 @@ var loadRecord = function(done) {
     }, function(err, result) {
         immunizations = result.toJSON();
         jsutil.deepDelete(immunizations, '_id');
-        console.log(JSON.stringify(immunizations, null, 4));
+        //console.log(JSON.stringify(immunizations, null, 4));
         done();
     });
 };
@@ -36,7 +36,7 @@ describe('immunizations parser', function() {
         }
     });
 
-    xit('full deep check', function(done) {
+    it('full deep check', function(done) {
         expect(immunizations).to.exist;
         var filepath = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Immunizations.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
@@ -45,18 +45,18 @@ describe('immunizations parser', function() {
         done();
     });
 
-    xit('spot check', function(done) {
+    it('spot check', function(done) {
         expect(immunizations).to.exist;
-        expect(immunizations.immunizationsGiven).to.exist;
-        expect(immunizations.immunizationsGiven).to.have.length(2);
-
-        expect(immunizations.immunizationsGiven[0].route).to.equal('Intramuscular injection');
-        expect(immunizations.immunizationsGiven[0].productName).to.exist;
-        expect(immunizations.immunizationsGiven[0].productName.code).to.equal('88');
-        expect(immunizations.immunizationsGiven[0].productName.name).to.equal("Influenza virus vaccine");
-        expect(JSON.stringify(immunizations.immunizationsGiven[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
-        expect(immunizations.immunizationsGiven[0].date[0].precision).to.equal('month');
-
+        expect(immunizations.immunizations).to.exist;
+        expect(immunizations.immunizations).to.have.length(4);
+        
+        expect(immunizations.immunizations[0].administration.route.name).to.equal('Intramuscular injection');
+        expect(immunizations.immunizations[0].product.name).to.exist;
+        expect(immunizations.immunizations[0].product.code).to.equal('88');
+        expect(immunizations.immunizations[0].product.name).to.equal("Influenza virus vaccine");
+        expect(JSON.stringify(immunizations.immunizations[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
+        expect(immunizations.immunizations[0].date[0].precision).to.equal('month');
+        
         done();
     });
 });
@@ -176,9 +176,9 @@ describe('Immunizations - Schema Conformance', function() {
             var currentImmunization = immunizations.immunizations[i];
 
             if (currentImmunization.administration) {
-                assert.isObject(currentImmunization.administration, 'administration should be array');
+                assert.isObject(currentImmunization.administration, 'administration should be object');
                 if (currentImmunization.administration.route) {
-                    assert.isObject(currentImmunization.administration.route, 'route should be an object');              
+                    assert.isObject(currentImmunization.administration.route, 'route should be an object');
                     assert.isString(currentImmunization.administration.route.name, 'route name should be a string');
                     assert.ok(currentImmunization.administration.route.name.length > 0, 'route name should have length');
                     assert.isString(currentImmunization.administration.route.code, 'route name should be a string');
@@ -188,32 +188,152 @@ describe('Immunizations - Schema Conformance', function() {
                     assert.includeMembers(['NCI Thesaurus'], new Array(currentImmunization.administration.route.code_system_name), 'route system name should be known value');
                 }
                 if (currentImmunization.administration.body_site) {
-                    assert.isObject(currentImmunization.administration.body_site, 'site should be an object');              
+                    assert.isObject(currentImmunization.administration.body_site, 'site should be an object');
                     assert.isString(currentImmunization.administration.body_site.name, 'site name should be a string');
                     assert.ok(currentImmunization.administration.body_site.name.length > 0, 'site name should have length');
                     assert.isString(currentImmunization.administration.body_site.code, 'site name should be a string');
                     assert.ok(currentImmunization.administration.body_site.code.length > 0, 'site name should have length');
                     assert.isString(currentImmunization.administration.body_site.code_system_name, 'site system name should be a string');
                     assert.ok(currentImmunization.administration.body_site.code_system_name.length > 0, 'site system name should have length');
-                    assert.includeMembers(['SNOMED CT'], new Array(currentImmunization.administration.site.code_system_name), 'site system name should be known value'); 
+                    assert.includeMembers(['SNOMED CT'], new Array(currentImmunization.administration.site.code_system_name), 'site system name should be known value');
                 }
                 if (currentImmunization.administration.quantity) {
-                    assert.isObject(currentImmunization.administration.quantity, 'quantity should be an object');              
+                    assert.isObject(currentImmunization.administration.quantity, 'quantity should be an object');
                     assert.isNumber(currentImmunization.administration.quantity.value, 'quantity value should be a number');
                     assert.ok(currentImmunization.administration.quantity.value > 0, 'quantity value should be positive');
                     assert.isString(currentImmunization.administration.quantity.unit, 'quantity unit should be a string');
                     assert.ok(currentImmunization.administration.quantity.unit.length > 0, 'quantity unit should have length');
                 }
                 if (currentImmunization.administration.form) {
-                    assert.isObject(currentImmunization.administration.form, 'form should be an object');              
+                    assert.isObject(currentImmunization.administration.form, 'form should be an object');
                     assert.isString(currentImmunization.administration.form.name, 'form name should be a string');
                     assert.ok(currentImmunization.administration.form.name.length > 0, 'form name should have length');
                     assert.isString(currentImmunization.administration.form.code, 'form name should be a string');
                     assert.ok(currentImmunization.administration.form.code.length > 0, 'form name should have length');
                     assert.isString(currentImmunization.administration.form.code_system_name, 'form system name should be a string');
                     assert.ok(currentImmunization.administration.form.code_system_name.length > 0, 'form system name should have length');
-                    assert.includeMembers(['NCI Thesaurus'], new Array(currentImmunization.administration.site.code_system_name), 'site system name should be known value'); 
+                    assert.includeMembers(['NCI Thesaurus'], new Array(currentImmunization.administration.site.code_system_name), 'site system name should be known value');
                 }
+            }
+        }
+        done();
+    });
+
+    it('Immunization Structure - Performer', function(done) {
+        for (var i in immunizations.immunizations) {
+            var currentImmunization = immunizations.immunizations[i];
+
+            if (currentImmunization.performer) {
+                assert.isObject(currentImmunization.performer, 'performer should be object');
+
+                if (currentImmunization.performer.identifiers) {
+                    for (var ii in currentImmunization.performer.identifiers) {
+                        var currentId = currentImmunization.performer.identifiers[ii];
+                        assert.isString(currentId.identifier, 'Identifier should be a string');
+                        assert.ok(currentId.identifier.length > 0, 'Identifier should have content');
+                        //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                    }
+                }
+
+                if (currentImmunization.performer.name) {
+                    for (var iname in currentImmunization.performer.name) {
+                        var currentName = currentImmunization.performer.name[iname];
+                        if (currentName.prefix) {
+                            assert.isString(currentName.prefix, "Prefix should be string");
+                            assert.ok(currentName.prefix.length > 0, 'Prefix should have content');
+                        }
+                        if (currentName.first) {
+                            assert.isString(currentName.first, "First Name should be string");
+                            assert.ok(currentName.first.length > 0, 'First Name should have content');
+                        }
+                        if (currentName.middle) {
+                            assert.isArray(currentName.middle, "Middle Name should be string");
+                            assert.ok(currentName.middle.length > 0, 'Middle Name should have content');
+                        }
+                        if (currentName.last) {
+                            assert.isString(currentName.last, "Last Name should be string");
+                            assert.ok(currentName.last.length > 0, 'Last Name should have content');
+                        }
+                        if (currentName.suffix) {
+                            assert.isString(currentName.suffix, "Suffix should be string");
+                            assert.ok(currentName.suffix.length > 0, 'Suffix should have content');
+                        }
+                    }
+                }
+
+                if (currentImmunization.performer.address) {
+                    for (var iaddr in currentImmunization.performer.address) {
+                        var currentAddress = currentImmunization.performer.address[iaddr];
+                        assert.isArray(currentAddress.streetLines, 'street should be array');
+                        assert.ok(currentAddress.streetLines.length < 4, 'max four street lines');
+                        for (var iline in currentAddress.streetLines) {
+                            assert.isString(currentAddress.streetLines[iline], 'street lines should be string');
+                            assert.ok(currentAddress.streetLines[iline].length > 0, 'street lines should have content');
+                        }
+                        assert.isString(currentAddress.city, 'city should be string');
+                        assert.ok(currentAddress.city.length > 0, 'city should have content');
+                        assert.isString(currentAddress.state, 'state should be string');
+                        assert.ok(currentAddress.state.length > 0, 'state should have content');
+                        assert.isString(currentAddress.zip, 'zip should be string');
+                        assert.ok(currentAddress.zip.length > 0, 'zip should have content');
+                        if (currentAddress.country) {
+                            assert.isString(currentAddress.country, 'country should be string');
+                            assert.ok(currentAddress.country.length > 0, 'country should have content');
+                        }
+                    }
+                }
+
+                if (currentImmunization.performer.email) {
+                    for (var iem in currentImmunization.performer.email) {
+                        var currentEmail = currentImmunization.performer.email[iem];
+                        assert.isString(currentEmail, 'current email should be string');
+                        assert.ok(currentEmail.length > 0, 'zip should have content');
+                    }
+                }
+
+                if (currentImmunization.performer.phone) {
+                    for (var iph in currentImmunization.performer.phone) {
+                        var currentPhone = currentImmunization.performer.phone[iph];
+                        assert.isString(currentPhone, 'current email should be string');
+                        assert.ok(currentPhone.length > 0, 'zip should have content');
+                    }
+                }
+
+
+                if (currentImmunization.performer.organization) {
+                    for (var iorg in currentImmunization.performer.organization) {
+                        currentOrganization = currentImmunization.performer.organization[iorg];
+                        if (currentOrganization.identifiers) {
+                            for (var ordIds in currentOrganization.identifiers) {
+                                var currentOrgId = currentOrganization.identifiers[ordIds];
+                                assert.isString(currentOrgId.identifier, 'Identifier should be a string');
+                                assert.ok(currentOrgId.identifier.length > 0, 'Identifier should have content');
+                                //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                            }
+                        }
+                        if (currentOrganization.name) {
+                            for (var orgNames in currentOrganization.name) {
+                                var currentOrgName = currentOrganization.name[orgNames];
+                                assert.isString(currentOrgName, 'Org Name should be a string');
+                                assert.ok(currentOrgName.length > 0, 'Org Name should have content');
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        done();
+    });
+
+
+    it("Immunization Structure - Refusal", function(done) {
+        for (var i in immunizations.immunizations) {
+            var currentImmunization = immunizations.immunizations[i];
+            if (currentImmunization.refusal_reason) {
+                assert.isString(currentImmunization.refusal_reason, 'refusal should be a string');
+                assert.ok(currentImmunization.refusal_reason.length > 0, 'refusal should have content');
             }
         }
         done();
