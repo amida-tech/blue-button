@@ -34,12 +34,12 @@
         "type": "primary home"
     }],
     "race_ethnicity": "White",
-    "languages": {
+    "languages": [{
         "language": "en",
         "preferred": true,
         "mode": "Expressed spoken",
         "proficiency": "Good"
-    },
+    }],
     "religion": "Christian (non-Catholic, non-specific)",
     "birthplace": {
         "city": "Beaverton",

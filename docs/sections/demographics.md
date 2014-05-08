@@ -48,7 +48,7 @@ var demographics = {
      "email": [{
        "address": {type: string, required: true},
        "type": {type:string, required: true}
-     }],
+     }]
   }
 
 var cda_address = {
