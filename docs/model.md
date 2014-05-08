@@ -11,7 +11,7 @@
 ####[Demographics](sections/demographics.md) - Draft
 
 ###Optional Sections:
-####[Procedures](sections/procedures.md) -TBD
+####[Procedures](sections/procedures.md) - Draft
 ####[Encounters](sections/encounters.md) - Draft
 ####[Immunizations](sections/immunizations.md) -TBD
 ####[Vitals](sections/vitals.md) - Draft
