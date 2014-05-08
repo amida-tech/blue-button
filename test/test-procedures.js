@@ -15,10 +15,6 @@ describe('procedures parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {component: 'ccda_procedures'}, function(err, result) {
             procedures = result.toJSON();
-            var json2Write = JSON.stringify(procedures, undefined, '\t');
-            var jsonFilePath = filepath.replace('file-snippets', 'file-snippets/json');
-            jsonFilePath = jsonFilePath.replace('.xml', '.json');
-            fs.writeFileSync(jsonFilePath, json2Write);
             done();
         });
     });

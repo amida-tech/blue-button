@@ -1,5 +1,10 @@
 [
 	{
+		"identifiers": [
+			{
+				"identifier": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
+			}
+		],
 		"status": "Completed",
 		"date": [
 			{
@@ -52,6 +57,12 @@
 		"code_system_name": "SNOMED CT"
 	},
 	{
+		"identifiers": [
+			{
+				"identifier": "2.16.840.1.113883.19",
+				"identifier_type": "123456789"
+			}
+		],
 		"status": "Aborted",
 		"date": [
 			{
@@ -110,6 +121,12 @@
 		"code_system_name": "SNOMED CT"
 	},
 	{
+		"identifiers": [
+			{
+				"identifier": "1.2.3.4.5.6.7.8",
+				"identifier_type": "1234567"
+			}
+		],
 		"status": "Completed",
 		"date": [
 			{
