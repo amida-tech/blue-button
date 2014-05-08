@@ -1,5 +1,5 @@
 {
-    "medicationsReported": [
+    "medicationsPrescribed": [
         {
             "route": "RESPIRATORY (INHALATION)",
             "administrationUnit": {
