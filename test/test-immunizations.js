@@ -16,7 +16,6 @@ var loadRecord = function(done) {
         component: 'ccda_immunizations'
     }, function(err, result) {
         immunizations = result.toJSON();
-        jsutil.deepDelete(immunizations, '_id');
         //console.log(JSON.stringify(immunizations, null, 4));
         done();
     });

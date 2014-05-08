@@ -19,6 +19,7 @@ describe('full ccd parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {}, function(err, result) {
             ccd = result.toJSON();
+            //console.log(JSON.stringify(ccd, null, 10));
             done();
         });
     });
@@ -36,16 +37,16 @@ describe('full ccd parser', function() {
         expect(ccd.demographics).to.exist;
         
         expect(ccd.demographics.name).to.exists;
-        expect(ccd.demographics.name.family).to.equal('Jones');
-        expect(ccd.demographics.name.givens).to.have.length(2);
-        expect(ccd.demographics.name.givens).to.have.members(['Isabella', 'Isa']);
+        expect(ccd.demographics.name.last).to.equal('Jones');
+        expect(ccd.demographics.name.first).to.equal('Isabella');
+        expect(ccd.demographics.name.middle).to.have.members(['Isa']);
         
-        expect(JSON.stringify(ccd.demographics.birthTime)).to.equal('"1975-05-01T00:00:00.000Z"');
+        expect(JSON.stringify(ccd.demographics.dob[0].date)).to.equal('"1975-05-01T00:00:00.000Z"');
         
-        expect(ccd.demographics.telecoms).to.exists;
-        expect(ccd.demographics.telecoms).to.have.length(1);
-        expect(ccd.demographics.telecoms[0].value).to.equal('tel:(816)276-6909');
-        expect(ccd.demographics.telecoms[0].use).to.equal('primary home');
+        expect(ccd.demographics.phone).to.exists;
+        expect(ccd.demographics.phone).to.have.length(1);
+        expect(ccd.demographics.phone[0].number).to.equal('(816)276-6909');
+        expect(ccd.demographics.phone[0].type).to.equal('primary home');
 
         done();
     });

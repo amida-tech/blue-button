@@ -16,12 +16,11 @@ var loadRecord = function(done) {
         component: 'ccda_demographics'
     }, function(err, result) {
         demographics = result.toJSON();
-        console.log(JSON.stringify(demographics, null, 4));
         done();
     });
 };
 
-describe('demographics parser', function() {
+describe('Demographics- Snippet Comparison', function() {
     
     before(function(done) {
         if (demographics === undefined) {
@@ -33,7 +32,7 @@ describe('demographics parser', function() {
         }
     });
     
-    it('full deep check', function(done) {
+    it('Deep Equality Check', function(done) {
         expect(demographics).to.exist;
         var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Demographics.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
@@ -42,19 +41,16 @@ describe('demographics parser', function() {
         done();
     });
     
-    it ('spot check', function(done) {
+    it ('Shallow Equality Check', function(done) {
         expect(demographics.name).to.exists;
-        expect(demographics.name.family).to.equal('Jones');
-        expect(demographics.name.givens).to.have.length(2);
-        expect(demographics.name.givens).to.have.members(['Isabella', 'Isa']);
-        
-        expect(JSON.stringify(demographics.birthTime)).to.equal('"1975-05-01T00:00:00.000Z"');
-        
-        expect(demographics.telecoms).to.exists;
-        expect(demographics.telecoms).to.have.length(1);
-        expect(demographics.telecoms[0].value).to.equal('tel:(816)276-6909');
-        expect(demographics.telecoms[0].use).to.equal('primary home');
-
+        expect(demographics.name.last).to.equal('Jones');
+        expect(demographics.name.first).to.equal('Isabella');
+        expect(demographics.name.middle).to.have.members(['Isa']);        
+        expect(JSON.stringify(demographics.dob[0].date)).to.equal('"1975-05-01T00:00:00.000Z"');
+        expect(demographics.phone).to.exists;
+        expect(demographics.phone).to.have.length(1);
+        expect(demographics.phone[0].number).to.equal('(816)276-6909');
+        expect(demographics.phone[0].type).to.equal('primary home');
         done();
     });
 });
