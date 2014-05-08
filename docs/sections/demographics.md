@@ -237,7 +237,7 @@ var cda_name = {
 * //ClinicalDocument/recordTarget/patientRole/patient/raceCode@code
 * //ClinicalDocument/recordTarget/patientRole/patient/ethnicGroupCode@code
 * Ethnicity only exists because race's source set doesn't account for hispanics.
-* If ethnicity is "2186-5", take race field.  Otherwise, take this field.
+* If ethnicity is "2135-2", take ethnicity field.  Otherwise, take this field.
 * Should be looked up against a code set.
 
 ####religion
