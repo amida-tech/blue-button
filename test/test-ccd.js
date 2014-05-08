@@ -1,3 +1,5 @@
+
+var mocha = require('mocha');
 var chai = require('chai');
 
 var expect = chai.expect;
@@ -17,10 +19,6 @@ describe('full ccd parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {}, function(err, result) {
             ccd = result.toJSON();
-            jsutil.deepDelete(ccd, '_id');
-            //var json2Write = JSON.stringify(ccd, undefined, '\t');
-            //var jsonFilePath = filepath.replace('.xml', '.json');
-            //fs.writeFileSync(jsonFilePath, json2Write);
             done();
         });
     });
@@ -75,13 +73,13 @@ describe('full ccd parser', function() {
     
     it ('medications spot check', function(done) {
         expect(ccd.medications).to.exist;
-        expect(ccd.medications.medicationsReported).to.exist;
-        expect(ccd.medications.medicationsReported).to.have.length(1);
+        expect(ccd.medications.medicationsPrescribed).to.exist;
+        expect(ccd.medications.medicationsPrescribed).to.have.length(1);
         
-        expect(ccd.medications.medicationsReported[0].route).to.equal('RESPIRATORY (INHALATION)');
-        expect(ccd.medications.medicationsReported[0].productName).to.exist;
-        expect(ccd.medications.medicationsReported[0].productName.name).to.equal('Proventil HFA');
-        expect(ccd.medications.medicationsReported[0].productName.code).to.equal('219483');
+        expect(ccd.medications.medicationsPrescribed[0].route).to.equal('RESPIRATORY (INHALATION)');
+        expect(ccd.medications.medicationsPrescribed[0].productName).to.exist;
+        expect(ccd.medications.medicationsPrescribed[0].productName.name).to.equal('Proventil HFA');
+        expect(ccd.medications.medicationsPrescribed[0].productName.code).to.equal('219483');
 
         //expect(ccd.medications.medicationsReported[0].productName.code).to.equal('219483');
         //expect(ccd.medications.medicationsReported[0].dosePeriod).to.exist;
@@ -100,17 +98,17 @@ describe('full ccd parser', function() {
         done();
     });
     
-    it ('immunizations spot check', function(done) {
+    it('immunizations spot check', function(done) {
         expect(ccd.immunizations).to.exist;
-        expect(ccd.immunizations.immunizationsGiven).to.exist;
-        expect(ccd.immunizations.immunizationsGiven).to.have.length(2);
+        expect(ccd.immunizations.immunizations).to.exist;
+        expect(ccd.immunizations.immunizations).to.have.length(4);
         
-        expect(ccd.immunizations.immunizationsGiven[0].route).to.equal('Intramuscular injection');
-        expect(ccd.immunizations.immunizationsGiven[0].productName).to.exist;
-        expect(ccd.immunizations.immunizationsGiven[0].productName.code).to.equal('88');
-        expect(ccd.immunizations.immunizationsGiven[0].productName.name).to.equal("Influenza virus vaccine");
-        expect(JSON.stringify(ccd.immunizations.immunizationsGiven[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
-        expect(ccd.immunizations.immunizationsGiven[0].date[0].precision).to.equal('month');
+        expect(ccd.immunizations.immunizations[0].administration.route.name).to.equal('Intramuscular injection');
+        expect(ccd.immunizations.immunizations[0].product.name).to.exist;
+        expect(ccd.immunizations.immunizations[0].product.code).to.equal('88');
+        expect(ccd.immunizations.immunizations[0].product.name).to.equal("Influenza virus vaccine");
+        expect(JSON.stringify(ccd.immunizations.immunizations[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
+        expect(ccd.immunizations.immunizations[0].date[0].precision).to.equal('month');
         
         done();
     });

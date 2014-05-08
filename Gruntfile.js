@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         newcap: true,
         noarg: true,
         sub: true,
-        undef: true,
+        undef: false,
         boss: true,
         eqnull: true,
         node: true,
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
     },
     watch: {
       all: {
-        files: ['./lib/*.js', '*.js'],
+        files: ['./lib/*.js', '*.js', './**/*.js'],
         tasks: ['default']
       }
     },

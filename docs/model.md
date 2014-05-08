@@ -8,12 +8,12 @@
 ####[Medications](sections/medications.md) - TBD
 ####[Problems](sections/problems.md) - Draft
 ####[Results](sections/results.md) - Draft
-####[Demographics](sections/demographics.md) - Draft
+####[Demographics](sections/demographics.md) - Draft (not implemented)
 
 ###Optional Sections:
 ####[Procedures](sections/procedures.md) -TBD
-####[Encounters](sections/encounters.md) -TBD
-####[Immunizations](sections/immunizations.md) -TBD
+####[Encounters](sections/encounters.md) - Draft
+####[Immunizations](sections/immunizations.md) - Draft
 ####[Vitals](sections/vitals.md) - Draft
 
 ###Unsupported Sections/Components:

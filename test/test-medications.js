@@ -15,10 +15,6 @@ describe('medications parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {component: 'ccda_medications'}, function(err, result) {
             meds = result.toJSON();
-            jsutil.deepDelete(meds, '_id');
-            //var json2Write = JSON.stringify(ccd, undefined, '\t');
-            //var jsonFilePath = filepath.replace('.xml', '.json');
-            //fs.writeFileSync(jsonFilePath, json2Write);
             done();
         });
     });
@@ -34,13 +30,13 @@ describe('medications parser', function() {
     
     it ('spot check', function(done) {
         expect(meds).to.exist;
-        expect(meds.medicationsReported).to.exist;
-        expect(meds.medicationsReported).to.have.length(1);
+        expect(meds.medicationsPrescribed).to.exist;
+        expect(meds.medicationsPrescribed).to.have.length(1);
         
-        expect(meds.medicationsReported[0].route).to.equal('RESPIRATORY (INHALATION)');
-        expect(meds.medicationsReported[0].productName).to.exist;
-        expect(meds.medicationsReported[0].productName.name).to.equal('Proventil HFA');
-        expect(meds.medicationsReported[0].productName.code).to.equal('219483');
+        expect(meds.medicationsPrescribed[0].route).to.equal('RESPIRATORY (INHALATION)');
+        expect(meds.medicationsPrescribed[0].productName).to.exist;
+        expect(meds.medicationsPrescribed[0].productName.name).to.equal('Proventil HFA');
+        expect(meds.medicationsPrescribed[0].productName.code).to.equal('219483');
 
         //expect(meds.medicationsReported[0].productName.code).to.equal('219483');
 

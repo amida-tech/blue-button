@@ -11,20 +11,17 @@
 	"religion": {
 		"name": "Christian (non-Catholic, non-specific)",
 		"code": "1013",
-		"code_system": "OID 2.16.840.1.113883.5.1076",
-		"uri": "urn:oid:2.16.840.1.113883.5.1076#1013"
+		"code_system_name": "OID 2.16.840.1.113883.5.1076"
 	},
 	"race": {
 		"name": "White",
 		"code": "2106-3",
-		"code_system": "CDC Race",
-		"uri": "http://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.238&code=2106-3"
+		"code_system_name": "CDC Race"
 	},
 	"ethnicity": {
 		"name": "Not Hispanic or Latino",
 		"code": "2186-5",
-		"code_system": "CDC Race",
-		"uri": "http://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.238&code=2186-5"
+		"code_system_name": "CDC Race"
 	},
 	"addresses": [
 		{
@@ -95,6 +92,5 @@
 	],
 	"gender": "Female",
 	"birthTime": "1975-05-01T00:00:00.000Z",
-	"birthTimeResolution": "day",
-	"_patient": "https://ccda.smartplatforms.org/patients/0"
+	"birthTimeResolution": "day"
 }

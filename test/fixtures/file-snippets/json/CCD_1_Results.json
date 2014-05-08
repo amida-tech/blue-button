@@ -4,16 +4,14 @@
             "panelName": {
                 "name": "CBC WO DIFFERENTIAL",
                 "code": "43789009",
-                "code_system": "SNOMED CT",
-                "uri": "http://purl.bioontology.org/ontology/SNOMEDCT/43789009"
+                "code_system_name": "SNOMED CT"
             },
             "results": [
                 {
                     "resultName": {
                         "name": "HGB",
                         "code": "30313-1",
-                        "code_system": "LOINC",
-                        "uri": "http://purl.bioontology.org/ontology/LNC/30313-1"
+                        "code_system_name": "LOINC"
                     },
                     "measuredAt": [
                         {
@@ -28,15 +26,13 @@
                     "freeTextValue": "HGB (M 13-18 g/dl; F 12-16\n\t\t\t\t\t\t\t\t\t\t\tg/dl)",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 },
                 {
                     "resultName": {
                         "name": "WBC",
                         "code": "33765-9",
-                        "code_system": "LOINC",
-                        "uri": "http://purl.bioontology.org/ontology/LNC/33765-9"
+                        "code_system_name": "LOINC"
                     },
                     "measuredAt": [
                         {
@@ -51,15 +47,13 @@
                     "freeTextValue": "WBC (4.3-10.8 10+3/ul)",
                     "interpretations": [
                         "Normal"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 },
                 {
                     "resultName": {
                         "name": "PLT",
                         "code": "26515-7",
-                        "code_system": "LOINC",
-                        "uri": "http://purl.bioontology.org/ontology/LNC/26515-7"
+                        "code_system_name": "LOINC"
                     },
                     "measuredAt": [
                         {
@@ -74,12 +68,9 @@
                     "freeTextValue": "PLT (135-145 meq/l)",
                     "interpretations": [
                         "Low"
-                    ],
-                    "_patient": "https://ccda.smartplatforms.org/patients/0"
+                    ]
                 }
-            ],
-            "_patient": "https://ccda.smartplatforms.org/patients/0"
+            ]
         }
-    ],
-    "_patient": "https://ccda.smartplatforms.org/patients/0"
+    ]
 }

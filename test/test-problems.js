@@ -19,7 +19,6 @@ var loadRecord = function(done) {
         component: 'ccda_problems'
     }, function(err, result) {
         problems = result.toJSON();
-        jsutil.deepDelete(problems, '_id');
         done();
     });
 };
@@ -160,10 +159,10 @@ describe('Problems - Schema Conformance', function() {
     it('Problem Structure - Code system', function(done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
-            assert.isDefined(currentProblem.code_system, 'Code should exist');
-            assert.isString(currentProblem.code_system, 'Code should be a string');
-            assert.ok(currentProblem.code_system.length > 0, 'Code required.');
-            assert.includeMembers(['SNOMED CT'], new Array(currentProblem.code_system), 'System should be valid coding system');
+            assert.isDefined(currentProblem.code_system_name, 'Code system should exist');
+            assert.isString(currentProblem.code_system_name, 'Code system should be a string');
+            assert.ok(currentProblem.code_system_name.length > 0, 'Code system required.');
+            assert.includeMembers(['SNOMED CT'], new Array(currentProblem.code_system_name), 'System should be valid coding system');
         }
         done();
     });

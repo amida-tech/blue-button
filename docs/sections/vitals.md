@@ -14,7 +14,7 @@ var Vitals = {
         "status": {type: string, required: true},
         "name": {type: string, required: true},
         "code": {type: string, required: false},
-        "code_system": {type: string, required: false},
+        "code_system_name": {type: string, required: false},
         "value": {type: string, required: false},
         "unit": {type: string, required: false},
         "interpretation": {type: string, required: false}
@@ -59,7 +59,7 @@ var Vitals = {
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/code
 - Listed as not required to support uncoded or local datasets.
 
-####Vitals.code_system
+####Vitals.code_system_name
 - 0..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/codeSystemName
 - Listed as not required to support uncoded or local datasets.
