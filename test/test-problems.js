@@ -19,7 +19,6 @@ var loadRecord = function(done) {
         component: 'ccda_problems'
     }, function(err, result) {
         problems = result.toJSON();
-        jsutil.deepDelete(problems, '_id');
         done();
     });
 };

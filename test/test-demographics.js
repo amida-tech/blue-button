@@ -15,10 +15,6 @@ describe('demographics parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {component: 'ccda_demographics'}, function(err, result) {
             demographics = result.toJSON();
-            jsutil.deepDelete(demographics, '_id');
-            //var json2Write = JSON.stringify(ccd, undefined, '\t');
-            //var jsonFilePath = filepath.replace('.xml', '.json');
-            //fs.writeFileSync(jsonFilePath, json2Write);
             done();
         });
     });
