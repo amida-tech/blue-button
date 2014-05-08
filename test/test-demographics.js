@@ -7,16 +7,30 @@ var path = require('path');
 var bb = require('../index');
 var jsutil = require('../lib/jsutil');
 
+var demographics;
+
+var loadRecord = function(done) {
+    var filepath = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Demographics.xml');
+    var xml = fs.readFileSync(filepath, 'utf-8');
+    bb.parse(xml, {
+        component: 'ccda_demographics'
+    }, function(err, result) {
+        demographics = result.toJSON();
+        console.log(JSON.stringify(demographics, null, 4));
+        done();
+    });
+};
+
 describe('demographics parser', function() {
-    var demographics = null;
     
     before(function(done) {
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Demographics.xml');
-        var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {component: 'ccda_demographics'}, function(err, result) {
-            demographics = result.toJSON();
+        if (demographics === undefined) {
+            loadRecord(function() {
+                done();
+            });
+        } else {
             done();
-        });
+        }
     });
     
     it('full deep check', function(done) {
