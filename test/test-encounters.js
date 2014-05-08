@@ -15,7 +15,6 @@ describe('encounters parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {component: 'ccda_encounters'}, function(err, result) {
             encounters = result.toJSON();
-            jsutil.deepDelete(encounters, '_id');
             done();
         });
     });

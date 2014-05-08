@@ -19,10 +19,6 @@ describe('full ccd parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {}, function(err, result) {
             ccd = result.toJSON();
-            jsutil.deepDelete(ccd, '_id');
-            //var json2Write = JSON.stringify(ccd, undefined, '\t');
-            //var jsonFilePath = filepath.replace('.xml', '.json');
-            //fs.writeFileSync(jsonFilePath, json2Write);
             done();
         });
     });

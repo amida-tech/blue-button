@@ -15,10 +15,6 @@ describe('results parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {component: 'ccda_results'}, function(err, result) {
             results = result.toJSON();
-            jsutil.deepDelete(results, '_id');
-            //var json2Write = JSON.stringify(ccd, undefined, '\t');
-            //var jsonFilePath = filepath.replace('.xml', '.json');
-            //fs.writeFileSync(jsonFilePath, json2Write);
             done();
         });
     });
