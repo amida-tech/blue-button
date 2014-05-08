@@ -28,6 +28,7 @@ var Procedures = {
             "telecom": {cda_telecom}
           }
         }],
+        "locations": [{cda_locations}]
       }
 ```
 
