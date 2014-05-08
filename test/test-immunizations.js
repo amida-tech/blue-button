@@ -27,18 +27,11 @@ var loadRecord = function(done) {
 describe('immunizations parser', function() {
 
     before(function(done) {
-<<<<<<< HEAD
         if (immunizations === undefined) {
             loadRecord(function() {
                 done();
             });
         } else {
-=======
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Immunizations.xml');
-        var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {component: 'ccda_immunizations'}, function(err, result) {
-            immunizations = result.toJSON();
->>>>>>> master
             done();
         }
     });

@@ -7,7 +7,6 @@
                     "precision": "month"
                 }
             ],
-<<<<<<< HEAD
             "identifiers": [
                 {
                     "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
@@ -15,9 +14,6 @@
             ],
             "status": "complete",
             "product": {
-=======
-            "productName": {
->>>>>>> master
                 "name": "Influenza virus vaccine",
                 "code": "88",
                 "code_system_name": "CVX",
@@ -87,7 +83,6 @@
                     "precision": "day"
                 }
             ],
-<<<<<<< HEAD
             "identifiers": [
                 {
                     "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
@@ -98,12 +93,6 @@
                 "name": "Influenza virus vaccine",
                 "code": "88",
                 "code_system_name": "CVX",
-=======
-            "productName": {
-                "name": "Pneumococcal polysaccharide vaccine",
-                "code": "33",
-                "code_system_name": "OID 2.16.840.1.113883.12.292",
->>>>>>> master
                 "translations": [
                     {
                         "name": "Influenza, seasonal, injectable",
@@ -170,7 +159,6 @@
                     "precision": "day"
                 }
             ],
-<<<<<<< HEAD
             "identifiers": [
                 {
                     "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
@@ -181,12 +169,6 @@
                 "name": "Pneumococcal polysaccharide vaccine",
                 "code": "33",
                 "code_system_name": "CVX",
-=======
-            "productName": {
-                "name": "Influenza virus vaccine",
-                "code": "88",
-                "code_system_name": "OID 2.16.840.1.113883.12.292",
->>>>>>> master
                 "translations": [
                     {
                         "name": "Pneumococcal NOS",
@@ -253,7 +235,6 @@
                     "precision": "day"
                 }
             ],
-<<<<<<< HEAD
             "identifiers": [
                 {
                     "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
@@ -261,10 +242,6 @@
             ],
             "status": "refused",
             "product": {
-=======
-            "skippedFor": "Patient Objection",
-            "productName": {
->>>>>>> master
                 "name": "Tetanus and diphtheria toxoids - preservative free",
                 "code": "103",
                 "code_system_name": "CVX",
