@@ -271,79 +271,79 @@ describe('Demographics - Schema Conformance', function() {
                 assert.isString(currentGuardian.relation, 'Relation must be string');
                 assert.ok(currentGuardian.relation.length > 0, 'Relation must have content');
 
-        if (currentGuardian.addresses) {
-            assert.isArray(currentGuardian.addresses, 'Addresses should be array');
-            assert.ok(currentGuardian.addresses.length > 0, 'Addresses should have length');
+                if (currentGuardian.addresses) {
+                    assert.isArray(currentGuardian.addresses, 'Addresses should be array');
+                    assert.ok(currentGuardian.addresses.length > 0, 'Addresses should have length');
 
-            for (var iguardaddr in currentGuardian.addresses) {
-                var currentAddress = currentGuardian.addresses[iguardaddr];
-                assert.isArray(currentAddress.streetLines, 'street should be array');
-                assert.ok(currentAddress.streetLines.length < 4, 'max four street lines');
-                for (var iline in currentAddress.streetLines) {
-                    assert.isString(currentAddress.streetLines[iline], 'street lines should be string');
-                    assert.ok(currentAddress.streetLines[iline].length > 0, 'street lines should have content');
+                    for (var iguardaddr in currentGuardian.addresses) {
+                        var currentAddress = currentGuardian.addresses[iguardaddr];
+                        assert.isArray(currentAddress.streetLines, 'street should be array');
+                        assert.ok(currentAddress.streetLines.length < 4, 'max four street lines');
+                        for (var iline in currentAddress.streetLines) {
+                            assert.isString(currentAddress.streetLines[iline], 'street lines should be string');
+                            assert.ok(currentAddress.streetLines[iline].length > 0, 'street lines should have content');
+                        }
+                        assert.isString(currentAddress.city, 'city should be string');
+                        assert.ok(currentAddress.city.length > 0, 'city should have content');
+                        assert.isString(currentAddress.state, 'state should be string');
+                        assert.ok(currentAddress.state.length > 0, 'state should have content');
+                        assert.isString(currentAddress.zip, 'zip should be string');
+                        assert.ok(currentAddress.zip.length > 0, 'zip should have content');
+                        if (currentAddress.country) {
+                            assert.isString(currentAddress.country, 'country should be string');
+                            assert.ok(currentAddress.country.length > 0, 'country should have content');
+                        }
+
+
+
+                    }
                 }
-                assert.isString(currentAddress.city, 'city should be string');
-                assert.ok(currentAddress.city.length > 0, 'city should have content');
-                assert.isString(currentAddress.state, 'state should be string');
-                assert.ok(currentAddress.state.length > 0, 'state should have content');
-                assert.isString(currentAddress.zip, 'zip should be string');
-                assert.ok(currentAddress.zip.length > 0, 'zip should have content');
-                if (currentAddress.country) {
-                    assert.isString(currentAddress.country, 'country should be string');
-                    assert.ok(currentAddress.country.length > 0, 'country should have content');
+
+                if (currentGuardian.name) {
+                    var currentName = currentGuardian.name;
+                    if (currentName.prefix) {
+                        assert.isString(currentName.prefix, "Prefix should be string");
+                        assert.ok(currentName.prefix.length > 0, 'Prefix should have content');
+                    }
+                    if (currentName.first) {
+                        assert.isString(currentName.first, "First Name should be string");
+                        assert.ok(currentName.first.length > 0, 'First Name should have content');
+                    }
+                    if (currentName.middle) {
+                        assert.isArray(currentName.middle, "Middle Name should be string");
+                        assert.ok(currentName.middle.length > 0, 'Middle Name should have content');
+                    }
+                    if (currentName.last) {
+                        assert.isString(currentName.last, "Last Name should be string");
+                        assert.ok(currentName.last.length > 0, 'Last Name should have content');
+                    }
+                    if (currentName.suffix) {
+                        assert.isString(currentName.suffix, "Suffix should be string");
+                        assert.ok(currentName.suffix.length > 0, 'Suffix should have content');
+                    }
+                }
+
+                if (currentGuardian.email) {
+                    for (var iem in currentGuardian.email) {
+                        var currentEmail = currentGuardian.email[iem];
+                        assert.isString(currentEmail.address, 'current email should be string');
+                        assert.ok(currentEmail.address.length > 0, 'current email should have content');
+                    }
+                }
+
+                if (currentGuardian.phone) {
+                    for (var iph in currentGuardian.phone) {
+                        var currentPhone = currentGuardian.phone[iph];
+                        assert.isString(currentPhone.number, 'current phone should be string');
+                        assert.ok(currentPhone.number.length > 0, 'current phone should have content');
+                    }
                 }
 
 
-
             }
         }
-
-        if (currentGuardian.name) {
-            var currentName = currentGuardian.name;
-            if (currentName.prefix) {
-                assert.isString(currentName.prefix, "Prefix should be string");
-                assert.ok(currentName.prefix.length > 0, 'Prefix should have content');
-            }
-            if (currentName.first) {
-                assert.isString(currentName.first, "First Name should be string");
-                assert.ok(currentName.first.length > 0, 'First Name should have content');
-            }
-            if (currentName.middle) {
-                assert.isArray(currentName.middle, "Middle Name should be string");
-                assert.ok(currentName.middle.length > 0, 'Middle Name should have content');
-            }
-            if (currentName.last) {
-                assert.isString(currentName.last, "Last Name should be string");
-                assert.ok(currentName.last.length > 0, 'Last Name should have content');
-            }
-            if (currentName.suffix) {
-                assert.isString(currentName.suffix, "Suffix should be string");
-                assert.ok(currentName.suffix.length > 0, 'Suffix should have content');
-            }
-        }
-
-        if (currentGuardian.email) {
-            for (var iem in currentGuardian.email) {
-                var currentEmail = currentGuardian.email[iem];
-                assert.isString(currentEmail.address, 'current email should be string');
-                assert.ok(currentEmail.address.length > 0, 'current email should have content');
-            }
-        }
-
-        if (currentGuardian.phone) {
-            for (var iph in currentGuardian.phone) {
-                var currentPhone = currentGuardian.phone[iph];
-                assert.isString(currentPhone.number, 'current phone should be string');
-                assert.ok(currentPhone.number.length > 0, 'current phone should have content');
-            }
-        }
-
-
-    }
-}
-done();
-});
+        done();
+    });
 
 
 });
