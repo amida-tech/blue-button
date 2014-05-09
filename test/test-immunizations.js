@@ -16,7 +16,6 @@ var loadRecord = function(done) {
         component: 'ccda_immunizations'
     }, function(err, result) {
         immunizations = result.toJSON();
-        jsutil.deepDelete(immunizations, '_id');
         //console.log(JSON.stringify(immunizations, null, 4));
         done();
     });
@@ -287,15 +286,15 @@ describe('Immunizations - Schema Conformance', function() {
                     for (var iem in currentImmunization.performer.email) {
                         var currentEmail = currentImmunization.performer.email[iem];
                         assert.isString(currentEmail, 'current email should be string');
-                        assert.ok(currentEmail.length > 0, 'zip should have content');
+                        assert.ok(currentEmail.length > 0, 'current email should have content');
                     }
                 }
 
                 if (currentImmunization.performer.phone) {
                     for (var iph in currentImmunization.performer.phone) {
                         var currentPhone = currentImmunization.performer.phone[iph];
-                        assert.isString(currentPhone, 'current email should be string');
-                        assert.ok(currentPhone.length > 0, 'zip should have content');
+                        assert.isString(currentPhone, 'current phone should be string');
+                        assert.ok(currentPhone.length > 0, 'current phone should have content');
                     }
                 }
 

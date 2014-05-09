@@ -28,8 +28,9 @@ var demographics = {
   "religion": {type:string, required: false},
   "languages": [
     "language": {type: string, required: true},
-    "proficiency": {type: string, required: false},
-    "mode": {type: string, required: false}
+    "preferred": {type: boolean, required: false},
+    "mode": {type: string, required: false},
+    "proficiency": {type: string, required: false}
   ],
   "birthplace": {
     "state": {type: string, required: false},
@@ -47,21 +48,8 @@ var demographics = {
      "email": [{
        "address": {type: string, required: true},
        "type": {type:string, required: true}
-     }],
-  },
-  "provider": {
-    "organization": {type: string, required: true},
-    "national_provider_identifier": {type: string, required: false},
-    "phone": [{
-      "number": {type: string, required: true},
-      "type": {type: string, required: true}
-    }],
-    "email": [{
-      "address": {type: string, required: true},
-      "type": {type:string, required: true}
-    }],
-    "address": [{cda_address}]
-}
+     }]
+  }
 
 var cda_address = {
     "type": {type: string, required: true},
@@ -249,13 +237,33 @@ var cda_name = {
 * //ClinicalDocument/recordTarget/patientRole/patient/raceCode@code
 * //ClinicalDocument/recordTarget/patientRole/patient/ethnicGroupCode@code
 * Ethnicity only exists because race's source set doesn't account for hispanics.
-* If ethnicity is "2186-5", take race field.  Otherwise, take this field.
+* If ethnicity is "2135-2", take ethnicity field.  Otherwise, take this field.
 * Should be looked up against a code set.
 
 ####religion
 * 0..1
-* //ClinicalDocument/recordTarget/patientRole/patient/religiousAffiliationCode@code
+* /ClinicalDocument/recordTarget/patientRole/patient/religiousAffiliationCode@code
 * Should be looked up against a code set.
+
+####languages
+* 0..*
+* /ClinicalDocument/recordTarget/patientRole/patient/languageCommunication
+
+####languages.language
+* 1..1
+* /ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/code
+
+####languages.preferred
+* 0..*
+* /ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/preferred
+
+####languages.mode
+* 0..*
+* * /ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/mode
+
+####languages.proficiency
+* 0..*
+* /ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/proficiency
 
 ####birthplace
 * 0..1
@@ -266,7 +274,7 @@ var cda_name = {
 * 0..1
 * //ClinicalDocument/recordTarget/patientRole/patient/guardian
 
-####guardian.relationship
+####guardian.relation
 * 0..1
 * //ClinicalDocument/recordTarget/patientRole/patient/guardian/code@code
 * Should be looked up against reference table OID 2.16.840.1.113883.1.11.19563 DYNAMIC.
@@ -344,60 +352,3 @@ var cda_name = {
 * 0..1
 * //ClinicalDocument/recordTarget/patientRole/patient/guardian/name/suffix
 * Not supported:  Optional "@qualifier" element.
-
-####provider
-* 0..1
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization
-
-####provider.name
-* 0..1
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization/name
-* This can have prefix, and suffix, as well as validTime.
-* Prefix and suffix if present should be appended.
-* Not Supported:  validTime.
-* Not Supported: Name part qualifiers.
-
-####provider.national_provider_identifier
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization/id@value
-* Must make sure OID @root="2.16.840.1.113883.4.6" (NPI OID).
-
-####provider.phone
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization/telecom
-* Each phone record should be checked for 'tel:' lead of value.
-* Each entry will contain at least either one phone or email.
-
-####provider.phone.number
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization/telecom@value
-* Should be checked for 'tel:' lead, and parsed as phone if valid.
-
-####provider.phone.type
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization/telecom@use
-* Should be checked for 'tel:' lead, and parsed as phone if valid.
-* Depending on what is in the "@use", this should be "home", "work", "mobile", or "other".
-* Other is for "HV", or when @use isn't supplied.
-
-####provider.email
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization/telecom
-* Each phone record should be checked for 'mailto:' lead of value.
-
-####provider.email.address
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization/telecom@value
-* Should be checked for 'mailto:' lead, and parsed as phone if valid.
-
-####provider.email.type
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization/telecom@use
-* Should be checked for 'mailto:' lead, and parsed as phone if valid.
-* Depending on what is in the "@use", this should be "home", "work", or "other".
-* Other is for "HV", "MC", or when @use isn't supplied.  Mobile email isn't a thing.
-
-####provider.address
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/providerOrganization/address
-* Uses the same model and requirements as the patient address.
