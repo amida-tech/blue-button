@@ -2,8 +2,8 @@ var expect = require('chai').expect;
 var fs = require('fs');
 var path = require('path');
 
-var component = require('../../lib/parser/ccda/component');
-var xml = require('../../lib/xml');
+var component = require('../lib/parser/ccda/component');
+var xml = require('../lib/xml');
 
 var testChildComponent = component.define('testChild');
 testChildComponent.fields([
@@ -24,7 +24,7 @@ describe('parser.js', function() {
     var testInstance = null;
     
     before(function(done) {
-        var filepath  = path.join(__dirname, 'example-files/file_1.xml');
+        var filepath  = path.join(__dirname, 'parser/file_1.xml');
         var xmlfile = fs.readFileSync(filepath, 'utf-8');
         var doc = xml.parse(xmlfile);
         testInstance = testComponent.instance();
