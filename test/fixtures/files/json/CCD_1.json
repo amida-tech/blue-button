@@ -1,891 +1,699 @@
 {
-          "demographics": {
-                    "name": {
-                              "givens": [
-                                        "Isabella",
-                                        "Isa"
-                              ],
-                              "family": "Jones",
-                              "use": "Legal"
-                    },
-                    "maritalStatus": "Married",
-                    "religion": {
-                              "name": "Christian (non-Catholic, non-specific)",
-                              "code": "1013",
-                              "code_system_name": "OID 2.16.840.1.113883.5.1076"
-                    },
-                    "race": {
-                              "name": "White",
-                              "code": "2106-3",
-                              "code_system_name": "CDC Race"
-                    },
-                    "ethnicity": {
-                              "name": "Not Hispanic or Latino",
-                              "code": "2186-5",
-                              "code_system_name": "CDC Race"
-                    },
-                    "addresses": [
-                              {
-                                        "streetLines": [
-                                                  "1357 Amber Drive"
-                                        ],
-                                        "city": "Beaverton",
-                                        "state": "OR",
-                                        "zip": "97867",
-                                        "country": "US",
-                                        "use": "primary home"
-                              }
-                    ],
-                    "guardians": [
-                              {
-                                        "relation": "Parent",
-                                        "addresses": [
-                                                  {
-                                                            "streetLines": [
-                                                                      "1357 Amber Drive"
-                                                            ],
-                                                            "city": "Beaverton",
-                                                            "state": "OR",
-                                                            "zip": "97867",
-                                                            "country": "US",
-                                                            "use": "primary home"
-                                                  }
-                                        ],
-                                        "names": [
-                                                  {
-                                                            "givens": [
-                                                                      "Ralph"
-                                                            ],
-                                                            "family": "Jones"
-                                                  }
-                                        ],
-                                        "telecoms": [
-                                                  {
-                                                            "value": "tel:(816)276-6909",
-                                                            "use": "primary home"
-                                                  }
-                                        ]
-                              }
-                    ],
-                    "telecoms": [
-                              {
-                                        "value": "tel:(816)276-6909",
-                                        "use": "primary home"
-                              }
-                    ],
-                    "languages": [
-                              {
-                                        "mode": "Expressed spoken",
-                                        "proficiency": "Good",
-                                        "code": "en",
-                                        "preferred": true
-                              }
-                    ],
-                    "medicalRecordNumbers": [
-                              {
-                                        "identifier": "2.16.840.1.113883.19.5.99999.2",
-                                        "identifier_type": "998991"
-                              },
-                              {
-                                        "identifier": "2.16.840.1.113883.4.1",
-                                        "identifier_type": "111-00-2330"
-                              }
-                    ],
-                    "gender": "Female",
-                    "birthTime": "1975-05-01T00:00:00.000Z",
-                    "birthTimeResolution": "day"
+     "demographics": {
+          "name": {
+               "middle": [
+                    "Isa"
+               ],
+               "last": "Jones",
+               "first": "Isabella"
           },
-          "vitals": {
-                    "panels": [
-                              {
-                                        "panelName": {
-                                                  "name": "Vital signs",
-                                                  "code": "46680005",
-                                                  "code_system_name": "SNOMED CT"
-                                        },
-                                        "vitals": [
-                                                  {
-                                                            "vitalName": {
-                                                                      "name": "Height",
-                                                                      "code": "8302-2",
-                                                                      "code_system_name": "LOINC"
-                                                            },
-                                                            "measuredAt": [
-                                                                      {
-                                                                                "date": "1999-11-14T00:00:00.000Z",
-                                                                                "precision": "day"
-                                                                      }
-                                                            ],
-                                                            "physicalQuantity": {
-                                                                      "value": 177,
-                                                                      "unit": "cm"
-                                                            },
-                                                            "freeTextValue": "177 cm",
-                                                            "interpretations": [
-                                                                      "Normal"
-                                                            ]
-                                                  },
-                                                  {
-                                                            "vitalName": {
-                                                                      "name": "Patient Body Weight - Measured",
-                                                                      "code": "3141-9",
-                                                                      "code_system_name": "LOINC"
-                                                            },
-                                                            "measuredAt": [
-                                                                      {
-                                                                                "date": "1999-11-14T00:00:00.000Z",
-                                                                                "precision": "day"
-                                                                      }
-                                                            ],
-                                                            "physicalQuantity": {
-                                                                      "value": 86,
-                                                                      "unit": "kg"
-                                                            },
-                                                            "freeTextValue": "86 kg",
-                                                            "interpretations": [
-                                                                      "Normal"
-                                                            ]
-                                                  },
-                                                  {
-                                                            "vitalName": {
-                                                                      "name": "Intravascular Systolic",
-                                                                      "code": "8480-6",
-                                                                      "code_system_name": "LOINC"
-                                                            },
-                                                            "measuredAt": [
-                                                                      {
-                                                                                "date": "1999-11-14T00:00:00.000Z",
-                                                                                "precision": "day"
-                                                                      }
-                                                            ],
-                                                            "physicalQuantity": {
-                                                                      "value": 132,
-                                                                      "unit": "mm[Hg]"
-                                                            },
-                                                            "freeTextValue": "132/86 mmHg",
-                                                            "interpretations": [
-                                                                      "Normal"
-                                                            ]
-                                                  }
-                                        ]
-                              },
-                              {
-                                        "panelName": {
-                                                  "name": "Vital signs",
-                                                  "code": "46680005",
-                                                  "code_system_name": "SNOMED CT"
-                                        },
-                                        "vitals": [
-                                                  {
-                                                            "vitalName": {
-                                                                      "name": "Height",
-                                                                      "code": "8302-2",
-                                                                      "code_system_name": "LOINC"
-                                                            },
-                                                            "measuredAt": [
-                                                                      {
-                                                                                "date": "2000-04-07T00:00:00.000Z",
-                                                                                "precision": "day"
-                                                                      }
-                                                            ],
-                                                            "physicalQuantity": {
-                                                                      "value": 177,
-                                                                      "unit": "cm"
-                                                            },
-                                                            "freeTextValue": "177 cm",
-                                                            "interpretations": [
-                                                                      "Normal"
-                                                            ]
-                                                  },
-                                                  {
-                                                            "vitalName": {
-                                                                      "name": "Patient Body Weight - Measured",
-                                                                      "code": "3141-9",
-                                                                      "code_system_name": "LOINC"
-                                                            },
-                                                            "measuredAt": [
-                                                                      {
-                                                                                "date": "2000-04-07T00:00:00.000Z",
-                                                                                "precision": "day"
-                                                                      }
-                                                            ],
-                                                            "physicalQuantity": {
-                                                                      "value": 88,
-                                                                      "unit": "kg"
-                                                            },
-                                                            "freeTextValue": "88 kg",
-                                                            "interpretations": [
-                                                                      "Normal"
-                                                            ]
-                                                  },
-                                                  {
-                                                            "vitalName": {
-                                                                      "name": "Intravascular Systolic",
-                                                                      "code": "8480-6",
-                                                                      "code_system_name": "LOINC"
-                                                            },
-                                                            "measuredAt": [
-                                                                      {
-                                                                                "date": "2000-04-07T00:00:00.000Z",
-                                                                                "precision": "day"
-                                                                      }
-                                                            ],
-                                                            "physicalQuantity": {
-                                                                      "value": 145,
-                                                                      "unit": "mm[Hg]"
-                                                            },
-                                                            "freeTextValue": "145/88 mmHg",
-                                                            "interpretations": [
-                                                                      "Normal"
-                                                            ]
-                                                  }
-                                        ]
-                              }
+          "dob": [{
+               "date": "1975-05-01T00:00:00.000Z",
+               "precision": "day"
+          }],
+          "gender": "Female",
+          "identifiers": [{
+               "identifier": "2.16.840.1.113883.19.5.99999.2",
+               "identifier_type": "998991"
+          }, {
+               "identifier": "2.16.840.1.113883.4.1",
+               "identifier_type": "111-00-2330"
+          }],
+          "marital_status": "Married",
+          "addresses": [{
+               "streetLines": [
+                    "1357 Amber Drive"
+               ],
+               "city": "Beaverton",
+               "state": "OR",
+               "zip": "97867",
+               "country": "US",
+               "use": "primary home"
+          }],
+          "phone": [{
+               "number": "(816)276-6909",
+               "type": "primary home"
+          }],
+          "race_ethnicity": "White",
+          "languages": [{
+               "language": "en",
+               "preferred": true,
+               "mode": "Expressed spoken",
+               "proficiency": "Good"
+          }],
+          "religion": "Christian (non-Catholic, non-specific)",
+          "birthplace": {
+               "city": "Beaverton",
+               "state": "OR",
+               "zip": "97867",
+               "country": "US"
+          },
+          "guardians": [{
+               "relation": "Parent",
+               "addresses": [{
+                    "streetLines": [
+                         "1357 Amber Drive"
+                    ],
+                    "city": "Beaverton",
+                    "state": "OR",
+                    "zip": "97867",
+                    "country": "US",
+                    "use": "primary home"
+               }],
+               "names": [{
+                    "last": "Jones",
+                    "first": "Ralph"
+               }],
+               "phone": [{
+                    "number": "(816)276-6909",
+                    "type": "primary home"
+               }]
+          }]
+     },
+     "vitals": {
+          "panels": [{
+               "panelName": {
+                    "name": "Vital signs",
+                    "code": "46680005",
+                    "code_system_name": "SNOMED CT"
+               },
+               "vitals": [{
+                    "vitalName": {
+                         "name": "Height",
+                         "code": "8302-2",
+                         "code_system_name": "LOINC"
+                    },
+                    "measuredAt": [{
+                         "date": "1999-11-14T00:00:00.000Z",
+                         "precision": "day"
+                    }],
+                    "physicalQuantity": {
+                         "value": 177,
+                         "unit": "cm"
+                    },
+                    "freeTextValue": "177 cm",
+                    "interpretations": [
+                         "Normal"
                     ]
-          },
-          "results": {
-                    "panels": [
-                              {
-                                        "panelName": {
-                                                  "name": "CBC WO DIFFERENTIAL",
-                                                  "code": "43789009",
-                                                  "code_system_name": "SNOMED CT"
-                                        },
-                                        "results": [
-                                                  {
-                                                            "resultName": {
-                                                                      "name": "HGB",
-                                                                      "code": "30313-1",
-                                                                      "code_system_name": "LOINC"
-                                                            },
-                                                            "measuredAt": [
-                                                                      {
-                                                                                "date": "2000-03-23T14:30:00.000Z",
-                                                                                "precision": "minute"
-                                                                      }
-                                                            ],
-                                                            "physicalQuantity": {
-                                                                      "value": 13.2,
-                                                                      "unit": "g/dl"
-                                                            },
-                                                            "freeTextValue": "HGB (M 13-18 g/dl; F 12-16\n\t\t\t\t\t\t\t\t\t\t\tg/dl)",
-                                                            "interpretations": [
-                                                                      "Normal"
-                                                            ]
-                                                  },
-                                                  {
-                                                            "resultName": {
-                                                                      "name": "WBC",
-                                                                      "code": "33765-9",
-                                                                      "code_system_name": "LOINC"
-                                                            },
-                                                            "measuredAt": [
-                                                                      {
-                                                                                "date": "2000-03-23T14:30:00.000Z",
-                                                                                "precision": "minute"
-                                                                      }
-                                                            ],
-                                                            "physicalQuantity": {
-                                                                      "value": 6.7,
-                                                                      "unit": "10+3/ul"
-                                                            },
-                                                            "freeTextValue": "WBC (4.3-10.8 10+3/ul)",
-                                                            "interpretations": [
-                                                                      "Normal"
-                                                            ]
-                                                  },
-                                                  {
-                                                            "resultName": {
-                                                                      "name": "PLT",
-                                                                      "code": "26515-7",
-                                                                      "code_system_name": "LOINC"
-                                                            },
-                                                            "measuredAt": [
-                                                                      {
-                                                                                "date": "2000-03-23T14:30:00.000Z",
-                                                                                "precision": "minute"
-                                                                      }
-                                                            ],
-                                                            "physicalQuantity": {
-                                                                      "value": 123,
-                                                                      "unit": "10+3/ul"
-                                                            },
-                                                            "freeTextValue": "PLT (135-145 meq/l)",
-                                                            "interpretations": [
-                                                                      "Low"
-                                                            ]
-                                                  }
-                                        ]
-                              }
+               }, {
+                    "vitalName": {
+                         "name": "Patient Body Weight - Measured",
+                         "code": "3141-9",
+                         "code_system_name": "LOINC"
+                    },
+                    "measuredAt": [{
+                         "date": "1999-11-14T00:00:00.000Z",
+                         "precision": "day"
+                    }],
+                    "physicalQuantity": {
+                         "value": 86,
+                         "unit": "kg"
+                    },
+                    "freeTextValue": "86 kg",
+                    "interpretations": [
+                         "Normal"
                     ]
-          },
-          "medications": {
-                    "medicationsPrescribed": [
-                              {
-                                        "route": "RESPIRATORY (INHALATION)",
-                                        "administrationUnit": {
-                                                  "name": "INHALANT",
-                                                  "code": "C42944",
-                                                  "code_system_name": "NCI Thesaurus"
-                                        },
-                                        "freeTextSig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
-                                        "dose": {
-                                                  "value": 1,
-                                                  "unit": "mg/actuat"
-                                        },
-                                        "rate": {
-                                                  "value": 90,
-                                                  "unit": "ml/min"
-                                        },
-                                        "productName": {
-                                                  "name": "Proventil HFA",
-                                                  "code": "219483",
-                                                  "code_system_name": "RXNORM",
-                                                  "translations": [
-                                                            {
-                                                                      "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
-                                                                      "code": "573621",
-                                                                      "code_system_name": "RXNORM"
-                                                            }
-                                                  ]
-                                        },
-                                        "freeTextProductName": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
-                                        "dateRange": [
-                                                  {
-                                                            "date": "2007-01-03T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  },
-                                                  {
-                                                            "date": "2012-05-15T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  }
-                                        ]
-                              }
+               }, {
+                    "vitalName": {
+                         "name": "Intravascular Systolic",
+                         "code": "8480-6",
+                         "code_system_name": "LOINC"
+                    },
+                    "measuredAt": [{
+                         "date": "1999-11-14T00:00:00.000Z",
+                         "precision": "day"
+                    }],
+                    "physicalQuantity": {
+                         "value": 132,
+                         "unit": "mm[Hg]"
+                    },
+                    "freeTextValue": "132/86 mmHg",
+                    "interpretations": [
+                         "Normal"
                     ]
-          },
-          "encounters": [
-                    {
-                              "identifiers": [
-                                        {
-                                                  "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
-                                        }
-                              ],
-                              "date": [
-                                        {
-                                                  "date": "2009-02-27T13:00:00.000Z",
-                                                  "precision": "subsecond"
-                                        }
-                              ],
-                              "locations": [
-                                        {
-                                                  "name": "Community Urgent Care Center",
-                                                  "type": {
-                                                            "name": "Urgent Care Center",
-                                                            "code": "1160-1",
-                                                            "code_system_name": "HealthcareServiceLocation"
-                                                  },
-                                                  "address": {
-                                                            "streetLines": [
-                                                                      "17 Daws Rd."
-                                                            ],
-                                                            "city": "Blue Bell",
-                                                            "state": "MA",
-                                                            "zip": "02368",
-                                                            "country": "US"
-                                                  }
-                                        }
-                              ],
-                              "findings": [
-                                        {
-                                                  "name": "Pneumonia",
-                                                  "code": "233604007",
-                                                  "code_system_name": "SNOMED CT"
-                                        }
-                              ],
-                              "name": "Office outpatient visit 15 minutes",
-                              "code": "99213",
-                              "code_system_name": "CPT",
-                              "translations": [
-                                        {
-                                                  "name": "Ambulatory",
-                                                  "code": "AMB",
-                                                  "code_system_name": "HL7ActCode"
-                                        }
-                              ]
+               }]
+          }, {
+               "panelName": {
+                    "name": "Vital signs",
+                    "code": "46680005",
+                    "code_system_name": "SNOMED CT"
+               },
+               "vitals": [{
+                    "vitalName": {
+                         "name": "Height",
+                         "code": "8302-2",
+                         "code_system_name": "LOINC"
+                    },
+                    "measuredAt": [{
+                         "date": "2000-04-07T00:00:00.000Z",
+                         "precision": "day"
+                    }],
+                    "physicalQuantity": {
+                         "value": 177,
+                         "unit": "cm"
+                    },
+                    "freeTextValue": "177 cm",
+                    "interpretations": [
+                         "Normal"
+                    ]
+               }, {
+                    "vitalName": {
+                         "name": "Patient Body Weight - Measured",
+                         "code": "3141-9",
+                         "code_system_name": "LOINC"
+                    },
+                    "measuredAt": [{
+                         "date": "2000-04-07T00:00:00.000Z",
+                         "precision": "day"
+                    }],
+                    "physicalQuantity": {
+                         "value": 88,
+                         "unit": "kg"
+                    },
+                    "freeTextValue": "88 kg",
+                    "interpretations": [
+                         "Normal"
+                    ]
+               }, {
+                    "vitalName": {
+                         "name": "Intravascular Systolic",
+                         "code": "8480-6",
+                         "code_system_name": "LOINC"
+                    },
+                    "measuredAt": [{
+                         "date": "2000-04-07T00:00:00.000Z",
+                         "precision": "day"
+                    }],
+                    "physicalQuantity": {
+                         "value": 145,
+                         "unit": "mm[Hg]"
+                    },
+                    "freeTextValue": "145/88 mmHg",
+                    "interpretations": [
+                         "Normal"
+                    ]
+               }]
+          }]
+     },
+     "results": {
+          "panels": [{
+               "panelName": {
+                    "name": "CBC WO DIFFERENTIAL",
+                    "code": "43789009",
+                    "code_system_name": "SNOMED CT"
+               },
+               "results": [{
+                    "resultName": {
+                         "name": "HGB",
+                         "code": "30313-1",
+                         "code_system_name": "LOINC"
+                    },
+                    "measuredAt": [{
+                         "date": "2000-03-23T14:30:00.000Z",
+                         "precision": "minute"
+                    }],
+                    "physicalQuantity": {
+                         "value": 13.2,
+                         "unit": "g/dl"
+                    },
+                    "freeTextValue": "HGB (M 13-18 g/dl; F 12-16\n\t\t\t\t\t\t\t\t\t\t\tg/dl)",
+                    "interpretations": [
+                         "Normal"
+                    ]
+               }, {
+                    "resultName": {
+                         "name": "WBC",
+                         "code": "33765-9",
+                         "code_system_name": "LOINC"
+                    },
+                    "measuredAt": [{
+                         "date": "2000-03-23T14:30:00.000Z",
+                         "precision": "minute"
+                    }],
+                    "physicalQuantity": {
+                         "value": 6.7,
+                         "unit": "10+3/ul"
+                    },
+                    "freeTextValue": "WBC (4.3-10.8 10+3/ul)",
+                    "interpretations": [
+                         "Normal"
+                    ]
+               }, {
+                    "resultName": {
+                         "name": "PLT",
+                         "code": "26515-7",
+                         "code_system_name": "LOINC"
+                    },
+                    "measuredAt": [{
+                         "date": "2000-03-23T14:30:00.000Z",
+                         "precision": "minute"
+                    }],
+                    "physicalQuantity": {
+                         "value": 123,
+                         "unit": "10+3/ul"
+                    },
+                    "freeTextValue": "PLT (135-145 meq/l)",
+                    "interpretations": [
+                         "Low"
+                    ]
+               }]
+          }]
+     },
+     "medications": {
+          "medicationsPrescribed": [{
+               "route": "RESPIRATORY (INHALATION)",
+               "administrationUnit": {
+                    "name": "INHALANT",
+                    "code": "C42944",
+                    "code_system_name": "NCI Thesaurus"
+               },
+               "freeTextSig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+               "dose": {
+                    "value": 1,
+                    "unit": "mg/actuat"
+               },
+               "rate": {
+                    "value": 90,
+                    "unit": "ml/min"
+               },
+               "productName": {
+                    "name": "Proventil HFA",
+                    "code": "219483",
+                    "code_system_name": "RXNORM",
+                    "translations": [{
+                         "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
+                         "code": "573621",
+                         "code_system_name": "RXNORM"
+                    }]
+               },
+               "freeTextProductName": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+               "dateRange": [{
+                    "date": "2007-01-03T00:00:00.000Z",
+                    "precision": "day"
+               }, {
+                    "date": "2012-05-15T00:00:00.000Z",
+                    "precision": "day"
+               }]
+          }]
+     },
+     "encounters": [{
+          "identifiers": [{
+               "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+          }],
+          "date": [{
+               "date": "2009-02-27T13:00:00.000Z",
+               "precision": "subsecond"
+          }],
+          "locations": [{
+               "name": "Community Urgent Care Center",
+               "type": {
+                    "name": "Urgent Care Center",
+                    "code": "1160-1",
+                    "code_system_name": "HealthcareServiceLocation"
+               },
+               "address": {
+                    "streetLines": [
+                         "17 Daws Rd."
+                    ],
+                    "city": "Blue Bell",
+                    "state": "MA",
+                    "zip": "02368",
+                    "country": "US"
+               }
+          }],
+          "findings": [{
+               "name": "Pneumonia",
+               "code": "233604007",
+               "code_system_name": "SNOMED CT"
+          }],
+          "name": "Office outpatient visit 15 minutes",
+          "code": "99213",
+          "code_system_name": "CPT",
+          "translations": [{
+               "name": "Ambulatory",
+               "code": "AMB",
+               "code_system_name": "HL7ActCode"
+          }]
+     }],
+     "allergies": [{
+          "date": [{
+               "date": "2007-05-01T00:00:00.000Z",
+               "precision": "day"
+          }],
+          "identifiers": [{
+               "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+          }],
+          "severity": "Moderate to severe",
+          "status": "Inactive",
+          "reaction": [{
+               "severity": "Mild",
+               "name": "Nausea",
+               "code": "422587007",
+               "code_system_name": "SNOMED CT"
+          }],
+          "name": "ALLERGENIC EXTRACT, PENICILLIN",
+          "code": "314422",
+          "code_system_name": "RXNORM"
+     }, {
+          "date": [{
+               "date": "2006-05-01T00:00:00.000Z",
+               "precision": "day"
+          }],
+          "identifiers": [{
+               "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+          }],
+          "severity": "Moderate",
+          "status": "Active",
+          "reaction": [{
+               "severity": "Mild",
+               "name": "Wheezing",
+               "code": "56018004",
+               "code_system_name": "SNOMED CT"
+          }],
+          "name": "Codeine",
+          "code": "2670",
+          "code_system_name": "RXNORM"
+     }, {
+          "date": [{
+               "date": "2008-05-01T00:00:00.000Z",
+               "precision": "day"
+          }],
+          "identifiers": [{
+               "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+          }],
+          "severity": "Mild to moderate",
+          "status": "Active",
+          "reaction": [{
+               "severity": "Mild to moderate",
+               "name": "Hives",
+               "code": "247472004",
+               "code_system_name": "SNOMED CT"
+          }],
+          "name": "Aspirin",
+          "code": "1191",
+          "code_system_name": "RXNORM"
+     }],
+     "immunizations": {
+          "immunizations": [{
+               "date": [{
+                    "date": "1999-11-01T00:00:00.000Z",
+                    "precision": "month"
+               }],
+               "identifiers": [{
+                    "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+               }],
+               "status": "complete",
+               "product": {
+                    "name": "Influenza virus vaccine",
+                    "code": "88",
+                    "code_system_name": "CVX",
+                    "translations": [{
+                         "name": "Influenza, seasonal, injectable",
+                         "code": "141",
+                         "code_system_name": "CVX"
+                    }],
+                    "lot_number": "1",
+                    "manufacturer": "Health LS - Immuno Inc."
+               },
+               "administration": {
+                    "route": {
+                         "name": "Intramuscular injection",
+                         "code": "C28161",
+                         "code_system_name": "NCI Thesaurus"
+                    },
+                    "quantity": {
+                         "value": 50,
+                         "unit": "mcg"
                     }
-          ],
-          "allergies": [
-                    {
-                              "date": [
-                                        {
-                                                  "date": "2007-05-01T00:00:00.000Z",
-                                                  "precision": "day"
-                                        }
-                              ],
-                              "identifiers": [
-                                        {
-                                                  "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
-                                        }
-                              ],
-                              "severity": "Moderate to severe",
-                              "status": "Inactive",
-                              "reaction": [
-                                        {
-                                                  "severity": "Mild",
-                                                  "name": "Nausea",
-                                                  "code": "422587007",
-                                                  "code_system_name": "SNOMED CT"
-                                        }
-                              ],
-                              "name": "ALLERGENIC EXTRACT, PENICILLIN",
-                              "code": "314422",
-                              "code_system_name": "RXNORM"
+               },
+               "performer": {
+                    "identifiers": [{
+                         "identifier": "2.16.840.1.113883.19.5.9999.456",
+                         "identifier_type": "2981824"
+                    }],
+                    "name": [{
+                         "last": "Assigned",
+                         "first": "Amanda"
+                    }],
+                    "address": [{
+                         "streetLines": [
+                              "1021 Health Drive"
+                         ],
+                         "city": "Ann Arbor",
+                         "state": "MI",
+                         "zip": "99099",
+                         "country": "US"
+                    }],
+                    "organization": [{
+                         "identifiers": [{
+                              "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                         }],
+                         "name": [
+                              "Good Health Clinic"
+                         ]
+                    }]
+               }
+          }, {
+               "date": [{
+                    "date": "1998-12-15T00:00:00.000Z",
+                    "precision": "day"
+               }],
+               "identifiers": [{
+                    "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+               }],
+               "status": "refused",
+               "product": {
+                    "name": "Influenza virus vaccine",
+                    "code": "88",
+                    "code_system_name": "CVX",
+                    "translations": [{
+                         "name": "Influenza, seasonal, injectable",
+                         "code": "141",
+                         "code_system_name": "CVX"
+                    }],
+                    "lot_number": "1",
+                    "manufacturer": "Health LS - Immuno Inc."
+               },
+               "administration": {
+                    "route": {
+                         "name": "Intramuscular injection",
+                         "code": "C28161",
+                         "code_system_name": "NCI Thesaurus"
                     },
-                    {
-                              "date": [
-                                        {
-                                                  "date": "2006-05-01T00:00:00.000Z",
-                                                  "precision": "day"
-                                        }
-                              ],
-                              "identifiers": [
-                                        {
-                                                  "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
-                                        }
-                              ],
-                              "severity": "Moderate",
-                              "status": "Active",
-                              "reaction": [
-                                        {
-                                                  "severity": "Mild",
-                                                  "name": "Wheezing",
-                                                  "code": "56018004",
-                                                  "code_system_name": "SNOMED CT"
-                                        }
-                              ],
-                              "name": "Codeine",
-                              "code": "2670",
-                              "code_system_name": "RXNORM"
-                    },
-                    {
-                              "date": [
-                                        {
-                                                  "date": "2008-05-01T00:00:00.000Z",
-                                                  "precision": "day"
-                                        }
-                              ],
-                              "identifiers": [
-                                        {
-                                                  "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
-                                        }
-                              ],
-                              "severity": "Mild to moderate",
-                              "status": "Active",
-                              "reaction": [
-                                        {
-                                                  "severity": "Mild to moderate",
-                                                  "name": "Hives",
-                                                  "code": "247472004",
-                                                  "code_system_name": "SNOMED CT"
-                                        }
-                              ],
-                              "name": "Aspirin",
-                              "code": "1191",
-                              "code_system_name": "RXNORM"
+                    "quantity": {
+                         "value": 50,
+                         "unit": "mcg"
                     }
-          ],
-          "immunizations": {
-                    "immunizations": [
-                              {
-                                        "date": [
-                                                  {
-                                                            "date": "1999-11-01T00:00:00.000Z",
-                                                            "precision": "month"
-                                                  }
-                                        ],
-                                        "identifiers": [
-                                                  {
-                                                            "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
-                                                  }
-                                        ],
-                                        "status": "complete",
-                                        "product": {
-                                                  "name": "Influenza virus vaccine",
-                                                  "code": "88",
-                                                  "code_system_name": "CVX",
-                                                  "translations": [
-                                                            {
-                                                                      "name": "Influenza, seasonal, injectable",
-                                                                      "code": "141",
-                                                                      "code_system_name": "CVX"
-                                                            }
-                                                  ],
-                                                  "lot_number": "1",
-                                                  "manufacturer": "Health LS - Immuno Inc."
-                                        },
-                                        "administration": {
-                                                  "route": {
-                                                            "name": "Intramuscular injection",
-                                                            "code": "C28161",
-                                                            "code_system_name": "NCI Thesaurus"
-                                                  },
-                                                  "quantity": {
-                                                            "value": 50,
-                                                            "unit": "mcg"
-                                                  }
-                                        },
-                                        "performer": {
-                                                  "identifiers": [
-                                                            {
-                                                                      "identifier": "2.16.840.1.113883.19.5.9999.456",
-                                                                      "identifier_type": "2981824"
-                                                            }
-                                                  ],
-                                                  "name": [
-                                                            {
-                                                                      "last": "Assigned",
-                                                                      "first": "Amanda"
-                                                            }
-                                                  ],
-                                                  "address": [
-                                                            {
-                                                                      "streetLines": [
-                                                                                "1021 Health Drive"
-                                                                      ],
-                                                                      "city": "Ann Arbor",
-                                                                      "state": "MI",
-                                                                      "zip": "99099",
-                                                                      "country": "US"
-                                                            }
-                                                  ],
-                                                  "organization": [
-                                                            {
-                                                                      "identifiers": [
-                                                                                {
-                                                                                          "identifier": "2.16.840.1.113883.19.5.9999.1394"
-                                                                                }
-                                                                      ],
-                                                                      "name": [
-                                                                                "Good Health Clinic"
-                                                                      ]
-                                                            }
-                                                  ]
-                                        }
-                              },
-                              {
-                                        "date": [
-                                                  {
-                                                            "date": "1998-12-15T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  }
-                                        ],
-                                        "identifiers": [
-                                                  {
-                                                            "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
-                                                  }
-                                        ],
-                                        "status": "refused",
-                                        "product": {
-                                                  "name": "Influenza virus vaccine",
-                                                  "code": "88",
-                                                  "code_system_name": "CVX",
-                                                  "translations": [
-                                                            {
-                                                                      "name": "Influenza, seasonal, injectable",
-                                                                      "code": "141",
-                                                                      "code_system_name": "CVX"
-                                                            }
-                                                  ],
-                                                  "lot_number": "1",
-                                                  "manufacturer": "Health LS - Immuno Inc."
-                                        },
-                                        "administration": {
-                                                  "route": {
-                                                            "name": "Intramuscular injection",
-                                                            "code": "C28161",
-                                                            "code_system_name": "NCI Thesaurus"
-                                                  },
-                                                  "quantity": {
-                                                            "value": 50,
-                                                            "unit": "mcg"
-                                                  }
-                                        },
-                                        "performer": {
-                                                  "identifiers": [
-                                                            {
-                                                                      "identifier": "2.16.840.1.113883.19.5.9999.456",
-                                                                      "identifier_type": "2981824"
-                                                            }
-                                                  ],
-                                                  "name": [
-                                                            {
-                                                                      "last": "Assigned",
-                                                                      "first": "Amanda"
-                                                            }
-                                                  ],
-                                                  "address": [
-                                                            {
-                                                                      "streetLines": [
-                                                                                "1021 Health Drive"
-                                                                      ],
-                                                                      "city": "Ann Arbor",
-                                                                      "state": "MI",
-                                                                      "zip": "99099",
-                                                                      "country": "US"
-                                                            }
-                                                  ],
-                                                  "organization": [
-                                                            {
-                                                                      "identifiers": [
-                                                                                {
-                                                                                          "identifier": "2.16.840.1.113883.19.5.9999.1394"
-                                                                                }
-                                                                      ],
-                                                                      "name": [
-                                                                                "Good Health Clinic"
-                                                                      ]
-                                                            }
-                                                  ]
-                                        }
-                              },
-                              {
-                                        "date": [
-                                                  {
-                                                            "date": "1998-12-15T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  }
-                                        ],
-                                        "identifiers": [
-                                                  {
-                                                            "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
-                                                  }
-                                        ],
-                                        "status": "complete",
-                                        "product": {
-                                                  "name": "Pneumococcal polysaccharide vaccine",
-                                                  "code": "33",
-                                                  "code_system_name": "CVX",
-                                                  "translations": [
-                                                            {
-                                                                      "name": "Pneumococcal NOS",
-                                                                      "code": "109",
-                                                                      "code_system_name": "CVX"
-                                                            }
-                                                  ],
-                                                  "lot_number": "1",
-                                                  "manufacturer": "Health LS - Immuno Inc."
-                                        },
-                                        "administration": {
-                                                  "route": {
-                                                            "name": "Intramuscular injection",
-                                                            "code": "C28161",
-                                                            "code_system_name": "NCI Thesaurus"
-                                                  },
-                                                  "quantity": {
-                                                            "value": 50,
-                                                            "unit": "mcg"
-                                                  }
-                                        },
-                                        "performer": {
-                                                  "identifiers": [
-                                                            {
-                                                                      "identifier": "2.16.840.1.113883.19.5.9999.456",
-                                                                      "identifier_type": "2981824"
-                                                            }
-                                                  ],
-                                                  "name": [
-                                                            {
-                                                                      "last": "Assigned",
-                                                                      "first": "Amanda"
-                                                            }
-                                                  ],
-                                                  "address": [
-                                                            {
-                                                                      "streetLines": [
-                                                                                "1021 Health Drive"
-                                                                      ],
-                                                                      "city": "Ann Arbor",
-                                                                      "state": "MI",
-                                                                      "zip": "99099",
-                                                                      "country": "US"
-                                                            }
-                                                  ],
-                                                  "organization": [
-                                                            {
-                                                                      "identifiers": [
-                                                                                {
-                                                                                          "identifier": "2.16.840.1.113883.19.5.9999.1394"
-                                                                                }
-                                                                      ],
-                                                                      "name": [
-                                                                                "Good Health Clinic"
-                                                                      ]
-                                                            }
-                                                  ]
-                                        }
-                              },
-                              {
-                                        "date": [
-                                                  {
-                                                            "date": "1998-12-15T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  }
-                                        ],
-                                        "identifiers": [
-                                                  {
-                                                            "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
-                                                  }
-                                        ],
-                                        "status": "refused",
-                                        "product": {
-                                                  "name": "Tetanus and diphtheria toxoids - preservative free",
-                                                  "code": "103",
-                                                  "code_system_name": "CVX",
-                                                  "translations": [
-                                                            {
-                                                                      "name": "Tetanus and diphtheria toxoids - preservative free",
-                                                                      "code": "09",
-                                                                      "code_system_name": "CVX"
-                                                            }
-                                                  ],
-                                                  "lot_number": "1",
-                                                  "manufacturer": "Health LS - Immuno Inc."
-                                        },
-                                        "administration": {
-                                                  "route": {
-                                                            "name": "Intramuscular injection",
-                                                            "code": "C28161",
-                                                            "code_system_name": "NCI Thesaurus"
-                                                  },
-                                                  "quantity": {
-                                                            "value": 50,
-                                                            "unit": "mcg"
-                                                  }
-                                        },
-                                        "performer": {
-                                                  "identifiers": [
-                                                            {
-                                                                      "identifier": "2.16.840.1.113883.19.5.9999.456",
-                                                                      "identifier_type": "2981824"
-                                                            }
-                                                  ],
-                                                  "name": [
-                                                            {
-                                                                      "last": "Assigned",
-                                                                      "first": "Amanda"
-                                                            }
-                                                  ],
-                                                  "address": [
-                                                            {
-                                                                      "streetLines": [
-                                                                                "1021 Health Drive"
-                                                                      ],
-                                                                      "city": "Ann Arbor",
-                                                                      "state": "MI",
-                                                                      "zip": "99099",
-                                                                      "country": "US"
-                                                            }
-                                                  ],
-                                                  "organization": [
-                                                            {
-                                                                      "identifiers": [
-                                                                                {
-                                                                                          "identifier": "2.16.840.1.113883.19.5.9999.1394"
-                                                                                }
-                                                                      ],
-                                                                      "name": [
-                                                                                "Good Health Clinic"
-                                                                      ]
-                                                            }
-                                                  ]
-                                        },
-                                        "refusal_reason": "Patient objection"
-                              }
-                    ]
-          },
-          "socialHistory": {
-                    "smokingStatuses": [
-                              {
-                                        "smokingStatus": {
-                                                  "name": "Former smoker",
-                                                  "code": "8517006",
-                                                  "code_system_name": "SNOMED CT"
-                                        },
-                                        "dateRange": [
-                                                  {
-                                                            "date": "2005-05-01T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  },
-                                                  {
-                                                            "date": "2009-02-27T13:00:00.000Z",
-                                                            "precision": "subsecond"
-                                                  }
-                                        ]
-                              }
-                    ]
-          },
-          "problems": {
-                    "problems": [
-                              {
-                                        "date": [
-                                                  {
-                                                            "date": "2008-01-03T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  },
-                                                  {
-                                                            "date": "2008-01-03T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  }
-                                        ],
-                                        "identifiers": [
-                                                  {
-                                                            "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
-                                                  }
-                                        ],
-                                        "negation_indicator": false,
-                                        "onset_age": "57",
-                                        "onset_age_unit": "Year",
-                                        "status": "Resolved",
-                                        "patient_status": "Alive and well",
-                                        "source_list_identifiers": [
-                                                  {
-                                                            "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
-                                                  }
-                                        ],
-                                        "name": "Pneumonia",
-                                        "code": "233604007",
-                                        "code_system_name": "SNOMED CT"
-                              },
-                              {
-                                        "date": [
-                                                  {
-                                                            "date": "2007-01-03T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  },
-                                                  {
-                                                            "date": "2008-01-03T00:00:00.000Z",
-                                                            "precision": "day"
-                                                  }
-                                        ],
-                                        "identifiers": [
-                                                  {
-                                                            "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
-                                                  }
-                                        ],
-                                        "negation_indicator": false,
-                                        "onset_age": "57",
-                                        "onset_age_unit": "Year",
-                                        "status": "Active",
-                                        "patient_status": "Alive and well",
-                                        "source_list_identifiers": [
-                                                  {
-                                                            "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
-                                                  }
-                                        ],
-                                        "name": "Asthma",
-                                        "code": "195967001",
-                                        "code_system_name": "SNOMED CT"
-                              }
-                    ]
-          }
+               },
+               "performer": {
+                    "identifiers": [{
+                         "identifier": "2.16.840.1.113883.19.5.9999.456",
+                         "identifier_type": "2981824"
+                    }],
+                    "name": [{
+                         "last": "Assigned",
+                         "first": "Amanda"
+                    }],
+                    "address": [{
+                         "streetLines": [
+                              "1021 Health Drive"
+                         ],
+                         "city": "Ann Arbor",
+                         "state": "MI",
+                         "zip": "99099",
+                         "country": "US"
+                    }],
+                    "organization": [{
+                         "identifiers": [{
+                              "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                         }],
+                         "name": [
+                              "Good Health Clinic"
+                         ]
+                    }]
+               }
+          }, {
+               "date": [{
+                    "date": "1998-12-15T00:00:00.000Z",
+                    "precision": "day"
+               }],
+               "identifiers": [{
+                    "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+               }],
+               "status": "complete",
+               "product": {
+                    "name": "Pneumococcal polysaccharide vaccine",
+                    "code": "33",
+                    "code_system_name": "CVX",
+                    "translations": [{
+                         "name": "Pneumococcal NOS",
+                         "code": "109",
+                         "code_system_name": "CVX"
+                    }],
+                    "lot_number": "1",
+                    "manufacturer": "Health LS - Immuno Inc."
+               },
+               "administration": {
+                    "route": {
+                         "name": "Intramuscular injection",
+                         "code": "C28161",
+                         "code_system_name": "NCI Thesaurus"
+                    },
+                    "quantity": {
+                         "value": 50,
+                         "unit": "mcg"
+                    }
+               },
+               "performer": {
+                    "identifiers": [{
+                         "identifier": "2.16.840.1.113883.19.5.9999.456",
+                         "identifier_type": "2981824"
+                    }],
+                    "name": [{
+                         "last": "Assigned",
+                         "first": "Amanda"
+                    }],
+                    "address": [{
+                         "streetLines": [
+                              "1021 Health Drive"
+                         ],
+                         "city": "Ann Arbor",
+                         "state": "MI",
+                         "zip": "99099",
+                         "country": "US"
+                    }],
+                    "organization": [{
+                         "identifiers": [{
+                              "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                         }],
+                         "name": [
+                              "Good Health Clinic"
+                         ]
+                    }]
+               }
+          }, {
+               "date": [{
+                    "date": "1998-12-15T00:00:00.000Z",
+                    "precision": "day"
+               }],
+               "identifiers": [{
+                    "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+               }],
+               "status": "refused",
+               "product": {
+                    "name": "Tetanus and diphtheria toxoids - preservative free",
+                    "code": "103",
+                    "code_system_name": "CVX",
+                    "translations": [{
+                         "name": "Tetanus and diphtheria toxoids - preservative free",
+                         "code": "09",
+                         "code_system_name": "CVX"
+                    }],
+                    "lot_number": "1",
+                    "manufacturer": "Health LS - Immuno Inc."
+               },
+               "administration": {
+                    "route": {
+                         "name": "Intramuscular injection",
+                         "code": "C28161",
+                         "code_system_name": "NCI Thesaurus"
+                    },
+                    "quantity": {
+                         "value": 50,
+                         "unit": "mcg"
+                    }
+               },
+               "performer": {
+                    "identifiers": [{
+                         "identifier": "2.16.840.1.113883.19.5.9999.456",
+                         "identifier_type": "2981824"
+                    }],
+                    "name": [{
+                         "last": "Assigned",
+                         "first": "Amanda"
+                    }],
+                    "address": [{
+                         "streetLines": [
+                              "1021 Health Drive"
+                         ],
+                         "city": "Ann Arbor",
+                         "state": "MI",
+                         "zip": "99099",
+                         "country": "US"
+                    }],
+                    "organization": [{
+                         "identifiers": [{
+                              "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                         }],
+                         "name": [
+                              "Good Health Clinic"
+                         ]
+                    }]
+               },
+               "refusal_reason": "Patient objection"
+          }]
+     },
+     "socialHistory": {
+          "smokingStatuses": [{
+               "smokingStatus": {
+                    "name": "Former smoker",
+                    "code": "8517006",
+                    "code_system_name": "SNOMED CT"
+               },
+               "dateRange": [{
+                    "date": "2005-05-01T00:00:00.000Z",
+                    "precision": "day"
+               }, {
+                    "date": "2009-02-27T13:00:00.000Z",
+                    "precision": "subsecond"
+               }]
+          }]
+     },
+     "problems": {
+          "problems": [{
+               "date": [{
+                    "date": "2008-01-03T00:00:00.000Z",
+                    "precision": "day"
+               }, {
+                    "date": "2008-01-03T00:00:00.000Z",
+                    "precision": "day"
+               }],
+               "identifiers": [{
+                    "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+               }],
+               "negation_indicator": false,
+               "onset_age": "57",
+               "onset_age_unit": "Year",
+               "status": "Resolved",
+               "patient_status": "Alive and well",
+               "source_list_identifiers": [{
+                    "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+               }],
+               "name": "Pneumonia",
+               "code": "233604007",
+               "code_system_name": "SNOMED CT"
+          }, {
+               "date": [{
+                    "date": "2007-01-03T00:00:00.000Z",
+                    "precision": "day"
+               }, {
+                    "date": "2008-01-03T00:00:00.000Z",
+                    "precision": "day"
+               }],
+               "identifiers": [{
+                    "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+               }],
+               "negation_indicator": false,
+               "onset_age": "57",
+               "onset_age_unit": "Year",
+               "status": "Active",
+               "patient_status": "Alive and well",
+               "source_list_identifiers": [{
+                    "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+               }],
+               "name": "Asthma",
+               "code": "195967001",
+               "code_system_name": "SNOMED CT"
+          }]
+     }
 }
