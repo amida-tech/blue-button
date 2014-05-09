@@ -6,6 +6,7 @@ var Procedures = {
         "name": {type:string, require:true},
         "code": {type:string, require:true},
         "code_system_name": {type:string, require: true},
+        "type": {type:string, require:true},
         "status": {type: string, require: true},
         "date": [{ 
            "date": {type: datetime, required: true},
@@ -34,8 +35,7 @@ var Procedures = {
 
 
 ####Notes
-- Name, code, and code_system_name can come from act, procedure or observation. are optional in the spec.
-- Where name and code is coming is not preserved.
+- Name, code, and code_system_name can come from act, procedure or observation.
 - All "MAY" fields are ignored
 - All text fields are ignored
 
@@ -52,6 +52,10 @@ var Procedures = {
 
 ####Procedure.code_system_name
 - Same as name except code@code_system_name replaces code@name
+
+####Procedure.type
+- 1..1
+- observation, procedure or act corresponds to thw type of procedure that the name and code comes from.
 
 ####Procedure.identifiers
 - 1..*
