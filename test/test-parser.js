@@ -24,7 +24,7 @@ describe('parser.js', function() {
     var testInstance = null;
     
     before(function(done) {
-        var filepath  = path.join(__dirname, 'parser/file_1.xml');
+        var filepath  = path.join(__dirname, 'fixtures/parser/file_1.xml');
         var xmlfile = fs.readFileSync(filepath, 'utf-8');
         var doc = xml.parse(xmlfile);
         testInstance = testComponent.instance();
