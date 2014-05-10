@@ -17,7 +17,6 @@ describe('componentInstance.js', function() {
         var filepath  = path.join(__dirname, 'fixtures/componentInstance/file_1.xml');
         var xmlfile = fs.readFileSync(filepath, 'utf-8');
         var doc = xml.parse(xmlfile);
-        r.errors = [];
         r.run(doc);
         var f = r.toJSON();
         expect(f).to.exist;

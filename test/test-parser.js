@@ -28,7 +28,6 @@ describe('parser.js', function() {
         var xmlfile = fs.readFileSync(filepath, 'utf-8');
         var doc = xml.parse(xmlfile);
         testInstance = testComponent.instance();
-        testInstance.errors = [];
         testInstance.run(doc);
         done();
     });
