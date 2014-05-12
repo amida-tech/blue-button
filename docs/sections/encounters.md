@@ -13,21 +13,7 @@ var Encounters = {
         "name": {type: string, required: true},
         "code": {type: string, required: true},
         "code_system_name": {type:string, required: true},
-        "locations": [{
-            "name": {type: string, required:true},
-            "type": {
-               "name": {type: string, required: true},
-               "code": {type: string, required: true},
-               "code_system_name": {type:string, required: true}
-            }
-            address: {
-               "streetLines": [{type:string, required: true}],
-               "city": {type: string, required: true},
-               "state": {type: string, required: true},
-               "zip": {type: string, required: true},
-               "country": {type: string, required: true}
-            }
-        }],
+        "locations": [[cda_location}],
         findings: [{
             "name": {type: string, required: true},
             "code": {type: string, required: true},
@@ -39,8 +25,6 @@ var Encounters = {
 
 ####Notes
 - Root name, code and code_system_name can be translated using translation objects.
-- Location name is optional in the specification but required in this model.
-- Specification supports multiple addresses for a single location.  This model does not.
 - Finding might have a date range, a timestamp, or an additional coded value.  These are currently are not supported.
 - Encounter diagnosis is not yet supported.
 
@@ -82,42 +66,6 @@ var Encounters = {
 ####Encounter.locations
 - 0..*
 - //ClinicalDocument/component/structuredBody/component/section/entry/encounter/participant/participantRole
-
-####Encounter.location.name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/participant/participantRole/h:playingEntity/name
-
-###Encounter.location.type
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/participant/participantRole/code
-- Should always be codified to HealthcareServiceLocation.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system
-
-###Encounter.location.type.code
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/participant/participantRole/code/@code
-- See parent node.
-
-###Encounter.location.type.name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/participant/participantRole/code/@displayName
-- See parent node.
-
-##Encounter.location.type.codeSystem
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/participant/participantRole/code/@displayName
-- See parent node.
-
-###Encounter.location.address
-- 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/participant/participantRole/addr
-- See demographics section documentation.
-
-###Encounter.location.telecoms
-- 0..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/participant/participantRole/telecom
-- See demographics section documentation.
 
 ###Encounter.findings
 - 0..*
