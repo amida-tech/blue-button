@@ -2,7 +2,7 @@
 
 ###Object Schema:
 ```
-  var Medications = {
+  var Medication = {
     "date": [{
          "date":{type: datetime, required: true},
          "precision":{type:string, required: true}
@@ -22,8 +22,10 @@
         "code": {type:string, required: false},
         "code_system": {type:string, required: false},
       }],
-      "unencoded_name": {type:string, required: false},
-      "identifiers": {type:string, required: true}
+      "identifiers": [{
+      	"identifier": {type:string, required: true},
+      	"identifier_type": {type:string, required: true}
+      }]
     },
     "administration": {
       "route": {
@@ -36,7 +38,16 @@
       	"code": {type: string, required: false},
       	"code_system": {type: string, required: false}
       },
+      "site": {
+      	"name": {type: string, required: false},
+      	"code": {type: string, required: false},
+      	"code_system": {type: string, required: false}
+      },
       "dose": {
+      	"value": {type: string, required: false},
+      	"unit": {type: string, required: false}
+      },
+      "dose_restriction": {
       	"value": {type: string, required: false},
       	"unit": {type: string, required: false}
       },
@@ -68,7 +79,8 @@
 - delivery method may come in 'code', but of unspecified set or type, and no reference in files, so not currently supported.
 - administrationTiming - PIVL very complex to write; put on backlog for now, and not currently supported.
 - Drug manufacturer currently unsupported, cannot find reference structure.
-
+- SHOULD Exception:  Freetext drug name is a randomly structured area pointing to an HTML element.  We currently don't have parsing support for these, so it is tabled for name.
+- SHOULD Exception:  Interval not currently supported, parsers aren't written to properly handle this entry.
 
 ####Medication.date
 - 0..2
@@ -91,142 +103,73 @@
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/text/reference@value
 - Sig is short for 'Signa.'  It's basically the prescription information in shorthand which is written on the label.
 
-
-####Medication.interval
-- 0..1
-- EIVL not supported; spec basically says it's unstructured.
-
-####Medication.
-
-
-####Immunizations.name
+####Medication.product
 - 1..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code@displayName
-- Using display name, all of these should be coming in as CVX coded, so no need for code system.  Might want to normalize them.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct
+- Must be encoded in RxNorm, but translation may be in another language (e.g. SNOMED).
 
-####Immunizations.code
+####Medication.product.name
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code
+- Coded name entry from the coded object; can later be standardized via code-set.
+
+####Medication.product.code
 - 1..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code@code
-- All of these should be coming in as CVX coded, so no need for code system.  Might want to normalize them.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code
+- Code entry from the coded object.
 
-####Immunization.sequence_number
+####Medication.product.code_system
+- 1..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code
+- Code entry from the coded object.
+
+####Medication.product.translations
 - 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/repeatNumber@value
-- See notes for significance.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code/translations
+- Optional translation element if an additional coding system is used to represent the product.
 
-####Immunizations.product
-- 0..1
-- No direct mapping
-- This is a catch all for every non-primary attribute of the product.  All elements herein are optional at this point.
-
-####Immunizations.product.translations
+####Medication.product.identifiers
 - 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code/translation
-- This is a coded set and should be supported as such.  Allows for synonyms in the same or other code sets.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/id
+- Optional identifiers may come in on the drugs.
 
-####Immunizations.product.lot_number
+####Medication.administration
 - 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/lotNumberText
+- No direct XPath mapping; created category.
+- All sub elements are optional.
 
-####Immunizations.product.manufacturer
+####Medication.administration.route
 - 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturerOrganization/name
-- May support more than just a name element, not sure.  However, just supporting name for now.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/routeCode
 
-####Immunization.administration
+####Medication.administration.form
 - 0..1
-- No direct mapping
-- This is a catch all for every non-primary attribute of the product's delivery.  All elements herein are optional at this point.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/administrationUnitCode
 
-####Immunization.administration.route
+####Medication.administration.dose
 - 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/routeCode
-- Coded entry, should be treated like the rest.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/doseQuantity
 
-####Immunization.administration.body_site
+####Medication.administration.dose_restriction
 - 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/approachSiteCode/@value
-- Always coded to SNOMED-CT if present.
-- No demo files, can fake it for now and take displayName.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/maxDoseQuantity
 
-####Immunization.administration.quantity
+####Medication.administration.rate
 - 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/doseQuantity
-- This is a value/units pair, where units aren't required.
-- If they do come in, they are picked from '2.16.840.1.113883.1.11.12839'
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/rateQuantity
 
-####Immunization.administration.form
+####Medication.administration.site
 - 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/administrationUnitCode
-- This must be picked from 2.16.840.1.113883.3.88.12.3221.8.11.
-- This code set is probably small enough to keep in memory (~200 entries).
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/approachSiteCode
 
-####Immunization.performer
-- 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity
-- http://www.cdapro.com/know/26953 <-- helpful link.
-- This object is impossible; there is practically no information on it's structure in the standard.
-- assignedEntity seems to be the defacto element within, which is also poorly documented.
-- Will attempt to parse what I can based on demo files.  Everything under here is highly speculative.
-
-####Immunization.performer.identifier
+####Medication.administration.precondition
 - 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/id
-- Should be parsed using standard identifier parser.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/precondition
 
-####Immunization.performer.address
+####Medication.administration.precondition.code
 - 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/addr
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
-- Lack of spec makes assumption, one address for this performer.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/precondition/code
 
-####Immunization.performer.phone
-- 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/telecom
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
-
-####Immunization.performer.email
-- 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/telecom
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
-
-####Immunization.performer.name
-- 0..1?
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/assignedPerson/name
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
-- Lack of spec makes assumption, one name for this performer.
-
-####Immunization.performer.organization
-- 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization
-- Inferred from standard only.
-
-####Immunization.performer.organization.name
-- 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/name
-- Should just be name value, no need for structured name.
-
-####Immunization.performer.organization.phone
-- 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/telecom
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
-
-####Immunization.performer.organization.email
-- 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/telecom
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
-
-####Immunization.performer.organization.address
-- 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/addr
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
-
-####Immunization.performer.organization.id
-- 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/id
-- Should be parsed using standard identifier parser.
-
-####Immunization.refusal_reason
+####Medication.administration.precondition.code
 - 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/entryRelationship/observation/code@displayName
-- Should probably be recoded, set small enough.  2.16.840.1.113883.5.8
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/precondition/value

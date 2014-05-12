@@ -74,13 +74,13 @@ describe('full ccd parser', function() {
     
     it ('medications spot check', function(done) {
         expect(ccd.medications).to.exist;
-        expect(ccd.medications.medicationsPrescribed).to.exist;
-        expect(ccd.medications.medicationsPrescribed).to.have.length(1);
+        expect(ccd.medications.medications).to.exist;
+        expect(ccd.medications.medications).to.have.length(1);
         
-        expect(ccd.medications.medicationsPrescribed[0].route).to.equal('RESPIRATORY (INHALATION)');
-        expect(ccd.medications.medicationsPrescribed[0].productName).to.exist;
-        expect(ccd.medications.medicationsPrescribed[0].productName.name).to.equal('Proventil HFA');
-        expect(ccd.medications.medicationsPrescribed[0].productName.code).to.equal('219483');
+        expect(ccd.medications.medications[0].administration.route.name).to.equal('RESPIRATORY (INHALATION)');
+        expect(ccd.medications.medications[0].product.name).to.exist;
+        expect(ccd.medications.medications[0].product.name).to.equal('Proventil HFA');
+        expect(ccd.medications.medications[0].product.code).to.equal('219483');
 
         //expect(ccd.medications.medicationsReported[0].productName.code).to.equal('219483');
         //expect(ccd.medications.medicationsReported[0].dosePeriod).to.exist;

@@ -260,23 +260,22 @@
           }]
      },
      "medications": {
-          "medicationsPrescribed": [{
-               "route": "RESPIRATORY (INHALATION)",
-               "administrationUnit": {
-                    "name": "INHALANT",
-                    "code": "C42944",
-                    "code_system_name": "NCI Thesaurus"
-               },
-               "freeTextSig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
-               "dose": {
-                    "value": 1,
-                    "unit": "mg/actuat"
-               },
-               "rate": {
-                    "value": 90,
-                    "unit": "ml/min"
-               },
-               "productName": {
+          "medications": [{
+               "date": [
+                    [{
+                         "date": "2007-01-03T00:00:00.000Z",
+                         "precision": "day"
+                    }, {
+                         "date": "2012-05-15T00:00:00.000Z",
+                         "precision": "day"
+                    }]
+               ],
+               "identifiers": [{
+                    "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+               }],
+               "status": "Completed",
+               "sig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+               "product": {
                     "name": "Proventil HFA",
                     "code": "219483",
                     "code_system_name": "RXNORM",
@@ -284,16 +283,43 @@
                          "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
                          "code": "573621",
                          "code_system_name": "RXNORM"
-                    }]
+                    }],
+                    "unencoded_name": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+                    "identifers": {
+                         "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                    }
                },
-               "freeTextProductName": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
-               "dateRange": [{
-                    "date": "2007-01-03T00:00:00.000Z",
-                    "precision": "day"
-               }, {
-                    "date": "2012-05-15T00:00:00.000Z",
-                    "precision": "day"
-               }]
+               "administration": {
+                    "route": {
+                         "name": "RESPIRATORY (INHALATION)",
+                         "code": "C38216",
+                         "code_system_name": "Medication Route FDA"
+                    },
+                    "form": {
+                         "name": "INHALANT",
+                         "code": "C42944",
+                         "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                         "value": 1,
+                         "unit": "mg/actuat"
+                    },
+                    "rate": {
+                         "value": 90,
+                         "unit": "ml/min"
+                    }
+               },
+               "precondition": {
+                    "code": {
+                         "code": "ASSERTION",
+                         "code_system_name": "HL7ActCode"
+                    },
+                    "value": {
+                         "name": "Wheezing",
+                         "code": "56018004",
+                         "code_system_name": "SNOMED CT"
+                    }
+               }
           }]
      },
      "encounters": [{
@@ -419,7 +445,7 @@
                     "route": {
                          "name": "Intramuscular injection",
                          "code": "C28161",
-                         "code_system_name": "NCI Thesaurus"
+                         "code_system_name": "Medication Route FDA"
                     },
                     "quantity": {
                          "value": 50,
@@ -478,7 +504,7 @@
                     "route": {
                          "name": "Intramuscular injection",
                          "code": "C28161",
-                         "code_system_name": "NCI Thesaurus"
+                         "code_system_name": "Medication Route FDA"
                     },
                     "quantity": {
                          "value": 50,
@@ -537,7 +563,7 @@
                     "route": {
                          "name": "Intramuscular injection",
                          "code": "C28161",
-                         "code_system_name": "NCI Thesaurus"
+                         "code_system_name": "Medication Route FDA"
                     },
                     "quantity": {
                          "value": 50,
@@ -596,7 +622,7 @@
                     "route": {
                          "name": "Intramuscular injection",
                          "code": "C28161",
-                         "code_system_name": "NCI Thesaurus"
+                         "code_system_name": "Medication Route FDA"
                     },
                     "quantity": {
                          "value": 50,
@@ -696,188 +722,157 @@
                "code_system_name": "SNOMED CT"
           }]
      },
-         "procedures": [
-                   {
-                       "identifiers": [
-                           {
-                               "identifier": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
-                           }
-                       ],
-                       "status": "Completed",
-                       "type": "procedure",
-                       "date": [
-                           {
-                               "date": "2012-05-12T00:00:00.000Z",
-                               "precision": "day"
-                           }
-                       ],
-                       "bodysite": [
-                           {
-                               "name": "colon",
-                               "code": "appropriate_code",
-                               "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
-                           }
-                       ],
-                       "providers": [
-                           {
-                               "address": {
-                                   "streetLines": [
-                                       "1001 Village Avenue"
-                                   ],
-                                   "city": "Portland",
-                                   "state": "OR",
-                                   "zip": "99123",
-                                   "country": "US"
-                               },
-                               "telecom": {
-                                   "value": "555-555-5000",
-                                   "use": "work place"
-                               },
-                               "organization": {
-                                   "name": "Community Health and Hospitals",
-                                   "address": {
-                                       "streetLines": [
-                                           "1001 Village\n\t\t\t\t\t\t\t\t\t\t\t\tAvenue"
-                                       ],
-                                       "city": "Portland",
-                                       "state": "OR",
-                                       "zip": "99123",
-                                       "country": "US"
-                                   },
-                                   "telecom": {
-                                       "value": "555-555-5000",
-                                       "use": "work place"
-                                   }
-                               }
-                           }
-                       ],
-                       "name": "Colonoscopy",
-                       "code": "73761001",
-                       "code_system_name": "SNOMED CT"
-                   },
-                   {
-                       "identifiers": [
-                           {
-                               "identifier": "2.16.840.1.113883.19",
-                               "identifier_type": "123456789"
-                           }
-                       ],
-                       "status": "Aborted",
-                       "type": "observation",
-                       "date": [
-                           {
-                               "date": "2011-02-03T00:00:00.000Z",
-                               "precision": "day"
-                           }
-                       ],
-                       "bodysite": [
-                           {
-                               "name": "Abdomen and pelvis",
-                               "code": "416949008",
-                               "code_system_name": "SNOMED CT"
-                           }
-                       ],
-                       "providers": [
-                           {
-                               "address": {
-                                   "streetLines": [
-                                       "17 Daws Rd."
-                                   ],
-                                   "city": "Blue Bell",
-                                   "state": "MA",
-                                   "zip": "02368",
-                                   "country": "US"
-                               },
-                               "telecom": {
-                                   "value": "(555)555-555-1234",
-                                   "use": "work place"
-                               },
-                               "organization": {
-                                   "name": "Community Health and Hospitals"
-                               }
-                           }
-                       ],
-                       "locations": [
-                           {
-                               "name": "Community Gastroenterology Clinic",
-                               "type": {
-                                   "name": "Gastroenterology Clinic",
-                                   "code": "1118-9",
-                                   "code_system_name": "HealthcareServiceLocation"
-                               },
-                               "address": {
-                                   "streetLines": [
-                                       "17 Daws Rd."
-                                   ],
-                                   "city": "Blue Bell",
-                                   "state": "MA",
-                                   "zip": "02368",
-                                   "country": "US"
-                               }
-                           }
-                       ],
-                       "name": "Colonic polypectomy",
-                       "code": "274025005",
-                       "code_system_name": "SNOMED CT"
-                   },
-                   {
-                       "identifiers": [
-                           {
-                               "identifier": "1.2.3.4.5.6.7.8",
-                               "identifier_type": "1234567"
-                           }
-                       ],
-                       "status": "Completed",
-                       "type": "act",
-                       "date": [
-                           {
-                               "date": "2011-02-03T00:00:00.000Z",
-                               "precision": "day"
-                           }
-                       ],
-                       "providers": [
-                           {
-                               "address": {
-                                   "streetLines": [
-                                       "17 Daws Rd."
-                                   ],
-                                   "city": "Blue Bell",
-                                   "state": "MA",
-                                   "zip": "02368",
-                                   "country": "US"
-                               },
-                               "telecom": {
-                                   "value": "(555)555-555-1234",
-                                   "use": "work place"
-                               },
-                               "organization": {
-                                   "name": "Community Health and Hospitals"
-                               }
-                           }
-                       ],
-                       "locations": [
-                           {
-                               "name": "Community Gastroenterology Clinic",
-                               "type": {
-                                   "name": "Gastroenterology Clinic",
-                                   "code": "1118-9",
-                                   "code_system_name": "HealthcareServiceLocation"
-                               },
-                               "address": {
-                                   "streetLines": [
-                                       "17 Daws Rd."
-                                   ],
-                                   "city": "Blue Bell",
-                                   "state": "MA",
-                                   "zip": "02368",
-                                   "country": "US"
-                               }
-                           }
-                       ],
-                       "name": "Colonic polypectomy",
-                       "code": "274025005",
-                       "code_system_name": "SNOMED CT"
-                   }
-               ]
-     
+     "procedures": [{
+          "identifiers": [{
+               "identifier": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
+          }],
+          "status": "Completed",
+          "date": [{
+               "date": "2012-05-12T00:00:00.000Z",
+               "precision": "day"
+          }],
+          "bodysite": [{
+               "name": "colon",
+               "code": "appropriate_code",
+               "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
+          }],
+          "providers": [{
+               "address": {
+                    "streetLines": [
+                         "1001 Village Avenue"
+                    ],
+                    "city": "Portland",
+                    "state": "OR",
+                    "zip": "99123",
+                    "country": "US"
+               },
+               "telecom": {
+                    "value": "555-555-5000",
+                    "use": "work place"
+               },
+               "organization": {
+                    "name": "Community Health and Hospitals",
+                    "address": {
+                         "streetLines": [
+                              "1001 Village\n\t\t\t\t\t\t\t\t\t\t\t\tAvenue"
+                         ],
+                         "city": "Portland",
+                         "state": "OR",
+                         "zip": "99123",
+                         "country": "US"
+                    },
+                    "telecom": {
+                         "value": "555-555-5000",
+                         "use": "work place"
+                    }
+               }
+          }],
+          "type": "procedure",
+          "name": "Colonoscopy",
+          "code": "73761001",
+          "code_system_name": "SNOMED CT"
+     }, {
+          "identifiers": [{
+               "identifier": "2.16.840.1.113883.19",
+               "identifier_type": "123456789"
+          }],
+          "status": "Aborted",
+          "date": [{
+               "date": "2011-02-03T00:00:00.000Z",
+               "precision": "day"
+          }],
+          "bodysite": [{
+               "name": "Abdomen and pelvis",
+               "code": "416949008",
+               "code_system_name": "SNOMED CT"
+          }],
+          "providers": [{
+               "address": {
+                    "streetLines": [
+                         "17 Daws Rd."
+                    ],
+                    "city": "Blue Bell",
+                    "state": "MA",
+                    "zip": "02368",
+                    "country": "US"
+               },
+               "telecom": {
+                    "value": "(555)555-555-1234",
+                    "use": "work place"
+               },
+               "organization": {
+                    "name": "Community Health and Hospitals"
+               }
+          }],
+          "locations": [{
+               "name": "Community Gastroenterology Clinic",
+               "type": {
+                    "name": "Gastroenterology Clinic",
+                    "code": "1118-9",
+                    "code_system_name": "HealthcareServiceLocation"
+               },
+               "address": {
+                    "streetLines": [
+                         "17 Daws Rd."
+                    ],
+                    "city": "Blue Bell",
+                    "state": "MA",
+                    "zip": "02368",
+                    "country": "US"
+               }
+          }],
+          "type": "observation",
+          "name": "Colonic polypectomy",
+          "code": "274025005",
+          "code_system_name": "SNOMED CT"
+     }, {
+          "identifiers": [{
+               "identifier": "1.2.3.4.5.6.7.8",
+               "identifier_type": "1234567"
+          }],
+          "status": "Completed",
+          "date": [{
+               "date": "2011-02-03T00:00:00.000Z",
+               "precision": "day"
+          }],
+          "providers": [{
+               "address": {
+                    "streetLines": [
+                         "17 Daws Rd."
+                    ],
+                    "city": "Blue Bell",
+                    "state": "MA",
+                    "zip": "02368",
+                    "country": "US"
+               },
+               "telecom": {
+                    "value": "(555)555-555-1234",
+                    "use": "work place"
+               },
+               "organization": {
+                    "name": "Community Health and Hospitals"
+               }
+          }],
+          "locations": [{
+               "name": "Community Gastroenterology Clinic",
+               "type": {
+                    "name": "Gastroenterology Clinic",
+                    "code": "1118-9",
+                    "code_system_name": "HealthcareServiceLocation"
+               },
+               "address": {
+                    "streetLines": [
+                         "17 Daws Rd."
+                    ],
+                    "city": "Blue Bell",
+                    "state": "MA",
+                    "zip": "02368",
+                    "country": "US"
+               }
+          }],
+          "type": "act",
+          "name": "Colonic polypectomy",
+          "code": "274025005",
+          "code_system_name": "SNOMED CT"
+     }]
 }

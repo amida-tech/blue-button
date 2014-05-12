@@ -15,7 +15,7 @@ describe('medications parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {component: 'ccda_medications'}, function(err, result) {
             meds = result.toJSON();
-            console.log(JSON.stringify(meds,null, 10));
+            //console.log(JSON.stringify(meds,null, 10));
             done();
         });
     });
