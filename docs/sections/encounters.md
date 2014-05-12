@@ -14,11 +14,7 @@ var Encounters = {
         "code": {type: string, required: true},
         "code_system_name": {type:string, required: true},
         "locations": [[cda_location}],
-        findings: [{
-            "name": {type: string, required: true},
-            "code": {type: string, required: true},
-            "code_system_name": {type:string, required: true}
-        }]
+        findings: [{cda_concept}]
      }
 ```
 
@@ -27,7 +23,6 @@ var Encounters = {
 - Root name, code and code_system_name can be translated using translation objects.
 - Finding might have a date range, a timestamp, or an additional coded value.  These are currently are not supported.
 - Encounter diagnosis is not yet supported.
-
 
 ####Encounter.date
 - 0..2
@@ -70,21 +65,8 @@ var Encounters = {
 ###Encounter.findings
 - 0..*
 - //ClinicalDocument/component/structuredBody/component/section/entry/encounter/entryRelationShip/observation
-
-###Encounter.finding.name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/entryRelationShip/observation/value/@displayName
 - Should always be codified to SNOMED-CT.
 - A translation object is possible instead of SNOMED.
 - Not supported: nullFlavor.
 - TODO:  Support lookup of values from coding system
 
-###Encounter.finding.code
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/entryRelationShip/observation/value/@code
-- See Encounter.finding.name.
-
-###Encounter.finding.code_system_name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/entryRelationShip/observation/value/@codeSystemName
-- See Encounter.finding.name.
