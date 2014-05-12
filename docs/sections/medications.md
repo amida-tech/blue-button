@@ -12,7 +12,7 @@
         "identifier_type": {type:string, required: true}
      }],
     "status": {type:string: required: true},
-    "sequence_number": {type:string, required:false},
+    "sig": {type:string, required:false},
     "product": {
       "name": {type:string, required: true},
       "code": {type:string, required: true},
@@ -22,8 +22,8 @@
         "code": {type:string, required: false},
         "code_system": {type:string, required: false},
       }],
-      "lot_number": {type:string, required: false},
-      "manufacturer": {type:string, required: false}
+      "unencoded_name": {type:string, required: false},
+      "identifiers": {type:string, required: true}
     },
     "administration": {
       "route": {
@@ -31,75 +31,73 @@
       	"code": {type: string, required: false},
       	"code_system": {type: string, required: false}
       },
-      "body_site": {type:string, required: false},
-      "quantity": {
-      	"value": {type:string, required: false},
-      	"units": {type:string, required: false}
+      "form": {
+      	"name": {type: string, required: false},
+      	"code": {type: string, required: false},
+      	"code_system": {type: string, required: false}
       },
-      "form": {type:string, required:false}
+      "dose": {
+      	"value": {type: string, required: false},
+      	"unit": {type: string, required: false}
+      },
+      "rate": {
+      	"value": {type: string, required: false},
+      	"unit": {type: string, required: false}
+      },
     },
-    "performer": {
-      "name": {cda_name},
-      "address": {cda_address},
-	  "phone": [{
-        "number": {type: string, required: true},
-        "type": {type: string, required: true}
-      }],
-      "email": [{
-        "address": {type: string, required: true},
-        "type": {type:string, required: true}
-      }],
-      "identifiers": [{
-        "identifier": {type:string, required: true},
-        "identifier_type": {type:string, required: true}
-      }],
-      "organization": [{
-        "name": {type:string, required: false},
-        "address": {cda_address},
-	    "phone": [{
-          "number": {type: string, required: true},
-          "type": {type: string, required: true}
-        }],
-        "email": [{
-          "address": {type: string, required: true},
-          "type": {type:string, required: true}
-        }],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: true}
-        }]
-     },
-     "refusal_reason": {type:string, required: false}
+      "precondition": {
+          "code": {
+      		"name": {type:string, required: true},
+      		"code" : {type:string, required: true},
+      		"code_system": {type:string, required: true},
+      	  },
+          "value": {
+      		"name": {type:string, required: true},
+      		"code" : {type:string, required: true},
+      		"code_system": {type:string, required: true},
+      	  }
+    }
   }
 
 ```
 
 
 ####Notes
-- 'code' may come in, but not on samples and it doesn't define why, so not currently supported.
-- statusCode comes in, but doesn't seem to mean anything.  It is 'completed' in all examples.
-- series, performer, reaction, and refusal reason all seem to be optional.
-- medication series number is either the number administered in a series, or the number to be in pending immunizations; captured as 'sequence_number.'
-- Route code should come from one dataset, but is another in all the samples without a translation object.  Will need to support coded entries as such since the standard is contradictory.
-- Only supporting manufacturer name for now.  I believe this can have more information attached.
-- Performer just a wrapper for assignedEntity.
-- Not supported: patient instructions, precondition, medication supply order, medication dispense, reaction.
+- No negation indicator on medications, thus only two states.
+- Status coming in again, but doesn't seem to mean anything, as it's probably 'completed' in every one.
+- delivery method may come in 'code', but of unspecified set or type, and no reference in files, so not currently supported.
+- administrationTiming - PIVL very complex to write; put on backlog for now, and not currently supported.
+- Drug manufacturer currently unsupported, cannot find reference structure.
 
-####Immunization.date
+
+####Medication.date
 - 0..2
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/effectiveTime
 - Should be handled to account for each type of date.
+- Low is used for medication start, high is used for medication completion
 
-####Immunization.identifiers
+####Medication.identifiers
 - 1..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id@root
 - Should be handled by common identifier parser.
 
-####Immunization.status
+####Medication.status
 - 1..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration@moodCode
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration@negationInd
-- Combination of mood code and negation can determine status of either 'pending', 'refused', or 'complete'.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration@moodCode INT or EVN (int prescribed, evn complete).
+- Mood code can determine stateof either "prescribed" or "complete".
+
+####Medication.sig
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/text/reference@value
+- Sig is short for 'Signa.'  It's basically the prescription information in shorthand which is written on the label.
+
+
+####Medication.interval
+- 0..1
+- EIVL not supported; spec basically says it's unstructured.
+
+####Medication.
+
 
 ####Immunizations.name
 - 1..1
