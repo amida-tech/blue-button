@@ -184,7 +184,7 @@ describe('Immunizations - Schema Conformance', function() {
                     assert.ok(currentImmunization.administration.route.code.length > 0, 'route name should have length');
                     assert.isString(currentImmunization.administration.route.code_system_name, 'route system name should be a string');
                     assert.ok(currentImmunization.administration.route.code_system_name.length > 0, 'route system name should have length');
-                    assert.includeMembers(['NCI Thesaurus'], new Array(currentImmunization.administration.route.code_system_name), 'route system name should be known value');
+                    assert.includeMembers(['Medication Route FDA'], new Array(currentImmunization.administration.route.code_system_name), 'route system name should be known value');
                 }
                 if (currentImmunization.administration.body_site) {
                     assert.isObject(currentImmunization.administration.body_site, 'site should be an object');
@@ -211,7 +211,7 @@ describe('Immunizations - Schema Conformance', function() {
                     assert.ok(currentImmunization.administration.form.code.length > 0, 'form name should have length');
                     assert.isString(currentImmunization.administration.form.code_system_name, 'form system name should be a string');
                     assert.ok(currentImmunization.administration.form.code_system_name.length > 0, 'form system name should have length');
-                    assert.includeMembers(['NCI Thesaurus'], new Array(currentImmunization.administration.site.code_system_name), 'site system name should be known value');
+                    assert.includeMembers(['Medication Route FDA'], new Array(currentImmunization.administration.site.code_system_name), 'site system name should be known value');
                 }
             }
         }

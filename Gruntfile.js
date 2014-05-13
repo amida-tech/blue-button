@@ -37,7 +37,7 @@ module.exports = function(grunt) {
     },
     watch: {
       all: {
-        files: ['./lib/*.js', '*.js', './**/*.js'],
+        files: ['./lib/*.js', '*.js', './test/*.js'],
         tasks: ['default']
       }
     },
