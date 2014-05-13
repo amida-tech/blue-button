@@ -4,10 +4,7 @@
 ```
 var Result = {
         "date": [{cda_date}],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: true}
-        }],
+        "identifiers": [{cda_id}],
         "status": {type: string, required: true},
         "name": {type: string, required: true},
         "code": {type: string, required: false},

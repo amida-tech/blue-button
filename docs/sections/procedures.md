@@ -9,9 +9,7 @@ var Procedures = {
         "type": {type:string, require:true},
         "status": {type: string, require: true},
         "date": [{cda_date}],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-        }],        
+        "identifiers": [{cda_id}],
         "bodysite": [{
           "name": {type:string, require:true},
           "code": {type:string, require:true},

@@ -7,10 +7,7 @@ var demographics = {
   "name": {cda_name},
   "dob": [{cda_date}],
   "gender": {type:string, required: true},
-  "identifiers": [
-    "identifier": {type:string, required: true},
-    "identifier_type": {type:string, required: true}
-  ],
+  "identifiers": [{cda_id}],
   "marital_status": {type: string, required: false},
   "address": [{cda_usr_address}],
   "phone": [{

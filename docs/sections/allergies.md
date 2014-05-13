@@ -4,9 +4,7 @@
 ```
 var Allergies = {
         "date": [{cda_date}],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-        }],
+        "identifiers": [{cda_id}],
         "name": {type: string, required: true},
         "code": {type: string, required: false},
         "severity": {type: string, required: false},
@@ -41,8 +39,7 @@ var Allergies = {
 
 ####Allergy.identifiers
 - 1..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/id@root
-- Should be handled by common identifier parser.
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/id
 
 ####Allergy.name
 - 1..1

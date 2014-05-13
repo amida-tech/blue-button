@@ -4,10 +4,7 @@
 ```
   var Immunizations = {
     "date": [{cda_date}],
-     "identifiers": [{
-        "identifier": {type:string, required: true},
-        "identifier_type": {type:string, required: true}
-     }],
+     "identifiers": [{cda_id}],
     "status": {type:string: required: true},
     "sequence_number": {type:string, required:false},
     "product": {
@@ -46,10 +43,7 @@
         "address": {type: string, required: true},
         "type": {type:string, required: true}
       }],
-      "identifiers": [{
-        "identifier": {type:string, required: true},
-        "identifier_type": {type:string, required: true}
-      }],
+      "identifiers": [{cda_id}],
       "organization": [{
         "name": {type:string, required: false},
         "address": {cda_address},
@@ -57,16 +51,13 @@
           "number": {type: string, required: true},
           "type": {type: string, required: true}
         }],
-        "email": [{
+       "email": [{
           "address": {type: string, required: true},
           "type": {type:string, required: true}
-        }],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: true}
-        }]
-     },
-     "refusal_reason": {type:string, required: false}
+       }],
+       "identifiers": [{cda_id}]
+    },
+    "refusal_reason": {type:string, required: false}
   }
   
  var cda_name = {
@@ -97,8 +88,7 @@
 
 ####Immunization.identifiers
 - 1..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id@root
-- Should be handled by common identifier parser.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id
 
 ####Immunization.status
 - 1..1
@@ -176,10 +166,9 @@
 - assignedEntity seems to be the defacto element within, which is also poorly documented.
 - Will attempt to parse what I can based on demo files.  Everything under here is highly speculative.
 
-####Immunization.performer.identifier
+####Immunization.performer.identifiers
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/id
-- Should be parsed using standard identifier parser.
 
 ####Immunization.performer.address
 - 0..1
@@ -228,10 +217,9 @@
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/addr
 - Need to write a standard address parser for this element, should be used in demographics, etc. as well.
 
-####Immunization.performer.organization.id
+####Immunization.performer.organization.identifiers
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/id
-- Should be parsed using standard identifier parser.
 
 ####Immunization.refusal_reason
 - 0..1

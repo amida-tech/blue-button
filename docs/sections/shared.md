@@ -120,3 +120,21 @@ var cda_date = {
 - @value, low/@value, high/@value
 - records precision in the @values since that information is lost in date (javascript datetime)
 - can be 'year', 'month', 'day', 'hour', 'minute', 'second', 'subsecond'
+
+## cda_id
+
+```
+var cda_id = {
+    "identifier": {type:string, required: true},
+    "identifier_type": {type:string, required: true}
+}
+```
+
+#### identifier
+- 1..1
+- @root
+
+#### identifier_type
+- 1..1
+- @extension
+

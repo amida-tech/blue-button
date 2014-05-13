@@ -4,9 +4,7 @@
 ```
 var Encounters = {
         "date": [{cda_date}],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-        }],
+        "identifiers": [{cda_id}],
         "name": {type: string, required: true},
         "code": {type: string, required: true},
         "code_system_name": {type:string, required: true},
@@ -27,8 +25,7 @@ var Encounters = {
 
 ####Encounter.identifiers
 - 1..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/id@root
-- Should be handled by common identifier parser.
+- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/id
 
 ####Encounter.name
 - 1..1

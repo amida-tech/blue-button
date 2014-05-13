@@ -4,10 +4,7 @@
 ```
   var Medication = {
     "date": [{cda_date}],
-     "identifiers": [{
-        "identifier": {type:string, required: true},
-        "identifier_type": {type:string, required: true}
-     }],
+     "identifiers": [{cda_id}],
     "status": {type:string: required: true},
     "sig": {type:string, required:false},
     "product": {
@@ -19,10 +16,7 @@
         "code": {type:string, required: false},
         "code_system": {type:string, required: false},
       }],
-      "identifiers": [{
-      	"identifier": {type:string, required: true},
-      	"identifier_type": {type:string, required: true}
-      }]
+      "identifiers": [{cda_id}]
     },
     "administration": {
       "route": {
@@ -69,7 +63,6 @@
 
 ```
 
-
 ####Notes
 - No negation indicator on medications, thus only two states.
 - Status coming in again, but doesn't seem to mean anything, as it's probably 'completed' in every one.
@@ -87,7 +80,6 @@
 ####Medication.identifiers
 - 1..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id@root
-- Should be handled by common identifier parser.
 
 ####Medication.status
 - 1..1
