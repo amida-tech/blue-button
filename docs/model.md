@@ -18,6 +18,7 @@ There are components common to multiple sections and are defined [here](sections
 ####[Encounters](sections/encounters.md) - Draft
 ####[Immunizations](sections/immunizations.md) - Draft
 ####[Vitals](sections/vitals.md) - Draft
+####[Social History](sections/socialHistory.md) - Draft
 
 ###Unsupported Sections/Components:
 ####Advance Directives
@@ -26,7 +27,6 @@ There are components common to multiple sections and are defined [here](sections
 ####Medical Equipment
 ####Payers
 ####Plan of Care
-####Social History
 ####Author
 ####Data Enterer
 ####Informant
