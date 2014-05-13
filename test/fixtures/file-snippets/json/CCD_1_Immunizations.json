@@ -31,7 +31,7 @@
                 "route": {
                     "name": "Intramuscular injection",
                     "code": "C28161",
-                    "code_system_name": "NCI Thesaurus"
+                    "code_system_name": "Medication Route FDA"
                 },
                 "quantity": {
                     "value": 50,
@@ -107,7 +107,7 @@
                 "route": {
                     "name": "Intramuscular injection",
                     "code": "C28161",
-                    "code_system_name": "NCI Thesaurus"
+                    "code_system_name": "Medication Route FDA"
                 },
                 "quantity": {
                     "value": 50,
@@ -183,7 +183,7 @@
                 "route": {
                     "name": "Intramuscular injection",
                     "code": "C28161",
-                    "code_system_name": "NCI Thesaurus"
+                    "code_system_name": "Medication Route FDA"
                 },
                 "quantity": {
                     "value": 50,
@@ -259,7 +259,7 @@
                 "route": {
                     "name": "Intramuscular injection",
                     "code": "C28161",
-                    "code_system_name": "NCI Thesaurus"
+                    "code_system_name": "Medication Route FDA"
                 },
                 "quantity": {
                     "value": 50,

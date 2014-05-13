@@ -260,23 +260,22 @@
           }]
      },
      "medications": {
-          "medicationsPrescribed": [{
-               "route": "RESPIRATORY (INHALATION)",
-               "administrationUnit": {
-                    "name": "INHALANT",
-                    "code": "C42944",
-                    "code_system_name": "NCI Thesaurus"
-               },
-               "freeTextSig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
-               "dose": {
-                    "value": 1,
-                    "unit": "mg/actuat"
-               },
-               "rate": {
-                    "value": 90,
-                    "unit": "ml/min"
-               },
-               "productName": {
+          "medications": [{
+               "date": [
+                    [{
+                         "date": "2007-01-03T00:00:00.000Z",
+                         "precision": "day"
+                    }, {
+                         "date": "2012-05-15T00:00:00.000Z",
+                         "precision": "day"
+                    }]
+               ],
+               "identifiers": [{
+                    "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+               }],
+               "status": "Completed",
+               "sig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+               "product": {
                     "name": "Proventil HFA",
                     "code": "219483",
                     "code_system_name": "RXNORM",
@@ -284,16 +283,43 @@
                          "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
                          "code": "573621",
                          "code_system_name": "RXNORM"
-                    }]
+                    }],
+                    "unencoded_name": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+                    "identifers": {
+                         "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                    }
                },
-               "freeTextProductName": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
-               "dateRange": [{
-                    "date": "2007-01-03T00:00:00.000Z",
-                    "precision": "day"
-               }, {
-                    "date": "2012-05-15T00:00:00.000Z",
-                    "precision": "day"
-               }]
+               "administration": {
+                    "route": {
+                         "name": "RESPIRATORY (INHALATION)",
+                         "code": "C38216",
+                         "code_system_name": "Medication Route FDA"
+                    },
+                    "form": {
+                         "name": "INHALANT",
+                         "code": "C42944",
+                         "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                         "value": 1,
+                         "unit": "mg/actuat"
+                    },
+                    "rate": {
+                         "value": 90,
+                         "unit": "ml/min"
+                    }
+               },
+               "precondition": {
+                    "code": {
+                         "code": "ASSERTION",
+                         "code_system_name": "HL7ActCode"
+                    },
+                    "value": {
+                         "name": "Wheezing",
+                         "code": "56018004",
+                         "code_system_name": "SNOMED CT"
+                    }
+               }
           }]
      },
      "encounters": [{
@@ -311,7 +337,7 @@
                     "code": "1160-1",
                     "code_system_name": "HealthcareServiceLocation"
                },
-               "address": {
+               "addresses": [{
                     "streetLines": [
                          "17 Daws Rd."
                     ],
@@ -319,7 +345,7 @@
                     "state": "MA",
                     "zip": "02368",
                     "country": "US"
-               }
+               }]
           }],
           "findings": [{
                "name": "Pneumonia",
@@ -419,7 +445,7 @@
                     "route": {
                          "name": "Intramuscular injection",
                          "code": "C28161",
-                         "code_system_name": "NCI Thesaurus"
+                         "code_system_name": "Medication Route FDA"
                     },
                     "quantity": {
                          "value": 50,
@@ -478,7 +504,7 @@
                     "route": {
                          "name": "Intramuscular injection",
                          "code": "C28161",
-                         "code_system_name": "NCI Thesaurus"
+                         "code_system_name": "Medication Route FDA"
                     },
                     "quantity": {
                          "value": 50,
@@ -537,7 +563,7 @@
                     "route": {
                          "name": "Intramuscular injection",
                          "code": "C28161",
-                         "code_system_name": "NCI Thesaurus"
+                         "code_system_name": "Medication Route FDA"
                     },
                     "quantity": {
                          "value": 50,
@@ -596,7 +622,7 @@
                     "route": {
                          "name": "Intramuscular injection",
                          "code": "C28161",
-                         "code_system_name": "NCI Thesaurus"
+                         "code_system_name": "Medication Route FDA"
                     },
                     "quantity": {
                          "value": 50,
@@ -805,7 +831,7 @@
                                    "code": "1118-9",
                                    "code_system_name": "HealthcareServiceLocation"
                                },
-                               "address": {
+                               "addresses": [{
                                    "streetLines": [
                                        "17 Daws Rd."
                                    ],
@@ -813,7 +839,7 @@
                                    "state": "MA",
                                    "zip": "02368",
                                    "country": "US"
-                               }
+                               }]
                            }
                        ],
                        "name": "Colonic polypectomy",
@@ -863,7 +889,7 @@
                                    "code": "1118-9",
                                    "code_system_name": "HealthcareServiceLocation"
                                },
-                               "address": {
+                               "addresses": [{
                                    "streetLines": [
                                        "17 Daws Rd."
                                    ],
@@ -871,7 +897,7 @@
                                    "state": "MA",
                                    "zip": "02368",
                                    "country": "US"
-                               }
+                               }]
                            }
                        ],
                        "name": "Colonic polypectomy",
@@ -879,5 +905,4 @@
                        "code_system_name": "SNOMED CT"
                    }
                ]
-     
 }

@@ -15,7 +15,7 @@ var demographics = {
     "identifier_type": {type:string, required: true}
   ],
   "marital_status": {type: string, required: false},
-  "address": [{cda_address}],
+  "address": [{cda_usr_address}],
   "phone": [{
     "number": {type: string, required: true},
     "type": {type: string, required: true}
@@ -40,7 +40,7 @@ var demographics = {
   "guardian": {
     "name": {cda_name},
     "relationship": {type: string, required: false},
-    "address": [{cda_address}],
+    "address": [{cda_usr_address}],
     "phone": [{
        "number": {type: string, required: true},
        "type": {type: string, required: true}
@@ -51,7 +51,7 @@ var demographics = {
      }]
   }
 
-var cda_address = {
+var cda_usr_address = {
     "type": {type: string, required: true},
     "primary": {type: boolean, required: true},
     "street": [{type: string, required: true}],

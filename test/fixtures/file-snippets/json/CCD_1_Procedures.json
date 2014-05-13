@@ -107,7 +107,7 @@
 					"code": "1118-9",
 					"code_system_name": "HealthcareServiceLocation"
 				},
-				"address": {
+				"addresses": [{
 					"streetLines": [
 						"17 Daws Rd."
 					],
@@ -115,7 +115,7 @@
 					"state": "MA",
 					"zip": "02368",
 					"country": "US"
-				}
+				}]
 			}
 		],
 		"name": "Colonic polypectomy",
@@ -165,7 +165,7 @@
 					"code": "1118-9",
 					"code_system_name": "HealthcareServiceLocation"
 				},
-				"address": {
+				"addresses": [{
 					"streetLines": [
 						"17 Daws Rd."
 					],
@@ -173,7 +173,7 @@
 					"state": "MA",
 					"zip": "02368",
 					"country": "US"
-				}
+				}]
 			}
 		],
 		"name": "Colonic polypectomy",

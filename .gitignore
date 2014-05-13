@@ -8,3 +8,4 @@ npm-debug.log
 # Eclipse
 .project
 .settings
+*.md.html
