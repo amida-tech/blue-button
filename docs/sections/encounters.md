@@ -14,7 +14,7 @@ var Encounters = {
         "code": {type: string, required: true},
         "code_system_name": {type:string, required: true},
         "locations": [[cda_location}],
-        findings: [{cda_concept}]
+        "findings": [{cda_concept}]
      }
 ```
 
