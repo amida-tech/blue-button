@@ -1,76 +1,60 @@
-{
-    "panels": [
+[
         {
-            "panelName": {
-                "name": "CBC WO DIFFERENTIAL",
-                "code": "43789009",
-                "code_system_name": "SNOMED CT"
-            },
             "results": [
                 {
-                    "resultName": {
-                        "name": "HGB",
-                        "code": "30313-1",
-                        "code_system_name": "LOINC"
-                    },
-                    "measuredAt": [
+                    "date": [
                         {
                             "date": "2000-03-23T14:30:00.000Z",
                             "precision": "minute"
                         }
                     ],
-                    "physicalQuantity": {
-                        "value": 13.2,
-                        "unit": "g/dl"
-                    },
-                    "freeTextValue": "HGB (M 13-18 g/dl; F 12-16\n\t\t\t\t\t\t\t\t\t\t\tg/dl)",
+                    "freeTextValue": "HGB (M 13-18 g/dl; F 12-16\n                                            g/dl)",
                     "interpretations": [
                         "Normal"
-                    ]
+                    ],
+                    "name": "HGB",
+                    "code": "30313-1",
+                    "code_system_name": "LOINC",
+                    "value": 13.2,
+                    "unit": "g/dl"
                 },
                 {
-                    "resultName": {
-                        "name": "WBC",
-                        "code": "33765-9",
-                        "code_system_name": "LOINC"
-                    },
-                    "measuredAt": [
+                    "date": [
                         {
                             "date": "2000-03-23T14:30:00.000Z",
                             "precision": "minute"
                         }
                     ],
-                    "physicalQuantity": {
-                        "value": 6.7,
-                        "unit": "10+3/ul"
-                    },
                     "freeTextValue": "WBC (4.3-10.8 10+3/ul)",
                     "interpretations": [
                         "Normal"
-                    ]
+                    ],
+                    "name": "WBC",
+                    "code": "33765-9",
+                    "code_system_name": "LOINC",
+                    "value": 6.7,
+                    "unit": "10+3/ul"
                 },
                 {
-                    "resultName": {
-                        "name": "PLT",
-                        "code": "26515-7",
-                        "code_system_name": "LOINC"
-                    },
-                    "measuredAt": [
+                    "date": [
                         {
                             "date": "2000-03-23T14:30:00.000Z",
                             "precision": "minute"
                         }
                     ],
-                    "physicalQuantity": {
-                        "value": 123,
-                        "unit": "10+3/ul"
-                    },
                     "freeTextValue": "PLT (135-145 meq/l)",
                     "interpretations": [
                         "Low"
-                    ]
+                    ],
+                    "name": "PLT",
+                    "code": "26515-7",
+                    "code_system_name": "LOINC",
+                    "value": 123,
+                    "unit": "10+3/ul"
                 }
-            ]
+            ],
+            "name": "CBC WO DIFFERENTIAL",
+            "code": "43789009",
+            "code_system_name": "SNOMED CT"
         }
     ]
-}
