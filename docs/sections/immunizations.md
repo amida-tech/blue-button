@@ -3,10 +3,7 @@
 ###Object Schema:
 ```
   var Immunizations = {
-    "date": [{
-         "date":{type: datetime, required: true},
-         "precision":{type:string, required: true}
-     }],
+    "date": [{cda_date}],
      "identifiers": [{
         "identifier": {type:string, required: true},
         "identifier_type": {type:string, required: true}
@@ -72,16 +69,6 @@
      "refusal_reason": {type:string, required: false}
   }
   
-var cda_address = {
-    "type": {type: string, required: true},
-    "primary": {type: boolean, required: true},
-    "street": [{type: string, required: true}],
-    "city": {type: string, required: true},
-    "state": {type: string, required: false},
-    "postal_code": {type: string, required: false},
-    "country": {type: string, required: false}
- }
- 
  var cda_name = {
     "prefix": [{type: string, required: false}],
     "first": {type: string, required: true},

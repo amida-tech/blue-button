@@ -3,10 +3,7 @@
 ###Object Schema:
 ```
 var Vitals = {
-        "date": [{
-          "date":{type: datetime, required: true},
-          "precision":{type:string, required: true}
-        }],
+        "date": [{cda_date}],
         "identifiers": [{
           "identifier": {type:string, required: true},
           "identifier_type": {type:string, required: true}
@@ -36,7 +33,6 @@ var Vitals = {
 ####Vitals.date
 - 1..2
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/effectiveTime
-- Should be handled to account for each type of date.
 
 ####Vitals.identifiers
 - 1..*

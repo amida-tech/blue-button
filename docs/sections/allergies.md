@@ -3,10 +3,7 @@
 ###Object Schema:
 ```
 var Allergies = {
-        "date": [{
-          "date":{type: datetime, required: true},
-          "precision":{type:string, required: true}
-        }],
+        "date": [{cda_date}],
         "identifiers": [{
           "identifier": {type:string, required: true},
         }],
@@ -41,7 +38,6 @@ var Allergies = {
 ####Allergy.date
 - 0..2
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/effectiveTime
-- Should be handled to account for each type of date.
 
 ####Allergy.identifiers
 - 1..*

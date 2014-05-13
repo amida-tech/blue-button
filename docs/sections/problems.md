@@ -3,10 +3,7 @@
 ###Object Schema:
 ```
 var Problems = {
-        "date": [{
-          "date":{type: datetime, required: true},
-          "precision":{type:string, required: true}
-        }],
+        "date": [{cda_date}],
         "identifiers": [{
           "identifier": {type:string, required: true},
           "identifier_type": {type:string, required: false}
@@ -41,7 +38,6 @@ var Problems = {
 ####Problem.date
 - 0..2
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/effectiveTime
-- Should be handled to account for each type of date.
 
 ####Problem.identifiers
 - 1..*

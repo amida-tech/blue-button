@@ -5,10 +5,7 @@
 ```
 var demographics = {
   "name": {cda_name},
-  "dob": {
-    "date":{type: datetime, required: true},
-    "precision":{type:string, required: true}
-  },
+  "dob": [{cda_date}],
   "gender": {type:string, required: true},
   "identifiers": [
     "identifier": {type:string, required: true},
@@ -125,8 +122,9 @@ var cda_name = {
 
 ####dob
 * 1..1
-* //ClinicalDocument/recordTarget/patientRole/patient/birthTime@value
+* //ClinicalDocument/recordTarget/patientRole/patient/birthTime
 * This must be precise to at least year.
+* Currently an array of length one to match other time fields.  Need to be changed.
 
 ####gender
 * 1..1

@@ -3,10 +3,7 @@
 ###Object Schema:
 ```
   var Medication = {
-    "date": [{
-         "date":{type: datetime, required: true},
-         "precision":{type:string, required: true}
-     }],
+    "date": [{cda_date}],
      "identifiers": [{
         "identifier": {type:string, required: true},
         "identifier_type": {type:string, required: true}
@@ -85,7 +82,6 @@
 ####Medication.date
 - 0..2
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/effectiveTime
-- Should be handled to account for each type of date.
 - Low is used for medication start, high is used for medication completion
 
 ####Medication.identifiers
