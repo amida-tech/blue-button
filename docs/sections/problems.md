@@ -3,14 +3,8 @@
 ###Object Schema:
 ```
 var Problems = {
-        "date": [{
-          "date":{type: datetime, required: true},
-          "precision":{type:string, required: true}
-        }],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: false}
-        }],
+        "date": [{cda_date}],
+        "identifiers": [{cda_id}],
         "negation_indicator": {type: boolean, required: false},
         "name": {type: string, required: true},
         "code": {type: string, required: false},
@@ -20,10 +14,7 @@ var Problems = {
         "status": {type: string, required: false}, 
         "patient_status": {type: string, required: false},
         ,
-        "source_list_identifiers": [{
-          "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: true}
-        }]
+        "source_list_identifiers": [{cda_id}]
       }
 ```
 
@@ -41,12 +32,10 @@ var Problems = {
 ####Problem.date
 - 0..2
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/effectiveTime
-- Should be handled to account for each type of date.
 
 ####Problem.identifiers
 - 1..*
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/id@root
-- Should be handled by common identifier parser.
 
 ####Problem.negation_indicator
 - 0..1
@@ -102,5 +91,5 @@ var Problems = {
 
 ####Problem.source_list_identifiers
 - 1..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/id@root
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/id
 

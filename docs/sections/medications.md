@@ -3,14 +3,8 @@
 ###Object Schema:
 ```
   var Medication = {
-    "date": [{
-         "date":{type: datetime, required: true},
-         "precision":{type:string, required: true}
-     }],
-     "identifiers": [{
-        "identifier": {type:string, required: true},
-        "identifier_type": {type:string, required: true}
-     }],
+    "date": [{cda_date}],
+     "identifiers": [{cda_id}],
     "status": {type:string: required: true},
     "sig": {type:string, required:false},
     "product": {
@@ -22,10 +16,7 @@
         "code": {type:string, required: false},
         "code_system": {type:string, required: false},
       }],
-      "identifiers": [{
-      	"identifier": {type:string, required: true},
-      	"identifier_type": {type:string, required: true}
-      }]
+      "identifiers": [{cda_id}]
     },
     "administration": {
       "route": {
@@ -72,7 +63,6 @@
 
 ```
 
-
 ####Notes
 - No negation indicator on medications, thus only two states.
 - Status coming in again, but doesn't seem to mean anything, as it's probably 'completed' in every one.
@@ -85,13 +75,11 @@
 ####Medication.date
 - 0..2
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/effectiveTime
-- Should be handled to account for each type of date.
 - Low is used for medication start, high is used for medication completion
 
 ####Medication.identifiers
 - 1..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id@root
-- Should be handled by common identifier parser.
 
 ####Medication.status
 - 1..1

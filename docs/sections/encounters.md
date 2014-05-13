@@ -3,13 +3,8 @@
 ###Object Schema:
 ```
 var Encounters = {
-        "date": [{
-          "date":{type: datetime, required: true},
-          "precision":{type:string, required: true}
-        }],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-        }],
+        "date": [{cda_date}],
+        "identifiers": [{cda_id}],
         "name": {type: string, required: true},
         "code": {type: string, required: true},
         "code_system_name": {type:string, required: true},
@@ -27,12 +22,10 @@ var Encounters = {
 ####Encounter.date
 - 0..2
 - //ClinicalDocument/component/structuredBody/component/section/entry/encounter/effectiveTime
-- Should be handled to account for each type of date.
 
 ####Encounter.identifiers
 - 1..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/id@root
-- Should be handled by common identifier parser.
+- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/id
 
 ####Encounter.name
 - 1..1

@@ -3,14 +3,8 @@
 ###Object Schema:
 ```
   var Immunizations = {
-    "date": [{
-         "date":{type: datetime, required: true},
-         "precision":{type:string, required: true}
-     }],
-     "identifiers": [{
-        "identifier": {type:string, required: true},
-        "identifier_type": {type:string, required: true}
-     }],
+    "date": [{cda_date}],
+     "identifiers": [{cda_id}],
     "status": {type:string: required: true},
     "sequence_number": {type:string, required:false},
     "product": {
@@ -49,10 +43,7 @@
         "address": {type: string, required: true},
         "type": {type:string, required: true}
       }],
-      "identifiers": [{
-        "identifier": {type:string, required: true},
-        "identifier_type": {type:string, required: true}
-      }],
+      "identifiers": [{cda_id}],
       "organization": [{
         "name": {type:string, required: false},
         "address": {cda_address},
@@ -60,28 +51,15 @@
           "number": {type: string, required: true},
           "type": {type: string, required: true}
         }],
-        "email": [{
+       "email": [{
           "address": {type: string, required: true},
           "type": {type:string, required: true}
-        }],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-          "identifier_type": {type:string, required: true}
-        }]
-     },
-     "refusal_reason": {type:string, required: false}
+       }],
+       "identifiers": [{cda_id}]
+    },
+    "refusal_reason": {type:string, required: false}
   }
   
-var cda_address = {
-    "type": {type: string, required: true},
-    "primary": {type: boolean, required: true},
-    "street": [{type: string, required: true}],
-    "city": {type: string, required: true},
-    "state": {type: string, required: false},
-    "postal_code": {type: string, required: false},
-    "country": {type: string, required: false}
- }
- 
  var cda_name = {
     "prefix": [{type: string, required: false}],
     "first": {type: string, required: true},
@@ -110,8 +88,7 @@ var cda_address = {
 
 ####Immunization.identifiers
 - 1..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id@root
-- Should be handled by common identifier parser.
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/id
 
 ####Immunization.status
 - 1..1
@@ -189,10 +166,9 @@ var cda_address = {
 - assignedEntity seems to be the defacto element within, which is also poorly documented.
 - Will attempt to parse what I can based on demo files.  Everything under here is highly speculative.
 
-####Immunization.performer.identifier
+####Immunization.performer.identifiers
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/id
-- Should be parsed using standard identifier parser.
 
 ####Immunization.performer.address
 - 0..1
@@ -241,10 +217,9 @@ var cda_address = {
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/addr
 - Need to write a standard address parser for this element, should be used in demographics, etc. as well.
 
-####Immunization.performer.organization.id
+####Immunization.performer.organization.identifiers
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/id
-- Should be parsed using standard identifier parser.
 
 ####Immunization.refusal_reason
 - 0..1

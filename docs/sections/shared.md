@@ -100,4 +100,41 @@ var cda_location = {
 - 0..*
 - telecom
 
+## cda_date
+
+```
+var cda_date = {
+    "date": {type: datetime, required:true},
+    "precision": {type: string, required:true}
+}
+```
+
+#### date
+- 1..1
+- @value, low/@value, high/@value
+- should be handled to account for each type of date
+- nullFlavor is not supported
+
+#### precision
+- 1..1
+- @value, low/@value, high/@value
+- records precision in the @values since that information is lost in date (javascript datetime)
+- can be 'year', 'month', 'day', 'hour', 'minute', 'second', 'subsecond'
+
+## cda_id
+
+```
+var cda_id = {
+    "identifier": {type:string, required: true},
+    "identifier_type": {type:string, required: true}
+}
+```
+
+#### identifier
+- 1..1
+- @root
+
+#### identifier_type
+- 1..1
+- @extension
 

@@ -8,13 +8,8 @@ var Procedures = {
         "code_system_name": {type:string, require: true},
         "type": {type:string, require:true},
         "status": {type: string, require: true},
-        "date": [{ 
-           "date": {type: datetime, required: true},
-           "precision":{type:string, required: true}
-        }],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-        }],        
+        "date": [{cda_date}],
+        "identifiers": [{cda_id}],
         "bodysite": [{
           "name": {type:string, require:true},
           "code": {type:string, require:true},

@@ -3,13 +3,8 @@
 ###Object Schema:
 ```
 var Allergies = {
-        "date": [{
-          "date":{type: datetime, required: true},
-          "precision":{type:string, required: true}
-        }],
-        "identifiers": [{
-          "identifier": {type:string, required: true},
-        }],
+        "date": [{cda_date}],
+        "identifiers": [{cda_id}],
         "name": {type: string, required: true},
         "code": {type: string, required: false},
         "severity": {type: string, required: false},
@@ -41,12 +36,10 @@ var Allergies = {
 ####Allergy.date
 - 0..2
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/effectiveTime
-- Should be handled to account for each type of date.
 
 ####Allergy.identifiers
 - 1..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/id@root
-- Should be handled by common identifier parser.
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/id
 
 ####Allergy.name
 - 1..1
