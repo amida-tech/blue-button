@@ -18,6 +18,8 @@ var checkSchemaConformity = function checkSchemaConformity(obj, schema, path) {
         for (var i=0; i<n; ++i) {
             checkSchemaConformity(obj[i], elemSchema, path + '[' + i + ']');
         }
+    } else if (obj instanceof Date) {
+        assert.equal("datetime", schema, msg);
     } else if (typeof obj === 'object') {
         assert.isObject(schema, msg);
         Object.keys(obj).forEach(function(key) {
@@ -29,7 +31,6 @@ var checkSchemaConformity = function checkSchemaConformity(obj, schema, path) {
             }
         });
     } else {
-        console.log(schema);
         assert.equal(typeof obj, schema, msg);
     }
 };
@@ -181,7 +182,7 @@ describe('component.generateSchema on CCD_1', function() {
     it('social history', function(done) {
         bb.generateSchema({component: "ccda_socialHistory"}, function(err, schema) {
             expect(schema).to.exist;
-            //checkSchemaConformity(ccd.socialHistory, schema, "socialHistory");
+            checkSchemaConformity(ccd.socialHistory, schema, "socialHistory");
             done();
         });
     });
