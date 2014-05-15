@@ -4,7 +4,7 @@ var component = require('../lib/parser/ccda/component');
 var processor = require('../lib/parser/ccda/processor');
 var cleanup = require('../lib/parser/ccda/cleanup');
 
-describe('component.generateSchema', function() {
+describe('component.generateSchema on test component', function() {
     var testGChild = null;
     var testChild = null;
     var test = null;
@@ -105,6 +105,24 @@ describe('component.generateSchema', function() {
         done();
     });
     
+    it('replaceWithField', function(done) {
+        test.cleanupStep(cleanup.replaceWithField('child_required'));
+        expected = expectedChild;
+        
+        var schema = test.generateSchema();
+        expect(schema).to.deep.equal(expected);
+        done();
+    });
+    
+    it('replaceWithField', function(done) {
+        testChild.cleanupStep(cleanup.replaceWithField('multi_optional'));
+        expected = expected.multi_optional;
+        
+        var schema = test.generateSchema();
+        expect(schema).to.deep.equal(expected);
+        done();
+    });
+
     
 });
 
