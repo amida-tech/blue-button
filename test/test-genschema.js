@@ -29,6 +29,7 @@ var checkSchemaConformity = function checkSchemaConformity(obj, schema, path) {
             }
         });
     } else {
+        console.log(schema);
         assert.equal(typeof obj, schema, msg);
     }
 };
@@ -76,30 +77,30 @@ describe('component.generateSchema on test component', function() {
         ]);
     
         expectedGChild = {
-            single_required: {type: 'string', required: true},
-            single_optional: {type: 'string', required: false},
-            multi_required: [{type: 'string', 'required': true}],
-            multi_optional: [{type: 'number', 'required': false}]
+            single_required: 'string',
+            single_optional: 'string',
+            multi_required: ['string'],
+            multi_optional: ['number']
         };
         
         expectedTBExtracted = {
-            single_required: {type: 'string', required: true},
-            addl_a: {type: 'string', 'required': false},
-            addl_b: [{type: 'string', 'required': true}]
+            single_required: 'string',
+            addl_a: 'string',
+            addl_b: ['string']
         };
         
         expectedChild = {
-            single_required: {type: 'boolean', required: true},
-            single_optional: {type: 'string', required: false},
-            multi_required: [{type: 'number', 'required': true}],
-            multi_optional: [{type: 'string', 'required': false}],
+            single_required: 'boolean',
+            single_optional: 'string',
+            multi_required: ['number'],
+            multi_optional: ['string'],
             child_multiple: [expectedGChild],
             extract: expectedTBExtracted
         };
         
         expected = {
-            single_required: {type: 'string', required: true},
-            single_optional: {type: 'datetime', required: false},
+            single_required: 'string',
+            single_optional: 'datetime',
             child_required: expectedChild
         };
         
