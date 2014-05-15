@@ -1,8 +1,37 @@
 var expect = require('chai').expect;
+var assert = require('chai').assert;
+var fs = require('fs');
+var path = require('path');
 
 var component = require('../lib/parser/ccda/component');
 var processor = require('../lib/parser/ccda/processor');
 var cleanup = require('../lib/parser/ccda/cleanup');
+var bb = require('../index');
+
+// required is not checked currently
+var checkSchemaConformity = function checkSchemaConformity(obj, schema, path) {
+    var msg = path + ' is not schema conformant';
+    if (Array.isArray(obj)) {
+        assert.isArray(schema, msg);
+        var n = obj.length;
+        var elemSchema = schema[0];
+        for (var i=0; i<n; ++i) {
+            checkSchemaConformity(obj[i], elemSchema, path + '[' + i + ']');
+        }
+    } else if (typeof obj === 'object') {
+        assert.isObject(schema, msg);
+        Object.keys(obj).forEach(function(key) {
+            var e = obj[key];
+            var s = schema[key];
+            assert.isDefined(s, msg + " (" + key+ ")");
+            if (e) {
+                checkSchemaConformity(e, s, path + '.' + key);
+            }
+        });
+    } else {
+        assert.equal(typeof obj, schema, msg);
+    }
+};
 
 describe('component.generateSchema on test component', function() {
     var testGChild = null;
@@ -114,7 +143,7 @@ describe('component.generateSchema on test component', function() {
         done();
     });
     
-    it('replaceWithField', function(done) {
+    it('replaceWithField (array)', function(done) {
         testChild.cleanupStep(cleanup.replaceWithField('multi_optional'));
         expected = expected.multi_optional;
         
@@ -122,7 +151,38 @@ describe('component.generateSchema on test component', function() {
         expect(schema).to.deep.equal(expected);
         done();
     });
+});
 
+describe('component.generateSchema on CCD_1', function() {
+    var ccd = null;
     
+    before(function(done) {
+        var filepath  = path.join(__dirname, 'fixtures/files/CCD_1.xml');
+        var xml = fs.readFileSync(filepath, 'utf-8');
+        bb.parse(xml, function(err, result) {
+            ccd = result.toJSON();
+            done();
+        });
+    });
+
+    it('ccd exists', function(done) {
+        expect(ccd).to.exist;
+        done();
+    });
+    
+    it('erreneous component', function(done) {
+        bb.generateSchema({component: 'no component'}, function(err, result) {
+            expect(err).to.exist;
+            done();
+        });
+    });
+
+    it('social history', function(done) {
+        bb.generateSchema({component: "ccda_socialHistory"}, function(err, schema) {
+            expect(schema).to.exist;
+            //checkSchemaConformity(ccd.socialHistory, schema, "socialHistory");
+            done();
+        });
+    });
 });
 
