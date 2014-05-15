@@ -20,9 +20,9 @@ testComponent.fields([
     ['single_optional', '0..1', '//document/opt']
 ]);
 
-describe('component.document', function() {
+describe('component.generateSchema', function() {
     it('straight forward', function(done) {
-        var schema = testComponent.document();
+        var schema = testComponent.generateSchema();
         var expectedTestChild = {
             single_required: {type: 'string', required: true},
             single_optional: {type: 'string', required: false},
@@ -32,10 +32,9 @@ describe('component.document', function() {
         var expectedTest = {
             single_required: {type: 'string', required: true},
             single_optional: {type: 'string', required: false},
-            child_required: 'testChild'
+            child_required: expectedTestChild
         };
-        expect(schema.testChild).to.deep.equal(expectedTestChild);
-        expect(schema.test).to.deep.equal(expectedTest);
+        expect(schema).to.deep.equal(expectedTest);
         done();
     });
 });
