@@ -245,27 +245,57 @@
                     ],
                     "freeTextValue": "PLT (135-145 meq/l)",
                     "interpretations": [
-                        "Low"
-                    ],
-                    "name": "PLT",
-                    "code": "26515-7",
-                    "code_system_name": "LOINC",
-                    "value": 123,
-                    "unit": "10+3/ul"
-                }
-            ],
-            "name": "CBC WO DIFFERENTIAL",
-            "code": "43789009",
-            "code_system_name": "SNOMED CT"
-        }
-    ],
-    "medications": [
-        {
-            "date": [
-                [
-                    {
-                        "date": "2007-01-03T00:00:00.000Z",
-                        "precision": "day"
+
+                         "Low"
+                    ]
+               }]
+          }]
+     },
+     "medications": {
+          "medications": [{
+               "date": [
+                    [{
+                         "date": "2007-01-03T00:00:00.000Z",
+                         "precision": "day"
+                    }, {
+                         "date": "2012-05-15T00:00:00.000Z",
+                         "precision": "day"
+                    }]
+               ],
+               "identifiers": [{
+                    "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+               }],
+               "status": "Completed",
+               "sig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+               "product": {
+                    "name": "Proventil HFA",
+                    "code": "219483",
+                    "code_system_name": "RXNORM",
+                    "translations": [{
+                         "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
+                         "code": "573621",
+                         "code_system_name": "RXNORM"
+                    }],
+                    "unencoded_name": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
+                    "identifiers": {
+                         "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                    }
+               },
+               "administration": {
+                    "route": {
+                         "name": "RESPIRATORY (INHALATION)",
+                         "code": "C38216",
+                         "code_system_name": "Medication Route FDA"
+                    },
+                    "form": {
+                         "name": "INHALANT",
+                         "code": "C42944",
+                         "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                         "value": 1,
+                         "unit": "mg/actuat"
+
                     },
                     {
                         "date": "2012-05-15T00:00:00.000Z",
@@ -752,48 +782,51 @@
                         "zip": "99099",
                         "country": "US"
                     }
-                ],
-                "organization": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "2.16.840.1.113883.19.5.9999.1394"
-                            }
-                        ],
-                        "name": [
-                            "Good Health Clinic"
-                        ]
-                    }
-                ]
-            },
-            "refusal_reason": "Patient objection"
-        }
-    ],
-    "socialHistory": {
-        "smokingStatuses": [
-            {
-                "smokingStatus": {
-                    "name": "Former smoker",
-                    "code": "8517006",
-                    "code_system_name": "SNOMED CT"
-                },
-                "dateRange": [
-                    {
-                        "date": "2005-05-01T00:00:00.000Z",
-                        "precision": "day"
-                    },
-                    {
-                        "date": "2009-02-27T13:00:00.000Z",
-                        "precision": "subsecond"
-                    }
-                ]
-            }
-        ]
-    },
-    "problems": [
-        {
-            "date": [
-                {
+
+               },
+               "performer": {
+                    "identifiers": [{
+                         "identifier": "2.16.840.1.113883.19.5.9999.456",
+                         "identifier_type": "2981824"
+                    }],
+                    "name": [{
+                         "last": "Assigned",
+                         "first": "Amanda"
+                    }],
+                    "address": [{
+                         "streetLines": [
+                              "1021 Health Drive"
+                         ],
+                         "city": "Ann Arbor",
+                         "state": "MI",
+                         "zip": "99099",
+                         "country": "US"
+                    }],
+                    "organization": [{
+                         "identifiers": [{
+                              "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                         }],
+                         "name": [
+                              "Good Health Clinic"
+                         ]
+                    }]
+               },
+               "refusal_reason": "Patient objection"
+          }]
+     },
+     "socialHistory": [{
+           "value": "Former smoker",
+           "dateRange": [{
+               "date": "2005-05-01T00:00:00.000Z",
+               "precision": "day"
+           }, {
+               "date": "2009-02-27T13:00:00.000Z",
+               "precision": "subsecond"
+           }]
+     }],
+     "problems": {
+          "problems": [{
+               "date": [{
                     "date": "2008-01-03T00:00:00.000Z",
                     "precision": "day"
                 },
