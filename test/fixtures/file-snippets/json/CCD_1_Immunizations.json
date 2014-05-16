@@ -1,5 +1,4 @@
-{
-    "immunizations": [
+[
         {
             "date": [
                 {
@@ -306,4 +305,3 @@
             "refusal_reason": "Patient objection"
         }
     ]
-}

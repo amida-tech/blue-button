@@ -30,21 +30,19 @@ describe('vitals parser', function() {
     
     it ('spot check', function(done) {
         expect(vitals).to.exist;
-        expect(vitals.panels).to.have.length(2);
+        expect(vitals).to.have.length(6);
         
-        expect(vitals.panels[0].vitals).to.have.length(3);
-        expect(vitals.panels[0].vitals[0].vitalName).exist;
-        expect(vitals.panels[0].vitals[0].vitalName.name).to.equal('Height');
-        expect(vitals.panels[0].vitals[0].physicalQuantity).exist;
-        expect(vitals.panels[0].vitals[0].physicalQuantity.value).to.equal(177);
-        expect(vitals.panels[0].vitals[0].physicalQuantity.unit).to.equal('cm');
+        expect(vitals[0]).exist;
+        expect(vitals[0].name).to.equal('Height');
+        expect(vitals[0]).exist;
+        expect(vitals[0].value).to.equal(177);
+        expect(vitals[0].unit).to.equal('cm');
 
-        expect(vitals.panels[1].vitals).to.have.length(3);
-        expect(vitals.panels[1].vitals[1].vitalName).exist;
-        expect(vitals.panels[1].vitals[1].vitalName.name).to.equal('Patient Body Weight - Measured');
-        expect(vitals.panels[1].vitals[1].physicalQuantity).exist;
-        expect(vitals.panels[1].vitals[1].physicalQuantity.value).to.equal(88);
-        expect(vitals.panels[1].vitals[1].physicalQuantity.unit).to.equal('kg');
+        expect(vitals[1]).exist;
+        expect(vitals[1].name).to.equal('Patient Body Weight - Measured');
+        expect(vitals[1]).exist;
+        expect(vitals[1].value).to.equal(86);
+        expect(vitals[1].unit).to.equal('kg');
         
         done();
     });

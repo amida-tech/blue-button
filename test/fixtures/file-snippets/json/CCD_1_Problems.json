@@ -1,5 +1,4 @@
- {
-    "problems": [
+[
         {
             "date": [
                 {
@@ -17,9 +16,6 @@
                 }
             ],
             "negation_indicator": false,
-            "name": "Pneumonia",
-            "code": "233604007",
-            "code_system_name": "SNOMED CT",
             "onset_age": "57",
             "onset_age_unit": "Year",
             "status": "Resolved",
@@ -28,7 +24,10 @@
                 {
                     "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
                 }
-            ]
+            ],
+            "name": "Pneumonia",
+            "code": "233604007",
+            "code_system_name": "SNOMED CT"
         },
         {
             "date": [
@@ -47,9 +46,6 @@
                 }
             ],
             "negation_indicator": true,
-            "name": "Asthma",
-            "code": "195967001",
-            "code_system_name": "SNOMED CT",
             "onset_age": "57",
             "onset_age_unit": "Year",
             "status": "Active",
@@ -58,7 +54,9 @@
                 {
                     "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
                 }
-            ]
+            ],
+            "name": "Asthma",
+            "code": "195967001",
+            "code_system_name": "SNOMED CT"
         }
     ]
-}
