@@ -242,5 +242,20 @@ describe('component.generateSchema on CCD_1', function() {
             done();
         });
     });
-});
+    
+    it('results', function(done) {
+        bb.generateSchema({component: "ccda_results"}, function(err, schema) {
+            expect(schema).to.exist;
+            checkSchemaConformity(ccd.results, schema, "results");
+            done();
+        });
+    });
 
+    it('vitals', function(done) {
+        bb.generateSchema({component: "ccda_vitals"}, function(err, schema) {
+            expect(schema).to.exist;
+            checkSchemaConformity(ccd.vitals, schema, "vitals");
+            done();
+        });
+    });
+});
