@@ -234,5 +234,13 @@ describe('component.generateSchema on CCD_1', function() {
             done();
         });
     });
+    
+    it('problems', function(done) {
+        bb.generateSchema({component: "ccda_problems"}, function(err, schema) {
+            expect(schema).to.exist;
+            checkSchemaConformity(ccd.problems, schema, "problems");
+            done();
+        });
+    });
 });
 
