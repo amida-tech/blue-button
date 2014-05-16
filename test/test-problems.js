@@ -15,6 +15,7 @@ var problems;
 var loadRecord = function(done) {
     var filepath = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Problems.xml');
     var xml = fs.readFileSync(filepath, 'utf-8');
+
     bb.parse(xml, {
         component: 'ccda_problems'
     }, function(err, result) {
@@ -50,8 +51,8 @@ describe('Problems - Snippet Comparison', function() {
     it('Shallow Equality Check', function(done) {
         //console.log(JSON.stringify(problems, null, 4));
         expect(problems).to.exist;
-        expect(problems.problems).to.exist;
-        expect(problems.problems).to.have.length(2);
+        expect(problems).to.exist;
+        expect(problems).to.have.length(2);
         done();
     });
 });
@@ -69,8 +70,8 @@ describe('Problems - Schema Conformance', function() {
     });
 
     it('Basic Object Structure', function(done) {
-        assert.isObject(problems, 'Main item should be object');
-        assert.isArray(problems.problems, 'Sub object should be array.');
+        //assert.isObject(problems, 'Main item should be object');
+        assert.isArray(problems, 'Sub object should be array.');
         done();
 
     });

@@ -46,15 +46,14 @@ describe('immunizations parser', function() {
 
     it('spot check', function(done) {
         expect(immunizations).to.exist;
-        expect(immunizations.immunizations).to.exist;
-        expect(immunizations.immunizations).to.have.length(4);
+        expect(immunizations).to.have.length(4);
         
-        expect(immunizations.immunizations[0].administration.route.name).to.equal('Intramuscular injection');
-        expect(immunizations.immunizations[0].product.name).to.exist;
-        expect(immunizations.immunizations[0].product.code).to.equal('88');
-        expect(immunizations.immunizations[0].product.name).to.equal("Influenza virus vaccine");
-        expect(JSON.stringify(immunizations.immunizations[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
-        expect(immunizations.immunizations[0].date[0].precision).to.equal('month');
+        expect(immunizations[0].administration.route.name).to.equal('Intramuscular injection');
+        expect(immunizations[0].product.name).to.exist;
+        expect(immunizations[0].product.code).to.equal('88');
+        expect(immunizations[0].product.name).to.equal("Influenza virus vaccine");
+        expect(JSON.stringify(immunizations[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
+        expect(immunizations[0].date[0].precision).to.equal('month');
         
         done();
     });
@@ -74,8 +73,8 @@ describe('Immunizations - Schema Conformance', function() {
     });
 
     it('Basic Object Structure', function(done) {
-        assert.isObject(immunizations, 'Main item should be object');
-        assert.isArray(immunizations.immunizations, 'Sub object should be array.');
+        //assert.isObject(immunizations, 'Main item should be object');
+        assert.isArray(immunizations, 'Sub object should be array.');
         done();
 
     });
@@ -328,8 +327,8 @@ describe('Immunizations - Schema Conformance', function() {
 
 
     it("Immunization Structure - Refusal", function(done) {
-        for (var i in immunizations.immunizations) {
-            var currentImmunization = immunizations.immunizations[i];
+        for (var i in immunizations) {
+            var currentImmunization = immunizations[i];
             if (currentImmunization.refusal_reason) {
                 assert.isString(currentImmunization.refusal_reason, 'refusal should be a string');
                 assert.ok(currentImmunization.refusal_reason.length > 0, 'refusal should have content');

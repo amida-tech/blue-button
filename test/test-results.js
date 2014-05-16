@@ -30,18 +30,18 @@ describe('results parser', function() {
     
     it ('spot check', function(done) {
         expect(results).to.exist;
-        expect(results.panels).to.have.length(1);
+        expect(results).to.have.length(1);
         
-        expect(results.panels[0].panelName).to.exist;
-        expect(results.panels[0].panelName.code).to.equal('43789009');
-        expect(results.panels[0].panelName.name).to.equal("CBC WO DIFFERENTIAL");
+        expect(results[0]).to.exist;
+        expect(results[0].code).to.equal('43789009');
+        expect(results[0].name).to.equal("CBC WO DIFFERENTIAL");
         
-        expect(results.panels[0].results).to.exist;
-        expect(results.panels[0].results).to.have.length(3);
+        expect(results[0].results).to.exist;
+        expect(results[0].results).to.have.length(3);
         
-        expect(results.panels[0].results[2].resultName).to.exist;
-        expect(results.panels[0].results[2].resultName.code).to.equal('26515-7');
-        expect(results.panels[0].results[2].resultName.name).to.equal('PLT');
+        expect(results[0].results[2]).to.exist;
+        expect(results[0].results[2].code).to.equal('26515-7');
+        expect(results[0].results[2].name).to.equal('PLT');
         
         done();
     });
