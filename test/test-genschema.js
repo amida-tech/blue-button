@@ -226,5 +226,13 @@ describe('component.generateSchema on CCD_1', function() {
             done();
         });
     });
+
+    it('immunizations', function(done) {
+        bb.generateSchema({component: "ccda_immunizations"}, function(err, schema) {
+            expect(schema).to.exist;
+            checkSchemaConformity(ccd.immunizations, schema, "immunizations");
+            done();
+        });
+    });
 });
 
