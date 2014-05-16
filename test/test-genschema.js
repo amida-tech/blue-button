@@ -194,5 +194,37 @@ describe('component.generateSchema on CCD_1', function() {
             done();
         });
     });
+
+    it('procedures', function(done) {
+        bb.generateSchema({component: "ccda_procedures"}, function(err, schema) {
+            expect(schema).to.exist;
+            checkSchemaConformity(ccd.procedures, schema, "procedures");
+            done();
+        });
+    });
+
+    it('encounters', function(done) {
+        bb.generateSchema({component: "ccda_encounters"}, function(err, schema) {
+            expect(schema).to.exist;
+            checkSchemaConformity(ccd.encounters, schema, "encounters");
+            done();
+        });
+    });
+
+    it('allergies', function(done) {
+        bb.generateSchema({component: "ccda_allergies"}, function(err, schema) {
+            expect(schema).to.exist;
+            checkSchemaConformity(ccd.allergies, schema, "allergies");
+            done();
+        });
+    });
+
+    it('medications', function(done) {
+        bb.generateSchema({component: "ccda_medications"}, function(err, schema) {
+            expect(schema).to.exist;
+            checkSchemaConformity(ccd.medications, schema, "medications");
+            done();
+        });
+    });
 });
 
