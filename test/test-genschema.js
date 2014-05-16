@@ -186,5 +186,13 @@ describe('component.generateSchema on CCD_1', function() {
             done();
         });
     });
+
+    it('demographics', function(done) {
+        bb.generateSchema({component: "ccda_demographics"}, function(err, schema) {
+            expect(schema).to.exist;
+            checkSchemaConformity(ccd.demographics, schema, "demographics");
+            done();
+        });
+    });
 });
 
