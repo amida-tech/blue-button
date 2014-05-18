@@ -3,7 +3,7 @@ var assert = require('chai').assert;
 
 var fs = require("fs");
 
-var sense = require("../lib/sense.js").senseData;
+var senseString = require("../lib/sense.js").senseString;
 
 describe('sense.js test', function(){
     var ccda="";
@@ -23,26 +23,26 @@ describe('sense.js test', function(){
   });
 
     it('should return NULL for no string with data passed', function(){
-      assert.notStrictEqual(undefined, sense(undefined));
-      assert.notStrictEqual(undefined, sense(null));
-      assert.notStrictEqual(undefined, sense(2013));
+      assert.notStrictEqual(undefined, senseString(undefined));
+      assert.notStrictEqual(undefined, senseString(null));
+      assert.notStrictEqual(undefined, senseString(2013));
     });
 
     it('should return CCDA for proper CCDA/XML input', function(){
-      assert.equal('ccda', sense(ccda));
+      assert.equal('ccda', senseString(ccda).type);
     });
 
     it('should return XML for proper basic XML input', function(){
-      assert.equal('xml', sense(xml));
+      assert.equal('xml', senseString(xml).type);
     });
 
     it('should return JSON for proper JSON input', function(){
-      assert.equal('json', sense(json));
-      assert.equal('json', sense(large_json));
+      assert.equal('json', senseString(json).type);
+      assert.equal('json', senseString(large_json).type);
     });
 
     it('should return UNKNOWN for text input', function(){
-      assert.equal('unknown', sense(text));
+      assert.equal('unknown', senseString(text).type);
     });
 
     /* globals xit */

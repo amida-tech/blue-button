@@ -16,22 +16,45 @@ After initial re-write we are planning to reintroduce this "fork" back into blue
 
 ## Library interfaces/APIs (Usage examples)
 
+This library provides following functionality
+
+- Parse XML documents (via libxmljs)
+- Sense type of data (e.g. CCDA, C32, etc)
+- Parse CCDA into JSON representation
+	- Parse CCDA elements (sections) into JSON representation
+- Validation of JSON object against data model
+
 ``` javascript
 
 var bb = require("./index.js")
 
 var data = "some xml data here...";
 
-//parse xml into DOM
+//parse xml into JS object
 var doc = bb.xml(data);
 
 //get document type (e.g. CCDA) of parsed document
-var type = bb.sense(doc);
+var type = bb.senseXml(doc);
 
-//convert document into JSON
-var result = bb.parse(doc);
+//get document type (e.g. CCDA) of document from string (and return parsed xml if it is xml based type)
+var result = bb.senseXml(data);
+
+// result =
+// {"type":"CCDA", "xml":"parsed xml object here..."}
+
+//convert Xml document into JSON
+var result = bb.parseXml(doc);
+
+//convert string into JSON
+var result = bb.parseString(data);
+
+// result =
+// {"data":"JSON model compliant data here...", "meta":{"version":"1.0.0","type":"CCDA", ... some other metadata}}
+
 
 ```
+
+Also, see [/example](./example)
 
 ## Link to data model docs in docs/model.md
 
@@ -69,6 +92,11 @@ Contributors are welcome. See issues https://github.com/amida-tech/blue-button/i
 
 ## License
 
-[Apache](./LICENSE)
+Licensed under [Apache 2.0](./LICENSE)
 
-todo: references to bb.js and ccda-to-json libraries licenses (both MIT)
+Project is influenced and used some code from:
+
+[bluebutton.js library](https://github.com/blue-button/bluebutton.js/) licensed under [MIT](https://github.com/blue-button/bluebutton.js/blob/master/LICENSE.md)
+
+[Josh Mandel's ccda-to-json library](https://github.com/jmandel/ccda-to-json) licensed under [Apache 2.0] (https://github.com/jmandel/ccda-to-json/blob/master/LICENSE)
+
