@@ -153,7 +153,7 @@ getting:
      ] }
 ```
 
-Also, see [/example](./example)
+Also, see [/example](./example) for example above as well as how to parse individual sections.
 
 ## Link to data model docs in docs/model.md
 
