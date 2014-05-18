@@ -14,7 +14,7 @@ THIS IS WORK IN PROGRESS! (see Roadmap below) based on https://github.com/blue-b
 
 After initial re-write we are planning to reintroduce this "fork" back into bluebutton.js community.
 
-## Library interfaces/APIs (Usage examples)
+## Library interfaces/APIs
 
 This library provides following functionality
 
@@ -23,6 +23,8 @@ This library provides following functionality
 - Parse CCDA into JSON representation
 	- Parse CCDA elements (sections) into JSON representation
 - Validation of JSON object against data model
+
+### Usage example
 
 Require blue-button module
 
@@ -78,7 +80,7 @@ should be:
   ...and so on
 ```
 
-Let's sense document type:
+Let's sense document type from parsed XML:
 
 ``` javascript
 //get document type (e.g. CCDA) of parsed document
@@ -93,14 +95,23 @@ getting:
 { type: 'ccda' }
 ```
 
-Parsing XML into JSON data model:
+Let's sense document type frm string with health data:
 
 ``` javascript
 //get document type (e.g. CCDA) of document from string (and return parsed xml if it is xml based type)
-var result = bb.senseXml(data);
+var result = bb.senseString(data);
 
 //printing result:
 console.log(result);
+```
+
+getting type as well as parsed XML for later user:
+
+``` javascript
+{ type: 'ccda', xml: { errors: [] } }
+//xml "errors" is just default print of libxmljs parsed XML object
+
+//in case of JSON stringified input, it will return {type: 'json', json: [json object here]}
 ```
 
 

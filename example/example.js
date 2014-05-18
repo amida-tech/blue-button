@@ -17,16 +17,13 @@ var type = bb.senseXml(doc);
 console.log(type);
 
 //get document type (e.g. CCDA) of document from string (and return parsed xml if it is xml based type) 
-var sense = bb.senseXml(data);
+var sense = bb.senseString(data);
 console.log(sense);
 
 //convert Xml document into JSON 
 var result = bb.parseXml(doc);
 console.log(JSON.stringify(result, null, 4));
-
 console.log(result);
-
-exit();
 
 //convert string into JSON 
 result = bb.parseString(data);
