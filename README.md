@@ -95,7 +95,7 @@ getting:
 { type: 'ccda' }
 ```
 
-Let's sense document type frm string with health data:
+Let's sense document type from string with health data:
 
 ``` javascript
 //get document type (e.g. CCDA) of document from string (and return parsed xml if it is xml based type)
@@ -157,6 +157,8 @@ Also, see [/example](./example)
 
 ## Link to data model docs in docs/model.md
 
+Detailed description of JSON based data model (tied to CCDA spec)
+
 [JSON based Blue Button data model](./docs/model.md)
 
 ## Goals
@@ -193,7 +195,7 @@ Contributors are welcome. See issues https://github.com/amida-tech/blue-button/i
 
 Licensed under [Apache 2.0](./LICENSE)
 
-Project is influenced and used some code from:
+Project was influenced by and used some code from:
 
 [bluebutton.js library](https://github.com/blue-button/bluebutton.js/) licensed under [MIT](https://github.com/blue-button/bluebutton.js/blob/master/LICENSE.md)
 
