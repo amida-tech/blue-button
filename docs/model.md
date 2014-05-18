@@ -7,31 +7,34 @@ JSON doesn't currently have a standard schema language; consequently these model
 There are components common to multiple sections and are defined [here](sections/shared.md).
 
 ###Required Sections:
-####[Allergies](sections/allergies.md) - Draft
-####[Medications](sections/medications.md) - TBD
-####[Problems](sections/problems.md) - Draft
-####[Results](sections/results.md) - Draft
-####[Demographics](sections/demographics.md) - Draft
+
+- [Allergies](sections/allergies.md) - Draft
+- [Medications](sections/medications.md) - TBD
+- [Problems](sections/problems.md) - Draft
+- [Results](sections/results.md) - Draft
+- [Demographics](sections/demographics.md) - Draft
 
 ###Optional Sections:
-####[Procedures](sections/procedures.md) - Draft
-####[Encounters](sections/encounters.md) - Draft
-####[Immunizations](sections/immunizations.md) - Draft
-####[Vitals](sections/vitals.md) - Draft
-####[Social History](sections/socialHistory.md) - Draft
+
+- [Procedures](sections/procedures.md) - Draft
+- [Encounters](sections/encounters.md) - Draft
+- [Immunizations](sections/immunizations.md) - Draft
+- [Vitals](sections/vitals.md) - Draft
+- [Social History](sections/socialHistory.md) - Draft
 
 ###Unsupported Sections/Components:
-####Advance Directives
-####Family History
-####Functional Status
-####Medical Equipment
-####Payers
-####Plan of Care
-####Author
-####Data Enterer
-####Informant
-####Custodian
-####Information Recipient
-####Legal Authenticator
-####Authenticator
-####Documentation Of
+
+- Advance Directives
+- Family History
+- Functional Status
+- Medical Equipment
+- Payers
+- Plan of Care
+- Author
+- Data Enterer
+- Informant
+- Custodian
+- Information Recipient
+- Legal Authenticator
+- Authenticator
+- Documentation Of
