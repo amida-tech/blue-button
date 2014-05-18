@@ -24,34 +24,122 @@ This library provides following functionality
 	- Parse CCDA elements (sections) into JSON representation
 - Validation of JSON object against data model
 
+Require blue-button module
+
 ``` javascript
-
 var bb = require("./index.js")
+```
 
-var data = "some xml data here...";
+Load some XML and parse it
+
+``` javascript
+var data = "some CCDA.xml data here...";
 
 //parse xml into JS object
 var doc = bb.xml(data);
+```
 
+Check XML parsing errors
+
+``` javascript
+console.log(doc.errors);
+```
+
+should be:
+
+``` javascript
+[]
+``` 
+
+here is XML itself:
+
+``` javascript
+console.log(doc.toString());
+```
+
+should be:
+
+``` xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<!-- Title: US_Realm_Header_Template -->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <!-- ******************************************************** CDA Header 
+		******************************************************** -->
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <!-- US General Header Template -->
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <!-- *** Note: The next templateId, code and title will differ depending 
+		on what type of document is being sent. *** -->
+  <!-- conforms to the document specific requirements -->
+  <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+  
+  ...and so on
+```
+
+Let's sense document type:
+
+``` javascript
 //get document type (e.g. CCDA) of parsed document
 var type = bb.senseXml(doc);
 
+console.log(type);
+```
+
+getting:
+
+``` javascript
+{ type: 'ccda' }
+```
+
+Parsing XML into JSON data model:
+
+``` javascript
 //get document type (e.g. CCDA) of document from string (and return parsed xml if it is xml based type)
 var result = bb.senseXml(data);
 
-// result =
-// {"type":"CCDA", "xml":"parsed xml object here..."}
+//printing result:
+console.log(result);
+```
 
+
+Parsing into JSON data model from XML or from string
+
+``` javascript
 //convert Xml document into JSON
 var result = bb.parseXml(doc);
 
 //convert string into JSON
 var result = bb.parseString(data);
 
-// result =
-// {"data":"JSON model compliant data here...", "meta":{"version":"1.0.0","type":"CCDA", ... some other metadata}}
+console.log(result);
+```
 
+getting:
 
+``` javascript
+{ data: 
+   { demographics: 
+      { name: [Object],
+        dob: [Object],
+        ...
+        birthplace: [Object],
+        guardians: [Object] },
+     vitals: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+     results: [ [Object] ],
+     medications: [ [Object] ],
+     encounters: [ [Object] ],
+     allergies: [ [Object], [Object], [Object] ],
+     immunizations: [ [Object], [Object], [Object], [Object] ],
+     socialHistory: [ [Object] ],
+     problems: [ [Object], [Object] ],
+     procedures: [ [Object], [Object], [Object] ] },
+  meta: { version: '0.0.4' },
+  errors: 
+   [ 'nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD',
+     'nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD'
+     ] }
 ```
 
 Also, see [/example](./example)

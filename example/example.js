@@ -8,6 +8,10 @@ var data = fs.readFileSync("CCD_1.xml").toString();
 //parse xml into JS object 
 var doc = bb.xml(data);
 
+//here are result of parsing
+console.log(doc.errors);
+console.log(doc.toString());
+
 //get document type (e.g. CCDA) of parsed document 
 var type = bb.senseXml(doc);
 console.log(type);
@@ -19,6 +23,10 @@ console.log(sense);
 //convert Xml document into JSON 
 var result = bb.parseXml(doc);
 console.log(JSON.stringify(result, null, 4));
+
+console.log(result);
+
+exit();
 
 //convert string into JSON 
 result = bb.parseString(data);
