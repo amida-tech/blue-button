@@ -10,6 +10,8 @@ var SocialHistory = {
 }
 ```
 
+[JSON/XML sample](samples/socialHistory.md)
+
 
 ####Notes
 - MAY components Social History Observation, Pregnancy Observation and Tobacca Use are not supported.

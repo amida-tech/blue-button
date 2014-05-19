@@ -8,19 +8,24 @@ There are components common to multiple sections and are defined [here](sections
 
 ###Required Sections:
 
-- [Allergies](sections/allergies.md) - Draft
-- [Medications](sections/medications.md) - TBD
-- [Problems](sections/problems.md) - Draft
-- [Results](sections/results.md) - Draft
-- [Demographics](sections/demographics.md) - Draft
+- [Allergies model](sections/allergies.md) - [JSON/XML sample](sections/samples/vitals.md)
+- [Medications model](sections/medications.md) - [JSON/XML sample](sections/samples/vitals.md)
+- [Problems model](sections/problems.md) - [JSON/XML sample](sections/samples/vitals.md)
+- [Results model](sections/results.md) - [JSON/XML sample](sections/samples/vitals.md)
+- [Demographics model](sections/demographics.md) - [JSON/XML sample](sections/samples/vitals.md)
 
 ###Optional Sections:
 
-- [Procedures](sections/procedures.md) - Draft
-- [Encounters](sections/encounters.md) - Draft
-- [Immunizations](sections/immunizations.md) - Draft
-- [Vitals](sections/vitals.md) - Draft
-- [Social History](sections/socialHistory.md) - Draft
+- [Procedures model](sections/procedures.md) - [JSON/XML sample](sections/samples/vitals.md)
+- [Encounters model](sections/encounters.md) - [JSON/XML sample](sections/samples/vitals.md)
+- [Immunizations model](sections/immunizations.md) - [JSON/XML sample](sections/samples/vitals.md)
+- [Vitals model](sections/vitals.md) - [JSON/XML sample](sections/samples/vitals.md)
+- [Social History model](sections/socialHistory.md) - [JSON/XML sample](sections/samples/vitals.md)
+
+### Shared Components:
+
+- [Shared models](sections/shared.md)
+
 
 ###Unsupported Sections/Components:
 
