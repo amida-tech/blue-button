@@ -28,6 +28,9 @@ var Procedures = {
       }
 ```
 
+[JSON/XML sample](samples/procedures.md)
+
+
 ####Notes
 - Name, code, and code_system_name can come from act, procedure or observation which is captured in type.
 - All "MAY" fields except locations (participant) are ignored (observation, act, procedure)

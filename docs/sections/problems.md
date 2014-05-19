@@ -18,6 +18,8 @@ var Problems = {
       }
 ```
 
+[JSON/XML sample](samples/problems.md)
+
 
 ####Notes
 - Negation indicator saying problem 'wasn't' observed, seems crazy, but important to watch for.

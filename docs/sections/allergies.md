@@ -20,6 +20,8 @@ var Allergies = {
       }
 ```
 
+[JSON/XML sample](samples/allergies.md)
+
 
 ####Notes
 - Name and code are optional in the spec.  In this model we assume they are required.

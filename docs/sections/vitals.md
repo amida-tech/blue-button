@@ -15,6 +15,8 @@ var Vitals = {
       }
 ```
 
+[JSON/XML sample](samples/vitals.md)
+
 ####Notes
 - TypeCode always "Cluster".
 - Vital Signs are identical to results, however are limited to a specific subset of LOINC codes in set 2.16.840.1.113883.3.88.12.80.62.  Thus coding system will always be LOINC.
