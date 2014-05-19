@@ -8,7 +8,7 @@ var fs = require('fs');
 var parse = require('../lib/parser').parse;
 
 
-xdescribe('Parse Sample Record', function() {
+describe('Parse Sample Record', function() {
 
 	var sampleFile = '';
 

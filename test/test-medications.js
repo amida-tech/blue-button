@@ -31,13 +31,12 @@ describe('medications parser', function() {
     
     it ('spot check', function(done) {
         expect(meds).to.exist;
-        expect(meds.medications).to.exist;
-        expect(meds.medications).to.have.length(1);
+        expect(meds).to.have.length(1);
         
-        expect(meds.medications[0].administration.route.name).to.equal('RESPIRATORY (INHALATION)');
-        expect(meds.medications[0].product).to.exist;
-        expect(meds.medications[0].product.name).to.equal('Proventil HFA');
-        expect(meds.medications[0].product.code).to.equal('219483');
+        expect(meds[0].administration.route.name).to.equal('RESPIRATORY (INHALATION)');
+        expect(meds[0].product).to.exist;
+        expect(meds[0].product.name).to.equal('Proventil HFA');
+        expect(meds[0].product.code).to.equal('219483');
 
         //expect(meds.medicationsReported[0].productName.code).to.equal('219483');
 

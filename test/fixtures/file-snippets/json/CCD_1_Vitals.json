@@ -1,148 +1,110 @@
-{
-    "panels": [
+[
         {
-            "panelName": {
-                "name": "Vital signs",
-                "code": "46680005",
-                "code_system_name": "SNOMED CT"
-            },
-            "vitals": [
+            "status": "completed",
+            "date": [
                 {
-                    "vitalName": {
-                        "name": "Height",
-                        "code": "8302-2",
-                        "code_system_name": "LOINC"
-                    },
-                    "measuredAt": [
-                        {
-                            "date": "1999-11-14T00:00:00.000Z",
-                            "precision": "day"
-                        }
-                    ],
-                    "physicalQuantity": {
-                        "value": 177,
-                        "unit": "cm"
-                    },
-                    "freeTextValue": "177 cm",
-                    "interpretations": [
-                        "Normal"
-                    ]
-                },
-                {
-                    "vitalName": {
-                        "name": "Patient Body Weight - Measured",
-                        "code": "3141-9",
-                        "code_system_name": "LOINC"
-                    },
-                    "measuredAt": [
-                        {
-                            "date": "1999-11-14T00:00:00.000Z",
-                            "precision": "day"
-                        }
-                    ],
-                    "physicalQuantity": {
-                        "value": 86,
-                        "unit": "kg"
-                    },
-                    "freeTextValue": "86 kg",
-                    "interpretations": [
-                        "Normal"
-                    ]
-                },
-                {
-                    "vitalName": {
-                        "name": "Intravascular Systolic",
-                        "code": "8480-6",
-                        "code_system_name": "LOINC"
-                    },
-                    "measuredAt": [
-                        {
-                            "date": "1999-11-14T00:00:00.000Z",
-                            "precision": "day"
-                        }
-                    ],
-                    "physicalQuantity": {
-                        "value": 132,
-                        "unit": "mm[Hg]"
-                    },
-                    "freeTextValue": "132/86 mmHg",
-                    "interpretations": [
-                        "Normal"
-                    ]
+                    "date": "1999-11-14T00:00:00.000Z",
+                    "precision": "day"
                 }
-            ]
+            ],
+            "freeTextValue": "177 cm",
+            "interpretations": [
+                "Normal"
+            ],
+            "name": "Height",
+            "code": "8302-2",
+            "code_system_name": "LOINC",
+            "value": 177,
+            "unit": "cm"
         },
         {
-            "panelName": {
-                "name": "Vital signs",
-                "code": "46680005",
-                "code_system_name": "SNOMED CT"
-            },
-            "vitals": [
+            "status": "completed",
+            "date": [
                 {
-                    "vitalName": {
-                        "name": "Height",
-                        "code": "8302-2",
-                        "code_system_name": "LOINC"
-                    },
-                    "measuredAt": [
-                        {
-                            "date": "2000-04-07T00:00:00.000Z",
-                            "precision": "day"
-                        }
-                    ],
-                    "physicalQuantity": {
-                        "value": 177,
-                        "unit": "cm"
-                    },
-                    "freeTextValue": "177 cm",
-                    "interpretations": [
-                        "Normal"
-                    ]
-                },
-                {
-                    "vitalName": {
-                        "name": "Patient Body Weight - Measured",
-                        "code": "3141-9",
-                        "code_system_name": "LOINC"
-                    },
-                    "measuredAt": [
-                        {
-                            "date": "2000-04-07T00:00:00.000Z",
-                            "precision": "day"
-                        }
-                    ],
-                    "physicalQuantity": {
-                        "value": 88,
-                        "unit": "kg"
-                    },
-                    "freeTextValue": "88 kg",
-                    "interpretations": [
-                        "Normal"
-                    ]
-                },
-                {
-                    "vitalName": {
-                        "name": "Intravascular Systolic",
-                        "code": "8480-6",
-                        "code_system_name": "LOINC"
-                    },
-                    "measuredAt": [
-                        {
-                            "date": "2000-04-07T00:00:00.000Z",
-                            "precision": "day"
-                        }
-                    ],
-                    "physicalQuantity": {
-                        "value": 145,
-                        "unit": "mm[Hg]"
-                    },
-                    "freeTextValue": "145/88 mmHg",
-                    "interpretations": [
-                        "Normal"
-                    ]
+                    "date": "1999-11-14T00:00:00.000Z",
+                    "precision": "day"
                 }
-            ]
+            ],
+            "freeTextValue": "86 kg",
+            "interpretations": [
+                "Normal"
+            ],
+            "name": "Patient Body Weight - Measured",
+            "code": "3141-9",
+            "code_system_name": "LOINC",
+            "value": 86,
+            "unit": "kg"
+        },
+        {
+            "status": "completed",
+            "date": [
+                {
+                    "date": "1999-11-14T00:00:00.000Z",
+                    "precision": "day"
+                }
+            ],
+            "freeTextValue": "132/86 mmHg",
+            "interpretations": [
+                "Normal"
+            ],
+            "name": "Intravascular Systolic",
+            "code": "8480-6",
+            "code_system_name": "LOINC",
+            "value": 132,
+            "unit": "mm[Hg]"
+        },
+        {
+            "status": "completed",
+            "date": [
+                {
+                    "date": "2000-04-07T00:00:00.000Z",
+                    "precision": "day"
+                }
+            ],
+            "freeTextValue": "177 cm",
+            "interpretations": [
+                "Normal"
+            ],
+            "name": "Height",
+            "code": "8302-2",
+            "code_system_name": "LOINC",
+            "value": 177,
+            "unit": "cm"
+        },
+        {
+            "status": "completed",
+            "date": [
+                {
+                    "date": "2000-04-07T00:00:00.000Z",
+                    "precision": "day"
+                }
+            ],
+            "freeTextValue": "88 kg",
+            "interpretations": [
+                "Normal"
+            ],
+            "name": "Patient Body Weight - Measured",
+            "code": "3141-9",
+            "code_system_name": "LOINC",
+            "value": 88,
+            "unit": "kg"
+        },
+        {
+            "status": "completed",
+            "date": [
+                {
+                    "date": "2000-04-07T00:00:00.000Z",
+                    "precision": "day"
+                }
+            ],
+            "freeTextValue": "145/88 mmHg",
+            "interpretations": [
+                "Normal"
+            ],
+            "name": "Intravascular Systolic",
+            "code": "8480-6",
+            "code_system_name": "LOINC",
+            "value": 145,
+            "unit": "mm[Hg]"
         }
     ]
-}
