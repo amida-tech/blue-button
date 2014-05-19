@@ -35,6 +35,19 @@ var checkSchemaConformity = function checkSchemaConformity(obj, schema, path) {
     }
 };
 
+var checkSchemaNotNull = function(schema, path) {
+    assert.ok(schema, path + ' is null/undefined');
+    if (Array.isArray(schema)) {
+        checkSchemaNotNull(schema[0], path + '[]');
+    } else if (typeof schema === 'object') {
+        Object.keys(schema).forEach(function(key) {
+            checkSchemaNotNull(schema[key], path + '.' + key);
+        });
+    } else {
+        assert.isTrue(['string', 'boolean', 'datetime', 'number'].indexOf(schema) >= 0, 'unknown type ' + schema + ' in ' + path); 
+    }
+};
+
 describe('component.generateSchema on test component', function() {
     var testGChild = null;
     var testChild = null;
@@ -182,6 +195,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_socialHistory");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.socialHistory, schema, "socialHistory");
+        checkSchemaNotNull(schema, "socialHistory");
         done();
     });
 
@@ -189,6 +203,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_demographics");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.demographics, schema, "demographics");
+        checkSchemaNotNull(schema, "demographics");
         done();
     });
 
@@ -196,6 +211,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_procedures");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.procedures, schema, "procedures");
+        checkSchemaNotNull(schema, "procedures");
         done();
     });
 
@@ -203,6 +219,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_encounters");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.encounters, schema, "encounters");
+        checkSchemaNotNull(schema, "encounters");
         done();
     });
 
@@ -210,6 +227,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_allergies");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.allergies, schema, "allergies");
+        checkSchemaNotNull(schema, "allergies");
         done();
     });
 
@@ -217,6 +235,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_medications");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.medications, schema, "medications");
+        checkSchemaNotNull(schema, "medications");
         done();
     });
 
@@ -224,6 +243,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_immunizations");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.immunizations, schema, "immunizations");
+        checkSchemaNotNull(schema, "immunizations");
         done();
     });
     
@@ -231,6 +251,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_problems");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.problems, schema, "problems");
+        checkSchemaNotNull(schema, "problems");
         done();
     });
     
@@ -238,6 +259,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_results");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.results, schema, "results");
+        checkSchemaNotNull(schema, "results");
         done();
     });
 
@@ -245,6 +267,7 @@ describe('component.generateSchema on CCD_1', function() {
         var schema = bb.generateSchema("ccda_vitals");
         expect(schema).to.exist;
         checkSchemaConformity(ccd.vitals, schema, "vitals");
+        checkSchemaNotNull(schema, "vitals");
         done();
     });
 });
