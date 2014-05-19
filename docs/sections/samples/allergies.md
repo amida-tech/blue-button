@@ -1,5 +1,7 @@
 #Allergies Section
 
+Data model description - [Allergies](../allergies.md)
+
 ##JSON model sample
 
 ```javascript
