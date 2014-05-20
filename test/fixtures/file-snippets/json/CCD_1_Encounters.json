@@ -14,7 +14,7 @@
             "locations": [
                 {
                     "name": "Community Urgent Care Center",
-                    "type": {
+                    "loc_type": {
                         "name": "Urgent Care Center",
                         "code": "1160-1",
                         "code_system_name": "HealthcareServiceLocation"
