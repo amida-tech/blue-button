@@ -13,6 +13,8 @@ var Encounters = {
      }
 ```
 
+[JSON/XML sample](samples/encounters.md)
+
 
 ####Notes
 - Root name, code and code_system_name can be translated using translation objects.

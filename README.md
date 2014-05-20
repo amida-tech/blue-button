@@ -29,7 +29,7 @@ This library provides following functionality
 Require blue-button module
 
 ``` javascript
-var bb = require("./index.js")
+var bb = require("blue-button")
 ```
 
 Load some XML and parse it
@@ -38,7 +38,7 @@ Load some XML and parse it
 var data = "some CCDA.xml data here...";
 
 //parse xml into JS object
-var doc = bb.xml(data);
+var doc = bb.parseXml(data);
 ```
 
 Check XML parsing errors

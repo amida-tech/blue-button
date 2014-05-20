@@ -63,6 +63,9 @@
 
 ```
 
+[JSON/XML sample](samples/medications.md)
+
+
 ####Notes
 - No negation indicator on medications, thus only two states.
 - Status coming in again, but doesn't seem to mean anything, as it's probably 'completed' in every one.

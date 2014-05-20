@@ -26,6 +26,9 @@ var Result = {
       }
 ```
 
+[JSON/XML sample](samples/results.md)
+
+
 ####Notes
 - TypeCode "Cluster" vs. "Battery" seems extraneous.
 - LOINC, SNOMED or CPT-4 acceptable coding systems.

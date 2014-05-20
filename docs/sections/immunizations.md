@@ -70,6 +70,8 @@
 
 ```
 
+[JSON/XML sample](samples/immunizations.md)
+
 
 ####Notes
 - 'code' may come in, but not on samples and it doesn't define why, so not currently supported.
