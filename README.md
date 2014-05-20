@@ -29,7 +29,7 @@ This library provides following functionality
 Require blue-button module
 
 ``` javascript
-var bb = require("./index.js")
+var bb = require("blue-button")
 ```
 
 Load some XML and parse it
