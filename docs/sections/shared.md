@@ -75,7 +75,7 @@ var cda_concept : {
 ```
 var cda_location = {
     "name": {type: string, required:false},
-    "type": {cda_concept},
+    "loc_type": {cda_concept},
     "addresses": [{cda_address}],
     "phones": [{cda_phone}]
 }
