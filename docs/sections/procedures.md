@@ -6,7 +6,7 @@ var Procedures = {
         "name": {type:string, require:true},
         "code": {type:string, require:true},
         "code_system_name": {type:string, require: true},
-        "type": {type:string, require:true},
+        "proc_type": {type:string, require:true},
         "status": {type: string, require: true},
         "date": [{cda_date}],
         "identifiers": [{cda_id}],
@@ -51,7 +51,7 @@ var Procedures = {
 - Same as name except code@code_system_name replaces code@displayName
 - Can be LOINC, SNOMED CT, CPT-4, ICD9, ICD10
 
-####Procedure.type
+####Procedure.proc_type
 - 1..1
 - Not literally in the CCDA specification.
 - observation, procedure or act. Corresponds to the type of procedure that the name and code comes from.

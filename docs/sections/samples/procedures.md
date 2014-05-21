@@ -59,7 +59,7 @@ Data model description - [Procedures](../procedures.md)
                     }
                 }
             ],
-            "type": "procedure",
+            "proc_type": "procedure",
             "name": "Colonoscopy",
             "code": "73761001",
             "code_system_name": "SNOMED CT"
@@ -108,7 +108,7 @@ Data model description - [Procedures](../procedures.md)
             "locations": [
                 {
                     "name": "Community Gastroenterology Clinic",
-                    "type": {
+                    "loc_type": {
                         "name": "Gastroenterology Clinic",
                         "code": "1118-9",
                         "code_system_name": "HealthcareServiceLocation"
@@ -126,7 +126,7 @@ Data model description - [Procedures](../procedures.md)
                     ]
                 }
             ],
-            "type": "observation",
+            "proc_type": "observation",
             "name": "Colonic polypectomy",
             "code": "274025005",
             "code_system_name": "SNOMED CT"
@@ -168,7 +168,7 @@ Data model description - [Procedures](../procedures.md)
             "locations": [
                 {
                     "name": "Community Gastroenterology Clinic",
-                    "type": {
+                    "loc_type": {
                         "name": "Gastroenterology Clinic",
                         "code": "1118-9",
                         "code_system_name": "HealthcareServiceLocation"
@@ -186,7 +186,7 @@ Data model description - [Procedures](../procedures.md)
                     ]
                 }
             ],
-            "type": "act",
+            "proc_type": "act",
             "name": "Colonic polypectomy",
             "code": "274025005",
             "code_system_name": "SNOMED CT"

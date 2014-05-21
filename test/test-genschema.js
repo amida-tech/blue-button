@@ -35,6 +35,19 @@ var checkSchemaConformity = function checkSchemaConformity(obj, schema, path) {
     }
 };
 
+var checkSchemaNotNull = function(schema, path) {
+    assert.ok(schema, path + ' is null/undefined');
+    if (Array.isArray(schema)) {
+        checkSchemaNotNull(schema[0], path + '[]');
+    } else if (typeof schema === 'object') {
+        Object.keys(schema).forEach(function(key) {
+            checkSchemaNotNull(schema[key], path + '.' + key);
+        });
+    } else {
+        assert.isTrue(['string', 'boolean', 'datetime', 'number'].indexOf(schema) >= 0, 'unknown type ' + schema + ' in ' + path); 
+    }
+};
+
 describe('component.generateSchema on test component', function() {
     var testGChild = null;
     var testChild = null;
@@ -173,89 +186,88 @@ describe('component.generateSchema on CCD_1', function() {
     });
     
     it('erreneous component', function(done) {
-        bb.generateSchema({component: 'no component'}, function(err, result) {
-            expect(err).to.exist;
-            done();
-        });
+        var r = bb.generateSchema('no component');
+        expect(r).to.not.exist;
+        done();
     });
 
     it('social history', function(done) {
-        bb.generateSchema({component: "ccda_socialHistory"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.socialHistory, schema, "socialHistory");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_socialHistory");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.socialHistory, schema, "socialHistory");
+        checkSchemaNotNull(schema, "socialHistory");
+        done();
     });
 
     it('demographics', function(done) {
-        bb.generateSchema({component: "ccda_demographics"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.demographics, schema, "demographics");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_demographics");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.demographics, schema, "demographics");
+        checkSchemaNotNull(schema, "demographics");
+        done();
     });
 
     it('procedures', function(done) {
-        bb.generateSchema({component: "ccda_procedures"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.procedures, schema, "procedures");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_procedures");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.procedures, schema, "procedures");
+        checkSchemaNotNull(schema, "procedures");
+        done();
     });
 
     it('encounters', function(done) {
-        bb.generateSchema({component: "ccda_encounters"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.encounters, schema, "encounters");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_encounters");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.encounters, schema, "encounters");
+        checkSchemaNotNull(schema, "encounters");
+        done();
     });
 
     it('allergies', function(done) {
-        bb.generateSchema({component: "ccda_allergies"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.allergies, schema, "allergies");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_allergies");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.allergies, schema, "allergies");
+        checkSchemaNotNull(schema, "allergies");
+        done();
     });
 
     it('medications', function(done) {
-        bb.generateSchema({component: "ccda_medications"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.medications, schema, "medications");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_medications");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.medications, schema, "medications");
+        checkSchemaNotNull(schema, "medications");
+        done();
     });
 
     it('immunizations', function(done) {
-        bb.generateSchema({component: "ccda_immunizations"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.immunizations, schema, "immunizations");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_immunizations");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.immunizations, schema, "immunizations");
+        checkSchemaNotNull(schema, "immunizations");
+        done();
     });
     
     it('problems', function(done) {
-        bb.generateSchema({component: "ccda_problems"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.problems, schema, "problems");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_problems");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.problems, schema, "problems");
+        checkSchemaNotNull(schema, "problems");
+        done();
     });
     
     it('results', function(done) {
-        bb.generateSchema({component: "ccda_results"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.results, schema, "results");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_results");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.results, schema, "results");
+        checkSchemaNotNull(schema, "results");
+        done();
     });
 
     it('vitals', function(done) {
-        bb.generateSchema({component: "ccda_vitals"}, function(err, schema) {
-            expect(schema).to.exist;
-            checkSchemaConformity(ccd.vitals, schema, "vitals");
-            done();
-        });
+        var schema = bb.generateSchema("ccda_vitals");
+        expect(schema).to.exist;
+        checkSchemaConformity(ccd.vitals, schema, "vitals");
+        checkSchemaNotNull(schema, "vitals");
+        done();
     });
 });
