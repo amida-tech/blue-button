@@ -40,7 +40,7 @@
                 }
             ],
             "name": "Office outpatient visit 15 minutes",
-            "originalText": "Checkup Examination  ",
+            "originalText": "Checkup Examination",
             "code": "99213",
             "code_system_name": "CPT",
             "translations": [
