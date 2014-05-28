@@ -10,3 +10,4 @@ coverage
 .project
 .settings
 *.md.html
+.idea
