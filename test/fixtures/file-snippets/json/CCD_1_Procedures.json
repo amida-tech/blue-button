@@ -54,6 +54,7 @@
             ],
             "proc_type": "procedure",
             "name": "Colonoscopy",
+            "originalText": "Colonic polypectomy",
             "code": "73761001",
             "code_system_name": "SNOMED CT"
         },
@@ -121,6 +122,7 @@
             ],
             "proc_type": "observation",
             "name": "Colonic polypectomy",
+            "originalText": "Colonic polypectomy",
             "code": "274025005",
             "code_system_name": "SNOMED CT"
         },
@@ -181,6 +183,7 @@
             ],
             "proc_type": "act",
             "name": "Colonic polypectomy",
+            "originalText": "Colonic polypectomy",
             "code": "274025005",
             "code_system_name": "SNOMED CT"
         }
