@@ -190,7 +190,7 @@ Contributors are welcome. See issues https://github.com/amida-tech/blue-button/i
 
 ## Release Notes
 
-[Release Notes] (./RELEASENOTES.md)
+See release notes [here] (./RELEASENOTES.md)
 
 ## License
 
