@@ -13,7 +13,7 @@ This is the initial release of blue-button.js library.
 - Node.js support only (no browser support)
 - Relies on libxml.js library for XML parsing
 - Published as NPM package
-	- to use `npm install blue-button`
+	- to install/use `npm install blue-button`
 - Comprehensive set of test based on samples from https://github.com/chb/sample_ccdas
 
 
