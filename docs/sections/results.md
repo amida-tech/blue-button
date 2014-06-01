@@ -3,6 +3,13 @@
 ###Object Schema:
 ```
 var Result = {
+         "name": {type: string, required: true},
+         "code": {type: string, required: true},
+         "code_system_name": {type: string, required: true},
+         "results": [{cda_result}]
+      }
+
+var cda_result = {
         "date": [{cda_date}],
         "identifiers": [{cda_id}],
         "status": {type: string, required: true},
@@ -17,11 +24,6 @@ var Result = {
           "low_unit": {type: string, required: false},
           "high_value": {type: string, required: false},
           "high_unit": {type: string, required: false}
-        },
-        "category": {
-           "name": {type: string, required: true},
-           "code": {type: string, required: true},
-           "code_system_name": {type: string, required: true}
         }
       }
 ```
