@@ -611,7 +611,7 @@ Claim Type: PartB
 Diagnosis Code 1: 3534
 Diagnosis Code 2: 7393
 Diagnosis Code 3: 7392
-Diagnosis Code 4: 3533
+Diagnosis Code 4: 3533 
 
 --------------------------------
 Claim Lines for Claim Number: 1234567890000
