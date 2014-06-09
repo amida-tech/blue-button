@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <section>
+    <templateID root="2.16.840.1.113883.10.20.22.2.1"/>
+    <templateID root="2.16.840.1.113883.10.20.22.2.1.1"/>
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE"/>
+    <title>MEDICATIONS</title>
+    <text/>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+        <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
+        <text>Proventil HFA <reference value="#MedSec_1"/></text>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20070103"/>
+          <high value="20070103"/>
+        </effectiveTime>
+        <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+          <period value="6" unit="h"/>
+        </effectiveTime>
+        <routeCode code="C38216" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="RESPIRATORY (INHALATION)">
+          <doseQuantity value="1" unit="mg/actuat"/>
+          <rateQuantity value="90" unit="ml/min"/>
+          <maxDoseQuantity nullFlavor="UNK"/>
+          <numerator nullFlavor="UNK"/>
+          <denominator nullFlavor="UNK"/>
+        </routeCode>
+        <administrationUnitCode code="C42944" displayName="INHALANT" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23">
+              <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+              <manufacturedMaterial>
+                <code code="219483" codeSystem="2.16.840.1.113883.6.88" displayName="Proventil HFA">
+                  <originalText>
+                    <reference value="#MedSec_1"/>
+                  </originalText>
+                  <translation code="undefined" displayName="undefined" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
+                </code>
+              </manufacturedMaterial>
+              <manufacturerOrganization>
+                <name>Medication Factory Inc.</name>
+              </manufacturerOrganization>
+            </templateId>
+          </manufacturedProduct>
+          <performer>
+            <assignedEntity>
+              <id nullFlavor="NI"/>
+              <addr nullFlavor="UNK"/>
+              <telecom nullFlavor="UNK"/>
+              <representedOrganization>
+                <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                <name>Community Health and Hospitals</name>
+                <telecom nullFlavor="UNK"/>
+                <addr nullFlavor="UNK"/>
+              </representedOrganization>
+            </assignedEntity>
+          </performer>
+          <participant typeCode="CSM">
+            <participantRole classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
+              <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
+              <playingEntity classCode="MMAT">
+                <code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+                <name>Aerosol</name>
+              </playingEntity>
+            </participantRole>
+            <entryRelationship typeCode="RSON">
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.19">
+                  <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
+                  <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20070103"/>
+                  </effectiveTime>
+                  <value xis:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
+                </templateId>
+              </observation>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17">
+                    <id nullFlavor="NI">
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="20070103"/>
+                        <high value="20070103"/>
+                      </effectiveTime>
+                      <repeatNumber value="1"/>
+                      <quantity value="75"/>
+                      <product>
+                        <manufacturedProduct classCode="MANU">
+                          <templateId root="2.16.840.1.113883.10.20.22.4.23">
+                            <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8">
+                              <manufacturedMaterial>
+                                <code code="219483" codeSystem="2.16.840.1.113883.6.88" displayName="Proventil HFA">
+                                  <originalText>
+                                    <reference value="#MedSec_1"/>
+                                  </originalText>
+                                  <translation code="undefined" displayName="undefined" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
+                                </code>
+                              </manufacturedMaterial>
+                              <manufacturerOrganization>
+                                <name>Medication Factory Inc.</name>
+                              </manufacturerOrganization>
+                            </id>
+                          </templateId>
+                          <performer>
+                            <assignedEntity>
+                              <id nullFlavor="NI"/>
+                              <addr nullFlavor="UNK"/>
+                              <telecom nullFlavor="UNK"/>
+                              <representedOrganization>
+                                <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                                <name>Community Health and Hospitals</name>
+                                <telecom nullFlavor="UNK"/>
+                                <addr nullFlavor="UNK"/>
+                              </representedOrganization>
+                            </assignedEntity>
+                          </performer>
+                          <author>
+                            <time nullFlavor="UNK"/>
+                            <assignedAuthor>
+                              <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+                              <addr nullFlavor="UNK"/>
+                              <telecom nullFlavor="UNK"/>
+                              <assignedPerson>
+                                <name>
+                                  <prefix>Dr.</prefix>
+                                  <given>Henry</given>
+                                  <family>Seven</family>
+                                </name>
+                              </assignedPerson>
+                            </assignedAuthor>
+                          </author>
+                          <entryRelationship typeCode="SUBJ" inversionInd="true">
+                            <act classCode="ACT" moodCode="INT">
+                              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                              <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction"/>
+                              <text>label in spanish<reference value="#MedSec_1"/><statusCode code="completed"/></text>
+                            </act>
+                          </entryRelationship>
+                        </manufacturedProduct>
+                        <entryRelationship typeCode="REFR">
+                          <supply classCode="SPLY" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.18">
+                              <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704">
+                                <statusCode code="completed"/>
+                                <effectiveTime value="20070103"/>
+                                <repeatNumber value="1"/>
+                                <quantity value="75"/>
+                                <product>
+                                  <manufacturedProduct classCode="MANU">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                                    <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+                                    <manufacturedMaterial>
+                                      <code code="219483" codeSystem="2.16.840.1.113883.6.88" displayName="Proventil HFA">
+                                        <originalText>
+                                          <reference value="#MedSec_1"/>
+                                        </originalText>
+                                        <translation code="undefined" displayName="undefined" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
+                                      </code>
+                                    </manufacturedMaterial>
+                                    <manufacturerOrganization>
+                                      <name>Medication Factory Inc.</name>
+                                    </manufacturerOrganization>
+                                  </manufacturedProduct>
+                                </product>
+                                <performer>
+                                  <time nullFlavor="UNK"/>
+                                  <assignedEntity>
+                                    <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                                    <addr>
+                                      <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                                      <city>Portland</city>
+                                      <state>OR</state>
+                                      <postalCode>99123</postalCode>
+                                      <country>US</country>
+                                    </addr>
+                                    <telecom nullFlavor="UNK"/>
+                                    <assignedPerson>
+                                      <name>
+                                        <prefix>Dr.</prefix>
+                                        <given>Henry</given>
+                                        <family>Seven</family>
+                                      </name>
+                                    </assignedPerson>
+                                    <representedOrganization>
+                                      <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                                      <name>Community Health and Hospitals</name>
+                                      <telecom nullFlavor="UNK"/>
+                                      <addr nullFlavor="UNK"/>
+                                    </representedOrganization>
+                                  </assignedEntity>
+                                </performer>
+                              </id>
+                            </templateId>
+                            <precondition typeCode="PRCN">
+                              <templateId root="2.16.840.1.113883.10.20.22.4.25"/>
+                              <criterion>
+                                <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                                <value xsi:type="CE" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
+                              </criterion>
+                            </precondition>
+                          </supply>
+                        </entryRelationship>
+                      </product>
+                    </id>
+                  </templateId>
+                </supply>
+              </entryRelationship>
+            </entryRelationship>
+          </participant>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+  </section>
+</ClinicalDocument>
