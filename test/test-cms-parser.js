@@ -10,7 +10,7 @@ describe('CMS parser.js', function() {
     before(function(done) {
         var filepath  = path.join(__dirname, 'fixtures/cms/sample2.txt');
 
-        console.log(filepath);
+        //console.log(filepath);
         var txtfile = fs.readFileSync(filepath, 'utf-8');
 
         txtdata=txtfile.toString();
