@@ -39,8 +39,8 @@ Primary and other Insurances -> Payer
 **Claim Summary**
 
 CMS → BB.js
-Demographic -> Demographic
-Self-Reported Medical conditions -> Problems
+Demographic -> Demographic(1)
+Self-Reported Medical conditions -> Problems(2)
 Self-Reported Allergies ->Allergies
 Self-Reported Immunizations -> Immunizations
 Self-Reported Labs and Tests -> Results
@@ -75,11 +75,7 @@ key: value
 key: value 
 
 key: value 
-               
-
-
-
-                        <--- this entire piece is referred to as the body
+                              <--- this entire piece is referred to as the body
 key: value 
 
 key: value 
@@ -98,15 +94,31 @@ key: value
 
 ##Testing Plan##
 
-1. Test Unicode and ASCII, in addition to other text formats.
-2. Test Empty sections
-3. Test when there are no sources -> need to indicate that there are no sources
-4. Test missing sections
-5. Test empty file 
-6. Test source, but no section
-7. Test different number of dashes
-8. Test the file when there is only one section(Done)
-9. Test when there is two sections, one from the very beginning and one from the very end.
+
+
+#Testing backlog#
+
+
+1. Test Unicode and ASCII, in addition to other text formats(if there are any)-> detection of ascii
+2. Test when there are is no source -> need to indicate that there are no sources? Or should add something to indicate no sources?
+3. Test if parser can tell which sections are missing -> more like an implementation
+#Tests that must be passed for all files#
+
+1. Check that there are no blank keys or values.(Done)
+2. Object must exist and have type object.(Done)
+3. Object must have the number of titles specified in the original test file.(Done)
+4. There should be no empty keys in ANY object model.(Done)
+
+#Text file specific test cases#
+
+1. Test Empty sections(Done)
+2. Test if parser is functional with missing sections(Done)
+3. Test empty file(Done)
+4. Test source, but no section(Done)
+5. Test different number of dashes(Done)
+6. Test the file when there is only one section(Done)
+7. Test when there is two sections, one from the very beginning and one from the very end.(Done)
+8. Test when there is only meta data(Done)
 
 
 
@@ -118,7 +130,7 @@ key: value
 1. Write tests
 	1.a. Check what elements/sections are in CMS.
 	1.b. Check what matches and what doesn't match.
-
+	1.c. Check what aremissing
 
 2. Document intermediate model. Document which sections match and doesn't match. 
 
@@ -138,6 +150,8 @@ key: value
 6. Put a tag or some indicator to mark that the source is the CMS text file. 
 
 
+7. Need to make sure that you don't have blank keys(Additinoal check). 
+
 ##Integration Notes
 
 First, add a line that says: 
@@ -151,11 +165,12 @@ In /lib/parser.js,
 
 ##Tentative Schedule ##
 
-6/10/14 Finish writing tests, start on demographics, get to the halfway point with demographics
-6/11/14 Finish writing parser for demographics, start on Allergies
-6/12/14 STart on another section, try to finish it in a day
-6/13/14 Start on another section, try to finish it in a day
 
-At the end of the week, I should have testing finished and the parser parsing three sections almost perfectly.
+*6/10/14 Finish writing tests, start on demographics, get to the halfway point with demographics
+*6/11/14 Finish writing parser for demographics, start on Allergies
+*6/12/14 STart on another section, try to finish it in a day
+*6/13/14 Start on another section, try to finish it in a day
+
+*At the end of the week, I should have testing finished and the parser parsing three sections almost perfectly.
 	Then you might need to write tests over the weekend to make sure that is parsing correctly.
 
