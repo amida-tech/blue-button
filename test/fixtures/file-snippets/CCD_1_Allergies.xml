@@ -23,7 +23,7 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>ALLERGENIC EXTRACT, PENICILLIN</td>
+									<td ID="allergy1">ALLERGENIC EXTRACT, PENICILLIN</td>
 									<td>
 										<content ID="severity4">Moderate to Severe</content>
 									</td>
@@ -36,7 +36,7 @@
 									<td>Inactive</td>
 								</tr>
 								<tr>
-									<td>Codeine</td>
+									<td ID="allergy2">Codeine</td>
 									<td>
 										<content ID="severity5">Mild</content>
 									</td>
@@ -49,7 +49,7 @@
 									<td>Active</td>
 								</tr>
 								<tr>
-									<td>Aspirin</td>
+									<td ID="allergy3">Aspirin</td>
 									<td>
 										<content ID="severity6">Mild</content>
 									</td>
@@ -100,7 +100,7 @@
 												codeSystem="2.16.840.1.113883.6.88"
 												codeSystemName="RxNorm">
 												<originalText>
-												<reference value="#reaction1"/>
+												<reference value="#allergy1"/>
 												</originalText>
 												</code>
 											</playingEntity>
@@ -218,7 +218,7 @@
 												codeSystem="2.16.840.1.113883.6.88"
 												codeSystemName="RxNorm">
 												<originalText>
-												<reference value="#reaction2"/>
+												<reference value="#allergy2"/>
 												</originalText>
 												</code>
 											</playingEntity>
@@ -336,7 +336,7 @@
 												codeSystem="2.16.840.1.113883.6.88"
 												codeSystemName="RxNorm">
 												<originalText>
-												<reference value="#reaction3"/>
+												<reference value="#allergy3"/>
 												</originalText>
 												</code>
 											</playingEntity>

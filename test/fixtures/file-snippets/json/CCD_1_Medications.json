@@ -16,13 +16,14 @@
                 }
             ],
             "status": "Completed",
-            "sig": "Proventil HFA ",
+            "sig": "Proventil HFA",
             "product": {
                 "identifiers": {
                     "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
                 },
-                "unencoded_name": "Proventil HFA ",
+                "unencoded_name": "Proventil HFA",
                 "name": "Proventil HFA",
+                "originalText": "Proventil HFA",
                 "code": "219483",
                 "code_system_name": "RXNORM",
                 "translations": [
