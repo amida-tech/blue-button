@@ -6,16 +6,113 @@
 
 ##Design Decisions Documentation 
 
-	#CMS to Intermediate Data Object
-		1. Needed very specific matching patterns for metadata and claims summary, which turned out to be very unique. 
-		2. For each section body, if a child has multiple keys with the exact same string, then the parser will start 
-		assigning them numbers. 
+
+Minimum number of dashes to separate section is four dashes.
+
+Minimum number of newline characters to qualify as a space is 2-3 new lines, depending on where it is in the file.
+It is usually three unless the child is at the end of the file.
+
+CMS to Intermediate Data Object
+	1. Needed very specific matching patterns for metadata and claims summary, which turned out to be very unique. 
+	Other sections are parsed with a generic parsing function.
+	2. For each section body, if a child has multiple keys with the exact same string, then the parser will start 
+	assigning them numbers. 
+
+
+
+## Current Sections 
+
+
+BB.js model needs(Bolded are those that are not addressed in the Github site)
+Unbolded ones are currently unimplemented but maybe mentioned in bluebutton.
+
+
+**Emergency contacts, kind of pertains to advance directives. **
+Implantable Devices -> Medical Equipment
+family History
+Preventive Services(future Appointments) -> Plan of Care?
+Providers -> Payer?
+Pharmacies
+Medical Plans -> Plan of Care>
+**Subsidies**
+Primary and other Insurances -> Payer
+**Claim Summary**
+
+CMS → BB.js
+Demographic -> Demographic
+Self-Reported Medical conditions -> Problems
+Self-Reported Allergies ->Allergies
+Self-Reported Immunizations -> Immunizations
+Self-Reported Labs and Tests -> Results
+Self-Reported Vital Statistics -> Vitals
+Drugs -> Medications
+
+
+##CMS Parser Variable Terminology
+
+
+
+
+Section is the entire chunk of data that includes the header and body.
+
+Header is:
+
+-------------------------------
+
+Insert Section Name <--- header
+
+-------------------------------
+
+
+key: value 
+
+key: value 
+
+key: value   <------ This is one child 
+
+key: value 
+
+key: value 
+
+key: value 
+               
+
+
+
+                        <--- this entire piece is referred to as the body
+key: value 
+
+key: value 
+
+key: value <------ This is another child
+
+key: value 
+
+key: value 
 
 
 
 
 
-##Task Backlog
+-------------------------------- <--- dash usually indicates end of file
+
+##Testing Plan##
+
+1. Test Unicode and ASCII, in addition to other text formats.
+2. Test Empty sections
+3. Test when there are no sources -> need to indicate that there are no sources
+4. Test missing sections
+5. Test empty file 
+6. Test source, but no section
+7. Test different number of dashes
+8. Test the file when there is only one section(Done)
+9. Test when there is two sections, one from the very beginning and one from the very end.
+
+
+
+
+
+##Task Backlog ##
 
 
 1. Write tests
@@ -52,51 +149,13 @@ In /lib/parser.js,
 
 
 
+##Tentative Schedule ##
 
-##CMS Parser Variable Terminology
+6/10/14 Finish writing tests, start on demographics, get to the halfway point with demographics
+6/11/14 Finish writing parser for demographics, start on Allergies
+6/12/14 STart on another section, try to finish it in a day
+6/13/14 Start on another section, try to finish it in a day
 
-
-
-
-Section is the entire chunk of data that includes the header and body.
-
-Header is:
-
--------------------------------
-
-Insert Section Name <--- header
-
--------------------------------
-
-
-key: value 
-
-key: value 
-
-key: value   <------ This is one child 
-
-key: value 
-
-key: value 
-
-key: value 
-
-											<--- this entire piece is referred to as the body
-key: value 
-
-key: value 
-
-key: value <------ This is another child
-
-key: value 
-
-key: value 
-
-
-
-
---------------------------------
-
-
-
+At the end of the week, I should have testing finished and the parser parsing three sections almost perfectly.
+	Then you might need to write tests over the weekend to make sure that is parsing correctly.
 
