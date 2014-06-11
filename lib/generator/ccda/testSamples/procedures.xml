@@ -11,24 +11,6 @@
                     <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
                         displayName="HISTORY OF PROCEDURES"/>
                     <title>PROCEDURES</title>
-                    <text>
-                        <table border="1" width="100%">
-                            <thead>
-                                <tr>
-                                    <th>Procedure</th>
-                                    <th>Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <content ID="Proc1">Colonic polypectomy</content>
-                                    </td>
-                                    <td>1998</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </text>
                     <!-- Examples of the same procedure are shown in different procedure entries -->
                     <entry typeCode="DRIV">
                         <procedure classCode="PROC" moodCode="EVN">
