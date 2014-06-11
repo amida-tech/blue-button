@@ -92,7 +92,7 @@ describe('CCDA generator.js test', function() {
 
         var result = gen(data);
 
-        //console.log(result);
+        console.log(result);
 
         expect(result).to.be.ok;
     });
