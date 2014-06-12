@@ -6,9 +6,7 @@ var Vitals = {
         "date": [{cda_date}],
         "identifiers": [{cda_id}],
         "status": {type: string, required: true},
-        "name": {type: string, required: true},
-        "code": {type: string, required: false},
-        "code_system_name": {type: string, required: false},
+        "vital": {cda_coded_entry},
         "value": {type: string, required: false},
         "unit": {type: string, required: false},
         "interpretation": {type: string, required: false}
@@ -42,24 +40,12 @@ var Vitals = {
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/status
 - Should be looked up from set 2.16.840.1.113883.11.20.9.39
 
-####Vitals.name
+####Vitals.vital
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/displayName
 - Normalization may re-encode this to standard terminology if coded in a common dataset.
 - If not present, and not coded, originalText can be taken from below:
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/originalText
-
-####Vitals.code
-- 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/code
-- Listed as not required to support uncoded or local datasets.
-
-####Vitals.code_system_name
-- 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/codeSystemName
-- Listed as not required to support uncoded or local datasets.
-- If not present, should attempt to lookup OID name from element below:
-//ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/codeSystem
 
 ####Vitals.value
 - 1..1

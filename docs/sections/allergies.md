@@ -3,21 +3,16 @@
 ###Object Schema:
 ```
 var Allergies = {
-        "date": [{cda_date}],
-        "identifiers": [{cda_id}],
-        "name": {type: string, required: true},
-        "code": {type: string, required: false},
-        "severity": {type: string, required: false},
-        "status": {type: string, required: false},
-        "reaction": [
-          {
-             "code": {type: string, required: true},
-             "name": {type: string, required: true},
-             "code_system_name": {type: string, required: true},
-             "severity": {type: string, required: false},
-          }
-        ]
-      }
+  "date": [{cda_date}],
+  "identifiers": [{cda_id}],
+  "allergen": {cda_coded_entry},
+  "severity": {type: string, required: false},
+  "status": {type: string, required: false},
+  "reactions": [{
+     "reaction": {cda_coded_entry}, 
+     "severity": {type: string, required: false}          
+  }]
+}
 ```
 
 [JSON/XML sample](samples/allergies.md)
@@ -43,26 +38,11 @@ var Allergies = {
 - 1..*
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/id
 
-####Allergy.name
+####Allergy.allergen
 - 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/participant/participantRole/playingEntity/code@displayName
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/participant/participantRole/playingEntity/code
+- Container object for allergen details.
 - Can be be from RXNORM, UNII, or NDF-RT.
-- A translation object is possible.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
-
-####Allergy.code
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/participant/participantRole/playingEntity/code@code
-- Can be be from RXNORM, UNII, or NDF-RT.
-- A translation object is possible.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
-
-####Allergy.code_system_name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/participant/participantRole/playingEntity/code@codeSystemName
-- Can be be RXNORM, UNII, or NDF-RT.
 - A translation object is possible.
 - Not supported: nullFlavor.
 - TODO:  Support lookup of values from coding system.
@@ -79,29 +59,22 @@ var Allergies = {
 - OID 2.16.840.1.113883.10.20.22.4.28.
 - Uses HITSP Problem Status 2.16.840.1.113883.3.88.12.80.68 for lookup.
 
-###Allergy.reaction
+###Allergy.reactions
 - 0..*
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation
 - OID 2.16.840.1.113883.10.20.22.4.9.
 
-###Allergy.reaction.name
-- 0..*
+###Allergy.reactions.reaction
+- 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@displayName
 - Should always be codified to SNOMED-CT.
 - Not supported: nullFlavor.
 - TODO:  Support lookup of values from coding system.
 
-###Allergy.reaction.code
-- 0..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@code
-- Should always be codified to SNOMED-CT.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
+####Allergy.reactions.severity
+- 0..1
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@displayName
+- OID 2.16.840.1.113883.10.20.22.4.8.
+- Uses Problem Severity 2.16.840.1.113883.3.88.12.3221.6.8 for lookup.
 
-###Allergy.reaction.code_system_name
-- 0..*
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/entryRelationship/observation/value@codeSystemName
-- Should be always 2.16.840.1.113883.6.96.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
 

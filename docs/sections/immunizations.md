@@ -4,27 +4,16 @@
 ```
   var Immunizations = {
     "date": [{cda_date}],
-     "identifiers": [{cda_id}],
+    "identifiers": [{cda_id}],
     "status": {type:string: required: true},
     "sequence_number": {type:string, required:false},
     "product": {
-      "name": {type:string, required: true},
-      "code": {type:string, required: true},
-      "code_system": {type:string, required: true},
-      "translations": [{
-        "name": {type:string, required: false},
-        "code": {type:string, required: false},
-        "code_system": {type:string, required: false},
-      }],
+      "product": {cda_coded_entry},
       "lot_number": {type:string, required: false},
       "manufacturer": {type:string, required: false}
     },
     "administration": {
-      "route": {
-      	"name": {type: string, required: false},
-      	"code": {type: string, required: false},
-      	"code_system": {type: string, required: false}
-      },
+      "route": {cda_coded_entry},
       "body_site": {type:string, required: false},
       "quantity": {
       	"value": {type:string, required: false},
@@ -35,37 +24,17 @@
     "performer": {
       "name": {cda_name},
       "address": {cda_address},
-	  "phone": [{
-        "number": {type: string, required: true},
-        "type": {type: string, required: true}
-      }],
-      "email": [{
-        "address": {type: string, required: true},
-        "type": {type:string, required: true}
-      }],
+	  "phone": [{cda_phone}],
+      "email": [{cda_email}],
       "identifiers": [{cda_id}],
       "organization": [{
         "name": {type:string, required: false},
         "address": {cda_address},
-	    "phone": [{
-          "number": {type: string, required: true},
-          "type": {type: string, required: true}
-        }],
-       "email": [{
-          "address": {type: string, required: true},
-          "type": {type:string, required: true}
-       }],
+	    "phone": [{cda_phone}],
+       "email": [{cda_email}],
        "identifiers": [{cda_id}]
     },
     "refusal_reason": {type:string, required: false}
-  }
-  
- var cda_name = {
-    "prefix": [{type: string, required: false}],
-    "first": {type: string, required: true},
-    "middle": [{type: string, required: false],
-    "last": {type: string, required: true},
-    "suffix": {type: string, required: false}
   }
 
 ```
@@ -98,30 +67,19 @@
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration@negationInd
 - Combination of mood code and negation can determine status of either 'pending', 'refused', or 'complete'.
 
-####Immunizations.name
-- 1..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code@displayName
-- Using display name, all of these should be coming in as CVX coded, so no need for code system.  Might want to normalize them.
-
-####Immunizations.code
-- 1..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code@code
-- All of these should be coming in as CVX coded, so no need for code system.  Might want to normalize them.
-
 ####Immunization.sequence_number
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/repeatNumber@value
 - See notes for significance.
 
 ####Immunizations.product
-- 0..1
-- No direct mapping
-- This is a catch all for every non-primary attribute of the product.  All elements herein are optional at this point.
+- 1..1
+- Container object for product information.
 
-####Immunizations.product.translations
-- 0..*
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code/translation
-- This is a coded set and should be supported as such.  Allows for synonyms in the same or other code sets.
+####Immuinzations.product.product
+- 1..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code
+- All of these should be coming in as CVX coded, so no need for code system.  Might want to normalize them.
 
 ####Immunizations.product.lot_number
 - 0..1
@@ -181,12 +139,10 @@
 ####Immunization.performer.phone
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/telecom
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
 
 ####Immunization.performer.email
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/telecom
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
 
 ####Immunization.performer.name
 - 0..1?
@@ -207,17 +163,14 @@
 ####Immunization.performer.organization.phone
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/telecom
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
 
 ####Immunization.performer.organization.email
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/telecom
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
 
 ####Immunization.performer.organization.address
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/performer/assignedEntity/representedOrganization/addr
-- Need to write a standard address parser for this element, should be used in demographics, etc. as well.
 
 ####Immunization.performer.organization.identifiers
 - 0..*

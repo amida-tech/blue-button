@@ -22,13 +22,13 @@ var SocialHistory = {
 - 1..*
 - //ClinicalDocument/component/structuredBody/component/section/entry/observation
 
-#### smokingStatuses[].value
+#### smokingStatuses.value
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/observation/value/@code
 - normalized to display name from Smoking Status value set (2.16.840.1.113883.11.20.9.38)
 - all values in Smoking Status value set comes from SNOMED CT.
 
-#### smokingStatuses[].date
+#### smokingStatuses.date
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/observation/effectiveTime
 - smoking start and end date's for smoker

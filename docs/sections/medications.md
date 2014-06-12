@@ -4,36 +4,16 @@
 ```
   var Medication = {
     "date": [{cda_date}],
-     "identifiers": [{cda_id}],
+    "identifiers": [{cda_id}],
     "status": {type:string: required: true},
     "sig": {type:string, required:false},
     "product": {
-      "name": {type:string, required: true},
-      "code": {type:string, required: true},
-      "code_system": {type:string, required: true},
-      "translations": [{
-        "name": {type:string, required: false},
-        "code": {type:string, required: false},
-        "code_system": {type:string, required: false},
-      }],
+      "product": {cda_coded_entry},
       "identifiers": [{cda_id}]
     },
     "administration": {
-      "route": {
-      	"name": {type: string, required: false},
-      	"code": {type: string, required: false},
-      	"code_system": {type: string, required: false}
-      },
-      "form": {
-      	"name": {type: string, required: false},
-      	"code": {type: string, required: false},
-      	"code_system": {type: string, required: false}
-      },
-      "site": {
-      	"name": {type: string, required: false},
-      	"code": {type: string, required: false},
-      	"code_system": {type: string, required: false}
-      },
+      "route": {cda_coded_entry},
+      "form": {cda_coded_entry},
       "dose": {
       	"value": {type: string, required: false},
       	"unit": {type: string, required: false}
@@ -46,18 +26,11 @@
       	"value": {type: string, required: false},
       	"unit": {type: string, required: false}
       },
+      "site": {cda_coded_entry}
     },
       "precondition": {
-          "code": {
-      		"name": {type:string, required: true},
-      		"code" : {type:string, required: true},
-      		"code_system": {type:string, required: true},
-      	  },
-          "value": {
-      		"name": {type:string, required: true},
-      		"code" : {type:string, required: true},
-      		"code_system": {type:string, required: true},
-      	  }
+          "code": {cda_coded_entry},
+          "value": {cda_coded_entry}
     }
   }
 
@@ -99,25 +72,9 @@
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct
 - Must be encoded in RxNorm, but translation may be in another language (e.g. SNOMED).
 
-####Medication.product.name
+####Medication.product.product
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code
-- Coded name entry from the coded object; can later be standardized via code-set.
-
-####Medication.product.code
-- 1..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code
-- Code entry from the coded object.
-
-####Medication.product.code_system
-- 1..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code
-- Code entry from the coded object.
-
-####Medication.product.translations
-- 0..1
-- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code/translations
-- Optional translation element if an additional coding system is used to represent the product.
 
 ####Medication.product.identifiers
 - 0..*
@@ -153,14 +110,14 @@
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/approachSiteCode
 
-####Medication.administration.precondition
+####Medication.precondition
 - 0..*
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/precondition
 
-####Medication.administration.precondition.code
+####Medication.precondition.code
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/precondition/code
 
-####Medication.administration.precondition.code
+####Medication.precondition.value
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/substanceAdministration/precondition/value
