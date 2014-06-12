@@ -1,0 +1,19 @@
+{
+
+"Allergies": {
+        "date": [{cda_date}],
+        "identifiers": [{cda_id}],
+        "name": {type: string, required: true},
+        "code": {type: string, required: false},
+        "severity": {type: string, required: false},
+        "status": {type: string, required: false},
+        "reaction": [
+          {
+             "code": {type: string, required: true},
+             "name": {type: string, required: true},
+             "code_system_name": {type: string, required: true},
+             "severity": {type: string, required: false},
+          }
+        ]
+      }
+  }

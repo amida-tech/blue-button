@@ -1,0 +1,16 @@
+{ "data": 
+   { "demographics": {},
+     "vitals": [ ["Object"], ["Object"], ["Object"], ["Object"], ["Object"], ["Object"] ],
+     "results": [ ["Object"] ],
+     "medications": [ ["Object"] ],
+     "encounters": [ ["Object"] ],
+     "allergies": [ ["Object"], ["Object"], ["Object"] ],
+     "immunizations": [ ["Object"], ["Object"], ["Object"], ["Object"] ],
+     "socialHistory": [ ["Object"] ],
+     "problems": [ ["Object"], ["Object"] ],
+     "procedures": [ ["Object"], ["Object"], ["Object"] ] },
+  "meta": { "version": "String" },
+  "errors": 
+   [ "nullFlavor alert :  missing but required streetLines in Address -> Patient -> CCD",
+     "nullFlavor alert :  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD"
+     ] }
