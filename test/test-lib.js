@@ -4,67 +4,54 @@ var fs = require("fs");
 var gen = require('../lib/generator/ccda/generator.js');
 var DOMParser = require('xmldom').DOMParser;
 
+Object.size = function(obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
+
+
 
 var isIdentical = function (generated, expected) {
+
+    if (!sameNode(generated, expected)) {
+        console.log("Error: Encountered different tagNames: Encountered <" + generated.tagName + "> but expected <" + expected.tagName + ">, lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
+        return false;
+    }
+
     if (!sameAttributes(generated, expected)) {
-        console.log("Error: Attributes are not equal (line # " + (generated.lineNumber - 1) + ")");
         return false;
     } 
-    // if (isLeaf(generated) && isLeaf(expected)) {
-    //     return sameAttributes(generated, expected);
-    // }
+
+    // Compare the text
+    if (!sameText(generated, expected)) {
+        console.log("Error: Different text: Encountered " + generated.nodeValue + " but expected " + expected.nodeValue);
+        return false;
+    }
+
+    generated.childNodes = extractNodes(generated.childNodes);
+    expected.childNodes = extractNodes(expected.childNodes);
+
+
+    if (isLeaf(generated) && isLeaf(expected)) {
+        return sameAttributes(generated, expected);
+    }
 
     if (!numChildNodesSame(generated, expected)) {
         console.log("Error: Generated number of child nodes different from expected (generated: " + generated.childNodes.length + ", expected: " + expected.childNodes.length);
         return false;
     }
 
-    var i = 0,
-        j = 0;
-    var generated_text = "",
-        expected_text = "";
-    while ((generated.childNodes != null || expected.childNodes != null) && i < generated.childNodes.length && j < expected.childNodes.length) {
+    for (var i = 0; i < Object.size(generated.childNodes); i++) {
 
-
-        // Skip comments.
-        // if (generated.childNodes[i].nodeName == "#comment") {
-        //     i++;
-        //     continue;
-        // }
-        // if (expected.childNodes[j].nodeName == "#comment") {
-        //     console.log("HELLO!");
-        //     j++;
-        //     continue;
-        // }
-
-        console.log(generated.childNodes[i].nodeName + " vs. " + expected.childNodes[j].nodeName);
-        console.log(generated.childNodes[i].data + " vs. " + expected.childNodes[j].data);
-
-        // Collect the text.
-        // if (generated.childNodes[i].nodeName == "#text") {
-        //     generated_text += generated.childNodes[i].nodeValue;
-        //     console.log("In generated: "  + generated_text);
-        //     i++;
-        //     continue;
-        // }
-        // if (expected.childNodes[j].nodeName == "#text") {
-        //     expected_text += expected.childNodes[j].nodeValue;
-        //     console.log("In expected: " + expected_text);
-        //     j++;
-        //     continue;
-        // }
-
-        // if (generated.childNodes[i].data == undefined && expected.childNodes[i].data == undefined)
-        if (!isIdentical(generated.childNodes[i], expected.childNodes[j])) {
-            console.log("Error. Different children: Generated: " + generated.childNodes[i].nodeName + ". Expected " + expected.childNodes[j].nodeName);
+        if (!isIdentical(generated.childNodes[i], expected.childNodes[i])) {
             return false;
         }
        
-        i++;
-        j++;
     }
 
-    // return generated_text.trim() == expected_text.trim();
     return true;
 }
 
@@ -83,18 +70,22 @@ var sameAttributes = function (generated, expected) {
         return false;  // One has attributes but the other one doesn't.
     }
 
-    // console.log(expAttributes);
-    // console.log(expected);
-    // console.log(genAttributes);
-
     for (var i = 0; i < genAttributes.length; i++) {
         if (!(genAttributes[i].name == expAttributes[i].name && genAttributes[i].value == expAttributes[i].value)) {
-            console.log("Error: Different attributes (line # " + (generated.lineNumber - 1) + ")");
-            console.log(genAttributes[i].name + " / " + genAttributes[i].value + " vs. " + expAttributes[i].name + " / " + expAttributes[i].value);
+            console.log("\nError: Attributes mismatch: Encountered: " + genAttributes[i].name + "=\"" + genAttributes[i].value + "\" but expected: " + expAttributes[i].name + "=\"" + expAttributes[i].value + "\" @ lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
             return false;
         }
     }
     return true;
+}
+
+var sameNode = function(node1, node2) {
+    return node1.tagName == node2.tagName;
+}
+
+var sameText = function(generated, expected) {
+    console.log(generated.tagName);
+    return generated.nodeValue == expected.nodeValue;
 }
 
 // helper function: count number of nodes
@@ -112,7 +103,6 @@ var numChildNodesSame = function(generated, expected) {
                 expLength++;
             }  
         } 
-
 
         if (genLength != expLength) {
             console.log("Error: Number of child nodes not equal to expected number" +
@@ -132,6 +122,18 @@ var isLeaf = function(root) {
     }
 }
 
+var extractNodes = function(childNodes) {
+    var newChildNodes = {};
+    var count = 0;
+    for (var i = 0; i < childNodes.length; i++) {
+        if (childNodes[i].tagName != undefined) {
+            newChildNodes[count] = childNodes[i];
+            count++;
+        }
+    }
+    return newChildNodes;
+}
+
 var generateXMLDOM = function(file) {
     var modelJSON = fs.readFileSync('lib/generator/ccda/testSamples/' + file + '.js', 'utf-8');
     var actual = gen(JSON.parse(modelJSON));
@@ -146,8 +148,8 @@ var generateXMLDOM = function(file) {
 }
 
 var generateStubs = function(name1, name2) {
-    var actual = fs.readFileSync('lib/generator/ccda/testSamples/' + name1 + '.xml');
-    var expected = fs.readFileSync('lib/generator/ccda/testSamples/' + name2 + '.xml');
+    var actual = fs.readFileSync('lib/generator/ccda/testSamples/stubs/' + name1 + '.xml');
+    var expected = fs.readFileSync('lib/generator/ccda/testSamples/stubs/' + name2 + '.xml');
 
     var generatedXML = new DOMParser().parseFromString(actual.toString());
     var expectedXML = new DOMParser().parseFromString(expected.toString());
