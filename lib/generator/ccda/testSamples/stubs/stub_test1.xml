@@ -13,7 +13,9 @@
       <participant typeCode="LOC">
       	<participantRole classCode="SDLOC">
       		<playingEntity classCode="PLC">
-      			<name>Community Urgent Care Centers</name>
+      			<name>
+              Community Urgent Care Center
+            </name>
       		</playingEntity>
       	</participantRole>
       </participant>

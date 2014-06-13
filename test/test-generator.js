@@ -70,23 +70,23 @@ var lib = require('./test-lib.js');
 // });
 
 // encounters section
-// describe('generating CCDA for encounters section', function() {
-//     it ('should match encounters section', function() {
-//         var XMLDOMs = lib.generateXMLDOM('encounters');
+describe('generating CCDA for encounters section', function() {
+    it ('should match encounters section', function() {
+        var XMLDOMs = lib.generateXMLDOM('encounters');
 
-//         //console.log(XMLDOMs[1].documentElement.childNodes[1].childNodes[6].nodeName); return;
+        //console.log(XMLDOMs[1].documentElement.childNodes[1].childNodes[6].nodeName); return;
 
-//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-//     });
-// });
-
-describe('generating a reduced test for simplicity', function() {
-    it ('should match reduced test stub', function() {
-        var XMLDOMs = lib.generateStubs('stub_test1' , 'stub_test1_exp');
-        
         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
     });
 });
+
+// describe('generating a reduced test for simplicity', function() {
+//     it ('should match reduced test stub', function() {
+//         var XMLDOMs = lib.generateStubs('stub_test1' , 'stub_test1_exp');
+        
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
 
 // // immunizations section
 // describe('generating CCDA for immunizations section', function() {

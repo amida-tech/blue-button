@@ -16,46 +16,49 @@ Object.size = function(obj) {
 
 var isIdentical = function (generated, expected) {
 
+    // Compare their tagNames
     if (!sameNode(generated, expected)) {
         console.log("Error: Encountered different tagNames: Encountered <" + generated.tagName + "> but expected <" + expected.tagName + ">, lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
         return false;
     }
 
-    if (!sameAttributes(generated, expected)) {
+    // Compare their attributes
+    if (!haveSameAttributes(generated, expected)) {
         return false;
     } 
 
-    // Compare the text
+    // Compare their text contents, if any
     if (!sameText(generated, expected)) {
-        console.log("Error: Different text: Encountered " + generated.nodeValue + " but expected " + expected.nodeValue);
         return false;
     }
 
+    // Now strip out comment and text objects, leaving just the childNodes with tagnames and attributes
     generated.childNodes = extractNodes(generated.childNodes);
     expected.childNodes = extractNodes(expected.childNodes);
 
-
+    // Check if they are both leaf nodes, if so then check if their attributes are the same.
     if (isLeaf(generated) && isLeaf(expected)) {
-        return sameAttributes(generated, expected);
+        return haveSameAttributes(generated, expected);
     }
 
+    // Since they are not leaf nodes, first check if they have the same number of children
     if (!numChildNodesSame(generated, expected)) {
         console.log("Error: Generated number of child nodes different from expected (generated: " + generated.childNodes.length + ", expected: " + expected.childNodes.length);
         return false;
     }
 
+    // If they have the same number of children, then start comparing their childNodes by calling the function recursively
     for (var i = 0; i < Object.size(generated.childNodes); i++) {
-
         if (!isIdentical(generated.childNodes[i], expected.childNodes[i])) {
             return false;
         }
-       
     }
-
+    // If all the childNodes are the same, then return true, traverse back up the call stack and process the next sibling
     return true;
 }
 
-var sameAttributes = function (generated, expected) {
+// Check if the attributes are the same for two nodes.
+var haveSameAttributes = function(generated, expected) {
     var genAttributes = generated.attributes;
     var expAttributes = expected.attributes;
 
@@ -64,8 +67,6 @@ var sameAttributes = function (generated, expected) {
     }
     if ((genAttributes == undefined && expAttributes != undefined) || 
         (genAttributes != undefined && expAttributes == undefined)) {
-        // console.log(genAttributes);
-        // console.log(expAttributes);
         console.log("Attributes mismatch.");
         return false;  // One has attributes but the other one doesn't.
     }
@@ -79,16 +80,48 @@ var sameAttributes = function (generated, expected) {
     return true;
 }
 
+// Returns false if the tagNames for the nodes are different, otherwise true
 var sameNode = function(node1, node2) {
     return node1.tagName == node2.tagName;
 }
 
+// Return false if the text is different (ignoring whitespace), otherwise returns true if it is the same
 var sameText = function(generated, expected) {
-    console.log(generated.tagName);
-    return generated.nodeValue == expected.nodeValue;
+    // if (generated.childNodes['0'] != undefined && generated.childNodes['0'].nodeName == "#text") {
+    //     return generated.childNodes[0].nodeValue.trim() == expected.childNodes[0].nodeValue.trim();
+    // }
+    // return true; 
+    var genText = "",
+        expText = "";  
+    if (generated.childNodes != undefined) {
+        console.log(generated.tagName);
+        for (var i = 0; i < Object.size(generated.childNodes); i++) {
+            if (generated.childNodes[i] != undefined && generated.childNodes[i].nodeName == "#text") { // then it is a text node
+                genText = generated.childNodes[i].nodeValue.trim();
+            }
+        }
+
+        for (var j = 0; j < Object.size(expected.childNodes); j++) {
+            if (expected.childNodes[j] != undefined && expected.childNodes[j].nodeName == "#text" && expected.childNodes[j].nodeValue.trim() != "\n") { // then it is a text node
+                expText = expected.childNodes[j].nodeValue.trim();
+
+                if (genText == expText) {
+                    return true;
+                }
+            }
+        }
+
+    }
+    
+    if (genText != expText) {
+        console.log("Error: Different text: encountered: \"" + generated.childNodes[i].nodeValue + "\" but expected: \"" + expected.childNodes[j].nodeValue + "\" , lineNumber: " + generated.childNodes[i].lineNumber + ", " + expected.childNodes[j].lineNumber);
+        return false;
+    } else {
+        return true;
+    }
 }
 
-// helper function: count number of nodes
+// Returns false if the parent nodes (the ones passed in) have a different number of childNodes, otherwise returns true
 var numChildNodesSame = function(generated, expected) {
     var genLength = 0;
         for (var i = 0; i < generated.childNodes.length; i++) {
@@ -107,13 +140,14 @@ var numChildNodesSame = function(generated, expected) {
         if (genLength != expLength) {
             console.log("Error: Number of child nodes not equal to expected number" +
                 " of child nodes (generated: " + genLength + ", expected: " + expLength + " at line # " + (generated.childNodes['0'].lineNumber - 1) + ", tag: " + expected.tagName + ")");
-
             return false;
         } else {
             return true;
         }
 }
 
+// Checks if the current node is a leaf node (i.e., no children). If so, returns true, otherwise returns false;
+/// @root node to evaluate 
 var isLeaf = function(root) {
     if (root.childNodes == null) {
         return true;
@@ -122,6 +156,7 @@ var isLeaf = function(root) {
     }
 }
 
+// 
 var extractNodes = function(childNodes) {
     var newChildNodes = {};
     var count = 0;
