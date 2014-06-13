@@ -1,99 +1,107 @@
 var expect = require('chai').expect;
 var assert = require('chai').assert;
 
-var gen = require('../lib/generator/ccda/generator.js');
+var lib = require('./test-lib.js');
 
 
-var data = [
-            {
-                "identifiers": [
-                    {
-                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
-                    }
-                ],
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
-                            }
-                        ],
-                        "date": [
-                            {
-                                "date": "2000-03-23T14:30:00.000Z",
-                                "precision": "minute"
-                            }
-                        ],
-                        "freeTextValue": "HGB (M 13-18 g/dl; F 12-16 g/dl)",
-                        "interpretations": [
-                            "Normal"
-                        ],
-                        "name": "HGB",
-                        "code": "30313-1",
-                        "code_system_name": "LOINC",
-                        "value": 13.2,
-                        "unit": "g/dl"
-                    },
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
-                            }
-                        ],
-                        "date": [
-                            {
-                                "date": "2000-03-23T14:30:00.000Z",
-                                "precision": "minute"
-                            }
-                        ],
-                        "freeTextValue": "WBC (4.3-10.8 10+3/ul)",
-                        "interpretations": [
-                            "Normal"
-                        ],
-                        "name": "WBC",
-                        "code": "33765-9",
-                        "code_system_name": "LOINC",
-                        "value": 6.7,
-                        "unit": "10+3/ul"
-                    },
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
-                            }
-                        ],
-                        "date": [
-                            {
-                                "date": "2000-03-23T14:30:00.000Z",
-                                "precision": "minute"
-                            }
-                        ],
-                        "freeTextValue": "PLT (135-145 meq/l)",
-                        "interpretations": [
-                            "Low"
-                        ],
-                        "name": "PLT",
-                        "code": "26515-7",
-                        "code_system_name": "LOINC",
-                        "value": 123,
-                        "unit": "10+3/ul"
-                    }
-                ],
-                "name": "CBC WO DIFFERENTIAL",
-                "code": "43789009",
-                "code_system_name": "SNOMED CT"
-            }
-        ];
 
+// // allergies section
+// describe('generating CCDA for allergies section', function() {
+//     it ('should match allergies section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('allergies');
 
-describe('CCDA generator.js test', function() {
+//         // console.log(XMLDOMs[0].documentElement.attributes);
+//         // console.log(XMLDOMs[1].documentElement.attributes);
+//         // var genAttributes = XMLDOMs[0].documentElement.attributes;
+//         // var expAttributes = XMLDOMs[1].documentElement.attributes;
+//         // console.log(JSON.stringify(genAttributes) === JSON.stringify(expAttributes));
 
-    it('check generation', function() {
+//         // console.log(XMLDOMs[1].documentElement.childNodes['2'].ownerDocument.documentElement);
 
-        var result = gen(data);
+//         debugger;
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
 
-        console.log(result);
+// });
 
-        expect(result).to.be.ok;
+// // medications section
+// describe('generating CCDA for medications section', function() {
+//     it ('should match medications section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('medications');
+
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
+
+// // problems section
+// describe('generating CCDA for problems section', function() {
+//     it ('should match problems section', function() {
+//        var XMLDOMs = lib.generateXMLDOM('problems');
+
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
+
+// // results section
+// describe('generating CCDA for results section', function() {
+//     it ('should match results section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('results');
+
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
+
+// // demographics section
+// describe('generating CCDA for demographics section', function() {
+//     it ('should match demographics section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('demographics');
+
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
+
+// // procedures section
+// describe('generating CCDA for procedures section', function() {
+//     it ('should match procedures section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('procedures');
+
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
+
+// encounters section
+// describe('generating CCDA for encounters section', function() {
+//     it ('should match encounters section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('encounters');
+
+//         //console.log(XMLDOMs[1].documentElement.childNodes[1].childNodes[6].nodeName); return;
+
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
+
+describe('generating a reduced test for simplicity', function() {
+    it ('should match reduced test stub', function() {
+        var XMLDOMs = lib.generateStubs('stub_test1' , 'stub_test1_exp');
+        
+        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
     });
 });
+
+// // immunizations section
+// describe('generating CCDA for immunizations section', function() {
+//     it ('should match immunizations section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('immunizations');
+
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
+
+// // vitals section
+// describe('generating CCDA for vitals section', function() {
+//     it ('should match vitals section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('vitals');
+
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
