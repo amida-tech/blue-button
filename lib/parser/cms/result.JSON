@@ -1,0 +1,171 @@
+{
+    "data": {
+        "demographics": [
+            {
+                "name": {
+                    "first": "JOHN",
+                    "last": "DOE"
+                },
+                "dob": [
+                    {
+                        "date": "1910-01-01T05:00:00.000Z",
+                        "precision": "day"
+                    }
+                ],
+                "address": [
+                    {
+                        "type": "home",
+                        "primary": true,
+                        "street": "123 ANY ROAD",
+                        "city": "ANYTOWN",
+                        "state": "VA",
+                        "postal_code": "00001",
+                        "country": "United States"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "123-456-7890",
+                        "type": "home"
+                    }
+                ],
+                "email": [
+                    {
+                        "address": "JOHNDOE@example.com",
+                        "type": "primary"
+                    }
+                ]
+            }
+        ],
+        "vitals": [
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ]
+        ],
+        "results": [
+            [
+                "Object"
+            ]
+        ],
+        "medications": [
+            [
+                "Object"
+            ]
+        ],
+        "encounters": [
+            [
+                "Object"
+            ]
+        ],
+        "allergies": [
+            {
+                "name": "Antibotic",
+                "severity": "Severe",
+                "date": [
+                    {
+                        "date": "1926-01-08T05:00:00.000Z",
+                        "precision": "day"
+                    },
+                    {
+                        "date": "1955-03-13T05:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
+            },
+            {
+                "name": "Grasses",
+                "severity": "Severe",
+                "date": [
+                    {
+                        "date": "1973-05-13T04:00:00.000Z",
+                        "precision": "day"
+                    },
+                    {
+                        "date": "1996-07-20T04:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
+            }
+        ],
+        "immunizations": [
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ]
+        ],
+        "socialHistory": [
+            [
+                "Object"
+            ]
+        ],
+        "problems": [
+            {
+                "name": "Arthritis",
+                "date": [
+                    {
+                        "date": "2005-08-09T04:00:00.000Z",
+                        "precision": "day"
+                    },
+                    {
+                        "date": "2011-02-28T05:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
+            },
+            {
+                "name": "Asthma",
+                "date": [
+                    {
+                        "date": "2008-01-25T05:00:00.000Z",
+                        "precision": "day"
+                    },
+                    {
+                        "date": "2010-01-25T05:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ],
+            [
+                "Object"
+            ]
+        ]
+    },
+    "meta": {
+        "version": "String"
+    },
+    "errors": [
+        "nullFlavor alert :  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert :  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD"
+    ]
+}

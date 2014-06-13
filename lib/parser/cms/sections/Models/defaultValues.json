@@ -1,6 +1,15 @@
 {
+
+  "address": {
+    "type": "home",
 "country": "United States",
-"primary": true,
-"type": "primary home",
-"precision": "day"
+"primary": true
+},
+
+"phone": { "type": "home"},
+"email": { "type": "primary"},
+"dob": {"precision": "day"},
+
+"date": {"precision":"day"}
 }
+
