@@ -21,6 +21,7 @@ describe('procedures parser', function() {
     
     it('full deep check', function(done) {
         expect(procedures).to.exist;
+        //console.log(JSON.stringify(procedures, null, 10));
         var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Procedures.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedProcedures = jsutil.jsonParseWithDate(json2Read);

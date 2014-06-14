@@ -11,11 +11,13 @@ var Procedures = {
         "body_sites": [{cda_coded_entry}],
         "providers": [{
           "address": {cda_address},
-          "telecom": {cda_telecom},
+          "phone": {cda_phone},
+          "email": {cda_email}
           "organization": {
             "name": {type:string, require:flase},
             "address": {cda_address},
-            "telecom": {cda_telecom}
+            "phone": {cda_phone},
+            "email": {cda_email}
           }
         }],
         "locations": [{cda_locations}]
