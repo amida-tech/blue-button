@@ -54,13 +54,13 @@ describe('full ccd parser', function() {
         expect(ccd.vitals).to.exist;
         expect(ccd.vitals).to.have.length(6);
 
-        expect(ccd.vitals[0].name).exist;
-        expect(ccd.vitals[0].name).to.equal('Height');
+        expect(ccd.vitals[0].vital.name).exist;
+        expect(ccd.vitals[0].vital.name).to.equal('Height');
         expect(ccd.vitals[0].value).to.equal(177);
         expect(ccd.vitals[0].unit).to.equal('cm');
 
-        expect(ccd.vitals[1].name).exist;
-        expect(ccd.vitals[1].name).to.equal('Patient Body Weight - Measured');
+        expect(ccd.vitals[1].vital.name).exist;
+        expect(ccd.vitals[1].vital.name).to.equal('Patient Body Weight - Measured');
         expect(ccd.vitals[1].value).to.equal(86);
         expect(ccd.vitals[1].unit).to.equal('kg');
 

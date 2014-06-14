@@ -9,7 +9,7 @@ var Vitals = {
         "vital": {cda_coded_entry},
         "value": {type: string, required: false},
         "unit": {type: string, required: false},
-        "interpretation": {type: string, required: false}
+        "interpretations": [{type: string, required: false}]
       }
 ```
 
