@@ -1,3 +1,30 @@
+/*
+This is a library file to support the tests in the test-generator.js file. It's purpose is to help 
+compare two XML documents by returning the results from comparing their nodes (tagNames), then their 
+attribute/value pairs (if any) and then their text contents (if any). It then proceeds to
+strip out any comment and whitespace objects present in either XML file (comments are not critical 
+and may be different). Then it tests if they are leaf nodes, in which case if they are, then it checks the 
+attribute/value pairs again. Finally, if they are not leaf nodes, then it 
+checks the number of children, and if those numbers are the same, then it 
+calls the isIdentical() function recursively to run the same tests on those
+child nodes.
+
+@export isIdentical()
+haveSameAttributes()
+skip()
+sameNode()
+sameText()
+numChildNodesSame()
+isLeaf()
+extractNodes()
+@export generateXMLDOM()
+@export generateStubs()
+
+*/
+
+
+
+
 var expect = require('chai').expect;
 var assert = require('chai').assert;
 var fs = require("fs");
@@ -5,6 +32,8 @@ var gen = require('../lib/generator/ccda/generator.js');
 var DOMParser = require('xmldom').DOMParser;
 var repl = require("repl");
 var execSync = require('execSync');
+var SKIP_COMMAND = false;
+var DIFF_COMMAND = true;
 
 Object.size = function(obj) {
     var size = 0, key;
@@ -21,20 +50,20 @@ var isIdentical = function (generated, expected) {
     // Compare their tagNames
     if (!sameNode(generated, expected)) {
         console.log("Error: Encountered different tagNames: Encountered <" + generated.tagName + "> but expected <" + expected.tagName + ">, lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
-        return false;
+        return skip();
     }
 
     // Compare their attributes
     if (!haveSameAttributes(generated, expected)) {
-        return false;
+        return skip();
     } 
 
     // Compare their text contents, if any
     if (!sameText(generated, expected)) {
-        return false;
+        return skip();
     }
 
-    // Now strip out comment and text objects, leaving just the childNodes with tagnames and attributes
+    // Now strip out comment and text objects, leaving just the childNodes with tagNames and value/attribute pairs
     generated.childNodes = extractNodes(generated.childNodes);
     expected.childNodes = extractNodes(expected.childNodes);
 
@@ -43,10 +72,10 @@ var isIdentical = function (generated, expected) {
         return haveSameAttributes(generated, expected);
     }
 
-    // Since they are not leaf nodes, first check if they have the same number of children
+    // Since we've reached this point, they are not leaf nodes, so first check if they have the same number of children
     if (!numChildNodesSame(generated, expected)) {
         console.log("Error: Generated number of child nodes different from expected (generated: " + generated.childNodes.length + ", expected: " + expected.childNodes.length);
-        return false;
+        return skip();
     }
 
     // If they have the same number of children, then start comparing their childNodes by calling the function recursively
@@ -70,7 +99,7 @@ var haveSameAttributes = function(generated, expected) {
     if ((genAttributes == undefined && expAttributes != undefined) || 
         (genAttributes != undefined && expAttributes == undefined)) {
         console.log("Attributes mismatch.");
-        return false;  // One has attributes but the other one doesn't.
+        return skip();  // One has attributes but the other one doesn't.
     }
 
     for (var i = 0; i < genAttributes.length; i++) {
@@ -83,20 +112,21 @@ var haveSameAttributes = function(generated, expected) {
 }
 
 var skip = function() {
-    console.log("Skip? > y/n: ");
-    var result = execSync.exec('test/support/a.out');
-    var out = result.stdout;
-    if (out.substr(12,13).trim() == "y") {
+    if (SKIP_COMMAND) {
+        console.log("Skip? > y/n: ");
+        var result = execSync.exec('test/support/a.out');
+        var out = result.stdout;
+        if (out.substr(12,13).trim() == "y") {
+            return true;
+        } else {
+            return false;
+        } 
+    } else if (DIFF_COMMAND) {
         return true;
     } else {
         return false;
     }
 }
-
-function done() {
-    console.log('Now that process.stdin is paused, there is nothing more to do.');
-    process.exit();
-  }
 
 // Returns false if the tagNames for the nodes are different, otherwise true
 var sameNode = function(node1, node2) {
@@ -105,10 +135,6 @@ var sameNode = function(node1, node2) {
 
 // Return false if the text is different (ignoring whitespace), otherwise returns true if it is the same
 var sameText = function(generated, expected) {
-    // if (generated.childNodes['0'] != undefined && generated.childNodes['0'].nodeName == "#text") {
-    //     return generated.childNodes[0].nodeValue.trim() == expected.childNodes[0].nodeValue.trim();
-    // }
-    // return true; 
     var genText = "",
         expText = "";  
     if (generated.childNodes != undefined) {
@@ -132,7 +158,7 @@ var sameText = function(generated, expected) {
     
     if (genText != expText) {
         console.log("Error: Different text: encountered: \"" + generated.childNodes[i].nodeValue + "\" but expected: \"" + expected.childNodes[j].nodeValue + "\" , lineNumber: " + generated.childNodes[i].lineNumber + ", " + expected.childNodes[j].lineNumber);
-        return false;
+        return skip();
     } else {
         return true;
     }
@@ -157,7 +183,7 @@ var numChildNodesSame = function(generated, expected) {
         if (genLength != expLength) {
             console.log("Error: Number of child nodes not equal to expected number" +
                 " of child nodes (generated: " + genLength + ", expected: " + expLength + " at line # " + (generated.childNodes['0'].lineNumber - 1) + ", tag: " + expected.tagName + ")");
-            return false;
+            return skip();
         } else {
             return true;
         }
@@ -187,6 +213,7 @@ var extractNodes = function(childNodes) {
 }
 
 var generateXMLDOM = function(file) {
+    console.log("\nPROCESSING " + file);
     var modelJSON = fs.readFileSync('lib/generator/ccda/testSamples/' + file + '.js', 'utf-8');
     var actual = gen(JSON.parse(modelJSON));
     var expected = fs.readFileSync('lib/generator/ccda/testSamples/' + file + '.xml');

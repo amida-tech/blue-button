@@ -28,8 +28,15 @@ To see the results, open the generated report in your browser:
 
 # ccda-generator
 
-Uses the chai assertion API and an JS XML DOM implementation (see: https://github.com/jindw/xmldom) to traverse the XML documents and compare them by node (tagName) and by attribute and value.
-The default setting ignores comments and any whitespace, newlines, tab or text nodes. 
+Uses a JS XML DOM implementation (https://github.com/jindw/xmldom) to traverse the generated and expected XML documents and compare them by node (tagName) and by attribute and value. The default setting ignores comments and any whitespace, newlines, tab or text nodes. 
+
+There are a couple of settings that can be altered in the test-lib.js file:
+	SKIP_COMMAND: If set to true, will prompt the user to either skip or not skip the failed test.
+	DIFF_COMMAND: If set to true, will continue execution even upon failing a test and will output all of the errors/differences to the console.
+
+
+Installation:
 
 	npm install xmldom
+	npm install execSync
 	mocha test --recursive

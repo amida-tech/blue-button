@@ -33,7 +33,7 @@
           <originalText>Checkup Examination<reference value="#Encounter1"/></originalText>
           <translation code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory" codeSystemName="HL7ActCode"/>
         </code>
-        <effectiveTime value="20090227"/>
+        <effectiveTime value="20090227130000+0500"/>
         <performer>
           <assignedEntity>
             <id root="PseduoMD-3"/>
@@ -43,7 +43,7 @@
         <participant typeCode="LOC">
           <participantRole classCode="SDLOC">
             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-            <code code="1160-1" codeSystemName="HealthcareServiceLocation" displayName="Urgent Care Center" codeSystem="2.16.840.1.113883.6.259"/>
+            <code code="1160-1" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation" displayName="Urgent Care Center"/>
             <addr>
               <streetAddressLine>17 Daws Rd.</streetAddressLine>
               <city>Blue Bell</city>
@@ -64,7 +64,7 @@
             <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="20090227"/>
+              <low value="20090227130000+0500"/>
             </effectiveTime>
             <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
           </observation>
