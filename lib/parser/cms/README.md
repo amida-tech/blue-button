@@ -53,9 +53,9 @@ Unbolded ones are currently unimplemented but maybe mentioned in bluebutton.
 + **Claim Summary**
 
 ### Sectiont that have a data model
-* Demographic -> Demographic(1)
-* Self-Reported Medical conditions -> Problems(2)
-* Self-Reported Allergies ->Allergies
+* Demographic -> Demographic(1)(done)
+* Self-Reported Medical conditions -> Problems(2)(done)
+* Self-Reported Allergies ->Allergies(done, need to move some medications model to labs)
 * Self-Reported Immunizations -> Immunizations
 * Self-Reported Labs and Tests -> Results
 * Self-Reported Vital Statistics -> Vitals
@@ -168,8 +168,9 @@ key: value
 
 9. writeValue in intermediate object to blue button converter will have to return an object eventually.(done)
 
-10. Need to dump data that is not part of one section into a common pool, or organize it. I.e. the effective dates for in "demographic"
-section needs to go somewhere else -> in the health insurance model. 
+10. Need to dump data that is not part of one section into a common pool, or organize it. 
+..* the effective dates for in "demographic" section needs to go somewhere else -> in the health insurance model. 
+..* Allergy shots, and other medications need to go to another section
 
 11. Need to make sure that object types are very consistent with the model given in bb, probably will need to write tests to make sure
 the returned object model is the same as the model that has been parsed.
@@ -177,6 +178,12 @@ the returned object model is the same as the model that has been parsed.
 12. Demographics needs to be able to handle single key value pairs just in case.
 
 13. Need to write the code system functionality to the parser.
+
+14. Need to write defaultValues.json for each section.
+
+15. Need a precision converter, so that if I give it a mm/dd/yyyy/ other options, it can tell how precise it is. 
+
+16. Need to modularize/restructure the results section.
 
 ##Integration Notes
 
@@ -189,8 +196,12 @@ In /lib/parser.js,
 
 
 
+
+
+
 ##Tentative Schedule 
 
+Week of the 10th
 
 + 6/10/14 Finish writing tests, start on demographics, get to the halfway point with demographics
   * Finished writing most tests, started on demographics. 
@@ -200,4 +211,9 @@ In /lib/parser.js,
 
 +At the end of the week, I should have testing finished and the parser parsing three sections almost perfectly.
 	Then you might need to write tests over the weekend to make sure that is parsing correctly.
+
+
+
+
+
 

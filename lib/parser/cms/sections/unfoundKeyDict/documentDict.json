@@ -1,6 +1,7 @@
 {
   "demographic": "demographics",
 "self reported medical conditions" : "problems",
-"self reported allergies": "allergies"
+"self reported allergies": "allergies",
+"self reported labs and tests":"results"
 
 }

@@ -1,0 +1,6 @@
+{
+  "name": "{type: string, required: true}",
+  "code": "{type: string, required: true}",
+  "code_system_name": "{type: string, required: true}",
+  "results": "[{cda_result}]"
+}

@@ -58,9 +58,47 @@
             ]
         ],
         "results": [
-            [
-                "Object"
-            ]
+            {
+                "name": "Glucose Level",
+                "results": [
+                    {
+                        "date": {
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "name": "FBS",
+                        "value": "135",
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date": {
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "name": "RBS",
+                        "value": " 170",
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date": {
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "name": "RBS",
+                        "value": " 150",
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date": {
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "name": "RBS",
+                        "value": " 120",
+                        "unit": "mg/dL"
+                    }
+                ]
+            }
         ],
         "medications": [
             [
@@ -75,7 +113,6 @@
         "allergies": [
             {
                 "name": "Antibotic",
-                "severity": "Severe",
                 "date": [
                     {
                         "date": "1926-01-08T05:00:00.000Z",
@@ -85,11 +122,14 @@
                         "date": "1955-03-13T05:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                ],
+                "reaction": {
+                    "name": "Vomiting",
+                    "severity": "Severe"
+                }
             },
             {
                 "name": "Grasses",
-                "severity": "Severe",
                 "date": [
                     {
                         "date": "1973-05-13T04:00:00.000Z",
@@ -99,7 +139,11 @@
                         "date": "1996-07-20T04:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                ],
+                "reaction": {
+                    "name": "Sneezing",
+                    "severity": "Severe"
+                }
             }
         ],
         "immunizations": [
