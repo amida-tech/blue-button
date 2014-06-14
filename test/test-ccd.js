@@ -99,9 +99,9 @@ describe('full ccd parser', function() {
         expect(ccd.immunizations).to.have.length(4);
 
         expect(ccd.immunizations[0].administration.route.name).to.equal('Intramuscular injection');
-        expect(ccd.immunizations[0].product.name).to.exist;
-        expect(ccd.immunizations[0].product.code).to.equal('88');
-        expect(ccd.immunizations[0].product.name).to.equal("Influenza virus vaccine");
+        expect(ccd.immunizations[0].product.product.name).to.exist;
+        expect(ccd.immunizations[0].product.product.code).to.equal('88');
+        expect(ccd.immunizations[0].product.product.name).to.equal("Influenza virus vaccine");
         expect(JSON.stringify(ccd.immunizations[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
         expect(ccd.immunizations[0].date[0].precision).to.equal('month');
 
