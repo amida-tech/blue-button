@@ -3,6 +3,8 @@ var assert = require('chai').assert;
 var fs = require("fs");
 var gen = require('../lib/generator/ccda/generator.js');
 var DOMParser = require('xmldom').DOMParser;
+var repl = require("repl");
+var execSync = require('execSync');
 
 Object.size = function(obj) {
     var size = 0, key;
@@ -74,11 +76,27 @@ var haveSameAttributes = function(generated, expected) {
     for (var i = 0; i < genAttributes.length; i++) {
         if (!(genAttributes[i].name == expAttributes[i].name && genAttributes[i].value == expAttributes[i].value)) {
             console.log("\nError: Attributes mismatch: Encountered: " + genAttributes[i].name + "=\"" + genAttributes[i].value + "\" but expected: " + expAttributes[i].name + "=\"" + expAttributes[i].value + "\" @ lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
-            return false;
+            return skip();
         }
     }
     return true;
 }
+
+var skip = function() {
+    console.log("Skip? > y/n: ");
+    var result = execSync.exec('test/support/a.out');
+    var out = result.stdout;
+    if (out.substr(12,13).trim() == "y") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function done() {
+    console.log('Now that process.stdin is paused, there is nothing more to do.');
+    process.exit();
+  }
 
 // Returns false if the tagNames for the nodes are different, otherwise true
 var sameNode = function(node1, node2) {
@@ -94,7 +112,6 @@ var sameText = function(generated, expected) {
     var genText = "",
         expText = "";  
     if (generated.childNodes != undefined) {
-        console.log(generated.tagName);
         for (var i = 0; i < Object.size(generated.childNodes); i++) {
             if (generated.childNodes[i] != undefined && generated.childNodes[i].nodeName == "#text") { // then it is a text node
                 genText = generated.childNodes[i].nodeValue.trim();

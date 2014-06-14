@@ -23,3 +23,13 @@ See also https://github.com/gotwarlost/istanbul/issues/44.
 To see the results, open the generated report in your browser:
 
     ./coverage/lcov-report/index.html
+
+
+
+# ccda-generator
+
+Uses the chai assertion API and an JS XML DOM implementation (see: https://github.com/jindw/xmldom) to traverse the XML documents and compare them by node (tagName) and by attribute and value.
+The default setting ignores comments and any whitespace, newlines, tab or text nodes. 
+
+	npm install xmldom
+	mocha test --recursive
