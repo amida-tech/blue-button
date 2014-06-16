@@ -15,6 +15,7 @@ describe('socialHistory parser', function() {
         var xml = fs.readFileSync(filepath, 'utf-8');
         bb.parse(xml, {component: 'ccda_socialHistory'}, function(err, result) {
             socialHistory = result.toJSON();
+            //console.log(JSON.stringify(socialHistory, null, 10));
             done();
         });
     });

@@ -10,14 +10,8 @@ var demographics = {
   "identifiers": [{cda_id}],
   "marital_status": {type: string, required: false},
   "address": [{cda_usr_address}],
-  "phone": [{
-    "number": {type: string, required: true},
-    "type": {type: string, required: true}
-  }],
-  "email": [{
-    "address": {type: string, required: true},
-    "type": {type:string, required: true}
-  }],
+  "phone": [{cda_phone}],
+  "email": [{cda_email}],
   "race_ethnicity": {type:string, required: false},
   "religion": {type:string, required: false},
   "languages": [
@@ -35,14 +29,8 @@ var demographics = {
     "name": {cda_name},
     "relationship": {type: string, required: false},
     "address": [{cda_usr_address}],
-    "phone": [{
-       "number": {type: string, required: true},
-       "type": {type: string, required: true}
-     }],
-     "email": [{
-       "address": {type: string, required: true},
-       "type": {type:string, required: true}
-     }]
+    "phone": [{cda_phone}],
+    "email": [{cda_email}]
   }
 
 var cda_usr_address = {
@@ -54,14 +42,6 @@ var cda_usr_address = {
     "postal_code": {type: string, required: false},
     "country": {type: string, required: false}
  }
-
-var cda_name = {
-    "prefix": [{type: string, required: false}],
-    "first": {type: string, required: true},
-    "middle": [{type: string, required: false],
-    "last": {type: string, required: true},
-    "suffix": {type: string, required: false}
-  }
 ```
 
 [JSON/XML sample](samples/demographics.md)
@@ -90,35 +70,6 @@ var cda_name = {
 * OID: 2.16.840.1.113883.10.20.22.5
 * Not supported:  Optional "@use" element.
 
-####name.prefix
-* 0..1
-* //ClinicalDocument/recordTarget/patientRole/patient/name/prefix
-* Not supported:  Optional "@qualifier" element. 
-
-####name.first
-* 1..1
-* //ClinicalDocument/recordTarget/patientRole/patient/name/given[0]
-* Not supported:  Optional "@qualifier" element. 
-* Specification dictates at least one given name required, can be parsed as first.
-
-####name.middle
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/name/given[1-n]
-* Specification dictates that any second given name is middle.
-* Assumption: any other given names are middle names.
-* Not supported:  Optional "@qualifier" element.
-* May be valuable to concatenate multiple middle-names to single object.
-
-####name.last
-* 1..1
-* //ClinicalDocument/recordTarget/patientRole/patient/name/family
-* Not supported:  Optional "@qualifier" element.
-
-####name.suffix
-* 0..1
-* //ClinicalDocument/recordTarget/patientRole/patient/name/suffix
-* Not supported:  Optional "@qualifier" element.
-
 ####dob
 * 1..1
 * //ClinicalDocument/recordTarget/patientRole/patient/birthTime
@@ -134,17 +85,6 @@ var cda_name = {
 * 0..*
 * //ClinicalDocument/recordTarget/patientRole/id
 * Technically, this is required.  However, nullFlavor is acceptable.  If nullFlavor is found, the identifier should be rejected.
-
-####identifiers.identifier_root
-* 1..1
-* //ClinicalDocument/recordTarget/patientRole/id@root
-* This can either be an OID, UUID, or UID.
-* Can later be enhanced to lookup a subset of the HL7 OID registry and store text name.
-
-####identifiers.identifier
-* 1..1
-* //ClinicalDocument/recordTarget/patientRole/id@extension
-* This is the actual identifier.
 
 ####marital_status
 * 0..1
@@ -200,34 +140,10 @@ var cda_name = {
 * Each record must have at least one phone or email entry.
 * Each phone record should be checked for 'tel:' lead of value.
 
-####phone.number
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/telecom@value
-* Should be checked for 'tel:' lead, and parsed as phone if valid.
-
-####phone.type
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/telecom@use
-* Should be checked for 'tel:' lead, and parsed as phone if valid.
-* Depending on what is in the "@use", this should be "home", "work", "mobile", or "other".
-* Other is for "HV", or when @use isn't supplied.
-
 ####email
 * 0..*
 * //ClinicalDocument/recordTarget/patientRole/telecom
 * Each phone record should be checked for 'mailto:' lead of value.
-
-####email.address
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/telecom@value
-* Should be checked for 'mailto:' lead, and parsed as phone if valid.
-
-####email.type
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/telecom@use
-* Should be checked for 'mailto:' lead, and parsed as phone if valid.
-* Depending on what is in the "@use", this should be "home", "work", or "other".
-* Other is for "HV", "MC", or when @use isn't supplied.  Mobile email isn't a thing.
 
 ####race_ethnicity
 * 0..1
@@ -286,66 +202,13 @@ var cda_name = {
 * //ClinicalDocument/recordTarget/patientRole/patient/guardian/telecom
 * Each phone record should be checked for 'tel:' lead of value.
 
-####guardian.phone.number
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/guardian/telecom@value
-* Should be checked for 'tel:' lead, and parsed as phone if valid.
-
-####guardian.phone.type
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/guardian/telecom@use
-* Should be checked for 'tel:' lead, and parsed as phone if valid.
-* Depending on what is in the "@use", this should be "home", "work", "mobile", or "other".
-* Other is for "HV", or when @use isn't supplied.
-
 ####guardian.email
 * 0..*
 * //ClinicalDocument/recordTarget/patientRole/patient/guardian/telecom
 * Each phone record should be checked for 'mailto:' lead of value.
-
-####guardian.email.address
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/guardian/telecom@value
-* Should be checked for 'mailto:' lead, and parsed as phone if valid.
-
-####guardian.email.type
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/guardian/telecom@use
-* Should be checked for 'mailto:' lead, and parsed as phone if valid.
-* Depending on what is in the "@use", this should be "home", "work", or "other".
-* Other is for "HV", "MC", or when @use isn't supplied.  Mobile email isn't a thing.
 
 ####guardian.name
 * 1..1
 * //ClinicalDocument/recordTarget/patientRole/patient/guardian/name
 * OID: 2.16.840.1.113883.10.20.22.5
 * Not supported:  Optional "@use" element.
-
-####guardian.name.prefix
-* 0..1
-* //ClinicalDocument/recordTarget/patientRole/patient/guardian/name/prefix
-* Not supported:  Optional "@qualifier" element. 
-
-####guardian.name.first
-* 1..1
-* //ClinicalDocument/recordTarget/patientRole/patient/guardian/name/given[0]
-* Not supported:  Optional "@qualifier" element. 
-* Specification dictates at least one given name required, can be parsed as first.
-
-####guardian.name.middle
-* 0..*
-* //ClinicalDocument/recordTarget/patientRole/patient/guardian/name/given[1-n]
-* Specification dictates that any second given name is middle.
-* Assumption: any other given names are middle names.
-* Not supported:  Optional "@qualifier" element.
-* May be valuable to concatenate multiple middle-names to single object.
-
-####guardian.name.last
-* 1..1
-* //ClinicalDocument/recordTarget/patientRole/patient/guardian/name/family
-* Not supported:  Optional "@qualifier" element.
-
-####guardian.name.suffix
-* 0..1
-* //ClinicalDocument/recordTarget/patientRole/patient/guardian/name/suffix
-* Not supported:  Optional "@qualifier" element.
