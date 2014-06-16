@@ -61,7 +61,7 @@ var cda_result = {
 
 ####Result_set.results.status
 - 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/status
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/statusCode
 - Should be looked up from set 2.16.840.1.113883.11.20.9.39
 
 ####Result_set.results.result

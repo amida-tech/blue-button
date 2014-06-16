@@ -73,9 +73,9 @@ describe('full ccd parser', function() {
         expect(ccd.medications).to.have.length(1);
 
         expect(ccd.medications[0].administration.route.name).to.equal('RESPIRATORY (INHALATION)');
-        expect(ccd.medications[0].product.name).to.exist;
-        expect(ccd.medications[0].product.name).to.equal('Proventil HFA');
-        expect(ccd.medications[0].product.code).to.equal('219483');
+        expect(ccd.medications[0].product.product.name).to.exist;
+        expect(ccd.medications[0].product.product.name).to.equal('Proventil HFA');
+        expect(ccd.medications[0].product.product.code).to.equal('219483');
 
         //expect(ccd.medications.medicationsReported[0].productName.code).to.equal('219483');
         //expect(ccd.medications.medicationsReported[0].dosePeriod).to.exist;

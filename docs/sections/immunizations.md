@@ -15,7 +15,7 @@
     "administration": {
       "route": {cda_coded_entry},
       "body_site": {type:string, required: false},
-      "quantity": {
+      "dose": {
       	"value": {type:string, required: false},
       	"units": {type:string, required: false}
       },
@@ -31,8 +31,8 @@
         "name": {type:string, required: false},
         "address": {cda_address},
 	    "phone": [{cda_phone}],
-       "email": [{cda_email}],
-       "identifiers": [{cda_id}]
+        "email": [{cda_email}],
+        "identifiers": [{cda_id}]
     },
     "refusal_reason": {type:string, required: false}
   }
@@ -106,7 +106,7 @@
 - Always coded to SNOMED-CT if present.
 - No demo files, can fake it for now and take displayName.
 
-####Immunization.administration.quantity
+####Immunization.administration.dose
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/doseQuantity
 - This is a value/units pair, where units aren't required.

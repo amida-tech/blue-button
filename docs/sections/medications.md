@@ -9,6 +9,7 @@
     "sig": {type:string, required:false},
     "product": {
       "product": {cda_coded_entry},
+      "unencoded_name": {type: string, required: false},
       "identifiers": [{cda_id}]
     },
     "administration": {
@@ -75,6 +76,10 @@
 ####Medication.product.product
 - 0..1
 - /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code
+
+####Medication.product.unencoded_name
+- 0..1
+- /ClinicalDocument/component/structuredBody/component/section/entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code@originalText
 
 ####Medication.product.identifiers
 - 0..*
