@@ -12,7 +12,88 @@
                         displayName="RESULTS"/>
                     <title>RESULTS</title>
                     <text>
-                        
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">LABORATORY INFORMATION</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Chemistries and drug levels</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="result1">HGB (M 13-18 g/dl; F 12-16
+                                            g/dl)</content>
+                                    </td>
+                                    <td>13.2</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="result2">WBC (4.3-10.8 10+3/ul)</content>
+                                    </td>
+                                    <td>6.7</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="result3">PLT (135-145 meq/l)</content>
+                                    </td>
+                                    <td>123 (L)</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Liver Functions and Other Laboratory Values</td>
+                                </tr>
+                                <tr>
+                                    <td>ALT (SGPT)</td>
+                                    <td>31.0</td>
+                                </tr>
+                                <tr>
+                                    <td>AST (SGOT)</td>
+                                    <td>18.0</td>
+                                </tr>
+                                <tr>
+                                    <td>GGT</td>
+                                    <td>28.0 Alk</td>
+                                </tr>
+                                <tr>
+                                    <td>Phos</td>
+                                    <td>86.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Bili</td>
+                                    <td>0.1</td>
+                                </tr>
+                                <tr>
+                                    <td>Albumin</td>
+                                    <td>3.2</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Blood Count</td>
+                                </tr>
+                                <tr>
+                                    <td>White Count</td>
+                                    <td>7.7</td>
+                                </tr>
+                                <tr>
+                                    <td>Platelets</td>
+                                    <td>187.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Hematocrit</td>
+                                    <td>23.7</td>
+                                </tr>
+                                <tr>
+                                    <td>Hemoglobin</td>
+                                    <td>8.1</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">ELECTROCARDIOGRAM (EKG) INFORMATION</td>
+                                </tr>
+                                <tr>
+                                    <td>EKG</td>
+                                    <td>Sinus rhythm without acute changes</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </text>
                     <entry typeCode="DRIV">
                         <organizer classCode="BATTERY" moodCode="EVN">
@@ -116,87 +197,3 @@
 
 
 
-
-
-<table>
-                            <tbody>
-                                <tr>
-                                    <td colspan="2">LABORATORY INFORMATION</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Chemistries and drug levels</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <content ID="result1">HGB (M 13-18 g/dl; F 12-16
-                                            g/dl)</content>
-                                    </td>
-                                    <td>13.2</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <content ID="result2">WBC (4.3-10.8 10+3/ul)</content>
-                                    </td>
-                                    <td>6.7</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <content ID="result3">PLT (135-145 meq/l)</content>
-                                    </td>
-                                    <td>123 (L)</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Liver Functions and Other Laboratory Values</td>
-                                </tr>
-                                <tr>
-                                    <td>ALT (SGPT)</td>
-                                    <td>31.0</td>
-                                </tr>
-                                <tr>
-                                    <td>AST (SGOT)</td>
-                                    <td>18.0</td>
-                                </tr>
-                                <tr>
-                                    <td>GGT</td>
-                                    <td>28.0 Alk</td>
-                                </tr>
-                                <tr>
-                                    <td>Phos</td>
-                                    <td>86.0</td>
-                                </tr>
-                                <tr>
-                                    <td>Total Bili</td>
-                                    <td>0.1</td>
-                                </tr>
-                                <tr>
-                                    <td>Albumin</td>
-                                    <td>3.2</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Blood Count</td>
-                                </tr>
-                                <tr>
-                                    <td>White Count</td>
-                                    <td>7.7</td>
-                                </tr>
-                                <tr>
-                                    <td>Platelets</td>
-                                    <td>187.0</td>
-                                </tr>
-                                <tr>
-                                    <td>Hematocrit</td>
-                                    <td>23.7</td>
-                                </tr>
-                                <tr>
-                                    <td>Hemoglobin</td>
-                                    <td>8.1</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">ELECTROCARDIOGRAM (EKG) INFORMATION</td>
-                                </tr>
-                                <tr>
-                                    <td>EKG</td>
-                                    <td>Sinus rhythm without acute changes</td>
-                                </tr>
-                            </tbody>
-                        </table>

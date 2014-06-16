@@ -23,8 +23,6 @@ extractNodes()
 */
 
 
-
-
 var expect = require('chai').expect;
 var assert = require('chai').assert;
 var fs = require("fs");
@@ -49,7 +47,11 @@ var isIdentical = function (generated, expected) {
 
     // Compare their tagNames
     if (!sameNode(generated, expected)) {
-        console.log("Error: Encountered different tagNames: Encountered <" + generated.tagName + "> but expected <" + expected.tagName + ">, lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
+        console.log("Error: Encountered different tagNames: Encountered <" + 
+            ((generated == undefined) ? generated : generated.tagName) + 
+            "> but expected <" + ((expected == undefined) ? expected : expected.tagName) + 
+            ">, lineNumber: " + ((generated == undefined) ? generated : generated.lineNumber) + 
+            ", " + ((expected == undefined) ? expected : expected.lineNumber));
         return skip();
     }
 
@@ -102,6 +104,11 @@ var haveSameAttributes = function(generated, expected) {
         return skip();  // One has attributes but the other one doesn't.
     }
 
+    if (genAttributes.length != expAttributes.length) {
+        console.log("Attributes mismatch. Different lengths: " + genAttributes.length + " attributes but expected " + expAttributes.length + " attributes @ lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
+        return skip();
+    }
+
     for (var i = 0; i < genAttributes.length; i++) {
         if (!(genAttributes[i].name == expAttributes[i].name && genAttributes[i].value == expAttributes[i].value)) {
             console.log("\nError: Attributes mismatch: Encountered: " + genAttributes[i].name + "=\"" + genAttributes[i].value + "\" but expected: " + expAttributes[i].name + "=\"" + expAttributes[i].value + "\" @ lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
@@ -130,7 +137,7 @@ var skip = function() {
 
 // Returns false if the tagNames for the nodes are different, otherwise true
 var sameNode = function(node1, node2) {
-    return node1.tagName == node2.tagName;
+    return (node1 != undefined && node2 != undefined) && (node1.tagName == node2.tagName);
 }
 
 // Return false if the text is different (ignoring whitespace), otherwise returns true if it is the same
@@ -156,7 +163,7 @@ var sameText = function(generated, expected) {
 
     }
     
-    if (genText != expText) {
+    if (genText != expText && generated.chilNodes != undefined) {
         console.log("Error: Different text: encountered: \"" + generated.childNodes[i].nodeValue + "\" but expected: \"" + expected.childNodes[j].nodeValue + "\" , lineNumber: " + generated.childNodes[i].lineNumber + ", " + expected.childNodes[j].lineNumber);
         return skip();
     } else {

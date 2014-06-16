@@ -25,7 +25,7 @@
                 <originalText>
                   <reference value="#immi1"/>
                 </originalText>
-                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
               </code>
               <lotNumberText>1</lotNumberText>
             </manufacturedMaterial>
@@ -44,7 +44,7 @@
               <postalCode>99099</postalCode>
               <country>US</country>
             </addr>
-            <telecom use="WP" nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
             <assignedPerson>
               <name>
                 <given>Amanda</given>
@@ -62,8 +62,8 @@
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <act classCode="ACT" moodCode="INT">
             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
-            <text>possible flu-like symptoms for three days<reference value="#immunSect"/></text>
+            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="instruction"/>
+            <text>label in spanish<reference value="#MedSec_1"/></text>
             <statusCode code="completed"/>
           </act>
         </entryRelationship>
@@ -88,7 +88,7 @@
                 <originalText>
                   <reference value="#immi2"/>
                 </originalText>
-                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
               </code>
               <lotNumberText>1</lotNumberText>
             </manufacturedMaterial>
@@ -107,7 +107,7 @@
               <postalCode>99099</postalCode>
               <country>US</country>
             </addr>
-            <telecom use="WP" nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
             <assignedPerson>
               <name>
                 <given>Amanda</given>
@@ -125,8 +125,8 @@
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <act classCode="ACT" moodCode="INT">
             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
-            <text>possible flu-like symptoms for three days<reference value="#immunSect"/></text>
+            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="instruction"/>
+            <text>label in spanish<reference value="#MedSec_1"/></text>
             <statusCode code="completed"/>
           </act>
         </entryRelationship>
@@ -151,7 +151,7 @@
                 <originalText>
                   <reference value="#immi3"/>
                 </originalText>
-                <translation code="109" displayName="Pneumococcal NOS" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+                <translation code="109" displayName="Pneumococcal NOS" codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
               </code>
               <lotNumberText>1</lotNumberText>
             </manufacturedMaterial>
@@ -170,7 +170,7 @@
               <postalCode>99099</postalCode>
               <country>US</country>
             </addr>
-            <telecom use="WP" nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
             <assignedPerson>
               <name>
                 <given>Amanda</given>
@@ -188,8 +188,8 @@
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <act classCode="ACT" moodCode="INT">
             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
-            <text>possible flu-like symptoms for three days<reference value="#immunSect"/></text>
+            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="instruction"/>
+            <text>label in spanish<reference value="#MedSec_1"/></text>
             <statusCode code="completed"/>
           </act>
         </entryRelationship>
@@ -214,7 +214,7 @@
                 <originalText>
                   <reference value="#immi4"/>
                 </originalText>
-                <translation code="09" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+                <translation code="09" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
               </code>
               <lotNumberText>1</lotNumberText>
             </manufacturedMaterial>
@@ -233,7 +233,7 @@
               <postalCode>99099</postalCode>
               <country>US</country>
             </addr>
-            <telecom use="WP" nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
             <assignedPerson>
               <name>
                 <given>Amanda</given>
@@ -251,8 +251,8 @@
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <act classCode="ACT" moodCode="INT">
             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
-            <text>possible flu-like symptoms for three days<reference value="#immunSect"/></text>
+            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="instruction"/>
+            <text>label in spanish<reference value="#MedSec_1"/></text>
             <statusCode code="completed"/>
           </act>
         </entryRelationship>
