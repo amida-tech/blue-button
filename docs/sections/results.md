@@ -3,8 +3,9 @@
 ###Object Schema:
 ```
 var result_set = {
-         result_set: {cda_coded_entry},
-         "results": [{cda_result}]
+         "result_set": {cda_coded_entry},
+         "results": [{cda_result}],
+         "identifiers": [{cda_id{]
       }
 
 var cda_result = {

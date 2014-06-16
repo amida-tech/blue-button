@@ -113,13 +113,13 @@ describe('full ccd parser', function() {
         expect(ccd.results).to.have.length(1);
 
         expect(ccd.results[0]).to.exist;
-        expect(ccd.results[0].code).to.equal('43789009');
-        expect(ccd.results[0].name).to.equal("CBC WO DIFFERENTIAL");
+        expect(ccd.results[0].result_set.code).to.equal('43789009');
+        expect(ccd.results[0].result_set.name).to.equal("CBC WO DIFFERENTIAL");
 
 
         expect(ccd.results[0].results[2]).to.exist;
-        expect(ccd.results[0].results[2].code).to.equal('26515-7');
-        expect(ccd.results[0].results[2].name).to.equal('PLT');
+        expect(ccd.results[0].results[2].result.code).to.equal('26515-7');
+        expect(ccd.results[0].results[2].result.name).to.equal('PLT');
 
         done();
     });
