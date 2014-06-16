@@ -1,0 +1,46 @@
+  {
+    "date": "[{cda_date}]",
+     "identifiers": "[{cda_id}]",
+    "status": "{type:string: required: true}",
+    "sig": "{type:string, required:false}",
+    "product": {
+      "name": "{type:string, required: true}",
+      "code": "{type:string, required: true}",
+      "code_system": "{type:string, required: true}",
+      "translations": [{
+        "name": "{type:string, required: false}",
+        "code": "{type:string, required: false}",
+        "code_system": "{type:string, required: false}"
+      }],
+      "identifiers": "[{cda_id}]"
+    },
+    "administration": {
+      "route": {
+        "name": "{type: string, required: false}",
+        "code": "{type: string, required: false}",
+        "code_system": "{type: string, required: false}"
+      },
+      "form": {
+        "name": "{type: string, required: false}",
+        "code": "{type: string, required: false}",
+        "code_system": "{type: string, required: false}"
+      },
+      "site": {
+        "name": "{type: string, required: false}",
+        "code": "{type: string, required: false},",
+        "code_system": "{type: string, required: false}"
+      },
+      "dose": {
+        "value": "{type: string, required: false}",
+        "unit": "{type: string, required: false}"
+      },
+      "dose_restriction": {
+        "value": "{type: string, required: false}",
+        "unit": "{type: string, required: false}"
+      },
+      "rate": {
+        "value": "{type: string, required: false}",
+        "unit": "{type: string, required: false}"
+      }
+    }
+  }

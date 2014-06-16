@@ -2,6 +2,10 @@
   "demographic": "demographics",
 "self reported medical conditions" : "problems",
 "self reported allergies": "allergies",
-"self reported labs and tests":"results"
+"self reported labs and tests":"results",
+"drugs": "medications",
+ "self reported immunizations": "Immunizations",
+"self reported labs and tests": "results",
+"self reported vital statistics": "vitals"
 
 }

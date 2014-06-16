@@ -52,14 +52,21 @@ Unbolded ones are currently unimplemented but maybe mentioned in bluebutton.
 + Primary and other Insurances -> Payer
 + **Claim Summary**
 
-### Sectiont that have a data model
+### Sections that have a data model
 * Demographic -> Demographic(1)(done)
 * Self-Reported Medical conditions -> Problems(2)(done)
-* Self-Reported Allergies ->Allergies(done, need to move some medications model to labs)
+* Self-Reported Allergies ->Allergies(done)
 * Self-Reported Immunizations -> Immunizations
-* Self-Reported Labs and Tests -> Results
+* Self-Reported Labs and Tests -> Results(Done, need more samples to be better)
 * Self-Reported Vital Statistics -> Vitals
-* Drugs -> Medications
+* Drugs -> Medications(done)
+
+##More Issues with Sections
+
+* When there is no 1 to 1 correspondence between sections. For example, in self-reported allergies, 
+there are also medications stuff involved. Need to do a better job in detecting that kind of anamaly. 
+
+
 
 
 ##CMS Parser Variable Terminology
@@ -185,6 +192,9 @@ the returned object model is the same as the model that has been parsed.
 
 16. Need to modularize/restructure the results section.
 
+17. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that
+the patient took shots. From this, maybe the parser should extrapolate the administration part of medications. 
+
 ##Integration Notes
 
 First, add a line that says: 
@@ -206,7 +216,7 @@ Week of the 10th
 + 6/10/14 Finish writing tests, start on demographics, get to the halfway point with demographics
   * Finished writing most tests, started on demographics. 
 + 6/11/14 Finish writing parser for demographics, start on Allergies
-+ 6/12/14 STart on another section, try to finish it in a day
++ 6/12/14 Start on another section, try to finish it in a day
 + 6/13/14 Start on another section, try to finish it in a day
 
 +At the end of the week, I should have testing finished and the parser parsing three sections almost perfectly.

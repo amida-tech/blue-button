@@ -37,26 +37,7 @@
                 ]
             }
         ],
-        "vitals": [
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ]
-        ],
+        "vitals": [],
         "results": [
             {
                 "name": "Glucose Level",
@@ -101,15 +82,28 @@
             }
         ],
         "medications": [
-            [
-                "Object"
-            ]
+            {
+                "sig": "Aspirin",
+                "product": {
+                    "name": "Aspirin",
+                    "unencoded_name": "Aspirin"
+                }
+            },
+            {
+                "date": [
+                    {
+                        "date": "1949-09-28T04:00:00.000Z",
+                        "precision": "day"
+                    }
+                ],
+                "sig": "Erythromycin",
+                "product": {
+                    "name": "Erythromycin",
+                    "unencoded_name": "Erythromycin"
+                }
+            }
         ],
-        "encounters": [
-            [
-                "Object"
-            ]
-        ],
+        "encounters": [],
         "allergies": [
             {
                 "name": "Antibotic",
@@ -146,25 +140,8 @@
                 }
             }
         ],
-        "immunizations": [
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ]
-        ],
-        "socialHistory": [
-            [
-                "Object"
-            ]
-        ],
+        "immunizations": [],
+        "socialHistory": [],
         "problems": [
             {
                 "name": "Arthritis",
@@ -193,23 +170,13 @@
                 ]
             }
         ],
-        "procedures": [
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ],
-            [
-                "Object"
-            ]
+        "procedures": [],
+        "meta": {
+            "version": "String"
+        },
+        "errors": [
+            "nullFlavor alert :  missing but required streetLines in Address -> Patient -> CCD",
+            "nullFlavor alert :  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD"
         ]
-    },
-    "meta": {
-        "version": "String"
-    },
-    "errors": [
-        "nullFlavor alert :  missing but required streetLines in Address -> Patient -> CCD",
-        "nullFlavor alert :  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD"
-    ]
+    }
 }
