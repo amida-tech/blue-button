@@ -6,9 +6,7 @@ var Problems = {
         "date": [{cda_date}],
         "identifiers": [{cda_id}],
         "negation_indicator": {type: boolean, required: false},
-        "name": {type: string, required: true},
-        "code": {type: string, required: false},
-        "code_system_name": {type: string, required: false},
+        "problem": {cda_coded_entry},
         "onset_age": {type: string, required: false},
         "onset_age_unit": {type: string, required: false},
         "status": {type: string, required: false}, 
@@ -44,25 +42,9 @@ var Problems = {
 - //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation@negationInd
 - Should be assumed to be false for safety reasons if not present; true if it is a negation.
 
-####Problem.name
+####Problem.problem
 - 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@displayName
-- Should always be codified to SNOMED-CT.
-- A translation object is possible instead of SNOMED, to ICD.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
-
-####Problem.code
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@code
-- Should always be codified to SNOMED-CT.
-- A translation object is possible instead of SNOMED, to ICD.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
-
-####Problem.code_system_name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value@codeSystemName
+- //ClinicalDocument/component/structuredBody/component/section/entry/act/entryRelationship/observation/value
 - Should always be codified to SNOMED-CT.
 - A translation object is possible instead of SNOMED, to ICD.
 - Not supported: nullFlavor.

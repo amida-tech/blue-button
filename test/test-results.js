@@ -21,6 +21,7 @@ describe('results parser', function() {
     
     it('full deep check', function(done) {
         expect(results).to.exist;
+        //console.log(JSON.stringify(results, null, 10));
         var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Results.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedResults = jsutil.jsonParseWithDate(json2Read);
@@ -33,15 +34,15 @@ describe('results parser', function() {
         expect(results).to.have.length(1);
         
         expect(results[0]).to.exist;
-        expect(results[0].code).to.equal('43789009');
-        expect(results[0].name).to.equal("CBC WO DIFFERENTIAL");
+        expect(results[0].result_set.code).to.equal('43789009');
+        expect(results[0].result_set.name).to.equal("CBC WO DIFFERENTIAL");
         
         expect(results[0].results).to.exist;
         expect(results[0].results).to.have.length(3);
         
         expect(results[0].results[2]).to.exist;
-        expect(results[0].results[2].code).to.equal('26515-7');
-        expect(results[0].results[2].name).to.equal('PLT');
+        expect(results[0].results[2].result.code).to.equal('26515-7');
+        expect(results[0].results[2].result.name).to.equal('PLT');
         
         done();
     });
