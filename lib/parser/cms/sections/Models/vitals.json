@@ -1,0 +1,9 @@
+{
+"date": "[{cda_date}]",
+        "identifiers": "[{cda_id}]",
+        "status": "{type: string, required: true}",
+        "vital": "{cda_coded_entry}",
+        "value": "{type: string, required: false}",
+        "unit": "{type: string, required: false}",
+        "interpretations": ["{type: string, required: false}"]
+}

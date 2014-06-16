@@ -37,29 +37,15 @@
                 ]
             }
         ],
-        "vitals": [
-            {
-                "vital": {
-                    "name": "Blood Pressure"
-                },
-                "value": "120/80",
-                "units": "mm[Hg]"
-            },
-            {
-                "vital": {
-                    "name": "Glucose"
-                },
-                "value": "110",
-                "units": "mg/dL"
-            }
-        ],
+        "vitals": [],
         "results": [
             {
                 "name": "Glucose Level",
                 "results": [
                     {
                         "date": {
-                            "date": "2008-03-21T04:00:00.000Z"
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
                         },
                         "name": "FBS",
                         "value": "135",
@@ -67,26 +53,29 @@
                     },
                     {
                         "date": {
-                            "date": "2008-03-21T04:00:00.000Z"
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
                         },
                         "name": "RBS",
-                        "value": "170",
+                        "value": " 170",
                         "unit": "mg/dL"
                     },
                     {
                         "date": {
-                            "date": "2008-03-21T04:00:00.000Z"
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
                         },
                         "name": "RBS",
-                        "value": "150",
+                        "value": " 150",
                         "unit": "mg/dL"
                     },
                     {
                         "date": {
-                            "date": "2008-03-21T04:00:00.000Z"
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
                         },
                         "name": "RBS",
-                        "value": "120",
+                        "value": " 120",
                         "unit": "mg/dL"
                     }
                 ]

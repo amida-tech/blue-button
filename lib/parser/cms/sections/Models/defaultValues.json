@@ -9,7 +9,7 @@
 "phone": { "type": "home"},
 "email": { "type": "primary"},
 "dob": {"precision": "day"},
-
-"date": {"precision":"day"}
+"date": {"precision":"day"},
+"status": "completed"
 }
 

@@ -193,7 +193,7 @@ the returned object model is the same as the model that has been parsed.
 16. Need to modularize/restructure the results section.
 
 17. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that
-the patient took shots. From this, maybe the parser should extrapolate the administration part of medications. 
+the patient took shots. From this, maybe the parser should extrapolate the administration part of medications. May tie in with #13.
 
 ##Integration Notes
 
