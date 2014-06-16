@@ -27,6 +27,10 @@
             "zip": "99123",
             "country": "US"
         },
+        "identifiers": [{
+            "identifier": "2.16.840.1.113883.19.5.9999.456",
+            "identifier_type": "2981823"
+        }],
         "phone": [{
             "number": "555-555-5000",
             "type": "work place"
@@ -42,6 +46,9 @@
                 "zip": "99123",
                 "country": "US"
             },
+            "identifiers": [{
+                "identifier": "2.16.840.1.113883.19.5.9999.1393"
+            }],
             "phone": [{
                 "number": "555-555-5000",
                 "type": "work place"
@@ -79,12 +86,19 @@
             "zip": "02368",
             "country": "US"
         },
+        "identifiers": [{
+            "identifier": "2.16.840.1.113883.19.5",
+            "identifier_type": "1234"
+        }],
         "phone": [{
             "number": "(555)555-555-1234",
             "type": "work place"
         }],
         "organization": {
-            "name": "Community Health and Hospitals"
+            "name": "Community Health and Hospitals",
+            "identifiers": [{
+                "identifier": "2.16.840.1.113883.19.5"
+            }]
         }
     }],
     "locations": [{
@@ -130,12 +144,19 @@
             "zip": "02368",
             "country": "US"
         },
+        "identifiers": [{
+            "identifier": "2.16.840.1.113883.19",
+            "identifier_type": "1234"
+        }],
         "phone": [{
             "number": "(555)555-555-1234",
             "type": "work place"
         }],
         "organization": {
-            "name": "Community Health and Hospitals"
+            "name": "Community Health and Hospitals",
+            "identifiers": [{
+                "identifier": "2.16.840.1.113883.19.5"
+            }]
         }
     }],
     "locations": [{

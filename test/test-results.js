@@ -21,7 +21,7 @@ describe('results parser', function() {
     
     it('full deep check', function(done) {
         expect(results).to.exist;
-        console.log(JSON.stringify(results, null, 10));
+        //console.log(JSON.stringify(results, null, 10));
         var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Results.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedResults = jsutil.jsonParseWithDate(json2Read);
