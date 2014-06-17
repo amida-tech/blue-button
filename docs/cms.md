@@ -199,7 +199,7 @@ the patient took shots. From this, maybe the parser should extrapolate the admin
 
 ## Resolved Tasks
 
-1.  Convert datetime into yyyy/mm/dd hh:mm:ss format...(there was no problem in the beginning -.-)
+1.  Convert datetime into yyyy/mm/dd hh:mm:ss format...
 
 2.  Restructure so that format matches Matt's update.(done)
 
@@ -219,42 +219,6 @@ In /lib/parser.js,
 
 
 
-
-
-##Tentative Schedule 
-
-Week of the 10th
-
-+ 6/10/14 Finish writing tests, start on demographics, get to the halfway point with demographics
-  * Finished writing most tests, started on demographics. 
-+ 6/11/14 Finish writing parser for demographics, start on Allergies
-+ 6/12/14 Start on another section, try to finish it in a day
-+ 6/13/14 Start on another section, try to finish it in a day
-
-Week of the 16th
-
-6/16/14 Get immunizations done by the end of the day.
-6/17/14 Get claims history/insurance started. using the data model that is given in Dmitry's link.
-6/18/14 Claims history/insurance data model should be done by today. Make sure to get the model proofread.
-Also check CCDA formats for insurers, so that it is compliant with both cms and CCDA.
- Start tackling more problems from the back log, OR
- ..*review CCDA to create more object models(i.e. family history)?
- ..*TDD
-
-6/19/14 Continue tackling major issues in the backlog. 
-6/20/14 Clean up and refactor code, re-evaluate current program structure. 
-
-
-Week of the 23rd
-
-Some time this week: Make up Isabella Jones example from current xml, run that through the parser.
-6/23/14 
-6/24/14 
-6/25/14 
-6/26/14
-6/27/14
-
-Make sure you know the difference between the "Plans" section vs. "Primary Insurance" section.
 
 
 

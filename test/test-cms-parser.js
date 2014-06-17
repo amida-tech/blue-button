@@ -2,8 +2,9 @@ var expect = require('chai').expect;
 var fs = require('fs');
 var path = require('path');
 
-var cms = require('../lib/parser/cms/cmsParser.js');
-
+//var txtToIntObj = require('../lib/parser/txtToIntObj/parser.js');
+var txtToIntObj = require('../lib/parser/cms/cmsTxtToIntObj.js');
+var objConverter = require('../lib/parser/cms/cmsObjConverter.js');
 var txtdata;
 
 //loads the file
@@ -17,10 +18,8 @@ function loadFile(filename){
 
 //checks if the number titles is enough
 function titleTest(result, titles){
-  //console.log(titles.length);
   var hasAllTitles = true;
   var resultKeys = Object.keys(result);
-  //console.log(result);
   //checking if keys ar eequa
   expect(resultKeys.length).to.equal(titles.length, "lengths are not the same");
   expect(result).to.have.keys(titles, "keys are not the same");
@@ -29,16 +28,18 @@ function titleTest(result, titles){
 //Checking for bad keys(empty string or just a space)
 function checkForBadKeys(result){
   for(var key in result){
-    if(key == '')
+    if(key === ''){
       return '';
-    if(key == ' ')
+    }
+    if(key === ' '){
       return ' ';
-    if(typeof result[key] == 'object')
+    }
+    if(typeof result[key] === 'object'){
       checkForBadKeys(result[key]);
     }
+  }
     return true;
 }
-
 
 
 /*This is a function that stores tests that should be met among many different
@@ -46,7 +47,7 @@ test files */
 function sharedTests(){
   var result;
   beforeEach(function(done){
-     result = cms.parseCMS(this.txtdata);
+     result = txtToIntObj.getIntObj(this.txtdata);
      done();
   });
   it('check for existence and type', function(done) {
@@ -56,7 +57,7 @@ function sharedTests(){
   });
 
   it('make sure intermediate format has all titles', function(done) {
-    var titles = cms.getTitles(this.txtdata);
+    var titles = txtToIntObj.getTitles(this.txtdata);
     //titleTest(result, titles);
     done();
   });
@@ -93,9 +94,9 @@ describe('Testing two sections(metadata & demographics)', function () {
   sharedTests();
 
   it('check that there are only two titles', function(done){
-    var result = cms.parseCMS(this.txtdata);
+    var result = txtToIntObj.getIntObj(this.txtdata);
 
-    var titles = cms.getTitles(this.txtdata);
+    var titles = txtToIntObj.getTitles(this.txtdata);
     var resultKeys = Object.keys(result);
     expect(resultKeys.length).to.equal(2);
 
@@ -117,8 +118,8 @@ describe('Testing File with only meta section', function () {
   sharedTests();
 
   it('check that there is only one title', function(done){
-    var result = cms.parseCMS(this.txtdata);
-    var titles = cms.getTitles(this.txtdata);
+    var result = txtToIntObj.getIntObj(this.txtdata);
+    var titles = txtToIntObj.getTitles(this.txtdata);
     var resultKeys = Object.keys(result);
     expect(resultKeys.length).to.equal(1);
     var expectedTitles = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION'];
@@ -149,8 +150,8 @@ describe('Testing file with beginning(meta) and end(claims)', function () {
   sharedTests();
 
   it('check that there is only two titles', function(done){
-    var result = cms.parseCMS(this.txtdata);
-    var titles = cms.getTitles(this.txtdata);
+    var result = txtToIntObj.getIntObj(this.txtdata);
+    var titles = txtToIntObj.getTitles(this.txtdata);
     var resultKeys = Object.keys(result);
     expect(resultKeys.length).to.equal(2);
     var expectedTitles = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION', 'Claim Summary'];
@@ -159,7 +160,7 @@ describe('Testing file with beginning(meta) and end(claims)', function () {
   });
 
   it('check that the sections are populated', function(done){
-    var result = cms.parseCMS(this.txtdata);
+    var result = txtToIntObj.getIntObj(this.txtdata);
     for (var key in result)
     {
       var sectionValueObj = result[key];
@@ -181,11 +182,11 @@ describe('Testing a file with empty sections', function () {
   sharedTests();
 
   it('checks that the sections are empty', function(done){
-    var result = cms.parseCMS(this.txtdata);
+    var result = txtToIntObj.getIntObj(this.txtdata);
     var allSectionsAreEmpty = true;
     for(var key in result){
       if(result[key] instanceof Array ){
-        if(result[key].length != 0){
+        if(result[key].length !== 0){
           allSectionsAreEmpty = false;
         }
       }
@@ -196,8 +197,8 @@ describe('Testing a file with empty sections', function () {
         }
       }
     }
-    expect(allSectionsAreEmpty).equals(true, "parsing error, empty section parsed"
-      +" as not empty");
+    expect(allSectionsAreEmpty).equals(true,
+      "parsing error, empty section parsed as not empty");
     done();
   });
 
@@ -214,7 +215,7 @@ describe('Testing a file with missing', function () {
 
   sharedTests();
   it('checks that the right numbers of sections are present', function(done){
-    var result = cms.parseCMS(this.txtdata);
+    var result = txtToIntObj.getIntObj(this.txtdata);
     var resultKeys = Object.keys(result);
     var expectedKeys = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION',
     'Demographic', 'Self Reported Medical Conditions', 'Family Medical History', 'Plans'];
@@ -239,9 +240,8 @@ describe('Test a file with no sources', function () {
 
   before(function(done) {
     var txtfile = loadFile('noSources.txt');
-    var result = cms.parseCMS(txtfile);
+    var result = txtToIntObj.getIntObj(txtfile);
     this.txtdata=txtfile.toString();
-    console.log(result);
     done();
   });
 
@@ -254,33 +254,52 @@ describe('Test a file with only sources', function () {
 
   before(function(done) {
     var txtfile = loadFile('onlySources.txt');
-    var result = cms.parseCMS(txtfile);
+    var result = txtToIntObj.getIntObj(txtfile);
     this.txtdata=txtfile.toString();
-    console.log(result);
     done();
   });
 
   sharedTests();
 
-});
-
   it('checks that only type of children are sources', function(done){
-    var result = cms.parseCMS(this.txtdata);
-    for(var keys in result){
-      var sectionObj = result[keys];
+    var result = txtToIntObj.getIntObj(this.txtdata);
+    for(var key in result){
+      var sectionObj = result[key];
       if(result[key] instanceof Array ){
-        if(result[key].length != 0){
-          allSectionsAreEmpty = false;
+        var childKeys = Object.keys(result[key]);
+        expect(childKeys).to.have.length(1);
         }
       }
-      else if(result[key] instanceof Object){
-
-      }
-    }
+      done();
+    });
 
   });
 
-});
+
+describe('Test file parsing beginning to end', function () {
+
+  before(function(done) {
+    var txtfile = loadFile('sample2.txt');
+    var result = txtToIntObj.getIntObj(txtfile);
+    this.txtdata=txtfile.toString();
+    done();
+  });
+
+  it('checks if the file is converted', function(done){
+    var outputFilename = __dirname+ '/fixtures/cms/bbModel.json';
+    var intObj = txtToIntObj.getIntObj(this.txtdata);
+    var bbModel = objConverter.convertToBBModel(intObj);
+    fs.writeFile(outputFilename, JSON.stringify(bbModel, null, 4), function(err) {
+      if(err) {
+        console.log(err);
+      } else {
+        console.log("JSON saved to " + outputFilename);
+      }
+    });
+    done();
+    });
+
+  });
 
 
 
