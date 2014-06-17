@@ -22,23 +22,23 @@ var lib = require('./test-lib.js');
 //     });
 // });
 
-// problems section
-describe('generating CCDA for problems section', function() {
-    it ('should match problems section', function() {
-       var XMLDOMs = lib.generateXMLDOM('problems');
-
-        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-    });
-});
-
-// // results section
-// describe('generating CCDA for results section', function() {
-//     it ('should match results section', function() {
-//         var XMLDOMs = lib.generateXMLDOM('results');
+// // problems section
+// describe('generating CCDA for problems section', function() {
+//     it ('should match problems section', function() {
+//        var XMLDOMs = lib.generateXMLDOM('problems');
 
 //         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
 //     });
 // });
+
+// results section
+describe('generating CCDA for results section', function() {
+    it ('should match results section', function() {
+        var XMLDOMs = lib.generateXMLDOM('results');
+
+        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+    });
+});
 
 // // demographics section
 // describe('generating CCDA for demographics section', function() {

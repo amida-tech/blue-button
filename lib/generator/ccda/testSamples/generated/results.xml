@@ -26,7 +26,7 @@
             <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
             <referenceRange>
               <observationRange>
-                <text>HGB (M 13-18 g/dl; F 12-16 g/dl)</text>
+                <text>UNIMPLEMENTED</text>
               </observationRange>
             </referenceRange>
           </observation>
@@ -45,7 +45,7 @@
             <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
             <referenceRange>
               <observationRange>
-                <text>WBC (4.3-10.8 10+3/ul)</text>
+                <text>UNIMPLEMENTED</text>
               </observationRange>
             </referenceRange>
           </observation>
@@ -64,7 +64,7 @@
             <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
             <referenceRange>
               <observationRange>
-                <text>PLT (135-145 meq/l)</text>
+                <text>UNIMPLEMENTED</text>
               </observationRange>
             </referenceRange>
           </observation>
