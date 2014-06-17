@@ -1,0 +1,99 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://jsonschema.net#",
+    "type": "array",
+
+    "items": {
+        "id": "http://jsonschema.net/5#",
+        "type": "object",
+
+        "properties": {
+            "identifiers": {
+                "id": "http://jsonschema.net/5/identifiers#",
+                "type": "array",
+
+                "items": {
+                    "id": "http://jsonschema.net/5/identifiers/0#",
+                    "type": "object",
+
+                    "properties": {
+                        "identifier": {
+                            "id": "http://jsonschema.net/5/identifiers/0/identifier#",
+                            "type": "string"
+
+                        }
+                    }
+                }
+            },
+            "vital": {
+                "id": "http://jsonschema.net/5/vital#",
+                "type": "object",
+
+                "properties": {
+                    "name": {
+                        "id": "http://jsonschema.net/5/vital/name#",
+                        "type": "string"
+
+                    },
+                    "code": {
+                        "id": "http://jsonschema.net/5/vital/code#",
+                        "type": "string"
+
+                    },
+                    "code_system_name": {
+                        "id": "http://jsonschema.net/5/vital/code_system_name#",
+                        "type": "string"
+
+                    }
+                }
+            },
+            "status": {
+                "id": "http://jsonschema.net/5/status#",
+                "type": "string"
+
+            },
+            "date": {
+                "id": "http://jsonschema.net/5/date#",
+                "type": "array",
+
+                "items": {
+                    "id": "http://jsonschema.net/5/date/0#",
+                    "type": "object",
+
+                    "properties": {
+                        "date": {
+                            "id": "http://jsonschema.net/5/date/0/date#",
+                            "type": "string"
+
+                        },
+                        "precision": {
+                            "id": "http://jsonschema.net/5/date/0/precision#",
+                            "type": "string"
+
+                        }
+                    }
+                }
+            },
+            "interpretations": {
+                "id": "http://jsonschema.net/5/interpretations#",
+                "type": "array",
+
+                "items": {
+                    "id": "http://jsonschema.net/5/interpretations/0#",
+                    "type": "string"
+
+                }
+            },
+            "value": {
+                "id": "http://jsonschema.net/5/value#",
+                "type": "integer"
+
+            },
+            "unit": {
+                "id": "http://jsonschema.net/5/unit#",
+                "type": "string"
+
+            }
+        }
+    }
+}
