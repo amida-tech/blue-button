@@ -30,6 +30,7 @@ var DOMParser = require('xmldom').DOMParser;
 var execSync = require('execSync');
 var SKIP_COMMAND = false;
 var DIFF_COMMAND = true;
+var CAP_ERRORS = 0;
 
 
 // Defining the class as a function, and later adding methods to its prototype
@@ -238,16 +239,20 @@ testXML.prototype.extractNodes = function(childNodes) {
     return newChildNodes;
 }
 
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 // generates the DOM representations of both XML documents and returns them as a two-element array, 
 // with the first being the generated XML and the second being the expected XML.
 testXML.prototype.generateXMLDOM = function(file) {
     console.log("\nPROCESSING " + file.toUpperCase());
-    var modelJSON = fs.readFileSync('lib/generator/ccda/testSamples/JSON_models/' + file + '.js', 'utf-8');
+    var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + file.capitalize() + '.json', 'utf-8');
     var actual = gen(JSON.parse(modelJSON));
-    var expected = fs.readFileSync('lib/generator/ccda/testSamples/expected/' + file + '.xml');
+    var expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + file.capitalize() + '.xml');
 
     // write generated file just to visually compare
-    fs.writeFileSync('lib/generator/ccda/testSamples/generated/' + file + '.xml', actual, 'utf-8');
+    fs.writeFileSync('test/fixtures/file-snippets/generated/CCD_1_' + file.capitalize() + '.xml', actual, 'utf-8');
 
     var generatedXML = new DOMParser().parseFromString(actual.toString());
     var expectedXML = new DOMParser().parseFromString(expected.toString());
@@ -256,8 +261,8 @@ testXML.prototype.generateXMLDOM = function(file) {
 
 // A test/sandbox function for experimentation/testing 
 testXML.prototype.generateStubs = function(name1, name2) {
-    var actual = fs.readFileSync('lib/generator/ccda/testSamples/stubs/' + name1 + '.xml');
-    var expected = fs.readFileSync('lib/generator/ccda/testSamples/stubs/' + name2 + '.xml');
+    var actual = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name1 + '.xml');
+    var expected = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name2 + '.xml');
 
     var generatedXML = new DOMParser().parseFromString(actual.toString());
     var expectedXML = new DOMParser().parseFromString(expected.toString());

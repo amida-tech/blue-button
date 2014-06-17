@@ -7,20 +7,4 @@ For example, if the JSON data contains an entry with a code of 8302-2 (which bel
 
 Once the section template is determined, an XML document is generated using the libxmljs Document API and passing in the appropriate XML attributes for the section template determined previously.
 
-## Acquiring the Lookup Data
-The data is acquired from http://phinvads.cdc.gov/vads/SearchVocab.action. There are two slightly different data sets which you can download. The first is option is the following: Value Sets > Browse All Value Sets > Download All. The second option is View(Msg. Guides) > Browse All Views > Click Details on the All Value Sets Row > Download All. The first option contains value sets from FHIM and NHSN, among others, in addition to the standard ones from PHVS. After downloading the files, make sure to remove either "ValueSetBrowseResultSummary.xls" or "Views\View_All_Value_Sets_V7.xls" from your directory before proceeding.
 
-Once having completed the above, execute the ruby batch conversion script from the command line in the same directory as your downloaded files (WARNING: this will take a considerable amount of time to process the files, ~2-3hrs). 
-
-When the script has finished running, execute the following Unix commands in the terminal:
-
-~~~~
-cat *.csv > final.csv
-COUNT=`grep "Concept\sCode" -Hnm 1 final.csv |cut -f2 -d:` 
-COUNT=`expr $COUNT - 1`
-awk '/Concept Code/&&c++ {next} 1' final.csv > finalRevised.csv
-~~~~
-
-This results in a CSV file (~300mb file) with the following headers:
-
-"Concept Code","Concept Name","Preferred Concept Name","Preferred Alternate Code","Code System OID","Code System Name","Code System Code","Code System Version","HL7 Table 0396 Code","Value Set Name","Value Set Code","Value Set OID","Value Set Version","Value Set Definition","Value Set Status","VS Last Updated Date","VS Release Comments"
