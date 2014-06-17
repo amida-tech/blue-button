@@ -27,7 +27,6 @@ var assert = require('chai').assert;
 var fs = require("fs");
 var gen = require('../lib/generator/ccda/generator.js');
 var DOMParser = require('xmldom').DOMParser;
-var repl = require("repl");
 var execSync = require('execSync');
 var SKIP_COMMAND = false;
 var DIFF_COMMAND = true;

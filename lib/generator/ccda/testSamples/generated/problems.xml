@@ -43,7 +43,7 @@
                   <low value="20080103"/>
                   <high value="20080103"/>
                 </effectiveTime>
-                <value xsi:type="CD" code="413322009" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved"/>
+                <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved"/>
               </observation>
             </entryRelationship>
             <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -106,7 +106,7 @@
                   <low value="20070103"/>
                   <high value="20080103"/>
                 </effectiveTime>
-                <value xsi:type="CD" code="413322009" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
               </observation>
             </entryRelationship>
             <entryRelationship typeCode="SUBJ" inversionInd="true">
