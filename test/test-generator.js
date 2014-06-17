@@ -86,10 +86,19 @@ var lib = require('./test-lib.js');
 //     });
 // });
 
-// vitals section
-describe('generating CCDA for vitals section', function() {
-    it ('should match vitals section', function() {
-        var XMLDOMs = lib.generateXMLDOM('vitals');
+// // vitals section
+// describe('generating CCDA for vitals section', function() {
+//     it ('should match vitals section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('vitals');
+
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
+
+// social history section
+describe('generating CCDA for social history section', function() {
+    it ('should match social history section', function() {
+        var XMLDOMs = lib.generateXMLDOM('socialHistory');
 
         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
     });
