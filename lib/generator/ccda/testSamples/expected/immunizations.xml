@@ -12,43 +12,6 @@
                         displayName="History of immunizations"/>
                     <title>IMMUNIZATIONS</title>
                     <text>
-                        <content ID="immunSect"/>
-                        <table border="1" width="100%">
-                            <thead>
-                                <tr>
-                                    <th>Vaccine</th>
-                                    <th>Date</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <content ID="immi1"/> Influenza, seasonal, IM </td>
-                                    <td>Nov 1999</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <content ID="immi2"/> Influenza, seasonal, IM </td>
-                                    <td>Dec 1998</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <content ID="immi3"/> Pneumococcal polysaccharide vaccine,
-                                        IM </td>
-                                    <td>Dec 1998</td>
-                                    <td>Completed</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <content ID="immi4"/> Tetanus and diphtheria toxoids, IM </td>
-                                    <td>1997</td>
-                                    <td>Refused</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </text>
                     <entry typeCode="DRIV">
                         <substanceAdministration classCode="SBADM" moodCode="EVN"
@@ -344,3 +307,68 @@
                     </entry>
                 </section>
 </ClinicalDocument>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <content ID="immunSect"/>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Vaccine</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content ID="immi1"/> Influenza, seasonal, IM </td>
+                                    <td>Nov 1999</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="immi2"/> Influenza, seasonal, IM </td>
+                                    <td>Dec 1998</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="immi3"/> Pneumococcal polysaccharide vaccine,
+                                        IM </td>
+                                    <td>Dec 1998</td>
+                                    <td>Completed</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="immi4"/> Tetanus and diphtheria toxoids, IM </td>
+                                    <td>1997</td>
+                                    <td>Refused</td>
+                                </tr>
+                            </tbody>
+                        </table>

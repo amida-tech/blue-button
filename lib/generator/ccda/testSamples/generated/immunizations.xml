@@ -7,7 +7,7 @@
     <title>IMMUNIZATIONS</title>
     <text/>
     <entry typeCode="DRIV">
-      <substanceAdministration classCode="SBADM" moodCode="EVN">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
         <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
         <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
         <text>
@@ -70,7 +70,7 @@
       </substanceAdministration>
     </entry>
     <entry typeCode="DRIV">
-      <substanceAdministration classCode="SBADM" moodCode="EVN">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
         <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
         <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
         <text>
@@ -133,7 +133,7 @@
       </substanceAdministration>
     </entry>
     <entry typeCode="DRIV">
-      <substanceAdministration classCode="SBADM" moodCode="EVN">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
         <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
         <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
         <text>
@@ -196,7 +196,7 @@
       </substanceAdministration>
     </entry>
     <entry typeCode="DRIV">
-      <substanceAdministration classCode="SBADM" moodCode="EVN">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
         <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
         <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
         <text>

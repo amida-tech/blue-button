@@ -58,16 +58,16 @@ var lib = require('./test-lib.js');
 //     });
 // });
 
-// encounters section
-describe('generating CCDA for encounters section', function() {
-    it ('should match encounters section', function() {
-        var XMLDOMs = lib.generateXMLDOM('encounters');
+// // encounters section
+// describe('generating CCDA for encounters section', function() {
+//     it ('should match encounters section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('encounters');
 
-        //console.log(XMLDOMs[1].documentElement.childNodes[1].childNodes[6].nodeName); return;
+//         //console.log(XMLDOMs[1].documentElement.childNodes[1].childNodes[6].nodeName); return;
 
-        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-    });
-});
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
 
 // describe('generating a reduced test for simplicity', function() {
 //     it ('should match reduced test stub', function() {
@@ -77,14 +77,14 @@ describe('generating CCDA for encounters section', function() {
 //     });
 // });
 
-// // immunizations section
-// describe('generating CCDA for immunizations section', function() {
-//     it ('should match immunizations section', function() {
-//         var XMLDOMs = lib.generateXMLDOM('immunizations');
+// immunizations section
+describe('generating CCDA for immunizations section', function() {
+    it ('should match immunizations section', function() {
+        var XMLDOMs = lib.generateXMLDOM('immunizations');
 
-//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-//     });
-// });
+        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+    });
+});
 
 // // vitals section
 // describe('generating CCDA for vitals section', function() {
