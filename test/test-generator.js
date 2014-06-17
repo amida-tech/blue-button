@@ -13,23 +13,23 @@ var lib = require('./test-lib.js');
 //     });
 // });
 
-// medications section
-describe('generating CCDA for medications section', function() {
-    it ('should match medications section', function() {
-        var XMLDOMs = lib.generateXMLDOM('medications');
-
-        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-    });
-});
-
-// // problems section
-// describe('generating CCDA for problems section', function() {
-//     it ('should match problems section', function() {
-//        var XMLDOMs = lib.generateXMLDOM('problems');
+// // medications section
+// describe('generating CCDA for medications section', function() {
+//     it ('should match medications section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('medications');
 
 //         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
 //     });
 // });
+
+// problems section
+describe('generating CCDA for problems section', function() {
+    it ('should match problems section', function() {
+       var XMLDOMs = lib.generateXMLDOM('problems');
+
+        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+    });
+});
 
 // // results section
 // describe('generating CCDA for results section', function() {
