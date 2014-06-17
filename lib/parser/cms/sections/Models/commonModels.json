@@ -44,7 +44,19 @@
     "middle": "[{type: string, required: false}]",
     "last": "{type: string, required: true}",
     "suffix": "{type: string, required: false}"
-  }
+  },
+"cda_coded_entry" : {
+  "name": "{type: string, required: true}",
+  "code": "{type: string, required: false}",
+  "code_system": "{type: string, required:false}",
+  "translations": [{
+    "name": "{type: string, required: true}",
+    "code": "{type: string, required: false}",
+    "code_system": "{type: string, required:false}"
+  }]
+}
+
+
 
 }
 

@@ -201,6 +201,8 @@ the patient took shots. From this, maybe the parser should extrapolate the admin
 
 20. Write tests for parts that are finished.
 
+21. Convert datetime into yyyy/mm/dd hh:mm:ss format...
+
 
 ##Integration Notes
 

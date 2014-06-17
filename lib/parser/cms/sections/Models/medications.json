@@ -1,18 +1,12 @@
   {
     "date": "[{cda_date}]",
-     "identifiers": "[{cda_id}]",
+    "identifiers": "[{cda_id}]",
     "status": "{type:string: required: true}",
     "sig": "{type:string, required:false}",
     "product": {
-      "name": "{type:string, required: true}",
-      "code": "{type:string, required: true}",
-      "code_system": "{type:string, required: true}",
-      "translations": [{
-        "name": "{type:string, required: false}",
-        "code": "{type:string, required: false}",
-        "code_system": "{type:string, required: false}"
-      }],
-      "identifiers": "[{cda_id}]"
+      "product": "{cda_coded_entry}",
+      "unencoded_name": "{type: string, required: false}",
+      "identifiers": ["{cda_id}"]
     },
     "administration": {
       "route": {
