@@ -77,20 +77,20 @@ var lib = require('./test-lib.js');
 //     });
 // });
 
-// immunizations section
-describe('generating CCDA for immunizations section', function() {
-    it ('should match immunizations section', function() {
-        var XMLDOMs = lib.generateXMLDOM('immunizations');
-
-        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-    });
-});
-
-// // vitals section
-// describe('generating CCDA for vitals section', function() {
-//     it ('should match vitals section', function() {
-//         var XMLDOMs = lib.generateXMLDOM('vitals');
+// // immunizations section
+// describe('generating CCDA for immunizations section', function() {
+//     it ('should match immunizations section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('immunizations');
 
 //         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
 //     });
 // });
+
+// vitals section
+describe('generating CCDA for vitals section', function() {
+    it ('should match vitals section', function() {
+        var XMLDOMs = lib.generateXMLDOM('vitals');
+
+        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+    });
+});
