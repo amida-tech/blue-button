@@ -59,7 +59,7 @@
                   <low value="20070501"/>
                   <high value="TODO"/>
                 </effectiveTime>
-                <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
+                <value xsi:type="CD" code="undefined" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
                   <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
@@ -143,7 +143,7 @@
                   <low value="20060501"/>
                   <high value="TODO"/>
                 </effectiveTime>
-                <value xsi:type="CD" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
+                <value xsi:type="CD" code="undefined" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
                   <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
@@ -227,7 +227,7 @@
                   <low value="20080501"/>
                   <high value="TODO"/>
                 </effectiveTime>
-                <value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" displayName="Hives"/>
+                <value xsi:type="CD" code="undefined" codeSystem="2.16.840.1.113883.6.96" displayName="Hives"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
                   <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
