@@ -4,23 +4,23 @@ var lib = require('./test-lib.js');
 
 
 
-// allergies section
-describe('generating CCDA for allergies section', function() {
-    it ('should match allergies section', function() {
-        var XMLDOMs = lib.generateXMLDOM('allergies');
-
-        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-    });
-});
-
-// // medications section
-// describe('generating CCDA for medications section', function() {
-//     it ('should match medications section', function() {
-//         var XMLDOMs = lib.generateXMLDOM('medications');
+// // allergies section
+// describe('generating CCDA for allergies section', function() {
+//     it ('should match allergies section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('allergies');
 
 //         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
 //     });
 // });
+
+// medications section
+describe('generating CCDA for medications section', function() {
+    it ('should match medications section', function() {
+        var XMLDOMs = lib.generateXMLDOM('medications');
+
+        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+    });
+});
 
 // // problems section
 // describe('generating CCDA for problems section', function() {
