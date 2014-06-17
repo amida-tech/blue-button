@@ -5,7 +5,7 @@
     xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
                 <section>
                     <!-- conforms to Allergies section with entries optional -->
-                    <templateId root="p2.16.840.1.113883.10.20.22.2.6"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
                     <!-- Allergies section with entries required -->
                     <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
                     <code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
@@ -152,7 +152,7 @@
                                                 codeSystem="2.16.840.1.113883.6.96"
                                                 codeSystemName="SNOMED CT"/>
                                                 <interpretationCode code="S"
-                                                displayName="Suceptible"
+                                                displayName="Susceptible"
                                                 codeSystem="2.16.840.1.113883.1.11.78"
                                                 codeSystemName="Observation Interpretation"/>
                                                 </observation>
@@ -270,7 +270,7 @@
                                                 codeSystem="2.16.840.1.113883.6.96"
                                                 codeSystemName="SNOMED CT"/>
                                                 <interpretationCode code="S"
-                                                displayName="Suceptible"
+                                                displayName="Susceptible"
                                                 codeSystem="2.16.840.1.113883.1.11.78"
                                                 codeSystemName="Observation Interpretation"/>
                                                 </observation>
@@ -388,7 +388,7 @@
                                                 codeSystem="2.16.840.1.113883.6.96"
                                                 codeSystemName="SNOMED CT"/>
                                                 <interpretationCode code="S"
-                                                displayName="Suceptible"
+                                                displayName="Susceptible"
                                                 codeSystem="2.16.840.1.113883.1.11.78"
                                                 codeSystemName="Observation Interpretation"/>
                                                 </observation>

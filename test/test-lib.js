@@ -22,7 +22,6 @@ extractNodes()
 
 */
 
-
 var expect = require('chai').expect;
 var assert = require('chai').assert;
 var fs = require("fs");
@@ -32,6 +31,7 @@ var repl = require("repl");
 var execSync = require('execSync');
 var SKIP_COMMAND = false;
 var DIFF_COMMAND = true;
+var errorCount = 0;
 
 Object.size = function(obj) {
     var size = 0, key;
@@ -40,8 +40,6 @@ Object.size = function(obj) {
     }
     return size;
 };
-
-
 
 var isIdentical = function (generated, expected) {
 
@@ -124,11 +122,13 @@ var skip = function() {
         var result = execSync.exec('test/support/a.out');
         var out = result.stdout;
         if (out.substr(12,13).trim() == "y") {
+            errorCount++;
             return true;
         } else {
             return false;
         } 
     } else if (DIFF_COMMAND) {
+        errorCount++;
         return true;
     } else {
         return false;
@@ -221,12 +221,12 @@ var extractNodes = function(childNodes) {
 
 var generateXMLDOM = function(file) {
     console.log("\nPROCESSING " + file);
-    var modelJSON = fs.readFileSync('lib/generator/ccda/testSamples/' + file + '.js', 'utf-8');
+    var modelJSON = fs.readFileSync('lib/generator/ccda/testSamples/JSON_models/' + file + '.js', 'utf-8');
     var actual = gen(JSON.parse(modelJSON));
-    var expected = fs.readFileSync('lib/generator/ccda/testSamples/' + file + '.xml');
+    var expected = fs.readFileSync('lib/generator/ccda/testSamples/expected/' + file + '.xml');
 
     // write generated file just to visually compare
-    fs.writeFileSync('lib/generator/ccda/testSamples/produced/' + file + '.xml', actual, 'utf-8');
+    fs.writeFileSync('lib/generator/ccda/testSamples/generated/' + file + '.xml', actual, 'utf-8');
 
     var generatedXML = new DOMParser().parseFromString(actual.toString());
     var expectedXML = new DOMParser().parseFromString(expected.toString());
@@ -241,7 +241,6 @@ var generateStubs = function(name1, name2) {
     var expectedXML = new DOMParser().parseFromString(expected.toString());
     return [generatedXML, expectedXML];
 }
-
 
 
 
