@@ -56,9 +56,9 @@ Unbolded ones are currently unimplemented but maybe mentioned in bluebutton.
 * Demographic -> Demographic(1)(done)
 * Self-Reported Medical conditions -> Problems(2)(done)
 * Self-Reported Allergies ->Allergies(done)
-* Self-Reported Immunizations -> Immunizations
+* Self-Reported Immunizations -> Immunizations(Done)
 * Self-Reported Labs and Tests -> Results(Done, need more samples to be better)
-* Self-Reported Vital Statistics -> Vitals
+* Self-Reported Vital Statistics -> Vitals(Done)
 * Drugs -> Medications(done)
 
 ##More Issues with Sections
@@ -182,7 +182,7 @@ key: value
 11. Need to make sure that object types are very consistent with the model given in bb, probably will need to write tests to make sure
 the returned object model is the same as the model that has been parsed.
 
-12. Demographics needs to be able to handle single key value pairs just in case.
+12. Demographics needs to be able to handle single key value pairs just in case.(Done)
 
 13. Need to write the code system functionality to the parser.
 
@@ -194,6 +194,13 @@ the returned object model is the same as the model that has been parsed.
 
 17. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that
 the patient took shots. From this, maybe the parser should extrapolate the administration part of medications. May tie in with #13.
+
+18. Make a date precision determining function. 
+
+19. Restructure so that format matches Matt's update.
+
+20. Write tests for parts that are finished.
+
 
 ##Integration Notes
 
@@ -219,8 +226,30 @@ Week of the 10th
 + 6/12/14 Start on another section, try to finish it in a day
 + 6/13/14 Start on another section, try to finish it in a day
 
-+At the end of the week, I should have testing finished and the parser parsing three sections almost perfectly.
-	Then you might need to write tests over the weekend to make sure that is parsing correctly.
+Week of the 16th
+
+6/16/14 Get immunizations done by the end of the day.
+6/17/14 Get claims history started. using the data model that is given in Dmitry's link.
+6/18/14 Claims history data model should be done by today. Make sure to get the model proofread.
+Also check CCDA formats for insurers, so that it is compliant with both cms and CCDA.
+ Start tackling more problems from the back log, OR
+ ..*review CCDA to create more object models(i.e. family history)?
+ ..*TDD
+
+6/19/14 Continue tackling major issues in the backlog. 
+6/20/14 Clean up and refactor code, re-evaluate current program structure. 
+
+
+Week of the 23rd
+
+Some time this week: Make up Isabella Jones example from current xml, run that through the parser.
+6/23/14 
+6/24/14 
+6/25/14 
+6/26/14
+6/27/14
+
+Make sure you know the difference between the "Plans" section vs. "Primary Insurance" section.
 
 
 

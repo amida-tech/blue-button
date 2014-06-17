@@ -42,15 +42,25 @@
                 "vital": {
                     "name": "Blood Pressure"
                 },
+                "date": {
+                    "date": "2011-07-22T19:00:00.000Z",
+                    "precision": "hour"
+                },
                 "value": "120/80",
-                "units": "mm[Hg]"
+                "units": "mm[Hg]",
+                "status": "completed"
             },
             {
                 "vital": {
                     "name": "Glucose"
                 },
+                "date": {
+                    "date": "2012-03-20T16:00:00.000Z",
+                    "precision": "hour"
+                },
                 "value": "110",
-                "units": "mg/dL"
+                "units": "mg/dL",
+                "status": "completed"
             }
         ],
         "results": [
@@ -59,7 +69,8 @@
                 "results": [
                     {
                         "date": {
-                            "date": "2008-03-21T04:00:00.000Z"
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
                         },
                         "name": "FBS",
                         "value": "135",
@@ -67,7 +78,8 @@
                     },
                     {
                         "date": {
-                            "date": "2008-03-21T04:00:00.000Z"
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
                         },
                         "name": "RBS",
                         "value": "170",
@@ -75,7 +87,8 @@
                     },
                     {
                         "date": {
-                            "date": "2008-03-21T04:00:00.000Z"
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
                         },
                         "name": "RBS",
                         "value": "150",
@@ -83,7 +96,8 @@
                     },
                     {
                         "date": {
-                            "date": "2008-03-21T04:00:00.000Z"
+                            "date": "2008-03-21T04:00:00.000Z",
+                            "precision": "day"
                         },
                         "name": "RBS",
                         "value": "120",
@@ -151,7 +165,53 @@
                 }
             }
         ],
-        "immunizations": [],
+        "immunizations": [
+            {
+                "date": {
+                    "date": "2002-04-21T04:00:00.000Z",
+                    "precision": "day"
+                },
+                "status": "complete",
+                "administration": {
+                    "route": {
+                        "name": "Nasal Spray(mist)"
+                    }
+                },
+                "product": {
+                    "name": "Varicella/Chicken Pox"
+                }
+            },
+            {
+                "date": {
+                    "date": "1990-02-02T05:00:00.000Z",
+                    "precision": "day"
+                },
+                "status": "complete",
+                "administration": {
+                    "route": {
+                        "name": "Nasal Spray(mist)"
+                    }
+                },
+                "product": {
+                    "name": "Varicella/Chicken Pox (booster 1)"
+                }
+            },
+            {
+                "date": {
+                    "date": "2009-01-02T05:00:00.000Z",
+                    "precision": "day"
+                },
+                "status": "complete",
+                "administration": {
+                    "route": {
+                        "name": "Injection"
+                    }
+                },
+                "product": {
+                    "name": "typhoid"
+                }
+            }
+        ],
         "socialHistory": [],
         "problems": [
             {
