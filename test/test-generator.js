@@ -31,14 +31,14 @@ var lib = require('./test-lib.js');
 //     });
 // });
 
-// results section
-describe('generating CCDA for results section', function() {
-    it ('should match results section', function() {
-        var XMLDOMs = lib.generateXMLDOM('results');
+// // results section
+// describe('generating CCDA for results section', function() {
+//     it ('should match results section', function() {
+//         var XMLDOMs = lib.generateXMLDOM('results');
 
-        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-    });
-});
+//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+//     });
+// });
 
 // // demographics section
 // describe('generating CCDA for demographics section', function() {
@@ -49,14 +49,14 @@ describe('generating CCDA for results section', function() {
 //     });
 // });
 
-// // procedures section
-// describe('generating CCDA for procedures section', function() {
-//     it ('should match procedures section', function() {
-//         var XMLDOMs = lib.generateXMLDOM('procedures');
+// procedures section
+describe('generating CCDA for procedures section', function() {
+    it ('should match procedures section', function() {
+        var XMLDOMs = lib.generateXMLDOM('procedures');
 
-//         assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-//     });
-// });
+        assert.ok(lib.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+    });
+});
 
 // // encounters section
 // describe('generating CCDA for encounters section', function() {
