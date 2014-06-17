@@ -173,36 +173,39 @@ key: value
 
 8. Deal with case sensitivity of keys to object in intermediate object to blue button converter, and everywhere else.
 
-9. writeValue in intermediate object to blue button converter will have to return an object eventually.(done)
 
-10. Need to dump data that is not part of one section into a common pool, or organize it. 
+9. Need to dump data that is not part of one section into a common pool, or organize it. 
 ..* the effective dates for in "demographic" section needs to go somewhere else -> in the health insurance model. 
 ..* Allergy shots, and other medications need to go to another section
 
-11. Need to make sure that object types are very consistent with the model given in bb, probably will need to write tests to make sure
+10. Need to make sure that object types are very consistent with the model given in bb, probably will need to write tests to make sure
 the returned object model is the same as the model that has been parsed.
 
-12. Demographics needs to be able to handle single key value pairs just in case.(Done)
+11. Need to write the code system functionality to the parser.
 
-13. Need to write the code system functionality to the parser.
+12. Need to write defaultValues.json for each section.
 
-14. Need to write defaultValues.json for each section.
+13. Need a precision converter, so that if I give it a mm/dd/yyyy/ other options, it can tell how precise it is. 
 
-15. Need a precision converter, so that if I give it a mm/dd/yyyy/ other options, it can tell how precise it is. 
+14. Need to modularize/restructure the results section.
 
-16. Need to modularize/restructure the results section.
-
-17. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that
+15. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that
 the patient took shots. From this, maybe the parser should extrapolate the administration part of medications. May tie in with #13.
 
-18. Make a date precision determining function. 
+16. Make a date precision determining function. 
 
-19. Restructure so that format matches Matt's update.
+27. Write tests for parts that are finished.
 
-20. Write tests for parts that are finished.
 
-21. Convert datetime into yyyy/mm/dd hh:mm:ss format...
+## Resolved Tasks
 
+1.  Convert datetime into yyyy/mm/dd hh:mm:ss format...(there was no problem in the beginning -.-)
+
+2.  Restructure so that format matches Matt's update.(done)
+
+3. Demographics needs to be able to handle single key value pairs just in case.(Done)
+
+4. writeValue in intermediate object to blue button converter will have to return an object eventually.(done)
 
 ##Integration Notes
 
@@ -231,8 +234,8 @@ Week of the 10th
 Week of the 16th
 
 6/16/14 Get immunizations done by the end of the day.
-6/17/14 Get claims history started. using the data model that is given in Dmitry's link.
-6/18/14 Claims history data model should be done by today. Make sure to get the model proofread.
+6/17/14 Get claims history/insurance started. using the data model that is given in Dmitry's link.
+6/18/14 Claims history/insurance data model should be done by today. Make sure to get the model proofread.
 Also check CCDA formats for insurers, so that it is compliant with both cms and CCDA.
  Start tackling more problems from the back log, OR
  ..*review CCDA to create more object models(i.e. family history)?

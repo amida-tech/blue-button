@@ -1,0 +1,103 @@
+//draft of claims model, may need to be merged with insurance later.
+      {
+         "claim":"0210336239290",
+         "type":"Part B",
+         "provider":{//put cda_code here 
+            "name":"Inova Health Services",
+            "provider_id":123456789,
+            "provider_id_type":"National Provider ID",
+            "provider_billing_address":"601 OFFICE CENTER DRIVE FORT WASHINGTON, PA 19034"
+         },
+         "date":["{cda_date}"],
+         "charges":{
+            "price_billed":1022.50,
+            "negotiated_price":782.33,
+            "insurance_paid":625.86,
+            "patient_responsibility":156.47
+         },
+         "service":{
+            "name":"Name of Service Provided",
+            "code_system_name":"CPT",
+            "code_system":"2.16.840.1.113883.6.96",
+            "code":28521
+         },
+         "diagnoses":[
+            {
+               "name":"Name of Condition",
+               "code_system_name":"CPT",
+               "code_system":"2.16.840.1.113883.6.96",
+               "code":28521
+            },
+            {
+               "name":"Name of Condition",
+               "code_system_name":"CPT",
+               "code_system":"2.16.840.1.113883.6.96",
+               "code":5854
+            }
+         ],
+         "lines":[
+            {
+               "start_date":20101102,
+               "end_date":20101102,
+               "procedure_code":"A0428",
+               "procedure_description":"Description of Procedure",
+               "modifiers":[
+                  {
+                     "description":"Additional details"
+                  }
+               ],
+               "quantity":1,
+               "price_billed":275.00,
+               "negotiated_price":208.99,
+               "patient_responsibility":66.01,
+               "place_of_service_code":41,
+               "place_of_service:":"Ambulance - Land",
+               "type_of_service_code":9,
+               "type_of_service":"Other Medical Services",
+               "rendering_provider_number":"Q335520003",
+               "rendering_provider_npi":1023062544
+            },
+            {
+               "start_date":20101102,
+               "end_date":20101102,
+               "procedure_code":"A0428",
+               "procedure_description":"Description of Procedure",
+               "modifiers":[
+                  {
+                     "description":"Additional details"
+                  }
+               ],
+               "quantity":1,
+               "price_billed":275.00,
+               "negotiated_price":208.99,
+               "patient_responsibility":66.01,
+               "place_of_service_code":41,
+               "place_of_service:":"Ambulance - Land",
+               "type_of_service_code":9,
+               "type_of_service":"Other Medical Services",
+               "rendering_provider_number":"Q335520003",
+               "rendering_provider_npi":1023062544
+            },
+            {
+               "start_date":20101102,
+               "end_date":20101102,
+               "procedure_code":"A0425",
+               "procedure_description":"Description of Procedure",
+               "modifiers":[
+                  {
+                     "description":"Additional details"
+                  }
+               ],
+               "quantity":44,
+               "price_billed":472.50,
+               "negotiated_price":364.35,
+               "patient_responsibility":108.15,
+               "place_of_service_code":41,
+               "place_of_service:":"Ambulance - Land",
+               "type_of_service_code":9,
+               "type_of_service":"Other Medical Services",
+               "rendering_provider_number":"Q335520003",
+               "rendering_provider_npi":1023062544
+            }
+         ]
+      }
