@@ -1,5 +1,19 @@
 # blue-button.js Release Notes
 
+
+# v1.0.1 - June 17, 2014
+
+Incremental bug-fix release of blue-button.js library.
+
+- Standardized coded entry structure.
+- Procedure Performer Identifier support.
+- Lab Result status support.
+- Standardized name between medications/immunization administration.
+- Standarized body_site structure.
+- Fixed email/telecom issue.
+- Documentation enhancements.
+
+
 # v1.0.0 - May 31, 2014
 
 This is the initial release of blue-button.js library.
