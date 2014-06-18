@@ -10,7 +10,7 @@ describe('generating CCDA for allergies section', function() {
         var XMLDOMs = test.generateXMLDOM('allergies');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
     });
 });
 
@@ -20,7 +20,7 @@ describe('generating CCDA for medications section', function() {
         var XMLDOMs = test.generateXMLDOM('medications');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
     });
 });
 
@@ -30,7 +30,7 @@ describe('generating CCDA for problems section', function() {
        var XMLDOMs = test.generateXMLDOM('problems');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
 
     });
 });
@@ -41,7 +41,7 @@ describe('generating CCDA for results section', function() {
         var XMLDOMs = test.generateXMLDOM('results');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
 
     });
 });
@@ -52,7 +52,7 @@ describe('generating CCDA for demographics section', function() {
         var XMLDOMs = test.generateXMLDOM('demographics');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
 
     });
 });
@@ -63,7 +63,7 @@ describe('generating CCDA for procedures section', function() {
         var XMLDOMs = test.generateXMLDOM('procedures');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
 
     });
 });
@@ -74,7 +74,7 @@ describe('generating CCDA for encounters section', function() {
         var XMLDOMs = test.generateXMLDOM('encounters');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
 
     });
 });
@@ -85,7 +85,7 @@ describe('generating CCDA for encounters section', function() {
 //         var XMLDOMs = test.generateStubs('stub_test1' , 'stub_test1_exp');
         
 //         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-//         console.log("TOTAL ERRORS: " + test.numErrors);
+//         console.log("TOTAL ERRORS: " + test.errors["total"]);
 
 //     });
 // });
@@ -96,7 +96,7 @@ describe('generating CCDA for immunizations section', function() {
         var XMLDOMs = test.generateXMLDOM('immunizations');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
 
     });
 });
@@ -107,7 +107,7 @@ describe('generating CCDA for vitals section', function() {
         var XMLDOMs = test.generateXMLDOM('vitals');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
 
     });
 });
@@ -118,9 +118,10 @@ describe('generating CCDA for social history section', function() {
         var XMLDOMs = test.generateXMLDOM('socialHistory');
 
         assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-        console.log("TOTAL ERRORS: " + test.numErrors);
-
+        console.log("TOTAL ERRORS: " + test.errors["total"]);
+        console.log("ERROR SUMMARY: " + JSON.stringify(test.errors, null, 4) + "\n" + JSON.stringify(test.error_settings, null, 4));
     });
 });
+
 
 

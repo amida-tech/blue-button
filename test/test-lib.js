@@ -33,16 +33,39 @@ var DIFF_COMMAND = true;
 var CAP_ERRORS = 0;
 
 
+// Error Codes
+var DIFF_TAGS = 1;
+var CHILD_NODE_DISCREPANCY = 2;
+var ATTR_MISMATCH = 3;
+    var ATTR_MISMATCH_CAP = 3.1;
+    var ATTR_MISMATCH_LEN = 3.2;
+var TEXT_DISCREPANCY = 4;
+
 // Defining the class as a function, and later adding methods to its prototype
 var testXML = function() {
-    this.numErrors = 0;
+    this.error_settings = {
+        "silence_cap": false,
+        "silence_len": false
+    }
+
+    this.errors = {
+        "total": 0, 
+        "differentTags": 0, 
+        "childNodeDiscrepancy": 0, 
+        "attributesMismatch": { 
+            "total": 0, 
+            "capitalization": 0, 
+            "length": 0, 
+        },
+        "textDiscrepancy": 0, 
+    }
 };
 
 // Utility function for determining the size/length of objects
 Object.size = function(obj) {
     var size = 0, key;
     for (key in obj) {
-        if (obj.hasOwnProperty(key)){ 
+        if (obj.hasOwnProperty(key)) { 
             size++;
         }
     }
@@ -56,12 +79,12 @@ testXML.prototype.isIdentical = function (generated, expected) {
 
     // Compare their tagNames
     if (!this.sameNode(generated, expected)) {
-        console.log("Error: Encountered different tagNames: Encountered <" + 
+        var error = "Error: Encountered different tagNames: Encountered <" + 
             ((generated === undefined) ? generated : generated.tagName) + 
             "> but expected <" + ((expected === undefined) ? expected : expected.tagName) + 
             ">, lineNumber: " + ((generated === undefined) ? generated : generated.lineNumber) + 
-            ", " + ((expected === undefined) ? expected : expected.lineNumber));
-        return this.skip();
+            ", " + ((expected === undefined) ? expected : expected.lineNumber);
+        return this.skip(error, DIFF_TAGS);
     }
 
     // Compare their attributes
@@ -85,9 +108,9 @@ testXML.prototype.isIdentical = function (generated, expected) {
 
     // Since we've reached this point, they are not leaf nodes, so first check if they have the same number of children
     if (!this.numChildNodesSame(generated, expected)) {
-        console.log("Error: Generated number of child nodes different from expected (generated: " + 
-            generated.childNodes.length + ", expected: " + expected.childNodes.length);
-        return this.skip();
+        var error = "Error: Generated number of child nodes different from expected (generated: " + 
+            generated.childNodes.length + ", expected: " + expected.childNodes.length;
+        return this.skip(error, CHILD_NODE_DISCREPANCY);
     }
 
     // If they have the same number of children, then start comparing their childNodes by calling the function recursively
@@ -110,49 +133,90 @@ testXML.prototype.haveSameAttributes = function(generated, expected) {
     }
     if ((genAttributes === undefined && expAttributes !== undefined) || 
         (genAttributes !== undefined && expAttributes === undefined)) {
-        console.log("Attributes mismatch.");
-        return skip();  // One has attributes but the other one doesn't.
+        var error = "Attributes mismatch.";
+        return this.skip(error, ATTR_MISMATCH, undefined);  // One has attributes but the other one doesn't.
     }
 
     if (genAttributes.length !== expAttributes.length) {
-        console.log("Attributes mismatch. Different lengths: " + genAttributes.length + " attributes but expected " + 
-            expAttributes.length + " attributes @ lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
-        return this.skip();
+        var error = "Attributes mismatch. Different lengths: " + genAttributes.length + " attributes but expected " + 
+            expAttributes.length + " attributes @ lineNumber: " + generated.lineNumber + ", " + expected.lineNumber;
+        return this.skip(error, ATTR_MISMATCH, ATTR_MISMATCH_LEN);
     }
 
     for (var i = 0; i < genAttributes.length; i++) {
         if (!(genAttributes[i].name === expAttributes[i].name && genAttributes[i].value === expAttributes[i].value)) {
-            console.log("\nError: Attributes mismatch: Encountered: " + genAttributes[i].name + "=\"" + 
-                genAttributes[i].value + "\" but expected: " + expAttributes[i].name + "=\"" + expAttributes[i].value + 
-                "\" @ lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
-            return this.skip();
+            var attributeGen = genAttributes[i].name + "=\"" + genAttributes[i].value + "\"";
+            var attributeExp = expAttributes[i].name + "=\"" + expAttributes[i].value + "\"";
+            var error = "\nError: Attributes mismatch: Encountered: " + attributeGen + 
+                " but expected: " + attributeExp + " @ lineNumber: " + generated.lineNumber + 
+                ", " + expected.lineNumber;
+            return this.skip(error, ATTR_MISMATCH, this.isCapError(attributeGen, attributeExp));
         }
     }
     return true;
 };
 
+testXML.prototype.isCapError = function(attr1, attr2) {
+    return attr1.toLowerCase() === attr2.toLowerCase() ? ATTR_MISMATCH_CAP : undefined;
+}
+
  /* 
     A utility function that allows you to skip failed assertions and produce 
     a diff of the two XML documents.
  */
-testXML.prototype.skip = function() {
+testXML.prototype.skip = function(error, errorCode, subCode) {
+    this.logError(error, errorCode, subCode);
     if (SKIP_COMMAND) {
         console.log("Skip? > y/n: ");
         var result = execSync.exec('test/support/a.out');
         var out = result.stdout;
         if (out.substr(12,13).trim() === "y") {
-            this.numErrors++;
             return true;
         } else {
             return false;
         } 
     } else if (DIFF_COMMAND) {
-        this.numErrors++;
         return true;
     } else {
         return false;
     }
 };
+
+testXML.prototype.logError = function(errorMsg, eC, sC) {
+        if (eC === 0) { 
+            this.errors["total"]++;
+            console.log(errorMsg);
+        } else if (eC === 1) { 
+            this.errors["differentTags"]++;
+            this.errors["total"]++;
+            console.log(errorMsg);
+        } else if (eC === 2) { 
+            this.errors["childNodeDiscrepancy"]++;
+            this.errors["total"]++;
+            console.log(errorMsg);
+        } else if (eC === 3) {
+            this.errors["attributesMismatch"]["total"]++;
+            this.errors["total"]++;
+            if (sC === undefined) {
+                console.log(errorMsg);
+            }
+            if (sC === 3.1) { 
+                this.errors["attributesMismatch"]["capitalization"]++;
+                if (!this.error_settings["silence_cap"]) {
+                    console.log(errorMsg);
+                }
+            } 
+            if (sC === 3.2) { 
+                this.errors["attributesMismatch"]["length"]++;
+                if (!this.error_settings["silence_len"]) {
+                    console.log(errorMsg);
+                }
+            } 
+        } else if (eC === 5) { 
+            this.errors["textDiscrepancy"]++;
+            this.errors["total"]++;
+        }
+}
 
 // Returns false if the tagNames for the nodes are different, otherwise true
 testXML.prototype.sameNode = function(node1, node2) {
@@ -185,7 +249,7 @@ testXML.prototype.sameText = function(generated, expected) {
     if (genText !== expText && generated.chilNodes !== undefined) {
         console.log("Error: Different text: encountered: \"" + genText[0] + "\" but expected: \"" + 
             expText[0] + "\" , lineNumber: " + genText[1] + ", " + expText[1]);
-        return this.skip();
+        return this.skip(DIFF_TAGS);
     } else {
         return true;
     }
@@ -211,7 +275,7 @@ testXML.prototype.numChildNodesSame = function(generated, expected) {
             console.log("Error: Number of child nodes not equal to expected number" +
                 " of child nodes (generated: " + genLength + ", expected: " + expLength + 
                     " at line # " + (generated.childNodes['0'].lineNumber - 1) + ", tag: " + expected.tagName + ")");
-            return skip();
+            return this.skip();
         } else {
             return true;
         }
