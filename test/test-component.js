@@ -14,13 +14,13 @@ describe('component', function() {
         var namedCleanupStep = function(name) {
             return function() {
                 return name;
-            }
-        }
+            };
+        };
 
         var checkParsersFromPath = function(ps, expected) {
             var actual = ps.map(function(p) {
                 return p.jsPath;
-            })
+            });
             expect(actual).to.deep.equal(expected);
         };
 
@@ -34,7 +34,7 @@ describe('component', function() {
         var checkCleanups = function(cus, expected) {
             var actual = cus.slice(1).map(function(cu) { // Component has a defaul cleanup step
                 return cu.value();
-            })
+            });
             expect(actual).to.deep.equal(expected);
         };
 
@@ -55,8 +55,8 @@ describe('component', function() {
             component1.cleanupStep(namedCleanupStep('cu11'));
 
             var ps = component1.overallParsers();
-            checkParsersFromPath(ps, ['p10', 'p11', 'p12', 'p13'])
-            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13'])
+            checkParsersFromPath(ps, ['p10', 'p11', 'p12', 'p13']);
+            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13']);
             var cus = component1.overallCleanupSteps();
             checkCleanups(cus, ['cu10', 'cu11']);
             done();
@@ -78,11 +78,11 @@ describe('component', function() {
             component2.cleanupStep(namedCleanupStep('cu22'));
             var ps = component2.overallParsers();
             checkParsersFromPath(ps, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22']);
-            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22'])
+            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22']);
             var cus = component2.overallCleanupSteps();
             checkCleanups(cus, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22']);
             done();
-        })
+        });
 
         it('derived component level 2 (1)', function(done) {
             var prop3 = component.define('prop3');            
@@ -93,11 +93,11 @@ describe('component', function() {
             ]);
             var ps = component3.overallParsers();
             checkParsersFromPath(ps, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22', 'p3']);
-            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22', 'prop3'])
+            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22', 'prop3']);
             var cus = component3.overallCleanupSteps();
             checkCleanups(cus, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22']);
             done();
-        })
+        });
 
         it('derived component level 2 (2)', function(done) {
             var prop3 = component.define('prop3');            
@@ -106,11 +106,11 @@ describe('component', function() {
             component3.cleanupStep(namedCleanupStep('c3'));
             var ps = component3.overallParsers();
             checkParsersFromPath(ps, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22']);
-            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22'])
+            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22']);
             var cus = component3.overallCleanupSteps();
             checkCleanups(cus, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22', 'c3']);
             done();
-        })
+        });
 
         it('derived component level 2 (3)', function(done) {
             var prop3 = component.define('prop3');            
@@ -122,11 +122,11 @@ describe('component', function() {
             component3.cleanupStep(namedCleanupStep('c3'));
             var ps = component3.overallParsers();
             checkParsersFromPath(ps, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22', 'p3']);
-            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22', 'prop3'])
+            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22', 'prop3']);
             var cus = component3.overallCleanupSteps();
             checkCleanups(cus, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22', 'c3']);
             done();
-        })
+        });
 
         it('parser sourceKey override (1)', function(done) {
             var prop30 = component.define('prop30');            
@@ -141,19 +141,19 @@ describe('component', function() {
 
             var ps0 = component3.overallParsers();
             checkParsersFromPath(ps0, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22']);
-            checkParsersFromComponent(ps0, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22'])
+            checkParsersFromComponent(ps0, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22']);
             var cus0 = component3.overallCleanupSteps();
             checkCleanups(cus0, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22', 'c3']);
 
             var ps1 = component3.overallParsers('sc');
             checkParsersFromPath(ps1, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22']);
-            checkParsersFromComponent(ps1, ['prop30', 'prop11', 'prop12', 'prop13', 'prop20', 'prop31', 'prop22'])
+            checkParsersFromComponent(ps1, ['prop30', 'prop11', 'prop12', 'prop13', 'prop20', 'prop31', 'prop22']);
             var cus1 = component3.overallCleanupSteps('sc');
             checkCleanups(cus1, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22', 'c3']);
             done();
-        })
+        });
 
-        it('parser sourceKey override (1)', function(done) {
+        it('parser sourceKey override (2)', function(done) {
             var prop20 = component.define('prop20');            
             var prop20sc0 = component.define('prop20sc0');            
             var prop21 = component.define('prop21');
@@ -175,26 +175,26 @@ describe('component', function() {
             
             var ps0 = component2.overallParsers();
             checkParsersFromPath(ps0, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22']);
-            checkParsersFromComponent(ps0, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22'])
+            checkParsersFromComponent(ps0, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22']);
             var cus0 = component2.overallCleanupSteps();
             checkCleanups(cus0, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22']);
 
             var ps1 = component2.overallParsers('sc0');
             checkParsersFromPath(ps1, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22']);
-            checkParsersFromComponent(ps1, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20sc0', 'prop21', 'prop22'])
+            checkParsersFromComponent(ps1, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20sc0', 'prop21', 'prop22']);
             var cus1 = component2.overallCleanupSteps('sc1');
             checkCleanups(cus1, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22']);
 
             var ps2 = component2.overallParsers('sc1');
             checkParsersFromPath(ps2, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22']);
-            checkParsersFromComponent(ps2, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21sc1', 'prop22'])
+            checkParsersFromComponent(ps2, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21sc1', 'prop22']);
             var cus2 = component2.overallCleanupSteps('sc2');
             checkCleanups(cus2, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22']);
 
             done();
-        })
+        });
 
-        it('derived component', function(done) {
+        it('cleanup sourceKey override', function(done) {
             var prop20 = component.define('prop20');            
             var prop21 = component.define('prop21');
             var prop22 = component.define('prop22');
@@ -217,7 +217,7 @@ describe('component', function() {
 
             var ps = component2.overallParsers();
             checkParsersFromPath(ps, ['p10', 'p11', 'p12', 'p13', 'p20', 'p21', 'p22']);
-            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22'])
+            checkParsersFromComponent(ps, ['prop10', 'prop11', 'prop12', 'prop13', 'prop20', 'prop21', 'prop22']);
             
             var cus0 = component2.overallCleanupSteps();
             checkCleanups(cus0, ['cu10', 'cu11', 'cu20', 'cu21', 'cu22', 'cu23exsc0', 'cu23exsc1', 'cu23exboth']);
@@ -229,6 +229,6 @@ describe('component', function() {
             checkCleanups(cus2, ['cu10', 'cu11', 'cu20sc1only', 'cu20', 'cu21', 'cu21both', 'cu22', 'cu23exsc0']);
 
             done();
-        })
+        });
     });
 });
