@@ -10,10 +10,6 @@ Blue Button JavaScript (Node.js) library
 
 ![blue-button.js](./docs/blue-button-js.png)
 
-THIS IS WORK IN PROGRESS! (see Roadmap below) based on https://github.com/blue-button/bluebutton.js and https://github.com/jmandel/ccda-to-json
-
-After initial re-write we are planning to reintroduce this "fork" back into bluebutton.js community.
-
 ## Library interfaces/APIs
 
 This library provides following functionality
@@ -22,7 +18,7 @@ This library provides following functionality
 - Sense type of data (e.g. CCDA, C32, etc)
 - Parse CCDA into JSON representation
 	- Parse CCDA elements (sections) into JSON representation
-- Validation of JSON object against data model
+- Generating JSON object based on data model
 
 ### Usage example
 
@@ -186,10 +182,15 @@ Detailed description of JSON based data model (tied to CCDA spec)
 - Full browser support for all functionality
 - Merge back into bluebutton.js repo
 - Comprehensive test for browser environment
+- After initial re-write we are planning to reintroduce this "fork" back into bluebutton.js community.
 
 ## Contributing
 
 Contributors are welcome. See issues https://github.com/amida-tech/blue-button/issues
+
+## Release Notes
+
+See release notes [here] (./RELEASENOTES.md)
 
 ## License
 

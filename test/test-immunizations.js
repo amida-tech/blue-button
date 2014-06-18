@@ -37,6 +37,7 @@ describe('immunizations parser', function() {
 
     it('full deep check', function(done) {
         expect(immunizations).to.exist;
+        //console.log(JSON.stringify(immunizations, null, 10));
         var filepath = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Immunizations.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedImmunizations = jsutil.jsonParseWithDate(json2Read);
@@ -49,9 +50,9 @@ describe('immunizations parser', function() {
         expect(immunizations).to.have.length(4);
         
         expect(immunizations[0].administration.route.name).to.equal('Intramuscular injection');
-        expect(immunizations[0].product.name).to.exist;
-        expect(immunizations[0].product.code).to.equal('88');
-        expect(immunizations[0].product.name).to.equal("Influenza virus vaccine");
+        expect(immunizations[0].product.product.name).to.exist;
+        expect(immunizations[0].product.product.code).to.equal('88');
+        expect(immunizations[0].product.product.name).to.equal("Influenza virus vaccine");
         expect(JSON.stringify(immunizations[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
         expect(immunizations[0].date[0].precision).to.equal('month');
         

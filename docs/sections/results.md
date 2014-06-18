@@ -2,13 +2,17 @@
 
 ###Object Schema:
 ```
-var Result = {
+var result_set = {
+         "result_set": {cda_coded_entry},
+         "results": [{cda_result}],
+         "identifiers": [{cda_id{]
+      }
+
+var cda_result = {
         "date": [{cda_date}],
         "identifiers": [{cda_id}],
         "status": {type: string, required: true},
-        "name": {type: string, required: true},
-        "code": {type: string, required: false},
-        "code_system_name": {type: string, required: false},
+        "result": {cda_coded_entry},
         "value": {type: string, required: false},
         "unit": {type: string, required: false},
         "reference_range": {
@@ -17,11 +21,6 @@ var Result = {
           "low_unit": {type: string, required: false},
           "high_value": {type: string, required: false},
           "high_unit": {type: string, required: false}
-        },
-        "category": {
-           "name": {type: string, required: true},
-           "code": {type: string, required: true},
-           "code_system_name": {type: string, required: true}
         }
       }
 ```
@@ -42,84 +41,68 @@ var Result = {
 - Reference Range is poorly designed, but appears to be either in text, or IVL_PQ format, so implementing both.
 - Reference Range low is technically the only one required if using IVL_PQ.
 
-####Result.date
+####Result_set.result_set
+- 1..1
+- Coded entry describing type of result set.
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/code
+
+####Result_set.results
+- 0..*
+- Actual result findings.
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component
+
+####Result_set.results.date
 - 1..2
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/effectiveTime
 
-####Result.identifiers
+####Result_set.results.identifiers
 - 1..*
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/id
 
-####Result.status
+####Result_set.results.status
 - 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/status
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/statusCode
 - Should be looked up from set 2.16.840.1.113883.11.20.9.39
 
-####Result.name
+####Result_set.results.result
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/displayName
 - Normalization may re-encode this to standard terminology if coded in a common dataset.
 - If not present, and not coded, originalText can be taken from below:
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/originalText
 
-####Result.code
-- 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/code
-- Listed as not required to support uncoded or local datasets.
-
-####Result.code_system_name
-- 0..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/codeSystemName
-- Listed as not required to support uncoded or local datasets.
-- If not present, should attempt to lookup OID name from element below:
-//ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/code/codeSystem
-
-####Result.value
+####Result_set.results.value
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/value@value
 - Reference 2.28 of CDA spec for PQ style.  All I've seen so far.
 - Optional, but results are largely worthless without it.
 
-####Result.unit
+####Result_set.results.unit
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/value@unit
 - Reference 2.28 of CDA spec for PQ style.  All I've seen so far.
 - Optional, but results are largely worthless without it.
 
-####Result.reference_range
+####Result_set.results.reference_range
 - 0..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange
 
-####Result.reference_range.text
+####Result_set.results.reference_range.text
 - 0..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/text
 
-####Result.reference_range.low_value
+####Result_set.results.reference_range.low_value
 - 0..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/low@value
 
-####Result.reference_range.low_unit
+####Result_set.results.reference_range.low_unit
 - 0..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/low@unit
 
-####Result.reference_range.high_value
+####Result_set.results.reference_range.high_value
 - 0..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/high@value
 
-####Result.reference_range.high_unit
+####Result_set.results.reference_range.high_unit
 - 0..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/referenceRange/observationRange/high@unit
-
-####Result.category.name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/code@displayName
-- Can be overwritten based on coding system during normalization.
-
-####Result.category.code
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/code@code
-
-####Result.category.code_system_name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/code@codeSystemName
-- Can be overwritten based on coding system during normalization.
