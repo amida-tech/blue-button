@@ -13,7 +13,7 @@ describe('socialHistory parser', function() {
     before(function(done) {
         var filepath  = path.join(__dirname, 'fixtures/file-snippets/CCD_1_SocialHistory.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {component: 'ccda_socialHistory'}, function(err, result) {
+        bb.parse(xml, {component: 'ccda_social_history'}, function(err, result) {
             socialHistory = result.toJSON();
             //console.log(JSON.stringify(socialHistory, null, 10));
             done();
