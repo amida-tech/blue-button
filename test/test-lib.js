@@ -17,7 +17,7 @@ sameText()
 numChildNodesSame()
 isLeaf()
 extractNodes()
-@export generateXMLDOM()
+@export generateDOMParser()
 @export generateStubs()
 
 */
@@ -26,7 +26,7 @@ var expect = require('chai').expect;
 var assert = require('chai').assert;
 var fs = require("fs");
 var gen = require('../lib/generator/ccda/generator.js');
-var DOMParser = require('xmldom').DOMParser;
+var XmlDOM = require('xmldom').DOMParser;
 var execSync = require('execSync');
 var SKIP_COMMAND = false;
 var DIFF_COMMAND = true;
@@ -36,13 +36,15 @@ var CAP_ERRORS = 0;
 // Defining the class as a function, and later adding methods to its prototype
 var testXML = function() {
     this.numErrors = 0;
-}
+};
 
 // Utility function for determining the size/length of objects
 Object.size = function(obj) {
     var size = 0, key;
     for (key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
+        if (obj.hasOwnProperty(key)){ 
+            size++;
+        }
     }
     return size;
 };
@@ -55,10 +57,10 @@ testXML.prototype.isIdentical = function (generated, expected) {
     // Compare their tagNames
     if (!this.sameNode(generated, expected)) {
         console.log("Error: Encountered different tagNames: Encountered <" + 
-            ((generated == undefined) ? generated : generated.tagName) + 
-            "> but expected <" + ((expected == undefined) ? expected : expected.tagName) + 
-            ">, lineNumber: " + ((generated == undefined) ? generated : generated.lineNumber) + 
-            ", " + ((expected == undefined) ? expected : expected.lineNumber));
+            ((generated === undefined) ? generated : generated.tagName) + 
+            "> but expected <" + ((expected === undefined) ? expected : expected.tagName) + 
+            ">, lineNumber: " + ((generated === undefined) ? generated : generated.lineNumber) + 
+            ", " + ((expected === undefined) ? expected : expected.lineNumber));
         return this.skip();
     }
 
@@ -96,30 +98,30 @@ testXML.prototype.isIdentical = function (generated, expected) {
     }
     // If all the childNodes are the same, then return true, traverse back up the call stack and process the next sibling
     return true;
-}
+};
 
 // Check if the attributes are the same for two nodes.
 testXML.prototype.haveSameAttributes = function(generated, expected) {
     var genAttributes = generated.attributes;
     var expAttributes = expected.attributes;
 
-    if (genAttributes == undefined && expAttributes == undefined) {
+    if (genAttributes === undefined && expAttributes === undefined) {
         return true;  // No attributes.
     }
-    if ((genAttributes == undefined && expAttributes != undefined) || 
-        (genAttributes != undefined && expAttributes == undefined)) {
+    if ((genAttributes === undefined && expAttributes !== undefined) || 
+        (genAttributes !== undefined && expAttributes === undefined)) {
         console.log("Attributes mismatch.");
         return skip();  // One has attributes but the other one doesn't.
     }
 
-    if (genAttributes.length != expAttributes.length) {
+    if (genAttributes.length !== expAttributes.length) {
         console.log("Attributes mismatch. Different lengths: " + genAttributes.length + " attributes but expected " + 
             expAttributes.length + " attributes @ lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
         return this.skip();
     }
 
     for (var i = 0; i < genAttributes.length; i++) {
-        if (!(genAttributes[i].name == expAttributes[i].name && genAttributes[i].value == expAttributes[i].value)) {
+        if (!(genAttributes[i].name === expAttributes[i].name && genAttributes[i].value === expAttributes[i].value)) {
             console.log("\nError: Attributes mismatch: Encountered: " + genAttributes[i].name + "=\"" + 
                 genAttributes[i].value + "\" but expected: " + expAttributes[i].name + "=\"" + expAttributes[i].value + 
                 "\" @ lineNumber: " + generated.lineNumber + ", " + expected.lineNumber);
@@ -127,7 +129,7 @@ testXML.prototype.haveSameAttributes = function(generated, expected) {
         }
     }
     return true;
-}
+};
 
  /* 
     A utility function that allows you to skip failed assertions and produce 
@@ -138,7 +140,7 @@ testXML.prototype.skip = function() {
         console.log("Skip? > y/n: ");
         var result = execSync.exec('test/support/a.out');
         var out = result.stdout;
-        if (out.substr(12,13).trim() == "y") {
+        if (out.substr(12,13).trim() === "y") {
             this.numErrors++;
             return true;
         } else {
@@ -150,63 +152,62 @@ testXML.prototype.skip = function() {
     } else {
         return false;
     }
-}
+};
 
 // Returns false if the tagNames for the nodes are different, otherwise true
 testXML.prototype.sameNode = function(node1, node2) {
-    return (node1 != undefined && node2 != undefined) && (node1.tagName == node2.tagName);
-}
+    return (node1 !== undefined && node2 !== undefined) && (node1.tagName === node2.tagName);
+};
 
 // Return false if the text is different (ignoring whitespace), otherwise returns true if it is the same
 testXML.prototype.sameText = function(generated, expected) {
     var genText = "",
         expText = "";  
-    if (generated.childNodes != undefined) {
+    if (generated.childNodes !== undefined) {
         for (var i = 0; i < Object.size(generated.childNodes); i++) {
-            if (generated.childNodes[i] != undefined && generated.childNodes[i].nodeName == "#text") { // then it is a text node
-                genText = generated.childNodes[i].nodeValue.trim();
+            if (generated.childNodes[i] !== undefined && generated.childNodes[i].nodeName === "#text") { // then it is a text node
+                genText = [generated.childNodes[i].nodeValue.trim(), generated.lineNumber];
             }
         }
 
         for (var j = 0; j < Object.size(expected.childNodes); j++) {
-            if (expected.childNodes[j] != undefined && expected.childNodes[j].nodeName == "#text" && 
-            expected.childNodes[j].nodeValue.trim() != "\n") { // then it is a text node
-                expText = expected.childNodes[j].nodeValue.trim();
+            if (expected.childNodes[j] !== undefined && expected.childNodes[j].nodeName === "#text" && 
+            expected.childNodes[j].nodeValue.trim() !== "\n") { // then it is a text node
+                expText = [expected.childNodes[j].nodeValue.trim(), expected.lineNumer];
 
-                if (genText == expText) {
+                if (genText === expText) {
                     return true;
                 }
             }
         }
     }
     
-    if (genText != expText && generated.chilNodes != undefined) {
-        console.log("Error: Different text: encountered: \"" + generated.childNodes[i].nodeValue + "\" but expected: \"" + 
-            expected.childNodes[j].nodeValue + "\" , lineNumber: " + generated.childNodes[i].lineNumber + 
-            ", " + expected.childNodes[j].lineNumber);
+    if (genText !== expText && generated.chilNodes !== undefined) {
+        console.log("Error: Different text: encountered: \"" + genText[0] + "\" but expected: \"" + 
+            expText[0] + "\" , lineNumber: " + genText[1] + ", " + expText[1]);
         return this.skip();
     } else {
         return true;
     }
-}
+};
 
 // Returns false if the parent nodes (the ones passed in) have a different number of childNodes, otherwise returns true
 testXML.prototype.numChildNodesSame = function(generated, expected) {
     var genLength = 0;
         for (var i = 0; i < generated.childNodes.length; i++) {
-            if (generated.childNodes[i].tagName != undefined) {
+            if (generated.childNodes[i].tagName !== undefined) {
                 genLength++;
             }  
         } 
 
         var expLength = 0;
-        for (var i = 0; i < expected.childNodes.length; i++) {
-            if (expected.childNodes[i].tagName != undefined) {
+        for (var j = 0; j < expected.childNodes.length; j++) {
+            if (expected.childNodes[j].tagName !== undefined) {
                 expLength++;
             }  
         } 
 
-        if (genLength != expLength) {
+        if (genLength !== expLength) {
             console.log("Error: Number of child nodes not equal to expected number" +
                 " of child nodes (generated: " + genLength + ", expected: " + expLength + 
                     " at line # " + (generated.childNodes['0'].lineNumber - 1) + ", tag: " + expected.tagName + ")");
@@ -214,34 +215,34 @@ testXML.prototype.numChildNodesSame = function(generated, expected) {
         } else {
             return true;
         }
-}
+};
 
 // Checks if the current node is a leaf node (i.e., no children). If so, returns true, otherwise returns false;
 /// @root node to evaluate 
 testXML.prototype.isLeaf = function(root) {
-    if (root.childNodes == null) {
+    if (root.childNodes === null) {
         return true;
     } else {
         return false;
     }
-}
+};
 
 // strips out comments and whitespace from the childNodes object
 testXML.prototype.extractNodes = function(childNodes) {
     var newChildNodes = {};
     var count = 0;
     for (var i = 0; i < childNodes.length; i++) {
-        if (childNodes[i].tagName != undefined) {
+        if (childNodes[i].tagName !== undefined) {
             newChildNodes[count] = childNodes[i];
             count++;
         }
     }
     return newChildNodes;
-}
+};
 
 String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
-}
+};
 
 // generates the DOM representations of both XML documents and returns them as a two-element array, 
 // with the first being the generated XML and the second being the expected XML.
@@ -254,20 +255,20 @@ testXML.prototype.generateXMLDOM = function(file) {
     // write generated file just to visually compare
     fs.writeFileSync('test/fixtures/file-snippets/generated/CCD_1_' + file.capitalize() + '.xml', actual, 'utf-8');
 
-    var generatedXML = new DOMParser().parseFromString(actual.toString());
-    var expectedXML = new DOMParser().parseFromString(expected.toString());
+    var generatedXML = new XmlDOM().parseFromString(actual.toString());
+    var expectedXML = new XmlDOM().parseFromString(expected.toString());
     return [generatedXML, expectedXML];
-}
+};
 
 // A test/sandbox function for experimentation/testing 
 testXML.prototype.generateStubs = function(name1, name2) {
     var actual = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name1 + '.xml');
     var expected = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name2 + '.xml');
 
-    var generatedXML = new DOMParser().parseFromString(actual.toString());
-    var expectedXML = new DOMParser().parseFromString(expected.toString());
+    var generatedXML = new XmlDOM().parseFromString(actual.toString());
+    var expectedXML = new XmlDOM().parseFromString(expected.toString());
     return [generatedXML, expectedXML];
-}
+};
 
 
 module.exports.testXML = testXML;
