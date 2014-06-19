@@ -35,12 +35,12 @@ compB.fields([
 ]);
 compB.cleanupStep(compBStep3);
 ```
-CCDA parser generates a JSON object from thos definition with 'name', 'element', and 'addlElememt'.  
+CCDA parser generates a JSON object from this definition with 'name', 'element', and 'addlElememt'.  
 Normalization steps will include 'compAStep1', 'compAStep2', and 'compBStep3'.
 
 ## Vendor Specific Fields
 
-Any field in the component can be redefined for a spefic key
+Any field in the component can be redefined for a specific key
 ``` javascript
 var compA = component.define("compA");
 compA.fields([
