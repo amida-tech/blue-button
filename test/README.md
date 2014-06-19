@@ -30,9 +30,13 @@ To see the results, open the generated report in your browser:
 
 Uses a JS XML DOM implementation (https://github.com/jindw/xmldom) to traverse the generated and expected XML documents and compare them by node (tagName) and by attribute and value. The default setting ignores comments and any whitespace, newlines, tab or text nodes. 
 
-There are a couple of settings that can be altered in the test-lib.js file:
-	SKIP_COMMAND: If set to true, will prompt the user to either skip or not skip the failed test.
-	DIFF_COMMAND: If set to true, will continue execution even upon failing a test and will output all of the errors/differences to the console.
+Important flags that can be altered if desired:
+	PROMPT_TO_SKIP: If set to true, will prompt the user to either skip or not skip the failed test.
+	DIFF (default): If set to true, will continue execution even upon failing a test and will output all of the errors/differences to the console. This is the default setting.
+
+Other alterable settings under testXML.error_settings:
+	"silence_cap": If set to true, will silence the output of capitalization errors. False by default.
+	"silence_len": If set to true, will silence the output of attribute length errors (i.e. actual node has 2 attributes but expected node has 3 attributes). False by default.
 
 
 Installation:

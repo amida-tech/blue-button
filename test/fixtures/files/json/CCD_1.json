@@ -201,129 +201,81 @@
     ],
     "results": [
         {
-            "results": [
+            "date": [
                 {
-                    "date": [
-                        {
-                            "date": "2000-03-23T14:30:00.000Z",
-                            "precision": "minute"
-                        }
-                    ],
-                    "freeTextValue": "HGB (M 13-18 g/dl; F 12-16\n                                            g/dl)",
-                    "interpretations": [
-                        "Normal"
-                    ],
-                    "name": "HGB",
-                    "code": "30313-1",
-                    "code_system_name": "LOINC",
-                    "value": 13.2,
-                    "unit": "g/dl"
-                },
+                    "date": "2000-03-23T14:30:00.000Z",
+                    "precision": "minute"
+                }
+            ],
+            "freeTextValue": "HGB (M 13-18 g/dl; F 12-16 g/dl)",
+            "interpretations": [
+                "Normal"
+            ],
+            "name": "HGB",
+            "code": "30313-1",
+            "code_system_name": "LOINC",
+            "value": 13.2,
+            "unit": "g/dl"
+        },
+        {
+            "date": [
                 {
-                    "date": [
-                        {
-                            "date": "2000-03-23T14:30:00.000Z",
-                            "precision": "minute"
-                        }
-                    ],
-                    "freeTextValue": "WBC (4.3-10.8 10+3/ul)",
-                    "interpretations": [
-                        "Normal"
-                    ],
-                    "name": "WBC",
-                    "code": "33765-9",
-                    "code_system_name": "LOINC",
-                    "value": 6.7,
-                    "unit": "10+3/ul"
-                },
+                    "date": "2000-03-23T14:30:00.000Z",
+                    "precision": "minute"
+                }
+            ],
+            "freeTextValue": "WBC (4.3-10.8 10+3/ul)",
+            "interpretations": [
+                "Normal"
+            ],
+            "name": "WBC",
+            "code": "33765-9",
+            "code_system_name": "LOINC",
+            "value": 6.7,
+            "unit": "10+3/ul"
+        },
+        {
+            "date": [
                 {
-                    "date": [
-                        {
-                            "date": "2000-03-23T14:30:00.000Z",
-                            "precision": "minute"
-                        }
-                    ],
-                    "freeTextValue": "PLT (135-145 meq/l)",
-                    "interpretations": [
+                    "date": "2000-03-23T14:30:00.000Z",
+                    "precision": "minute"
+                }
+            ],
+            "freeTextValue": "PLT (135-145 meq/l)",
+            "interpretations": [
 
-                         "Low"
-                    ]
-               }]
-          }]
-     },
-     "medications": {
-          "medications": [{
-               "date": [
-                    [{
-                         "date": "2007-01-03T00:00:00.000Z",
-                         "precision": "day"
-                    }, {
-                         "date": "2012-05-15T00:00:00.000Z",
-                         "precision": "day"
-                    }]
-               ],
-               "identifiers": [{
-                    "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
-               }],
-               "status": "Completed",
-               "sig": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
-               "product": {
+                 "Low"
+            ]
+        }
+    ],   
+    "medications": [
+        {
+            "date": [{
+                "date": "2007-01-03T00:00:00.000Z",
+                "precision": "day"
+            }, {
+                "date": "2012-05-15T00:00:00.000Z",
+                "precision": "day"
+            }],
+            "identifiers": [{
+                "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+            }],
+            "status": "Completed",
+            "sig": "Proventil HFA ",
+            "product": {
+                "identifiers": {
+                    "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                },
+                "unencoded_name": "Proventil HFA ",
+                "product": {
                     "name": "Proventil HFA",
                     "code": "219483",
                     "code_system_name": "RXNORM",
                     "translations": [{
-                         "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
-                         "code": "573621",
-                         "code_system_name": "RXNORM"
-                    }],
-                    "unencoded_name": "Proventil HFA\n\t\t\t\t\t\t\t\t\t\t\t",
-                    "identifiers": {
-                         "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
-                    }
-               },
-               "administration": {
-                    "route": {
-                         "name": "RESPIRATORY (INHALATION)",
-                         "code": "C38216",
-                         "code_system_name": "Medication Route FDA"
-                    },
-                    "form": {
-                         "name": "INHALANT",
-                         "code": "C42944",
-                         "code_system_name": "Medication Route FDA"
-                    },
-                    "dose": {
-                         "value": 1,
-                         "unit": "mg/actuat"
-
-                    },
-                    {
-                        "date": "2012-05-15T00:00:00.000Z",
-                        "precision": "day"
-                    }
-                ]
-            ],
-            "identifiers": [
-                {
-                    "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
-                }
-            ],
-            "status": "Completed",
-            "sig": "Proventil HFA\n                                            ",
-            "product": {
-                "name": "Proventil HFA",
-                "code": "219483",
-                "code_system_name": "RXNORM",
-                "translations": [
-                    {
                         "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
                         "code": "573621",
                         "code_system_name": "RXNORM"
-                    }
-                ],
-                "unencoded_name": "Proventil HFA\n                                            ",
-                "identifers": {
-                    "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                    }]
                 }
             },
             "administration": {
@@ -760,60 +712,35 @@
                 }
             },
             "performer": {
-                "identifiers": [
-                    {
-                        "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
-                    }
-                ],
-                "name": [
-                    {
-                        "last": "Assigned",
-                        "first": "Amanda"
-                    }
-                ],
-                "address": [
-                    {
-                        "streetLines": [
-                            "1021 Health Drive"
-                        ],
-                        "city": "Ann Arbor",
-                        "state": "MI",
-                        "zip": "99099",
-                        "country": "US"
-                    }
-
-               },
-               "performer": {
-                    "identifiers": [{
-                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                         "identifier_type": "2981824"
-                    }],
-                    "name": [{
-                         "last": "Assigned",
-                         "first": "Amanda"
-                    }],
-                    "address": [{
-                         "streetLines": [
-                              "1021 Health Drive"
-                         ],
-                         "city": "Ann Arbor",
-                         "state": "MI",
-                         "zip": "99099",
-                         "country": "US"
-                    }],
-                    "organization": [{
-                         "identifiers": [{
-                              "identifier": "2.16.840.1.113883.19.5.9999.1394"
-                         }],
-                         "name": [
-                              "Good Health Clinic"
-                         ]
-                    }]
-               },
-               "refusal_reason": "Patient objection"
-          }]
-     },
+                 "identifiers": [{
+                      "identifier": "2.16.840.1.113883.19.5.9999.456",
+                      "identifier_type": "2981824"
+                 }],
+                 "name": [{
+                      "last": "Assigned",
+                      "first": "Amanda"
+                 }],
+                 "address": [{
+                      "streetLines": [
+                           "1021 Health Drive"
+                      ],
+                      "city": "Ann Arbor",
+                      "state": "MI",
+                      "zip": "99099",
+                      "country": "US"
+                 }],
+                 "organization": [{
+                      "identifiers": [{
+                           "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                      }],
+                      "name": [
+                           "Good Health Clinic"
+                      ]
+                 }]
+            },
+            "refusal_reason": "Patient objection"
+          }
+    ],
      "socialHistory": [{
            "value": "Former smoker",
            "dateRange": [{
@@ -824,67 +751,55 @@
                "precision": "subsecond"
            }]
      }],
-     "problems": {
-          "problems": [{
-               "date": [{
-                    "date": "2008-01-03T00:00:00.000Z",
-                    "precision": "day"
-                },
-                {
-                    "date": "2008-01-03T00:00:00.000Z",
-                    "precision": "day"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
-                }
-            ],
+     "problems": [{
+            "date": [{
+                "date": "2008-01-03T00:00:00.000Z",
+                "precision": "day"
+            }, {
+                "date": "2008-01-03T00:00:00.000Z",
+                "precision": "day"
+            }],
+            "identifiers": [{
+                "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+            }],
             "negation_indicator": false,
+            "problem": {
+                "name": "Pneumonia",
+                "code": "233604007",
+                "code_system_name": "SNOMED CT"
+            },
             "onset_age": "57",
             "onset_age_unit": "Year",
             "status": "Resolved",
             "patient_status": "Alive and well",
-            "source_list_identifiers": [
-                {
-                    "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
-                }
-            ],
-            "name": "Pneumonia",
-            "code": "233604007",
-            "code_system_name": "SNOMED CT"
-        },
-        {
-            "date": [
-                {
-                    "date": "2007-01-03T00:00:00.000Z",
-                    "precision": "day"
-                },
-                {
-                    "date": "2008-01-03T00:00:00.000Z",
-                    "precision": "day"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
-                }
-            ],
-            "negation_indicator": false,
+            "source_list_identifiers": [{
+                "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+            }]
+            }, {
+            "date": [{
+                "date": "2007-01-03T00:00:00.000Z",
+                "precision": "day"
+            }, {
+                "date": "2008-01-03T00:00:00.000Z",
+                "precision": "day"
+            }],
+            "identifiers": [{
+                "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+            }],
+            "negation_indicator": true,
+            "problem": {
+                "name": "Asthma",
+                "code": "195967001",
+                "code_system_name": "SNOMED CT"
+            },
             "onset_age": "57",
             "onset_age_unit": "Year",
             "status": "Active",
             "patient_status": "Alive and well",
-            "source_list_identifiers": [
-                {
-                    "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
-                }
-            ],
-            "name": "Asthma",
-            "code": "195967001",
-            "code_system_name": "SNOMED CT"
-        }
-    ],
+            "source_list_identifiers": [{
+                "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+            }]
+        }],
     "procedures": [
         {
             "identifiers": [

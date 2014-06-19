@@ -22,23 +22,24 @@ extractNodes()
 
 */
 
+// Requires
 var expect = require('chai').expect;
 var assert = require('chai').assert;
 var fs = require("fs");
 var gen = require('../lib/generator/ccda/generator.js');
 var XmlDOM = require('xmldom').DOMParser;
 var execSync = require('execSync');
-var SKIP_COMMAND = false;
-var DIFF_COMMAND = true;
-var CAP_ERRORS = 0;
 
+// Flags
+var PROMPT_TO_SKIP = false;
+var DIFF = true;
 
 // Error Codes
-var DIFF_TAGS = 1;
+var DIFFERENT_TAGS = 1;
 var CHILD_NODE_DISCREPANCY = 2;
 var ATTR_MISMATCH = 3;
-    var ATTR_MISMATCH_CAP = 3.1;
-    var ATTR_MISMATCH_LEN = 3.2;
+var ATTR_MISMATCH_CAP = 3.1;
+var ATTR_MISMATCH_LEN = 3.2;
 var TEXT_DISCREPANCY = 4;
 
 // Defining the class as a function, and later adding methods to its prototype
@@ -48,6 +49,7 @@ var testXML = function() {
         "silence_len": false
     }
 
+    // possible errors
     this.errors = {
         "total": 0, 
         "differentTags": 0, 
@@ -84,7 +86,7 @@ testXML.prototype.isIdentical = function (generated, expected) {
             "> but expected <" + ((expected === undefined) ? expected : expected.tagName) + 
             ">, lineNumber: " + ((generated === undefined) ? generated : generated.lineNumber) + 
             ", " + ((expected === undefined) ? expected : expected.lineNumber);
-        return this.skip(error, DIFF_TAGS);
+        return this.skip(error, DIFFERENT_TAGS);
     }
 
     // Compare their attributes
@@ -166,7 +168,7 @@ testXML.prototype.isCapError = function(attr1, attr2) {
  */
 testXML.prototype.skip = function(error, errorCode, subCode) {
     this.logError(error, errorCode, subCode);
-    if (SKIP_COMMAND) {
+    if (PROMPT_TO_SKIP) {
         console.log("Skip? > y/n: ");
         var result = execSync.exec('test/support/a.out');
         var out = result.stdout;
@@ -175,7 +177,7 @@ testXML.prototype.skip = function(error, errorCode, subCode) {
         } else {
             return false;
         } 
-    } else if (DIFF_COMMAND) {
+    } else if (DIFF) {
         return true;
     } else {
         return false;
@@ -220,6 +222,8 @@ testXML.prototype.logError = function(errorMsg, eC, sC) {
 
 // Returns false if the tagNames for the nodes are different, otherwise true
 testXML.prototype.sameNode = function(node1, node2) {
+    // console.log(node1);
+    // console.log(node2);
     return (node1 !== undefined && node2 !== undefined) && (node1.tagName === node2.tagName);
 };
 
@@ -249,7 +253,7 @@ testXML.prototype.sameText = function(generated, expected) {
     if (genText !== expText && generated.chilNodes !== undefined) {
         console.log("Error: Different text: encountered: \"" + genText[0] + "\" but expected: \"" + 
             expText[0] + "\" , lineNumber: " + genText[1] + ", " + expText[1]);
-        return this.skip(DIFF_TAGS);
+        return this.skip(DIFFERENT_TAGS);
     } else {
         return true;
     }
@@ -328,6 +332,20 @@ testXML.prototype.generateXMLDOM = function(file) {
 testXML.prototype.generateStubs = function(name1, name2) {
     var actual = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name1 + '.xml');
     var expected = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name2 + '.xml');
+
+    var generatedXML = new XmlDOM().parseFromString(actual.toString());
+    var expectedXML = new XmlDOM().parseFromString(expected.toString());
+    return [generatedXML, expectedXML];
+};
+
+testXML.prototype.generateXMLDOMForEntireCCD = function() {
+    console.log("\nPROCESSING WHOLE CCD");
+    var modelJSON = fs.readFileSync('test/fixtures/files/json/CCD_1.json', 'utf-8');
+    var actual = gen(JSON.parse(modelJSON));
+    var expected = fs.readFileSync('test/fixtures/files/CCD_1.xml');
+
+    // write generated file just to visually compare
+    fs.writeFileSync('test/fixtures/files/generated/CCD_1_.xml', actual, 'utf-8');
 
     var generatedXML = new XmlDOM().parseFromString(actual.toString());
     var expectedXML = new XmlDOM().parseFromString(expected.toString());
