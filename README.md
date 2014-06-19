@@ -157,6 +157,8 @@ Detailed description of JSON based data model (tied to CCDA spec)
 
 [JSON based Blue Button data model](./docs/model.md)
 
+[CMS Documentation](./docs/cms.md)
+
 ## Goals
 
 - Full support of CCDA
