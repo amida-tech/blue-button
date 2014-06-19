@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "array",
+    "properties":{
+        "cda_address":{
+            "type":"object",
+            "properties":{
+                "city": {
+                    "type":"string"
+                },
+                "country": {
+                    "type":"string"
+                },
+                "state": {
+                    "type":"string"
+                },
+                "streetLines": {
+                    "type":"array",
+                    "items":
+                        {
+                            "type":"string"
+                        }
+        
+                },
+                "use": {
+                    "type":"string"
+                },
+                "zip": {
+                    "type":"string"
+                }
+            },
+            "required": ["streetLines", "city"]
+        },
+        "cda_date": {
+            "type": "object",
+            "properties":{
+                "date": {
+                    "type":"string",
+                    "format": "date-time"
+                    }
+                },
+                "precision": {
+                    "type":"string"
+                },
+                "required": ["date"]
+            }
+        }
+}
+

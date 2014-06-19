@@ -1,0 +1,19 @@
+{
+    "id": "http://jsonschema.net#",
+    "type": "array",
+    "items": {
+        "id": "#1",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "title": {
+                "id": "#title",
+                "type": "string"
+            },
+            "amount": {
+                "id": "#amount",
+                "type": "integer"
+            }
+        }
+    }
+}
