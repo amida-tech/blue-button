@@ -152,10 +152,10 @@ key: value
 ..+1.b. Check what matches and what doesn't match.
 ..+1.c. Check what are missing.
 
-2. Document intermediate model. Document which sections match and doesn't match. 
+2. Document intermediate model. Document which sections match and doesn't match. (Done)
 
 
-3. Work on parsing from the intermediate model to the actual bb model.
+3. Work on parsing from the intermediate model to the actual bb model. (done)
 	Start with demographics.
 
 4. Improve code flexibility
@@ -173,7 +173,6 @@ key: value
 
 8. Deal with case sensitivity of keys to object in intermediate object to blue button converter, and everywhere else.
 
-
 9. Need to dump data that is not part of one section into a common pool, or organize it. 
 ..* the effective dates for in "demographic" section needs to go somewhere else -> in the health insurance model. 
 ..* Allergy shots, and other medications need to go to another section
@@ -181,20 +180,21 @@ key: value
 10. Need to make sure that object types are very consistent with the model given in bb, probably will need to write tests to make sure
 the returned object model is the same as the model that has been parsed.
 
-11. Need to write the code system functionality to the parser.
+11. Need to write defaultValues.json for each section.
 
-12. Need to write defaultValues.json for each section.
+12. Need a precision converter, so that if I give it a mm/dd/yyyy/ other options, it can tell how precise it is. 
 
-13. Need a precision converter, so that if I give it a mm/dd/yyyy/ other options, it can tell how precise it is. 
+13. Need to modularize/restructure the results section.
 
-14. Need to modularize/restructure the results section.
-
-15. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that
+14. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that
 the patient took shots. From this, maybe the parser should extrapolate the administration part of medications. May tie in with #13.
 
-16. Make a date precision determining function. 
+15. Write tests for parts that are finished.
 
-27. Write tests for parts that are finished.
+16. Medications rate detector needs to be written.
+
+17. Vitals value detection may need modifications based on more text sample files. 
+
 
 
 ## Resolved Tasks
