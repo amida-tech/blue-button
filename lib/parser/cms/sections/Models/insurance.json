@@ -10,7 +10,7 @@
       "member_id":"{type: string, required: true}",
       "member_name":"{type: string, required: true}",
       "plan_name":"{type: string, required: true}",
-      "address":"{cda_address}"
+      "address":"{cda_address}",
        "phone ":  [{
        "number ":  "{type:  string, required:  true}",
        "type":  "{type:  string, required:  true}"
