@@ -341,7 +341,7 @@ testXML.prototype.generateStubs = function(name1, name2) {
 testXML.prototype.generateXMLDOMForEntireCCD = function() {
     console.log("\nPROCESSING WHOLE CCD");
     var modelJSON = fs.readFileSync('test/fixtures/files/json/CCD_1.json', 'utf-8');
-    var actual = gen(JSON.parse(modelJSON));
+    var actual = gen.genWholeCCDA(JSON.parse(modelJSON));
     var expected = fs.readFileSync('test/fixtures/files/CCD_1.xml');
 
     // write generated file just to visually compare

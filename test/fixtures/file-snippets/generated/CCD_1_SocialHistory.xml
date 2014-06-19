@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
-  <section>
-    <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
-    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="undefined" displayName="Social History"/>
-    <title>SOCIAL HISTORY</title>
-    <text/>
-  </section>
-</ClinicalDocument>
+[object Object]
