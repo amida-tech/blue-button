@@ -5,7 +5,7 @@
     "addresses":{
       "type":"array",
       "items":{
-        "$ref":"http://local.com/commonModels#/properties/cda_date"
+        "$ref":"http://local.com/commonModels#/properties/cda_address"
       }
     },
     "birthplace":{
@@ -23,20 +23,20 @@
         "zip":{
           "type":"string"
         }
-      }
+      },
+      "required":[
+        "city",
+        "country"
+      ]
     },
     "dob":{
       "type":"array",
       "items":{
         "type":"object",
         "properties":{
-          "date":{
-            "type":"string"
-          },
-          "precision":{
-            "type":"string"
-          }
-        }
+          "$ref":"http://local.com/commonModels#/properties/cda_date"
+        },
+        "minItems":1
       }
     },
     "gender":{
@@ -50,65 +50,29 @@
           "addresses":{
             "type":"array",
             "items":{
-              "type":"object",
-              "properties":{
-                "city":{
-                  "type":"string"
-                },
-                "country":{
-                  "type":"string"
-                },
-                "state":{
-                  "type":"string"
-                },
-                "streetLines":{
-                  "type":"array",
-                  "items":{
-                    "type":"string"
-                  }
-                },
-                "use":{
-                  "type":"string"
-                },
-                "zip":{
-                  "type":"string"
-                }
-              }
+              "$ref":"http://local.com/commonModels#/properties/cda_address"
             }
           },
           "names":{
             "type":"array",
             "items":{
-              "type":"object",
-              "properties":{
-                "first":{
-                  "type":"string"
-                },
-                "last":{
-                  "type":"string"
-                }
-              }
+              "$ref":"http://local.com/commonModels#/properties/cda_name"
             }
           },
           "phone":{
             "type":"array",
             "items":{
-              "type":"object",
-              "properties":{
-                "number":{
-                  "type":"string"
-                },
-                "type":{
-                  "type":"string"
-                }
-              }
+              "$ref":"http://local.com/commonModels#/properties/cda_phone"
             }
           },
           "relation":{
             "type":"string"
           }
         }
-      }
+      },
+      "required":[
+        "name"
+      ]
     },
     "languages":{
       "type":"array",
@@ -127,25 +91,20 @@
           "proficiency":{
             "type":"string"
           }
-        }
+        },
+        "required":["language"]
       }
     },
     "marital_status":{
       "type":"string"
     },
-    "name":{"$ref": "http://local.com/commonModels#/properties/cda_name"},
+    "name":{
+      "$ref":"http://local.com/commonModels#/properties/cda_name"
+    },
     "phone":{
       "type":"array",
       "items":{
-        "type":"object",
-        "properties":{
-          "number":{
-            "type":"string"
-          },
-          "type":{
-            "type":"string"
-          }
-        }
+        "$ref":"http://local.com/commonModels#/properties/cda_phone"
       }
     },
     "race_ethnicity":{
@@ -154,5 +113,6 @@
     "religion":{
       "type":"string"
     }
-  }
+  },
+  "required": ["name"]
 }

@@ -111,6 +111,41 @@
         "suffix":{
           "type":"string"
         }
+      },
+      "required":[
+        "first",
+        "last"
+      ]
+    },
+    "cda_coded_entry":{
+      "type":"object",
+      "properties":{
+        "code_system_name":{
+          "type":"string"
+        },
+        "code":{
+          "type":"string"
+        },
+        "name":{
+          "type":"string"
+        },
+        "translations":{
+          "type":"array",
+          "items":{
+            "type":"object",
+            "properties":{
+              "code_system_name":{
+                "type":"string"
+              },
+              "code":{
+                "type":"string"
+              },
+              "name":{
+                "type":"string"
+              }
+            }
+          }
+        }
       }
     }
   }

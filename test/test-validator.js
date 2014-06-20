@@ -239,7 +239,7 @@ describe('Test name:', function () {
   });
 
   it('regular name', function(done) {
-    nameObj = {
+    var nameObj = {
             "middle": [
                 "Isa"
             ],
@@ -252,7 +252,7 @@ describe('Test name:', function () {
   });
 
   it('no middle name', function(done) {
-    nameObj = {
+    var nameObj = {
             "middle": [
             ],
             "last": "Jones",
@@ -264,7 +264,7 @@ describe('Test name:', function () {
   });
 
    it('multiple middle names', function(done) {
-    nameObj = {
+    var nameObj = {
             "middle": [
                 "Isa",
                 "Izzzy",
@@ -279,9 +279,9 @@ describe('Test name:', function () {
   });
 
    it('empty name obj', function(done) {
-    identifierObj = {};
+    var nameObj = {};
     var valid = validator.validate(nameObj, compiledSchema);
-    expect(valid).to.true;
+    expect(valid).to.false;
     done();
   });
 });
@@ -346,27 +346,49 @@ describe('Test coded entries:', function () {
 
 
 describe('Test demographics:', function () {
-    before(function(done) {
+  before(function(done) {
     shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
     ZSchema.setRemoteReference('http://local.com/commonModels', shared);
     demographics = fs.readFileSync(__dirname + '/fixtures/validator/schemas/demographics.json', 'utf8');
     ZSchema.setRemoteReference('http://local.com/demographics', demographics);
     demographicsSchema = { '$ref': 'http://local.com/demographics' };
     validator = new ZSchema({ sync: true, noExtraKeywords:true});
-
+  testDemoList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testDemo.json', 'utf8');
+    testDemoList = JSON.parse(testDemoList);
     compiledSchema = validator.compileSchema(demographicsSchema);
-     //console.log(JSON.stringify(compiledSchema, null, 4));
     done();
   });
 
-    it('empty demographics obj', function(done) {
-      demoObj = {};
-      var valid = validator.validate(demoObj, compiledSchema);
-      expect(valid).to.false;
-      done();
+  it('empty demographics obj', function(done) {
+    var demoObj = {};
+    var valid = validator.validate(demoObj, compiledSchema);
+    expect(valid).to.false;
+    done();
   });
 
+  it('test regular case, Isabella Jones', function(done) {
+    var demoObj = testDemoList['regular'];
+    var valid = validator.validate(demoObj, compiledSchema);
+    expect(valid).to.true;
+    done();
   });
+
+  it('bad phone number', function(done) {
+    var demoObj = testDemoList['badNum'];
+    var valid = validator.validate(demoObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+  it("multiple bad children fields", function(done) {
+    var demoObj = testDemoList['badAddr'];
+    var valid = validator.validate(demoObj, compiledSchema);
+    expect(valid).to.false;
+    var error = validator.getLastError();
+    expect(Object.keys(error)).length.least(3);
+    done();
+  });
+});
 
 
 
