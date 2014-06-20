@@ -192,10 +192,10 @@ describe('component.generateSchema on CCD_1', function() {
     });
 
     it('social history', function(done) {
-        var schema = bb.generateSchema("ccda_socialHistory");
+        var schema = bb.generateSchema("ccda_social_history");
         expect(schema).to.exist;
-        checkSchemaConformity(ccd.socialHistory, schema, "socialHistory");
-        checkSchemaNotNull(schema, "socialHistory");
+        checkSchemaConformity(ccd.social_history, schema, "social_history");
+        checkSchemaNotNull(schema, "social_history");
         done();
     });
 
