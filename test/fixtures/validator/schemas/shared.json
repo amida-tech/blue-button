@@ -76,7 +76,7 @@
         "email"
       ]
     },
-    "cda_identifier":{
+    "cda_id":{
       "type":"object",
       "properties":{
         "identifier_type":{
@@ -146,7 +146,23 @@
             }
           }
         }
-      }
+      },
+      "minProperties": 1
+    },
+    "cda_physical_quantity":{
+      "type":"object",
+      "properties":{
+        "unit":{
+          "type":"string"
+        },
+        "value":{
+          "type":"number"
+        }
+      },
+      "required":[
+        "unit",
+        "value"
+      ]
     }
   }
 }

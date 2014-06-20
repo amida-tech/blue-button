@@ -191,7 +191,7 @@ describe('Test identifier:', function () {
   before(function(done) {
     shared= fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
     ZSchema.setRemoteReference('http://local.com/commonModels', shared);
-    idenSchema = { '$ref': 'http://local.com/commonModels#/properties/cda_identifier' };
+    idenSchema = { '$ref': 'http://local.com/commonModels#/properties/cda_id' };
     validator = new ZSchema({ sync: true, noExtraKeywords:true});
     compiledSchema = validator.compileSchema(idenSchema);
     done();
@@ -344,6 +344,39 @@ describe('Test coded entries:', function () {
   });
 });
 
+describe('Test physical quantities:', function () {
+    before(function(done) {
+      shared= fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+      ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+      physQuanSchema = { '$ref': 'http://local.com/commonModels#/properties/cda_physical_quantity' };
+      validator = new ZSchema({ sync: true, noExtraKeywords:true});
+      compiledSchema = validator.compileSchema(physQuanSchema);
+      done();
+  });
+
+  it('empty physical quanity', function(done) {
+    physObj= {};
+    var valid = validator.validate(physObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+    it('physical quanity value is string', function(done) {
+    physObj= {'unit': 'mmHg', 'value':'l337'};
+    var valid = validator.validate(physObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+    it('correct physical quanitty', function(done) {
+       physObj= {'unit': 'mmHg', 'value': 1337 };
+    var valid = validator.validate(physObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+    });
+});
+
+
 
 describe('Test demographics:', function () {
   before(function(done) {
@@ -388,6 +421,53 @@ describe('Test demographics:', function () {
     expect(Object.keys(error)).length.least(3);
     done();
   });
+});
+
+describe('Test medications:', function () {
+  before(function(done) {
+    shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    medications = fs.readFileSync(__dirname + '/fixtures/validator/schemas/medications.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/medications', medications);
+    medicationsSchema = { '$ref': 'http://local.com/medications' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+    testMedicList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testMedic.json', 'utf8');
+    testMedicList = JSON.parse(testMedicList);
+    compiledSchema = validator.compileSchema(medicationsSchema);
+    done();
+  });
+
+  it('empty medications obj', function(done) {
+    var medicObj = {};
+    var valid = validator.validate(medicObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+ it('test normal medications obj', function(done) {
+    var medicObj = testMedicList.regular;
+    var valid = validator.validate(medicObj, compiledSchema);
+    expect(valid).to.true;
+    var error = validator.getLastError();
+    done();
+  });
+
+ it('test bad format doses and numbers', function(done) {
+    var medicObj = testMedicList.badDoses;
+    var valid = validator.validate(medicObj, compiledSchema);
+    expect(valid).to.false;
+    var error = validator.getLastError();
+    expect(Object.keys(error)).length.least(2);
+    done();
+  });
+
+ it('test missing product', function(done) {
+    var medicObj = testMedicList.missProd;
+    var valid = validator.validate(medicObj, compiledSchema);
+    expect(valid).to.false;
+    var error = validator.getLastError();
+    done();
+  });
+
 });
 
 
