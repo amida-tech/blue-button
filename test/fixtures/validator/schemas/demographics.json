@@ -1,335 +1,158 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://jsonschema.net#",
-  "type": "object",
-  "required": false,
-  "properties": {
-    "name": {
-      "id": "http://jsonschema.net/name#",
-      "type": "object",
-      "required": false,
-      "properties": {
-        "middle": {
-          "id": "http://jsonschema.net/name/middle#",
-          "type": "array",
-          "required": false,
-          "items": {
-            "id": "http://jsonschema.net/name/middle/0#",
-            "type": "string",
-            "required": false
-          }
+  "type":"object",
+  "$schema":"http://json-schema.org/draft-04/schema",
+  "properties":{
+    "addresses":{
+      "type":"array",
+      "items":{
+        "$ref":"http://local.com/commonModels#/properties/cda_date"
+      }
+    },
+    "birthplace":{
+      "type":"object",
+      "properties":{
+        "city":{
+          "type":"string"
         },
-        "last": {
-          "id": "http://jsonschema.net/name/last#",
-          "type": "string",
-          "required": false
+        "country":{
+          "type":"string"
         },
-        "first": {
-          "id": "http://jsonschema.net/name/first#",
-          "type": "string",
-          "required": false
-        }
-      }
-    },
-    "dob": {
-      "id": "http://jsonschema.net/dob#",
-      "type": "array",
-      "required": false,
-      "items": {
-        "id": "http://jsonschema.net/dob/0#",
-        "type": "object",
-        "required": false,
-        "properties": {
-          "date": {
-            "id": "http://jsonschema.net/dob/0/date#",
-            "type": "string",
-            "required": false
-          },
-          "precision": {
-            "id": "http://jsonschema.net/dob/0/precision#",
-            "type": "string",
-            "required": false
-          }
-        }
-      }
-    },
-    "gender": {
-      "id": "http://jsonschema.net/gender#",
-      "type": "string",
-      "required": false
-    },
-    "identifiers": {
-      "id": "http://jsonschema.net/identifiers#",
-      "type": "array",
-      "required": false,
-      "items": {
-        "id": "http://jsonschema.net/identifiers/1#",
-        "type": "object",
-        "required": false,
-        "properties": {
-          "identifier": {
-            "id": "http://jsonschema.net/identifiers/1/identifier#",
-            "type": "string",
-            "required": false
-          },
-          "identifier_type": {
-            "id": "http://jsonschema.net/identifiers/1/identifier_type#",
-            "type": "string",
-            "required": false
-          }
-        }
-      }
-    },
-    "marital_status": {
-      "id": "http://jsonschema.net/marital_status#",
-      "type": "string",
-      "required": false
-    },
-    "addresses": {
-      "id": "http://jsonschema.net/addresses#",
-      "type": "array",
-      "required": false,
-      "items": {
-        "id": "http://jsonschema.net/addresses/0#",
-        "type": "object",
-        "required": false,
-        "properties": {
-          "streetLines": {
-            "id": "http://jsonschema.net/addresses/0/streetLines#",
-            "type": "array",
-            "required": false,
-            "items": {
-              "id": "http://jsonschema.net/addresses/0/streetLines/0#",
-              "type": "string",
-              "required": false
-            }
-          },
-          "city": {
-            "id": "http://jsonschema.net/addresses/0/city#",
-            "type": "string",
-            "required": false
-          },
-          "state": {
-            "id": "http://jsonschema.net/addresses/0/state#",
-            "type": "string",
-            "required": false
-          },
-          "zip": {
-            "id": "http://jsonschema.net/addresses/0/zip#",
-            "type": "string",
-            "required": false
-          },
-          "country": {
-            "id": "http://jsonschema.net/addresses/0/country#",
-            "type": "string",
-            "required": false
-          },
-          "use": {
-            "id": "http://jsonschema.net/addresses/0/use#",
-            "type": "string",
-            "required": false
-          }
-        }
-      }
-    },
-    "phone": {
-      "id": "http://jsonschema.net/phone#",
-      "type": "array",
-      "required": false,
-      "items": {
-        "id": "http://jsonschema.net/phone/0#",
-        "type": "object",
-        "required": false,
-        "properties": {
-          "number": {
-            "id": "http://jsonschema.net/phone/0/number#",
-            "type": "string",
-            "required": false
-          },
-          "type": {
-            "id": "http://jsonschema.net/phone/0/type#",
-            "type": "string",
-            "required": false
-          }
-        }
-      }
-    },
-    "race_ethnicity": {
-      "id": "http://jsonschema.net/race_ethnicity#",
-      "type": "string",
-      "required": false
-    },
-    "languages": {
-      "id": "http://jsonschema.net/languages#",
-      "type": "array",
-      "required": false,
-      "items": {
-        "id": "http://jsonschema.net/languages/0#",
-        "type": "object",
-        "required": false,
-        "properties": {
-          "language": {
-            "id": "http://jsonschema.net/languages/0/language#",
-            "type": "string",
-            "required": false
-          },
-          "preferred": {
-            "id": "http://jsonschema.net/languages/0/preferred#",
-            "type": "boolean",
-            "required": false
-          },
-          "mode": {
-            "id": "http://jsonschema.net/languages/0/mode#",
-            "type": "string",
-            "required": false
-          },
-          "proficiency": {
-            "id": "http://jsonschema.net/languages/0/proficiency#",
-            "type": "string",
-            "required": false
-          }
-        }
-      }
-    },
-    "religion": {
-      "id": "http://jsonschema.net/religion#",
-      "type": "string",
-      "required": false
-    },
-    "birthplace": {
-      "id": "http://jsonschema.net/birthplace#",
-      "type": "object",
-      "required": false,
-      "properties": {
-        "city": {
-          "id": "http://jsonschema.net/birthplace/city#",
-          "type": "string",
-          "required": false
+        "state":{
+          "type":"string"
         },
-        "state": {
-          "id": "http://jsonschema.net/birthplace/state#",
-          "type": "string",
-          "required": false
-        },
-        "zip": {
-          "id": "http://jsonschema.net/birthplace/zip#",
-          "type": "string",
-          "required": false
-        },
-        "country": {
-          "id": "http://jsonschema.net/birthplace/country#",
-          "type": "string",
-          "required": false
+        "zip":{
+          "type":"string"
         }
       }
     },
-    "guardians": {
-      "id": "http://jsonschema.net/guardians#",
-      "type": "array",
-      "required": false,
-      "items": {
-        "id": "http://jsonschema.net/guardians/0#",
-        "type": "object",
-        "required": false,
-        "properties": {
-          "relation": {
-            "id": "http://jsonschema.net/guardians/0/relation#",
-            "type": "string",
-            "required": false
+    "dob":{
+      "type":"array",
+      "items":{
+        "type":"object",
+        "properties":{
+          "date":{
+            "type":"string"
           },
-          "addresses": {
-            "id": "http://jsonschema.net/guardians/0/addresses#",
-            "type": "array",
-            "required": false,
-            "items": {
-              "id": "http://jsonschema.net/guardians/0/addresses/0#",
-              "type": "object",
-              "required": false,
-              "properties": {
-                "streetLines": {
-                  "id": "http://jsonschema.net/guardians/0/addresses/0/streetLines#",
-                  "type": "array",
-                  "required": false,
-                  "items": {
-                    "id": "http://jsonschema.net/guardians/0/addresses/0/streetLines/0#",
-                    "type": "string",
-                    "required": false
+          "precision":{
+            "type":"string"
+          }
+        }
+      }
+    },
+    "gender":{
+      "type":"string"
+    },
+    "guardians":{
+      "type":"array",
+      "items":{
+        "type":"object",
+        "properties":{
+          "addresses":{
+            "type":"array",
+            "items":{
+              "type":"object",
+              "properties":{
+                "city":{
+                  "type":"string"
+                },
+                "country":{
+                  "type":"string"
+                },
+                "state":{
+                  "type":"string"
+                },
+                "streetLines":{
+                  "type":"array",
+                  "items":{
+                    "type":"string"
                   }
                 },
-                "city": {
-                  "id": "http://jsonschema.net/guardians/0/addresses/0/city#",
-                  "type": "string",
-                  "required": false
+                "use":{
+                  "type":"string"
                 },
-                "state": {
-                  "id": "http://jsonschema.net/guardians/0/addresses/0/state#",
-                  "type": "string",
-                  "required": false
-                },
-                "zip": {
-                  "id": "http://jsonschema.net/guardians/0/addresses/0/zip#",
-                  "type": "string",
-                  "required": false
-                },
-                "country": {
-                  "id": "http://jsonschema.net/guardians/0/addresses/0/country#",
-                  "type": "string",
-                  "required": false
-                },
-                "use": {
-                  "id": "http://jsonschema.net/guardians/0/addresses/0/use#",
-                  "type": "string",
-                  "required": false
+                "zip":{
+                  "type":"string"
                 }
               }
             }
           },
-          "names": {
-            "id": "http://jsonschema.net/guardians/0/names#",
-            "type": "array",
-            "required": false,
-            "items": {
-              "id": "http://jsonschema.net/guardians/0/names/0#",
-              "type": "object",
-              "required": false,
-              "properties": {
-                "last": {
-                  "id": "http://jsonschema.net/guardians/0/names/0/last#",
-                  "type": "string",
-                  "required": false
+          "names":{
+            "type":"array",
+            "items":{
+              "type":"object",
+              "properties":{
+                "first":{
+                  "type":"string"
                 },
-                "first": {
-                  "id": "http://jsonschema.net/guardians/0/names/0/first#",
-                  "type": "string",
-                  "required": false
+                "last":{
+                  "type":"string"
                 }
               }
             }
           },
-          "phone": {
-            "id": "http://jsonschema.net/guardians/0/phone#",
-            "type": "array",
-            "required": false,
-            "items": {
-              "id": "http://jsonschema.net/guardians/0/phone/0#",
-              "type": "object",
-              "required": false,
-              "properties": {
-                "number": {
-                  "id": "http://jsonschema.net/guardians/0/phone/0/number#",
-                  "type": "string",
-                  "required": false
+          "phone":{
+            "type":"array",
+            "items":{
+              "type":"object",
+              "properties":{
+                "number":{
+                  "type":"string"
                 },
-                "type": {
-                  "id": "http://jsonschema.net/guardians/0/phone/0/type#",
-                  "type": "string",
-                  "required": false
+                "type":{
+                  "type":"string"
                 }
               }
             }
+          },
+          "relation":{
+            "type":"string"
           }
         }
       }
+    },
+    "languages":{
+      "type":"array",
+      "items":{
+        "type":"object",
+        "properties":{
+          "language":{
+            "type":"string"
+          },
+          "mode":{
+            "type":"string"
+          },
+          "preferred":{
+            "type":"boolean"
+          },
+          "proficiency":{
+            "type":"string"
+          }
+        }
+      }
+    },
+    "marital_status":{
+      "type":"string"
+    },
+    "name":{"$ref": "http://local.com/commonModels#/properties/cda_name"},
+    "phone":{
+      "type":"array",
+      "items":{
+        "type":"object",
+        "properties":{
+          "number":{
+            "type":"string"
+          },
+          "type":{
+            "type":"string"
+          }
+        }
+      }
+    },
+    "race_ethnicity":{
+      "type":"string"
+    },
+    "religion":{
+      "type":"string"
     }
   }
 }

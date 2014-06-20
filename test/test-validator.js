@@ -187,6 +187,187 @@ describe('Test email:', function () {
   });
 });
 
+describe('Test identifier:', function () {
+  before(function(done) {
+    shared= fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    idenSchema = { '$ref': 'http://local.com/commonModels#/properties/cda_identifier' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+    compiledSchema = validator.compileSchema(idenSchema);
+    done();
+  });
+
+  it('identifier all fields', function(done) {
+    identifierObj =  {"identifier": "2.16.840.1.113883.19.5.9999.456",
+      "identifier_type": "2981824"};
+
+    var valid = validator.validate(identifierObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('identifier without type', function(done) {
+    identifierObj = {"identifier": "2.16.840.1.113883.19.5.9999.456"};
+          var valid = validator.validate(identifierObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+   it('email with only type', function(done) {
+    identifierObj = {"identifier_type": "2981824"};
+    var valid = validator.validate(identifierObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+   it('empty email obj', function(done) {
+    identifierObj = {};
+    var valid = validator.validate(identifierObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+});
+
+describe('Test name:', function () {
+    before(function(done) {
+    shared= fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    nameSchema = { '$ref': 'http://local.com/commonModels#/properties/cda_name' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+    compiledSchema = validator.compileSchema(nameSchema);
+    done();
+  });
+
+  it('regular name', function(done) {
+    nameObj = {
+            "middle": [
+                "Isa"
+            ],
+            "last": "Jones",
+            "first": "Isabella"
+            };
+    var valid = validator.validate(nameObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('no middle name', function(done) {
+    nameObj = {
+            "middle": [
+            ],
+            "last": "Jones",
+            "first": "Isabella"
+            };
+          var valid = validator.validate(nameObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+   it('multiple middle names', function(done) {
+    nameObj = {
+            "middle": [
+                "Isa",
+                "Izzzy",
+                "Iggy"
+            ],
+            "last": "Jones",
+            "first": "Isabella"
+            };
+    var valid = validator.validate(nameObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+   it('empty name obj', function(done) {
+    identifierObj = {};
+    var valid = validator.validate(nameObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+});
+
+describe('Test coded entries:', function () {
+    before(function(done) {
+    shared= fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    codedEntrySchema = { '$ref': 'http://local.com/commonModels#/properties/cda_coded_entry' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+    compiledSchema = validator.compileSchema(codedEntrySchema);
+    done();
+  });
+
+  it('regular name', function(done) {
+    nameObj = {
+            "middle": [
+                "Isa"
+            ],
+            "last": "Jones",
+            "first": "Isabella"
+            };
+    var valid = validator.validate(nameObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('no middle name', function(done) {
+    nameObj = {
+            "middle": [
+            ],
+            "last": "Jones",
+            "first": "Isabella"
+            };
+          var valid = validator.validate(nameObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+   it('multiple middle names', function(done) {
+    nameObj = {
+            "middle": [
+                "Isa",
+                "Izzzy",
+                "Iggy"
+            ],
+            "last": "Jones",
+            "first": "Isabella"
+            };
+    var valid = validator.validate(nameObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+   it('empty name obj', function(done) {
+    identifierObj = {};
+    var valid = validator.validate(nameObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+});
+
+
+describe('Test demographics:', function () {
+    before(function(done) {
+    shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    demographics = fs.readFileSync(__dirname + '/fixtures/validator/schemas/demographics.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/demographics', demographics);
+    demographicsSchema = { '$ref': 'http://local.com/demographics' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+
+    compiledSchema = validator.compileSchema(demographicsSchema);
+     //console.log(JSON.stringify(compiledSchema, null, 4));
+    done();
+  });
+
+    it('empty demographics obj', function(done) {
+      demoObj = {};
+      var valid = validator.validate(demoObj, compiledSchema);
+      expect(valid).to.false;
+      done();
+  });
+
+  });
+
 
 
 
