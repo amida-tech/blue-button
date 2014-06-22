@@ -14,7 +14,7 @@ describe('generating CCDA for entire CCD', function() {
     });
 });
 
-// allergies section
+// test allergies section
 describe('generating CCDA for allergies section', function() {
     it ('should match allergies section', function() {
         var XMLDOMs = test.generateXMLDOM('allergies');
@@ -24,7 +24,7 @@ describe('generating CCDA for allergies section', function() {
     });
 });
 
-// medications section
+// test medications section
 describe('generating CCDA for medications section', function() {
     it ('should match medications section', function() {
         var XMLDOMs = test.generateXMLDOM('medications');
@@ -34,7 +34,7 @@ describe('generating CCDA for medications section', function() {
     });
 });
 
-// problems section
+// test problems section
 describe('generating CCDA for problems section', function() {
     it ('should match problems section', function() {
        var XMLDOMs = test.generateXMLDOM('problems');
@@ -45,7 +45,7 @@ describe('generating CCDA for problems section', function() {
     });
 });
 
-// results section
+// test results section
 describe('generating CCDA for results section', function() {
     it ('should match results section', function() {
         var XMLDOMs = test.generateXMLDOM('results');
@@ -56,7 +56,7 @@ describe('generating CCDA for results section', function() {
     });
 });
 
-// demographics section
+// test demographics section
 describe('generating CCDA for demographics section', function() {
     it ('should match demographics section', function() {
         var XMLDOMs = test.generateXMLDOM('demographics');
@@ -67,7 +67,7 @@ describe('generating CCDA for demographics section', function() {
     });
 });
 
-// procedures section
+// test procedures section
 describe('generating CCDA for procedures section', function() {
     it ('should match procedures section', function() {
         var XMLDOMs = test.generateXMLDOM('procedures');
@@ -78,7 +78,7 @@ describe('generating CCDA for procedures section', function() {
     });
 });
 
-// encounters section
+// test encounters section
 describe('generating CCDA for encounters section', function() {
     it ('should match encounters section', function() {
         var XMLDOMs = test.generateXMLDOM('encounters');
@@ -100,7 +100,7 @@ describe('generating CCDA for encounters section', function() {
 //     });
 // });
 
-// immunizations section
+// test immunizations section
 describe('generating CCDA for immunizations section', function() {
     it ('should match immunizations section', function() {
         var XMLDOMs = test.generateXMLDOM('immunizations');
@@ -111,7 +111,7 @@ describe('generating CCDA for immunizations section', function() {
     });
 });
 
-// vitals section
+// test vitals section
 describe('generating CCDA for vitals section', function() {
     it ('should match vitals section', function() {
         var XMLDOMs = test.generateXMLDOM('vitals');
@@ -122,7 +122,7 @@ describe('generating CCDA for vitals section', function() {
     });
 });
 
-// social history section
+// test social history section
 describe('generating CCDA for social history section', function() {
     it ('should match social history section', function() {
         var XMLDOMs = test.generateXMLDOM('socialHistory');
