@@ -10,3 +10,9 @@ var info = bb.senseString(data);
 
 //here are result of sensing
 console.log(info);
+
+//parse CMS data
+
+var data = bb.parseText(data);
+
+console.log(data);
