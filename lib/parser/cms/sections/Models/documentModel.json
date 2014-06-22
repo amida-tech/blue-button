@@ -12,6 +12,7 @@
         "procedures": []
     },
     "meta": {
+        "type" : "cms",
         "version": ""
     },
     "errors": []
