@@ -15,4 +15,4 @@ console.log(info);
 
 var data = bb.parseText(data);
 
-console.log(data);
+console.log(JSON.stringify(data,null,4));
