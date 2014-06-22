@@ -4,25 +4,23 @@ var assert = require('chai').assert;
 var fs = require('fs');
 var path = require('path');
 
-var bb = require('../index');
-var jsutil = require('../lib/jsutil');
+var bb = require('../../index');
+var jsutil = require('../../lib/jsutil');
 
 describe('results parser', function() {
     var results = null;
     
     before(function(done) {
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Results.xml');
+        var filepath  = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Results.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {component: 'ccda_results'}, function(err, result) {
-            results = result.toJSON();
-            done();
-        });
+        results=bb.parseString(xml, {component: 'ccda_results'}).data;
+        done();
     });
     
     it('full deep check', function(done) {
         expect(results).to.exist;
         //console.log(JSON.stringify(results, null, 10));
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Results.json');
+        var filepath  = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Results.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedResults = jsutil.jsonParseWithDate(json2Read);
         expect(results).to.deep.equal(expectedResults);

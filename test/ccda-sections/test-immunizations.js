@@ -4,21 +4,18 @@ var assert = require('chai').assert;
 var fs = require('fs');
 var path = require('path');
 
-var bb = require('../index');
-var jsutil = require('../lib/jsutil');
+var bb = require('../../index');
+var jsutil = require('../../lib/jsutil');
 
 var immunizations;
 
 var loadRecord = function(done) {
-    var filepath = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Immunizations.xml');
+    var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Immunizations.xml');
     var xml = fs.readFileSync(filepath, 'utf-8');
-    bb.parse(xml, {
+    immunizations=bb.parseString(xml, {
         component: 'ccda_immunizations'
-    }, function(err, result) {
-        immunizations = result.toJSON();
-        //console.log(JSON.stringify(immunizations, null, 4));
-        done();
-    });
+    }).data;
+    done();
 };
 
 
@@ -38,7 +35,7 @@ describe('immunizations parser', function() {
     it('full deep check', function(done) {
         expect(immunizations).to.exist;
         //console.log(JSON.stringify(immunizations, null, 10));
-        var filepath = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Immunizations.json');
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Immunizations.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedImmunizations = jsutil.jsonParseWithDate(json2Read);
         expect(immunizations).to.deep.equal(expectedImmunizations);

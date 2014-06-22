@@ -173,11 +173,9 @@ describe('component.generateSchema on CCD_1', function() {
     
     before(function(done) {
         var filepath  = path.join(__dirname, 'fixtures/files/CCD_1.xml');
-        var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, function(err, result) {
-            ccd = result.toJSON();
-            done();
-        });
+        var xml = fs.readFileSync(filepath, 'utf-8').toString();
+        ccd= bb.parseString(xml, {}).data;
+        done();
     });
 
     it('ccd exists', function(done) {
