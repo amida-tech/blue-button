@@ -244,13 +244,11 @@
                 ]
             }
         ],
-        "procedures": [],
-        "meta": {
-            "version": "String"
-        },
-        "errors": [
-            "nullFlavor alert :  missing but required streetLines in Address -> Patient -> CCD",
-            "nullFlavor alert :  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD"
-        ]
-    }
+        "procedures": []
+    },
+    "meta": {
+        "type": "cms",
+        "version": ""
+    },
+    "errors": []
 }
