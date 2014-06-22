@@ -29,6 +29,7 @@ var fs = require("fs");
 var gen = require('../lib/generator/ccda/generator.js');
 var XmlDOM = require('xmldom').DOMParser;
 var execSync = require('execSync');
+var bb = require("../index.js");
 
 // Flags
 var PROMPT_TO_SKIP = false;
@@ -317,7 +318,7 @@ String.prototype.capitalize = function() {
 testXML.prototype.generateXMLDOM = function(file) {
     console.log("\nPROCESSING " + file.toUpperCase());
     var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + file.capitalize() + '.json', 'utf-8');
-    var actual = gen(JSON.parse(modelJSON));
+    var actual = gen(JSON.parse(modelJSON), false);
     var expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + file.capitalize() + '.xml');
 
     // write generated file just to visually compare
@@ -341,11 +342,16 @@ testXML.prototype.generateStubs = function(name1, name2) {
 testXML.prototype.generateXMLDOMForEntireCCD = function() {
     console.log("\nPROCESSING WHOLE CCD");
     var modelJSON = fs.readFileSync('test/fixtures/files/json/CCD_1.json', 'utf-8');
-    var actual = gen(JSON.parse(modelJSON));
+    var actual = gen.genWholeCCDA(JSON.parse(modelJSON));
     var expected = fs.readFileSync('test/fixtures/files/CCD_1.xml');
 
-    // write generated file just to visually compare
-    fs.writeFileSync('test/fixtures/files/generated/CCD_1_.xml', actual, 'utf-8');
+    // generate JSON object from expected XML on the fly
+    var doc = bb.xml(expected);
+    var result = JSON.stringify(bb.parseXml(doc));
+    fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', result, 'utf-8');
+
+    // write generated CCDA file for testing comparison
+    fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.xml', actual, 'utf-8');
 
     var generatedXML = new XmlDOM().parseFromString(actual.toString());
     var expectedXML = new XmlDOM().parseFromString(expected.toString());
