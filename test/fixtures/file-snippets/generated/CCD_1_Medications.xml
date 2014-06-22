@@ -14,7 +14,7 @@
         <statusCode code="completed"/>
         <effectiveTime xsi:type="IVL_TS">
           <low value="20070103"/>
-          <high value="20120515"/>
+          <high value="200701"/>
         </effectiveTime>
         <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
           <period value="6" unit="h"/>
@@ -86,7 +86,7 @@
             <statusCode code="completed"/>
             <effectiveTime xsi:type="IVL_TS">
               <low value="20070103"/>
-              <high value="20120515"/>
+              <high value="200701"/>
             </effectiveTime>
             <repeatNumber value="1"/>
             <quantity value="75"/>

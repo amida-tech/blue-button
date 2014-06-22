@@ -678,7 +678,7 @@
               <statusCode code="completed"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="20070103"/>
-                <high value="20120515"/>
+                <high value="200701"/>
               </effectiveTime>
               <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
                 <period value="6" unit="h"/>
@@ -750,7 +750,7 @@
                   <statusCode code="completed"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="20070103"/>
-                    <high value="20120515"/>
+                    <high value="200701"/>
                   </effectiveTime>
                   <repeatNumber value="1"/>
                   <quantity value="75"/>
@@ -1202,7 +1202,7 @@
                     <reference value="#result1"/>
                   </text>
                   <statusCode code="completed"/>
-                  <effectiveTime value="20000323"/>
+                  <effectiveTime value="20000323,200003"/>
                   <value xsi:type="PQ" value="13.2" unit="g/dl"/>
                   <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                   <referenceRange>
@@ -1221,7 +1221,7 @@
                     <reference value="#result2"/>
                   </text>
                   <statusCode code="completed"/>
-                  <effectiveTime value="20000323"/>
+                  <effectiveTime value="20000323,200003"/>
                   <value xsi:type="PQ" value="6.7" unit="10+3/ul"/>
                   <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                   <referenceRange>
@@ -1240,7 +1240,7 @@
                     <reference value="#result3"/>
                   </text>
                   <statusCode code="completed"/>
-                  <effectiveTime value="20000323"/>
+                  <effectiveTime value="20000323,200003"/>
                   <value xsi:type="PQ" value="123" unit="10+3/ul"/>
                   <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
                   <referenceRange>
