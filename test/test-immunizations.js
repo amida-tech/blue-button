@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // var expect = require('chai').expect;
 // var assert = require('chai').assert;
 
@@ -54,7 +55,6 @@
 //         expect(immunizations[0].product.name).to.equal("Influenza virus vaccine");
 //         expect(JSON.stringify(immunizations[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
 //         expect(immunizations[0].date[0].precision).to.equal('month');
-        
 //         done();
 //     });
 // });

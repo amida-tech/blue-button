@@ -38,8 +38,7 @@
 
 //         expect(allergies[1].severity).to.equal('Moderate');
 //         expect(allergies[1].status).to.equal('Active');
-//         expect(allergies[1].name).to.equal('Codeine');
-        
+//         expect(allergies[1].name).to.equal('Codeine');        
 //         done();
 //     });
 // });

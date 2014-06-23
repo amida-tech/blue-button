@@ -1,5 +1,20 @@
 #Shared Components
 
+## cda_name
+
+```
+ var cda_name = {
+    "prefix": [{type: string, required: false}],
+    "first": {type: string, required: true},
+    "middle": [{type: string, required: false],
+    "last": {type: string, required: true},
+    "suffix": {type: string, required: false}
+  }
+```
+
+
+
+
 ## cda_address
 
 ```
@@ -46,29 +61,25 @@ var cda_phone = {
 - @use
 - From table AdressUse 2.16.840.1.113883.5.1119
 
-## cda_concept
+## cda_email
 
 ```
-var cda_concept : {
-    "name": {type: string, required: true},
-    "code": {type: string, required: true},
-    "code_system_name": {type:string, required: true}
+var cda_email = {
+    "address": {type: string, required: true},
+    "type": {type: string, required: true}
 }
 ```
 
-####name
-- 0..1
-- @displayName
-- Required but can be found from the code when all table values are known.
-
-####code
+####address
 - 1..1
-- @code
+- @value
+- Each email record should be checked for 'mailto:' lead of value.
 
-####code_system_name
+####type
 - 1..1
-- @codeSystemName
-- Always normalized from @codeSystem.
+- @use
+- From table AdressUse 2.16.840.1.113883.5.1119
+
 
 ## cda_location
 
@@ -137,4 +148,50 @@ var cda_id = {
 #### identifier_type
 - 1..1
 - @extension
+
+## cda_coded_entry
+```
+var coded_entry = "allergen": {
+  "name": {type: string, required: true},
+  "code": {type: string, required: false},
+  "code_system": {type: string, required:false},
+  "translations": [{
+    "name": {type: string, required: true},
+    "code": {type: string, required: false},
+    "code_system": {type: string, required:false}
+  }]
+}
+```
+#### name
+- 1..1
+- @displayName
+- TODO:  Add handlers for lookup if displayName not present.
+
+#### code
+- 0..1
+- @code
+
+#### code_system
+- 0..1
+- @codeSystemName
+- TODO:  Add OID based code system name lookup.
+
+#### translations
+- 0..*
+- /translation
+- Optional translations of coded entry.
+
+#### translations.name
+- 1..1
+- @displayName
+- TODO:  Add handlers for lookup if displayName not present.
+
+#### translations.code
+- 0..1
+- @code
+
+#### translations.code_system
+- 0..1
+- @codeSystemName
+- TODO:  Add OID based code system name lookup.
 

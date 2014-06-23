@@ -5,11 +5,9 @@
 var Encounters = {
         "date": [{cda_date}],
         "identifiers": [{cda_id}],
-        "name": {type: string, required: true},
-        "code": {type: string, required: true},
-        "code_system_name": {type:string, required: true},
+        "encounter": {cda_coded_entry},
         "locations": [[cda_location}],
-        "findings": [{cda_concept}]
+        "findings": [{cda_coded_entry}]
      }
 ```
 
@@ -29,26 +27,10 @@ var Encounters = {
 - 1..*
 - //ClinicalDocument/component/structuredBody/component/section/entry/encounter/id
 
-####Encounter.name
+####Encounter.encounter
 - 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/code@displayName
+- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/code
 - Must be selected from EncounterTypeCode.
-- A translation object is possible.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
-
-####Encounter.code
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/code@code
-- Must be selected from EncounterTypeCode.
-- A translation object is possible.
-- Not supported: nullFlavor.
-- TODO:  Support lookup of values from coding system.
-
-####Encounter.code_system_name
-- 1..1
-- //ClinicalDocument/component/structuredBody/component/section/entry/encounter/code@codeSystemName
-- Can be be RXNORM, UNII, or NDF-RT.
 - A translation object is possible.
 - Not supported: nullFlavor.
 - TODO:  Support lookup of values from coding system.

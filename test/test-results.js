@@ -19,6 +19,7 @@
 //         });
 //     });
     
+
 //     it('full deep check', function(done) {
 //         expect(results).to.exist;
 //         var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Results.json');
@@ -27,22 +28,21 @@
 //         expect(results).to.deep.equal(expectedResults);
 //         done();
 //     });
+
     
 //     it ('spot check', function(done) {
 //         expect(results).to.exist;
 //         expect(results).to.have.length(1);
         
+
 //         expect(results[0]).to.exist;
 //         expect(results[0].code).to.equal('43789009');
 //         expect(results[0].name).to.equal("CBC WO DIFFERENTIAL");
-        
 //         expect(results[0].results).to.exist;
 //         expect(results[0].results).to.have.length(3);
-        
 //         expect(results[0].results[2]).to.exist;
 //         expect(results[0].results[2].code).to.equal('26515-7');
 //         expect(results[0].results[2].name).to.equal('PLT');
-        
 //         done();
 //     });
 // });

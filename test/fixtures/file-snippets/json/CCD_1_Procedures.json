@@ -84,7 +84,10 @@
             "type": "work place"
         }],
         "organization": {
-            "name": "Community Health and Hospitals"
+            "name": "Community Health and Hospitals",
+            "identifiers": [{
+                "identifier": "2.16.840.1.113883.19.5"
+            }]
         }
     }],
     "locations": [{
@@ -135,7 +138,10 @@
             "type": "work place"
         }],
         "organization": {
-            "name": "Community Health and Hospitals"
+            "name": "Community Health and Hospitals",
+            "identifiers": [{
+                "identifier": "2.16.840.1.113883.19.5"
+            }]
         }
     }],
     "locations": [{
