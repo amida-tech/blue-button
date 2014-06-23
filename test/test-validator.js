@@ -470,6 +470,149 @@ describe('Test medications:', function () {
 
 });
 
+describe('Test problems', function () {
+  before(function(done) {
+    shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    problems = fs.readFileSync(__dirname + '/fixtures/validator/schemas/problems.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/problems', problems);
+    problemsSchema = { '$ref': 'http://local.com/problems' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+    testProbList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testProb.json', 'utf8');
+    testProbList = JSON.parse(testProbList);
+    compiledSchema = validator.compileSchema(problemsSchema);
+    done();
+  });
+
+  it('empty problems obj', function(done) {
+    var probObj = {};
+    var valid = validator.validate(probObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+ it('test normal problems object #1', function(done) {
+    var probObj = testProbList.regular1;
+    var valid = validator.validate(probObj, compiledSchema);
+    expect(valid).to.true;
+    var error = validator.getLastError();
+    done();
+  });
+
+  it('test normal problems object #2', function(done) {
+    var probObj = testProbList.regular2;
+    var valid = validator.validate(probObj, compiledSchema);
+    expect(valid).to.true;
+    var error = validator.getLastError();
+    done();
+  });
+
+  it('test bad date', function(done) {
+    var probObj = testProbList.badDate;
+    var valid = validator.validate(probObj, compiledSchema);
+    expect(valid).to.falsex;
+    var error = validator.getLastError();
+    done();
+  });
+
+  it('empty problem', function(done) {
+    var probObj = testProbList.emptyProblem;
+    var valid = validator.validate(probObj, compiledSchema);
+    expect(valid).to.falsex;
+    var error = validator.getLastError();
+    done();
+  });
+
+
+  it('problem not defined', function(done) {
+    var probObj = testProbList.undefinedProblem;
+    var valid = validator.validate(probObj, compiledSchema);
+    expect(valid).to.falsex;
+    var error = validator.getLastError();
+    done();
+  });
+});
+
+
+describe.only('Test results', function () {
+  before(function(done) {
+    shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    results = fs.readFileSync(__dirname + '/fixtures/validator/schemas/result.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/results', results);
+    resultsSchema = { '$ref': 'http://local.com/results' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+    testResultsList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testResult.json', 'utf8');
+    testResultsList = JSON.parse(testResultsList);
+    compiledSchema = validator.compileSchema(resultsSchema);
+    done();
+  });
+
+  it('empty results obj', function(done) {
+    var  resultObj = {};
+    var valid = validator.validate(resultObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+  it(' obj from sample', function(done) {
+    var  resultObj = testResultsList.regular;
+    var valid = validator.validate(resultObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+ it('empty id ', function(done) {
+    var  resultObj = testResultsList.emptyId;
+    var valid = validator.validate(resultObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+  it('empty results set ', function(done) {
+    var  resultObj = testResultsList.emptyResultsSet;
+    var valid = validator.validate(resultObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+   it('no results', function(done) {
+    var  resultObj = testResultsList.noResults;
+    var valid = validator.validate(resultObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+    it('one bad short result', function(done) {
+    var  resultObj = testResultsList.oneBadShortResult;
+    var valid = validator.validate(resultObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+  it('value is a string', function(done) {
+    var  resultObj = testResultsList.valueIsString;
+    var valid = validator.validate(resultObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 
