@@ -1,179 +1,205 @@
 {
-  "$schema":"http://json-schema.org/draft-04/schema#",
-  "type":"array",
-  "properties":{
-    "cda_address":{
-      "type":"object",
-      "properties":{
-        "city":{
-          "type":"string"
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "array",
+    "properties": {
+        "cda_address": {
+            "type": "object",
+            "properties": {
+                "city": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "streetLines": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
+                },
+                "use": {
+                    "type": "string"
+                },
+                "zip": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "streetLines",
+                "city"
+            ]
         },
-        "country":{
-          "type":"string"
-        },
-        "state":{
-          "type":"string"
-        },
-        "streetLines":{
-          "type":"array",
-          "items":{
-            "type":"string"
-          },
-          "minItems":1
-        },
-        "use":{
-          "type":"string"
-        },
-        "zip":{
-          "type":"string"
-        }
-      },
-      "required":[
-        "streetLines",
-        "city"
-      ]
-    },
-    "additionalProperties":false,
-    "cda_date":{
-      "type":"object",
-      "properties":{
-        "date":{
-          "type":"string",
-          "format":"date-time"
-        },
-      "precision":{
-        "type":"string"
-      }
-    },
-    "additionalProperties":false,
-      "required":[
-        "date"
-      ]
-    },
-    "cda_phone":{
-      "type":"object",
-      "properties":{
-        "number":{
-          "type":"string"
-        },
-        "type":{
-          "type":"string"
-        }
-      },
-      "additionalProperties":false,
-      "required":[
-        "number"
-      ]
-    },
-    "cda_email":{
-      "type":"object",
-      "properties":{
-        "email":{
-          "type":"string"
-        },
-        "type":{
-          "type":"string"
-        }
-      },
-      "additionalProperties":false,
-      "required":[
-        "email"
-      ]
-    },
-    "cda_id":{
-      "type":"object",
-      "properties":{
-        "identifier_type":{
-          "type":"string"
-        },
-        "identifier":{
-          "type":"string"
-        }
-      },
-      "additionalProperties":false,
-      "required":[
-        "identifier"
-      ]
-    },
-    "cda_name":{
-      "type":"object",
-      "properties":{
-        "prefix":{
-          "type":"string"
-        },
-        "first":{
-          "type":"string"
-        },
-        "last":{
-          "type":"string"
-        },
-        "middle":{
-          "type":"array",
-          "items":{
-            "type":"string"
-          }
-        },
-        "suffix":{
-          "type":"string"
-        }
-      },
-      "additionalProperties":false,
-      "required":[
-        "first",
-        "last"
-      ]
-    },
-    "cda_coded_entry":{
-      "type":"object",
-      "properties":{
-        "code_system_name":{
-          "type":"string"
-        },
-        "code":{
-          "type":"string"
-        },
-        "name":{
-          "type":"string"
-        },
-        "translations":{
-          "type":"array",
-          "items":{
-            "type":"object",
-            "properties":{
-              "code_system_name":{
-                "type":"string"
-              },
-              "code":{
-                "type":"string"
-              },
-              "name":{
-                "type":"string"
-              }
+        "additionalProperties": false,
+        "cda_date": {
+            "type": "object",
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "precision": {
+                    "type": "string"
+                }
             },
             "additionalProperties": false,
-            "minProperties":1
-          },
-          "minItems":1
-        }
-      },
-      "minProperties": 1,
-      "additionalProperties": false
-    },
-    "cda_physical_quantity":{
-      "type":"object",
-      "properties":{
-        "unit":{
-          "type":"string"
+            "required": [
+                "date"
+            ]
         },
-        "value":{
-          "type":"number"
+        "cda_phone": {
+            "type": "object",
+            "properties": {
+                "number": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "number"
+            ]
+        },
+        "cda_email": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "email"
+            ]
+        },
+        "cda_id": {
+            "type": "object",
+            "properties": {
+                "identifier_type": {
+                    "type": "string"
+                },
+                "identifier": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "identifier"
+            ]
+        },
+        "cda_name": {
+            "type": "object",
+            "properties": {
+                "prefix": {
+                    "type": "string"
+                },
+                "first": {
+                    "type": "string"
+                },
+                "last": {
+                    "type": "string"
+                },
+                "middle": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "suffix": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "first",
+                "last"
+            ]
+        },
+        "cda_coded_entry": {
+            "type": "object",
+            "properties": {
+                "code_system_name": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "translations": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "code_system_name": {
+                                "type": "string"
+                            },
+                            "code": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false,
+                        "minProperties": 1
+                    },
+                    "minItems": 1
+                }
+            },
+            "minProperties": 1,
+            "additionalProperties": false
+        },
+        "cda_physical_quantity": {
+            "type": "object",
+            "properties": {
+                "unit": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "number"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "unit",
+                "value"
+            ]
+        },
+        "cda_location": {
+            "type": "object",
+            "properties": {
+                "addresses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_address"
+                    },
+                    "minItems":1
+                },
+                "loc_type": {
+                    "$ref": "#/properties/cda_coded_entry"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "phones": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_phone"
+                    }
+                }
+            },
+            "required":["name"],
+            "additionalProperties": false
         }
-      },
-      "additionalProperties":false,
-      "required":[
-        "unit",
-        "value"
-      ]
     }
-  }
 }

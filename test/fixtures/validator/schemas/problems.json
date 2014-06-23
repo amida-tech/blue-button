@@ -7,8 +7,7 @@
             "items": {
                 "$ref": "http://local.com/commonModels#/properties/cda_date"
             }
-        }
-    },
+        },
     "identifiers": {
         "type": "array",
         "items": {
@@ -38,9 +37,8 @@
         "items": {
             "$ref": "http://local.com/commonModels#/properties/cda_id"
         }
+    }
     },
-    "status": {
-        "type": "string"
-    },
+    "additionalProperties":false,
     "required":["problem"]
 }

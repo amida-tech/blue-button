@@ -371,7 +371,7 @@ describe('Test physical quantities:', function () {
     done();
   });
 
-    it('physical quanity value is string', function(done) {
+  it('physical quanity value is string', function(done) {
     physObj= {'unit': 'mmHg', 'value':'l337'};
     var valid = validator.validate(physObj, compiledSchema);
     expect(valid).to.false;
@@ -386,6 +386,82 @@ describe('Test physical quantities:', function () {
     });
 });
 
+describe('Test location:', function () {
+    before(function(done) {
+      shared= fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+      ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+      locationSchema = { '$ref': 'http://local.com/commonModels#/properties/cda_location' };
+      testLocList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testLocations.json', 'utf8');
+      testLocList = JSON.parse(testLocList);
+      validator = new ZSchema({ sync: true, noExtraKeywords:true});
+      compiledSchema = validator.compileSchema(locationSchema);
+      done();
+  });
+
+  it('empty location', function(done) {
+    locationObj= {};
+    var valid = validator.validate(locationObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+
+  it('regular location # 1 ', function(done) {
+    locationObj= testLocList.regular1;
+    var valid = validator.validate(locationObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('regular location # 2 ', function(done) {
+    locationObj= testLocList.regular2;
+    var valid = validator.validate(locationObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('location type empty', function(done) {
+    locationObj= testLocList.emptyLocType;
+    var valid = validator.validate(locationObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+   it('location type undefined', function(done) {
+    locationObj= testLocList.locTypeUndefined;
+    var valid = validator.validate(locationObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('empty addresses', function(done) {
+    locationObj= testLocList.emptyAddresses;
+    var valid = validator.validate(locationObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+ it('no name', function(done) {
+    locationObj= testLocList.noName;
+    var valid = validator.validate(locationObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+it('bad number', function(done) {
+    locationObj= testLocList.badNumber;
+    var valid = validator.validate(locationObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+});
+
+
+
+
+
+
 describe('Test demographics:', function () {
   before(function(done) {
     shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
@@ -394,7 +470,7 @@ describe('Test demographics:', function () {
     ZSchema.setRemoteReference('http://local.com/demographics', demographics);
     demographicsSchema = { '$ref': 'http://local.com/demographics' };
     validator = new ZSchema({ sync: true, noExtraKeywords:true});
-  testDemoList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testDemo.json', 'utf8');
+    testDemoList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testDemo.json', 'utf8');
     testDemoList = JSON.parse(testDemoList);
     compiledSchema = validator.compileSchema(demographicsSchema);
     done();
@@ -498,7 +574,7 @@ describe('Test problems', function () {
     expect(valid).to.false;
     done();
   });
- it('test normal problems object #1', function(done) {
+ it('normal problems object #1', function(done) {
     var probObj = testProbList.regular1;
     var valid = validator.validate(probObj, compiledSchema);
     expect(valid).to.true;
@@ -506,7 +582,7 @@ describe('Test problems', function () {
     done();
   });
 
-  it('test normal problems object #2', function(done) {
+  it('normal problems object #2', function(done) {
     var probObj = testProbList.regular2;
     var valid = validator.validate(probObj, compiledSchema);
     expect(valid).to.true;
@@ -686,6 +762,64 @@ describe('Test allergies', function () {
 
 });
 
+
+describe('Test encounter', function () {
+  before(function(done) {
+    shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    encounter = fs.readFileSync(__dirname + '/fixtures/validator/schemas/encounter.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/encounter', encounter);
+    encounterSchema = { '$ref': 'http://local.com/encounter' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+    testEncounterList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testEncounter.json', 'utf8');
+    testEncounterList = JSON.parse(testEncounterList);
+    compiledSchema = validator.compileSchema(encounterSchema);
+    done();
+  });
+
+  it('empty encounter obj', function(done) {
+    var  encounterObj = {};
+    var valid = validator.validate(encounterObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+  it('regular encounter obj', function(done) {
+    var  encounterObj = testEncounterList.regular;
+    var valid = validator.validate(encounterObj, compiledSchema);
+    var error = validator.getLastError();
+    expect(valid).to.true;
+    done();
+  });
+
+  it('encounter field missing', function(done) {
+    var  encounterObj = testEncounterList.missingEncounter;
+    var valid = validator.validate(encounterObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+    it('date and id missing', function(done) {
+    var  encounterObj = testEncounterList.dateIdMissing;
+    var valid = validator.validate(encounterObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+s
+  it('address has a bad field', function(done) {
+    var  encounterObj = testEncounterList.addressBadField;
+    var valid = validator.validate(encounterObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+   it('findings missing', function(done) {
+    var  encounterObj = testEncounterList.findingsMissing;
+    var valid = validator.validate(encounterObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+});
 
 
 
