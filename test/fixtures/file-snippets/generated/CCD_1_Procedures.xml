@@ -132,6 +132,7 @@
         <effectiveTime value="20110203"/>
         <priorityCode code="CR" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="Callback results"/>
         <performer>
+          <time nullFlavor="UNK"/>
           <assignedEntity>
             <id root="2.16.840.1.113883.19" extension="1234"/>
             <addr>

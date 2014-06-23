@@ -710,7 +710,7 @@
               </consumable>
               <performer>
                 <assignedEntity>
-                  <id nullFlavor="NI"/>
+                  <id nullFlavor="NI" extension=""/>
                   <addr nullFlavor="UNK"/>
                   <telecom nullFlavor="UNK"/>
                   <representedOrganization>
@@ -773,7 +773,7 @@
                   </product>
                   <performer>
                     <assignedEntity>
-                      <id extension="2981823" root="2.16.840.1.113883.19.5.9999.456"/>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
                       <addr>
                         <streetAddressLine>1001 Village Avenue</streetAddressLine>
                         <city>Portland</city>
@@ -781,6 +781,13 @@
                         <postalCode>99123</postalCode>
                         <country>US</country>
                       </addr>
+                      <telecom nullFlavor="UNK"/>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                        <name>Community Health and Hospitals</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr nullFlavor="UNK"/>
+                      </representedOrganization>
                     </assignedEntity>
                   </performer>
                   <author>
@@ -1141,6 +1148,7 @@
               <effectiveTime value="20110203"/>
               <priorityCode code="CR" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="Callback results"/>
               <performer>
+                <time nullFlavor="UNK"/>
                 <assignedEntity>
                   <id root="2.16.840.1.113883.19" extension="1234"/>
                   <addr>
