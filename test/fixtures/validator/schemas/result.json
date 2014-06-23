@@ -73,12 +73,13 @@
                 "result",
                 "date",
                 "status"
-            ]
-
+            ],
+            "additionalProperties":false
             }
             
         }
     },
+    "additionalProperties":false,
     "required": [
         "results"
     ]

@@ -33,17 +33,19 @@
         "city"
       ]
     },
+    "additionalProperties":false,
     "cda_date":{
       "type":"object",
       "properties":{
         "date":{
           "type":"string",
           "format":"date-time"
-        }
-      },
+        },
       "precision":{
         "type":"string"
-      },
+      }
+    },
+    "additionalProperties":false,
       "required":[
         "date"
       ]
@@ -58,6 +60,7 @@
           "type":"string"
         }
       },
+      "additionalProperties":false,
       "required":[
         "number"
       ]
@@ -72,6 +75,7 @@
           "type":"string"
         }
       },
+      "additionalProperties":false,
       "required":[
         "email"
       ]
@@ -86,6 +90,7 @@
           "type":"string"
         }
       },
+      "additionalProperties":false,
       "required":[
         "identifier"
       ]
@@ -112,6 +117,7 @@
           "type":"string"
         }
       },
+      "additionalProperties":false,
       "required":[
         "first",
         "last"
@@ -143,11 +149,15 @@
               "name":{
                 "type":"string"
               }
-            }
-          }
+            },
+            "additionalProperties": false,
+            "minProperties":1
+          },
+          "minItems":1
         }
       },
-      "minProperties": 1
+      "minProperties": 1,
+      "additionalProperties": false
     },
     "cda_physical_quantity":{
       "type":"object",
@@ -159,6 +169,7 @@
           "type":"number"
         }
       },
+      "additionalProperties":false,
       "required":[
         "unit",
         "value"

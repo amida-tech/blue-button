@@ -296,52 +296,62 @@ describe('Test coded entries:', function () {
     done();
   });
 
-  it('regular name', function(done) {
-    nameObj = {
-            "middle": [
-                "Isa"
-            ],
-            "last": "Jones",
-            "first": "Isabella"
-            };
-    var valid = validator.validate(nameObj, compiledSchema);
+  it('empty coded entry', function(done) {
+    codedEntryObj = {};
+    var valid = validator.validate(codedEntryObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+
+  it('coded entry with undefined property', function(done) {
+    codedEntryObj = {"kode":"1198000"};
+    var valid = validator.validate(codedEntryObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+
+  it('regular coded entry', function(done) {
+    codedEntryObj = { "name": "Wheezing", "code": "56018004",
+      "code_system_name": "SNOMED CT"};
+    var valid = validator.validate(codedEntryObj, compiledSchema);
     expect(valid).to.true;
     done();
   });
 
-  it('no middle name', function(done) {
-    nameObj = {
-            "middle": [
-            ],
-            "last": "Jones",
-            "first": "Isabella"
-            };
-          var valid = validator.validate(nameObj, compiledSchema);
+  it('coded entry with only the code ', function(done) {
+    codedEntryObj = {"code": "56018004",
+      "code_system_name": "SNOMED CT"};
+    var valid = validator.validate(codedEntryObj, compiledSchema);
     expect(valid).to.true;
     done();
   });
 
-   it('multiple middle names', function(done) {
-    nameObj = {
-            "middle": [
-                "Isa",
-                "Izzzy",
-                "Iggy"
-            ],
-            "last": "Jones",
-            "first": "Isabella"
-            };
-    var valid = validator.validate(nameObj, compiledSchema);
+    it('coded entry with a translation ', function(done) {
+    codedEntryObj = { "name": "Influenza virus vaccine", "code": "88", "code_system_name": "CVX",
+      "translations": [{"name": "Influenza, seasonal, injectable", "code": "141",
+       "code_system_name": "CVX"}]};
+    var valid = validator.validate(codedEntryObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+    it('translation is empty ', function(done) {
+    codedEntryObj = { "name": "Influenza virus vaccine", "code": "88", "code_system_name": "CVX",
+      "translations": []};
+    var valid = validator.validate(codedEntryObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+    it('translation has only one entry ', function(done) {
+    codedEntryObj = { "name": "Influenza virus vaccine", "code": "88", "code_system_name": "CVX",
+      "translations": [{"name": "Influenza, seasonal"}]};
+    var valid = validator.validate(codedEntryObj, compiledSchema);
     expect(valid).to.true;
     done();
   });
 
-   it('empty name obj', function(done) {
-    identifierObj = {};
-    var valid = validator.validate(nameObj, compiledSchema);
-    expect(valid).to.true;
-    done();
-  });
 });
 
 describe('Test physical quantities:', function () {
@@ -375,8 +385,6 @@ describe('Test physical quantities:', function () {
     done();
     });
 });
-
-
 
 describe('Test demographics:', function () {
   before(function(done) {
@@ -533,7 +541,7 @@ describe('Test problems', function () {
 });
 
 
-describe.only('Test results', function () {
+describe('Test results', function () {
   before(function(done) {
     shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
     ZSchema.setRemoteReference('http://local.com/commonModels', shared);
@@ -561,7 +569,7 @@ describe.only('Test results', function () {
     done();
   });
 
- it('empty id ', function(done) {
+ it('empty id', function(done) {
     var  resultObj = testResultsList.emptyId;
     var valid = validator.validate(resultObj, compiledSchema);
     expect(valid).to.false;
@@ -596,12 +604,91 @@ describe.only('Test results', function () {
     done();
   });
 
+});
 
 
+describe('Test allergies', function () {
+  before(function(done) {
+    shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    allergies = fs.readFileSync(__dirname + '/fixtures/validator/schemas/allergy.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/allergy', allergies);
+    allergySchema = { '$ref': 'http://local.com/allergy' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+    testAllergyList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testAllergy.json', 'utf8');
+    testAllergyList = JSON.parse(testAllergyList);
+    compiledSchema = validator.compileSchema(allergySchema);
+    done();
+  });
 
+  it('empty allergy obj', function(done) {
+    var  allergyObj = {};
+    var valid = validator.validate(allergyObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
 
+  it('correct allergy obj from sample #1', function(done) {
+    var  allergyObj = testAllergyList.regular1;
+    var valid = validator.validate(allergyObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('correct allergy obj from sample #2', function(done) {
+    var  allergyObj = testAllergyList.regular2;
+    var valid = validator.validate(allergyObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('correct allergy obj from sample #3', function(done) {
+    var  allergyObj = testAllergyList.regular2;
+    var valid = validator.validate(allergyObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('no id in allergy object', function(done) {
+    var  allergyObj = testAllergyList.noId;
+    var valid = validator.validate(allergyObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+   it('allergen is undefined', function(done) {
+    var  allergyObj = testAllergyList.noAllergen;
+    var valid = validator.validate(allergyObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+  it('no dates in allergy object', function(done) {
+    var  allergyObj = testAllergyList.noDates;
+    var valid = validator.validate(allergyObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('empty reaction field', function(done) {
+    var  allergyObj = testAllergyList.emptyReaction;
+    var valid = validator.validate(allergyObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+    it('bad reaction field(code entries wrong)', function(done) {
+    var  allergyObj = testAllergyList.badReaction;
+    var valid = validator.validate(allergyObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
 
 });
+
+
+
+
 
 
 
