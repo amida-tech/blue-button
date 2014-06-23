@@ -3,7 +3,7 @@
 ###Object Schema:
 ```
 var SocialHistory = {
-    "smokingStatuses": [{
+    "smoking_statuses": [{
         value: {type: string, required: true},
         date: [{cda_date}]
     }]
@@ -18,17 +18,17 @@ var SocialHistory = {
 - title and text fields are ignored.
 - no identifiers since there is none in the spec.
 
-#### smokingStatuses
+#### smoking_statuses
 - 1..*
 - //ClinicalDocument/component/structuredBody/component/section/entry/observation
 
-#### smokingStatuses[].value
+#### smoking_statuses.value
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/observation/value/@code
 - normalized to display name from Smoking Status value set (2.16.840.1.113883.11.20.9.38)
 - all values in Smoking Status value set comes from SNOMED CT.
 
-#### smokingStatuses[].date
+#### smoking_statuses.date
 - 1..1
 - //ClinicalDocument/component/structuredBody/component/section/entry/observation/effectiveTime
 - smoking start and end date's for smoker

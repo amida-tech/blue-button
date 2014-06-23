@@ -19,6 +19,7 @@ describe('sense.js test', function(){
     json = fs.readFileSync('./test/fixtures/sense/example.json').toString();
     large_json = fs.readFileSync('./test/fixtures/sense/large.json').toString();
     text = fs.readFileSync('./test/fixtures/sense/example.txt').toString();
+    cms = fs.readFileSync('./test/fixtures/sense/cms_sample.txt').toString();
     broken_xml = fs.readFileSync('./test/fixtures/sense/broken.xml').toString();
   });
 
@@ -39,6 +40,12 @@ describe('sense.js test', function(){
     it('should return JSON for proper JSON input', function(){
       assert.equal('json', senseString(json).type);
       assert.equal('json', senseString(large_json).type);
+    });
+
+    it('should return CMS and version for CMS BB text input', function(){
+      assert.equal('cms', senseString(cms).type);
+      expect(senseString(cms).version).to.exist;
+      assert.equal('2.0', senseString(cms).version);
     });
 
     it('should return UNKNOWN for text input', function(){

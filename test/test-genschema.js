@@ -173,11 +173,9 @@ describe('component.generateSchema on CCD_1', function() {
     
     before(function(done) {
         var filepath  = path.join(__dirname, 'fixtures/files/CCD_1.xml');
-        var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, function(err, result) {
-            ccd = result.toJSON();
-            done();
-        });
+        var xml = fs.readFileSync(filepath, 'utf-8').toString();
+        ccd= bb.parseString(xml, {}).data;
+        done();
     });
 
     it('ccd exists', function(done) {
@@ -192,10 +190,10 @@ describe('component.generateSchema on CCD_1', function() {
     });
 
     it('social history', function(done) {
-        var schema = bb.generateSchema("ccda_socialHistory");
+        var schema = bb.generateSchema("ccda_social_history");
         expect(schema).to.exist;
-        checkSchemaConformity(ccd.socialHistory, schema, "socialHistory");
-        checkSchemaNotNull(schema, "socialHistory");
+        checkSchemaConformity(ccd.social_history, schema, "social_history");
+        checkSchemaNotNull(schema, "social_history");
         done();
     });
 

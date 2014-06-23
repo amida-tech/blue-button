@@ -11,6 +11,8 @@ exports.xml = require("./lib/xml.js").parse;
 var parser = require("./lib/parser.js");
 exports.parseXml = parser.parseXml;
 exports.parseString = parser.parseString;
+exports.parseText = parser.parseText;
+exports.parseText2 = parser.parseText2;
 
 //need to review if this is still needed
 exports.parse = parser.parse;

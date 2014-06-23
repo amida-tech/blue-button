@@ -110,6 +110,21 @@ getting type as well as parsed XML for later user:
 //in case of JSON stringified input, it will return {type: 'json', json: [json object here]}
 ```
 
+Sensing CMS Blue Button data in text file:
+
+``` javascript
+//get document type (e.g. CMS) of document from string (and return format version)
+var result = bb.senseString(data);
+
+//printing result:
+console.log(result);
+```
+
+getting type as well as parsed XML for later user:
+
+``` javascript
+{ type: 'cms', version: '2.0' }
+```
 
 Parsing into JSON data model from XML or from string
 

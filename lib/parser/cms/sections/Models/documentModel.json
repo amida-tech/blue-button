@@ -1,17 +1,20 @@
-{ "data": 
-   { "demographics": {},
-     "vitals": [],
-     "results": [],
-     "medications": [],
-     "encounters": [],
-     "allergies": [],
-     "immunizations": [ ],
-     "socialHistory": [],
-     "problems": [],
-     "procedures": [],
-  "meta": { "version": "String" },
-  "errors": 
-   [ "nullFlavor alert :  missing but required streetLines in Address -> Patient -> CCD",
-     "nullFlavor alert :  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD"
-     ] }
-   }
+{
+    "data": {
+        "demographics": {},
+        "vitals": [],
+        "results": [],
+        "medications": [],
+        "encounters": [],
+        "allergies": [],
+        "immunizations": [],
+        "socialHistory": [],
+        "problems": [],
+        "procedures": []
+    },
+    "meta": {
+        "type" : "cms",
+        "version": ""
+    },
+    "errors": []
+
+}

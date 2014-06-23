@@ -4,21 +4,19 @@ var assert = require('chai').assert;
 var fs = require('fs');
 var path = require('path');
 
-var bb = require('../index');
-var jsutil = require('../lib/jsutil');
+var bb = require('../../index');
+var jsutil = require('../../lib/jsutil');
 
 var demographics;
 
 var loadRecord = function(done) {
-    var filepath = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Demographics.xml');
+    var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Demographics.xml');
     var xml = fs.readFileSync(filepath, 'utf-8');
-    bb.parse(xml, {
+    demographics=bb.parseString(xml, {
         component: 'ccda_demographics'
-    }, function(err, result) {
-        demographics = result.toJSON();
-        //console.log(JSON.stringify(demographics, null, 10));
+    }).data
         done();
-    });
+    
 };
 
 describe('Demographics - Snippet Comparison', function() {
@@ -35,7 +33,7 @@ describe('Demographics - Snippet Comparison', function() {
 
     it('Deep Equality Check', function(done) {
         expect(demographics).to.exist;
-        var filepath = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Demographics.json');
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Demographics.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedDemographics = jsutil.jsonParseWithDate(json2Read);
         expect(demographics).to.deep.equal(expectedDemographics);
