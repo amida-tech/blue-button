@@ -32,8 +32,6 @@
 //     it ('spot check', function(done) {
 //         expect(meds).to.exist;
 //         expect(meds).to.have.length(1);
-        
-<<<<<<< HEAD
 //         expect(meds[0].administration.route.name).to.equal('RESPIRATORY (INHALATION)');
 //         expect(meds[0].product).to.exist;
 //         expect(meds[0].product.name).to.equal('Proventil HFA');
