@@ -805,7 +805,6 @@ describe('Test encounter', function () {
     expect(valid).to.true;
     done();
   });
-s
   it('address has a bad field', function(done) {
     var  encounterObj = testEncounterList.addressBadField;
     var valid = validator.validate(encounterObj, compiledSchema);
@@ -819,7 +818,107 @@ s
     expect(valid).to.true;
     done();
   });
+ });
+
+describe.only('Test vitals', function () {
+  before(function(done) {
+    shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+    vital = fs.readFileSync(__dirname + '/fixtures/validator/schemas/vitals.json', 'utf8');
+    ZSchema.setRemoteReference('http://local.com/vital', vital);
+    vitalSchema = { '$ref': 'http://local.com/vital' };
+    validator = new ZSchema({ sync: true, noExtraKeywords:true});
+    testVitalList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testVitals.json', 'utf8');
+    testVitalList = JSON.parse(testVitalList);
+    compiledSchema = validator.compileSchema(vitalSchema);
+    done();
 });
+
+   it('empty vital', function(done) {
+    var  vitalObj = {};
+    var valid = validator.validate(vitalObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+  });
+
+      it('vital sample #1', function(done) {
+    var  vitalObj = testVitalList.regular1;
+    var valid = validator.validate(vitalObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+   it('vital sample #2', function(done) {
+    var  vitalObj = testVitalList.regular2;
+    var valid = validator.validate(vitalObj, compiledSchema);
+    var error = validator.getLastError();
+    expect(valid).to.true;
+    done();
+  });
+
+   it('vital sample #3', function(done) {
+    var  vitalObj = testVitalList.regular3;
+    var valid = validator.validate(vitalObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+   it('vital sample #4', function(done) {
+    var  vitalObj = testVitalList.regular4;
+    var valid = validator.validate(vitalObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+   it('vital sample #5', function(done) {
+    var  vitalObj = testVitalList.regular5;
+    var valid = validator.validate(vitalObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+  });
+
+  it('vital sample #6', function(done) {
+    var  vitalObj = testVitalList.regular6;
+    var valid = validator.validate(vitalObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+});
+
+  it('vital has string for value(bad value)', function(done) {
+    var  vitalObj = testVitalList.badValue;
+    var valid = validator.validate(vitalObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+});
+
+  it('empty object vital field', function(done) {
+    var  vitalObj = testVitalList.emptyVitals;
+    var valid = validator.validate(vitalObj, compiledSchema);
+    expect(valid).to.false;
+    done();
+});
+
+  it('empty date object', function(done) {
+    var  vitalObj = testVitalList.emptyDate;
+    var valid = validator.validate(vitalObj, compiledSchema);
+    expect(valid).to.true;
+    done();
+});
+
+    it('file with only vital field', function(done) {
+      var  vitalObj = testVitalList.onlyVitals;
+      var valid = validator.validate(vitalObj, compiledSchema);
+      expect(valid).to.true;
+      done();
+});
+
+
+
+
+});
+
+
+
 
 
 

@@ -36,3 +36,5 @@ Problems: Only problem is required.
 Results: Only result is required.
 
 Encounters: Only encounter is required.
+
+Vitals: Only vital is required.
