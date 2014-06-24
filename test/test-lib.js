@@ -345,23 +345,35 @@ testXML.prototype.generateStubs = function(name1, name2) {
 
 testXML.prototype.generateXMLDOMForEntireCCD = function(pathJSON, filenameJSON, pathXML, filenameXML, pathXMLWrite, filenameXMLWrite, singular) {
     console.log("\nPROCESSING WHOLE CCD");
-    var modelJSON = fs.readFileSync(pathJSON + filenameJSON, 'utf-8');
-    var actual = gen.genWholeCCDA(JSON.parse(modelJSON));
-    var expected = fs.readFileSync(pathXML + filenameXML);
-
-    // generate JSON object from expected XML on the fly
+    var modelJSON;
+    var errorThrown;
+    try {
+        modelJSON = fs.readFileSync(pathJSON + filenameJSON, 'utf-8');
+    } catch (e) {
+        errorThrown = true;
+        console.log(e.code);
+    }
+    if (!errorThrown) {
+        var actual = gen.genWholeCCDA(JSON.parse(modelJSON));
+        var expected = fs.readFileSync(pathXML + filenameXML);  
+        // generate JSON object from expected XML on the fly
     if (singular) {
         var doc = bb.xml(expected);
         var result = JSON.stringify(bb.parseXml(doc), undefined, 4);
         fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', result, 'utf-8');
     }
 
-    // write generated CCDA file for testing comparison
-    fs.writeFileSync(pathXMLWrite + filenameXMLWrite, actual, 'utf-8');
+        // write generated CCDA file for testing comparison
+        fs.writeFileSync(pathXMLWrite + filenameXMLWrite, actual, 'utf-8');
+    
+        var generatedXML = new XmlDOM().parseFromString(actual.toString());
+        var expectedXML = new XmlDOM().parseFromString(expected.toString());
+        return [generatedXML, expectedXML];  
+    } else {
+        return ["<ClinicalDocument>", "<ClinicalDocument>"];
+    }
 
-    var generatedXML = new XmlDOM().parseFromString(actual.toString());
-    var expectedXML = new XmlDOM().parseFromString(expected.toString());
-    return [generatedXML, expectedXML];
+    
 };
 
 
