@@ -1,4 +1,4 @@
-{
+var testProb = {
    "regular1":{
       "date":[
          {
@@ -151,4 +151,5 @@
          }
       ]
    }
-}
+};
+module.exports = testProb;

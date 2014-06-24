@@ -1,4 +1,4 @@
-{
+var testDemo = {
     "regular": {
         "name": {
             "middle": [
@@ -264,6 +264,5 @@
         }
     ]
 }
-
-
-}
+};
+module.exports = testDemo;

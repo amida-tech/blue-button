@@ -38,3 +38,9 @@ Results: Only result is required.
 Encounters: Only encounter is required.
 
 Vitals: Only vital is required.
+
+Social History: At the moment, so field is required.
+
+Procedures: procedure key is required, min items is 1.
+			status key is required.
+			For a provider object, only required field is address.

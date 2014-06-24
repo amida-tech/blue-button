@@ -1,5 +1,5 @@
-{
-  "regular":{ 
+var testAddress = {
+  "regular":{
               "streetLines": [
                   "1357 Amber Drive"
               ],
@@ -9,7 +9,7 @@
               "country": "US",
               "use": "primary home"
             },
-  "missingAddr":{ 
+  "missingAddr":{
               "streetLines": [
               ],
               "city": "Beaverton",
@@ -18,7 +18,7 @@
               "country": "US",
               "use": "primary home"
             },
-  "noCity":{ 
+  "noCity":{
               "streetLines": [
               ],
               "state": "OR",
@@ -26,7 +26,7 @@
               "country": "US",
               "use": "primary home"
             },
-  "noCityAddr":{ 
+  "noCityAddr":{
               "streetLines": [
               ],
               "state": "OR",
@@ -40,9 +40,10 @@
               "streetLines": [
                   "1357 Amber Drive"
               ],
-              "city": "Beaverton"      
+              "city": "Beaverton"
   }
-}
+};
+module.exports = testAddress;
 
 
 

@@ -1,4 +1,4 @@
- {
+var testMedic =  {
  "regular":  {
             "date": [
                 {
@@ -192,9 +192,6 @@
                 }
             }
         }
+    };
 
-
-
-
-
-    }
+module.exports = testMedic;

@@ -1,4 +1,4 @@
-{
+var testResult = {
     "regular": {
         "identifiers": [
             {
@@ -354,4 +354,6 @@
             }
         ]
     }
-}
+};
+
+module.exports = testResult;

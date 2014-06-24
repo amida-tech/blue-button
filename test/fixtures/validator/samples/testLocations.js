@@ -1,4 +1,4 @@
-{
+var testLocations = {
     "regular1": {
         "name": "Community Urgent Care Center",
         "loc_type": {
@@ -124,6 +124,6 @@
                 "type": "primary home"
             }
         ]
-    }    
-
-}
+    }
+};
+module.exports = testLocations;

@@ -1,4 +1,4 @@
-{
+var testAllergy = {
     "regular1": {
         "date": [
             {
@@ -218,4 +218,6 @@
         ]
     }
 
-}
+};
+
+module.exports = testAllergy;

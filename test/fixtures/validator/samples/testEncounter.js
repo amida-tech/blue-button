@@ -1,4 +1,4 @@
-{
+var testEncounter = {
     "regular": {
             "encounter": {
                 "name": "Office outpatient visit 15 minutes",
@@ -234,4 +234,5 @@
                 }
             ]
         }
-}
+};
+module.exports = testEncounter;

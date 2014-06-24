@@ -15,8 +15,7 @@ describe('Test Addresses', function () {
             noExtraKeywords: true
         });
         compiledSchema = validator.compileSchema(addressSchema);
-        testAddressList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testAddress.json', 'utf8');
-        testAddressList = JSON.parse(testAddressList);
+        testAddressList = require(__dirname + '/fixtures/validator/samples/testAddress.js');
         done();
     });
     it('regular address from CCD_1', function (done) {
@@ -102,47 +101,6 @@ describe('Test dates', function () {
             'precision': 'day'
         };
         var valid = validator.validate(dateObj, compiledSchema);
-        expect(valid).to.false;
-        done();
-    });
-});
-
-describe('Test phone:', function () {
-    before(function (done) {
-        shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
-        ZSchema.setRemoteReference('http://local.com/commonModels', shared);
-        phoneSchema = {
-            '$ref': 'http://local.com/commonModels#/properties/cda_phone'
-        };
-        validator = new ZSchema({
-            sync: true,
-            noExtraKeywords: true
-        });
-        compiledSchema = validator.compileSchema(phoneSchema);
-        done();
-    });
-
-    it('phone without type', function (done) {
-        phoneObj = {
-            "number": "703-354-6290"
-        };
-        var valid = validator.validate(phoneObj, compiledSchema);
-        expect(valid).to.true;
-        done();
-    });
-
-    it('phone with only type', function (done) {
-        phoneObj = {
-            "type": "primary home"
-        };
-        var valid = validator.validate(phoneObj, compiledSchema);
-        expect(valid).to.false;
-        done();
-    });
-
-    it('empty phone obj', function (done) {
-        phoneObj = {};
-        var valid = validator.validate(phoneObj, compiledSchema);
         expect(valid).to.false;
         done();
     });
@@ -491,8 +449,7 @@ describe('Test location:', function () {
         locationSchema = {
             '$ref': 'http://local.com/commonModels#/properties/cda_location'
         };
-        testLocList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testLocations.json', 'utf8');
-        testLocList = JSON.parse(testLocList);
+        testLocList = require(__dirname + '/fixtures/validator/samples/testLocations.js');
         validator = new ZSchema({
             sync: true,
             noExtraKeywords: true
@@ -560,9 +517,6 @@ describe('Test location:', function () {
 
 });
 
-
-
-
 describe('Test demographics:', function () {
     before(function (done) {
         shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
@@ -576,8 +530,7 @@ describe('Test demographics:', function () {
             sync: true,
             noExtraKeywords: true
         });
-        testDemoList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testDemo.json', 'utf8');
-        testDemoList = JSON.parse(testDemoList);
+        testDemoList = require(__dirname + '/fixtures/validator/samples/testDemo.js');
         compiledSchema = validator.compileSchema(demographicsSchema);
         done();
     });
@@ -626,8 +579,7 @@ describe('Test medications:', function () {
             sync: true,
             noExtraKeywords: true
         });
-        testMedicList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testMedic.json', 'utf8');
-        testMedicList = JSON.parse(testMedicList);
+        testMedicList = require(__dirname + '/fixtures/validator/samples/testMedic.js');
         compiledSchema = validator.compileSchema(medicationsSchema);
         done();
     });
@@ -678,8 +630,7 @@ describe('Test problems', function () {
             sync: true,
             noExtraKeywords: true
         });
-        testProbList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testProb.json', 'utf8');
-        testProbList = JSON.parse(testProbList);
+        testProbList = require(__dirname + '/fixtures/validator/samples/testProb.js');
         compiledSchema = validator.compileSchema(problemsSchema);
         done();
     });
@@ -746,8 +697,7 @@ describe('Test results', function () {
             sync: true,
             noExtraKeywords: true
         });
-        testResultsList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testResult.json', 'utf8');
-        testResultsList = JSON.parse(testResultsList);
+        testResultsList = require(__dirname + '/fixtures/validator/samples/testResult.js');
         compiledSchema = validator.compileSchema(resultsSchema);
         done();
     });
@@ -803,7 +753,6 @@ describe('Test results', function () {
 
 });
 
-
 describe('Test allergies', function () {
     before(function (done) {
         shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
@@ -817,8 +766,7 @@ describe('Test allergies', function () {
             sync: true,
             noExtraKeywords: true
         });
-        testAllergyList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testAllergy.json', 'utf8');
-        testAllergyList = JSON.parse(testAllergyList);
+        testAllergyList = require(__dirname + '/fixtures/validator/samples/testAllergy.js');
         compiledSchema = validator.compileSchema(allergySchema);
         done();
     });
@@ -902,8 +850,7 @@ describe('Test encounter', function () {
             sync: true,
             noExtraKeywords: true
         });
-        testEncounterList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testEncounter.json', 'utf8');
-        testEncounterList = JSON.parse(testEncounterList);
+        testEncounterList = require(__dirname + '/fixtures/validator/samples/testEncounter.js');
         compiledSchema = validator.compileSchema(encounterSchema);
         done();
     });
@@ -964,8 +911,7 @@ describe('Test vitals', function () {
             sync: true,
             noExtraKeywords: true
         });
-        testVitalList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testVitals.json', 'utf8');
-        testVitalList = JSON.parse(testVitalList);
+        testVitalList = require(__dirname + '/fixtures/validator/samples/testVital.js');
         compiledSchema = validator.compileSchema(vitalSchema);
         done();
     });
@@ -1049,7 +995,7 @@ describe('Test vitals', function () {
     });
 });
 
-describe.only('Test social history', function () {
+describe('Test social history', function () {
     before(function (done) {
         shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/commonModels', shared);
@@ -1062,8 +1008,7 @@ describe.only('Test social history', function () {
             sync: true,
             noExtraKeywords: true
         });
-        testSocialList = fs.readFileSync(__dirname + '/fixtures/validator/samples/testSocial.json', 'utf8');
-        testSocialList = JSON.parse(testSocialList);
+        testSocialList = require(__dirname + '/fixtures/validator/samples/testSocial.js');
         compiledSchema = validator.compileSchema(socialSchema);
         done();
     });

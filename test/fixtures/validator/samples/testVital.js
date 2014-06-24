@@ -1,4 +1,4 @@
-{
+var testVital = {
     "regular1": {
             "identifiers": [
                 {
@@ -142,7 +142,7 @@
             ],
             "value": 145,
             "unit": "mm[Hg]"
-        }, 
+        },
         "missingVitalField": {
             "identifiers": [
                 {
@@ -257,11 +257,6 @@
                 "code_system_name": "LOINC"
             }
         }
+};
 
-
-
-
-
-
-
-}
+module.exports = testVital;

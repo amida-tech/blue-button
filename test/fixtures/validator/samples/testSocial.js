@@ -1,4 +1,4 @@
-{
+var testSocial = {
     "regular": {
         "smoking_statuses": [
             {
@@ -47,6 +47,5 @@
             }
         ]
         }
-
-
-}
+};
+module.exports = testSocial;
