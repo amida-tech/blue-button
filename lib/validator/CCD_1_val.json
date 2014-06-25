@@ -745,12 +745,12 @@
                             "identifier_type": "2981824"
                         }
                     ],
-                    "name": [
+                    "name": 
                         {
                             "last": "Assigned",
                             "first": "Amanda"
                         }
-                    ],
+                    ,
                     "address": [
                         {
                             "streetLines": [
@@ -1159,7 +1159,7 @@
                         },
                         "addresses": [
                             {
-                                "street": [
+                                "streetLines": [
                                     "17 Daws Rd."
                                 ],
                                 "city": "Blue Bell",

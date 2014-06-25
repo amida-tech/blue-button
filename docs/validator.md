@@ -47,3 +47,7 @@ Procedures:
 ..*For a provider object, only required field is address.
 ..*Organizations can have no name, but must have at least one property.
 
+Immunizations:
+..* Organization seems to overlap with organizations in procedures
+..* Some fields should not be a arrays in original CCDA(name in performer, )
+

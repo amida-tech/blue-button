@@ -1148,7 +1148,7 @@ describe('Test procedures', function () {
 });
 
 
-describe('Test Document Model', function () {
+describe('Test Immunizations', function () {
     before(function (done) {
         shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/commonModels', shared);
@@ -1221,26 +1221,103 @@ describe('Test Document Model', function () {
         expect(valid).to.false;
         done();
     });
-    describe.only('Test Immunizations', function () {
+});
+
+
+describe('Test Document Model', function () {
     before(function (done) {
         shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+
+        demographics = fs.readFileSync(__dirname + '/fixtures/validator/schemas/demographics.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/demographics', demographics);
+
+        allergy = fs.readFileSync(__dirname + '/fixtures/validator/schemas/allergy.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/allergy', allergy);
+
+        encounter = fs.readFileSync(__dirname + '/fixtures/validator/schemas/encounter.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/encounter', encounter);
+
         immunization = fs.readFileSync(__dirname + '/fixtures/validator/schemas/immunization.json', 'utf8');
-        ZSchema.setRemoteReference('http://local.com/immunizationSchema', immunization);
-        immunizationSchema = {
-            '$ref': 'http://local.com/immunizationSchema'
+        ZSchema.setRemoteReference('http://local.com/immunization', immunization);
+
+        medication = fs.readFileSync(__dirname + '/fixtures/validator/schemas/medication.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/medication', medication);
+
+        problem = fs.readFileSync(__dirname + '/fixtures/validator/schemas/problem.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/problem', problem);
+
+        procedure = fs.readFileSync(__dirname + '/fixtures/validator/schemas/procedure.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/procedure', procedure);
+
+        result = fs.readFileSync(__dirname + '/fixtures/validator/schemas/result.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/result', result);
+
+        socialHistory= fs.readFileSync(__dirname + '/fixtures/validator/schemas/socialhistory.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/socialhistory', socialHistory);
+
+        vital = fs.readFileSync(__dirname + '/fixtures/validator/schemas/vital.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/vital', vital);
+
+        documentSchema = fs.readFileSync(__dirname + '/fixtures/validator/schemas/documentModel.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/documentSchema', documentSchema);
+        documentSchema = {
+            '$ref': 'http://local.com/documentSchema'
         };
         validator = new ZSchema({
             sync: true,
             noExtraKeywords: true
         });
-        testImmunList = require(__dirname + '/fixtures/validator/samples/testImmunization.js');
-        compiledSchema = validator.compileSchema(immunizationSchema);
+        testDocumentList = require(__dirname + '/fixtures/validator/samples/testDocument.js');
+        compiledSchema = validator.compileSchema(documentSchema);
+        done();
+    });
+
+    it('empty document model', function (done) {
+        var docObj = {};
+        var valid = validator.validate(docObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('sample document', function (done) {
+        var docObj = testDocumentList.regular;
+        var valid = validator.validate(docObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+     it('one bad date', function (done) {
+        var docObj = testDocumentList.badDate;
+        var valid = validator.validate(docObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('emptySections', function (done) {
+        var docObj = testDocumentList.emptySections;
+        var valid = validator.validate(docObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('find bad entries', function (done) {
+        var docObj = testDocumentList.findBadEntries;
+        var valid = validator.validate(docObj, compiledSchema);
+        var error = validator.getLastError();
+        expect(Object.keys(error.errors).length).to.be.at.least(4);
+        expect(valid).to.false;
         done();
     });
 
 
 
 
+
+
+
+
+
 });
+
 
