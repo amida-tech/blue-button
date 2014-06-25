@@ -364,8 +364,13 @@ testXML.prototype.generateXMLDOMForEntireCCD = function(pathJSON, filenameJSON, 
     }
 
         // write generated CCDA file for testing comparison
-        fs.writeFileSync(pathXMLWrite + filenameXMLWrite, actual, 'utf-8');
-    
+        try {
+            fs.writeFileSync(pathXMLWrite + filenameXMLWrite, actual, 'utf-8');
+        } catch (e) {
+            if (e.code == "ENOENT") {
+                
+            }
+        }
         var generatedXML = new XmlDOM().parseFromString(actual.toString());
         var expectedXML = new XmlDOM().parseFromString(expected.toString());
         return [generatedXML, expectedXML];  
