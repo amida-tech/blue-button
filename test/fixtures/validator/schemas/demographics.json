@@ -124,6 +124,12 @@
                 "$ref": "http://local.com/commonModels#/properties/cda_phone"
             }
         },
+        "email": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_email"
+            }
+        },
         "race_ethnicity": {
             "type": "string"
         },

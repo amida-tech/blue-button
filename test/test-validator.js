@@ -1145,6 +1145,83 @@ describe('Test procedures', function () {
         expect(valid).to.true;
         done();
     });
+});
+
+
+describe.only('Test Immunizations', function () {
+    before(function (done) {
+        shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+        immunization = fs.readFileSync(__dirname + '/fixtures/validator/schemas/immunization.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/immunizationSchema', immunization);
+        immunizationSchema = {
+            '$ref': 'http://local.com/immunizationSchema'
+        };
+        validator = new ZSchema({
+            sync: true,
+            noExtraKeywords: true
+        });
+        testImmunList = require(__dirname + '/fixtures/validator/samples/testImmunization.js');
+        compiledSchema = validator.compileSchema(immunizationSchema);
+        done();
+    });
+
+    it('empty immunization object', function (done) {
+        var immunObj = {};
+        var valid = validator.validate(immunObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('sample number 1', function (done) {
+        var immunObj = testImmunList.regular1;
+        var valid = validator.validate(immunObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('sample number 2', function (done) {
+        var immunObj = testImmunList.regular2;
+        var valid = validator.validate(immunObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('sample number 3', function (done) {
+        var immunObj = testImmunList.regular3;
+        var valid = validator.validate(immunObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('missing product field', function (done) {
+        var immunObj = testImmunList.missingProductField;
+        var valid = validator.validate(immunObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty object product field', function (done) {
+        var immunObj = testImmunList.emptyProduct;
+        var valid = validator.validate(immunObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('missing status field', function (done) {
+        var immunObj = testImmunList.missingStatusField;
+        var valid = validator.validate(immunObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('unncecessary extra field in product', function (done) {
+        var immunObj = testImmunList.extraFieldInProduct;
+        var valid = validator.validate(immunObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
 
 
 });
+
