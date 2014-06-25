@@ -12,11 +12,18 @@ describe('generating CCDA for all ccda_samples samples', function() {
 
 		var stats = JSON.parse(fs.readFileSync('../ccda-explorer/dump/stats.json'));
 		var i = 0;
+		var sum = 0;
 		for (sample in stats) {
 			i = stats[sample]["index"];
+			if (stats[sample]["full"][0]) {
 				for (var j = 0; j < stats[sample]["files"].length; j++) {
 					var XMLDOMs = test.generateXMLDOMForEntireCCD('../ccda-explorer/dump/', i + "-" + j + ".json", '../ccda-explorer/dump/', i + "-" + j + ".xml", '../ccda-explorer/dump_gen_xml/', sample + "_" +  i + "-" + j + ".xml", false);
+					console.log("ON " + sample + " sample, which is sample # " + i);
+					console.log("processing " + i + "-" + j + ".json");
+					console.log("SERIALIZED " + (i + sum) + " JSON FILES TO CCDA");
+					sum++;
 				}
+			}
 		}
 	}); 
 })
