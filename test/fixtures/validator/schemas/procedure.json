@@ -67,7 +67,8 @@
                                     "$ref": "http://local.com/commonModels#/properties/cda_phone"
                                 }
                             }
-                        }
+                        },
+                        "minProperties": 1
                     },
                     "phone": {
                         "type": "array",
@@ -83,10 +84,17 @@
         },
         "status": {
             "type": "string"
+        },
+        "locations": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_location"
+            }
         }
     },
     "required": [
         "status",
         "procedure"
-    ]
+    ],
+    "additionalProperties": false
 }

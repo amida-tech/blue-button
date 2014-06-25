@@ -1038,14 +1038,111 @@ describe('Test social history', function () {
     it('social history with no smoking dates', function (done) {
         var socialObj = testSocialList.noSmokingDate;
         var valid = validator.validate(socialObj, compiledSchema);
-        var error = validator.getLastError();
+        expect(valid).to.true;
         done();
     });
 
     it('social history with empty array as smoking dates', function (done) {
         var socialObj = testSocialList.emptySmokingDate;
         var valid = validator.validate(socialObj, compiledSchema);
-        var error = validator.getLastError();
+        expect(valid).to.true;
+        done();
+    });
+});
+
+describe('Test procedures', function () {
+    before(function (done) {
+        shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+        procedure = fs.readFileSync(__dirname + '/fixtures/validator/schemas/procedure.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/procedureSchema', procedure);
+        procedureSchema = {
+            '$ref': 'http://local.com/procedureSchema'
+        };
+        validator = new ZSchema({
+            sync: true,
+            noExtraKeywords: true
+        });
+        testProcedList = require(__dirname + '/fixtures/validator/samples/testProcedures.js');
+        compiledSchema = validator.compileSchema(procedureSchema);
+        done();
+    });
+
+    it('test empty procedures object', function (done) {
+        var procedObj = {};
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+     it('test sample procedures object #1', function (done) {
+        var procedObj = testProcedList.regular1;
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('test sample procedures object #2', function (done) {
+        var procedObj = testProcedList.regular2;
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('test sample procedures object #3', function (done) {
+        var procedObj = testProcedList.regular3;
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('missing status', function (done) {
+        var procedObj = testProcedList.missingStatus;
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+    it( 'missing procedure field', function (done) {
+        var procedObj = testProcedList.missingProcedureField;
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('procedure field has coded entry with only name field', function (done) {
+        var procedObj = testProcedList.procedureFieldNameOnly;
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('no organization field', function (done) {
+        var procedObj = testProcedList.noOrganizationField;
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('no organization name, only identifier', function (done) {
+        var procedObj = testProcedList.organizationNoName;
+        var valid = validator.validate(procedObj, compiledSchema);
+        console.log(validator.getLastError());
+        expect(valid).to.true;
+        done();
+    });
+
+    it('bad address, street line', function (done) {
+        var procedObj = testProcedList.addressBadStreetLine;
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('missing providers', function (done) {
+        var procedObj = testProcedList.missingProviders;
+        var valid = validator.validate(procedObj, compiledSchema);
+        expect(valid).to.true;
         done();
     });
 
