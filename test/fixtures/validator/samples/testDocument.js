@@ -816,8 +816,7 @@ var testDocList = {
                             {
                                 "last": "Assigned",
                                 "first": "Amanda"
-                            }
-                        ,
+                            },
                         "address": [
                             {
                                 "streetLines": [
@@ -1979,8 +1978,7 @@ var testDocList = {
                             {
                                 "last": "Assigned",
                                 "first": "Amanda"
-                            }
-                        ,
+                            },
                         "address": [
                             {
                                 "streetLines": [
@@ -3148,8 +3146,7 @@ var testDocList = {
                             {
                                 "last": "Assigned",
                                 "first": "Amanda"
-                            }
-                        ,
+                            },
                         "address": [
                             {
                                 "streetLines": [

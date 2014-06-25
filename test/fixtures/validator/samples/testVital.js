@@ -1,3 +1,4 @@
+/*jshint expr: true*/
 var testVital = {
     "regular1": {
             "identifiers": [
@@ -149,30 +150,6 @@ var testVital = {
                     "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
                 }
             ],
-            "status": "completed",
-            "date": [
-                {
-                    "date": "2000-04-07T00:00:00.000Z",
-                    "precision": "day"
-                }
-            ],
-            "interpretations": [
-                "Normal"
-            ],
-            "value": 145,
-            "unit": "mm[Hg]"
-        },
-          "regular6" : {
-            "identifiers": [
-                {
-                    "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
-                }
-            ],
-            "vital": {
-                "name": "Intravascular Systolic",
-                "code": "8480-6",
-                "code_system_name": "LOINC"
-            },
             "status": "completed",
             "date": [
                 {

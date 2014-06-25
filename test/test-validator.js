@@ -1,3 +1,4 @@
+/*jshint expr: true*/
 var fs = require('fs');
 var expect = require('chai').expect;
 var path = require('path');
@@ -543,21 +544,21 @@ describe('Test demographics:', function () {
     });
 
     it('test regular case, Isabella Jones', function (done) {
-        var demoObj = testDemoList['regular'];
+        var demoObj = testDemoList.regular;
         var valid = validator.validate(demoObj, compiledSchema);
         expect(valid).to.true;
         done();
     });
 
     it('bad phone number', function (done) {
-        var demoObj = testDemoList['badNum'];
+        var demoObj = testDemoList.badNum;
         var valid = validator.validate(demoObj, compiledSchema);
         expect(valid).to.false;
         done();
     });
 
     it("multiple bad children fields", function (done) {
-        var demoObj = testDemoList['badAddr'];
+        var demoObj = testDemoList.badAddr;
         var valid = validator.validate(demoObj, compiledSchema);
         expect(valid).to.false;
         var error = validator.getLastError();
