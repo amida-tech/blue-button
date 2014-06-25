@@ -354,7 +354,6 @@ var testImmunList = {
                 "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
             }
         ],
-        "status": "refused",
         "product": {
             "product": {
                 "name": "Tetanus and diphtheria toxoids - preservative free",

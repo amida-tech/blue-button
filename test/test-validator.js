@@ -1148,7 +1148,7 @@ describe('Test procedures', function () {
 });
 
 
-describe.only('Test Immunizations', function () {
+describe('Test Document Model', function () {
     before(function (done) {
         shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/commonModels', shared);
@@ -1221,6 +1221,25 @@ describe.only('Test Immunizations', function () {
         expect(valid).to.false;
         done();
     });
+    describe.only('Test Immunizations', function () {
+    before(function (done) {
+        shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/commonModels', shared);
+        immunization = fs.readFileSync(__dirname + '/fixtures/validator/schemas/immunization.json', 'utf8');
+        ZSchema.setRemoteReference('http://local.com/immunizationSchema', immunization);
+        immunizationSchema = {
+            '$ref': 'http://local.com/immunizationSchema'
+        };
+        validator = new ZSchema({
+            sync: true,
+            noExtraKeywords: true
+        });
+        testImmunList = require(__dirname + '/fixtures/validator/samples/testImmunization.js');
+        compiledSchema = validator.compileSchema(immunizationSchema);
+        done();
+    });
+
+
 
 
 });
