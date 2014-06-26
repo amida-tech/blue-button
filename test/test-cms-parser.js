@@ -185,17 +185,20 @@ describe('Testing a file with empty sections', function () {
     var result = txtToIntObj.getIntObj(this.txtdata);
     var allSectionsAreEmpty = true;
     for(var key in result){
-      if(result[key] instanceof Array ){
-        if(result[key].length !== 0){
-          allSectionsAreEmpty = false;
+        var obj = result[key];
+        for(sourceOrData in obj){
+            if (obj[sourceOrData] instanceof Array){
+                if( obj[sourceOrData].length != 0 ){
+                allSectionAreEmpty = false;
+            }
+            }
+            else if(obj[sourceOrData] instanceof Object){
+                var keys = Object.keys(obj[sourceOrData]);
+                if(keys.length > 0){
+                  allSectionsAreEmpty = false;
+                }
+                }
         }
-      }
-      else if(result[key] instanceof Object){
-        var keys = Object.keys(result[key]);
-        if(keys.length > 0){
-          allSectionsAreEmpty = false;
-        }
-      }
     }
     expect(allSectionsAreEmpty).equals(true,
       "parsing error, empty section parsed as not empty");
@@ -276,7 +279,7 @@ describe('Test a file with only sources', function () {
   });
 
 
-describe('Test file parsing beginning to end', function () {
+describe.only('Test file parsing beginning to end', function () {
 
   before(function(done) {
     var txtfile = loadFile('sample2.txt');
@@ -288,6 +291,7 @@ describe('Test file parsing beginning to end', function () {
   it('checks if the file is converted', function(done){
     var outputFilename = __dirname+ '/fixtures/cms/bbModel.json';
     var intObj = txtToIntObj.getIntObj(this.txtdata);
+    console.log(intObj);
     var bbModel = objConverter.convertToBBModel(intObj);
     fs.writeFile(outputFilename, JSON.stringify(bbModel, null, 4), function(err) {
       if(err) {
@@ -295,7 +299,7 @@ describe('Test file parsing beginning to end', function () {
       } else {
         console.log("JSON saved to " + outputFilename);
       }
-    });
+    });*/
     done();
     });
 

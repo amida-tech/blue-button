@@ -1,0 +1,838 @@
+--------------------------------
+MYMEDICARE.GOV PERSONAL HEALTH INFORMATION
+
+--------------------------------
+**********CONFIDENTIAL***********
+
+Produced by the Blue Button (v2.0)
+
+01/13/2014 9:42 AM
+
+
+
+
+--------------------------------
+Demographic
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+Name: DAVID ZINSER
+
+Date of Birth: 4/21/1951
+
+Address Line 1: 748 BAYLEE PL SW
+
+Address Line 2: 
+
+City: PINE ISLAND
+
+State: MN
+
+Zip: 55963
+
+Phone Number: 507-261-7573
+
+Email: david@bevcomm.net
+
+Part A Effective Date: 6/1/2012
+
+Part B Effective Date: 6/1/2012
+
+
+
+--------------------------------
+Emergency Contact
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Contact Name: Linda Zinser
+
+Address Type:Home
+
+Address Line 1: 748 Baylee Pl.  S.W.
+
+Address Line 2: 
+
+City: Pine Island
+
+State: MN
+
+Zip: 55963
+
+Relationship: Spouse
+
+Home Phone: 507-356-2940
+
+Work Phone: 507-328-6804
+
+Mobile Phone: 507-261-7520
+
+Email Address: linda@bevcomm.net
+
+
+
+--------------------------------
+Self Reported Medical Conditions
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Condition Name: Cataracts
+
+Medical Condition Start Date: 6/14/2013
+
+Medical Condition End Date: 8/28/2013
+
+
+
+Condition Name: Diabetes, Type 2
+
+Medical Condition Start Date: 10/1/2007
+
+Medical Condition End Date: 
+
+
+
+Condition Name: Gout
+
+Medical Condition Start Date: 3/1/2010
+
+Medical Condition End Date: 
+
+
+
+Condition Name: Heart Disease
+
+Medical Condition Start Date: 1/1/1994
+
+Medical Condition End Date: 
+
+
+
+Condition Name: Other
+
+Medical Condition Start Date: 6/1/2010
+
+Medical Condition End Date: 2/4/2011
+
+
+
+--------------------------------
+Self Reported Allergies
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+--------------------------------
+Self Reported Implantable Device
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Device Name: ICD
+
+Date Implanted: 10/1/2007
+
+
+
+Device Name: LVAD
+
+Date Implanted: 9/2/2011
+
+
+
+Device Name: LVAD
+
+Date Implanted: 6/10/2011
+
+
+
+--------------------------------
+Self Reported Immunizations
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Immunization Name: dt
+
+Date Administered:10/1/2006
+
+Method: Injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: hepa
+
+Date Administered:1/1/2000
+
+Method: Injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: hepb
+
+Date Administered:4/10/2013
+
+Method: Injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: hib
+
+Date Administered:10/10/2013
+
+Method: Injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: ipv
+
+Date Administered:1/1/1955
+
+Method: Injection
+
+Were you vaccinated in the US: Yes
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: mmr
+
+Date Administered:1/1/1952
+
+Method: Injection
+
+Were you vaccinated in the US: Yes
+
+Comments: 
+
+Booster 1 Date: 1/1/1952
+
+Booster 2 Date: 1/1/1953
+
+Booster 3 Date: 1/1/1954
+
+
+
+Immunization Name: pcv
+
+Date Administered:10/1/2006
+
+Method: Injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: rv
+
+Date Administered:1/1/2011
+
+Method: Injection
+
+Were you vaccinated in the US: Yes
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: smallpox
+
+Date Administered:1/1/1955
+
+Method: Topical Skin Application
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: tuberculosis
+
+Date Administered:1/1/2006
+
+Method: Injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+--------------------------------
+Self Reported Labs and Tests
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+--------------------------------
+Self Reported Vital Statistics
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Vital Statistic Type: Glucose
+
+Date: 2/26/2012
+
+Time: 4:30 PM
+
+Reading/Value: 133
+
+Comments: 
+
+
+
+Vital Statistic Type: Glucose
+
+Date: 9/17/2012
+
+Time: 5:00 PM
+
+Reading/Value: 179
+
+Comments: 
+
+
+
+Vital Statistic Type: Glucose
+
+Date: 6/4/2012
+
+Time: 7:00 AM
+
+Reading/Value: 186
+
+Comments: 
+
+
+
+--------------------------------
+Family Medical History
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Family Member: Son
+
+Type: 
+
+DOB:11/3/1974
+
+DOD: 
+
+Age: 39
+
+Type: Condition
+
+Description: Hair Loss
+
+Description: High Blood Pressure
+
+Description: High Cholesterol
+
+Description: Strep Throat
+
+
+Family Member: Daughter
+
+Type: 
+
+DOB:9/10/1979
+
+DOD: 
+
+Age: 
+
+Type: Condition
+
+Description: Appendicitis
+
+Description: Fibromyalgia
+
+
+Family Member: Daughter #2
+
+Type: 
+
+DOB:4/14/1983
+
+DOD: 
+
+Age: 30
+
+Type: Condition
+
+Description: Headaches
+
+Description: Migraine Headaches
+
+Description: Strep Throat
+
+
+--------------------------------
+Drugs
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Drug Name: Allopurinol TAB 100MG
+
+Supply: 60 Every 1 Month
+
+Orig Drug Entry: Allopurinol
+
+
+
+Drug Name: Amiodarone Hcl TAB 200MG
+
+Supply: 30 Every 1 Month
+
+Orig Drug Entry: Amiodarone Hcl
+
+
+
+Drug Name: Amlodipine Besylate TAB 5MG
+
+Supply: 60 Every 1 Month
+
+Orig Drug Entry: Amlodipine Besylate
+
+
+
+Drug Name: Carvedilol TAB 25MG
+
+Supply: 60 Every 1 Month
+
+Orig Drug Entry: Coreg
+
+
+
+Drug Name: Clopidogrel TAB 75MG
+
+Supply: 30 Every 1 Month
+
+Orig Drug Entry: Plavix
+
+
+
+Drug Name: Danazol CAP 200MG
+
+Supply: 60 Every 1 Month
+
+Orig Drug Entry: Danazol
+
+
+
+Drug Name: Digoxin TAB 0.125MG
+
+Supply: 30 Every 1 Month
+
+Orig Drug Entry: Lanoxin
+
+
+
+Drug Name: Eplerenone TAB 25MG
+
+Supply: 30 Every 1 Month
+
+Orig Drug Entry: Eplerenone
+
+
+
+Drug Name: Jantoven TAB 2MG
+
+Supply: 30 Every 1 Month
+
+Orig Drug Entry: Jantoven
+
+
+
+Drug Name: Jantoven TAB 5MG
+
+Supply: 30 Every 1 Month
+
+Orig Drug Entry: Jantoven
+
+
+
+Drug Name: Novolog Flexpen INJ FLEXPEN
+
+Supply: 10 X 3ML Pen (sold in a package of 5 pens) Every 1 Month
+
+Orig Drug Entry: Novolog Flexpen
+
+
+
+Drug Name: Pantoprazole Sodium TAB 20MG
+
+Supply: 60 Every 1 Month
+
+Orig Drug Entry: Pantoprazole Sodium
+
+
+
+Drug Name: Pravastatin Sodium TAB 40MG
+
+Supply: 30 Every 1 Month
+
+Orig Drug Entry: Pravastatin Sodium
+
+
+
+Drug Name: Ropinirole Hcl TAB 2MG
+
+Supply: 30 Every 1 Month
+
+Orig Drug Entry: Requip
+
+
+
+Drug Name: Torsemide TAB 20MG
+
+Supply: 100 Every 1 Month
+
+Orig Drug Entry: Torsemide
+
+
+
+Drug Name: Trazodone Hcl TAB 50MG
+
+Supply: 100 Every 3 Month
+
+Orig Drug Entry: Trazodone Hcl
+
+
+
+Drug Name: Venlafaxine Hcl TAB 150MG ER
+
+Supply: 60 Every 1 Month
+
+Orig Drug Entry: Venlafaxine Hcl
+
+
+
+Drug Name: Zaleplon CAP 10MG
+
+Supply: 30 Every 1 Month
+
+Orig Drug Entry: Zaleplon
+
+
+
+--------------------------------
+Preventive Services
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+A Note to Medicare Advantage Beneficiaries
+
+
+
+Medicare offers various preventive services which help you stay healthy, identify health problems early, and prevent certain diseases or illnesses. For complete information about Medicare preventive services, you can go to the Medicare.gov Preventive Services page. In addition, as a Medicare Advantage beneficiary, you should contact your plan administrator to determine if you are eligible for any of the listed preventive services.
+
+
+
+--------------------------------
+Providers
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Provider Name: ZUMBRO VALLEY MENTAL HEALTH CENTER INC
+
+Provider Address: 343 WOODLAKE SEDR ROCHESTER, MN 55904
+
+Type: PHY
+
+Specialty: Clinical Psychologist And Clinical Social Worker And Nurse Practitioner And Psychiatry
+
+Medicare Provider: Not Available
+
+
+
+Provider Name: AMY KOENIGS
+
+Provider Address: 200 1ST SWST ROCHESTER, MN 55905
+
+Type: PHY
+
+Specialty: Nurse Practitioner
+
+Medicare Provider: Not Available
+
+
+
+Provider Name: JOHN STULAK
+
+Provider Address: 200 1ST ST SW ROCHESTER, MN 55905
+
+Type: PHY
+
+Specialty: Cardiac Surgery
+
+Medicare Provider: Not Available
+
+
+
+Provider Name: ANGELA LUCKHARDT
+
+Provider Address: 200 1ST ST SW ROCHESTER, MN 55905
+
+Type: PHY
+
+Specialty: Clinical Nurse Specialist
+
+Medicare Provider: Not Available
+
+
+
+Provider Name: LOWELL DALE
+
+Provider Address: 200 1ST SWST ROCHESTER, MN 55905
+
+Type: PHY
+
+Specialty: Internal Medicine
+
+Medicare Provider: Not Available
+
+
+
+Provider Name: Mayo Clinic
+
+Provider Address: 200 1st St SW Rochester, MN 
+
+Type: PHY
+
+Specialty: 
+
+Medicare Provider: Not Available
+
+
+
+Provider Name: MAYO CLINIC - SAINT MARYS HOSPITAL
+
+Provider Address: 1216 SECOND STREET WEST ROCHESTER, Minnesota 55902
+
+Type: HOS
+
+Specialty: 
+
+Medicare Provider: Not Available
+
+
+
+Provider Name: Richard Rodeheffer
+
+Provider Address: 200 1st St SW Rochester, MN 55905
+
+Type: PHY
+
+Specialty: Cardiologist
+
+Medicare Provider: Not Available
+
+
+
+--------------------------------
+Pharmacies
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Pharmacy Name: Hy Vee Pharmacy 2 500 37th Street NW Rochester, MN 55901
+
+Pharmacy Phone: 507-289-7408
+
+
+
+Pharmacy Name: Mayo Clinic Pharmacy Northwest Rochester, MN 559014111 Hwy 52 N Rochester, MN 55901
+
+Pharmacy Phone: 507-266-0966
+
+
+
+--------------------------------
+Plans
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+Contract ID/Plan ID: H6609/005
+
+Plan Period: 01/01/2014 - current
+
+Plan Name: HumanaChoice H6609-005 (PPO)
+
+Marketing Name: Humana Insurance Company
+
+Plan Address: 500 West Main Street  Lewisville TX 75057
+
+Plan Type: 3 - Coordinated Care MA Plan (HMO, PSO, PPO)
+
+
+
+--------------------------------
+Employer Subsidy
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+
+--------------------------------
+Primary Insurance
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+MSP Type: Disability
+
+Policy Number: OLM10098902
+
+Insurer Name: MMSI
+
+Insurer Address: 4001 41ST ST NW ROCHESTER, MN 55901-8901
+
+Effective Date: 06/01/2012
+
+Termination Date: 
+
+
+
+--------------------------------
+Other Insurance
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
