@@ -283,7 +283,7 @@ describe.only('Test file parsing beginning to end', function () {
 
   before(function(done) {
     var txtfile = loadFile('sample2.txt');
-    var result = txtToIntObj.getIntObj(txtfile);
+    //var result = txtToIntObj.getIntObj(txtfile);
     this.txtdata=txtfile.toString();
     done();
   });
@@ -291,15 +291,18 @@ describe.only('Test file parsing beginning to end', function () {
   it('checks if the file is converted', function(done){
     var outputFilename = __dirname+ '/fixtures/cms/bbModel.json';
     var intObj = txtToIntObj.getIntObj(this.txtdata);
-    console.log(intObj);
+    //console.log(intObj);
     var bbModel = objConverter.convertToBBModel(intObj);
+    console.log(JSON.stringify(bbModel, null, 4));
+    /*
     fs.writeFile(outputFilename, JSON.stringify(bbModel, null, 4), function(err) {
       if(err) {
         console.log(err);
       } else {
         console.log("JSON saved to " + outputFilename);
       }
-    });*/
+    });
+*/
     done();
     });
 

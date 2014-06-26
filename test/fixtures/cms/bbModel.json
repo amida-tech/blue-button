@@ -1,28 +1,255 @@
 {
     "data": {
-        "demographics": {},
-        "vitals": [],
+        "demographics": {
+            "name": {
+                "first": "JOHN",
+                "last": "DOE"
+            },
+            "dob": [
+                {
+                    "date": "1910-01-01T05:00:00.000Z",
+                    "precision": "day"
+                }
+            ],
+            "address": [
+                {
+                    "type": "home",
+                    "primary": true,
+                    "street": "123 ANY ROAD",
+                    "city": "ANYTOWN",
+                    "state": "VA",
+                    "postal_code": "00001",
+                    "country": "United States"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "123-456-7890",
+                    "type": "home"
+                }
+            ],
+            "email": [
+                {
+                    "address": "JOHNDOE@example.com",
+                    "type": "primary"
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "vital": {
+                    "name": "Blood Pressure"
+                },
+                "date": {
+                    "date": "2011-07-22T19:00:00.000Z"
+                },
+                "value": "120/80",
+                "units": "mm[Hg]",
+                "status": "completed"
+            },
+            {
+                "vital": {
+                    "name": "Glucose"
+                },
+                "date": {
+                    "date": "2012-03-20T16:00:00.000Z"
+                },
+                "value": "110",
+                "units": "mg/dL",
+                "status": "completed"
+            }
+        ],
         "results": [
-            null
+            {
+                "result_set": {
+                    "name": "Glucose Level"
+                },
+                "results": [
+                    {
+                        "date": {
+                            "date": "2008-03-21T04:00:00.000Z"
+                        },
+                        "name": "FBS",
+                        "value": "135",
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date": {
+                            "date": "2008-03-21T04:00:00.000Z"
+                        },
+                        "name": "RBS",
+                        "value": "170",
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date": {
+                            "date": "2008-03-21T04:00:00.000Z"
+                        },
+                        "name": "RBS",
+                        "value": "150",
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date": {
+                            "date": "2008-03-21T04:00:00.000Z"
+                        },
+                        "name": "RBS",
+                        "value": "120",
+                        "unit": "mg/dL"
+                    }
+                ]
+            }
         ],
         "medications": [
-            null,
-            null
+            {
+                "sig": "Aspirin",
+                "product": {
+                    "product": {
+                        "name": "Aspirin"
+                    },
+                    "unencoded_name": "Aspirin"
+                }
+            },
+            {
+                "date": [
+                    {
+                        "date": "1949-09-28T04:00:00.000Z",
+                        "precision": "day"
+                    }
+                ],
+                "sig": "Erythromycin",
+                "product": {
+                    "product": {
+                        "name": "Erythromycin"
+                    },
+                    "unencoded_name": "Erythromycin"
+                }
+            }
         ],
         "encounters": [],
         "allergies": [
-            null
+            {
+                "name": "Antibotic",
+                "date": [
+                    {
+                        "date": "1926-01-08T05:00:00.000Z",
+                        "precision": "day"
+                    },
+                    {
+                        "date": "1955-03-13T05:00:00.000Z",
+                        "precision": "day"
+                    }
+                ],
+                "reaction": {
+                    "reaction": {
+                        "name": "Vomiting"
+                    },
+                    "severity": "Severe"
+                }
+            },
+            {
+                "name": "Grasses",
+                "date": [
+                    {
+                        "date": "1973-05-13T04:00:00.000Z",
+                        "precision": "day"
+                    },
+                    {
+                        "date": "1996-07-20T04:00:00.000Z",
+                        "precision": "day"
+                    }
+                ],
+                "reaction": {
+                    "reaction": {
+                        "name": "Sneezing"
+                    },
+                    "severity": "Severe"
+                }
+            }
         ],
-        "immunizations": [],
+        "immunizations": [
+            {
+                "date": {
+                    "date": "2002-04-21T04:00:00.000Z"
+                },
+                "status": "complete",
+                "administration": {
+                    "route": {
+                        "name": "Nasal Spray(mist)"
+                    }
+                },
+                "product": {
+                    "name": "Varicella/Chicken Pox"
+                }
+            },
+            {
+                "date": {
+                    "date": "1990-02-02T05:00:00.000Z"
+                },
+                "status": "complete",
+                "administration": {
+                    "route": {
+                        "name": "Nasal Spray(mist)"
+                    }
+                },
+                "product": {
+                    "name": "Varicella/Chicken Pox (booster 1)"
+                }
+            },
+            {
+                "date": {
+                    "date": "2009-01-02T05:00:00.000Z"
+                },
+                "status": "complete",
+                "administration": {
+                    "route": {
+                        "name": "Injection"
+                    }
+                },
+                "product": {
+                    "name": "typhoid"
+                }
+            }
+        ],
         "socialHistory": [],
         "problems": [
-            null
+            {
+                "problem": {
+                    "name": "Arthritis"
+                },
+                "date": [
+                    {
+                        "date": "2005-08-09T04:00:00.000Z",
+                        "precision": "day"
+                    },
+                    {
+                        "date": "2011-02-28T05:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
+            },
+            {
+                "problem": {
+                    "name": "Asthma"
+                },
+                "date": [
+                    {
+                        "date": "2008-01-25T05:00:00.000Z",
+                        "precision": "day"
+                    },
+                    {
+                        "date": "2010-01-25T05:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
+            }
         ],
         "procedures": []
     },
     "meta": {
         "type": "cms",
-        "version": ""
+        "version": "2.0",
+        "timestamp": "03/16/2013 5:10 AM"
     },
     "errors": []
 }
