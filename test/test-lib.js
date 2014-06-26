@@ -64,6 +64,7 @@ var testXML = function() {
     };
 };
 
+
 // Utility function for determining the size/length of objects
 Object.size = function(obj) {
     var size = 0,
@@ -84,12 +85,15 @@ testXML.prototype.isIdentical = function(generated, expected) {
 
     // Compare their tagNames
     if (!this.sameNode(generated, expected)) {
-        error = "Error: Encountered different tagNames: Encountered <" +
-            ((generated === undefined) ? generated : generated.tagName) +
-            "> but expected <" + ((expected === undefined) ? expected : expected.tagName) +
-            ">, lineNumber: " + ((generated === undefined) ? generated : generated.lineNumber) +
-            ", " + ((expected === undefined) ? expected : expected.lineNumber);
-        return this.skip(error, DIFFERENT_TAGS);
+        // var node = (generated.attributes != undefined ? generated.attributes[0] != undefined ? generated.attributes[0].nodeName : "" : "");
+
+            error = "Error: Encountered different tagNames: Encountered <" +
+                ((generated === undefined) ? generated : generated.tagName) +
+                "> but expected <" + ((expected === undefined) ? expected : expected.tagName) +
+                ">, lineNumber: " + ((generated === undefined) ? generated : generated.lineNumber) +
+                ", " + ((expected === undefined) ? expected : expected.lineNumber);
+            return this.skip(error, DIFFERENT_TAGS);
+       
     }
 
     // Compare their attributes
@@ -344,7 +348,7 @@ testXML.prototype.generateStubs = function(name1, name2) {
 };
 
 testXML.prototype.generateXMLDOMForEntireCCD = function(pathJSON, filenameJSON, pathXML, filenameXML, pathXMLWrite, filenameXMLWrite, singular) {
-    console.log("\nPROCESSING WHOLE CCD");
+    console.log("\nPROCESSING WHOLE CCD --> In dump: " + filenameXML + " vs. in dump_gen_xml: " + filenameXMLWrite);
     var modelJSON;
     var errorThrown;
     try {
@@ -368,7 +372,7 @@ testXML.prototype.generateXMLDOMForEntireCCD = function(pathJSON, filenameJSON, 
             fs.writeFileSync(pathXMLWrite + filenameXMLWrite, actual, 'utf-8');
         } catch (e) {
             if (e.code == "ENOENT") {
-                
+
             }
         }
         var generatedXML = new XmlDOM().parseFromString(actual.toString());
