@@ -456,7 +456,7 @@
                   </assignedPerson>
                   <representedOrganization>
                     <id root="2.16.840.1.113883.19.5.9999.1394"/>
-                    <name>Good Health Clinic</name>
+                    <name/>
                     <telecom nullFlavor="UNK"/>
                     <addr nullFlavor="UNK"/>
                   </representedOrganization>
@@ -520,7 +520,7 @@
                   </assignedPerson>
                   <representedOrganization>
                     <id root="2.16.840.1.113883.19.5.9999.1394"/>
-                    <name>Good Health Clinic</name>
+                    <name/>
                     <telecom nullFlavor="UNK"/>
                     <addr nullFlavor="UNK"/>
                   </representedOrganization>
@@ -584,7 +584,7 @@
                   </assignedPerson>
                   <representedOrganization>
                     <id root="2.16.840.1.113883.19.5.9999.1394"/>
-                    <name>Good Health Clinic</name>
+                    <name/>
                     <telecom nullFlavor="UNK"/>
                     <addr nullFlavor="UNK"/>
                   </representedOrganization>
@@ -648,7 +648,7 @@
                   </assignedPerson>
                   <representedOrganization>
                     <id root="2.16.840.1.113883.19.5.9999.1394"/>
-                    <name>Good Health Clinic</name>
+                    <name/>
                     <telecom nullFlavor="UNK"/>
                     <addr nullFlavor="UNK"/>
                   </representedOrganization>
@@ -895,46 +895,46 @@
                     <low value="20080103"/>
                     <high value="20080103"/>
                   </effectiveTime>
-                  <value xsi:type="CD" code="233604007" codeSystem="2.16.840.1.113883.6.96" displayName="Pneumonia"/>
-                  <entryRelationship typeCode="REFR">
-                    <observation classCode="OBS" moodCode="EVN">
-                      <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                      <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
-                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
-                      <text>
-                        <reference value="#STAT1"/>
-                      </text>
-                      <statusCode code="completed"/>
-                      <effectiveTime>
-                        <low value="20080103"/>
-                        <high value="20080103"/>
-                      </effectiveTime>
-                      <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved"/>
-                    </observation>
-                  </entryRelationship>
-                  <entryRelationship typeCode="SUBJ" inversionInd="true">
-                    <observation classCode="OBS" moodCode="EVN">
-                      <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                      <code code="445518008" codeSystem="2.16.840.1.113883.6.96" displayName="Age at onset"/>
-                      <statusCode code="completed"/>
-                      <value xsi:type="PQ" value="57" unit="a"/>
-                    </observation>
-                  </entryRelationship>
-                  <entryRelationship typeCode="REFR">
-                    <observation classCode="OBS" moodCode="EVN">
-                      <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
-                      <text>
-                        <reference value="#problems"/>
-                      </text>
-                      <statusCode code="completed"/>
-                      <value xsi:type="CD" code="81323004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Alive and well"/>
-                    </observation>
-                  </entryRelationship>
                 </observation>
               </entryRelationship>
             </act>
           </entry>
+          <value xsi:type="CD" code="233604007" codeSystem="2.16.840.1.113883.6.96" displayName="Pneumonia"/>
+          <entryRelationship typeCode="REFR">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+              <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+              <text>
+                <reference value="#STAT1"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20080103"/>
+                <high value="20080103"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship typeCode="SUBJ" inversionInd="true">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" displayName="Age at onset"/>
+              <statusCode code="completed"/>
+              <value xsi:type="PQ" value="57" unit="a"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship typeCode="REFR">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <text>
+                <reference value="#problems"/>
+              </text>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="81323004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Alive and well"/>
+            </observation>
+          </entryRelationship>
           <entry typeCode="DRIV">
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
@@ -958,46 +958,46 @@
                     <low value="20070103"/>
                     <high value="20080103"/>
                   </effectiveTime>
-                  <value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma"/>
-                  <entryRelationship typeCode="REFR">
-                    <observation classCode="OBS" moodCode="EVN">
-                      <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                      <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
-                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
-                      <text>
-                        <reference value="#STAT2"/>
-                      </text>
-                      <statusCode code="completed"/>
-                      <effectiveTime>
-                        <low value="20070103"/>
-                        <high value="20080103"/>
-                      </effectiveTime>
-                      <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
-                    </observation>
-                  </entryRelationship>
-                  <entryRelationship typeCode="SUBJ" inversionInd="true">
-                    <observation classCode="OBS" moodCode="EVN">
-                      <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                      <code code="445518008" codeSystem="2.16.840.1.113883.6.96" displayName="Age at onset"/>
-                      <statusCode code="completed"/>
-                      <value xsi:type="PQ" value="57" unit="a"/>
-                    </observation>
-                  </entryRelationship>
-                  <entryRelationship typeCode="REFR">
-                    <observation classCode="OBS" moodCode="EVN">
-                      <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
-                      <text>
-                        <reference value="#problems"/>
-                      </text>
-                      <statusCode code="completed"/>
-                      <value xsi:type="CD" code="81323004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Alive and well"/>
-                    </observation>
-                  </entryRelationship>
                 </observation>
               </entryRelationship>
             </act>
           </entry>
+          <value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma"/>
+          <entryRelationship typeCode="REFR">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+              <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+              <text>
+                <reference value="#STAT2"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20070103"/>
+                <high value="20080103"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship typeCode="SUBJ" inversionInd="true">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" displayName="Age at onset"/>
+              <statusCode code="completed"/>
+              <value xsi:type="PQ" value="57" unit="a"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship typeCode="REFR">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <text>
+                <reference value="#problems"/>
+              </text>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="81323004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Alive and well"/>
+            </observation>
+          </entryRelationship>
         </section>
       </component>
       <component>
@@ -1292,13 +1292,27 @@
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                   <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-                  <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height"/>
+                  <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
+                  <text>
+                    <reference value="#vit0"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="19991114"/>
+                  <value xsi:type="PQ" value="86" unit="cm"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+                  <code code="3141-9" displayName="Patient Body Weight - Measured" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
                   <text>
                     <reference value="#vit1"/>
                   </text>
                   <statusCode code="completed"/>
                   <effectiveTime value="19991114"/>
-                  <value xsi:type="PQ" value="177" unit="cm"/>
+                  <value xsi:type="PQ" value="132" unit="kg"/>
                   <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                 </observation>
               </component>
@@ -1306,27 +1320,13 @@
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                   <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-                  <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Body Weight - Measured"/>
+                  <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
                   <text>
-                    <reference value="#vit3"/>
+                    <reference value="#vit2"/>
                   </text>
                   <statusCode code="completed"/>
                   <effectiveTime value="19991114"/>
-                  <value xsi:type="PQ" value="86" unit="kg"/>
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-                </observation>
-              </component>
-              <component>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-                  <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-                  <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular Systolic"/>
-                  <text>
-                    <reference value="#vit5"/>
-                  </text>
-                  <statusCode code="completed"/>
-                  <effectiveTime value="19991114"/>
-                  <value xsi:type="PQ" value="132" unit="mm[Hg]"/>
+                  <value xsi:type="PQ" value="177" unit="mm[Hg]"/>
                   <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                 </observation>
               </component>
@@ -1338,18 +1338,32 @@
               <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
               <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
               <statusCode code="completed"/>
-              <effectiveTime value="20000407"/>
+              <effectiveTime value="19991114"/>
               <component>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                   <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-                  <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height"/>
+                  <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
+                  <text>
+                    <reference value="#vit0"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="19991114"/>
+                  <value xsi:type="PQ" value="88" unit="cm"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+                  <code code="3141-9" displayName="Patient Body Weight - Measured" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
                   <text>
                     <reference value="#vit2"/>
                   </text>
                   <statusCode code="completed"/>
-                  <effectiveTime value="20000407"/>
-                  <value xsi:type="PQ" value="177" unit="cm"/>
+                  <effectiveTime value="19991114"/>
+                  <value xsi:type="PQ" value="145" unit="kg"/>
                   <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                 </observation>
               </component>
@@ -1357,27 +1371,13 @@
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                   <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-                  <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Body Weight - Measured"/>
+                  <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
                   <text>
                     <reference value="#vit4"/>
                   </text>
                   <statusCode code="completed"/>
-                  <effectiveTime value="20000407"/>
-                  <value xsi:type="PQ" value="88" unit="kg"/>
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-                </observation>
-              </component>
-              <component>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-                  <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-                  <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular Systolic"/>
-                  <text>
-                    <reference value="#vit6"/>
-                  </text>
-                  <statusCode code="completed"/>
-                  <effectiveTime value="20000407"/>
-                  <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
+                  <effectiveTime value="19991114"/>
+                  <value xsi:type="PQ" value="UNK" unit="mm[Hg]"/>
                   <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                 </observation>
               </component>

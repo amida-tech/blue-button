@@ -21,7 +21,7 @@
               <reference value="#result1"/>
             </text>
             <statusCode code="completed"/>
-            <effectiveTime value="20000323,200003"/>
+            <effectiveTime value="20000323"/>
             <value xsi:type="PQ" value="13.2" unit="g/dl"/>
             <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
             <referenceRange>
@@ -40,7 +40,7 @@
               <reference value="#result2"/>
             </text>
             <statusCode code="completed"/>
-            <effectiveTime value="20000323,200003"/>
+            <effectiveTime value="20000323"/>
             <value xsi:type="PQ" value="6.7" unit="10+3/ul"/>
             <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
             <referenceRange>
@@ -59,7 +59,7 @@
               <reference value="#result3"/>
             </text>
             <statusCode code="completed"/>
-            <effectiveTime value="20000323,200003"/>
+            <effectiveTime value="20000323"/>
             <value xsi:type="PQ" value="123" unit="10+3/ul"/>
             <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
             <referenceRange>

@@ -20,9 +20,9 @@ if (TEST_CCDA_SAMPLES) {
 				sum = 0;
 			for (var sample in stats) {
 				i = stats[sample]["index"];
-				if (stats[sample]["full"][0] && (i < 2)) {
+				if (stats[sample]["full"][0]) { // add && (i<2) to shorten
 					for (var j = 0; j < stats[sample]["files"].length; j++) {
-						if (j < 1) {
+						if (true) { // replace with j < 1 to shorten
 							var XMLDOMs = test.generateXMLDOMForEntireCCD('../ccda-explorer/dump/', i + "-" + j + ".json", '../ccda-explorer/dump/', i + "-" + j + ".xml", '../ccda-explorer/dump_gen_xml/', sample + "_" +  i + "-" + j + ".xml", false);
 							// console.log("ON " + sample + " sample, which is sample # " + i);
 							// console.log("processing " + i + "-" + j + ".json");

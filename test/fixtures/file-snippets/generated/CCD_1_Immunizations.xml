@@ -54,7 +54,7 @@
             </assignedPerson>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1394"/>
-              <name>Good Health Clinic</name>
+              <name/>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
             </representedOrganization>
@@ -118,7 +118,7 @@
             </assignedPerson>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1394"/>
-              <name>Good Health Clinic</name>
+              <name/>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
             </representedOrganization>
@@ -182,7 +182,7 @@
             </assignedPerson>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1394"/>
-              <name>Good Health Clinic</name>
+              <name/>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
             </representedOrganization>
@@ -246,7 +246,7 @@
             </assignedPerson>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1394"/>
-              <name>Good Health Clinic</name>
+              <name/>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
             </representedOrganization>
