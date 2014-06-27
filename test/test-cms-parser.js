@@ -14,8 +14,6 @@ function loadFile(filename){
   return txtfile;
 
 }
-
-
 //checks if the number titles is enough
 function titleTest(result, titles){
   var hasAllTitles = true;

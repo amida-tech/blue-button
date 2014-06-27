@@ -9,27 +9,15 @@
                 "date": "1910-01-01T00:00:00.000Z",
                 "precision": "day"
             },
-            "address": [
+            "email": [
                 {
-                    "use": "primary",
-                    "streetLines": [
-                        "123 ANY ROAD"
-                    ],
-                    "city": "ANYTOWN",
-                    "state": "VA",
-                    "zip": "00001",
-                    "country": "United States"
+                    "address": "JOHNDOE@example.com",
+                    "type": "primary"
                 }
             ],
             "phone": [
                 {
                     "number": "123-456-7890",
-                    "type": "primary"
-                }
-            ],
-            "email": [
-                {
-                    "address": "JOHNDOE@example.com",
                     "type": "primary"
                 }
             ]
@@ -261,6 +249,10 @@
     },
     "meta": {
         "type": "cms",
-        "version": ""
+        "version": "2.0",
+        "timestamp": {
+            "date": "2013-03-16T05:10:00.000Z",
+            "precision": "minute"
+        }
     }
 }

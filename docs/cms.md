@@ -167,11 +167,11 @@ key: value
 5. Putting proper codes for each medical term. May need to put uncoded tag. (
 	Look at medical dictionaries/clinical vocabularies at bottom of CCDA pad)
 
-6. Put a tag or some indicator to mark that the source is the CMS text file, or put an object with a key metadata. 
+6. Put a tag or some indicator to mark that the source is the CMS text file, or put an object with a key metadata. (Done)
 
 7. Need to make sure that you don't have blank keys(Additional check). 
 
-8. Deal with case sensitivity of keys to object in intermediate object to blue button converter, and everywhere else.
+8. Deal with case sensitivity of keys to object in intermediate object to blue button converter, and everywhere else.(Done)
 
 9. Need to dump data that is not part of one section into a common pool, or organize it. 
 ..* the effective dates for in "demographic" section needs to go somewhere else -> in the health insurance model. 
@@ -180,9 +180,9 @@ key: value
 10. Need to make sure that object types are very consistent with the model given in bb, probably will need to write tests to make sure
 the returned object model is the same as the model that has been parsed.
 
-11. Need to write defaultValues.json for each section.
+11. Need to write defaultValues.json for each section. 
 
-12. Need a precision converter, so that if I give it a mm/dd/yyyy/ other options, it can tell how precise it is. 
+12. Need a precision converter, so that if I give it a mm/dd/yyyy/ other options, it can tell how precise it is. (Done)
 
 13. Need to modularize/restructure the results section.
 
