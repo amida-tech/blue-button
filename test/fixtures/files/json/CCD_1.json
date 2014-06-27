@@ -687,7 +687,7 @@
     },
     "refusal_reason": "Patient objection"
 }],
-"socialHistory": [
+"social_history": [
     {
     "smoking_statuses": [{
         "value": "Former smoker",

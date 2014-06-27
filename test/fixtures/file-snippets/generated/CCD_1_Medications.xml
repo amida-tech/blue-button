@@ -14,7 +14,7 @@
         <statusCode code="completed"/>
         <effectiveTime xsi:type="IVL_TS">
           <low value="20070103"/>
-          <high value="200701"/>
+          <high value="20120515"/>
         </effectiveTime>
         <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
           <period value="6" unit="h"/>
@@ -32,15 +32,15 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
             <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
             <manufacturedMaterial>
-              <code code="219483" codeSystem="2.16.840.1.113883.6.88" displayName="Proventil HFA">
+              <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                 <originalText>
                   <reference value="#MedSec_1"/>
                 </originalText>
-                <translation code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
+                <translation code="573621" codeSystem="2.16.840.1.113883.5.4" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystemName="RXNORM"/>
               </code>
             </manufacturedMaterial>
             <manufacturerOrganization>
-              <name>Medication Factory Inc.</name>
+              <name/>
             </manufacturerOrganization>
           </manufacturedProduct>
         </consumable>
@@ -49,12 +49,6 @@
             <id nullFlavor="NI" extension=""/>
             <addr nullFlavor="UNK"/>
             <telecom nullFlavor="UNK"/>
-            <representedOrganization>
-              <id root="2.16.840.1.113883.19.5.9999.1393"/>
-              <name>Community Health and Hospitals</name>
-              <telecom nullFlavor="UNK"/>
-              <addr nullFlavor="UNK"/>
-            </representedOrganization>
           </assignedEntity>
         </performer>
         <participant typeCode="CSM">
@@ -95,15 +89,15 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
                 <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
                 <manufacturedMaterial>
-                  <code code="573621" codeSystem="2.16.840.1.113883.6.88" displayName="Proventil 0.09 MG/ACTUAT inhalant solution">
+                  <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#MedSec_1"/>
                     </originalText>
-                    <translation code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
+                    <translation code="573621" codeSystem="2.16.840.1.113883.5.4" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystemName="RXNORM"/>
                   </code>
                 </manufacturedMaterial>
                 <manufacturerOrganization>
-                  <name>Medication Factory Inc.</name>
+                  <name/>
                 </manufacturerOrganization>
               </manufacturedProduct>
             </product>
@@ -118,12 +112,6 @@
                   <country>US</country>
                 </addr>
                 <telecom nullFlavor="UNK"/>
-                <representedOrganization>
-                  <id root="2.16.840.1.113883.19.5.9999.1393"/>
-                  <name>Community Health and Hospitals</name>
-                  <telecom nullFlavor="UNK"/>
-                  <addr nullFlavor="UNK"/>
-                </representedOrganization>
               </assignedEntity>
             </performer>
             <author>
@@ -164,15 +152,15 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
                 <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
                 <manufacturedMaterial>
-                  <code code="573621" codeSystem="2.16.840.1.113883.6.88" displayName="Proventil 0.09 MG/ACTUAT inhalant solution">
+                  <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#MedSec_1"/>
                     </originalText>
-                    <translation code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
+                    <translation code="573621" codeSystem="2.16.840.1.113883.5.4" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystemName="RXNORM"/>
                   </code>
                 </manufacturedMaterial>
                 <manufacturerOrganization>
-                  <name>Medication Factory Inc.</name>
+                  <name/>
                 </manufacturerOrganization>
               </manufacturedProduct>
             </product>
@@ -195,12 +183,6 @@
                     <family>Seven</family>
                   </name>
                 </assignedPerson>
-                <representedOrganization>
-                  <id root="2.16.840.1.113883.19.5.9999.1393"/>
-                  <name>Community Health and Hospitals</name>
-                  <telecom nullFlavor="UNK"/>
-                  <addr nullFlavor="UNK"/>
-                </representedOrganization>
               </assignedEntity>
             </performer>
           </supply>

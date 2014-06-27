@@ -30,6 +30,7 @@ var gen = require('../lib/generator/ccda/generator.js');
 var XmlDOM = require('xmldom').DOMParser;
 var execSync = require('execSync');
 var bb = require("../index.js");
+var libxmljs = require('libxmljs');
 
 // Flags
 var PROMPT_TO_SKIP = false;
@@ -64,7 +65,6 @@ var testXML = function() {
     };
 };
 
-
 // Utility function for determining the size/length of objects
 Object.size = function(obj) {
     var size = 0,
@@ -83,17 +83,18 @@ Object.size = function(obj) {
 testXML.prototype.isIdentical = function(generated, expected) {
     var error;
 
+    // console.log(generated.tagName);
+    // console.log(expected.tagName);
     // Compare their tagNames
     if (!this.sameNode(generated, expected)) {
-        // var node = (generated.attributes != undefined ? generated.attributes[0] != undefined ? generated.attributes[0].nodeName : "" : "");
-
+       
             error = "Error: Encountered different tagNames: Encountered <" +
                 ((generated === undefined) ? generated : generated.tagName) +
                 "> but expected <" + ((expected === undefined) ? expected : expected.tagName) +
                 ">, lineNumber: " + ((generated === undefined) ? generated : generated.lineNumber) +
                 ", " + ((expected === undefined) ? expected : expected.lineNumber);
             return this.skip(error, DIFFERENT_TAGS);
-       
+        
     }
 
     // Compare their attributes
@@ -121,10 +122,25 @@ testXML.prototype.isIdentical = function(generated, expected) {
             generated.childNodes.length + ", expected: " + expected.childNodes.length;
         return this.skip(error, CHILD_NODE_DISCREPANCY);
     }
-
+    var nullFlavorMismatch = 0;
     // If they have the same number of children, then start comparing their childNodes by calling the function recursively
-    for (var i = 0; i < Object.size(generated.childNodes); i++) {
-        if (!this.isIdentical(generated.childNodes[i], expected.childNodes[i])) {
+    for (var i = 0; i < Object.size(generated.childNodes) - nullFlavorMismatch; i++) {
+        var curr_gen = generated.childNodes[i];
+        var curr_exp = expected.childNodes[i];
+        var gen_node = (curr_gen.attributes !== undefined ? curr_gen.attributes[0] !== undefined ? curr_gen.attributes[0].nodeName : "" : "");
+        var exp_node = (curr_exp ? curr_exp.attributes !== undefined ? curr_exp.attributes[0] !== undefined ? curr_exp.attributes[0].nodeName : "" : "" : "");
+        if (gen_node === 'nullFlavor' && exp_node !== 'nullFlavor') {
+            nullFlavorMismatch++;
+        }
+        if (gen_node !== 'nullFlavor' && exp_node === 'nullFlavor') {
+            nullFlavorMismatch++;
+        }
+        // console.log("iteration point: " + i);
+        // console.log("size: " + Object.size(generated.childNodes));
+        // console.log("The childNode is: " + generated.childNodes[i].tagName);
+        // console.log("The exp childNode is: " + expected.childNodes[i].tagName);
+        // console.log("null mismatches: " + nullFlavorMismatch);
+        if (!this.isIdentical(generated.childNodes[i + nullFlavorMismatch], expected.childNodes[i])) {
             return false;
         }
     }
@@ -158,10 +174,30 @@ testXML.prototype.haveSameAttributes = function(generated, expected) {
         if (!(genAttributes[i].name === expAttributes[i].name && genAttributes[i].value === expAttributes[i].value)) {
             var attributeGen = genAttributes[i].name + "=\"" + genAttributes[i].value + "\"";
             var attributeExp = expAttributes[i].name + "=\"" + expAttributes[i].value + "\"";
-            error = "\nError: Attributes mismatch: Encountered: " + attributeGen +
-                " but expected: " + attributeExp + " @ lineNumber: " + generated.lineNumber +
-                ", " + expected.lineNumber;
-            return this.skip(error, ATTR_MISMATCH, this.isCapError(attributeGen, attributeExp));
+            var differentPos = false;
+
+            // see if the attribute is just in a different position
+            for (var j = 0; j < genAttributes.length; j++) {
+                var attribute = genAttributes[j].name + "=\"" + genAttributes[j].value + "\"";
+                // We've found in a different position
+                if (attribute === attributeExp) {
+                    differentPos = true;
+                } 
+            }
+
+            for (var k = 0; k < expAttributes.length; k++) {
+                var attribute2 = expAttributes[k].name + "=\"" + expAttributes[k].value + "\"";
+                // We've found in a different position
+                if (attribute2 === attributeGen) {
+                    differentPos = true;
+                } 
+            }
+            if (!differentPos) {
+                error = "\nError: Attributes mismatch: Encountered: " + attributeGen +
+                    " but expected: " + attributeExp + " @ lineNumber: " + generated.lineNumber +
+                    ", " + expected.lineNumber;
+                return this.skip(error, ATTR_MISMATCH, this.isCapError(attributeGen, attributeExp));
+            }
         }
     }
     return true;
@@ -326,7 +362,7 @@ String.prototype.capitalize = function() {
 testXML.prototype.generateXMLDOM = function(file) {
     console.log("\nPROCESSING " + file.toUpperCase());
     var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + file.capitalize() + '.json', 'utf-8');
-    var actual = gen(JSON.parse(modelJSON), false);
+    var actual = gen(JSON.parse(modelJSON), false, new libxmljs.Document(), file);
     var expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + file.capitalize() + '.xml');
 
     // write generated file just to visually compare
@@ -371,7 +407,7 @@ testXML.prototype.generateXMLDOMForEntireCCD = function(pathJSON, filenameJSON, 
         try {
             fs.writeFileSync(pathXMLWrite + filenameXMLWrite, actual, 'utf-8');
         } catch (e) {
-            if (e.code == "ENOENT") {
+            if (e.code === "ENOENT") {
 
             }
         }

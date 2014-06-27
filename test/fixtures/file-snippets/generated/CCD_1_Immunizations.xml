@@ -19,13 +19,14 @@
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
           <manufacturedProduct classCode="MANU">
-            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+            <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza virus vaccine" codeSystemName="CVX">
+              <code code="88" displayName="Influenza virus vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi1"/>
                 </originalText>
-                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
+                <translation code="141" codeSystem="2.16.840.1.113883.5.4" displayName="Influenza, seasonal, injectable" codeSystemName="CVX"/>
               </code>
               <lotNumberText>1</lotNumberText>
             </manufacturedMaterial>
@@ -82,13 +83,14 @@
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
           <manufacturedProduct classCode="MANU">
-            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+            <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza virus vaccine" codeSystemName="CVX">
+              <code code="88" displayName="Influenza virus vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi2"/>
                 </originalText>
-                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
+                <translation code="141" codeSystem="2.16.840.1.113883.5.4" displayName="Influenza, seasonal, injectable" codeSystemName="CVX"/>
               </code>
               <lotNumberText>1</lotNumberText>
             </manufacturedMaterial>
@@ -145,13 +147,14 @@
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
           <manufacturedProduct classCode="MANU">
-            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+            <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="33" codeSystem="2.16.840.1.113883.12.292" displayName="Pneumococcal polysaccharide vaccine" codeSystemName="CVX">
+              <code code="33" displayName="Pneumococcal polysaccharide vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi3"/>
                 </originalText>
-                <translation code="109" displayName="Pneumococcal NOS" codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
+                <translation code="109" codeSystem="2.16.840.1.113883.5.4" displayName="Pneumococcal NOS" codeSystemName="CVX"/>
               </code>
               <lotNumberText>1</lotNumberText>
             </manufacturedMaterial>
@@ -208,13 +211,14 @@
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
           <manufacturedProduct classCode="MANU">
-            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+            <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="103" codeSystem="2.16.840.1.113883.12.292" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystemName="CVX">
+              <code code="103" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi4"/>
                 </originalText>
-                <translation code="09" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
+                <translation code="09" codeSystem="2.16.840.1.113883.5.4" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystemName="CVX"/>
               </code>
               <lotNumberText>1</lotNumberText>
             </manufacturedMaterial>

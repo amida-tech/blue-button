@@ -10,13 +10,13 @@
       <organizer classCode="BATTERY" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
         <id root="7d5a02b0-67a4-11db-bd13-0800200c9a66"/>
-        <code code="43789009" displayName="CBC WO DIFFERENTIAL" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+        <code code="43789009" displayName="CBC WO DIFFERENTIAL" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
         <statusCode code="completed"/>
         <component>
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
             <id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
-            <code code="30313-1" displayName="HGB[#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <code code="30313-1" displayName="HGB" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
             <text>
               <reference value="#result1"/>
             </text>
@@ -35,7 +35,7 @@
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
             <id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
-            <code code="33765-9" displayName="WBC[#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <code code="33765-9" displayName="WBC" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
             <text>
               <reference value="#result2"/>
             </text>
@@ -54,7 +54,7 @@
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
             <id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
-            <code code="26515-7" displayName="PLT[#/volume] in Blood" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <code code="26515-7" displayName="PLT" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
             <text>
               <reference value="#result3"/>
             </text>
