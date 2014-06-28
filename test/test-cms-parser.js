@@ -289,16 +289,17 @@ describe.only('Test file parsing beginning to end', function () {
     var outputFilename = __dirname+ '/fixtures/cms/bbModel.json';
     var intObj = txtToIntObj.getIntObj(this.txtdata);
     var bbModel = objConverter.convertToBBModel(intObj);
-    console.log(bbModel);
 
     fs.writeFile(outputFilename, JSON.stringify(bbModel, null, 4), function(err) {
       if(err) {
         console.log(err);
+        done();
       } else {
         console.log("JSON saved to " + outputFilename);
+        done();
       }
     });
-    done();
+
     });
 
   });

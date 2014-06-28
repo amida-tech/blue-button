@@ -362,6 +362,277 @@
                     }
                 ]
             }
+        ],
+        "claims": [
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "1234567890000",
+                "start_date": {
+                    "date": "2012-10-18T00:00:00.000Z",
+                    "precision": "day"
+                },
+                "lines": [
+                    {
+                        "line": "10/18/2012",
+                        "start_date": {
+                            "date": "2012-10-18T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "end_date": {
+                            "date": "2012-10-18T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "procedure": {
+                            "code": "98941",
+                            "description": "Chiropractic Manipulative Treatment (Cmt); Spinal, Three To Four Regions"
+                        },
+                        "quantity": 1,
+                        "modifier": [
+                            {
+                                "code": "98941",
+                                "description": "Chiropractic Manipulative Treatment (Cmt); Spinal, Three To Four Regions"
+                            }
+                        ],
+                        "charges": {
+                            "price_billed": "$60.00",
+                            "insurance_paid": "$34.00"
+                        },
+                        "place": {
+                            "code": "11",
+                            "name": "Office"
+                        },
+                        "type": {
+                            "code": "1",
+                            "name": "Medical Care"
+                        },
+                        "rendering_provider": {
+                            "number": "0000001",
+                            "npi": "123456789"
+                        }
+                    }
+                ],
+                "charges": {
+                    "price_billed": "$60.00",
+                    "provider_paid": "$27.20",
+                    "patient_responsibility": "$6.80"
+                },
+                "type": [
+                    "medicare PartB"
+                ],
+                "diagnosis": [
+                    {
+                        "code": "3534"
+                    },
+                    {
+                        "code": "7393"
+                    },
+                    {
+                        "code": "7392"
+                    },
+                    {
+                        "code": "3533"
+                    }
+                ],
+                "provider": {
+                    "name": "No Information Available"
+                }
+            },
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "12345678900000VAA",
+                "start_date": {
+                    "date": "2012-09-22T00:00:00.000Z",
+                    "precision": "day"
+                },
+                "lines": [
+                    {
+                        "line": "1",
+                        "start_date": {
+                            "date": "2012-09-22T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "quantity": 1,
+                        "charges": {
+                            "price_billed": "$14.30",
+                            "insurance_paid": "$14.30"
+                        }
+                    },
+                    {
+                        "line": "2",
+                        "start_date": {
+                            "date": "2012-09-22T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "procedure": {
+                            "code": "74020",
+                            "description": "Radiologic Examination, Abdomen; Complete, Including Decubitus And/Or Erect Views"
+                        },
+                        "quantity": 1,
+                        "charges": {
+                            "price_billed": "$175.50",
+                            "insurance_paid": "$175.50"
+                        }
+                    },
+                    {
+                        "line": "3",
+                        "start_date": {
+                            "date": "2012-09-22T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "procedure": {
+                            "code": "99283",
+                            "description": "Emergency Department Visit For The Evaluation And Management Of A Patient, Which Requires Th"
+                        },
+                        "quantity": 1,
+                        "modifier": [
+                            {
+                                "code": "99283",
+                                "description": "Emergency Department Visit For The Evaluation And Management Of A Patient, Which Requires Th"
+                            }
+                        ],
+                        "charges": {
+                            "price_billed": "$315.00",
+                            "insurance_paid": "$315.00"
+                        }
+                    },
+                    {
+                        "line": "4",
+                        "quantity": 0,
+                        "charges": {
+                            "price_billed": "$504.80",
+                            "insurance_paid": "$504.80"
+                        }
+                    }
+                ],
+                "charges": {
+                    "price_billed": "$504.80",
+                    "provider_paid": "$126.31",
+                    "patient_responsibility": "$38.84"
+                },
+                "type": [
+                    "medicare Outpatient"
+                ],
+                "diagnosis": [
+                    {
+                        "code": "56400"
+                    },
+                    {
+                        "code": "7245"
+                    },
+                    {
+                        "code": "V1588"
+                    }
+                ],
+                "provider": {
+                    "name": "No Information Available"
+                }
+            },
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "1234567890123",
+                "lines": [
+                    {
+                        "line": "12/01/2012",
+                        "start_date": {
+                            "date": "2012-12-01T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "end_date": {
+                            "date": "2012-12-01T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "procedure": {
+                            "code": "98941",
+                            "description": "Chiropractic Manipulative Treatment, 3 To 4 Spinal Regions"
+                        },
+                        "quantity": 1,
+                        "modifier": [
+                            {
+                                "code": "98941",
+                                "description": "Chiropractic Manipulative Treatment, 3 To 4 Spinal Regions"
+                            }
+                        ],
+                        "charges": {
+                            "price_billed": "* Not Available *",
+                            "insurance_paid": "* Not Available *"
+                        },
+                        "place": {
+                            "code": "11",
+                            "name": "Office"
+                        },
+                        "type": {
+                            "code": "1",
+                            "name": "Medical Care"
+                        },
+                        "rendering_provider": {
+                            "number": "123456",
+                            "npi": "123456789"
+                        }
+                    },
+                    {
+                        "line": "12/01/2012",
+                        "start_date": {
+                            "date": "2012-12-01T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "end_date": {
+                            "date": "2012-12-01T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "procedure": {
+                            "code": "G0283",
+                            "description": "Electrical Stimulation (Unattended), To One Or More Areas For Indication(S) Other Than Wound"
+                        },
+                        "quantity": 1,
+                        "modifier": [
+                            {
+                                "code": "G0283",
+                                "description": "Electrical Stimulation (Unattended), To One Or More Areas For Indication(S) Other Than Wound"
+                            }
+                        ],
+                        "charges": {
+                            "price_billed": "* Not Available *",
+                            "insurance_paid": "* Not Available *"
+                        },
+                        "place": {
+                            "code": "11",
+                            "name": "Office"
+                        },
+                        "type": {
+                            "code": "1",
+                            "name": "Medical Care"
+                        },
+                        "rendering_provider": {
+                            "number": "123456",
+                            "npi": "123456789"
+                        }
+                    }
+                ]
+            },
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "123456789012",
+                "lines": [
+                    {}
+                ]
+            },
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "123456789011",
+                "lines": [
+                    {}
+                ]
+            }
         ]
     },
     "meta": {
