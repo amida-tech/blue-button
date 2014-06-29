@@ -143,7 +143,6 @@
                       <statusCode code="completed"/>
                       <effectiveTime>
                         <low value="20070501"/>
-                        <high value="TODO"/>
                       </effectiveTime>
                       <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
                       <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -227,7 +226,6 @@
                       <statusCode code="completed"/>
                       <effectiveTime>
                         <low value="20060501"/>
-                        <high value="TODO"/>
                       </effectiveTime>
                       <value xsi:type="CD" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
                       <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -311,7 +309,6 @@
                       <statusCode code="completed"/>
                       <effectiveTime>
                         <low value="20080501"/>
-                        <high value="TODO"/>
                       </effectiveTime>
                       <value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" displayName="Hives"/>
                       <entryRelationship typeCode="SUBJ" inversionInd="true">
