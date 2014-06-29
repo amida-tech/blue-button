@@ -177,7 +177,7 @@ if (TEST_SECTIONS) {
 // show the error summary
 describe('show errors', function() {
 	    it ('should show error summary', function() {
-	      console.log("ERROR SUMMARY: " + JSON.stringify(test.errors, null, 4) + "\n" + JSON.stringify(test.error_settings, null, 4));
+	      console.log("\nERROR SUMMARY: " + JSON.stringify(test.errors, null, 4) + "\n" + JSON.stringify(test.error_settings, null, 4));
 	    });
 	});
 

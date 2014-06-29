@@ -221,7 +221,7 @@ testXML.prototype.logError = function(errorMsg, eC, sC) {
     } else if (eC === 1) {
         this.errors["differentTags"]++;
         this.errors["total"]++;
-        console.log(errorMsg);
+        console.log("\033[1;31m" + errorMsg);
     } else if (eC === 2) {
         this.errors["childNodeDiscrepancy"]++;
         this.errors["total"]++;
@@ -230,12 +230,12 @@ testXML.prototype.logError = function(errorMsg, eC, sC) {
         this.errors["attributesMismatch"]["total"]++;
         this.errors["total"]++;
         if (sC === undefined) {
-            console.log(errorMsg);
+            console.log("\033[36m" + errorMsg);
         }
         if (sC === 3.1) {
             this.errors["attributesMismatch"]["capitalization"]++;
             if (!this.error_settings["silence_cap"]) {
-                console.log(errorMsg);
+                console.log("\033[33m" + errorMsg);
             }
         }
         if (sC === 3.2) {
@@ -382,9 +382,6 @@ testXML.prototype.generateXMLDOMForEntireCCD = function(pathJSON, filenameJSON, 
     } else {
         return ["<ClinicalDocument>", "<ClinicalDocument>"];
     }
-
-    
 };
-
 
 module.exports.testXML = testXML;
