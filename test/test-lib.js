@@ -9,7 +9,7 @@ checks the number of children, and if those numbers are the same, then it
 calls the isIdentical() function recursively to run the same tests on those
 child nodes.
 
-@export isIdentical()
+isIdentical()
 haveSameAttributes()
 skip()
 sameNode()
@@ -17,9 +17,9 @@ sameText()
 numChildNodesSame()
 isLeaf()
 extractNodes()
-@export generateDOMParser()
-@export generateStubs()
-
+generateDOMParser()
+generateStubs()
+generateXMLDOMForEntireCCD
 */
 
 // Requires
@@ -31,6 +31,7 @@ var XmlDOM = require('xmldom').DOMParser;
 var execSync = require('execSync');
 var bb = require("../index.js");
 var libxmljs = require('libxmljs');
+var libCCDAGen = require("../lib/generator/ccda/lib/templating_functions.js");
 
 // Flags
 var PROMPT_TO_SKIP = false;
@@ -65,26 +66,11 @@ var testXML = function() {
     };
 };
 
-// Utility function for determining the size/length of objects
-Object.size = function(obj) {
-    var size = 0,
-        key;
-    for (key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            size++;
-        }
-    }
-    return size;
-};
 
-/*
-    Returns true if the two XML documents are identical, otherwise returns false.
-*/
+// Returns true if the two XML documents are identical, otherwise returns false.
 testXML.prototype.isIdentical = function(generated, expected) {
     var error;
 
-    // console.log(generated.tagName);
-    // console.log(expected.tagName);
     // Compare their tagNames
     if (!this.sameNode(generated, expected)) {
        
@@ -119,27 +105,26 @@ testXML.prototype.isIdentical = function(generated, expected) {
     // Since we've reached this point, they are not leaf nodes, so first check if they have the same number of children
     if (!this.numChildNodesSame(generated, expected)) {
         error = "Error: Generated number of child nodes different from expected (generated: " +
-            generated.childNodes.length + ", expected: " + expected.childNodes.length;
+            libCCDAGen.getObjLength(generated.childNodes) + " at lineNumber: " + generated.lineNumber + 
+            ", expected: " + libCCDAGen.getObjLength(expected.childNodes) + " at lineNumber:" + expected.lineNumber;
         return this.skip(error, CHILD_NODE_DISCREPANCY);
     }
     var nullFlavorMismatch = 0;
     // If they have the same number of children, then start comparing their childNodes by calling the function recursively
-    for (var i = 0; i < Object.size(generated.childNodes) - nullFlavorMismatch; i++) {
+    for (var i = 0; i < libCCDAGen.getObjLength(generated.childNodes) - nullFlavorMismatch; i++) {
         var curr_gen = generated.childNodes[i];
         var curr_exp = expected.childNodes[i];
         var gen_node = (curr_gen.attributes !== undefined ? curr_gen.attributes[0] !== undefined ? curr_gen.attributes[0].nodeName : "" : "");
         var exp_node = (curr_exp ? curr_exp.attributes !== undefined ? curr_exp.attributes[0] !== undefined ? curr_exp.attributes[0].nodeName : "" : "" : "");
+        
         if (gen_node === 'nullFlavor' && exp_node !== 'nullFlavor') {
             nullFlavorMismatch++;
         }
+
         if (gen_node !== 'nullFlavor' && exp_node === 'nullFlavor') {
             nullFlavorMismatch++;
         }
-        // console.log("iteration point: " + i);
-        // console.log("size: " + Object.size(generated.childNodes));
-        // console.log("The childNode is: " + generated.childNodes[i].tagName);
-        // console.log("The exp childNode is: " + expected.childNodes[i].tagName);
-        // console.log("null mismatches: " + nullFlavorMismatch);
+
         if (!this.isIdentical(generated.childNodes[i + nullFlavorMismatch], expected.childNodes[i])) {
             return false;
         }
@@ -203,14 +188,14 @@ testXML.prototype.haveSameAttributes = function(generated, expected) {
     return true;
 };
 
+// checks if the error is only a capitalization error
 testXML.prototype.isCapError = function(attr1, attr2) {
     return attr1.toLowerCase() === attr2.toLowerCase() ? ATTR_MISMATCH_CAP : undefined;
 };
 
-/* 
-    A utility function that allows you to skip failed assertions and produce 
-    a diff of the two XML documents.
- */
+
+// A utility function that allows you to skip failed assertions and produce 
+// a diff of the two XML documents.
 testXML.prototype.skip = function(error, errorCode, subCode) {
     this.logError(error, errorCode, subCode);
     if (PROMPT_TO_SKIP) {
@@ -267,8 +252,6 @@ testXML.prototype.logError = function(errorMsg, eC, sC) {
 
 // Returns false if the tagNames for the nodes are different, otherwise true
 testXML.prototype.sameNode = function(node1, node2) {
-    // console.log(node1);
-    // console.log(node2);
     return (node1 !== undefined && node2 !== undefined) && (node1.tagName === node2.tagName);
 };
 
@@ -277,13 +260,13 @@ testXML.prototype.sameText = function(generated, expected) {
     var genText = "",
         expText = "";
     if (generated.childNodes !== undefined) {
-        for (var i = 0; i < Object.size(generated.childNodes); i++) {
+        for (var i = 0; i < libCCDAGen.getObjLength(generated.childNodes); i++) {
             if (generated.childNodes[i] !== undefined && generated.childNodes[i].nodeName === "#text") { // then it is a text node
                 genText = [generated.childNodes[i].nodeValue.trim(), generated.lineNumber];
             }
         }
 
-        for (var j = 0; j < Object.size(expected.childNodes); j++) {
+        for (var j = 0; j < libCCDAGen.getObjLength(expected.childNodes); j++) {
             if (expected.childNodes[j] !== undefined && expected.childNodes[j].nodeName === "#text" &&
                 expected.childNodes[j].nodeValue.trim() !== "\n") { // then it is a text node
                 expText = [expected.childNodes[j].nodeValue.trim(), expected.lineNumer];
@@ -306,28 +289,7 @@ testXML.prototype.sameText = function(generated, expected) {
 
 // Returns false if the parent nodes (the ones passed in) have a different number of childNodes, otherwise returns true
 testXML.prototype.numChildNodesSame = function(generated, expected) {
-    var genLength = 0;
-    for (var i = 0; i < generated.childNodes.length; i++) {
-        if (generated.childNodes[i].tagName !== undefined) {
-            genLength++;
-        }
-    }
-
-    var expLength = 0;
-    for (var j = 0; j < expected.childNodes.length; j++) {
-        if (expected.childNodes[j].tagName !== undefined) {
-            expLength++;
-        }
-    }
-
-    if (genLength !== expLength) {
-        console.log("Error: Number of child nodes not equal to expected number" +
-            " of child nodes (generated: " + genLength + ", expected: " + expLength +
-            " at line # " + (generated.childNodes['0'].lineNumber - 1) + ", tag: " + expected.tagName + ")");
-        return this.skip();
-    } else {
-        return true;
-    }
+    return libCCDAGen.getObjLength(generated.childNodes) == libCCDAGen.getObjLength(expected.childNodes);
 };
 
 // Checks if the current node is a leaf node (i.e., no children). If so, returns true, otherwise returns false;
@@ -383,34 +345,37 @@ testXML.prototype.generateStubs = function(name1, name2) {
     return [generatedXML, expectedXML];
 };
 
+// generate an entire CCDA document, with all 10 sections
 testXML.prototype.generateXMLDOMForEntireCCD = function(pathJSON, filenameJSON, pathXML, filenameXML, pathXMLWrite, filenameXMLWrite, singular) {
     console.log("\nPROCESSING WHOLE CCD --> In dump: " + filenameXML + " vs. in dump_gen_xml: " + filenameXMLWrite);
     var modelJSON;
     var errorThrown;
+
     try {
         modelJSON = fs.readFileSync(pathJSON + filenameJSON, 'utf-8');
     } catch (e) {
         errorThrown = true;
         console.log(e.code);
     }
+
     if (!errorThrown) {
         var actual = gen.genWholeCCDA(JSON.parse(modelJSON));
-        var expected = fs.readFileSync(pathXML + filenameXML);  
+        var expected = fs.readFileSync(pathXML + filenameXML);
+
         // generate JSON object from expected XML on the fly
-    if (singular) {
-        var doc = bb.xml(expected);
-        var result = JSON.stringify(bb.parseXml(doc), undefined, 4);
-        fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', result, 'utf-8');
-    }
+        if (singular) {
+            var doc = bb.xml(expected);
+            var result = JSON.stringify(bb.parseXml(doc), undefined, 4);
+            fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', result, 'utf-8');
+        }
 
         // write generated CCDA file for testing comparison
         try {
             fs.writeFileSync(pathXMLWrite + filenameXMLWrite, actual, 'utf-8');
         } catch (e) {
-            if (e.code === "ENOENT") {
-
-            }
+            console.log(e.code);
         }
+
         var generatedXML = new XmlDOM().parseFromString(actual.toString());
         var expectedXML = new XmlDOM().parseFromString(expected.toString());
         return [generatedXML, expectedXML];  

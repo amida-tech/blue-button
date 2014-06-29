@@ -132,7 +132,7 @@
             <entryRelationship typeCode="SUBJ" inversionInd="true">
               <act classCode="ACT" moodCode="INT">
                 <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="instruction"/>
+                <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
                 <text>label in spanish<reference value="#MedSec_1"/></text>
                 <statusCode code="completed"/>
               </act>
