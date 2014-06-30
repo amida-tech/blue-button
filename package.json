@@ -12,23 +12,27 @@
     "test": "grunt test"
   },
   "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
-  "contributors": [{
-    "name": "Matthew McCall",
-    "email": "matt@amida-tech.com"
-  }, {
-    "name": "Afsin Ustundag",
-    "email": "afsin.ustundag@us.pwc.com"
-  }],
+  "contributors": [
+    {
+      "name": "Matthew McCall",
+      "email": "matt@amida-tech.com"
+    },
+    {
+      "name": "Afsin Ustundag",
+      "email": "afsin.ustundag@us.pwc.com"
+    }
+  ],
   "license": "MIT",
   "engines": {
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "libxmljs": "*",
+    "blue-button-meta": "^0.1.0",
     "deep-equal": "*",
-    "underscore":"1.6.x",
+    "libxmljs": "*",
     "node-uuid": "*",
-    "xdate":"*"
+    "underscore": "1.6.x",
+    "xdate": "*"
   },
   "devDependencies": {
     "should": "3.1.x",
@@ -41,11 +45,13 @@
     "grunt-contrib-jshint": "0.8.x",
     "grunt-express-server": "0.4.x",
     "grunt-contrib-watch": "0.6.x",
-    "grunt-coveralls" :"*",
-    "grunt-istanbul-coverage" :"*",
+    "grunt-coveralls": "*",
+    "grunt-istanbul-coverage": "*",
     "coveralls": "~2.10.0",
-    "mocha-lcov-reporter": "0.0.1"
-},
+    "mocha-lcov-reporter": "0.0.1",
+    "xmldom": "^0.1.19",
+    "execSync": "^1.0.1-pre"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/amida-tech/bluebutton.git"
@@ -58,4 +64,3 @@
   },
   "homepage": "https://github.com/amida-tech/blue-button"
 }
-

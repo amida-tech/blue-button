@@ -18,7 +18,9 @@ exports.parse = parser.parse;
 
 exports.generateSchema = require("./lib/schema.js").generateSchema;
 
-exports.validator = require("./lib/validator.js");
+//exports.validator = require("./lib/validator.js");
+
+exports.generateCCDA = require("./lib/generator/ccda/generator.js").genWholeCCDA;
 
 /*
 	//get access to current version of NPM package

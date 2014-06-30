@@ -14,6 +14,7 @@ module.exports = function(grunt) {
       files: ['*.js', './lib/*.js', './test/*.js'],
       options: {
         browser: true,
+        smarttabs: true,
         curly: true,
         eqeqeq: true,
         immed: true,

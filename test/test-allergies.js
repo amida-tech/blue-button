@@ -36,6 +36,7 @@ describe('allergies parser', function() {
 
         expect(JSON.stringify(allergies[1].date[0].date)).to.equal('"2006-05-01T00:00:00.000Z"');
 
+
         expect(allergies[1].severity).to.equal('Moderate');
         expect(allergies[1].status).to.equal('Active');
         expect(allergies[1].allergen.name).to.equal('Codeine');
