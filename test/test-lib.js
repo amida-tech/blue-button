@@ -289,7 +289,7 @@ testXML.prototype.sameText = function(generated, expected) {
 
 // Returns false if the parent nodes (the ones passed in) have a different number of childNodes, otherwise returns true
 testXML.prototype.numChildNodesSame = function(generated, expected) {
-    return libCCDAGen.getObjLength(generated.childNodes) == libCCDAGen.getObjLength(expected.childNodes);
+    return libCCDAGen.getObjLength(generated.childNodes) === libCCDAGen.getObjLength(expected.childNodes);
 };
 
 // Checks if the current node is a leaf node (i.e., no children). If so, returns true, otherwise returns false;
