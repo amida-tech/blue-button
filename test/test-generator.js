@@ -6,8 +6,8 @@ var fs = require("fs");
 var test = new lib.testXML();
 
 // testing options/cases
-var TEST_CCDA_SAMPLES = false;
-var TEST_CCD = true;
+var TEST_CCDA_SAMPLES = true;
+var TEST_CCD = false;
 var TEST_SECTIONS = false;
 
 
@@ -16,7 +16,7 @@ var TEST_SECTIONS = false;
 if (TEST_CCDA_SAMPLES) {
 	describe('generating CCDA for all ccda_samples samples', function() {
 		it ('should produce some xml, at the very least', function() {
-			var stats = JSON.parse(fs.readFileSync('../ccda-explorer/dump/stats.json')),
+			var stats = JSON.parse(fs.readFileSync('ccda-explorer/dump/stats.json')),
 				i = 0, 
 				sum = 0;
 			for (var sample in stats) {
@@ -26,7 +26,7 @@ if (TEST_CCDA_SAMPLES) {
 						fileNameXML = i + "-" + j + ".xml";
 						if (true) { // replace with j < n to shorten
 							if (true) { // replace with fileNameXML == "[filename]" to narrow down
-								var XMLDOMs = test.generateXMLDOMForEntireCCD('../ccda-explorer/dump/', i + "-" + j + ".json", '../ccda-explorer/dump/', i + "-" + j + ".xml", '../ccda-explorer/dump_gen_xml/', sample + "_" +  i + "-" + j + ".xml", false);
+								var XMLDOMs = test.generateXMLDOMForEntireCCD('ccda-explorer/dump/', i + "-" + j + ".json", 'ccda-explorer/dump/', i + "-" + j + ".xml", 'ccda-explorer/dump_gen_xml/', sample + "_" +  i + "-" + j + ".xml", false);
 								sum++;
 								assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
 								console.log("TOTAL ERRORS: " + test.errors["total"]);
@@ -148,7 +148,6 @@ if (TEST_SECTIONS) {
 	
 	        assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
 	        console.log("TOTAL ERRORS: " + test.errors["total"]);
-	
 	    });
 	});
 	

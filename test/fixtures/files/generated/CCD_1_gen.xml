@@ -22,7 +22,7 @@
         <postalCode>97867</postalCode>
         <country>US</country>
       </addr>
-      <telecom value="tel:(816)276-6909" use="HP"/>
+      <telecom value="(816)276-6909" use="HP"/>
       <patient>
         <name use="L">
           <given>Isabella</given>
@@ -44,7 +44,7 @@
             <postalCode>97867</postalCode>
             <country>US</country>
           </addr>
-          <telecom value="tel:(816)276-6909" use="HP"/>
+          <telecom value="(816)276-6909" use="HP"/>
           <guardianPerson>
             <name>
               <given>Ralph</given>
@@ -710,9 +710,15 @@
               </consumable>
               <performer>
                 <assignedEntity>
-                  <id nullFlavor="NI" extension=""/>
+                  <id nullFlavor="UNK"/>
                   <addr nullFlavor="UNK"/>
                   <telecom nullFlavor="UNK"/>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                    <name>Community Health and Hospitals</name>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
                 </assignedEntity>
               </performer>
               <participant typeCode="CSM">
@@ -829,7 +835,6 @@
                     </manufacturedProduct>
                   </product>
                   <performer>
-                    <time nullFlavor="UNK"/>
                     <assignedEntity>
                       <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
                       <addr>
@@ -847,6 +852,12 @@
                           <family>Seven</family>
                         </name>
                       </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                        <name>Community Health and Hospitals</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr nullFlavor="UNK"/>
+                      </representedOrganization>
                     </assignedEntity>
                   </performer>
                 </supply>
@@ -1027,9 +1038,21 @@
               </specimen>
               <performer>
                 <assignedEntity>
-                  <id root="UNK" nullFlavor="UNK"/>
-                  <addr nullFlavor="UNK"/>
-                  <telecom nullFlavor="UNK"/>
+                  <id root="UNK"/>
+                  <addr>
+                    <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                    <city>Portland</city>
+                    <state>OR</state>
+                    <postalCode>99123</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom value="555-555-5000" use="HP"/>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                    <name>Community Health and Hospitals</name>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
                 </assignedEntity>
               </performer>
               <participant typeCode="DEV">
@@ -1061,9 +1084,21 @@
               <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
               <performer>
                 <assignedEntity>
-                  <id root="UNK" nullFlavor="UNK"/>
-                  <addr nullFlavor="UNK"/>
-                  <telecom nullFlavor="UNK"/>
+                  <id root="UNK" extension="123456789"/>
+                  <addr>
+                    <streetAddressLine>17 Daws Rd.</streetAddressLine>
+                    <city>Blue Bell</city>
+                    <state>MA</state>
+                    <postalCode>02368</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom value="(555)555-555-1234" use="HP"/>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                    <name>Community Health and Hospitals</name>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
                 </assignedEntity>
               </performer>
               <participant typeCode="LOC">
@@ -1099,9 +1134,21 @@
               <methodCode nullFlavor="UNK"/>
               <performer>
                 <assignedEntity>
-                  <id root="UNK" nullFlavor="UNK"/>
-                  <addr nullFlavor="UNK"/>
-                  <telecom nullFlavor="UNK"/>
+                  <id root="UNK" extension="1234567"/>
+                  <addr>
+                    <streetAddressLine>17 Daws Rd.</streetAddressLine>
+                    <city>Blue Bell</city>
+                    <state>MA</state>
+                    <postalCode>02368</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom value="(555)555-555-1234" use="HP"/>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                    <name>Community Health and Hospitals</name>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
                 </assignedEntity>
               </performer>
               <participant typeCode="LOC">

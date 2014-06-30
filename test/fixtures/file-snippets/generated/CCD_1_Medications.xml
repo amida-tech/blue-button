@@ -46,9 +46,15 @@
         </consumable>
         <performer>
           <assignedEntity>
-            <id nullFlavor="NI" extension=""/>
+            <id nullFlavor="UNK"/>
             <addr nullFlavor="UNK"/>
             <telecom nullFlavor="UNK"/>
+            <representedOrganization>
+              <id root="2.16.840.1.113883.19.5.9999.1393"/>
+              <name>Community Health and Hospitals</name>
+              <telecom nullFlavor="UNK"/>
+              <addr nullFlavor="UNK"/>
+            </representedOrganization>
           </assignedEntity>
         </performer>
         <participant typeCode="CSM">
@@ -165,7 +171,6 @@
               </manufacturedProduct>
             </product>
             <performer>
-              <time nullFlavor="UNK"/>
               <assignedEntity>
                 <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
                 <addr>
@@ -183,6 +188,12 @@
                     <family>Seven</family>
                   </name>
                 </assignedPerson>
+                <representedOrganization>
+                  <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                  <name>Community Health and Hospitals</name>
+                  <telecom nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                </representedOrganization>
               </assignedEntity>
             </performer>
           </supply>

@@ -9,7 +9,7 @@
     <postalCode>97867</postalCode>
     <country>US</country>
   </addr>
-  <telecom value="tel:(816)276-6909" use="HP"/>
+  <telecom value="(816)276-6909" use="HP"/>
   <patient>
     <name use="L">
       <given>Isabella</given>
@@ -31,7 +31,7 @@
         <postalCode>97867</postalCode>
         <country>US</country>
       </addr>
-      <telecom value="tel:(816)276-6909" use="HP"/>
+      <telecom value="(816)276-6909" use="HP"/>
       <guardianPerson>
         <name>
           <given>Ralph</given>
