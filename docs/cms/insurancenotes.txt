@@ -1,0 +1,39 @@
+
+
+
+
+name is insurance name. 
+
+I'm assuming that policy is equal to plan. 
+
+member id = policy number.
+Plan name = policy name.(seems like people use policy and plan interchangeably. That's the 
+conclusion I came down with after a ton of googling.)
+
+payer_id and payer_type does not seem to be implemente in CCDA.
+
+{
+      "name": "{type: string, required: true}", //name of insurance plan
+      "date":["{cda_date}"],
+      "type": "[strings]", //insurance plan type(medicare, employer, can be more than one.)
+      "payer_name": "string", //insurance company name
+      "payer_id":"{type: string, required: true}", //suggested fields that may be supported by future CCDA
+      "payer_id_type":"{type: string, required: true}", //same as line above
+      "plan_name":"{type: string, required: true}", //same as plan name
+      "plan_information":"{type: string, required: true}" //not sure if this is needed.
+      "plan_id": "string"
+      "policy_number":"string" //policy number, which is a unique number to identify individual. Synonymous to policy number.
+      "member_name":"{type: string, required: true}", //name of policy holder
+      "group_name": "string", //for employment based plans, usually name of company
+      "group_number": "string", //insurance companies use a unique number for companies. Same as 
+      "address":"{cda_address}",
+       "phone ":  [{
+       "number ":  "{type:  string, required:  true}",
+       "type":  "{type:  string, required:  true}"
+     }],
+      "email ":  [{
+       "address ":  "{type:  string, required:  true}",
+       "type":  "{type: string, required:  true}"
+     }],
+     "assigned_person": "{cda_name}"
+   }

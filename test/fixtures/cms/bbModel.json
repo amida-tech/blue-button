@@ -375,7 +375,7 @@
                 },
                 "lines": [
                     {
-                        "line": "10/18/2012",
+                        "line": "1",
                         "start_date": {
                             "date": "2012-10-18T00:00:00.000Z",
                             "precision": "day"
@@ -538,7 +538,7 @@
                 "number": "1234567890123",
                 "lines": [
                     {
-                        "line": "12/01/2012",
+                        "line": "1",
                         "start_date": {
                             "date": "2012-12-01T00:00:00.000Z",
                             "precision": "day"
@@ -576,7 +576,7 @@
                         }
                     },
                     {
-                        "line": "12/01/2012",
+                        "line": "2",
                         "start_date": {
                             "date": "2012-12-01T00:00:00.000Z",
                             "precision": "day"
@@ -620,18 +620,52 @@
                     "medicare"
                 ],
                 "number": "123456789012",
-                "lines": [
-                    {}
-                ]
+                "type": [
+                    "medicare Part D"
+                ],
+                "provider": {
+                    "name": "123456789"
+                },
+                "claimLines": {
+                    "drug": {
+                        "code": "00093013505",
+                        "name": "CARVEDILOL"
+                    },
+                    "provider": {
+                        "provider_id": "123456789",
+                        "provider_name": "PHARMACY2 #00000"
+                    },
+                    "proscriber": {
+                        "code": "123456789",
+                        "name": "Jane Doe"
+                    }
+                }
             },
             {
                 "payer": [
                     "medicare"
                 ],
                 "number": "123456789011",
-                "lines": [
-                    {}
-                ]
+                "type": [
+                    "medicare Part D"
+                ],
+                "provider": {
+                    "name": "1234567890"
+                },
+                "claimLines": {
+                    "drug": {
+                        "code": "00781223310",
+                        "name": "OMEPRAZOLE"
+                    },
+                    "provider": {
+                        "provider_id": "1234567890",
+                        "provider_name": "PHARMACY3 #00000"
+                    },
+                    "proscriber": {
+                        "code": "123456789",
+                        "name": "Jane Doe"
+                    }
+                }
             }
         ]
     },
