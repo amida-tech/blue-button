@@ -20,6 +20,18 @@
                     "number": "123-456-7890",
                     "type": "primary"
                 }
+            ],
+            "address": [
+                {
+                    "use": "primary",
+                    "streetLines": [
+                        "123 ANY ROAD"
+                    ],
+                    "city": "ANYTOWN",
+                    "state": "VA",
+                    "zip": "00001",
+                    "country": "United States"
+                }
             ]
         },
         "vitals": [
