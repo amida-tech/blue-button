@@ -4,8 +4,8 @@ var assert = require('chai').assert;
 var fs = require('fs');
 var path = require('path');
 
-var bb = require('../index');
-var jsutil = require('../lib/jsutil');
+var bb = require('../../index');
+var jsutil = require('../../lib/jsutil');
 
 describe('socialHistory parser', function() {
     var socialHistory = null;
@@ -13,11 +13,8 @@ describe('socialHistory parser', function() {
     before(function(done) {
         var filepath  = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Social_History.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {component: 'ccda_social_history'}, function(err, result) {
-            socialHistory = result.toJSON();
-            //console.log(JSON.stringify(socialHistory, null, 10));
-            done();
-        });
+        socialHistory=bb.parseString(xml, {component: 'ccda_social_history'}).data;
+        done();
     });
     
     it('full deep check', function(done) {

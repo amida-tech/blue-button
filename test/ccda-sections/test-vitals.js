@@ -4,25 +4,23 @@ var assert = require('chai').assert;
 var fs = require('fs');
 var path = require('path');
 
-var bb = require('../index');
-var jsutil = require('../lib/jsutil');
+var bb = require('../../index');
+var jsutil = require('../../lib/jsutil');
 
 describe('vitals parser', function() {
     var vitals = null;
     
     before(function(done) {
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Vitals.xml');
+        var filepath  = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Vitals.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {component: 'ccda_vitals'}, function(err, result) {
-            vitals = result.toJSON();
-            done();
-        });
+        vitals=bb.parseString(xml, {component: 'ccda_vitals'}).data;
+        done(); 
     });
     
     it('full deep check', function(done) {
         expect(vitals).to.exist;
         //console.log(JSON.stringify(vitals, null, 10));
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Vitals.json');
+        var filepath  = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Vitals.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedVitals = jsutil.jsonParseWithDate(json2Read);
         expect(vitals).to.deep.equal(expectedVitals);

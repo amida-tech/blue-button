@@ -4,24 +4,22 @@ var assert = require('chai').assert;
 var fs = require('fs');
 var path = require('path');
 
-var bb = require('../index');
-var jsutil = require('../lib/jsutil');
+var bb = require('../../index');
+var jsutil = require('../../lib/jsutil');
 
 describe('allergies parser', function() {
     var allergies = null;
     
     before(function(done) {
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Allergies.xml');
+        var filepath  = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Allergies.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {component: 'ccda_allergies'}, function(err, result) {
-            allergies = result.toJSON();
-            done();
-        });
+        allergies= bb.parseString(xml, {component: 'ccda_allergies'}).data;
+        done();
     });
     
     it('full deep check', function(done) {
         expect(allergies).to.exist;
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Allergies.json');
+        var filepath  = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Allergies.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedAllergies = jsutil.jsonParseWithDate(json2Read);
         expect(allergies).to.deep.equal(expectedAllergies);

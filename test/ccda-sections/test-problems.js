@@ -7,21 +7,19 @@ var assert = chai.assert;
 var fs = require('fs');
 var path = require('path');
 
-var bb = require('../index');
-var jsutil = require('../lib/jsutil');
+var bb = require('../../index');
+var jsutil = require('../../lib/jsutil');
 
 var problems;
 
 var loadRecord = function(done) {
-    var filepath = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Problems.xml');
+    var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Problems.xml');
     var xml = fs.readFileSync(filepath, 'utf-8');
 
-    bb.parse(xml, {
+    problems=bb.parseString(xml, {
         component: 'ccda_problems'
-    }, function(err, result) {
-        problems = result.toJSON();
-        done();
-    });
+    }).data;
+    done();
 };
 
 
@@ -41,7 +39,7 @@ describe('Problems - Snippet Comparison', function() {
 
     it('Deep Equality Check', function(done) {
         expect(problems).to.exist;
-        var filepath = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Problems.json');
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Problems.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedProblems = jsutil.jsonParseWithDate(json2Read);
         expect(problems).to.deep.equal(expectedProblems);

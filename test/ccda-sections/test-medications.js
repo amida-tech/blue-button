@@ -4,26 +4,23 @@ var assert = require('chai').assert;
 var fs = require('fs');
 var path = require('path');
 
-var bb = require('../index');
-var jsutil = require('../lib/jsutil');
+var bb = require('../../index');
+var jsutil = require('../../lib/jsutil');
 
 describe('medications parser', function() {
     var meds = null;
     
     before(function(done) {
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/CCD_1_Medications.xml');
+        var filepath  = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Medications.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {component: 'ccda_medications'}, function(err, result) {
-            meds = result.toJSON();
-            //console.log(JSON.stringify(meds,null, 10));
-            done();
-        });
+        meds=bb.parseString(xml, {component: 'ccda_medications'}).data;
+        done();
     });
     
     it('full deep check', function(done) {
         expect(meds).to.exist;
         //console.log(JSON.stringify(meds, null, 10));
-        var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Medications.json');
+        var filepath  = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Medications.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedMeds = jsutil.jsonParseWithDate(json2Read);
         expect(meds).to.deep.equal(expectedMeds);

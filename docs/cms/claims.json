@@ -1,0 +1,76 @@
+//draft of claims model, may need to be merged with insurance later.
+      {
+         "name": "{type: string, required: true}",
+         "number": "{type: string, required: true}",
+         "payer": "{type: string, required: true}",
+         "type": "{type: string, required: false}",
+         "provider":{//put cda_code here 
+            "name": "{type: string, required: true}",
+            "provider_id": "{type: string, required: false}",
+            "provider_type": "{type: string, required: false}",
+            "provider_billing_address": "{cda_address}}"
+         },
+         "date":["{cda_date}"],
+         "charges":{
+            "price_billed":"{type: number, required: true}",
+            "negotiated_price":"{type: number, required: true}",
+            "insurance_paid":"{type: number, required: true}",
+            "provider_paid":"{type: number, required: true}",
+            "patient_responsibility":"{type: number, required: true}",
+         },
+         "service":"{cda_coded_entry}",
+         "diagnoses":["{cda_coded_entry}"],
+         "lines":[
+            {
+               "number":"{type: string, required: true}",
+               "service date": "{cda_date}",
+               "start_date":"{cda_date}",
+               "end_date":"{cda_date}",
+               "revenue": {
+                  "code": "{type: string, required: true}",
+                  "description": "{type: string, required: true}",
+                  "name": "{type: string, required: true}"
+
+               },
+               "procedure": {
+                  "code": "{type: string, required: true}",
+                  "name": "{type: string, required: true}", 
+                  "description": "{type: string, required: true}"
+               },
+               "drug":{
+                  "code": "{type: string, required: true}",
+                  "name": "{type: string, required: true}", 
+                  "description": "{type: string, required: true}"
+               },
+               "modifiers":{
+                  "code": "{type: string, required: true}",
+                  "name": "{type: string, required: true}", 
+                  "description": "{type: string, required: true}"
+               },
+               "quantity": "{type: number, required: true}",
+               "charges":{
+                  "price_billed":"{type: number, required: true}",
+                  "negotiated_price":"{type: number, required: true}",
+                  "insurance_paid":"{type: number, required: true}",
+                  "provider_paid":"{type: number, required: true}",
+                  "patient_responsibility":"{type: number, required: true}",
+               },
+               "prescriber": {
+                  "name":"string",
+                  "id":"string",
+                  "type":"string"
+               },
+               "place_of_service": {
+                  "code": "{type: string, required: true}",
+                  "name": "{type: string, required: true}", 
+                  "description": "{type: string, required: true}"
+               },
+               "type_of_service_code": "{type: string, required: true}",
+               "type_of_service": "{type: string, required: true}",
+               "rendering provider": {
+                  "number":"{type: string, required: true}", //not sure how to strcuture this from cms sample.  
+                  "npi": "{type: number, required: true}"
+               }
+            }
+         ]
+      }
