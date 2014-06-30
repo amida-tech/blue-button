@@ -13,8 +13,8 @@
         <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
         <statusCode code="completed"/>
         <effectiveTime>
-          <low value="20080103"/>
-          <high value="20080103"/>
+          <low value="20080102"/>
+          <high value="20080102"/>
         </effectiveTime>
         <entryRelationship typeCode="SUBJ">
           <observation classCode="OBS" moodCode="EVN">
@@ -26,8 +26,8 @@
             </text>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="20080103"/>
-              <high value="20080103"/>
+              <low value="20080102"/>
+              <high value="20080102"/>
             </effectiveTime>
             <value xsi:type="CD" code="233604007" codeSystem="2.16.840.1.113883.6.96" displayName="Pneumonia"/>
             <entryRelationship typeCode="REFR">
@@ -40,8 +40,8 @@
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20080103"/>
-                  <high value="20080103"/>
+                  <low value="20080102"/>
+                  <high value="20080102"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved"/>
               </observation>
@@ -76,8 +76,8 @@
         <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
         <statusCode code="completed"/>
         <effectiveTime>
-          <low value="20070103"/>
-          <high value="20080103"/>
+          <low value="20070102"/>
+          <high value="20080102"/>
         </effectiveTime>
         <entryRelationship typeCode="SUBJ">
           <observation classCode="OBS" moodCode="EVN">
@@ -89,8 +89,8 @@
             </text>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="20070103"/>
-              <high value="20080103"/>
+              <low value="20070102"/>
+              <high value="20080102"/>
             </effectiveTime>
             <value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma"/>
             <entryRelationship typeCode="REFR">
@@ -103,8 +103,8 @@
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20070103"/>
-                  <high value="20080103"/>
+                  <low value="20070102"/>
+                  <high value="20080102"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
               </observation>

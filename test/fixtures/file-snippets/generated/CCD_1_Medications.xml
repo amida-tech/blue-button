@@ -13,8 +13,8 @@
         <text>Proventil HFA <reference value="#MedSec_1"/></text>
         <statusCode code="completed"/>
         <effectiveTime xsi:type="IVL_TS">
-          <low value="20070103"/>
-          <high value="20120515"/>
+          <low value="20070102"/>
+          <high value="20120514"/>
         </effectiveTime>
         <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
           <period value="6" unit="h"/>
@@ -74,7 +74,7 @@
             <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="20070103"/>
+              <low value="20070102"/>
             </effectiveTime>
             <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
           </observation>
@@ -85,7 +85,7 @@
             <id nullFlavor="NI"/>
             <statusCode code="completed"/>
             <effectiveTime xsi:type="IVL_TS">
-              <low value="20070103"/>
+              <low value="20070102"/>
               <high value="200701"/>
             </effectiveTime>
             <repeatNumber value="1"/>
@@ -150,7 +150,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
             <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704"/>
             <statusCode code="completed"/>
-            <effectiveTime value="20070103"/>
+            <effectiveTime value="20070102"/>
             <repeatNumber value="1"/>
             <quantity value="75"/>
             <product>

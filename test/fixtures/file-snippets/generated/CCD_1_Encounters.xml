@@ -14,7 +14,7 @@
           <originalText>Checkup Examination<reference value="#Encounter1"/></originalText>
           <translation code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory" codeSystemName="HL7ActCode"/>
         </code>
-        <effectiveTime value="20090227130000+0500"/>
+        <effectiveTime value="200902+0500"/>
         <performer>
           <assignedEntity>
             <id root="PseduoMD-3"/>
@@ -45,7 +45,7 @@
             <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="20090227130000+0500"/>
+              <low value="200902+0500"/>
             </effectiveTime>
             <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
           </observation>

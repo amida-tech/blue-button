@@ -16,7 +16,7 @@
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20120512"/>
+        <effectiveTime value="20120511"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="appropriate_code" displayName="colon" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <specimen typeCode="SPC">
@@ -29,7 +29,7 @@
         </specimen>
         <performer>
           <assignedEntity>
-            <id root="UNK"/>
+            <id root="2.16.840.1.113883.19.5.9999.1393"/>
             <addr>
               <streetAddressLine>1001 Village Avenue</streetAddressLine>
               <city>Portland</city>
@@ -70,7 +70,7 @@
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20110203"/>
+        <effectiveTime value="20110202"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <performer>
@@ -121,7 +121,7 @@
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20110203"/>
+        <effectiveTime value="20110202"/>
         <methodCode nullFlavor="UNK"/>
         <performer>
           <assignedEntity>
