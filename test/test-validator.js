@@ -571,7 +571,7 @@ describe('Test medications:', function () {
     before(function (done) {
         shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/commonModels', shared);
-        medications = fs.readFileSync(__dirname + '/fixtures/validator/schemas/medications.json', 'utf8');
+        medications = fs.readFileSync(__dirname + '/fixtures/validator/schemas/medication.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/medications', medications);
         medicationsSchema = {
             '$ref': 'http://local.com/medications'
@@ -622,7 +622,7 @@ describe('Test problems', function () {
     before(function (done) {
         shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/commonModels', shared);
-        problems = fs.readFileSync(__dirname + '/fixtures/validator/schemas/problems.json', 'utf8');
+        problems = fs.readFileSync(__dirname + '/fixtures/validator/schemas/problem.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/problems', problems);
         problemsSchema = {
             '$ref': 'http://local.com/problems'
@@ -903,7 +903,7 @@ describe('Test vitals', function () {
     before(function (done) {
         shared = fs.readFileSync(__dirname + '/fixtures/validator/schemas/shared.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/commonModels', shared);
-        vital = fs.readFileSync(__dirname + '/fixtures/validator/schemas/vitals.json', 'utf8');
+        vital = fs.readFileSync(__dirname + '/fixtures/validator/schemas/vital.json', 'utf8');
         ZSchema.setRemoteReference('http://local.com/vital', vital);
         vitalSchema = {
             '$ref': 'http://local.com/vital'
