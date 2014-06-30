@@ -85,7 +85,7 @@ describe('Testing with original sample data', function() {
 
 });
 
-describe('Testing two sections(metadata & demographics)', function() {
+xdescribe('Testing two sections(metadata & demographics)', function() {
 
     before(function(done) {
         var txtfile = loadFile('singleSectionDemo.txt');
@@ -109,7 +109,7 @@ describe('Testing two sections(metadata & demographics)', function() {
 
 });
 
-describe('Testing File with only meta section', function() {
+xdescribe('Testing File with only meta section', function() {
 
     before(function(done) {
         var txtfile = loadFile('metaOnly.txt');
@@ -141,7 +141,7 @@ describe('Testing a different number of dashes(5)', function() {
     sharedTests();
 });
 
-describe('Testing file with beginning(meta) and end(claims)', function() {
+xdescribe('Testing file with beginning(meta) and end(claims)', function() {
 
     before(function(done) {
         var txtfile = loadFile('begAndEndSections.txt');
@@ -208,7 +208,7 @@ describe('Testing a file with empty sections', function() {
 
 });
 
-describe('Testing a file with missing', function() {
+xdescribe('Testing a file with missing', function() {
 
     before(function(done) {
         var txtfile = loadFile('missingSections.txt');
