@@ -50,7 +50,10 @@
     "coveralls": "~2.10.0",
     "mocha-lcov-reporter": "0.0.1",
     "xmldom": "^0.1.19",
-    "execSync": "^1.0.1-pre"
+    "execSync": "^1.0.1-pre",
+    "path": "^0.4.9",
+    "walk": "^2.3.3",
+    "winston": "^0.7.3"
   },
   "repository": {
     "type": "git",
