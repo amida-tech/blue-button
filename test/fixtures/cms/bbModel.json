@@ -66,44 +66,42 @@
                     "name": "Glucose Level"
                 },
                 "results": [
-                    [
-                        {
-                            "date": {
-                                "date": "2008-03-21T00:00:00.000Z",
-                                "precision": "day"
-                            },
-                            "name": "FBS",
-                            "value": "135",
-                            "unit": "mg/dL"
+                    {
+                        "date": {
+                            "date": "2008-03-21T00:00:00.000Z",
+                            "precision": "day"
                         },
-                        {
-                            "date": {
-                                "date": "2008-03-21T00:00:00.000Z",
-                                "precision": "day"
-                            },
-                            "name": "RBS",
-                            "value": "170",
-                            "unit": "mg/dL"
+                        "name": "FBS",
+                        "value": "135",
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date": {
+                            "date": "2008-03-21T00:00:00.000Z",
+                            "precision": "day"
                         },
-                        {
-                            "date": {
-                                "date": "2008-03-21T00:00:00.000Z",
-                                "precision": "day"
-                            },
-                            "name": "RBS",
-                            "value": "150",
-                            "unit": "mg/dL"
+                        "name": "RBS",
+                        "value": "170",
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date": {
+                            "date": "2008-03-21T00:00:00.000Z",
+                            "precision": "day"
                         },
-                        {
-                            "date": {
-                                "date": "2008-03-21T00:00:00.000Z",
-                                "precision": "day"
-                            },
-                            "name": "RBS",
-                            "value": "120",
-                            "unit": "mg/dL"
-                        }
-                    ]
+                        "name": "RBS",
+                        "value": "150",
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date": {
+                            "date": "2008-03-21T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "name": "RBS",
+                        "value": "120",
+                        "unit": "mg/dL"
+                    }
                 ]
             }
         ],

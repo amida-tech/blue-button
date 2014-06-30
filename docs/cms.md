@@ -3,14 +3,6 @@
 # CMS Parser for Blue Button
 
 
-
-## Usage
-
-
-
-
-
-
 ##Design Decisions Documentation 
 
 
@@ -138,19 +130,6 @@ key: value
 3. Object must have the number of titles specified in the original test file.(Done)
 4. There should be no empty keys in ANY object model.(Done)
 
-###Text file specific test cases
-
-1. Test Empty sections(Done)
-2. Test if parser is functional with missing sections(Done)
-3. Test empty file(Done)
-4. Test source, but no section(Done)
-5. Test different number of dashes(Done)
-6. Test the file when there is only one section(Done)
-7. Test when there is two sections, one from the very beginning and one from the very end.(Done)
-8. Test when there is only meta data(Done)
-
-
-
 ###Task Backlog 
 
 
@@ -201,30 +180,6 @@ the patient took shots. From this, maybe the parser should extrapolate the admin
 16. Medications rate detector needs to be written.
 
 17. Vitals value detection may need modifications based on more text sample files. 
-
-
-
-## Resolved Tasks
-
-1.  Convert datetime into yyyy/mm/dd hh:mm:ss format...
-
-2.  Restructure so that format matches Matt's update.(done)
-
-3. Demographics needs to be able to handle single key value pairs just in case.(Done)
-
-4. writeValue in intermediate object to blue button converter will have to return an object eventually.(done)
-
-##Integration Notes
-
-First, add a line that says: 
-In /lib/parser.js,
-
-1. add
-	require('(directory structure/CMSparser') or any other packages
-2. In the last line of the file, you need to put the key value pair for the new CMSParser package
-
-
-
 
 
 
