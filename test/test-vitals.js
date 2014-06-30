@@ -19,9 +19,9 @@ describe('vitals parser', function() {
         });
     });
     
-
     it('full deep check', function(done) {
         expect(vitals).to.exist;
+        //console.log(JSON.stringify(vitals, null, 10));
         var filepath  = path.join(__dirname, 'fixtures/file-snippets/json/CCD_1_Vitals.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedVitals = jsutil.jsonParseWithDate(json2Read);
@@ -33,13 +33,14 @@ describe('vitals parser', function() {
     it ('spot check', function(done) {
         expect(vitals).to.exist;
         expect(vitals).to.have.length(6);
+        
         expect(vitals[0]).exist;
-        expect(vitals[0].name).to.equal('Height');
+        expect(vitals[0].vital.name).to.equal('Height');
         expect(vitals[0]).exist;
         expect(vitals[0].value).to.equal(177);
         expect(vitals[0].unit).to.equal('cm');
         expect(vitals[1]).exist;
-        expect(vitals[1].name).to.equal('Patient Body Weight - Measured');
+        expect(vitals[1].vital.name).to.equal('Patient Body Weight - Measured');
         expect(vitals[1]).exist;
         expect(vitals[1].value).to.equal(86);
         expect(vitals[1].unit).to.equal('kg');

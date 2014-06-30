@@ -20,6 +20,7 @@
             "date": "2000-03-23T14:30:00.000Z",
             "precision": "minute"
         }],
+        "status": "completed",
         "interpretations": [
             "Normal"
         ],
@@ -38,6 +39,7 @@
             "date": "2000-03-23T14:30:00.000Z",
             "precision": "minute"
         }],
+        "status": "completed",
         "interpretations": [
             "Normal"
         ],
@@ -56,6 +58,7 @@
             "date": "2000-03-23T14:30:00.000Z",
             "precision": "minute"
         }],
+        "status": "completed",
         "interpretations": [
             "Low"
         ],
