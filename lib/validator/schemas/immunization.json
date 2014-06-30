@@ -1,0 +1,124 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "administration": {
+            "type": "object",
+            "properties": {
+                "dose": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                },
+                "route": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "body_site": {
+                    "type": "string"
+                },
+                "form": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties":false
+        },
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            }
+        },
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            }
+        },
+        "performer": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_address"
+                    }
+                },
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_id"
+                    }
+                },
+                "name": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_name"
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                    }
+                },
+                "organization": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "identifiers": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "http://local.com/commonModels#/properties/cda_id"
+                                }
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "address": {
+                                "$ref": "http://local.com/commonModels#/properties/cda_address"
+                            },
+                            "phone": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                                }
+                            },
+                            "email": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "http://local.com/commonModels#/properties/cda_email"
+                                }
+                            }
+                        },
+                        "additionalProperties":false
+                    }
+                }
+            },
+            "additionalProperties":false
+        },
+        "product": {
+            "type": "object",
+            "properties": {
+                "lot_number": {
+                    "type": "string"
+                },
+                "manufacturer": {
+                    "type": "string"
+                },
+                "product": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                }
+            },
+            "required":["product"],
+            "additionalProperties":false
+
+        },
+        "status": {
+            "type": "string"
+        },
+        "sequence_number": {
+            "type": "string"
+        },
+        "refusal_reason": {
+            "type": "string"
+        }
+    },
+    "additionalProperties":false,
+    "required":["status", "product"]
+}

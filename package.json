@@ -32,7 +32,8 @@
     "libxmljs": "*",
     "node-uuid": "*",
     "underscore": "1.6.x",
-    "xdate": "*"
+    "xdate": "*",
+    "z-schema": "^2.4.8"
   },
   "devDependencies": {
     "should": "3.1.x",

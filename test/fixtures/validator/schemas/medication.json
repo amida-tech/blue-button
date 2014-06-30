@@ -1,0 +1,87 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "administration": {
+            "type": "object",
+            "properties": {
+                "dose": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                },
+                "form": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "rate": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                },
+                "route": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "dose_restriction": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                },
+                "site": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                }
+            },
+            "additionalProperties": false,
+            "minProperties": 1
+        },
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            },
+            "minItems": 1
+        },
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            },
+            "minItems": 1
+        },
+        "precondition": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "value": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                }
+            }
+        },
+        "product": {
+            "type": "object",
+            "properties": {
+                "identifiers": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_id"
+                },
+                "product": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "unencoded_name": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "minProperties": 1,
+            "required": [
+                "product"
+            ]
+        },
+        "sig": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "minProperties": 1,
+    "required": [
+        "product",
+        "status"
+    ]
+}
