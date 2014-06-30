@@ -36,5 +36,4 @@ console.log(JSON.stringify(result, null, 4));
 //generating CCDA out of JSON
 var ccda = bb.generateCCDA(result);
 
-
-console.log(ccda);
+console.log(ccda.toString());
