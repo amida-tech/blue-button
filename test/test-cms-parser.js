@@ -184,9 +184,9 @@ describe('Testing a file with empty sections', function () {
     var allSectionsAreEmpty = true;
     for(var key in result){
         var obj = result[key];
-        for(sourceOrData in obj){
+        for(var sourceOrData in obj){
             if (obj[sourceOrData] instanceof Array){
-                if( obj[sourceOrData].length != 0 ){
+                if( obj[sourceOrData].length !== 0 ){
                 allSectionAreEmpty = false;
             }
             }

@@ -47,7 +47,7 @@ module.exports = function(grunt) {
           reporter: 'spec',
           timeout: '10000'
         },
-        src: ['test/*.js', 'test/**/*.js']
+        src: ['test/*.js', 'test/ccda-sections/*.js', 'test/**/*.js']
       }
     },
     coveralls: {
