@@ -2,16 +2,51 @@
 
 ###Object Schema:
 ```
-var Allergies = {
-  "date": [{cda_date}],
-  "identifiers": [{cda_id}],
-  "allergen": {cda_coded_entry},
-  "severity": {type: string, required: false},
-  "status": {type: string, required: false},
-  "reactions": [{
-     "reaction": {cda_coded_entry}, 
-     "severity": {type: string, required: false}          
-  }]
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "allergen": {
+            "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+        },
+        "date": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            }
+        },
+        "identifiers": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+                }
+        },
+         "severity": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "reaction": {
+            "type": "array",
+            "minItems":1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "reaction": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                    },
+                    "severity": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+       
+    },
+    "required":["allergen"]
 }
 ```
 

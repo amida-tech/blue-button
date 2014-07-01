@@ -2,18 +2,50 @@
 
 ###Object Schema:
 ```
-var Problems = {
-        "date": [{cda_date}],
-        "identifiers": [{cda_id}],
-        "negation_indicator": {type: boolean, required: false},
-        "problem": {cda_coded_entry},
-        "onset_age": {type: string, required: false},
-        "onset_age_unit": {type: string, required: false},
-        "status": {type: string, required: false}, 
-        "patient_status": {type: string, required: false},
-        ,
-        "source_list_identifiers": [{cda_id}]
-      }
+{
+    "type": "object",
+    "$schema":"http://json-schema.org/draft-04/schema",
+    "properties": {
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            }
+        },
+    "identifiers": {
+        "type": "array",
+        "items": {
+            "$ref": "http://local.com/commonModels#/properties/cda_id"
+        }
+    },
+    "problem": {
+        "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+    },
+    "negation_indicator": {
+        "type": "boolean"
+    },
+    "onset_age": {
+        "type": "string"
+    },
+    "onset_age_unit": {
+        "type": "string"
+    },
+    "patient_status": {
+        "type": "string"
+    },
+    "status": {
+        "type": "string"
+    },
+    "source_list_identifiers": {
+        "type": "array",
+        "items": {
+            "$ref": "http://local.com/commonModels#/properties/cda_id"
+        }
+    }
+    },
+    "additionalProperties":false,
+    "required":["problem"]
+}
 ```
 
 [JSON/XML sample](samples/problems.md)

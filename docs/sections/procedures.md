@@ -2,26 +2,113 @@
 
 ###Procedures Schema:
 ```
-var Procedures = {
-        "procedure": {cda_coded_entry},
-        "procedure_type": {type:string, require:true},
-        "status": {type: string, require: true},
-        "date": [{cda_date}],
-        "identifiers": [{cda_id}],
-        "body_sites": [{cda_coded_entry}],
-        "providers": [{
-          "address": {cda_address},
-          "phone": {cda_phone},
-          "email": {cda_email}
-          "organization": {
-            "name": {type:string, require:flase},
-            "address": {cda_address},
-            "phone": {cda_phone},
-            "email": {cda_email}
-          }
-        }],
-        "locations": [{cda_locations}]
-      }
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+         "procedure": {
+            "type": "object",
+            "properties": {
+                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+            }
+        },
+        "procedure_type": {
+            "type": "string"
+        },
+        "body_sites": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+            },
+            "minItems": 1
+        },
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            },
+            "minItems": 1
+        },
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            },
+            "minItems": 1
+        },
+        "status": {
+            "type": "string"
+        },
+        "providers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "address": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_address"
+                    },
+                    "identifiers": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "http://local.com/commonModels#/properties/cda_id"
+                        }
+                    },
+                    "organization": {
+                        "type": "object",
+                        "properties": {
+                            "address": {
+                                "$ref": "http://local.com/commonModels#/properties/cda_address"
+                            },
+                            "identifiers": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "http://local.com/commonModels#/properties/cda_id"
+                                }
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "phone": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                                }
+                            },
+                             "email": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "http://local.com/commonModels#/properties/cda_email"
+                                }
+                            }
+
+                        },
+                        "minProperties": 1
+                    },
+                    "phone": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                        }
+                    }
+                },
+                "required": [
+                    "address"
+                ]
+            }
+        },
+        "locations": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_location"
+            }
+        }
+    },
+    "required": [
+        "status",
+        "procedure"
+    ],
+    "additionalProperties": false
+}
 ```
 
 [JSON/XML sample](samples/procedures.md)

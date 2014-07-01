@@ -2,38 +2,95 @@
 
 ###Object Schema:
 ```
-  var Medication = {
-    "date": [{cda_date}],
-    "identifiers": [{cda_id}],
-    "status": {type:string: required: true},
-    "sig": {type:string, required:false},
-    "product": {
-      "product": {cda_coded_entry},
-      "unencoded_name": {type: string, required: false},
-      "identifiers": [{cda_id}]
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            },
+            "minItems": 1
+        },
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            },
+            "minItems": 1
+        },
+        "sig": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "administration": {
+            "type": "object",
+            "properties": {
+                "dose": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                },
+                "form": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "rate": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                },
+                "route": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "dose_restriction": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                },
+                "site": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                }
+            },
+            "additionalProperties": false,
+            "minProperties": 1
+        },
+        
+        "precondition": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "value": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                }
+            }
+        },
+        "product": {
+            "type": "object",
+            "properties": {
+                "identifiers": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_id"
+                },
+                "product": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "unencoded_name": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "minProperties": 1,
+            "required": [
+                "product"
+            ]
+        },
+        
     },
-    "administration": {
-      "route": {cda_coded_entry},
-      "form": {cda_coded_entry},
-      "dose": {
-      	"value": {type: string, required: false},
-      	"unit": {type: string, required: false}
-      },
-      "dose_restriction": {
-      	"value": {type: string, required: false},
-      	"unit": {type: string, required: false}
-      },
-      "rate": {
-      	"value": {type: string, required: false},
-      	"unit": {type: string, required: false}
-      },
-      "site": {cda_coded_entry}
-    },
-      "precondition": {
-          "code": {cda_coded_entry},
-          "value": {cda_coded_entry}
-    }
-  }
+    "additionalProperties": false,
+    "minProperties": 1,
+    "required": [
+        "product",
+        "status"
+    ]
+}
 
 ```
 

@@ -2,27 +2,92 @@
 
 ###Object Schema:
 ```
-var result_set = {
-         "result_set": {cda_coded_entry},
-         "results": [{cda_result}],
-         "identifiers": [{cda_id{]
-      }
-
-var cda_result = {
-        "date": [{cda_date}],
-        "identifiers": [{cda_id}],
-        "status": {type: string, required: true},
-        "result": {cda_coded_entry},
-        "value": {type: string, required: false},
-        "unit": {type: string, required: false},
-        "reference_range": {
-          "text": {type: string, required: false},
-          "low_value": {type: string, required: false},
-          "low_unit": {type: string, required: false},
-          "high_value": {type: string, required: false},
-          "high_unit": {type: string, required: false}
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            },
+            "minItems": 1
+        },
+        "result_set": {
+            "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+        },
+        "results": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "http://local.com/commonModels#/properties/cda_date"
+                        }
+                    },
+                    "identifiers": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "http://local.com/commonModels#/properties/cda_id"
+                        }
+                    },
+                    "interpretations": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "result": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "unit": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "number"
+                    },
+                    "reference_range": {
+                        "type": "object",
+                        "properties": {
+                            "text": {
+                                "type": "string"
+                            },
+                            "low_value": {
+                                "type": "number"
+                            },
+                            "low_unit": {
+                                "type": "string"
+                            },
+                            "high_value": {
+                                "type": "number"
+                            },
+                            "high_unit": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "required": [
+                "result",
+                "date",
+                "status"
+            ],
+            "additionalProperties":false
+            }
+            
         }
-      }
+    },
+    "additionalProperties":false,
+    "required": [
+        "results"
+    ]
+}
 ```
 
 [JSON/XML sample](samples/results.md)
