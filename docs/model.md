@@ -8,19 +8,36 @@ There are components common to multiple sections and are defined [here](sections
 
 ###Required Sections:
 
-- [Allergies model](sections/allergies.md) - [JSON/XML sample](sections/samples/allergies.md)
-- [Medications model](sections/medications.md) - [JSON/XML sample](sections/samples/medications.md)
-- [Problems model](sections/problems.md) - [JSON/XML sample](sections/samples/problems.md)
-- [Results model](sections/results.md) - [JSON/XML sample](sections/samples/results.md)
-- [Demographics model](sections/demographics.md) - [JSON/XML sample](sections/samples/demographics.md)
+- [Allergies model](sections/allergies.md) 
+	- [JSON/XML sample](sections/samples/allergies.md)
+	- [JSON/CMS sample](sections/cmssamples/allergies.md)
+- [Medications model](sections/medications.md) 
+	- [JSON/XML sample](sections/samples/medications.md)
+	- [JSON/CMS sample](sections/cmssamples/medications.md)
+- [Problems model](sections/problems.md)
+	- [JSON/XML sample](sections/samples/problems.md)
+	- [JSON/CMS sample](sections/cmssamples/problems.md)
+- [Results model](sections/results.md) 
+	- [JSON/XML sample](sections/samples/results.md)
+	- [JSON/CMS sample](sections/cmssamples/results.md)
+- [Demographics model](sections/demographics.md) 
+	- [JSON/XML sample](sections/samples/demographics.md)
+	- [JSON/CMS sample](sections/cmssamples/demographics.md)
 
 ###Optional Sections:
 
-- [Procedures model](sections/procedures.md) - [JSON/XML sample](sections/samples/procedures.md)
-- [Encounters model](sections/encounters.md) - [JSON/XML sample](sections/samples/encounters.md)
-- [Immunizations model](sections/immunizations.md) - [JSON/XML sample](sections/samples/immunizations.md)
-- [Vitals model](sections/vitals.md) - [JSON/XML sample](sections/samples/vitals.md)
-- [Social History model](sections/socialHistory.md) - [JSON/XML sample](sections/samples/socialHistory.md)
+- [Procedures model](sections/procedures.md) 
+	- [JSON/XML sample](sections/samples/procedures.md)
+- [Encounters model](sections/encounters.md) 
+	- [JSON/XML sample](sections/samples/encounters.md)
+- [Immunizations model](sections/immunizations.md) 
+	- [JSON/XML sample](sections/samples/immunizations.md)
+	- [JSON/CMS sample](sections/cmssamples/immunizations.md)
+- [Vitals model](sections/vitals.md) 
+	- [JSON/XML sample](sections/samples/vitals.md)
+	- [JSON/CMS sample](sections/cmssamples/vitals.md)
+- [Social History model](sections/socialHistory.md) 
+	- [JSON/XML sample](sections/samples/socialHistory.md)
 
 ### Shared Components:
 
