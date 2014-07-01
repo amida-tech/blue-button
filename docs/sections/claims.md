@@ -3,7 +3,6 @@
 ###Object Schema:
 ```
 {
-   {
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
@@ -216,7 +215,7 @@
 }
 ```
 
-[JSON/CMS text sample](cmssamples/claims.md)
+[JSON/CMS sample](cmssamples/claims.md)
 
 
 ####Notes

@@ -50,8 +50,8 @@
 }
 ```
 
-[JSON/XML sample](samples/allergies.md)
-
+- [JSON/XML sample](samples/allergies.md)
+- [JSON/CMS sample](cmssamples/allergies.md)
 
 ####Notes
 - Name and code are optional in the spec.  In this model we assume they are required.

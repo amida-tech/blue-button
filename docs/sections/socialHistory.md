@@ -31,7 +31,7 @@
 }
 ```
 
-[JSON/XML sample](samples/socialHistory.md)
+- [JSON/XML sample](samples/socialHistory.md)
 
 
 ####Notes
