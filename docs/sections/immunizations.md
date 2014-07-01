@@ -138,7 +138,8 @@
 }
 ```
 
-[JSON/XML sample](samples/immunizations.md)
+- [JSON/XML sample](samples/immunizations.md)
+- [JSON/CMS sample](cmssamples/immunizations.md)
 
 
 ####Notes

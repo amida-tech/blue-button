@@ -38,6 +38,12 @@ There are components common to multiple sections and are defined [here](sections
 	- [JSON/CMS sample](sections/cmssamples/vitals.md)
 - [Social History model](sections/socialHistory.md) 
 	- [JSON/XML sample](sections/samples/socialHistory.md)
+- [Insurance model](sections/insurances.md) 
+	- [JSON/CMS sample](sections/cmssamples/insurances.md)
+- [Claims model](sections/claims.md) 
+	- [JSON/CMS sample](sections/cmssamples/claims.md)
+	
+
 
 ### Shared Components:
 

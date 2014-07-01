@@ -111,7 +111,7 @@
 }
 ```
 
-[JSON/XML sample](samples/procedures.md)
+- [JSON/XML sample](samples/procedures.md)
 
 
 ####Notes

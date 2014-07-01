@@ -43,7 +43,9 @@
 }
 ```
 
-[JSON/XML sample](samples/vitals.md)
+- [JSON/XML sample](samples/vitals.md)
+- [JSON/CMS sample](cmssamples/vitals.md)
+
 
 ####Notes
 - TypeCode always "Cluster".

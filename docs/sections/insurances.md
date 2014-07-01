@@ -73,7 +73,6 @@
 }
 ```
 
-[JSON/CMS text sample](cmssamples/insurances.md)
-
+[JSON/CMS sample](cmssamples/insurances.md)
 
 ####Notes

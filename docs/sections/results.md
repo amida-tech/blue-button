@@ -90,7 +90,8 @@
 }
 ```
 
-[JSON/XML sample](samples/results.md)
+- [JSON/XML sample](samples/results.md)
+- [JSON/CMS sample](cmssamples/results.md)
 
 
 ####Notes

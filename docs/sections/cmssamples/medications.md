@@ -20,7 +20,13 @@ Data model description - [Medications](../medications.md)
             "product": {
                 "name": "Erythromycin"
             },
-            "unencoded_name": "Erythromycin"
+            "unencoded_name": "Erythromycin",
+            "date": [
+                {
+                    "date": "1949-09-28T00:00:00.000Z",
+                    "precision": "day"
+                }
+            ]
         },
         "sig": "erythromycin"
     }

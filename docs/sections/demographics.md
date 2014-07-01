@@ -149,8 +149,8 @@
 }
 ```
 
-[JSON/XML sample](samples/demographics.md)
-
+- [JSON/XML sample](samples/demographics.md)
+- [JSON/CMS sample](cmssamples/demographics.md)
 
 ####General Notes
 * Assumption:  Each record can have more than one recordTarget.  This seems inaccurate, as it would result in duplicative patient information, so it is ignored.

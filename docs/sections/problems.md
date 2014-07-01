@@ -48,7 +48,8 @@
 }
 ```
 
-[JSON/XML sample](samples/problems.md)
+- [JSON/XML sample](samples/problems.md)
+- [JSON/CMS sample](cmssamples/problems.md)
 
 
 ####Notes

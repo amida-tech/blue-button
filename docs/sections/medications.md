@@ -94,7 +94,8 @@
 
 ```
 
-[JSON/XML sample](samples/medications.md)
+- [JSON/XML sample](samples/medications.md)
+- [JSON/CMS sample](cmssamples/medications.md)
 
 
 ####Notes
