@@ -60,51 +60,6 @@
                 "status": "completed"
             }
         ],
-        "results": [
-            {
-                "result_set": {
-                    "name": "Glucose Level"
-                },
-                "results": [
-                    {
-                        "date": {
-                            "date": "2008-03-21T00:00:00.000Z",
-                            "precision": "day"
-                        },
-                        "name": "FBS",
-                        "value": "135",
-                        "unit": "mg/dL"
-                    },
-                    {
-                        "date": {
-                            "date": "2008-03-21T00:00:00.000Z",
-                            "precision": "day"
-                        },
-                        "name": "RBS",
-                        "value": "170",
-                        "unit": "mg/dL"
-                    },
-                    {
-                        "date": {
-                            "date": "2008-03-21T00:00:00.000Z",
-                            "precision": "day"
-                        },
-                        "name": "RBS",
-                        "value": "150",
-                        "unit": "mg/dL"
-                    },
-                    {
-                        "date": {
-                            "date": "2008-03-21T00:00:00.000Z",
-                            "precision": "day"
-                        },
-                        "name": "RBS",
-                        "value": "120",
-                        "unit": "mg/dL"
-                    }
-                ]
-            }
-        ],
         "medications": [
             {
                 "product": {
@@ -120,7 +75,13 @@
                     "product": {
                         "name": "Erythromycin"
                     },
-                    "unencoded_name": "Erythromycin"
+                    "unencoded_name": "Erythromycin",
+                    "date": [
+                        {
+                            "date": "1949-09-28T00:00:00.000Z",
+                            "precision": "day"
+                        }
+                    ]
                 },
                 "sig": "erythromycin"
             }

@@ -243,27 +243,7 @@ Booster 3 Date:
 
 
 
---------------------------------
-Self Reported Labs and Tests
 
---------------------------------
-
-Source: Self-Entered
-
-
-
-Test/Lab Type: Glucose Level
-Date Taken: 03/21/2008
-
-Administered by: AnyLab
-
-Requesting Doctor: Dr. Smith
-
-Reason Test/Lab Requested: Ongoing elevated glucose
-
-Results: 135, 170, 150, 120
-
-Comments: Fasting, hour 1, hour 2, hour 3
 
 
 

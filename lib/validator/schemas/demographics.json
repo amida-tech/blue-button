@@ -2,6 +2,32 @@
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
+        "name": {
+            "$ref": "http://local.com/commonModels#/properties/cda_name"
+        },
+        "dob": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_date"
+                },
+                "minItems": 1
+            }
+        },
+        "gender": {
+            "type": "string"
+        },
+        "identifiers": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            }
+        },
+        "marital_status": {
+            "type": "string"
+        },
         "addresses": {
             "type": "array",
             "items": {
@@ -9,12 +35,23 @@
             },
             "minItems": 1
         },
-         "identifiers": {
+        "phone": {
             "type": "array",
-            "minItems": 1,
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_id"
-                }
+                "$ref": "http://local.com/commonModels#/properties/cda_phone"
+            }
+        },
+        "email": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_email"
+            }
+        },
+        "race_ethnicity": {
+            "type": "string"
+        },
+        "religion": {
+            "type": "string"
         },
         "birthplace": {
             "type": "object",
@@ -38,19 +75,6 @@
                 "city",
                 "country"
             ]
-        },
-        "dob": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_date"
-                },
-                "minItems": 1
-            }
-        },
-        "gender": {
-            "type": "string"
         },
         "guardians": {
             "type": "array",
@@ -83,7 +107,7 @@
                     "names"
                 ],
                 "additionalProperties": false,
-                "minPropeties": 1
+                "minProperties": 1
             },
             "minItems": 1
         },
@@ -111,30 +135,6 @@
                 ]
             },
             "minItems": 1
-        },
-        "marital_status": {
-            "type": "string"
-        },
-        "name": {
-            "$ref": "http://local.com/commonModels#/properties/cda_name"
-        },
-        "phone": {
-            "type": "array",
-            "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_phone"
-            }
-        },
-        "email": {
-            "type": "array",
-            "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_email"
-            }
-        },
-        "race_ethnicity": {
-            "type": "string"
-        },
-        "religion": {
-            "type": "string"
         }
     },
     "additionalProperties": false,
