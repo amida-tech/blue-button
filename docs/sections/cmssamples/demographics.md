@@ -10,13 +10,15 @@ Data model description - [Demographics](../demographics.md)
         "first": "JOHN",
         "last": "DOE"
     },
-    "dob": {
-        "date": "1910-01-01T00:00:00.000Z",
-        "precision": "day"
-    },
+    "dob": [
+        {
+            "date": "1910-01-01T00:00:00.000Z",
+            "precision": "day"
+        }
+    ],
     "email": [
         {
-            "address": "JOHNDOE@example.com",
+            "email": "JOHNDOE@example.com",
             "type": "primary"
         }
     ],
@@ -26,7 +28,7 @@ Data model description - [Demographics](../demographics.md)
             "type": "primary"
         }
     ],
-    "address": [
+    "addresses": [
         {
             "use": "primary",
             "streetLines": [

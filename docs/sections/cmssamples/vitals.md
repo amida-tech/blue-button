@@ -10,24 +10,42 @@ Data model description - [Vital Signs](../vitals.md)
         "vital": {
             "name": "Blood Pressure"
         },
-        "date": {
-            "date": "2011-07-22T15:00:00.000Z",
-            "precision": "hour"
+        "date": [
+            {
+                "date": "2011-07-22T15:00:00.000Z",
+                "precision": "hour"
+            }
+        ],
+        "value": 120,
+        "unit": "mm[Hg]",
+        "status": "completed"
+    },
+    {
+        "vital": {
+            "name": "Blood Pressure"
         },
-        "value": "120/80",
-        "units": "mm[Hg]",
+        "date": [
+            {
+                "date": "2011-07-22T15:00:00.000Z",
+                "precision": "hour"
+            }
+        ],
+        "value": 80,
+        "unit": "mm[Hg]",
         "status": "completed"
     },
     {
         "vital": {
             "name": "Glucose"
         },
-        "date": {
-            "date": "2012-03-20T12:00:00.000Z",
-            "precision": "hour"
-        },
-        "value": "110",
-        "units": "mg/dL",
+        "date": [
+            {
+                "date": "2012-03-20T12:00:00.000Z",
+                "precision": "hour"
+            }
+        ],
+        "value": 110,
+        "unit": "mg/dL",
         "status": "completed"
     }
 ]

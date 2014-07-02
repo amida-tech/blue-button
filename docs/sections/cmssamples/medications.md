@@ -13,22 +13,24 @@ Data model description - [Medications](../medications.md)
             },
             "unencoded_name": "Aspirin"
         },
-        "sig": "aspirin"
+        "sig": "aspirin",
+        "status": "Completed"
     },
     {
+        "date": [
+            {
+                "date": "1949-09-28T00:00:00.000Z",
+                "precision": "day"
+            }
+        ],
         "product": {
             "product": {
                 "name": "Erythromycin"
             },
-            "unencoded_name": "Erythromycin",
-            "date": [
-                {
-                    "date": "1949-09-28T00:00:00.000Z",
-                    "precision": "day"
-                }
-            ]
+            "unencoded_name": "Erythromycin"
         },
-        "sig": "erythromycin"
+        "sig": "erythromycin",
+        "status": "Completed"
     }
 ]
 ```
