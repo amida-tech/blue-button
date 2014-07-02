@@ -208,7 +208,7 @@ describe('Testing a file with empty sections', function() {
 
 });
 
-xdescribe('Testing a file with missing', function() {
+describe('Testing a file with missing', function() {
 
     before(function(done) {
         var txtfile = loadFile('missingSections.txt');

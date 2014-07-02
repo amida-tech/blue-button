@@ -5,13 +5,15 @@
                 "first": "JOHN",
                 "last": "DOE"
             },
-            "dob": {
-                "date": "1910-01-01T00:00:00.000Z",
-                "precision": "day"
-            },
+            "dob": [
+                {
+                    "date": "1910-01-01T00:00:00.000Z",
+                    "precision": "day"
+                }
+            ],
             "email": [
                 {
-                    "address": "JOHNDOE@example.com",
+                    "email": "JOHNDOE@example.com",
                     "type": "primary"
                 }
             ],
@@ -21,7 +23,7 @@
                     "type": "primary"
                 }
             ],
-            "address": [
+            "addresses": [
                 {
                     "use": "primary",
                     "streetLines": [
@@ -39,24 +41,42 @@
                 "vital": {
                     "name": "Blood Pressure"
                 },
-                "date": {
-                    "date": "2011-07-22T15:00:00.000Z",
-                    "precision": "hour"
+                "date": [
+                    {
+                        "date": "2011-07-22T15:00:00.000Z",
+                        "precision": "hour"
+                    }
+                ],
+                "value": 120,
+                "unit": "mm[Hg]",
+                "status": "completed"
+            },
+            {
+                "vital": {
+                    "name": "Blood Pressure"
                 },
-                "value": "120/80",
-                "units": "mm[Hg]",
+                "date": [
+                    {
+                        "date": "2011-07-22T15:00:00.000Z",
+                        "precision": "hour"
+                    }
+                ],
+                "value": 80,
+                "unit": "mm[Hg]",
                 "status": "completed"
             },
             {
                 "vital": {
                     "name": "Glucose"
                 },
-                "date": {
-                    "date": "2012-03-20T12:00:00.000Z",
-                    "precision": "hour"
-                },
-                "value": "110",
-                "units": "mg/dL",
+                "date": [
+                    {
+                        "date": "2012-03-20T12:00:00.000Z",
+                        "precision": "hour"
+                    }
+                ],
+                "value": 110,
+                "unit": "mg/dL",
                 "status": "completed"
             }
         ],
@@ -68,22 +88,24 @@
                     },
                     "unencoded_name": "Aspirin"
                 },
-                "sig": "aspirin"
+                "sig": "aspirin",
+                "status": "Completed"
             },
             {
+                "date": [
+                    {
+                        "date": "1949-09-28T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                ],
                 "product": {
                     "product": {
                         "name": "Erythromycin"
                     },
-                    "unencoded_name": "Erythromycin",
-                    "date": [
-                        {
-                            "date": "1949-09-28T00:00:00.000Z",
-                            "precision": "day"
-                        }
-                    ]
+                    "unencoded_name": "Erythromycin"
                 },
-                "sig": "erythromycin"
+                "sig": "erythromycin",
+                "status": "Completed"
             }
         ],
         "allergies": [
@@ -140,10 +162,6 @@
         ],
         "immunizations": [
             {
-                "date": {
-                    "date": "2002-04-21T00:00:00.000Z",
-                    "precision": "day"
-                },
                 "status": "complete",
                 "administration": {
                     "route": {
@@ -151,14 +169,18 @@
                     }
                 },
                 "product": {
-                    "name": "Varicella/Chicken Pox"
-                }
+                    "product": {
+                        "name": "Varicella/Chicken Pox"
+                    }
+                },
+                "date": [
+                    {
+                        "date": "2002-04-21T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
             },
             {
-                "date": {
-                    "date": "1990-02-02T00:00:00.000Z",
-                    "precision": "day"
-                },
                 "status": "complete",
                 "administration": {
                     "route": {
@@ -166,14 +188,18 @@
                     }
                 },
                 "product": {
-                    "name": "Varicella/Chicken Pox (booster 1)"
-                }
+                    "product": {
+                        "name": "Varicella/Chicken Pox (booster 1)"
+                    }
+                },
+                "date": [
+                    {
+                        "date": "1990-02-02T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
             },
             {
-                "date": {
-                    "date": "2009-01-02T00:00:00.000Z",
-                    "precision": "day"
-                },
                 "status": "complete",
                 "administration": {
                     "route": {
@@ -181,8 +207,16 @@
                     }
                 },
                 "product": {
-                    "name": "typhoid"
-                }
+                    "product": {
+                        "name": "typhoid"
+                    }
+                },
+                "date": [
+                    {
+                        "date": "2009-01-02T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
             }
         ],
         "problems": [
