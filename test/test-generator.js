@@ -42,7 +42,6 @@ if (TEST_CCDA_SAMPLES) {
 }
 
 
-
 // test whole CCD document
 if (TEST_CCD) {
 	describe('ccda', function() {

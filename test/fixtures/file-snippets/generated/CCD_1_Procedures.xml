@@ -16,7 +16,7 @@
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20120511"/>
+        <effectiveTime value="20120512"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="appropriate_code" displayName="colon" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <specimen typeCode="SPC">
@@ -70,7 +70,7 @@
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20110202"/>
+        <effectiveTime value="20110203"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <performer>
@@ -95,7 +95,6 @@
         <participant typeCode="LOC">
           <participantRole classCode="SDLOC">
             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-            <code code="1118-9" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation" displayName="Gastroenterology Clinic"/>
             <addr>
               <streetAddressLine>17 Daws Rd.</streetAddressLine>
               <city>Blue Bell</city>
@@ -104,9 +103,7 @@
               <country>US</country>
             </addr>
             <telecom nullFlavor="UNK"/>
-            <playingEntity classCode="PLC">
-              <name>Community Gastroenterology Clinic</name>
-            </playingEntity>
+            <playingEntity classCode="PLC"/>
           </participantRole>
         </participant>
       </observation>
@@ -121,7 +118,7 @@
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20110202"/>
+        <effectiveTime value="20110203"/>
         <methodCode nullFlavor="UNK"/>
         <performer>
           <assignedEntity>
@@ -145,7 +142,6 @@
         <participant typeCode="LOC">
           <participantRole classCode="SDLOC">
             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-            <code code="1118-9" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation" displayName="Gastroenterology Clinic"/>
             <addr>
               <streetAddressLine>17 Daws Rd.</streetAddressLine>
               <city>Blue Bell</city>
@@ -154,9 +150,7 @@
               <country>US</country>
             </addr>
             <telecom nullFlavor="UNK"/>
-            <playingEntity classCode="PLC">
-              <name>Community Gastroenterology Clinic</name>
-            </playingEntity>
+            <playingEntity classCode="PLC"/>
           </participantRole>
         </participant>
       </act>
