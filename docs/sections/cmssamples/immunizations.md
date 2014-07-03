@@ -7,10 +7,6 @@ Data model description - [Immunizations](../immunizations.md)
 ```javascript
 [
     {
-        "date": {
-            "date": "2002-04-21T00:00:00.000Z",
-            "precision": "day"
-        },
         "status": "complete",
         "administration": {
             "route": {
@@ -18,14 +14,18 @@ Data model description - [Immunizations](../immunizations.md)
             }
         },
         "product": {
-            "name": "Varicella/Chicken Pox"
-        }
+            "product": {
+                "name": "Varicella/Chicken Pox"
+            }
+        },
+        "date": [
+            {
+                "date": "2002-04-21T00:00:00.000Z",
+                "precision": "day"
+            }
+        ]
     },
     {
-        "date": {
-            "date": "1990-02-02T00:00:00.000Z",
-            "precision": "day"
-        },
         "status": "complete",
         "administration": {
             "route": {
@@ -33,14 +33,18 @@ Data model description - [Immunizations](../immunizations.md)
             }
         },
         "product": {
-            "name": "Varicella/Chicken Pox (booster 1)"
-        }
+            "product": {
+                "name": "Varicella/Chicken Pox (booster 1)"
+            }
+        },
+        "date": [
+            {
+                "date": "1990-02-02T00:00:00.000Z",
+                "precision": "day"
+            }
+        ]
     },
     {
-        "date": {
-            "date": "2009-01-02T00:00:00.000Z",
-            "precision": "day"
-        },
         "status": "complete",
         "administration": {
             "route": {
@@ -48,8 +52,16 @@ Data model description - [Immunizations](../immunizations.md)
             }
         },
         "product": {
-            "name": "typhoid"
-        }
+            "product": {
+                "name": "typhoid"
+            }
+        },
+        "date": [
+            {
+                "date": "2009-01-02T00:00:00.000Z",
+                "precision": "day"
+            }
+        ]
     }
 ]
 ```
