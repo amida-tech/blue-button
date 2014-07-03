@@ -60,7 +60,6 @@ function sharedTests() {
 
     it('make sure intermediate format has all titles', function(done) {
         var titles = txtToIntObj.getTitles(this.txtdata);
-        //titleTest(result, titles);
         done();
     });
 
@@ -85,7 +84,7 @@ describe('Testing with original sample data', function() {
 
 });
 
-xdescribe('Testing two sections(metadata & demographics)', function() {
+describe('Testing two sections(metadata & demographics)', function() {
 
     before(function(done) {
         var txtfile = loadFile('singleSectionDemo.txt');
@@ -102,14 +101,14 @@ xdescribe('Testing two sections(metadata & demographics)', function() {
         var resultKeys = Object.keys(result);
         expect(resultKeys.length).to.equal(2);
 
-        var expectedTitles = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION', 'Demographic'];
+        var expectedTitles = ['meta', 'demographic'];
         expect(result).to.have.keys(expectedTitles);
         done();
     });
 
 });
 
-xdescribe('Testing File with only meta section', function() {
+describe('Testing File with only meta section', function() {
 
     before(function(done) {
         var txtfile = loadFile('metaOnly.txt');
@@ -124,7 +123,7 @@ xdescribe('Testing File with only meta section', function() {
         var titles = txtToIntObj.getTitles(this.txtdata);
         var resultKeys = Object.keys(result);
         expect(resultKeys.length).to.equal(1);
-        var expectedTitles = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION'];
+        var expectedTitles = ['meta'];
         expect(result).to.have.keys(expectedTitles);
         done();
     });
@@ -141,7 +140,7 @@ describe('Testing a different number of dashes(5)', function() {
     sharedTests();
 });
 
-xdescribe('Testing file with beginning(meta) and end(claims)', function() {
+describe('Testing file with beginning(meta) and end(claims)', function() {
 
     before(function(done) {
         var txtfile = loadFile('begAndEndSections.txt');
@@ -156,7 +155,7 @@ xdescribe('Testing file with beginning(meta) and end(claims)', function() {
         var titles = txtToIntObj.getTitles(this.txtdata);
         var resultKeys = Object.keys(result);
         expect(resultKeys.length).to.equal(2);
-        var expectedTitles = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION', 'Claim Summary'];
+        var expectedTitles = ['meta', 'claim summary'];
         expect(result).to.have.keys(expectedTitles);
         done();
     });
@@ -220,8 +219,9 @@ describe('Testing a file with missing', function() {
     it('checks that the right numbers of sections are present', function(done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
         var resultKeys = Object.keys(result);
-        var expectedKeys = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION',
-            'Demographic', 'Self Reported Medical Conditions', 'Family Medical History', 'Plans'
+        console.log(resultKeys);
+        var expectedKeys = ['meta',
+            'demographic', 'self reported medical conditions', 'family medical history', 'plans'
         ];
         expect(result).to.have.keys(expectedKeys);
         done();
