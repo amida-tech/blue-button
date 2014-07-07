@@ -12,11 +12,8 @@ describe('Test CMS Parsing, from sample file', function () {
     });
      it('find bad entries', function (done) {
         var obj = bb.parseText(sampleFile);
-        console.log(JSON.stringify(obj, null, 4));
         var valid = validator.validateDocumentModel(obj);
-        console.log(valid);
         var errors = validator.getLastError();
-        console.log(errors);
         done();
     });
 
