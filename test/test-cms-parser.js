@@ -283,7 +283,7 @@ describe('Test a file with only sources', function() {
 describe('Test file parsing beginning to end', function() {
 
     before(function(done) {
-        var txtfile = loadFile('sample2.txt');
+        var txtfile = loadFile('record.txt');
         this.txtdata = txtfile.toString();
         done();
     });
