@@ -52,6 +52,7 @@ describe('Demographics - Snippet Comparison', function() {
         expect(demographics.phone).to.have.length(1);
         expect(demographics.phone[0].number).to.equal('(816)276-6909');
         expect(demographics.phone[0].type).to.equal('primary home');
+        expect(demographics.race_ethnicity).to.equal('White');
         done();
     });
 });
