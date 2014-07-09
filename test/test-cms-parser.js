@@ -219,7 +219,6 @@ describe('Testing a file with missing', function() {
     it('checks that the right numbers of sections are present', function(done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
         var resultKeys = Object.keys(result);
-        console.log(resultKeys);
         var expectedKeys = ['meta',
             'demographic', 'self reported medical conditions', 'family medical history', 'plans'
         ];
@@ -283,7 +282,7 @@ describe('Test a file with only sources', function() {
 describe('Test file parsing beginning to end', function() {
 
     before(function(done) {
-        var txtfile = loadFile('record.txt');
+        var txtfile = loadFile('sample2.txt');
         this.txtdata = txtfile.toString();
         done();
     });
@@ -291,6 +290,7 @@ describe('Test file parsing beginning to end', function() {
     it('checks if the file is converted', function(done) {
         var outputFilename = __dirname + '/fixtures/cms/bbModel.json';
         var intObj = txtToIntObj.getIntObj(this.txtdata);
+        //console.log(JSON.stringify(intObj, null, 4));
         var bbModel = objConverter.convertToBBModel(intObj);
 
         fs.writeFile(outputFilename, JSON.stringify(bbModel, null, 4), function(err) {
@@ -305,3 +305,44 @@ describe('Test file parsing beginning to end', function() {
     });
 
 });
+
+describe('Test insurance for given sample file', function() {
+
+    before(function(done) {
+        var txtfile = loadFile('sample2.txt');
+        this.txtdata = txtfile.toString();
+        done();
+    });
+
+    it('checks for the correct number of objects converted', function(done) {
+        var intObj = txtToIntObj.getIntObj(this.txtdata);
+        var bbModel = objConverter.convertToBBModel(intObj);
+        var totalPlans = bbModel.data.insurance.length;
+        expect(totalPlans).to.equal(6);
+        done();
+
+    });
+
+});
+
+
+describe('Test claims for given sample file', function() {
+
+    before(function(done) {
+        var txtfile = loadFile('sample2.txt');
+        this.txtdata = txtfile.toString();
+        done();
+    });
+
+    it('checks for the correct number of objects converted', function(done) {
+        var intObj = txtToIntObj.getIntObj(this.txtdata);
+        var bbModel = objConverter.convertToBBModel(intObj);
+        var totalPlans = bbModel.data.claims.length;
+        expect(totalPlans).to.equal(5);
+        done();
+
+    });
+
+});
+
+
