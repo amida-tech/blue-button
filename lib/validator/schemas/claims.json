@@ -27,10 +27,11 @@
                 }
             }
         },
+        "number":{"type":"string"},
         "date": {
             "type": "array",
             "items": {
-                "type": "string"
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
             }
         },
         "diagnoses": {
@@ -82,7 +83,8 @@
                         "$ref": "http://local.com/commonModels#/properties/cda_date"
                     },
                     "modifiers": {
-                        "type": "object",
+                        "type": "array",
+                        "items":{
                         "properties": {
                             "code": {
                                 "type": "string"
@@ -94,6 +96,7 @@
                                 "type": "string"
                             }
                         }
+                    }
                     },
                     "number": {
                         "type": "string"
@@ -113,14 +116,15 @@
                         }
                     },
                     "prescriber": {
-                        "type": {
-                            "type": "string"
-                        },
+                        "type":"object",
                         "properties": {
-                            "type": "string"
-                        },
-                        "name": {
-                            "type": "string"
+                            "id":{"$ref": "http://local.com/commonModels#/properties/cda_id"},
+                            "description": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
                         }
                     },
                     "procedure": {
@@ -138,8 +142,11 @@
                         }
                     },
                     "quantity": {
-                        "value": "number",
-                        "unit": "string"
+                        "type":"object",
+                        "properties":{
+                        "value": {"type":"number"},
+                        "unit": {"type":"string"}
+                    }
                     },
                     "rendering provider": {
                         "type": "object",
@@ -176,7 +183,7 @@
                         "type": "string"
                     },
                     "type_of_service": {
-                        "type": "string"
+                        "type": "number"
                     }
                 }
             },
@@ -249,8 +256,9 @@
         "type": {
             "type": "array",
             "items": {
-                "type":"string"
+                "type": "string"
             }
         }
-    }
+    },
+    "additionalProperties": false
 }

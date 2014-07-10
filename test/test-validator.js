@@ -1030,3 +1030,19 @@ describe('Test Document Model', function () {
         done();
     });
 });
+
+describe('Test get document model', function () {
+    before(function (done) {
+        testDocumentList = require(__dirname + '/fixtures/validator/samples/testDocument.js');
+        done();
+    });
+
+     it('test get section insurance', function (done) {
+        var valid = validator.getSectionDocumentModel('insurance');
+        var error = validator.getLastError();
+        done();
+    });
+
+
+});
+
