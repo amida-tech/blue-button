@@ -34,10 +34,10 @@
                 "$ref": "http://local.com/commonModels#/properties/cda_date"
             }
         },
-        "diagnoses": {
+        "diagnosis": {
             "type": "array",
             "items": {
-                "type": "string"
+                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
             }
         },
         "lines": {
@@ -186,17 +186,9 @@
                         "type": "number"
                     }
                 }
-            },
-            "name": {
-                "type": "string"
-            },
-            "number": {
-                "type": "string"
-            },
-            "payer": {
-                "type": "string"
-            },
-            "provider": {
+            }
+        },
+         "provider": {
                 "type": "object",
                 "properties": {
                     "address": {
@@ -235,8 +227,7 @@
                                     "$ref": "http://local.com/commonModels#/properties/cda_email"
                                 }
                             }
-                        },
-                        "minProperties": 1
+                        }
                     },
                     "phone": {
                         "type": "array",
@@ -248,8 +239,22 @@
                         "$ref": "http://local.com/commonModels#/properties/cda_id"
                     }
                 }
-            }
-        },
+            },
+        "name": {
+                "type": "string"
+            },
+            "number": {
+                "type": "string"
+            },
+            "payer": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+        "start_date": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_date"
+                    },
         "service": {
             "type": "string"
         },

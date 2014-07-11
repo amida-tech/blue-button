@@ -112,7 +112,7 @@ describe('Test email:', function () {
 
     it('email without type', function (done) {
         emailObj = {
-            "email": "amida@mountain.com"
+            "address": "amida@mountain.com"
         };
         var valid = validator.validateSectionObj(emailObj, 'cda_email');
         expect(valid).to.true;

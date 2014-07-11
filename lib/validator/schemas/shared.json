@@ -68,7 +68,7 @@
         "cda_email": {
             "type": "object",
             "properties": {
-                "email": {
+                "address": {
                     "type": "string"
                 },
                 "type": {
@@ -77,7 +77,7 @@
             },
             "additionalProperties": false,
             "required": [
-                "email"
+                "address"
             ]
         },
         "cda_id": {
