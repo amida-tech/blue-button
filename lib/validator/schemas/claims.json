@@ -23,6 +23,9 @@
         "start_date": {
             "$ref": "http://local.com/commonModels#/properties/cda_date"
         },
+        "end_date": {
+            "$ref": "http://local.com/commonModels#/properties/cda_date"
+        },
         "service": {
             "type": "string"
         },
@@ -33,14 +36,14 @@
             }
         },
         "phone": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "http://local.com/commonModels#/properties/cda_phone"
-                    }
-                },
-                "provider_id": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_id"
-                }
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_phone"
+            }
+        },
+        "provider_id": {
+            "$ref": "http://local.com/commonModels#/properties/cda_id"
+        },
         "charges": {
             "type": "object",
             "properties": {
