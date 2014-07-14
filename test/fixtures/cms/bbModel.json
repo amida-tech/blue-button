@@ -659,6 +659,10 @@
                     "medicare"
                 ],
                 "number": "123456789012",
+                "start_date": {
+                    "date": "2011-11-17T00:00:00.000Z",
+                    "precision": "day"
+                },
                 "type": [
                     "medicare Part D"
                 ],
@@ -691,6 +695,10 @@
                     "medicare"
                 ],
                 "number": "123456789011",
+                "start_date": {
+                    "date": "2011-11-23T00:00:00.000Z",
+                    "precision": "day"
+                },
                 "type": [
                     "medicare Part D"
                 ],
