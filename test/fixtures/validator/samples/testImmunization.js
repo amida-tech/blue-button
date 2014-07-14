@@ -46,10 +46,10 @@ var testImmunList = {
                     "identifier_type": "2981824"
                 }
             ],
-            "name": {
+            "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
-            },
+            }],
             "address": [
                 {
                     "streetLines": [
@@ -68,7 +68,7 @@ var testImmunList = {
                             "identifier": "2.16.840.1.113883.19.5.9999.1394"
                         }
                     ],
-                    "name": "Good Health Clinic"
+                    "name": ["Good Health Clinic"]
                 }
             ]
         }
@@ -120,10 +120,10 @@ var testImmunList = {
                     "identifier_type": "2981824"
                 }
             ],
-            "name": {
+            "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
-            },
+            }],
             "address": [
                 {
                     "streetLines": [
@@ -142,7 +142,7 @@ var testImmunList = {
                             "identifier": "2.16.840.1.113883.19.5.9999.1394"
                         }
                     ],
-                    "name": "Good Health Clinic"
+                    "name": ["Good Health Clinic"]
                 }
             ]
         }
@@ -194,10 +194,10 @@ var testImmunList = {
                     "identifier_type": "2981824"
                 }
             ],
-            "name": {
+            "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
-            },
+            }],
             "address": [
                 {
                     "streetLines": [
@@ -216,7 +216,7 @@ var testImmunList = {
                             "identifier": "2.16.840.1.113883.19.5.9999.1394"
                         }
                     ],
-                    "name": "Good Health Clinic"
+                    "name": ["Good Health Clinic"]
                 }
             ]
         },
@@ -253,10 +253,10 @@ var testImmunList = {
                     "identifier_type": "2981824"
                 }
             ],
-            "name": {
+            "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
-            },
+            }],
             "address": [
                 {
                     "streetLines": [
@@ -275,7 +275,7 @@ var testImmunList = {
                             "identifier": "2.16.840.1.113883.19.5.9999.1394"
                         }
                     ],
-                    "name": "Good Health Clinic"
+                    "name": ["Good Health Clinic"]
                 }
             ]
         },
@@ -314,10 +314,10 @@ var testImmunList = {
                     "identifier_type": "2981824"
                 }
             ],
-            "name": {
+            "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
-            },
+            }],
             "address": [
                 {
                     "streetLines": [
@@ -336,7 +336,7 @@ var testImmunList = {
                             "identifier": "2.16.840.1.113883.19.5.9999.1394"
                         }
                     ],
-                    "name": "Good Health Clinic"
+                    "name": ["Good Health Clinic"]
                 }
             ]
         },
@@ -389,10 +389,10 @@ var testImmunList = {
                     "identifier_type": "2981824"
                 }
             ],
-            "name": {
+            "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
-            },
+            }],
             "address": [
                 {
                     "streetLines": [
@@ -411,7 +411,7 @@ var testImmunList = {
                             "identifier": "2.16.840.1.113883.19.5.9999.1394"
                         }
                     ],
-                    "name": "Good Health Clinic"
+                    "name": ["Good Health Clinic"]
                 }
             ]
         },

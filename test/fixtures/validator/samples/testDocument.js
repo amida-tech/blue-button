@@ -590,10 +590,10 @@ var testDocList = {
                                 "identifier_type": "2981824"
                             }
                         ],
-                        "name": {
+                        "name": [{
                             "last": "Assigned",
                             "first": "Amanda"
-                        },
+                        }],
                         "address": [
                             {
                                 "streetLines": [
@@ -612,7 +612,7 @@ var testDocList = {
                                         "identifier": "2.16.840.1.113883.19.5.9999.1394"
                                     }
                                 ],
-                                "name": "Good Health Clinic"
+                                "name": ["Good Health Clinic"]
                             }
                         ]
                     }
@@ -664,10 +664,10 @@ var testDocList = {
                                 "identifier_type": "2981824"
                             }
                         ],
-                        "name": {
+                        "name": [{
                             "last": "Assigned",
                             "first": "Amanda"
-                        },
+                        }],
                         "address": [
                             {
                                 "streetLines": [
@@ -686,7 +686,7 @@ var testDocList = {
                                         "identifier": "2.16.840.1.113883.19.5.9999.1394"
                                     }
                                 ],
-                                "name": "Good Health Clinic"
+                                "name": ["Good Health Clinic"]
                             }
                         ]
                     }
@@ -738,10 +738,10 @@ var testDocList = {
                                 "identifier_type": "2981824"
                             }
                         ],
-                        "name": {
+                        "name": [{
                             "last": "Assigned",
                             "first": "Amanda"
-                        },
+                        }],
                         "address": [
                             {
                                 "streetLines": [
@@ -760,7 +760,7 @@ var testDocList = {
                                         "identifier": "2.16.840.1.113883.19.5.9999.1394"
                                     }
                                 ],
-                                "name": "Good Health Clinic"
+                                "name": ["Good Health Clinic"]
                             }
                         ]
                     }
@@ -813,10 +813,10 @@ var testDocList = {
                             }
                         ],
                         "name":
-                            {
+                            [{
                                 "last": "Assigned",
                                 "first": "Amanda"
-                            },
+                            }],
                         "address": [
                             {
                                 "streetLines": [
@@ -835,7 +835,7 @@ var testDocList = {
                                         "identifier": "2.16.840.1.113883.19.5.9999.1394"
                                     }
                                 ],
-                                "name": "Good Health Clinic"
+                                "name": ["Good Health Clinic"]
                             }
                         ]
                     },

@@ -60,7 +60,6 @@ function sharedTests() {
 
     it('make sure intermediate format has all titles', function(done) {
         var titles = txtToIntObj.getTitles(this.txtdata);
-        //titleTest(result, titles);
         done();
     });
 
@@ -85,7 +84,7 @@ describe('Testing with original sample data', function() {
 
 });
 
-xdescribe('Testing two sections(metadata & demographics)', function() {
+describe('Testing two sections(metadata & demographics)', function() {
 
     before(function(done) {
         var txtfile = loadFile('singleSectionDemo.txt');
@@ -102,14 +101,14 @@ xdescribe('Testing two sections(metadata & demographics)', function() {
         var resultKeys = Object.keys(result);
         expect(resultKeys.length).to.equal(2);
 
-        var expectedTitles = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION', 'Demographic'];
+        var expectedTitles = ['meta', 'demographic'];
         expect(result).to.have.keys(expectedTitles);
         done();
     });
 
 });
 
-xdescribe('Testing File with only meta section', function() {
+describe('Testing File with only meta section', function() {
 
     before(function(done) {
         var txtfile = loadFile('metaOnly.txt');
@@ -124,7 +123,7 @@ xdescribe('Testing File with only meta section', function() {
         var titles = txtToIntObj.getTitles(this.txtdata);
         var resultKeys = Object.keys(result);
         expect(resultKeys.length).to.equal(1);
-        var expectedTitles = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION'];
+        var expectedTitles = ['meta'];
         expect(result).to.have.keys(expectedTitles);
         done();
     });
@@ -141,7 +140,7 @@ describe('Testing a different number of dashes(5)', function() {
     sharedTests();
 });
 
-xdescribe('Testing file with beginning(meta) and end(claims)', function() {
+describe('Testing file with beginning(meta) and end(claims)', function() {
 
     before(function(done) {
         var txtfile = loadFile('begAndEndSections.txt');
@@ -156,7 +155,7 @@ xdescribe('Testing file with beginning(meta) and end(claims)', function() {
         var titles = txtToIntObj.getTitles(this.txtdata);
         var resultKeys = Object.keys(result);
         expect(resultKeys.length).to.equal(2);
-        var expectedTitles = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION', 'Claim Summary'];
+        var expectedTitles = ['meta', 'claim summary'];
         expect(result).to.have.keys(expectedTitles);
         done();
     });
@@ -208,7 +207,7 @@ describe('Testing a file with empty sections', function() {
 
 });
 
-xdescribe('Testing a file with missing', function() {
+describe('Testing a file with missing', function() {
 
     before(function(done) {
         var txtfile = loadFile('missingSections.txt');
@@ -220,8 +219,8 @@ xdescribe('Testing a file with missing', function() {
     it('checks that the right numbers of sections are present', function(done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
         var resultKeys = Object.keys(result);
-        var expectedKeys = ['MYMEDICARE.GOV PERSONAL HEALTH INFORMATION',
-            'Demographic', 'Self Reported Medical Conditions', 'Family Medical History', 'Plans'
+        var expectedKeys = ['meta',
+            'demographic', 'self reported medical conditions', 'family medical history', 'plans'
         ];
         expect(result).to.have.keys(expectedKeys);
         done();
@@ -291,6 +290,7 @@ describe('Test file parsing beginning to end', function() {
     it('checks if the file is converted', function(done) {
         var outputFilename = __dirname + '/fixtures/cms/bbModel.json';
         var intObj = txtToIntObj.getIntObj(this.txtdata);
+        //console.log(JSON.stringify(intObj, null, 4));
         var bbModel = objConverter.convertToBBModel(intObj);
 
         fs.writeFile(outputFilename, JSON.stringify(bbModel, null, 4), function(err) {
@@ -305,3 +305,44 @@ describe('Test file parsing beginning to end', function() {
     });
 
 });
+
+describe('Test insurance for given sample file', function() {
+
+    before(function(done) {
+        var txtfile = loadFile('sample2.txt');
+        this.txtdata = txtfile.toString();
+        done();
+    });
+
+    it('checks for the correct number of objects converted', function(done) {
+        var intObj = txtToIntObj.getIntObj(this.txtdata);
+        var bbModel = objConverter.convertToBBModel(intObj);
+        var totalPlans = bbModel.data.insurance.length;
+        expect(totalPlans).to.equal(6);
+        done();
+
+    });
+
+});
+
+
+describe('Test claims for given sample file', function() {
+
+    before(function(done) {
+        var txtfile = loadFile('sample2.txt');
+        this.txtdata = txtfile.toString();
+        done();
+    });
+
+    it('checks for the correct number of objects converted', function(done) {
+        var intObj = txtToIntObj.getIntObj(this.txtdata);
+        var bbModel = objConverter.convertToBBModel(intObj);
+        var totalPlans = bbModel.data.claims.length;
+        expect(totalPlans).to.equal(5);
+        done();
+
+    });
+
+});
+
+

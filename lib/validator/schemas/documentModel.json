@@ -61,7 +61,19 @@
                     "items": {
                         "$ref": "http://local.com/vital"
                     }
-                }
+                },
+                "insurance": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/insurance"
+                    }
+                },
+                "claims": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/claims"
+                    }
+                }      
             }
         },
         "errors": {

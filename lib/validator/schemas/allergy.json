@@ -19,6 +19,12 @@
                 "$ref": "http://local.com/commonModels#/properties/cda_id"
                 }
         },
+         "severity": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
         "reaction": {
             "type": "array",
             "minItems":1,
@@ -33,13 +39,8 @@
                     }
                 }
             }
-        },
-        "severity": {
-            "type": "string"
-        },
-        "status": {
-            "type": "string"
         }
+       
     },
     "required":["allergen"]
 }

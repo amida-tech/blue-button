@@ -28,7 +28,7 @@
             }
         },
         "value": {
-            "type": "integer"
+            "type": "number"
         },
         "unit": {
             "type": "string"

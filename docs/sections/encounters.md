@@ -2,13 +2,41 @@
 
 ###Object Schema:
 ```
-var Encounters = {
-        "date": [{cda_date}],
-        "identifiers": [{cda_id}],
-        "encounter": {cda_coded_entry},
-        "locations": [[cda_location}],
-        "findings": [{cda_coded_entry}]
-     }
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            }
+        },
+        "encounter": {
+            "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+        },
+        "findings": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+            }
+        },
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            }
+        },
+        "locations": {
+            "type": "array",
+            "items": {
+                 "$ref": "http://local.com/commonModels#/properties/cda_location"
+            }
+        }
+    },
+    "additionalProperties":false,
+    "required":["encounter"]
+}
 ```
 
 [JSON/XML sample](samples/encounters.md)

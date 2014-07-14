@@ -14,13 +14,16 @@
             "$ref": "http://local.com/commonModels#/properties/cda_id"
         }
     },
+    "problem": {
+        "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+    },
     "negation_indicator": {
         "type": "boolean"
     },
-    "onset_age_unit": {
+    "onset_age": {
         "type": "string"
     },
-    "onset_age": {
+    "onset_age_unit": {
         "type": "string"
     },
     "patient_status": {
@@ -28,9 +31,6 @@
     },
     "status": {
         "type": "string"
-    },
-    "problem": {
-        "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
     },
     "source_list_identifiers": {
         "type": "array",

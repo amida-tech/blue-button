@@ -1,6 +1,6 @@
 {
+    "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "array",
     "properties": {
         "cda_address": {
             "type": "object",
@@ -68,7 +68,7 @@
         "cda_email": {
             "type": "object",
             "properties": {
-                "email": {
+                "address": {
                     "type": "string"
                 },
                 "type": {
@@ -77,7 +77,7 @@
             },
             "additionalProperties": false,
             "required": [
-                "email"
+                "address"
             ]
         },
         "cda_id": {

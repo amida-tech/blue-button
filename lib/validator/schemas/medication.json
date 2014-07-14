@@ -2,6 +2,26 @@
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            },
+            "minItems": 1
+        },
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            },
+            "minItems": 1
+        },
+        "sig": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
         "administration": {
             "type": "object",
             "properties": {
@@ -27,20 +47,7 @@
             "additionalProperties": false,
             "minProperties": 1
         },
-        "date": {
-            "type": "array",
-            "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
-            },
-            "minItems": 1
-        },
-        "identifiers": {
-            "type": "array",
-            "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_id"
-            },
-            "minItems": 1
-        },
+        
         "precondition": {
             "type": "object",
             "properties": {
@@ -70,12 +77,6 @@
             "required": [
                 "product"
             ]
-        },
-        "sig": {
-            "type": "string"
-        },
-        "status": {
-            "type": "string"
         }
     },
     "additionalProperties": false,

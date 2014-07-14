@@ -2,15 +2,36 @@
 
 ###Object Schema:
 ```
-var SocialHistory = {
-    "smoking_statuses": [{
-        value: {type: string, required: true},
-        date: [{cda_date}]
-    }]
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "smoking_statuses": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "http://local.com/commonModels#/properties/cda_date"
+                        }
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                "value"
+            ]
+            }
+        }
+    },
+    "additionalPropertes": true
 }
 ```
 
-[JSON/XML sample](samples/socialHistory.md)
+- [JSON/XML sample](samples/socialHistory.md)
 
 
 ####Notes
