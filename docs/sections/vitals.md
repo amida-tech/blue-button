@@ -2,18 +2,50 @@
 
 ###Object Schema:
 ```
-var Vitals = {
-        "date": [{cda_date}],
-        "identifiers": [{cda_id}],
-        "status": {type: string, required: true},
-        "vital": {cda_coded_entry},
-        "value": {type: string, required: false},
-        "unit": {type: string, required: false},
-        "interpretations": [{type: string, required: false}]
-      }
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "identifiers": {
+            "type": "array",
+            "items": {
+            "$ref": "http://local.com/commonModels#/properties/cda_id"
+        },
+        "minItems":1
+        },
+        "vital": {
+            "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+        },
+        "status": {
+            "type": "string"
+        },
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            }
+        },
+        "interpretations": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "value": {
+            "type": "integer"
+        },
+        "unit": {
+            "type": "string"
+        }
+    },
+    "additionalProperties":false,
+    "required":["vital"]
+}
 ```
 
-[JSON/XML sample](samples/vitals.md)
+- [JSON/XML sample](samples/vitals.md)
+- [JSON/CMS sample](cmssamples/vitals.md)
+
 
 ####Notes
 - TypeCode always "Cluster".

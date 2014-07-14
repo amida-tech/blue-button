@@ -16,11 +16,9 @@ describe('full ccd parser', function() {
     before(function(done) {
         var filepath = path.join(__dirname, 'fixtures/files/CCD_1.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        bb.parse(xml, {}, function(err, result) {
-            ccd = result.toJSON();
-            //console.log(JSON.stringify(ccd, null, 10));
-            done();
-        });
+        ccd= bb.parseString(xml, {}).data;
+
+        done();
     });
 
     xit('full deep check', function(done) {

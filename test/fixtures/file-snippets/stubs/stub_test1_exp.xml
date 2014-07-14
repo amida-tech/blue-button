@@ -1,0 +1,24 @@
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+	<section>
+    <!-- conforms to Encounters section with entries optional -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
+    <!-- Encounters section with entries required -->
+    <templateID root="2.16.840.1.113883.10.20.22.2.22.1"/>
+		<title>ENCOUNTERS</title>
+		<entry typeCode="DRIV">
+			<effectiveTime value="20090227"/>
+			<performer>
+				<assignedEntity>
+          <id root="PseduoMD-3"/>
+        </assignedEntity>
+      </performer>
+      <participant typeCode="LOC">
+      	<participantRole classCode="SDLOC">
+      		<playingEntity classCode="PLC">
+      			<name>Community Urgent Care Center</name>
+      		</playingEntity>
+      	</participantRole>
+      </participant>
+    </entry>
+  </section>
+</ClinicalDocument>

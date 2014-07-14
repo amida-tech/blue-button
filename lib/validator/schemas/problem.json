@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "$schema":"http://json-schema.org/draft-04/schema",
+    "properties": {
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            }
+        },
+    "identifiers": {
+        "type": "array",
+        "items": {
+            "$ref": "http://local.com/commonModels#/properties/cda_id"
+        }
+    },
+    "problem": {
+        "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+    },
+    "negation_indicator": {
+        "type": "boolean"
+    },
+    "onset_age": {
+        "type": "string"
+    },
+    "onset_age_unit": {
+        "type": "string"
+    },
+    "patient_status": {
+        "type": "string"
+    },
+    "status": {
+        "type": "string"
+    },
+    "source_list_identifiers": {
+        "type": "array",
+        "items": {
+            "$ref": "http://local.com/commonModels#/properties/cda_id"
+        }
+    }
+    },
+    "additionalProperties":false,
+    "required":["problem"]
+}

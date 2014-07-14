@@ -110,6 +110,68 @@ getting type as well as parsed XML for later user:
 //in case of JSON stringified input, it will return {type: 'json', json: [json object here]}
 ```
 
+Sensing CMS Blue Button data in text file:
+
+``` javascript
+//get document type (e.g. CMS) of document from string (and return format version)
+var result = bb.senseString(data);
+
+//printing result:
+console.log(result); 
+```
+getting:
+
+``` javascript
+{ type: 'cms', version: '2.0' }
+```
+
+getting type as well as parsed XML for later user:
+
+``` javascript
+
+{ type: 'ccda', xml: { errors: [] } }
+//xml "errors" is just default print of libxmljs parsed XML object
+
+//in case of JSON stringified input, it will return {type: 'json', json: [json object here]}
+
+```
+
+Parsing into JSON data model from CMS text file
+
+``` javascript
+//read in the file
+var textString = fs.readFileSync("cms_sample.txt").toString(); 
+
+//convert the string text file into blue button model
+var result = bb.parseText(textString); 
+
+console.log(result);
+```
+getting:
+
+``` javascript
+
+{ data: 
+   { demographics: 
+      { name: [Object],
+        dob: [Object],
+        email: [Object],
+        phone: [Object],
+        address: [Object] },
+     vitals: [ [Object], [Object] ],
+     results: [ [Object] ],
+     medications: [ [Object], [Object] ],
+     allergies: [ [Object], [Object] ],
+     immunizations: [ [Object], [Object], [Object] ],
+     problems: [ [Object], [Object] ],
+     insurance: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+     claims: [ [Object], [Object], [Object], [Object], [Object] ] },
+  meta: 
+   { type: 'cms',
+     version: '2.0',
+     timestamp: { date: '2013-03-16T05:10:00.000Z', precision: 'minute' } } }
+
+``` 
 
 Parsing into JSON data model from XML or from string
 
@@ -156,6 +218,8 @@ Also, see [/example](./example) for example above as well as how to parse indivi
 Detailed description of JSON based data model (tied to CCDA spec)
 
 [JSON based Blue Button data model](./docs/model.md)
+
+[CMS Documentation](./docs/cms.md)
 
 ## Goals
 

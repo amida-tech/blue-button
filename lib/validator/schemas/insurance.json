@@ -1,0 +1,69 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "addresses": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_address"
+            },
+            "minItems": 1
+        },
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            }
+        },
+        "plan_id": {
+            "$ref": "http://local.com/commonModels#/properties/cda_id"
+        },
+        "plan_information": {
+            "type": "string"
+        },
+        "plan_name": {
+            "type": "string"
+        },
+        "policy_number": {
+            "type": "string"
+        },
+        "type": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "group_name": {
+            "type": "string"
+        },
+        "group_number": {
+            "type": "string"
+        },
+        "member_name": {
+            "$ref": "http://local.com/commonModels#/properties/cda_name"
+        },
+        "member_id": {
+            "$ref": "http://local.com/commonModels#/properties/cda_id"
+        },
+        "payer_name": {
+            "type": "string"
+        },
+        "payer_id": {
+            "$ref": "http://local.com/commonModels#/properties/cda_id"
+        },
+        "email ": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_address"
+            }
+        },
+        "phone ": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_phone"
+            }
+        } 
+    },
+    "additionalProperties": false
+
+}

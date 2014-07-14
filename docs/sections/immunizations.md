@@ -2,44 +2,144 @@
 
 ###Object Schema:
 ```
-  var Immunizations = {
-    "date": [{cda_date}],
-    "identifiers": [{cda_id}],
-    "status": {type:string: required: true},
-    "sequence_number": {type:string, required:false},
-    "product": {
-      "product": {cda_coded_entry},
-      "lot_number": {type:string, required: false},
-      "manufacturer": {type:string, required: false}
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            }
+        },
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            }
+        },
+        "status": {
+            "type": "string"
+        },
+        "sequence_number": {
+            "type": "string"
+        },
+        "administration": {
+            "type": "object",
+            "properties": {
+                "dose": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                },
+                "route": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                },
+                "body_site": {
+                    "type": "string"
+                },
+                "form": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "product": {
+            "type": "object",
+            "properties": {
+                "lot_number": {
+                    "type": "string"
+                },
+                "manufacturer": {
+                    "type": "string"
+                },
+                "product": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                }
+            },
+            "required": [
+                "product"
+            ],
+            "additionalProperties": false
+        },
+        "performer": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_address"
+                    }
+                },
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_id"
+                    }
+                },
+                "name": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_name"
+                    }
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                    }
+                },
+                "organization": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "identifiers": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "http://local.com/commonModels#/properties/cda_id"
+                                }
+                            },
+                            "name": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "address": {
+                                "$ref": "http://local.com/commonModels#/properties/cda_address"
+                            },
+                            "phone": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                                }
+                            },
+                            "email": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "http://local.com/commonModels#/properties/cda_email"
+                                }
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "refusal_reason": {
+            "type": "string"
+        }
     },
-    "administration": {
-      "route": {cda_coded_entry},
-      "body_site": {type:string, required: false},
-      "dose": {
-      	"value": {type:string, required: false},
-      	"units": {type:string, required: false}
-      },
-      "form": {type:string, required:false}
-    },
-    "performer": {
-      "name": {cda_name},
-      "address": {cda_address},
-	  "phone": [{cda_phone}],
-      "email": [{cda_email}],
-      "identifiers": [{cda_id}],
-      "organization": [{
-        "name": {type:string, required: false},
-        "address": {cda_address},
-	    "phone": [{cda_phone}],
-        "email": [{cda_email}],
-        "identifiers": [{cda_id}]
-    },
-    "refusal_reason": {type:string, required: false}
-  }
-
+    "additionalProperties": false,
+    "required": [
+        "status",
+        "product"
+    ]
+}
 ```
 
-[JSON/XML sample](samples/immunizations.md)
+- [JSON/XML sample](samples/immunizations.md)
+- [JSON/CMS sample](cmssamples/immunizations.md)
 
 
 ####Notes

@@ -14,6 +14,7 @@ module.exports = function(grunt) {
       files: ['*.js', './lib/*.js', './test/*.js'],
       options: {
         browser: true,
+        smarttabs: true,
         curly: true,
         eqeqeq: true,
         immed: true,
@@ -45,9 +46,11 @@ module.exports = function(grunt) {
       test: {
         options: {
           reporter: 'spec',
-          timeout: '10000'
+          timeout: '10000',
+          recursive:true
         },
-        src: ['test/*.js']
+        src: ['test/*.js', 'test/**/*.js'],
+        generator: ['test/test-generator.js']
       }
     },
     coveralls: {
@@ -86,6 +89,33 @@ module.exports = function(grunt) {
   grunt.registerTask('mocha', ['mochaTest']);
   grunt.registerTask('timestamp', function() {
     grunt.log.subhead(Date());
+  });
+
+  // Alias the `generator:ccda_samples` task to run `mocha test --recursive --grep generator` instead
+  grunt.registerTask('generator:ccda_samples', 'mocha test --recursive --grep [ccda_samples]', function () {
+    var done = this.async();
+    require('child_process').exec('mocha test --recursive --grep ccda_samples', function (err, stdout) {
+      grunt.log.write(stdout);
+      done(err);
+    });
+  });
+
+  // Alias the `generator:ccda_samples` task to run `mocha test --recursive --grep generator` instead
+  grunt.registerTask('generator:ccda', 'mocha test --recursive --grep ccda', function () {
+    var done = this.async();
+    require('child_process').exec('mocha test --recursive --grep ccda', function (err, stdout) {
+      grunt.log.write(stdout);
+      done(err);
+    });
+  });
+
+   // Alias the `generator:ccda_samples` task to run `mocha test --recursive --grep generator` instead
+  grunt.registerTask('generator:sections', 'mocha test --recursive --grep sections', function () {
+    var done = this.async();
+    require('child_process').exec('mocha test --recursive --grep sections', function (err, stdout) {
+      grunt.log.writeln(stdout);
+      done(err);
+    });
   });
 
 };

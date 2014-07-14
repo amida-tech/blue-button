@@ -1,0 +1,19 @@
+{
+      "name": "{type: string, required: true}", 
+      "date":["{cda_date}"],
+      "type": ["{type: string, required: true}"], 
+      "payer_name": "{type: string, required: true}", 
+      "payer_id":"{type: string, required: true}", 
+      "payer_id_type":"{type: string, required: true}", 
+      "plan_name":"{type: string, required: true}",
+      "plan_information":"{type: string, required: true}", 
+      "plan_id": "{type: string, required: true}", 
+      "policy_number": "{type: string, required: true}", 
+      "member_name":"{type: string, required: true}", 
+      "group_name": "{type: string, required: true}", 
+      "group_number": "{type: string, required: true}", 
+      "address":"{cda_address}",
+      "phone ":  ["{cda_phone}"],
+      "email ":  ["{cda_email}"],
+      "assigned_person": "{cda_name}"
+   }

@@ -3,13 +3,34 @@
 ## cda_name
 
 ```
- var cda_name = {
-    "prefix": [{type: string, required: false}],
-    "first": {type: string, required: true},
-    "middle": [{type: string, required: false],
-    "last": {type: string, required: true},
-    "suffix": {type: string, required: false}
-  }
+{
+    "type": "object",
+    "properties": {
+        "prefix": {
+            "type": "string"
+        },
+        "first": {
+            "type": "string"
+        },
+        "last": {
+            "type": "string"
+        },
+        "middle": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "suffix": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "first",
+        "last"
+    ]
+}
 ```
 
 
@@ -18,12 +39,36 @@
 ## cda_address
 
 ```
-var cda_address = {
-    "street": [{type: string, required: true}],
-    "city": {type: string, required: true},
-    "state": {type: string, required: false},
-    "postal_code": {type: string, required: false},
-    "country": {type: string, required: false}
+{
+    "type": "object",
+    "properties": {
+        "city": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        },
+        "state": {
+            "type": "string"
+        },
+        "streetLines": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
+        "use": {
+            "type": "string"
+        },
+        "zip": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "streetLines",
+        "city"
+    ]
 }
 ```
 #### street
@@ -45,9 +90,20 @@ var cda_address = {
 ## cda_phone
 
 ```
-var cda_phone = {
-    "number": {type: string, required: true},
-    "type": {type: string, required: true}
+{
+    "type": "object",
+    "properties": {
+        "number": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "number"
+    ]
 }
 ```
 
@@ -64,9 +120,20 @@ var cda_phone = {
 ## cda_email
 
 ```
-var cda_email = {
-    "address": {type: string, required: true},
-    "type": {type: string, required: true}
+{
+    "type": "object",
+    "properties": {
+        "email": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "email"
+    ]
 }
 ```
 
@@ -84,11 +151,33 @@ var cda_email = {
 ## cda_location
 
 ```
-var cda_location = {
-    "name": {type: string, required:false},
-    "loc_type": {cda_concept},
-    "addresses": [{cda_address}],
-    "phones": [{cda_phone}]
+{
+    "type": "object",
+    "properties": {
+        "addresses": {
+            "type": "array",
+            "items": {
+                "$ref": "#/properties/cda_address"
+            },
+            "minItems": 1
+        },
+        "loc_type": {
+            "$ref": "#/properties/cda_coded_entry"
+        },
+        "name": {
+            "type": "string"
+        },
+        "phones": {
+            "type": "array",
+            "items": {
+                "$ref": "#/properties/cda_phone"
+            }
+        }
+    },
+    "required": [
+        "name"
+    ],
+    "additionalProperties": false
 }
 ```
 
@@ -114,9 +203,21 @@ var cda_location = {
 ## cda_date
 
 ```
-var cda_date = {
-    "date": {type: datetime, required:true},
-    "precision": {type: string, required:true}
+{
+    "type": "object",
+    "properties": {
+        "date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "precision": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "date"
+    ]
 }
 ```
 
@@ -135,9 +236,20 @@ var cda_date = {
 ## cda_id
 
 ```
-var cda_id = {
-    "identifier": {type:string, required: true},
-    "identifier_type": {type:string, required: true}
+"cda_id": {
+    "type": "object",
+    "properties": {
+        "identifier": {
+            "type": "string"
+        },
+        "identifier_type": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "identifier"
+    ]
 }
 ```
 
@@ -151,15 +263,41 @@ var cda_id = {
 
 ## cda_coded_entry
 ```
-var coded_entry = "allergen": {
-  "name": {type: string, required: true},
-  "code": {type: string, required: false},
-  "code_system": {type: string, required:false},
-  "translations": [{
-    "name": {type: string, required: true},
-    "code": {type: string, required: false},
-    "code_system": {type: string, required:false}
-  }]
+{
+    "type": "object",
+    "properties": {
+        "code_system_name": {
+            "type": "string"
+        },
+        "code": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "translations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "code_system_name": {
+                        "type": "string"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false,
+                "minProperties": 1
+            },
+            "minItems": 1
+        }
+    },
+    "minProperties": 1,
+    "additionalProperties": false
 }
 ```
 #### name
@@ -194,4 +332,25 @@ var coded_entry = "allergen": {
 - 0..1
 - @codeSystemName
 - TODO:  Add OID based code system name lookup.
+
+##cda_physical_quantity
+
+```
+{
+    "type": "object",
+    "properties": {
+        "unit": {
+            "type": "string"
+        },
+        "value": {
+            "type": "number"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "unit",
+        "value"
+    ]
+}
+```
 

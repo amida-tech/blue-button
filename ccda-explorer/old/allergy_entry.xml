@@ -1,0 +1,85 @@
+<root  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:hl7-org:v3 ../../C-CDA%20rules/infrastructure/cda/CDA_SDTC.xsd"
+	xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc">
+
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+							<!-- ** Allergy problem act ** -->
+							<id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+							<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+							<statusCode code="active"/>
+							<effectiveTime value="20090909">
+								<low value="20090902"/>
+								<high value="20100103"/>
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- allergy observation template -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+									<id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+									<code code="416098002" displayName="drug allergy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20110215"/>
+									</effectiveTime>
+									<value xsi:type="CD" code="282100009" displayName="Adverse reaction to substance" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+										<originalText>
+											<reference value="#reaction1"/>
+										</originalText>
+									</value>
+									<participant typeCode="CSM">
+										<participantRole classCode="MANU">
+											<playingEntity classCode="MMAT">
+												<code code="314422" displayName="ALLERGENIC EXTRACT, PENICILLIN" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+													<originalText>
+														<reference value="#reaction1"/>
+													</originalText>
+												</code>
+												<name>Penicillin</name>
+											</playingEntity>
+										</participantRole>
+									</participant>
+									<entryRelationship typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+											<!-- Alert status observation template -->
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+											<statusCode code="completed"/>
+											<value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="MFST">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+											<!-- Reaction observation template -->
+											<id root="4adc1020-7b14-11db-9fe1-0800200c9a64"/>
+											<code nullFlavor="NA"/>
+											<text>
+												<reference value="#reaction1"/>
+											</text>
+											<statusCode code="completed"/>
+											<effectiveTime>
+												<low value="20090711"/>
+											</effectiveTime>
+											<value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" displayName="Hives"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+											<!-- ** Severity observation template ** -->
+											<code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+											<text>
+												<reference value="#severity1"/>
+											</text>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="371924009" displayName="Moderate to severe" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+
+</root>

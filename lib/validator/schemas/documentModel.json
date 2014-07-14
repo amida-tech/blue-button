@@ -1,0 +1,97 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "data": {
+            "type": "object",
+            "properties": {
+                "allergies": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/allergy"
+                    }
+                },
+                "demographics": {
+                    "$ref": "http://local.com/demographics"
+                },
+                "encounters": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/encounter"
+                    }
+                },
+                "immunizations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/immunization"
+                    }
+                },
+                "medications": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/medication"
+                    }
+                },
+                "problems": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/problem"
+                    }
+                },
+                "procedures": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/procedure"
+                    }
+                },
+                "results": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/result"
+                    }
+                },
+                "socialHistory": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/socialhistory"
+                    }
+                },
+                "vitals": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/vital"
+                    }
+                },
+                "insurance": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/insurance"
+                    }
+                },
+                "claims": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/claims"
+                    }
+                }      
+            }
+        },
+        "errors": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "meta": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
