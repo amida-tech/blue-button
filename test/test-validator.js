@@ -232,7 +232,6 @@ describe('Test coded entries:', function () {
         done();
     });
 
-
     it('coded entry with undefined property', function (done) {
         codedEntryObj = {
             "kode": "1198000"
@@ -241,7 +240,6 @@ describe('Test coded entries:', function () {
         expect(valid).to.false;
         done();
     });
-
 
     it('regular coded entry', function (done) {
         codedEntryObj = {
@@ -349,7 +347,6 @@ describe('Test location:', function () {
         expect(valid).to.false;
         done();
     });
-
 
     it('regular location # 1 ', function (done) {
         locationObj = testLocList.regular1;
@@ -525,7 +522,6 @@ describe('Test problems', function () {
     });
 });
 
-
 describe('Test results', function () {
     before(function (done) {
         testResultsList = require(__dirname + '/fixtures/validator/samples/testResult.js');
@@ -653,7 +649,6 @@ describe('Test allergies', function () {
     });
 
 });
-
 
 describe('Test encounter', function () {
     before(function (done) {
@@ -914,7 +909,6 @@ describe('Test procedures', function () {
     });
 });
 
-
 describe('Test immunizations', function () {
     before(function (done) {
         testImmunList = require(__dirname + '/fixtures/validator/samples/testImmunization.js');
@@ -978,14 +972,13 @@ describe('Test immunizations', function () {
     });
 });
 
-
 describe('Test Document Model', function () {
     before(function (done) {
         testDocumentList = require(__dirname + '/fixtures/validator/samples/testDocument.js');
         done();
     });
 
-     it('empty document model', function (done) {
+    it('empty document model', function (done) {
         var docObj = {};
         var valid = validator.validateDocumentModel(docObj);
         expect(valid).to.true;
@@ -1037,12 +1030,10 @@ describe('Test get document model', function () {
         done();
     });
 
-     it('test get section insurance', function (done) {
+    it('test get section insurance', function (done) {
         var valid = validator.getSectionDocumentModel('insurance');
         var error = validator.getLastError();
         done();
     });
 
-
 });
-

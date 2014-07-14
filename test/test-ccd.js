@@ -10,18 +10,18 @@ var path = require('path');
 var bb = require('../index');
 var jsutil = require('../lib/jsutil');
 
-describe('full ccd parser', function() {
+describe('full ccd parser', function () {
     var ccd = null;
 
-    before(function(done) {
+    before(function (done) {
         var filepath = path.join(__dirname, 'fixtures/files/CCD_1.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        ccd= bb.parseString(xml, {}).data;
+        ccd = bb.parseString(xml, {}).data;
 
         done();
     });
 
-    xit('full deep check', function(done) {
+    xit('full deep check', function (done) {
         expect(ccd).to.exist;
         var filepath = path.join(__dirname, 'fixtures/files/json/CCD_1.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
@@ -30,7 +30,7 @@ describe('full ccd parser', function() {
         done();
     });
 
-    it('demographics spot check', function(done) {
+    it('demographics spot check', function (done) {
         expect(ccd.demographics).to.exist;
 
         expect(ccd.demographics.name).to.exists;
@@ -48,7 +48,7 @@ describe('full ccd parser', function() {
         done();
     });
 
-    it('vitals spot check', function(done) {
+    it('vitals spot check', function (done) {
         expect(ccd.vitals).to.exist;
         expect(ccd.vitals).to.have.length(6);
 
@@ -65,7 +65,7 @@ describe('full ccd parser', function() {
         done();
     });
 
-    it('medications spot check', function(done) {
+    it('medications spot check', function (done) {
         expect(ccd.medications).to.exist;
         expect(ccd.medications).to.exist;
         expect(ccd.medications).to.have.length(1);
@@ -83,7 +83,7 @@ describe('full ccd parser', function() {
         done();
     });
 
-    it('problems spot check', function(done) {
+    it('problems spot check', function (done) {
 
         expect(ccd.problems).to.exist;
         expect(ccd.problems).to.have.length(2);
@@ -91,7 +91,7 @@ describe('full ccd parser', function() {
         done();
     });
 
-    it('immunizations spot check', function(done) {
+    it('immunizations spot check', function (done) {
         expect(ccd.immunizations).to.exist;
         expect(ccd.immunizations).to.exist;
         expect(ccd.immunizations).to.have.length(4);
@@ -106,14 +106,13 @@ describe('full ccd parser', function() {
         done();
     });
 
-    it('results spot check', function(done) {
+    it('results spot check', function (done) {
         expect(ccd.results).to.exist;
         expect(ccd.results).to.have.length(1);
 
         expect(ccd.results[0]).to.exist;
         expect(ccd.results[0].result_set.code).to.equal('43789009');
         expect(ccd.results[0].result_set.name).to.equal("CBC WO DIFFERENTIAL");
-
 
         expect(ccd.results[0].results[2]).to.exist;
         expect(ccd.results[0].results[2].result.code).to.equal('26515-7');

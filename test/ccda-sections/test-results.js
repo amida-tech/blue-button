@@ -7,32 +7,31 @@ var path = require('path');
 var bb = require('../../index');
 var jsutil = require('../../lib/jsutil');
 
-describe('results parser', function() {
+describe('results parser', function () {
     var results = null;
-    
-    before(function(done) {
-        var filepath  = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Results.xml');
+
+    before(function (done) {
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Results.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        results=bb.parseString(xml, {component: 'ccda_results'}).data;
+        results = bb.parseString(xml, {
+            component: 'ccda_results'
+        }).data;
         done();
     });
-    
 
-    it('full deep check', function(done) {
+    it('full deep check', function (done) {
         expect(results).to.exist;
         //console.log(JSON.stringify(results, null, 10));
-        var filepath  = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Results.json');
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Results.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedResults = jsutil.jsonParseWithDate(json2Read);
         expect(results).to.deep.equal(expectedResults);
         done();
     });
 
-    
-    it ('spot check', function(done) {
+    it('spot check', function (done) {
         expect(results).to.exist;
         expect(results).to.have.length(1);
-        
 
         expect(results[0]).to.exist;
         expect(results[0].result_set.code).to.equal('43789009');

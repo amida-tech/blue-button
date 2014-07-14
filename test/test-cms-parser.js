@@ -42,38 +42,35 @@ function checkForBadKeys(result) {
     return true;
 }
 
-
 /*This is a function that stores tests that should be met among many different
 test files */
 
 function sharedTests() {
     var result;
-    beforeEach(function(done) {
+    beforeEach(function (done) {
         result = txtToIntObj.getIntObj(this.txtdata);
         done();
     });
-    it('check for existence and type', function(done) {
+    it('check for existence and type', function (done) {
         expect(result).to.exist;
         expect(result).to.be.an('object');
         done();
     });
 
-    it('make sure intermediate format has all titles', function(done) {
+    it('make sure intermediate format has all titles', function (done) {
         var titles = txtToIntObj.getTitles(this.txtdata);
         done();
     });
 
-    it('make sure there are no bad keys', function(done) {
+    it('make sure there are no bad keys', function (done) {
         var badKeysResult = checkForBadKeys(result);
         expect(badKeysResult).to.be.true;
         done();
     });
 }
 
-
-
-describe('Testing with original sample data', function() {
-    before(function(done) {
+describe('Testing with original sample data', function () {
+    before(function (done) {
         var txtfile = loadFile('sample2.txt');
         this.txtdata = txtfile.toString();
         done();
@@ -81,12 +78,11 @@ describe('Testing with original sample data', function() {
 
     sharedTests();
 
-
 });
 
-describe('Testing two sections(metadata & demographics)', function() {
+describe('Testing two sections(metadata & demographics)', function () {
 
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('singleSectionDemo.txt');
         this.txtdata = txtfile.toString();
         done();
@@ -94,7 +90,7 @@ describe('Testing two sections(metadata & demographics)', function() {
 
     sharedTests();
 
-    it('check that there are only two titles', function(done) {
+    it('check that there are only two titles', function (done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
 
         var titles = txtToIntObj.getTitles(this.txtdata);
@@ -108,9 +104,9 @@ describe('Testing two sections(metadata & demographics)', function() {
 
 });
 
-describe('Testing File with only meta section', function() {
+describe('Testing File with only meta section', function () {
 
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('metaOnly.txt');
         this.txtdata = txtfile.toString();
         done();
@@ -118,7 +114,7 @@ describe('Testing File with only meta section', function() {
 
     sharedTests();
 
-    it('check that there is only one title', function(done) {
+    it('check that there is only one title', function (done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
         var titles = txtToIntObj.getTitles(this.txtdata);
         var resultKeys = Object.keys(result);
@@ -130,8 +126,8 @@ describe('Testing File with only meta section', function() {
 
 });
 
-describe('Testing a different number of dashes(5)', function() {
-    beforeEach(function(done) {
+describe('Testing a different number of dashes(5)', function () {
+    beforeEach(function (done) {
         var txtfile = loadFile('differentDashes.txt');
         this.txtdata = txtfile.toString();
         done();
@@ -140,9 +136,9 @@ describe('Testing a different number of dashes(5)', function() {
     sharedTests();
 });
 
-describe('Testing file with beginning(meta) and end(claims)', function() {
+describe('Testing file with beginning(meta) and end(claims)', function () {
 
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('begAndEndSections.txt');
         this.txtdata = txtfile.toString();
         done();
@@ -150,7 +146,7 @@ describe('Testing file with beginning(meta) and end(claims)', function() {
 
     sharedTests();
 
-    it('check that there is only two titles', function(done) {
+    it('check that there is only two titles', function (done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
         var titles = txtToIntObj.getTitles(this.txtdata);
         var resultKeys = Object.keys(result);
@@ -160,7 +156,7 @@ describe('Testing file with beginning(meta) and end(claims)', function() {
         done();
     });
 
-    it('check that the sections are populated', function(done) {
+    it('check that the sections are populated', function (done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
         for (var key in result) {
             var sectionValueObj = result[key];
@@ -171,9 +167,9 @@ describe('Testing file with beginning(meta) and end(claims)', function() {
     });
 });
 
-describe('Testing a file with empty sections', function() {
+describe('Testing a file with empty sections', function () {
 
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('emptySections.txt');
         this.txtdata = txtfile.toString();
         done();
@@ -181,7 +177,7 @@ describe('Testing a file with empty sections', function() {
 
     sharedTests();
 
-    it('checks that the sections are empty', function(done) {
+    it('checks that the sections are empty', function (done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
         var allSectionsAreEmpty = true;
         for (var key in result) {
@@ -204,19 +200,18 @@ describe('Testing a file with empty sections', function() {
         done();
     });
 
-
 });
 
-describe('Testing a file with missing', function() {
+describe('Testing a file with missing', function () {
 
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('missingSections.txt');
         this.txtdata = txtfile.toString();
         done();
     });
 
     sharedTests();
-    it('checks that the right numbers of sections are present', function(done) {
+    it('checks that the right numbers of sections are present', function (done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
         var resultKeys = Object.keys(result);
         var expectedKeys = ['meta',
@@ -227,9 +222,9 @@ describe('Testing a file with missing', function() {
     });
 });
 
-describe('Test an empty file', function() {
+describe('Test an empty file', function () {
 
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('emptyFile.txt');
         this.txtdata = txtfile.toString();
         done();
@@ -239,9 +234,9 @@ describe('Test an empty file', function() {
 
 });
 
-describe('Test a file with no sources', function() {
+describe('Test a file with no sources', function () {
 
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('noSources.txt');
         var result = txtToIntObj.getIntObj(txtfile);
         this.txtdata = txtfile.toString();
@@ -252,10 +247,9 @@ describe('Test a file with no sources', function() {
 
 });
 
+describe('Test a file with only sources', function () {
 
-describe('Test a file with only sources', function() {
-
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('onlySources.txt');
         var result = txtToIntObj.getIntObj(txtfile);
         this.txtdata = txtfile.toString();
@@ -264,7 +258,7 @@ describe('Test a file with only sources', function() {
 
     sharedTests();
 
-    it('checks that only type of children are sources', function(done) {
+    it('checks that only type of children are sources', function (done) {
         var result = txtToIntObj.getIntObj(this.txtdata);
         for (var key in result) {
             var sectionObj = result[key];
@@ -278,22 +272,21 @@ describe('Test a file with only sources', function() {
 
 });
 
+describe('Test file parsing beginning to end', function () {
 
-describe('Test file parsing beginning to end', function() {
-
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('sample2.txt');
         this.txtdata = txtfile.toString();
         done();
     });
 
-    it('checks if the file is converted', function(done) {
+    it('checks if the file is converted', function (done) {
         var outputFilename = __dirname + '/fixtures/cms/bbModel.json';
         var intObj = txtToIntObj.getIntObj(this.txtdata);
         //console.log(JSON.stringify(intObj, null, 4));
         var bbModel = objConverter.convertToBBModel(intObj);
 
-        fs.writeFile(outputFilename, JSON.stringify(bbModel, null, 4), function(err) {
+        fs.writeFile(outputFilename, JSON.stringify(bbModel, null, 4), function (err) {
             if (err) {
                 console.log(err);
                 done();
@@ -306,15 +299,15 @@ describe('Test file parsing beginning to end', function() {
 
 });
 
-describe('Test insurance for given sample file', function() {
+describe('Test insurance for given sample file', function () {
 
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('sample2.txt');
         this.txtdata = txtfile.toString();
         done();
     });
 
-    it('checks for the correct number of objects converted', function(done) {
+    it('checks for the correct number of objects converted', function (done) {
         var intObj = txtToIntObj.getIntObj(this.txtdata);
         var bbModel = objConverter.convertToBBModel(intObj);
         var totalPlans = bbModel.data.insurance.length;
@@ -325,16 +318,15 @@ describe('Test insurance for given sample file', function() {
 
 });
 
+describe('Test claims for given sample file', function () {
 
-describe('Test claims for given sample file', function() {
-
-    before(function(done) {
+    before(function (done) {
         var txtfile = loadFile('sample2.txt');
         this.txtdata = txtfile.toString();
         done();
     });
 
-    it('checks for the correct number of objects converted', function(done) {
+    it('checks for the correct number of objects converted', function (done) {
         var intObj = txtToIntObj.getIntObj(this.txtdata);
         var bbModel = objConverter.convertToBBModel(intObj);
         var totalPlans = bbModel.data.claims.length;
@@ -344,5 +336,3 @@ describe('Test claims for given sample file', function() {
     });
 
 });
-
-

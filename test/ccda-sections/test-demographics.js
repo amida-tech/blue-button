@@ -9,21 +9,21 @@ var jsutil = require('../../lib/jsutil');
 
 var demographics;
 
-var loadRecord = function(done) {
+var loadRecord = function (done) {
     var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Demographics.xml');
     var xml = fs.readFileSync(filepath, 'utf-8');
-    demographics=bb.parseString(xml, {
+    demographics = bb.parseString(xml, {
         component: 'ccda_demographics'
     }).data
-        done();
-    
+    done();
+
 };
 
-describe('Demographics - Snippet Comparison', function() {
+describe('Demographics - Snippet Comparison', function () {
 
-    before(function(done) {
+    before(function (done) {
         if (demographics === undefined) {
-            loadRecord(function() {
+            loadRecord(function () {
                 done();
             });
         } else {
@@ -31,7 +31,7 @@ describe('Demographics - Snippet Comparison', function() {
         }
     });
 
-    it('Deep Equality Check', function(done) {
+    it('Deep Equality Check', function (done) {
         expect(demographics).to.exist;
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Demographics.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
@@ -40,7 +40,7 @@ describe('Demographics - Snippet Comparison', function() {
         done();
     });
 
-    it('Shallow Equality Check', function(done) {
+    it('Shallow Equality Check', function (done) {
         expect(demographics.name).to.exists;
         expect(demographics.name.last).to.equal('Jones');
         expect(demographics.name.first).to.equal('Isabella');
@@ -55,11 +55,11 @@ describe('Demographics - Snippet Comparison', function() {
     });
 });
 
-describe('Demographics - Schema Conformance', function() {
+describe('Demographics - Schema Conformance', function () {
 
-    before(function(done) {
+    before(function (done) {
         if (demographics === undefined) {
-            loadRecord(function() {
+            loadRecord(function () {
                 done();
             });
         } else {
@@ -67,12 +67,12 @@ describe('Demographics - Schema Conformance', function() {
         }
     });
 
-    it('Basic Object Structure', function(done) {
+    it('Basic Object Structure', function (done) {
         assert.isObject(demographics, 'Main item should be object');
         done();
     });
 
-    it('Demographic Structure - Name', function(done) {
+    it('Demographic Structure - Name', function (done) {
         var currentName = demographics.name;
         if (currentName.prefix) {
             assert.isString(currentName.prefix, "Prefix should be string");
@@ -97,14 +97,14 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Gender', function(done) {
+    it('Demographic Structure - Gender', function (done) {
         assert.isDefined(demographics.gender, 'Gender required');
         assert.isString(demographics.gender, 'Gender must be string');
         assert.includeMembers(['Male', 'Female', 'Unknown'], new Array(demographics.gender), 'Precision should be valid');
         done();
     });
 
-    it('Demographic Structure - dob', function(done) {
+    it('Demographic Structure - dob', function (done) {
 
         assert.isDefined(demographics.dob, 'Date should exist');
         assert.isArray(demographics.dob, 'Date should be an array');
@@ -121,7 +121,7 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Identifiers', function(done) {
+    it('Demographic Structure - Identifiers', function (done) {
         assert.isDefined(demographics.identifiers, 'Identifier should exist');
         assert.isArray(demographics.identifiers, 'Identifier should be an array');
         assert.ok(demographics.identifiers.length > 0, 'Identifier required.');
@@ -135,7 +135,7 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Marital Status', function(done) {
+    it('Demographic Structure - Marital Status', function (done) {
         if (demographics.marital_status) {
             assert.isString(demographics.marital_status, "marital_status should be string.");
             assert.ok(demographics.marital_status.length > 0, "marital_status should have length");
@@ -143,7 +143,7 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Address', function(done) {
+    it('Demographic Structure - Address', function (done) {
 
         for (var iaddr in demographics.addresses) {
             var currentAddress = demographics.addresses[iaddr];
@@ -167,7 +167,7 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Phone & Email', function(done) {
+    it('Demographic Structure - Phone & Email', function (done) {
         if (demographics.email) {
             for (var iem in demographics.email) {
                 var currentEmail = demographics.email[iem];
@@ -186,7 +186,7 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Race Ethnicity', function(done) {
+    it('Demographic Structure - Race Ethnicity', function (done) {
         if (demographics.race_ethnicity) {
             assert.isString(demographics.race_ethnicity, 'race_ethnicity should be string');
             assert.ok(demographics.race_ethnicity.length > 0, 'race_ethnicity should have content');
@@ -194,7 +194,7 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Religion', function(done) {
+    it('Demographic Structure - Religion', function (done) {
         if (demographics.race_ethnicity) {
             assert.isString(demographics.race_ethnicity, 'Religion should be string');
             assert.ok(demographics.race_ethnicity.length > 0, 'Religion should have content');
@@ -202,7 +202,7 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Languages', function(done) {
+    it('Demographic Structure - Languages', function (done) {
         if (demographics.languages) {
             assert.isArray(demographics.languages);
             for (var ilang in demographics.languages) {
@@ -225,7 +225,7 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Birthplace', function(done) {
+    it('Demographic Structure - Birthplace', function (done) {
 
         if (demographics.birthplace) {
             var birthPlace = demographics.birthplace;
@@ -259,7 +259,7 @@ describe('Demographics - Schema Conformance', function() {
         done();
     });
 
-    it('Demographic Structure - Guardians', function(done) {
+    it('Demographic Structure - Guardians', function (done) {
         if (demographics.guardians) {
             assert.isArray(demographics.guardians, 'Guardians should be array');
             assert.ok(demographics.guardians.length > 0, 'Guardians should have length');
@@ -292,8 +292,6 @@ describe('Demographics - Schema Conformance', function() {
                             assert.isString(currentAddress.country, 'country should be string');
                             assert.ok(currentAddress.country.length > 0, 'country should have content');
                         }
-
-
 
                     }
                 }
@@ -338,11 +336,9 @@ describe('Demographics - Schema Conformance', function() {
                     }
                 }
 
-
             }
         }
         done();
     });
-
 
 });
