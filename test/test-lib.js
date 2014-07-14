@@ -322,13 +322,22 @@ String.prototype.capitalize = function() {
 // generates the DOM representations of both XML documents and returns them as a two-element array, 
 // with the first being the generated XML and the second being the expected XML.
 testXML.prototype.generateXMLDOM = function(file) {
+    capitalize2 = function(file){
+        var elements = file.split("_");
+        for (var i=0; i<elements.length; i++){
+            elements[i]=elements[i].capitalize();
+        }
+        return elements.join("_");
+
+    };
+
     console.log("\nPROCESSING " + file.toUpperCase());
-    var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + file.capitalize() + '.json', 'utf-8');
+    var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + capitalize2(file) + '.json', 'utf-8');
     var actual = gen(JSON.parse(modelJSON), false, new libxmljs.Document(), file);
-    var expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + file.capitalize() + '.xml');
+    var expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + capitalize2(file) + '.xml');
 
     // write generated file just to visually compare
-    fs.writeFileSync('test/fixtures/file-snippets/generated/CCD_1_' + file.capitalize() + '.xml', actual, 'utf-8');
+    fs.writeFileSync('test/fixtures/file-snippets/generated/CCD_1_' + capitalize2(file) + '.xml', actual, 'utf-8');
 
     var generatedXML = new XmlDOM().parseFromString(actual.toString());
     var expectedXML = new XmlDOM().parseFromString(expected.toString());
