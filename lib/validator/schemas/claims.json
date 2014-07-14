@@ -2,6 +2,45 @@
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
+        "number": {
+            "type": "string"
+        },
+        "diagnosis": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+            }
+        },
+        "name": {
+            "type": "string"
+        },
+        "payer": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "start_date": {
+            "$ref": "http://local.com/commonModels#/properties/cda_date"
+        },
+        "service": {
+            "type": "string"
+        },
+        "type": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                    }
+                },
+                "provider_id": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_id"
+                }
         "charges": {
             "type": "object",
             "properties": {
@@ -25,19 +64,6 @@
                     "value": "number",
                     "unit": "string"
                 }
-            }
-        },
-        "number":{"type":"string"},
-        "date": {
-            "type": "array",
-            "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
-            }
-        },
-        "diagnosis": {
-            "type": "array",
-            "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
             }
         },
         "lines": {
@@ -84,19 +110,19 @@
                     },
                     "modifiers": {
                         "type": "array",
-                        "items":{
-                        "properties": {
-                            "code": {
-                                "type": "string"
-                            },
-                            "description": {
-                                "type": "string"
-                            },
-                            "name": {
-                                "type": "string"
+                        "items": {
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
                             }
                         }
-                    }
                     },
                     "number": {
                         "type": "string"
@@ -116,9 +142,11 @@
                         }
                     },
                     "prescriber": {
-                        "type":"object",
+                        "type": "object",
                         "properties": {
-                            "id":{"$ref": "http://local.com/commonModels#/properties/cda_id"},
+                            "id": {
+                                "$ref": "http://local.com/commonModels#/properties/cda_id"
+                            },
                             "description": {
                                 "type": "string"
                             },
@@ -142,11 +170,15 @@
                         }
                     },
                     "quantity": {
-                        "type":"object",
-                        "properties":{
-                        "value": {"type":"number"},
-                        "unit": {"type":"string"}
-                    }
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "number"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        }
                     },
                     "rendering provider": {
                         "type": "object",
@@ -188,80 +220,47 @@
                 }
             }
         },
-         "provider": {
-                "type": "object",
-                "properties": {
-                    "address": {
-                        "$ref": "http://local.com/commonModels#/properties/cda_address"
-                    },
-                    "identifiers": {
-                        "type": "array",
-                        "items": {
-                            "$ref": "http://local.com/commonModels#/properties/cda_id"
-                        }
-                    },
-                    "organization": {
-                        "type": "object",
-                        "properties": {
-                            "address": {
-                                "$ref": "http://local.com/commonModels#/properties/cda_address"
-                            },
-                            "identifiers": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "http://local.com/commonModels#/properties/cda_id"
-                                }
-                            },
-                            "name": {
-                                "type": "string"
-                            },
-                            "phone": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "http://local.com/commonModels#/properties/cda_phone"
-                                }
-                            },
-                            "email": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "http://local.com/commonModels#/properties/cda_email"
-                                }
-                            }
-                        }
-                    },
-                    "phone": {
-                        "type": "array",
-                        "items": {
-                            "$ref": "http://local.com/commonModels#/properties/cda_phone"
-                        }
-                    },
-                    "provider_id": {
+        "provider": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_address"
+                },
+                "identifiers": {
+                    "type": "array",
+                    "items": {
                         "$ref": "http://local.com/commonModels#/properties/cda_id"
                     }
+                },
+                "organization": {
+                    "type": "object",
+                    "properties": {
+                        "address": {
+                            "$ref": "http://local.com/commonModels#/properties/cda_address"
+                        },
+                        "identifiers": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://local.com/commonModels#/properties/cda_id"
+                            }
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "phone": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                            }
+                        },
+                        "email": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://local.com/commonModels#/properties/cda_email"
+                            }
+                        }
+                    }
                 }
-            },
-        "name": {
-                "type": "string"
-            },
-            "number": {
-                "type": "string"
-            },
-            "payer": {
-                "type": "array",
-                "items": {
-                    "type": "string"
-                }
-            },
-        "start_date": {
-                        "$ref": "http://local.com/commonModels#/properties/cda_date"
-                    },
-        "service": {
-            "type": "string"
-        },
-        "type": {
-            "type": "array",
-            "items": {
-                "type": "string"
             }
         }
     },
