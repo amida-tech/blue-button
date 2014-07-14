@@ -12,7 +12,7 @@
         <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
         <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
         <statusCode code="active"/>
-        <effectiveTime value="20070501"/>
+        <effectiveTime value="20070431"/>
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
@@ -20,7 +20,7 @@
             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="20070501"/>
+              <low value="20070431"/>
             </effectiveTime>
             <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
               <originalText>
@@ -56,7 +56,7 @@
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20070501"/>
+                  <low value="20070431"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -95,7 +95,7 @@
         <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
         <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
         <statusCode code="active"/>
-        <effectiveTime value="20060501"/>
+        <effectiveTime value="20060431"/>
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
@@ -103,7 +103,7 @@
             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="20060501"/>
+              <low value="20060431"/>
             </effectiveTime>
             <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
               <originalText>
@@ -139,7 +139,7 @@
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20060501"/>
+                  <low value="20060431"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -178,7 +178,7 @@
         <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
         <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
         <statusCode code="active"/>
-        <effectiveTime value="20080501"/>
+        <effectiveTime value="20080431"/>
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
@@ -186,7 +186,7 @@
             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="20080501"/>
+              <low value="20080431"/>
             </effectiveTime>
             <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
               <originalText>
@@ -222,7 +222,7 @@
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20080501"/>
+                  <low value="20080431"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" displayName="Hives"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -233,7 +233,7 @@
                       <reference value="#severity6"/>
                     </text>
                     <statusCode code="completed"/>
-                    <value xsi:type="CD" code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                    <value xsi:type="CD" code="255604002" displayName="Mild to moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     <interpretationCode code="S" displayName="Susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                   </observation>
                 </entryRelationship>

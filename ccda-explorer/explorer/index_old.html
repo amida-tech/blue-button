@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--link rel="shortcut icon" href="../../assets/ico/favicon.ico"-->
+
+    <title>Starter Template for Bootstrap</title>
+
+
+   <script type='text/javascript' src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+	<script type='text/javascript' src='http://code.jquery.com/jquery-git.js'></script>
+	<script type='text/javascript' src='stats.js'></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+
+        <div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">CCDA vendor title</h3>
+		  </div>
+
+		  <table class="table">
+		  	<thead>
+		  		<tr>
+		  		<th>File name</th>
+		  		<th>Templates</th>
+		  		<th>Sections</th>
+		  		<th>Demographics</th>
+		  		<th>Allergies</th>
+		  		<th>Social History</th>
+		  		<th>Demographics</th>
+		  		<th>Allergies</th>
+		  		<th>Social History</th>
+		  		<th>Demographics</th>
+		  		<th>Allergies</th>
+		  		<th>Social History</th>
+		  		</tr>
+		  	</thead>
+		  	<tr>
+		  		<td>File name</td>
+		  		<td>  <span class="label label-warning">CCD template</span> </td>
+		  		<td> <span class="label label-primary">Allergy Section</span> <span class="label label-primary">Problems Section</span> <span class="label label-primary">Medications Section</span></td>
+		  		<td><span class="glyphicon glyphicon-ok"></span></td>
+		  		<td><span class="glyphicon glyphicon-ok"></span></td>
+		  		<td><span class="glyphicon glyphicon-remove"></span></td>
+		  		<td><span class="glyphicon glyphicon-remove"></span></td>
+		  		<td><a href="" class="label label-success">Success</a></td>
+		  		<td><a href="" class="label label-success">Success</a></td>
+		  		<td><a href="" class="label label-danger">Fail</a></td>
+		  		<td></td>
+		  		<td></td>
+		  	</tr>
+		  </table>
+
+		</div>
+
+        <!-- inject underscore template here -->
+        <div id="stats">
+        </div>
+
+
+
+<script type="text/html" id='vendors-list'>
+    
+    <% _.each(items,function(item,key,list){ %>
+        <div class="alert alert-success">
+  			<p class="alert-link"><%= key %></p>
+		</div>
+
+	    <% _.each(item.files,function(item2,key2,list2){ %>
+	        <div class="alert alert-info">
+	  			<p class="alert-link"><%= item2 %> <%= JSON.stringify(item.sections) %> </p>
+
+			    <% _.each(item.full,function(item3,key3,list3){ %>
+					<%= item3 %> |
+			    <% }) %>
+
+
+			</div>
+
+			
+	    <% }) %>
+
+
+
+    <% }) %>
+
+</script>
+
+<script type="text/html" id='table-data'>
+    
+    <% _.each(items,function(item,key,list){ %>
+        <tr>
+            <td><%= key %></td>
+            <td><%= item.name %></td>
+        </tr>
+    <% }) %>
+
+</script>
+        
+<script type="text/html" id='div-data'>
+    
+    <% _.each(items,function(item,key,list){ %>
+
+
+        <div><%= key %></div>
+        <div><%= item.name %></div>
+    <% }) %>
+
+</script>
+
+
+<script>
+  
+var vendorsTemplate = $("#vendors-list").html();
+
+//$("table.outer tbody").html(_.template(tableTemplate,{items:items}));
+//$("div.outer p").before(_.template(divTemplate,{items:items}));
+
+$("div#stats").html(_.template(vendorsTemplate,{items:stats}));
+
+</script>
+
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
