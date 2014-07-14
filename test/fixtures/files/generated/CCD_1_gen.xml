@@ -30,7 +30,7 @@
           <family>Jones</family>
         </name>
         <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female"/>
-        <birthTime value="19750430"/>
+        <birthTime value="19750431"/>
         <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
         <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystemName="HL7 Religious Affiliation" codeSystem="2.16.840.1.113883.5.1076"/>
         <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
@@ -98,7 +98,7 @@
               <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
               <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
               <statusCode code="active"/>
-              <effectiveTime value="20070430"/>
+              <effectiveTime value="20070431"/>
               <entryRelationship typeCode="SUBJ" inversionInd="true">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
@@ -106,7 +106,7 @@
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
-                    <low value="20070430"/>
+                    <low value="20070431"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -142,7 +142,7 @@
                       </text>
                       <statusCode code="completed"/>
                       <effectiveTime>
-                        <low value="20070430"/>
+                        <low value="20070431"/>
                       </effectiveTime>
                       <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
                       <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -181,7 +181,7 @@
               <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
               <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
               <statusCode code="active"/>
-              <effectiveTime value="20060430"/>
+              <effectiveTime value="20060431"/>
               <entryRelationship typeCode="SUBJ" inversionInd="true">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
@@ -189,7 +189,7 @@
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
-                    <low value="20060430"/>
+                    <low value="20060431"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -225,7 +225,7 @@
                       </text>
                       <statusCode code="completed"/>
                       <effectiveTime>
-                        <low value="20060430"/>
+                        <low value="20060431"/>
                       </effectiveTime>
                       <value xsi:type="CD" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
                       <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -264,7 +264,7 @@
               <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
               <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
               <statusCode code="active"/>
-              <effectiveTime value="20080430"/>
+              <effectiveTime value="20080431"/>
               <entryRelationship typeCode="SUBJ" inversionInd="true">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
@@ -272,7 +272,7 @@
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
-                    <low value="20080430"/>
+                    <low value="20080431"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                     <originalText>
@@ -308,7 +308,7 @@
                       </text>
                       <statusCode code="completed"/>
                       <effectiveTime>
-                        <low value="20080430"/>
+                        <low value="20080431"/>
                       </effectiveTime>
                       <value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" displayName="Hives"/>
                       <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -319,7 +319,7 @@
                             <reference value="#severity6"/>
                           </text>
                           <statusCode code="completed"/>
-                          <value xsi:type="CD" code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                          <value xsi:type="CD" code="255604002" displayName="Mild to moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                           <interpretationCode code="S" displayName="Susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                         </observation>
                       </entryRelationship>
@@ -413,7 +413,7 @@
                   <reference value="#immun1"/>
                 </text>
                 <statusCode code="completed"/>
-                <effectiveTime xsi:type="IVL_TS" value="19991031"/>
+                <effectiveTime xsi:type="IVL_TS" value="19991032"/>
                 <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
                 <doseQuantity value="50" unit="mcg"/>
                 <consumable>
@@ -477,7 +477,7 @@
                   <reference value="#immun2"/>
                 </text>
                 <statusCode code="completed"/>
-                <effectiveTime xsi:type="IVL_TS" value="19981214"/>
+                <effectiveTime xsi:type="IVL_TS" value="19981215"/>
                 <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
                 <doseQuantity value="50" unit="mcg"/>
                 <consumable>
@@ -541,7 +541,7 @@
                   <reference value="#immun3"/>
                 </text>
                 <statusCode code="completed"/>
-                <effectiveTime xsi:type="IVL_TS" value="19981214"/>
+                <effectiveTime xsi:type="IVL_TS" value="19981215"/>
                 <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
                 <doseQuantity value="50" unit="mcg"/>
                 <consumable>
@@ -605,7 +605,7 @@
                   <reference value="#immun4"/>
                 </text>
                 <statusCode code="completed"/>
-                <effectiveTime xsi:type="IVL_TS" value="19981214"/>
+                <effectiveTime xsi:type="IVL_TS" value="19981215"/>
                 <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
                 <doseQuantity value="50" unit="mcg"/>
                 <consumable>
@@ -652,12 +652,16 @@
                   </assignedEntity>
                 </performer>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
-                  <act classCode="ACT" moodCode="INT">
-                    <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                    <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
-                    <text>label in spanish<reference value="#MedSec_1"/></text>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                    <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                    <text>
+                      <reference value="#severityNaN"/>
+                    </text>
                     <statusCode code="completed"/>
-                  </act>
+                    <value xsi:type="CD" code="undefined" displayName="UNK" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                    <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
+                  </observation>
                 </entryRelationship>
               </substanceAdministration>
             </entry>
@@ -677,8 +681,8 @@
                 <text>Proventil HFA <reference value="#MedSec_1"/></text>
                 <statusCode code="completed"/>
                 <effectiveTime xsi:type="IVL_TS">
-                  <low value="20070102"/>
-                  <high value="20120514"/>
+                  <low value="20070103"/>
+                  <high value="20120515"/>
                 </effectiveTime>
                 <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
                   <period value="6" unit="h"/>
@@ -738,7 +742,7 @@
                     <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     <statusCode code="completed"/>
                     <effectiveTime>
-                      <low value="20070102"/>
+                      <low value="20070103"/>
                     </effectiveTime>
                     <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
                   </observation>
@@ -749,7 +753,7 @@
                     <id nullFlavor="NI"/>
                     <statusCode code="completed"/>
                     <effectiveTime xsi:type="IVL_TS">
-                      <low value="20070102"/>
+                      <low value="20070103"/>
                       <high value="200701"/>
                     </effectiveTime>
                     <repeatNumber value="1"/>
@@ -814,7 +818,7 @@
                     <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
                     <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704"/>
                     <statusCode code="completed"/>
-                    <effectiveTime value="20070102"/>
+                    <effectiveTime value="20070103"/>
                     <repeatNumber value="1"/>
                     <quantity value="75"/>
                     <product>
@@ -887,8 +891,8 @@
                 <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20080102"/>
-                  <high value="20080102"/>
+                  <low value="20080103"/>
+                  <high value="20080103"/>
                 </effectiveTime>
                 <entryRelationship typeCode="SUBJ">
                   <observation classCode="OBS" moodCode="EVN">
@@ -900,8 +904,8 @@
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime>
-                      <low value="20080102"/>
-                      <high value="20080102"/>
+                      <low value="20080103"/>
+                      <high value="20080103"/>
                     </effectiveTime>
                     <value xsi:type="CD" code="233604007" codeSystem="2.16.840.1.113883.6.96" displayName="Pneumonia"/>
                     <entryRelationship typeCode="REFR">
@@ -914,8 +918,8 @@
                         </text>
                         <statusCode code="completed"/>
                         <effectiveTime>
-                          <low value="20080102"/>
-                          <high value="20080102"/>
+                          <low value="20080103"/>
+                          <high value="20080103"/>
                         </effectiveTime>
                         <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved"/>
                       </observation>
@@ -950,8 +954,8 @@
                 <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20070102"/>
-                  <high value="20080102"/>
+                  <low value="20070103"/>
+                  <high value="20080103"/>
                 </effectiveTime>
                 <entryRelationship typeCode="SUBJ">
                   <observation classCode="OBS" moodCode="EVN">
@@ -963,8 +967,8 @@
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime>
-                      <low value="20070102"/>
-                      <high value="20080102"/>
+                      <low value="20070103"/>
+                      <high value="20080103"/>
                     </effectiveTime>
                     <value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma"/>
                     <entryRelationship typeCode="REFR">
@@ -977,8 +981,8 @@
                         </text>
                         <statusCode code="completed"/>
                         <effectiveTime>
-                          <low value="20070102"/>
-                          <high value="20080102"/>
+                          <low value="20070103"/>
+                          <high value="20080103"/>
                         </effectiveTime>
                         <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
                       </observation>
@@ -1025,7 +1029,7 @@
                   </originalText>
                 </code>
                 <statusCode code="completed"/>
-                <effectiveTime value="20120511"/>
+                <effectiveTime value="20120512"/>
                 <methodCode nullFlavor="UNK"/>
                 <targetSiteCode code="appropriate_code" displayName="colon" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
                 <specimen typeCode="SPC">
@@ -1079,7 +1083,7 @@
                   </originalText>
                 </code>
                 <statusCode code="completed"/>
-                <effectiveTime value="20110202"/>
+                <effectiveTime value="20110203"/>
                 <methodCode nullFlavor="UNK"/>
                 <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
                 <performer>
@@ -1127,7 +1131,7 @@
                   </originalText>
                 </code>
                 <statusCode code="completed"/>
-                <effectiveTime value="20110202"/>
+                <effectiveTime value="20110203"/>
                 <methodCode nullFlavor="UNK"/>
                 <performer>
                   <assignedEntity>
@@ -1188,7 +1192,7 @@
                       <reference value="#result1"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime value="20000323"/>
+                    <effectiveTime value="20000324"/>
                     <value xsi:type="PQ" value="13.2" unit="g/dl"/>
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                     <referenceRange>
@@ -1207,7 +1211,7 @@
                       <reference value="#result2"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime value="20000323"/>
+                    <effectiveTime value="20000324"/>
                     <value xsi:type="PQ" value="6.7" unit="10+3/ul"/>
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                     <referenceRange>
@@ -1226,7 +1230,7 @@
                       <reference value="#result3"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime value="20000323"/>
+                    <effectiveTime value="20000324"/>
                     <value xsi:type="PQ" value="123" unit="10+3/ul"/>
                     <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
                     <referenceRange>
@@ -1253,8 +1257,8 @@
                 <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20050430"/>
-                  <high value="20090227"/>
+                  <low value="20050431"/>
+                  <high value="20090228"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="8517006" displayName="undefined" codeSystem="2.16.840.1.113883.6.96"/>
               </observation>
@@ -1270,8 +1274,8 @@
                 </code>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20050430"/>
-                  <high value="20090227"/>
+                  <low value="20050431"/>
+                  <high value="20090228"/>
                 </effectiveTime>
                 <value xsi:type="ST">1 pack per day</value>
               </observation>
@@ -1287,8 +1291,8 @@
                 </code>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20050430"/>
-                  <high value="20090227"/>
+                  <low value="20050431"/>
+                  <high value="20090228"/>
                 </effectiveTime>
                 <value xsi:type="ST">1 pack per day</value>
               </observation>
@@ -1304,8 +1308,8 @@
                 </code>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20050430"/>
-                  <high value="20090227"/>
+                  <low value="20050431"/>
+                  <high value="20090228"/>
                 </effectiveTime>
                 <value xsi:type="ST">1 pack per day</value>
               </observation>
@@ -1325,7 +1329,7 @@
                 <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                 <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
                 <statusCode code="completed"/>
-                <effectiveTime value="19991113"/>
+                <effectiveTime value="19991114"/>
                 <component>
                   <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
@@ -1335,7 +1339,7 @@
                       <reference value="#vit0"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime value="19991113"/>
+                    <effectiveTime value="19991114"/>
                     <value xsi:type="PQ" value="86" unit="cm"/>
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                   </observation>
@@ -1349,7 +1353,7 @@
                       <reference value="#vit1"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime value="19991113"/>
+                    <effectiveTime value="19991114"/>
                     <value xsi:type="PQ" value="132" unit="kg"/>
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                   </observation>
@@ -1363,7 +1367,7 @@
                       <reference value="#vit2"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime value="19991113"/>
+                    <effectiveTime value="19991114"/>
                     <value xsi:type="PQ" value="177" unit="mm[Hg]"/>
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                   </observation>
@@ -1376,7 +1380,7 @@
                 <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                 <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
                 <statusCode code="completed"/>
-                <effectiveTime value="20000406"/>
+                <effectiveTime value="20000407"/>
                 <component>
                   <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
@@ -1386,7 +1390,7 @@
                       <reference value="#vit0"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime value="20000406"/>
+                    <effectiveTime value="20000407"/>
                     <value xsi:type="PQ" value="88" unit="cm"/>
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                   </observation>
@@ -1400,7 +1404,7 @@
                       <reference value="#vit2"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime value="20000406"/>
+                    <effectiveTime value="20000407"/>
                     <value xsi:type="PQ" value="145" unit="kg"/>
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                   </observation>
@@ -1414,7 +1418,7 @@
                       <reference value="#vit4"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime value="20000406"/>
+                    <effectiveTime value="20000407"/>
                     <value xsi:type="PQ" value="UNK" unit="mm[Hg]"/>
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                   </observation>

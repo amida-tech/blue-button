@@ -4,7 +4,7 @@ var fs = require("fs");
 var meta = require("blue-button-meta");
 
 // var bb = require("blue-button");
-var bb = require("../blue-button/index.js");
+var bb = require("../index.js");
 
 var count = 0;
 
