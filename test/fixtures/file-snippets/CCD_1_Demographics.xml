@@ -35,7 +35,7 @@
 			displayName="Christian (non-Catholic, non-specific)"
 			codeSystemName="HL7 Religious Affiliation" codeSystem="2.16.840.1.113883.5.1076"/>
 		<!-- CDC Race and Ethnicity code set contains the minimum race and ethnicity categories defined by OMB Standards for Race and Ethnicity -->
-		<raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238"
+		<raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238"
 			codeSystemName="Race &amp; Ethnicity - CDC"/>
 		<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"
 			codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>

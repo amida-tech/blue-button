@@ -3,7 +3,6 @@
 # CMS Parser for Blue Button
 
 
-
 ##Design Decisions Documentation 
 
 
@@ -131,19 +130,6 @@ key: value
 3. Object must have the number of titles specified in the original test file.(Done)
 4. There should be no empty keys in ANY object model.(Done)
 
-###Text file specific test cases
-
-1. Test Empty sections(Done)
-2. Test if parser is functional with missing sections(Done)
-3. Test empty file(Done)
-4. Test source, but no section(Done)
-5. Test different number of dashes(Done)
-6. Test the file when there is only one section(Done)
-7. Test when there is two sections, one from the very beginning and one from the very end.(Done)
-8. Test when there is only meta data(Done)
-
-
-
 ###Task Backlog 
 
 
@@ -152,70 +138,32 @@ key: value
 ..+1.b. Check what matches and what doesn't match.
 ..+1.c. Check what are missing.
 
-2. Document intermediate model. Document which sections match and doesn't match. (Done)
-
-
-3. Work on parsing from the intermediate model to the actual bb model. (done)
-	Start with demographics.
-
-4. Improve code flexibility
+2. Improve code flexibility
 	4.a. abstract out matching from code.
 		1. separate class for regular expressions.
 		2. Detect the format of the text file(UTF-8, ascii), and make it be able to handle different text structures.
 
-
-5. Putting proper codes for each medical term. May need to put uncoded tag. (
+3. Putting proper codes for each medical term. May need to put uncoded tag. (
 	Look at medical dictionaries/clinical vocabularies at bottom of CCDA pad)
 
-6. Put a tag or some indicator to mark that the source is the CMS text file, or put an object with a key metadata. (Done)
-
-7. Need to make sure that you don't have blank keys(Additional check). 
-
-8. Deal with case sensitivity of keys to object in intermediate object to blue button converter, and everywhere else.(Done)
-
-9. Need to dump data that is not part of one section into a common pool, or organize it. 
+4. Need to dump data that is not part of one section into a common pool, or organize it. 
 ..* the effective dates for in "demographic" section needs to go somewhere else -> in the health insurance model. 
 ..* Allergy shots, and other medications need to go to another section
 
-10. Need to make sure that object types are very consistent with the model given in bb, probably will need to write tests to make sure
-the returned object model is the same as the model that has been parsed.
-
-11. Need to write defaultValues.json for each section. 
-
-12. Need a precision converter, so that if I give it a mm/dd/yyyy/ other options, it can tell how precise it is. (Done)
-
-13. Need to modularize/restructure the results section.
-
-14. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that
+5. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that
 the patient took shots. From this, maybe the parser should extrapolate the administration part of medications. May tie in with #13.
 
-15. Write tests for parts that are finished.
+6. Write tests for parts that are finished.
 
-16. Medications rate detector needs to be written.
+7. Medications rate detector needs to be written.(for example 3x boxes of 30 needles for 3 months)
 
-17. Vitals value detection may need modifications based on more text sample files. 
+8. Vitals value detection may need modifications based on more text sample files. 
 
+9. Plan period address, claims billng address parser needs to be changes. (currently ignores it.)
 
+10. There can be multiple claim numbers, fill numbers, date, etc can be different. So far fill numbers are not taken into account.
 
-## Resolved Tasks
-
-1.  Convert datetime into yyyy/mm/dd hh:mm:ss format...
-
-2.  Restructure so that format matches Matt's update.(done)
-
-3. Demographics needs to be able to handle single key value pairs just in case.(Done)
-
-4. writeValue in intermediate object to blue button converter will have to return an object eventually.(done)
-
-##Integration Notes
-
-First, add a line that says: 
-In /lib/parser.js,
-
-1. add
-	require('(directory structure/CMSparser') or any other packages
-2. In the last line of the file, you need to put the key value pair for the new CMSParser package
-
+11. Discussion is needed on how to handle medicare claim type Ds, since it can get pretty confusing.
 
 
 

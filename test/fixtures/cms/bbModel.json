@@ -5,10 +5,12 @@
                 "first": "JOHN",
                 "last": "DOE"
             },
-            "dob": {
-                "date": "1910-01-01T00:00:00.000Z",
-                "precision": "day"
-            },
+            "dob": [
+                {
+                    "date": "1910-01-01T00:00:00.000Z",
+                    "precision": "day"
+                }
+            ],
             "email": [
                 {
                     "address": "JOHNDOE@example.com",
@@ -20,6 +22,18 @@
                     "number": "123-456-7890",
                     "type": "primary"
                 }
+            ],
+            "addresses": [
+                {
+                    "use": "primary",
+                    "streetLines": [
+                        "123 ANY ROAD"
+                    ],
+                    "city": "ANYTOWN",
+                    "state": "VA",
+                    "zip": "00001",
+                    "country": "United States"
+                }
             ]
         },
         "vitals": [
@@ -27,72 +41,43 @@
                 "vital": {
                     "name": "Blood Pressure"
                 },
-                "date": {
-                    "date": "2011-07-22T15:00:00.000Z",
-                    "precision": "hour"
+                "date": [
+                    {
+                        "date": "2011-07-22T15:00:00.000Z",
+                        "precision": "hour"
+                    }
+                ],
+                "value": 120,
+                "unit": "mm[Hg]",
+                "status": "completed"
+            },
+            {
+                "vital": {
+                    "name": "Blood Pressure"
                 },
-                "value": "120/80",
-                "units": "mm[Hg]",
+                "date": [
+                    {
+                        "date": "2011-07-22T15:00:00.000Z",
+                        "precision": "hour"
+                    }
+                ],
+                "value": 80,
+                "unit": "mm[Hg]",
                 "status": "completed"
             },
             {
                 "vital": {
                     "name": "Glucose"
                 },
-                "date": {
-                    "date": "2012-03-20T12:00:00.000Z",
-                    "precision": "hour"
-                },
-                "value": "110",
-                "units": "mg/dL",
+                "date": [
+                    {
+                        "date": "2012-03-20T12:00:00.000Z",
+                        "precision": "hour"
+                    }
+                ],
+                "value": 110,
+                "unit": "mg/dL",
                 "status": "completed"
-            }
-        ],
-        "results": [
-            {
-                "result_set": {
-                    "name": "Glucose Level"
-                },
-                "results": [
-                    [
-                        {
-                            "date": {
-                                "date": "2008-03-21T00:00:00.000Z",
-                                "precision": "day"
-                            },
-                            "name": "FBS",
-                            "value": "135",
-                            "unit": "mg/dL"
-                        },
-                        {
-                            "date": {
-                                "date": "2008-03-21T00:00:00.000Z",
-                                "precision": "day"
-                            },
-                            "name": "RBS",
-                            "value": "170",
-                            "unit": "mg/dL"
-                        },
-                        {
-                            "date": {
-                                "date": "2008-03-21T00:00:00.000Z",
-                                "precision": "day"
-                            },
-                            "name": "RBS",
-                            "value": "150",
-                            "unit": "mg/dL"
-                        },
-                        {
-                            "date": {
-                                "date": "2008-03-21T00:00:00.000Z",
-                                "precision": "day"
-                            },
-                            "name": "RBS",
-                            "value": "120",
-                            "unit": "mg/dL"
-                        }
-                    ]
-                ]
             }
         ],
         "medications": [
@@ -103,16 +88,30 @@
                     },
                     "unencoded_name": "Aspirin"
                 },
-                "sig": "aspirin"
+                "administration": {
+                    "rate": {
+                        "value": 0,
+                        "unit": ""
+                    }
+                },
+                "sig": "Aspirin",
+                "status": "Completed"
             },
             {
+                "date": [
+                    {
+                        "date": "1949-09-28T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                ],
                 "product": {
                     "product": {
                         "name": "Erythromycin"
                     },
                     "unencoded_name": "Erythromycin"
                 },
-                "sig": "erythromycin"
+                "sig": "Erythromycin",
+                "status": "Completed"
             }
         ],
         "allergies": [
@@ -169,10 +168,6 @@
         ],
         "immunizations": [
             {
-                "date": {
-                    "date": "2002-04-21T00:00:00.000Z",
-                    "precision": "day"
-                },
                 "status": "complete",
                 "administration": {
                     "route": {
@@ -180,14 +175,18 @@
                     }
                 },
                 "product": {
-                    "name": "Varicella/Chicken Pox"
-                }
+                    "product": {
+                        "name": "Varicella/Chicken Pox"
+                    }
+                },
+                "date": [
+                    {
+                        "date": "2002-04-21T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
             },
             {
-                "date": {
-                    "date": "1990-02-02T00:00:00.000Z",
-                    "precision": "day"
-                },
                 "status": "complete",
                 "administration": {
                     "route": {
@@ -195,14 +194,18 @@
                     }
                 },
                 "product": {
-                    "name": "Varicella/Chicken Pox (booster 1)"
-                }
+                    "product": {
+                        "name": "Varicella/Chicken Pox (booster 1)"
+                    }
+                },
+                "date": [
+                    {
+                        "date": "1990-02-02T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
             },
             {
-                "date": {
-                    "date": "2009-01-02T00:00:00.000Z",
-                    "precision": "day"
-                },
                 "status": "complete",
                 "administration": {
                     "route": {
@@ -210,8 +213,16 @@
                     }
                 },
                 "product": {
-                    "name": "typhoid"
-                }
+                    "product": {
+                        "name": "typhoid"
+                    }
+                },
+                "date": [
+                    {
+                        "date": "2009-01-02T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                ]
             }
         ],
         "problems": [
@@ -248,25 +259,41 @@
         ],
         "insurance": [
             {
-                "plan_id": "H9999/9999",
-                "name": "HealthCare Payer",
+                "plan_id": {
+                    "identifier": "H9999/9999"
+                },
+                "payer_name": "HealthCare Payer",
                 "type": [
                     "medicare",
                     "A Medicare Plan Plus (HMO)",
                     "3 - Coordinated Care Plan (HMO, PPO, PSO, SNP)"
+                ],
+                "date": [
+                    {
+                        "date": "2011-09-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
                 ]
             },
             {
-                "plan_id": "S9999/000",
-                "name": "Another HealthCare Payer",
+                "plan_id": {
+                    "identifier": "S9999/000"
+                },
+                "payer_name": "Another HealthCare Payer",
                 "type": [
                     "medicare",
                     "A Medicare Rx Plan (PDP)",
                     "11 - Medicare Prescription Drug Plan"
+                ],
+                "date": [
+                    {
+                        "date": "2010-01-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
                 ]
             },
             {
-                "name": "STATE HEALTH BENEFITS PROGRAM",
+                "plan_name": "STATE HEALTH BENEFITS PROGRAM",
                 "type": [
                     "employer subsidy"
                 ],
@@ -282,7 +309,6 @@
                 ]
             },
             {
-                "type": "medicare msp:End stage Renal Disease (ESRD)",
                 "policy_number": "1234567890",
                 "payer_name": "Insurer1",
                 "date": [
@@ -294,6 +320,9 @@
                         "date": "2011-09-30T00:00:00.000Z",
                         "precision": "day"
                     }
+                ],
+                "type": [
+                    "medicare msp:End stage Renal Disease (ESRD)"
                 ],
                 "addresses": [
                     {
@@ -309,7 +338,6 @@
                 ]
             },
             {
-                "type": "medicare msp:End stage Renal Disease (ESRD)",
                 "policy_number": "12345678901",
                 "payer_name": "Insurer2",
                 "date": [
@@ -321,6 +349,9 @@
                         "date": "2010-12-31T00:00:00.000Z",
                         "precision": "day"
                     }
+                ],
+                "type": [
+                    "medicare msp:End stage Renal Disease (ESRD)"
                 ],
                 "addresses": [
                     {
@@ -336,7 +367,6 @@
                 ]
             },
             {
-                "type": "medicare msp",
                 "policy_number": "00001",
                 "payer_name": "Insurer",
                 "date": [
@@ -391,13 +421,14 @@
                         "quantity": 1,
                         "modifier": [
                             {
-                                "code": "98941",
-                                "description": "Chiropractic Manipulative Treatment (Cmt); Spinal, Three To Four Regions"
+                                "code": "AT",
+                                "description": "Acute Treatment (This Modifier Should Be Used When Reporting Service 98940, 98941, 98942)"
                             }
                         ],
                         "charges": {
                             "price_billed": "$60.00",
-                            "insurance_paid": "$34.00"
+                            "insurance_paid": "$34.00",
+                            "patient_responsibility": "$26.00"
                         },
                         "place": {
                             "code": "11",
@@ -415,6 +446,7 @@
                 ],
                 "charges": {
                     "price_billed": "$60.00",
+                    "insurance_paid": "$34.00",
                     "provider_paid": "$27.20",
                     "patient_responsibility": "$6.80"
                 },
@@ -434,10 +466,7 @@
                     {
                         "code": "3533"
                     }
-                ],
-                "provider": {
-                    "name": "No Information Available"
-                }
+                ]
             },
             {
                 "payer": [
@@ -455,10 +484,15 @@
                             "date": "2012-09-22T00:00:00.000Z",
                             "precision": "day"
                         },
+                        "revenue": {
+                            "code": "0250",
+                            "description": "General Classification PHARMACY"
+                        },
                         "quantity": 1,
                         "charges": {
                             "price_billed": "$14.30",
-                            "insurance_paid": "$14.30"
+                            "insurance_paid": "$14.30",
+                            "patient_responsibility": "$0.00"
                         }
                     },
                     {
@@ -467,6 +501,10 @@
                             "date": "2012-09-22T00:00:00.000Z",
                             "precision": "day"
                         },
+                        "revenue": {
+                            "code": "0320",
+                            "description": "General Classification DX X"
+                        },
                         "procedure": {
                             "code": "74020",
                             "description": "Radiologic Examination, Abdomen; Complete, Including Decubitus And/Or Erect Views"
@@ -474,7 +512,8 @@
                         "quantity": 1,
                         "charges": {
                             "price_billed": "$175.50",
-                            "insurance_paid": "$175.50"
+                            "insurance_paid": "$175.50",
+                            "patient_responsibility": "$0.00"
                         }
                     },
                     {
@@ -483,6 +522,10 @@
                             "date": "2012-09-22T00:00:00.000Z",
                             "precision": "day"
                         },
+                        "revenue": {
+                            "code": "0450",
+                            "description": "General Classification EMERG ROOM"
+                        },
                         "procedure": {
                             "code": "99283",
                             "description": "Emergency Department Visit For The Evaluation And Management Of A Patient, Which Requires Th"
@@ -490,26 +533,33 @@
                         "quantity": 1,
                         "modifier": [
                             {
-                                "code": "99283",
-                                "description": "Emergency Department Visit For The Evaluation And Management Of A Patient, Which Requires Th"
+                                "code": "25",
+                                "description": "Significant, Separately Identifiable Evaluation And Management Service By The Same Physician On"
                             }
                         ],
                         "charges": {
                             "price_billed": "$315.00",
-                            "insurance_paid": "$315.00"
+                            "insurance_paid": "$315.00",
+                            "patient_responsibility": "$0.00"
                         }
                     },
                     {
                         "line": "4",
+                        "revenue": {
+                            "code": "0001",
+                            "description": "Total Charges"
+                        },
                         "quantity": 0,
                         "charges": {
                             "price_billed": "$504.80",
-                            "insurance_paid": "$504.80"
+                            "insurance_paid": "$504.80",
+                            "patient_responsibility": "$0.00"
                         }
                     }
                 ],
                 "charges": {
                     "price_billed": "$504.80",
+                    "insurance_paid": "$504.80",
                     "provider_paid": "$126.31",
                     "patient_responsibility": "$38.84"
                 },
@@ -526,10 +576,7 @@
                     {
                         "code": "V1588"
                     }
-                ],
-                "provider": {
-                    "name": "No Information Available"
-                }
+                ]
             },
             {
                 "payer": [
@@ -554,14 +601,10 @@
                         "quantity": 1,
                         "modifier": [
                             {
-                                "code": "98941",
-                                "description": "Chiropractic Manipulative Treatment, 3 To 4 Spinal Regions"
+                                "code": "GA",
+                                "description": "Waiver Of Liability Statement Issued As Required By Payer Policy, Individual Case"
                             }
                         ],
-                        "charges": {
-                            "price_billed": "* Not Available *",
-                            "insurance_paid": "* Not Available *"
-                        },
                         "place": {
                             "code": "11",
                             "name": "Office"
@@ -592,14 +635,10 @@
                         "quantity": 1,
                         "modifier": [
                             {
-                                "code": "G0283",
-                                "description": "Electrical Stimulation (Unattended), To One Or More Areas For Indication(S) Other Than Wound"
+                                "code": "GY",
+                                "description": "Item Or Service Statutorily Excluded, Does Not Meet The Definition Of Any Medicare Benefit Or,"
                             }
                         ],
-                        "charges": {
-                            "price_billed": "* Not Available *",
-                            "insurance_paid": "* Not Available *"
-                        },
                         "place": {
                             "code": "11",
                             "name": "Office"
@@ -620,52 +659,72 @@
                     "medicare"
                 ],
                 "number": "123456789012",
+                "start_date": {
+                    "date": "2011-11-17T00:00:00.000Z",
+                    "precision": "day"
+                },
                 "type": [
                     "medicare Part D"
                 ],
                 "provider": {
                     "name": "123456789"
                 },
-                "claimLines": {
-                    "drug": {
-                        "code": "00093013505",
-                        "name": "CARVEDILOL"
-                    },
-                    "provider": {
-                        "provider_id": "123456789",
-                        "provider_name": "PHARMACY2 #00000"
-                    },
-                    "proscriber": {
-                        "code": "123456789",
-                        "name": "Jane Doe"
+                "lines": [
+                    {
+                        "service_date": {
+                            "date": "2011-11-17T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "drug": {
+                            "code": "00093013505",
+                            "name": "CARVEDILOL"
+                        },
+                        "provider": {
+                            "provider_id": "123456789",
+                            "provider_name": "PHARMACY2 #00000"
+                        },
+                        "proscriber": {
+                            "code": "123456789",
+                            "name": "Jane Doe"
+                        }
                     }
-                }
+                ]
             },
             {
                 "payer": [
                     "medicare"
                 ],
                 "number": "123456789011",
+                "start_date": {
+                    "date": "2011-11-23T00:00:00.000Z",
+                    "precision": "day"
+                },
                 "type": [
                     "medicare Part D"
                 ],
                 "provider": {
                     "name": "1234567890"
                 },
-                "claimLines": {
-                    "drug": {
-                        "code": "00781223310",
-                        "name": "OMEPRAZOLE"
-                    },
-                    "provider": {
-                        "provider_id": "1234567890",
-                        "provider_name": "PHARMACY3 #00000"
-                    },
-                    "proscriber": {
-                        "code": "123456789",
-                        "name": "Jane Doe"
+                "lines": [
+                    {
+                        "service_date": {
+                            "date": "2011-11-23T00:00:00.000Z",
+                            "precision": "day"
+                        },
+                        "drug": {
+                            "code": "00781223310",
+                            "name": "OMEPRAZOLE"
+                        },
+                        "provider": {
+                            "provider_id": "1234567890",
+                            "provider_name": "PHARMACY3 #00000"
+                        },
+                        "proscriber": {
+                            "code": "123456789",
+                            "name": "Jane Doe"
+                        }
                     }
-                }
+                ]
             }
         ]
     },

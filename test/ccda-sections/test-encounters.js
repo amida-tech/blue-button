@@ -7,26 +7,28 @@ var path = require('path');
 var bb = require('../../index');
 var jsutil = require('../../lib/jsutil');
 
-describe('encounters parser', function() {
+describe('encounters parser', function () {
     var encounters = null;
-    
-    before(function(done) {
-        var filepath  = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Encounters.xml');
+
+    before(function (done) {
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Encounters.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        encounters = bb.parseString(xml, {component: 'ccda_encounters'}).data;
+        encounters = bb.parseString(xml, {
+            component: 'ccda_encounters'
+        }).data;
         done();
     });
-    
-    it('full deep check', function(done) {
+
+    it('full deep check', function (done) {
         expect(encounters).to.exist;
-        var filepath  = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Encounters.json');
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Encounters.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedEncounters = jsutil.jsonParseWithDate(json2Read);
         expect(encounters).to.deep.equal(expectedEncounters);
         done();
     });
-    
-    it ('spot check', function(done) {
+
+    it('spot check', function (done) {
         expect(encounters).to.exist;
         expect(encounters).to.have.length(1);
         expect(encounters[0].date).to.exist;

@@ -6,17 +6,15 @@ var testLocations = {
             "code": "1160-1",
             "code_system_name": "HealthcareServiceLocation"
         },
-        "addresses": [
-            {
-                "streetLines": [
-                    "17 Daws Rd."
-                ],
-                "city": "Blue Bell",
-                "state": "MA",
-                "zip": "02368",
-                "country": "US"
-            }
-        ]
+        "addresses": [{
+            "streetLines": [
+                "17 Daws Rd."
+            ],
+            "city": "Blue Bell",
+            "state": "MA",
+            "zip": "02368",
+            "country": "US"
+        }]
     },
     "regular2": {
         "name": "Community Gastroenterology Clinic",
@@ -25,33 +23,28 @@ var testLocations = {
             "code": "1118-9",
             "code_system_name": "HealthcareServiceLocation"
         },
-        "addresses": [
-            {
-                "streetLines": [
-                    "17 Daws Rd."
-                ],
-                "city": "Blue Bell",
-                "state": "MA",
-                "zip": "02368",
-                "country": "US"
-            }
-        ]
+        "addresses": [{
+            "streetLines": [
+                "17 Daws Rd."
+            ],
+            "city": "Blue Bell",
+            "state": "MA",
+            "zip": "02368",
+            "country": "US"
+        }]
     },
     "emptyLocType": {
         "name": "Community Urgent Care Center",
-        "loc_type": {
-        },
-        "addresses": [
-            {
-                "streetLines": [
-                    "17 Daws Rd."
-                ],
-                "city": "Blue Bell",
-                "state": "MA",
-                "zip": "02368",
-                "country": "US"
-            }
-        ]
+        "loc_type": {},
+        "addresses": [{
+            "streetLines": [
+                "17 Daws Rd."
+            ],
+            "city": "Blue Bell",
+            "state": "MA",
+            "zip": "02368",
+            "country": "US"
+        }]
     },
     "emptyAddresses": {
         "name": "Community Urgent Care Center",
@@ -68,17 +61,15 @@ var testLocations = {
             "code": "1160-1",
             "code_system_name": "HealthcareServiceLocation"
         },
-        "addresses": [
-            {
-                "streetLines": [
-                    "17 Daws Rd."
-                ],
-                "city": "Blue Bell",
-                "state": "MA",
-                "zip": "02368",
-                "country": "US"
-            }
-        ]
+        "addresses": [{
+            "streetLines": [
+                "17 Daws Rd."
+            ],
+            "city": "Blue Bell",
+            "state": "MA",
+            "zip": "02368",
+            "country": "US"
+        }]
     },
     "badNumber": {
         "name": "Community Urgent Care Center",
@@ -87,43 +78,35 @@ var testLocations = {
             "code": "1160-1",
             "code_system_name": "HealthcareServiceLocation"
         },
-        "addresses": [
-            {
-                "streetLines": [
-                    "17 Daws Rd."
-                ],
-                "city": "Blue Bell",
-                "state": "MA",
-                "zip": "02368",
-                "country": "US"
-            }
-        ],
-    "phones": [
-            {
-                "wrong": "(816)276-6909",
-                "type": "primary home"
-            }
-        ]
+        "addresses": [{
+            "streetLines": [
+                "17 Daws Rd."
+            ],
+            "city": "Blue Bell",
+            "state": "MA",
+            "zip": "02368",
+            "country": "US"
+        }],
+        "phones": [{
+            "wrong": "(816)276-6909",
+            "type": "primary home"
+        }]
     },
-"locTypeUndefined": {
+    "locTypeUndefined": {
         "name": "Community Urgent Care Center",
-        "addresses": [
-            {
-                "streetLines": [
-                    "17 Daws Rd."
-                ],
-                "city": "Blue Bell",
-                "state": "MA",
-                "zip": "02368",
-                "country": "US"
-            }
-        ],
-    "phones": [
-            {
-                "number": "(816)276-6909",
-                "type": "primary home"
-            }
-        ]
+        "addresses": [{
+            "streetLines": [
+                "17 Daws Rd."
+            ],
+            "city": "Blue Bell",
+            "state": "MA",
+            "zip": "02368",
+            "country": "US"
+        }],
+        "phones": [{
+            "number": "(816)276-6909",
+            "type": "primary home"
+        }]
     }
 };
 module.exports = testLocations;

@@ -3,7 +3,6 @@ chai.use(require('chai-datetime'));
 var expect = chai.expect;
 var assert = chai.assert;
 
-
 var fs = require('fs');
 var path = require('path');
 
@@ -12,24 +11,23 @@ var jsutil = require('../../lib/jsutil');
 
 var problems;
 
-var loadRecord = function(done) {
+var loadRecord = function (done) {
     var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Problems.xml');
     var xml = fs.readFileSync(filepath, 'utf-8');
 
-    problems=bb.parseString(xml, {
+    problems = bb.parseString(xml, {
         component: 'ccda_problems'
     }).data;
     done();
 };
 
-
 //TODO:  Implement full CCDA comparison when ready.
 
-describe('Problems - Snippet Comparison', function() {
+describe('Problems - Snippet Comparison', function () {
 
-    before(function(done) {
+    before(function (done) {
         if (problems === undefined) {
-            loadRecord(function() {
+            loadRecord(function () {
                 done();
             });
         } else {
@@ -37,7 +35,7 @@ describe('Problems - Snippet Comparison', function() {
         }
     });
 
-    it('Deep Equality Check', function(done) {
+    it('Deep Equality Check', function (done) {
         expect(problems).to.exist;
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Problems.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
@@ -46,7 +44,7 @@ describe('Problems - Snippet Comparison', function() {
         done();
     });
 
-    it('Shallow Equality Check', function(done) {
+    it('Shallow Equality Check', function (done) {
         //console.log(JSON.stringify(problems, null, 4));
         expect(problems).to.exist;
         expect(problems).to.exist;
@@ -55,11 +53,11 @@ describe('Problems - Snippet Comparison', function() {
     });
 });
 
-describe('Problems - Schema Conformance', function() {
+describe('Problems - Schema Conformance', function () {
 
-    before(function(done) {
+    before(function (done) {
         if (problems === undefined) {
-            loadRecord(function() {
+            loadRecord(function () {
                 done();
             });
         } else {
@@ -67,14 +65,14 @@ describe('Problems - Schema Conformance', function() {
         }
     });
 
-    it('Basic Object Structure', function(done) {
+    it('Basic Object Structure', function (done) {
         //assert.isObject(problems, 'Main item should be object');
         assert.isArray(problems, 'Sub object should be array.');
         done();
 
     });
 
-    it('Problem Structure - Date', function(done) {
+    it('Problem Structure - Date', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             assert.isDefined(currentProblem.date, 'Date should exist');
@@ -92,7 +90,7 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Identifiers', function(done) {
+    it('Problem Structure - Identifiers', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             assert.isDefined(currentProblem.identifiers, 'Identifier should exist');
@@ -108,7 +106,7 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Identifiers', function(done) {
+    it('Problem Structure - Identifiers', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             assert.isDefined(currentProblem.identifiers, 'Identifier should exist');
@@ -125,17 +123,17 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Negation', function(done) {
+    it('Problem Structure - Negation', function (done) {
         for (var i in problems.problems) {
-             var currentProblem = problems.problems[i];
-             assert.isDefined(currentProblem.negation_indicator, 'Indicator should exist');
-             assert.isNotNull(currentProblem.negation_indicator, 'Indicator should not be null');
-             assert.isBoolean(currentProblem.negation_indicator, 'Indicator should be boolean');
+            var currentProblem = problems.problems[i];
+            assert.isDefined(currentProblem.negation_indicator, 'Indicator should exist');
+            assert.isNotNull(currentProblem.negation_indicator, 'Indicator should not be null');
+            assert.isBoolean(currentProblem.negation_indicator, 'Indicator should be boolean');
         }
         done();
     });
 
-    it('Problem Structure - Name', function(done) {
+    it('Problem Structure - Name', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             assert.isDefined(currentProblem.name, 'Name should exist');
@@ -145,7 +143,7 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Code', function(done) {
+    it('Problem Structure - Code', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             assert.isDefined(currentProblem.code, 'Code should exist');
@@ -155,7 +153,7 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Code system', function(done) {
+    it('Problem Structure - Code system', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             assert.isDefined(currentProblem.code_system_name, 'Code system should exist');
@@ -166,7 +164,7 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Onset Age', function(done) {
+    it('Problem Structure - Onset Age', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             if (currentProblem.onset_age) {
@@ -178,7 +176,7 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Onset Age Unit', function(done) {
+    it('Problem Structure - Onset Age Unit', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             if (currentProblem.onset_age_unit) {
@@ -190,7 +188,7 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Status', function(done) {
+    it('Problem Structure - Status', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             if (currentProblem.status) {
@@ -202,7 +200,7 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Patient Status', function(done) {
+    it('Problem Structure - Patient Status', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             if (currentProblem.patient_status) {
@@ -214,22 +212,21 @@ describe('Problems - Schema Conformance', function() {
         done();
     });
 
-    it('Problem Structure - Source List Identifiers', function(done) {
+    it('Problem Structure - Source List Identifiers', function (done) {
         for (var i in problems.problems) {
             var currentProblem = problems.problems[i];
             assert.isDefined(currentProblem.source_list_identifiers, 'SLIs should exist');
             assert.isArray(currentProblem.source_list_identifiers, 'SLIs should be an array');
             assert.ok(currentProblem.source_list_identifiers.length > 0, 'SLIs required.');
 
-             for (var ii in currentProblem.source_list_identifiers) {
+            for (var ii in currentProblem.source_list_identifiers) {
                 var currentId = currentProblem.source_list_identifiers[ii];
                 assert.isString(currentId.identifier, 'SLIs should be a string');
                 assert.ok(currentId.identifier.length > 0, 'SLIs should have content');
                 //TODO:  Add assertions if identifier_type comes in, and snippets to test.
-            }       
+            }
         }
         done();
     });
-
 
 });

@@ -7,31 +7,32 @@ var path = require('path');
 var bb = require('../../index');
 var jsutil = require('../../lib/jsutil');
 
-describe('vitals parser', function() {
+describe('vitals parser', function () {
     var vitals = null;
-    
-    before(function(done) {
-        var filepath  = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Vitals.xml');
+
+    before(function (done) {
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Vitals.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
-        vitals=bb.parseString(xml, {component: 'ccda_vitals'}).data;
-        done(); 
+        vitals = bb.parseString(xml, {
+            component: 'ccda_vitals'
+        }).data;
+        done();
     });
-    
-    it('full deep check', function(done) {
+
+    it('full deep check', function (done) {
         expect(vitals).to.exist;
         //console.log(JSON.stringify(vitals, null, 10));
-        var filepath  = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Vitals.json');
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Vitals.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expectedVitals = jsutil.jsonParseWithDate(json2Read);
         expect(vitals).to.deep.equal(expectedVitals);
         done();
     });
 
-    
-    it ('spot check', function(done) {
+    it('spot check', function (done) {
         expect(vitals).to.exist;
         expect(vitals).to.have.length(6);
-        
+
         expect(vitals[0]).exist;
         expect(vitals[0].vital.name).to.equal('Height');
         expect(vitals[0]).exist;

@@ -10,5 +10,3 @@ describe('xml.js test', function () {
         expect(xml.parse("<?xml version=\"1.0\"?><root>nothing to see here</root>")).to.be.ok;
     });
 });
-
-

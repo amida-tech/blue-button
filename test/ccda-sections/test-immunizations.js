@@ -9,22 +9,20 @@ var jsutil = require('../../lib/jsutil');
 
 var immunizations;
 
-var loadRecord = function(done) {
+var loadRecord = function (done) {
     var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Immunizations.xml');
     var xml = fs.readFileSync(filepath, 'utf-8');
-    immunizations=bb.parseString(xml, {
+    immunizations = bb.parseString(xml, {
         component: 'ccda_immunizations'
     }).data;
     done();
 };
 
+describe('immunizations parser', function () {
 
-
-describe('immunizations parser', function() {
-
-    before(function(done) {
+    before(function (done) {
         if (immunizations === undefined) {
-            loadRecord(function() {
+            loadRecord(function () {
                 done();
             });
         } else {
@@ -32,7 +30,7 @@ describe('immunizations parser', function() {
         }
     });
 
-    it('full deep check', function(done) {
+    it('full deep check', function (done) {
         expect(immunizations).to.exist;
         //console.log(JSON.stringify(immunizations, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Immunizations.json');
@@ -42,27 +40,26 @@ describe('immunizations parser', function() {
         done();
     });
 
-    it('spot check', function(done) {
+    it('spot check', function (done) {
         expect(immunizations).to.exist;
         expect(immunizations).to.have.length(4);
-        
+
         expect(immunizations[0].administration.route.name).to.equal('Intramuscular injection');
         expect(immunizations[0].product.product.name).to.exist;
         expect(immunizations[0].product.product.code).to.equal('88');
         expect(immunizations[0].product.product.name).to.equal("Influenza virus vaccine");
         expect(JSON.stringify(immunizations[0].date[0].date)).to.equal('"1999-11-01T00:00:00.000Z"');
         expect(immunizations[0].date[0].precision).to.equal('month');
-        
+
         done();
     });
 });
 
+describe('Immunizations - Schema Conformance', function () {
 
-describe('Immunizations - Schema Conformance', function() {
-
-    before(function(done) {
+    before(function (done) {
         if (immunizations === undefined) {
-            loadRecord(function() {
+            loadRecord(function () {
                 done();
             });
         } else {
@@ -70,14 +67,14 @@ describe('Immunizations - Schema Conformance', function() {
         }
     });
 
-    it('Basic Object Structure', function(done) {
+    it('Basic Object Structure', function (done) {
         //assert.isObject(immunizations, 'Main item should be object');
         assert.isArray(immunizations, 'Sub object should be array.');
         done();
 
     });
 
-    it('Immunization Structure - Date', function(done) {
+    it('Immunization Structure - Date', function (done) {
         for (var i in immunizations.immunizations) {
             var currentImmunization = immunizations.immunizations[i];
             assert.isDefined(currentImmunization.date, 'Date should exist');
@@ -95,7 +92,7 @@ describe('Immunizations - Schema Conformance', function() {
         done();
     });
 
-    it('Immunization Structure - Identifiers', function(done) {
+    it('Immunization Structure - Identifiers', function (done) {
         for (var i in immunizations.immunizations) {
             var currentImmunization = immunizations.immunizations[i];
             assert.isDefined(currentImmunization.identifiers, 'Identifier should exist');
@@ -112,7 +109,7 @@ describe('Immunizations - Schema Conformance', function() {
         done();
     });
 
-    it('Immunization Structure - Status', function(done) {
+    it('Immunization Structure - Status', function (done) {
         for (var i in immunizations.immunizations) {
             var currentImmunization = immunizations.immunizations[i];
             if (currentImmunization.status) {
@@ -124,8 +121,7 @@ describe('Immunizations - Schema Conformance', function() {
         done();
     });
 
-
-    it('Immunization Structure - Product', function(done) {
+    it('Immunization Structure - Product', function (done) {
         for (var i in immunizations.immunizations) {
             var currentImmunization = immunizations.immunizations[i];
             assert.isDefined(currentImmunization.product, 'Product should exist');
@@ -167,7 +163,7 @@ describe('Immunizations - Schema Conformance', function() {
         done();
     });
 
-    it('Immunization Structure - Administration', function(done) {
+    it('Immunization Structure - Administration', function (done) {
         for (var i in immunizations.immunizations) {
             var currentImmunization = immunizations.immunizations[i];
 
@@ -215,7 +211,7 @@ describe('Immunizations - Schema Conformance', function() {
         done();
     });
 
-    it('Immunization Structure - Performer', function(done) {
+    it('Immunization Structure - Performer', function (done) {
         for (var i in immunizations.immunizations) {
             var currentImmunization = immunizations.immunizations[i];
 
@@ -295,7 +291,6 @@ describe('Immunizations - Schema Conformance', function() {
                     }
                 }
 
-
                 if (currentImmunization.performer.organization) {
                     for (var iorg in currentImmunization.performer.organization) {
                         currentOrganization = currentImmunization.performer.organization[iorg];
@@ -323,8 +318,7 @@ describe('Immunizations - Schema Conformance', function() {
         done();
     });
 
-
-    it("Immunization Structure - Refusal", function(done) {
+    it("Immunization Structure - Refusal", function (done) {
         for (var i in immunizations) {
             var currentImmunization = immunizations[i];
             if (currentImmunization.refusal_reason) {

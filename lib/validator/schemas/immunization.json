@@ -2,6 +2,24 @@
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_date"
+            }
+        },
+        "identifiers": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/commonModels#/properties/cda_id"
+            }
+        },
+        "status": {
+            "type": "string"
+        },
+        "sequence_number": {
+            "type": "string"
+        },
         "administration": {
             "type": "object",
             "properties": {
@@ -18,19 +36,25 @@
                     "type": "string"
                 }
             },
-            "additionalProperties":false
+            "additionalProperties": false
         },
-        "date": {
-            "type": "array",
-            "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
-            }
-        },
-        "identifiers": {
-            "type": "array",
-            "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_id"
-            }
+        "product": {
+            "type": "object",
+            "properties": {
+                "lot_number": {
+                    "type": "string"
+                },
+                "manufacturer": {
+                    "type": "string"
+                },
+                "product": {
+                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                }
+            },
+            "required": [
+                "product"
+            ],
+            "additionalProperties": false
         },
         "performer": {
             "type": "object",
@@ -48,7 +72,10 @@
                     }
                 },
                 "name": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_name"
+                    "type": "array",
+                    "items": {
+                         "$ref": "http://local.com/commonModels#/properties/cda_name"
+                    }
                 },
                 "phone": {
                     "type": "array",
@@ -68,7 +95,10 @@
                                 }
                             },
                             "name": {
-                                "type": "string"
+                                "type":"array",
+                                "items": {
+                                    "type": "string"
+                                }
                             },
                             "address": {
                                 "$ref": "http://local.com/commonModels#/properties/cda_address"
@@ -86,39 +116,19 @@
                                 }
                             }
                         },
-                        "additionalProperties":false
+                        "additionalProperties": false
                     }
                 }
             },
-            "additionalProperties":false
-        },
-        "product": {
-            "type": "object",
-            "properties": {
-                "lot_number": {
-                    "type": "string"
-                },
-                "manufacturer": {
-                    "type": "string"
-                },
-                "product": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
-                }
-            },
-            "required":["product"],
-            "additionalProperties":false
-
-        },
-        "status": {
-            "type": "string"
-        },
-        "sequence_number": {
-            "type": "string"
+            "additionalProperties": false
         },
         "refusal_reason": {
             "type": "string"
         }
     },
-    "additionalProperties":false,
-    "required":["status", "product"]
+    "additionalProperties": false,
+    "required": [
+        "status",
+        "product"
+    ]
 }
