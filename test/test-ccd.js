@@ -17,6 +17,7 @@ describe('full ccd parser', function () {
         var filepath = path.join(__dirname, 'fixtures/files/CCD_1.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
         ccd = bb.parseString(xml, {}).data;
+        ccd_obj = bb.parseString(xml, {});
 
         done();
     });
@@ -117,6 +118,13 @@ describe('full ccd parser', function () {
         expect(ccd.results[0].results[2]).to.exist;
         expect(ccd.results[0].results[2].result.code).to.equal('26515-7');
         expect(ccd.results[0].results[2].result.name).to.equal('PLT');
+
+        done();
+    });
+
+    it('sections check', function (done) {
+
+        expect(ccd_obj.meta.sections).to.exist;
 
         done();
     });
