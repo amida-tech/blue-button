@@ -11,12 +11,12 @@ var result = bb.parseString(data);
 
 fs.writeFileSync("example3.json", JSON.stringify(result, null, 4));
 
-//console.log(JSON.stringify(result.data.problems, null, 4));
+console.log(JSON.stringify(result.data.social_history, null, 4));
 
 var val = validator.validateDocumentModel(result);
 
 console.log(val);
-console.log(validator.getLastError());
+console.log(JSON.stringify(validator.getLastError(),null,4));
 
 //console.log("date type: ",typeof result.data.vitals[3].date[0].date);
 //console.log(JSON.stringify(result.data.vitals[3].date[0].date));
@@ -28,7 +28,7 @@ result = JSON.parse(data);
 val = validator.validateDocumentModel(result);
 
 console.log(val);
-console.log(JSON.stringify(validator.getLastError(),null,4));
+//console.log(JSON.stringify(validator.getLastError(),null,4));
 
 //console.log("date type: ",typeof result.data.vitals[3].date[0].date);
 //console.log(JSON.stringify(result.data.vitals[3].date[0].date));
@@ -37,5 +37,5 @@ val = validator.validateSectionObj(result.data.allergies[0], 'allergy');
 
 
 console.log(val);
-console.log(JSON.stringify(validator.getLastError(),null,4));
+//console.log(JSON.stringify(validator.getLastError(),null,4));
 

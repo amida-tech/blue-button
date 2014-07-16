@@ -50,11 +50,8 @@
                         "$ref": "http://local.com/result"
                     }
                 },
-                "socialHistory": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "http://local.com/socialhistory"
-                    }
+                "social_history": {
+                    "$ref": "http://local.com/social_history"
                 },
                 "vitals": {
                     "type": "array",
@@ -73,7 +70,7 @@
                     "items": {
                         "$ref": "http://local.com/claims"
                     }
-                }      
+                }
             }
         },
         "errors": {

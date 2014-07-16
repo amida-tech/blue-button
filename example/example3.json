@@ -9,7 +9,7 @@
                 "first": "Isabella"
             },
             "dob": {
-                "effectiveDate": {
+                "point": {
                     "date": "1975-05-01T00:00:00Z",
                     "precision": "day"
                 }
@@ -103,8 +103,8 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
@@ -127,8 +127,8 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
@@ -151,8 +151,8 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
@@ -175,8 +175,8 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
@@ -199,8 +199,8 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
@@ -223,8 +223,8 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
@@ -260,8 +260,8 @@
                             "code": "30313-1",
                             "code_system_name": "LOINC"
                         },
-                        "date": {
-                            "effectiveDate": {
+                        "date_time": {
+                            "point": {
                                 "date": "2000-03-23T14:30:00Z",
                                 "precision": "minute"
                             }
@@ -284,8 +284,8 @@
                             "code": "33765-9",
                             "code_system_name": "LOINC"
                         },
-                        "date": {
-                            "effectiveDate": {
+                        "date_time": {
+                            "point": {
                                 "date": "2000-03-23T14:30:00Z",
                                 "precision": "minute"
                             }
@@ -308,8 +308,8 @@
                             "code": "26515-7",
                             "code_system_name": "LOINC"
                         },
-                        "date": {
-                            "effectiveDate": {
+                        "date_time": {
+                            "point": {
                                 "date": "2000-03-23T14:30:00Z",
                                 "precision": "minute"
                             }
@@ -326,7 +326,7 @@
         ],
         "medications": [
             {
-                "date": {
+                "date_time": {
                     "low": {
                         "date": "2007-01-03T00:00:00Z",
                         "precision": "day"
@@ -413,8 +413,8 @@
                         "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
                     }
                 ],
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2009-02-27T13:00:00Z",
                         "precision": "subsecond"
                     }
@@ -451,8 +451,8 @@
         ],
         "allergies": [
             {
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2007-05-01T00:00:00Z",
                         "precision": "day"
                     }
@@ -481,8 +481,8 @@
                 ]
             },
             {
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2006-05-01T00:00:00Z",
                         "precision": "day"
                     }
@@ -511,8 +511,8 @@
                 ]
             },
             {
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2008-05-01T00:00:00Z",
                         "precision": "day"
                     }
@@ -543,8 +543,8 @@
         ],
         "immunizations": [
             {
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "1999-11-01T00:00:00Z",
                         "precision": "month"
                     }
@@ -621,8 +621,8 @@
                 }
             },
             {
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "1998-12-15T00:00:00Z",
                         "precision": "day"
                     }
@@ -699,8 +699,8 @@
                 }
             },
             {
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "1998-12-15T00:00:00Z",
                         "precision": "day"
                     }
@@ -777,8 +777,8 @@
                 }
             },
             {
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "1998-12-15T00:00:00Z",
                         "precision": "day"
                     }
@@ -860,7 +860,20 @@
             "smoking_statuses": [
                 {
                     "value": "Former smoker",
-                    "date": {
+                    "date_time": {
+                        "low": {
+                            "date": "2005-05-01T00:00:00Z",
+                            "precision": "day"
+                        },
+                        "high": {
+                            "date": "2009-02-27T13:00:00Z",
+                            "precision": "subsecond"
+                        }
+                    }
+                },
+                {
+                    "value": "Former smoker",
+                    "date_time": {
                         "low": {
                             "date": "2005-05-01T00:00:00Z",
                             "precision": "day"
@@ -875,7 +888,7 @@
         },
         "problems": [
             {
-                "date": {
+                "date_time": {
                     "low": {
                         "date": "2008-01-03T00:00:00Z",
                         "precision": "day"
@@ -907,7 +920,7 @@
                 ]
             },
             {
-                "date": {
+                "date_time": {
                     "low": {
                         "date": "2007-01-03T00:00:00Z",
                         "precision": "day"
@@ -952,8 +965,8 @@
                     }
                 ],
                 "status": "Completed",
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
@@ -1028,8 +1041,8 @@
                     }
                 ],
                 "status": "Aborted",
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2011-02-03T00:00:00Z",
                         "precision": "day"
                     }
@@ -1110,8 +1123,8 @@
                     }
                 ],
                 "status": "Completed",
-                "date": {
-                    "effectiveDate": {
+                "date_time": {
+                    "point": {
                         "date": "2011-02-03T00:00:00Z",
                         "precision": "day"
                     }

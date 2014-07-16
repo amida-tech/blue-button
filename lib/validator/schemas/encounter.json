@@ -2,27 +2,27 @@
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
-        "date": {"$ref": "http://local.com/commonModels#/properties/cda_date"
+        "date_time": {"$ref": "http://local.com/common_models#/properties/cda_date"
         },
         "encounter": {
-            "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
         },
         "findings": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
             }
         },
         "identifiers": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_id"
+                "$ref": "http://local.com/common_models#/properties/cda_id"
             }
         },
         "locations": {
             "type": "array",
             "items": {
-                 "$ref": "http://local.com/commonModels#/properties/cda_location"
+                 "$ref": "http://local.com/common_models#/properties/cda_location"
             }
         }
     },

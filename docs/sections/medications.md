@@ -9,14 +9,14 @@
         "date": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
+                "$ref": "http://local.com/common_models#/properties/cda_date"
             },
             "minItems": 1
         },
         "identifiers": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_id"
+                "$ref": "http://local.com/common_models#/properties/cda_id"
             },
             "minItems": 1
         },
@@ -30,22 +30,22 @@
             "type": "object",
             "properties": {
                 "dose": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
                 },
                 "form": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 },
                 "rate": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
                 },
                 "route": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 },
                 "dose_restriction": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_physical_quantity"
+                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
                 },
                 "site": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 }
             },
             "additionalProperties": false,
@@ -56,10 +56,10 @@
             "type": "object",
             "properties": {
                 "code": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 },
                 "value": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 }
             }
         },
@@ -67,10 +67,10 @@
             "type": "object",
             "properties": {
                 "identifiers": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_id"
+                    "$ref": "http://local.com/common_models#/properties/cda_id"
                 },
                 "product": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 },
                 "unencoded_name": {
                     "type": "string"

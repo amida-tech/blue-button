@@ -14,7 +14,7 @@
                     "date": {
                         "type": "array",
                         "items": {
-                            "$ref": "http://local.com/commonModels#/properties/cda_date"
+                            "$ref": "http://local.com/common_models#/properties/cda_date"
                         }
                     },
                     "value": {

@@ -38,13 +38,13 @@
             "type": "object",
             "properties": {
                 "low": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_date_element"
+                    "$ref": "http://local.com/common_models#/properties/cda_date_element"
                 },
-                "effectiveDate": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_date_element"
+                "point": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date_element"
                 },
                 "high": {
-                    "$ref": "http://local.com/commonModels#/properties/cda_date_element"
+                    "$ref": "http://local.com/common_models#/properties/cda_date_element"
                 }
             },
             "additionalProperties": false

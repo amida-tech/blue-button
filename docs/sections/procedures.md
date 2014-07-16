@@ -9,7 +9,7 @@
          "procedure": {
             "type": "object",
             "properties": {
-                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
             }
         },
         "procedure_type": {
@@ -18,21 +18,21 @@
         "body_sites": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
             },
             "minItems": 1
         },
         "date": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
+                "$ref": "http://local.com/common_models#/properties/cda_date"
             },
             "minItems": 1
         },
         "identifiers": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_id"
+                "$ref": "http://local.com/common_models#/properties/cda_id"
             },
             "minItems": 1
         },
@@ -45,24 +45,24 @@
                 "type": "object",
                 "properties": {
                     "address": {
-                        "$ref": "http://local.com/commonModels#/properties/cda_address"
+                        "$ref": "http://local.com/common_models#/properties/cda_address"
                     },
                     "identifiers": {
                         "type": "array",
                         "items": {
-                            "$ref": "http://local.com/commonModels#/properties/cda_id"
+                            "$ref": "http://local.com/common_models#/properties/cda_id"
                         }
                     },
                     "organization": {
                         "type": "object",
                         "properties": {
                             "address": {
-                                "$ref": "http://local.com/commonModels#/properties/cda_address"
+                                "$ref": "http://local.com/common_models#/properties/cda_address"
                             },
                             "identifiers": {
                                 "type": "array",
                                 "items": {
-                                    "$ref": "http://local.com/commonModels#/properties/cda_id"
+                                    "$ref": "http://local.com/common_models#/properties/cda_id"
                                 }
                             },
                             "name": {
@@ -71,13 +71,13 @@
                             "phone": {
                                 "type": "array",
                                 "items": {
-                                    "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                                    "$ref": "http://local.com/common_models#/properties/cda_phone"
                                 }
                             },
                              "email": {
                                 "type": "array",
                                 "items": {
-                                    "$ref": "http://local.com/commonModels#/properties/cda_email"
+                                    "$ref": "http://local.com/common_models#/properties/cda_email"
                                 }
                             }
 
@@ -87,7 +87,7 @@
                     "phone": {
                         "type": "array",
                         "items": {
-                            "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                            "$ref": "http://local.com/common_models#/properties/cda_phone"
                         }
                     }
                 },
@@ -99,7 +99,7 @@
         "locations": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_location"
+                "$ref": "http://local.com/common_models#/properties/cda_location"
             }
         }
     },

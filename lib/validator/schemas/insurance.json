@@ -5,18 +5,18 @@
         "addresses": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_address"
+                "$ref": "http://local.com/common_models#/properties/cda_address"
             },
             "minItems": 1
         },
         "date": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
+                "$ref": "http://local.com/common_models#/properties/cda_date"
             }
         },
         "plan_id": {
-            "$ref": "http://local.com/commonModels#/properties/cda_id"
+            "$ref": "http://local.com/common_models#/properties/cda_id"
         },
         "plan_information": {
             "type": "string"
@@ -40,27 +40,27 @@
             "type": "string"
         },
         "member_name": {
-            "$ref": "http://local.com/commonModels#/properties/cda_name"
+            "$ref": "http://local.com/common_models#/properties/cda_name"
         },
         "member_id": {
-            "$ref": "http://local.com/commonModels#/properties/cda_id"
+            "$ref": "http://local.com/common_models#/properties/cda_id"
         },
         "payer_name": {
             "type": "string"
         },
         "payer_id": {
-            "$ref": "http://local.com/commonModels#/properties/cda_id"
+            "$ref": "http://local.com/common_models#/properties/cda_id"
         },
         "email ": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_address"
+                "$ref": "http://local.com/common_models#/properties/cda_address"
             }
         },
         "phone ": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                "$ref": "http://local.com/common_models#/properties/cda_phone"
             }
         } 
     },
