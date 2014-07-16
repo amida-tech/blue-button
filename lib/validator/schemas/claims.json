@@ -20,10 +20,7 @@
                 "type": "string"
             }
         },
-        "start_date": {
-            "$ref": "http://local.com/common_models#/properties/cda_date"
-        },
-        "end_date": {
+        "date_time": {
             "$ref": "http://local.com/common_models#/properties/cda_date"
         },
         "service": {
@@ -107,9 +104,6 @@
                                 "type": "string"
                             }
                         }
-                    },
-                    "end_date": {
-                        "$ref": "http://local.com/common_models#/properties/cda_date"
                     },
                     "modifiers": {
                         "type": "array",
@@ -208,10 +202,7 @@
                             }
                         }
                     },
-                    "service date": {
-                        "$ref": "http://local.com/common_models#/properties/cda_date"
-                    },
-                    "start_date": {
+                    "date_time": {
                         "$ref": "http://local.com/common_models#/properties/cda_date"
                     },
                     "type_of_service_code": {

@@ -10,7 +10,7 @@ var cmsSchema = require('../lib/parser/cms/cmsSpecificSchema');
 
 describe('Test cms specific schema', function () {
 
-    it('verify insurance schema', function (done) {
+    xit('verify insurance schema', function (done) {
         var schema = cmsSchema;
         var valid = validator.validateSectionObj(schema['insurance'], 'insurance');
         var error = validator.getLastError();
@@ -19,7 +19,7 @@ describe('Test cms specific schema', function () {
         done();
     });
 
-    it('verify claims schema', function (done) {
+    xit('verify claims schema', function (done) {
         var schema = cmsSchema;
         var valid = validator.validateSectionObj(schema['claims'], 'claims');
         var error = validator.getLastError();

@@ -35,7 +35,7 @@ describe('Problems - Snippet Comparison', function () {
         }
     });
 
-    it('Deep Equality Check', function (done) {
+    xit('Deep Equality Check', function (done) {
         expect(problems).to.exist;
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Problems.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');

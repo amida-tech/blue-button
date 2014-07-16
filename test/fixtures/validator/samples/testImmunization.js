@@ -1,9 +1,11 @@
 var testImmunList = {
     "regular1": {
-        "date": [{
-            "date": "1999-11-01T00:00:00Z",
-            "precision": "month"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-01T00:00:00Z",
+                "precision": "month"
+            }
+        },
         "identifiers": [{
             "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
         }],
@@ -60,10 +62,12 @@ var testImmunList = {
         }
     },
     "regular2": {
-        "date": [{
-            "date": "1998-12-15T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1998-12-15T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "identifiers": [{
             "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
         }],
@@ -120,10 +124,12 @@ var testImmunList = {
         }
     },
     "regular3": {
-        "date": [{
-            "date": "1998-12-15T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1998-12-15T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "identifiers": [{
             "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
         }],

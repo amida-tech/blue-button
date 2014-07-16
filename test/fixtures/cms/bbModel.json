@@ -5,12 +5,12 @@
                 "first": "JOHN",
                 "last": "DOE"
             },
-            "dob": [
-                {
+            "dob": {
+                "point": {
                     "date": "1910-01-01T00:00:00.000Z",
                     "precision": "day"
                 }
-            ],
+            },
             "email": [
                 {
                     "address": "JOHNDOE@example.com",
@@ -41,12 +41,12 @@
                 "vital": {
                     "name": "Blood Pressure"
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "point": {
                         "date": "2011-07-22T15:00:00.000Z",
                         "precision": "hour"
                     }
-                ],
+                },
                 "value": 120,
                 "unit": "mm[Hg]",
                 "status": "completed"
@@ -55,12 +55,12 @@
                 "vital": {
                     "name": "Blood Pressure"
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "point": {
                         "date": "2011-07-22T15:00:00.000Z",
                         "precision": "hour"
                     }
-                ],
+                },
                 "value": 80,
                 "unit": "mm[Hg]",
                 "status": "completed"
@@ -69,12 +69,12 @@
                 "vital": {
                     "name": "Glucose"
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "point": {
                         "date": "2012-03-20T12:00:00.000Z",
                         "precision": "hour"
                     }
-                ],
+                },
                 "value": 110,
                 "unit": "mg/dL",
                 "status": "completed"
@@ -82,6 +82,7 @@
         ],
         "medications": [
             {
+                "date_time": {},
                 "product": {
                     "product": {
                         "name": "Aspirin"
@@ -98,12 +99,12 @@
                 "status": "Completed"
             },
             {
-                "date": [
-                    {
+                "date_time": {
+                    "point": {
                         "date": "1949-09-28T00:00:00.000Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "product": {
                     "product": {
                         "name": "Erythromycin"
@@ -179,12 +180,12 @@
                         "name": "Varicella/Chicken Pox"
                     }
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "point": {
                         "date": "2002-04-21T00:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                }
             },
             {
                 "status": "complete",
@@ -198,12 +199,12 @@
                         "name": "Varicella/Chicken Pox (booster 1)"
                     }
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "point": {
                         "date": "1990-02-02T00:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                }
             },
             {
                 "status": "complete",
@@ -217,12 +218,12 @@
                         "name": "typhoid"
                     }
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "point": {
                         "date": "2009-01-02T00:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                }
             }
         ],
         "problems": [
@@ -230,31 +231,31 @@
                 "problem": {
                     "name": "Arthritis"
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "2005-08-09T00:00:00.000Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "2011-02-28T00:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                }
             },
             {
                 "problem": {
                     "name": "Asthma"
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "2008-01-25T00:00:00.000Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "2010-01-25T00:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                }
             }
         ],
         "insurance": [
@@ -268,12 +269,12 @@
                     "A Medicare Plan Plus (HMO)",
                     "3 - Coordinated Care Plan (HMO, PPO, PSO, SNP)"
                 ],
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "2011-09-01T00:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                }
             },
             {
                 "plan_id": {
@@ -285,42 +286,42 @@
                     "A Medicare Rx Plan (PDP)",
                     "11 - Medicare Prescription Drug Plan"
                 ],
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "2010-01-01T00:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                }
             },
             {
                 "plan_name": "STATE HEALTH BENEFITS PROGRAM",
                 "type": [
                     "employer subsidy"
                 ],
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "2011-01-01T00:00:00.000Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "2011-12-31T00:00:00.000Z",
                         "precision": "day"
                     }
-                ]
+                }
             },
             {
                 "policy_number": "1234567890",
                 "payer_name": "Insurer1",
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "2011-01-01T00:00:00.000Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "2011-09-30T00:00:00.000Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "type": [
                     "medicare msp:End stage Renal Disease (ESRD)"
                 ],
@@ -340,16 +341,16 @@
             {
                 "policy_number": "12345678901",
                 "payer_name": "Insurer2",
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "2010-01-01T00:00:00.000Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "2010-12-31T00:00:00.000Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "type": [
                     "medicare msp:End stage Renal Disease (ESRD)"
                 ],
@@ -369,16 +370,16 @@
             {
                 "policy_number": "00001",
                 "payer_name": "Insurer",
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "1984-10-01T00:00:00.000Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "2008-11-30T00:00:00.000Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "addresses": [
                     {
                         "use": "primary",
@@ -399,20 +400,24 @@
                     "medicare"
                 ],
                 "number": "1234567890000",
-                "start_date": {
-                    "date": "2012-10-18T00:00:00.000Z",
-                    "precision": "day"
+                "date_time": {
+                    "low": {
+                        "date": "2012-10-18T00:00:00.000Z",
+                        "precision": "day"
+                    }
                 },
                 "lines": [
                     {
                         "line": "1",
-                        "start_date": {
-                            "date": "2012-10-18T00:00:00.000Z",
-                            "precision": "day"
-                        },
-                        "end_date": {
-                            "date": "2012-10-18T00:00:00.000Z",
-                            "precision": "day"
+                        "date_time": {
+                            "low": {
+                                "date": "2012-10-18T00:00:00.000Z",
+                                "precision": "day"
+                            },
+                            "high": {
+                                "date": "2012-10-18T00:00:00.000Z",
+                                "precision": "day"
+                            }
                         },
                         "procedure": {
                             "code": "98941",
@@ -473,16 +478,20 @@
                     "medicare"
                 ],
                 "number": "12345678900000VAA",
-                "start_date": {
-                    "date": "2012-09-22T00:00:00.000Z",
-                    "precision": "day"
+                "date_time": {
+                    "low": {
+                        "date": "2012-09-22T00:00:00.000Z",
+                        "precision": "day"
+                    }
                 },
                 "lines": [
                     {
                         "line": "1",
-                        "start_date": {
-                            "date": "2012-09-22T00:00:00.000Z",
-                            "precision": "day"
+                        "date_time": {
+                            "low": {
+                                "date": "2012-09-22T00:00:00.000Z",
+                                "precision": "day"
+                            }
                         },
                         "revenue": {
                             "code": "0250",
@@ -497,9 +506,11 @@
                     },
                     {
                         "line": "2",
-                        "start_date": {
-                            "date": "2012-09-22T00:00:00.000Z",
-                            "precision": "day"
+                        "date_time": {
+                            "low": {
+                                "date": "2012-09-22T00:00:00.000Z",
+                                "precision": "day"
+                            }
                         },
                         "revenue": {
                             "code": "0320",
@@ -518,9 +529,11 @@
                     },
                     {
                         "line": "3",
-                        "start_date": {
-                            "date": "2012-09-22T00:00:00.000Z",
-                            "precision": "day"
+                        "date_time": {
+                            "low": {
+                                "date": "2012-09-22T00:00:00.000Z",
+                                "precision": "day"
+                            }
                         },
                         "revenue": {
                             "code": "0450",
@@ -586,13 +599,15 @@
                 "lines": [
                     {
                         "line": "1",
-                        "start_date": {
-                            "date": "2012-12-01T00:00:00.000Z",
-                            "precision": "day"
-                        },
-                        "end_date": {
-                            "date": "2012-12-01T00:00:00.000Z",
-                            "precision": "day"
+                        "date_time": {
+                            "low": {
+                                "date": "2012-12-01T00:00:00.000Z",
+                                "precision": "day"
+                            },
+                            "high": {
+                                "date": "2012-12-01T00:00:00.000Z",
+                                "precision": "day"
+                            }
                         },
                         "procedure": {
                             "code": "98941",
@@ -620,13 +635,15 @@
                     },
                     {
                         "line": "2",
-                        "start_date": {
-                            "date": "2012-12-01T00:00:00.000Z",
-                            "precision": "day"
-                        },
-                        "end_date": {
-                            "date": "2012-12-01T00:00:00.000Z",
-                            "precision": "day"
+                        "date_time": {
+                            "low": {
+                                "date": "2012-12-01T00:00:00.000Z",
+                                "precision": "day"
+                            },
+                            "high": {
+                                "date": "2012-12-01T00:00:00.000Z",
+                                "precision": "day"
+                            }
                         },
                         "procedure": {
                             "code": "G0283",
@@ -659,9 +676,11 @@
                     "medicare"
                 ],
                 "number": "123456789012",
-                "start_date": {
-                    "date": "2011-11-17T00:00:00.000Z",
-                    "precision": "day"
+                "date_time": {
+                    "point": {
+                        "date": "2011-11-17T00:00:00.000Z",
+                        "precision": "day"
+                    }
                 },
                 "type": [
                     "medicare Part D"
@@ -695,9 +714,11 @@
                     "medicare"
                 ],
                 "number": "123456789011",
-                "start_date": {
-                    "date": "2011-11-23T00:00:00.000Z",
-                    "precision": "day"
+                "date_time": {
+                    "point": {
+                        "date": "2011-11-23T00:00:00.000Z",
+                        "precision": "day"
+                    }
                 },
                 "type": [
                     "medicare Part D"

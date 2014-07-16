@@ -10,10 +10,12 @@ var testVital = {
             "code_system_name": "LOINC"
         },
         "status": "completed",
-        "date": [{
-            "date": "1999-11-14T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "interpretations": [
             "Normal"
         ],
@@ -30,10 +32,12 @@ var testVital = {
             "code_system_name": "LOINC"
         },
         "status": "completed",
-        "date": [{
-            "date": "1999-11-14T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "interpretations": [
             "Normal"
         ],
@@ -50,10 +54,12 @@ var testVital = {
             "code_system_name": "LOINC"
         },
         "status": "completed",
-        "date": [{
-            "date": "1999-11-14T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "interpretations": [
             "Normal"
         ],
@@ -70,10 +76,12 @@ var testVital = {
             "code_system_name": "LOINC"
         },
         "status": "completed",
-        "date": [{
-            "date": "2000-04-07T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "interpretations": [
             "Normal"
         ],
@@ -90,10 +98,12 @@ var testVital = {
             "code_system_name": "LOINC"
         },
         "status": "completed",
-        "date": [{
-            "date": "2000-04-07T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "interpretations": [
             "Normal"
         ],
@@ -110,10 +120,12 @@ var testVital = {
             "code_system_name": "LOINC"
         },
         "status": "completed",
-        "date": [{
-            "date": "2000-04-07T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "interpretations": [
             "Normal"
         ],
@@ -125,10 +137,12 @@ var testVital = {
             "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
         }],
         "status": "completed",
-        "date": [{
-            "date": "2000-04-07T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "interpretations": [
             "Normal"
         ],
@@ -145,10 +159,12 @@ var testVital = {
             "code_system_name": "LOINC"
         },
         "status": "completed",
-        "date": [{
-            "date": "2000-04-07T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "interpretations": [
             "Normal"
         ],
@@ -161,10 +177,12 @@ var testVital = {
         }],
         "vital": {},
         "status": "completed",
-        "date": [{
-            "date": "2000-04-07T00:00:00Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "interpretations": [
             "Normal"
         ],
@@ -181,7 +199,7 @@ var testVital = {
             "code_system_name": "LOINC"
         },
         "status": "completed",
-        "date": [],
+        "date_time": [],
         "interpretations": [
             "Normal"
         ],

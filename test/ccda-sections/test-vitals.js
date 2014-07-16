@@ -19,7 +19,7 @@ describe('vitals parser', function () {
         done();
     });
 
-    it('full deep check', function (done) {
+    xit('full deep check', function (done) {
         expect(vitals).to.exist;
         //console.log(JSON.stringify(vitals, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Vitals.json');
