@@ -15,7 +15,7 @@ Data model description - [Demographics](../demographics.md)
         },
         "dob": [
             {
-                "date": "1975-05-01T00:00:00.000Z",
+                "date": "1975-05-01T00:00:00Z",
                 "precision": "day"
             }
         ],

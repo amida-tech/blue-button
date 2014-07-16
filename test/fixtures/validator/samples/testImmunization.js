@@ -1,7 +1,7 @@
 var testImmunList = {
     "regular1": {
         "date": [{
-            "date": "1999-11-01T00:00:00.000Z",
+            "date": "1999-11-01T00:00:00Z",
             "precision": "month"
         }],
         "identifiers": [{
@@ -61,7 +61,7 @@ var testImmunList = {
     },
     "regular2": {
         "date": [{
-            "date": "1998-12-15T00:00:00.000Z",
+            "date": "1998-12-15T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -121,7 +121,7 @@ var testImmunList = {
     },
     "regular3": {
         "date": [{
-            "date": "1998-12-15T00:00:00.000Z",
+            "date": "1998-12-15T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -182,7 +182,7 @@ var testImmunList = {
     },
     "missingProductField": {
         "date": [{
-            "date": "1998-12-15T00:00:00.000Z",
+            "date": "1998-12-15T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -229,7 +229,7 @@ var testImmunList = {
     },
     "emptyProduct": {
         "date": [{
-            "date": "1998-12-15T00:00:00.000Z",
+            "date": "1998-12-15T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -277,7 +277,7 @@ var testImmunList = {
     },
     "missingStatusField": {
         "date": [{
-            "date": "1998-12-15T00:00:00.000Z",
+            "date": "1998-12-15T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -338,7 +338,7 @@ var testImmunList = {
     },
     "extraFieldInProduct": {
         "date": [{
-            "date": "1999-11-01T00:00:00.000Z",
+            "date": "1999-11-01T00:00:00Z",
             "precision": "month"
         }],
         "identifiers": [{

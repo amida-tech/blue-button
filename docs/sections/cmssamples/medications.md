@@ -19,7 +19,7 @@ Data model description - [Medications](../medications.md)
     {
         "date": [
             {
-                "date": "1949-09-28T00:00:00.000Z",
+                "date": "1949-09-28T00:00:00Z",
                 "precision": "day"
             }
         ],

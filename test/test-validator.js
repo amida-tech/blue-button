@@ -49,7 +49,7 @@ describe('Test dates', function () {
 
     it('date without precision', function (done) {
         dateObj = {
-            'date': '1975-05-01T00:00:00.000Z'
+            'date': '1975-05-01T00:00:00Z'
         };
         var valid = validator.validateSectionObj(dateObj, 'cda_date');
         expect(valid).to.true;

@@ -83,7 +83,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "1999-11-14T00:00:00.000Z",
+                    "date": "1999-11-14T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -102,7 +102,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "1999-11-14T00:00:00.000Z",
+                    "date": "1999-11-14T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -121,7 +121,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "1999-11-14T00:00:00.000Z",
+                    "date": "1999-11-14T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -140,7 +140,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "2000-04-07T00:00:00.000Z",
+                    "date": "2000-04-07T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -159,7 +159,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "2000-04-07T00:00:00.000Z",
+                    "date": "2000-04-07T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -178,7 +178,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "2000-04-07T00:00:00.000Z",
+                    "date": "2000-04-07T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -206,7 +206,7 @@ var testDocList = {
                         "code_system_name": "LOINC"
                     },
                     "date": [{
-                        "date": "2000-03-23T14:30:00.000Z",
+                        "date": "2000-03-23T14:30:00Z",
                         "precision": "minute"
                     }],
                     "status": "completed",
@@ -225,7 +225,7 @@ var testDocList = {
                         "code_system_name": "LOINC"
                     },
                     "date": [{
-                        "date": "2000-03-23T14:30:00.000Z",
+                        "date": "2000-03-23T14:30:00Z",
                         "precision": "minute"
                     }],
                     "status": "completed",
@@ -244,7 +244,7 @@ var testDocList = {
                         "code_system_name": "LOINC"
                     },
                     "date": [{
-                        "date": "2000-03-23T14:30:00.000Z",
+                        "date": "2000-03-23T14:30:00Z",
                         "precision": "minute"
                     }],
                     "status": "completed",
@@ -257,10 +257,10 @@ var testDocList = {
             }],
             "medications": [{
                 "date": [{
-                    "date": "2007-01-03T00:00:00.000Z",
+                    "date": "2007-01-03T00:00:00Z",
                     "precision": "day"
                 }, {
-                    "date": "2012-05-15T00:00:00.000Z",
+                    "date": "2012-05-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -331,7 +331,7 @@ var testDocList = {
                     "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
                 }],
                 "date": [{
-                    "date": "2009-02-27T13:00:00.000Z",
+                    "date": "2009-02-27T13:00:00Z",
                     "precision": "subsecond"
                 }],
                 "locations": [{
@@ -359,7 +359,7 @@ var testDocList = {
             }],
             "allergies": [{
                 "date": [{
-                    "date": "2007-05-01T00:00:00.000Z",
+                    "date": "2007-05-01T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -382,7 +382,7 @@ var testDocList = {
                 }]
             }, {
                 "date": [{
-                    "date": "2006-05-01T00:00:00.000Z",
+                    "date": "2006-05-01T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -405,7 +405,7 @@ var testDocList = {
                 }]
             }, {
                 "date": [{
-                    "date": "2008-05-01T00:00:00.000Z",
+                    "date": "2008-05-01T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -429,7 +429,7 @@ var testDocList = {
             }],
             "immunizations": [{
                 "date": [{
-                    "date": "1999-11-01T00:00:00.000Z",
+                    "date": "1999-11-01T00:00:00Z",
                     "precision": "month"
                 }],
                 "identifiers": [{
@@ -488,7 +488,7 @@ var testDocList = {
                 }
             }, {
                 "date": [{
-                    "date": "1998-12-15T00:00:00.000Z",
+                    "date": "1998-12-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -547,7 +547,7 @@ var testDocList = {
                 }
             }, {
                 "date": [{
-                    "date": "1998-12-15T00:00:00.000Z",
+                    "date": "1998-12-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -606,7 +606,7 @@ var testDocList = {
                 }
             }, {
                 "date": [{
-                    "date": "1998-12-15T00:00:00.000Z",
+                    "date": "1998-12-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -669,20 +669,20 @@ var testDocList = {
                 "smoking_statuses": [{
                     "value": "Former smoker",
                     "date": [{
-                        "date": "2005-05-01T00:00:00.000Z",
+                        "date": "2005-05-01T00:00:00Z",
                         "precision": "day"
                     }, {
-                        "date": "2009-02-27T13:00:00.000Z",
+                        "date": "2009-02-27T13:00:00Z",
                         "precision": "subsecond"
                     }]
                 }]
             },
             "problems": [{
                 "date": [{
-                    "date": "2008-01-03T00:00:00.000Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }, {
-                    "date": "2008-01-03T00:00:00.000Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -703,10 +703,10 @@ var testDocList = {
                 }]
             }, {
                 "date": [{
-                    "date": "2007-01-03T00:00:00.000Z",
+                    "date": "2007-01-03T00:00:00Z",
                     "precision": "day"
                 }, {
-                    "date": "2008-01-03T00:00:00.000Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -737,7 +737,7 @@ var testDocList = {
                 }],
                 "status": "Completed",
                 "date": [{
-                    "date": "2012-05-12T00:00:00.000Z",
+                    "date": "2012-05-12T00:00:00Z",
                     "precision": "day"
                 }],
                 "body_sites": [{
@@ -796,7 +796,7 @@ var testDocList = {
                 }],
                 "status": "Aborted",
                 "date": [{
-                    "date": "2011-02-03T00:00:00.000Z",
+                    "date": "2011-02-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "body_sites": [{
@@ -859,7 +859,7 @@ var testDocList = {
                 }],
                 "status": "Completed",
                 "date": [{
-                    "date": "2011-02-03T00:00:00.000Z",
+                    "date": "2011-02-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "providers": [{
@@ -992,7 +992,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "1999-11-14T00:00:00.000Z",
+                    "date": "1999-11-14T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -1011,7 +1011,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "1999-11-14T00:00:00.000Z",
+                    "date": "1999-11-14T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -1030,7 +1030,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "1999-11-14T00:00:00.000Z",
+                    "date": "1999-11-14T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -1049,7 +1049,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "2000-04-07T00:00:00.000Z",
+                    "date": "2000-04-07T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -1068,7 +1068,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "2000-04-07T00:00:00.000Z",
+                    "date": "2000-04-07T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -1087,7 +1087,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "2000-04-07T00:00:00.000Z",
+                    "date": "2000-04-07T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -1115,7 +1115,7 @@ var testDocList = {
                         "code_system_name": "LOINC"
                     },
                     "date": [{
-                        "date": "2000-03-23T14:30:00.000Z",
+                        "date": "2000-03-23T14:30:00Z",
                         "precision": "minute"
                     }],
                     "status": "completed",
@@ -1134,7 +1134,7 @@ var testDocList = {
                         "code_system_name": "LOINC"
                     },
                     "date": [{
-                        "date": "2000-03-23T14:30:00.000Z",
+                        "date": "2000-03-23T14:30:00Z",
                         "precision": "minute"
                     }],
                     "status": "completed",
@@ -1153,7 +1153,7 @@ var testDocList = {
                         "code_system_name": "LOINC"
                     },
                     "date": [{
-                        "date": "2000-03-23T14:30:00.000Z",
+                        "date": "2000-03-23T14:30:00Z",
                         "precision": "minute"
                     }],
                     "status": "completed",
@@ -1166,10 +1166,10 @@ var testDocList = {
             }],
             "medications": [{
                 "date": [{
-                    "date": "2007-01-03T00:00:00.000Z",
+                    "date": "2007-01-03T00:00:00Z",
                     "precision": "day"
                 }, {
-                    "date": "2012-05-15T00:00:00.000Z",
+                    "date": "2012-05-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -1240,7 +1240,7 @@ var testDocList = {
                     "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
                 }],
                 "date": [{
-                    "date": "2009-02-27T13:00:00.000Z",
+                    "date": "2009-02-27T13:00:00Z",
                     "precision": "subsecond"
                 }],
                 "locations": [{
@@ -1268,7 +1268,7 @@ var testDocList = {
             }],
             "allergies": [{
                 "date": [{
-                    "date": "2007-05-01T00:00:00.000Z",
+                    "date": "2007-05-01T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -1291,7 +1291,7 @@ var testDocList = {
                 }]
             }, {
                 "date": [{
-                    "date": "2006-05-01T00:00:00.000Z",
+                    "date": "2006-05-01T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -1314,7 +1314,7 @@ var testDocList = {
                 }]
             }, {
                 "date": [{
-                    "date": "2008-05-01T00:00:00.000Z",
+                    "date": "2008-05-01T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -1338,7 +1338,7 @@ var testDocList = {
             }],
             "immunizations": [{
                 "date": [{
-                    "date": "1999-11-01T00:00:00.000Z",
+                    "date": "1999-11-01T00:00:00Z",
                     "precision": "month"
                 }],
                 "identifiers": [{
@@ -1397,7 +1397,7 @@ var testDocList = {
                 }
             }, {
                 "date": [{
-                    "date": "1998-12-15T00:00:00.000Z",
+                    "date": "1998-12-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -1456,7 +1456,7 @@ var testDocList = {
                 }
             }, {
                 "date": [{
-                    "date": "1998-12-15T00:00:00.000Z",
+                    "date": "1998-12-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -1515,7 +1515,7 @@ var testDocList = {
                 }
             }, {
                 "date": [{
-                    "date": "1998-12-15T00:00:00.000Z",
+                    "date": "1998-12-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -1578,20 +1578,20 @@ var testDocList = {
                 "smoking_statuses": [{
                     "value": "Former smoker",
                     "date": [{
-                        "date": "2005-05-01T00:00:00.000Z",
+                        "date": "2005-05-01T00:00:00Z",
                         "precision": "day"
                     }, {
-                        "date": "2009-02-27T13:00:00.000Z",
+                        "date": "2009-02-27T13:00:00Z",
                         "precision": "subsecond"
                     }]
                 }]
             },
             "problems": [{
                 "date": [{
-                    "date": "2008-01-03T00:00:00.000Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }, {
-                    "date": "2008-01-03T00:00:00.000Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -1612,10 +1612,10 @@ var testDocList = {
                 }]
             }, {
                 "date": [{
-                    "date": "2007-01-03T00:00:00.000Z",
+                    "date": "2007-01-03T00:00:00Z",
                     "precision": "day"
                 }, {
-                    "date": "2008-01-03T00:00:00.000Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -1646,7 +1646,7 @@ var testDocList = {
                 }],
                 "status": "Completed",
                 "date": [{
-                    "date": "2012-05-12T00:00:00.000Z",
+                    "date": "2012-05-12T00:00:00Z",
                     "precision": "day"
                 }],
                 "body_sites": [{
@@ -1768,7 +1768,7 @@ var testDocList = {
                 }],
                 "status": "Completed",
                 "date": [{
-                    "date": "2011-02-03T00:00:00.000Z",
+                    "date": "2011-02-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "providers": [{
@@ -1945,7 +1945,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "1999-11-14T00:00:00.000Z",
+                    "date": "1999-11-14T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -1964,7 +1964,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "1999-11-14T00:00:00.000Z",
+                    "date": "1999-11-14T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -1983,7 +1983,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "1999-11-14T00:00:00.000Z",
+                    "date": "1999-11-14T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -2002,7 +2002,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "2000-04-07T00:00:00.000Z",
+                    "date": "2000-04-07T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -2021,7 +2021,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "2000-04-07T00:00:00.000Z",
+                    "date": "2000-04-07T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -2040,7 +2040,7 @@ var testDocList = {
                 },
                 "status": "completed",
                 "date": [{
-                    "date": "2000-04-07T00:00:00.000Z",
+                    "date": "2000-04-07T00:00:00Z",
                     "precision": "day"
                 }],
                 "interpretations": [
@@ -2068,7 +2068,7 @@ var testDocList = {
                         "code_system_name": "LOINC"
                     },
                     "date": [{
-                        "date": "2000-03-23T14:30:00.000Z",
+                        "date": "2000-03-23T14:30:00Z",
                         "precision": "minute"
                     }],
                     "status": "completed",
@@ -2087,7 +2087,7 @@ var testDocList = {
                         "code_system_name": "LOINC"
                     },
                     "date": [{
-                        "date": "2000-03-23T14:30:00.000Z",
+                        "date": "2000-03-23T14:30:00Z",
                         "precision": "minute"
                     }],
                     "status": "completed",
@@ -2106,7 +2106,7 @@ var testDocList = {
                         "code_system_name": "LOINC"
                     },
                     "date": [{
-                        "date": "2000-03-23T14:30:00.000Z",
+                        "date": "2000-03-23T14:30:00Z",
                         "precision": "minute"
                     }],
                     "status": "completed",
@@ -2119,10 +2119,10 @@ var testDocList = {
             }],
             "medications": [{
                 "date": [{
-                    "date": "2007-01-03T00:00:00.000Z",
+                    "date": "2007-01-03T00:00:00Z",
                     "precision": "day"
                 }, {
-                    "date": "2012-05-15T00:00:00.000Z",
+                    "date": "2012-05-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -2193,7 +2193,7 @@ var testDocList = {
                     "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
                 }],
                 "date": [{
-                    "date": "2009-02-27T13:00:00.000Z",
+                    "date": "2009-02-27T13:00:00Z",
                     "precision": "subsecond"
                 }],
                 "locations": [{
@@ -2221,7 +2221,7 @@ var testDocList = {
             }],
             "allergies": [{
                 "date": [{
-                    "date": "2007-05-01T00:00:00.000Z",
+                    "date": "2007-05-01T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -2244,7 +2244,7 @@ var testDocList = {
                 }]
             }, {
                 "date": [{
-                    "date": "2006-05-01T00:00:00.000Z",
+                    "date": "2006-05-01T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -2267,7 +2267,7 @@ var testDocList = {
                 }]
             }, {
                 "date": [{
-                    "date": "2008-05-01T00:00:00.000Z",
+                    "date": "2008-05-01T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -2291,7 +2291,7 @@ var testDocList = {
             }],
             "immunizations": [{
                 "date": [{
-                    "date": "1999-11-01T00:00:00.000Z",
+                    "date": "1999-11-01T00:00:00Z",
                     "precision": "month"
                 }],
                 "identifiers": [{
@@ -2350,7 +2350,7 @@ var testDocList = {
                 }
             }, {
                 "date": [{
-                    "date": "1998-12-15T00:00:00.000Z",
+                    "date": "1998-12-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -2409,7 +2409,7 @@ var testDocList = {
                 }
             }, {
                 "date": [{
-                    "date": "1998-12-15T00:00:00.000Z",
+                    "date": "1998-12-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -2467,7 +2467,7 @@ var testDocList = {
                 }
             }, {
                 "date": [{
-                    "date": "1998-12-15T00:00:00.000Z",
+                    "date": "1998-12-15T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -2526,20 +2526,20 @@ var testDocList = {
                 "smoking_statuses": [{
                     "value": "Former smoker",
                     "date": [{
-                        "date": "2005-05-01T00:00:00.000Z",
+                        "date": "2005-05-01T00:00:00Z",
                         "precision": "day"
                     }, {
-                        "date": "2009-02-27T13:00:00.000Z",
+                        "date": "2009-02-27T13:00:00Z",
                         "precision": "subsecond"
                     }]
                 }]
             },
             "problems": [{
                 "date": [{
-                    "date": "2008-01-03T00:00:00.000Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }, {
-                    "date": "2008-01-03T00:00:00.000Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -2560,10 +2560,10 @@ var testDocList = {
                 }]
             }, {
                 "date": [{
-                    "date": "2007-01-03T00:00:00.000Z",
+                    "date": "2007-01-03T00:00:00Z",
                     "precision": "day"
                 }, {
-                    "date": "2008-01-03T00:00:00.000Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "identifiers": [{
@@ -2594,7 +2594,7 @@ var testDocList = {
                 }],
                 "status": "Completed",
                 "date": [{
-                    "date": "2012-05-12T00:00:00.000Z",
+                    "date": "2012-05-12T00:00:00Z",
                     "precision": "day"
                 }],
                 "body_sites": [{
@@ -2653,7 +2653,7 @@ var testDocList = {
                 }],
                 "status": "Aborted",
                 "date": [{
-                    "date": "2011-02-03T00:00:00.000Z",
+                    "date": "2011-02-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "body_sites": [{
@@ -2716,7 +2716,7 @@ var testDocList = {
                 }],
                 "status": "Completed",
                 "date": [{
-                    "date": "2011-02-03T00:00:00.000Z",
+                    "date": "2011-02-03T00:00:00Z",
                     "precision": "day"
                 }],
                 "providers": [{

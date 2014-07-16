@@ -10,7 +10,7 @@ var testProcedureList = {
         }],
         "status": "Completed",
         "date": [{
-            "date": "2012-05-12T00:00:00.000Z",
+            "date": "2012-05-12T00:00:00Z",
             "precision": "day"
         }],
         "body_sites": [{
@@ -70,7 +70,7 @@ var testProcedureList = {
         }],
         "status": "Aborted",
         "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
+            "date": "2011-02-03T00:00:00Z",
             "precision": "day"
         }],
         "body_sites": [{
@@ -134,7 +134,7 @@ var testProcedureList = {
         }],
         "status": "Completed",
         "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
+            "date": "2011-02-03T00:00:00Z",
             "precision": "day"
         }],
         "providers": [{
@@ -192,7 +192,7 @@ var testProcedureList = {
             "identifier_type": "1234567"
         }],
         "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
+            "date": "2011-02-03T00:00:00Z",
             "precision": "day"
         }],
         "providers": [{
@@ -246,7 +246,7 @@ var testProcedureList = {
         }],
         "status": "Completed",
         "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
+            "date": "2011-02-03T00:00:00Z",
             "precision": "day"
         }],
         "providers": [{
@@ -303,7 +303,7 @@ var testProcedureList = {
         }],
         "status": "Completed",
         "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
+            "date": "2011-02-03T00:00:00Z",
             "precision": "day"
         }],
         "providers": [{
@@ -362,7 +362,7 @@ var testProcedureList = {
         }],
         "status": "Completed",
         "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
+            "date": "2011-02-03T00:00:00Z",
             "precision": "day"
         }],
         "providers": [{
@@ -415,7 +415,7 @@ var testProcedureList = {
         }],
         "status": "Completed",
         "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
+            "date": "2011-02-03T00:00:00Z",
             "precision": "day"
         }],
         "providers": [{
@@ -473,7 +473,7 @@ var testProcedureList = {
         }],
         "status": "Completed",
         "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
+            "date": "2011-02-03T00:00:00Z",
             "precision": "day"
         }],
         "providers": [{
@@ -532,7 +532,7 @@ var testProcedureList = {
         }],
         "status": "Completed",
         "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
+            "date": "2011-02-03T00:00:00Z",
             "precision": "day"
         }],
         "locations": [{

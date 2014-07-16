@@ -31,11 +31,11 @@ Data model description - [Insurances](../insurances.md)
         ],
         "date": [
             {
-                "date": "2011-01-01T00:00:00.000Z",
+                "date": "2011-01-01T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "2011-12-31T00:00:00.000Z",
+                "date": "2011-12-31T00:00:00Z",
                 "precision": "day"
             }
         ]
@@ -46,11 +46,11 @@ Data model description - [Insurances](../insurances.md)
         "payer_name": "Insurer1",
         "date": [
             {
-                "date": "2011-01-01T00:00:00.000Z",
+                "date": "2011-01-01T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "2011-09-30T00:00:00.000Z",
+                "date": "2011-09-30T00:00:00Z",
                 "precision": "day"
             }
         ],
@@ -73,11 +73,11 @@ Data model description - [Insurances](../insurances.md)
         "payer_name": "Insurer2",
         "date": [
             {
-                "date": "2010-01-01T00:00:00.000Z",
+                "date": "2010-01-01T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "2010-12-31T00:00:00.000Z",
+                "date": "2010-12-31T00:00:00Z",
                 "precision": "day"
             }
         ],
@@ -100,11 +100,11 @@ Data model description - [Insurances](../insurances.md)
         "payer_name": "Insurer",
         "date": [
             {
-                "date": "1984-10-01T00:00:00.000Z",
+                "date": "1984-10-01T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "2008-11-30T00:00:00.000Z",
+                "date": "2008-11-30T00:00:00Z",
                 "precision": "day"
             }
         ],

@@ -168,7 +168,7 @@ describe('component.generateSchema on test component', function () {
     });
 });
 
-describe('component.generateSchema on CCD_1', function () {
+xdescribe('component.generateSchema on CCD_1', function () {
     var ccd = null;
 
     before(function (done) {

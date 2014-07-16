@@ -13,7 +13,7 @@ Data model description - [Results](../results.md)
         "results": [
             {
                 "date": {
-                    "date": "2008-03-21T00:00:00.000Z",
+                    "date": "2008-03-21T00:00:00Z",
                     "precision": "day"
                 },
                 "name": "FBS",
@@ -22,7 +22,7 @@ Data model description - [Results](../results.md)
             },
             {
                 "date": {
-                    "date": "2008-03-21T00:00:00.000Z",
+                    "date": "2008-03-21T00:00:00Z",
                     "precision": "day"
                 },
                 "name": "RBS",
@@ -31,7 +31,7 @@ Data model description - [Results](../results.md)
             },
             {
                 "date": {
-                    "date": "2008-03-21T00:00:00.000Z",
+                    "date": "2008-03-21T00:00:00Z",
                     "precision": "day"
                 },
                 "name": "RBS",
@@ -40,7 +40,7 @@ Data model description - [Results](../results.md)
             },
             {
                 "date": {
-                    "date": "2008-03-21T00:00:00.000Z",
+                    "date": "2008-03-21T00:00:00Z",
                     "precision": "day"
                 },
                 "name": "RBS",

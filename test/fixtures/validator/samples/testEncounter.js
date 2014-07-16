@@ -14,7 +14,7 @@ var testEncounter = {
             "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
         }],
         "date": [{
-            "date": "2009-02-27T13:00:00.000Z",
+            "date": "2009-02-27T13:00:00Z",
             "precision": "subsecond"
         }],
         "locations": [{
@@ -45,7 +45,7 @@ var testEncounter = {
             "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
         }],
         "date": [{
-            "date": "2009-02-27T13:00:00.000Z",
+            "date": "2009-02-27T13:00:00Z",
             "precision": "subsecond"
         }],
         "locations": [{
@@ -120,7 +120,7 @@ var testEncounter = {
             "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
         }],
         "date": [{
-            "date": "2009-02-27T13:00:00.000Z",
+            "date": "2009-02-27T13:00:00Z",
             "precision": "subsecond"
         }],
         "locations": [{
@@ -161,7 +161,7 @@ var testEncounter = {
             "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
         }],
         "date": [{
-            "date": "2009-02-27T13:00:00.000Z",
+            "date": "2009-02-27T13:00:00Z",
             "precision": "subsecond"
         }],
         "locations": [{

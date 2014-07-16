@@ -24,7 +24,7 @@ Data model description - [Results](../results.md)
             "code_system_name": "LOINC"
         },
         "date": [{
-            "date": "2000-03-23T14:30:00.000Z",
+            "date": "2000-03-23T14:30:00Z",
             "precision": "minute"
         }],
         "interpretations": [
@@ -42,7 +42,7 @@ Data model description - [Results](../results.md)
             "code_system_name": "LOINC"
         },
         "date": [{
-            "date": "2000-03-23T14:30:00.000Z",
+            "date": "2000-03-23T14:30:00Z",
             "precision": "minute"
         }],
         "interpretations": [
@@ -60,7 +60,7 @@ Data model description - [Results](../results.md)
             "code_system_name": "LOINC"
         },
         "date": [{
-            "date": "2000-03-23T14:30:00.000Z",
+            "date": "2000-03-23T14:30:00Z",
             "precision": "minute"
         }],
         "interpretations": [

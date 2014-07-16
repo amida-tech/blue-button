@@ -16,7 +16,7 @@ Data model description - [Procedures](../procedures.md)
     }],
     "status": "Completed",
     "date": [{
-        "date": "2012-05-12T00:00:00.000Z",
+        "date": "2012-05-12T00:00:00Z",
         "precision": "day"
     }],
     "body_sites": [{
@@ -68,7 +68,7 @@ Data model description - [Procedures](../procedures.md)
     }],
     "status": "Aborted",
     "date": [{
-        "date": "2011-02-03T00:00:00.000Z",
+        "date": "2011-02-03T00:00:00Z",
         "precision": "day"
     }],
     "body_sites": [{
@@ -124,7 +124,7 @@ Data model description - [Procedures](../procedures.md)
     }],
     "status": "Completed",
     "date": [{
-        "date": "2011-02-03T00:00:00.000Z",
+        "date": "2011-02-03T00:00:00Z",
         "precision": "day"
     }],
     "providers": [{

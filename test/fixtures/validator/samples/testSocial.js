@@ -3,10 +3,10 @@ var testSocial = {
         "smoking_statuses": [{
             "value": "Former smoker",
             "date": [{
-                "date": "2005-05-01T00:00:00.000Z",
+                "date": "2005-05-01T00:00:00Z",
                 "precision": "day"
             }, {
-                "date": "2009-02-27T13:00:00.000Z",
+                "date": "2009-02-27T13:00:00Z",
                 "precision": "subsecond"
             }]
         }]
@@ -14,10 +14,10 @@ var testSocial = {
     "noSmokingValue": {
         "smoking_statuses": [{
             "date": [{
-                "date": "2005-05-01T00:00:00.000Z",
+                "date": "2005-05-01T00:00:00Z",
                 "precision": "day"
             }, {
-                "date": "2009-02-27T13:00:00.000Z",
+                "date": "2009-02-27T13:00:00Z",
                 "precision": "subsecond"
             }]
         }]

@@ -33,7 +33,7 @@ describe('encounters parser', function () {
         expect(encounters).to.have.length(1);
         expect(encounters[0].date).to.exist;
         expect(encounters[0].date).to.have.length(1);
-        expect(JSON.stringify(encounters[0].date[0].date)).to.equal('"2009-02-27T13:00:00.000Z"');
+        expect(JSON.stringify(encounters[0].date[0].date)).to.equal('"2009-02-27T13:00:00Z"');
         expect(encounters[0].encounter.code).to.equal('99213');
         done();
     });

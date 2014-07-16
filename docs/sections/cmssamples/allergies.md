@@ -12,15 +12,15 @@ Data model description - [Allergies](../allergies.md)
         },
         "date": [
             {
-                "date": "1926-01-08T00:00:00.000Z",
+                "date": "1926-01-08T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "1955-03-13T00:00:00.000Z",
+                "date": "1955-03-13T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "1949-09-28T00:00:00.000Z",
+                "date": "1949-09-28T00:00:00Z",
                 "precision": "day"
             }
         ],
@@ -37,15 +37,15 @@ Data model description - [Allergies](../allergies.md)
         },
         "date": [
             {
-                "date": "1973-05-13T00:00:00.000Z",
+                "date": "1973-05-13T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "1996-07-20T00:00:00.000Z",
+                "date": "1996-07-20T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "2008-09-27T00:00:00.000Z",
+                "date": "2008-09-27T00:00:00Z",
                 "precision": "day"
             }
         ],

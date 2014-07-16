@@ -16,7 +16,7 @@ Data model description - [Vital Signs](../vitals.md)
     },
     "status": "completed",
     "date": [{
-        "date": "1999-11-14T00:00:00.000Z",
+        "date": "1999-11-14T00:00:00Z",
         "precision": "day"
     }],
     "interpretations": [
@@ -35,7 +35,7 @@ Data model description - [Vital Signs](../vitals.md)
     },
     "status": "completed",
     "date": [{
-        "date": "1999-11-14T00:00:00.000Z",
+        "date": "1999-11-14T00:00:00Z",
         "precision": "day"
     }],
     "interpretations": [
@@ -54,7 +54,7 @@ Data model description - [Vital Signs](../vitals.md)
     },
     "status": "completed",
     "date": [{
-        "date": "1999-11-14T00:00:00.000Z",
+        "date": "1999-11-14T00:00:00Z",
         "precision": "day"
     }],
     "interpretations": [
@@ -73,7 +73,7 @@ Data model description - [Vital Signs](../vitals.md)
     },
     "status": "completed",
     "date": [{
-        "date": "2000-04-07T00:00:00.000Z",
+        "date": "2000-04-07T00:00:00Z",
         "precision": "day"
     }],
     "interpretations": [
@@ -92,7 +92,7 @@ Data model description - [Vital Signs](../vitals.md)
     },
     "status": "completed",
     "date": [{
-        "date": "2000-04-07T00:00:00.000Z",
+        "date": "2000-04-07T00:00:00Z",
         "precision": "day"
     }],
     "interpretations": [
@@ -111,7 +111,7 @@ Data model description - [Vital Signs](../vitals.md)
     },
     "status": "completed",
     "date": [{
-        "date": "2000-04-07T00:00:00.000Z",
+        "date": "2000-04-07T00:00:00Z",
         "precision": "day"
     }],
     "interpretations": [
