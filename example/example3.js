@@ -18,8 +18,8 @@ var val = validator.validateDocumentModel(result);
 console.log(val);
 console.log(validator.getLastError());
 
-console.log("date type: ",typeof result.data.vitals[3].date[0].date);
-console.log(JSON.stringify(result.data.vitals[3].date[0].date));
+//console.log("date type: ",typeof result.data.vitals[3].date[0].date);
+//console.log(JSON.stringify(result.data.vitals[3].date[0].date));
 
 
 data = fs.readFileSync("example3_mod.json").toString();
@@ -28,12 +28,12 @@ result = JSON.parse(data);
 val = validator.validateDocumentModel(result);
 
 console.log(val);
-console.log(validator.getLastError());
+console.log(JSON.stringify(validator.getLastError(),null,4));
 
-console.log("date type: ",typeof result.data.vitals[3].date[0].date);
-console.log(JSON.stringify(result.data.vitals[3].date[0].date));
+//console.log("date type: ",typeof result.data.vitals[3].date[0].date);
+//console.log(JSON.stringify(result.data.vitals[3].date[0].date));
 
-val = validator.validateSectionObj(result.data.results[0], 'result');
+val = validator.validateSectionObj(result.data.allergies[0], 'allergy');
 
 
 console.log(val);

@@ -8,12 +8,12 @@
                 "last": "Jones",
                 "first": "Isabella"
             },
-            "dob": [
-                {
+            "dob": {
+                "effectiveDate": {
                     "date": "1975-05-01T00:00:00Z",
                     "precision": "day"
                 }
-            ],
+            },
             "gender": "Female",
             "identifiers": [
                 {
@@ -103,12 +103,12 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "interpretations": [
                     "Normal"
                 ],
@@ -127,12 +127,12 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "interpretations": [
                     "Normal"
                 ],
@@ -151,12 +151,12 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "interpretations": [
                     "Normal"
                 ],
@@ -175,12 +175,12 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "interpretations": [
                     "Normal"
                 ],
@@ -199,12 +199,12 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "interpretations": [
                     "Normal"
                 ],
@@ -223,12 +223,12 @@
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "interpretations": [
                     "Normal"
                 ],
@@ -260,12 +260,12 @@
                             "code": "30313-1",
                             "code_system_name": "LOINC"
                         },
-                        "date": [
-                            {
+                        "date": {
+                            "effectiveDate": {
                                 "date": "2000-03-23T14:30:00Z",
                                 "precision": "minute"
                             }
-                        ],
+                        },
                         "status": "completed",
                         "interpretations": [
                             "Normal"
@@ -284,12 +284,12 @@
                             "code": "33765-9",
                             "code_system_name": "LOINC"
                         },
-                        "date": [
-                            {
+                        "date": {
+                            "effectiveDate": {
                                 "date": "2000-03-23T14:30:00Z",
                                 "precision": "minute"
                             }
-                        ],
+                        },
                         "status": "completed",
                         "interpretations": [
                             "Normal"
@@ -308,12 +308,12 @@
                             "code": "26515-7",
                             "code_system_name": "LOINC"
                         },
-                        "date": [
-                            {
+                        "date": {
+                            "effectiveDate": {
                                 "date": "2000-03-23T14:30:00Z",
                                 "precision": "minute"
                             }
-                        ],
+                        },
                         "status": "completed",
                         "interpretations": [
                             "Low"
@@ -326,16 +326,16 @@
         ],
         "medications": [
             {
-                "date": [
-                    {
+                "date": {
+                    "low": {
                         "date": "2007-01-03T00:00:00Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "2012-05-15T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
@@ -413,12 +413,12 @@
                         "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
                     }
                 ],
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2009-02-27T13:00:00Z",
                         "precision": "subsecond"
                     }
-                ],
+                },
                 "locations": [
                     {
                         "name": "Community Urgent Care Center",
@@ -451,12 +451,12 @@
         ],
         "allergies": [
             {
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2007-05-01T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
@@ -481,12 +481,12 @@
                 ]
             },
             {
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2006-05-01T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
@@ -511,12 +511,12 @@
                 ]
             },
             {
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2008-05-01T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
@@ -543,12 +543,12 @@
         ],
         "immunizations": [
             {
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "1999-11-01T00:00:00Z",
                         "precision": "month"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
@@ -621,12 +621,12 @@
                 }
             },
             {
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "1998-12-15T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
@@ -699,12 +699,12 @@
                 }
             },
             {
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "1998-12-15T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
@@ -777,12 +777,12 @@
                 }
             },
             {
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "1998-12-15T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
@@ -860,31 +860,31 @@
             "smoking_statuses": [
                 {
                     "value": "Former smoker",
-                    "date": [
-                        {
+                    "date": {
+                        "low": {
                             "date": "2005-05-01T00:00:00Z",
                             "precision": "day"
                         },
-                        {
+                        "high": {
                             "date": "2009-02-27T13:00:00Z",
                             "precision": "subsecond"
                         }
-                    ]
+                    }
                 }
             ]
         },
         "problems": [
             {
-                "date": [
-                    {
+                "date": {
+                    "low": {
                         "date": "2008-01-03T00:00:00Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "2008-01-03T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
@@ -907,16 +907,16 @@
                 ]
             },
             {
-                "date": [
-                    {
+                "date": {
+                    "low": {
                         "date": "2007-01-03T00:00:00Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "2008-01-03T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "identifiers": [
                     {
                         "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
@@ -952,12 +952,12 @@
                     }
                 ],
                 "status": "Completed",
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "body_sites": [
                     {
                         "name": "colon",
@@ -1028,12 +1028,12 @@
                     }
                 ],
                 "status": "Aborted",
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2011-02-03T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "body_sites": [
                     {
                         "name": "Abdomen and pelvis",
@@ -1110,12 +1110,12 @@
                     }
                 ],
                 "status": "Completed",
-                "date": [
-                    {
+                "date": {
+                    "effectiveDate": {
                         "date": "2011-02-03T00:00:00Z",
                         "precision": "day"
                     }
-                ],
+                },
                 "providers": [
                     {
                         "address": {
