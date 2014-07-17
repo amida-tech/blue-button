@@ -32,6 +32,7 @@
     "libxmljs": "*",
     "node-uuid": "*",
     "underscore": "1.6.x",
+    "winston": "^0.7.3",
     "xdate": "*",
     "z-schema": "^2.4.8"
   },
