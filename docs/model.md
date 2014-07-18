@@ -42,8 +42,7 @@ There are components common to multiple sections and are defined [here](sections
 	- [JSON/CMS sample](sections/cmssamples/insurances.md)
 - [Claims model](sections/claims.md) 
 	- [JSON/CMS sample](sections/cmssamples/claims.md)
-- Plan of Care model
-	- [JSON/XML sample](sections/samples/plan_of_care.md)
+
 
 
 ### Shared Components:
