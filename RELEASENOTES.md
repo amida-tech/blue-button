@@ -1,5 +1,9 @@
 # blue-button.js Release Notes
 
+# v1.0.3 - Jul 18, 2014
+- Updates to data models
+- CCDA export functionality
+- CMS parsing functionality
 
 # v1.0.1 - June 17, 2014
 
