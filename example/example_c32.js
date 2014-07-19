@@ -53,7 +53,7 @@ var result = {
     "errors": ret.errors
 };
 
-console.log(JSON.stringify(result.data.problems, null, 4));
+console.log(JSON.stringify(result.data.allergies, null, 4));
 //console.log(result);
 
 
