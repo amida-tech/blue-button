@@ -5,20 +5,22 @@
 ```javascript
 [
     {
-        "date": [
-            {
-                "date": "2012-05-12T00:00:00.000Z",
-                "precision": "day"
-            }
-        ],
+        "date_time": {
+        	"point": {
+                	"date": "2012-05-12T00:00:00Z",
+                        "precision": "day"
+                }
+        },
         "identifiers": [
             {
                 "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809b4a"
             }
         ],
-        "name": "Colonoscopy",
-        "code": "73761001",
-        "codeSystemName": "SNOMED CT",
+        "plan": {
+        	"name": "Colonoscopy",
+        	"code": "73761001",
+        	"codeSystemName": "SNOMED CT"
+        },
         "type": "observation"
     },
     {
@@ -33,43 +35,49 @@
                 "identifier": "9a6d1bac-17d3-4195-89c4-1121bc809b5a"
             }
         ],
-        "name": "Colonoscopy",
-        "code": "73761001",
-        "codeSystemName": "SNOMED CT",
+        "plan": {
+        	"name": "Colonoscopy",
+        	"code": "73761001",
+        	"codeSystemName": "SNOMED CT"
+        },
         "type": "act"
     },
     {
-        "date": [
-            {
-                "date": "2012-05-12T00:00:00.000Z",
-                "precision": "day"
-            }
-        ],
+        "date_time": {
+        	"point": {
+                	"date": "2012-05-12T00:00:00Z",
+                        "precision": "day"
+                }
+        },
         "identifiers": [
             {
                 "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809b4a"
             }
         ],
-        "name": "Colonoscopy",
-        "code": "73761001",
-        "codeSystemName": "SNOMED CT",
+        "plan": {
+        	"name": "Colonoscopy",
+        	"code": "73761001",
+        	"codeSystemName": "SNOMED CT"
+        },
         "type": "encounter"
     },
     {
-        "date": [
-            {
-                "date": "2012-05-12T00:00:00.000Z",
-                "precision": "day"
-            }
-        ],
+        "date_time": {
+        	"point": {
+                	"date": "2012-05-12T00:00:00Z",
+                        "precision": "day"
+                }
+        },
         "identifiers": [
             {
                 "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809b4a"
             }
         ],
-        "name": "Colonoscopy",
-        "code": "73761001",
-        "codeSystemName": "SNOMED CT",
+        "plan": {
+        	"name": "Colonoscopy",
+        	"code": "73761001",
+        	"codeSystemName": "SNOMED CT"
+        },
         "type": "procedure"
     }
 ]
