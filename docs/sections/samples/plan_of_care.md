@@ -24,12 +24,12 @@
         "type": "observation"
     },
     {
-        "date": [
-            {
-                "date": "2012-05-12T00:00:00.000Z",
-                "precision": "day"
-            }
-        ],
+        "date_time": {
+        	"point": {
+                	"date": "2012-05-12T00:00:00Z",
+                        "precision": "day"
+                }
+        },
         "identifiers": [
             {
                 "identifier": "9a6d1bac-17d3-4195-89c4-1121bc809b5a"
