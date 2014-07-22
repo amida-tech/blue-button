@@ -23,7 +23,7 @@ describe('plan of care parser', function() {
 
   it('full deep check', function (done) {
     expect(plan_of_care).to.exist;
-    console.log(JSON.stringify(plan_of_care, null, 10));
+    // console.log(JSON.stringify(plan_of_care, null, 10));
     var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Plan_Of_Care.json');
     var json2Read = fs.readFileSync(filepath, 'utf-8');
     var expected = jsutil.jsonParseWithDate(json2Read);
