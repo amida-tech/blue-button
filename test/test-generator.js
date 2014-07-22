@@ -77,6 +77,16 @@ if (TEST_SECTIONS) {
             });
         });
 
+         // test plan of care
+        describe('generating CCDA for plan of care section', function () {
+            it('should match plan of care section', function () {
+                var XMLDOMs = test.generateXMLDOM('plan_of_care');
+
+                assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+                console.log("TOTAL ERRORS: " + test.errors["total"]);
+            });
+        });
+
         // test problems section
         describe('generating CCDA for problems section', function () {
             it('should match problems section', function () {
