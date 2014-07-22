@@ -27,6 +27,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
+    "jschardet":"1.1.0",
     "blue-button-meta": "^0.1.0",
     "deep-equal": "*",
     "libxmljs": "*",

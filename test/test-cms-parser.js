@@ -1,17 +1,19 @@
 var expect = require('chai').expect;
 var fs = require('fs');
 var path = require('path');
+var bb = require('../index');
 
 //var txtToIntObj = require('../lib/parser/txtToIntObj/parser.js');
 var txtToIntObj = require('../lib/parser/cms/cmsTxtToIntObj.js');
 var objConverter = require('../lib/parser/cms/cmsObjConverter.js');
 var txtdata;
+var jschardet = require('jschardet');
 
 //loads the file
 
 function loadFile(filename) {
     var filepath = path.join(__dirname, 'fixtures/cms/' + filename);
-    var txtfile = fs.readFileSync(filepath, 'utf-8');
+    var txtfile = fs.readFileSync(filepath);
     return txtfile;
 
 }
@@ -323,6 +325,25 @@ describe('Test claims for given sample file', function () {
     before(function (done) {
         var txtfile = loadFile('sample2.txt');
         this.txtdata = txtfile.toString();
+        done();
+    });
+
+    it('checks for the correct number of objects converted', function (done) {
+        var intObj = txtToIntObj.getIntObj(this.txtdata);
+        var bbModel = objConverter.convertToBBModel(intObj);
+        var totalPlans = bbModel.data.claims.length;
+        expect(totalPlans).to.equal(5);
+        done();
+
+    });
+
+});
+
+describe('Test sample unicode utf16 file', function () {
+
+    before(function (done) {
+        var txtfile = loadFile('sampleutf.txt').toString();
+        this.txtdata = txtfile;
         done();
     });
 
