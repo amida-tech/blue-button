@@ -13,7 +13,7 @@
             ],
             "code": {
                 "code": "SELF",
-                "code_system_name": "HL7 RoleClassRelationship"
+                "code_system_name": "OID 2.16.840.1.113883.5.110"
             },
             "insurance": {
                 "code": {
@@ -34,7 +34,8 @@
                             "city": "Blue Bell",
                             "state": "MA",
                             "zip": "02368",
-                            "country": "US"
+                            "country": "US",
+                            "use": "work place"
                         }
                     ],
                     "phone": [
@@ -74,7 +75,7 @@
         "guarantor": {
             "code": {
                 "code": "GUAR",
-                "code_system_name": "HL7 RoleCode"
+                "code_system_name": "HL7 Role"
             },
             "identifiers": [
                 {
@@ -84,26 +85,28 @@
             "address": [
                 {
                     "streetLines": [
-                        "123 Insurance Road"
+                        "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
                     "state": "MA",
                     "zip": "02368",
                     "country": "US",
-                    "use": "work place"
+                    "use": "primary home"
                 }
             ],
             "phone": [
                 {
-                    "number": "(781)555-1515",
-                    "type": "work place"
+                    "number": "(781)555-1212",
+                    "type": "primary home"
                 }
             ],
             "name": [
                 {
                     "prefix": "Mr.",
+                    "middle": [
+                        "Frankie"
+                    ],
                     "last": "Everyman",
-                    "given": "Frankie",
                     "first": "Adam"
                 }
             ]
@@ -111,8 +114,9 @@
         "participant": {
             "date_time": {},
             "code": {
+                "name": "Self",
                 "code": "SELF",
-                "code_system_name": "HL7 RoleClassRelationship"
+                "code_system_name": "HL7 Role"
             },
             "performer": {
                 "identifiers": [
@@ -130,28 +134,22 @@
                         "state": "MA",
                         "zip": "02368",
                         "country": "US",
-                        "use": "work place"
-                    }
-                ],
-                "name": [
-                    {
-                        "prefix": "Mr.",
-                        "middle": [
-                            "A."
-                        ],
-                        "last": "Everyman",
-                        "first": "Frank"
+                        "use": "primary home"
                     }
                 ]
-            }
+            },
+            "name": [
+                {
+                    "prefix": "Mr.",
+                    "middle": [
+                        "A."
+                    ],
+                    "last": "Everyman",
+                    "first": "Frank"
+                }
+            ]
         },
         "policy_holder": {
-            "date_time": {
-                "point": {
-                    "date": "2012-05-12T00:00:00Z",
-                    "precision": "day"
-                }
-            },
             "performer": {
                 "identifiers": [
                     {

@@ -74,30 +74,40 @@
         },
         "guarantor": {
             "code": {
-                "code": "PAYOR",
-                "code_system_name": "OID 2.16.840.1.113883.5.110"
+                "code": "GUAR",
+                "code_system_name": "HL7 Role"
             },
             "identifiers": [
                 {
-                    "identifier": "2.16.840.1.113883.19"
+                    "identifier": "329fcdf0-7ab3-11db-9fe1-0800200c9a66"
+                }
+            ],
+            "name": [
+                {
+                    "prefix": "Mr.",
+                    "middle": [
+                        "Frankie"
+                    ],
+                    "last": "Everyman",
+                    "first": "Adam"
                 }
             ],
             "address": [
                 {
                     "streetLines": [
-                        "123 Insurance Road"
+                        "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
                     "state": "MA",
                     "zip": "02368",
                     "country": "US",
-                    "use": "work place"
+                    "use": "primary home"
                 }
             ],
             "phone": [
                 {
-                    "number": "(781)555-1515",
-                    "type": "work place"
+                    "number": "(781)555-1212",
+                    "type": "primary home"
                 }
             ]
         },
