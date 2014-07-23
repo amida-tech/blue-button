@@ -19,7 +19,8 @@ isLeaf()
 extractNodes()
 generateDOMParser()
 generateStubs()
-generateXMLDOMForEntireCCD
+generateXMLDOM()
+generateXMLDOMForEntireCCD()
 */
 
 // Requires
@@ -68,7 +69,7 @@ var testXML = function () {
 
 // Returns true if the two XML documents are identical, otherwise returns false.
 testXML.prototype.isIdentical = function (generated, expected) {
-    var error;
+    var error, nullFlavorMismatch = 0;
 
     // Compare their tagNames
     if (!this.sameNode(generated, expected)) {
@@ -108,19 +109,15 @@ testXML.prototype.isIdentical = function (generated, expected) {
             ", expected: " + libCCDAGen.getObjLength(expected.childNodes) + " at lineNumber:" + expected.lineNumber;
         return this.skip(error, CHILD_NODE_DISCREPANCY);
     }
-    var nullFlavorMismatch = 0;
+   
     // If they have the same number of children, then start comparing their childNodes by calling the function recursively
     for (var i = 0; i < libCCDAGen.getObjLength(generated.childNodes) - nullFlavorMismatch; i++) {
-        var curr_gen = generated.childNodes[i];
-        var curr_exp = expected.childNodes[i];
-        var gen_node = (curr_gen.attributes !== undefined ? curr_gen.attributes[0] !== undefined ? curr_gen.attributes[0].nodeName : "" : "");
-        var exp_node = (curr_exp ? curr_exp.attributes !== undefined ? curr_exp.attributes[0] !== undefined ? curr_exp.attributes[0].nodeName : "" : "" : "");
+        var curr_gen = generated.childNodes[i],
+            curr_exp = expected.childNodes[i],
+            gen_node = (curr_gen.attributes !== undefined ? curr_gen.attributes[0] !== undefined ? curr_gen.attributes[0].nodeName : "" : ""),
+            exp_node = (curr_exp ? curr_exp.attributes !== undefined ? curr_exp.attributes[0] !== undefined ? curr_exp.attributes[0].nodeName : "" : "" : "");
 
-        if (gen_node === 'nullFlavor' && exp_node !== 'nullFlavor') {
-            nullFlavorMismatch++;
-        }
-
-        if (gen_node !== 'nullFlavor' && exp_node === 'nullFlavor') {
+        if ( (gen_node === 'nullFlavor' && exp_node !== 'nullFlavor') || (gen_node !== 'nullFlavor' && exp_node === 'nullFlavor') ) {
             nullFlavorMismatch++;
         }
 
@@ -134,14 +131,14 @@ testXML.prototype.isIdentical = function (generated, expected) {
 
 // Check if the attributes are the same for two nodes.
 testXML.prototype.haveSameAttributes = function (generated, expected) {
-    var genAttributes = generated.attributes;
-    var expAttributes = expected.attributes;
-
-    var error;
+    var genAttributes = generated.attributes,
+        expAttributes = expected.attributes,
+        error;
 
     if (genAttributes === undefined && expAttributes === undefined) {
         return true; // No attributes.
     }
+
     if ((genAttributes === undefined && expAttributes !== undefined) ||
         (genAttributes !== undefined && expAttributes === undefined)) {
         error = "Attributes mismatch.";
@@ -156,9 +153,9 @@ testXML.prototype.haveSameAttributes = function (generated, expected) {
 
     for (var i = 0; i < genAttributes.length; i++) {
         if (!(genAttributes[i].name === expAttributes[i].name && genAttributes[i].value === expAttributes[i].value)) {
-            var attributeGen = genAttributes[i].name + "=\"" + genAttributes[i].value + "\"";
-            var attributeExp = expAttributes[i].name + "=\"" + expAttributes[i].value + "\"";
-            var differentPos = false;
+            var attributeGen = genAttributes[i].name + "=\"" + genAttributes[i].value + "\"",
+                attributeExp = expAttributes[i].name + "=\"" + expAttributes[i].value + "\"",
+                differentPos = false;
 
             // see if the attribute is just in a different position
             for (var j = 0; j < genAttributes.length; j++) {
@@ -257,6 +254,7 @@ testXML.prototype.sameNode = function (node1, node2) {
 testXML.prototype.sameText = function (generated, expected) {
     var genText = "",
         expText = "";
+
     if (generated.childNodes !== undefined) {
         for (var i = 0; i < libCCDAGen.getObjLength(generated.childNodes); i++) {
             if (generated.childNodes[i] !== undefined && generated.childNodes[i].nodeName === "#text") { // then it is a text node
@@ -293,17 +291,14 @@ testXML.prototype.numChildNodesSame = function (generated, expected) {
 // Checks if the current node is a leaf node (i.e., no children). If so, returns true, otherwise returns false;
 /// @root node to evaluate 
 testXML.prototype.isLeaf = function (root) {
-    if (root.childNodes === null) {
-        return true;
-    } else {
-        return false;
-    }
+    return root.childNodes === null ? true : false;
 };
 
 // strips out comments and whitespace from the childNodes object
 testXML.prototype.extractNodes = function (childNodes) {
-    var newChildNodes = {};
-    var count = 0;
+    var newChildNodes = {},
+        count = 0;
+        
     for (var i = 0; i < childNodes.length; i++) {
         if (childNodes[i].tagName !== undefined) {
             newChildNodes[count] = childNodes[i];
