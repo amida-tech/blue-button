@@ -23,7 +23,7 @@ describe('payers parser', function () {
 
     it('full deep check', function (done) {
         expect(payers).to.exist;
-        console.log(JSON.stringify(payers, null, 10));
+        // console.log(JSON.stringify(payers, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_payers.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
         var expected = jsutil.jsonParseWithDate(json2Read);
