@@ -133,7 +133,7 @@ testXML.prototype.isIdentical = function (generated, expected) {
 function traverseAttributes(attrs, attributeComp, differentPos) {
     for (var j = 0; j < attrs.length; j++) {
         var attribute = attrs[j].name + "=\"" + attrs[j].value + "\"";
-        
+
         if (attribute === attributeComp) { // We've found in a different position
             return true;
         }
@@ -305,46 +305,41 @@ String.prototype.capitalize = function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
 };
 
+capitalize2 = function (file) {
+     var elements = file.split("_");
+     for (var i = 0; i < elements.length; i++) {
+         elements[i] = elements[i].capitalize();
+     }
+     return elements.join("_");
+};
+
 // generates the DOM representations of both XML documents and returns them as a two-element array, 
 // with the first being the generated XML and the second being the expected XML.
 testXML.prototype.generateXMLDOM = function (file) {
-    capitalize2 = function (file) {
-        var elements = file.split("_");
-        for (var i = 0; i < elements.length; i++) {
-            elements[i] = elements[i].capitalize();
-        }
-        return elements.join("_");
-
-    };
-
     console.log("\nPROCESSING " + file.toUpperCase());
-    var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + capitalize2(file) + '.json', 'utf-8');
-    var actual = gen(JSON.parse(modelJSON), false, new libxmljs.Document(), file);
-    var expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + capitalize2(file) + '.xml');
+    var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + capitalize2(file) + '.json', 'utf-8'),
+        actual = gen(JSON.parse(modelJSON), false, new libxmljs.Document(), file),
+        expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + capitalize2(file) + '.xml');
 
     // write generated file just to visually compare
     fs.writeFileSync('test/fixtures/file-snippets/generated/CCD_1_' + capitalize2(file) + '.xml', actual, 'utf-8');
 
-    var generatedXML = new XmlDOM().parseFromString(actual.toString());
-    var expectedXML = new XmlDOM().parseFromString(expected.toString());
-    return [generatedXML, expectedXML];
+    return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString()];
 };
 
 // A test/sandbox function for experimentation/testing 
 testXML.prototype.generateStubs = function (name1, name2) {
-    var actual = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name1 + '.xml');
-    var expected = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name2 + '.xml');
+    var actual = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name1 + '.xml'),
+        expected = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name2 + '.xml');
 
-    var generatedXML = new XmlDOM().parseFromString(actual.toString());
-    var expectedXML = new XmlDOM().parseFromString(expected.toString());
-    return [generatedXML, expectedXML];
+    return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString()];
 };
 
 // generate an entire CCDA document, with all 10 sections
 testXML.prototype.generateXMLDOMForEntireCCD = function (pathJSON, filenameJSON, pathXML, filenameXML, pathXMLWrite, filenameXMLWrite, singular) {
     console.log("\nPROCESSING WHOLE CCD --> In dump: " + filenameXML + " vs. in dump_gen_xml: " + filenameXMLWrite);
-    var modelJSON;
-    var errorThrown;
+    var modelJSON,
+        errorThrown;
 
     try {
         modelJSON = fs.readFileSync(pathJSON + filenameJSON, 'utf-8');
@@ -354,13 +349,13 @@ testXML.prototype.generateXMLDOMForEntireCCD = function (pathJSON, filenameJSON,
     }
 
     if (!errorThrown) {
-        var actual = gen.genWholeCCDA(JSON.parse(modelJSON));
-        var expected = fs.readFileSync(pathXML + filenameXML);
+        var actual = gen.genWholeCCDA(JSON.parse(modelJSON)),
+            expected = fs.readFileSync(pathXML + filenameXML);
 
         // generate JSON object from expected XML on the fly
         if (singular) {
-            var doc = bb.xml(expected);
-            var result = JSON.stringify(bb.parseXml(doc), undefined, 4);
+            var doc = bb.xml(expected),
+                result = JSON.stringify(bb.parseXml(doc), undefined, 4);
             fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', result, 'utf-8');
         }
 
@@ -370,10 +365,8 @@ testXML.prototype.generateXMLDOMForEntireCCD = function (pathJSON, filenameJSON,
         } catch (e) {
             console.log(e.code);
         }
-
-        var generatedXML = new XmlDOM().parseFromString(actual.toString());
-        var expectedXML = new XmlDOM().parseFromString(expected.toString());
-        return [generatedXML, expectedXML];
+        
+        return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString()];
     } else {
         return ["<ClinicalDocument>", "<ClinicalDocument>"];
     }
