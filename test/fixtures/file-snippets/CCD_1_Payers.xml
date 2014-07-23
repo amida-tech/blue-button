@@ -107,10 +107,10 @@
                                 <telecom value="tel:(781)555-1212" use="HP"/>
                                 <assignedPerson>
                                     <name>
-                                    <prefix>Mr.</prefix>
-                                    <given>Adam</given>
-                                    <given>Frankie</given>
-                                    <family>Everyman</family>
+                                        <prefix>Mr.</prefix>
+                                        <given>Adam</given>
+                                        <given>Frankie</given>
+                                        <family>Everyman</family>
                                     </name>
                                 </assignedPerson>
                             </assignedEntity>

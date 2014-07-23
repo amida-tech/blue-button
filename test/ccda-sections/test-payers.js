@@ -9,9 +9,8 @@ var jsutil = require('../../lib/jsutil');
 
 describe('payers parser', function () {
     var payers = null;
-    debugger;
     before(function (done) {
-        
+
         var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_payers.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
         payers = bb.parseString(xml, {

@@ -6,9 +6,9 @@ var fs = require("fs");
 var test = new lib.testXML();
 
 // testing options/cases
-var TEST_CCDA_SAMPLES = true;
-var TEST_CCD = true;
-var TEST_SECTIONS = true;
+var TEST_CCDA_SAMPLES = false;
+var TEST_CCD = false;
+var TEST_SECTIONS = false;
 
 var supportedComponents = {
     allergies: 'allergies',
