@@ -39,12 +39,12 @@ var PROMPT_TO_SKIP = false;
 var DIFF = true;
 
 // Error Codes
-var DIFFERENT_TAGS = 1;
-var CHILD_NODE_DISCREPANCY = 2;
-var ATTR_MISMATCH = 3;
-var ATTR_MISMATCH_CAP = 3.1;
-var ATTR_MISMATCH_LEN = 3.2;
-var TEXT_DISCREPANCY = 4;
+var DIFFERENT_TAGS = 1;         /* different tag names */
+var CHILD_NODE_DISCREPANCY = 2; /* different number of child nodes */
+var ATTR_MISMATCH = 3;          /* different attribute values for same attribute */
+var ATTR_MISMATCH_CAP = 3.1;    /* different attributes, but capitalization is only difference */
+var ATTR_MISMATCH_LEN = 3.2;    /* different number of attributes for the same node */
+var TEXT_DISCREPANCY = 4;       /* different text within node */
 
 // Defining the class as a function, and later adding methods to its prototype
 var testXML = function () {
@@ -98,7 +98,7 @@ testXML.prototype.isIdentical = function (generated, expected) {
     expected.childNodes = this.extractNodes(expected.childNodes);
 
     // Check if they are both leaf nodes, if so then check if their attributes are the same.
-    if (this.isLeaf(generated) && this.isLeaf(expected)) {
+    if (!generated.childNodes && !expected.childNodes) {
         return this.haveSameAttributes(generated, expected);
     }
 
@@ -157,22 +157,9 @@ testXML.prototype.haveSameAttributes = function (generated, expected) {
                 attributeExp = expAttributes[i].name + "=\"" + expAttributes[i].value + "\"",
                 differentPos = false;
 
-            // see if the attribute is just in a different position
-            for (var j = 0; j < genAttributes.length; j++) {
-                var attribute = genAttributes[j].name + "=\"" + genAttributes[j].value + "\"";
-                // We've found in a different position
-                if (attribute === attributeExp) {
-                    differentPos = true;
-                }
-            }
-
-            for (var k = 0; k < expAttributes.length; k++) {
-                var attribute2 = expAttributes[k].name + "=\"" + expAttributes[k].value + "\"";
-                // We've found in a different position
-                if (attribute2 === attributeGen) {
-                    differentPos = true;
-                }
-            }
+            differentPos = traverseAttributes(genAttributes, attributeExp);
+            differentPos = traverseAttributes(expAttributes, attributeGen);
+           
             if (!differentPos) {
                 error = "\nError: Attributes mismatch: Encountered: " + attributeGen +
                     " but expected: " + attributeExp + " @ lineNumber: " + generated.lineNumber +
@@ -183,6 +170,14 @@ testXML.prototype.haveSameAttributes = function (generated, expected) {
     }
     return true;
 };
+
+// See if its just in a different position
+function traverseAttributes(attrs, attributeComp) {
+    for (var j = 0; j < attrs.length; j++) {
+        if (attrs[j].name + "=\"" + attrs[j].value + "\"" === attributeComp) // We've found in a different position
+            return true;
+    }
+}
 
 // checks if the error is only a capitalization error
 testXML.prototype.isCapError = function (attr1, attr2) {
@@ -288,17 +283,11 @@ testXML.prototype.numChildNodesSame = function (generated, expected) {
     return libCCDAGen.getObjLength(generated.childNodes) === libCCDAGen.getObjLength(expected.childNodes);
 };
 
-// Checks if the current node is a leaf node (i.e., no children). If so, returns true, otherwise returns false;
-/// @root node to evaluate 
-testXML.prototype.isLeaf = function (root) {
-    return root.childNodes === null ? true : false;
-};
-
 // strips out comments and whitespace from the childNodes object
 testXML.prototype.extractNodes = function (childNodes) {
     var newChildNodes = {},
         count = 0;
-        
+
     for (var i = 0; i < childNodes.length; i++) {
         if (childNodes[i].tagName !== undefined) {
             newChildNodes[count] = childNodes[i];
