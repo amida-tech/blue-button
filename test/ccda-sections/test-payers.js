@@ -11,7 +11,7 @@ describe('payers parser', function () {
     var payers = null;
     before(function (done) {
 
-        var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_payers.xml');
+        var filepath = path.join(__dirname, '../fixtures/file-snippets/CCD_1_Payers.xml');
         var xml = fs.readFileSync(filepath, 'utf-8');
         payers = bb.parseString(xml, {
             component: 'ccda_payers'
