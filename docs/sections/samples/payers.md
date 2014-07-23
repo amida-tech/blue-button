@@ -6,162 +6,178 @@ Data model description - [Payers](../payers.md)
 
 ```javascript
 {
-  coverage: {
-    "identifiers": [
+    "coverage": {
+        "identifiers": [
             {
                 "identifier": "1fe2cdd0-7aad-11db-9fe1-0800200c9a66"
             }
-        ],
-  },
-  policy: {
-    "identifiers": [
+        ]
+    },
+    "policy": {
+        "identifiers": [
             {
                 "identifier": "3e676a50-7aac-11db-9fe1-0800200c9a66"
             }
         ],
-     "code": "SELF",
-     "code_system_name": "HL7 RoleClassRelationship",
-     "insurance" : {
-        "identifiers": [
-            {
-                "identifier": "2.16.840.1.113883.19"
-            }
-        ],
-        "code": "PAYOR",
-        "code_system_name": "HL7 RoleCode",
-        "address": [{
-            "streetLines": [
-                "123 Insurance Road"
+        "code": "SELF",
+        "code_system_name": "HL7 RoleClassRelationship",
+        "insurance": {
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19"
+                }
             ],
-            "city": "Blue Bell",
-            "state": "MA",
-            "zip": "02368",
-            "country": "US"
-        }],
-        "phone": [
-            {
-                "number": "(781)555-1515",
-                "type": "work place"
-            }
-        ],
-        "organization": {
-          "name": "Good Health Insurance",
-          "address": [{
-            "streetLines": [
-                "123 Insurance Road"
+            "code": "PAYOR",
+            "code_system_name": "HL7 RoleCode",
+            "address": [
+                {
+                    "streetLines": [
+                        "123 Insurance Road"
+                    ],
+                    "city": "Blue Bell",
+                    "state": "MA",
+                    "zip": "02368",
+                    "country": "US"
+                }
             ],
-            "city": "Blue Bell",
-            "state": "MA",
-            "zip": "02368",
-            "country": "US"
-          }],
-          "phone": [{
-              "number": "(781)555-1515",
-              "type": "work place"
-          }]
-        }
-     }, # end policy
-     "guarantor": {
-        "identifiers": [
-            {
-                "identifier": "329fcdf0-7ab3-11db-9fe1-0800200c9a66"
-            }
-        ],
-        "code": "GUAR",
-        "code_system_name": "HL7 RoleCode",
-        "address": [{
-            "streetLines": [
-                "123 Insurance Road"
+            "phone": [
+                {
+                    "number": "(781)555-1515",
+                    "type": "work place"
+                }
             ],
-            "city": "Blue Bell",
-            "state": "MA",
-            "zip": "02368",
-            "country": "US"
-          }],
-          "phone": [{
-              "number": "(781)555-1515",
-              "type": "work place"
-          }],
-          "name": [{
-            "prefix": "Mr."
-            "last": "Everyman",
-            "given": "Frankie",
-            "first": "Adam"
-        }],
-     }, # end guarantor
-      
-      "participant": {  # covered part participant
-          "date_time": {
-            "point": {
+            "organization": {
+                "name": "Good Health Insurance",
+                "address": [
+                    {
+                        "streetLines": [
+                            "123 Insurance Road"
+                        ],
+                        "city": "Blue Bell",
+                        "state": "MA",
+                        "zip": "02368",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "(781)555-1515",
+                        "type": "work place"
+                    }
+                ]
+            }
+        },
+        "guarantor": {
+            "identifiers": [
+                {
+                    "identifier": "329fcdf0-7ab3-11db-9fe1-0800200c9a66"
+                }
+            ],
+            "code": "GUAR",
+            "code_system_name": "HL7 RoleCode",
+            "address": [
+                {
+                    "streetLines": [
+                        "123 Insurance Road"
+                    ],
+                    "city": "Blue Bell",
+                    "state": "MA",
+                    "zip": "02368",
+                    "country": "US"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "(781)555-1515",
+                    "type": "work place"
+                }
+            ],
+            "name": [
+                {
+                    "prefix": "Mr.",
+                    "last": "Everyman",
+                    "given": "Frankie",
+                    "first": "Adam"
+                }
+            ]
+        },
+        "participant": {
+            "date_time": {
+                "point": {
                     "date": "2012-05-12T00:00:00Z",
                     "precision": "day"
                 }
-          },
-          "role": {
-              "identifiers": [
-                {
-                "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66"
-                }
+            },
+            "role": {
+                "identifiers": [
+                    {
+                        "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66"
+                    }
                 ],
                 "code": "SELF",
                 "code_system_name": "HL7 RoleClassRelationship",
-                "address": [{
-                  "streetLines": [
-                      "17 Daws Rd."
-                  ],
-                  "city": "Blue Bell",
-                  "state": "MA",
-                  "zip": "02368",
-                  "country": "US"
-                }],
-                "name": [{
-                  "prefix": "Mr."
-                  "last": "Everyman",
-                  "given": "Frank",
-                  "first": "A."
-                }],
-          }
-      },
-      # end participant
-      "policy_holder": {
-          "date_time": {
-            "point": {
+                "address": [
+                    {
+                        "streetLines": [
+                            "17 Daws Rd."
+                        ],
+                        "city": "Blue Bell",
+                        "state": "MA",
+                        "zip": "02368",
+                        "country": "US"
+                    }
+                ],
+                "name": [
+                    {
+                        "prefix": "Mr.",
+                        "last": "Everyman",
+                        "given": "Frank",
+                        "first": "A."
+                    }
+                ]
+            }
+        },
+        "policy_holder": {
+            "date_time": {
+                "point": {
                     "date": "2012-05-12T00:00:00Z",
                     "precision": "day"
                 }
-          },
-          "role": {
+            },
+            "role": {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "1138345"
+                    }
+                ],
+                "address": [
+                    {
+                        "streetLines": [
+                            "17 Daws Rd."
+                        ],
+                        "city": "Blue Bell",
+                        "state": "MA",
+                        "zip": "02368",
+                        "country": "US"
+                    }
+                ]
+            }
+        },
+        "authorization": {
             "identifiers": [
                 {
-                "identifier": "2.16.840.1.113883.19",
-                "extension": "1138345"
+                    "identifier": "2.16.840.1.113883.19",
+                    "extension": "1138345"
                 }
-                ],
-                "address": [{
-                  "streetLines": [
-                      "17 Daws Rd."
-                  ],
-                  "city": "Blue Bell",
-                  "state": "MA",
-                  "zip": "02368",
-                  "country": "US"
-                }],
-          }
-      },
-      "authorization": {
-          "identifiers": [
-                {
-                "identifier": "2.16.840.1.113883.19",
-                "extension": "1138345"
-                }
-                ],
-          "procedure": {
-            "name": "Colonoscopy",
-            "code": "73761001",
-            "code_system_name": "SNOMED CT"
-          }
-      }
-  }
+            ],
+            "procedure": {
+                "name": "Colonoscopy",
+                "code": "73761001",
+                "code_system_name": "SNOMED CT"
+            }
+        }
+    }
 }
 
 ```
