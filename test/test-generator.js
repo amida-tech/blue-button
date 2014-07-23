@@ -77,7 +77,7 @@ if (TEST_SECTIONS) {
             });
         });
 
-         // test plan of care
+        // test plan of care
         describe('generating CCDA for plan of care section', function () {
             it('should match plan of care section', function () {
                 var XMLDOMs = test.generateXMLDOM('plan_of_care');
