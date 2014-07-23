@@ -1,0 +1,23 @@
+[
+    {
+        "identifiers": [
+            {
+                "identifier": "1fe2cdd0-7aad-11db-9fe1-0800200c9a66"
+            }
+        ],
+        "policy": {
+            "identifiers": {
+                "identifier": "3e676a50-7aac-11db-9fe1-0800200c9a66"
+            },
+            "code": {
+                "code": "SELF",
+                "code_system_name": "OID 2.16.840.1.113883.5.110"
+            }
+        },
+        "authorization": {
+            "identifiers": {
+                "identifier": "3e676a50-7aac-11db-9fe1-0800200c9a66"
+            }
+        }
+    }
+]

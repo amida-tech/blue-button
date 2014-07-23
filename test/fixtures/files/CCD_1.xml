@@ -2284,7 +2284,7 @@
 									<participant typeCode="HLD">
 										<templateId root="2.16.840.1.113883.10.20.22.4.90"/>
 										<participantRole>
-											<id extension="1138345" root="2.16.840.1.113883.19"/>
+											<id extension=""name"" root="2.16.840.1.113883.19"/>
 											<addr use="HP">
 												<streetAddressLine>17 Daws Rd.</streetAddressLine>
 												<city>Blue Bell</city>
