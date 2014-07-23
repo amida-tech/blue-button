@@ -130,13 +130,15 @@ testXML.prototype.isIdentical = function (generated, expected) {
 };
 
 // See if its just in a different position
-function traverseAttributes(attrs, attributeComp) {
+function traverseAttributes(attrs, attributeComp, differentPos) {
     for (var j = 0; j < attrs.length; j++) {
         var attribute = attrs[j].name + "=\"" + attrs[j].value + "\"";
+        
         if (attribute === attributeComp) { // We've found in a different position
             return true;
         }
     }
+    return differentPos;
 }
 
 // Check if the attributes are the same for two nodes.
@@ -167,23 +169,9 @@ testXML.prototype.haveSameAttributes = function (generated, expected) {
                 attributeExp = expAttributes[i].name + "=\"" + expAttributes[i].value + "\"",
                 differentPos = false;
 
-            differentPos = traverseAttributes(genAttributes, attributeExp);
-            // see if the attribute is just in a different position
-            // for (var j = 0; j < genAttributes.length; j++) {
-            //     var attribute = genAttributes[j].name + "=\"" + genAttributes[j].value + "\"";
-            //     // We've found in a different position
-            //     if (attribute === attributeExp) {
-            //         differentPos = true;
-            //     }
-            // }
-            differentPos = traverseAttributes(expAttributes, attributeGen);
-            // for (var k = 0; k < expAttributes.length; k++) {
-            //     var attribute2 = expAttributes[k].name + "=\"" + expAttributes[k].value + "\"";
-            //     // We've found in a different position
-            //     if (attribute2 === attributeGen) {
-            //         differentPos = true;
-            //     }
-            // }
+            differentPos = traverseAttributes(genAttributes, attributeExp, differentPos);
+            differentPos = traverseAttributes(expAttributes, attributeGen, differentPos);
+
             if (!differentPos) {
                 error = "\nError: Attributes mismatch: Encountered: " + attributeGen +
                     " but expected: " + attributeExp + " @ lineNumber: " + generated.lineNumber +
