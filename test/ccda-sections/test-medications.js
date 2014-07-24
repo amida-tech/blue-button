@@ -44,4 +44,14 @@ describe('medications parser', function () {
 
         done();
     });
+
+    it('Check PIVL_TS Support', function (done) {
+        expect(meds[0].administration.interval).to.exist;
+        expect(meds[0].administration.interval.period).to.exist;
+        expect(meds[0].administration.interval.period.value).to.equal(6);
+        expect(meds[0].administration.interval.period.unit).to.equal("h");
+        expect(meds[0].administration.interval.frequency).to.equal(true);
+        done();
+    });
+
 });
