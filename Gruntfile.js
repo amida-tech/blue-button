@@ -45,7 +45,7 @@ module.exports = function (grunt) {
         },
         jsbeautifier: {
             beautify: {
-                src: ['Gruntfile.js', 'lib/*.js', 'lib/**/*.js', 'test/*.js', 'test/**/*.js'],
+                src: ['Gruntfile.js', 'lib/*.js', 'lib/**/*.js', '!lib/generator/**/*.js', 'test/*.js', 'test/**/*.js'],
                 options: {
                     config: '.jsbeautifyrc'
                 }
