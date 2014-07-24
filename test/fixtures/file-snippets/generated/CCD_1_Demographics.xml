@@ -11,7 +11,7 @@
   </addr>
   <telecom value="(816)276-6909" use="HP"/>
   <patient>
-    <name use="L">
+    <name>
       <given>Isabella</given>
       <given>Isa</given>
       <family>Jones</family>

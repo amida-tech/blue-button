@@ -79,7 +79,14 @@
                   <postalCode>02368</postalCode>
                   <country>US</country>
                 </addr>
-                <playingEntity/>
+                <playingEntity>
+                  <name>
+                    <prefix>Mr.</prefix>
+                    <given>Frank</given>
+                    <given>A.</given>
+                    <family>Everyman</family>
+                  </name>
+                </playingEntity>
               </participantRole>
             </participant>
             <participant typeCode="HLD">
