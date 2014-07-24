@@ -8,9 +8,10 @@ var test = new lib.testXML();
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
 var TEST_CCD = false;
-var TEST_SECTIONS = false;
+var TEST_SECTIONS = true;
 
 var supportedComponents = {
+    payers: 'payers',
     allergies: 'allergies',
     procedures: 'procedures',
     immunizations: 'immunizations',
@@ -28,7 +29,7 @@ var supportedComponents = {
 if (TEST_CCDA_SAMPLES) {
     describe('ccda_samples', function () {
         describe('generating CCDA for all ccda_samples samples', function () {
-            xit('should produce some xml, at the very least', function () {
+            it('should produce some xml, at the very least', function () {
                 var stats = JSON.parse(fs.readFileSync('ccda-explorer/dump/stats.json')),
                     i = 0,
                     sum = 0;

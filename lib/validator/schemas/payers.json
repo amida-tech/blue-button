@@ -191,7 +191,10 @@
         }
     },
     "required": [
-        "policy"
+        "policy",
+        "guarantor",
+        "participant",
+        "policy_holder"
     ],
     "additionalProperties": false
 }

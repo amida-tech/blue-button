@@ -63,7 +63,7 @@
     <entry typeCode="DRIV">
       <observation classCode="OBS" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
-        <id root="2.16.840.1.113883.19"/>
+        <id root="2.16.840.1.113883.19" extension="123456789"/>
         <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
           <originalText>
             <reference value="#Proc1"/>
@@ -103,7 +103,7 @@
               <country>US</country>
             </addr>
             <telecom nullFlavor="UNK"/>
-            <playingEntity classCode="PLC"/>
+            <playingEntity/>
           </participantRole>
         </participant>
       </observation>
@@ -111,7 +111,7 @@
     <entry typeCode="DRIV">
       <act classCode="ACT" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
-        <id root="1.2.3.4.5.6.7.8"/>
+        <id root="1.2.3.4.5.6.7.8" extension="1234567"/>
         <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
           <originalText>
             <reference value="#Proc1"/>
@@ -150,7 +150,7 @@
               <country>US</country>
             </addr>
             <telecom nullFlavor="UNK"/>
-            <playingEntity classCode="PLC"/>
+            <playingEntity/>
           </participantRole>
         </participant>
       </act>
