@@ -113,7 +113,7 @@ describe('Demographics - Schema Conformance', function () {
 
         for (var ii in demographics.dob) {
             var currentDate = demographics.dob[ii];
-            assert.ok(currentDate.date.getDate(), 'Date should be parseable');
+            assert.ok(currentDate.date, 'Date should be parseable');
             assert.isString(currentDate.precision, 'Precision should be a string');
             assert.ok(currentDate.precision.length > 0, 'Precision should have content');
             assert.includeMembers(['year', 'month', 'day', 'hour', 'minute', 'second', 'subsecond'], new Array(currentDate.precision), 'Precision should be valid');

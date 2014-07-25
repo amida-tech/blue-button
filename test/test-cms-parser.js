@@ -7,7 +7,6 @@ var txtToIntObj = require('../lib/parser/cms/cmsTxtToIntObj.js');
 var objConverter = require('../lib/parser/cms/cmsObjConverter.js');
 var txtdata;
 
-
 //-----START: intermediate object testing --------------------------
 
 //loads the file
@@ -353,11 +352,11 @@ describe('Test vitals for given sample file', function () {
     it('checks date types of vitals', function (done) {
         var intObj = txtToIntObj.getIntObj(this.txtdata);
         var bbModel = objConverter.convertToBBModel(intObj);
-        var vitals= bbModel.data.vitals;
-        for(var key in vitals){
+        var vitals = bbModel.data.vitals;
+        for (var key in vitals) {
             var vital = vitals[key];
-            for(var z in vital.date){
-                expect(vital.date[z].date).instanceof(Date);
+            for (var z in vital.date) {
+                expect(vital.date[z].date).to.be.a('string');
             }
         }
         done();
