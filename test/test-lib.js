@@ -105,13 +105,13 @@ testXML.prototype.isIdentical = function (generated, expected) {
     // Since we've reached this point, they are not leaf nodes, so first check if they have the same number of children
     if (!this.numChildNodesSame(generated, expected)) {
         error = "Error: Generated number of child nodes different from expected (generated: " +
-            libCCDAGen.getObjLength(generated.childNodes) + " at lineNumber: " + generated.lineNumber +
-            ", expected: " + libCCDAGen.getObjLength(expected.childNodes) + " at lineNumber:" + expected.lineNumber;
+            Object.keys(generated.childNodes).length + " at lineNumber: " + generated.lineNumber +
+            ", expected: " + Object.keys(expected.childNodes).length + " at lineNumber:" + expected.lineNumber;
         return this.skip(error, CHILD_NODE_DISCREPANCY);
     }
 
     // If they have the same number of children, then start comparing their childNodes by calling the function recursively
-    for (var i = 0; i < libCCDAGen.getObjLength(generated.childNodes) - nullFlavorMismatch; i++) {
+    for (var i = 0; i < Object.keys(generated.childNodes).length - nullFlavorMismatch; i++) {
         var curr_gen = generated.childNodes[i],
             curr_exp = expected.childNodes[i],
             gen_node = (curr_gen.attributes !== undefined ? curr_gen.attributes[0] !== undefined ? curr_gen.attributes[0].nodeName : "" : ""),
@@ -255,13 +255,13 @@ testXML.prototype.sameText = function (generated, expected) {
         expText = "";
 
     if (generated.childNodes !== undefined) {
-        for (var i = 0; i < libCCDAGen.getObjLength(generated.childNodes); i++) {
+        for (var i = 0; i < Object.keys(generated.childNodes).length; i++) {
             if (generated.childNodes[i] !== undefined && generated.childNodes[i].nodeName === "#text") { // then it is a text node
                 genText = [generated.childNodes[i].nodeValue.trim(), generated.lineNumber];
             }
         }
 
-        for (var j = 0; j < libCCDAGen.getObjLength(expected.childNodes); j++) {
+        for (var j = 0; j < Object.keys(expected.childNodes).length; j++) {
             if (expected.childNodes[j] !== undefined && expected.childNodes[j].nodeName === "#text" &&
                 expected.childNodes[j].nodeValue.trim() !== "\n") { // then it is a text node
                 expText = [expected.childNodes[j].nodeValue.trim(), expected.lineNumer];
@@ -283,9 +283,20 @@ testXML.prototype.sameText = function (generated, expected) {
 };
 
 // Returns false if the parent nodes (the ones passed in) have a different number of childNodes, otherwise returns true
-testXML.prototype.numChildNodesSame = function (generated, expected) {
-    return libCCDAGen.getObjLength(generated.childNodes) === libCCDAGen.getObjLength(expected.childNodes);
+testXML.prototype.numChildNodesSame = function (gen, exp) {
+    return Object.keys(gen.childNodes).length === Object.keys(exp.childNodes).length || 
+    (exp.childNodes[0].tagName === "table" && this.skipCase(gen, exp, "display_text"));
 };
+
+testXML.prototype.skipCase = function (gen, exp, cond) {
+    if (cond === "display_text") {
+        if (!gen.childNodes[0] && exp.childNodes[0]
+            && exp.childNodes[0].tagName === "table") {
+            return true;
+        }
+    }
+    return false;
+}
 
 // strips out comments and whitespace from the childNodes object
 testXML.prototype.extractNodes = function (childNodes) {
