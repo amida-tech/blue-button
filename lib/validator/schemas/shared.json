@@ -38,7 +38,7 @@
             "type": "object",
             "properties": {
                 "date": {
-                    "type": "string",
+                    "type": "object",
                     "format": "date-time"
                 },
                 "precision": {
