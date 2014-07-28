@@ -430,7 +430,7 @@
                             "insurance_paid": "$34.00",
                             "patient_responsibility": "$26.00"
                         },
-                        "place": {
+                        "place_of_service": {
                             "code": "11",
                             "name": "Office"
                         },
@@ -605,7 +605,7 @@
                                 "description": "Waiver Of Liability Statement Issued As Required By Payer Policy, Individual Case"
                             }
                         ],
-                        "place": {
+                        "place_of_service": {
                             "code": "11",
                             "name": "Office"
                         },
@@ -639,7 +639,7 @@
                                 "description": "Item Or Service Statutorily Excluded, Does Not Meet The Definition Of Any Medicare Benefit Or,"
                             }
                         ],
-                        "place": {
+                        "place_of_service": {
                             "code": "11",
                             "name": "Office"
                         },
