@@ -27,12 +27,11 @@ generateXMLDOMForEntireCCD()
 var expect = require('chai').expect;
 var assert = require('chai').assert;
 var fs = require("fs");
-var gen = require('../lib/generator/ccda/generator.js');
+var gen = require('../lib/generator/ccda/generator.js'); // to parse a single section
 var XmlDOM = require('xmldom').DOMParser;
 var execSync = require('execSync');
 var bb = require("../index.js");
 var libxmljs = require('libxmljs');
-var libCCDAGen = require("../lib/generator/ccda/lib/templating_functions.js");
 
 // Flags
 var PROMPT_TO_SKIP = false;
@@ -381,6 +380,33 @@ testXML.prototype.generateXMLDOMForEntireCCD = function (pathJSON, filenameJSON,
     } else {
         return ["<ClinicalDocument>", "<ClinicalDocument>"];
     }
+};
+
+// generate an entire CCDA document, with all 10 sections
+testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
+    console.log("\nPROCESSING WHOLE CCD --> In dump: " + XML_file + " vs. in dump_gen_xml: " + XML_file);
+    var expected = fs.readFileSync(XML_file), // get the xml file
+        doc = bb.xml(expected),
+        modelJSON = bb.parseXml(doc), // parse to JSON
+        actual = gen.genWholeCCDA(modelJSON); // generate back the xml
+
+    // write JSON 
+    if (test === "sample_ccda")
+        fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
+    if (test === "ccda_explorer") {
+        var i = XML_file.split("/")[2].split("-")[0],
+            j = XML_file.split("/")[2].split("-")[1].split(".")[0];
+        fs.writeFileSync('ccda-explorer/dump_gen_json/' + i + '-' + j + '.json', modelJSON, 'utf-8');
+    }
+
+    // write xml
+    if (test == "sample_ccda")
+        fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.xml', actual, 'utf-8');
+    else 
+        fs.writeFileSync('ccda-explorer/dump_gen_xml/' + i + '-' + j + '.xml', actual, 'utf-8');
+
+
+    return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString())];
 };
 
 module.exports.testXML = testXML;

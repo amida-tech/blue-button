@@ -109,7 +109,7 @@
                 <code nullFlavor="UNK"/>
                 <entryRelationship typeCode="SUBJ">
                   <procedure classCode="PROC" moodCode="PRMS">
-                    <code code="[object Object]" codeSystem="2.16.840.1.113883.6.96"/>
+                    <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
                   </procedure>
                 </entryRelationship>
               </act>

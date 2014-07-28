@@ -8,7 +8,7 @@ var test = new lib.testXML();
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
 var TEST_CCD = false;
-var TEST_SECTIONS = true;
+var TEST_SECTIONS = false;
 
 var supportedComponents = {
     payers: 'payers',
@@ -31,8 +31,7 @@ if (TEST_CCDA_SAMPLES) {
         describe('generating CCDA for all ccda_samples samples', function () {
             it('should produce some xml, at the very least', function () {
                 var stats = JSON.parse(fs.readFileSync('ccda-explorer/dump/stats.json')),
-                    i = 0,
-                    sum = 0;
+                    i = 0, sum = 0;
                 for (var sample in stats) {
                     i = stats[sample]["index"];
                     if (stats[sample]["full"][0]) { // add && (i < n) to shorten
@@ -40,9 +39,7 @@ if (TEST_CCDA_SAMPLES) {
                             fileNameXML = i + "-" + j + ".xml";
                             if (true) { // replace with j < n to shorten
                                 if (true) { // replace with fileNameXML == "[filename]" to narrow down
-                                    var XMLDOMs = test.generateXMLDOMForEntireCCD('ccda-explorer/dump/', i + "-" + j + ".json",
-                                        'ccda-explorer/dump/', i + "-" + j + ".xml", 'ccda-explorer/dump_gen_xml/',
-                                        sample + "_" + i + "-" + j + ".xml", false);
+                                    var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('ccda-explorer/dump/' + i + "-" + j + ".xml", "ccda_explorer");
                                     sum++;
                                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
                                     console.log("TOTAL ERRORS: " + test.errors["total"]);
@@ -75,10 +72,12 @@ if (TEST_SECTIONS) {
     describe('sections', function () {
         it('should match respective sections', function () {
             Object.keys(supportedComponents).forEach(function (section) {
-                var XMLDOMs = test.generateXMLDOM(section);
-
-                assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-                console.log("TOTAL ERRORS: " + test.errors["total"]);
+                if (section === "payers") { // add section === "[section]" for specific section
+                    var XMLDOMs = test.generateXMLDOM(section);
+    
+                    assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+                    console.log("TOTAL ERRORS: " + test.errors["total"]);
+                }
             });
         });
     });
