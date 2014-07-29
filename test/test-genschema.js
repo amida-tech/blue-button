@@ -19,7 +19,7 @@ var checkSchemaConformity = function checkSchemaConformity(obj, schema, path) {
             checkSchemaConformity(obj[i], elemSchema, path + '[' + i + ']');
         }
     } else if (obj instanceof Date) {
-        assert.equal("datetime", schema, msg);
+        assert.equal("string", schema, msg);
     } else if (typeof obj === 'object') {
         assert.isObject(schema, msg);
         Object.keys(obj).forEach(function (key) {
