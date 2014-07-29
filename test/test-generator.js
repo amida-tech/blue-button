@@ -31,14 +31,15 @@ if (TEST_CCDA_SAMPLES) {
         describe('generating CCDA for all ccda_samples samples', function () {
             it('should produce some xml, at the very least', function () {
                 var stats = JSON.parse(fs.readFileSync('ccda-explorer/dump/stats.json')),
-                    i = 0, sum = 0;
+                    i = 0,
+                    sum = 0;
                 for (var sample in stats) {
                     i = stats[sample]["index"];
                     if (i < 3) { // add (i < n) to shorten
                         for (var j = 0; j < stats[sample]["files"].length; j++) {
                             fileNameXML = i + "-" + j + ".xml";
                             if (true) { // replace with j < n to shorten
-                                if (fileNameXML == "1-0.xml") { // replace with fileNameXML == "[filename]" to narrow down
+                                if (fileNameXML === "1-0.xml") { // replace with fileNameXML == "[filename]" to narrow down
                                     var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('ccda-explorer/dump/' + i + "-" + j + ".xml", "ccda_explorer");
                                     sum++;
                                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
@@ -74,7 +75,7 @@ if (TEST_SECTIONS) {
             Object.keys(supportedComponents).forEach(function (section) {
                 if (section === "payers") { // add section === "[section]" for specific section
                     var XMLDOMs = test.generateXMLDOM(section);
-    
+
                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
                     console.log("TOTAL ERRORS: " + test.errors["total"]);
                 }

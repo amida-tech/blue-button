@@ -283,19 +283,18 @@ testXML.prototype.sameText = function (generated, expected) {
 
 // Returns false if the parent nodes (the ones passed in) have a different number of childNodes, otherwise returns true
 testXML.prototype.numChildNodesSame = function (gen, exp) {
-    return Object.keys(gen.childNodes).length === Object.keys(exp.childNodes).length || 
-    (exp.childNodes[0].tagName === "table" && this.skipCase(gen, exp, "display_text"));
+    return Object.keys(gen.childNodes).length === Object.keys(exp.childNodes).length ||
+        (exp.childNodes[0].tagName === "table" && this.skipCase(gen, exp, "display_text"));
 };
 
 testXML.prototype.skipCase = function (gen, exp, cond) {
     if (cond === "display_text") {
-        if (!gen.childNodes[0] && exp.childNodes[0]
-            && exp.childNodes[0].tagName === "table") {
+        if (!gen.childNodes[0] && exp.childNodes[0] && exp.childNodes[0].tagName === "table") {
             return true;
         }
     }
     return false;
-}
+};
 
 // strips out comments and whitespace from the childNodes object
 testXML.prototype.extractNodes = function (childNodes) {
@@ -389,22 +388,23 @@ testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
         doc = bb.xml(expected),
         modelJSON = bb.parseXml(doc), // parse to JSON
         actual = gen.genWholeCCDA(modelJSON); // generate back the xml
+    i = XML_file.split("/")[2].split("-")[0],
+    j = XML_file.split("/")[2].split("-")[1].split(".")[0];
 
     // write JSON 
-    if (test === "sample_ccda")
+    if (test === "sample_ccda") {
         fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
+    }
     if (test === "ccda_explorer") {
-        var i = XML_file.split("/")[2].split("-")[0],
-            j = XML_file.split("/")[2].split("-")[1].split(".")[0];
         fs.writeFileSync('ccda-explorer/dump_gen_json/' + i + '-' + j + '.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
     }
 
     // write xml
-    if (test == "sample_ccda")
+    if (test === "sample_ccda") {
         fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.xml', actual, 'utf-8');
-    else 
+    } else {
         fs.writeFileSync('ccda-explorer/dump_gen_xml/' + i + '-' + j + '.xml', actual, 'utf-8');
-
+    }
 
     return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString())];
 };
