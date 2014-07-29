@@ -396,7 +396,7 @@ testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
     if (test === "ccda_explorer") {
         var i = XML_file.split("/")[2].split("-")[0],
             j = XML_file.split("/")[2].split("-")[1].split(".")[0];
-        fs.writeFileSync('ccda-explorer/dump_gen_json/' + i + '-' + j + '.json', modelJSON, 'utf-8');
+        fs.writeFileSync('ccda-explorer/dump_gen_json/' + i + '-' + j + '.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
     }
 
     // write xml

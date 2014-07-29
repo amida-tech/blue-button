@@ -8,7 +8,7 @@ var test = new lib.testXML();
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
 var TEST_CCD = false;
-var TEST_SECTIONS = false;
+var TEST_SECTIONS = true;
 
 var supportedComponents = {
     payers: 'payers',
@@ -34,11 +34,11 @@ if (TEST_CCDA_SAMPLES) {
                     i = 0, sum = 0;
                 for (var sample in stats) {
                     i = stats[sample]["index"];
-                    if (stats[sample]["full"][0]) { // add && (i < n) to shorten
+                    if (i < 3) { // add (i < n) to shorten
                         for (var j = 0; j < stats[sample]["files"].length; j++) {
                             fileNameXML = i + "-" + j + ".xml";
                             if (true) { // replace with j < n to shorten
-                                if (true) { // replace with fileNameXML == "[filename]" to narrow down
+                                if (fileNameXML == "1-0.xml") { // replace with fileNameXML == "[filename]" to narrow down
                                     var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('ccda-explorer/dump/' + i + "-" + j + ".xml", "ccda_explorer");
                                     sum++;
                                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
