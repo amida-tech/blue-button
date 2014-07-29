@@ -52,6 +52,8 @@ var testXML = function () {
         "silence_len": false
     };
 
+    this.verbose = false;
+
     // possible errors
     this.errors = {
         "total": 0,
@@ -65,6 +67,7 @@ var testXML = function () {
         "textDiscrepancy": 0,
     };
 };
+
 
 // Returns true if the two XML documents are identical, otherwise returns false.
 testXML.prototype.isIdentical = function (generated, expected) {
@@ -190,16 +193,15 @@ testXML.prototype.isCapError = function (attr1, attr2) {
 // A utility function that allows you to skip failed assertions and produce 
 // a diff of the two XML documents.
 testXML.prototype.skip = function (error, errorCode, subCode) {
-    this.logError(error, errorCode, subCode);
+    if (this.verbose) {
+        this.logError(error, errorCode, subCode);
+    }
+
     if (PROMPT_TO_SKIP) {
         console.log("Skip? > y/n: ");
         var result = execSync.exec('test/support/a.out');
         var out = result.stdout;
-        if (out.substr(12, 13).trim() === "y") {
-            return true;
-        } else {
-            return false;
-        }
+        return out.substr(12, 13).trim() === "y";
     } else if (DIFF) {
         return true;
     } else {
@@ -388,14 +390,15 @@ testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
         doc = bb.xml(expected),
         modelJSON = bb.parseXml(doc), // parse to JSON
         actual = gen.genWholeCCDA(modelJSON); // generate back the xml
-    i = XML_file.split("/")[2].split("-")[0],
-    j = XML_file.split("/")[2].split("-")[1].split(".")[0];
+    var i, j; // iteration variable for ccda_explorer
 
     // write JSON 
     if (test === "sample_ccda") {
         fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
     }
     if (test === "ccda_explorer") {
+        i = XML_file.split("/")[2].split("-")[0],
+        j = XML_file.split("/")[2].split("-")[1].split(".")[0];
         fs.writeFileSync('ccda-explorer/dump_gen_json/' + i + '-' + j + '.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
     }
 

@@ -4,6 +4,7 @@ var lib = require('./test-lib.js');
 var fs = require("fs");
 
 var test = new lib.testXML();
+test.verbose = false; // log setting
 
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
@@ -59,7 +60,7 @@ if (TEST_CCD) {
     describe('ccda', function () {
         describe('generating CCDA for entire CCD', function () {
             it('should match entire CCD', function () {
-                var XMLDOMs = test.generateXMLDOMForEntireCCD('test/fixtures/files/json/', 'CCD_1.json', 'test/fixtures/files/generated/', 'CCD_1_gen.xml', 'test/fixtures/files/generated/', 'CCD_1_gen.xml');
+                var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('test/fixtures/files/CCD_1.xml', 'sample_ccda');
 
                 assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
                 console.log("TOTAL ERRORS: " + test.errors["total"]);
