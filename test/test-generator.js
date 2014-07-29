@@ -8,8 +8,8 @@ test.verbose = false; // log setting
 
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
-var TEST_CCD = true;
-var TEST_SECTIONS = false;
+var TEST_CCD = false;
+var TEST_SECTIONS = true;
 
 var supportedComponents = {
     payers: 'payers',
@@ -74,11 +74,11 @@ if (TEST_SECTIONS) {
     describe('sections', function () {
         it('should match respective sections', function () {
             Object.keys(supportedComponents).forEach(function (section) {
-                if (section === "payers") { // add section === "[section]" for specific section
+                if (true) { // add section === "[section]" for specific section
                     var XMLDOMs = test.generateXMLDOM(section);
 
                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-                    console.log("TOTAL ERRORS: " + test.errors["total"]);
+                    console.log("ERRORS: " + test.errors["sections"][test.curr_section]);
                 }
             });
         });
