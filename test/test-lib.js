@@ -339,7 +339,7 @@ capitalize2 = function (file) {
 // with the first being the generated XML and the second being the expected XML.
 testXML.prototype.generateXMLDOM = function (file) {
     this.curr_section = file;
-    console.log("\n\x1b[0m" + "PROCESSING " + file.toUpperCase());
+    this.logMsg("\n\x1b[0m" + "PROCESSING " + file.toUpperCase());
     var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + capitalize2(file) + '.json', 'utf-8'),
         actual = gen(JSON.parse(modelJSON), false, new libxmljs.Document(), file),
         expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + capitalize2(file) + '.xml');
@@ -361,9 +361,9 @@ testXML.prototype.generateStubs = function (name1, name2) {
 // generate an entire CCDA document, with all 10 sections
 testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
     if (test === "ccda_explorer") {
-        console.log("\nPROCESSING CCD --> In dump: " + XML_file + " vs. in dump_gen_xml: " + XML_file);
+        this.logMsg("\nPROCESSING CCD --> In dump: " + XML_file + " vs. in dump_gen_xml: " + XML_file);
     } else {
-        console.log("\nPROCESSING SAMPLE CCD --> In: " + XML_file + " vs. in: test/fixtures/files/generated/CCD_1_gen.xml");
+        this.logMsg("\nPROCESSING SAMPLE CCD --> In: " + XML_file + " vs. in: test/fixtures/files/generated/CCD_1_gen.xml");
     }
     
     var expected = fs.readFileSync(XML_file), // get the xml file
@@ -391,5 +391,11 @@ testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
 
     return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString())];
 };
+
+testXML.prototype.logMsg = function(msg) {
+    if (this.verbose) {
+        console.log(msg);
+    }
+}
 
 module.exports.testXML = testXML;

@@ -26,6 +26,7 @@
                     }
                 },
                 "insurance": {
+                    "type": "object",
                     "properties": {
                         "code": {
                             "type": "object",
@@ -34,6 +35,7 @@
                             }
                         },
                         "performer": {
+                            "type": "object",
                             "properties": {
                                 "identifiers": {
                                     "type": "array",
@@ -180,21 +182,23 @@
                     "minItems": 1
                 },
                 "procedure": {
-                    "code": {
-                        "type": "object",
-                        "properties": {
-                            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
-                        }
-                    },
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "type": "object",
+                            "properties": {
+                                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                            }
+                        }    
+                    }
                 }
             }
-        }
+        },
+        "required": [
+            "policy",
+            "participant",
+            "authorization"
+        ]
     },
-    "required": [
-        "policy",
-        "guarantor",
-        "participant",
-        "policy_holder"
-    ],
     "additionalProperties": false
 }
