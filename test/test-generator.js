@@ -8,7 +8,7 @@ test.verbose = false; // log setting
 
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
-var TEST_CCD = false;
+var TEST_CCD = true;
 var TEST_SECTIONS = true;
 
 var supportedComponents = {
