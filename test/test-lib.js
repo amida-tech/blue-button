@@ -83,7 +83,6 @@ var testXML = function () {
     };
 };
 
-
 // Returns true if the two XML documents are identical, otherwise returns false.
 testXML.prototype.isIdentical = function (generated, expected) {
     var error, nullFlavorMismatch = 0;
@@ -365,7 +364,7 @@ testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
     } else {
         this.logMsg("\nPROCESSING SAMPLE CCD --> In: " + XML_file + " vs. in: test/fixtures/files/generated/CCD_1_gen.xml");
     }
-    
+
     var expected = fs.readFileSync(XML_file), // get the xml file
         doc = bb.xml(expected),
         modelJSON = bb.parseXml(doc), // parse to JSON
@@ -392,10 +391,10 @@ testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
     return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString())];
 };
 
-testXML.prototype.logMsg = function(msg) {
+testXML.prototype.logMsg = function (msg) {
     if (this.verbose) {
         console.log(msg);
     }
-}
+};
 
 module.exports.testXML = testXML;
