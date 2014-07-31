@@ -4,49 +4,6 @@ var expect = require('chai').expect;
 var path = require('path');
 var validator = require('../lib/validator/validator.js');
 
-describe('Test social history', function () {
-    before(function (done) {
-        testSocialList = require(__dirname + '/fixtures/validator/samples/testSocial.js');
-        done();
-    });
-
-    //this is true for nows
-    // it('empty social histoy', function (done) {
-    //     var socialObj = {};
-    //     var valid = validator.validateSectionObj(socialObj, 'social_history');
-    //     expect(valid).to.true;
-    //     done();
-    // });
-
-    it('regular social history', function (done) {
-        var socialObj = testSocialList.regular;
-        var valid = validator.validateSectionObj(socialObj, 'social_history');
-        expect(valid).to.true;
-        done();
-    });
-
-    it('social history without smoking value', function (done) {
-        var socialObj = testSocialList.noSmokingValue;
-        var valid = validator.validateSectionObj(socialObj, 'social_history');
-        expect(valid).to.false;
-        done();
-    });
-
-    it('social history with no smoking dates', function (done) {
-        var socialObj = testSocialList.noSmokingDate;
-        var valid = validator.validateSectionObj(socialObj, 'social_history');
-        expect(valid).to.true;
-        done();
-    });
-
-    it('social history with empty array as smoking dates', function (done) {
-        var socialObj = testSocialList.emptySmokingDate;
-        var valid = validator.validateSectionObj(socialObj, 'social_history');
-        expect(valid).to.true;
-        done();
-    });
-});
-
 describe('Test Payers', function () {
     before(function (done) {
         testPayers = require(__dirname + '/fixtures/validator/samples/testPayers.js');
@@ -65,10 +22,9 @@ describe('Test Payers', function () {
         var valid = validator.validateSectionObj(missing_guarantor, 'payers');
         expect(valid).to.true;
 
-        // this should be false but it returns true for some reason
-        // var missing_policy = testPayers.test_payers_list.missing_policy;
-        // var valid = validator.validateSectionObj(missing_policy, 'payers');
-        // expect(valid).to.false;
+        var missing_policy = testPayers.test_payers_list.missing_policy;
+        var valid = validator.validateSectionObj(missing_policy, 'payers');
+        expect(valid).to.false;
         done();
 
     });
