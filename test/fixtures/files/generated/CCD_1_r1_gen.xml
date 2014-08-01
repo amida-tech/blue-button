@@ -97,6 +97,985 @@
       </component>
       <component>
         <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE"/>
+          <title>MEDICATIONS</title>
+          <text/>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
+              <text>Albuterol inhalant<reference value="#MedSec_1"/></text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="undefined"/>
+                <high value="undefined"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="6" unit="h"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <rateQuantity nullFlavor="UNK"/>
+              <maxDoseQuantity nullFlavor="UNK">
+                <numerator nullFlavor="UNK"/>
+                <denominator nullFlavor="UNK"/>
+              </maxDoseQuantity>
+              <administrationUnitCode nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="307782" displayName="Albuterol 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>
+                        <reference value="#MedSec_1"/>
+                      </originalText>
+                      <translation nullFlavor="UNK"/>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name/>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                  <telecom nullFlavor="UNK"/>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                    <name>Community Health and Hospitals</name>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
+                  <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
+                  <playingEntity classCode="MMAT">
+                    <code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+                    <name>Aerosol</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
+                  <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="undefined"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id nullFlavor="NI"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="undefined"/>
+                    <high value="undefined"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="307782" displayName="Albuterol 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                    </assignedEntity>
+                  </performer>
+                  <author>
+                    <time nullFlavor="UNK"/>
+                    <assignedAuthor>
+                      <id nullFlavor="UNK"/>
+                      <addr nullFlavor="UNK"/>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <act classCode="ACT" moodCode="INT">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+                      <text>label in spanish<reference value="#MedSec_1"/></text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="307782" displayName="Albuterol 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                        <name>Community Health and Hospitals</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr nullFlavor="UNK"/>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
+              <text>Clopidogrel<reference value="#MedSec_1"/></text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="undefined"/>
+                <high value="undefined"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="6" unit="h"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <rateQuantity nullFlavor="UNK"/>
+              <maxDoseQuantity nullFlavor="UNK">
+                <numerator nullFlavor="UNK"/>
+                <denominator nullFlavor="UNK"/>
+              </maxDoseQuantity>
+              <administrationUnitCode nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="309362" displayName="Clopidogrel 75 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>
+                        <reference value="#MedSec_1"/>
+                      </originalText>
+                      <translation nullFlavor="UNK"/>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name/>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                  <telecom nullFlavor="UNK"/>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                    <name>Community Health and Hospitals</name>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
+                  <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
+                  <playingEntity classCode="MMAT">
+                    <code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+                    <name>Aerosol</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
+                  <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="undefined"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id nullFlavor="NI"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="undefined"/>
+                    <high value="undefined"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="309362" displayName="Clopidogrel 75 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                    </assignedEntity>
+                  </performer>
+                  <author>
+                    <time nullFlavor="UNK"/>
+                    <assignedAuthor>
+                      <id nullFlavor="UNK"/>
+                      <addr nullFlavor="UNK"/>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <act classCode="ACT" moodCode="INT">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+                      <text>label in spanish<reference value="#MedSec_1"/></text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="309362" displayName="Clopidogrel 75 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                        <name>Community Health and Hospitals</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr nullFlavor="UNK"/>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
+              <text>Metoprolol<reference value="#MedSec_1"/></text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="undefined"/>
+                <high value="undefined"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="6" unit="h"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <rateQuantity nullFlavor="UNK"/>
+              <maxDoseQuantity nullFlavor="UNK">
+                <numerator nullFlavor="UNK"/>
+                <denominator nullFlavor="UNK"/>
+              </maxDoseQuantity>
+              <administrationUnitCode nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="430618" displayName="Metoprolol 25 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>
+                        <reference value="#MedSec_1"/>
+                      </originalText>
+                      <translation nullFlavor="UNK"/>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name/>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                  <telecom nullFlavor="UNK"/>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                    <name>Community Health and Hospitals</name>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
+                  <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
+                  <playingEntity classCode="MMAT">
+                    <code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+                    <name>Aerosol</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
+                  <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="undefined"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id nullFlavor="NI"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="undefined"/>
+                    <high value="undefined"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="430618" displayName="Metoprolol 25 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                    </assignedEntity>
+                  </performer>
+                  <author>
+                    <time nullFlavor="UNK"/>
+                    <assignedAuthor>
+                      <id nullFlavor="UNK"/>
+                      <addr nullFlavor="UNK"/>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <act classCode="ACT" moodCode="INT">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+                      <text>label in spanish<reference value="#MedSec_1"/></text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="430618" displayName="Metoprolol 25 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                        <name>Community Health and Hospitals</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr nullFlavor="UNK"/>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
+              <text>Prednisone<reference value="#MedSec_1"/></text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="undefined"/>
+                <high value="undefined"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="6" unit="h"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <rateQuantity nullFlavor="UNK"/>
+              <maxDoseQuantity nullFlavor="UNK">
+                <numerator nullFlavor="UNK"/>
+                <denominator nullFlavor="UNK"/>
+              </maxDoseQuantity>
+              <administrationUnitCode nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="312615" displayName="Prednisone 20 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>
+                        <reference value="#MedSec_1"/>
+                      </originalText>
+                      <translation nullFlavor="UNK"/>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name/>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                  <telecom nullFlavor="UNK"/>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                    <name>Community Health and Hospitals</name>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
+                  <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
+                  <playingEntity classCode="MMAT">
+                    <code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+                    <name>Aerosol</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
+                  <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="undefined"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id nullFlavor="NI"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="undefined"/>
+                    <high value="undefined"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="312615" displayName="Prednisone 20 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                    </assignedEntity>
+                  </performer>
+                  <author>
+                    <time nullFlavor="UNK"/>
+                    <assignedAuthor>
+                      <id nullFlavor="UNK"/>
+                      <addr nullFlavor="UNK"/>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <act classCode="ACT" moodCode="INT">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+                      <text>label in spanish<reference value="#MedSec_1"/></text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="312615" displayName="Prednisone 20 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                        <name>Community Health and Hospitals</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr nullFlavor="UNK"/>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
+              <text>Cephalexin<reference value="#MedSec_1"/></text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="undefined"/>
+                <high value="undefined"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="6" unit="h"/>
+              </effectiveTime>
+              <routeCode nullFlavor="UNK"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <rateQuantity nullFlavor="UNK"/>
+              <maxDoseQuantity nullFlavor="UNK">
+                <numerator nullFlavor="UNK"/>
+                <denominator nullFlavor="UNK"/>
+              </maxDoseQuantity>
+              <administrationUnitCode nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="197454" displayName="Cephalexin 500 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                      <originalText>
+                        <reference value="#MedSec_1"/>
+                      </originalText>
+                      <translation nullFlavor="UNK"/>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name/>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                  <telecom nullFlavor="UNK"/>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                    <name>Community Health and Hospitals</name>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
+                  <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
+                  <playingEntity classCode="MMAT">
+                    <code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+                    <name>Aerosol</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
+                  <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="undefined"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id nullFlavor="NI"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="undefined"/>
+                    <high value="undefined"/>
+                  </effectiveTime>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="197454" displayName="Cephalexin 500 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                    </assignedEntity>
+                  </performer>
+                  <author>
+                    <time nullFlavor="UNK"/>
+                    <assignedAuthor>
+                      <id nullFlavor="UNK"/>
+                      <addr nullFlavor="UNK"/>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <act classCode="ACT" moodCode="INT">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                      <code code="409073007" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+                      <text>label in spanish<reference value="#MedSec_1"/></text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <repeatNumber value="1"/>
+                  <quantity value="75"/>
+                  <product>
+                    <manufacturedProduct classCode="MANU">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                      <id nullFlavor="UNK"/>
+                      <manufacturedMaterial>
+                        <code code="197454" displayName="Cephalexin 500 MG oral tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                          <originalText>
+                            <reference value="#MedSec_1"/>
+                          </originalText>
+                          <translation nullFlavor="UNK"/>
+                        </code>
+                      </manufacturedMaterial>
+                      <manufacturerOrganization>
+                        <name/>
+                      </manufacturerOrganization>
+                    </manufacturedProduct>
+                  </product>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+                      <addr>
+                        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                        <city>Portland</city>
+                        <state>OR</state>
+                        <postalCode>99123</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name>
+                          <prefix>Dr.</prefix>
+                          <given>Henry</given>
+                          <family>Seven</family>
+                        </name>
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5.9999.1393"/>
+                        <name>Community Health and Hospitals</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr nullFlavor="UNK"/>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
           <templateId root="2.16.840.1.113883.10.20.22.2.18"/>
           <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payer"/>
           <title>INSURANCE PROVIDERS</title>
