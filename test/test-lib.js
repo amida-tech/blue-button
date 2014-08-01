@@ -358,7 +358,7 @@ testXML.prototype.generateStubs = function (name1, name2) {
 };
 
 // generate an entire CCDA document, with all 10 sections
-testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
+testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test, version) {
     if (test === "ccda_explorer") {
         this.logMsg("\nPROCESSING CCD --> In dump: " + XML_file + " vs. in dump_gen_xml: " + XML_file);
     } else {
@@ -373,7 +373,7 @@ testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
 
     // write JSON 
     if (test === "sample_ccda") {
-        fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
+        fs.writeFileSync('test/fixtures/files/generated/CCD_1' + version + '_gen.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
     }
     if (test === "ccda_explorer") {
         i = XML_file.split("/")[2].split("-")[0],
@@ -383,7 +383,7 @@ testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test) {
 
     // write xml
     if (test === "sample_ccda") {
-        fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.xml', actual, 'utf-8');
+        fs.writeFileSync('test/fixtures/files/generated/CCD_1' + version + '_gen.xml', actual, 'utf-8');
     } else {
         fs.writeFileSync('ccda-explorer/dump_gen_xml/' + i + '-' + j + '.xml', actual, 'utf-8');
     }

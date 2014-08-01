@@ -55,12 +55,26 @@ if (TEST_CCDA_SAMPLES) {
     });
 }
 
-// test whole CCD document
+// test whole CCD document (version: ccda-r1.1 (ccda))
 if (TEST_CCD) {
     describe('ccda', function () {
         describe('generating CCDA for entire CCD', function () {
             it('should match entire CCD', function () {
-                var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('test/fixtures/files/CCD_1.xml', 'sample_ccda');
+                var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('test/fixtures/files/CCD_1.xml', 'sample_ccda', '');
+
+                assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+                test.logMsg("TOTAL ERRORS: " + test.errors["total"]);
+            });
+        });
+    });
+}
+
+// test whole CCD document (version: ccda-r1)
+if (TEST_CCD) {
+    describe('ccda', function () {
+        describe('generating CCDA for entire CCD', function () {
+            it('should match entire CCD', function () {
+                var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('test/fixtures/files/CCD_1_r1.xml', 'sample_ccda', '_r1');
 
                 assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
                 test.logMsg("TOTAL ERRORS: " + test.errors["total"]);

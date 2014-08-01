@@ -865,8 +865,7 @@
                   <participant typeCode="COV">
                     <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
                     <time>
-                      <low nullFlavor="UNK"/>
-                      <high nullFlavor="UNK"/>
+                      <low value="undefined"/>
                     </time>
                     <participantRole classCode="PAT">
                       <id root="14d4a520-7aae-11db-9fe1-0800200c9a66" extension="1138345"/>
