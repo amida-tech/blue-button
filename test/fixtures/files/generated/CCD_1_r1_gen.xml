@@ -97,6 +97,191 @@
       </component>
       <component>
         <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+          <title>IMMUNIZATIONS</title>
+          <text/>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+              <text>
+                <reference value="#immun1"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="undefined"/>
+              <routeCode code="IM" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Route Code" displayName="Intramuscular injection"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="88" displayName="Influenza virus vaccine" codeSystemName="CVX Vaccine">
+                      <originalText>
+                        <reference value="#immi1"/>
+                      </originalText>
+                      <translation nullFlavor="UNK"/>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name/>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                  <telecom nullFlavor="UNK"/>
+                </assignedEntity>
+              </performer>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+                  <text>label in spanish<reference value="#MedSec_1"/></text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <id root="115f0f70-1343-4938-b62f-631de9749a0a"/>
+              <text>
+                <reference value="#immun2"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="undefined"/>
+              <routeCode code="IM" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Route Code" displayName="Intramuscular injection"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="88" displayName="Influenza virus vaccine" codeSystemName="CVX Vaccine">
+                      <originalText>
+                        <reference value="#immi2"/>
+                      </originalText>
+                      <translation nullFlavor="UNK"/>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name/>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                  <telecom nullFlavor="UNK"/>
+                </assignedEntity>
+              </performer>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+                  <text>label in spanish<reference value="#MedSec_1"/></text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <id root="78598407-9f16-42d5-8ffd-09281a60fe33"/>
+              <text>
+                <reference value="#immun3"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="undefined"/>
+              <routeCode code="IM" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Route Code" displayName="Intramuscular injection"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="33" displayName="Pneumococcal polysaccharide vaccine" codeSystemName="CVX Vaccine">
+                      <originalText>
+                        <reference value="#immi3"/>
+                      </originalText>
+                      <translation nullFlavor="UNK"/>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name/>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                  <telecom nullFlavor="UNK"/>
+                </assignedEntity>
+              </performer>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+                  <text>label in spanish<reference value="#MedSec_1"/></text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <id root="261e94a0-95fb-4975-b5a5-c8e12c01c1bc"/>
+              <text>
+                <reference value="#immun4"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="undefined"/>
+              <routeCode code="IM" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Route Code" displayName="Intramuscular injection"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <id nullFlavor="UNK"/>
+                  <manufacturedMaterial>
+                    <code code="09" displayName="Tetanus and diphtheria toxoids" codeSystemName="CVX Vaccine">
+                      <originalText>
+                        <reference value="#immi4"/>
+                      </originalText>
+                      <translation nullFlavor="UNK"/>
+                    </code>
+                  </manufacturedMaterial>
+                  <manufacturerOrganization>
+                    <name/>
+                  </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="UNK"/>
+                  <telecom nullFlavor="UNK"/>
+                </assignedEntity>
+              </performer>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+                  <text>label in spanish<reference value="#MedSec_1"/></text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
           <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
           <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE"/>
@@ -115,14 +300,14 @@
               <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
                 <period value="6" unit="h"/>
               </effectiveTime>
-              <routeCode nullFlavor="UNK"/>
-              <doseQuantity nullFlavor="UNK"/>
+              <routeCode code="IPINHL" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Route Code" displayName="Inhalation, oral"/>
+              <doseQuantity value="2" unit="undefined"/>
               <rateQuantity nullFlavor="UNK"/>
               <maxDoseQuantity nullFlavor="UNK">
                 <numerator nullFlavor="UNK"/>
                 <denominator nullFlavor="UNK"/>
               </maxDoseQuantity>
-              <administrationUnitCode nullFlavor="UNK"/>
+              <administrationUnitCode code="415215001" displayName="Puff" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="SNOMED CT"/>
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -294,6 +479,13 @@
                   </performer>
                 </supply>
               </entryRelationship>
+              <precondition typeCode="PRCN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.25"/>
+                <criterion>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <value xsi:type="CE" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
+                </criterion>
+              </precondition>
             </substanceAdministration>
           </entry>
           <entry typeCode="DRIV">
@@ -309,14 +501,13 @@
               <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
                 <period value="6" unit="h"/>
               </effectiveTime>
-              <routeCode nullFlavor="UNK"/>
-              <doseQuantity nullFlavor="UNK"/>
+              <routeCode code="PO" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Route Code" displayName="undefined"/>
+              <doseQuantity value="1" unit="undefined"/>
               <rateQuantity nullFlavor="UNK"/>
               <maxDoseQuantity nullFlavor="UNK">
                 <numerator nullFlavor="UNK"/>
                 <denominator nullFlavor="UNK"/>
               </maxDoseQuantity>
-              <administrationUnitCode nullFlavor="UNK"/>
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -503,14 +694,13 @@
               <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
                 <period value="6" unit="h"/>
               </effectiveTime>
-              <routeCode nullFlavor="UNK"/>
-              <doseQuantity nullFlavor="UNK"/>
+              <routeCode code="PO" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Route Code" displayName="undefined"/>
+              <doseQuantity value="1" unit="undefined"/>
               <rateQuantity nullFlavor="UNK"/>
               <maxDoseQuantity nullFlavor="UNK">
                 <numerator nullFlavor="UNK"/>
                 <denominator nullFlavor="UNK"/>
               </maxDoseQuantity>
-              <administrationUnitCode nullFlavor="UNK"/>
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -697,14 +887,13 @@
               <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
                 <period value="6" unit="h"/>
               </effectiveTime>
-              <routeCode nullFlavor="UNK"/>
-              <doseQuantity nullFlavor="UNK"/>
+              <routeCode code="PO" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Route Code" displayName="undefined"/>
+              <doseQuantity value="1" unit="undefined"/>
               <rateQuantity nullFlavor="UNK"/>
               <maxDoseQuantity nullFlavor="UNK">
                 <numerator nullFlavor="UNK"/>
                 <denominator nullFlavor="UNK"/>
               </maxDoseQuantity>
-              <administrationUnitCode nullFlavor="UNK"/>
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -891,14 +1080,13 @@
               <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
                 <period value="6" unit="h"/>
               </effectiveTime>
-              <routeCode nullFlavor="UNK"/>
-              <doseQuantity nullFlavor="UNK"/>
+              <routeCode code="PO" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Route Code" displayName="undefined"/>
+              <doseQuantity value="1" unit="undefined"/>
               <rateQuantity nullFlavor="UNK"/>
               <maxDoseQuantity nullFlavor="UNK">
                 <numerator nullFlavor="UNK"/>
                 <denominator nullFlavor="UNK"/>
               </maxDoseQuantity>
-              <administrationUnitCode nullFlavor="UNK"/>
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1155,6 +1343,25 @@
       </component>
       <component>
         <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>PLAN OF CARE</title>
+          <text/>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
+              <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4a"/>
+              <code code="23426006" displayName="Pulmonary function test" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+              <statusCode code="new"/>
+              <effectiveTime>
+                <center value="20000421"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
           <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
           <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROBLEM LIST"/>
@@ -1349,6 +1556,208 @@
                       <text>UNIMPLEMENTED</text>
                     </observationRange>
                   </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="undefined" displayName="Social History"/>
+          <title>SOCIAL HISTORY</title>
+          <text/>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+              <id extension="123456789" root="2.16.840.1.113883.19"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="undefined"/>
+                <high value="undefined"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="8517006" displayName="Smoker, current status unknown" codeSystem="2.16.840.1.113883.6.96"/>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+              <id root="9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"/>
+              <code code="229819007" codeSystem="2.16.840.1.113883.6.96" displayName="tobacco use and exposure">
+                <originalText>
+                  <reference value="#soc1"/>
+                </originalText>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="undefined"/>
+                <high value="undefined"/>
+              </effectiveTime>
+              <value xsi:type="ST">1 pack per day</value>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+              <id root="45efb604-7049-4a2e-ad33-d38556c9636c"/>
+              <code code="229819007" codeSystem="2.16.840.1.113883.6.96" displayName="tobacco use and exposure">
+                <originalText>
+                  <reference value="#soc1"/>
+                </originalText>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="undefined"/>
+                <high value="undefined"/>
+              </effectiveTime>
+              <value xsi:type="ST">1 pack per day</value>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+              <id root="37f76c51-6411-4e1d-8a37-957fd49d2cef"/>
+              <code code="229819007" codeSystem="2.16.840.1.113883.6.96" displayName="Alcohol consumption">
+                <originalText>
+                  <reference value="#soc1"/>
+                </originalText>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="undefined"/>
+                <high value="undefined"/>
+              </effectiveTime>
+              <value xsi:type="ST">1 pack per day</value>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS"/>
+          <title>VITAL SIGNS</title>
+          <text/>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="undefined"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+                  <code code="50373000" displayName="Body height" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                  <text>
+                    <reference value="#vit0"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <value xsi:type="PQ" value="86" unit="cm"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="c6f88322-67ad-11db-bd13-0800200c9a66"/>
+                  <code code="27113001" displayName="Body weight" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                  <text>
+                    <reference value="#vit1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <value xsi:type="PQ" value="132" unit="kg"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="c6f88323-67ad-11db-bd13-0800200c9a66"/>
+                  <code code="271649006" displayName="Systolic BP" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                  <text>
+                    <reference value="#vit2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <value xsi:type="PQ" value="86" unit="mm[Hg]"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="c6f88324-67ad-11db-bd13-0800200c9a66"/>
+                  <code code="271650006" displayName="Diastolic BP" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                  <text>
+                    <reference value="#vit3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <value xsi:type="PQ" value="177" unit="mm[Hg]"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="d11275e1-67ae-11db-bd13-0800200c9a66"/>
+                  <code code="50373000" displayName="Body height" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                  <text>
+                    <reference value="#vit4"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <value xsi:type="PQ" value="88" unit="cm"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="d11275e2-67ae-11db-bd13-0800200c9a66"/>
+                  <code code="27113001" displayName="Body weight" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                  <text>
+                    <reference value="#vit5"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <value xsi:type="PQ" value="145" unit="kg"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="d11275e3-67ae-11db-bd13-0800200c9a66"/>
+                  <code code="271649006" displayName="Systolic BP" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                  <text>
+                    <reference value="#vit6"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <value xsi:type="PQ" value="88" unit="mm[Hg]"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="d11275e4-67ae-11db-bd13-0800200c9a66"/>
+                  <code code="271650006" displayName="Diastolic BP" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                  <text>
+                    <reference value="#vit7"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="undefined"/>
+                  <value xsi:type="PQ" value="UNK" unit="mm[Hg]"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                 </observation>
               </component>
             </organizer>
