@@ -436,6 +436,13 @@
                         "precision": "subsecond"
                     }
                 },
+                "performers": [
+                    {
+                        "name": "General Physician",
+                        "code": "59058001",
+                        "code_system_name": "SNOMED CT"
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Community Urgent Care Center",
