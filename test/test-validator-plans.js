@@ -11,7 +11,13 @@ describe('Test Plan Of Care', function () {
     });
     it('regular plan of care from CCD_1', function (done) {
         var regPlanOfCare = testPlan_Of_Care.test_plan_of_care_list.regular1;
-        var valid = validator.validateSectionObj(regPlanOfCare, 'plan_of_care');
+        var valid = validator.validateSection(regPlanOfCare, 'plan_of_care');
+        if (!valid) {
+            var errors = validator.getLastError();
+            for (var x in errors.errors) {
+                console.log(errors.errors[x]);
+            }
+        }
         expect(valid).to.true;
         done();
     });

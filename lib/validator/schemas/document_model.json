@@ -38,6 +38,12 @@
                         "$ref": "http://local.com/problem"
                     }
                 },
+                "plan_of_care": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/plan_of_care"
+                    }
+                },
                 "procedures": {
                     "type": "array",
                     "items": {
