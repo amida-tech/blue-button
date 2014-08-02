@@ -388,181 +388,6 @@
                 ]
             }
         ],
-        "medications": [
-            {
-                "date_time": {},
-                "identifiers": [
-                    {
-                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
-                    }
-                ],
-                "status": "active",
-                "product": {
-                    "unencoded_name": "Albuterol inhalant",
-                    "product": {
-                        "name": "Albuterol 0.09 MG/ACTUAT inhalant solution",
-                        "code": "307782",
-                        "code_system_name": "RXNORM"
-                    }
-                },
-                "administration": {
-                    "route": {
-                        "name": "Inhalation, oral",
-                        "code": "IPINHL",
-                        "code_system_name": "Route Code"
-                    },
-                    "form": {
-                        "name": "Puff",
-                        "code": "415215001",
-                        "code_system_name": "SNOMED CT"
-                    },
-                    "dose": {
-                        "value": 2
-                    }
-                },
-                "precondition": {
-                    "code": {
-                        "code": "ASSERTION",
-                        "code_system_name": "HL7ActCode"
-                    },
-                    "value": {
-                        "name": "Wheezing",
-                        "code": "56018004",
-                        "code_system_name": "SNOMED CT"
-                    }
-                }
-            },
-            {
-                "date_time": {},
-                "identifiers": [
-                    {
-                        "identifier": "cdbd5b05-6cde-11db-9fe1-0800200c9a66"
-                    }
-                ],
-                "status": "active",
-                "product": {
-                    "unencoded_name": "Clopidogrel",
-                    "product": {
-                        "name": "Clopidogrel 75 MG oral tablet",
-                        "code": "309362",
-                        "code_system_name": "RXNORM"
-                    }
-                },
-                "administration": {
-                    "route": {
-                        "code": "PO",
-                        "code_system_name": "Route Code"
-                    },
-                    "dose": {
-                        "value": 1
-                    }
-                }
-            },
-            {
-                "date_time": {},
-                "identifiers": [
-                    {
-                        "identifier": "cdbd5b01-6cde-11db-9fe1-0800200c9a66"
-                    }
-                ],
-                "status": "active",
-                "product": {
-                    "unencoded_name": "Metoprolol",
-                    "product": {
-                        "name": "Metoprolol 25 MG oral tablet",
-                        "code": "430618",
-                        "code_system_name": "RXNORM"
-                    }
-                },
-                "administration": {
-                    "route": {
-                        "code": "PO",
-                        "code_system_name": "Route Code"
-                    },
-                    "dose": {
-                        "value": 1
-                    }
-                }
-            },
-            {
-                "date_time": {
-                    "low": {
-                        "date": "2000-03-28T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "identifiers": [
-                    {
-                        "identifier": "cdbd5b03-6cde-11db-9fe1-0800200c9a66"
-                    }
-                ],
-                "status": "active",
-                "product": {
-                    "unencoded_name": "Prednisone",
-                    "product": {
-                        "name": "Prednisone 20 MG oral tablet",
-                        "code": "312615",
-                        "code_system_name": "RXNORM"
-                    }
-                },
-                "administration": {
-                    "route": {
-                        "code": "PO",
-                        "code_system_name": "Route Code"
-                    },
-                    "dose": {
-                        "value": 1
-                    },
-                    "interval": {
-                        "period": {
-                            "value": 24,
-                            "unit": "h"
-                        }
-                    }
-                }
-            },
-            {
-                "date_time": {
-                    "low": {
-                        "date": "2000-03-28T00:00:00Z",
-                        "precision": "day"
-                    },
-                    "high": {
-                        "date": "2000-04-04T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "identifiers": [
-                    {
-                        "identifier": "cdbd5b07-6cde-11db-9fe1-0800200c9a66"
-                    }
-                ],
-                "status": "completed",
-                "product": {
-                    "unencoded_name": "Cephalexin",
-                    "product": {
-                        "name": "Cephalexin 500 MG oral tablet",
-                        "code": "197454",
-                        "code_system_name": "RXNORM"
-                    }
-                },
-                "administration": {
-                    "route": {
-                        "code": "PO",
-                        "code_system_name": "Route Code"
-                    },
-                    "dose": {
-                        "value": 1
-                    },
-                    "interval": {
-                        "period": {
-                            "value": 6,
-                            "unit": "h"
-                        }
-                    }
-                }
-            }
-        ],
         "encounters": [
             {
                 "encounter": {
@@ -754,7 +579,6 @@
                     "code": "195967001",
                     "code_system_name": "SNOMED CT"
                 },
-                "status": "completed",
                 "source_list_identifiers": [
                     {
                         "identifier": "6a2fa88d-4174-4909-aece-db44b60a3abb"
@@ -779,7 +603,6 @@
                     "code": "233604007",
                     "code_system_name": "SNOMED CT"
                 },
-                "status": "completed",
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -804,7 +627,6 @@
                     "code": "233604007",
                     "code_system_name": "SNOMED CT"
                 },
-                "status": "completed",
                 "source_list_identifiers": [
                     {
                         "identifier": "d11275e9-67ae-11db-bd13-0800200c9a66"
@@ -824,7 +646,6 @@
                     "code": "22298006",
                     "code_system_name": "SNOMED CT"
                 },
-                "status": "completed",
                 "source_list_identifiers": [
                     {
                         "identifier": "5a2c903c-bd77-4bd1-ad9d-452383fbfefa"
@@ -924,15 +745,6 @@
                         ]
                     }
                 },
-                "policy_holder": {
-                    "performer": {
-                        "identifiers": [
-                            {
-                                "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66"
-                            }
-                        ]
-                    }
-                },
                 "authorization": {
                     "identifiers": [
                         {
@@ -976,10 +788,11 @@
         "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation",
         "cardinality error: found 2 when expecting 1:1 at h:entryRelationship/h:observation/h:value",
-        "nullFlavor alert:  missing but required identifiers in entry -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifiers in ProblemObservation -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in insurance -> policy -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required guarantor in entry -> payers_section -> CCD"
+        "nullFlavor alert:  missing but required guarantor in entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required policy_holder in entry -> payers_section -> CCD"
     ]
 }
