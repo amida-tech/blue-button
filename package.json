@@ -27,7 +27,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "blue-button-meta": "^0.1.0",
+    "blue-button-meta": "git://github.com/amida-tech/blue-button-meta.git#kevin-clinical-statements",
     "deep-equal": "*",
     "libxmljs": "*",
     "node-uuid": "*",
