@@ -19,7 +19,7 @@ describe('medications parser', function () {
         done();
     });
 
-    it('full deep check', function (done) {
+    xit('full deep check', function (done) {
         expect(meds).to.exist;
         //console.log(JSON.stringify(meds, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Medications.json');
@@ -44,4 +44,14 @@ describe('medications parser', function () {
 
         done();
     });
+
+    it('Check PIVL_TS Support', function (done) {
+        expect(meds[0].administration.interval).to.exist;
+        expect(meds[0].administration.interval.period).to.exist;
+        expect(meds[0].administration.interval.period.value).to.equal(6);
+        expect(meds[0].administration.interval.period.unit).to.equal("h");
+        expect(meds[0].administration.interval.frequency).to.equal(true);
+        done();
+    });
+
 });

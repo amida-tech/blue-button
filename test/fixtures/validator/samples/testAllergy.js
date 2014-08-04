@@ -1,7 +1,7 @@
 var testAllergy = {
     "regular1": {
         "date": [{
-            "date": "2007-05-01T00:00:00.000Z",
+            "date": "2007-05-01T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -25,7 +25,7 @@ var testAllergy = {
     },
     "regular2": {
         "date": [{
-            "date": "2008-05-01T00:00:00.000Z",
+            "date": "2008-05-01T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -49,7 +49,7 @@ var testAllergy = {
     },
     "regular3": {
         "date": [{
-            "date": "2006-05-01T00:00:00.000Z",
+            "date": "2006-05-01T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -73,7 +73,7 @@ var testAllergy = {
     },
     "noId": {
         "date": [{
-            "date": "2006-05-01T00:00:00.000Z",
+            "date": "2006-05-01T00:00:00Z",
             "precision": "day"
         }],
         "allergen": {
@@ -114,7 +114,7 @@ var testAllergy = {
     },
     "noAllergen": {
         "date": [{
-            "date": "2006-05-01T00:00:00.000Z",
+            "date": "2006-05-01T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -133,7 +133,7 @@ var testAllergy = {
     },
     "emptyReaction": {
         "date": [{
-            "date": "2006-05-01T00:00:00.000Z",
+            "date": "2006-05-01T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -153,7 +153,7 @@ var testAllergy = {
     },
     "badReaction": {
         "date": [{
-            "date": "2006-05-01T00:00:00.000Z",
+            "date": "2006-05-01T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{

@@ -7,10 +7,10 @@ Data model description - [Problems](../problems.md)
 ```javascript
 [{
     "date": [{
-        "date": "2008-01-03T00:00:00.000Z",
+        "date": "2008-01-03T00:00:00Z",
         "precision": "day"
     }, {
-        "date": "2008-01-03T00:00:00.000Z",
+        "date": "2008-01-03T00:00:00Z",
         "precision": "day"
     }],
     "identifiers": [{
@@ -31,10 +31,10 @@ Data model description - [Problems](../problems.md)
     }]
 }, {
     "date": [{
-        "date": "2007-01-03T00:00:00.000Z",
+        "date": "2007-01-03T00:00:00Z",
         "precision": "day"
     }, {
-        "date": "2008-01-03T00:00:00.000Z",
+        "date": "2008-01-03T00:00:00Z",
         "precision": "day"
     }],
     "identifiers": [{

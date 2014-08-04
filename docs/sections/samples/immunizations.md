@@ -7,7 +7,7 @@ Data model description - [Immunizations](../immunizations.md)
 ```javascript
 [{
     "date": [{
-        "date": "1999-11-01T00:00:00.000Z",
+        "date": "1999-11-01T00:00:00Z",
         "precision": "month"
     }],
     "identifiers": [{
@@ -68,7 +68,7 @@ Data model description - [Immunizations](../immunizations.md)
     }
 }, {
     "date": [{
-        "date": "1998-12-15T00:00:00.000Z",
+        "date": "1998-12-15T00:00:00Z",
         "precision": "day"
     }],
     "identifiers": [{
@@ -129,7 +129,7 @@ Data model description - [Immunizations](../immunizations.md)
     }
 }, {
     "date": [{
-        "date": "1998-12-15T00:00:00.000Z",
+        "date": "1998-12-15T00:00:00Z",
         "precision": "day"
     }],
     "identifiers": [{
@@ -190,7 +190,7 @@ Data model description - [Immunizations](../immunizations.md)
     }
 }, {
     "date": [{
-        "date": "1998-12-15T00:00:00.000Z",
+        "date": "1998-12-15T00:00:00Z",
         "precision": "day"
     }],
     "identifiers": [{

@@ -2,7 +2,7 @@
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
   <id extension="998991" root="2.16.840.1.113883.19.5.99999.2"/>
   <id extension="111-00-2330" root="2.16.840.1.113883.4.1"/>
-  <addr>
+  <addr use="HP">
     <streetAddressLine>1357 Amber Drive</streetAddressLine>
     <city>Beaverton</city>
     <state>OR</state>
@@ -11,7 +11,7 @@
   </addr>
   <telecom value="(816)276-6909" use="HP"/>
   <patient>
-    <name use="L">
+    <name>
       <given>Isabella</given>
       <given>Isa</given>
       <family>Jones</family>
@@ -24,7 +24,7 @@
     <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
     <guardian>
       <code code="PRN" displayName="Parent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role Code"/>
-      <addr>
+      <addr use="HP">
         <streetAddressLine>1357 Amber Drive</streetAddressLine>
         <city>Beaverton</city>
         <state>OR</state>
@@ -41,7 +41,7 @@
     </guardian>
     <birthplace>
       <place>
-        <addr>
+        <addr use="HP">
           <city>Beaverton</city>
           <state>OR</state>
           <postalCode>97867</postalCode>

@@ -9,7 +9,7 @@
     }],
     "status": "Completed",
     "date": [{
-        "date": "2012-05-12T00:00:00.000Z",
+        "date": "2012-05-12T00:00:00Z",
         "precision": "day"
     }],
     "body_sites": [{
@@ -68,7 +68,7 @@
     }],
     "status": "Aborted",
     "date": [{
-        "date": "2011-02-03T00:00:00.000Z",
+        "date": "2011-02-03T00:00:00Z",
         "precision": "day"
     }],
     "body_sites": [{
@@ -131,7 +131,7 @@
     }],
     "status": "Completed",
     "date": [{
-        "date": "2011-02-03T00:00:00.000Z",
+        "date": "2011-02-03T00:00:00Z",
         "precision": "day"
     }],
     "providers": [{

@@ -2,30 +2,36 @@ var testSocial = {
     "regular": {
         "smoking_statuses": [{
             "value": "Former smoker",
-            "date": [{
-                "date": "2005-05-01T00:00:00.000Z",
-                "precision": "day"
-            }, {
-                "date": "2009-02-27T13:00:00.000Z",
-                "precision": "subsecond"
-            }]
+            "date_time": {
+                "low": {
+                    "date": "1999-11-14T00:00:00Z",
+                    "precision": "day"
+                },
+                "high": {
+                    "date": "1999-11-14T00:00:00Z",
+                    "precision": "day"
+                }
+            }
         }]
     },
     "noSmokingValue": {
         "smoking_statuses": [{
-            "date": [{
-                "date": "2005-05-01T00:00:00.000Z",
-                "precision": "day"
-            }, {
-                "date": "2009-02-27T13:00:00.000Z",
-                "precision": "subsecond"
-            }]
+            "date_time": {
+                "low": {
+                    "date": "1999-11-14T00:00:00Z",
+                    "precision": "day"
+                },
+                "high": {
+                    "date": "1999-11-14T00:00:00Z",
+                    "precision": "day"
+                }
+            }
         }]
     },
     "emptySmokingDate": {
         "smoking_statuses": [{
             "value": "Former smoker",
-            "date": []
+            "date_time": []
         }]
     },
     "noSmokingDate": {

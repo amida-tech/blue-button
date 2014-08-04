@@ -20,7 +20,7 @@ Data model description - [Immunizations](../immunizations.md)
         },
         "date": [
             {
-                "date": "2002-04-21T00:00:00.000Z",
+                "date": "2002-04-21T00:00:00Z",
                 "precision": "day"
             }
         ]
@@ -39,7 +39,7 @@ Data model description - [Immunizations](../immunizations.md)
         },
         "date": [
             {
-                "date": "1990-02-02T00:00:00.000Z",
+                "date": "1990-02-02T00:00:00Z",
                 "precision": "day"
             }
         ]
@@ -58,7 +58,7 @@ Data model description - [Immunizations](../immunizations.md)
         },
         "date": [
             {
-                "date": "2009-01-02T00:00:00.000Z",
+                "date": "2009-01-02T00:00:00Z",
                 "precision": "day"
             }
         ]

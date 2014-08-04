@@ -9,17 +9,17 @@
         "date": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
+                "$ref": "http://local.com/common_models#/properties/cda_date"
             }
         },
     "identifiers": {
         "type": "array",
         "items": {
-            "$ref": "http://local.com/commonModels#/properties/cda_id"
+            "$ref": "http://local.com/common_models#/properties/cda_id"
         }
     },
     "problem": {
-        "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
     },
     "negation_indicator": {
         "type": "boolean"
@@ -39,7 +39,7 @@
     "source_list_identifiers": {
         "type": "array",
         "items": {
-            "$ref": "http://local.com/commonModels#/properties/cda_id"
+            "$ref": "http://local.com/common_models#/properties/cda_id"
         }
     }
     },

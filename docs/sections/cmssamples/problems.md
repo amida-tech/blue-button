@@ -12,11 +12,11 @@ Data model description - [Problems](../problems.md)
         },
         "date": [
             {
-                "date": "2005-08-09T00:00:00.000Z",
+                "date": "2005-08-09T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "2011-02-28T00:00:00.000Z",
+                "date": "2011-02-28T00:00:00Z",
                 "precision": "day"
             }
         ]
@@ -27,11 +27,11 @@ Data model description - [Problems](../problems.md)
         },
         "date": [
             {
-                "date": "2008-01-25T00:00:00.000Z",
+                "date": "2008-01-25T00:00:00Z",
                 "precision": "day"
             },
             {
-                "date": "2010-01-25T00:00:00.000Z",
+                "date": "2010-01-25T00:00:00Z",
                 "precision": "day"
             }
         ]

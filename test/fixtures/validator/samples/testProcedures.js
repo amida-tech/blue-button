@@ -9,10 +9,12 @@ var testProcedureList = {
             "identifier": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
         }],
         "status": "Completed",
-        "date": [{
-            "date": "2012-05-12T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "body_sites": [{
             "name": "colon",
             "code": "appropriate_code",
@@ -69,10 +71,12 @@ var testProcedureList = {
             "identifier_type": "123456789"
         }],
         "status": "Aborted",
-        "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "body_sites": [{
             "name": "Abdomen and pelvis",
             "code": "416949008",
@@ -133,10 +137,12 @@ var testProcedureList = {
             "identifier_type": "1234567"
         }],
         "status": "Completed",
-        "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "providers": [{
             "address": {
                 "streetLines": [
@@ -191,10 +197,12 @@ var testProcedureList = {
             "identifier": "1.2.3.4.5.6.7.8",
             "identifier_type": "1234567"
         }],
-        "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "providers": [{
             "address": {
                 "streetLines": [
@@ -245,10 +253,12 @@ var testProcedureList = {
             "identifier_type": "1234567"
         }],
         "status": "Completed",
-        "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "providers": [{
             "address": {
                 "streetLines": [
@@ -302,10 +312,12 @@ var testProcedureList = {
             "identifier_type": "1234567"
         }],
         "status": "Completed",
-        "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "providers": [{
             "address": {
                 "streetLines": [
@@ -361,10 +373,12 @@ var testProcedureList = {
             "identifier_type": "1234567"
         }],
         "status": "Completed",
-        "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "providers": [{
             "address": {
                 "streetLines": [
@@ -414,10 +428,12 @@ var testProcedureList = {
             "identifier_type": "1234567"
         }],
         "status": "Completed",
-        "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "providers": [{
             "address": {
                 "streetLines": [
@@ -472,10 +488,12 @@ var testProcedureList = {
             "identifier_type": "1234567"
         }],
         "status": "Completed",
-        "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "providers": [{
             "address": {
                 "street": [
@@ -531,10 +549,12 @@ var testProcedureList = {
             "identifier_type": "1234567"
         }],
         "status": "Completed",
-        "date": [{
-            "date": "2011-02-03T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "date_time": {
+            "point": {
+                "date": "1999-11-14T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "locations": [{
             "name": "Community Gastroenterology Clinic",
             "loc_type": {
