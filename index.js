@@ -17,9 +17,6 @@ exports.parseText2 = parser.parseText2;
 //need to review if this is still needed
 exports.parse = parser.parse;
 
-
-exports.generateSchema = require("./lib/schema.js").generateSchema;
-
 // ccda generation
 exports.generateCCDA = require("./lib/generator/ccda/generator.js").genWholeCCDA;
 

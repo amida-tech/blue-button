@@ -775,6 +775,10 @@ Allowed Amount:  $504.80
 
 Non-Covered:  $0.00
 
+
+
+
+
 Claim Number: 1234567890123
 
 Provider: No Information Available

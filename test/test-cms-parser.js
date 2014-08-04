@@ -7,6 +7,8 @@ var txtToIntObj = require('../lib/parser/cms/cmsTxtToIntObj.js');
 var objConverter = require('../lib/parser/cms/cmsObjConverter.js');
 var txtdata;
 
+//-----START: intermediate object testing --------------------------
+
 //loads the file
 
 function loadFile(filename) {
@@ -272,6 +274,8 @@ describe('Test a file with only sources', function () {
 
 });
 
+//-------- END: Intermediate file testing -----
+
 describe('Test file parsing beginning to end', function () {
 
     before(function (done) {
@@ -283,9 +287,9 @@ describe('Test file parsing beginning to end', function () {
     it('checks if the file is converted', function (done) {
         var outputFilename = __dirname + '/fixtures/cms/bbModel.json';
         var intObj = txtToIntObj.getIntObj(this.txtdata);
-        //console.log(JSON.stringify(intObj, null, 4));
-        var bbModel = objConverter.convertToBBModel(intObj);
 
+        var bbModel = objConverter.convertToBBModel(intObj);
+        //console.log(JSON.stringify(bbModel.data.demographics, null, 4));
         fs.writeFile(outputFilename, JSON.stringify(bbModel, null, 4), function (err) {
             if (err) {
                 console.log(err);
@@ -331,6 +335,30 @@ describe('Test claims for given sample file', function () {
         var bbModel = objConverter.convertToBBModel(intObj);
         var totalPlans = bbModel.data.claims.length;
         expect(totalPlans).to.equal(5);
+        done();
+
+    });
+
+});
+
+describe('Test vitals for given sample file', function () {
+
+    before(function (done) {
+        var txtfile = loadFile('sample2.txt');
+        this.txtdata = txtfile.toString();
+        done();
+    });
+
+    it('checks date types of vitals', function (done) {
+        var intObj = txtToIntObj.getIntObj(this.txtdata);
+        var bbModel = objConverter.convertToBBModel(intObj);
+        var vitals = bbModel.data.vitals;
+        for (var key in vitals) {
+            var vital = vitals[key];
+            for (var z in vital.date) {
+                expect(vital.date[z].date).to.be.a('string');
+            }
+        }
         done();
 
     });
