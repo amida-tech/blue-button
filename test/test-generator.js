@@ -4,11 +4,11 @@ var lib = require('./test-lib.js');
 var fs = require("fs");
 
 var test = new lib.testXML();
-test.verbose = true; // log setting
+test.verbose = false; // log setting
 
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
-var TEST_CCD = true;
+var TEST_CCD = false;
 var TEST_SECTIONS = true;
 
 var supportedComponents = {
