@@ -10,7 +10,7 @@
       <act classCode="ACT" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
         <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
-        <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+        <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
         <statusCode code="completed"/>
         <effectiveTime>
           <low value="20080103"/>
@@ -34,7 +34,7 @@
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
                 <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
-                <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+                <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <text>
                   <reference value="#STAT1"/>
                 </text>
@@ -49,7 +49,7 @@
             <entryRelationship typeCode="SUBJ" inversionInd="true">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                <code code="445518008" codeSystem="2.16.840.1.113883.6.96" displayName="Age at onset"/>
+                <code code="445518008" displayName="Age At Onset" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
                 <statusCode code="completed"/>
                 <value xsi:type="PQ" value="57" unit="a"/>
               </observation>
@@ -57,7 +57,7 @@
             <entryRelationship typeCode="REFR">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                <code code="11323-3" displayName="Health status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <text>
                   <reference value="#problems"/>
                 </text>
@@ -73,7 +73,7 @@
       <act classCode="ACT" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
         <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
-        <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+        <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
         <statusCode code="completed"/>
         <effectiveTime>
           <low value="20070103"/>
@@ -97,7 +97,7 @@
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
                 <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
-                <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+                <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <text>
                   <reference value="#STAT2"/>
                 </text>
@@ -112,7 +112,7 @@
             <entryRelationship typeCode="SUBJ" inversionInd="true">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                <code code="445518008" codeSystem="2.16.840.1.113883.6.96" displayName="Age at onset"/>
+                <code code="445518008" displayName="Age At Onset" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
                 <statusCode code="completed"/>
                 <value xsi:type="PQ" value="57" unit="a"/>
               </observation>
@@ -120,7 +120,7 @@
             <entryRelationship typeCode="REFR">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                <code code="11323-3" displayName="Health status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <text>
                   <reference value="#problems"/>
                 </text>
