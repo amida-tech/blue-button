@@ -13,12 +13,12 @@
             ],
             "code": {
                 "code": "SELF",
-                "code_system_name": "OID 2.16.840.1.113883.5.110"
+                "code_system_name": "HL7 RoleCode"
             },
             "insurance": {
                 "code": {
                     "code": "PAYOR",
-                    "code_system_name": "OID 2.16.840.1.113883.5.110"
+                    "code_system_name": "HL7 RoleCode"
                 },
                 "performer": {
                     "identifiers": [

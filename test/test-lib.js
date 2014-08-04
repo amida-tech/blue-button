@@ -284,19 +284,18 @@ testXML.prototype.sameText = function (generated, expected) {
 
 // Returns false if the parent nodes (the ones passed in) have a different number of childNodes, otherwise returns true
 testXML.prototype.numChildNodesSame = function (gen, exp) {
-    return Object.keys(gen.childNodes).length === Object.keys(exp.childNodes).length || 
-    (exp.childNodes[0].tagName === "table" && this.skipCase(gen, exp, "display_text"));
+    return Object.keys(gen.childNodes).length === Object.keys(exp.childNodes).length ||
+        (exp.childNodes[0].tagName === "table" && this.skipCase(gen, exp, "display_text"));
 };
 
 testXML.prototype.skipCase = function (gen, exp, cond) {
     if (cond === "display_text") {
-        if (!gen.childNodes[0] && exp.childNodes[0]
-            && exp.childNodes[0].tagName === "table") {
+        if (!gen.childNodes[0] && exp.childNodes[0] && exp.childNodes[0].tagName === "table") {
             return true;
         }
     }
     return false;
-}
+};
 
 // strips out comments and whitespace from the childNodes object
 testXML.prototype.extractNodes = function (childNodes) {
