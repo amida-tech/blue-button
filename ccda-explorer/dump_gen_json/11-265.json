@@ -1,1 +1,1374 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Lee",
+                "first": "Lori"
+            },
+            "dob": {
+                "point": {
+                    "date": "1944-05-08T12:00:00Z",
+                    "precision": "second"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19.5.99999.2",
+                    "identifier_type": "998991"
+                },
+                {
+                    "identifier": "2.16.840.1.113883.4.1",
+                    "identifier_type": "111-00-2330"
+                }
+            ],
+            "marital_status": "Married",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "3612 Khale Street"
+                    ],
+                    "city": "Hemingway",
+                    "state": "SC",
+                    "zip": "29554",
+                    "country": "US",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "(843)558-6567",
+                    "type": "mobile contact"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "spa",
+                    "preferred": true,
+                    "mode": "Expressed spoken"
+                }
+            ],
+            "religion": "Native American",
+            "birthplace": {
+                "city": "Alhambra",
+                "state": "CA",
+                "zip": "91801",
+                "country": "US"
+            },
+            "guardians": [
+                {
+                    "relation": "friend",
+                    "addresses": [
+                        {
+                            "streetLines": [
+                                "3527 Oakmound Road"
+                            ],
+                            "city": "Chicago",
+                            "state": "IL",
+                            "zip": "60609",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "names": [
+                        {
+                            "prefix": "Mr.",
+                            "last": "Anaya",
+                            "first": "Aaron"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(773)254-9019",
+                            "type": "primary home"
+                        },
+                        {
+                            "number": "email:AaronMAnaya@rhyta.com",
+                            "type": "work place"
+                        }
+                    ]
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 64,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 72,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 120,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 21,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 62,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 68,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 116,
+                "unit": "mm[Hg]"
+            }
+        ],
+        "results": [
+            {
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "date_time": {},
+                        "status": "completed"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Antiasthmatic steroids + Albuterol 0.417 MG/ML Inhalant Solution  ",
+                    "product": {
+                        "name": "Albuterol 0.417 MG/ML Inhalant Solution",
+                        "code": "351136",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "product": {
+                        "name": "Albuterol 0.83 MG/ML Inhalant Solution",
+                        "code": "630208",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-25T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "SSRI antidepressants + Fluvoxamine Maleate 100 MG Oral Tablet  ",
+                    "product": {
+                        "name": "Fluvoxamine Maleate 100 MG Oral Tablet",
+                        "code": "903884",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99212",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Asthma",
+                        "code": "195979001",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Asthma",
+                                "code": "J45",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Asthma, unspecified type, with (acute) exacerbation",
+                                "code": "493.92",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99212",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-11T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Initial inpatient consult",
+                    "code": "99251",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Breast Cancer",
+                        "code": "188161004",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Malignant neoplasm of breast",
+                                "code": "C50",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Malignant neoplasm of breast (female), unspecified",
+                                "code": "174.9",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Breast Cancer ER or PR Positive",
+                        "code": "417742002",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    {
+                        "name": "Breast Cancer Stage IC-IIIC",
+                        "code": "261653007",
+                        "code_system_name": "SNOMED CT"
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Hospital discharge day",
+                    "code": "99238",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Assess hlth/behave, init",
+                    "code": "96150",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-25T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Depression",
+                        "code": "191615005",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Major depressive disorder, recurrent, severe with psychotic symptoms",
+                                "code": "F33.3",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Major depressive affective disorder, recurrent episode, in full remission",
+                                "code": "296.36",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99212",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-10-25T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Eggs",
+                    "code": "291P45F896",
+                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "translations": [
+                        {
+                            "name": "Allergy to eggs",
+                            "code": "V15.03",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "severity": "Moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Neomycin Sulfate 500 MG",
+                    "code": "866041",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild to moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Doxycycline 75 MG Enteric Coated Tablet",
+                    "code": "406524",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "Tetracycline",
+                            "code": "N0000006275",
+                            "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
+                        }
+                    ]
+                },
+                "severity": "Fatal"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Hep A, ped/adol, 2 dose",
+                        "code": "83",
+                        "code_system_name": "CVX"
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "Intramuscular injection",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.4.6",
+                            "identifier_type": "999999943252"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Smith",
+                            "first": "Jim"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "101 Maple Street"
+                            ],
+                            "city": "Washington",
+                            "state": "DC",
+                            "zip": "20009",
+                            "country": "United States"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "888-888-0000"
+                        }
+                    ],
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5",
+                                    "identifier_type": "2981824"
+                                }
+                            ],
+                            "name": [
+                                "Good Hospital"
+                            ],
+                            "address": [
+                                {
+                                    "streetLines": [
+                                        "101 Maple Street"
+                                    ],
+                                    "city": "Washington",
+                                    "state": "DC",
+                                    "zip": "20009",
+                                    "country": "United States"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "888-888-0000",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza, high dose seasonal",
+                        "code": "135",
+                        "code_system_name": "CVX"
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "Intramuscular injection",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.4.6",
+                            "identifier_type": "999999943252"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Smith",
+                            "first": "Jim"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "101 Maple Street"
+                            ],
+                            "city": "Washington",
+                            "state": "DC",
+                            "zip": "20009",
+                            "country": "United States"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "888-888-0000"
+                        }
+                    ],
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5",
+                                    "identifier_type": "2981824"
+                                }
+                            ],
+                            "name": [
+                                "Good Hospital"
+                            ],
+                            "address": [
+                                {
+                                    "streetLines": [
+                                        "101 Maple Street"
+                                    ],
+                                    "city": "Washington",
+                                    "state": "DC",
+                                    "zip": "20009",
+                                    "country": "United States"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "888-888-0000",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "pneumococcal conjugate PCV 7",
+                        "code": "100",
+                        "code_system_name": "CVX",
+                        "translations": [
+                            {
+                                "name": "Pneumococcal vacc, ped<5",
+                                "code": "90669",
+                                "code_system_name": "CPT"
+                            }
+                        ]
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "Intramuscular injection",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.4.6",
+                            "identifier_type": "999999943252"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Smith",
+                            "first": "Jim"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "101 Maple Street"
+                            ],
+                            "city": "Washington",
+                            "state": "DC",
+                            "zip": "20009",
+                            "country": "United States"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "888-888-0000"
+                        }
+                    ],
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5",
+                                    "identifier_type": "2981824"
+                                }
+                            ],
+                            "name": [
+                                "Good Hospital"
+                            ],
+                            "address": [
+                                {
+                                    "streetLines": [
+                                        "101 Maple Street"
+                                    ],
+                                    "city": "Washington",
+                                    "state": "DC",
+                                    "zip": "20009",
+                                    "country": "United States"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "888-888-0000",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-10-25T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Type B viral hepatitis",
+                    "code": "66071002",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Acute hepatitis B without delta-agent and without hepatic coma",
+                            "code": "B16.9",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Viral hepatitis B without mention of hepatic coma, acute or unspecified, without mention of hepatitis delta",
+                            "code": "070.30",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma unspecified",
+                    "code": "195979001",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Asthma",
+                            "code": "J45",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Asthma, unspecified type, with (acute) exacerbation",
+                            "code": "493.92",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Malignant neoplasm of female breast NOS",
+                    "code": "188161004",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Malignant neoplasm of breast",
+                            "code": "C50",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Malignant neoplasm of breast (female), unspecified",
+                            "code": "174.9",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Hormone receptor positive tumor",
+                    "code": "417742002",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Tumor stage T2c",
+                    "code": "261653007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-25T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Recurrent major depressive episodes, in full remission",
+                    "code": "191615005",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Major depressive disorder, recurrent, severe with psychotic symptoms",
+                            "code": "F33.3",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Major depressive affective disorder, recurrent episode, in full remission",
+                            "code": "296.36",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "Peak expiratory flow rate monitoring using diary",
+                    "code": "401011001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Mammogram, screening",
+                    "code": "77057",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Screeningmammographydigital",
+                            "code": "G0202",
+                            "code_system_name": "OID 2.16.840.1.113883.6.13"
+                        },
+                        {
+                            "name": "Encounter for screening mammogram for malignant neoplasm of breast",
+                            "code": "Z12.31",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Other screening mammogram",
+                            "code": "V76.12",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "Screening mammography",
+                            "code": "24623002",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Diagnostic colonoscopy",
+                    "code": "45378",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Colon ca scrn not hi rsk ind",
+                            "code": "G0121",
+                            "code_system_name": "OID 2.16.840.1.113883.6.13"
+                        },
+                        {
+                            "name": "Encounter for screening for malignant neoplasm of colon",
+                            "code": "Z12.11",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Colonoscopy",
+                            "code": "45.23",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "Diagnostic endoscopic examination on colon",
+                            "code": "174184006",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Radiographic procedure",
+                    "code": "76499",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Radiographic imaging procedure (procedure)",
+                            "code": "363680008",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-11T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Special radiation treatment",
+                    "code": "77470",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Radiation oncology AND/OR radiotherapy",
+                            "code": "108290001",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "procedure"
+            },
+            {
+                "procedure": {
+                    "name": "Medical nutrition, indiv, in",
+                    "code": "97802",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Nutritional counseling, diet",
+                            "code": "S9470",
+                            "code_system_name": "OID 2.16.840.1.113883.6.13"
+                        },
+                        {
+                            "name": "Encounter for other general examination",
+                            "code": "Z00.8",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Dietary surveillance and counseling",
+                            "code": "V65.3",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            },
+            {
+                "procedure": {
+                    "name": "Exercise class",
+                    "code": "S9451",
+                    "code_system_name": "OID 2.16.840.1.113883.6.13",
+                    "translations": [
+                        {
+                            "name": "Dietary counseling and surveillance",
+                            "code": "Z71.3",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Exercise counseling",
+                            "code": "V65.41",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"
+    ]
+}

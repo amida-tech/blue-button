@@ -1,1 +1,467 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "DEMO",
+                "first": "MILLER"
+            },
+            "dob": {
+                "point": {
+                    "date": "1947-10-10T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Male",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19",
+                    "identifier_type": "28366080"
+                }
+            ],
+            "addresses": [
+                {
+                    "streetLines": [
+                        "26 N. Martin Street"
+                    ],
+                    "city": "Los Angeles",
+                    "state": "CA",
+                    "zip": "90005",
+                    "country": "United States of America",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "3108391111",
+                    "type": "primary home"
+                }
+            ],
+            "race_ethnicity": {
+                "race": {
+                    "name": "White",
+                    "code": "2106-3",
+                    "code_system_name": "Race and Ethnicity - CDC"
+                }
+            }
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c9152fe6-b5c1-45a4-ade8-acade1932980"
+                    }
+                ],
+                "vital": {
+                    "name": "Height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-05-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 71,
+                "unit": "[in_us]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "76a84b28-0949-44af-9870-e4a22907a945"
+                    }
+                ],
+                "vital": {
+                    "name": "Patient Body Weight - Measured",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-05-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 160,
+                "unit": "[lb_av]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "98d05d45-7041-421a-8d14-0014682dee19"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI (Body Mass Index)",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-05-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 22.32,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "b6ca5c94-ec5f-4a04-8d5a-e3546ef7eea9"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-05-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 120,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "d8f42588-f562-429f-a52d-a10d9275c61f"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-05-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 0,
+                "unit": "mm[Hg]"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3208.101.10",
+                        "identifier_type": "20130607113300-ResultOrganizer"
+                    }
+                ],
+                "results": [
+                    {
+                        "result": {
+                            "name": "Laboratory Studies",
+                            "code": "26436-6",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {},
+                        "status": "completed"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2014-05-31T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "b5bc46bc-f1f1-4022-8ac3-8cda40972258"
+                    }
+                ],
+                "status": "Completed",
+                "sig": "acetaminophen-aspirin buffered 250 mg-250 mg oral tablet, [RxNorm: 432638]",
+                "product": {
+                    "identifiers": {
+                        "identifier": "9680896d-5382-459d-9fa2-3ba806710c80"
+                    },
+                    "product": {
+                        "name": "acetaminophen-aspirin buffered 250 mg-250 mg oral tablet",
+                        "code": "432638",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "name": "acetaminophen-aspirin buffered 250 mg-250 mg oral tablet",
+                                "code": "432638",
+                                "code_system_name": "RXNORM"
+                            }
+                        ]
+                    }
+                },
+                "administration": {
+                    "interval": {
+                        "frequency": false
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2014-05-15T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2014-05-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "3d1ea1e4-bb78-4735-b069-a92987f29f7c"
+                    }
+                ],
+                "status": "Completed",
+                "sig": "Lipitor 10 mg oral tablet, [RxNorm: 617312]",
+                "product": {
+                    "identifiers": {
+                        "identifier": "980a7969-247e-4aa9-9cd3-ee51a8f2d6d6"
+                    },
+                    "product": {
+                        "name": "Lipitor 10 mg oral tablet",
+                        "code": "617312",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "name": "Lipitor 10 mg oral tablet",
+                                "code": "617312",
+                                "code_system_name": "RXNORM"
+                            }
+                        ]
+                    }
+                },
+                "administration": {
+                    "interval": {
+                        "frequency": false
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2c8e0243-7e24-49db-8d1e-0ecfc2ba6792"
+                    }
+                ],
+                "date_time": {}
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "5114fd32-a851-4ebc-9f36-1beb0211ebc4"
+                    }
+                ],
+                "severity": "Severe",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Treatment not indicated",
+                            "code": "183964008",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2014-05-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "fada6f25-cacb-407c-a8a3-342d2b2a7a19"
+                    }
+                ],
+                "status": "refused",
+                "product": {
+                    "product": {
+                        "name": "Pneumococcal (PCV, PPSV)",
+                        "code": "33",
+                        "code_system_name": "CVX"
+                    },
+                    "lot_number": "3422",
+                    "manufacturer": "Merck And Co., Inc."
+                },
+                "administration": {
+                    "dose": {
+                        "value": 2,
+                        "unit": "mL"
+                    }
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Unknown if ever smoked",
+                "date_time": {}
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-05T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e4c67d71-caf8-4f31-97a1-2653e32dbd76"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Hypothyroidism",
+                    "code": "40930008",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "ACTIVE",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "cf30d4ea-27c4-4041-a02e-5b5be726406e"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-10-02T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9540fc68-36de-4900-bd8a-af9975c4b063"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Acute bronchitis",
+                    "code": "10509002",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "ACTIVE",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "46ad8d4b-5089-435a-bc4f-b843230321e9"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3208.101.10",
+                        "identifier_type": "20130607114600-ProcedureActivity"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {},
+                "providers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.3208.101.3",
+                                "identifier_type": "20130607154800-UnknownPersonnel"
+                            }
+                        ],
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.3208.101.5",
+                                    "identifier_type": "20130607155400-UnknownOrg"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "procedure_type": "act"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required code in SimpifiedCode -> Patient -> CCD",
+        "nullFlavor alert:  missing but required system in SimpifiedCode -> Patient -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> RaceEthnicity -> Patient -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> RaceEthnicity -> Patient -> CCD",
+        "nullFlavor alert:  missing but required language in LanguageCommunication -> Patient -> CCD",
+        "nullFlavor alert:  missing but required preferred in LanguageCommunication -> Patient -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> organization -> provider -> entry -> proceduresSection -> CCD"
+    ]
+}

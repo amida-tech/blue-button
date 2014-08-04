@@ -3004,6 +3004,11 @@
                         ]
                     }
                 },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "45"
+                },
                 "administration": {
                     "interval": {}
                 }
@@ -3031,6 +3036,11 @@
                             }
                         ]
                     }
+                },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "3",
+                    "quantity": "2"
                 },
                 "administration": {
                     "interval": {}
@@ -3060,6 +3070,11 @@
                         ]
                     }
                 },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "3",
+                    "quantity": "2"
+                },
                 "administration": {
                     "interval": {}
                 }
@@ -3087,6 +3102,11 @@
                             }
                         ]
                     }
+                },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "3",
+                    "quantity": "1"
                 },
                 "administration": {
                     "interval": {}
@@ -3116,6 +3136,11 @@
                         ]
                     }
                 },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "10"
+                },
                 "administration": {
                     "interval": {}
                 }
@@ -3143,6 +3168,11 @@
                             }
                         ]
                     }
+                },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "60"
                 },
                 "administration": {
                     "interval": {}
@@ -3172,6 +3202,11 @@
                         ]
                     }
                 },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "2",
+                    "quantity": "120"
+                },
                 "administration": {
                     "interval": {}
                 }
@@ -3199,6 +3234,11 @@
                             }
                         ]
                     }
+                },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "2",
+                    "quantity": "120"
                 },
                 "administration": {
                     "interval": {}
@@ -3233,6 +3273,11 @@
                         ]
                     }
                 },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "30"
+                },
                 "administration": {
                     "interval": {}
                 }
@@ -3265,6 +3310,11 @@
                             }
                         ]
                     }
+                },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "30"
                 },
                 "administration": {
                     "interval": {}
@@ -3299,6 +3349,11 @@
                         ]
                     }
                 },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "15"
+                },
                 "administration": {
                     "interval": {}
                 }
@@ -3332,6 +3387,11 @@
                         ]
                     }
                 },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "15"
+                },
                 "administration": {
                     "interval": {}
                 }
@@ -3359,6 +3419,11 @@
                             }
                         ]
                     }
+                },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "3",
+                    "quantity": "30"
                 },
                 "administration": {
                     "interval": {}
@@ -3393,6 +3458,11 @@
                         ]
                     }
                 },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "15"
+                },
                 "administration": {
                     "interval": {}
                 }
@@ -3426,6 +3496,11 @@
                         ]
                     }
                 },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "30"
+                },
                 "administration": {
                     "interval": {}
                 }
@@ -3458,6 +3533,11 @@
                             }
                         ]
                     }
+                },
+                "supply": {
+                    "date_time": {},
+                    "repeatNumber": "1",
+                    "quantity": "30"
                 },
                 "administration": {
                     "interval": {}
@@ -4186,14 +4266,21 @@
                 }
             }
         ],
-        "social_history": {
-            "smoking_statuses": [
-                {
-                    "value": "Unknown if ever smoked",
-                    "date_time": {}
-                }
-            ]
-        },
+        "social_history": [
+            {
+                "date_time": {}
+            },
+            {
+                "date_time": {}
+            },
+            {
+                "date_time": {}
+            },
+            {
+                "value": "Unknown if ever smoked",
+                "date_time": {}
+            }
+        ],
         "problems": [
             {
                 "date_time": {
@@ -4807,21 +4894,34 @@
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required streetLines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",

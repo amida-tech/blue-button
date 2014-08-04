@@ -1,1 +1,939 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Jones",
+                "first": "Isabella"
+            },
+            "dob": {
+                "point": {
+                    "date": "1947-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.100"
+                }
+            ],
+            "addresses": [
+                {
+                    "streetLines": [
+                        "1122 Mystical Rt 3"
+                    ],
+                    "city": "Beaverton",
+                    "state": "OR",
+                    "zip": "97005",
+                    "country": "US"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "+1-5554445555",
+                    "type": "primary home"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "eng",
+                    "preferred": true
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "vital": {
+                    "name": "Body Height (Measured)",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 69.69,
+                "unit": "[in_us]"
+            },
+            {
+                "vital": {
+                    "name": "Body Weight (Measured)",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 194.01,
+                "unit": "[lb_av]"
+            },
+            {
+                "vital": {
+                    "name": "Intravascular Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 135,
+                "unit": "mm[Hg]"
+            },
+            {
+                "vital": {
+                    "name": "Intravascular Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 92,
+                "unit": "mm[Hg]"
+            },
+            {
+                "vital": {
+                    "name": "BMI (Body Mass Index)",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 28.08
+            }
+        ],
+        "results": [
+            {
+                "results": [
+                    {
+                        "result": {
+                            "code": "UNK",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {},
+                        "status": "completed",
+                        "unit": "UNK"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-02-12T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "d71fb70d-2667-4059-9f13-ed333992e426"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "take 1 tablet by oral route every day",
+                "product": {
+                    "unencoded_name": "metoprolol tartrate 25 mg tablet",
+                    "product": {
+                        "name": "Metoprolol Tartrate 25 MG Oral Tablet",
+                        "code": "866924",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "name": "METOPROLOL TARTRATE",
+                                "code": "00378001801",
+                                "code_system_name": "OID 2.16.840.1.113883.6.69"
+                            }
+                        ]
+                    }
+                },
+                "administration": {
+                    "dose": {
+                        "value": 1,
+                        "unit": "tablet"
+                    },
+                    "interval": {
+                        "period": {
+                            "value": 24,
+                            "unit": "h"
+                        },
+                        "frequency": true
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "7796a356-e9c6-4905-9a3e-60d261fc2a59"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "take 1 tablet by oral route 2 times daily for 7 days",
+                "product": {
+                    "unencoded_name": "clarithromycin 500 mg tablet",
+                    "product": {
+                        "name": "Clarithromycin 500 MG Oral Tablet",
+                        "code": "197517",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "name": "CLARITHROMYCIN",
+                                "code": "00054003721",
+                                "code_system_name": "OID 2.16.840.1.113883.6.69"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-04-02T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2013-04-02T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "48767ded-ace9-4803-b151-6f2e5ba899f9"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "inhale 2 puff by inhalation route every 4 - 6 hours as needed as needed for Wheezing",
+                "product": {
+                    "unencoded_name": "albuterol sulfate HFA 90 mcg/actuation Aerosol Inhaler",
+                    "product": {
+                        "name": "200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler",
+                        "code": "745679",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "name": "ALBUTEROL SULFATE",
+                                "code": "54868564600",
+                                "code_system_name": "OID 2.16.840.1.113883.6.69"
+                            }
+                        ]
+                    }
+                },
+                "administration": {
+                    "dose": {
+                        "value": 2,
+                        "unit": "puff"
+                    },
+                    "interval": {
+                        "period": {
+                            "value": 4,
+                            "unit": "h"
+                        },
+                        "frequency": false
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "b2111894-1eed-4b94-b7f2-01b4fbe93284"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "inhale 2 puffs once as needed",
+                "product": {
+                    "unencoded_name": "albuterol sulfate HFA 90 mcg/actuation Aerosol Inhaler",
+                    "product": {
+                        "name": "200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler",
+                        "code": "745679",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "name": "ALBUTEROL SULFATE",
+                                "code": "54868564600",
+                                "code_system_name": "OID 2.16.840.1.113883.6.69"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "a778b36c-2a08-4f41-bc2a-3f29293c4e3c"
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "locations": [
+                    {
+                        "name": "Get Well Clinic",
+                        "address": [
+                            {
+                                "streetLines": [
+                                    "1002 Healthcare Dr"
+                                ],
+                                "city": "Beaverton",
+                                "state": "OR",
+                                "zip": "97005"
+                            }
+                        ],
+                        "email": [
+                            {
+                                "type": "work place"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "69724b9d-5e77-402f-a5b6-3379dde3e8a9"
+                    }
+                ],
+                "allergen": {
+                    "name": "Codeine",
+                    "code": "2670",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "Codeine",
+                            "code": "1550",
+                            "code_system_name": "OID 2.16.840.1.113883.4.65"
+                        }
+                    ]
+                },
+                "status": "Active"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "062e50f2-9185-4821-a8eb-af22722d1f8e"
+                    }
+                ],
+                "allergen": {
+                    "name": "Aspirin",
+                    "code": "1191",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "aspirin",
+                            "code": "1587",
+                            "code_system_name": "OID 2.16.840.1.113883.4.65"
+                        }
+                    ]
+                },
+                "status": "Active"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "a2176310-7c0d-4f55-bf46-ff59010a380d"
+                    }
+                ],
+                "allergen": {
+                    "name": "penicillin G benzathine",
+                    "code": "7982",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "PENICILLIN G BENZATHINE",
+                            "code": "2683",
+                            "code_system_name": "OID 2.16.840.1.113883.4.65"
+                        }
+                    ]
+                },
+                "status": "Active"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "45d0cab8-881c-43e5-84e6-450a16fed1b7"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Pneumo (2 yrs or older) (PPV23)",
+                        "code": "33",
+                        "code_system_name": "CVX"
+                    },
+                    "lot_number": "90390",
+                    "manufacturer": "GlaxoSmithKline"
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.401",
+                            "identifier_type": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Villalon RN",
+                            "first": "May"
+                        }
+                    ]
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2011-09-10T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "51d80996-a587-492c-ada6-8b69299e222b"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza Virus vaccine",
+                        "code": "88",
+                        "code_system_name": "CVX"
+                    },
+                    "lot_number": "839208",
+                    "manufacturer": "Vaccine Company"
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.401",
+                            "identifier_type": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Villalon RN",
+                            "first": "May"
+                        }
+                    ]
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "73dd7cb8-2d2f-4380-92b7-a890db7d8661"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza Virus vaccine",
+                        "code": "88",
+                        "code_system_name": "CVX"
+                    },
+                    "lot_number": "839208",
+                    "manufacturer": "Vaccine Company"
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.401",
+                            "identifier_type": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Villalon RN",
+                            "first": "May"
+                        }
+                    ]
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2007-01-04T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "ed5dd02a-a598-4b42-b344-8c84365b2380"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Td (7 yrs or older)",
+                        "code": "09",
+                        "code_system_name": "CVX"
+                    },
+                    "lot_number": "90289",
+                    "manufacturer": "GlaxoSmithKline"
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.401",
+                            "identifier_type": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Villalon RN",
+                            "first": "May"
+                        }
+                    ]
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Current every day smoker",
+                "date_time": {
+                    "low": {
+                        "date": "1992-01-01T00:00:00Z",
+                        "precision": "year"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "negation_indicator": false
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "negation_indicator": false
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "negation_indicator": false
+            }
+        ],
+        "procedures": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "8e4b2fcb-13e8-4ce6-8737-61c3c9c328ec"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "procedure_type": "procedure"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "771cb6f6-4a87-47aa-9133-6e0d7a118a1e"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "procedure_type": "procedure"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "00878d81-7e30-4f90-86fd-71009a878dec"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "procedure_type": "procedure"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "cc7d378e-35fc-46f9-8007-da0300174bb7"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2013-01-25T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "procedure_type": "procedure"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "65704c23-2eae-4f35-989d-db02e68edbb8"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "procedure_type": "procedure"
+            }
+        ],
+        "plan_of_care": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "8b413246-f47c-4a49-b654-c2313909d00e"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-12T11:41:00Z",
+                        "precision": "second"
+                    }
+                },
+                "type": "act"
+            },
+            {
+                "plan": {
+                    "name": "Patient referral",
+                    "code": "C0034927",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "b5de3dd6-6cd9-4736-9de7-c4b61309a01e"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-15T10:29:00Z",
+                        "precision": "second"
+                    }
+                },
+                "type": "act"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "a8dae350-f295-4c89-aa07-9dcc3c036444"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-20T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "type": "encounter"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "0acb1c01-46c0-4d66-b010-bc1e2c9b02d8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-19T08:10:00Z",
+                        "precision": "second"
+                    }
+                },
+                "type": "encounter"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "af452bc7-440d-4932-8f91-4e49fefeca8c"
+                    }
+                ],
+                "date_time": {},
+                "type": "act"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "045d121e-f408-4da3-ae3a-11d196af1891"
+                    }
+                ],
+                "date_time": {},
+                "type": "act"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "9b42a726-9699-441d-a0ec-1631a5f3dd60"
+                    }
+                ],
+                "date_time": {},
+                "type": "act"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.201",
+                        "identifier_type": "c2183bda-c9e3-4216-aa97-021614fcd787"
+                    }
+                ],
+                "date_time": {},
+                "type": "act"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures",
+            "plan_of_care"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required identifier in Identifier -> VitalSignObservation -> vitalSignsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> VitalSignObservation -> vitalSignsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> VitalSignObservation -> vitalSignsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> VitalSignObservation -> vitalSignsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> VitalSignObservation -> vitalSignsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation/h:code/@code",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation/h:code/@code",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation/h:code/@code",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation/h:code/@code",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD"
+    ]
+}

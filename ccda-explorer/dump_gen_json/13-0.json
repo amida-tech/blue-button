@@ -1,1 +1,476 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Everyman",
+                "first": "Adam"
+            },
+            "dob": {
+                "point": {
+                    "date": "1962-10-22T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Male",
+            "identifiers": [
+                {
+                    "identifier": "1.3.6.1.4.1.22812.11.0.100610",
+                    "identifier_type": "101646"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "eng",
+                    "preferred": true
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
+                        "identifier_type": "145261"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-03-30T13:35:00Z",
+                        "precision": "second"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 160,
+                "unit": "1"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
+                        "identifier_type": "145271"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-03-30T13:35:00Z",
+                        "precision": "second"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 98,
+                "unit": "1"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
+                        "identifier_type": "145231"
+                    }
+                ],
+                "vital": {
+                    "name": "Height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-03-30T13:35:00Z",
+                        "precision": "second"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 70,
+                "unit": "cm"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
+                        "identifier_type": "145241"
+                    }
+                ],
+                "vital": {
+                    "name": "Weight",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-03-30T13:35:00Z",
+                        "precision": "second"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 195,
+                "unit": "kg"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
+                        "identifier_type": "145251"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Mass Index Calculated",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-03-30T13:35:00Z",
+                        "precision": "second"
+                    }
+                },
+                "interpretations": [
+                    "High"
+                ],
+                "value": 28,
+                "unit": "kg/m2"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
+                        "identifier_type": "18981711"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
+                                "identifier_type": "1898171"
+                            }
+                        ],
+                        "date_time": {},
+                        "status": "completed"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.9",
+                        "identifier_type": "1898141"
+                    }
+                ],
+                "status": "Prescribed",
+                "product": {
+                    "unencoded_name": "Medication excluded/not available"
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "code_system_name": "HL7ActCode"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.3.4",
+                        "identifier_type": "202400270"
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2012-03-30T13:32:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "1-01-01T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "locations": [
+                    {
+                        "name": "Family Practice Clinic S2V",
+                        "location_type": {
+                            "name": "Any Age Mixed Acuity Unit",
+                            "code": "1212-0",
+                            "code_system_name": "HealthcareServiceLocation"
+                        }
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "code_system_name": "HL7ActCode"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.3.4",
+                        "identifier_type": "202300270"
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2011-09-25T13:16:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2011-09-25T16:16:00Z",
+                        "precision": "second"
+                    }
+                },
+                "locations": [
+                    {
+                        "name": " ",
+                        "location_type": {
+                            "name": "Any Age Mixed Acuity Unit",
+                            "code": "1212-0",
+                            "code_system_name": "HealthcareServiceLocation"
+                        }
+                    }
+                ]
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.10.2",
+                        "identifier_type": "1898111"
+                    }
+                ],
+                "negation_indicator": true
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2012-03-30T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.4",
+                        "identifier_type": "9392"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza, seasonal, injectable, preservative free",
+                        "code": "140",
+                        "code_system_name": "CVX"
+                    },
+                    "lot_number": "Z0860BB",
+                    "manufacturer": "CSL Behring, Inc"
+                },
+                "administration": {
+                    "route": {
+                        "name": "INTRAMUSCULAR",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "body_site": {
+                        "name": "Left arm",
+                        "code": "368208006",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "dose": {
+                        "value": 0.5,
+                        "unit": "ml"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.4.6",
+                            "identifier_type": "1276903451"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Nightingale",
+                            "first": "Nancy"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "1004 Healthcare Dr"
+                            ],
+                            "city": "Portland",
+                            "zip": "97005-0000"
+                        }
+                    ],
+                    "email": [
+                        null,
+                        {
+                            "address": "Nancy.Nightingale@direct.medalliesdirect.com"
+                        }
+                    ]
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Smoker, current status unknown",
+                "date_time": {
+                    "low": {
+                        "date": "2011-03-09T00:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-03-30T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+                        "identifier_type": "716800500"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Essential hypertension",
+                    "code": "59621000",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Essential hypertension",
+                            "code": "401.9",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "Essential hypertension",
+                            "code": "I10",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
+                        "identifier_type": "716800500"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.7",
+                        "identifier_type": "1898101"
+                    }
+                ],
+                "status": "Active",
+                "date_time": {},
+                "procedure_type": "procedure"
+            }
+        ],
+        "plan_of_care": [
+            {
+                "plan": {
+                    "name": "Smoking cessation",
+                    "code": "225323000",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.13.1",
+                        "identifier_type": "INT"
+                    }
+                ],
+                "type": "act"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.13.2",
+                        "identifier_type": "18981803"
+                    }
+                ],
+                "type": "observation"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures",
+            "plan_of_care"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD"
+    ]
+}

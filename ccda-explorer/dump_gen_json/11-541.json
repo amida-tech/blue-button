@@ -1,1 +1,974 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Dean",
+                "first": "Christian"
+            },
+            "dob": {
+                "point": {
+                    "date": "1985-08-03T12:00:00Z",
+                    "precision": "second"
+                }
+            },
+            "gender": "Male",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19.5.99999.2",
+                    "identifier_type": "998991"
+                },
+                {
+                    "identifier": "2.16.840.1.113883.4.1",
+                    "identifier_type": "111-00-2330"
+                }
+            ],
+            "marital_status": "Married",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "463 McKinley Avenue"
+                    ],
+                    "city": "Englewood",
+                    "state": "CO",
+                    "zip": "80112",
+                    "country": "US",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "(303)784-9775",
+                    "type": "mobile contact"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "spa",
+                    "preferred": true,
+                    "mode": "Expressed spoken"
+                }
+            ],
+            "religion": "Hinduism",
+            "birthplace": {
+                "city": "Anaheim",
+                "state": "CA",
+                "zip": "92801",
+                "country": "US"
+            },
+            "guardians": [
+                {
+                    "relation": "friend",
+                    "addresses": [
+                        {
+                            "streetLines": [
+                                "3401 Rockford Mountain Lane"
+                            ],
+                            "city": "Morrisville",
+                            "state": "NC",
+                            "zip": "27560",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "names": [
+                        {
+                            "prefix": "Mr.",
+                            "last": "Malcom",
+                            "first": "Ricky"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(919)991-9734",
+                            "type": "primary home"
+                        },
+                        {
+                            "number": "email:RickyBMalcom@dayrep.com",
+                            "type": "work place"
+                        }
+                    ]
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 24.3,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 64,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 106,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 24.1,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 62,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 104,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 24.4,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 64,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 110,
+                "unit": "mm[Hg]"
+            }
+        ],
+        "results": [
+            {
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "date_time": {},
+                        "status": "completed"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Antiasthmatic steroids + Albuterol 0.417 MG/ML Inhalant Solution  ",
+                    "product": {
+                        "name": "Albuterol 0.417 MG/ML Inhalant Solution",
+                        "code": "351136",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "product": {
+                        "name": "Albuterol 0.83 MG/ML Inhalant Solution",
+                        "code": "630208",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Antiasthmatic steroids + Albuterol 0.417 MG/ML Inhalant Solution  ",
+                    "product": {
+                        "name": "Albuterol 0.417 MG/ML Inhalant Solution",
+                        "code": "351136",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "product": {
+                        "name": "Albuterol 0.83 MG/ML Inhalant Solution",
+                        "code": "630208",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "Office consultation",
+                    "code": "99241",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Asthma Daytime Symptoms Quantified",
+                        "code": "370202007",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    {
+                        "name": "Asthma Nighttime Symptoms Quantified",
+                        "code": "370205009",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    {
+                        "name": "Asthma Persistent",
+                        "code": "427295004",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Moderate persistent asthma with status asthmaticus",
+                                "code": "J45.42",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office consultation",
+                    "code": "99241",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office consultation",
+                    "code": "99241",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Asthma Daytime Symptoms Quantified",
+                        "code": "370202007",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    {
+                        "name": "Asthma Nighttime Symptoms Quantified",
+                        "code": "370205009",
+                        "code_system_name": "SNOMED CT"
+                    }
+                ]
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Eggs",
+                    "code": "291P45F896",
+                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "translations": [
+                        {
+                            "name": "Allergy to eggs",
+                            "code": "V15.03",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "severity": "Fatal"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution",
+                    "code": "892677",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Doxycycline 75 MG Enteric Coated Tablet",
+                    "code": "406524",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "Tetracycline",
+                            "code": "N0000006275",
+                            "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
+                        }
+                    ]
+                },
+                "severity": "Severe"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza, high dose seasonal",
+                        "code": "135",
+                        "code_system_name": "CVX"
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "Intramuscular injection",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.4.6",
+                            "identifier_type": "999999943252"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Smith",
+                            "first": "Jim"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "101 Maple Street"
+                            ],
+                            "city": "Washington",
+                            "state": "DC",
+                            "zip": "20009",
+                            "country": "United States"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "888-888-0000"
+                        }
+                    ],
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5",
+                                    "identifier_type": "2981824"
+                                }
+                            ],
+                            "name": [
+                                "Good Hospital"
+                            ],
+                            "address": [
+                                {
+                                    "streetLines": [
+                                        "101 Maple Street"
+                                    ],
+                                    "city": "Washington",
+                                    "state": "DC",
+                                    "zip": "20009",
+                                    "country": "United States"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "888-888-0000",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "pneumococcal conjugate PCV 7",
+                        "code": "100",
+                        "code_system_name": "CVX",
+                        "translations": [
+                            {
+                                "name": "Pneumococcal vacc, ped<5",
+                                "code": "90669",
+                                "code_system_name": "CPT"
+                            }
+                        ]
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "Intramuscular injection",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.4.6",
+                            "identifier_type": "999999943252"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Smith",
+                            "first": "Jim"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "101 Maple Street"
+                            ],
+                            "city": "Washington",
+                            "state": "DC",
+                            "zip": "20009",
+                            "country": "United States"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "888-888-0000"
+                        }
+                    ],
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5",
+                                    "identifier_type": "2981824"
+                                }
+                            ],
+                            "name": [
+                                "Good Hospital"
+                            ],
+                            "address": [
+                                {
+                                    "streetLines": [
+                                        "101 Maple Street"
+                                    ],
+                                    "city": "Washington",
+                                    "state": "DC",
+                                    "zip": "20009",
+                                    "country": "United States"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "888-888-0000",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "1995-06-25T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma unspecified",
+                    "code": "195979001",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Asthma",
+                            "code": "J45",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Asthma, unspecified type, with (acute) exacerbation",
+                            "code": "493.92",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma causes daytime symptoms 1 to 2 times per month",
+                    "code": "370202007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma causes night symptoms 1 to 2 times per month",
+                    "code": "370205009",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Moderate persistent asthma",
+                    "code": "427295004",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Moderate persistent asthma with status asthmaticus",
+                            "code": "J45.42",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma causes daytime symptoms 1 to 2 times per month",
+                    "code": "370202007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-12T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma causes night symptoms 1 to 2 times per month",
+                    "code": "370205009",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "Peak expiratory flow rate monitoring using diary",
+                    "code": "401011001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-06T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"
+    ]
+}

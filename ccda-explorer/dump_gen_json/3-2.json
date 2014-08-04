@@ -1,1 +1,590 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Grant",
+                "first": "Mary"
+            },
+            "dob": {
+                "point": {
+                    "date": "1987-03-21T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                    "identifier_type": "4A0D8938-A64B-41C9-8396-CF1869EA71C1"
+                }
+            ],
+            "addresses": [
+                {
+                    "streetLines": [
+                        "No Address Indicated"
+                    ],
+                    "city": "No City Indicated",
+                    "state": "CA",
+                    "zip": "99999",
+                    "country": "United States of America",
+                    "use": "home address"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "eng",
+                    "preferred": true,
+                    "mode": "Receive Written"
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
+                        "identifier_type": "9279-1"
+                    }
+                ],
+                "vital": {
+                    "name": "Respiratory Rate",
+                    "code": "9279-1",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 0,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
+                        "identifier_type": "8867-4"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 0,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
+                        "identifier_type": "8480-6"
+                    }
+                ],
+                "vital": {
+                    "name": "Systolic BP",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 116,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
+                        "identifier_type": "8310-5"
+                    }
+                ],
+                "vital": {
+                    "name": "Diastolic BP",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 72,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
+                        "identifier_type": "8310-5"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Temperature",
+                    "code": "8310-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 0,
+                "unit": "[degF]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
+                        "identifier_type": "8302-2"
+                    }
+                ],
+                "vital": {
+                    "name": "Height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 64,
+                "unit": "[in_us]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
+                        "identifier_type": "8287-5"
+                    }
+                ],
+                "vital": {
+                    "name": "Head Circumference",
+                    "code": "8287-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 0,
+                "unit": "[in_us]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
+                        "identifier_type": "3141-9"
+                    }
+                ],
+                "vital": {
+                    "name": "Weight Measured",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 160,
+                "unit": "[lb_av]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
+                        "identifier_type": "39156-5"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI (Body Mass Index)",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 27.4609,
+                "unit": "kg/m2"
+            }
+        ],
+        "results": [
+            {
+                "results": [
+                    {
+                        "date_time": {},
+                        "status": "completed"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-09-20T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "identifiers": {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1",
+                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+                    },
+                    "product": {
+                        "name": "cephalexin 500 mg",
+                        "code": "212339",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2011-11-10T08:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "identifiers": {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1",
+                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+                    },
+                    "product": {
+                        "name": "FLUoxetine 40 mg",
+                        "code": "261287",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-15T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "identifiers": {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1",
+                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+                    },
+                    "product": {
+                        "name": "levothyroxine 50 mcg (0.05 mg)",
+                        "code": "966247",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "Encounter for \"check-up\" (procedure)",
+                    "code": "185349003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "A71277db8-8610-4912-9d29-46a11afd447f",
+                        "identifier_type": "103583514"
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2014-01-01T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "locations": [
+                    {
+                        "address": [
+                            {
+                                "country": "United States of America",
+                                "use": "work place"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "(415)427-2132",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-12-18T03:51:13Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "83900262"
+                    }
+                ],
+                "allergen": {
+                    "name": "Bicillin L-A",
+                    "code": "731570",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild",
+                "status": "Active",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Hives",
+                            "code": "126485001",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-12-18T08:51:30Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "83900262"
+                    }
+                ],
+                "allergen": {
+                    "name": "Aspirin",
+                    "code": "212033",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild",
+                "status": "Active",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Nausea",
+                            "code": "422587007",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2014-05-07T06:25:13Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2014-05-07T06:25:13Z",
+                        "precision": "second"
+                    }
+                },
+                "status": "refused",
+                "administration": {
+                    "dose": {
+                        "value": 0
+                    }
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2013-12-17T08:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.2.1"
+                    }
+                ],
+                "negation_indicator": true,
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "83900262"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "Standard chest X-ray (procedure)",
+                    "code": "168731009",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.9",
+                        "identifier_type": "349"
+                    }
+                ],
+                "status": "Completed",
+                "providers": [
+                    {
+                        "address": {
+                            "streetLines": [
+                                "Get Well Clinic Facility",
+                                "1002 Healthcare Dr."
+                            ],
+                            "city": "Portland",
+                            "state": "OR",
+                            "zip": "97005",
+                            "country": "United States of America",
+                            "use": "work place"
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.1.1.3",
+                                "identifier_type": "605196"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "(555)555-1002",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ],
+                "locations": [
+                    {
+                        "address": [
+                            {
+                                "streetLines": [
+                                    "Get Well Clinic Facility",
+                                    "1002 Healthcare Dr."
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97005",
+                                "country": "United States of America",
+                                "use": "work place"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "(555)555-1002",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ],
+                "procedure_type": "procedure"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD"
+    ]
+}

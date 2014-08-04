@@ -1,1 +1,1219 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Maldonado",
+                "first": "Susan"
+            },
+            "dob": {
+                "point": {
+                    "date": "1996-05-06T12:00:00Z",
+                    "precision": "second"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19.5.99999.2",
+                    "identifier_type": "998991"
+                },
+                {
+                    "identifier": "2.16.840.1.113883.4.1",
+                    "identifier_type": "111-00-2330"
+                }
+            ],
+            "marital_status": "Never Married",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "4767 Rogers Street"
+                    ],
+                    "city": "Cincinnati",
+                    "state": "OH",
+                    "zip": "45236",
+                    "country": "US",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "(513)477-6950",
+                    "type": "mobile contact"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "spa",
+                    "preferred": true,
+                    "mode": "Expressed spoken"
+                }
+            ],
+            "religion": "Zen Buddhism",
+            "birthplace": {
+                "city": "Okeechobee",
+                "state": "FL",
+                "zip": "33472",
+                "country": "US"
+            },
+            "guardians": [
+                {
+                    "relation": "friend",
+                    "addresses": [
+                        {
+                            "streetLines": [
+                                "874 Fairfield Road"
+                            ],
+                            "city": "Milwaukee",
+                            "state": "WI",
+                            "zip": "53202",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "names": [
+                        {
+                            "prefix": "Mrs.",
+                            "last": "Huss",
+                            "first": "Virginia"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(262)672-2106",
+                            "type": "primary home"
+                        },
+                        {
+                            "number": "email:VirginiaEHuss@armyspy.com",
+                            "type": "work place"
+                        }
+                    ]
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2006-11-13T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 78,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2006-11-13T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 138,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2007-07-19T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 74,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2007-07-19T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 128,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2008-08-02T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 20.4,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2009-08-02T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 80,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2009-08-02T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 130,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2009-08-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 20.8,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2009-08-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 82,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2009-08-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 132,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 88,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 138,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 21.6,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 84,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 130,
+                "unit": "mm[Hg]"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "Microbiology",
+                    "code": "269934003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "S pyo Ag XXX Ql",
+                            "code": "31971-5",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Strep a ag, eia",
+                                    "code": "87430",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Streptococcus pyogenes antigen assay",
+                                    "code": "122121004",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-03-31T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-08-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "product": {
+                        "name": "Albuterol 0.83 MG/ML Inhalant Solution",
+                        "code": "630208",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "2nd generation cephalosporins + Cefuroxime 250 MG Oral Tablet  ",
+                    "product": {
+                        "name": "Cefuroxime 250 MG Oral Tablet",
+                        "code": "309097",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-07-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "product": {
+                        "name": "Albuterol 0.83 MG/ML Inhalant Solution",
+                        "code": "630208",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "Emergency dept visit",
+                    "code": "99281",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2005-02-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Asthma",
+                        "code": "195979001",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Asthma",
+                                "code": "J45",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Asthma, unspecified type, with (acute) exacerbation",
+                                "code": "493.92",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99212",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2005-07-26T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99212",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2006-08-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Emergency dept visit",
+                    "code": "99281",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2006-11-13T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99212",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2007-07-19T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2008-08-02T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2009-08-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Asthma Daytime Symptoms",
+                        "code": "373899003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    {
+                        "name": "Asthma Nighttime Symptoms",
+                        "code": "395022009",
+                        "code_system_name": "SNOMED CT"
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Pharyngitis",
+                        "code": "363746003",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Acute pharyngitis",
+                                "code": "J02",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Acute pharyngitis",
+                                "code": "462",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office consultation",
+                    "code": "99241",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Asthma Daytime Symptoms",
+                        "code": "373899003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    {
+                        "name": "Asthma Nighttime Symptoms",
+                        "code": "395022009",
+                        "code_system_name": "SNOMED CT"
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-20T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office consultation",
+                    "code": "99241",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-10-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2005-02-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Eggs",
+                    "code": "291P45F896",
+                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "translations": [
+                        {
+                            "name": "Allergy to eggs",
+                            "code": "V15.03",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "severity": "Moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2005-02-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Codeine",
+                    "code": "N0000006691",
+                    "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
+                },
+                "severity": "Moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2005-02-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Neomycin Sulfate 500 MG",
+                    "code": "866041",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Moderate to severe"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {},
+                "status": "refused"
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2005-02-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2005-02-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma unspecified",
+                    "code": "195979001",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Asthma",
+                            "code": "J45",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Asthma, unspecified type, with (acute) exacerbation",
+                            "code": "493.92",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-08-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma daytime symptoms",
+                    "code": "373899003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-08-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma night-time symptoms",
+                    "code": "395022009",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Acute pharyngitis",
+                    "code": "363746003",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Acute pharyngitis",
+                            "code": "J02",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Acute pharyngitis",
+                            "code": "462",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-07-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma daytime symptoms",
+                    "code": "373899003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-07-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma night-time symptoms",
+                    "code": "395022009",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "Peak expiratory flow rate monitoring using diary",
+                    "code": "401011001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2005-02-09T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Peak expiratory flow rate monitoring using diary",
+                    "code": "401011001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2006-11-13T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Medical nutrition, indiv, in",
+                    "code": "97802",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Nutritional counseling, diet",
+                            "code": "S9470",
+                            "code_system_name": "OID 2.16.840.1.113883.6.13"
+                        },
+                        {
+                            "name": "Encounter for other general examination",
+                            "code": "Z00.8",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Dietary surveillance and counseling",
+                            "code": "V65.3",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            },
+            {
+                "procedure": {
+                    "name": "Exercise class",
+                    "code": "S9451",
+                    "code_system_name": "OID 2.16.840.1.113883.6.13",
+                    "translations": [
+                        {
+                            "name": "Dietary counseling and surveillance",
+                            "code": "Z71.3",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Exercise counseling",
+                            "code": "V65.41",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-30T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"
+    ]
+}

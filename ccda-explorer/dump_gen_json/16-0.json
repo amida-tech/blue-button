@@ -1,1 +1,638 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Everyman",
+                "first": "Adam"
+            },
+            "dob": {
+                "point": {
+                    "date": "1962-10-22T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Male",
+            "identifiers": [
+                {
+                    "identifier": "1.3.6.1.4.1.22812.3.9999341.3",
+                    "identifier_type": "130115235147857"
+                }
+            ],
+            "addresses": [
+                {
+                    "streetLines": [
+                        "99 Forest Park"
+                    ],
+                    "city": "Chicago",
+                    "state": "IL",
+                    "zip": "60301",
+                    "country": "US",
+                    "use": "home address"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "eng",
+                    "preferred": true
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000035"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000055"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-07-11T00:25:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 150,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000035|30011130000037"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000055|30011130000057"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-07-11T00:25:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 95,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000049"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000067"
+                    }
+                ],
+                "vital": {
+                    "name": "Height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-07-11T00:25:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 70,
+                "unit": "[in_us]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000047"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000065"
+                    }
+                ],
+                "vital": {
+                    "name": "Weight",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-07-11T00:25:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 195,
+                "unit": "[lb_av]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000045"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000063"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Mass Index Calculated",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-07-11T00:25:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 27.98,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000043"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
+                        "identifier_type": "30011130000061"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Surface Area Calculated",
+                    "code": "3140-1",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-07-11T00:25:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 2.06,
+                "unit": "1"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.5",
+                        "identifier_type": "30011130000075"
+                    }
+                ],
+                "result_set": {
+                    "name": "CO2",
+                    "code": "UNK",
+                    "code_system_name": "CPT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.5",
+                                "identifier_type": "30011130000073"
+                            },
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.5",
+                                "identifier_type": "30011130000077"
+                            }
+                        ],
+                        "result": {
+                            "name": "Carbon Dioxide",
+                            "code": "2028-9",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-07-11T00:27:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "active",
+                        "value": 25.2,
+                        "unit": "mmol/L"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.9",
+                        "identifier_type": "30011130000011"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.9",
+                        "identifier_type": "30011130000013"
+                    }
+                ],
+                "status": "Prescribed",
+                "product": {
+                    "unencoded_name": "Proventil HFA 108 (90 Base) MCG/ACT Inhalation Aerosol Solution",
+                    "product": {
+                        "name": "Proventil HFA 108 (90 Base) MCG/ACT Inhalation Aerosol Solution",
+                        "code": "746763",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "name": "Proventil HFA 108 (90 Base) MCG/ACT Inhalation Aerosol Solution",
+                                "code": "68258897406",
+                                "code_system_name": "OID 2.16.840.1.113883.6.69"
+                            }
+                        ]
+                    }
+                },
+                "supply": {
+                    "quantity": "1"
+                },
+                "administration": {
+                    "route": {
+                        "name": "RESPIRATORY (INHALATION)",
+                        "code": "C38216",
+                        "code_system_name": "Medication Route FDA"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "code_system_name": "HL7ActCode"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.3.4",
+                        "identifier_type": "1257907"
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2013-07-11T11:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.10.2",
+                        "identifier_type": "30011130000005"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.10.2",
+                        "identifier_type": "30011130000027"
+                    }
+                ],
+                "status": "Active"
+            },
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.10.2",
+                        "identifier_type": "30011130000003"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.10.2",
+                        "identifier_type": "30011130000025"
+                    }
+                ],
+                "status": "Active"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-15T00:00:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.4",
+                        "identifier_type": "30011130000079"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.4",
+                        "identifier_type": "30011173700001"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza A (H1N1) Monoval PF Intramuscular Suspension",
+                        "code": "126",
+                        "code_system_name": "CVX",
+                        "translations": [
+                            {
+                                "name": "Influenza A (H1N1) Monoval PF Intramuscular Suspension",
+                                "code": "00006404701",
+                                "code_system_name": "OID 2.16.840.1.113883.6.69"
+                            }
+                        ]
+                    },
+                    "lot_number": "8362",
+                    "manufacturer": "MERCK SHARP & DOHME"
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Tobacco use and exposure",
+                "date_time": {}
+            },
+            {
+                "value": "Never smoker",
+                "date_time": {}
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2011-09-25T00:00:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
+                        "identifier_type": "30011130000017"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
+                        "identifier_type": "30011174200001"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma",
+                    "code": "195967001",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Asthma",
+                            "code": "493.90",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "Asthma",
+                            "code": "J45.909",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Asthma",
+                            "code": "04e16cfd-4744-49aa-9578-b55dca12e975",
+                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
+                        "identifier_type": "30011130000017"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
+                        "identifier_type": "30011174200001"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-07-11T00:00:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
+                        "identifier_type": "30011130000015"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
+                        "identifier_type": "30011130000093"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Costal chondritis",
+                    "code": "64109004",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Costal chondritis",
+                            "code": "733.6",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "Costal chondritis",
+                            "code": "M94.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Costal chondritis",
+                            "code": "94a6388d-dbf5-4ab7-a50d-90332ce30af1",
+                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
+                        "identifier_type": "30011130000015"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
+                        "identifier_type": "30011130000093"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-07-11T00:00:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
+                        "identifier_type": "30011130000097"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
+                        "identifier_type": "30011130000099"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "No impairment",
+                    "code": "66557003",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "No impairment",
+                            "code": "V68.01",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "No impairment",
+                            "code": "Z02.71",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "No impairment",
+                            "code": "f65f2c3b-2ce7-e111-a03b-005056936627",
+                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
+                        "identifier_type": "30011130000097"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
+                        "identifier_type": "30011130000099"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.7",
+                        "identifier_type": "0"
+                    }
+                ],
+                "status": "Active",
+                "date_time": {},
+                "procedure_type": "procedure"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.7",
+                        "identifier_type": "0"
+                    }
+                ],
+                "status": "Active",
+                "date_time": {},
+                "procedure_type": "procedure"
+            }
+        ],
+        "plan_of_care": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.3.4",
+                        "identifier_type": "30011145200001"
+                    }
+                ],
+                "type": "encounter"
+            },
+            {
+                "plan": {
+                    "name": "Weight Loss; Start: 11Jul2013",
+                    "code": "289169006",
+                    "code_system_name": "OID 2.16.840.1.113883.6.5"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.13.2",
+                        "identifier_type": "30011130000083"
+                    }
+                ],
+                "type": "observation"
+            },
+            {
+                "plan": {
+                    "name": "Asthma Management; Start: 11Jul2013",
+                    "code": "406162001",
+                    "code_system_name": "OID 2.16.840.1.113883.6.5"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.13.2",
+                        "identifier_type": "30011130000087"
+                    }
+                ],
+                "type": "observation"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures",
+            "plan_of_care"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD"
+    ]
+}

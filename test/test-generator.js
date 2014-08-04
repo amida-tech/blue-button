@@ -4,12 +4,12 @@ var lib = require('./test-lib.js');
 var fs = require("fs");
 
 var test = new lib.testXML();
-test.verbose = true; // log setting
+test.verbose = false; // log setting
 
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
 var TEST_CCD = false;
-var TEST_SECTIONS = true;
+var TEST_SECTIONS = false;
 
 var supportedComponents = {
     payers: 'payers',
@@ -36,11 +36,11 @@ if (TEST_CCDA_SAMPLES) {
                     sum = 0;
                 for (var sample in stats) {
                     i = stats[sample]["index"];
-                    if (i < 3) { // add (i < n) to shorten
+                    if (true) { // add (i < n) to shorten
                         for (var j = 0; j < stats[sample]["files"].length; j++) {
                             fileNameXML = i + "-" + j + ".xml";
                             if (true) { // replace with j < n to shorten
-                                if (fileNameXML === "1-0.xml") { // replace with fileNameXML == "[filename]" to narrow down
+                                if (true) { // replace with fileNameXML == "[filename]" to narrow down
                                     var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('ccda-explorer/dump/' + i + "-" + j + ".xml", "ccda_explorer");
                                     sum++;
                                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
@@ -88,7 +88,7 @@ if (TEST_SECTIONS) {
     describe('sections', function () {
         it('should match respective sections', function () {
             Object.keys(supportedComponents).forEach(function (section) {
-                if (section === "allergies") { // add section === "[section]" for specific section
+                if (true) { // add section === "[section]" for specific section
                     var XMLDOMs = test.generateXMLDOM(section);
 
                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));

@@ -1,1 +1,601 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Walton",
+                "first": "Kay"
+            },
+            "dob": {
+                "point": {
+                    "date": "1968-11-27T12:00:00Z",
+                    "precision": "second"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19.5.99999.2",
+                    "identifier_type": "998991"
+                },
+                {
+                    "identifier": "2.16.840.1.113883.4.1",
+                    "identifier_type": "111-00-2330"
+                }
+            ],
+            "marital_status": "Married",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "4869 Coleman Avenue"
+                    ],
+                    "city": "Valley Center",
+                    "state": "CA",
+                    "zip": "92082",
+                    "country": "US",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "(760)751-8908",
+                    "type": "mobile contact"
+                }
+            ],
+            "race_ethnicity": "Black or African American",
+            "languages": [
+                {
+                    "language": "spa",
+                    "preferred": true,
+                    "mode": "Expressed spoken"
+                }
+            ],
+            "religion": "Native American",
+            "birthplace": {
+                "city": "Urich",
+                "state": "MO",
+                "zip": "64788",
+                "country": "US"
+            },
+            "guardians": [
+                {
+                    "relation": "friend",
+                    "addresses": [
+                        {
+                            "streetLines": [
+                                "1618 Bloomfield Way"
+                            ],
+                            "city": "Bryants Pond",
+                            "state": "ME",
+                            "zip": "4219",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "names": [
+                        {
+                            "prefix": "Mr.",
+                            "last": "Smith",
+                            "first": "Dane"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(207)665-9111",
+                            "type": "primary home"
+                        },
+                        {
+                            "number": "email:DaneBSmith@dayrep.com",
+                            "type": "work place"
+                        }
+                    ]
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-03-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 70,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-03-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 110,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 28.2,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-10-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 25.8,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-10-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 66,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-10-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 108,
+                "unit": "mm[Hg]"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "Cytology",
+                    "code": "116147009",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "Cyto Cervix",
+                            "code": "10524-7",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Cytopath, c/v auto, in fluid",
+                                    "code": "88174",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Scr c/v cyto, automated sys",
+                                    "code": "G0147",
+                                    "code_system_name": "OID 2.16.840.1.113883.6.13"
+                                },
+                                {
+                                    "name": "Encounter for screening for malignant neoplasm of cervix",
+                                    "code": "Z12.4",
+                                    "code_system_name": "OID 2.16.840.1.113883.6.90"
+                                },
+                                {
+                                    "name": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear",
+                                    "code": "V72.32",
+                                    "code_system_name": "OID 2.16.840.1.113883.6.103"
+                                },
+                                {
+                                    "name": "Microscopic examination of cervical Papanicolaou smear",
+                                    "code": "440623000",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-10-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Antidiabetic combinations + Glyburide 2.5 MG / Metformin hydrochloride 500 MG Oral Tablet  ",
+                    "product": {
+                        "name": "Glyburide 2.5 MG / Metformin hydrochloride 500 MG Oral Tablet",
+                        "code": "861748",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Polycystic Ovaries",
+                        "code": "69878008",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Polycystic ovarian syndrome",
+                                "code": "E28.2",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Polycystic ovaries",
+                                "code": "256.4",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-10-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Eggs",
+                    "code": "291P45F896",
+                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "translations": [
+                        {
+                            "name": "Allergy to eggs",
+                            "code": "V15.03",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "severity": "Fatal"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Neomycin Sulfate 500 MG",
+                    "code": "866041",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Penicillin V",
+                    "code": "N0000011298",
+                    "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
+                },
+                "severity": "Fatal"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {},
+                "status": "refused"
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Polycystic ovaries",
+                    "code": "69878008",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Polycystic ovarian syndrome",
+                            "code": "E28.2",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Polycystic ovaries",
+                            "code": "256.4",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "Medical nutrition, indiv, in",
+                    "code": "97802",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Nutritional counseling, diet",
+                            "code": "S9470",
+                            "code_system_name": "OID 2.16.840.1.113883.6.13"
+                        },
+                        {
+                            "name": "Encounter for other general examination",
+                            "code": "Z00.8",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Dietary surveillance and counseling",
+                            "code": "V65.3",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            },
+            {
+                "procedure": {
+                    "name": "Exercise class",
+                    "code": "S9451",
+                    "code_system_name": "OID 2.16.840.1.113883.6.13",
+                    "translations": [
+                        {
+                            "name": "Dietary counseling and surveillance",
+                            "code": "Z71.3",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Exercise counseling",
+                            "code": "V65.41",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-03-31T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"
+    ]
+}

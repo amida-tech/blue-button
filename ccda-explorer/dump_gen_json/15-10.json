@@ -1,1 +1,666 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Jones",
+                "first": "Myra"
+            },
+            "dob": {
+                "point": {
+                    "date": "1947-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3",
+                    "identifier_type": "110107073916280"
+                }
+            ],
+            "addresses": [
+                {
+                    "streetLines": [
+                        "1234 Six Forks"
+                    ],
+                    "city": "Portland",
+                    "state": "OR",
+                    "zip": "97005",
+                    "country": "US",
+                    "use": "home address"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "+1-(555)555-3333",
+                    "type": "primary home"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "eng",
+                    "preferred": true
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "6660219000296"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "6660219000356"
+                    }
+                ],
+                "vital": {
+                    "name": "Height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 70,
+                "unit": "[in_us]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "1166602190002918"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "1166602190003518"
+                    }
+                ],
+                "vital": {
+                    "name": "Weight",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 195,
+                "unit": "[lb_av]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "11666021900029181"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "11666021900035181"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 150,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "1166602190002928"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "1166602190003528"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 100,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "1166602190002939"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "identifier_type": "1166602190003539"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Mass Index Calculated",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 28,
+                "unit": "1"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
+                        "identifier_type": "659988700005"
+                    }
+                ],
+                "result_set": {
+                    "name": "CO2",
+                    "code": "82374",
+                    "code_system_name": "CPT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
+                                "identifier_type": "6599887000031"
+                            },
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
+                                "identifier_type": "6599889000031"
+                            }
+                        ],
+                        "result": {
+                            "name": "CO2",
+                            "code": "2028-9",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2012-08-15T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 25,
+                        "unit": "mmol/L"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2007-10-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
+                        "identifier_type": "659122500005"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
+                        "identifier_type": "659122500007"
+                    }
+                ],
+                "status": "Prescribed",
+                "product": {
+                    "unencoded_name": "fluticasone inhaled",
+                    "product": {
+                        "name": "fluticasone inhaled",
+                        "code": "1165655",
+                        "code_system_name": "RXNORM"
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "RESPIRATORY (INHALATION)",
+                        "code": "C38216",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "form": {
+                        "name": "AEROSOL, METERED",
+                        "code": "C42960",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 88,
+                        "unit": "mcg"
+                    },
+                    "interval": {
+                        "period": {
+                            "value": 12,
+                            "unit": "h"
+                        },
+                        "frequency": true
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-05-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
+                        "identifier_type": "6370322000351"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
+                        "identifier_type": "6654719000131"
+                    }
+                ],
+                "status": "Prescribed",
+                "product": {
+                    "unencoded_name": "metoprolol tartrate 50 MG Oral Tablet",
+                    "product": {
+                        "name": "metoprolol tartrate 50 MG Oral Tablet",
+                        "code": "866924",
+                        "code_system_name": "RXNORM"
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "ORAL",
+                        "code": "C38288",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "form": {
+                        "name": "TABLET",
+                        "code": "C42998",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 1
+                    },
+                    "interval": {
+                        "period": {
+                            "value": 12,
+                            "unit": "h"
+                        },
+                        "frequency": true
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "UNK",
+                    "code": "99231",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.3.4",
+                        "identifier_type": "5283815"
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-15T09:00:51Z",
+                        "precision": "second"
+                    }
+                },
+                "locations": [
+                    {
+                        "name": "Get Well Clinic",
+                        "location_type": {
+                            "name": "Any Age Mixed Acuity Unit",
+                            "code": "1212-0",
+                            "code_system_name": "HealthcareServiceLocation"
+                        }
+                    }
+                ]
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
+                        "identifier_type": "613618700107"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
+                        "identifier_type": "613618700109"
+                    }
+                ],
+                "allergen": {
+                    "name": "Aspirin",
+                    "code": "1191",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild to moderate",
+                "status": "Active",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Hives",
+                            "code": "247472004",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            },
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
+                        "identifier_type": "624373800001"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
+                        "identifier_type": "637073500005"
+                    }
+                ],
+                "severity": "Moderate to severe",
+                "status": "Active",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Rash",
+                            "code": "112625008",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.4",
+                        "identifier_type": "637382500009"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.4",
+                        "identifier_type": "637382500011"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza virus vaccine",
+                        "code": "88",
+                        "code_system_name": "CVX"
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "INTRAMUSCULAR",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "body_site": {
+                        "name": "Left Arm",
+                        "code": "368208006",
+                        "code_system_name": "SNOMED CT"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "1.3.6.1.4.1.22812.3.99930.3",
+                            "identifier_type": "3333"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Nightingale",
+                            "suffix": "RN",
+                            "first": "Nancy"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "Get Well Clinic",
+                                "1004 Healthcare Dr."
+                            ],
+                            "city": "Portland",
+                            "state": "OR",
+                            "zip": "97005",
+                            "country": "US"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "+1-(555)555-1014"
+                        }
+                    ]
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2012-01-01T00:00:00Z",
+                        "precision": "year"
+                    }
+                }
+            },
+            {
+                "value": "Current some day smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2012-01-01T00:00:00Z",
+                        "precision": "year"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-05-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+                        "identifier_type": "615028800003"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+                        "identifier_type": "659935200001"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Hypertension",
+                    "code": "38341003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
+                        "identifier_type": "615028800003"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
+                        "identifier_type": "659935200001"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2007-01-03T00:00:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+                        "identifier_type": "636842200007"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+                        "identifier_type": "660100900011"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma",
+                    "code": "195967001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
+                        "identifier_type": "636842200007"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
+                        "identifier_type": "660100900011"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.7",
+                        "identifier_type": "1898101"
+                    }
+                ],
+                "status": "Active",
+                "date_time": {},
+                "procedure_type": "procedure"
+            }
+        ],
+        "plan_of_care": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.3.4",
+                        "identifier_type": "52487"
+                    }
+                ],
+                "type": "encounter"
+            },
+            {
+                "plan": {
+                    "name": "Exercising to lose weight",
+                    "code": "289169006",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.13.2",
+                        "identifier_type": "55823"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "plan": {
+                    "name": "Asthma Management",
+                    "code": "406162001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.13.2",
+                        "identifier_type": "558231"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures",
+            "plan_of_care"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD"
+    ]
+}

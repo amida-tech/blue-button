@@ -1363,19 +1363,17 @@
                 }
             }
         ],
-        "social_history": {
-            "smoking_statuses": [
-                {
-                    "value": "Former smoker",
-                    "date_time": {
-                        "high": {
-                            "date": "1997-01-01T00:00:00Z",
-                            "precision": "year"
-                        }
+        "social_history": [
+            {
+                "value": "Former smoker",
+                "date_time": {
+                    "high": {
+                        "date": "1997-01-01T00:00:00Z",
+                        "precision": "year"
                     }
                 }
-            ]
-        },
+            }
+        ],
         "problems": [
             {
                 "date_time": {

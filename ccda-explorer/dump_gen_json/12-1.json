@@ -1,1 +1,404 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "middle": [
+                    "E"
+                ],
+                "last": "Wade",
+                "first": "Victoria"
+            },
+            "dob": {
+                "point": {
+                    "date": "1954-03-23T00:00:00Z",
+                    "precision": "subsecond"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.3.13.300.1.1.2.1",
+                    "identifier_type": "9473"
+                }
+            ],
+            "addresses": [
+                {
+                    "streetLines": [
+                        "266 York Street"
+                    ],
+                    "city": "Morton",
+                    "state": "IL",
+                    "zip": "61550- ",
+                    "country": "US",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "+13093548275",
+                    "type": "primary home"
+                }
+            ]
+        },
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2008-09-22T08:58:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "17550700-741A-4C7E-BDF0-60CA6573D4AB"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "= 1 cap(s), PO, Once Daily, 10 cap(s)",
+                "product": {
+                    "unencoded_name": "lisinopril 10 mg oral tablet",
+                    "product": {
+                        "name": "????",
+                        "code": "314076",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "code": "d00732",
+                                "code_system_name": "multum-drug-id"
+                            },
+                            {
+                                "code": "18388",
+                                "code_system_name": "multum-drug-synonym-id"
+                            }
+                        ]
+                    }
+                },
+                "supply": {
+                    "date_time": {
+                        "point": {
+                            "date": "2008-10-02T08:58:00Z",
+                            "precision": "subsecond"
+                        }
+                    },
+                    "repeatNumber": "1"
+                },
+                "administration": {
+                    "route": {
+                        "name": "Oral",
+                        "code": "C38288",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 1,
+                        "unit": "1"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2007-08-14T08:59:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9A9452C9-F4F4-41C0-A143-8DE507EA51FE"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "2 puff(s), INH, QID, 14 g",
+                "product": {
+                    "unencoded_name": "Lipitor 20 mg oral tablet",
+                    "product": {
+                        "name": "????",
+                        "code": "617310",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "code": "617318",
+                                "code_system_name": "RXNORM"
+                            },
+                            {
+                                "code": "d04105",
+                                "code_system_name": "multum-drug-id"
+                            },
+                            {
+                                "code": "16357",
+                                "code_system_name": "multum-drug-synonym-id"
+                            }
+                        ]
+                    }
+                },
+                "supply": {
+                    "repeatNumber": "1"
+                },
+                "administration": {
+                    "route": {
+                        "name": "Oral",
+                        "code": "C38288",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 2,
+                        "unit": "1"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-07-15T08:58:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1D60050A-2C6F-4FA5-9CC6-12CF7BE7B4D2"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "75 mg = 1 tab(s), PO, Once Daily, 30 tab(s)",
+                "product": {
+                    "unencoded_name": "Tavist"
+                },
+                "supply": {
+                    "repeatNumber": "1"
+                },
+                "administration": {
+                    "route": {
+                        "name": "Oral",
+                        "code": "C38288",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 75,
+                        "unit": "1"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-07-15T08:58:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "8A964259-1791-4249-AEE3-A5F218091E02"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "5 mg = 1 tab(s), PO, Once Daily, 30 tab(s)",
+                "product": {
+                    "unencoded_name": "aspirin"
+                },
+                "supply": {
+                    "repeatNumber": "1"
+                },
+                "administration": {
+                    "route": {
+                        "name": "Oral",
+                        "code": "C38288",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 5,
+                        "unit": "1"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2006-05-16T08:59:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "7BAC669A-A1AF-470E-9226-47620574B161"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "0.1 mg = 1 tab(s), PO, BID, 180 tab(s)",
+                "product": {
+                    "unencoded_name": "Catapres 0.1 mg oral tablet",
+                    "product": {
+                        "name": "clonidine",
+                        "code": "17326",
+                        "code_system_name": "Multum"
+                    }
+                },
+                "supply": {
+                    "repeatNumber": "1"
+                },
+                "administration": {
+                    "route": {
+                        "name": "Oral",
+                        "code": "C38288",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 0.1,
+                        "unit": "1"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-07-15T08:57:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1A357919-6450-4A9A-8EAB-C8E2E270FA21"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "30 mg = 1 tab(s), PO, Once Daily, 30 tab(s)",
+                "product": {
+                    "unencoded_name": "Zestril 30 mg oral tablet",
+                    "product": {
+                        "name": "lisinopril",
+                        "code": "16552",
+                        "code_system_name": "Multum"
+                    }
+                },
+                "supply": {
+                    "repeatNumber": "1"
+                },
+                "administration": {
+                    "route": {
+                        "name": "Oral",
+                        "code": "C38288",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 30,
+                        "unit": "1"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-07-09T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "DD1E8337-0006-4E75-B244-36EB26D18971"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "CFA98865-0D16-4045-9C25-D45B9751C101"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2007-08-12T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4B69C554-A55E-463C-8845-8EB457046974"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "8A021706-C5A3-4E4C-B2D8-F7B4E7168B62"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-02-15T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1799BE60-6174-40C1-AE3E-66043D63AEDD"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "BFBD2BC5-B5A3-4AB7-B273-5AE79D600E69"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2008-09-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "E61A8960-119A-448C-BDCF-911836D50C0D"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "8EC156B6-82D6-4F6D-ADD2-0C74F81281F5"
+                    }
+                ]
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "medications",
+            "problems"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required language in LanguageCommunication -> Patient -> CCD",
+        "nullFlavor alert:  missing but required preferred in LanguageCommunication -> Patient -> CCD",
+        "nullFlavor alert:  missing but required code in SimpifiedCode -> LanguageCommunication -> Patient -> CCD",
+        "nullFlavor alert:  missing but required system in SimpifiedCode -> LanguageCommunication -> Patient -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD"
+    ]
+}

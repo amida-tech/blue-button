@@ -1,1 +1,789 @@
-[object Object]
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Jones",
+                "first": "Isabella"
+            },
+            "dob": {
+                "point": {
+                    "date": "1947-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                    "identifier_type": "DCAC180E-B41C-4EF0-A066-A57429BAB8FF"
+                }
+            ],
+            "addresses": [
+                {
+                    "streetLines": [
+                        "No Address Indicated"
+                    ],
+                    "city": "No City Indicated",
+                    "state": "CA",
+                    "zip": "99999",
+                    "country": "United States of America",
+                    "use": "home address"
+                }
+            ],
+            "race_ethnicity": "Caucasian or European American",
+            "languages": [
+                {
+                    "language": "eng",
+                    "preferred": true,
+                    "mode": "Receive Written"
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
+                        "identifier_type": "9279-1"
+                    }
+                ],
+                "vital": {
+                    "name": "Respiratory Rate",
+                    "code": "9279-1",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 0,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
+                        "identifier_type": "8867-4"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 0,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
+                        "identifier_type": "8480-6"
+                    }
+                ],
+                "vital": {
+                    "name": "Systolic BP",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 135,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
+                        "identifier_type": "8310-5"
+                    }
+                ],
+                "vital": {
+                    "name": "Diastolic BP",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 92,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
+                        "identifier_type": "8310-5"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Temperature",
+                    "code": "8310-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 0,
+                "unit": "[degF]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
+                        "identifier_type": "8302-2"
+                    }
+                ],
+                "vital": {
+                    "name": "Height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 69.7,
+                "unit": "[in_us]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
+                        "identifier_type": "8287-5"
+                    }
+                ],
+                "vital": {
+                    "name": "Head Circumference",
+                    "code": "8287-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 0,
+                "unit": "[in_us]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
+                        "identifier_type": "3141-9"
+                    }
+                ],
+                "vital": {
+                    "name": "Weight Measured",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 194,
+                "unit": "[lb_av]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
+                        "identifier_type": "39156-5"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI (Body Mass Index)",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T12:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 28.0732,
+                "unit": "kg/m2"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "A616429ef-629e-4efb-bc66-d64531c3abd6"
+                    }
+                ],
+                "result_set": {
+                    "name": "Complete CBC",
+                    "code": "1002",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "367B4FC3-9EC9-4351-A926-A24815FD2154"
+                            }
+                        ],
+                        "result": {
+                            "name": "HGB",
+                            "code": "30313-1",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-11-04T08:35:51Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 14.2,
+                        "unit": "g/dL"
+                    },
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "E29AD808-BE6F-4ADC-A251-64D541859A7C"
+                            }
+                        ],
+                        "result": {
+                            "name": "HCT",
+                            "code": "20570-8",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-11-04T08:35:51Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 45,
+                        "unit": "%"
+                    },
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "814AFA87-104D-4228-8C63-70411CE5B364"
+                            }
+                        ],
+                        "result": {
+                            "name": "WBC",
+                            "code": "33765-9",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-11-04T08:35:51Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 7.6,
+                        "unit": "10*3/ul"
+                    },
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "517E58C2-E43F-4615-852D-35F73C00DF95"
+                            }
+                        ],
+                        "result": {
+                            "name": "PLT",
+                            "code": "26515-7",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-11-04T08:35:51Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 220,
+                        "unit": "10*3/ul"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "identifiers": {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
+                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                    },
+                    "product": {
+                        "name": "albuterol 90 mcg/inh",
+                        "code": "307782",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "identifiers": {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
+                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                    },
+                    "product": {
+                        "name": "clarithromycin 500 mg",
+                        "code": "197517",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "identifiers": {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
+                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                    },
+                    "product": {
+                        "name": "metoprolol 25 mg",
+                        "code": "866924",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "identifiers": {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
+                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                    },
+                    "product": {
+                        "name": "albuterol 90 mcg/inh",
+                        "code": "307782",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "Ab87823e5-4247-46dc-838c-2f154dafdd99",
+                        "identifier_type": "1"
+                    }
+                ],
+                "date_time": {}
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-11-26T06:44:03Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "82682824"
+                    }
+                ],
+                "allergen": {
+                    "name": "Bicillin L-A",
+                    "code": "731570",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild",
+                "status": "Active",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Hives",
+                            "code": "126485001",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-11-25T08:36:03Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "82682824"
+                    }
+                ],
+                "allergen": {
+                    "name": "Codeine Phosphate",
+                    "code": "601263",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild",
+                "status": "Active",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Shortness of breath",
+                            "code": "267036007",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-11-26T02:21:50Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "82682824"
+                    }
+                ],
+                "allergen": {
+                    "name": "Aspirin",
+                    "code": "212033",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Moderate",
+                "status": "Active",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Hives",
+                            "code": "126485001",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2007-01-04T08:00:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2007-01-04T08:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "EAE1A4B7-B683-46CE-8BF1-4A29ADF32842"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "tetanus toxoid, unspecified formulation",
+                        "code": "112",
+                        "code_system_name": "CVX"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-11-01T07:00:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2009-11-01T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "292FAC29-B512-412A-A19B-9DABDE370529"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza, seasonal, injectable, preservative free",
+                        "code": "140",
+                        "code_system_name": "CVX"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-10T07:00:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2010-09-10T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "D184C6E2-4720-4861-8DB7-029EE7D95A20"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza, seasonal, injectable, preservative free",
+                        "code": "140",
+                        "code_system_name": "CVX"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T07:00:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2012-08-06T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "DD97B43A-0641-4D92-A260-6BA694611296"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Pneumococcal, 23-valent, adult",
+                        "code": "33",
+                        "code_system_name": "CVX"
+                    }
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Smoker, current status unknown",
+                "date_time": {
+                    "low": {
+                        "date": "1992-01-01T08:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-01T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.2.1",
+                        "identifier_type": "A72101f83-b18b-4f88-a6da-64a70c05e139"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Viral pneumonia, unspecified",
+                    "code": "480.9",
+                    "code_system_name": "OID 2.16.840.1.113883.6.103"
+                },
+                "onset_age": "66",
+                "onset_age_unit": "Year",
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "82682824"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-01T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.2.1",
+                        "identifier_type": "A66621245-3082-4e9b-a59f-c19be04d7066"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma, unspecified type, unspecified",
+                    "code": "493.90",
+                    "code_system_name": "OID 2.16.840.1.113883.6.103"
+                },
+                "onset_age": "66",
+                "onset_age_unit": "Year",
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "82682824"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-01T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.2.1",
+                        "identifier_type": "A1403e1b0-bf2d-4842-b851-883efad323ce"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Hypoxemia",
+                    "code": "799.02",
+                    "code_system_name": "OID 2.16.840.1.113883.6.103"
+                },
+                "onset_age": "66",
+                "onset_age_unit": "Year",
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "82682824"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.9"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {},
+                "procedure_type": "procedure"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD"
+    ]
+}
