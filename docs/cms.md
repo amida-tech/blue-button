@@ -44,7 +44,7 @@ Unbolded ones are currently unimplemented but maybe mentioned in bluebutton.
 + Implantable Devices -> Medical Equipment
 + Family History
 + Preventive Services(future Appointments) -> Plan of Care?
-+ Providers -> Payer?
++ Providers ->
 + Pharmacies
 + Medical Plans -> Plan of Care>
 + **Subsidies**

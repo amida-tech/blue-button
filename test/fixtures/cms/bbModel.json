@@ -89,12 +89,6 @@
                     },
                     "unencoded_name": "Aspirin"
                 },
-                "administration": {
-                    "rate": {
-                        "value": 0,
-                        "unit": ""
-                    }
-                },
                 "sig": "Aspirin",
                 "status": "Completed"
             },
@@ -134,12 +128,14 @@
                         "precision": "day"
                     }
                 ],
-                "reactions": {
-                    "reaction": {
-                        "name": "Vomiting"
-                    },
-                    "severity": "Severe"
-                }
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Vomiting"
+                        },
+                        "severity": "Severe"
+                    }
+                ]
             },
             {
                 "allergen": {
@@ -159,12 +155,14 @@
                         "precision": "day"
                     }
                 ],
-                "reactions": {
-                    "reaction": {
-                        "name": "Sneezing"
-                    },
-                    "severity": "Severe"
-                }
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Sneezing"
+                        },
+                        "severity": "Severe"
+                    }
+                ]
             }
         ],
         "immunizations": [
@@ -404,6 +402,10 @@
                     "low": {
                         "date": "2012-10-18T00:00:00.000Z",
                         "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-10-18T00:00:00.000Z",
+                        "precision": "day"
                     }
                 },
                 "lines": [
@@ -423,7 +425,10 @@
                             "code": "98941",
                             "description": "Chiropractic Manipulative Treatment (Cmt); Spinal, Three To Four Regions"
                         },
-                        "quantity": 1,
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
                         "modifier": [
                             {
                                 "code": "AT",
@@ -497,7 +502,10 @@
                             "code": "0250",
                             "description": "General Classification PHARMACY"
                         },
-                        "quantity": 1,
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
                         "charges": {
                             "price_billed": "$14.30",
                             "insurance_paid": "$14.30",
@@ -520,7 +528,10 @@
                             "code": "74020",
                             "description": "Radiologic Examination, Abdomen; Complete, Including Decubitus And/Or Erect Views"
                         },
-                        "quantity": 1,
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
                         "charges": {
                             "price_billed": "$175.50",
                             "insurance_paid": "$175.50",
@@ -543,7 +554,10 @@
                             "code": "99283",
                             "description": "Emergency Department Visit For The Evaluation And Management Of A Patient, Which Requires Th"
                         },
-                        "quantity": 1,
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
                         "modifier": [
                             {
                                 "code": "25",
@@ -562,7 +576,10 @@
                             "code": "0001",
                             "description": "Total Charges"
                         },
-                        "quantity": 0,
+                        "quantity": {
+                            "value": 0,
+                            "unit": "line"
+                        },
                         "charges": {
                             "price_billed": "$504.80",
                             "insurance_paid": "$504.80",
@@ -596,6 +613,16 @@
                     "medicare"
                 ],
                 "number": "1234567890123",
+                "date_time": {
+                    "low": {
+                        "date": "2012-12-01T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-12-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
                 "lines": [
                     {
                         "line": "1",
@@ -613,7 +640,10 @@
                             "code": "98941",
                             "description": "Chiropractic Manipulative Treatment, 3 To 4 Spinal Regions"
                         },
-                        "quantity": 1,
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
                         "modifier": [
                             {
                                 "code": "GA",
@@ -649,7 +679,10 @@
                             "code": "G0283",
                             "description": "Electrical Stimulation (Unattended), To One Or More Areas For Indication(S) Other Than Wound"
                         },
-                        "quantity": 1,
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
                         "modifier": [
                             {
                                 "code": "GY",
@@ -668,6 +701,23 @@
                             "number": "123456",
                             "npi": "123456789"
                         }
+                    }
+                ],
+                "type": [
+                    "medicare PartB"
+                ],
+                "diagnosis": [
+                    {
+                        "code": "7392"
+                    },
+                    {
+                        "code": "7241"
+                    },
+                    {
+                        "code": "7393"
+                    },
+                    {
+                        "code": "7391"
                     }
                 ]
             },
@@ -703,7 +753,9 @@
                             "provider_name": "PHARMACY2 #00000"
                         },
                         "proscriber": {
-                            "code": "123456789",
+                            "id": {
+                                "identifier": "123456789"
+                            },
                             "name": "Jane Doe"
                         }
                     }
@@ -741,11 +793,75 @@
                             "provider_name": "PHARMACY3 #00000"
                         },
                         "proscriber": {
-                            "code": "123456789",
+                            "id": {
+                                "identifier": "123456789"
+                            },
                             "name": "Jane Doe"
                         }
                     }
                 ]
+            }
+        ],
+        "plan_of_care": [
+            {
+                "plan": {
+                    "name": "DIABETES"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2011-10-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan": {
+                    "name": "PAP TEST DR"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2011-10-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan": {
+                    "name": "ABDOMINAL AORTIC ANEURYSM"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2012-07-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan": {
+                    "name": "ANNUAL WELLNESS VISIT"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan": {
+                    "name": "DEPRESSION SCREENING"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2012-10-14T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
             }
         ]
     },

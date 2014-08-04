@@ -814,7 +814,7 @@
               <act classCode="ACT" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
                 <id root="3e676a50-7aac-11db-9fe1-0800200c9a66"/>
-                <code code="SELF" codeSystemName="OID 2.16.840.1.113883.5.110"/>
+                <code code="SELF" codeSystemName="HL7 RoleCode"/>
                 <statusCode code="completed"/>
                 <performer typeCode="PRF">
                   <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
