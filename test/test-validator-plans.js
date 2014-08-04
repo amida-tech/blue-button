@@ -22,7 +22,7 @@ describe('Test Plan Of Care', function () {
 
         var missing_plan = testPlan_Of_Care.test_plan_of_care_list.missing_plan;
         valid = validator.validateSectionObj(missing_plan, 'plan_of_care');
-        expect(valid).to.true;
+        expect(valid).to.false;
 
         var missing_type = testPlan_Of_Care.test_plan_of_care_list.missing_type;
         valid = validator.validateSectionObj(missing_type, 'plan_of_care');
