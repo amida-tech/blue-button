@@ -20,8 +20,11 @@ exports.parse = parser.parse;
 
 exports.generateSchema = require("./lib/schema.js").generateSchema;
 
-
+// ccda generation
 exports.generateCCDA = require("./lib/generator/ccda/generator.js").genWholeCCDA;
+
+// testing for ccda generation
+exports.testCCDA = require("./test/test-lib.js").testXML;
 
 //remove old validator.js from /lib
 exports.validator = require("./lib/validator/validator.js");

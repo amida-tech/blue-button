@@ -291,7 +291,7 @@ describe('Test file parsing beginning to end', function () {
                 console.log(err);
                 done();
             } else {
-                console.log("JSON saved to " + outputFilename);
+                // console.log("JSON saved to " + outputFilename);
                 done();
             }
         });

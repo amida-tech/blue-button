@@ -4,11 +4,12 @@ var lib = require('./test-lib.js');
 var fs = require("fs");
 
 var test = new lib.testXML();
+test.verbose = false; // log setting
 
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
-var TEST_CCD = false;
-var TEST_SECTIONS = true;
+var TEST_CCD = true;
+var TEST_SECTIONS = false;
 
 var supportedComponents = {
     payers: 'payers',
@@ -43,7 +44,7 @@ if (TEST_CCDA_SAMPLES) {
                                     var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('ccda-explorer/dump/' + i + "-" + j + ".xml", "ccda_explorer");
                                     sum++;
                                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-                                    console.log("TOTAL ERRORS: " + test.errors["total"]);
+                                    test.logMsg("TOTAL ERRORS: " + test.errors["total"]);
                                 }
                             }
                         }
@@ -54,15 +55,29 @@ if (TEST_CCDA_SAMPLES) {
     });
 }
 
-// test whole CCD document
+// test whole CCD document (version: ccda-r1.1 (ccda))
 if (TEST_CCD) {
     describe('ccda', function () {
         describe('generating CCDA for entire CCD', function () {
             it('should match entire CCD', function () {
-                var XMLDOMs = test.generateXMLDOMForEntireCCD('test/fixtures/files/json/', 'CCD_1.json', 'test/fixtures/files/generated/', 'CCD_1_gen.xml', 'test/fixtures/files/generated/', 'CCD_1_gen.xml');
+                var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('test/fixtures/files/CCD_1.xml', 'sample_ccda', '');
 
                 assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-                console.log("TOTAL ERRORS: " + test.errors["total"]);
+                test.logMsg("TOTAL ERRORS: " + test.errors["total"]);
+            });
+        });
+    });
+}
+
+// test whole CCD document (version: ccda-r1)
+if (TEST_CCD) {
+    describe('ccda', function () {
+        describe('generating CCDA for entire CCD', function () {
+            it('should match entire CCD', function () {
+                var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('test/fixtures/files/CCD_1_r1.xml', 'sample_ccda', '_r1');
+
+                assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+                test.logMsg("TOTAL ERRORS: " + test.errors["total"]);
             });
         });
     });
@@ -73,11 +88,11 @@ if (TEST_SECTIONS) {
     describe('sections', function () {
         it('should match respective sections', function () {
             Object.keys(supportedComponents).forEach(function (section) {
-                if (section === "payers") { // add section === "[section]" for specific section
+                if (true) { // add section === "[section]" for specific section
                     var XMLDOMs = test.generateXMLDOM(section);
 
                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-                    console.log("TOTAL ERRORS: " + test.errors["total"]);
+                    test.logMsg("ERRORS: " + test.errors["sections"][test.curr_section]);
                 }
             });
         });
@@ -87,6 +102,6 @@ if (TEST_SECTIONS) {
 // show the error summary
 describe('show errors', function () {
     it('should show error summary', function () {
-        console.log("\nERROR SUMMARY: " + JSON.stringify(test.errors, null, 4) + "\n" + JSON.stringify(test.error_settings, null, 4));
+        test.logMsg("\nERROR SUMMARY: " + JSON.stringify(test.errors, null, 4) + "\n" + JSON.stringify(test.error_settings, null, 4));
     });
 });

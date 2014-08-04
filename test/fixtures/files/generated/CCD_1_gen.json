@@ -361,6 +361,16 @@
                         "code_system_name": "RXNORM"
                     }
                 },
+                "supply": {
+                    "date_time": {
+                        "low": {
+                            "date": "2007-01-03T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "repeatNumber": "1",
+                    "quantity": "75"
+                },
                 "administration": {
                     "route": {
                         "name": "RESPIRATORY (INHALATION)",
@@ -426,6 +436,13 @@
                         "precision": "subsecond"
                     }
                 },
+                "performers": [
+                    {
+                        "name": "General Physician",
+                        "code": "59058001",
+                        "code_system_name": "SNOMED CT"
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Community Urgent Care Center",
@@ -863,23 +880,52 @@
                 "refusal_reason": "Patient objection"
             }
         ],
-        "social_history": {
-            "smoking_statuses": [
-                {
-                    "value": "Former smoker",
-                    "date_time": {
-                        "low": {
-                            "date": "2005-05-01T00:00:00Z",
-                            "precision": "day"
-                        },
-                        "high": {
-                            "date": "2009-02-27T13:00:00Z",
-                            "precision": "subsecond"
-                        }
+        "social_history": [
+            {
+                "value": "Former smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "subsecond"
                     }
                 }
-            ]
-        },
+            },
+            {
+                "value": "Tobacco use and exposure",
+                "date_time": {
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "subsecond"
+                    }
+                }
+            },
+            {
+                "value": "Tobacco use and exposure",
+                "date_time": {
+                    "low": {
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "subsecond"
+                    }
+                }
+            },
+            {
+                "value": "Alcohol intake",
+                "date_time": {
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                }
+            }
+        ],
         "problems": [
             {
                 "date_time": {
@@ -1467,6 +1513,7 @@
     },
     "errors": [
         "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
