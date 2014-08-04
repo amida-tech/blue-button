@@ -1,0 +1,672 @@
+--------------------------------
+MYMEDICARE.GOV PERSONAL HEALTH INFORMATION
+
+--------------------------------
+**********CONFIDENTIAL***********
+
+Produced by the Blue Button (v2.0)
+
+03/16/2013 5:10 AM
+
+
+
+
+--------------------------------
+Demographic
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+Name: Isabella Isa Jones
+
+Date of Birth: 05/01/1975
+
+Address Line 1: 1357 Amber Drive
+
+Address Line 2: 
+
+City: Beaverton
+
+State: OR
+
+Zip: 97867
+
+Phone Number: 816-276-6909
+
+Email: isabella@amida.com
+
+Part A Effective Date: 01/01/2012
+
+Part B Effective Date: 01/01/2012
+
+
+
+--------------------------------
+Emergency Contact
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Contact Name: JANE DOE
+
+Address Type:Home
+
+Address Line 1: 123 AnyWhere St
+
+Address Line 2: 
+
+City: AnyWhere
+
+State: DC
+
+Zip: 00002-1111
+
+Relationship: Other
+
+Home Phone: 123-456-7890
+
+Work Phone: 000-001-0001
+
+Mobile Phone: 000-001-0002
+
+Email Address: JANEDOE@example.com
+
+
+
+Contact Name: STEVE DOE
+
+Address Type:
+
+Address Line 1: 123 AnyWhere Rd
+
+Address Line 2: 
+
+City: AnyWhere
+
+State: VA
+
+Zip: 00001
+
+Relationship: Other
+
+Home Phone: 123-456-7890
+
+Work Phone: 000-001-0001
+
+Mobile Phone: 000-001-0002
+
+Email Address: STEVEDOE@example.com
+
+
+
+--------------------------------
+Self Reported Medical Conditions
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Condition Name: Pneumonia
+
+Medical Condition Start Date: 01/03/2008
+
+Medical Condition End Date: 01/03/2008
+
+
+
+Condition Name: Asthma
+
+Medical Condition Start Date: 01/03/2007
+
+Medical Condition End Date: 01/03/2008
+
+
+
+--------------------------------
+Self Reported Allergies
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Allergy Name: ALLERGENIC EXTRACT, PENICILLIN
+
+Type: Drugs
+
+Reaction: Nausea
+
+Severity: Mild
+
+Diagnosed: Yes
+
+Treatment: Allergy Shots
+
+First Episode Date: 05/01/2007
+
+
+
+Allergy Name: Codeine
+
+Type: Drugs
+
+Reaction: Wheezing
+
+Severity: Mild
+
+Diagnosed: Yes
+
+Treatment: Avoidance
+
+First Episode Date: 05/01/2006
+
+Comments: 
+
+
+
+Allergy Name: Aspirin
+
+Type: Drugs
+
+Reaction: Hives
+
+Severity: Mild to moderate
+
+Diagnosed: Yes
+
+Treatment: Avoidance
+
+First Episode Date: 05/01/2008
+
+Comments: 
+
+
+
+
+
+
+--------------------------------
+Self Reported Implantable Device
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Device Name: Artificial Eye Lenses
+
+Date Implanted: 1/27/1942
+
+
+
+--------------------------------
+Self Reported Immunizations
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Immunization Name: Influenza virus vaccine
+
+Date Administered: 11/01/1999
+
+Method: Intramuscular injection
+
+
+
+Immunization Name: Influenza virus vaccine
+
+Date Administered: 12/15/1998
+
+Method: Intramuscular injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: Pneumococcal polysaccharide vaccine
+
+Date Administered: 12/15/1998
+
+Method: Intramuscular injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: Tetanus and diphtheria toxoids - preservative free
+
+Date Administered: 12/15/1998
+
+Method: Intramuscular injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+
+
+
+--------------------------------
+Self Reported Labs and Tests
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Test/Lab Type: CBC WO DIFFERENTIAL
+Date Taken: 03/23/2000
+
+Administered by: AnyLab
+
+Requesting Doctor: Dr. Smith
+
+Reason Test/Lab Requested: 
+
+Results: 13.2, 6.7, 123
+
+Comments: HGB, WBC, PLT
+
+
+
+
+--------------------------------
+Self Reported Vital Statistics
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Vital Statistic Type: Blood Pressure
+
+Date: 11/14/1999
+
+Time: 3:00 PM
+
+Reading: 132/80
+
+Comments: mmHg
+
+
+
+Vital Statistic Type: Blood Pressure
+
+Date: 04/07/2000
+
+Time: 3:00 PM
+
+Reading: 145/80
+
+Comments: mmHg
+
+
+
+Vital Statistic Type: Patient Body Weight - Measured
+
+Date: 11/14/1999
+
+Time: 12:00 PM
+
+Reading: 86
+
+Comments: 
+
+
+Vital Statistic Type: Height
+
+Date: 11/14/1999
+
+Time: 12:00 PM
+
+Reading: 
+
+Comments: 
+
+
+
+Vital Statistic Type: Height
+
+Date: 11/14/1999
+
+Time: 12:00 PM
+
+Reading: 
+
+Comments: 
+
+
+
+
+--------------------------------
+Family Medical History
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Family Member: Brother
+
+Type: 
+
+DOB:1/10/1915
+
+DOD: 
+
+Age: 
+
+Type: Allergy
+
+Description: Antiarrythmia
+
+Description: Antibiotic
+
+Description: Anticonvulsants
+
+Type: Condition
+
+Description: Allergies
+
+Description: Alzheimer's Disease
+
+Description: Angina (Heart Pain)
+
+Description: Cataracts
+
+
+--------------------------------
+Drugs
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Drug Name: Proventil HFA INH 1MG/ACTUAT
+
+Supply: Daily
+
+Orig Drug Entry: Proventil HFA
+
+
+
+Drug Name: Aspirin
+
+Supply: Dialy
+
+Orig Drug Entry: Aspirin
+
+
+
+--------------------------------
+Preventive Services
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+Description: DIABETES
+
+Next Eligible Date: 10/1/2011
+
+Last Date of Service: 
+
+
+
+Description: PAP TEST DR
+
+Next Eligible Date: 10/1/2011
+
+Last Date of Service: 
+
+
+
+Description: ABDOMINAL AORTIC ANEURYSM
+
+Next Eligible Date: 7/1/2012
+
+Last Date of Service: 
+
+
+
+Description: ANNUAL WELLNESS VISIT
+
+Next Eligible Date: 1/1/2013
+
+Last Date of Service: 
+
+
+
+Description: DEPRESSION SCREENING
+
+Next Eligible Date: 10/14/2012
+
+Last Date of Service: 
+
+
+
+--------------------------------
+Providers
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Provider Name: ANY CARE
+
+Provider Address: 123 Any Rd, Anywhere, MD 99999
+
+Type: NHC
+
+Specialty: 
+
+Medicare Provider: Not Available
+
+
+
+Provider Name: ANY HOSPITAL1
+
+Provider Address: 123 Drive, Anywhere, VA 00001
+
+Type: HOS
+
+Specialty: 
+
+Medicare Provider: Not Available
+
+Provider Name: Jane Doe
+
+Provider Address: 123 Road, Anywhere, VA 00001
+
+Type: PHY
+
+Specialty: Other
+
+Medicare Provider: Not Available
+
+
+
+--------------------------------
+Pharmacies
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Pharmacy Name: PHARMACY, EAST STREET ANYWHERE, DC 00002
+
+Pharmacy Phone: 000-000-0001
+
+
+
+Pharmacy Name: ANY PHARMACY, WEST STREET ANYWHERE, VA 00001
+
+Pharmacy Phone: 000-000-0002
+
+
+
+--------------------------------
+Plans
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+Contract ID/Plan ID: H9999/9999
+
+Plan Period: 09/01/2011 - current
+
+Plan Name: A Medicare Plan Plus (HMO)
+
+Marketing Name: HealthCare Payer
+
+Plan Address: 123 Any Road Anytown PA 00003
+
+Plan Type: 3 - Coordinated Care Plan (HMO, PPO, PSO, SNP)
+
+
+
+Contract ID/Plan ID: S9999/000
+
+Plan Period: 01/01/2010 - current
+
+Plan Name: A Medicare Rx Plan (PDP)
+
+Marketing Name: Another HealthCare Payer
+
+Plan Address: 123 Any Road Anytown PA 00003
+
+Plan Type: 11 - Medicare Prescription Drug Plan
+
+
+
+--------------------------------
+Employer Subsidy
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+Employer Plan: STATE HEALTH BENEFITS PROGRAM
+
+Employer Subsidy Start Date: 01/01/2011
+
+Employer Subsidy End Date: 12/31/2011
+
+
+--------------------------------
+Primary Insurance
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+MSP Type: End stage Renal Disease (ESRD)
+
+Policy Number: 1234567890
+
+Insurer Name: Insurer1
+
+Insurer Address: PO BOX 0000 Anytown, CO 00002-0000
+
+Effective Date: 01/01/2011
+
+Termination Date: 09/30/2011
+
+
+
+MSP Type: End stage Renal Disease (ESRD)
+
+Policy Number: 12345678901
+
+Insurer Name: Insurer2
+
+Insurer Address: 0000 Any ROAD ANYWHERE, VA 00000-0000
+
+Effective Date: 01/01/2010
+
+Termination Date: 12/31/2010
+
+
+
+--------------------------------
+Other Insurance
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+MSP Type: 
+
+Policy Number: 00001
+
+Insurer Name: Insurer
+
+Insurer Address: 00 Address STREET ANYWHERE, PA 00000
+
+Effective Date: 10/01/1984
+
+Termination Date: 11/30/2008
+
+
+
+
+--------------------------------
+
+
+
