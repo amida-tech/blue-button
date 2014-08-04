@@ -1,0 +1,1533 @@
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Cooper",
+                "first": "Eleanor"
+            },
+            "dob": {
+                "point": {
+                    "date": "1983-05-23T12:00:00Z",
+                    "precision": "second"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19.5.99999.2",
+                    "identifier_type": "998991"
+                },
+                {
+                    "identifier": "2.16.840.1.113883.4.1",
+                    "identifier_type": "111-00-2330"
+                }
+            ],
+            "marital_status": "Married",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "4268 Sunburst Drive"
+                    ],
+                    "city": "Fort Myers",
+                    "state": "FL",
+                    "zip": "33901",
+                    "country": "US",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "(239)452-6011",
+                    "type": "mobile contact"
+                }
+            ],
+            "race_ethnicity": "Native Hawaiian or Other Pacific Islander",
+            "languages": [
+                {
+                    "language": "spa",
+                    "preferred": true,
+                    "mode": "Expressed spoken"
+                }
+            ],
+            "religion": "Zen Buddhism",
+            "birthplace": {
+                "city": "Irvine",
+                "state": "CA",
+                "zip": "92614",
+                "country": "US"
+            },
+            "guardians": [
+                {
+                    "relation": "friend",
+                    "addresses": [
+                        {
+                            "streetLines": [
+                                "2081 Wines Lane"
+                            ],
+                            "city": "Houston",
+                            "state": "TX",
+                            "zip": "77587",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "names": [
+                        {
+                            "prefix": "Mrs.",
+                            "last": "Kline",
+                            "first": "Bertha"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(832)386-7167",
+                            "type": "primary home"
+                        },
+                        {
+                            "number": "email:BerthaMKline@armyspy.com",
+                            "type": "work place"
+                        }
+                    ]
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 26,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 70,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 72,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 120,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 72,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 72,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 124,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 26.6,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 74,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 72,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 122,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-12-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 72,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-12-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 70,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-12-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 126,
+                "unit": "mm[Hg]"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "Blood Chemistry",
+                    "code": "166312007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "Hgb A1c MFr Bld",
+                            "code": "4548-4",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Glycated hemoglobin test",
+                                    "code": "83036",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Hemoglobin A1c measurement",
+                                    "code": "43396009",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-04-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 7.1,
+                        "unit": "%"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "Lipid Panel",
+                    "code": "16254007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "HDLc SerPl-sCnc",
+                            "code": "14646-4",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Lipoprotein bld, hr fraction",
+                                    "code": "83701",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "High density lipoprotein cholesterol measurement",
+                                    "code": "28036006",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-04-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 55,
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "LDLc SerPl-mCnc",
+                            "code": "2089-1",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Assay of blood lipoprotein",
+                                    "code": "83721",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Low density lipoprotein cholesterol measurement",
+                                    "code": "113079009",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-04-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 133,
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "Cholest SerPl-mCnc",
+                            "code": "2093-3",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Assay, bld/serum cholesterol",
+                                    "code": "82465",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Total cholesterol measurement",
+                                    "code": "121868005",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-04-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 220,
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "Trigl SerPl Calc-mCnc",
+                            "code": "12951-0",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Assay of triglycerides",
+                                    "code": "84478",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Triglycerides measurement",
+                                    "code": "14740000",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-04-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 160,
+                        "unit": "mg/dL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "Blood Chemistry",
+                    "code": "166312007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "Hgb A1c MFr Bld",
+                            "code": "4548-4",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Glycated hemoglobin test",
+                                    "code": "83036",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Hemoglobin A1c measurement",
+                                    "code": "43396009",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-08-01T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 6.8,
+                        "unit": "%"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "Microbiology",
+                    "code": "269934003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "C trach Ag XXX Ql",
+                            "code": "31777-6",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Chlamydia trachomatis ag if",
+                                    "code": "87270",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Measurement of Chlamydia pneumoniae antibody",
+                                    "code": "121953005",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-09-17T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ]
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "Cytology",
+                    "code": "116147009",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "Cyto Cervix",
+                            "code": "10524-7",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Cytopath, c/v auto, in fluid",
+                                    "code": "88174",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Scr c/v cyto, automated sys",
+                                    "code": "G0147",
+                                    "code_system_name": "OID 2.16.840.1.113883.6.13"
+                                },
+                                {
+                                    "name": "Encounter for screening for malignant neoplasm of cervix",
+                                    "code": "Z12.4",
+                                    "code_system_name": "OID 2.16.840.1.113883.6.90"
+                                },
+                                {
+                                    "name": "Encounter for Papanicolaou cervical smear to confirm findings of recent normal smear following initial abnormal smear",
+                                    "code": "V72.32",
+                                    "code_system_name": "OID 2.16.840.1.113883.6.103"
+                                },
+                                {
+                                    "name": "Microscopic examination of cervical Papanicolaou smear",
+                                    "code": "440623000",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-09-17T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ]
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "Blood Chemistry",
+                    "code": "166312007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "Hgb A1c MFr Bld",
+                            "code": "4548-4",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Glycated hemoglobin test",
+                                    "code": "83036",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Hemoglobin A1c measurement",
+                                    "code": "43396009",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-12-17T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 6.3,
+                        "unit": "%"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-20T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Antidiabetics + exenatide 0.25 MG/ML Injectable Solution  ",
+                    "product": {
+                        "name": "exenatide 0.25 MG/ML Injectable Solution",
+                        "code": "744863",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-20T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "product": {
+                        "name": "Albuterol 0.83 MG/ML Inhalant Solution",
+                        "code": "630208",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Contraceptives + Ethinyl Estradiol 0.05 MG / Norgestrel 0.5 MG Oral Tablet  ",
+                    "product": {
+                        "name": "Ethinyl Estradiol 0.05 MG / Norgestrel 0.5 MG Oral Tablet",
+                        "code": "314146",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Diabetes",
+                        "code": "44054006",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Type 2 diabetes mellitus without complications",
+                                "code": "E11.9",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
+                                "code": "250.00",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office consultation",
+                    "code": "99241",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Asthma",
+                        "code": "195979001",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Asthma",
+                                "code": "J45",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Asthma, unspecified type, with (acute) exacerbation",
+                                "code": "493.92",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office consultation",
+                    "code": "99241",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-12-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Eggs",
+                    "code": "291P45F896",
+                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "translations": [
+                        {
+                            "name": "Allergy to eggs",
+                            "code": "V15.03",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "severity": "Mild to moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Fosfomycin 33.3 MG/ML Oral Suspension",
+                    "code": "808917",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Severe"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Doxycycline 75 MG Enteric Coated Tablet",
+                    "code": "406524",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "Tetracycline",
+                            "code": "N0000006275",
+                            "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
+                        }
+                    ]
+                },
+                "severity": "Moderate to severe"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza, high dose seasonal",
+                        "code": "135",
+                        "code_system_name": "CVX"
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "Intramuscular injection",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.4.6",
+                            "identifier_type": "999999943252"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Smith",
+                            "first": "Jim"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "101 Maple Street"
+                            ],
+                            "city": "Washington",
+                            "state": "DC",
+                            "zip": "20009",
+                            "country": "United States"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "888-888-0000"
+                        }
+                    ],
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5",
+                                    "identifier_type": "2981824"
+                                }
+                            ],
+                            "name": [
+                                "Good Hospital"
+                            ],
+                            "address": [
+                                {
+                                    "streetLines": [
+                                        "101 Maple Street"
+                                    ],
+                                    "city": "Washington",
+                                    "state": "DC",
+                                    "zip": "20009",
+                                    "country": "United States"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "888-888-0000",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "pneumococcal conjugate PCV 7",
+                        "code": "100",
+                        "code_system_name": "CVX"
+                    }
+                },
+                "administration": {
+                    "route": {
+                        "name": "Intramuscular injection",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.4.6",
+                            "identifier_type": "999999943252"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Smith",
+                            "first": "Jim"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "101 Maple Street"
+                            ],
+                            "city": "Washington",
+                            "state": "DC",
+                            "zip": "20009",
+                            "country": "United States"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "888-888-0000"
+                        }
+                    ],
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5",
+                                    "identifier_type": "2981824"
+                                }
+                            ],
+                            "name": [
+                                "Good Hospital"
+                            ],
+                            "address": [
+                                {
+                                    "streetLines": [
+                                        "101 Maple Street"
+                                    ],
+                                    "city": "Washington",
+                                    "state": "DC",
+                                    "zip": "20009",
+                                    "country": "United States"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "888-888-0000",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Diabetes mellitus type 2",
+                    "code": "44054006",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Type 2 diabetes mellitus without complications",
+                            "code": "E11.9",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
+                            "code": "250.00",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-08-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma unspecified",
+                    "code": "195979001",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Asthma",
+                            "code": "J45",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Asthma, unspecified type, with (acute) exacerbation",
+                            "code": "493.92",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "Peak expiratory flow rate monitoring using diary",
+                    "code": "401011001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Diabetic foot examination",
+                    "code": "401191002",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Eye exam established pat",
+                    "code": "92012",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine ophthalmological exa",
+                            "code": "S0621",
+                            "code_system_name": "OID 2.16.840.1.113883.6.13"
+                        },
+                        {
+                            "name": "Extended ophthalmologic work-up",
+                            "code": "95.03",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "Ophthalmic examination and evaluation",
+                            "code": "36228007",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-20T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Diabetic foot examination",
+                    "code": "401191002",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Diabetic foot examination",
+                    "code": "401191002",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "Contraceptive use education",
+                    "code": "44651004",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-09-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            },
+            {
+                "procedure": {
+                    "name": "Diabetic foot examination",
+                    "code": "401191002",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-12-17T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"
+    ]
+}

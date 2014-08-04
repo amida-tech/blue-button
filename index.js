@@ -17,7 +17,11 @@ exports.parseText2 = parser.parseText2;
 //need to review if this is still needed
 exports.parse = parser.parse;
 
+// ccda generation
 exports.generateCCDA = require("./lib/generator/ccda/generator.js").genWholeCCDA;
+
+// testing for ccda generation
+exports.testCCDA = require("./test/test-lib.js").testXML;
 
 //remove old validator.js from /lib
 exports.validator = require("./lib/validator/validator.js");

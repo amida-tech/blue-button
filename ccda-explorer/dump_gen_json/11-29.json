@@ -1,0 +1,473 @@
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Pope",
+                "first": "Marsha"
+            },
+            "dob": {
+                "point": {
+                    "date": "1995-01-05T12:00:00Z",
+                    "precision": "second"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19.5.99999.2",
+                    "identifier_type": "998991"
+                },
+                {
+                    "identifier": "2.16.840.1.113883.4.1",
+                    "identifier_type": "111-00-2330"
+                }
+            ],
+            "marital_status": "Married",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "4825 Adams Drive"
+                    ],
+                    "city": "Houston",
+                    "state": "TX",
+                    "zip": "77002",
+                    "country": "US",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "(979)432-1695",
+                    "type": "mobile contact"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "spa",
+                    "preferred": true,
+                    "mode": "Expressed spoken"
+                }
+            ],
+            "birthplace": {
+                "city": "Shreveport",
+                "state": "LA",
+                "zip": "71101",
+                "country": "US"
+            },
+            "guardians": [
+                {
+                    "relation": "friend",
+                    "addresses": [
+                        {
+                            "streetLines": [
+                                "4871 Lucky Duck Drive"
+                            ],
+                            "city": "Crafton",
+                            "state": "PA",
+                            "zip": "15205",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "names": [
+                        {
+                            "prefix": "Mr.",
+                            "last": "Brown",
+                            "first": "David"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(412)920-0482",
+                            "type": "primary home"
+                        },
+                        {
+                            "number": "email:DavidMBrown@gustr.com",
+                            "type": "work place"
+                        }
+                    ]
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 23.8,
+                "unit": "kg/m2"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "Microbiology",
+                    "code": "269934003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "C trach Ag XXX Ql",
+                            "code": "31777-6",
+                            "code_system_name": "LOINC",
+                            "translations": [
+                                {
+                                    "name": "Chlamydia trachomatis ag if",
+                                    "code": "87270",
+                                    "code_system_name": "CPT"
+                                },
+                                {
+                                    "name": "Measurement of Chlamydia pneumoniae antibody",
+                                    "code": "121953005",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            ]
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2010-08-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {},
+                "status": "Completed",
+                "sig": "No data",
+                "product": {
+                    "unencoded_name": "No data  "
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "Emergency dept visit",
+                    "code": "99281",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Initial inpatient consult",
+                    "code": "99251",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-04-02T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Hospital discharge day",
+                    "code": "99238",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-07-03T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Eggs",
+                    "code": "291P45F896",
+                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "translations": [
+                        {
+                            "name": "Allergy to eggs",
+                            "code": "V15.03",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "severity": "Moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Baker's yeast allergenic extract 100 MG/ML Injectable Solution",
+                    "code": "892677",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild to moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Penicillin V",
+                    "code": "N0000011298",
+                    "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
+                },
+                "severity": "Mild to moderate"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {},
+                "status": "refused"
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2010-04-01T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            },
+            {}
+        ],
+        "problems": [
+            {
+                "date_time": {},
+                "negation_indicator": false
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "Medical nutrition, indiv, in",
+                    "code": "97802",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Nutritional counseling, diet",
+                            "code": "S9470",
+                            "code_system_name": "OID 2.16.840.1.113883.6.13"
+                        },
+                        {
+                            "name": "Encounter for other general examination",
+                            "code": "Z00.8",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Dietary surveillance and counseling",
+                            "code": "V65.3",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            },
+            {
+                "procedure": {
+                    "name": "Exercise class",
+                    "code": "S9451",
+                    "code_system_name": "OID 2.16.840.1.113883.6.13",
+                    "translations": [
+                        {
+                            "name": "Dietary counseling and surveillance",
+                            "code": "Z71.3",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Exercise counseling",
+                            "code": "V65.41",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            },
+            {
+                "procedure": {
+                    "name": "Contraceptive use education",
+                    "code": "44651004",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-16T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "act"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in socialHistoryObservation -> socialHistorySection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"
+    ]
+}

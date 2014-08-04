@@ -1,0 +1,1514 @@
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "ClinicalSummary",
+                "first": "Three"
+            },
+            "dob": {
+                "point": {
+                    "date": "1948-04-09T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.3.441.1.50.300011.51",
+                    "identifier_type": "26840"
+                }
+            ],
+            "marital_status": "Divorced",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "123 Test Ave"
+                    ],
+                    "city": "Norcross",
+                    "state": "GA",
+                    "zip": "30091",
+                    "country": "US"
+                }
+            ],
+            "phone": [
+                {
+                    "type": "primary home"
+                }
+            ],
+            "email": [
+                {
+                    "type": "primary home"
+                }
+            ],
+            "race_ethnicity": "Hispanic or Latino",
+            "languages": [
+                {
+                    "language": "isl"
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.55",
+                        "identifier_type": "2817"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 86,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.55",
+                        "identifier_type": "2818"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 120,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.55",
+                        "identifier_type": "2819"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Mass Index",
+                    "code": "41909-3",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 44.3429,
+                "unit": "kg/m²"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.55",
+                        "identifier_type": "2821"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 88,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.55",
+                        "identifier_type": "2822"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Height (Measured)",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 48.032,
+                "unit": "[in_us]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.55",
+                        "identifier_type": "2823"
+                    }
+                ],
+                "vital": {
+                    "name": "Respiratory Rate",
+                    "code": "9279-1",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 22,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.55",
+                        "identifier_type": "2824"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Temperature",
+                    "code": "8310-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 37,
+                "unit": "C"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.55",
+                        "identifier_type": "2825"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Weight (Measured)",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 145.505,
+                "unit": "[lb_av]"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2807"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2807"
+                            }
+                        ],
+                        "result": {
+                            "name": "Hgb Bld-mCnc",
+                            "code": "718-7",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:04Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 12.6,
+                        "unit": "g/dL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2808"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2808"
+                            }
+                        ],
+                        "result": {
+                            "name": "Hct Fr Bld Auto",
+                            "code": "4544-3",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:04Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 44.5,
+                        "unit": "%"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2809"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2809"
+                            }
+                        ],
+                        "result": {
+                            "name": "WBC # Bld Auto",
+                            "code": "6690-2",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:04Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 12.8,
+                        "unit": "x10E3/uL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2810"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2810"
+                            }
+                        ],
+                        "result": {
+                            "name": "Platelet # Bld Auto",
+                            "code": "777-3",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:04Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 394,
+                        "unit": "x10E3/uL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2811"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2811"
+                            }
+                        ],
+                        "result": {
+                            "name": "Cholest SerPl-mCnc",
+                            "code": "2093-3",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:35Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 299,
+                        "unit": "mg/dL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2812"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2812"
+                            }
+                        ],
+                        "result": {
+                            "name": "HDLc SerPl-mCnc",
+                            "code": "2085-9",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:35Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 18,
+                        "unit": "mg/dL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2813"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2813"
+                            }
+                        ],
+                        "result": {
+                            "name": "LDLc SerPl-mCnc",
+                            "code": "2089-1",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:35Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 189,
+                        "unit": "mg/dL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2814"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2814"
+                            }
+                        ],
+                        "result": {
+                            "name": "PreB-LP SerPl-mCnc",
+                            "code": "2575-9",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:35Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 35,
+                        "unit": "mg/dL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2815"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2815"
+                            }
+                        ],
+                        "result": {
+                            "name": "Trigl SerPl-mCnc",
+                            "code": "2571-8",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:35Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 5000,
+                        "unit": "mg/dL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                        "identifier_type": "2816"
+                    }
+                ],
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.54",
+                                "identifier_type": "2816"
+                            }
+                        ],
+                        "result": {
+                            "name": "CRP SerPl High Sens-mCnc",
+                            "code": "30522-7",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-22T08:59:35Z",
+                                "precision": "second"
+                            }
+                        },
+                        "status": "completed",
+                        "value": 1.8,
+                        "unit": "mg/L"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.58",
+                        "identifier_type": "2005"
+                    }
+                ],
+                "status": "Completed",
+                "sig": "take 1 tablet (2 mg) by oral route every 6 hours as needed",
+                "product": {
+                    "unencoded_name": "Dilaudid Oral Tablet 2 mg",
+                    "product": {
+                        "name": "Dilaudid Oral Tablet 2 mg",
+                        "code": "162540",
+                        "translations": [
+                            {
+                                "name": "Hydromorphone Hydrochloride 2 MG Oral Tablet",
+                                "code": "897696",
+                                "code_system_name": "RXNORM"
+                            }
+                        ],
+                        "code_system_name": "OID undefined"
+                    }
+                },
+                "administration": {
+                    "dose": {
+                        "value": 1,
+                        "unit": "tablet"
+                    }
+                }
+            },
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.58",
+                        "identifier_type": "2006"
+                    }
+                ],
+                "status": "Completed",
+                "sig": "inject 1 milliliter now in offce",
+                "product": {
+                    "unencoded_name": "Demerol Injection Solution 50 mg/mL",
+                    "product": {
+                        "name": "Demerol Injection Solution 50 mg/mL",
+                        "code": "172838",
+                        "translations": [
+                            {
+                                "name": "Meperidine Hydrochloride 50 MG/ML Injectable Solution",
+                                "code": "861463",
+                                "code_system_name": "RXNORM"
+                            }
+                        ],
+                        "code_system_name": "OID undefined"
+                    }
+                },
+                "administration": {
+                    "dose": {
+                        "value": 1,
+                        "unit": "milliliter"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2013-01-29T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.58",
+                        "identifier_type": "2007"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "insert 1 suppository (25 mg) by rectal route 3 times per day for 7 days",
+                "product": {
+                    "unencoded_name": "Anusol-HC Rectal Suppository 25 mg",
+                    "product": {
+                        "name": "Anusol-HC Rectal Suppository 25 mg",
+                        "code": "278350",
+                        "translations": [
+                            {
+                                "name": "Hydrocortisone 25 MG Rectal Suppository",
+                                "code": "310896",
+                                "code_system_name": "RXNORM"
+                            }
+                        ],
+                        "code_system_name": "OID undefined"
+                    }
+                },
+                "administration": {
+                    "dose": {
+                        "value": 1,
+                        "unit": "suppository"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2013-02-01T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.58",
+                        "identifier_type": "2008"
+                    }
+                ],
+                "status": "Prescribed",
+                "sig": "take 1 tablet by oral route every 4-6 hours as needed for pain for 10 days",
+                "product": {
+                    "unencoded_name": "Lortab Oral Tablet 10-500 mg",
+                    "product": {
+                        "name": "Lortab Oral Tablet 10-500 mg",
+                        "code": "226449",
+                        "translations": [
+                            {
+                                "name": "Acetaminophen 500 MG / Hydrocodone Bitartrate 10 MG Oral Tablet",
+                                "code": "857107",
+                                "code_system_name": "RXNORM"
+                            }
+                        ],
+                        "code_system_name": "OID undefined"
+                    }
+                },
+                "administration": {
+                    "dose": {
+                        "value": 1,
+                        "unit": "tablet"
+                    }
+                }
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441",
+                        "identifier_type": "33b45c396e4d4c56aa0ffe2086866a0d"
+                    }
+                ],
+                "allergen": {
+                    "name": "Bicillin L-A",
+                    "code": "215674",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "penicillin G benzathine",
+                            "code": "3727",
+                            "code_system_name": "OID 2.16.840.1.113883.6.64"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "negation_indicator": false
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.60",
+                        "identifier_type": "1229"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "influenza, NOS",
+                        "code": "88",
+                        "code_system_name": "CVX"
+                    },
+                    "lot_number": "werwer444"
+                },
+                "administration": {
+                    "dose": {
+                        "value": 0.5
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.441",
+                            "identifier_type": "e53c09d806554538974a9ed175c32f22"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Hardy",
+                            "first": "Mike"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "1234 test"
+                            ],
+                            "city": "Norcross",
+                            "state": "GA",
+                            "zip": "30091",
+                            "country": "United States"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "770-888-3333"
+                        }
+                    ],
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.441",
+                                    "identifier_type": "3da167513c35472184329fbc7124002b"
+                                }
+                            ],
+                            "address": [
+                                {
+                                    "streetLines": [
+                                        "1234 test"
+                                    ],
+                                    "city": "Norcross",
+                                    "state": "GA",
+                                    "zip": "30091",
+                                    "country": "United States"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "770-888-3333",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "1900-01-01T00:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "1999-11-24T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
+                        "identifier_type": "1415"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441",
+                        "identifier_type": "6f8b18cc29a14c50afa1636696c5e60e"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2004-03-14T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
+                        "identifier_type": "1416"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441",
+                        "identifier_type": "2ce68282e4cc4b19993d7211cbe597b0"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "1999-01-22T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
+                        "identifier_type": "1417"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441",
+                        "identifier_type": "bff2fd16f2514300892366fc1641d7d0"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "1964-06-21T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
+                        "identifier_type": "1418"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441",
+                        "identifier_type": "b33d63f8b8e442efbcf685761aa1d32c"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "ARTHRITIS PANEL THIS PANEL MUST INCLUDE THE FOLLOWING: URIC ACID",
+                    "code": "80072",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61368"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "URNLS DIP STICK/TABLET REAGENT AUTO MICROSCOPY",
+                    "code": "81001",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61369"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "PUNCTURE ASPIRATION CYST BREAST",
+                    "code": "19000",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61370"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "INCISION THROMBOSED HEMORRHOID EXTERNAL",
+                    "code": "46083",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61371"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "RADEX COLON BARIUM ENEMA W/WOKUB",
+                    "code": "74270",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61372"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-05T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "RADIOLOGIC EXAM CHEST 2 VIEWS FRONTAL&LATERAL",
+                    "code": "71020",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61373"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-05T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "MRI ABDOMEN W/CONTRAST MATERIAL",
+                    "code": "74182",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61374"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-05T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "VARICELLA-ZOSTER IMMUNE GLOBULIN HUMAN IM",
+                    "code": "90396",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61375"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "INFLUENZA VIRUS VACC SPLIT PRSRV FREE 3 YRS/> IM",
+                    "code": "90656",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61376"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "IADNA NOS DIRECT PROBE TQ EACH ORGANISM",
+                    "code": "87797",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61377"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-05T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "OBSTETRIC PANEL",
+                    "code": "80055",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61378"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-05T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "CORRECTION INVERTED NIPPLES",
+                    "code": "19355",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61379"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-12T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "SIGMOIDOSCOPY FLX DX W/WO COLLJ SPECIMENS",
+                    "code": "45330",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61380"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-12T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "LIPID PANEL",
+                    "code": "80061",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61434"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-20T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "LIPID PANEL",
+                    "code": "80061",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61435"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-20T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            }
+        ],
+        "plan_of_care": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "1158"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-29T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "2801"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "2802"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "2803"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "2804"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "2805"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "2806"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "plan": {
+                    "name": "Arthritis panel",
+                    "code": "80072",
+                    "code_system_name": "OID CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "61368"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "procedure"
+            },
+            {
+                "plan": {
+                    "name": "Urinalysis (Dipstick, with microscopy)",
+                    "code": "81001",
+                    "code_system_name": "OID CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "61369"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-01-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "procedure"
+            },
+            {
+                "plan": {
+                    "name": "Lipid panel",
+                    "code": "80061",
+                    "code_system_name": "OID CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "61434"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-20T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "procedure"
+            },
+            {
+                "plan": {
+                    "name": "Lipid panel",
+                    "code": "80061",
+                    "code_system_name": "OID CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "61435"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-20T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "procedure"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures",
+            "plan_of_care"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
+        "nullFlavor alert:  missing but required preferred in LanguageCommunication -> Patient -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD"
+    ]
+}

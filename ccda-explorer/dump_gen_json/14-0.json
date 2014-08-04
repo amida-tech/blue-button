@@ -1,0 +1,1232 @@
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Jones",
+                "first": "Isabella"
+            },
+            "dob": {
+                "point": {
+                    "date": "1947-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "1.3.6.1.4.1.22812.4.111.0",
+                    "identifier_type": "170314e2"
+                }
+            ],
+            "addresses": [
+                {
+                    "streetLines": [
+                        "1234 DGI Blvd"
+                    ],
+                    "city": "Raleigh",
+                    "state": "NC",
+                    "zip": "27615",
+                    "country": "US",
+                    "use": "home address"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "+1-(919)888-9658"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "eng",
+                    "preferred": false
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
+                        "identifier_type": "10062995"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T15:15:44Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "value": 135,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
+                        "identifier_type": "10062996"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T15:15:44Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "value": 92,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
+                        "identifier_type": "100629911"
+                    }
+                ],
+                "vital": {
+                    "name": "Weight",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T15:15:44Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "value": 88,
+                "unit": "kg"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
+                        "identifier_type": "10062998"
+                    }
+                ],
+                "vital": {
+                    "name": "Height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T15:15:44Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "value": 177,
+                "unit": "cm"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
+                        "identifier_type": "100629913"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Mass Index Calculated",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T15:15:44Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "value": 28.09,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
+                        "identifier_type": "100629914"
+                    }
+                ],
+                "vital": {
+                    "name": "Body Surface Area Calculated",
+                    "code": "3140-1",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T15:15:44Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "value": 2.05,
+                "unit": "1"
+            }
+        ],
+        "results": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                        "identifier_type": "10171837"
+                    }
+                ],
+                "result_set": {
+                    "name": "PNEUMOCOCCAL VACCINE (90732)",
+                    "code": "90732",
+                    "code_system_name": "CPT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                                "identifier_type": "1019280"
+                            }
+                        ],
+                        "date_time": {
+                            "point": {
+                                "date": "2012-08-06T16:06:45Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ]
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                        "identifier_type": "10171832"
+                    }
+                ],
+                "result_set": {
+                    "name": "CHEST XRAY, PA & LATERAL (71020)",
+                    "code": "71020",
+                    "code_system_name": "CPT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                                "identifier_type": "10194163"
+                            }
+                        ],
+                        "date_time": {
+                            "point": {
+                                "date": "2012-08-06T15:30:45Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ]
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                        "identifier_type": "10031435"
+                    }
+                ],
+                "result_set": {
+                    "name": "HCT (85014)",
+                    "code": "85014",
+                    "code_system_name": "CPT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                                "identifier_type": "10194182"
+                            }
+                        ],
+                        "result": {
+                            "name": "HCT",
+                            "code": "20570-8",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-07-18T15:21:03Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 45,
+                        "unit": "%"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                        "identifier_type": "10031438"
+                    }
+                ],
+                "result_set": {
+                    "name": "HGB (85018)",
+                    "code": "85018",
+                    "code_system_name": "CPT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                                "identifier_type": "10194179"
+                            }
+                        ],
+                        "result": {
+                            "name": "HGB",
+                            "code": "30313-1",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-07-18T15:21:03Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Abnormal"
+                        ],
+                        "value": 14.2,
+                        "unit": "g/dL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                        "identifier_type": "10031437"
+                    }
+                ],
+                "result_set": {
+                    "name": "PLT (85049)",
+                    "code": "85049",
+                    "code_system_name": "CPT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                                "identifier_type": "10194180"
+                            }
+                        ],
+                        "result": {
+                            "name": "PLT",
+                            "code": "26515-7",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-07-18T15:21:03Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 220,
+                        "unit": "10^3/ul"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                        "identifier_type": "10031436"
+                    }
+                ],
+                "result_set": {
+                    "name": "WBC (85048)",
+                    "code": "85048",
+                    "code_system_name": "CPT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
+                                "identifier_type": "10194181"
+                            }
+                        ],
+                        "result": {
+                            "name": "WBC",
+                            "code": "33765-9",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-07-18T15:21:03Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "status": "completed",
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 7.6,
+                        "unit": "10^3/ul"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.9",
+                        "identifier_type": "10127030"
+                    }
+                ],
+                "status": "Prescribed",
+                "product": {
+                    "unencoded_name": "CLARITHROMYCIN, 500MG (Oral Tablet)",
+                    "product": {
+                        "name": "CLARITHROMYCIN, 500MG (Oral Tablet)",
+                        "code": "197517",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "code": "026298",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
+                            },
+                            {
+                                "code": "03500010000320",
+                                "code_system_name": "OID 2.16.840.1.113883.6.68"
+                            }
+                        ]
+                    }
+                },
+                "supply": {
+                    "repeatNumber": "1",
+                    "quantity": "14"
+                },
+                "administration": {
+                    "route": {
+                        "name": "ORAL",
+                        "code": "C38288",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 1,
+                        "unit": "Tablet"
+                    },
+                    "interval": {
+                        "period": {
+                            "value": 12,
+                            "unit": "h"
+                        },
+                        "frequency": true
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.9",
+                        "identifier_type": "10127040"
+                    }
+                ],
+                "status": "Prescribed",
+                "product": {
+                    "unencoded_name": "METOPROLOL TARTRATE, 25MG (Oral Tablet)",
+                    "product": {
+                        "name": "METOPROLOL TARTRATE, 25MG (Oral Tablet)",
+                        "code": "866924",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "code": "078395",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
+                            },
+                            {
+                                "code": "33200030100305",
+                                "code_system_name": "OID 2.16.840.1.113883.6.68"
+                            }
+                        ]
+                    }
+                },
+                "supply": {
+                    "repeatNumber": "1",
+                    "quantity": "30"
+                },
+                "administration": {
+                    "route": {
+                        "name": "ORAL",
+                        "code": "C38288",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 1,
+                        "unit": "Tablet"
+                    },
+                    "interval": {
+                        "period": {
+                            "value": 24,
+                            "unit": "h"
+                        },
+                        "frequency": true
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.9",
+                        "identifier_type": "10127050"
+                    }
+                ],
+                "status": "Prescribed",
+                "product": {
+                    "unencoded_name": "PROVENTIL HFA, 108 (90 Base)MCG/ACT (Inhalation Aerosol Solution)",
+                    "product": {
+                        "name": "PROVENTIL HFA, 108 (90 Base)MCG/ACT (Inhalation Aerosol Solution)",
+                        "code": "746763",
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "code": "045685",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
+                            },
+                            {
+                                "code": "44201010103410",
+                                "code_system_name": "OID 2.16.840.1.113883.6.68"
+                            }
+                        ]
+                    }
+                },
+                "supply": {
+                    "repeatNumber": "1",
+                    "quantity": "1"
+                },
+                "administration": {
+                    "route": {
+                        "name": "RESPIRATORY (INHALATION)",
+                        "code": "C38216",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 2,
+                        "unit": "Puff"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "OFFICE OUTPATIENT NEW 45 MINUTES",
+                    "code": "99204",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
+                        "identifier_type": "10043698"
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T15:03:53Z",
+                        "precision": "second"
+                    }
+                },
+                "locations": [
+                    {
+                        "name": "Clinic One",
+                        "location_type": {
+                            "name": "Any Age Mixed Acuity Unit",
+                            "code": "1212-0",
+                            "code_system_name": "HealthcareServiceLocation"
+                        }
+                    }
+                ]
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2011-01-01T00:00:00Z",
+                        "precision": "year"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.10.2",
+                        "identifier_type": "10381931"
+                    }
+                ],
+                "allergen": {
+                    "name": "Aspirin *ANALGESICS - NonNarcotic*",
+                    "code": "318272",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "Aspirin *ANALGESICS - NonNarcotic*",
+                            "code": "001922",
+                            "code_system_name": "OID 2.16.840.1.113883.6.253"
+                        }
+                    ]
+                },
+                "status": "Active"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-01-01T00:00:00Z",
+                        "precision": "year"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.10.2",
+                        "identifier_type": "10381930"
+                    }
+                ],
+                "allergen": {
+                    "name": "Codeine Sulfate *ANALGESICS - OPIOID*",
+                    "code": "997170",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "Codeine Sulfate *ANALGESICS - OPIOID*",
+                            "code": "004873",
+                            "code_system_name": "OID 2.16.840.1.113883.6.253"
+                        }
+                    ]
+                },
+                "status": "Active"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-06-01T15:07:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.10.2",
+                        "identifier_type": "10381929"
+                    }
+                ],
+                "allergen": {
+                    "name": "Penicillin G Benzathine *PENICILLINS*",
+                    "code": "731575",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "Penicillin G Benzathine *PENICILLINS*",
+                            "code": "029551",
+                            "code_system_name": "OID 2.16.840.1.113883.6.253"
+                        }
+                    ]
+                },
+                "status": "Active"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2010-11-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4",
+                        "identifier_type": "1049282"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza (3 years and up)",
+                        "code": "141",
+                        "code_system_name": "CVX"
+                    }
+                },
+                "administration": {
+                    "dose": {
+                        "value": 0
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2011-09-10T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4",
+                        "identifier_type": "1049283"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza (3 years and up)",
+                        "code": "141",
+                        "code_system_name": "CVX"
+                    }
+                },
+                "administration": {
+                    "dose": {
+                        "value": 0
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T15:35:00Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4",
+                        "identifier_type": "1049280"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Pneumococcal (2 years and up)",
+                        "code": "33",
+                        "code_system_name": "CVX"
+                    },
+                    "lot_number": "MK456987",
+                    "manufacturer": "Merck and Co., Inc."
+                },
+                "administration": {
+                    "route": {
+                        "name": "INTRAMUSCULAR",
+                        "code": "C28161",
+                        "code_system_name": "Medication Route FDA"
+                    },
+                    "dose": {
+                        "value": 0.5,
+                        "unit": "ml"
+                    }
+                },
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.4.6",
+                            "identifier_type": "1569874562"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "last": "Seven",
+                            "first": "Henry"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "1002 Healthcare Dr."
+                            ],
+                            "city": "Portland",
+                            "state": "OR",
+                            "zip": "97005",
+                            "country": "US"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "+1-(555)555-1002"
+                        }
+                    ]
+                }
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "2007-01-04T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4",
+                        "identifier_type": "1049284"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Td (7 years and up)",
+                        "code": "09",
+                        "code_system_name": "CVX"
+                    }
+                },
+                "administration": {
+                    "dose": {
+                        "value": 0
+                    }
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "date_time": {}
+            },
+            {
+                "value": "Current every day smoker",
+                "date_time": {}
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
+                        "identifier_type": "10241360"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma, moderate persistent",
+                    "code": "427295004",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Asthma, moderate persistent",
+                            "code": "493.90",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "Asthma, moderate persistent",
+                            "code": "J45.40",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Asthma, moderate persistent",
+                            "code": "513862",
+                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1",
+                        "identifier_type": "10241360"
+                    }
+                ]
+            },
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
+                        "identifier_type": "10241359"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Community acquired pneumonia",
+                    "code": "385093006",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Community acquired pneumonia",
+                            "code": "486",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "Community acquired pneumonia",
+                            "code": "J18.9",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Community acquired pneumonia",
+                            "code": "500208",
+                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1",
+                        "identifier_type": "10241359"
+                    }
+                ]
+            },
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
+                        "identifier_type": "10241361"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Hypoxemia",
+                    "code": "389087006",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Hypoxemia",
+                            "code": "799.02",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        },
+                        {
+                            "name": "Hypoxemia",
+                            "code": "R09.02",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Hypoxemia",
+                            "code": "38331",
+                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1",
+                        "identifier_type": "10241361"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "PNEUMOCOCCAL VACCINE (90732)",
+                    "code": "90732",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
+                        "identifier_type": "10171837"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "providers": [
+                    {
+                        "address": {
+                            "streetLines": [
+                                "1002 Healthcare Dr."
+                            ],
+                            "city": "Portland",
+                            "state": "OR",
+                            "zip": "97005",
+                            "country": "US"
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "identifier_type": "1569874562"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-(555)555-1002"
+                            }
+                        ]
+                    }
+                ],
+                "procedure_type": "procedure"
+            },
+            {
+                "procedure": {
+                    "name": "CHEST XRAY, PA & LATERAL (71020)",
+                    "code": "71020",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
+                        "identifier_type": "10171832"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "providers": [
+                    {
+                        "address": {
+                            "streetLines": [
+                                "1002 Healthcare Dr."
+                            ],
+                            "city": "Portland",
+                            "state": "OR",
+                            "zip": "97005",
+                            "country": "US"
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "identifier_type": "1569874562"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-(555)555-1002"
+                            }
+                        ]
+                    }
+                ],
+                "procedure_type": "procedure"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
+                        "identifier_type": "10171829"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "providers": [
+                    {
+                        "address": {
+                            "streetLines": [
+                                "1002 Healthcare Dr."
+                            ],
+                            "city": "Portland",
+                            "state": "OR",
+                            "zip": "97005",
+                            "country": "US"
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "identifier_type": "1569874562"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-(555)555-1002"
+                            }
+                        ]
+                    }
+                ],
+                "procedure_type": "procedure"
+            }
+        ],
+        "plan_of_care": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
+                        "identifier_type": "2730"
+                    }
+                ],
+                "type": "encounter"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
+                        "identifier_type": "2710"
+                    }
+                ],
+                "type": "encounter"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
+                        "identifier_type": "2724"
+                    }
+                ],
+                "type": "encounter"
+            },
+            {
+                "plan": {
+                    "name": "HGB (85018)",
+                    "code": "85018",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.13.2",
+                        "identifier_type": "10031434"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-13T16:21:18Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "plan": {
+                    "name": "CULTURE, SPUTUM (87070)",
+                    "code": "87070",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.13.2",
+                        "identifier_type": "10031425"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2012-08-06T15:46:59Z",
+                        "precision": "subsecond"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
+                        "identifier_type": "10171843"
+                    }
+                ],
+                "type": "procedure"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
+                        "identifier_type": "10171842"
+                    }
+                ],
+                "type": "procedure"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures",
+            "plan_of_care"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required value in socialHistoryObservation -> socialHistorySection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD"
+    ]
+}

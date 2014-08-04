@@ -1,0 +1,299 @@
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Everyman",
+                "first": "Adam"
+            },
+            "dob": {
+                "point": {
+                    "date": "1962-10-22T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Male",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                    "identifier_type": "DCD2261B-FB04-4FDF-A7E3-003B1E6FD57B"
+                }
+            ],
+            "addresses": [
+                {
+                    "streetLines": [
+                        "No Address Indicated"
+                    ],
+                    "city": "No City Indicated",
+                    "state": "CA",
+                    "zip": "99999",
+                    "country": "United States of America",
+                    "use": "home address"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "eng",
+                    "preferred": true,
+                    "mode": "Receive Written"
+                }
+            ]
+        },
+        "results": [
+            {
+                "results": [
+                    {
+                        "date_time": {},
+                        "status": "completed"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-07-07T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.4.1"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "identifiers": {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.4.1",
+                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.4.1"
+                    },
+                    "product": {
+                        "name": "albuterol CFC free 90 mcg/inh",
+                        "code": "746763",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "A94db41f8-15ab-4ec4-aa6a-97808b155d53",
+                        "identifier_type": "1"
+                    }
+                ],
+                "date_time": {}
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-12-18T01:28:53Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "83899160"
+                    }
+                ],
+                "allergen": {
+                    "name": "Bicillin L-A",
+                    "code": "731570",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild",
+                "status": "Active",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Hives",
+                            "code": "126485001",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-12-18T09:59:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "83899160"
+                    }
+                ],
+                "allergen": {
+                    "name": "Codeine Phosphate",
+                    "code": "601263",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild",
+                "status": "Active",
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Nausea",
+                            "code": "422587007",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-08-15T07:00:00Z",
+                        "precision": "second"
+                    },
+                    "high": {
+                        "date": "2010-08-15T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "97D90ADC-3BB2-403B-A309-C5F38E67636C"
+                    }
+                ],
+                "status": "complete",
+                "product": {
+                    "product": {
+                        "name": "Influenza, seasonal, injectable",
+                        "code": "141",
+                        "code_system_name": "CVX"
+                    }
+                }
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2013-12-17T08:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2011-09-25T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.2.1",
+                        "identifier_type": "A71337134-4d92-4550-983c-561dc595dd59"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma",
+                    "code": "195967001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "onset_age": "51",
+                "onset_age_unit": "Year",
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "83899160"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2012-08-15T07:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.2.1",
+                        "identifier_type": "A4c61f2bd-c5a7-4dc3-81be-d147cbef87cb"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Costal chondritis",
+                    "code": "64109004",
+                    "code_system_name": "SNOMED CT"
+                },
+                "onset_age": "51",
+                "onset_age_unit": "Year",
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
+                        "identifier_type": "83899160"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.9"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {},
+                "procedure_type": "procedure"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD"
+    ]
+}

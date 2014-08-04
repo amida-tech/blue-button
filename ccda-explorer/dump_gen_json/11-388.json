@@ -1,0 +1,703 @@
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "Jensen",
+                "first": "Rhonda"
+            },
+            "dob": {
+                "point": {
+                    "date": "1945-06-12T12:00:00Z",
+                    "precision": "second"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19.5.99999.2",
+                    "identifier_type": "998991"
+                },
+                {
+                    "identifier": "2.16.840.1.113883.4.1",
+                    "identifier_type": "111-00-2330"
+                }
+            ],
+            "marital_status": "Married",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "2479 Willison Street"
+                    ],
+                    "city": "Roseville",
+                    "state": "MN",
+                    "zip": "55113",
+                    "country": "US",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "(763)205-0171",
+                    "type": "mobile contact"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "spa",
+                    "preferred": true,
+                    "mode": "Expressed spoken"
+                }
+            ],
+            "religion": "Native American",
+            "birthplace": {
+                "city": "Gardena",
+                "state": "CA",
+                "zip": "90247",
+                "country": "US"
+            },
+            "guardians": [
+                {
+                    "relation": "friend",
+                    "addresses": [
+                        {
+                            "streetLines": [
+                                "2441 Davis Court"
+                            ],
+                            "city": "Metropolis",
+                            "state": "IL",
+                            "zip": "62960",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "names": [
+                        {
+                            "prefix": "Mrs.",
+                            "last": "Ramsey",
+                            "first": "Kathleen"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(618)886-3754",
+                            "type": "primary home"
+                        },
+                        {
+                            "number": "email:KathleenJRamsey@dayrep.com",
+                            "type": "work place"
+                        }
+                    ]
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 21.9,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 78,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 80,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 130,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 22.6,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 70,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "Heart Rate",
+                    "code": "8867-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 84,
+                "unit": "/min"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "BP Systolic",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 126,
+                "unit": "mm[Hg]"
+            }
+        ],
+        "results": [
+            {
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "date_time": {},
+                        "status": "completed"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "ACE inhibitor or ARB + Lisinopril 10 MG Oral Tablet  ",
+                    "product": {
+                        "name": "Lisinopril 10 MG Oral Tablet",
+                        "code": "314076",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Anticoagulants + Warfarin Sodium 4 MG Oral Tablet [Coumadin]  ",
+                    "product": {
+                        "name": "Warfarin Sodium 4 MG Oral Tablet [Coumadin]",
+                        "code": "855326",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Antiplatelets + Aspirin 81 MG Oral Tablet  ",
+                    "product": {
+                        "name": "Aspirin 81 MG Oral Tablet",
+                        "code": "243670",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-10T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Anticoagulants + Warfarin Sodium 4 MG Oral Tablet [Coumadin]  ",
+                    "product": {
+                        "name": "Warfarin Sodium 4 MG Oral Tablet [Coumadin]",
+                        "code": "855326",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-08-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "product": {
+                    "unencoded_name": "Beta Blocker Therapy + Metoprolol Tartrate 25 MG Oral Tablet  ",
+                    "product": {
+                        "name": "Metoprolol Tartrate 25 MG Oral Tablet",
+                        "code": "866924",
+                        "code_system_name": "RXNORM"
+                    }
+                }
+            }
+        ],
+        "encounters": [
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Heart Failure",
+                        "code": "84114007",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Heart failure, unspecified",
+                                "code": "I50.9",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Heart failure, unspecified",
+                                "code": "428.9",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "encounter": {
+                    "name": "Office/outpatient visit, est",
+                    "code": "99213",
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Routine general medical examination at a health care facility",
+                            "code": "V70.0",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2010-08-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "findings": [
+                    {
+                        "name": "Atrial Fibrillation",
+                        "code": "49436004",
+                        "code_system_name": "SNOMED CT",
+                        "translations": [
+                            {
+                                "name": "Unspecified atrial fibrillation",
+                                "code": "I48.91",
+                                "code_system_name": "OID 2.16.840.1.113883.6.90"
+                            },
+                            {
+                                "name": "Atrial fibrillation",
+                                "code": "427.31",
+                                "code_system_name": "OID 2.16.840.1.113883.6.103"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "allergies": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Eggs",
+                    "code": "291P45F896",
+                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "translations": [
+                        {
+                            "name": "Allergy to eggs",
+                            "code": "V15.03",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "severity": "Mild to moderate"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Fosfomycin 33.3 MG/ML Oral Suspension",
+                    "code": "808917",
+                    "code_system_name": "RXNORM"
+                },
+                "severity": "Mild"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "Doxycycline 75 MG Enteric Coated Tablet",
+                    "code": "406524",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "Tetracycline",
+                            "code": "N0000006275",
+                            "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
+                        }
+                    ]
+                },
+                "severity": "Moderate"
+            }
+        ],
+        "immunizations": [
+            {
+                "date_time": {},
+                "status": "refused"
+            }
+        ],
+        "social_history": [
+            {
+                "value": "Never smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Heart failure",
+                    "code": "84114007",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Heart failure, unspecified",
+                            "code": "I50.9",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Heart failure, unspecified",
+                            "code": "428.9",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2010-08-14T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Atrial fibrillation",
+                    "code": "49436004",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Unspecified atrial fibrillation",
+                            "code": "I48.91",
+                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                        },
+                        {
+                            "name": "Atrial fibrillation",
+                            "code": "427.31",
+                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                        }
+                    ]
+                },
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "Cardiac ejection fraction, function",
+                    "code": "70822001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "e401f340-7be2-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2010-05-08T10:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"
+    ]
+}

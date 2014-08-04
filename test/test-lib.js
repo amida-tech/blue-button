@@ -27,15 +27,14 @@ generateXMLDOMForEntireCCD()
 var expect = require('chai').expect;
 var assert = require('chai').assert;
 var fs = require("fs");
-var gen = require('../lib/generator/ccda/generator.js');
+var gen = require('../lib/generator/ccda/generator.js'); // to parse a single section
 var XmlDOM = require('xmldom').DOMParser;
-var execSync = require('execSync');
+var run = require('execSync').exec;
 var bb = require("../index.js");
 var libxmljs = require('libxmljs');
-var libCCDAGen = require("../lib/generator/ccda/lib/templating_functions.js");
 
 // Flags
-var PROMPT_TO_SKIP = false;
+var SKIP = false; // if true prompts tester with choice to skip failing assertion, otherwise continues
 var DIFF = true;
 
 // Error Codes
@@ -53,6 +52,9 @@ var testXML = function () {
         "silence_len": false
     };
 
+    this.verbose = false;
+    this.curr_section;
+
     // possible errors
     this.errors = {
         "total": 0,
@@ -64,6 +66,20 @@ var testXML = function () {
             "length": 0,
         },
         "textDiscrepancy": 0,
+        "sections": {
+            'payers': 0,
+            'allergies': 0,
+            'procedures': 0,
+            'immunizations': 0,
+            'medications': 0,
+            'encounters': 0,
+            'vitals': 0,
+            'results': 0,
+            'social_history': 0,
+            'demographics': 0,
+            'plan_of_care': 0,
+            'problems': 0
+        }
     };
 };
 
@@ -191,38 +207,32 @@ testXML.prototype.isCapError = function (attr1, attr2) {
 // A utility function that allows you to skip failed assertions and produce
 // a diff of the two XML documents.
 testXML.prototype.skip = function (error, errorCode, subCode) {
-    this.logError(error, errorCode, subCode);
-    if (PROMPT_TO_SKIP) {
-        console.log("Skip? > y/n: ");
-        var result = execSync.exec('test/support/a.out');
-        var out = result.stdout;
-        if (out.substr(12, 13).trim() === "y") {
-            return true;
-        } else {
-            return false;
-        }
-    } else if (DIFF) {
-        return true;
-    } else {
-        return false;
+    if (this.verbose) {
+        this.logError(error, errorCode, subCode);
     }
+
+    return SKIP ? (console.log("Skip? > y/n: "), run('test/support/a.out').stdout.substr(12, 13).trim() === "y") : DIFF;
 };
 
 testXML.prototype.logError = function (errorMsg, eC, sC) {
     if (eC === 0) {
         this.errors["total"]++;
+        this.errors["sections"][this.curr_section]++;
         console.log(errorMsg);
     } else if (eC === 1) {
         this.errors["differentTags"]++;
         this.errors["total"]++;
+        this.errors["sections"][this.curr_section]++;
         console.log("\033[1;31m" + errorMsg);
     } else if (eC === 2) {
         this.errors["childNodeDiscrepancy"]++;
         this.errors["total"]++;
+        this.errors["sections"][this.curr_section]++;
         console.log(errorMsg);
     } else if (eC === 3) {
         this.errors["attributesMismatch"]["total"]++;
         this.errors["total"]++;
+        this.errors["sections"][this.curr_section]++;
         if (sC === undefined) {
             console.log("\033[36m" + errorMsg);
         }
@@ -241,6 +251,7 @@ testXML.prototype.logError = function (errorMsg, eC, sC) {
     } else if (eC === 5) {
         this.errors["textDiscrepancy"]++;
         this.errors["total"]++;
+        this.errors["sections"][this.curr_section]++;
     }
 };
 
@@ -326,13 +337,19 @@ capitalize2 = function (file) {
 // generates the DOM representations of both XML documents and returns them as a two-element array,
 // with the first being the generated XML and the second being the expected XML.
 testXML.prototype.generateXMLDOM = function (file) {
-    console.log("\n\x1b[0m" + "PROCESSING " + file.toUpperCase());
-    var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + capitalize2(file) + '.json', 'utf-8'),
-        actual = gen(JSON.parse(modelJSON), false, new libxmljs.Document(), file),
-        expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + capitalize2(file) + '.xml');
+    this.curr_section = file;
+    this.logMsg("\n\x1b[0m" + "PROCESSING " + file.toUpperCase());
+
+    var expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + capitalize2(file) + '.xml'); // get xml file
+    var doc = bb.xml(expected);
+    var modelJSON = bb.parseXml(doc); // parse to JSON
+    var actual = gen(modelJSON["data"][file], false, new libxmljs.Document(), file);
 
     // write generated file just to visually compare
     fs.writeFileSync('test/fixtures/file-snippets/generated/CCD_1_' + capitalize2(file) + '.xml', actual, 'utf-8');
+
+    // write generated json
+    fs.writeFileSync('test/fixtures/file-snippets/generatedJSON/CCD_1_' + capitalize2(file) + '.json', JSON.stringify(modelJSON.data, null, 4), 'utf-8');
 
     return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString())];
 };
@@ -346,39 +363,42 @@ testXML.prototype.generateStubs = function (name1, name2) {
 };
 
 // generate an entire CCDA document, with all 10 sections
-testXML.prototype.generateXMLDOMForEntireCCD = function (pathJSON, filenameJSON, pathXML, filenameXML, pathXMLWrite, filenameXMLWrite, singular) {
-    console.log("\nPROCESSING WHOLE CCD --> In dump: " + filenameXML + " vs. in dump_gen_xml: " + filenameXMLWrite);
-    var modelJSON,
-        errorThrown;
-
-    try {
-        modelJSON = fs.readFileSync(pathJSON + filenameJSON, 'utf-8');
-    } catch (e) {
-        errorThrown = true;
-        console.log(e.code);
+testXML.prototype.generateXMLDOMForEntireCCD_v2 = function (XML_file, test, version) {
+    if (test === "ccda_explorer") {
+        this.logMsg("\nPROCESSING CCD --> In dump: " + XML_file + " vs. in dump_gen_xml: " + XML_file);
+    } else {
+        this.logMsg("\nPROCESSING SAMPLE CCD --> In: " + XML_file + " vs. in: test/fixtures/files/generated/CCD_1_gen.xml");
     }
 
-    if (!errorThrown) {
-        var actual = gen.genWholeCCDA(JSON.parse(modelJSON)),
-            expected = fs.readFileSync(pathXML + filenameXML);
+    var expected = fs.readFileSync(XML_file), // get the xml file
+        doc = bb.xml(expected),
+        modelJSON = bb.parseXml(doc), // parse to JSON
+        actual = gen.genWholeCCDA(modelJSON); // generate back the xml
+    var i, j; // iteration variable for ccda_explorer
 
-        // generate JSON object from expected XML on the fly
-        if (singular) {
-            var doc = bb.xml(expected),
-                result = JSON.stringify(bb.parseXml(doc), undefined, 4);
-            fs.writeFileSync('test/fixtures/files/generated/CCD_1_gen.json', result, 'utf-8');
-        }
+    // write JSON 
+    if (test === "sample_ccda") {
+        fs.writeFileSync('test/fixtures/files/generated/CCD_1' + version + '_gen.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
+    }
+    if (test === "ccda_explorer") {
+        i = XML_file.split("/")[2].split("-")[0],
+        j = XML_file.split("/")[2].split("-")[1].split(".")[0];
+        fs.writeFileSync('ccda-explorer/dump_gen_json/' + i + '-' + j + '.json', JSON.stringify(modelJSON, null, 4), 'utf-8');
+    }
 
-        // write generated CCDA file for testing comparison
-        try {
-            fs.writeFileSync(pathXMLWrite + filenameXMLWrite, actual, 'utf-8');
-        } catch (e) {
-            console.log(e.code);
-        }
-
-        return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString())];
+    // write xml
+    if (test === "sample_ccda") {
+        fs.writeFileSync('test/fixtures/files/generated/CCD_1' + version + '_gen.xml', actual, 'utf-8');
     } else {
-        return ["<ClinicalDocument>", "<ClinicalDocument>"];
+        fs.writeFileSync('ccda-explorer/dump_gen_xml/' + i + '-' + j + '.xml', actual, 'utf-8');
+    }
+
+    return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString())];
+};
+
+testXML.prototype.logMsg = function (msg) {
+    if (this.verbose) {
+        console.log(msg);
     }
 };
 

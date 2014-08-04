@@ -10,17 +10,17 @@
       <act classCode="ACT" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
         <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
-        <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+        <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
         <statusCode code="active"/>
-        <effectiveTime value="20070431"/>
+        <effectiveTime value="undefined"/>
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
             <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
-            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+            <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="20070431"/>
+              <low value="undefined"/>
             </effectiveTime>
             <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
               <originalText>
@@ -41,7 +41,7 @@
             <entryRelationship typeCode="SUBJ" inversionInd="true">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-                <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <statusCode code="completed"/>
                 <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
               </observation>
@@ -56,7 +56,7 @@
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20070431"/>
+                  <low value="undefined"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -85,46 +85,10 @@
                 <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
               </observation>
             </entryRelationship>
-          </observation>
-        </entryRelationship>
-      </act>
-    </entry>
-    <entry typeCode="DRIV">
-      <act classCode="ACT" moodCode="EVN">
-        <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
-        <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
-        <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
-        <statusCode code="active"/>
-        <effectiveTime value="20060431"/>
-        <entryRelationship typeCode="SUBJ" inversionInd="true">
-          <observation classCode="OBS" moodCode="EVN">
-            <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-            <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
-            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
-            <statusCode code="completed"/>
-            <effectiveTime>
-              <low value="20060431"/>
-            </effectiveTime>
-            <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-              <originalText>
-                <reference value="#reaction2"/>
-              </originalText>
-            </value>
-            <participant typeCode="CSM">
-              <participantRole classCode="MANU">
-                <playingEntity classCode="MMAT">
-                  <code code="2670" displayName="Codeine" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
-                    <originalText>
-                      <reference value="#reaction2"/>
-                    </originalText>
-                  </code>
-                </playingEntity>
-              </participantRole>
-            </participant>
             <entryRelationship typeCode="SUBJ" inversionInd="true">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-                <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <statusCode code="completed"/>
                 <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
               </observation>
@@ -135,13 +99,13 @@
                 <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
                 <code nullFlavor="NA"/>
                 <text>
-                  <reference value="#reaction2"/>
+                  <reference value="#reaction1"/>
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20060431"/>
+                  <low value="undefined"/>
                 </effectiveTime>
-                <value xsi:type="CD" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
+                <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
                   <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
@@ -161,53 +125,17 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
                 <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
                 <text>
-                  <reference value="#severity2"/>
+                  <reference value="#severity3"/>
                 </text>
                 <statusCode code="completed"/>
-                <value xsi:type="CD" code="56018004" displayName="Wheezing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
               </observation>
             </entryRelationship>
-          </observation>
-        </entryRelationship>
-      </act>
-    </entry>
-    <entry typeCode="DRIV">
-      <act classCode="ACT" moodCode="EVN">
-        <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
-        <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
-        <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
-        <statusCode code="active"/>
-        <effectiveTime value="20080431"/>
-        <entryRelationship typeCode="SUBJ" inversionInd="true">
-          <observation classCode="OBS" moodCode="EVN">
-            <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-            <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
-            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
-            <statusCode code="completed"/>
-            <effectiveTime>
-              <low value="20080431"/>
-            </effectiveTime>
-            <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-              <originalText>
-                <reference value="#reaction3"/>
-              </originalText>
-            </value>
-            <participant typeCode="CSM">
-              <participantRole classCode="MANU">
-                <playingEntity classCode="MMAT">
-                  <code code="1191" displayName="Aspirin" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
-                    <originalText>
-                      <reference value="#reaction3"/>
-                    </originalText>
-                  </code>
-                </playingEntity>
-              </participantRole>
-            </participant>
             <entryRelationship typeCode="SUBJ" inversionInd="true">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-                <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <statusCode code="completed"/>
                 <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
               </observation>
@@ -218,13 +146,13 @@
                 <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
                 <code nullFlavor="NA"/>
                 <text>
-                  <reference value="#reaction3"/>
+                  <reference value="#reaction1"/>
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20080431"/>
+                  <low value="undefined"/>
                 </effectiveTime>
-                <value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" displayName="Hives"/>
+                <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
                   <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
@@ -233,7 +161,7 @@
                       <reference value="#severity6"/>
                     </text>
                     <statusCode code="completed"/>
-                    <value xsi:type="CD" code="255604002" displayName="Mild to moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                    <value xsi:type="CD" code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     <interpretationCode code="S" displayName="Susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                   </observation>
                 </entryRelationship>
@@ -244,10 +172,10 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
                 <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
                 <text>
-                  <reference value="#severity3"/>
+                  <reference value="#severity4"/>
                 </text>
                 <statusCode code="completed"/>
-                <value xsi:type="CD" code="247472004" displayName="Hives" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
               </observation>
             </entryRelationship>

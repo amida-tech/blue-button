@@ -44,7 +44,8 @@ module.exports = function (grunt) {
             }
         },
         jsbeautifier: {
-            beautify: {
+            beautify: { // ***** WARNING: please do not remove '!lib/generator/**/*.js' from src array.  *****
+                // It will make generator files very unreadable and take many hours to undo
                 src: ['Gruntfile.js', 'lib/*.js', 'lib/**/*.js', '!lib/generator/**/*.js', 'test/*.js', 'test/**/*.js'],
                 options: {
                     config: '.jsbeautifyrc'

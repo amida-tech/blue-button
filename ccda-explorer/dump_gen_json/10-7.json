@@ -1,0 +1,263 @@
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "last": "ClinicalSummary",
+                "first": "Three"
+            },
+            "dob": {
+                "point": {
+                    "date": "1948-04-09T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Female",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.3.441.1.50.300011.51",
+                    "identifier_type": "26840"
+                }
+            ],
+            "marital_status": "Divorced",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "123 Test Ave"
+                    ],
+                    "city": "Norcross",
+                    "state": "GA",
+                    "zip": "30091",
+                    "country": "US"
+                }
+            ],
+            "phone": [
+                {
+                    "type": "primary home"
+                }
+            ],
+            "email": [
+                {
+                    "type": "primary home"
+                }
+            ],
+            "race_ethnicity": "Hispanic or Latino",
+            "languages": [
+                {
+                    "language": "isl"
+                }
+            ]
+        },
+        "social_history": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "1900-01-01T00:00:00Z",
+                        "precision": "second"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "date_time": {
+                    "low": {
+                        "date": "1999-11-24T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
+                        "identifier_type": "1415"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441",
+                        "identifier_type": "74e0957fcb2849c4a15713d5a6402b92"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2004-03-14T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
+                        "identifier_type": "1416"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441",
+                        "identifier_type": "75c2a915aa54458b82f9f26fcad015af"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "1999-01-22T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
+                        "identifier_type": "1417"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441",
+                        "identifier_type": "489f49cb8ee24b57b0714fc7c5f1bc50"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "1964-06-21T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
+                        "identifier_type": "1418"
+                    }
+                ],
+                "negation_indicator": false,
+                "status": "Active",
+                "source_list_identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441",
+                        "identifier_type": "c95340b9d041420d9405a984e5a4dc73"
+                    }
+                ]
+            }
+        ],
+        "procedures": [
+            {
+                "procedure": {
+                    "name": "LIPID PANEL",
+                    "code": "80061",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61434"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-20T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            },
+            {
+                "procedure": {
+                    "name": "LIPID PANEL",
+                    "code": "80061",
+                    "code_system_name": "CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
+                        "identifier_type": "61435"
+                    }
+                ],
+                "status": "Completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-20T00:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "procedure_type": "observation"
+            }
+        ],
+        "plan_of_care": [
+            {
+                "plan": {
+                    "name": "Lipid panel",
+                    "code": "80061",
+                    "code_system_name": "OID CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "61434"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-20T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "procedure"
+            },
+            {
+                "plan": {
+                    "name": "Lipid panel",
+                    "code": "80061",
+                    "code_system_name": "OID CPT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
+                        "identifier_type": "61435"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-20T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "procedure"
+            }
+        ]
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics",
+            "social_history",
+            "problems",
+            "procedures",
+            "plan_of_care"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
+        "nullFlavor alert:  missing but required preferred in LanguageCommunication -> Patient -> CCD",
+        "nullFlavor alert:  missing but required problemAct in allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"
+    ]
+}

@@ -4,10 +4,11 @@ var lib = require('./test-lib.js');
 var fs = require("fs");
 
 var test = new lib.testXML();
+test.verbose = true; // log setting
 
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
-var TEST_CCD = false;
+var TEST_CCD = true;
 var TEST_SECTIONS = true;
 
 var supportedComponents = {
@@ -35,17 +36,15 @@ if (TEST_CCDA_SAMPLES) {
                     sum = 0;
                 for (var sample in stats) {
                     i = stats[sample]["index"];
-                    if (stats[sample]["full"][0]) { // add && (i < n) to shorten
+                    if (true) { // add (i < n) to shorten
                         for (var j = 0; j < stats[sample]["files"].length; j++) {
                             fileNameXML = i + "-" + j + ".xml";
                             if (true) { // replace with j < n to shorten
                                 if (true) { // replace with fileNameXML == "[filename]" to narrow down
-                                    var XMLDOMs = test.generateXMLDOMForEntireCCD('ccda-explorer/dump/', i + "-" + j + ".json",
-                                        'ccda-explorer/dump/', i + "-" + j + ".xml", 'ccda-explorer/dump_gen_xml/',
-                                        sample + "_" + i + "-" + j + ".xml", false);
+                                    var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('ccda-explorer/dump/' + i + "-" + j + ".xml", "ccda_explorer");
                                     sum++;
                                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-                                    console.log("TOTAL ERRORS: " + test.errors["total"]);
+                                    test.logMsg("TOTAL ERRORS: " + test.errors["total"]);
                                 }
                             }
                         }
@@ -56,15 +55,29 @@ if (TEST_CCDA_SAMPLES) {
     });
 }
 
-// test whole CCD document
+// test whole CCD document (version: ccda-r1.1 (ccda))
 if (TEST_CCD) {
     describe('ccda', function () {
         describe('generating CCDA for entire CCD', function () {
             it('should match entire CCD', function () {
-                var XMLDOMs = test.generateXMLDOMForEntireCCD('test/fixtures/files/json/', 'CCD_1.json', 'test/fixtures/files/generated/', 'CCD_1_gen.xml', 'test/fixtures/files/generated/', 'CCD_1_gen.xml');
+                var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('test/fixtures/files/CCD_1.xml', 'sample_ccda', '');
 
                 assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-                console.log("TOTAL ERRORS: " + test.errors["total"]);
+                test.logMsg("TOTAL ERRORS: " + test.errors["total"]);
+            });
+        });
+    });
+}
+
+// test whole CCD document (version: ccda-r1)
+if (TEST_CCD) {
+    describe('ccda', function () {
+        describe('generating CCDA for entire CCD', function () {
+            it('should match entire CCD', function () {
+                var XMLDOMs = test.generateXMLDOMForEntireCCD_v2('test/fixtures/files/CCD_1_r1.xml', 'sample_ccda', '_r1');
+
+                assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+                test.logMsg("TOTAL ERRORS: " + test.errors["total"]);
             });
         });
     });
@@ -75,10 +88,12 @@ if (TEST_SECTIONS) {
     describe('sections', function () {
         it('should match respective sections', function () {
             Object.keys(supportedComponents).forEach(function (section) {
-                var XMLDOMs = test.generateXMLDOM(section);
+                if (section === "allergies") { // add section === "[section]" for specific section
+                    var XMLDOMs = test.generateXMLDOM(section);
 
-                assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
-                console.log("TOTAL ERRORS: " + test.errors["total"]);
+                    assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
+                    test.logMsg("ERRORS: " + test.errors["sections"][test.curr_section]);
+                }
             });
         });
     });
@@ -87,6 +102,6 @@ if (TEST_SECTIONS) {
 // show the error summary
 describe('show errors', function () {
     it('should show error summary', function () {
-        console.log("\nERROR SUMMARY: " + JSON.stringify(test.errors, null, 4) + "\n" + JSON.stringify(test.error_settings, null, 4));
+        test.logMsg("\nERROR SUMMARY: " + JSON.stringify(test.errors, null, 4) + "\n" + JSON.stringify(test.error_settings, null, 4));
     });
 });

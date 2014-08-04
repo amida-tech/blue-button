@@ -1,0 +1,99 @@
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "prefix": "Mr.",
+                "middle": [
+                    "Frankie"
+                ],
+                "last": "Everyman",
+                "first": "Adam"
+            },
+            "dob": {
+                "point": {
+                    "date": "1954-11-25T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "gender": "Male",
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19",
+                    "identifier_type": "12345"
+                }
+            ],
+            "marital_status": "Married",
+            "addresses": [
+                {
+                    "streetLines": [
+                        "17 Daws Rd."
+                    ],
+                    "city": "Blue Bell",
+                    "state": "MA",
+                    "zip": "02368",
+                    "country": "US",
+                    "use": "primary home"
+                }
+            ],
+            "phone": [
+                {
+                    "number": "(781)555-1212",
+                    "type": "primary home"
+                }
+            ],
+            "race_ethnicity": "White",
+            "languages": [
+                {
+                    "language": "fr-CN",
+                    "preferred": true,
+                    "mode": "Recieve Written"
+                }
+            ],
+            "religion": "Christian (non-Catholic, non-specific)",
+            "birthplace": {
+                "state": "MA",
+                "zip": "02368",
+                "country": "USA"
+            },
+            "guardians": [
+                {
+                    "relation": "Grandfather",
+                    "addresses": [
+                        {
+                            "streetLines": [
+                                "17 Daws Rd."
+                            ],
+                            "city": "Blue Bell",
+                            "state": "MA",
+                            "zip": "02368",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "names": [
+                        {
+                            "last": "Relative",
+                            "first": "Ralph"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(781)555-1212",
+                            "type": "primary home"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "meta": {
+        "version": "1.0.3",
+        "sections": [
+            "demographics"
+        ]
+    },
+    "errors": [
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Patient -> CCD"
+    ]
+}
