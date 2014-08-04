@@ -33,58 +33,7 @@
         "providers": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "address": {
-                        "$ref": "http://local.com/common_models#/properties/cda_address"
-                    },
-                    "identifiers": {
-                        "type": "array",
-                        "items": {
-                            "$ref": "http://local.com/common_models#/properties/cda_id"
-                        }
-                    },
-                    "organization": {
-                        "type": "object",
-                        "properties": {
-                            "address": {
-                                "$ref": "http://local.com/common_models#/properties/cda_address"
-                            },
-                            "identifiers": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "http://local.com/common_models#/properties/cda_id"
-                                }
-                            },
-                            "name": {
-                                "type": "string"
-                            },
-                            "phone": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "http://local.com/common_models#/properties/cda_phone"
-                                }
-                            },
-                             "email": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "http://local.com/common_models#/properties/cda_email"
-                                }
-                            }
-
-                        },
-                        "minProperties": 1
-                    },
-                    "phone": {
-                        "type": "array",
-                        "items": {
-                            "$ref": "http://local.com/common_models#/properties/cda_phone"
-                        }
-                    }
-                },
-                "required": [
-                    "address"
-                ]
+                "$ref": "http://local.com/common_models#/properties/cda_provider"
             }
         },
         "locations": {

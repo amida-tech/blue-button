@@ -213,8 +213,75 @@
                     }
                 }
             },
-            "required": ["name"],
+            "required": [
+                "name"
+            ],
             "additionalProperties": false
+        },
+        "cda_provider": {
+            "type": "object",
+            "properties": {
+                "role": {
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                },
+                "address": {
+                    "$ref": "http://local.com/common_models#/properties/cda_address"
+                },
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_id"
+                    }
+                },
+                "organization": {
+                    "type": "object",
+                    "properties": {
+                        "address": {
+                            "$ref": "http://local.com/common_models#/properties/cda_address"
+                        },
+                        "identifiers": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://local.com/common_models#/properties/cda_id"
+                            }
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "phone": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://local.com/common_models#/properties/cda_phone"
+                            }
+                        },
+                        "email": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://local.com/common_models#/properties/cda_email"
+                            }
+                        }
+                    },
+                    "minProperties": 1
+                },
+                "person":{
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "$ref": "http://local.com/common_models#/properties/cda_name"
+                        }
+                    },
+                    "minProperties": 1
+                    },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_phone"
+                    }
+                }
+            },
+            "required": [
+                "address"
+            ]
         }
     }
 }
