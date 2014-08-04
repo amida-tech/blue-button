@@ -349,7 +349,7 @@ Time: 12:00 PM
 
 Reading: 86
 
-Comments: 
+Comments: kg
 
 
 Vital Statistic Type: Height
@@ -358,21 +358,10 @@ Date: 11/14/1999
 
 Time: 12:00 PM
 
-Reading: 
+Reading: 177
 
-Comments: 
+Comments: cm
 
-
-
-Vital Statistic Type: Height
-
-Date: 11/14/1999
-
-Time: 12:00 PM
-
-Reading: 
-
-Comments: 
 
 
 
@@ -573,20 +562,6 @@ Marketing Name: HealthCare Payer
 Plan Address: 123 Any Road Anytown PA 00003
 
 Plan Type: 3 - Coordinated Care Plan (HMO, PPO, PSO, SNP)
-
-
-
-Contract ID/Plan ID: S9999/000
-
-Plan Period: 01/01/2010 - current
-
-Plan Name: A Medicare Rx Plan (PDP)
-
-Marketing Name: Another HealthCare Payer
-
-Plan Address: 123 Any Road Anytown PA 00003
-
-Plan Type: 11 - Medicare Prescription Drug Plan
 
 
 

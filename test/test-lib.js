@@ -1,11 +1,11 @@
 /*
-This is a library file to support the tests in the test-generator.js file. It's purpose is to help 
-compare two XML documents by returning the results from comparing their nodes (tagNames), then their 
+This is a library file to support the tests in the test-generator.js file. It's purpose is to help
+compare two XML documents by returning the results from comparing their nodes (tagNames), then their
 attribute/value pairs (if any) and then their text contents (if any). It then proceeds to
-strip out any comment and whitespace objects present in either XML file (comments are not critical 
-and may be different). Then it tests if they are leaf nodes, in which case if they are, then it checks the 
-attribute/value pairs again. Finally, if they are not leaf nodes, then it 
-checks the number of children, and if those numbers are the same, then it 
+strip out any comment and whitespace objects present in either XML file (comments are not critical
+and may be different). Then it tests if they are leaf nodes, in which case if they are, then it checks the
+attribute/value pairs again. Finally, if they are not leaf nodes, then it
+checks the number of children, and if those numbers are the same, then it
 calls the isIdentical() function recursively to run the same tests on those
 child nodes.
 
@@ -188,7 +188,7 @@ testXML.prototype.isCapError = function (attr1, attr2) {
     return attr1.toLowerCase() === attr2.toLowerCase() ? ATTR_MISMATCH_CAP : undefined;
 };
 
-// A utility function that allows you to skip failed assertions and produce 
+// A utility function that allows you to skip failed assertions and produce
 // a diff of the two XML documents.
 testXML.prototype.skip = function (error, errorCode, subCode) {
     this.logError(error, errorCode, subCode);
@@ -323,7 +323,7 @@ capitalize2 = function (file) {
     return elements.join("_");
 };
 
-// generates the DOM representations of both XML documents and returns them as a two-element array, 
+// generates the DOM representations of both XML documents and returns them as a two-element array,
 // with the first being the generated XML and the second being the expected XML.
 testXML.prototype.generateXMLDOM = function (file) {
     console.log("\n\x1b[0m" + "PROCESSING " + file.toUpperCase());
@@ -337,7 +337,7 @@ testXML.prototype.generateXMLDOM = function (file) {
     return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString())];
 };
 
-// A test/sandbox function for experimentation/testing 
+// A test/sandbox function for experimentation/testing
 testXML.prototype.generateStubs = function (name1, name2) {
     var actual = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name1 + '.xml'),
         expected = fs.readFileSync('test/fixtures/file-snippets/stubs/' + name2 + '.xml');
