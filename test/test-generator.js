@@ -8,7 +8,7 @@ test.verbose = true; // log setting
 
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
-var TEST_CCD = true;
+var TEST_CCD = false;
 var TEST_SECTIONS = true;
 
 var supportedComponents = {
@@ -88,7 +88,7 @@ if (TEST_SECTIONS) {
     describe('sections', function () {
         it('should match respective sections', function () {
             Object.keys(supportedComponents).forEach(function (section) {
-                if (true) { // add section === "[section]" for specific section
+                if (section === "allergies") { // add section === "[section]" for specific section
                     var XMLDOMs = test.generateXMLDOM(section);
 
                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));

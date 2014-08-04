@@ -339,12 +339,17 @@ capitalize2 = function (file) {
 testXML.prototype.generateXMLDOM = function (file) {
     this.curr_section = file;
     this.logMsg("\n\x1b[0m" + "PROCESSING " + file.toUpperCase());
-    var modelJSON = fs.readFileSync('test/fixtures/file-snippets/json/CCD_1_' + capitalize2(file) + '.json', 'utf-8'),
-        actual = gen(JSON.parse(modelJSON), false, new libxmljs.Document(), file),
-        expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + capitalize2(file) + '.xml');
+
+    var expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + capitalize2(file) + '.xml'); // get xml file
+    var doc = bb.xml(expected);
+    var modelJSON = bb.parseXml(doc); // parse to JSON
+    var actual = gen(modelJSON["data"][file], false, new libxmljs.Document(), file);
 
     // write generated file just to visually compare
     fs.writeFileSync('test/fixtures/file-snippets/generated/CCD_1_' + capitalize2(file) + '.xml', actual, 'utf-8');
+
+    // write generated json
+    fs.writeFileSync('test/fixtures/file-snippets/generatedJSON/CCD_1_' + capitalize2(file) + '.json', JSON.stringify(modelJSON.data, null, 4), 'utf-8');
 
     return [new XmlDOM().parseFromString(actual.toString()), new XmlDOM().parseFromString(expected.toString())];
 };
