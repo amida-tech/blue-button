@@ -1,10 +1,10 @@
 var testProb = {
     "regular1": {
         "date": [{
-            "date": "2008-01-03T00:00:00.000Z",
+            "date": "2008-01-03T00:00:00Z",
             "precision": "day"
         }, {
-            "date": "2008-01-03T00:00:00.000Z",
+            "date": "2008-01-03T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -26,10 +26,10 @@ var testProb = {
     },
     "regular2": {
         "date": [{
-            "date": "2007-01-03T00:00:00.000Z",
+            "date": "2007-01-03T00:00:00Z",
             "precision": "day"
         }, {
-            "date": "2008-01-03T00:00:00.000Z",
+            "date": "2008-01-03T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -73,10 +73,10 @@ var testProb = {
     },
     "emptyProblem": {
         "date": [{
-            "date": "2007-01-03T00:00:00.000Z",
+            "date": "2007-01-03T00:00:00Z",
             "precision": "day"
         }, {
-            "date": "2008-01-03T00:00:00.000Z",
+            "date": "2008-01-03T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{
@@ -96,10 +96,10 @@ var testProb = {
     },
     "undefinedProblem": {
         "date": [{
-            "date": "2007-01-03T00:00:00.000Z",
+            "date": "2007-01-03T00:00:00Z",
             "precision": "day"
         }, {
-            "date": "2008-01-03T00:00:00.000Z",
+            "date": "2008-01-03T00:00:00Z",
             "precision": "day"
         }],
         "identifiers": [{

@@ -9,28 +9,28 @@
         "date": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
+                "$ref": "http://local.com/common_models#/properties/cda_date"
             }
         },
         "encounter": {
-            "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
         },
         "findings": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
             }
         },
         "identifiers": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_id"
+                "$ref": "http://local.com/common_models#/properties/cda_id"
             }
         },
         "locations": {
             "type": "array",
             "items": {
-                 "$ref": "http://local.com/commonModels#/properties/cda_location"
+                 "$ref": "http://local.com/common_models#/properties/cda_location"
             }
         }
     },

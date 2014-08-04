@@ -15,7 +15,7 @@
   <recordTarget>
     <patientRole>
       <id extension="998991" root="2.16.840.1.113883.19.5.99999.2"/>
-      <addr>
+      <addr use="HP">
         <streetAddressLine>1357 Amber Drive</streetAddressLine>
         <city>Beaverton</city>
         <state>OR</state>
@@ -37,7 +37,7 @@
         <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <guardian>
           <code code="PRN" displayName="Parent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role Code"/>
-          <addr>
+          <addr use="HP">
             <streetAddressLine>1357 Amber Drive</streetAddressLine>
             <city>Beaverton</city>
             <state>OR</state>
@@ -54,7 +54,7 @@
         </guardian>
         <birthplace>
           <place>
-            <addr>
+            <addr use="HP">
               <city>Beaverton</city>
               <state>OR</state>
               <postalCode>97867</postalCode>
@@ -368,7 +368,7 @@
               <participant typeCode="LOC">
                 <participantRole classCode="SDLOC">
                   <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                  <code code="1160-1" displayName="Urgent Care Center" codeSystem="undefined" codeSystemName="HealthcareServiceLocation">
+                  <code code="1160-1" displayName="Urgent Care Center" codeSystemName="HealthcareServiceLocation">
                     <addr>
                       <streetAddressLine>17 Daws Rd.</streetAddressLine>
                       <city>Blue Bell</city>
@@ -377,7 +377,7 @@
                       <country>US</country>
                     </addr>
                     <telecom nullFlavor="UNK"/>
-                    <playingEntity classCode="PLC">
+                    <playingEntity>
                       <name/>
                     </playingEntity>
                   </code>
@@ -1076,7 +1076,7 @@
             <entry typeCode="DRIV">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
-                <id root="2.16.840.1.113883.19"/>
+                <id root="2.16.840.1.113883.19" extension="123456789"/>
                 <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
                   <originalText>
                     <reference value="#Proc1"/>
@@ -1116,7 +1116,7 @@
                       <country>US</country>
                     </addr>
                     <telecom nullFlavor="UNK"/>
-                    <playingEntity classCode="PLC"/>
+                    <playingEntity/>
                   </participantRole>
                 </participant>
               </observation>
@@ -1124,7 +1124,7 @@
             <entry typeCode="DRIV">
               <act classCode="ACT" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
-                <id root="1.2.3.4.5.6.7.8"/>
+                <id root="1.2.3.4.5.6.7.8" extension="1234567"/>
                 <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
                   <originalText>
                     <reference value="#Proc1"/>
@@ -1163,7 +1163,7 @@
                       <country>US</country>
                     </addr>
                     <telecom nullFlavor="UNK"/>
-                    <playingEntity classCode="PLC"/>
+                    <playingEntity/>
                   </participantRole>
                 </participant>
               </act>

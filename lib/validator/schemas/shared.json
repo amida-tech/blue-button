@@ -37,6 +37,21 @@
         "cda_date": {
             "type": "object",
             "properties": {
+                "low": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date_element"
+                },
+                "point": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date_element"
+                },
+                "high": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date_element"
+                }
+            },
+            "additionalProperties": false
+        },
+        "cda_date_element": {
+            "type": "object",
+            "properties": {
                 "date": {
                     "type": "string",
                     "format": "date-time"
@@ -183,7 +198,7 @@
                     "items": {
                         "$ref": "#/properties/cda_address"
                     },
-                    "minItems":1
+                    "minItems": 1
                 },
                 "loc_type": {
                     "$ref": "#/properties/cda_coded_entry"
@@ -198,7 +213,7 @@
                     }
                 }
             },
-            "required":["name"],
+            "required": ["name"],
             "additionalProperties": false
         }
     }

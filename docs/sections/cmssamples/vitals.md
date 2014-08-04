@@ -12,7 +12,7 @@ Data model description - [Vital Signs](../vitals.md)
         },
         "date": [
             {
-                "date": "2011-07-22T15:00:00.000Z",
+                "date": "2011-07-22T15:00:00Z",
                 "precision": "hour"
             }
         ],
@@ -26,7 +26,7 @@ Data model description - [Vital Signs](../vitals.md)
         },
         "date": [
             {
-                "date": "2011-07-22T15:00:00.000Z",
+                "date": "2011-07-22T15:00:00Z",
                 "precision": "hour"
             }
         ],
@@ -40,7 +40,7 @@ Data model description - [Vital Signs](../vitals.md)
         },
         "date": [
             {
-                "date": "2012-03-20T12:00:00.000Z",
+                "date": "2012-03-20T12:00:00Z",
                 "precision": "hour"
             }
         ],

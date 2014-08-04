@@ -169,7 +169,7 @@ getting:
   meta: 
    { type: 'cms',
      version: '2.0',
-     timestamp: { date: '2013-03-16T05:10:00.000Z', precision: 'minute' } } }
+     timestamp: { date: '2013-03-16T05:10:00Z', precision: 'minute' } } }
 
 ``` 
 

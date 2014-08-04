@@ -7,20 +7,20 @@
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
         "allergen": {
-            "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
         },
         "date": {
             "type": "array",
             "minItems": 1,
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
+                "$ref": "http://local.com/common_models#/properties/cda_date"
             }
         },
         "identifiers": {
             "type": "array",
             "minItems": 1,
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_id"
+                "$ref": "http://local.com/common_models#/properties/cda_id"
                 }
         },
          "severity": {
@@ -36,7 +36,7 @@
                 "type": "object",
                 "properties": {
                     "reaction": {
-                        "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+                        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                     },
                     "severity": {
                         "type": "string"

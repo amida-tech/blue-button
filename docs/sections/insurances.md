@@ -15,13 +15,13 @@
         "date": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
+                "$ref": "http://local.com/common_models#/properties/cda_date"
             }
         },
         "email ": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_address"
+                "$ref": "http://local.com/common_models#/properties/cda_address"
             }
         },
         "group_name": {
@@ -48,7 +48,7 @@
         "phone ": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_phone"
+                "$ref": "http://local.com/common_models#/properties/cda_phone"
             }
         },
         "plan_id": {

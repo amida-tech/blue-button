@@ -7,10 +7,12 @@ var testDemo = {
             "last": "Jones",
             "first": "Isabella"
         },
-        "dob": [{
-            "date": "1975-05-01T00:00:00.000Z",
-            "precision": "day"
-        }],
+        "dob": {
+            "point": {
+                "date": "1975-05-01T00:00:00Z",
+                "precision": "day"
+            }
+        },
         "gender": "Female",
         "identifiers": [{
             "identifier": "2.16.840.1.113883.19.5.99999.2",
@@ -80,7 +82,7 @@ var testDemo = {
             "first": "Isabella"
         },
         "dob": [{
-            "date": "1975-05-01T00:00:00.000Z",
+            "date": "1975-05-01T00:00:00Z",
             "precision": "day"
         }],
         "gender": "Female",
@@ -149,7 +151,7 @@ var testDemo = {
             "last": "Jones"
         },
         "dob": [{
-            "date": "1975-05-01T00:00:00.000Z",
+            "date": "1975-05-01T00:00:00Z",
             "precision": "day"
         }],
         "gender": "Female",

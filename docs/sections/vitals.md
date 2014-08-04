@@ -9,12 +9,12 @@
         "identifiers": {
             "type": "array",
             "items": {
-            "$ref": "http://local.com/commonModels#/properties/cda_id"
+            "$ref": "http://local.com/common_models#/properties/cda_id"
         },
         "minItems":1
         },
         "vital": {
-            "$ref": "http://local.com/commonModels#/properties/cda_coded_entry"
+            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
         },
         "status": {
             "type": "string"
@@ -22,7 +22,7 @@
         "date": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/commonModels#/properties/cda_date"
+                "$ref": "http://local.com/common_models#/properties/cda_date"
             }
         },
         "interpretations": {

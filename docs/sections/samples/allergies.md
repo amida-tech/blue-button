@@ -7,7 +7,7 @@ Data model description - [Allergies](../allergies.md)
 ```javascript
 [{
     "date": [{
-        "date": "2007-05-01T00:00:00.000Z",
+        "date": "2007-05-01T00:00:00Z",
         "precision": "day"
     }],
     "identifiers": [{
@@ -30,7 +30,7 @@ Data model description - [Allergies](../allergies.md)
     }]
 }, {
     "date": [{
-        "date": "2006-05-01T00:00:00.000Z",
+        "date": "2006-05-01T00:00:00Z",
         "precision": "day"
     }],
     "identifiers": [{
@@ -53,7 +53,7 @@ Data model description - [Allergies](../allergies.md)
     }]
 }, {
     "date": [{
-        "date": "2008-05-01T00:00:00.000Z",
+        "date": "2008-05-01T00:00:00Z",
         "precision": "day"
     }],
     "identifiers": [{

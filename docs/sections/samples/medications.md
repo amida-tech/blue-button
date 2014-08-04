@@ -7,10 +7,10 @@ Data model description - [Medications](../medications.md)
 ```javascript
 [{
     "date": [{
-        "date": "2007-01-03T00:00:00.000Z",
+        "date": "2007-01-03T00:00:00Z",
         "precision": "day"
     }, {
-        "date": "2012-05-15T00:00:00.000Z",
+        "date": "2012-05-15T00:00:00Z",
         "precision": "day"
     }],
     "identifiers": [{

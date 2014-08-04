@@ -17,10 +17,6 @@ exports.parseText2 = parser.parseText2;
 //need to review if this is still needed
 exports.parse = parser.parse;
 
-
-exports.generateSchema = require("./lib/schema.js").generateSchema;
-
-
 exports.generateCCDA = require("./lib/generator/ccda/generator.js").genWholeCCDA;
 
 //remove old validator.js from /lib

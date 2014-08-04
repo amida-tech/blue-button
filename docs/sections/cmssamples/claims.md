@@ -13,18 +13,18 @@ Data model description - [Claims](../claims.md)
         ],
         "number": "1234567890000",
         "start_date": {
-            "date": "2012-10-18T00:00:00.000Z",
+            "date": "2012-10-18T00:00:00Z",
             "precision": "day"
         },
         "lines": [
             {
                 "line": "1",
                 "start_date": {
-                    "date": "2012-10-18T00:00:00.000Z",
+                    "date": "2012-10-18T00:00:00Z",
                     "precision": "day"
                 },
                 "end_date": {
-                    "date": "2012-10-18T00:00:00.000Z",
+                    "date": "2012-10-18T00:00:00Z",
                     "precision": "day"
                 },
                 "procedure": {
@@ -88,14 +88,14 @@ Data model description - [Claims](../claims.md)
         ],
         "number": "12345678900000VAA",
         "start_date": {
-            "date": "2012-09-22T00:00:00.000Z",
+            "date": "2012-09-22T00:00:00Z",
             "precision": "day"
         },
         "lines": [
             {
                 "line": "1",
                 "start_date": {
-                    "date": "2012-09-22T00:00:00.000Z",
+                    "date": "2012-09-22T00:00:00Z",
                     "precision": "day"
                 },
                 "quantity": 1,
@@ -107,7 +107,7 @@ Data model description - [Claims](../claims.md)
             {
                 "line": "2",
                 "start_date": {
-                    "date": "2012-09-22T00:00:00.000Z",
+                    "date": "2012-09-22T00:00:00Z",
                     "precision": "day"
                 },
                 "procedure": {
@@ -123,7 +123,7 @@ Data model description - [Claims](../claims.md)
             {
                 "line": "3",
                 "start_date": {
-                    "date": "2012-09-22T00:00:00.000Z",
+                    "date": "2012-09-22T00:00:00Z",
                     "precision": "day"
                 },
                 "procedure": {
@@ -183,11 +183,11 @@ Data model description - [Claims](../claims.md)
             {
                 "line": "1",
                 "start_date": {
-                    "date": "2012-12-01T00:00:00.000Z",
+                    "date": "2012-12-01T00:00:00Z",
                     "precision": "day"
                 },
                 "end_date": {
-                    "date": "2012-12-01T00:00:00.000Z",
+                    "date": "2012-12-01T00:00:00Z",
                     "precision": "day"
                 },
                 "procedure": {
@@ -221,11 +221,11 @@ Data model description - [Claims](../claims.md)
             {
                 "line": "2",
                 "start_date": {
-                    "date": "2012-12-01T00:00:00.000Z",
+                    "date": "2012-12-01T00:00:00Z",
                     "precision": "day"
                 },
                 "end_date": {
-                    "date": "2012-12-01T00:00:00.000Z",
+                    "date": "2012-12-01T00:00:00Z",
                     "precision": "day"
                 },
                 "procedure": {
