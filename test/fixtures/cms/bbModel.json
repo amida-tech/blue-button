@@ -863,6 +863,32 @@
                     }
                 }
             }
+        ],
+        "providers": [
+            {
+                "name": "ANY CARE",
+                "address": "123 Any Rd, Anywhere, MD 99999",
+                "role": {
+                    "name": "NHC"
+                },
+                "date_time": {}
+            },
+            {
+                "name": "ANY HOSPITAL1",
+                "address": "123 Drive, Anywhere, VA 00001",
+                "role": {
+                    "name": "HOS"
+                },
+                "date_time": {}
+            },
+            {
+                "name": "Jane Doe",
+                "address": "123 Road, Anywhere, VA 00001",
+                "role": {
+                    "name": "PHY"
+                },
+                "date_time": {}
+            }
         ]
     },
     "meta": {

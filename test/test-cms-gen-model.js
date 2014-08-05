@@ -103,11 +103,38 @@ describe('CMS: Original sample.txt version', function () {
 
 });
 
+
+//This is a temporary test for development, should definitely be removed later
+describe('123', function () {
+    before(function (done) {
+        sampleFile = fs.readFileSync(__dirname + '/fixtures/cms/sample2.txt').toString();
+        bbObj = bb.parseText(sampleFile);
+        console.log('sample2.txt');
+        console.log(JSON.stringify(bbObj, null, 4));
+        done();
+    });
+
+    it('validate', function (done) {
+        var obj = bb.parseText(sampleFile);
+        var valid = validator.validateDocumentModel(obj);
+        if (!valid) {
+            var errors = validator.getLastError();
+            for (var x in errors.errors) {
+                console.log(errors.errors[x]);
+            }
+        }
+        expect(valid).to.be.true;
+        done();
+    });
+
+});
+
 describe('CMS: jones.cms.txt file', function () {
     before(function (done) {
         sampleFile = fs.readFileSync(__dirname + '/fixtures/cms/jones.cms.txt').toString();
         bbObj = bb.parseText(sampleFile);
-        console.log(bbObj.data.medications);
+        //console.log('jones.cms.txt');
+        //console.log(JSON.stringify(bbObj, null, 4));
         done();
     });
     it('validate', function (done) {

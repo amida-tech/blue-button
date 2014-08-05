@@ -266,15 +266,6 @@
                     },
                     "minProperties": 1
                 },
-                "person":{
-                    "type": "object",
-                    "properties": {
-                        "name": {
-                            "$ref": "http://local.com/common_models#/properties/cda_name"
-                        }
-                    },
-                    "minProperties": 1
-                    },
                 "phone": {
                     "type": "array",
                     "items": {
