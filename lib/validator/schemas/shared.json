@@ -233,6 +233,9 @@
                         "$ref": "http://local.com/common_models#/properties/cda_id"
                     }
                 },
+                "name": {
+                    "type":"object"
+                },
                 "organization": {
                     "type": "object",
                     "properties": {

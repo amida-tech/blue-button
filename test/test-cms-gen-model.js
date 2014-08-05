@@ -84,6 +84,23 @@ describe('CMS: Original sample.txt version', function () {
         done();
     });
 
+    xit('Test number of objects in providers', function (done) {
+        var keys = Object.keys(bbObj.data.providers).length;
+        expect(keys).to.equal(3);
+        var fieldArray = [3, 3, 4];
+        /* this is to check if field size of each provider section object element
+        if parsed correctly */
+
+        for (var k in bbObj.data.providers) {
+            var sectionSize = bbObj.data.poviders(k).length;
+            var index = fieldArray.indexOf(sectionSize);
+            expect(index).to.not.equal(-1);
+            fieldArray.splice(index, 1);
+        }
+        expect(fieldArray.length).to.equal(0);
+        done();
+    });
+
 });
 
 describe('CMS: jones.cms.txt file', function () {
@@ -159,6 +176,26 @@ describe('CMS: jones.cms.txt file', function () {
     it('Test number of objects in insurance', function (done) {
         var keys = Object.keys(bbObj.data.insurance).length;
         expect(keys).to.equal(5);
+        done();
+    });
+
+    xit('Test number of objects in providers', function (done) {
+        var keys = Object.keys(bbObj.data.provider).length;
+        expect(keys).to.equal(10);
+
+        var fourFields = 0;
+        var threeFields = 0;
+
+        for (var k in bbObj.data.providers) {
+            var sectionSize = bbObj.data.poviders(k).length;
+            if (sectionSize === 3) {
+                threeFields++;
+            } else if (sectionSize === 4) {
+                fourFields++;
+            }
+        }
+        expect(fourFields).to.equal(8);
+        expect(threeFields).to.equal(2);
         done();
     });
 
