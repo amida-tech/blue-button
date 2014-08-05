@@ -4,7 +4,7 @@ var lib = require('./test-lib.js');
 var fs = require("fs");
 
 var test = new lib.testXML();
-test.verbose = false; // log setting
+test.verbose = true; // log setting
 
 // testing options/cases
 var TEST_CCDA_SAMPLES = false;
