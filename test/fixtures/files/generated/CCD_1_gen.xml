@@ -108,7 +108,7 @@
                   <effectiveTime>
                     <low value="undefined"/>
                   </effectiveTime>
-                  <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                  <value xsi:type="CD" code="undefined" displayName="undefined" codeSystem="undefined" codeSystemName="undefined">
                     <originalText>
                       <reference value="#reaction1"/>
                     </originalText>
@@ -129,6 +129,7 @@
                       <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
                       <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                       <statusCode code="completed"/>
+                      <value xsi:type="undefined" code="undefined" displayName="undefined" codeSystem="undefined" codeSystemName="undefined"/>
                       <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
                     </observation>
                   </entryRelationship>
@@ -176,6 +177,7 @@
                       <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
                       <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                       <statusCode code="completed"/>
+                      <value xsi:type="undefined" code="undefined" displayName="undefined" codeSystem="undefined" codeSystemName="undefined"/>
                       <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
                     </observation>
                   </entryRelationship>
@@ -223,6 +225,7 @@
                       <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
                       <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                       <statusCode code="completed"/>
+                      <value xsi:type="undefined" code="undefined" displayName="undefined" codeSystem="undefined" codeSystemName="undefined"/>
                       <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
                     </observation>
                   </entryRelationship>

@@ -22,7 +22,7 @@
             <effectiveTime>
               <low value="undefined"/>
             </effectiveTime>
-            <value xsi:type="CD" code="419511003" displayName="Propensity to adverse reactions to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+            <value xsi:type="CD" code="undefined" displayName="undefined" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
               <originalText>
                 <reference value="#reaction1"/>
               </originalText>
@@ -43,7 +43,7 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
                 <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <statusCode code="completed"/>
-                <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
+                <value xsi:type="CE" code="73425007" displayName="Inactive" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
               </observation>
             </entryRelationship>
             <entryRelationship typeCode="MFST" inversionInd="true">
@@ -54,130 +54,160 @@
                 <text>
                   <reference value="#reaction1"/>
                 </text>
-                <statusCode code="completed"/>
-                <effectiveTime>
-                  <low value="undefined"/>
-                </effectiveTime>
-                <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
+              </observation>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                  <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                  <code nullFlavor="NA"/>
+                  <text>
+                    <reference value="#reaction1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="undefined"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                      <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                      <text>
+                        <reference value="#severity4"/>
+                      </text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                      <interpretationCode code="S" displayName="Susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                  <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                  <text>
+                    <reference value="#severity2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CE" code="73425007" displayName="Inactive" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                  <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                  <code nullFlavor="NA"/>
+                  <text>
+                    <reference value="#reaction1"/>
+                  </text>
+                </observation>
+                <entryRelationship typeCode="MFST" inversionInd="true">
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                    <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code nullFlavor="NA"/>
+                    <text>
+                      <reference value="#reaction1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                      <low value="undefined"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
+                    <entryRelationship typeCode="SUBJ" inversionInd="true">
+                      <observation classCode="OBS" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                        <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                        <text>
+                          <reference value="#severity5"/>
+                        </text>
+                        <statusCode code="completed"/>
+                        <value xsi:type="CD" code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                        <interpretationCode code="S" displayName="Susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
+                      </observation>
+                    </entryRelationship>
+                  </observation>
+                </entryRelationship>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
                   <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
                     <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
                     <text>
-                      <reference value="#severity4"/>
+                      <reference value="#severity3"/>
                     </text>
                     <statusCode code="completed"/>
-                    <value xsi:type="CD" code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                    <interpretationCode code="S" displayName="Susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
+                    <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                    <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                   </observation>
                 </entryRelationship>
-              </observation>
-            </entryRelationship>
-            <entryRelationship typeCode="SUBJ" inversionInd="true">
-              <observation classCode="OBS" moodCode="EVN">
-                <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
-                <text>
-                  <reference value="#severity2"/>
-                </text>
-                <statusCode code="completed"/>
-                <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
-              </observation>
-            </entryRelationship>
-            <entryRelationship typeCode="SUBJ" inversionInd="true">
-              <observation classCode="OBS" moodCode="EVN">
-                <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-                <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                <statusCode code="completed"/>
-                <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
-              </observation>
-            </entryRelationship>
-            <entryRelationship typeCode="MFST" inversionInd="true">
-              <observation classCode="OBS" moodCode="EVN">
-                <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
-                <code nullFlavor="NA"/>
-                <text>
-                  <reference value="#reaction1"/>
-                </text>
-                <statusCode code="completed"/>
-                <effectiveTime>
-                  <low value="undefined"/>
-                </effectiveTime>
-                <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
                   <observation classCode="OBS" moodCode="EVN">
-                    <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                    <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
-                    <text>
-                      <reference value="#severity5"/>
-                    </text>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                    <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <statusCode code="completed"/>
-                    <value xsi:type="CD" code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                    <interpretationCode code="S" displayName="Susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
+                    <value xsi:type="CE" code="73425007" displayName="Inactive" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
                   </observation>
                 </entryRelationship>
-              </observation>
-            </entryRelationship>
-            <entryRelationship typeCode="SUBJ" inversionInd="true">
-              <observation classCode="OBS" moodCode="EVN">
-                <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
-                <text>
-                  <reference value="#severity3"/>
-                </text>
-                <statusCode code="completed"/>
-                <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
-              </observation>
-            </entryRelationship>
-            <entryRelationship typeCode="SUBJ" inversionInd="true">
-              <observation classCode="OBS" moodCode="EVN">
-                <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-                <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                <statusCode code="completed"/>
-                <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
-              </observation>
-            </entryRelationship>
-            <entryRelationship typeCode="MFST" inversionInd="true">
-              <observation classCode="OBS" moodCode="EVN">
-                <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
-                <code nullFlavor="NA"/>
-                <text>
-                  <reference value="#reaction1"/>
-                </text>
-                <statusCode code="completed"/>
-                <effectiveTime>
-                  <low value="undefined"/>
-                </effectiveTime>
-                <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
-                <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <entryRelationship typeCode="MFST" inversionInd="true">
                   <observation classCode="OBS" moodCode="EVN">
-                    <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                    <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                    <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code nullFlavor="NA"/>
                     <text>
-                      <reference value="#severity6"/>
+                      <reference value="#reaction1"/>
                     </text>
-                    <statusCode code="completed"/>
-                    <value xsi:type="CD" code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                    <interpretationCode code="S" displayName="Susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                   </observation>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                      <code nullFlavor="NA"/>
+                      <text>
+                        <reference value="#reaction1"/>
+                      </text>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="undefined"/>
+                      </effectiveTime>
+                      <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea"/>
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                          <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                          <text>
+                            <reference value="#severity6"/>
+                          </text>
+                          <statusCode code="completed"/>
+                          <value xsi:type="CD" code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                          <interpretationCode code="S" displayName="Susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                      <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                      <text>
+                        <reference value="#severity4"/>
+                      </text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                      <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
+                    </observation>
+                  </entryRelationship>
                 </entryRelationship>
-              </observation>
-            </entryRelationship>
-            <entryRelationship typeCode="SUBJ" inversionInd="true">
-              <observation classCode="OBS" moodCode="EVN">
-                <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
-                <text>
-                  <reference value="#severity4"/>
-                </text>
-                <statusCode code="completed"/>
-                <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
-              </observation>
+              </entryRelationship>
             </entryRelationship>
           </observation>
         </entryRelationship>
