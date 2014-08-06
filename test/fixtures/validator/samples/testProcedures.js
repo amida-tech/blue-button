@@ -20,7 +20,7 @@ var testProcedureList = {
             "code": "appropriate_code",
             "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
         }],
-        "providers": [{
+        "performers": [{
             "address": {
                 "streetLines": [
                     "1001 Village Avenue"
@@ -82,7 +82,7 @@ var testProcedureList = {
             "code": "416949008",
             "code_system_name": "SNOMED CT"
         }],
-        "providers": [{
+        "performers": [{
             "address": {
                 "streetLines": [
                     "17 Daws Rd."
@@ -143,7 +143,7 @@ var testProcedureList = {
                 "precision": "day"
             }
         },
-        "providers": [{
+        "performers": [{
             "address": {
                 "streetLines": [
                     "17 Daws Rd."
@@ -203,7 +203,7 @@ var testProcedureList = {
                 "precision": "day"
             }
         },
-        "providers": [{
+        "performers": [{
             "address": {
                 "streetLines": [
                     "17 Daws Rd."
@@ -259,7 +259,7 @@ var testProcedureList = {
                 "precision": "day"
             }
         },
-        "providers": [{
+        "performers": [{
             "address": {
                 "streetLines": [
                     "17 Daws Rd."
@@ -318,7 +318,7 @@ var testProcedureList = {
                 "precision": "day"
             }
         },
-        "providers": [{
+        "performers": [{
             "address": {
                 "streetLines": [
                     "17 Daws Rd."
@@ -379,7 +379,7 @@ var testProcedureList = {
                 "precision": "day"
             }
         },
-        "providers": [{
+        "performers": [{
             "address": {
                 "streetLines": [
                     "17 Daws Rd."
@@ -434,7 +434,7 @@ var testProcedureList = {
                 "precision": "day"
             }
         },
-        "providers": [{
+        "performers": [{
             "address": {
                 "streetLines": [
                     "17 Daws Rd."
@@ -494,7 +494,7 @@ var testProcedureList = {
                 "precision": "day"
             }
         },
-        "providers": [{
+        "performers": [{
             "address": {
                 "street": [
                     "17 Daws Rd."
@@ -538,7 +538,7 @@ var testProcedureList = {
         }],
         "procedure_type": "act"
     },
-    "missingProviders": {
+    "missingperformers": {
         "procedure": {
             "name": "Colonic polypectomy",
             "code": "274025005",

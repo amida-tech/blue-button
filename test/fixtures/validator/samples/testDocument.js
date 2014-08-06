@@ -745,7 +745,7 @@ var testDocList = {
                     "code": "appropriate_code",
                     "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
                 }],
-                "providers": [{
+                "performers": [{
                     "address": {
                         "streetLines": [
                             "1001 Village Avenue"
@@ -804,7 +804,7 @@ var testDocList = {
                     "code": "416949008",
                     "code_system_name": "SNOMED CT"
                 }],
-                "providers": [{
+                "performers": [{
                     "address": {
                         "streetLines": [
                             "17 Daws Rd."
@@ -862,7 +862,7 @@ var testDocList = {
                     "date": "2011-02-03T00:00:00Z",
                     "precision": "day"
                 }],
-                "providers": [{
+                "performers": [{
                     "address": {
                         "streetLines": [
                             "17 Daws Rd."
@@ -1654,7 +1654,7 @@ var testDocList = {
                     "code": "appropriate_code",
                     "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
                 }],
-                "providers": [{
+                "performers": [{
                     "address": {
                         "streetLines": [
                             "1001 Village Avenue"
@@ -1713,7 +1713,7 @@ var testDocList = {
                     "code": "416949008",
                     "code_system_name": "SNOMED CT"
                 }],
-                "providers": [{
+                "performers": [{
                     "address": {
                         "streetLines": [
                             "17 Daws Rd."
@@ -1771,7 +1771,7 @@ var testDocList = {
                     "date": "2011-02-03T00:00:00Z",
                     "precision": "day"
                 }],
-                "providers": [{
+                "performers": [{
                     "address": {
                         "streetLines": [
                             "17 Daws Rd."
@@ -2602,7 +2602,7 @@ var testDocList = {
                     "code": "appropriate_code",
                     "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
                 }],
-                "providers": [{
+                "performers": [{
                     "address": {
                         "streetLines": [
                             "1001 Village Avenue"
@@ -2661,7 +2661,7 @@ var testDocList = {
                     "code": "416949008",
                     "code_system_name": "SNOMED CT"
                 }],
-                "providers": [{
+                "performers": [{
                     "address": {
                         "streetLines": [
                             "17 Daws Rd."
@@ -2719,7 +2719,7 @@ var testDocList = {
                     "date": "2011-02-03T00:00:00Z",
                     "precision": "day"
                 }],
-                "providers": [{
+                "performers": [{
                     "address": {
                         "streetLines": [
                             "17 Daws Rd."

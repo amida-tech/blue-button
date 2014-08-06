@@ -103,7 +103,6 @@ describe('CMS: Original sample.txt version', function () {
 
 });
 
-
 //This is a temporary test for development, should definitely be removed later
 describe('123', function () {
     before(function (done) {

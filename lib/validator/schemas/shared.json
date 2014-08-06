@@ -218,42 +218,43 @@
             ],
             "additionalProperties": false
         },
-        "cda_provider": {
+        "cda_performer": {
             "type": "string",
             "properties": {
                 "type": "string",
-                "provider": {
-                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                "performer": {
+                    "$ref": "#/properties/cda_coded_entry"
                 },
                 "address": {
-                    "$ref": "http://local.com/common_models#/properties/cda_address"
+                    "$ref": "#/properties/cda_address"
                 },
                 "identifiers": {
                     "type": "array",
                     "items": {
-                        "$ref": "http://local.com/common_models#/properties/cda_id"
+                        "$ref": "#/properties/cda_id"
                     }
                 },
                 "name": "string",
-                "person":{
+                "person": {
                     "type": "object",
                     "properties": {
                         "name": {
-                            "$ref": "http://local.com/common_models#/properties/cda_name"
+                            "$ref": "#/properties/cda_name"
                         }
                     },
+                    "specialty": "string",
                     "minProperties": 1
                 },
                 "organization": {
                     "type": "object",
                     "properties": {
                         "address": {
-                            "$ref": "http://local.com/common_models#/properties/cda_address"
+                            "$ref": "#/properties/cda_address"
                         },
                         "identifiers": {
                             "type": "array",
                             "items": {
-                                "$ref": "http://local.com/common_models#/properties/cda_id"
+                                "$ref": "#/properties/cda_id"
                             }
                         },
                         "name": {
@@ -262,13 +263,13 @@
                         "phone": {
                             "type": "array",
                             "items": {
-                                "$ref": "http://local.com/common_models#/properties/cda_phone"
+                                "$ref": "#/properties/cda_phone"
                             }
                         },
                         "email": {
                             "type": "array",
                             "items": {
-                                "$ref": "http://local.com/common_models#/properties/cda_email"
+                                "$ref": "#/properties/cda_email"
                             }
                         }
                     },
@@ -277,7 +278,7 @@
                 "phone": {
                     "type": "array",
                     "items": {
-                        "$ref": "http://local.com/common_models#/properties/cda_phone"
+                        "$ref": "#/properties/cda_phone"
                     }
                 }
             },

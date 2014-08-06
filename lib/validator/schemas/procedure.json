@@ -30,10 +30,10 @@
         "status": {
             "type": "string"
         },
-        "providers": {
+        "performers": {
             "type": "array",
             "items": {
-                "$ref": "http://local.com/common_models#/properties/cda_provider"
+                "$ref": "http://local.com/common_models#/properties/cda_performer"
             }
         },
         "locations": {
