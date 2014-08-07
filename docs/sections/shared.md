@@ -354,3 +354,20 @@
 }
 ```
 
+## cda_performer
+- Many sections use this performer element, and as previously mentioned, this section is badly documented. Quantity specifications from CCDA specs are listed below.
+- Currently in shared.js in ccda, the all fields are 0..*, which means that they are arrays. From a design perspective, this is optimal as some CCDAs may have flaws in their system and may not follow the specs exactly, i.e. have more addresses than they are supposed to have.
+- 0..1 in plan_of_care, medication(dispense), medication activity, immunizations, 
+- 0..* encounters, Procedure Activity Observation, Procedure Activity Procedure,
+- 1..1 Procedure Activity Act
+
+- 0..1 Address
+- 0..1 Code
+
+## cda_organization
+- 0..1 (representedOrganization, providerOrganization), the top level elements containing this element must always have either 0 or 1.
+- This element is commonly used, and varied throughout other sections, so it is warrented that the fields that have organizations can be classified as arrays. I've scanned through the documentation and noticed that most of the sections seemed to have telecom and address as 0..1, but the <providerOrganization> specifies 0..* for all fields. 
+- 0..* id
+- 0..* name
+- 0..* telecom
+- 0..* address
