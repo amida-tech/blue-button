@@ -269,7 +269,7 @@
                 "address": {
                     "type": "array",
                     "items": {
-                        "$ref": "http://local.com/common_models#/properties/cda_address"
+                        "$ref": "#/properties/cda_address"
                     }
                 },
                 "identifiers": {
@@ -281,7 +281,7 @@
                 "name": {
                     "type": "array",
                     "items": {
-                        "$ref": "http://local.com/common_models#/properties/cda_name"
+                        "$ref": "#/properties/cda_name"
                     }
                 },
                 "organization": {

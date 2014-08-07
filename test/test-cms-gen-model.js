@@ -104,6 +104,7 @@ describe('CMS: Original sample.txt version', function () {
 });
 
 //This is a temporary test for development, should definitely be removed later
+/*
 describe('123', function () {
     before(function (done) {
         sampleFile = fs.readFileSync(__dirname + '/fixtures/cms/sample2.txt').toString();
@@ -127,6 +128,7 @@ describe('123', function () {
     });
 
 });
+*/
 
 describe('CMS: jones.cms.txt file', function () {
     before(function (done) {
@@ -137,10 +139,11 @@ describe('CMS: jones.cms.txt file', function () {
         done();
     });
     it('validate', function (done) {
-        var obj = bb.parseText(sampleFile);
-        var valid = validator.validateDocumentModel(obj);
+        var valid = validator.validateDocumentModel(bbObj);
+
         if (!valid) {
             var errors = validator.getLastError();
+            console.log(errors);
             for (var x in errors.errors) {
                 console.log(errors.errors[x]);
             }

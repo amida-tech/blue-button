@@ -35,9 +35,7 @@ describe('Test CMS Parsing, from sample file', function () {
         var obj = bb.parseText(sampleFile);
         var valid = validator.validateDocumentModel(obj);
         if (!valid) {
-
             var errors = validator.getLastError();
-            console.log(errors);
             for (var x in errors.errors) {
                 console.log(errors.errors[x]);
             }
