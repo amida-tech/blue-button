@@ -37,7 +37,7 @@
               <postalCode>99123</postalCode>
               <country>US</country>
             </addr>
-            <telecom value="555-555-5000" use="HP"/>
+            <telecom value="tel:555-555-5000" use="HP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>
@@ -83,7 +83,7 @@
               <postalCode>02368</postalCode>
               <country>US</country>
             </addr>
-            <telecom value="(555)555-555-1234" use="HP"/>
+            <telecom value="tel:(555)555-555-1234" use="HP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>
@@ -130,7 +130,7 @@
               <postalCode>02368</postalCode>
               <country>US</country>
             </addr>
-            <telecom value="(555)555-555-1234" use="HP"/>
+            <telecom value="tel:(555)555-555-1234" use="HP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>

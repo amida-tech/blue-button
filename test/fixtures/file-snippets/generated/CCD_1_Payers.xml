@@ -28,7 +28,7 @@
                   <postalCode>02368</postalCode>
                   <country>US</country>
                 </addr>
-                <telecom value="(781)555-1515" use="HP"/>
+                <telecom value="tel:(781)555-1515" use="HP"/>
                 <representedOrganization>
                   <id nullFlavor="UNK"/>
                   <name/>
@@ -54,7 +54,7 @@
                   <postalCode>02368</postalCode>
                   <country>US</country>
                 </addr>
-                <telecom value="(781)555-1212" use="HP"/>
+                <telecom value="tel:(781)555-1212" use="HP"/>
                 <assignedPerson>
                   <name>
                     <given>Adam</given>

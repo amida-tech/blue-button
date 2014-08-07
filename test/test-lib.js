@@ -343,7 +343,6 @@ testXML.prototype.generateXMLDOM = function (file) {
     var expected = fs.readFileSync('test/fixtures/file-snippets/CCD_1_' + capitalize2(file) + '.xml'); // get xml file
     var doc = bb.xml(expected);
     var modelJSON = bb.parseXml(doc); // parse to json
-    console.log(modelJSON.data.demographics.name);
     var actual = gen(modelJSON["data"][file], false, new libxmljs.Document(), file);
 
     // write generated file just to visually compare
