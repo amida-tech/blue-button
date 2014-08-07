@@ -408,6 +408,15 @@
                         "code": "56018004",
                         "code_system_name": "SNOMED CT"
                     }
+                },
+                "indication": {
+                    "code": "404684003",
+                    "date_time": {
+                        "low": {
+                            "date": "2007-01-03T00:00:00Z",
+                            "precision": "day"
+                        }
+                    }
                 }
             }
         ],
@@ -491,8 +500,16 @@
                     "code": "314422",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe",
-                "status": "Inactive",
+                "intolerance": {
+                    "code": "419511003",
+                    "name": "Propensity to adverse reactions to drug",
+                    "code_system_name": "SNOMED CT",
+                    "severity": "Moderate to severe"
+                },
+                "status": {
+                    "code": "73425007",
+                    "status": "Inactive"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -521,8 +538,16 @@
                     "code": "2670",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate",
-                "status": "Active",
+                "intolerance": {
+                    "code": "419511003",
+                    "name": "Propensity to adverse reactions to drug",
+                    "code_system_name": "SNOMED CT",
+                    "severity": "Moderate"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -551,8 +576,16 @@
                     "code": "1191",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild to moderate",
-                "status": "Active",
+                "intolerance": {
+                    "code": "59037007",
+                    "name": "Drug intolerance",
+                    "code_system_name": "SNOMED CT",
+                    "severity": "Mild to moderate"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {

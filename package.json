@@ -27,7 +27,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "blue-button-meta": "^0.1.2",
+    "blue-button-meta": "git://github.com/amida-tech/blue-button-meta.git#ky-additions",
     "deep-equal": "*",
     "libxmljs": "*",
     "node-uuid": "*",
