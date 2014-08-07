@@ -16,7 +16,7 @@
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20120512"/>
+        <effectiveTime value="undefined"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="appropriate_code" displayName="colon" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <specimen typeCode="SPC">
@@ -70,7 +70,7 @@
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20110203"/>
+        <effectiveTime value="undefined"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <performer>
@@ -95,13 +95,7 @@
         <participant typeCode="LOC">
           <participantRole classCode="SDLOC">
             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-            <addr>
-              <streetAddressLine>17 Daws Rd.</streetAddressLine>
-              <city>Blue Bell</city>
-              <state>MA</state>
-              <postalCode>02368</postalCode>
-              <country>US</country>
-            </addr>
+            <addr nullFlavor="UNK"/>
             <telecom nullFlavor="UNK"/>
             <playingEntity/>
           </participantRole>
@@ -118,7 +112,7 @@
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20110203"/>
+        <effectiveTime value="undefined"/>
         <methodCode nullFlavor="UNK"/>
         <performer>
           <assignedEntity>
@@ -142,13 +136,7 @@
         <participant typeCode="LOC">
           <participantRole classCode="SDLOC">
             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-            <addr>
-              <streetAddressLine>17 Daws Rd.</streetAddressLine>
-              <city>Blue Bell</city>
-              <state>MA</state>
-              <postalCode>02368</postalCode>
-              <country>US</country>
-            </addr>
+            <addr nullFlavor="UNK"/>
             <telecom nullFlavor="UNK"/>
             <playingEntity/>
           </participantRole>
