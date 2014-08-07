@@ -218,6 +218,47 @@
             ],
             "additionalProperties": false
         },
+        "cda_organization": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_address"
+                    }
+                },
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_id"
+                    }
+                },
+                "name": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_phone"
+                    }
+                },
+                "email": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_email"
+                    }
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_phone"
+                    }
+                }
+            }
+        },
         "cda_performer": {
             "type": "string",
             "properties": {
@@ -226,7 +267,10 @@
                     "$ref": "#/properties/cda_coded_entry"
                 },
                 "address": {
-                    "$ref": "#/properties/cda_address"
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_address"
+                    }
                 },
                 "identifiers": {
                     "type": "array",
@@ -234,46 +278,17 @@
                         "$ref": "#/properties/cda_id"
                     }
                 },
-                "name": "string",
-                "person": {
-                    "type": "object",
-                    "properties": {
-                        "name": {
-                            "$ref": "#/properties/cda_name"
-                        }
-                    },
-                    "specialty": "string",
-                    "minProperties": 1
+                "name": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_name"
+                    }
                 },
                 "organization": {
-                    "type": "object",
-                    "properties": {
-                        "address": {
-                            "$ref": "#/properties/cda_address"
-                        },
-                        "identifiers": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/properties/cda_id"
-                            }
-                        },
-                        "name": {
-                            "type": "string"
-                        },
-                        "phone": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/properties/cda_phone"
-                            }
-                        },
-                        "email": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/properties/cda_email"
-                            }
-                        }
-                    },
-                    "minProperties": 1
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_organization"
+                    }
                 },
                 "phone": {
                     "type": "array",
