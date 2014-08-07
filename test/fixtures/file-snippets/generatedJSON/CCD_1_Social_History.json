@@ -1,0 +1,48 @@
+{
+    "social_history": [
+        {
+            "value": "Former smoker",
+            "date_time": {
+                "low": {
+                    "date": "2005-05-01T00:00:00Z",
+                    "precision": "day"
+                },
+                "high": {
+                    "date": "2009-02-27T13:00:00Z",
+                    "precision": "subsecond"
+                }
+            }
+        },
+        {
+            "value": "Tobacco use and exposure",
+            "date_time": {
+                "low": {
+                    "date": "2005-05-01T00:00:00Z",
+                    "precision": "day"
+                },
+                "high": {
+                    "date": "2009-02-27T13:00:00Z",
+                    "precision": "subsecond"
+                }
+            }
+        },
+        {
+            "value": "Tobacco use and exposure",
+            "date_time": {
+                "low": {
+                    "date": "2009-02-27T13:00:00Z",
+                    "precision": "subsecond"
+                }
+            }
+        },
+        {
+            "value": "Alcohol intake",
+            "date_time": {
+                "low": {
+                    "date": "2005-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            }
+        }
+    ]
+}
