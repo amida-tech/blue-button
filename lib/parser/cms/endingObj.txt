@@ -1,6 +1,4 @@
-//refer to USPS website for additional details,
-
-var streetSuffix = {
+{
     "ALLEE": "ALY",
     "ALLEY": "ALY",
     "ALLY": "ALY",
@@ -400,7 +398,6 @@ var streetSuffix = {
     "ROADS": "RDS",
     "ROUTE": "RTE",
     "ROW": "ROW",
-    "RT": "ROUTE"
     "RUE": "RUE",
     "RUN": "RUN",
     "SHL": "SHL",
@@ -528,31 +525,4 @@ var streetSuffix = {
     "WELL": "WL",
     "WELLS": "WLS",
     "WLS": "WLS"
-};
-
-var unitDesignators = {
-    "APT": "Apartment",
-    "BSMT": "Basement",
-    "BLDG": "Building",
-    "DEPT": "Department",
-    "FL": "Floor",
-    "FRNT": "Front",
-    "HNGR": "Hanger",
-    "KEY": "Key",
-    "LBBY": "Lobby",
-    "LOT": "Lot",
-    "LOWR": "Lower",
-    "OFC": "Office",
-    "PH": "Penthouse",
-    "PIER": "Pier",
-    "REAR": "Rear",
-    "RM": "Room",
-    "SIDE": "Side",
-    "SLIP": "Slip",
-    "SPC": "Space",
-    "STOP": "Stop",
-    "STE": "Suite",
-    "TRLR": "Trailer",
-    "UNIT": "Unit",
-    "UPPR": "Upper"
-};
+}
