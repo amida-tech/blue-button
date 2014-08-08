@@ -361,6 +361,16 @@
                         "code_system_name": "RXNORM"
                     }
                 },
+                "supply": {
+                    "date_time": {
+                        "low": {
+                            "date": "2007-01-03T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "repeatNumber": "1",
+                    "quantity": "75"
+                },
                 "administration": {
                     "route": {
                         "name": "RESPIRATORY (INHALATION)",
@@ -379,6 +389,13 @@
                     "rate": {
                         "value": 90,
                         "unit": "ml/min"
+                    },
+                    "interval": {
+                        "period": {
+                            "value": 6,
+                            "unit": "h"
+                        },
+                        "frequency": true
                     }
                 },
                 "precondition": {
@@ -419,15 +436,22 @@
                         "precision": "subsecond"
                     }
                 },
+                "performers": [
+                    {
+                        "name": "General Physician",
+                        "code": "59058001",
+                        "code_system_name": "SNOMED CT"
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Community Urgent Care Center",
-                        "loc_type": {
+                        "location_type": {
                             "name": "Urgent Care Center",
                             "code": "1160-1",
                             "code_system_name": "HealthcareServiceLocation"
                         },
-                        "addresses": [
+                        "address": [
                             {
                                 "streetLines": [
                                     "17 Daws Rd."
@@ -856,36 +880,65 @@
                 "refusal_reason": "Patient objection"
             }
         ],
-        "social_history": {
-            "smoking_statuses": [
-                {
-                    "value": "Former smoker",
-                    "date_time": {
-                        "low": {
-                            "date": "2005-05-01T00:00:00Z",
-                            "precision": "day"
-                        },
-                        "high": {
-                            "date": "2009-02-27T13:00:00Z",
-                            "precision": "subsecond"
-                        }
-                    }
-                },
-                {
-                    "value": "Former smoker",
-                    "date_time": {
-                        "low": {
-                            "date": "2005-05-01T00:00:00Z",
-                            "precision": "day"
-                        },
-                        "high": {
-                            "date": "2009-02-27T13:00:00Z",
-                            "precision": "subsecond"
-                        }
+        "social_history": [
+            {
+                "value": "Former smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "subsecond"
                     }
                 }
-            ]
-        },
+            },
+            {
+                "value": "Former smoker",
+                "date_time": {
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "subsecond"
+                    }
+                }
+            },
+            {
+                "value": "Tobacco use and exposure",
+                "date_time": {
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "subsecond"
+                    }
+                }
+            },
+            {
+                "value": "Tobacco use and exposure",
+                "date_time": {
+                    "low": {
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "subsecond"
+                    }
+                }
+            },
+            {
+                "value": "Alcohol intake",
+                "date_time": {
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                }
+            }
+        ],
         "problems": [
             {
                 "date_time": {
@@ -1090,12 +1143,12 @@
                 "locations": [
                     {
                         "name": "Community Gastroenterology Clinic",
-                        "loc_type": {
+                        "location_type": {
                             "name": "Gastroenterology Clinic",
                             "code": "1118-9",
                             "code_system_name": "HealthcareServiceLocation"
                         },
-                        "addresses": [
+                        "address": [
                             {
                                 "streetLines": [
                                     "17 Daws Rd."
@@ -1165,12 +1218,12 @@
                 "locations": [
                     {
                         "name": "Community Gastroenterology Clinic",
-                        "loc_type": {
+                        "location_type": {
                             "name": "Gastroenterology Clinic",
                             "code": "1118-9",
                             "code_system_name": "HealthcareServiceLocation"
                         },
-                        "addresses": [
+                        "address": [
                             {
                                 "streetLines": [
                                     "17 Daws Rd."
@@ -1185,10 +1238,277 @@
                 ],
                 "procedure_type": "act"
             }
+        ],
+        "plan_of_care": [
+            {
+                "plan": {
+                    "name": "Colonoscopy",
+                    "code": "73761001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809b4a"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2012-05-12T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "observation"
+            },
+            {
+                "plan": {
+                    "name": "Colonoscopy",
+                    "code": "73761001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809a5c"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2012-05-12T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "act"
+            },
+            {
+                "plan": {
+                    "name": "Colonoscopy",
+                    "code": "73761001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809b4d"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2012-05-12T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "encounter"
+            },
+            {
+                "plan": {
+                    "name": "Colonoscopy",
+                    "code": "73761001",
+                    "code_system_name": "SNOMED CT"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9a6d1bac-17d3-4195-89c4-1121bc809b5a"
+                    }
+                ],
+                "date_time": {
+                    "point": {
+                        "date": "2012-05-12T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "type": "procedure"
+            }
+        ],
+        "payers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1fe2cdd0-7aad-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "policy": {
+                    "identifiers": [
+                        {
+                            "identifier": "3e676a50-7aac-11db-9fe1-0800200c9a66"
+                        }
+                    ],
+                    "code": {
+                        "code": "SELF",
+                        "code_system_name": "HL7 RoleCode"
+                    },
+                    "insurance": {
+                        "code": {
+                            "code": "PAYOR",
+                            "code_system_name": "HL7 RoleCode"
+                        },
+                        "performer": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19"
+                                }
+                            ],
+                            "address": [
+                                {
+                                    "streetLines": [
+                                        "123 Insurance Road"
+                                    ],
+                                    "city": "Blue Bell",
+                                    "state": "MA",
+                                    "zip": "02368",
+                                    "country": "US",
+                                    "use": "work place"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "(781)555-1515",
+                                    "type": "work place"
+                                }
+                            ],
+                            "organization": [
+                                {
+                                    "name": [
+                                        "Good Health Insurance"
+                                    ],
+                                    "address": [
+                                        {
+                                            "streetLines": [
+                                                "123 Insurance Road"
+                                            ],
+                                            "city": "Blue Bell",
+                                            "state": "MA",
+                                            "zip": "02368",
+                                            "country": "US",
+                                            "use": "work place"
+                                        }
+                                    ],
+                                    "phone": [
+                                        {
+                                            "number": "(781)555-1515",
+                                            "type": "work place"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "guarantor": {
+                    "code": {
+                        "code": "GUAR",
+                        "code_system_name": "HL7 Role"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "329fcdf0-7ab3-11db-9fe1-0800200c9a66"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "prefix": "Mr.",
+                            "middle": [
+                                "Frankie"
+                            ],
+                            "last": "Everyman",
+                            "first": "Adam"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "streetLines": [
+                                "17 Daws Rd."
+                            ],
+                            "city": "Blue Bell",
+                            "state": "MA",
+                            "zip": "02368",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(781)555-1212",
+                            "type": "primary home"
+                        }
+                    ]
+                },
+                "participant": {
+                    "date_time": {},
+                    "code": {
+                        "name": "Self",
+                        "code": "SELF",
+                        "code_system_name": "HL7 Role"
+                    },
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
+                                "identifier_type": "1138345"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "streetLines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US",
+                                "use": "primary home"
+                            }
+                        ]
+                    },
+                    "name": [
+                        {
+                            "prefix": "Mr.",
+                            "middle": [
+                                "A."
+                            ],
+                            "last": "Everyman",
+                            "first": "Frank"
+                        }
+                    ]
+                },
+                "policy_holder": {
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19",
+                                "identifier_type": "1138345"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "streetLines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US",
+                                "use": "primary home"
+                            }
+                        ]
+                    }
+                },
+                "authorization": {
+                    "identifiers": [
+                        {
+                            "identifier": "f4dce790-8328-11db-9fe1-0800200c9a66"
+                        }
+                    ],
+                    "procedure": {
+                        "code": {
+                            "name": "Colonoscopy",
+                            "code": "73761001",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                }
+            }
         ]
     },
     "meta": {
-        "version": "1.0.2",
+        "version": "1.1.0-beta",
         "sections": [
             "demographics",
             "vitals",
@@ -1199,12 +1519,17 @@
             "immunizations",
             "social_history",
             "problems",
-            "procedures"
+            "procedures",
+            "plan_of_care",
+            "payers"
         ]
     },
     "errors": [
         "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -1230,14 +1555,23 @@
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required loc_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required streetLines in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required streetLines in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD"
+        "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
+        "cardinality error: found 2 when expecting 1..1 at h:performer",
+        "nullFlavor alert:  missing but required code in participant -> entry -> payers_section -> CCD",
+        "cardinality error: found 2 when expecting 1..1 at h:entryRelationship/h:act/h:participant"
     ]
 }
