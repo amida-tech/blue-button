@@ -30,6 +30,9 @@
                         }
                     },
                     "status": "completed",
+                    "referenceRange": {
+                        "range": "M 13-18 g/dl; F 12-16 g/dl"
+                    },
                     "interpretations": [
                         "Normal"
                     ],
@@ -54,6 +57,11 @@
                         }
                     },
                     "status": "completed",
+                    "referenceRange": {
+                        "low": "4.3",
+                        "high": "10.8",
+                        "unit": "10+3/ul"
+                    },
                     "interpretations": [
                         "Normal"
                     ],
@@ -78,6 +86,11 @@
                         }
                     },
                     "status": "completed",
+                    "referenceRange": {
+                        "low": "150",
+                        "high": "350",
+                        "unit": "10+3/ul"
+                    },
                     "interpretations": [
                         "Low"
                     ],
