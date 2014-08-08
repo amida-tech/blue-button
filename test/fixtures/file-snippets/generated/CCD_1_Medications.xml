@@ -32,7 +32,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
             <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
             <manufacturedMaterial>
-              <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+              <code code="219483" displayName="Proventil HFA" codeSystem="2" codeSystemName="RXNORM">
                 <originalText>
                   <reference value="#MedSec_1"/>
                 </originalText>
@@ -95,7 +95,7 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
                 <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
                 <manufacturedMaterial>
-                  <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                  <code code="219483" displayName="Proventil HFA" codeSystem="2" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#MedSec_1"/>
                     </originalText>
@@ -158,7 +158,7 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
                 <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
                 <manufacturedMaterial>
-                  <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                  <code code="219483" displayName="Proventil HFA" codeSystem="2" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#MedSec_1"/>
                     </originalText>

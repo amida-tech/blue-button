@@ -15,7 +15,7 @@
           <act classCode="ACT" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
             <id root="3e676a50-7aac-11db-9fe1-0800200c9a66"/>
-            <code code="SELF" codeSystemName="HL7 RoleCode"/>
+            <code code="SELF" codeSystem="HL7 RoleCode" codeSystemName="HL7 RoleCode"/>
             <statusCode code="completed"/>
             <performer typeCode="PRF">
               <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
@@ -68,7 +68,7 @@
               <time/>
               <participantRole classCode="PAT">
                 <id root="14d4a520-7aae-11db-9fe1-0800200c9a66" extension="1138345"/>
-                <code code="SELF" displayName="Self" codeSystemName="HL7 Role"/>
+                <code code="SELF" displayName="Self" codeSystem="HL7 Role" codeSystemName="HL7 Role"/>
                 <addr use="HP">
                   <streetAddressLine>17 Daws Rd.</streetAddressLine>
                   <city>Blue Bell</city>
@@ -106,7 +106,7 @@
                 <code codeSystem="2.16.840.1.113883.6.96"/>
                 <entryRelationship typeCode="SUBJ">
                   <procedure classCode="PROC" moodCode="PRMS">
-                    <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+                    <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                   </procedure>
                 </entryRelationship>
               </act>

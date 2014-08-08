@@ -30,7 +30,7 @@
             <participant typeCode="CSM">
               <participantRole classCode="MANU">
                 <playingEntity classCode="MMAT">
-                  <code code="314422" displayName="ALLERGENIC EXTRACT, PENICILLIN" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                  <code code="314422" displayName="ALLERGENIC EXTRACT, PENICILLIN" codeSystem="2" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#reaction1"/>
                     </originalText>
@@ -114,7 +114,7 @@
             <participant typeCode="CSM">
               <participantRole classCode="MANU">
                 <playingEntity classCode="MMAT">
-                  <code code="2670" displayName="Codeine" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                  <code code="2670" displayName="Codeine" codeSystem="2" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#reaction2"/>
                     </originalText>
@@ -198,7 +198,7 @@
             <participant typeCode="CSM">
               <participantRole classCode="MANU">
                 <playingEntity classCode="MMAT">
-                  <code code="1191" displayName="Aspirin" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
+                  <code code="1191" displayName="Aspirin" codeSystem="2" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#reaction3"/>
                     </originalText>

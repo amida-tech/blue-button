@@ -10,7 +10,7 @@
       <procedure classCode="PROC" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
         <id root="d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"/>
-        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <originalText>
             <reference value="#Proc1"/>
           </originalText>
@@ -64,7 +64,7 @@
       <observation classCode="OBS" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
         <id root="2.16.840.1.113883.19" extension="123456789"/>
-        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
+        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <originalText>
             <reference value="#Proc1"/>
           </originalText>
@@ -112,7 +112,7 @@
       <act classCode="ACT" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
         <id root="1.2.3.4.5.6.7.8" extension="1234567"/>
-        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
+        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <originalText>
             <reference value="#Proc1"/>
           </originalText>

@@ -18,7 +18,7 @@
         <performer>
           <assignedEntity>
             <id root="PseduoMD-3"/>
-            <code code="59058001" displayName="General Physician" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+            <code code="59058001" displayName="General Physician" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
           </assignedEntity>
         </performer>
         <participant typeCode="LOC">

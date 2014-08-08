@@ -19,11 +19,11 @@
     <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female"/>
     <birthTime value="19750501"/>
     <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
-    <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystemName="HL7 Religious Affiliation"/>
-    <raceCode code="2106-3" displayName="White" codeSystemName="Race and Ethnicity - CDC"/>
+    <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="HL7 Religious Affiliation" codeSystemName="HL7 Religious Affiliation"/>
+    <raceCode code="2106-3" displayName="White" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
     <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
     <guardian>
-      <code code="PRN" displayName="parent" codeSystemName="HL7 Role"/>
+      <code code="PRN" displayName="parent" codeSystem="HL7 Role" codeSystemName="HL7 Role"/>
       <addr use="HP">
         <streetAddressLine>1357 Amber Drive</streetAddressLine>
         <city>Beaverton</city>
