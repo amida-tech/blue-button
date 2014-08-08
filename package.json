@@ -1,6 +1,6 @@
 {
   "name": "blue-button",
-  "version": "1.1.0-beta",
+  "version": "1.1.0-beta.1",
   "description": "Blue Button (CCDA) to JSON Parser.",
   "main": "/index.js",
   "directories": {
@@ -27,7 +27,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "blue-button-meta": "^0.1.0",
+    "blue-button-meta": "^1.1.0",
     "deep-equal": "*",
     "libxmljs": "*",
     "node-uuid": "*",
