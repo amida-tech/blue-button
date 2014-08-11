@@ -76,6 +76,12 @@
                     "items": {
                         "$ref": "http://local.com/claims"
                     }
+                },
+                 "providers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/provider"
+                    }
                 }
             }
         },

@@ -5,6 +5,8 @@ coverage
 
 # Mac OSX
 .DS_Store
+realsample.txt
+record.txt
 
 # Eclipse
 .project

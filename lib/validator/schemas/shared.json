@@ -213,8 +213,93 @@
                     }
                 }
             },
-            "required": ["name"],
+            "required": [
+                "name"
+            ],
             "additionalProperties": false
+        },
+        "cda_organization": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_address"
+                    }
+                },
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_id"
+                    }
+                },
+                "name": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_phone"
+                    }
+                },
+                "email": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_email"
+                    }
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_phone"
+                    }
+                }
+            }
+        },
+        "cda_performer": {
+            "type": "object",
+            "properties": {
+                "type": "string",
+                "performer": {
+                    "$ref": "#/properties/cda_coded_entry"
+                },
+                "address": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_address"
+                    }
+                },
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_id"
+                    }
+                },
+                "name": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_name"
+                    }
+                },
+                "organization": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_organization"
+                    }
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/properties/cda_phone"
+                    }
+                }
+            },
+            "required": [
+                "address"
+            ]
         }
     }
 }

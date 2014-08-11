@@ -33,72 +33,8 @@
         "performer": {
             "type": "array",
             "items": {
-            "type": "object",
-            "properties": {
-                "address": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "http://local.com/common_models#/properties/cda_address"
-                    }
-                },
-                "identifiers": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "http://local.com/common_models#/properties/cda_id"
-                    }
-                },
-                "name": {
-                    "type": "array",
-                    "items": {
-                         "$ref": "http://local.com/common_models#/properties/cda_name"
-                    }
-                },
-                "phone": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "http://local.com/common_models#/properties/cda_phone"
-                    }
-                },
-                "organization": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "identifiers": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "http://local.com/common_models#/properties/cda_id"
-                                }
-                            },
-                            "name": {
-                                "type":"array",
-                                "items": {
-                                    "type": "string"
-                                }
-                            },
-                            "address": {
-                                "$ref": "http://local.com/common_models#/properties/cda_address"
-                            },
-                            "phone": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "http://local.com/common_models#/properties/cda_phone"
-                                }
-                            },
-                            "email": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "http://local.com/common_models#/properties/cda_email"
-                                }
-                            }
-                        },
-                        "additionalProperties": false
-                    }
-                }
-            },
-            "additionalProperties": false
-        }
-            
+                "$ref": "http://local.com/common_models#/properties/cda_performer"
+            }
         },
         "locations": {
             "type": "array",
