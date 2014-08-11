@@ -267,6 +267,18 @@
                     "A Medicare Plan Plus (HMO)",
                     "3 - Coordinated Care Plan (HMO, PPO, PSO, SNP)"
                 ],
+                "addresses": [
+                    {
+                        "use": "primary",
+                        "streetLines": [
+                            "123 Any Road"
+                        ],
+                        "city": "Anytown",
+                        "state": "PA",
+                        "zip": "00003",
+                        "country": "United States"
+                    }
+                ],
                 "date_time": {
                     "low": {
                         "date": "2011-09-01T00:00:00.000Z",
@@ -283,6 +295,18 @@
                     "medicare",
                     "A Medicare Rx Plan (PDP)",
                     "11 - Medicare Prescription Drug Plan"
+                ],
+                "addresses": [
+                    {
+                        "use": "primary",
+                        "streetLines": [
+                            "123 Any Road"
+                        ],
+                        "city": "Anytown",
+                        "state": "PA",
+                        "zip": "00003",
+                        "country": "United States"
+                    }
                 ],
                 "date_time": {
                     "low": {
@@ -740,9 +764,11 @@
                 },
                 "lines": [
                     {
-                        "service_date": {
-                            "date": "2011-11-17T00:00:00.000Z",
-                            "precision": "day"
+                        "date_time": {
+                            "point": {
+                                "date": "2011-11-17T00:00:00.000Z",
+                                "precision": "day"
+                            }
                         },
                         "drug": {
                             "code": "00093013505",
@@ -780,9 +806,11 @@
                 },
                 "lines": [
                     {
-                        "service_date": {
-                            "date": "2011-11-23T00:00:00.000Z",
-                            "precision": "day"
+                        "date_time": {
+                            "point": {
+                                "date": "2011-11-23T00:00:00.000Z",
+                                "precision": "day"
+                            }
                         },
                         "drug": {
                             "code": "00781223310",
@@ -866,28 +894,60 @@
         ],
         "providers": [
             {
+                "type": "organization",
                 "name": "ANY CARE",
-                "address": "123 Any Rd, Anywhere, MD 99999",
+                "address": {
+                    "use": "primary",
+                    "streetLines": [
+                        "123 Any Rd"
+                    ],
+                    "city": "Anywhere",
+                    "state": "MD",
+                    "zip": "99999",
+                    "country": "United States"
+                },
                 "role": {
                     "name": "NHC"
-                },
-                "date_time": {}
+                }
             },
             {
+                "type": "organization",
                 "name": "ANY HOSPITAL1",
-                "address": "123 Drive, Anywhere, VA 00001",
+                "address": {
+                    "use": "primary",
+                    "streetLines": [
+                        "123 Drive"
+                    ],
+                    "city": "Anywhere",
+                    "state": "VA",
+                    "zip": "00001",
+                    "country": "United States"
+                },
                 "role": {
                     "name": "HOS"
-                },
-                "date_time": {}
+                }
             },
             {
-                "name": "Jane Doe",
-                "address": "123 Road, Anywhere, VA 00001",
+                "type": "person",
+                "address": {
+                    "use": "primary",
+                    "streetLines": [
+                        "123 Road"
+                    ],
+                    "city": "Anywhere",
+                    "state": "VA",
+                    "zip": "00001",
+                    "country": "United States"
+                },
                 "role": {
                     "name": "PHY"
                 },
-                "date_time": {}
+                "person": {
+                    "name": {
+                        "first": "Jane",
+                        "last": "Doe"
+                    }
+                }
             }
         ]
     },

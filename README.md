@@ -169,7 +169,8 @@ getting:
   meta: 
    { type: 'cms',
      version: '2.0',
-     timestamp: { date: '2013-03-16T05:10:00Z', precision: 'minute' } } }
+     timestamp: { date: '2013-03-16T05:10:00Z', precision: 'minute' },
+     sections: ['demographics', ..., 'claims'] } }
 
 ``` 
 
@@ -204,7 +205,23 @@ getting:
      socialHistory: [ [Object] ],
      problems: [ [Object], [Object] ],
      procedures: [ [Object], [Object], [Object] ] },
-  meta: { version: '0.0.4' },
+  meta: {
+        version: "1.1.0-beta.1",
+        sections: [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "encounters",
+            "allergies",
+            "immunizations",
+            "social_history",
+            "problems",
+            "procedures",
+            "plan_of_care",
+            "payers"
+        ]
+  },
   errors: 
    [ 'nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD',
      'nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD'

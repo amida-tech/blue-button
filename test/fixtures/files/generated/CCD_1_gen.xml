@@ -619,7 +619,7 @@
             <consumable>
               <manufacturedProduct classCode="MANU">
                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
-                <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+                <id root="undefined"/>
                 <manufacturedMaterial>
                   <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                     <originalText>
@@ -682,7 +682,7 @@
                 <product>
                   <manufacturedProduct classCode="MANU">
                     <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
-                    <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+                    <id root="undefined"/>
                     <manufacturedMaterial>
                       <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                         <originalText>
@@ -712,7 +712,7 @@
                 <author>
                   <time nullFlavor="UNK"/>
                   <assignedAuthor>
-                    <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+                    <id root="undefined"/>
                     <addr nullFlavor="UNK"/>
                     <telecom nullFlavor="UNK"/>
                     <assignedPerson>
@@ -745,7 +745,7 @@
                 <product>
                   <manufacturedProduct classCode="MANU">
                     <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
-                    <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+                    <id root="undefined"/>
                     <manufacturedMaterial>
                       <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                         <originalText>
@@ -1072,15 +1072,9 @@
             </specimen>
             <performer>
               <assignedEntity>
-                <id root="2.16.840.1.113883.19.5.9999.1393"/>
-                <addr>
-                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                  <city>Portland</city>
-                  <state>OR</state>
-                  <postalCode>99123</postalCode>
-                  <country>US</country>
-                </addr>
-                <telecom value="555-555-5000" use="HP"/>
+                <id root="UNK"/>
+                <addr nullFlavor="UNK"/>
+                <telecom value="UNK" use="HP"/>
                 <representedOrganization>
                   <id root="2.16.840.1.113883.19.5.9999.1393"/>
                   <name>Community Health and Hospitals</name>
@@ -1118,15 +1112,9 @@
             <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
             <performer>
               <assignedEntity>
-                <id root="2.16.840.1.113883.19.5" extension="123456789"/>
-                <addr>
-                  <streetAddressLine>17 Daws Rd.</streetAddressLine>
-                  <city>Blue Bell</city>
-                  <state>MA</state>
-                  <postalCode>02368</postalCode>
-                  <country>US</country>
-                </addr>
-                <telecom value="(555)555-555-1234" use="HP"/>
+                <id root="UNK" extension="123456789"/>
+                <addr nullFlavor="UNK"/>
+                <telecom value="UNK" use="HP"/>
                 <representedOrganization>
                   <id root="2.16.840.1.113883.19.5.9999.1393"/>
                   <name>Community Health and Hospitals</name>
@@ -1159,15 +1147,9 @@
             <methodCode nullFlavor="UNK"/>
             <performer>
               <assignedEntity>
-                <id root="2.16.840.1.113883.19.5" extension="1234567"/>
-                <addr>
-                  <streetAddressLine>17 Daws Rd.</streetAddressLine>
-                  <city>Blue Bell</city>
-                  <state>MA</state>
-                  <postalCode>02368</postalCode>
-                  <country>US</country>
-                </addr>
-                <telecom value="(555)555-555-1234" use="HP"/>
+                <id root="UNK" extension="1234567"/>
+                <addr nullFlavor="UNK"/>
+                <telecom value="UNK" use="HP"/>
                 <representedOrganization>
                   <id root="2.16.840.1.113883.19.5.9999.1393"/>
                   <name>Community Health and Hospitals</name>

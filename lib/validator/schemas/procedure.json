@@ -30,7 +30,7 @@
         "status": {
             "type": "string"
         },
-        "performers": {
+        "performer": {
             "type": "array",
             "items": {
                 "$ref": "http://local.com/common_models#/properties/cda_performer"
