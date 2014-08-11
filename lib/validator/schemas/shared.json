@@ -260,7 +260,7 @@
             }
         },
         "cda_performer": {
-            "type": "string",
+            "type": "object",
             "properties": {
                 "type": "string",
                 "performer": {
