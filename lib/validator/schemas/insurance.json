@@ -2,6 +2,13 @@
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
+
+        "code": {
+            "type": "object",
+            "properties": {
+                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+            }
+        },
         "addresses": {
             "type": "array",
             "items": {
@@ -10,13 +17,16 @@
             "minItems": 1
         },
         "date_time": {
-                "$ref": "http://local.com/common_models#/properties/cda_date"
+            "$ref": "http://local.com/common_models#/properties/cda_date"
         },
         "plan_id": {
             "$ref": "http://local.com/common_models#/properties/cda_id"
         },
         "plan_information": {
             "type": "string"
+        },
+        "performer":{
+            "$ref": "http://local.com/common_models#/properties/cda_performer"
         },
         "plan_name": {
             "type": "string"
@@ -59,7 +69,7 @@
             "items": {
                 "$ref": "http://local.com/common_models#/properties/cda_phone"
             }
-        } 
+        }
     },
     "additionalProperties": false
 
