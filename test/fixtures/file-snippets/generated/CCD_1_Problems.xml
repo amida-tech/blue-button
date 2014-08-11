@@ -29,11 +29,11 @@
               <low value="20080103"/>
               <high value="20080103"/>
             </effectiveTime>
-            <value xsi:type="CD" code="233604007" codeSystem="2.16.840.1.113883.6.96" displayName="Pneumonia"/>
+            <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             <entryRelationship typeCode="REFR">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
+                <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
                 <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <text>
                   <reference value="#STAT1"/>
@@ -41,9 +41,9 @@
                 <statusCode code="completed"/>
                 <effectiveTime>
                   <low value="20080103"/>
-                  <high value="20080103"/>
+                  <high value="20090227"/>
                 </effectiveTime>
-                <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved"/>
+                <value xsi:type="CD" code="undefined" displayName="[object Object]" codeSystem="2.16.840.1.113883.6.96" codeSystemName="HITSP Problem Status"/>
               </observation>
             </entryRelationship>
             <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -77,7 +77,7 @@
         <statusCode code="completed"/>
         <effectiveTime>
           <low value="20070103"/>
-          <high value="20080103"/>
+          <high value="20070103"/>
         </effectiveTime>
         <entryRelationship typeCode="SUBJ">
           <observation classCode="OBS" moodCode="EVN">
@@ -92,21 +92,21 @@
               <low value="20070103"/>
               <high value="20080103"/>
             </effectiveTime>
-            <value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma"/>
+            <value xsi:type="CD" code="195967001" displayName="Asthma" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             <entryRelationship typeCode="REFR">
               <observation classCode="OBS" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
+                <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
                 <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                 <text>
                   <reference value="#STAT2"/>
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime>
-                  <low value="20070103"/>
-                  <high value="20080103"/>
+                  <low value="20080103"/>
+                  <high value="20090227"/>
                 </effectiveTime>
-                <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                <value xsi:type="CD" code="undefined" displayName="[object Object]" codeSystem="2.16.840.1.113883.6.96" codeSystemName="HITSP Problem Status"/>
               </observation>
             </entryRelationship>
             <entryRelationship typeCode="SUBJ" inversionInd="true">

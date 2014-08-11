@@ -33,7 +33,7 @@ describe('full ccd parser', function () {
 
     it('demographics spot check', function (done) {
         expect(ccd.demographics).to.exist;
-
+        console.log(ccd);
         expect(ccd.demographics.name).to.exists;
         expect(ccd.demographics.name.last).to.equal('Jones');
         expect(ccd.demographics.name.first).to.equal('Isabella');

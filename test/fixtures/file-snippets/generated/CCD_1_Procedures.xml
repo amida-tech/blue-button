@@ -10,13 +10,13 @@
       <procedure classCode="PROC" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
         <id root="d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"/>
-        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <originalText>
             <reference value="#Proc1"/>
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20120512"/>
+        <effectiveTime value="undefined"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="appropriate_code" displayName="colon" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <specimen typeCode="SPC">
@@ -37,7 +37,7 @@
               <postalCode>99123</postalCode>
               <country>US</country>
             </addr>
-            <telecom value="555-555-5000" use="HP"/>
+            <telecom value="tel:555-555-5000" use="HP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>
@@ -64,13 +64,13 @@
       <observation classCode="OBS" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
         <id root="2.16.840.1.113883.19" extension="123456789"/>
-        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
+        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <originalText>
             <reference value="#Proc1"/>
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20110203"/>
+        <effectiveTime value="undefined"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <performer>
@@ -83,7 +83,7 @@
               <postalCode>02368</postalCode>
               <country>US</country>
             </addr>
-            <telecom value="(555)555-555-1234" use="HP"/>
+            <telecom value="tel:(555)555-555-1234" use="HP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>
@@ -112,13 +112,13 @@
       <act classCode="ACT" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
         <id root="1.2.3.4.5.6.7.8" extension="1234567"/>
-        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT">
+        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <originalText>
             <reference value="#Proc1"/>
           </originalText>
         </code>
         <statusCode code="completed"/>
-        <effectiveTime value="20110203"/>
+        <effectiveTime value="undefined"/>
         <methodCode nullFlavor="UNK"/>
         <performer>
           <assignedEntity>
@@ -130,7 +130,7 @@
               <postalCode>02368</postalCode>
               <country>US</country>
             </addr>
-            <telecom value="(555)555-555-1234" use="HP"/>
+            <telecom value="tel:(555)555-555-1234" use="HP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>
