@@ -30,26 +30,40 @@
         "status": {
             "type": "string"
         },
-        "providers": {
+        "performer": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "address": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "array",
+                    "items": {
                         "$ref": "http://local.com/common_models#/properties/cda_address"
-                    },
-                    "identifiers": {
-                        "type": "array",
-                        "items": {
-                            "$ref": "http://local.com/common_models#/properties/cda_id"
-                        }
-                    },
-                    "organization": {
+                    }
+                },
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_id"
+                    }
+                },
+                "name": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "http://local.com/common_models#/properties/cda_name"
+                    }
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_phone"
+                    }
+                },
+                "organization": {
+                    "type": "array",
+                    "items": {
                         "type": "object",
                         "properties": {
-                            "address": {
-                                "$ref": "http://local.com/common_models#/properties/cda_address"
-                            },
                             "identifiers": {
                                 "type": "array",
                                 "items": {
@@ -57,7 +71,13 @@
                                 }
                             },
                             "name": {
-                                "type": "string"
+                                "type":"array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "address": {
+                                "$ref": "http://local.com/common_models#/properties/cda_address"
                             },
                             "phone": {
                                 "type": "array",
@@ -65,27 +85,20 @@
                                     "$ref": "http://local.com/common_models#/properties/cda_phone"
                                 }
                             },
-                             "email": {
+                            "email": {
                                 "type": "array",
                                 "items": {
                                     "$ref": "http://local.com/common_models#/properties/cda_email"
                                 }
                             }
-
                         },
-                        "minProperties": 1
-                    },
-                    "phone": {
-                        "type": "array",
-                        "items": {
-                            "$ref": "http://local.com/common_models#/properties/cda_phone"
-                        }
+                        "additionalProperties": false
                     }
-                },
-                "required": [
-                    "address"
-                ]
-            }
+                }
+            },
+            "additionalProperties": false
+        }
+            
         },
         "locations": {
             "type": "array",

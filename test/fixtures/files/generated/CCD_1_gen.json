@@ -344,9 +344,11 @@
                 "status": "Completed",
                 "sig": "Proventil HFA ",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                        }
+                    ],
                     "unencoded_name": "Proventil HFA ",
                     "product": {
                         "name": "Proventil HFA",
@@ -1018,21 +1020,23 @@
                         "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
                     }
                 ],
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "1001 Village Avenue"
-                            ],
-                            "city": "Portland",
-                            "state": "OR",
-                            "zip": "99123",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.19.5.9999.456",
                                 "identifier_type": "2981823"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "streetLines": [
+                                    "1001 Village Avenue"
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "99123",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -1041,29 +1045,35 @@
                                 "type": "work place"
                             }
                         ],
-                        "organization": {
-                            "name": "Community Health and Hospitals",
-                            "address": {
-                                "streetLines": [
-                                    "1001 Village Avenue"
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                    }
                                 ],
-                                "city": "Portland",
-                                "state": "OR",
-                                "zip": "99123",
-                                "country": "US"
-                            },
-                            "identifiers": [
-                                {
-                                    "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                                }
-                            ],
-                            "phone": [
-                                {
-                                    "number": "555-555-5000",
-                                    "type": "work place"
-                                }
-                            ]
-                        }
+                                "name": [
+                                    "Community Health and Hospitals"
+                                ],
+                                "address": [
+                                    {
+                                        "streetLines": [
+                                            "1001 Village Avenue"
+                                        ],
+                                        "city": "Portland",
+                                        "state": "OR",
+                                        "zip": "99123",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "555-555-5000",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "procedure_type": "procedure"
@@ -1094,21 +1104,23 @@
                         "code_system_name": "SNOMED CT"
                     }
                 ],
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "17 Daws Rd."
-                            ],
-                            "city": "Blue Bell",
-                            "state": "MA",
-                            "zip": "02368",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.19.5",
                                 "identifier_type": "1234"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "streetLines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -1117,14 +1129,18 @@
                                 "type": "work place"
                             }
                         ],
-                        "organization": {
-                            "name": "Community Health and Hospitals",
-                            "identifiers": [
-                                {
-                                    "identifier": "2.16.840.1.113883.19.5"
-                                }
-                            ]
-                        }
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.19.5"
+                                    }
+                                ],
+                                "name": [
+                                    "Community Health and Hospitals"
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -1169,21 +1185,23 @@
                         "precision": "day"
                     }
                 },
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "17 Daws Rd."
-                            ],
-                            "city": "Blue Bell",
-                            "state": "MA",
-                            "zip": "02368",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.19",
                                 "identifier_type": "1234"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "streetLines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -1192,14 +1210,18 @@
                                 "type": "work place"
                             }
                         ],
-                        "organization": {
-                            "name": "Community Health and Hospitals",
-                            "identifiers": [
-                                {
-                                    "identifier": "2.16.840.1.113883.19.5"
-                                }
-                            ]
-                        }
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.19.5"
+                                    }
+                                ],
+                                "name": [
+                                    "Community Health and Hospitals"
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -1544,17 +1566,17 @@
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "cardinality error: found 2 when expecting 1..1 at h:performer",
