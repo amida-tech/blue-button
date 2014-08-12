@@ -37,21 +37,21 @@ assigning them numbers.
 ###Sections that have no data model
 
 BB.js model needs(Bolded are those that are not addressed in the main branch of Blue Button Github site)
-Unbolded ones are currently unimplemented but maybe mentioned in bluebutton.
+Unbolded ones are currently unimplemented but mentioned in bluebutton.
 
 + **Emergency contacts, kind of pertains to advance directives.**
 + Implantable Devices -> Medical Equipment
 + Family History
 + Pharmacies
 
-### Sections that have a data model
-* Demographic -> Demographic(1)(done)
-* Self-Reported Medical conditions -> Problems(2)(done)
+### Sections that have a data model, and are parsed
+* Demographic -> Demographics
+* Self-Reported Medical conditions -> Problems
 * Self-Reported Allergies ->Allergies(done)
-* Self-Reported Immunizations -> Immunizations(Done)
+* Self-Reported Immunizations -> Immunizations
 * Self-Reported Labs and Tests -> Results(Done, need more samples to be better)
-* Self-Reported Vital Statistics -> Vitals(Done)
-* Drugs -> Medications(done)
+* Self-Reported Vital Statistics -> Vitals
+* Drugs -> Medications
 * Providers -> Providers
 * Plans -> Insurance
 * Employer Subsidy ->Insurance
