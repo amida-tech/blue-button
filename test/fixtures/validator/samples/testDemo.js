@@ -23,7 +23,7 @@ var testDemo = {
         }],
         "marital_status": "Married",
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "1357 Amber Drive"
             ],
             "city": "Beaverton",
@@ -53,7 +53,7 @@ var testDemo = {
         "guardians": [{
             "relation": "Parent",
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "1357 Amber Drive"
                 ],
                 "city": "Beaverton",
@@ -95,7 +95,7 @@ var testDemo = {
         }],
         "marital_status": "Married",
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "1357 Amber Drive"
             ],
             "city": "Beaverton",
@@ -124,7 +124,7 @@ var testDemo = {
         "guardians": [{
             "relation": "Parent",
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "1357 Amber Drive"
                 ],
                 "city": "Beaverton",
@@ -164,7 +164,7 @@ var testDemo = {
         }],
         "marital_status": "Married",
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "1357 Amber Drive"
             ],
             "city": "Beaverton",

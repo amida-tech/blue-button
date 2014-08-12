@@ -1,6 +1,6 @@
 var testAddress = {
     "regular": {
-        "streetLines": [
+        "street_lines": [
             "1357 Amber Drive"
         ],
         "city": "Beaverton",
@@ -10,7 +10,7 @@ var testAddress = {
         "use": "primary home"
     },
     "missingAddr": {
-        "streetLines": [],
+        "street_lines": [],
         "city": "Beaverton",
         "state": "OR",
         "zip": "97867",
@@ -18,14 +18,14 @@ var testAddress = {
         "use": "primary home"
     },
     "noCity": {
-        "streetLines": [],
+        "street_lines": [],
         "state": "OR",
         "zip": "97867",
         "country": "US",
         "use": "primary home"
     },
     "noCityAddr": {
-        "streetLines": [],
+        "street_lines": [],
         "state": "OR",
         "zip": "97867",
         "country": "US",
@@ -34,7 +34,7 @@ var testAddress = {
     "empty": {},
 
     "onlyCityAddr": {
-        "streetLines": [
+        "street_lines": [
             "1357 Amber Drive"
         ],
         "city": "Beaverton"

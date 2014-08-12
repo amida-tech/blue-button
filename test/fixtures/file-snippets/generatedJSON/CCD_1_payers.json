@@ -28,7 +28,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "123 Insurance Road"
                             ],
                             "city": "Blue Bell",
@@ -51,7 +51,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "123 Insurance Road"
                                     ],
                                     "city": "Blue Bell",
@@ -94,7 +94,7 @@
             ],
             "address": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -127,7 +127,7 @@
                 ],
                 "address": [
                     {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -159,7 +159,7 @@
                 ],
                 "address": [
                     {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",

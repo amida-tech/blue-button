@@ -22,7 +22,7 @@ var testProcedureList = {
         }],
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "1001 Village Avenue"
                 ],
                 "city": "Portland",
@@ -41,7 +41,7 @@ var testProcedureList = {
             "organization": {
                 "name": "Community Health and Hospitals",
                 "address": {
-                    "streetLines": [
+                    "street_lines": [
                         "1001 Village Avenue"
                     ],
                     "city": "Portland",
@@ -84,7 +84,7 @@ var testProcedureList = {
         }],
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -115,7 +115,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -145,7 +145,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -176,7 +176,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -205,7 +205,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -236,7 +236,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -261,7 +261,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -292,7 +292,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -320,7 +320,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -351,7 +351,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -381,7 +381,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -406,7 +406,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -436,7 +436,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -466,7 +466,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -563,7 +563,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",

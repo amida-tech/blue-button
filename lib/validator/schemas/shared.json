@@ -14,7 +14,7 @@
                 "state": {
                     "type": "string"
                 },
-                "streetLines": {
+                "street_lines": {
                     "type": "array",
                     "items": {
                         "type": "string"
@@ -29,7 +29,7 @@
                 }
             },
             "required": [
-                "streetLines",
+                "street_lines",
                 "city"
             ]
         },

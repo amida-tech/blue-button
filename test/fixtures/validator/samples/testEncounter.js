@@ -25,7 +25,7 @@ var testEncounter = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -56,7 +56,7 @@ var testEncounter = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -90,7 +90,7 @@ var testEncounter = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -172,7 +172,7 @@ var testEncounter = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
