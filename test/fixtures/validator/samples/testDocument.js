@@ -23,7 +23,7 @@ var testDocList = {
                 }],
                 "marital_status": "Married",
                 "addresses": [{
-                    "streetLines": [
+                    "street_lines": [
                         "1357 Amber Drive"
                     ],
                     "city": "Beaverton",
@@ -53,7 +53,7 @@ var testDocList = {
                 "guardians": [{
                     "relation": "Parent",
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1357 Amber Drive"
                         ],
                         "city": "Beaverton",
@@ -342,7 +342,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -471,7 +471,7 @@ var testDocList = {
                         "first": "Amanda"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -530,7 +530,7 @@ var testDocList = {
                         "first": "Amanda"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -589,7 +589,7 @@ var testDocList = {
                         "first": "Amanda"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -648,7 +648,7 @@ var testDocList = {
                         "first": "Amanda"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -747,7 +747,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "1001 Village Avenue"
                         ],
                         "city": "Portland",
@@ -766,7 +766,7 @@ var testDocList = {
                     "organization": {
                         "name": "Community Health and Hospitals",
                         "address": {
-                            "streetLines": [
+                            "street_lines": [
                                 "1001 Village Avenue"
                             ],
                             "city": "Portland",
@@ -806,7 +806,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -837,7 +837,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -864,7 +864,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -895,7 +895,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -932,7 +932,7 @@ var testDocList = {
                 }],
                 "marital_status": "Married",
                 "addresses": [{
-                    "streetLines": [
+                    "street_lines": [
                         "1357 Amber Drive"
                     ],
                     "city": "Beaverton",
@@ -962,7 +962,7 @@ var testDocList = {
                 "guardians": [{
                     "relation": "Parent",
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1357 Amber Drive"
                         ],
                         "city": "Beaverton",
@@ -1251,7 +1251,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1380,7 +1380,7 @@ var testDocList = {
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -1439,7 +1439,7 @@ var testDocList = {
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -1498,7 +1498,7 @@ var testDocList = {
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -1557,7 +1557,7 @@ var testDocList = {
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -1656,7 +1656,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "1001 Village Avenue"
                         ],
                         "city": "Portland",
@@ -1675,7 +1675,7 @@ var testDocList = {
                     "organization": {
                         "name": "Community Health and Hospitals",
                         "address": {
-                            "streetLines": [
+                            "street_lines": [
                                 "1001 Village Avenue"
                             ],
                             "city": "Portland",
@@ -1715,7 +1715,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1746,7 +1746,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1773,7 +1773,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1804,7 +1804,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1864,7 +1864,7 @@ var testDocList = {
         meta: {
             version: '0.0.4'
         },
-        errors: ['nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD',
+        errors: ['nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD',
             'nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD'
         ]
     },
@@ -1885,7 +1885,7 @@ var testDocList = {
                 }],
                 "marital_status": "Married",
                 "addresses": [{
-                    "streetLines": [
+                    "street_lines": [
                         "1357 Amber Drive"
                     ],
                     "city": "Beaverton",
@@ -1915,7 +1915,7 @@ var testDocList = {
                 "guardians": [{
                     "relation": "Parent",
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1357 Amber Drive"
                         ],
                         "city": "Beaverton",
@@ -2204,7 +2204,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -2333,7 +2333,7 @@ var testDocList = {
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -2392,7 +2392,7 @@ var testDocList = {
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -2505,7 +2505,7 @@ var testDocList = {
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -2604,7 +2604,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "1001 Village Avenue"
                         ],
                         "city": "Portland",
@@ -2623,7 +2623,7 @@ var testDocList = {
                     "organization": {
                         "name": "Community Health and Hospitals",
                         "address": {
-                            "streetLines": [
+                            "street_lines": [
                                 "1001 Village Avenue"
                             ],
                             "city": "Portland",
@@ -2663,7 +2663,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -2694,7 +2694,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -2721,7 +2721,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -2752,7 +2752,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",

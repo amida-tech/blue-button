@@ -26,7 +26,7 @@
             "addresses": [
                 {
                     "use": "primary",
-                    "streetLines": [
+                    "street_lines": [
                         "123 ANY ROAD"
                     ],
                     "city": "ANYTOWN",
@@ -270,7 +270,7 @@
                 "addresses": [
                     {
                         "use": "primary",
-                        "streetLines": [
+                        "street_lines": [
                             "123 Any Road"
                         ],
                         "city": "Anytown",
@@ -299,7 +299,7 @@
                 "addresses": [
                     {
                         "use": "primary",
-                        "streetLines": [
+                        "street_lines": [
                             "123 Any Road"
                         ],
                         "city": "Anytown",
@@ -350,7 +350,7 @@
                 "addresses": [
                     {
                         "use": "primary",
-                        "streetLines": [
+                        "street_lines": [
                             "PO BOX 0000"
                         ],
                         "city": "Anytown",
@@ -379,7 +379,7 @@
                 "addresses": [
                     {
                         "use": "primary",
-                        "streetLines": [
+                        "street_lines": [
                             "0000 Any ROAD"
                         ],
                         "city": "ANYWHERE",
@@ -405,7 +405,7 @@
                 "addresses": [
                     {
                         "use": "primary",
-                        "streetLines": [
+                        "street_lines": [
                             "00 Address STREET"
                         ],
                         "city": "ANYWHERE",
@@ -898,7 +898,7 @@
                 "name": "ANY CARE",
                 "address": {
                     "use": "primary",
-                    "streetLines": [
+                    "street_lines": [
                         "123 Any Rd"
                     ],
                     "city": "Anywhere",
@@ -915,7 +915,7 @@
                 "name": "ANY HOSPITAL1",
                 "address": {
                     "use": "primary",
-                    "streetLines": [
+                    "street_lines": [
                         "123 Drive"
                     ],
                     "city": "Anywhere",
@@ -931,7 +931,7 @@
                 "type": "person",
                 "address": {
                     "use": "primary",
-                    "streetLines": [
+                    "street_lines": [
                         "123 Road"
                     ],
                     "city": "Anywhere",

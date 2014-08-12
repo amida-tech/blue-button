@@ -19,7 +19,7 @@
     }],
     "providers": [{
         "address": {
-            "streetLines": [
+            "street_lines": [
                 "1001 Village Avenue"
             ],
             "city": "Portland",
@@ -38,7 +38,7 @@
         "organization": {
             "name": "Community Health and Hospitals",
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "1001 Village Avenue"
                 ],
                 "city": "Portland",
@@ -78,7 +78,7 @@
     }],
     "providers": [{
         "address": {
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -109,7 +109,7 @@
             "code_system_name": "HealthcareServiceLocation"
         },
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -136,7 +136,7 @@
     }],
     "providers": [{
         "address": {
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -167,7 +167,7 @@
             "code_system_name": "HealthcareServiceLocation"
         },
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",

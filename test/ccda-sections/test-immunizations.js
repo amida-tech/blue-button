@@ -256,11 +256,11 @@ describe('Immunizations - Schema Conformance', function () {
                 if (currentImmunization.performer.address) {
                     for (var iaddr in currentImmunization.performer.address) {
                         var currentAddress = currentImmunization.performer.address[iaddr];
-                        assert.isArray(currentAddress.streetLines, 'street should be array');
-                        assert.ok(currentAddress.streetLines.length < 4, 'max four street lines');
-                        for (var iline in currentAddress.streetLines) {
-                            assert.isString(currentAddress.streetLines[iline], 'street lines should be string');
-                            assert.ok(currentAddress.streetLines[iline].length > 0, 'street lines should have content');
+                        assert.isArray(currentAddress.street_lines, 'street should be array');
+                        assert.ok(currentAddress.street_lines.length < 4, 'max four street lines');
+                        for (var iline in currentAddress.street_lines) {
+                            assert.isString(currentAddress.street_lines[iline], 'street lines should be string');
+                            assert.ok(currentAddress.street_lines[iline].length > 0, 'street lines should have content');
                         }
                         assert.isString(currentAddress.city, 'city should be string');
                         assert.ok(currentAddress.city.length > 0, 'city should have content');

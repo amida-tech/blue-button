@@ -45,7 +45,7 @@ var testImmunList = {
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -107,7 +107,7 @@ var testImmunList = {
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -169,7 +169,7 @@ var testImmunList = {
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -216,7 +216,7 @@ var testImmunList = {
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -264,7 +264,7 @@ var testImmunList = {
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -325,7 +325,7 @@ var testImmunList = {
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",

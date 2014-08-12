@@ -27,7 +27,7 @@
         "marital_status": "Married",
         "addresses": [
             {
-                "streetLines": [
+                "street_lines": [
                     "1357 Amber Drive"
                 ],
                 "city": "Beaverton",
@@ -64,7 +64,7 @@
                 "relation": "Parent",
                 "addresses": [
                     {
-                        "streetLines": [
+                        "street_lines": [
                             "1357 Amber Drive"
                         ],
                         "city": "Beaverton",
@@ -356,7 +356,7 @@
             "code_system_name": "HealthcareServiceLocation"
         },
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -485,7 +485,7 @@
             "first": "Amanda"
         }],
         "address": [{
-            "streetLines": [
+            "street_lines": [
                 "1021 Health Drive"
             ],
             "city": "Ann Arbor",
@@ -546,7 +546,7 @@
             "first": "Amanda"
         }],
         "address": [{
-            "streetLines": [
+            "street_lines": [
                 "1021 Health Drive"
             ],
             "city": "Ann Arbor",
@@ -607,7 +607,7 @@
             "first": "Amanda"
         }],
         "address": [{
-            "streetLines": [
+            "street_lines": [
                 "1021 Health Drive"
             ],
             "city": "Ann Arbor",
@@ -668,7 +668,7 @@
             "first": "Amanda"
         }],
         "address": [{
-            "streetLines": [
+            "street_lines": [
                 "1021 Health Drive"
             ],
             "city": "Ann Arbor",
@@ -774,7 +774,7 @@
     }],
     "providers": [{
         "address": {
-            "streetLines": [
+            "street_lines": [
                 "1001 Village Avenue"
             ],
             "city": "Portland",
@@ -789,7 +789,7 @@
         "organization": {
             "name": "Community Health and Hospitals",
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "1001 Village Avenue"
                 ],
                 "city": "Portland",
@@ -826,7 +826,7 @@
     }],
     "providers": [{
         "address": {
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -850,7 +850,7 @@
             "code_system_name": "HealthcareServiceLocation"
         },
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -877,7 +877,7 @@
     }],
     "providers": [{
         "address": {
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -901,7 +901,7 @@
             "code_system_name": "HealthcareServiceLocation"
         },
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
