@@ -98,7 +98,7 @@
         "cda_id": {
             "type": "object",
             "properties": {
-                "identifier_type": {
+                "extension": {
                     "type": "string"
                 },
                 "identifier": {

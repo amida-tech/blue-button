@@ -16,10 +16,10 @@ var testDocList = {
                 "gender": "Female",
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 }, {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }],
                 "marital_status": "Married",
                 "addresses": [{
@@ -464,7 +464,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": [{
                         "last": "Assigned",
@@ -523,7 +523,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": [{
                         "last": "Assigned",
@@ -582,7 +582,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": [{
                         "last": "Assigned",
@@ -641,7 +641,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": [{
                         "last": "Assigned",
@@ -757,7 +757,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981823"
+                        "extension": "2981823"
                     }],
                     "phone": [{
                         "number": "555-555-5000",
@@ -792,7 +792,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "123456789"
+                    "extension": "123456789"
                 }],
                 "status": "Aborted",
                 "date": [{
@@ -816,7 +816,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -855,7 +855,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "1.2.3.4.5.6.7.8",
-                    "identifier_type": "1234567"
+                    "extension": "1234567"
                 }],
                 "status": "Completed",
                 "date": [{
@@ -874,7 +874,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -925,10 +925,10 @@ var testDocList = {
                 "gender": "Female",
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 }, {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }],
                 "marital_status": "Married",
                 "addresses": [{
@@ -1373,7 +1373,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
@@ -1432,7 +1432,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
@@ -1491,7 +1491,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
@@ -1550,7 +1550,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
@@ -1666,7 +1666,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981823"
+                        "extension": "2981823"
                     }],
                     "phone": [{
                         "number": "555-555-5000",
@@ -1701,7 +1701,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "123456789"
+                    "extension": "123456789"
                 }],
                 "status": "Aborted",
                 "date": [{
@@ -1725,7 +1725,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -1764,7 +1764,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "1.2.3.4.5.6.7.8",
-                    "identifier_type": "1234567"
+                    "extension": "1234567"
                 }],
                 "status": "Completed",
                 "date": [{
@@ -1783,7 +1783,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -1878,10 +1878,10 @@ var testDocList = {
                 "gender": "Female",
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 }, {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }],
                 "marital_status": "Married",
                 "addresses": [{
@@ -2326,7 +2326,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
@@ -2385,7 +2385,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
@@ -2443,7 +2443,7 @@ var testDocList = {
                 },
                 "performer": {
                     "identifiers": [{
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
@@ -2498,7 +2498,7 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
@@ -2614,7 +2614,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981823"
+                        "extension": "2981823"
                     }],
                     "phone": [{
                         "number": "555-555-5000",
@@ -2649,7 +2649,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "123456789"
+                    "extension": "123456789"
                 }],
                 "status": "Aborted",
                 "date": [{
@@ -2673,7 +2673,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -2712,7 +2712,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "1.2.3.4.5.6.7.8",
-                    "identifier_type": "1234567"
+                    "extension": "1234567"
                 }],
                 "status": "Completed",
                 "date": [{
@@ -2731,7 +2731,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",

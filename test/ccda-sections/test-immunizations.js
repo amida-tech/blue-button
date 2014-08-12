@@ -103,7 +103,7 @@ describe('Immunizations - Schema Conformance', function () {
                 var currentId = currentImmunization.identifiers[ii];
                 assert.isString(currentId.identifier, 'Identifier should be a string');
                 assert.ok(currentId.identifier.length > 0, 'Identifier should have content');
-                //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                //TODO:  Add assertions if extension comes in, and snippets to test.
             }
         }
         done();
@@ -223,7 +223,7 @@ describe('Immunizations - Schema Conformance', function () {
                         var currentId = currentImmunization.performer.identifiers[ii];
                         assert.isString(currentId.identifier, 'Identifier should be a string');
                         assert.ok(currentId.identifier.length > 0, 'Identifier should have content');
-                        //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                        //TODO:  Add assertions if extension comes in, and snippets to test.
                     }
                 }
 
@@ -299,7 +299,7 @@ describe('Immunizations - Schema Conformance', function () {
                                 var currentOrgId = currentOrganization.identifiers[ordIds];
                                 assert.isString(currentOrgId.identifier, 'Identifier should be a string');
                                 assert.ok(currentOrgId.identifier.length > 0, 'Identifier should have content');
-                                //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                                //TODO:  Add assertions if extension comes in, and snippets to test.
                             }
                         }
                         if (currentOrganization.name) {

@@ -142,7 +142,7 @@ describe('Test identifier:', function () {
     it('identifier all fields', function (done) {
         identifierObj = {
             "identifier": "2.16.840.1.113883.19.5.9999.456",
-            "identifier_type": "2981824"
+            "extension": "2981824"
         };
         var valid = validator.validateSectionObj(identifierObj, 'cda_id');
         expect(valid).to.true;
@@ -160,7 +160,7 @@ describe('Test identifier:', function () {
 
     it('email with only type', function (done) {
         identifierObj = {
-            "identifier_type": "2981824"
+            "extension": "2981824"
         };
         var valid = validator.validateSectionObj(identifierObj, 'cda_id');
         expect(valid).to.false;
