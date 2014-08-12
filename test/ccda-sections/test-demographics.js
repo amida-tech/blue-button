@@ -130,7 +130,7 @@ describe('Demographics - Schema Conformance', function () {
             var currentId = demographics.identifiers[ii];
             assert.isString(currentId.identifier, 'Identifier should be a string');
             assert.ok(currentId.identifier.length > 0, 'Identifier should have content');
-            //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+            //TODO:  Add assertions if extension comes in, and snippets to test.
         }
         done();
     });

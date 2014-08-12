@@ -97,7 +97,7 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
                     "streetLines": [
@@ -123,7 +123,7 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
                     "streetLines": [
@@ -248,7 +248,7 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
                     "streetLines": [
@@ -350,7 +350,7 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
                     "streetLines": [
@@ -376,7 +376,7 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
                     "streetLines": [
@@ -448,7 +448,7 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
                     "streetLines": [
@@ -474,7 +474,7 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
                     "streetLines": [
