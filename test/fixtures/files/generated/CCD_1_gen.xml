@@ -599,7 +599,7 @@
           <substanceAdministration classCode="SBADM" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
             <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
-            <text>Proventil HFA <reference value="#MedSec_1"/></text>
+            <text>Proventil HFA<reference value="#MedSec_1"/></text>
             <statusCode code="completed"/>
             <effectiveTime xsi:type="IVL_TS">
               <low value="undefined"/>
