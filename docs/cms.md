@@ -84,6 +84,8 @@ Insert Section Name <--- header
 -------------------------------
 
 
+
+
 key: value 
 
 key: value 
@@ -94,8 +96,9 @@ key: value
 
 key: value 
 
-key: value 
-            	<-------------------------------------------- this entire piece is referred to as the body
+
+
+&nbsp;   -------------------------------------------- this entire piece is referred to as the body
 
 
 key: value 
@@ -117,32 +120,28 @@ key: value
 ###Task Backlog/Improvements
 
 
-1. Write tests(Partially done)
-..+1.a. Check what elements/sections are in CMS.
-..+1.b. Check what matches and what doesn't match.
-..+1.c. Check what are missing.
+*  Improve code flexibility
 
-2. Improve code flexibility
-	4.a. abstract out matching from code.
-		1. separate class for regular expressions.
-		2. Detect the format of the text file(UTF-8, ascii), and make it be able to handle different text structures.
+	 * abstract out matching from code.
+	 * separate class for regular expressions.
+	 * Detect the format of the text file(UTF-8, ascii), and make it be able to handle different text structures.
 
-3. Putting proper codes for each medical term. May need to put uncoded tag. (
+* Putting proper codes for each medical term. May need to put uncoded tag. (
 	Look at medical dictionaries/clinical vocabularies at bottom of CCDA pad)
 
-4. Need to dump data that is not part of one section into a common pool, or organize it. 
+* Need to dump data that is not part of one section into a common pool, or organize it. 
 ..* the effective dates for in "demographic" section needs to go somewhere else -> in the health insurance model? 
 ..* Allergy shots, and other medications need to go to another section
 
-5. Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that the patient took shots. From this, maybe the parser should extrapolate the administration part of medications. May tie in with #13.
+* Might need an extrapolation layer on top of what is currently here. For example, in the allergy section, it indicated that the patient took shots. From this, maybe the parser should extrapolate the administration part of medications. May tie in with #13.
 
-6. Medications rate detector needs to be written.(for example 3x boxes of 30 needles for 3 months, which can get tricky)
+* Medications rate detector needs to be written.(for example 3x boxes of 30 needles for 3 months, which can get tricky)
 
-7. Vitals value detection may need modifications based on more text sample files. 
+* Vitals value detection may need modifications based on more text sample files. 
 
-8. Discussion is needed on how to handle medicare claim type Ds, since it can get pretty confusing.
+* Discussion is needed on how to handle medicare claim type Ds, since it can get pretty confusing.
 
-9. Better address parsing mechanism. The current one seems tobe decent, but not perfect.
+* Better address parsing mechanism. The current one seems tobe decent, but not perfect.
 
 
 
