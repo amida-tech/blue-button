@@ -14,18 +14,18 @@
             "email": [
                 {
                     "address": "JOHNDOE@example.com",
-                    "type": "primary"
+                    "type": ""
                 }
             ],
             "phone": [
                 {
                     "number": "123-456-7890",
-                    "type": "primary"
+                    "type": "primary home"
                 }
             ],
             "addresses": [
                 {
-                    "use": "primary",
+                    "use": "primary home",
                     "street_lines": [
                         "123 ANY ROAD"
                     ],
@@ -114,20 +114,16 @@
                 "allergen": {
                     "name": "Antibotic"
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "1926-01-08T00:00:00.000Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "1955-03-13T00:00:00.000Z",
                         "precision": "day"
-                    },
-                    {
-                        "date": "1949-09-28T00:00:00.000Z",
-                        "precision": "day"
                     }
-                ],
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -141,20 +137,16 @@
                 "allergen": {
                     "name": "Grasses"
                 },
-                "date": [
-                    {
+                "date_time": {
+                    "low": {
                         "date": "1973-05-13T00:00:00.000Z",
                         "precision": "day"
                     },
-                    {
+                    "high": {
                         "date": "1996-07-20T00:00:00.000Z",
                         "precision": "day"
-                    },
-                    {
-                        "date": "2008-09-27T00:00:00.000Z",
-                        "precision": "day"
                     }
-                ],
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -269,7 +261,7 @@
                 ],
                 "addresses": [
                     {
-                        "use": "primary",
+                        "use": "primary home",
                         "street_lines": [
                             "123 Any Road"
                         ],
@@ -298,7 +290,7 @@
                 ],
                 "addresses": [
                     {
-                        "use": "primary",
+                        "use": "primary home",
                         "street_lines": [
                             "123 Any Road"
                         ],
@@ -349,7 +341,7 @@
                 ],
                 "addresses": [
                     {
-                        "use": "primary",
+                        "use": "primary home",
                         "street_lines": [
                             "PO BOX 0000"
                         ],
@@ -378,7 +370,7 @@
                 ],
                 "addresses": [
                     {
-                        "use": "primary",
+                        "use": "primary home",
                         "street_lines": [
                             "0000 Any ROAD"
                         ],
@@ -404,7 +396,7 @@
                 },
                 "addresses": [
                     {
-                        "use": "primary",
+                        "use": "primary home",
                         "street_lines": [
                             "00 Address STREET"
                         ],
@@ -897,7 +889,7 @@
                 "type": "organization",
                 "name": "ANY CARE",
                 "address": {
-                    "use": "primary",
+                    "use": "primary home",
                     "street_lines": [
                         "123 Any Rd"
                     ],
@@ -914,7 +906,7 @@
                 "type": "organization",
                 "name": "ANY HOSPITAL1",
                 "address": {
-                    "use": "primary",
+                    "use": "primary home",
                     "street_lines": [
                         "123 Drive"
                     ],
@@ -930,7 +922,7 @@
             {
                 "type": "person",
                 "address": {
-                    "use": "primary",
+                    "use": "primary home",
                     "street_lines": [
                         "123 Road"
                     ],
