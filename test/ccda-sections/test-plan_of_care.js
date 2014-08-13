@@ -5,7 +5,6 @@ var fs = require("fs");
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 describe('plan of care parser', function () {
     var plan_of_care = null;
@@ -26,7 +25,7 @@ describe('plan of care parser', function () {
         // console.log(JSON.stringify(plan_of_care, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Plan_Of_Care.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expected = jsutil.jsonParseWithDate(json2Read);
+        var expected = JSON.parse(json2Read);
         expect(plan_of_care).to.deep.equal(expected);
         done();
     });

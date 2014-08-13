@@ -5,7 +5,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 describe('medications parser', function () {
     var meds = null;
@@ -24,7 +23,7 @@ describe('medications parser', function () {
         //console.log(JSON.stringify(meds, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Medications.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedMeds = jsutil.jsonParseWithDate(json2Read);
+        var expectedMeds = JSON.parse(json2Read);
         expect(meds).to.deep.equal(expectedMeds);
         done();
     });

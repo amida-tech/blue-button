@@ -5,7 +5,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 var immunizations;
 
@@ -35,7 +34,7 @@ describe('immunizations parser', function () {
         //console.log(JSON.stringify(immunizations, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Immunizations.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedImmunizations = jsutil.jsonParseWithDate(json2Read);
+        var expectedImmunizations = JSON.parse(json2Read);
         expect(immunizations).to.deep.equal(expectedImmunizations);
         done();
     });
