@@ -38,7 +38,50 @@
                 },
                 "site": {
                     "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                },
+                "interval": {
+                    "type": "object",
+                    "properties": {
+                        "xsiType": {
+                            "type": "string"
+                        },
+                        "phase": {
+                            "$ref": "http://local.com/common_models#/properties/cda_date"
+                        },
+                        "period": {
+                            "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                        },
+                        "frequency": {
+                            "type": "boolean"
+                        },
+                        "alignment": {
+                            "type": "string"
+                        },
+                        "event": {
+                            "type": "string"
+                        },
+                        "event_offset": {
+                            "type": "object",
+                            "properties": {
+                                "low": {
+                                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                                },
+                                "high": {
+                                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                                },
+                                "center": {
+                                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                                },
+                                "width": {
+                                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                                }
+
+                            }
+
+                        }
+                    }
                 }
+
             },
             "additionalProperties": false,
             "minProperties": 1
