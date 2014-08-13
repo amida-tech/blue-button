@@ -5,7 +5,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 var demographics;
 
@@ -35,7 +34,7 @@ describe('Demographics - Snippet Comparison', function () {
         expect(demographics).to.exist;
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Demographics.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedDemographics = jsutil.jsonParseWithDate(json2Read);
+        var expectedDemographics = JSON.parse(json2Read);
         expect(demographics).to.deep.equal(expectedDemographics);
         done();
     });

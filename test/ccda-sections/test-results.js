@@ -5,7 +5,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 describe('results parser', function () {
     var results = null;
@@ -24,7 +23,7 @@ describe('results parser', function () {
         //console.log(JSON.stringify(results, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Results.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedResults = jsutil.jsonParseWithDate(json2Read);
+        var expectedResults = JSON.parse(json2Read);
         expect(results).to.deep.equal(expectedResults);
         done();
     });

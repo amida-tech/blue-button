@@ -5,7 +5,6 @@ var fs = require("fs");
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 describe('payers parser', function () {
     var payers = null;
@@ -26,7 +25,7 @@ describe('payers parser', function () {
         // console.log(JSON.stringify(payers, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Payers.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expected = jsutil.jsonParseWithDate(json2Read);
+        var expected = JSON.parse(json2Read);
         expect(payers).to.deep.equal(expected);
         done();
     });

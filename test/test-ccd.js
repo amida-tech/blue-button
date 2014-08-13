@@ -8,7 +8,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../index');
-var jsutil = require('../lib/jsutil');
 
 describe('full ccd parser', function () {
     var ccd = null;
@@ -26,7 +25,7 @@ describe('full ccd parser', function () {
         expect(ccd).to.exist;
         var filepath = path.join(__dirname, 'fixtures/files/json/CCD_1.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedCCD = jsutil.jsonParseWithDate(json2Read);
+        var expectedCCD = JSON.parse(json2Read);
         expect(ccd).to.deep.equal(expectedCCD);
         done();
     });
