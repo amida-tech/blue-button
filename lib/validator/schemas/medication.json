@@ -2,7 +2,8 @@
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
-        "date_time": {"$ref": "http://local.com/common_models#/properties/cda_date"
+        "date_time": {
+            "$ref": "http://local.com/common_models#/properties/cda_date"
         },
         "identifiers": {
             "type": "array",
@@ -42,7 +43,7 @@
             "additionalProperties": false,
             "minProperties": 1
         },
-        
+
         "precondition": {
             "type": "object",
             "properties": {
@@ -72,6 +73,17 @@
             "required": [
                 "product"
             ]
+        },
+        "supply": {
+            "date_time": {
+                "$ref": "http://local.com/common_models#/properties/cda_date"
+            },
+            "repeatNumber": {
+                "type": "string"
+            },
+            "quantity": {
+                "type": "string"
+            }
         }
     },
     "additionalProperties": false,
