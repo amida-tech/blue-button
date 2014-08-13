@@ -295,10 +295,13 @@
                     "items": {
                         "$ref": "#/properties/cda_phone"
                     }
+                },
+                "code": {
+                    "ref": "#/properties/cda_coded_entry"
                 }
             },
             "required": [
-                "address"
+                
             ]
         }
     }
