@@ -30,6 +30,7 @@ module.exports = function (grunt) {
                 expr: true,
                 globals: {
                     'it': true,
+                    'xit': true,
                     'describe': true,
                     'before': true,
                     'after': true,
