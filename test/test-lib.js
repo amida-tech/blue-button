@@ -295,7 +295,7 @@ testXML.prototype.sameText = function (generated, expected) {
 
 // Returns false if the parent nodes (the ones passed in) have a different number of childNodes, otherwise returns true
 testXML.prototype.numChildNodesSame = function (gen, exp) {
-    return Object.keys(gen.childNodes).length === Object.keys(exp.childNodes).length; 
+    return Object.keys(gen.childNodes).length === Object.keys(exp.childNodes).length;
     // || (exp.childNodes[0].tagName === "table" && this.skipCase(gen, exp, "display_text"));
 };
 
