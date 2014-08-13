@@ -1,3 +1,5 @@
+"use strict";
+
 var mocha = require('mocha');
 var chai = require('chai');
 
@@ -11,6 +13,7 @@ var bb = require('../index');
 
 describe('full ccd parser', function () {
     var ccd = null;
+    var ccd_obj = null;
 
     before(function (done) {
         var filepath = path.join(__dirname, 'fixtures/files/CCD_1.xml');
@@ -32,7 +35,6 @@ describe('full ccd parser', function () {
 
     it('demographics spot check', function (done) {
         expect(ccd.demographics).to.exist;
-        console.log(ccd);
         expect(ccd.demographics.name).to.exists;
         expect(ccd.demographics.name.last).to.equal('Jones');
         expect(ccd.demographics.name.first).to.equal('Isabella');
@@ -121,9 +123,13 @@ describe('full ccd parser', function () {
         done();
     });
 
-    it('sections check', function (done) {
-
+    it('meta check', function (done) {
         expect(ccd_obj.meta.sections).to.exist;
+
+        expect(ccd_obj.meta.identifiers).to.exist;
+        expect(ccd_obj.meta.identifiers).to.have.length(1);
+        expect(ccd_obj.meta.identifiers[0].identifier).to.equal("2.16.840.1.113883.19.5.99999.1");
+        expect(ccd_obj.meta.identifiers[0].extension).to.equal("TT988");
 
         done();
     });
