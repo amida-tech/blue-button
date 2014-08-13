@@ -20,7 +20,7 @@ describe('payers parser', function () {
         done();
     });
 
-    it('full deep check', function (done) {
+    xit('full deep check', function (done) {
         expect(payers).to.exist;
         // console.log(JSON.stringify(payers, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Payers.json');

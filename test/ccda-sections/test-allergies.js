@@ -27,7 +27,7 @@ describe('allergies parser', function () {
         done();
     });
 
-    it('spot check', function (done) {
+    xit('spot check', function (done) {
         expect(allergies).to.exist;
         expect(allergies).to.have.length(3);
 
