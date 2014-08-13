@@ -5,7 +5,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 describe('allergies parser', function () {
     var allergies = null;
@@ -23,7 +22,7 @@ describe('allergies parser', function () {
         expect(allergies).to.exist;
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Allergies.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedAllergies = jsutil.jsonParseWithDate(json2Read);
+        var expectedAllergies = JSON.parse(json2Read);
         expect(allergies).to.deep.equal(expectedAllergies);
         done();
     });
@@ -56,7 +55,7 @@ describe('allergies parser', function () {
                 var allergiesEpic = result.toJSON();
                 var filepath = path.join(__dirname, '../fixtures/file-snippets/json/Epic_Guess_Allergies.json');
                 var json2Read = fs.readFileSync(filepath, 'utf-8');
-                var expectedAllergies = jsutil.jsonParseWithDate(json2Read);
+                var expectedAllergies = JSON.parse(json2Read);
                 expect(allergiesEpic).to.deep.equal(expectedAllergies);
                 done();
             }

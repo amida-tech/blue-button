@@ -22,7 +22,7 @@ var testProcedureList = {
         }],
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "1001 Village Avenue"
                 ],
                 "city": "Portland",
@@ -32,7 +32,7 @@ var testProcedureList = {
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19.5.9999.456",
-                "identifier_type": "2981823"
+                "extension": "2981823"
             }],
             "phone": [{
                 "number": "555-555-5000",
@@ -41,7 +41,7 @@ var testProcedureList = {
             "organization": {
                 "name": "Community Health and Hospitals",
                 "address": {
-                    "streetLines": [
+                    "street_lines": [
                         "1001 Village Avenue"
                     ],
                     "city": "Portland",
@@ -68,7 +68,7 @@ var testProcedureList = {
         },
         "identifiers": [{
             "identifier": "2.16.840.1.113883.19",
-            "identifier_type": "123456789"
+            "extension": "123456789"
         }],
         "status": "Aborted",
         "date_time": {
@@ -84,7 +84,7 @@ var testProcedureList = {
         }],
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -94,7 +94,7 @@ var testProcedureList = {
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19.5",
-                "identifier_type": "1234"
+                "extension": "1234"
             }],
             "phone": [{
                 "number": "(555)555-555-1234",
@@ -115,7 +115,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -134,7 +134,7 @@ var testProcedureList = {
         },
         "identifiers": [{
             "identifier": "1.2.3.4.5.6.7.8",
-            "identifier_type": "1234567"
+            "extension": "1234567"
         }],
         "status": "Completed",
         "date_time": {
@@ -145,7 +145,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -155,7 +155,7 @@ var testProcedureList = {
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19",
-                "identifier_type": "1234"
+                "extension": "1234"
             }],
             "phone": [{
                 "number": "(555)555-555-1234",
@@ -176,7 +176,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -195,7 +195,7 @@ var testProcedureList = {
         },
         "identifiers": [{
             "identifier": "1.2.3.4.5.6.7.8",
-            "identifier_type": "1234567"
+            "extension": "1234567"
         }],
         "date_time": {
             "point": {
@@ -205,7 +205,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -215,7 +215,7 @@ var testProcedureList = {
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19",
-                "identifier_type": "1234"
+                "extension": "1234"
             }],
             "phone": [{
                 "number": "(555)555-555-1234",
@@ -236,7 +236,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -250,7 +250,7 @@ var testProcedureList = {
     "missingProcedureField": {
         "identifiers": [{
             "identifier": "1.2.3.4.5.6.7.8",
-            "identifier_type": "1234567"
+            "extension": "1234567"
         }],
         "status": "Completed",
         "date_time": {
@@ -261,7 +261,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -271,7 +271,7 @@ var testProcedureList = {
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19",
-                "identifier_type": "1234"
+                "extension": "1234"
             }],
             "phone": [{
                 "number": "(555)555-555-1234",
@@ -292,7 +292,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -309,7 +309,7 @@ var testProcedureList = {
         },
         "identifiers": [{
             "identifier": "1.2.3.4.5.6.7.8",
-            "identifier_type": "1234567"
+            "extension": "1234567"
         }],
         "status": "Completed",
         "date_time": {
@@ -320,7 +320,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -330,7 +330,7 @@ var testProcedureList = {
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19",
-                "identifier_type": "1234"
+                "extension": "1234"
             }],
             "phone": [{
                 "number": "(555)555-555-1234",
@@ -351,7 +351,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -370,7 +370,7 @@ var testProcedureList = {
         },
         "identifiers": [{
             "identifier": "1.2.3.4.5.6.7.8",
-            "identifier_type": "1234567"
+            "extension": "1234567"
         }],
         "status": "Completed",
         "date_time": {
@@ -381,7 +381,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -391,7 +391,7 @@ var testProcedureList = {
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19",
-                "identifier_type": "1234"
+                "extension": "1234"
             }],
             "phone": [{
                 "number": "(555)555-555-1234",
@@ -406,7 +406,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -425,7 +425,7 @@ var testProcedureList = {
         },
         "identifiers": [{
             "identifier": "1.2.3.4.5.6.7.8",
-            "identifier_type": "1234567"
+            "extension": "1234567"
         }],
         "status": "Completed",
         "date_time": {
@@ -436,7 +436,7 @@ var testProcedureList = {
         },
         "performers": [{
             "address": {
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -446,7 +446,7 @@ var testProcedureList = {
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19",
-                "identifier_type": "1234"
+                "extension": "1234"
             }],
             "phone": [{
                 "number": "(555)555-555-1234",
@@ -466,7 +466,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -485,7 +485,7 @@ var testProcedureList = {
         },
         "identifiers": [{
             "identifier": "1.2.3.4.5.6.7.8",
-            "identifier_type": "1234567"
+            "extension": "1234567"
         }],
         "status": "Completed",
         "date_time": {
@@ -506,7 +506,7 @@ var testProcedureList = {
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19",
-                "identifier_type": "1234"
+                "extension": "1234"
             }],
             "phone": [{
                 "number": "(555)555-555-1234",
@@ -546,7 +546,7 @@ var testProcedureList = {
         },
         "identifiers": [{
             "identifier": "1.2.3.4.5.6.7.8",
-            "identifier_type": "1234567"
+            "extension": "1234567"
         }],
         "status": "Completed",
         "date_time": {
@@ -563,7 +563,7 @@ var testProcedureList = {
                 "code_system_name": "HealthcareServiceLocation"
             },
             "addresses": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",

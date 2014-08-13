@@ -5,7 +5,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 var immunizations;
 
@@ -35,7 +34,7 @@ describe('immunizations parser', function () {
         //console.log(JSON.stringify(immunizations, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Immunizations.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedImmunizations = jsutil.jsonParseWithDate(json2Read);
+        var expectedImmunizations = JSON.parse(json2Read);
         expect(immunizations).to.deep.equal(expectedImmunizations);
         done();
     });
@@ -103,7 +102,7 @@ describe('Immunizations - Schema Conformance', function () {
                 var currentId = currentImmunization.identifiers[ii];
                 assert.isString(currentId.identifier, 'Identifier should be a string');
                 assert.ok(currentId.identifier.length > 0, 'Identifier should have content');
-                //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                //TODO:  Add assertions if extension comes in, and snippets to test.
             }
         }
         done();
@@ -223,7 +222,7 @@ describe('Immunizations - Schema Conformance', function () {
                         var currentId = currentImmunization.performer.identifiers[ii];
                         assert.isString(currentId.identifier, 'Identifier should be a string');
                         assert.ok(currentId.identifier.length > 0, 'Identifier should have content');
-                        //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                        //TODO:  Add assertions if extension comes in, and snippets to test.
                     }
                 }
 
@@ -256,11 +255,11 @@ describe('Immunizations - Schema Conformance', function () {
                 if (currentImmunization.performer.address) {
                     for (var iaddr in currentImmunization.performer.address) {
                         var currentAddress = currentImmunization.performer.address[iaddr];
-                        assert.isArray(currentAddress.streetLines, 'street should be array');
-                        assert.ok(currentAddress.streetLines.length < 4, 'max four street lines');
-                        for (var iline in currentAddress.streetLines) {
-                            assert.isString(currentAddress.streetLines[iline], 'street lines should be string');
-                            assert.ok(currentAddress.streetLines[iline].length > 0, 'street lines should have content');
+                        assert.isArray(currentAddress.street_lines, 'street should be array');
+                        assert.ok(currentAddress.street_lines.length < 4, 'max four street lines');
+                        for (var iline in currentAddress.street_lines) {
+                            assert.isString(currentAddress.street_lines[iline], 'street lines should be string');
+                            assert.ok(currentAddress.street_lines[iline].length > 0, 'street lines should have content');
                         }
                         assert.isString(currentAddress.city, 'city should be string');
                         assert.ok(currentAddress.city.length > 0, 'city should have content');
@@ -299,7 +298,7 @@ describe('Immunizations - Schema Conformance', function () {
                                 var currentOrgId = currentOrganization.identifiers[ordIds];
                                 assert.isString(currentOrgId.identifier, 'Identifier should be a string');
                                 assert.ok(currentOrgId.identifier.length > 0, 'Identifier should have content');
-                                //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                                //TODO:  Add assertions if extension comes in, and snippets to test.
                             }
                         }
                         if (currentOrganization.name) {

@@ -21,7 +21,7 @@ var test_payers_list = {
                         "identifier": "2.16.840.1.113883.19"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "123 Insurance Road"
                         ],
                         "city": "Blue Bell",
@@ -39,7 +39,7 @@ var test_payers_list = {
                             "Good Health Insurance"
                         ],
                         "address": [{
-                            "streetLines": [
+                            "street_lines": [
                                 "123 Insurance Road"
                             ],
                             "city": "Blue Bell",
@@ -65,7 +65,7 @@ var test_payers_list = {
                 "identifier": "329fcdf0-7ab3-11db-9fe1-0800200c9a66"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -97,10 +97,10 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -123,10 +123,10 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -172,7 +172,7 @@ var test_payers_list = {
                         "identifier": "2.16.840.1.113883.19"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "123 Insurance Road"
                         ],
                         "city": "Blue Bell",
@@ -190,7 +190,7 @@ var test_payers_list = {
                             "Good Health Insurance"
                         ],
                         "address": [{
-                            "streetLines": [
+                            "street_lines": [
                                 "123 Insurance Road"
                             ],
                             "city": "Blue Bell",
@@ -216,7 +216,7 @@ var test_payers_list = {
                 "identifier": "329fcdf0-7ab3-11db-9fe1-0800200c9a66"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -248,10 +248,10 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -305,7 +305,7 @@ var test_payers_list = {
                         "identifier": "2.16.840.1.113883.19"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "123 Insurance Road"
                         ],
                         "city": "Blue Bell",
@@ -323,7 +323,7 @@ var test_payers_list = {
                             "Good Health Insurance"
                         ],
                         "address": [{
-                            "streetLines": [
+                            "street_lines": [
                                 "123 Insurance Road"
                             ],
                             "city": "Blue Bell",
@@ -350,10 +350,10 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -376,10 +376,10 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -416,7 +416,7 @@ var test_payers_list = {
                 "identifier": "329fcdf0-7ab3-11db-9fe1-0800200c9a66"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "17 Daws Rd."
                 ],
                 "city": "Blue Bell",
@@ -448,10 +448,10 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -474,10 +474,10 @@ var test_payers_list = {
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "1138345"
+                    "extension": "1138345"
                 }],
                 "address": [{
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",

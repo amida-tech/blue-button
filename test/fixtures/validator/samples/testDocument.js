@@ -16,14 +16,14 @@ var testDocList = {
                 "gender": "Female",
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 }, {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }],
                 "marital_status": "Married",
                 "addresses": [{
-                    "streetLines": [
+                    "street_lines": [
                         "1357 Amber Drive"
                     ],
                     "city": "Beaverton",
@@ -53,7 +53,7 @@ var testDocList = {
                 "guardians": [{
                     "relation": "Parent",
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1357 Amber Drive"
                         ],
                         "city": "Beaverton",
@@ -342,7 +342,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -464,14 +464,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": [{
                         "last": "Assigned",
                         "first": "Amanda"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -523,14 +523,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": [{
                         "last": "Assigned",
                         "first": "Amanda"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -582,14 +582,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": [{
                         "last": "Assigned",
                         "first": "Amanda"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -641,14 +641,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": [{
                         "last": "Assigned",
                         "first": "Amanda"
                     }],
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -747,7 +747,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "1001 Village Avenue"
                         ],
                         "city": "Portland",
@@ -757,7 +757,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981823"
+                        "extension": "2981823"
                     }],
                     "phone": [{
                         "number": "555-555-5000",
@@ -766,7 +766,7 @@ var testDocList = {
                     "organization": {
                         "name": "Community Health and Hospitals",
                         "address": {
-                            "streetLines": [
+                            "street_lines": [
                                 "1001 Village Avenue"
                             ],
                             "city": "Portland",
@@ -792,7 +792,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "123456789"
+                    "extension": "123456789"
                 }],
                 "status": "Aborted",
                 "date": [{
@@ -806,7 +806,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -816,7 +816,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -837,7 +837,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -855,7 +855,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "1.2.3.4.5.6.7.8",
-                    "identifier_type": "1234567"
+                    "extension": "1234567"
                 }],
                 "status": "Completed",
                 "date": [{
@@ -864,7 +864,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -874,7 +874,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -895,7 +895,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -925,14 +925,14 @@ var testDocList = {
                 "gender": "Female",
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 }, {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }],
                 "marital_status": "Married",
                 "addresses": [{
-                    "streetLines": [
+                    "street_lines": [
                         "1357 Amber Drive"
                     ],
                     "city": "Beaverton",
@@ -962,7 +962,7 @@ var testDocList = {
                 "guardians": [{
                     "relation": "Parent",
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1357 Amber Drive"
                         ],
                         "city": "Beaverton",
@@ -1251,7 +1251,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1373,14 +1373,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -1432,14 +1432,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -1491,14 +1491,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -1550,14 +1550,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -1656,7 +1656,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "1001 Village Avenue"
                         ],
                         "city": "Portland",
@@ -1666,7 +1666,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981823"
+                        "extension": "2981823"
                     }],
                     "phone": [{
                         "number": "555-555-5000",
@@ -1675,7 +1675,7 @@ var testDocList = {
                     "organization": {
                         "name": "Community Health and Hospitals",
                         "address": {
-                            "streetLines": [
+                            "street_lines": [
                                 "1001 Village Avenue"
                             ],
                             "city": "Portland",
@@ -1701,7 +1701,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "123456789"
+                    "extension": "123456789"
                 }],
                 "status": "Aborted",
                 "date": [{
@@ -1715,7 +1715,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1725,7 +1725,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -1746,7 +1746,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1764,7 +1764,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "1.2.3.4.5.6.7.8",
-                    "identifier_type": "1234567"
+                    "extension": "1234567"
                 }],
                 "status": "Completed",
                 "date": [{
@@ -1773,7 +1773,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1783,7 +1783,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -1804,7 +1804,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1864,7 +1864,7 @@ var testDocList = {
         meta: {
             version: '0.0.4'
         },
-        errors: ['nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD',
+        errors: ['nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD',
             'nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD'
         ]
     },
@@ -1878,14 +1878,14 @@ var testDocList = {
                 "gender": "Female",
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 }, {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }],
                 "marital_status": "Married",
                 "addresses": [{
-                    "streetLines": [
+                    "street_lines": [
                         "1357 Amber Drive"
                     ],
                     "city": "Beaverton",
@@ -1915,7 +1915,7 @@ var testDocList = {
                 "guardians": [{
                     "relation": "Parent",
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1357 Amber Drive"
                         ],
                         "city": "Beaverton",
@@ -2204,7 +2204,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -2326,14 +2326,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -2385,14 +2385,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -2443,7 +2443,7 @@ var testDocList = {
                 },
                 "performer": {
                     "identifiers": [{
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
@@ -2498,14 +2498,14 @@ var testDocList = {
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981824"
+                        "extension": "2981824"
                     }],
                     "name": {
                         "last": "Assigned",
                         "first": "Amanda"
                     },
                     "address": [{
-                        "streetLines": [
+                        "street_lines": [
                             "1021 Health Drive"
                         ],
                         "city": "Ann Arbor",
@@ -2604,7 +2604,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "1001 Village Avenue"
                         ],
                         "city": "Portland",
@@ -2614,7 +2614,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "identifier_type": "2981823"
+                        "extension": "2981823"
                     }],
                     "phone": [{
                         "number": "555-555-5000",
@@ -2623,7 +2623,7 @@ var testDocList = {
                     "organization": {
                         "name": "Community Health and Hospitals",
                         "address": {
-                            "streetLines": [
+                            "street_lines": [
                                 "1001 Village Avenue"
                             ],
                             "city": "Portland",
@@ -2649,7 +2649,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "123456789"
+                    "extension": "123456789"
                 }],
                 "status": "Aborted",
                 "date": [{
@@ -2663,7 +2663,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -2673,7 +2673,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -2694,7 +2694,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -2712,7 +2712,7 @@ var testDocList = {
                 },
                 "identifiers": [{
                     "identifier": "1.2.3.4.5.6.7.8",
-                    "identifier_type": "1234567"
+                    "extension": "1234567"
                 }],
                 "status": "Completed",
                 "date": [{
@@ -2721,7 +2721,7 @@ var testDocList = {
                 }],
                 "performers": [{
                     "address": {
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -2731,7 +2731,7 @@ var testDocList = {
                     },
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19",
-                        "identifier_type": "1234"
+                        "extension": "1234"
                     }],
                     "phone": [{
                         "number": "(555)555-555-1234",
@@ -2752,7 +2752,7 @@ var testDocList = {
                         "code_system_name": "HealthcareServiceLocation"
                     },
                     "addresses": [{
-                        "streetLines": [
+                        "street_lines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",

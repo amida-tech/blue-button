@@ -5,7 +5,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 describe('vitals parser', function () {
     var vitals = null;
@@ -24,7 +23,7 @@ describe('vitals parser', function () {
         //console.log(JSON.stringify(vitals, null, 10));
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Vitals.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedVitals = jsutil.jsonParseWithDate(json2Read);
+        var expectedVitals = JSON.parse(json2Read);
         expect(vitals).to.deep.equal(expectedVitals);
         done();
     });

@@ -38,14 +38,14 @@ var testImmunList = {
         "performer": {
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19.5.9999.456",
-                "identifier_type": "2981824"
+                "extension": "2981824"
             }],
             "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -100,14 +100,14 @@ var testImmunList = {
         "performer": {
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19.5.9999.456",
-                "identifier_type": "2981824"
+                "extension": "2981824"
             }],
             "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -162,14 +162,14 @@ var testImmunList = {
         "performer": {
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19.5.9999.456",
-                "identifier_type": "2981824"
+                "extension": "2981824"
             }],
             "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -209,14 +209,14 @@ var testImmunList = {
         "performer": {
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19.5.9999.456",
-                "identifier_type": "2981824"
+                "extension": "2981824"
             }],
             "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -257,14 +257,14 @@ var testImmunList = {
         "performer": {
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19.5.9999.456",
-                "identifier_type": "2981824"
+                "extension": "2981824"
             }],
             "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",
@@ -318,14 +318,14 @@ var testImmunList = {
             "perform": "no",
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19.5.9999.456",
-                "identifier_type": "2981824"
+                "extension": "2981824"
             }],
             "name": [{
                 "last": "Assigned",
                 "first": "Amanda"
             }],
             "address": [{
-                "streetLines": [
+                "street_lines": [
                     "1021 Health Drive"
                 ],
                 "city": "Ann Arbor",

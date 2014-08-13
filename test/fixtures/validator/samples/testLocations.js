@@ -7,7 +7,7 @@ var testLocations = {
             "code_system_name": "HealthcareServiceLocation"
         },
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -24,7 +24,7 @@ var testLocations = {
             "code_system_name": "HealthcareServiceLocation"
         },
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -37,7 +37,7 @@ var testLocations = {
         "name": "Community Urgent Care Center",
         "loc_type": {},
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -62,7 +62,7 @@ var testLocations = {
             "code_system_name": "HealthcareServiceLocation"
         },
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -79,7 +79,7 @@ var testLocations = {
             "code_system_name": "HealthcareServiceLocation"
         },
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",
@@ -95,7 +95,7 @@ var testLocations = {
     "locTypeUndefined": {
         "name": "Community Urgent Care Center",
         "addresses": [{
-            "streetLines": [
+            "street_lines": [
                 "17 Daws Rd."
             ],
             "city": "Blue Bell",

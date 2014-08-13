@@ -7,7 +7,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 var problems;
 
@@ -39,7 +38,7 @@ describe('Problems - Snippet Comparison', function () {
         expect(problems).to.exist;
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Problems.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedProblems = jsutil.jsonParseWithDate(json2Read);
+        var expectedProblems = JSON.parse(json2Read);
         expect(problems).to.deep.equal(expectedProblems);
         done();
     });
@@ -117,7 +116,7 @@ describe('Problems - Schema Conformance', function () {
                 var currentId = currentProblem.identifiers[ii];
                 assert.isString(currentId.identifier, 'Identifier should be a string');
                 assert.ok(currentId.identifier.length > 0, 'Identifier should have content');
-                //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                //TODO:  Add assertions if extension comes in, and snippets to test.
             }
         }
         done();
@@ -223,7 +222,7 @@ describe('Problems - Schema Conformance', function () {
                 var currentId = currentProblem.source_list_identifiers[ii];
                 assert.isString(currentId.identifier, 'SLIs should be a string');
                 assert.ok(currentId.identifier.length > 0, 'SLIs should have content');
-                //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+                //TODO:  Add assertions if extension comes in, and snippets to test.
             }
         }
         done();

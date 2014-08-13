@@ -5,7 +5,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 describe('encounters parser', function () {
     var encounters = null;
@@ -23,7 +22,7 @@ describe('encounters parser', function () {
         expect(encounters).to.exist;
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Encounters.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedEncounters = jsutil.jsonParseWithDate(json2Read);
+        var expectedEncounters = JSON.parse(json2Read);
         expect(encounters).to.deep.equal(expectedEncounters);
         done();
     });

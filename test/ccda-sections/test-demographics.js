@@ -5,7 +5,6 @@ var fs = require('fs');
 var path = require('path');
 
 var bb = require('../../index');
-var jsutil = require('../../lib/jsutil');
 
 var demographics;
 
@@ -35,7 +34,7 @@ describe('Demographics - Snippet Comparison', function () {
         expect(demographics).to.exist;
         var filepath = path.join(__dirname, '../fixtures/file-snippets/json/CCD_1_Demographics.json');
         var json2Read = fs.readFileSync(filepath, 'utf-8');
-        var expectedDemographics = jsutil.jsonParseWithDate(json2Read);
+        var expectedDemographics = JSON.parse(json2Read);
         expect(demographics).to.deep.equal(expectedDemographics);
         done();
     });
@@ -130,7 +129,7 @@ describe('Demographics - Schema Conformance', function () {
             var currentId = demographics.identifiers[ii];
             assert.isString(currentId.identifier, 'Identifier should be a string');
             assert.ok(currentId.identifier.length > 0, 'Identifier should have content');
-            //TODO:  Add assertions if identifier_type comes in, and snippets to test.
+            //TODO:  Add assertions if extension comes in, and snippets to test.
         }
         done();
     });
@@ -147,11 +146,11 @@ describe('Demographics - Schema Conformance', function () {
 
         for (var iaddr in demographics.addresses) {
             var currentAddress = demographics.addresses[iaddr];
-            assert.isArray(currentAddress.streetLines, 'street should be array');
-            assert.ok(currentAddress.streetLines.length < 4, 'max four street lines');
-            for (var iline in currentAddress.streetLines) {
-                assert.isString(currentAddress.streetLines[iline], 'street lines should be string');
-                assert.ok(currentAddress.streetLines[iline].length > 0, 'street lines should have content');
+            assert.isArray(currentAddress.street_lines, 'street should be array');
+            assert.ok(currentAddress.street_lines.length < 4, 'max four street lines');
+            for (var iline in currentAddress.street_lines) {
+                assert.isString(currentAddress.street_lines[iline], 'street lines should be string');
+                assert.ok(currentAddress.street_lines[iline].length > 0, 'street lines should have content');
             }
             assert.isString(currentAddress.city, 'city should be string');
             assert.ok(currentAddress.city.length > 0, 'city should have content');
@@ -229,12 +228,12 @@ describe('Demographics - Schema Conformance', function () {
 
         if (demographics.birthplace) {
             var birthPlace = demographics.birthplace;
-            if (birthPlace.streetLines) {
-                assert.isArray(birthPlace.streetLines, 'street should be array');
-                assert.ok(birthPlace.streetLines.length < 4, 'max four street lines');
-                for (var iline in birthPlace.streetLines) {
-                    assert.isString(birthPlace.streetLines[iline], 'street lines should be string');
-                    assert.ok(birthPlace.streetLines[iline].length > 0, 'street lines should have content');
+            if (birthPlace.street_lines) {
+                assert.isArray(birthPlace.street_lines, 'street should be array');
+                assert.ok(birthPlace.street_lines.length < 4, 'max four street lines');
+                for (var iline in birthPlace.street_lines) {
+                    assert.isString(birthPlace.street_lines[iline], 'street lines should be string');
+                    assert.ok(birthPlace.street_lines[iline].length > 0, 'street lines should have content');
                 }
 
             }
@@ -276,11 +275,11 @@ describe('Demographics - Schema Conformance', function () {
 
                     for (var iguardaddr in currentGuardian.addresses) {
                         var currentAddress = currentGuardian.addresses[iguardaddr];
-                        assert.isArray(currentAddress.streetLines, 'street should be array');
-                        assert.ok(currentAddress.streetLines.length < 4, 'max four street lines');
-                        for (var iline in currentAddress.streetLines) {
-                            assert.isString(currentAddress.streetLines[iline], 'street lines should be string');
-                            assert.ok(currentAddress.streetLines[iline].length > 0, 'street lines should have content');
+                        assert.isArray(currentAddress.street_lines, 'street should be array');
+                        assert.ok(currentAddress.street_lines.length < 4, 'max four street lines');
+                        for (var iline in currentAddress.street_lines) {
+                            assert.isString(currentAddress.street_lines[iline], 'street lines should be string');
+                            assert.ok(currentAddress.street_lines[iline].length > 0, 'street lines should have content');
                         }
                         assert.isString(currentAddress.city, 'city should be string');
                         assert.ok(currentAddress.city.length > 0, 'city should have content');
