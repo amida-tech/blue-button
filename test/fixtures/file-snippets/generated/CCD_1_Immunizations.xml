@@ -14,7 +14,7 @@
           <reference value="#immun1"/>
         </text>
         <statusCode code="completed"/>
-        <effectiveTime xsi:type="IVL_TS" value="19991032"/>
+        <effectiveTime xsi:type="IVL_TS" value="undefined"/>
         <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
@@ -22,7 +22,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
             <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="88" displayName="Influenza virus vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+              <code code="88" displayName="Influenza virus vaccine" codeSystem="2" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi1"/>
                 </originalText>
@@ -78,7 +78,7 @@
           <reference value="#immun2"/>
         </text>
         <statusCode code="completed"/>
-        <effectiveTime xsi:type="IVL_TS" value="19981215"/>
+        <effectiveTime xsi:type="IVL_TS" value="undefined"/>
         <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
@@ -86,7 +86,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
             <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="88" displayName="Influenza virus vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+              <code code="88" displayName="Influenza virus vaccine" codeSystem="2" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi2"/>
                 </originalText>
@@ -142,7 +142,7 @@
           <reference value="#immun3"/>
         </text>
         <statusCode code="completed"/>
-        <effectiveTime xsi:type="IVL_TS" value="19981215"/>
+        <effectiveTime xsi:type="IVL_TS" value="undefined"/>
         <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
@@ -150,7 +150,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
             <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="33" displayName="Pneumococcal polysaccharide vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+              <code code="33" displayName="Pneumococcal polysaccharide vaccine" codeSystem="2" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi3"/>
                 </originalText>
@@ -206,7 +206,7 @@
           <reference value="#immun4"/>
         </text>
         <statusCode code="completed"/>
-        <effectiveTime xsi:type="IVL_TS" value="19981215"/>
+        <effectiveTime xsi:type="IVL_TS" value="undefined"/>
         <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
@@ -214,7 +214,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
             <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="103" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+              <code code="103" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystem="2" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi4"/>
                 </originalText>
@@ -257,7 +257,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
             <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
             <text>
-              <reference value="#severityNaN"/>
+              <reference value="#severity3"/>
             </text>
             <statusCode code="completed"/>
             <value xsi:type="CD" code="undefined" displayName="UNK" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>

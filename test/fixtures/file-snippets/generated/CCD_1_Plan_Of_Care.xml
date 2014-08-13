@@ -9,7 +9,7 @@
       <observation classCode="OBS" moodCode="RQO">
         <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
         <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4a"/>
-        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
         <statusCode code="new"/>
         <effectiveTime>
           <center value="20120512"/>
@@ -20,7 +20,7 @@
       <act classCode="ACT" moodCode="RQO">
         <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
         <id root="9a6d1bac-17d3-4195-89a4-1121bc809a5c"/>
-        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
         <statusCode code="new"/>
         <effectiveTime>
           <center value="20120512"/>
@@ -31,7 +31,7 @@
       <encounter classCode="ENC" moodCode="INT">
         <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
         <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4d"/>
-        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
         <statusCode code="new"/>
         <effectiveTime>
           <center value="20120512"/>
@@ -42,7 +42,7 @@
       <procedure classCode="PROC" moodCode="RQO">
         <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
         <id root="9a6d1bac-17d3-4195-89c4-1121bc809b5a"/>
-        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96,46680005" codeSystemName="SNOMED CT"/>
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
         <statusCode code="new"/>
         <effectiveTime>
           <center value="20120512"/>

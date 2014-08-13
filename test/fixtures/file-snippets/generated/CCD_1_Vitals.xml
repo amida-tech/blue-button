@@ -17,27 +17,13 @@
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
             <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-            <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
-            <text>
-              <reference value="#vit0"/>
-            </text>
-            <statusCode code="completed"/>
-            <effectiveTime value="19991114"/>
-            <value xsi:type="PQ" value="86" unit="cm"/>
-            <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-          </observation>
-        </component>
-        <component>
-          <observation classCode="OBS" moodCode="EVN">
-            <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-            <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-            <code code="3141-9" displayName="Patient Body Weight - Measured" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
+            <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
             <text>
               <reference value="#vit1"/>
             </text>
             <statusCode code="completed"/>
             <effectiveTime value="19991114"/>
-            <value xsi:type="PQ" value="132" unit="kg"/>
+            <value xsi:type="PQ" value="177" unit="cm"/>
             <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
           </observation>
         </component>
@@ -45,13 +31,27 @@
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
             <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-            <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
+            <code code="3141-9" displayName="Patient Body Weight - Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
             <text>
-              <reference value="#vit2"/>
+              <reference value="#vit3"/>
             </text>
             <statusCode code="completed"/>
             <effectiveTime value="19991114"/>
-            <value xsi:type="PQ" value="177" unit="mm[Hg]"/>
+            <value xsi:type="PQ" value="86" unit="kg"/>
+            <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+            <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <text>
+              <reference value="#vit5"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="19991114"/>
+            <value xsi:type="PQ" value="132" unit="mm[Hg]"/>
             <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
           </observation>
         </component>
@@ -68,27 +68,13 @@
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
             <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-            <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
-            <text>
-              <reference value="#vit0"/>
-            </text>
-            <statusCode code="completed"/>
-            <effectiveTime value="20000407"/>
-            <value xsi:type="PQ" value="88" unit="cm"/>
-            <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-          </observation>
-        </component>
-        <component>
-          <observation classCode="OBS" moodCode="EVN">
-            <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-            <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-            <code code="3141-9" displayName="Patient Body Weight - Measured" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
+            <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
             <text>
               <reference value="#vit2"/>
             </text>
             <statusCode code="completed"/>
             <effectiveTime value="20000407"/>
-            <value xsi:type="PQ" value="145" unit="kg"/>
+            <value xsi:type="PQ" value="177" unit="cm"/>
             <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
           </observation>
         </component>
@@ -96,13 +82,27 @@
           <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
             <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-            <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1,8716-3" codeSystemName="LOINC"/>
+            <code code="3141-9" displayName="Patient Body Weight - Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
             <text>
               <reference value="#vit4"/>
             </text>
             <statusCode code="completed"/>
             <effectiveTime value="20000407"/>
-            <value xsi:type="PQ" value="UNK" unit="mm[Hg]"/>
+            <value xsi:type="PQ" value="88" unit="kg"/>
+            <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+            <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <text>
+              <reference value="#vit6"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20000407"/>
+            <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
             <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
           </observation>
         </component>
