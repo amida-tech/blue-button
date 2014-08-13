@@ -22,6 +22,9 @@
                     "$ref": "http://local.com/common_models#/properties/cda_id"
                 },
                 "minItems": 1
+            },
+            "status": {
+                "type": "string"
             }
         },
         "required": [
