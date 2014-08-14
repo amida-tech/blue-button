@@ -193,20 +193,20 @@
         "cda_location": {
             "type": "object",
             "properties": {
-                "addresses": {
+                "address": {
                     "type": "array",
                     "items": {
                         "$ref": "#/properties/cda_address"
                     },
                     "minItems": 1
                 },
-                "loc_type": {
+                "location_type": {
                     "$ref": "#/properties/cda_coded_entry"
                 },
                 "name": {
                     "type": "string"
                 },
-                "phones": {
+                "phone": {
                     "type": "array",
                     "items": {
                         "$ref": "#/properties/cda_phone"
