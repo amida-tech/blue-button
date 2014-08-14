@@ -28,12 +28,18 @@
                   <postalCode>02368</postalCode>
                   <country>US</country>
                 </addr>
-                <telecom value="tel:(781)555-1515" use="HP"/>
+                <telecom value="tel:(781)555-1515" use="WP"/>
                 <representedOrganization>
                   <id nullFlavor="UNK"/>
-                  <name/>
-                  <telecom nullFlavor="UNK"/>
-                  <addr nullFlavor="UNK"/>
+                  <name>Good Health Insurance</name>
+                  <telecom value="tel:(781)555-1515" use="WP"/>
+                  <addr use="WP">
+                    <streetAddressLine>123 Insurance Road</streetAddressLine>
+                    <city>Blue Bell</city>
+                    <state>MA</state>
+                    <postalCode>02368</postalCode>
+                    <country>US</country>
+                  </addr>
                 </representedOrganization>
               </assignedEntity>
             </performer>

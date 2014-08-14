@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "748 Hardesty Street"
                     ],
                     "city": "Albany",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "2111 Franklin Avenue"
                             ],
                             "city": "Jacksonville",
@@ -388,6 +388,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -438,6 +441,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -488,6 +494,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -538,6 +547,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -562,7 +574,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Antidepressants + 12 HR Bupropion Hydrochloride 200 MG Extended Release Tablet  ",
+                    "unencoded_name": "Antidepressants + 12 HR Bupropion Hydrochloride 200 MG Extended Release Tablet",
                     "product": {
                         "name": "12 HR Bupropion Hydrochloride 200 MG Extended Release Tablet",
                         "code": "993536",
@@ -584,7 +596,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Biguanides + Metformin hydrochloride 500 MG Oral Tablet  ",
+                    "unencoded_name": "Biguanides + Metformin hydrochloride 500 MG Oral Tablet",
                     "product": {
                         "name": "Metformin hydrochloride 500 MG Oral Tablet",
                         "code": "861007",
@@ -606,7 +618,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Smoking Cessation Agents + 24 HR Nicotine 0.313 MG/HR Transdermal Patch  ",
+                    "unencoded_name": "Smoking Cessation Agents + 24 HR Nicotine 0.313 MG/HR Transdermal Patch",
                     "product": {
                         "name": "24 HR Nicotine 0.313 MG/HR Transdermal Patch",
                         "code": "1046847",
@@ -635,6 +647,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-03-31T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Diabetes",
                         "code": "44054006",
                         "code_system_name": "SNOMED CT",
@@ -652,6 +676,18 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-03-31T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Diabetic Retinopathy",
                         "code": "312904009",
                         "code_system_name": "SNOMED CT",
@@ -669,6 +705,18 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-03-31T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Major Depression",
                         "code": "268621008",
                         "code_system_name": "SNOMED CT",
@@ -797,7 +845,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -806,7 +854,16 @@
                         }
                     ]
                 },
-                "severity": "Mild to moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -825,7 +882,16 @@
                     "code": "905148",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -844,7 +910,16 @@
                     "code": "N0000006691",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Mild"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -861,6 +936,16 @@
                         "date": "2010-03-31T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -882,20 +967,16 @@
                     "name": "Diabetes mellitus type 2",
                     "code": "44054006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Type 2 diabetes mellitus without complications",
-                            "code": "E11.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
-                            "code": "250.00",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-03-31T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -919,20 +1000,16 @@
                     "name": "Moderate nonproliferative diabetic retinopathy",
                     "code": "312904009",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy",
-                            "code": "E13.33",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Moderate nonproliferative diabetic retinopathy",
-                            "code": "362.05",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-03-31T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -956,20 +1033,16 @@
                     "name": "Recurrent major depressive episodes",
                     "code": "268621008",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Major depressive disorder, recurrent, unspecified",
-                            "code": "F33.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Major depressive affective disorder, recurrent episode, unspecified",
-                            "code": "296.30",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-03-31T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1204,7 +1277,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1219,7 +1292,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

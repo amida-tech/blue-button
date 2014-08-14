@@ -15,12 +15,12 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "28366080"
+                    "extension": "28366080"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "26 N. Martin Street"
                     ],
                     "city": "Los Angeles",
@@ -171,7 +171,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3208.101.10",
-                        "identifier_type": "20130607113300-ResultOrganizer"
+                        "extension": "20130607113300-ResultOrganizer"
                     }
                 ],
                 "results": [
@@ -203,9 +203,11 @@
                 "status": "Completed",
                 "sig": "acetaminophen-aspirin buffered 250 mg-250 mg oral tablet, [RxNorm: 432638]",
                 "product": {
-                    "identifiers": {
-                        "identifier": "9680896d-5382-459d-9fa2-3ba806710c80"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "9680896d-5382-459d-9fa2-3ba806710c80"
+                        }
+                    ],
                     "product": {
                         "name": "acetaminophen-aspirin buffered 250 mg-250 mg oral tablet",
                         "code": "432638",
@@ -244,9 +246,11 @@
                 "status": "Completed",
                 "sig": "Lipitor 10 mg oral tablet, [RxNorm: 617312]",
                 "product": {
-                    "identifiers": {
-                        "identifier": "980a7969-247e-4aa9-9cd3-ee51a8f2d6d6"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "980a7969-247e-4aa9-9cd3-ee51a8f2d6d6"
+                        }
+                    ],
                     "product": {
                         "name": "Lipitor 10 mg oral tablet",
                         "code": "617312",
@@ -285,9 +289,19 @@
                         "identifier": "5114fd32-a851-4ebc-9f36-1beb0211ebc4"
                     }
                 ],
-                "severity": "Severe",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419511003",
+                    "name": "Propensity to adverse reactions to drug (disorder)",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "24484000",
+                        "name": "Severe"
+                    }
+                },
                 "reaction": [
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Treatment not indicated",
                             "code": "183964008",
@@ -331,7 +345,11 @@
         "social_history": [
             {
                 "value": "Unknown if ever smoked",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             }
         ],
         "problems": [
@@ -351,9 +369,17 @@
                 "problem": {
                     "name": "Hypothyroidism",
                     "code": "40930008",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-05T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
                     "code_system_name": "SNOMED CT"
                 },
-                "status": "ACTIVE",
+                "status": {
+                    "name": "ACTIVE"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "cf30d4ea-27c4-4041-a02e-5b5be726406e"
@@ -376,9 +402,17 @@
                 "problem": {
                     "name": "Acute bronchitis",
                     "code": "10509002",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-10-02T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
                     "code_system_name": "SNOMED CT"
                 },
-                "status": "ACTIVE",
+                "status": {
+                    "name": "ACTIVE"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "46ad8d4b-5089-435a-bc4f-b843230321e9"
@@ -391,27 +425,29 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3208.101.10",
-                        "identifier_type": "20130607114600-ProcedureActivity"
+                        "extension": "20130607114600-ProcedureActivity"
                     }
                 ],
                 "status": "Completed",
                 "date_time": {},
-                "providers": [
+                "performer": [
                     {
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.3208.101.3",
-                                "identifier_type": "20130607154800-UnknownPersonnel"
+                                "extension": "20130607154800-UnknownPersonnel"
                             }
                         ],
-                        "organization": {
-                            "identifiers": [
-                                {
-                                    "identifier": "2.16.840.1.113883.3.3208.101.5",
-                                    "identifier_type": "20130607155400-UnknownOrg"
-                                }
-                            ]
-                        }
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.3208.101.5",
+                                        "extension": "20130607155400-UnknownOrg"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "procedure_type": "act"
@@ -419,7 +455,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -455,13 +491,15 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> organization -> provider -> entry -> proceduresSection -> CCD"
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD"
     ]
 }

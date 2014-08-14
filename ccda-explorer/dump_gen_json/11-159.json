@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "3015 Better Street"
                     ],
                     "city": "Manhattan",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1091 Cheshire Road"
                             ],
                             "city": "Newtown",
@@ -550,6 +550,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "NA"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -572,7 +575,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Antihypertensive combinations + Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet  ",
+                    "unencoded_name": "Antihypertensive combinations + Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet",
                     "product": {
                         "name": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet",
                         "code": "858828",
@@ -594,7 +597,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution",
                     "product": {
                         "name": "Albuterol 0.83 MG/ML Inhalant Solution",
                         "code": "630208",
@@ -630,6 +633,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-05-12T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma",
                         "code": "195979001",
                         "code_system_name": "SNOMED CT",
@@ -647,6 +662,18 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-05-12T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Hypertension",
                         "code": "59621000",
                         "code_system_name": "SNOMED CT",
@@ -684,6 +711,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-08-13T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "low back pain",
                         "code": "279039007",
                         "code_system_name": "SNOMED CT",
@@ -721,11 +760,35 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-09-25T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Daytime Symptoms Quantified",
                         "code": "370202007",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-09-25T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Nighttime Symptoms Quantified",
                         "code": "370205009",
                         "code_system_name": "SNOMED CT"
@@ -792,7 +855,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -801,7 +864,16 @@
                         }
                     ]
                 },
-                "severity": "Mild"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -820,7 +892,16 @@
                     "code": "905148",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -846,7 +927,16 @@
                         }
                     ]
                 },
-                "severity": "Moderate to severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -863,6 +953,16 @@
                         "date": "2010-05-12T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -884,20 +984,16 @@
                     "name": "Asthma unspecified",
                     "code": "195979001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Asthma",
-                            "code": "J45",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Asthma, unspecified type, with (acute) exacerbation",
-                            "code": "493.92",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-05-12T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -921,20 +1017,16 @@
                     "name": "Essential hypertension",
                     "code": "59621000",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Essential (primary) hypertension",
-                            "code": "I10",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Unspecified essential hypertension",
-                            "code": "401.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-05-12T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -958,20 +1050,16 @@
                     "name": "Low back pain",
                     "code": "279039007",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Dorsalgia, unspecified",
-                            "code": "M54.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Lumbago",
-                            "code": "724.2",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-08-13T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -994,9 +1082,17 @@
                 "problem": {
                     "name": "Asthma causes daytime symptoms 1 to 2 times per month",
                     "code": "370202007",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-09-25T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1019,9 +1115,17 @@
                 "problem": {
                     "name": "Asthma causes night symptoms 1 to 2 times per month",
                     "code": "370205009",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-09-25T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1045,20 +1149,16 @@
                     "name": "Open-angle glaucoma",
                     "code": "84494001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Primary open-angle glaucoma, stage unspecified",
-                            "code": "H40.11X0",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Open-angle glaucoma, unspecified",
-                            "code": "365.10",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-09-30T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1179,7 +1279,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1194,7 +1294,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

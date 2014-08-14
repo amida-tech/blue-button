@@ -19,17 +19,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "12345"
+                    "extension": "12345"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-1234"
+                    "extension": "111-00-1234"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -64,7 +64,7 @@
                     "relation": "Grandfather",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "17 Daws Rd."
                             ],
                             "city": "Blue Bell",
@@ -102,7 +102,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2000-04-21T00:00:00Z",
                         "precision": "day"
                     }
@@ -121,7 +121,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2000-04-21T00:00:00Z",
                         "precision": "day"
                     }
@@ -148,7 +148,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2000-04-21T00:00:00Z",
                         "precision": "day"
                     }
@@ -158,14 +158,14 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "plan_of_care"
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD"
     ]

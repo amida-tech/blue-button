@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Never Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "2127 Maple Street"
                     ],
                     "city": "Anaheim",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "4817 Dogwood Lane"
                             ],
                             "city": "Tucson",
@@ -262,6 +262,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "NA"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -284,7 +287,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Antiasthmatic steroids + Albuterol 0.417 MG/ML Inhalant Solution  ",
+                    "unencoded_name": "Antiasthmatic steroids + Albuterol 0.417 MG/ML Inhalant Solution",
                     "product": {
                         "name": "Albuterol 0.417 MG/ML Inhalant Solution",
                         "code": "351136",
@@ -306,7 +309,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution",
                     "product": {
                         "name": "Albuterol 0.83 MG/ML Inhalant Solution",
                         "code": "630208",
@@ -328,7 +331,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "3rd generation cephalosporins + cefpodoxime 200 MG Oral Tablet  ",
+                    "unencoded_name": "3rd generation cephalosporins + cefpodoxime 200 MG Oral Tablet",
                     "product": {
                         "name": "cefpodoxime 200 MG Oral Tablet",
                         "code": "309078",
@@ -357,6 +360,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-01T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma",
                         "code": "195979001",
                         "code_system_name": "SNOMED CT",
@@ -374,16 +389,52 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-01T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Daytime Symptoms Quantified",
                         "code": "370202007",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-01T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Nighttime Symptoms Quantified",
                         "code": "370205009",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-01T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Cystic Fibrosis",
                         "code": "190905008",
                         "code_system_name": "SNOMED CT",
@@ -421,6 +472,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-08-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Persistent",
                         "code": "427295004",
                         "code_system_name": "SNOMED CT",
@@ -433,6 +496,18 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-08-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Pharyngitis",
                         "code": "363746003",
                         "code_system_name": "SNOMED CT",
@@ -470,11 +545,35 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-12-15T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Daytime Symptoms Quantified",
                         "code": "370202007",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-12-15T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Nighttime Symptoms Quantified",
                         "code": "370205009",
                         "code_system_name": "SNOMED CT"
@@ -498,7 +597,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -507,7 +606,16 @@
                         }
                     ]
                 },
-                "severity": "Mild to moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -526,7 +634,16 @@
                     "code": "905148",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "24484000",
+                        "name": "Severe"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -545,7 +662,16 @@
                     "code": "N0000006691",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Mild to moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -572,20 +698,16 @@
                     "name": "Asthma unspecified",
                     "code": "195979001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Asthma",
-                            "code": "J45",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Asthma, unspecified type, with (acute) exacerbation",
-                            "code": "493.92",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-01T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -608,9 +730,17 @@
                 "problem": {
                     "name": "Asthma causes daytime symptoms 1 to 2 times per month",
                     "code": "370202007",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-01T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -633,9 +763,17 @@
                 "problem": {
                     "name": "Asthma causes night symptoms 1 to 2 times per month",
                     "code": "370205009",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-01T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -659,20 +797,16 @@
                     "name": "Cystic fibrosis",
                     "code": "190905008",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Cystic fibrosis",
-                            "code": "E84",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Cystic fibrosis without mention of meconium ileus",
-                            "code": "277.00",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-01T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -696,15 +830,16 @@
                     "name": "Moderate persistent asthma",
                     "code": "427295004",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Moderate persistent asthma with status asthmaticus",
-                            "code": "J45.42",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-08-16T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -728,20 +863,16 @@
                     "name": "Acute pharyngitis",
                     "code": "363746003",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Acute pharyngitis",
-                            "code": "J02",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Acute pharyngitis",
-                            "code": "462",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-08-16T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -764,9 +895,17 @@
                 "problem": {
                     "name": "Asthma causes daytime symptoms 1 to 2 times per month",
                     "code": "370202007",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-12-15T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -789,9 +928,17 @@
                 "problem": {
                     "name": "Asthma causes night symptoms 1 to 2 times per month",
                     "code": "370205009",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-12-15T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -912,7 +1059,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -926,7 +1073,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

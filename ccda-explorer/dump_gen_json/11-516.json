@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "3405 Tennessee Avenue"
                     ],
                     "city": "Pontiac",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "4790 Bruce Street"
                             ],
                             "city": "Maryland Heights",
@@ -304,6 +304,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -354,6 +357,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": ">=40 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -390,6 +396,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "<130 mg/dL (calc)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -426,6 +435,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "125-200 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -462,6 +474,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -512,6 +527,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "3.6-5.1 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -562,6 +580,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -586,7 +607,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "2nd generation cephalosporins + Cefuroxime 250 MG Oral Tablet  ",
+                    "unencoded_name": "2nd generation cephalosporins + Cefuroxime 250 MG Oral Tablet",
                     "product": {
                         "name": "Cefuroxime 250 MG Oral Tablet",
                         "code": "309097",
@@ -608,7 +629,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Antidiabetic combinations + Glyburide 2.5 MG / Metformin hydrochloride 500 MG Oral Tablet  ",
+                    "unencoded_name": "Antidiabetic combinations + Glyburide 2.5 MG / Metformin hydrochloride 500 MG Oral Tablet",
                     "product": {
                         "name": "Glyburide 2.5 MG / Metformin hydrochloride 500 MG Oral Tablet",
                         "code": "861748",
@@ -630,7 +651,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Long acting inhaled beta 2 agonist + salmeterol 0.05 MG/ACTUAT Inhalant Powder  ",
+                    "unencoded_name": "Long acting inhaled beta 2 agonist + salmeterol 0.05 MG/ACTUAT Inhalant Powder",
                     "product": {
                         "name": "salmeterol 0.05 MG/ACTUAT Inhalant Powder",
                         "code": "318142",
@@ -652,7 +673,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution",
                     "product": {
                         "name": "Albuterol 0.83 MG/ML Inhalant Solution",
                         "code": "630208",
@@ -688,6 +709,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-06-23T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Aortic valve diseases",
                         "code": "72011007",
                         "code_system_name": "SNOMED CT",
@@ -705,16 +738,52 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-06-23T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Daytime Symptoms Quantified",
                         "code": "370202007",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-06-23T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Nighttime Symptoms Quantified",
                         "code": "370205009",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-06-23T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Diabetes",
                         "code": "44054006",
                         "code_system_name": "SNOMED CT",
@@ -732,6 +801,18 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-06-23T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Emphysema",
                         "code": "87433001",
                         "code_system_name": "SNOMED CT",
@@ -749,6 +830,18 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-06-23T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Progressive Neurologic Disorder",
                         "code": "230363006",
                         "code_system_name": "SNOMED CT"
@@ -797,7 +890,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -806,7 +899,16 @@
                         }
                     ]
                 },
-                "severity": "Mild"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -825,7 +927,16 @@
                     "code": "808917",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild to moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -851,7 +962,16 @@
                         }
                     ]
                 },
-                "severity": "Moderate to severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -868,6 +988,16 @@
                         "date": "2010-06-23T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -889,20 +1019,16 @@
                     "name": "Rheumatic aortic stenosis",
                     "code": "72011007",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Rheumatic aortic stenosis",
-                            "code": "I06.0",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Rheumatic aortic stenosis",
-                            "code": "395.0",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-06-23T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -925,9 +1051,17 @@
                 "problem": {
                     "name": "Asthma causes daytime symptoms 1 to 2 times per month",
                     "code": "370202007",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-06-23T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -950,9 +1084,17 @@
                 "problem": {
                     "name": "Asthma causes night symptoms 1 to 2 times per month",
                     "code": "370205009",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-06-23T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -976,20 +1118,16 @@
                     "name": "Diabetes mellitus type 2",
                     "code": "44054006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Type 2 diabetes mellitus without complications",
-                            "code": "E11.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
-                            "code": "250.00",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-06-23T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1013,20 +1151,16 @@
                     "name": "Pulmonary emphysema",
                     "code": "87433001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Emphysema",
-                            "code": "J43",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Other emphysema",
-                            "code": "492.8",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-06-23T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1049,9 +1183,17 @@
                 "problem": {
                     "name": "Progressive neuronal degeneration of childhood",
                     "code": "230363006",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-06-23T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1123,7 +1265,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1138,7 +1280,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

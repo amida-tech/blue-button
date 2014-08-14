@@ -18,17 +18,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.140.1.0.6.4",
-                    "identifier_type": "11"
+                    "extension": "11"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "643-00-5639"
+                    "extension": "643-00-5639"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "3456 West Palm",
                         "Apt. #34"
                     ],
@@ -69,7 +69,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "44-18"
+                        "extension": "44-18"
                     }
                 ],
                 "vital": {
@@ -91,7 +91,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "44-19"
+                        "extension": "44-19"
                     }
                 ],
                 "vital": {
@@ -113,7 +113,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "44-10"
+                        "extension": "44-10"
                     }
                 ],
                 "vital": {
@@ -135,7 +135,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "44-5"
+                        "extension": "44-5"
                     }
                 ],
                 "vital": {
@@ -157,7 +157,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "44-15"
+                        "extension": "44-15"
                     }
                 ],
                 "vital": {
@@ -179,7 +179,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "44-2"
+                        "extension": "44-2"
                     }
                 ],
                 "vital": {
@@ -201,7 +201,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "44-1"
+                        "extension": "44-1"
                     }
                 ],
                 "vital": {
@@ -223,7 +223,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "44-8"
+                        "extension": "44-8"
                     }
                 ],
                 "vital": {
@@ -245,7 +245,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "44-9"
+                        "extension": "44-9"
                     }
                 ],
                 "vital": {
@@ -267,7 +267,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "43-18"
+                        "extension": "43-18"
                     }
                 ],
                 "vital": {
@@ -289,7 +289,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "43-19"
+                        "extension": "43-19"
                     }
                 ],
                 "vital": {
@@ -311,7 +311,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "43-10"
+                        "extension": "43-10"
                     }
                 ],
                 "vital": {
@@ -333,7 +333,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "43-5"
+                        "extension": "43-5"
                     }
                 ],
                 "vital": {
@@ -355,7 +355,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "43-15"
+                        "extension": "43-15"
                     }
                 ],
                 "vital": {
@@ -377,7 +377,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "43-2"
+                        "extension": "43-2"
                     }
                 ],
                 "vital": {
@@ -399,7 +399,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "43-1"
+                        "extension": "43-1"
                     }
                 ],
                 "vital": {
@@ -421,7 +421,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "43-8"
+                        "extension": "43-8"
                     }
                 ],
                 "vital": {
@@ -443,7 +443,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "43-9"
+                        "extension": "43-9"
                     }
                 ],
                 "vital": {
@@ -465,7 +465,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "42-18"
+                        "extension": "42-18"
                     }
                 ],
                 "vital": {
@@ -487,7 +487,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "42-19"
+                        "extension": "42-19"
                     }
                 ],
                 "vital": {
@@ -509,7 +509,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "42-10"
+                        "extension": "42-10"
                     }
                 ],
                 "vital": {
@@ -531,7 +531,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "42-5"
+                        "extension": "42-5"
                     }
                 ],
                 "vital": {
@@ -553,7 +553,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "42-15"
+                        "extension": "42-15"
                     }
                 ],
                 "vital": {
@@ -575,7 +575,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "42-2"
+                        "extension": "42-2"
                     }
                 ],
                 "vital": {
@@ -597,7 +597,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "42-1"
+                        "extension": "42-1"
                     }
                 ],
                 "vital": {
@@ -619,7 +619,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "42-8"
+                        "extension": "42-8"
                     }
                 ],
                 "vital": {
@@ -641,7 +641,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.14.1",
-                        "identifier_type": "42-9"
+                        "extension": "42-9"
                     }
                 ],
                 "vital": {
@@ -665,7 +665,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.1",
-                        "identifier_type": "497"
+                        "extension": "497"
                     }
                 ],
                 "result_set": {
@@ -684,7 +684,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-1"
+                                "extension": "497-1"
                             }
                         ],
                         "result": {
@@ -699,6 +699,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(3.8-10.8)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -709,7 +712,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-2"
+                                "extension": "497-2"
                             }
                         ],
                         "result": {
@@ -724,6 +727,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(3.80-5.10)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -734,7 +740,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-4"
+                                "extension": "497-4"
                             }
                         ],
                         "result": {
@@ -749,6 +755,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(11.7-15.5)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -759,7 +768,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-5"
+                                "extension": "497-5"
                             }
                         ],
                         "result": {
@@ -774,6 +783,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(35.0-45.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -784,7 +796,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-3"
+                                "extension": "497-3"
                             }
                         ],
                         "result": {
@@ -799,6 +811,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(.0-100.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -809,7 +824,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-7"
+                                "extension": "497-7"
                             }
                         ],
                         "result": {
@@ -824,6 +839,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(27.0-33.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -834,7 +852,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-6"
+                                "extension": "497-6"
                             }
                         ],
                         "result": {
@@ -849,6 +867,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(32.0-36.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -859,7 +880,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-8"
+                                "extension": "497-8"
                             }
                         ],
                         "result": {
@@ -884,7 +905,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-9"
+                                "extension": "497-9"
                             }
                         ],
                         "result": {
@@ -909,7 +930,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-10"
+                                "extension": "497-10"
                             }
                         ],
                         "result": {
@@ -934,7 +955,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-13"
+                                "extension": "497-13"
                             }
                         ],
                         "result": {
@@ -959,7 +980,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-11"
+                                "extension": "497-11"
                             }
                         ],
                         "result": {
@@ -984,7 +1005,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-12"
+                                "extension": "497-12"
                             }
                         ],
                         "result": {
@@ -999,6 +1020,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(140-400)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1009,7 +1033,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-14"
+                                "extension": "497-14"
                             }
                         ],
                         "result": {
@@ -1024,6 +1048,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(1500-7800)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1034,7 +1061,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-15"
+                                "extension": "497-15"
                             }
                         ],
                         "result": {
@@ -1049,6 +1076,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(850-3900)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1059,7 +1089,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-16"
+                                "extension": "497-16"
                             }
                         ],
                         "result": {
@@ -1074,6 +1104,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(200-950)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1084,7 +1117,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-17"
+                                "extension": "497-17"
                             }
                         ],
                         "result": {
@@ -1099,6 +1132,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(15-500)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1109,7 +1145,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-18"
+                                "extension": "497-18"
                             }
                         ],
                         "result": {
@@ -1124,6 +1160,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0-200)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1134,7 +1173,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "497-19"
+                                "extension": "497-19"
                             }
                         ],
                         "result": {
@@ -1149,6 +1188,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(11.0-15.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1161,7 +1203,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.1",
-                        "identifier_type": "178"
+                        "extension": "178"
                     }
                 ],
                 "result_set": {
@@ -1180,7 +1222,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-1"
+                                "extension": "178-1"
                             }
                         ],
                         "result": {
@@ -1195,6 +1237,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(4.0-10.5)"
+                        },
                         "value": 5.3,
                         "unit": "X_10-3/uL"
                     },
@@ -1202,7 +1247,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-2"
+                                "extension": "178-2"
                             }
                         ],
                         "result": {
@@ -1217,6 +1262,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(3.80-5.10)"
+                        },
                         "value": 3.86,
                         "unit": "X_10-6/uL"
                     },
@@ -1224,7 +1272,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-3"
+                                "extension": "178-3"
                             }
                         ],
                         "result": {
@@ -1239,6 +1287,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(11.5-15.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1249,7 +1300,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-4"
+                                "extension": "178-4"
                             }
                         ],
                         "result": {
@@ -1264,6 +1315,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(34.0-44.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1274,7 +1328,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-5"
+                                "extension": "178-5"
                             }
                         ],
                         "result": {
@@ -1289,6 +1343,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(80-98)"
+                        },
                         "value": 86,
                         "unit": "fL"
                     },
@@ -1296,7 +1353,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-6"
+                                "extension": "178-6"
                             }
                         ],
                         "result": {
@@ -1311,6 +1368,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(27.0-34.0)"
+                        },
                         "value": 28.6,
                         "unit": "pg"
                     },
@@ -1318,7 +1378,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-7"
+                                "extension": "178-7"
                             }
                         ],
                         "result": {
@@ -1333,6 +1393,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(32.0-36.0)"
+                        },
                         "value": 33.2,
                         "unit": "g/dL"
                     },
@@ -1340,7 +1403,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-10"
+                                "extension": "178-10"
                             }
                         ],
                         "result": {
@@ -1355,6 +1418,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(40-74)"
+                        },
                         "value": 57,
                         "unit": "%"
                     },
@@ -1362,7 +1428,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-11"
+                                "extension": "178-11"
                             }
                         ],
                         "result": {
@@ -1377,6 +1443,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(14-46)"
+                        },
                         "value": 29,
                         "unit": "%"
                     },
@@ -1384,7 +1453,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-12"
+                                "extension": "178-12"
                             }
                         ],
                         "result": {
@@ -1399,6 +1468,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(4-13)"
+                        },
                         "value": 11,
                         "unit": "%"
                     },
@@ -1406,7 +1478,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-13"
+                                "extension": "178-13"
                             }
                         ],
                         "result": {
@@ -1421,6 +1493,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0-7)"
+                        },
                         "value": 3,
                         "unit": "%"
                     },
@@ -1428,7 +1503,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-14"
+                                "extension": "178-14"
                             }
                         ],
                         "result": {
@@ -1443,6 +1518,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0-3)"
+                        },
                         "value": 0,
                         "unit": "%"
                     },
@@ -1450,7 +1528,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-9"
+                                "extension": "178-9"
                             }
                         ],
                         "result": {
@@ -1465,6 +1543,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(140-415)"
+                        },
                         "value": 258,
                         "unit": "X_10-3/uL"
                     },
@@ -1472,7 +1553,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-20"
+                                "extension": "178-20"
                             }
                         ],
                         "result": {
@@ -1492,7 +1573,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-15"
+                                "extension": "178-15"
                             }
                         ],
                         "result": {
@@ -1507,6 +1588,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(1.8-7.8)"
+                        },
                         "value": 3,
                         "unit": "X_10-3/uL"
                     },
@@ -1514,7 +1598,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-16"
+                                "extension": "178-16"
                             }
                         ],
                         "result": {
@@ -1529,6 +1613,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0.7-4.5)"
+                        },
                         "value": 1.5,
                         "unit": "X_10-3/uL"
                     },
@@ -1536,7 +1623,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-17"
+                                "extension": "178-17"
                             }
                         ],
                         "result": {
@@ -1551,6 +1638,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0.1-1.0)"
+                        },
                         "value": 0.6,
                         "unit": "X_10-3/uL"
                     },
@@ -1558,7 +1648,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-18"
+                                "extension": "178-18"
                             }
                         ],
                         "result": {
@@ -1573,6 +1663,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0.0-0.4)"
+                        },
                         "value": 0.2,
                         "unit": "X_10-3/uL"
                     },
@@ -1580,7 +1673,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-19"
+                                "extension": "178-19"
                             }
                         ],
                         "result": {
@@ -1595,6 +1688,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0.0-0.2)"
+                        },
                         "value": 0,
                         "unit": "X_10-3/uL"
                     },
@@ -1602,7 +1698,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "178-8"
+                                "extension": "178-8"
                             }
                         ],
                         "result": {
@@ -1617,6 +1713,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(11.7-15.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1629,7 +1728,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.1",
-                        "identifier_type": "179"
+                        "extension": "179"
                     }
                 ],
                 "result_set": {
@@ -1648,7 +1747,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-10"
+                                "extension": "179-10"
                             }
                         ],
                         "result": {
@@ -1663,6 +1762,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(100-199)"
+                        },
                         "interpretations": [
                             "High"
                         ],
@@ -1673,7 +1775,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-1"
+                                "extension": "179-1"
                             }
                         ],
                         "result": {
@@ -1688,6 +1790,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(6.0-8.5)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1698,7 +1803,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-2"
+                                "extension": "179-2"
                             }
                         ],
                         "result": {
@@ -1713,6 +1818,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(3.6-4.8)"
+                        },
                         "value": 3.7,
                         "unit": "g/dL"
                     },
@@ -1720,7 +1828,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-3"
+                                "extension": "179-3"
                             }
                         ],
                         "result": {
@@ -1735,6 +1843,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0.1-1.2)"
+                        },
                         "value": 0.8,
                         "unit": "mg/dL"
                     },
@@ -1742,7 +1853,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-5"
+                                "extension": "179-5"
                             }
                         ],
                         "result": {
@@ -1757,6 +1868,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(25-165)"
+                        },
                         "value": 142,
                         "unit": "IU/L"
                     },
@@ -1764,7 +1878,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-6"
+                                "extension": "179-6"
                             }
                         ],
                         "result": {
@@ -1779,6 +1893,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(100-250)"
+                        },
                         "value": 108,
                         "unit": "IU/L"
                     },
@@ -1786,7 +1903,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-7"
+                                "extension": "179-7"
                             }
                         ],
                         "result": {
@@ -1801,6 +1918,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0-40)"
+                        },
                         "value": 27,
                         "unit": "IU/L"
                     },
@@ -1808,7 +1928,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-4"
+                                "extension": "179-4"
                             }
                         ],
                         "result": {
@@ -1823,6 +1943,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0.00-0.40)"
+                        },
                         "value": 0.31,
                         "unit": "mg/dL"
                     },
@@ -1830,7 +1953,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-8"
+                                "extension": "179-8"
                             }
                         ],
                         "result": {
@@ -1845,6 +1968,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0-40)"
+                        },
                         "value": 23,
                         "unit": "IU/L"
                     },
@@ -1852,7 +1978,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "179-9"
+                                "extension": "179-9"
                             }
                         ],
                         "result": {
@@ -1867,6 +1993,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0-60)"
+                        },
                         "value": 36,
                         "unit": "IU/L"
                     }
@@ -1876,7 +2005,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.1",
-                        "identifier_type": "160"
+                        "extension": "160"
                     }
                 ],
                 "result_set": {
@@ -1895,7 +2024,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "160-2"
+                                "extension": "160-2"
                             }
                         ],
                         "result": {
@@ -1910,6 +2039,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(4.5-12.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1920,7 +2052,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "160-3"
+                                "extension": "160-3"
                             }
                         ],
                         "result": {
@@ -1935,6 +2067,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(24-39)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1945,7 +2080,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "160-4"
+                                "extension": "160-4"
                             }
                         ],
                         "result": {
@@ -1960,6 +2095,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(1.2-4.9)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1970,7 +2108,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "160-1"
+                                "extension": "160-1"
                             }
                         ],
                         "result": {
@@ -1985,6 +2123,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0.35-5.50)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -1997,7 +2138,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.1",
-                        "identifier_type": "161"
+                        "extension": "161"
                     }
                 ],
                 "result_set": {
@@ -2016,7 +2157,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "161-2"
+                                "extension": "161-2"
                             }
                         ],
                         "result": {
@@ -2031,6 +2172,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(3.5-5.5)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2041,7 +2185,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "161-1"
+                                "extension": "161-1"
                             }
                         ],
                         "result": {
@@ -2056,6 +2200,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(135-148)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2066,7 +2213,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "161-3"
+                                "extension": "161-3"
                             }
                         ],
                         "result": {
@@ -2081,6 +2228,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(96-109)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2093,7 +2243,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.1",
-                        "identifier_type": "162"
+                        "extension": "162"
                     }
                 ],
                 "result_set": {
@@ -2112,7 +2262,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "162-1"
+                                "extension": "162-1"
                             }
                         ],
                         "result": {
@@ -2127,6 +2277,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(Non-Reactive)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2137,7 +2290,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.1",
-                        "identifier_type": "493"
+                        "extension": "493"
                     }
                 ],
                 "result_set": {
@@ -2156,7 +2309,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-1"
+                                "extension": "493-1"
                             }
                         ],
                         "result": {
@@ -2171,6 +2324,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(3.8-10.8)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2181,7 +2337,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-2"
+                                "extension": "493-2"
                             }
                         ],
                         "result": {
@@ -2196,6 +2352,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(3.80-5.10)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2206,7 +2365,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-4"
+                                "extension": "493-4"
                             }
                         ],
                         "result": {
@@ -2221,6 +2380,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(11.7-15.5)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2231,7 +2393,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-5"
+                                "extension": "493-5"
                             }
                         ],
                         "result": {
@@ -2246,6 +2408,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(35.0-45.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2256,7 +2421,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-3"
+                                "extension": "493-3"
                             }
                         ],
                         "result": {
@@ -2271,6 +2436,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(.0-100.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2281,7 +2449,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-6"
+                                "extension": "493-6"
                             }
                         ],
                         "result": {
@@ -2296,6 +2464,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(27.0-33.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2306,7 +2477,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-7"
+                                "extension": "493-7"
                             }
                         ],
                         "result": {
@@ -2321,6 +2492,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(32.0-36.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2331,7 +2505,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-9"
+                                "extension": "493-9"
                             }
                         ],
                         "result": {
@@ -2356,7 +2530,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-8"
+                                "extension": "493-8"
                             }
                         ],
                         "result": {
@@ -2381,7 +2555,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-10"
+                                "extension": "493-10"
                             }
                         ],
                         "result": {
@@ -2406,7 +2580,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-11"
+                                "extension": "493-11"
                             }
                         ],
                         "result": {
@@ -2431,7 +2605,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-12"
+                                "extension": "493-12"
                             }
                         ],
                         "result": {
@@ -2456,7 +2630,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-13"
+                                "extension": "493-13"
                             }
                         ],
                         "result": {
@@ -2471,6 +2645,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(140-400)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2481,7 +2658,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-14"
+                                "extension": "493-14"
                             }
                         ],
                         "result": {
@@ -2496,6 +2673,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(1500-7800)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2506,7 +2686,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-15"
+                                "extension": "493-15"
                             }
                         ],
                         "result": {
@@ -2521,6 +2701,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(850-3900)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2531,7 +2714,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-16"
+                                "extension": "493-16"
                             }
                         ],
                         "result": {
@@ -2546,6 +2729,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(200-950)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2556,7 +2742,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-17"
+                                "extension": "493-17"
                             }
                         ],
                         "result": {
@@ -2571,6 +2757,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(15-500)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2581,7 +2770,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-18"
+                                "extension": "493-18"
                             }
                         ],
                         "result": {
@@ -2596,6 +2785,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(0-200)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2606,7 +2798,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "493-19"
+                                "extension": "493-19"
                             }
                         ],
                         "result": {
@@ -2621,6 +2813,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(11.0-15.0)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2633,7 +2828,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.1",
-                        "identifier_type": "308"
+                        "extension": "308"
                     }
                 ],
                 "result_set": {
@@ -2652,7 +2847,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "308-1"
+                                "extension": "308-1"
                             }
                         ],
                         "result": {
@@ -2667,6 +2862,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(37-47)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2677,7 +2875,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "308-2"
+                                "extension": "308-2"
                             }
                         ],
                         "result": {
@@ -2692,6 +2890,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(40-54)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2704,7 +2905,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.1",
-                        "identifier_type": "309"
+                        "extension": "309"
                     }
                 ],
                 "result_set": {
@@ -2723,7 +2924,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-1"
+                                "extension": "309-1"
                             }
                         ],
                         "result": {
@@ -2738,6 +2939,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(Clear-Mod Cloud)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2746,7 +2950,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-2"
+                                "extension": "309-2"
                             }
                         ],
                         "result": {
@@ -2761,6 +2965,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(Negative-Small)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2769,7 +2976,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-3"
+                                "extension": "309-3"
                             }
                         ],
                         "result": {
@@ -2784,6 +2991,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(Negative)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2792,7 +3002,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-4"
+                                "extension": "309-4"
                             }
                         ],
                         "result": {
@@ -2807,6 +3017,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(None-Yellow)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2815,7 +3028,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-5"
+                                "extension": "309-5"
                             }
                         ],
                         "result": {
@@ -2830,6 +3043,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(Negative-250)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2838,7 +3054,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-6"
+                                "extension": "309-6"
                             }
                         ],
                         "result": {
@@ -2853,6 +3069,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(1.000-1.010)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2863,7 +3082,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-7"
+                                "extension": "309-7"
                             }
                         ],
                         "result": {
@@ -2878,6 +3097,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(Negative-Trace)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2886,7 +3108,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-8"
+                                "extension": "309-8"
                             }
                         ],
                         "result": {
@@ -2901,6 +3123,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(Negative-Trace)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2909,7 +3134,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-9"
+                                "extension": "309-9"
                             }
                         ],
                         "result": {
@@ -2924,6 +3149,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(Negative)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2932,7 +3160,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-10"
+                                "extension": "309-10"
                             }
                         ],
                         "result": {
@@ -2947,6 +3175,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(5.0-6.5)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -2957,7 +3188,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.15.2",
-                                "identifier_type": "309-11"
+                                "extension": "309-11"
                             }
                         ],
                         "result": {
@@ -2972,6 +3203,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "(Negative)"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -2984,7 +3218,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9801090"
+                        "extension": "9801090"
                     }
                 ],
                 "status": "Prescribed",
@@ -3007,17 +3241,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "45"
+                    "quantity": "45",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2010-02-23T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "521c6b8b-5854-4ae1-a1a8-f3d06d7d4e65"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123462"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3469 Altamonte Springs Terrace"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "245",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123462"
+                                }
+                            ],
+                            "name": [
+                                "Altamonte Medical Center Pharmacy"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3469 Altamonte Springs Terrace"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "245",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-7782",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9801291"
+                        "extension": "9801291"
                     }
                 ],
                 "status": "Prescribed",
@@ -3040,17 +3348,89 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "3",
-                    "quantity": "2"
+                    "quantity": "2",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2012-01-13T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "4027e4ad-ec47-4883-915d-a000e45a1105"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "7700063"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "123 Test Street"
+                            ],
+                            "city": "Twinsburg",
+                            "state": "OH",
+                            "zip": "44087"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "7700063"
+                                }
+                            ],
+                            "name": [
+                                "SelfTest NEWRX in REFREQ out"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "123 Test Street"
+                                    ],
+                                    "city": "Twinsburg",
+                                    "state": "OH",
+                                    "zip": "44087"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-888-555-1212",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9801290"
+                        "extension": "9801290"
                     }
                 ],
                 "status": "Prescribed",
@@ -3073,17 +3453,89 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "3",
-                    "quantity": "2"
+                    "quantity": "2",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2012-01-13T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "e6874797-cb2e-4972-9db3-41809c30b5d7"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "7700063"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "123 Test Street"
+                            ],
+                            "city": "Twinsburg",
+                            "state": "OH",
+                            "zip": "44087"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "7700063"
+                                }
+                            ],
+                            "name": [
+                                "SelfTest NEWRX in REFREQ out"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "123 Test Street"
+                                    ],
+                                    "city": "Twinsburg",
+                                    "state": "OH",
+                                    "zip": "44087"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-888-555-1212",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9801078"
+                        "extension": "9801078"
                     }
                 ],
                 "status": "Prescribed",
@@ -3106,17 +3558,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "3",
-                    "quantity": "1"
+                    "quantity": "1",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2010-02-16T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "7c160703-ff41-4b21-8971-de54bba99cb3"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123460"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "1191 Main Street"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95654",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123460"
+                                }
+                            ],
+                            "name": [
+                                "Sunshine Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "1191 Main Street"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95654",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-6564",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9801026"
+                        "extension": "9801026"
                     }
                 ],
                 "status": "Prescribed",
@@ -3139,7 +3665,29 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "10"
+                    "quantity": "10",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2009-11-02T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
@@ -3149,7 +3697,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9800586"
+                        "extension": "9800586"
                     }
                 ],
                 "status": "Prescribed",
@@ -3172,17 +3720,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "60"
+                    "quantity": "60",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2008-01-08T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "4f499a10-f9f6-43d0-8672-140bc99d8897"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123459"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3170 NW Virginia Place"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95655",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123459"
+                                }
+                            ],
+                            "name": [
+                                "Evan's Discount Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3170 NW Virginia Place"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95655",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-0118",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9800585"
+                        "extension": "9800585"
                     }
                 ],
                 "status": "Prescribed",
@@ -3205,17 +3827,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "2",
-                    "quantity": "120"
+                    "quantity": "120",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2008-01-08T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "56b000e3-40dd-4fc7-81e9-35e8abe4da87"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123459"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3170 NW Virginia Place"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95655",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123459"
+                                }
+                            ],
+                            "name": [
+                                "Evan's Discount Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3170 NW Virginia Place"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95655",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-0118",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9800584"
+                        "extension": "9800584"
                     }
                 ],
                 "status": "Prescribed",
@@ -3238,17 +3934,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "2",
-                    "quantity": "120"
+                    "quantity": "120",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2008-01-08T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "82141772-3c04-474a-9661-af73dfece66c"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123459"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3170 NW Virginia Place"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95655",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123459"
+                                }
+                            ],
+                            "name": [
+                                "Evan's Discount Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3170 NW Virginia Place"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95655",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-0118",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9800579"
+                        "extension": "9800579"
                     }
                 ],
                 "status": "Prescribed",
@@ -3276,17 +4046,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "30"
+                    "quantity": "30",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2008-01-03T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "42"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "T"
+                            ],
+                            "last": "Monroe",
+                            "suffix": "MD",
+                            "first": "James"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "c33cab07-0319-4a4b-a02a-f070c492070d"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123459"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3170 NW Virginia Place"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95655",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123459"
+                                }
+                            ],
+                            "name": [
+                                "Evan's Discount Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3170 NW Virginia Place"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95655",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-0118",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "1093905"
+                        "extension": "1093905"
                     }
                 ],
                 "status": "Prescribed",
@@ -3314,17 +4158,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "30"
+                    "quantity": "30",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2007-11-02T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "2246419a-4439-4294-a3ae-cc89e4a89592"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123459"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3170 NW Virginia Place"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95655",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123459"
+                                }
+                            ],
+                            "name": [
+                                "Evan's Discount Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3170 NW Virginia Place"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95655",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-0118",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "1093904"
+                        "extension": "1093904"
                     }
                 ],
                 "status": "Prescribed",
@@ -3352,17 +4270,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "15"
+                    "quantity": "15",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2007-11-02T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "5a13ddb0-23b5-4fe9-aaa0-17545974958d"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123459"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3170 NW Virginia Place"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95655",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123459"
+                                }
+                            ],
+                            "name": [
+                                "Evan's Discount Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3170 NW Virginia Place"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95655",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-0118",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "1093902"
+                        "extension": "1093902"
                     }
                 ],
                 "status": "Prescribed",
@@ -3390,17 +4382,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "15"
+                    "quantity": "15",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2007-10-05T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "23ccf81e-b86d-4141-8fad-1d7eb4a6da6b"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123459"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3170 NW Virginia Place"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95655",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123459"
+                                }
+                            ],
+                            "name": [
+                                "Evan's Discount Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3170 NW Virginia Place"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95655",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-0118",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "1093903"
+                        "extension": "1093903"
                     }
                 ],
                 "status": "Prescribed",
@@ -3423,7 +4489,29 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "3",
-                    "quantity": "30"
+                    "quantity": "30",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2007-10-05T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
@@ -3433,7 +4521,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "1093901"
+                        "extension": "1093901"
                     }
                 ],
                 "status": "Prescribed",
@@ -3461,7 +4549,29 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "15"
+                    "quantity": "15",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2007-09-03T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
@@ -3471,7 +4581,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9800706"
+                        "extension": "9800706"
                     }
                 ],
                 "status": "Prescribed",
@@ -3499,17 +4609,91 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "30"
+                    "quantity": "30",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2007-09-03T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "42"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "T"
+                            ],
+                            "last": "Monroe",
+                            "suffix": "MD",
+                            "first": "James"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "7e94b013-75d8-45c4-bb35-44abb0c2e58c"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123459"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3170 NW Virginia Place"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95655",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123459"
+                                }
+                            ],
+                            "name": [
+                                "Evan's Discount Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3170 NW Virginia Place"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95655",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-0118",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             {
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.8",
-                        "identifier_type": "9800814"
+                        "extension": "9800814"
                     }
                 ],
                 "status": "Prescribed",
@@ -3537,10 +4721,84 @@
                 "supply": {
                     "date_time": {},
                     "repeatNumber": "1",
-                    "quantity": "30"
+                    "quantity": "30",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2007-02-01T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6.3",
+                                "extension": "36"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "E"
+                            ],
+                            "last": "Ford",
+                            "suffix": "MD",
+                            "first": "David"
+                        }
+                    }
                 },
                 "administration": {
                     "interval": {}
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "b1d5ba1e-7214-4dfa-b6e7-4fa610f67d72"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.79",
+                                "extension": "3123459"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "3170 NW Virginia Place"
+                            ],
+                            "city": "Madison",
+                            "state": "CA",
+                            "zip": "95655",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.3.79",
+                                    "extension": "3123459"
+                                }
+                            ],
+                            "name": [
+                                "Evan's Discount Drugs"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "3170 NW Virginia Place"
+                                    ],
+                                    "city": "Madison",
+                                    "state": "CA",
+                                    "zip": "95655",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "+1-916-555-0118",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    }
                 }
             }
         ],
@@ -3554,7 +4812,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "780"
+                        "extension": "780"
                     }
                 ],
                 "date_time": {
@@ -3573,7 +4831,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "596"
+                        "extension": "596"
                     }
                 ],
                 "date_time": {
@@ -3592,7 +4850,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "592"
+                        "extension": "592"
                     }
                 ],
                 "date_time": {
@@ -3611,7 +4869,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "511"
+                        "extension": "511"
                     }
                 ],
                 "date_time": {
@@ -3630,7 +4888,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "115"
+                        "extension": "115"
                     }
                 ],
                 "date_time": {
@@ -3649,7 +4907,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "34 Sycamore Street, Suite 3"
                                 ],
                                 "city": "Gainesville",
@@ -3676,7 +4934,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "130"
+                        "extension": "130"
                     }
                 ],
                 "date_time": {
@@ -3705,7 +4963,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "289"
+                        "extension": "289"
                     }
                 ],
                 "date_time": {
@@ -3724,7 +4982,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "34 Sycamore Street, Suite 3"
                                 ],
                                 "city": "Gainesville",
@@ -3751,7 +5009,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "415"
+                        "extension": "415"
                     }
                 ],
                 "date_time": {
@@ -3770,7 +5028,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "34 Sycamore Street, Suite 3"
                                 ],
                                 "city": "Gainesville",
@@ -3797,7 +5055,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "112"
+                        "extension": "112"
                     }
                 ],
                 "date_time": {
@@ -3816,7 +5074,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "34 Sycamore Street, Suite 3"
                                 ],
                                 "city": "Gainesville",
@@ -3843,7 +5101,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "30"
+                        "extension": "30"
                     }
                 ],
                 "date_time": {
@@ -3862,7 +5120,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "34 Sycamore Street, Suite 3"
                                 ],
                                 "city": "Gainesville",
@@ -3889,7 +5147,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "21"
+                        "extension": "21"
                     }
                 ],
                 "date_time": {
@@ -3908,7 +5166,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "34 Sycamore Street, Suite 3"
                                 ],
                                 "city": "Gainesville",
@@ -3935,7 +5193,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "20"
+                        "extension": "20"
                     }
                 ],
                 "date_time": {
@@ -3954,7 +5212,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "34 Sycamore Street, Suite 3"
                                 ],
                                 "city": "Gainesville",
@@ -3981,7 +5239,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
-                        "identifier_type": "126"
+                        "extension": "126"
                     }
                 ],
                 "date_time": {
@@ -4018,11 +5276,26 @@
                 "allergen": {
                     "name": "Ragweed",
                     "code": "Unknown",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9"
+                    "code_system_name": "UNII"
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "1970-02-04T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "419199007",
+                    "name": "Allergy to substance",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Itchy eyes and nasal congestion",
                             "code": "NI",
@@ -4047,11 +5320,26 @@
                 "allergen": {
                     "name": "Latex",
                     "code": "Unknown",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9"
+                    "code_system_name": "UNII"
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2002-03-07T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "419199007",
+                    "name": "Allergy to substance",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Skin Rashes/Hives",
                             "code": "64144002",
@@ -4085,9 +5373,24 @@
                         }
                     ]
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2007-09-05T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "59037007",
+                    "name": "Drug intolerance",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Nausea/Vomiting/Diarrhea",
                             "code": "2919008",
@@ -4112,11 +5415,26 @@
                 "allergen": {
                     "name": "Cheese",
                     "code": "Unknown",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9"
+                    "code_system_name": "UNII"
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2002-03-07T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "419199007",
+                    "name": "Allergy to substance",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Nausea/Vomiting/Diarrhea",
                             "code": "2919008",
@@ -4141,11 +5459,26 @@
                 "allergen": {
                     "name": "Birds",
                     "code": "Unknown",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9"
+                    "code_system_name": "UNII"
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2009-11-05T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "419199007",
+                    "name": "Allergy to substance",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Skin Rashes/Hives",
                             "code": "64144002",
@@ -4153,6 +5486,7 @@
                         }
                     },
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Nausea/Vomiting/Diarrhea",
                             "code": "2919008",
@@ -4174,7 +5508,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.13",
-                        "identifier_type": "22"
+                        "extension": "22"
                     }
                 ],
                 "status": "complete",
@@ -4198,7 +5532,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "9990058700"
+                            "extension": "9990058700"
                         }
                     ],
                     "name": [
@@ -4213,7 +5547,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "87 Bayshore Drive"
                             ],
                             "city": "Madison",
@@ -4233,7 +5567,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.140.1.0.6",
-                                    "identifier_type": "MMC"
+                                    "extension": "MMC"
                                 }
                             ],
                             "name": [
@@ -4241,7 +5575,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "99 Sycamore Street",
                                         "Suite 3"
                                     ],
@@ -4263,22 +5597,67 @@
                             ]
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "Immunization Registry comment",
+                        "code": "48767-8",
+                        "code_system_name": "LOINC"
+                    }
                 }
             }
         ],
         "social_history": [
             {
-                "date_time": {}
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.140.1.0.6.10.19",
+                        "extension": "81953"
+                    }
+                ],
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             },
             {
-                "date_time": {}
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.140.1.0.6.10.19",
+                        "extension": "81955"
+                    }
+                ],
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             },
             {
-                "date_time": {}
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.140.1.0.6.10.19",
+                        "extension": "81954"
+                    }
+                ],
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             },
             {
                 "value": "Unknown if ever smoked",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             }
         ],
         "problems": [
@@ -4299,19 +5678,20 @@
                     "name": "Problem",
                     "code": "55607006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "COMN MIGRNE WO NTRC MGRN",
-                            "code": "346.10",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2002-12-02T00:00:00Z",
+                            "precision": "day"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.7",
-                        "identifier_type": "3685"
+                        "extension": "3685"
                     }
                 ]
             }
@@ -4326,7 +5706,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.17.2",
-                        "identifier_type": "94"
+                        "extension": "94"
                     }
                 ],
                 "status": "Completed",
@@ -4336,21 +5716,33 @@
                         "precision": "day"
                     }
                 },
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "11554 Weedside Lane"
-                            ],
-                            "city": "Madison",
-                            "state": "CA",
-                            "zip": "95653",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.4.6",
-                                "identifier_type": "9080089000"
+                                "extension": "9080089000"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "T"
+                                ],
+                                "last": "Monroe",
+                                "suffix": "MD",
+                                "first": "James"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "11554 Weedside Lane"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -4359,31 +5751,37 @@
                                 "type": "work place"
                             }
                         ],
-                        "organization": {
-                            "name": "Madison Medical Center P. A.",
-                            "address": {
-                                "streetLines": [
-                                    "99 Sycamore Street",
-                                    "Suite 3"
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
                                 ],
-                                "city": "Gainesville",
-                                "state": "FL",
-                                "zip": "32608",
-                                "country": "US"
-                            },
-                            "identifiers": [
-                                {
-                                    "identifier": "2.16.840.1.113883.3.140.1.0.6",
-                                    "identifier_type": "MMC"
-                                }
-                            ],
-                            "phone": [
-                                {
-                                    "number": "+1-916-555-7654",
-                                    "type": "work place"
-                                }
-                            ]
-                        }
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -4396,7 +5794,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "34 Sycamore Street, Suite 3"
                                 ],
                                 "city": "Gainesville",
@@ -4424,7 +5822,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.17.2",
-                        "identifier_type": "95"
+                        "extension": "95"
                     }
                 ],
                 "status": "Completed",
@@ -4434,21 +5832,33 @@
                         "precision": "day"
                     }
                 },
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "11554 Weedside Lane"
-                            ],
-                            "city": "Madison",
-                            "state": "CA",
-                            "zip": "95653",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.4.6",
-                                "identifier_type": "9080089000"
+                                "extension": "9080089000"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "T"
+                                ],
+                                "last": "Monroe",
+                                "suffix": "MD",
+                                "first": "James"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "11554 Weedside Lane"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -4457,31 +5867,37 @@
                                 "type": "work place"
                             }
                         ],
-                        "organization": {
-                            "name": "Madison Medical Center P. A.",
-                            "address": {
-                                "streetLines": [
-                                    "99 Sycamore Street",
-                                    "Suite 3"
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
                                 ],
-                                "city": "Gainesville",
-                                "state": "FL",
-                                "zip": "32608",
-                                "country": "US"
-                            },
-                            "identifiers": [
-                                {
-                                    "identifier": "2.16.840.1.113883.3.140.1.0.6",
-                                    "identifier_type": "MMC"
-                                }
-                            ],
-                            "phone": [
-                                {
-                                    "number": "+1-916-555-7654",
-                                    "type": "work place"
-                                }
-                            ]
-                        }
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -4494,7 +5910,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "34 Sycamore Street, Suite 3"
                                 ],
                                 "city": "Gainesville",
@@ -4522,7 +5938,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.19",
-                        "identifier_type": "81957"
+                        "extension": "81957"
                     }
                 ],
                 "status": "Completed",
@@ -4542,7 +5958,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.19",
-                        "identifier_type": "81956"
+                        "extension": "81956"
                     }
                 ],
                 "status": "Completed",
@@ -4560,7 +5976,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.21",
-                        "identifier_type": "2"
+                        "extension": "2"
                     }
                 ],
                 "date_time": {
@@ -4579,7 +5995,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.140.1.0.6.10.21",
-                        "identifier_type": "46"
+                        "extension": "46"
                     }
                 ],
                 "date_time": {
@@ -4606,7 +6022,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6.1",
-                            "identifier_type": "048-27-9873"
+                            "extension": "048-27-9873"
                         }
                     ],
                     "code": {
@@ -4618,12 +6034,12 @@
                         "code": {
                             "name": "Invoice Payor",
                             "code": "PAYOR",
-                            "code_system_name": "OID 2.16.840.1.113883.5.110"
+                            "code_system_name": "HL7 RoleCode"
                         },
                         "performer": {
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "8147 NW 128th Place"
                                     ],
                                     "city": "Madison",
@@ -4669,12 +6085,12 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6.3",
-                                "identifier_type": "643005639"
+                                "extension": "643005639"
                             }
                         ],
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "3456 West Palm",
                                     "Apt. #34"
                                 ],
@@ -4709,7 +6125,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6.5",
-                            "identifier_type": "79"
+                            "extension": "79"
                         }
                     ]
                 }
@@ -4724,7 +6140,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6.1",
-                            "identifier_type": "0"
+                            "extension": "0"
                         }
                     ],
                     "code": {
@@ -4736,18 +6152,18 @@
                         "code": {
                             "name": "Invoice Payor",
                             "code": "PAYOR",
-                            "code_system_name": "OID 2.16.840.1.113883.5.110"
+                            "code_system_name": "HL7 RoleCode"
                         },
                         "performer": {
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6.2",
-                                    "identifier_type": "SMCA1"
+                                    "extension": "SMCA1"
                                 }
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "263 Sunnydale Way"
                                     ],
                                     "city": "Madison",
@@ -4800,12 +6216,12 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6.3",
-                                "identifier_type": "643005639"
+                                "extension": "643005639"
                             }
                         ],
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "3456 West Palm",
                                     "Apt. #34"
                                 ],
@@ -4840,7 +6256,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6.5",
-                            "identifier_type": "89"
+                            "extension": "89"
                         }
                     ]
                 }
@@ -4848,7 +6264,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -4894,40 +6310,53 @@
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
-        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
@@ -4942,14 +6371,14 @@
         "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
         "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required guarantor in entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required policy_holder in entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required procedure in authorization -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",

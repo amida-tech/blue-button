@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "408 Ingram Street"
                     ],
                     "city": "Dayton",
@@ -60,7 +60,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "31 Marshall Street"
                             ],
                             "city": "Cockeysville",
@@ -354,7 +354,10 @@
                             }
                         ],
                         "date_time": {},
-                        "status": "completed"
+                        "status": "completed",
+                        "referenceRange": {
+                            "range": "No data"
+                        }
                     }
                 ]
             }
@@ -374,7 +377,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Long acting inhaled beta 2 agonist + salmeterol 0.05 MG/ACTUAT Inhalant Powder  ",
+                    "unencoded_name": "Long acting inhaled beta 2 agonist + salmeterol 0.05 MG/ACTUAT Inhalant Powder",
                     "product": {
                         "name": "salmeterol 0.05 MG/ACTUAT Inhalant Powder",
                         "code": "318142",
@@ -396,7 +399,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "SSRI antidepressants + Fluvoxamine Maleate 100 MG Oral Tablet  ",
+                    "unencoded_name": "SSRI antidepressants + Fluvoxamine Maleate 100 MG Oral Tablet",
                     "product": {
                         "name": "Fluvoxamine Maleate 100 MG Oral Tablet",
                         "code": "903884",
@@ -418,7 +421,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution",
                     "product": {
                         "name": "Albuterol 0.83 MG/ML Inhalant Solution",
                         "code": "630208",
@@ -447,6 +450,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-05-31T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Arrhythmia",
                         "code": "44808001",
                         "code_system_name": "SNOMED CT",
@@ -464,6 +479,18 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-05-31T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma",
                         "code": "195979001",
                         "code_system_name": "SNOMED CT",
@@ -481,16 +508,52 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-05-31T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Daytime Symptoms",
                         "code": "373899003",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-05-31T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Nighttime Symptoms",
                         "code": "395022009",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-05-31T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Depression",
                         "code": "191615005",
                         "code_system_name": "SNOMED CT",
@@ -528,6 +591,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-09-03T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "low back pain",
                         "code": "279039007",
                         "code_system_name": "SNOMED CT",
@@ -617,7 +692,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -626,7 +701,16 @@
                         }
                     ]
                 },
-                "severity": "Moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -645,7 +729,16 @@
                     "code": "905148",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild to moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -664,7 +757,16 @@
                     "code": "N0000006691",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "24484000",
+                        "name": "Severe"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -691,20 +793,16 @@
                     "name": "Conduction disorder of the heart",
                     "code": "44808001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Conduction disorder, unspecified",
-                            "code": "I45.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Conduction disorder, unspecified",
-                            "code": "426.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-05-31T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -728,20 +826,16 @@
                     "name": "Asthma unspecified",
                     "code": "195979001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Asthma",
-                            "code": "J45",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Asthma, unspecified type, with (acute) exacerbation",
-                            "code": "493.92",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-05-31T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -764,9 +858,17 @@
                 "problem": {
                     "name": "Asthma daytime symptoms",
                     "code": "373899003",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-05-31T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -789,9 +891,17 @@
                 "problem": {
                     "name": "Asthma night-time symptoms",
                     "code": "395022009",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-05-31T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -815,20 +925,16 @@
                     "name": "Recurrent major depressive episodes, in full remission",
                     "code": "191615005",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Major depressive disorder, recurrent, severe with psychotic symptoms",
-                            "code": "F33.3",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Major depressive affective disorder, recurrent episode, in full remission",
-                            "code": "296.36",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-05-31T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -852,20 +958,16 @@
                     "name": "Low back pain",
                     "code": "279039007",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Dorsalgia, unspecified",
-                            "code": "M54.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Lumbago",
-                            "code": "724.2",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-09-03T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -944,7 +1046,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -958,7 +1060,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",

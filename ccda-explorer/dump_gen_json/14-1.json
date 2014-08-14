@@ -15,12 +15,12 @@
             "identifiers": [
                 {
                     "identifier": "1.3.6.1.4.1.22812.4.111.0",
-                    "identifier_type": "dataport4"
+                    "extension": "dataport4"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "Unknown"
                     ],
                     "use": "home address"
@@ -39,7 +39,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062755"
+                        "extension": "10062755"
                     }
                 ],
                 "vital": {
@@ -61,7 +61,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062756"
+                        "extension": "10062756"
                     }
                 ],
                 "vital": {
@@ -83,7 +83,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100627511"
+                        "extension": "100627511"
                     }
                 ],
                 "vital": {
@@ -105,7 +105,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062758"
+                        "extension": "10062758"
                     }
                 ],
                 "vital": {
@@ -127,7 +127,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100627513"
+                        "extension": "100627513"
                     }
                 ],
                 "vital": {
@@ -149,7 +149,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100627514"
+                        "extension": "100627514"
                     }
                 ],
                 "vital": {
@@ -171,7 +171,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062525"
+                        "extension": "10062525"
                     }
                 ],
                 "vital": {
@@ -193,7 +193,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062526"
+                        "extension": "10062526"
                     }
                 ],
                 "vital": {
@@ -215,7 +215,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100625211"
+                        "extension": "100625211"
                     }
                 ],
                 "vital": {
@@ -237,7 +237,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062528"
+                        "extension": "10062528"
                     }
                 ],
                 "vital": {
@@ -259,7 +259,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100625213"
+                        "extension": "100625213"
                     }
                 ],
                 "vital": {
@@ -281,7 +281,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100625214"
+                        "extension": "100625214"
                     }
                 ],
                 "vital": {
@@ -303,7 +303,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062515"
+                        "extension": "10062515"
                     }
                 ],
                 "vital": {
@@ -325,7 +325,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062516"
+                        "extension": "10062516"
                     }
                 ],
                 "vital": {
@@ -347,7 +347,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100625111"
+                        "extension": "100625111"
                     }
                 ],
                 "vital": {
@@ -369,7 +369,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062518"
+                        "extension": "10062518"
                     }
                 ],
                 "vital": {
@@ -391,7 +391,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100625113"
+                        "extension": "100625113"
                     }
                 ],
                 "vital": {
@@ -413,7 +413,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100625114"
+                        "extension": "100625114"
                     }
                 ],
                 "vital": {
@@ -437,7 +437,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10171670"
+                        "extension": "10171670"
                     }
                 ],
                 "result_set": {
@@ -450,7 +450,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194110"
+                                "extension": "10194110"
                             }
                         ],
                         "date_time": {
@@ -470,7 +470,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10031373"
+                        "extension": "10031373"
                     }
                 ],
                 "result_set": {
@@ -483,7 +483,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194106"
+                                "extension": "10194106"
                             }
                         ],
                         "result": {
@@ -510,7 +510,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10031371"
+                        "extension": "10031371"
                     }
                 ],
                 "result_set": {
@@ -523,7 +523,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194107"
+                                "extension": "10194107"
                             }
                         ],
                         "result": {
@@ -538,6 +538,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4.5 - 11.0"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -550,7 +553,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10031370"
+                        "extension": "10031370"
                     }
                 ],
                 "result_set": {
@@ -563,7 +566,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194108"
+                                "extension": "10194108"
                             }
                         ],
                         "result": {
@@ -578,6 +581,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "14.4 - 16.6"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -590,7 +596,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10031369"
+                        "extension": "10031369"
                     }
                 ],
                 "result_set": {
@@ -603,7 +609,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194109"
+                                "extension": "10194109"
                             }
                         ],
                         "result": {
@@ -618,6 +624,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "42.9 - 49.1"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -638,7 +647,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.9",
-                        "identifier_type": "10126400"
+                        "extension": "10126400"
                     }
                 ],
                 "status": "Prescribed",
@@ -662,7 +671,29 @@
                 },
                 "supply": {
                     "repeatNumber": "1",
-                    "quantity": "5"
+                    "quantity": "5",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2013-05-30T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "5860476014"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "A"
+                            ],
+                            "last": "Manning",
+                            "suffix": "MD",
+                            "first": "Terry"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -693,7 +724,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.9",
-                        "identifier_type": "10126410"
+                        "extension": "10126410"
                     }
                 ],
                 "status": "Prescribed",
@@ -717,7 +748,29 @@
                 },
                 "supply": {
                     "repeatNumber": "1",
-                    "quantity": "30"
+                    "quantity": "30",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2013-05-30T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "5860476014"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "A"
+                            ],
+                            "last": "Manning",
+                            "suffix": "MD",
+                            "first": "Terry"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -748,7 +801,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.9",
-                        "identifier_type": "10126420"
+                        "extension": "10126420"
                     }
                 ],
                 "status": "Prescribed",
@@ -772,7 +825,29 @@
                 },
                 "supply": {
                     "repeatNumber": "1",
-                    "quantity": "1"
+                    "quantity": "1",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2013-05-30T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "5860476014"
+                            }
+                        ],
+                        "name": {
+                            "middle": [
+                                "A"
+                            ],
+                            "last": "Manning",
+                            "suffix": "MD",
+                            "first": "Terry"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -802,7 +877,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
-                        "identifier_type": "3397"
+                        "extension": "3397"
                     }
                 ],
                 "date_time": {
@@ -819,7 +894,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
-                        "identifier_type": "3324"
+                        "extension": "3324"
                     }
                 ],
                 "date_time": {
@@ -836,7 +911,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
-                        "identifier_type": "3318"
+                        "extension": "3318"
                     }
                 ],
                 "date_time": {
@@ -853,7 +928,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.10.2",
-                        "identifier_type": "10381866"
+                        "extension": "10381866"
                     }
                 ],
                 "allergen": {
@@ -868,14 +943,28 @@
                         }
                     ]
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ]
             },
             {
                 "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.10.2",
-                        "identifier_type": "10381865"
+                        "extension": "10381865"
                     }
                 ],
                 "allergen": {
@@ -890,14 +979,28 @@
                         }
                     ]
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ]
             },
             {
                 "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.10.2",
-                        "identifier_type": "10381864"
+                        "extension": "10381864"
                     }
                 ],
                 "allergen": {
@@ -912,7 +1015,27 @@
                         }
                     ]
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    },
+                    {
+                        "date_time": {}
+                    },
+                    {
+                        "date_time": {}
+                    }
+                ]
             }
         ],
         "immunizations": [
@@ -926,7 +1049,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4",
-                        "identifier_type": "1049252"
+                        "extension": "1049252"
                     }
                 ],
                 "status": "complete",
@@ -947,29 +1070,44 @@
         "social_history": [
             {
                 "value": "Health-related behavior",
-                "date_time": {}
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.12",
+                        "extension": "999999"
+                    }
+                ],
+                "code": {
+                    "code": "228272008",
+                    "code_system_name": "SNOMED CT"
+                }
             },
             {
                 "value": "Smoker, current status unknown",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             },
             {
                 "value": "Never smoker",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             }
         ],
         "problems": [
             {
-                "date_time": {
-                    "low": {
-                        "date": "2011-10-28T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
-                        "identifier_type": "10241108"
+                        "extension": "10241108"
                     }
                 ],
                 "negation_indicator": false,
@@ -977,43 +1115,29 @@
                     "name": "Acute pharyngitis",
                     "code": "363746003",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Acute pharyngitis",
-                            "code": "462",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Acute pharyngitis",
-                            "code": "J02.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Acute pharyngitis",
-                            "code": "76313",
-                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                    "date_time": {
+                        "low": {
+                            "date": "2011-10-28T00:00:00Z",
+                            "precision": "day"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1",
-                        "identifier_type": "10241108"
+                        "extension": "10241108"
                     }
                 ]
             },
             {
-                "date_time": {
-                    "low": {
-                        "date": "2012-09-25T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
-                        "identifier_type": "10241115"
+                        "extension": "10241115"
                     }
                 ],
                 "negation_indicator": false,
@@ -1021,43 +1145,29 @@
                     "name": "Essential hypertension",
                     "code": "59621000",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Essential hypertension",
-                            "code": "401.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Essential hypertension",
-                            "code": "I10",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Essential hypertension",
-                            "code": "30422",
-                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                    "date_time": {
+                        "low": {
+                            "date": "2012-09-25T00:00:00Z",
+                            "precision": "day"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1",
-                        "identifier_type": "10241115"
+                        "extension": "10241115"
                     }
                 ]
             },
             {
-                "date_time": {
-                    "low": {
-                        "date": "2013-05-30T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
-                        "identifier_type": "10241201"
+                        "extension": "10241201"
                     }
                 ],
                 "negation_indicator": false,
@@ -1065,29 +1175,20 @@
                     "name": "Pneumonia",
                     "code": "233604007",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Pneumonia",
-                            "code": "486",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Pneumonia",
-                            "code": "J18.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Pneumonia",
-                            "code": "87580",
-                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                    "date_time": {
+                        "low": {
+                            "date": "2013-05-30T00:00:00Z",
+                            "precision": "day"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1",
-                        "identifier_type": "10241201"
+                        "extension": "10241201"
                     }
                 ]
             }
@@ -1102,7 +1203,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
-                        "identifier_type": "10171670"
+                        "extension": "10171670"
                     }
                 ],
                 "status": "Completed",
@@ -1116,21 +1217,33 @@
                         "precision": "day"
                     }
                 },
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "5555 Waverly Way"
-                            ],
-                            "city": "Cary",
-                            "state": "NC",
-                            "zip": "27511",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.4.6",
-                                "identifier_type": "5860476014"
+                                "extension": "5860476014"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "A"
+                                ],
+                                "last": "Manning",
+                                "suffix": "MD",
+                                "first": "Terry"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "5555 Waverly Way"
+                                ],
+                                "city": "Cary",
+                                "state": "NC",
+                                "zip": "27511",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -1149,11 +1262,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.13.2",
-                        "identifier_type": "10747"
+                        "extension": "10747"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2013-05-28T10:02:15Z",
                         "precision": "subsecond"
                     }
@@ -1164,11 +1277,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.13.2",
-                        "identifier_type": "10748"
+                        "extension": "10748"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2013-05-28T10:04:05Z",
                         "precision": "subsecond"
                     }
@@ -1179,11 +1292,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.13.2",
-                        "identifier_type": "10749"
+                        "extension": "10749"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2013-05-28T10:05:15Z",
                         "precision": "subsecond"
                     }
@@ -1193,7 +1306,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",

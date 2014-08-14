@@ -15,7 +15,7 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.441.1.50.300011.51",
-                    "identifier_type": "26604"
+                    "extension": "26604"
                 }
             ],
             "marital_status": "Never Married",
@@ -47,7 +47,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2276"
+                        "extension": "2276"
                     }
                 ],
                 "vital": {
@@ -69,7 +69,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2277"
+                        "extension": "2277"
                     }
                 ],
                 "vital": {
@@ -91,7 +91,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2278"
+                        "extension": "2278"
                     }
                 ],
                 "vital": {
@@ -113,7 +113,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2280"
+                        "extension": "2280"
                     }
                 ],
                 "vital": {
@@ -135,7 +135,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2281"
+                        "extension": "2281"
                     }
                 ],
                 "vital": {
@@ -157,7 +157,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2286"
+                        "extension": "2286"
                     }
                 ],
                 "vital": {
@@ -179,7 +179,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2287"
+                        "extension": "2287"
                     }
                 ],
                 "vital": {
@@ -201,7 +201,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2288"
+                        "extension": "2288"
                     }
                 ],
                 "vital": {
@@ -223,7 +223,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2290"
+                        "extension": "2290"
                     }
                 ],
                 "vital": {
@@ -245,7 +245,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2291"
+                        "extension": "2291"
                     }
                 ],
                 "vital": {
@@ -267,7 +267,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2913"
+                        "extension": "2913"
                     }
                 ],
                 "vital": {
@@ -289,7 +289,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2914"
+                        "extension": "2914"
                     }
                 ],
                 "vital": {
@@ -311,7 +311,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2915"
+                        "extension": "2915"
                     }
                 ],
                 "vital": {
@@ -333,7 +333,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2917"
+                        "extension": "2917"
                     }
                 ],
                 "vital": {
@@ -355,7 +355,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.55",
-                        "identifier_type": "2918"
+                        "extension": "2918"
                     }
                 ],
                 "vital": {
@@ -379,7 +379,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.54",
-                        "identifier_type": "2909"
+                        "extension": "2909"
                     }
                 ],
                 "results": [
@@ -387,7 +387,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.54",
-                                "identifier_type": "2909"
+                                "extension": "2909"
                             }
                         ],
                         "result": {
@@ -402,6 +402,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "13.5 - 18"
+                        },
                         "value": 15,
                         "unit": "g/dL"
                     }
@@ -411,7 +414,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.54",
-                        "identifier_type": "2910"
+                        "extension": "2910"
                     }
                 ],
                 "results": [
@@ -419,7 +422,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.54",
-                                "identifier_type": "2910"
+                                "extension": "2910"
                             }
                         ],
                         "result": {
@@ -434,6 +437,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "41 - 53"
+                        },
                         "value": 50,
                         "unit": "%"
                     }
@@ -443,7 +449,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.54",
-                        "identifier_type": "2911"
+                        "extension": "2911"
                     }
                 ],
                 "results": [
@@ -451,7 +457,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.54",
-                                "identifier_type": "2911"
+                                "extension": "2911"
                             }
                         ],
                         "result": {
@@ -466,6 +472,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4.3 - 10.8"
+                        },
                         "value": 6,
                         "unit": "x10E3/uL"
                     }
@@ -475,7 +484,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.54",
-                        "identifier_type": "2912"
+                        "extension": "2912"
                     }
                 ],
                 "results": [
@@ -483,7 +492,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.54",
-                                "identifier_type": "2912"
+                                "extension": "2912"
                             }
                         ],
                         "result": {
@@ -498,6 +507,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "150 - 400"
+                        },
                         "value": 300,
                         "unit": "x10E3/uL"
                     }
@@ -519,7 +531,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.58",
-                        "identifier_type": "2055"
+                        "extension": "2055"
                     }
                 ],
                 "status": "Prescribed",
@@ -560,7 +572,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.58",
-                        "identifier_type": "2056"
+                        "extension": "2056"
                     }
                 ],
                 "status": "Completed",
@@ -600,7 +612,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.58",
-                        "identifier_type": "2085"
+                        "extension": "2085"
                     }
                 ],
                 "status": "Prescribed",
@@ -634,10 +646,24 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "f53fcb22dab24fe493ced847fe8ae85c"
+                        "extension": "f53fcb22dab24fe493ced847fe8ae85c"
                     }
                 ],
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "Allergy to substance (disorder)",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ],
                 "negation_indicator": false
             },
             {
@@ -645,7 +671,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "9426d8a60b004ad4970a03700fd883fe"
+                        "extension": "9426d8a60b004ad4970a03700fd883fe"
                     }
                 ],
                 "allergen": {
@@ -660,7 +686,21 @@
                         }
                     ]
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "Allergy to substance (disorder)",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ],
                 "negation_indicator": false
             },
             {
@@ -668,7 +708,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "86480d0297454cd889206de460dbc208"
+                        "extension": "86480d0297454cd889206de460dbc208"
                     }
                 ],
                 "allergen": {
@@ -683,7 +723,21 @@
                         }
                     ]
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "Allergy to substance (disorder)",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ],
                 "negation_indicator": false
             }
         ],
@@ -698,7 +752,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.60",
-                        "identifier_type": "1159"
+                        "extension": "1159"
                     }
                 ],
                 "status": "complete",
@@ -719,7 +773,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.441",
-                            "identifier_type": "41e28a1c762041c198fa797e7392ed92"
+                            "extension": "41e28a1c762041c198fa797e7392ed92"
                         }
                     ],
                     "name": [
@@ -730,7 +784,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1234 test"
                             ],
                             "city": "Norcross",
@@ -749,12 +803,12 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.441",
-                                    "identifier_type": "53dab4db681243abb2602853f3487bde"
+                                    "extension": "53dab4db681243abb2602853f3487bde"
                                 }
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "1234 test"
                                     ],
                                     "city": "Norcross",
@@ -782,6 +836,16 @@
                         "date": "1900-01-01T00:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.68",
+                        "extension": "1265"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -796,15 +860,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.61",
-                        "identifier_type": "1348"
+                        "extension": "1348"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "85cec11c26ff475fac469cc9fa7a040c"
+                        "extension": "85cec11c26ff475fac469cc9fa7a040c"
                     }
                 ]
             },
@@ -818,15 +884,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.61",
-                        "identifier_type": "1349"
+                        "extension": "1349"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "a9ffad795c644e8796e7cf62b4cba970"
+                        "extension": "a9ffad795c644e8796e7cf62b4cba970"
                     }
                 ]
             },
@@ -844,15 +912,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.61",
-                        "identifier_type": "1350"
+                        "extension": "1350"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Resolved",
+                "status": {
+                    "name": "Resolved"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "1a7101d4a2074a649bdc7e9a4f7273f8"
+                        "extension": "1a7101d4a2074a649bdc7e9a4f7273f8"
                     }
                 ]
             },
@@ -866,15 +936,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.61",
-                        "identifier_type": "1425"
+                        "extension": "1425"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "aa22a3084d3b4cb7ac03e93708cd6318"
+                        "extension": "aa22a3084d3b4cb7ac03e93708cd6318"
                     }
                 ]
             },
@@ -888,15 +960,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.61",
-                        "identifier_type": "1443"
+                        "extension": "1443"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "1439c64973364ded9638d1d06eba0b6f"
+                        "extension": "1439c64973364ded9638d1d06eba0b6f"
                     }
                 ]
             },
@@ -910,15 +984,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.61",
-                        "identifier_type": "1444"
+                        "extension": "1444"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "721ed5c75a4149df826e4ac35212a14e"
+                        "extension": "721ed5c75a4149df826e4ac35212a14e"
                     }
                 ]
             }
@@ -933,7 +1009,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.53",
-                        "identifier_type": "61243"
+                        "extension": "61243"
                     }
                 ],
                 "status": "Completed",
@@ -954,7 +1030,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.53",
-                        "identifier_type": "61405"
+                        "extension": "61405"
                     }
                 ],
                 "status": "Completed",
@@ -972,7 +1048,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.72",
-                        "identifier_type": "1160"
+                        "extension": "1160"
                     }
                 ],
                 "date_time": {},
@@ -982,7 +1058,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.72",
-                        "identifier_type": "1166"
+                        "extension": "1166"
                     }
                 ],
                 "date_time": {
@@ -997,7 +1073,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.72",
-                        "identifier_type": "1167"
+                        "extension": "1167"
                     }
                 ],
                 "date_time": {},
@@ -1007,7 +1083,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.72",
-                        "identifier_type": "2282"
+                        "extension": "2282"
                     }
                 ],
                 "date_time": {
@@ -1022,7 +1098,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.72",
-                        "identifier_type": "2283"
+                        "extension": "2283"
                     }
                 ],
                 "date_time": {
@@ -1037,7 +1113,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.72",
-                        "identifier_type": "2284"
+                        "extension": "2284"
                     }
                 ],
                 "date_time": {
@@ -1052,7 +1128,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.72",
-                        "identifier_type": "2285"
+                        "extension": "2285"
                     }
                 ],
                 "date_time": {
@@ -1072,7 +1148,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26604.72",
-                        "identifier_type": "61405"
+                        "extension": "61405"
                     }
                 ],
                 "date_time": {
@@ -1086,7 +1162,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1101,7 +1177,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
@@ -1138,22 +1214,18 @@
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in conceptWoutTranslation -> ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in conceptWoutTranslation -> ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",

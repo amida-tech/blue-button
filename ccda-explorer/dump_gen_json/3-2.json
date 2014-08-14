@@ -15,12 +15,12 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                    "identifier_type": "4A0D8938-A64B-41C9-8396-CF1869EA71C1"
+                    "extension": "4A0D8938-A64B-41C9-8396-CF1869EA71C1"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "No Address Indicated"
                     ],
                     "city": "No City Indicated",
@@ -44,7 +44,7 @@
                 "identifiers": [
                     {
                         "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
-                        "identifier_type": "9279-1"
+                        "extension": "9279-1"
                     }
                 ],
                 "vital": {
@@ -66,7 +66,7 @@
                 "identifiers": [
                     {
                         "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
-                        "identifier_type": "8867-4"
+                        "extension": "8867-4"
                     }
                 ],
                 "vital": {
@@ -88,7 +88,7 @@
                 "identifiers": [
                     {
                         "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
-                        "identifier_type": "8480-6"
+                        "extension": "8480-6"
                     }
                 ],
                 "vital": {
@@ -110,7 +110,7 @@
                 "identifiers": [
                     {
                         "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
-                        "identifier_type": "8310-5"
+                        "extension": "8310-5"
                     }
                 ],
                 "vital": {
@@ -132,7 +132,7 @@
                 "identifiers": [
                     {
                         "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
-                        "identifier_type": "8310-5"
+                        "extension": "8310-5"
                     }
                 ],
                 "vital": {
@@ -154,7 +154,7 @@
                 "identifiers": [
                     {
                         "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
-                        "identifier_type": "8302-2"
+                        "extension": "8302-2"
                     }
                 ],
                 "vital": {
@@ -176,7 +176,7 @@
                 "identifiers": [
                     {
                         "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
-                        "identifier_type": "8287-5"
+                        "extension": "8287-5"
                     }
                 ],
                 "vital": {
@@ -198,7 +198,7 @@
                 "identifiers": [
                     {
                         "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
-                        "identifier_type": "3141-9"
+                        "extension": "3141-9"
                     }
                 ],
                 "vital": {
@@ -220,7 +220,7 @@
                 "identifiers": [
                     {
                         "identifier": "BB76EBCC-7A5C-45AC-9103-65577CD122D6",
-                        "identifier_type": "39156-5"
+                        "extension": "39156-5"
                     }
                 ],
                 "vital": {
@@ -264,10 +264,12 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1",
-                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1",
+                            "extension": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+                        }
+                    ],
                     "product": {
                         "name": "cephalexin 500 mg",
                         "code": "212339",
@@ -289,10 +291,12 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1",
-                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1",
+                            "extension": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+                        }
+                    ],
                     "product": {
                         "name": "FLUoxetine 40 mg",
                         "code": "261287",
@@ -314,10 +318,12 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1",
-                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1",
+                            "extension": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.4.1"
+                        }
+                    ],
                     "product": {
                         "name": "levothyroxine 50 mcg (0.05 mg)",
                         "code": "966247",
@@ -336,7 +342,7 @@
                 "identifiers": [
                     {
                         "identifier": "A71277db8-8610-4912-9d29-46a11afd447f",
-                        "identifier_type": "103583514"
+                        "extension": "103583514"
                     }
                 ],
                 "date_time": {
@@ -378,7 +384,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "83900262"
+                        "extension": "83900262"
                     }
                 ],
                 "allergen": {
@@ -386,8 +392,20 @@
                     "code": "731570",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -408,7 +426,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "83900262"
+                        "extension": "83900262"
                     }
                 ],
                 "allergen": {
@@ -416,8 +434,20 @@
                     "code": "212033",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -457,11 +487,16 @@
                         "date": "2013-12-17T08:00:00Z",
                         "precision": "second"
                     }
+                },
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
         "problems": [
             {
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.2.1"
@@ -471,7 +506,7 @@
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "83900262"
+                        "extension": "83900262"
                     }
                 ]
             }
@@ -486,27 +521,35 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83900262.1.9",
-                        "identifier_type": "349"
+                        "extension": "349"
                     }
                 ],
                 "status": "Completed",
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "Get Well Clinic Facility",
-                                "1002 Healthcare Dr."
-                            ],
-                            "city": "Portland",
-                            "state": "OR",
-                            "zip": "97005",
-                            "country": "United States of America",
-                            "use": "work place"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.1.1.3",
-                                "identifier_type": "605196"
+                                "extension": "605196"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "last": "Lname",
+                                "first": "Fname"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "Get Well Clinic Facility",
+                                    "1002 Healthcare Dr."
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97005",
+                                "country": "United States of America",
+                                "use": "work place"
                             }
                         ],
                         "phone": [
@@ -521,7 +564,7 @@
                     {
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "Get Well Clinic Facility",
                                     "1002 Healthcare Dr."
                                 ],
@@ -545,7 +588,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -574,14 +617,18 @@
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",

@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "3682 Ventura Drive"
                     ],
                     "city": "San Francisco",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1789 Fairway Drive"
                             ],
                             "city": "Santa Rosa",
@@ -472,6 +472,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": ">=40 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -508,6 +511,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "<130 mg/dL (calc)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -544,6 +550,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "125-200 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -580,6 +589,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -604,7 +616,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Antihypertensive combinations + Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet  ",
+                    "unencoded_name": "Antihypertensive combinations + Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet",
                     "product": {
                         "name": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet",
                         "code": "858828",
@@ -626,7 +638,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Antihypertensive combinations + Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet  ",
+                    "unencoded_name": "Antihypertensive combinations + Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet",
                     "product": {
                         "name": "Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet",
                         "code": "858828",
@@ -662,6 +674,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2009-09-25T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Hypertension",
                         "code": "59621000",
                         "code_system_name": "SNOMED CT",
@@ -808,7 +832,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -817,7 +841,16 @@
                         }
                     ]
                 },
-                "severity": "Mild to moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -836,7 +869,16 @@
                     "code": "866041",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -855,7 +897,16 @@
                     "code": "N0000011298",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Fatal"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "399166001",
+                        "name": "Fatal"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -890,7 +941,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -901,7 +952,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -920,7 +971,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -928,7 +979,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -978,7 +1029,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -989,7 +1040,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1008,7 +1059,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1016,7 +1067,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1066,7 +1117,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1077,7 +1128,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1096,7 +1147,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1104,7 +1155,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1154,7 +1205,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1165,7 +1216,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1184,7 +1235,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1192,7 +1243,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1249,7 +1300,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1260,7 +1311,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1279,7 +1330,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1287,7 +1338,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1315,6 +1366,16 @@
                         "date": "2009-09-25T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -1336,20 +1397,16 @@
                     "name": "Essential hypertension",
                     "code": "59621000",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Essential (primary) hypertension",
-                            "code": "I10",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Unspecified essential hypertension",
-                            "code": "401.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2009-09-25T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1440,7 +1497,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1455,7 +1512,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",

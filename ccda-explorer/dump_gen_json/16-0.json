@@ -15,12 +15,12 @@
             "identifiers": [
                 {
                     "identifier": "1.3.6.1.4.1.22812.3.9999341.3",
-                    "identifier_type": "130115235147857"
+                    "extension": "130115235147857"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "99 Forest Park"
                     ],
                     "city": "Chicago",
@@ -43,11 +43,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000035"
+                        "extension": "30011130000035"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000055"
+                        "extension": "30011130000055"
                     }
                 ],
                 "vital": {
@@ -69,11 +69,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000035|30011130000037"
+                        "extension": "30011130000035|30011130000037"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000055|30011130000057"
+                        "extension": "30011130000055|30011130000057"
                     }
                 ],
                 "vital": {
@@ -95,11 +95,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000049"
+                        "extension": "30011130000049"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000067"
+                        "extension": "30011130000067"
                     }
                 ],
                 "vital": {
@@ -121,11 +121,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000047"
+                        "extension": "30011130000047"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000065"
+                        "extension": "30011130000065"
                     }
                 ],
                 "vital": {
@@ -147,11 +147,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000045"
+                        "extension": "30011130000045"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000063"
+                        "extension": "30011130000063"
                     }
                 ],
                 "vital": {
@@ -173,11 +173,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000043"
+                        "extension": "30011130000043"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.6",
-                        "identifier_type": "30011130000061"
+                        "extension": "30011130000061"
                     }
                 ],
                 "vital": {
@@ -201,7 +201,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.5",
-                        "identifier_type": "30011130000075"
+                        "extension": "30011130000075"
                     }
                 ],
                 "result_set": {
@@ -214,11 +214,11 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.5",
-                                "identifier_type": "30011130000073"
+                                "extension": "30011130000073"
                             },
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.5",
-                                "identifier_type": "30011130000077"
+                                "extension": "30011130000077"
                             }
                         ],
                         "result": {
@@ -245,11 +245,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.9",
-                        "identifier_type": "30011130000011"
+                        "extension": "30011130000011"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.9",
-                        "identifier_type": "30011130000013"
+                        "extension": "30011130000013"
                     }
                 ],
                 "status": "Prescribed",
@@ -288,7 +288,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.3.4",
-                        "identifier_type": "1257907"
+                        "extension": "1257907"
                     }
                 ],
                 "date_time": {
@@ -305,28 +305,56 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.10.2",
-                        "identifier_type": "30011130000005"
+                        "extension": "30011130000005"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.10.2",
-                        "identifier_type": "30011130000027"
+                        "extension": "30011130000027"
                     }
                 ],
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "allergy to substance",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ]
             },
             {
                 "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.10.2",
-                        "identifier_type": "30011130000003"
+                        "extension": "30011130000003"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.10.2",
-                        "identifier_type": "30011130000025"
+                        "extension": "30011130000025"
                     }
                 ],
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "allergy to substance",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ]
             }
         ],
         "immunizations": [
@@ -340,11 +368,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.4",
-                        "identifier_type": "30011130000079"
+                        "extension": "30011130000079"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.4",
-                        "identifier_type": "30011173700001"
+                        "extension": "30011173700001"
                     }
                 ],
                 "status": "complete",
@@ -369,29 +397,55 @@
         "social_history": [
             {
                 "value": "Tobacco use and exposure",
-                "date_time": {}
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.12",
+                        "extension": "30011130000001"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.12",
+                        "extension": "30011130000019"
+                    }
+                ],
+                "code": {
+                    "code": "229819007",
+                    "code_system_name": "SNOMED CT",
+                    "translations": [
+                        {
+                            "name": "Never smoker",
+                            "code": "266919005",
+                            "code_system_name": "SNOMED CT"
+                        },
+                        {
+                            "name": "Never smoker",
+                            "code": "9594f1dd-3591-4fe9-95f1-1e16315d5bba",
+                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                        }
+                    ]
+                }
             },
             {
                 "value": "Never smoker",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             }
         ],
         "problems": [
             {
-                "date_time": {
-                    "low": {
-                        "date": "2011-09-25T00:00:00Z",
-                        "precision": "subsecond"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
-                        "identifier_type": "30011130000017"
+                        "extension": "30011130000017"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
-                        "identifier_type": "30011174200001"
+                        "extension": "30011174200001"
                     }
                 ],
                 "negation_indicator": false,
@@ -399,51 +453,37 @@
                     "name": "Asthma",
                     "code": "195967001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Asthma",
-                            "code": "493.90",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Asthma",
-                            "code": "J45.909",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Asthma",
-                            "code": "04e16cfd-4744-49aa-9578-b55dca12e975",
-                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                    "date_time": {
+                        "low": {
+                            "date": "2011-09-25T00:00:00Z",
+                            "precision": "subsecond"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
-                        "identifier_type": "30011130000017"
+                        "extension": "30011130000017"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
-                        "identifier_type": "30011174200001"
+                        "extension": "30011174200001"
                     }
                 ]
             },
             {
-                "date_time": {
-                    "low": {
-                        "date": "2013-07-11T00:00:00Z",
-                        "precision": "subsecond"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
-                        "identifier_type": "30011130000015"
+                        "extension": "30011130000015"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
-                        "identifier_type": "30011130000093"
+                        "extension": "30011130000093"
                     }
                 ],
                 "negation_indicator": false,
@@ -451,51 +491,37 @@
                     "name": "Costal chondritis",
                     "code": "64109004",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Costal chondritis",
-                            "code": "733.6",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Costal chondritis",
-                            "code": "M94.0",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Costal chondritis",
-                            "code": "94a6388d-dbf5-4ab7-a50d-90332ce30af1",
-                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                    "date_time": {
+                        "low": {
+                            "date": "2013-07-11T00:00:00Z",
+                            "precision": "subsecond"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
-                        "identifier_type": "30011130000015"
+                        "extension": "30011130000015"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
-                        "identifier_type": "30011130000093"
+                        "extension": "30011130000093"
                     }
                 ]
             },
             {
-                "date_time": {
-                    "low": {
-                        "date": "2013-07-11T00:00:00Z",
-                        "precision": "subsecond"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
-                        "identifier_type": "30011130000097"
+                        "extension": "30011130000097"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1.2.1",
-                        "identifier_type": "30011130000099"
+                        "extension": "30011130000099"
                     }
                 ],
                 "negation_indicator": false,
@@ -503,33 +529,24 @@
                     "name": "No impairment",
                     "code": "66557003",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "No impairment",
-                            "code": "V68.01",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "No impairment",
-                            "code": "Z02.71",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "No impairment",
-                            "code": "f65f2c3b-2ce7-e111-a03b-005056936627",
-                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
+                    "date_time": {
+                        "low": {
+                            "date": "2013-07-11T00:00:00Z",
+                            "precision": "subsecond"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
-                        "identifier_type": "30011130000097"
+                        "extension": "30011130000097"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.1",
-                        "identifier_type": "30011130000099"
+                        "extension": "30011130000099"
                     }
                 ]
             }
@@ -539,7 +556,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.7",
-                        "identifier_type": "0"
+                        "extension": "0"
                     }
                 ],
                 "status": "Active",
@@ -550,7 +567,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.7",
-                        "identifier_type": "0"
+                        "extension": "0"
                     }
                 ],
                 "status": "Active",
@@ -563,7 +580,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.3.4",
-                        "identifier_type": "30011145200001"
+                        "extension": "30011145200001"
                     }
                 ],
                 "type": "encounter"
@@ -577,7 +594,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.13.2",
-                        "identifier_type": "30011130000083"
+                        "extension": "30011130000083"
                     }
                 ],
                 "type": "observation"
@@ -591,7 +608,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.9999341.3.4.13.2",
-                        "identifier_type": "30011130000087"
+                        "extension": "30011130000087"
                     }
                 ],
                 "type": "observation"
@@ -599,7 +616,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",

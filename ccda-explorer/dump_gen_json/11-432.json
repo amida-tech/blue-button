@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Never Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "1558 Chenoweth Drive"
                     ],
                     "city": "Mc Minnville",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "4566 Adamsville Road"
                             ],
                             "city": "Mcallen",
@@ -271,7 +271,10 @@
                             }
                         ],
                         "date_time": {},
-                        "status": "completed"
+                        "status": "completed",
+                        "referenceRange": {
+                            "range": "No data"
+                        }
                     }
                 ]
             }
@@ -282,7 +285,7 @@
                 "status": "Completed",
                 "sig": "No data",
                 "product": {
-                    "unencoded_name": "No data  "
+                    "unencoded_name": "No data"
                 }
             }
         ],
@@ -448,7 +451,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -457,7 +460,16 @@
                         }
                     ]
                 },
-                "severity": "Fatal"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "399166001",
+                        "name": "Fatal"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -476,7 +488,16 @@
                     "code": "905148",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "24484000",
+                        "name": "Severe"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -502,7 +523,16 @@
                         }
                     ]
                 },
-                "severity": "Moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -537,7 +567,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -548,7 +578,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -567,7 +597,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -575,7 +605,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -625,7 +655,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -636,7 +666,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -655,7 +685,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -663,7 +693,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -713,7 +743,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -724,7 +754,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -743,7 +773,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -751,7 +781,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -808,7 +838,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -819,7 +849,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -838,7 +868,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -846,7 +876,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -903,7 +933,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -914,7 +944,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -933,7 +963,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -941,7 +971,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -991,7 +1021,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1002,7 +1032,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1021,7 +1051,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1029,7 +1059,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1079,7 +1109,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1090,7 +1120,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1109,7 +1139,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1117,7 +1147,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1167,7 +1197,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1178,7 +1208,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1197,7 +1227,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1205,7 +1235,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1262,7 +1292,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1273,7 +1303,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1292,7 +1322,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1300,7 +1330,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1357,7 +1387,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1368,7 +1398,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1387,7 +1417,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1395,7 +1425,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1445,7 +1475,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1456,7 +1486,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1475,7 +1505,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1483,7 +1513,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1533,7 +1563,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1544,7 +1574,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1563,7 +1593,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1571,7 +1601,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1621,7 +1651,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1632,7 +1662,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1651,7 +1681,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1659,7 +1689,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1709,7 +1739,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1720,7 +1750,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1739,7 +1769,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1747,7 +1777,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1797,7 +1827,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1808,7 +1838,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1827,7 +1857,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1835,7 +1865,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1885,7 +1915,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1896,7 +1926,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -1915,7 +1945,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -1923,7 +1953,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -1973,7 +2003,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -1984,7 +2014,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -2003,7 +2033,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -2011,7 +2041,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -2061,7 +2091,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -2072,7 +2102,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -2091,7 +2121,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -2099,7 +2129,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -2149,7 +2179,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -2160,7 +2190,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -2179,7 +2209,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -2187,7 +2217,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -2237,7 +2267,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -2248,7 +2278,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -2267,7 +2297,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -2275,7 +2305,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -2325,7 +2355,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -2336,7 +2366,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -2355,7 +2385,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -2363,7 +2393,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -2413,7 +2443,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -2424,7 +2454,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -2443,7 +2473,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -2451,7 +2481,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -2508,7 +2538,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -2519,7 +2549,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -2538,7 +2568,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -2546,7 +2576,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -2596,7 +2626,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -2607,7 +2637,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -2626,7 +2656,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -2634,7 +2664,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -2679,7 +2709,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -2693,7 +2723,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
@@ -2704,10 +2734,10 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> entry -> proceduresSection -> CCD",

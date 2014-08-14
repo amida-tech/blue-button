@@ -3,7 +3,7 @@
   <section>
     <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
     <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
-    <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PROCEDURES"/>
+    <code code="47519-4" displayName="History of Procedures" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
     <title>PROCEDURES</title>
     <text/>
     <entry typeCode="DRIV">
@@ -22,35 +22,17 @@
         <targetSiteCode code="appropriate_code" displayName="colon" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <specimen typeCode="SPC">
           <specimenRole classCode="SPEC">
-            <id root="c2ee9ee9-ae31-4628-a919-fec1cbb58683"/>
+            <id nullFlavor="UNK"/>
             <specimenPlayingEntity>
-              <code code="309226005" displayName="colonic polyp sample" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+              <code nullFlavor="UNK"/>
             </specimenPlayingEntity>
           </specimenRole>
         </specimen>
         <performer>
           <assignedEntity>
-            <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-            <addr>
-              <streetAddressLine>1001 Village Avenue</streetAddressLine>
-              <city>Portland</city>
-              <state>OR</state>
-              <postalCode>99123</postalCode>
-              <country>US</country>
-            </addr>
-            <telecom value="tel:555-555-5000" use="WP"/>
-            <representedOrganization>
-              <id root="2.16.840.1.113883.19.5.9999.1393"/>
-              <name>Community Health and Hospitals</name>
-              <telecom value="tel:555-555-5000" use="WP"/>
-              <addr>
-                <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                <city>Portland</city>
-                <state>OR</state>
-                <postalCode>99123</postalCode>
-                <country>US</country>
-              </addr>
-            </representedOrganization>
+            <id nullFlavor="UNK"/>
+            <addr nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
           </assignedEntity>
         </performer>
         <participant typeCode="DEV">
@@ -84,21 +66,9 @@
         <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <performer>
           <assignedEntity>
-            <id root="2.16.840.1.113883.19.5" extension="1234"/>
-            <addr>
-              <streetAddressLine>17 Daws Rd.</streetAddressLine>
-              <city>Blue Bell</city>
-              <state>MA</state>
-              <postalCode>02368</postalCode>
-              <country>US</country>
-            </addr>
-            <telecom value="tel:(555)555-555-1234" use="WP"/>
-            <representedOrganization>
-              <id root="2.16.840.1.113883.19.5"/>
-              <name>Community Health and Hospitals</name>
-              <telecom nullFlavor="UNK"/>
-              <addr nullFlavor="UNK"/>
-            </representedOrganization>
+            <id nullFlavor="UNK"/>
+            <addr nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
           </assignedEntity>
         </performer>
         <participant typeCode="LOC">
@@ -134,21 +104,9 @@
         <priorityCode code="CR" displayName="Callback results" codeSystem="OID 2.16.840.1.113883.5.7" codeSystemName="OID 2.16.840.1.113883.5.7"/>
         <performer>
           <assignedEntity>
-            <id root="2.16.840.1.113883.19" extension="1234"/>
-            <addr>
-              <streetAddressLine>17 Daws Rd.</streetAddressLine>
-              <city>Blue Bell</city>
-              <state>MA</state>
-              <postalCode>02368</postalCode>
-              <country>US</country>
-            </addr>
-            <telecom value="tel:(555)555-555-1234" use="WP"/>
-            <representedOrganization>
-              <id root="2.16.840.1.113883.19.5"/>
-              <name>Community Health and Hospitals</name>
-              <telecom nullFlavor="UNK"/>
-              <addr nullFlavor="UNK"/>
-            </representedOrganization>
+            <id nullFlavor="UNK"/>
+            <addr nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
           </assignedEntity>
         </performer>
         <participant typeCode="LOC">
