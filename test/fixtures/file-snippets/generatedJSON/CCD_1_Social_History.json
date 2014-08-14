@@ -15,7 +15,7 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "123456789"
+                    "extension": "123456789"
                 }
             ],
             "code": {

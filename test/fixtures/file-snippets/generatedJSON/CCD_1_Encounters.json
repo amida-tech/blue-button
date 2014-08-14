@@ -41,7 +41,7 @@
                     },
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "17 Daws Rd."
                             ],
                             "city": "Blue Bell",
@@ -57,7 +57,7 @@
                     "identifiers": [
                         {
                             "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
-                            "identifier_type": "45665"
+                            "extension": "45665"
                         }
                     ],
                     "date_time": {

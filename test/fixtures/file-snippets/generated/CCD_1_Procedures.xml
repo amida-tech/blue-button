@@ -29,15 +29,9 @@
         </specimen>
         <performer>
           <assignedEntity>
-            <id root="2.16.840.1.113883.19.5.9999.1393"/>
-            <addr>
-              <streetAddressLine>1001 Village Avenue</streetAddressLine>
-              <city>Portland</city>
-              <state>OR</state>
-              <postalCode>99123</postalCode>
-              <country>US</country>
-            </addr>
-            <telecom value="tel:555-555-5000" use="HP"/>
+            <id root="UNK"/>
+            <addr nullFlavor="UNK"/>
+            <telecom value="tel:UNK" use="HP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>
@@ -75,15 +69,9 @@
         <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <performer>
           <assignedEntity>
-            <id root="2.16.840.1.113883.19.5" extension="123456789"/>
-            <addr>
-              <streetAddressLine>17 Daws Rd.</streetAddressLine>
-              <city>Blue Bell</city>
-              <state>MA</state>
-              <postalCode>02368</postalCode>
-              <country>US</country>
-            </addr>
-            <telecom value="tel:(555)555-555-1234" use="HP"/>
+            <id root="UNK" extension="123456789"/>
+            <addr nullFlavor="UNK"/>
+            <telecom value="tel:UNK" use="HP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>
@@ -122,15 +110,9 @@
         <methodCode nullFlavor="UNK"/>
         <performer>
           <assignedEntity>
-            <id root="2.16.840.1.113883.19.5" extension="1234567"/>
-            <addr>
-              <streetAddressLine>17 Daws Rd.</streetAddressLine>
-              <city>Blue Bell</city>
-              <state>MA</state>
-              <postalCode>02368</postalCode>
-              <country>US</country>
-            </addr>
-            <telecom value="tel:(555)555-555-1234" use="HP"/>
+            <id root="UNK" extension="1234567"/>
+            <addr nullFlavor="UNK"/>
+            <telecom value="tel:UNK" use="HP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>
