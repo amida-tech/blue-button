@@ -12,7 +12,7 @@ test.verbose = true; // log setting
 var TEST_CCDA_SAMPLES = false;
 var TEST_CCD = false;
 var TEST_SECTIONS = false;
-var TEST_PARSE_GENERATE = true;
+var TEST_PARSE_GENERATE = false;
 
 var supportedComponents = {
     payers: 'payers',
