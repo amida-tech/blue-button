@@ -15,28 +15,41 @@
             <reference value="#Proc1"/>
           </originalText>
         </code>
-        <statusCode code="completed"/>
-        <effectiveTime value="undefined"/>
+        <statusCode code="Completed"/>
+        <effectiveTime value="20120512"/>
+        <priorityCode nullFlavor="UNK"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="appropriate_code" displayName="colon" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <specimen typeCode="SPC">
           <specimenRole classCode="SPEC">
             <id root="c2ee9ee9-ae31-4628-a919-fec1cbb58683"/>
             <specimenPlayingEntity>
-              <code code="309226005" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscopy"/>
+              <code code="309226005" displayName="colonic polyp sample" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             </specimenPlayingEntity>
           </specimenRole>
         </specimen>
         <performer>
           <assignedEntity>
-            <id root="UNK"/>
-            <addr nullFlavor="UNK"/>
-            <telecom value="tel:UNK" use="HP"/>
+            <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
+            <addr>
+              <streetAddressLine>1001 Village Avenue</streetAddressLine>
+              <city>Portland</city>
+              <state>OR</state>
+              <postalCode>99123</postalCode>
+              <country>US</country>
+            </addr>
+            <telecom value="tel:555-555-5000" use="WP"/>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1393"/>
               <name>Community Health and Hospitals</name>
-              <telecom nullFlavor="UNK"/>
-              <addr nullFlavor="UNK"/>
+              <telecom value="tel:555-555-5000" use="WP"/>
+              <addr>
+                <streetAddressLine>1001 Village Avenue</streetAddressLine>
+                <city>Portland</city>
+                <state>OR</state>
+                <postalCode>99123</postalCode>
+                <country>US</country>
+              </addr>
             </representedOrganization>
           </assignedEntity>
         </performer>
@@ -63,17 +76,25 @@
             <reference value="#Proc1"/>
           </originalText>
         </code>
-        <statusCode code="completed"/>
-        <effectiveTime value="undefined"/>
+        <statusCode code="Aborted"/>
+        <effectiveTime value="20110203"/>
+        <priorityCode code="CR" displayName="Callback results" codeSystem="OID 2.16.840.1.113883.5.7" codeSystemName="OID 2.16.840.1.113883.5.7"/>
+        <value xsi:type="CD"/>
         <methodCode nullFlavor="UNK"/>
         <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
         <performer>
           <assignedEntity>
-            <id root="UNK" extension="123456789"/>
-            <addr nullFlavor="UNK"/>
-            <telecom value="tel:UNK" use="HP"/>
+            <id root="2.16.840.1.113883.19.5" extension="1234"/>
+            <addr>
+              <streetAddressLine>17 Daws Rd.</streetAddressLine>
+              <city>Blue Bell</city>
+              <state>MA</state>
+              <postalCode>02368</postalCode>
+              <country>US</country>
+            </addr>
+            <telecom value="tel:(555)555-555-1234" use="WP"/>
             <representedOrganization>
-              <id root="2.16.840.1.113883.19.5.9999.1393"/>
+              <id root="2.16.840.1.113883.19.5"/>
               <name>Community Health and Hospitals</name>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
@@ -83,6 +104,7 @@
         <participant typeCode="LOC">
           <participantRole classCode="SDLOC">
             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+            <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
             <addr>
               <streetAddressLine>17 Daws Rd.</streetAddressLine>
               <city>Blue Bell</city>
@@ -91,7 +113,9 @@
               <country>US</country>
             </addr>
             <telecom nullFlavor="UNK"/>
-            <playingEntity/>
+            <playingEntity classCode="PLC">
+              <name>Community Gastroenterology Clinic</name>
+            </playingEntity>
           </participantRole>
         </participant>
       </observation>
@@ -105,16 +129,22 @@
             <reference value="#Proc1"/>
           </originalText>
         </code>
-        <statusCode code="completed"/>
-        <effectiveTime value="undefined"/>
-        <methodCode nullFlavor="UNK"/>
+        <statusCode code="Completed"/>
+        <effectiveTime value="20110203"/>
+        <priorityCode code="CR" displayName="Callback results" codeSystem="OID 2.16.840.1.113883.5.7" codeSystemName="OID 2.16.840.1.113883.5.7"/>
         <performer>
           <assignedEntity>
-            <id root="UNK" extension="1234567"/>
-            <addr nullFlavor="UNK"/>
-            <telecom value="tel:UNK" use="HP"/>
+            <id root="2.16.840.1.113883.19" extension="1234"/>
+            <addr>
+              <streetAddressLine>17 Daws Rd.</streetAddressLine>
+              <city>Blue Bell</city>
+              <state>MA</state>
+              <postalCode>02368</postalCode>
+              <country>US</country>
+            </addr>
+            <telecom value="tel:(555)555-555-1234" use="WP"/>
             <representedOrganization>
-              <id root="2.16.840.1.113883.19.5.9999.1393"/>
+              <id root="2.16.840.1.113883.19.5"/>
               <name>Community Health and Hospitals</name>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
@@ -124,6 +154,7 @@
         <participant typeCode="LOC">
           <participantRole classCode="SDLOC">
             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+            <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
             <addr>
               <streetAddressLine>17 Daws Rd.</streetAddressLine>
               <city>Blue Bell</city>
@@ -132,7 +163,9 @@
               <country>US</country>
             </addr>
             <telecom nullFlavor="UNK"/>
-            <playingEntity/>
+            <playingEntity classCode="PLC">
+              <name>Community Gastroenterology Clinic</name>
+            </playingEntity>
           </participantRole>
         </participant>
       </act>

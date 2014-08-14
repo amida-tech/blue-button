@@ -25,6 +25,18 @@
                     "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
                 }
             ],
+            "specimen": {
+                "identifiers": [
+                    {
+                        "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58683"
+                    }
+                ],
+                "code": {
+                    "name": "colonic polyp sample",
+                    "code": "309226005",
+                    "code_system_name": "SNOMED CT"
+                }
+            },
             "performer": [
                 {
                     "identifiers": [
@@ -109,6 +121,11 @@
                     "code_system_name": "SNOMED CT"
                 }
             ],
+            "priority": {
+                "name": "Callback results",
+                "code": "CR",
+                "code_system_name": "OID 2.16.840.1.113883.5.7"
+            },
             "performer": [
                 {
                     "identifiers": [
@@ -189,6 +206,11 @@
                     "date": "2011-02-03T00:00:00Z",
                     "precision": "day"
                 }
+            },
+            "priority": {
+                "name": "Callback results",
+                "code": "CR",
+                "code_system_name": "OID 2.16.840.1.113883.5.7"
             },
             "performer": [
                 {
