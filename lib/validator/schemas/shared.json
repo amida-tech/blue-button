@@ -28,12 +28,12 @@
                     "type": "string"
                 }
             },
+            "additionalProperties": false,
             "required": [
                 "street_lines",
                 "city"
             ]
         },
-        "additionalProperties": false,
         "cda_date": {
             "type": "object",
             "properties": {
@@ -262,9 +262,8 @@
         "cda_performer": {
             "type": "object",
             "properties": {
-                "type": "string",
-                "performer": {
-                    "$ref": "#/properties/cda_coded_entry"
+                "type": {
+                    "type": "string"
                 },
                 "address": {
                     "type": "array",
@@ -281,7 +280,11 @@
                 "name": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/properties/cda_name"
+                        "anyOf": [{
+                            "$ref": "#/properties/cda_name"
+                        }, {
+                            "type": "string"
+                        }]
                     }
                 },
                 "organization": {
@@ -299,10 +302,7 @@
                 "code": {
                     "ref": "#/properties/cda_coded_entry"
                 }
-            },
-            "required": [
-                
-            ]
+            }
         }
     }
 }

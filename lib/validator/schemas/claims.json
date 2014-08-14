@@ -38,8 +38,11 @@
                 "$ref": "http://local.com/common_models#/properties/cda_phone"
             }
         },
-        "provider_id": {
-            "$ref": "http://local.com/common_models#/properties/cda_id"
+        "performer": {
+            "type": "array",
+            "items": {
+                "$ref": "http://local.com/common_models#/properties/cda_performer"
+            }
         },
         "charges": {
             "type": "object",
@@ -138,20 +141,6 @@
                             }
                         }
                     },
-                    "prescriber": {
-                        "type": "object",
-                        "properties": {
-                            "id": {
-                                "$ref": "http://local.com/common_models#/properties/cda_id"
-                            },
-                            "description": {
-                                "type": "string"
-                            },
-                            "name": {
-                                "type": "string"
-                            }
-                        }
-                    },
                     "procedure": {
                         "type": "object",
                         "properties": {
@@ -177,15 +166,10 @@
                             }
                         }
                     },
-                    "rendering provider": {
-                        "type": "object",
-                        "properties": {
-                            "npi": {
-                                "type": "string"
-                            },
-                            "number": {
-                                "type": "string"
-                            }
+                    "performer": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "http://local.com/common_models#/properties/cda_performer"
                         }
                     },
                     "revenue": {
@@ -210,49 +194,6 @@
                     },
                     "type_of_service": {
                         "type": "number"
-                    }
-                }
-            }
-        },
-        "provider": {
-            "type": "object",
-            "properties": {
-                "address": {
-                    "$ref": "http://local.com/common_models#/properties/cda_address"
-                },
-                "identifiers": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "http://local.com/common_models#/properties/cda_id"
-                    }
-                },
-                "organization": {
-                    "type": "object",
-                    "properties": {
-                        "address": {
-                            "$ref": "http://local.com/common_models#/properties/cda_address"
-                        },
-                        "identifiers": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "http://local.com/common_models#/properties/cda_id"
-                            }
-                        },
-                        "name": {
-                            "type": "string"
-                        },
-                        "phone": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "http://local.com/common_models#/properties/cda_phone"
-                            }
-                        },
-                        "email": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "http://local.com/common_models#/properties/cda_email"
-                            }
-                        }
                     }
                 }
             }
