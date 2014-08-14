@@ -356,6 +356,51 @@
                 ],
                 "status": "Completed",
                 "sig": "Proventil HFA",
+                "product": {
+                    "identifiers": [
+                        {
+                            "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                        }
+                    ],
+                    "unencoded_name": "Proventil HFA",
+                    "product": {
+                        "name": "Proventil HFA",
+                        "code": "219483",
+                        "translations": [
+                            {
+                                "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
+                                "code": "573621",
+                                "code_system_name": "RXNORM"
+                            }
+                        ],
+                        "code_system_name": "RXNORM"
+                    },
+                    "manufacturer": "Medication Factory Inc."
+                },
+                "supply": {
+                    "date_time": {
+                        "low": {
+                            "date": "2007-01-03T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "repeatNumber": "1",
+                    "quantity": "75",
+                    "author": {
+                        "date_time": {},
+                        "identifiers": [
+                            {
+                                "identifier": "2a620155-9d11-439e-92b3-5d9815fe4de8"
+                            }
+                        ],
+                        "name": {
+                            "prefix": "Dr.",
+                            "last": "Seven",
+                            "first": "Henry"
+                        }
+                    },
+                    "instructions": "label in spanish"
+                },
                 "administration": {
                     "route": {
                         "name": "RESPIRATORY (INHALATION)",
@@ -383,6 +428,25 @@
                         "frequency": true
                     }
                 },
+                "performer": {
+                    "organization": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                            }
+                        ],
+                        "name": [
+                            "Community Health and Hospitals"
+                        ]
+                    }
+                },
+                "drug_vehicle": {
+                    "playingEntity": {
+                        "name": "Aerosol",
+                        "code": "324049",
+                        "code_system_name": "RXNORM"
+                    }
+                },
                 "precondition": {
                     "code": {
                         "code": "ASSERTION",
@@ -395,6 +459,12 @@
                     }
                 },
                 "indication": {
+                    "identifiers": [
+                        {
+                            "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                            "extension": "45665"
+                        }
+                    ],
                     "code": "404684003",
                     "date_time": {
                         "low": {
@@ -407,6 +477,14 @@
                         "code": "233604007",
                         "code_system_name": "SNOMED CT"
                     }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "instruction",
+                        "code": "409073007",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Proventil HFA"
                 },
                 "dispense": {
                     "identifiers": [
@@ -778,6 +856,14 @@
                             ]
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
                 }
             },
             {
@@ -856,6 +942,14 @@
                             ]
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
                 }
             },
             {
@@ -1241,6 +1335,18 @@
                         "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
                     }
                 ],
+                "specimen": {
+                    "identifiers": [
+                        {
+                            "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58683"
+                        }
+                    ],
+                    "code": {
+                        "name": "colonic polyp sample",
+                        "code": "309226005",
+                        "code_system_name": "SNOMED CT"
+                    }
+                },
                 "performer": [
                     {
                         "identifiers": [
@@ -1325,6 +1431,11 @@
                         "code_system_name": "SNOMED CT"
                     }
                 ],
+                "priority": {
+                    "name": "Callback results",
+                    "code": "CR",
+                    "code_system_name": "OID 2.16.840.1.113883.5.7"
+                },
                 "performer": [
                     {
                         "identifiers": [
@@ -1406,6 +1517,11 @@
                         "precision": "day"
                     }
                 },
+                "priority": {
+                    "name": "Callback results",
+                    "code": "CR",
+                    "code_system_name": "OID 2.16.840.1.113883.5.7"
+                },
                 "performer": [
                     {
                         "identifiers": [
@@ -1482,7 +1598,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
@@ -1501,7 +1617,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
@@ -1520,7 +1636,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
@@ -1539,7 +1655,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
@@ -1756,8 +1872,16 @@
     },
     "errors": [
         "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
-        "nullFlavor alert:  missing but required product in Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",

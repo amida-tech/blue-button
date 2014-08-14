@@ -338,12 +338,12 @@
             {
                 "date_time": {
                     "low": {
-                        "date": "Invalid Date",
-                        "precision": "subsecond"
+                        "date": "2007-01-03T00:00:00Z",
+                        "precision": "day"
                     },
                     "high": {
-                        "date": "Invalid Date",
-                        "precision": "subsecond"
+                        "date": "2012-05-15T00:00:00Z",
+                        "precision": "day"
                     }
                 },
                 "identifiers": [
@@ -356,35 +356,50 @@
                 "product": {
                     "identifiers": [
                         {
-                            "identifier": "undefined"
+                            "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
                         }
                     ],
                     "product": {
                         "name": "Proventil HFA",
                         "code": "219483",
-                        "code_system_name": "OID 2",
+                        "code_system_name": "RXNORM",
                         "translations": [
                             {
                                 "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
                                 "code": "573621",
-                                "code_system_name": "HL7ActCode"
+                                "code_system_name": "RXNORM"
                             }
                         ]
-                    }
+                    },
+                    "manufacturer": "Medication Factory Inc."
                 },
                 "supply": {
                     "date_time": {
                         "low": {
-                            "date": "Invalid Date",
-                            "precision": "subsecond"
+                            "date": "2007-01-03T00:00:00Z",
+                            "precision": "day"
                         },
                         "high": {
-                            "date": "Invalid Date",
-                            "precision": "subsecond"
+                            "date": "2012-05-15T00:00:00Z",
+                            "precision": "day"
                         }
                     },
                     "repeatNumber": "1",
-                    "quantity": "75"
+                    "quantity": "75",
+                    "author": {
+                        "date_time": {},
+                        "identifiers": [
+                            {
+                                "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                            }
+                        ],
+                        "name": {
+                            "prefix": "Dr.",
+                            "last": "Seven",
+                            "first": "Henry"
+                        }
+                    },
+                    "instructions": "Proventil HFA"
                 },
                 "administration": {
                     "route": {
@@ -413,6 +428,25 @@
                         "frequency": true
                     }
                 },
+                "performer": {
+                    "organization": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                            }
+                        ],
+                        "name": [
+                            "Community Health and Hospitals"
+                        ]
+                    }
+                },
+                "drug_vehicle": {
+                    "playingEntity": {
+                        "name": "Aerosol",
+                        "code": "324049",
+                        "code_system_name": "RXNORM"
+                    }
+                },
                 "precondition": {
                     "code": {
                         "code": "ASSERTION",
@@ -425,11 +459,65 @@
                     }
                 },
                 "indication": {
+                    "identifiers": [
+                        {
+                            "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                            "extension": "45665"
+                        }
+                    ],
                     "code": "404684003",
                     "date_time": {
                         "low": {
-                            "date": "Invalid Date",
-                            "precision": "subsecond"
+                            "date": "2007-01-03T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "value": {
+                        "name": "Pneumonia",
+                        "code": "233604007",
+                        "code_system_name": "SNOMED CT"
+                    }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "instruction",
+                        "code": "409073007",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Proventil HFA"
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "1.2.3.4.56789.1",
+                            "extension": "cb734647-fc99-424c-a864-7e3cda82e704"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.456",
+                                "extension": "2981823"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "1001 Village Avenue"
+                            ],
+                            "city": "Portland",
+                            "state": "OR",
+                            "zip": "99123",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                }
+                            ],
+                            "name": [
+                                "Community Health and Hospitals"
+                            ]
                         }
                     }
                 }
@@ -440,52 +528,11 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "Ambulatory",
-                            "code": "AMB",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
                         "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
-                    }
-                ],
-                "date_time": {
-                    "point": {
-                        "date": "2009-02-27T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "performers": [
-                    {
-                        "name": "General Physician",
-                        "code": "59058001",
-                        "code_system_name": "SNOMED CT"
-                    }
-                ],
-                "locations": [
-                    {
-                        "name": "",
-                        "location_type": {
-                            "name": "Urgent Care Center",
-                            "code": "1160-1",
-                            "code_system_name": "HealthcareServiceLocation"
-                        },
-                        "address": [
-                            {
-                                "street_lines": [
-                                    "17 Daws Rd."
-                                ],
-                                "city": "Blue Bell",
-                                "state": "MA",
-                                "zip": "02368",
-                                "country": "US"
-                            }
-                        ]
                     }
                 ],
                 "findings": [
@@ -525,7 +572,7 @@
                 "allergen": {
                     "name": "ALLERGENIC EXTRACT, PENICILLIN",
                     "code": "314422",
-                    "code_system_name": "OID 2"
+                    "code_system_name": "RXNORM"
                 },
                 "intolerance": {
                     "date_time": {
@@ -585,7 +632,7 @@
                 "allergen": {
                     "name": "Codeine",
                     "code": "2670",
-                    "code_system_name": "OID 2"
+                    "code_system_name": "RXNORM"
                 },
                 "intolerance": {
                     "date_time": {
@@ -645,7 +692,7 @@
                 "allergen": {
                     "name": "Aspirin",
                     "code": "1191",
-                    "code_system_name": "OID 2"
+                    "code_system_name": "RXNORM"
                 },
                 "intolerance": {
                     "date_time": {
@@ -695,8 +742,8 @@
             {
                 "date_time": {
                     "point": {
-                        "date": "Invalid Date",
-                        "precision": "subsecond"
+                        "date": "1999-11-01T00:00:00Z",
+                        "precision": "day"
                     }
                 },
                 "identifiers": [
@@ -709,16 +756,16 @@
                     "product": {
                         "name": "Influenza virus vaccine",
                         "code": "88",
-                        "code_system_name": "OID 2",
+                        "code_system_name": "CVX",
                         "translations": [
                             {
                                 "name": "Influenza, seasonal, injectable",
                                 "code": "141",
-                                "code_system_name": "HL7ActCode"
+                                "code_system_name": "CVX"
                             }
                         ]
                     },
-                    "lot_number": "1",
+                    "lot_number": "",
                     "manufacturer": "Health LS - Immuno Inc."
                 },
                 "administration": {
@@ -762,16 +809,27 @@
                                 {
                                     "identifier": "2.16.840.1.113883.19.5.9999.1394"
                                 }
+                            ],
+                            "name": [
+                                "Good Health Clinic"
                             ]
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
                 }
             },
             {
                 "date_time": {
                     "point": {
-                        "date": "Invalid Date",
-                        "precision": "subsecond"
+                        "date": "1998-12-15T00:00:00Z",
+                        "precision": "day"
                     }
                 },
                 "identifiers": [
@@ -784,16 +842,16 @@
                     "product": {
                         "name": "Influenza virus vaccine",
                         "code": "88",
-                        "code_system_name": "OID 2",
+                        "code_system_name": "CVX",
                         "translations": [
                             {
                                 "name": "Influenza, seasonal, injectable",
                                 "code": "141",
-                                "code_system_name": "HL7ActCode"
+                                "code_system_name": "CVX"
                             }
                         ]
                     },
-                    "lot_number": "1",
+                    "lot_number": "",
                     "manufacturer": "Health LS - Immuno Inc."
                 },
                 "administration": {
@@ -837,16 +895,27 @@
                                 {
                                     "identifier": "2.16.840.1.113883.19.5.9999.1394"
                                 }
+                            ],
+                            "name": [
+                                "Good Health Clinic"
                             ]
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
                 }
             },
             {
                 "date_time": {
                     "point": {
-                        "date": "Invalid Date",
-                        "precision": "subsecond"
+                        "date": "1998-12-15T00:00:00Z",
+                        "precision": "day"
                     }
                 },
                 "identifiers": [
@@ -859,16 +928,16 @@
                     "product": {
                         "name": "Pneumococcal polysaccharide vaccine",
                         "code": "33",
-                        "code_system_name": "OID 2",
+                        "code_system_name": "CVX",
                         "translations": [
                             {
                                 "name": "Pneumococcal NOS",
                                 "code": "109",
-                                "code_system_name": "HL7ActCode"
+                                "code_system_name": "CVX"
                             }
                         ]
                     },
-                    "lot_number": "1",
+                    "lot_number": "",
                     "manufacturer": "Health LS - Immuno Inc."
                 },
                 "administration": {
@@ -912,6 +981,9 @@
                                 {
                                     "identifier": "2.16.840.1.113883.19.5.9999.1394"
                                 }
+                            ],
+                            "name": [
+                                "Good Health Clinic"
                             ]
                         }
                     ]
@@ -920,8 +992,8 @@
             {
                 "date_time": {
                     "point": {
-                        "date": "Invalid Date",
-                        "precision": "subsecond"
+                        "date": "1998-12-15T00:00:00Z",
+                        "precision": "day"
                     }
                 },
                 "identifiers": [
@@ -934,16 +1006,16 @@
                     "product": {
                         "name": "Tetanus and diphtheria toxoids - preservative free",
                         "code": "103",
-                        "code_system_name": "OID 2",
+                        "code_system_name": "CVX",
                         "translations": [
                             {
                                 "name": "Tetanus and diphtheria toxoids - preservative free",
                                 "code": "09",
-                                "code_system_name": "HL7ActCode"
+                                "code_system_name": "CVX"
                             }
                         ]
                     },
-                    "lot_number": "1",
+                    "lot_number": "",
                     "manufacturer": "Health LS - Immuno Inc."
                 },
                 "administration": {
@@ -987,6 +1059,9 @@
                                 {
                                     "identifier": "2.16.840.1.113883.19.5.9999.1394"
                                 }
+                            ],
+                            "name": [
+                                "Good Health Clinic"
                             ]
                         }
                     ]
@@ -1205,11 +1280,14 @@
                         "identifier": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
                     }
                 ],
-                "status": "Completed",
+                "status": {
+                    "code": "Completed",
+                    "code_system_name": "OID undefined"
+                },
                 "date_time": {
                     "point": {
-                        "date": "Invalid Date",
-                        "precision": "subsecond"
+                        "date": "2012-05-12T00:00:00Z",
+                        "precision": "day"
                     }
                 },
                 "body_sites": [
@@ -1217,33 +1295,6 @@
                         "name": "colon",
                         "code": "appropriate_code",
                         "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
-                    }
-                ],
-                "performer": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "UNK"
-                            }
-                        ],
-                        "phone": [
-                            {
-                                "number": "UNK",
-                                "type": "primary home"
-                            }
-                        ],
-                        "organization": [
-                            {
-                                "identifiers": [
-                                    {
-                                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                                    }
-                                ],
-                                "name": [
-                                    "Community Health and Hospitals"
-                                ]
-                            }
-                        ]
                     }
                 ],
                 "procedure_type": "procedure"
@@ -1260,11 +1311,14 @@
                         "extension": "123456789"
                     }
                 ],
-                "status": "Completed",
+                "status": {
+                    "code": "Aborted",
+                    "code_system_name": "OID undefined"
+                },
                 "date_time": {
                     "point": {
-                        "date": "Invalid Date",
-                        "precision": "subsecond"
+                        "date": "2011-02-03T00:00:00Z",
+                        "precision": "day"
                     }
                 },
                 "body_sites": [
@@ -1274,36 +1328,19 @@
                         "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
                     }
                 ],
-                "performer": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "UNK",
-                                "extension": "123456789"
-                            }
-                        ],
-                        "phone": [
-                            {
-                                "number": "UNK",
-                                "type": "primary home"
-                            }
-                        ],
-                        "organization": [
-                            {
-                                "identifiers": [
-                                    {
-                                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                                    }
-                                ],
-                                "name": [
-                                    "Community Health and Hospitals"
-                                ]
-                            }
-                        ]
-                    }
-                ],
+                "priority": {
+                    "name": "Callback results",
+                    "code": "CR",
+                    "code_system_name": "OID OID 2.16.840.1.113883.5.7"
+                },
                 "locations": [
                     {
+                        "name": "Community Gastroenterology Clinic",
+                        "location_type": {
+                            "name": "Gastroenterology Clinic",
+                            "code": "1118-9",
+                            "code_system_name": "HealthcareServiceLocation"
+                        },
                         "address": [
                             {
                                 "street_lines": [
@@ -1331,43 +1368,29 @@
                         "extension": "1234567"
                     }
                 ],
-                "status": "Completed",
+                "status": {
+                    "code": "Completed",
+                    "code_system_name": "OID undefined"
+                },
                 "date_time": {
                     "point": {
-                        "date": "Invalid Date",
-                        "precision": "subsecond"
+                        "date": "2011-02-03T00:00:00Z",
+                        "precision": "day"
                     }
                 },
-                "performer": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "UNK",
-                                "extension": "1234567"
-                            }
-                        ],
-                        "phone": [
-                            {
-                                "number": "UNK",
-                                "type": "primary home"
-                            }
-                        ],
-                        "organization": [
-                            {
-                                "identifiers": [
-                                    {
-                                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                                    }
-                                ],
-                                "name": [
-                                    "Community Health and Hospitals"
-                                ]
-                            }
-                        ]
-                    }
-                ],
+                "priority": {
+                    "name": "Callback results",
+                    "code": "CR",
+                    "code_system_name": "OID OID 2.16.840.1.113883.5.7"
+                },
                 "locations": [
                     {
+                        "name": "Community Gastroenterology Clinic",
+                        "location_type": {
+                            "name": "Gastroenterology Clinic",
+                            "code": "1118-9",
+                            "code_system_name": "HealthcareServiceLocation"
+                        },
                         "address": [
                             {
                                 "street_lines": [
@@ -1397,7 +1420,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
@@ -1416,7 +1439,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
@@ -1435,7 +1458,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
@@ -1454,7 +1477,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-05-12T00:00:00Z",
                         "precision": "day"
                     }
@@ -1501,11 +1524,14 @@
                             "phone": [
                                 {
                                     "number": "(781)555-1515",
-                                    "type": "primary home"
+                                    "type": "work place"
                                 }
                             ],
                             "organization": [
                                 {
+                                    "name": [
+                                        "Good Health Insurance"
+                                    ],
                                     "address": [
                                         {
                                             "street_lines": [
@@ -1516,6 +1542,12 @@
                                             "zip": "02368",
                                             "country": "US",
                                             "use": "work place"
+                                        }
+                                    ],
+                                    "phone": [
+                                        {
+                                            "number": "(781)555-1515",
+                                            "type": "work place"
                                         }
                                     ]
                                 }
@@ -1619,10 +1651,22 @@
     },
     "errors": [
         "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -1648,37 +1692,35 @@
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required code in insurance -> policy -> entry -> payers_section -> CCD",
         "cardinality error: found 2 when expecting 1..1 at h:performer",
         "nullFlavor alert:  missing but required guarantor in entry -> payers_section -> CCD",
