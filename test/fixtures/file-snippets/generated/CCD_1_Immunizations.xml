@@ -3,7 +3,7 @@
   <section>
     <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
     <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
-    <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+    <code code="11369-6" displayName="Immunizations" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
     <title>IMMUNIZATIONS</title>
     <text/>
     <entry typeCode="DRIV">
@@ -14,21 +14,21 @@
           <reference value="#immun1"/>
         </text>
         <statusCode code="completed"/>
-        <effectiveTime xsi:type="IVL_TS" value="undefined"/>
+        <effectiveTime xsi:type="IVL_TS" value="19991101"/>
         <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
           <manufacturedProduct classCode="MANU">
-            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
             <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="88" displayName="Influenza virus vaccine" codeSystem="2" codeSystemName="CVX">
+              <code code="88" displayName="Influenza virus vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi1"/>
                 </originalText>
-                <translation code="141" codeSystem="2.16.840.1.113883.5.4" displayName="Influenza, seasonal, injectable" codeSystemName="CVX"/>
+                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
               </code>
-              <lotNumberText>1</lotNumberText>
+              <lotNumberText/>
             </manufacturedMaterial>
             <manufacturerOrganization>
               <name>Health LS - Immuno Inc.</name>
@@ -54,7 +54,7 @@
             </assignedPerson>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1394"/>
-              <name/>
+              <name>Good Health Clinic</name>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
             </representedOrganization>
@@ -63,8 +63,8 @@
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <act classCode="ACT" moodCode="INT">
             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
-            <text>label in spanish<reference value="#MedSec_1"/></text>
+            <code code="171044003" displayName="immunization education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+            <text>Possible flu-like symptoms for three days.<reference value="#immunSect"/></text>
             <statusCode code="completed"/>
           </act>
         </entryRelationship>
@@ -78,21 +78,21 @@
           <reference value="#immun2"/>
         </text>
         <statusCode code="completed"/>
-        <effectiveTime xsi:type="IVL_TS" value="undefined"/>
+        <effectiveTime xsi:type="IVL_TS" value="19981215"/>
         <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
           <manufacturedProduct classCode="MANU">
-            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
             <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="88" displayName="Influenza virus vaccine" codeSystem="2" codeSystemName="CVX">
+              <code code="88" displayName="Influenza virus vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi2"/>
                 </originalText>
-                <translation code="141" codeSystem="2.16.840.1.113883.5.4" displayName="Influenza, seasonal, injectable" codeSystemName="CVX"/>
+                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
               </code>
-              <lotNumberText>1</lotNumberText>
+              <lotNumberText/>
             </manufacturedMaterial>
             <manufacturerOrganization>
               <name>Health LS - Immuno Inc.</name>
@@ -118,7 +118,7 @@
             </assignedPerson>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1394"/>
-              <name/>
+              <name>Good Health Clinic</name>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
             </representedOrganization>
@@ -127,8 +127,8 @@
         <entryRelationship typeCode="SUBJ" inversionInd="true">
           <act classCode="ACT" moodCode="INT">
             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
-            <text>label in spanish<reference value="#MedSec_1"/></text>
+            <code code="171044003" displayName="immunization education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+            <text>Possible flu-like symptoms for three days.<reference value="#immunSect"/></text>
             <statusCode code="completed"/>
           </act>
         </entryRelationship>
@@ -142,21 +142,21 @@
           <reference value="#immun3"/>
         </text>
         <statusCode code="completed"/>
-        <effectiveTime xsi:type="IVL_TS" value="undefined"/>
+        <effectiveTime xsi:type="IVL_TS" value="19981215"/>
         <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
           <manufacturedProduct classCode="MANU">
-            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
             <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="33" displayName="Pneumococcal polysaccharide vaccine" codeSystem="2" codeSystemName="CVX">
+              <code code="33" displayName="Pneumococcal polysaccharide vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi3"/>
                 </originalText>
-                <translation code="109" codeSystem="2.16.840.1.113883.5.4" displayName="Pneumococcal NOS" codeSystemName="CVX"/>
+                <translation code="109" displayName="Pneumococcal NOS" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
               </code>
-              <lotNumberText>1</lotNumberText>
+              <lotNumberText/>
             </manufacturedMaterial>
             <manufacturerOrganization>
               <name>Health LS - Immuno Inc.</name>
@@ -182,20 +182,12 @@
             </assignedPerson>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1394"/>
-              <name/>
+              <name>Good Health Clinic</name>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
             </representedOrganization>
           </assignedEntity>
         </performer>
-        <entryRelationship typeCode="SUBJ" inversionInd="true">
-          <act classCode="ACT" moodCode="INT">
-            <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-            <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
-            <text>label in spanish<reference value="#MedSec_1"/></text>
-            <statusCode code="completed"/>
-          </act>
-        </entryRelationship>
       </substanceAdministration>
     </entry>
     <entry typeCode="DRIV">
@@ -206,21 +198,21 @@
           <reference value="#immun4"/>
         </text>
         <statusCode code="completed"/>
-        <effectiveTime xsi:type="IVL_TS" value="undefined"/>
+        <effectiveTime xsi:type="IVL_TS" value="19981215"/>
         <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
         <doseQuantity value="50" unit="mcg"/>
         <consumable>
           <manufacturedProduct classCode="MANU">
-            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
             <id nullFlavor="UNK"/>
             <manufacturedMaterial>
-              <code code="103" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystem="2" codeSystemName="CVX">
+              <code code="103" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
                 <originalText>
                   <reference value="#immi4"/>
                 </originalText>
-                <translation code="09" codeSystem="2.16.840.1.113883.5.4" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystemName="CVX"/>
+                <translation code="09" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
               </code>
-              <lotNumberText>1</lotNumberText>
+              <lotNumberText/>
             </manufacturedMaterial>
             <manufacturerOrganization>
               <name>Health LS - Immuno Inc.</name>
@@ -246,24 +238,12 @@
             </assignedPerson>
             <representedOrganization>
               <id root="2.16.840.1.113883.19.5.9999.1394"/>
-              <name/>
+              <name>Good Health Clinic</name>
               <telecom nullFlavor="UNK"/>
               <addr nullFlavor="UNK"/>
             </representedOrganization>
           </assignedEntity>
         </performer>
-        <entryRelationship typeCode="SUBJ" inversionInd="true">
-          <observation classCode="OBS" moodCode="EVN">
-            <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-            <code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
-            <text>
-              <reference value="#severity3"/>
-            </text>
-            <statusCode code="completed"/>
-            <value xsi:type="CD" code="undefined" displayName="UNK" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-            <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
-          </observation>
-        </entryRelationship>
       </substanceAdministration>
     </entry>
   </section>

@@ -76,6 +76,14 @@
                         ]
                     }
                 ]
+            },
+            "instructions": {
+                "code": {
+                    "name": "immunization education",
+                    "code": "171044003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "freeText": "Possible flu-like symptoms for three days."
             }
         },
         {
@@ -154,6 +162,14 @@
                         ]
                     }
                 ]
+            },
+            "instructions": {
+                "code": {
+                    "name": "immunization education",
+                    "code": "171044003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "freeText": "Possible flu-like symptoms for three days."
             }
         },
         {
