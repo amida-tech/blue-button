@@ -12,13 +12,9 @@
         <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
         <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
           <originalText>Checkup Examination<reference value="#Encounter1"/></originalText>
-<<<<<<< Updated upstream
-          <translation code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory" codeSystemName="HL7ActCode"/>
-=======
           <translation code="AMB" displayName="Ambulatory" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
->>>>>>> Stashed changes
         </code>
-        <effectiveTime value="20090227"/>
+        <effectiveTime value="20090227130000+0500"/>
         <performer>
           <assignedEntity>
             <id root="PseduoMD-3"/>
@@ -37,13 +33,8 @@
               <country>US</country>
             </addr>
             <telecom nullFlavor="UNK"/>
-<<<<<<< Updated upstream
             <playingEntity>
               <name/>
-=======
-            <playingEntity classCode="PLC">
-              <name>Community Urgent Care Center</name>
->>>>>>> Stashed changes
             </playingEntity>
           </participantRole>
         </participant>

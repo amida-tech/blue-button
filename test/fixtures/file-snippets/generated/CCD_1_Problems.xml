@@ -41,7 +41,7 @@
                 <statusCode code="completed"/>
                 <effectiveTime>
                   <low value="20080103"/>
-                  <high value="20090227"/>
+                  <high value="20090227130000+0500"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="undefined" displayName="[object Object]" codeSystem="2.16.840.1.113883.6.96" codeSystemName="HITSP Problem Status"/>
               </observation>
@@ -104,7 +104,7 @@
                 <statusCode code="completed"/>
                 <effectiveTime>
                   <low value="20080103"/>
-                  <high value="20090227"/>
+                  <high value="20090227130000+0500"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="undefined" displayName="[object Object]" codeSystem="2.16.840.1.113883.6.96" codeSystemName="HITSP Problem Status"/>
               </observation>

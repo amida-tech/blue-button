@@ -30,7 +30,7 @@
             <participant typeCode="CSM">
               <participantRole classCode="MANU">
                 <playingEntity classCode="MMAT">
-                  <code code="314422" displayName="ALLERGENIC EXTRACT, PENICILLIN" codeSystem="2" codeSystemName="RXNORM">
+                  <code code="314422" displayName="ALLERGENIC EXTRACT, PENICILLIN" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#reaction1"/>
                     </originalText>
@@ -57,7 +57,7 @@
                 <statusCode code="completed"/>
                 <effectiveTime>
                   <low value="20070501"/>
-                  <high value="20090227"/>
+                  <high value="20090227130000+0500"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="422587007" displayName="Nausea" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -114,7 +114,7 @@
             <participant typeCode="CSM">
               <participantRole classCode="MANU">
                 <playingEntity classCode="MMAT">
-                  <code code="2670" displayName="Codeine" codeSystem="2" codeSystemName="RXNORM">
+                  <code code="2670" displayName="Codeine" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#reaction2"/>
                     </originalText>
@@ -141,7 +141,7 @@
                 <statusCode code="completed"/>
                 <effectiveTime>
                   <low value="20060501"/>
-                  <high value="20090227"/>
+                  <high value="20090227130000+0500"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="56018004" displayName="Wheezing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">
@@ -198,7 +198,7 @@
             <participant typeCode="CSM">
               <participantRole classCode="MANU">
                 <playingEntity classCode="MMAT">
-                  <code code="1191" displayName="Aspirin" codeSystem="2" codeSystemName="RXNORM">
+                  <code code="1191" displayName="Aspirin" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#reaction3"/>
                     </originalText>
@@ -225,7 +225,7 @@
                 <statusCode code="completed"/>
                 <effectiveTime>
                   <low value="20080501"/>
-                  <high value="20090227"/>
+                  <high value="20090227130000+0500"/>
                 </effectiveTime>
                 <value xsi:type="CD" code="247472004" displayName="Hives" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                 <entryRelationship typeCode="SUBJ" inversionInd="true">

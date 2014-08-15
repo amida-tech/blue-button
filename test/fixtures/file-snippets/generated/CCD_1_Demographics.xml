@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
   <id root="2.16.840.1.113883.19.5.99999.2" extension="998991"/>
-  <id extension="111-00-2330" root="2.16.840.1.113883.4.1"/>
+  <id extension="undefined" root="2.16.840.1.113883.4.1"/>
   <addr use="HP">
     <streetAddressLine>1357 Amber Drive</streetAddressLine>
     <city>Beaverton</city>

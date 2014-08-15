@@ -2,7 +2,6 @@ var expect = require('chai').expect;
 var assert = require('chai').assert;
 var lib = require('./test-lib.js');
 var fs = require("fs");
-
 var test = new lib.testXML();
 test.verbose = true; // log setting
 
@@ -89,11 +88,7 @@ if (TEST_SECTIONS) {
     describe('sections', function () {
         it('should match respective sections', function () {
             Object.keys(supportedComponents).forEach(function (section) {
-<<<<<<< Updated upstream
-                if (section === "vitals") { // add section === "[section]" for specific section
-=======
-                if (section === "encounters") { // add section === "[section]" for specific section
->>>>>>> Stashed changes
+                if (true) { // add section === "[section]" for specific section
                     var XMLDOMs = test.generateXMLDOM(section);
 
                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
