@@ -27,10 +27,10 @@
                     "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 },
                 "body_site": {
-                    "type": "string"
+                    "$ref":"http://local.com/common_models#/properties/cda_coded_entry"
                 },
                 "form": {
-                    "type": "string"
+                    "$ref":"http://local.com/common_models#/properties/cda_coded_entry"
                 }
             },
             "additionalProperties": false
