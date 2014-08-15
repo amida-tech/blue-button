@@ -267,7 +267,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "M 13-18 g/dl; F 12-16 g/dl"
                         },
                         "interpretations": [
@@ -294,7 +294,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "low": "4.3",
                             "high": "10.8",
                             "unit": "10+3/ul"
@@ -323,7 +323,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "low": "150",
                             "high": "350",
                             "unit": "10+3/ul"
@@ -550,9 +550,18 @@
                 },
                 "performers": [
                     {
-                        "name": "General Physician",
-                        "code": "59058001",
-                        "code_system_name": "SNOMED CT"
+                        "identifiers": [
+                            {
+                                "identifier": "PseduoMD-3"
+                            }
+                        ],
+                        "code": [
+                            {
+                                "name": "General Physician",
+                                "code": "59058001",
+                                "code_system_name": "SNOMED CT"
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -1733,6 +1742,12 @@
                                         }
                                     ]
                                 }
+                            ],
+                            "code": [
+                                {
+                                    "code": "PAYOR",
+                                    "code_system_name": "HL7 RoleCode"
+                                }
                             ]
                         }
                     }
@@ -1801,6 +1816,13 @@
                                 "country": "US",
                                 "use": "primary home"
                             }
+                        ],
+                        "code": [
+                            {
+                                "name": "Self",
+                                "code": "SELF",
+                                "code_system_name": "HL7 Role"
+                            }
                         ]
                     },
                     "name": [
@@ -1854,7 +1876,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.19.5.99999.1",
+                "extension": "TT988"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

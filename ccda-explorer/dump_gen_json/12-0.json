@@ -213,7 +213,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "0.00-0.20 ng/mL"
                         },
                         "interpretations": [
@@ -253,7 +253,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "3.5-5.0 mmol/L"
                         },
                         "interpretations": [
@@ -280,7 +280,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "4-18 mg/dL"
                         },
                         "interpretations": [
@@ -307,7 +307,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "22-33 mmol/L"
                         },
                         "interpretations": [
@@ -334,7 +334,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "135-145 mmol/L"
                         },
                         "interpretations": [
@@ -361,7 +361,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "95-110 mmol/L"
                         },
                         "interpretations": [
@@ -388,7 +388,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "65-110 mg/dL"
                         },
                         "interpretations": [
@@ -415,7 +415,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "0.5-1.2 mg/dL"
                         },
                         "interpretations": [
@@ -620,6 +620,71 @@
                         "precision": "subsecond"
                     }
                 },
+                "performers": [
+                    {
+                        "name": [
+                            {
+                                "last": "Owens",
+                                "first": "Dale"
+                            }
+                        ]
+                    },
+                    {
+                        "name": [
+                            {
+                                "last": "Nightengale",
+                                "suffix": "RN",
+                                "first": "Nancy"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1004 Healthcare Dr.",
+                                    "Get Well Clinic"
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97005-",
+                                "country": "US",
+                                "use": "work place"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "(555) 555-1014",
+                                "type": "work place"
+                            }
+                        ]
+                    },
+                    {
+                        "name": [
+                            {
+                                "last": "Admit",
+                                "suffix": "MD",
+                                "first": "Aaron"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1006 Healthcare Dr"
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97005-",
+                                "country": "US",
+                                "use": "work place"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "(555) 555-1006",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Local Community Hospital Organization",
@@ -1008,7 +1073,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.1.13.99999.999362",
+                "extension": "280004"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",
@@ -1036,6 +1107,13 @@
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",

@@ -312,6 +312,74 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.201",
+                                "extension": "e163b5c3-83a9-4937-b0e4-ce773eb3f8e4"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "L"
+                                ],
+                                "last": "Seven",
+                                "first": "Henry"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1002 Healthcare Dr"
+                                ],
+                                "city": "Beaverton",
+                                "state": "OR",
+                                "zip": "97005"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-5555551002",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.201",
+                                        "extension": "0001"
+                                    },
+                                    {
+                                        "identifier": "2.16.840.1.113883.4.6",
+                                        "extension": "1234567893"
+                                    }
+                                ],
+                                "name": [
+                                    "NEXTGEN Medical Practice (Horsham)"
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "795 Horsham Road"
+                                        ],
+                                        "city": "Horsham",
+                                        "state": "PA",
+                                        "zip": "19044"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-2156577010",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Get Well Clinic",
@@ -936,7 +1004,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "2.201",
+                "extension": "2fb1e72f-d208-4394-bc35-1d2b6ada135b"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",
