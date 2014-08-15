@@ -43,7 +43,7 @@
                     },
                     "high": {
                         "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
+                        "precision": "second"
                     }
                 }
             },
@@ -97,7 +97,7 @@
                     },
                     "high": {
                         "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
+                        "precision": "second"
                     }
                 }
             },

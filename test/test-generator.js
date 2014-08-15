@@ -6,7 +6,7 @@ var test = new lib.testXML();
 test.verbose = true; // log setting
 
 // testing options/cases
-var TEST_CCDA_SAMPLES = false;
+var TEST_CCDA_SAMPLES = true;
 var TEST_CCD = false;
 var TEST_SECTIONS = true;
 var TEST_PARSE_GENERATE = true;
