@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+    <code code="18776-5" displayName="Plan of Care" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>PLAN OF CARE</title>
+    <text/>
+    <entry typeCode="DRIV">
+      <observation classCode="OBS" moodCode="RQO">
+        <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
+        <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4a"/>
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+        <statusCode code="new"/>
+        <effectiveTime>
+          <center value="20120512"/>
+        </effectiveTime>
+      </observation>
+    </entry>
+    <entry>
+      <act classCode="ACT" moodCode="RQO">
+        <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+        <id root="9a6d1bac-17d3-4195-89a4-1121bc809a5c"/>
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+        <statusCode code="new"/>
+        <effectiveTime>
+          <center value="20120512"/>
+        </effectiveTime>
+      </act>
+    </entry>
+    <entry>
+      <encounter classCode="ENC" moodCode="INT">
+        <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
+        <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4d"/>
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+        <statusCode code="new"/>
+        <effectiveTime>
+          <center value="20120512"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry>
+      <procedure classCode="PROC" moodCode="RQO">
+        <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
+        <id root="9a6d1bac-17d3-4195-89c4-1121bc809b5a"/>
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+        <statusCode code="new"/>
+        <effectiveTime>
+          <center value="20120512"/>
+        </effectiveTime>
+      </procedure>
+    </entry>
+  </section>
+</ClinicalDocument>
