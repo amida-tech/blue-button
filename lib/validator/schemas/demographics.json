@@ -60,6 +60,9 @@
                 },
                 "zip": {
                     "type": "string"
+                },
+                "use": {
+                    "type": "string"
                 }
             },
             "additionalProperties": false,
