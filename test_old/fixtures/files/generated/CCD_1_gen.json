@@ -267,9 +267,6 @@
                             }
                         },
                         "status": "completed",
-                        "reference_range": {
-                            "range": "M 13-18 g/dl; F 12-16 g/dl"
-                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -294,11 +291,6 @@
                             }
                         },
                         "status": "completed",
-                        "reference_range": {
-                            "low": "4.3",
-                            "high": "10.8",
-                            "unit": "10+3/ul"
-                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -323,11 +315,6 @@
                             }
                         },
                         "status": "completed",
-                        "reference_range": {
-                            "low": "150",
-                            "high": "350",
-                            "unit": "10+3/ul"
-                        },
                         "interpretations": [
                             "Low"
                         ],
@@ -423,15 +410,6 @@
                         "code": "56018004",
                         "code_system_name": "SNOMED CT"
                     }
-                },
-                "indication": {
-                    "code": "404684003",
-                    "date_time": {
-                        "low": {
-                            "date": "2007-01-03T00:00:00Z",
-                            "precision": "day"
-                        }
-                    }
                 }
             }
         ],
@@ -462,18 +440,9 @@
                 },
                 "performers": [
                     {
-                        "identifiers": [
-                            {
-                                "identifier": "PseduoMD-3"
-                            }
-                        ],
-                        "code": [
-                            {
-                                "name": "General Physician",
-                                "code": "59058001",
-                                "code_system_name": "SNOMED CT"
-                            }
-                        ]
+                        "name": "General Physician",
+                        "code": "59058001",
+                        "code_system_name": "SNOMED CT"
                     }
                 ],
                 "locations": [
@@ -499,18 +468,6 @@
                 ],
                 "findings": [
                     {
-                        "identifiers": [
-                            {
-                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
-                                "extension": "45665"
-                            }
-                        ],
-                        "date_time": {
-                            "low": {
-                                "date": "2007-01-03T00:00:00Z",
-                                "precision": "day"
-                            }
-                        },
                         "name": "Pneumonia",
                         "code": "233604007",
                         "code_system_name": "SNOMED CT"
@@ -536,46 +493,16 @@
                     "code": "314422",
                     "code_system_name": "RXNORM"
                 },
-                "intolerance": {
-                    "date_time": {
-                        "low": {
-                            "date": "2007-05-01T00:00:00Z",
-                            "precision": "day"
-                        }
-                    },
-                    "code": "419511003",
-                    "name": "Propensity to adverse reactions to drug",
-                    "code_system_name": "SNOMED CT",
-                    "severity": {
-                        "code": "371924009",
-                        "name": "Moderate to severe"
-                    }
-                },
-                "status": {
-                    "code": "73425007",
-                    "status": "Inactive"
-                },
+                "severity": "Moderate to severe",
+                "status": "Inactive",
                 "reaction": [
                     {
-                        "date_time": {
-                            "low": {
-                                "date": "2007-05-01T00:00:00Z",
-                                "precision": "day"
-                            },
-                            "high": {
-                                "date": "2009-02-27T13:00:00Z",
-                                "precision": "subsecond"
-                            }
-                        },
                         "reaction": {
                             "name": "Nausea",
                             "code": "422587007",
                             "code_system_name": "SNOMED CT"
                         },
-                        "severity": {
-                            "code": "255604002",
-                            "name": "Mild"
-                        }
+                        "severity": "Mild"
                     }
                 ]
             },
@@ -596,46 +523,16 @@
                     "code": "2670",
                     "code_system_name": "RXNORM"
                 },
-                "intolerance": {
-                    "date_time": {
-                        "low": {
-                            "date": "2006-05-01T00:00:00Z",
-                            "precision": "day"
-                        }
-                    },
-                    "code": "419511003",
-                    "name": "Propensity to adverse reactions to drug",
-                    "code_system_name": "SNOMED CT",
-                    "severity": {
-                        "code": "6736007",
-                        "name": "Moderate"
-                    }
-                },
-                "status": {
-                    "code": "55561003",
-                    "status": "Active"
-                },
+                "severity": "Moderate",
+                "status": "Active",
                 "reaction": [
                     {
-                        "date_time": {
-                            "low": {
-                                "date": "2006-05-01T00:00:00Z",
-                                "precision": "day"
-                            },
-                            "high": {
-                                "date": "2009-02-27T13:00:00Z",
-                                "precision": "subsecond"
-                            }
-                        },
                         "reaction": {
                             "name": "Wheezing",
                             "code": "56018004",
                             "code_system_name": "SNOMED CT"
                         },
-                        "severity": {
-                            "code": "255604002",
-                            "name": "Mild"
-                        }
+                        "severity": "Mild"
                     }
                 ]
             },
@@ -656,46 +553,16 @@
                     "code": "1191",
                     "code_system_name": "RXNORM"
                 },
-                "intolerance": {
-                    "date_time": {
-                        "low": {
-                            "date": "2008-05-01T00:00:00Z",
-                            "precision": "day"
-                        }
-                    },
-                    "code": "59037007",
-                    "name": "Drug intolerance",
-                    "code_system_name": "SNOMED CT",
-                    "severity": {
-                        "code": "371923003",
-                        "name": "Mild to moderate"
-                    }
-                },
-                "status": {
-                    "code": "55561003",
-                    "status": "Active"
-                },
+                "severity": "Mild to moderate",
+                "status": "Active",
                 "reaction": [
                     {
-                        "date_time": {
-                            "low": {
-                                "date": "2008-05-01T00:00:00Z",
-                                "precision": "day"
-                            },
-                            "high": {
-                                "date": "2009-02-27T13:00:00Z",
-                                "precision": "subsecond"
-                            }
-                        },
                         "reaction": {
                             "name": "Hives",
                             "code": "247472004",
                             "code_system_name": "SNOMED CT"
                         },
-                        "severity": {
-                            "code": "371923003",
-                            "name": "Mild to moderate"
-                        }
+                        "severity": "Mild to moderate"
                     }
                 ]
             }
@@ -1027,39 +894,6 @@
                         "date": "2009-02-27T13:00:00Z",
                         "precision": "subsecond"
                     }
-                },
-                "identifiers": [
-                    {
-                        "identifier": "2.16.840.1.113883.19",
-                        "extension": "123456789"
-                    }
-                ],
-                "code": {
-                    "code": "ASSERTION",
-                    "code_system_name": "HL7ActCode"
-                }
-            },
-            {
-                "value": "Former smoker",
-                "date_time": {
-                    "low": {
-                        "date": "2005-05-01T00:00:00Z",
-                        "precision": "day"
-                    },
-                    "high": {
-                        "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
-                    }
-                },
-                "identifiers": [
-                    {
-                        "identifier": "2.16.840.1.113883.19",
-                        "extension": "123456789"
-                    }
-                ],
-                "code": {
-                    "code": "ASSERTION",
-                    "code_system_name": "HL7ActCode"
                 }
             },
             {
@@ -1073,18 +907,7 @@
                         "date": "2009-02-27T13:00:00Z",
                         "precision": "subsecond"
                     }
-                },
-                "identifiers": [
-                    {
-                        "identifier": "9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"
-                    }
-                ],
-                "code": {
-                    "name": "Tobacco use and exposure",
-                    "code": "229819007",
-                    "code_system_name": "SNOMED CT"
-                },
-                "observation_value": "1 pack per day"
+                }
             },
             {
                 "value": "Tobacco use and exposure",
@@ -1093,18 +916,7 @@
                         "date": "2009-02-27T13:00:00Z",
                         "precision": "subsecond"
                     }
-                },
-                "identifiers": [
-                    {
-                        "identifier": "45efb604-7049-4a2e-ad33-d38556c9636c"
-                    }
-                ],
-                "code": {
-                    "name": "Tobacco use and exposure",
-                    "code": "229819007",
-                    "code_system_name": "SNOMED CT"
-                },
-                "observation_value": "None"
+                }
             },
             {
                 "value": "Alcohol intake",
@@ -1113,18 +925,7 @@
                         "date": "2005-05-01T00:00:00Z",
                         "precision": "day"
                     }
-                },
-                "identifiers": [
-                    {
-                        "identifier": "37f76c51-6411-4e1d-8a37-957fd49d2cef"
-                    }
-                ],
-                "code": {
-                    "name": "Alcohol consumption",
-                    "code": "160573003",
-                    "code_system_name": "SNOMED CT"
-                },
-                "observation_value": "None"
+                }
             }
         ],
         "problems": [
@@ -1148,33 +949,11 @@
                 "problem": {
                     "name": "Pneumonia",
                     "code": "233604007",
-                    "date_time": {
-                        "low": {
-                            "date": "2008-01-03T00:00:00Z",
-                            "precision": "day"
-                        },
-                        "high": {
-                            "date": "2008-01-03T00:00:00Z",
-                            "precision": "day"
-                        }
-                    },
                     "code_system_name": "SNOMED CT"
                 },
                 "onset_age": "57",
                 "onset_age_unit": "Year",
-                "status": {
-                    "name": "Resolved",
-                    "date_time": {
-                        "low": {
-                            "date": "2008-01-03T00:00:00Z",
-                            "precision": "day"
-                        },
-                        "high": {
-                            "date": "2009-02-27T13:00:00Z",
-                            "precision": "subsecond"
-                        }
-                    }
-                },
+                "status": "Resolved",
                 "patient_status": "Alive and well",
                 "source_list_identifiers": [
                     {
@@ -1189,7 +968,7 @@
                         "precision": "day"
                     },
                     "high": {
-                        "date": "2007-01-03T00:00:00Z",
+                        "date": "2008-01-03T00:00:00Z",
                         "precision": "day"
                     }
                 },
@@ -1202,33 +981,11 @@
                 "problem": {
                     "name": "Asthma",
                     "code": "195967001",
-                    "date_time": {
-                        "low": {
-                            "date": "2007-01-03T00:00:00Z",
-                            "precision": "day"
-                        },
-                        "high": {
-                            "date": "2008-01-03T00:00:00Z",
-                            "precision": "day"
-                        }
-                    },
                     "code_system_name": "SNOMED CT"
                 },
                 "onset_age": "57",
                 "onset_age_unit": "Year",
-                "status": {
-                    "name": "Active",
-                    "date_time": {
-                        "low": {
-                            "date": "2008-01-03T00:00:00Z",
-                            "precision": "day"
-                        },
-                        "high": {
-                            "date": "2009-02-27T13:00:00Z",
-                            "precision": "subsecond"
-                        }
-                    }
-                },
+                "status": "Active",
                 "patient_status": "Alive and well",
                 "source_list_identifiers": [
                     {
@@ -1639,12 +1396,6 @@
                                         }
                                     ]
                                 }
-                            ],
-                            "code": [
-                                {
-                                    "code": "PAYOR",
-                                    "code_system_name": "HL7 RoleCode"
-                                }
                             ]
                         }
                     }
@@ -1713,13 +1464,6 @@
                                 "country": "US",
                                 "use": "primary home"
                             }
-                        ],
-                        "code": [
-                            {
-                                "name": "Self",
-                                "code": "SELF",
-                                "code_system_name": "HL7 Role"
-                            }
                         ]
                     },
                     "name": [
@@ -1773,13 +1517,7 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.6",
-        "identifiers": [
-            {
-                "identifier": "2.16.840.1.113883.19.5.99999.1",
-                "extension": "TT988"
-            }
-        ],
+        "version": "1.1.0-beta.3",
         "sections": [
             "demographics",
             "vitals",

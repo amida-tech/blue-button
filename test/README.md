@@ -24,29 +24,33 @@ To see the results, open the generated report in your browser:
 
     ./coverage/lcov-report/index.html
 
+## Test plan
 
+### Sense
 
-# ccda-generator
-Exposes genWholeCCDA(), which takes in CCDA data in JSON format as a parameter and converts it
-into CCDA/XML. 
+Sense all types of documents/files and check that returned results are correct
 
-Uses a JS XML DOM implementation (https://github.com/jindw/xmldom) to traverse the generated and expected XML documents and compare them by node (tagName) and by attribute and value. The default setting ignores comments and any whitespace, newlines, tab or text nodes. 
+### Validator
 
-Important flags that can be altered if desired (in test-lib.js):
-	PROMPT_TO_SKIP: If set to true, will prompt the user to either skip or not skip the failed test.
-	DIFF (default): If set to true, will continue execution even upon failing a test and will output all of the errors/differences to the console. This is the default setting.
+TODO:
 
-Other alterable settings under testXML.error_settings (in test-lib.js):
-	"silence_cap": If set to true, will silence the output of capitalization errors. False by default.
-	"silence_len": If set to true, will silence the output of attribute length errors (i.e. actual node has 2 attributes but expected node has 3 attributes). False by default.
+### CCDA Parser
 
-Other settings:
-TEST_CCDA_SAMPLES: uses ccda-explorer to test against sample_ccdas
-TEST_CCD: tests against one generic sample ccda
-TEST_SECTIONS: tests each section individually
+Parse valid CCDA from XML file and run it through validator
 
-Installation:
+### CMS Parser
 
-	npm install xmldom
-	npm install execSync
-	mocha test --recursive
+Parse valid CMS from text file and run it through validator
+
+### CCDA r1 Parser
+
+TODO:
+
+### CCDA Generator
+
+TODO:
+
+Parse CCDA file -> BB JSON -> Generate CCDA XML file - > Parse CCDA file -> BB JSON #2 - > Generate CCDA XML file #2
+
+BB JSON should be equal BB JSON #2
+Generated CCDA XML file should be equal Generated CCDA XML file #2

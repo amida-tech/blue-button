@@ -28,12 +28,12 @@
                     "type": "string"
                 }
             },
+            "additionalProperties": false,
             "required": [
                 "street_lines",
                 "city"
             ]
         },
-        "additionalProperties": false,
         "cda_date": {
             "type": "object",
             "properties": {
@@ -193,20 +193,20 @@
         "cda_location": {
             "type": "object",
             "properties": {
-                "addresses": {
+                "address": {
                     "type": "array",
                     "items": {
                         "$ref": "#/properties/cda_address"
                     },
                     "minItems": 1
                 },
-                "loc_type": {
+                "location_type": {
                     "$ref": "#/properties/cda_coded_entry"
                 },
                 "name": {
                     "type": "string"
                 },
-                "phones": {
+                "phone": {
                     "type": "array",
                     "items": {
                         "$ref": "#/properties/cda_phone"
@@ -262,9 +262,8 @@
         "cda_performer": {
             "type": "object",
             "properties": {
-                "type": "string",
-                "performer": {
-                    "$ref": "#/properties/cda_coded_entry"
+                "type": {
+                    "type": "string"
                 },
                 "address": {
                     "type": "array",
@@ -281,7 +280,11 @@
                 "name": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/properties/cda_name"
+                        "anyOf": [{
+                            "$ref": "#/properties/cda_name"
+                        }, {
+                            "type": "string"
+                        }]
                     }
                 },
                 "organization": {
@@ -295,11 +298,11 @@
                     "items": {
                         "$ref": "#/properties/cda_phone"
                     }
+                },
+                "code": {
+                    "ref": "#/properties/cda_coded_entry"
                 }
-            },
-            "required": [
-                "address"
-            ]
+            }
         }
     }
 }
