@@ -18,17 +18,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.4.6",
-                    "identifier_type": "1"
+                    "extension": "1"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "123-101-5230"
+                    "extension": "123-101-5230"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "1357 Amber Drive"
                     ],
                     "city": "Beaverton",
@@ -64,7 +64,7 @@
                     "relation": "Grandfather",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1357 Amber Drive"
                             ],
                             "city": "Beaverton",
@@ -266,6 +266,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "M 13-18 g/dl; F 12-16 g/dl"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -290,6 +293,11 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "low": "4.3",
+                            "high": "10.8",
+                            "unit": "10+3/ul"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -314,6 +322,11 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "low": "150",
+                            "high": "350",
+                            "unit": "10+3/ul"
+                        },
                         "interpretations": [
                             "Low"
                         ],
@@ -339,9 +352,11 @@
                 "status": "Completed",
                 "sig": "Albuterol 0.09 MG/ACTUAT inhalant solution",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                        }
+                    ],
                     "unencoded_name": "Albuterol 0.09 MG/ACTUAT inhalant solution",
                     "product": {
                         "name": "Albuterol 0.09 MG/ACTUAT inhalant solution",
@@ -354,7 +369,8 @@
                             }
                         ],
                         "code_system_name": "RXNORM"
-                    }
+                    },
+                    "manufacturer": "Medication Factory Inc."
                 },
                 "supply": {
                     "date_time": {
@@ -364,7 +380,21 @@
                         }
                     },
                     "repeatNumber": "1",
-                    "quantity": "75"
+                    "quantity": "75",
+                    "author": {
+                        "date_time": {},
+                        "identifiers": [
+                            {
+                                "identifier": "2a620155-9d11-439e-92b3-5d9815fe4de8"
+                            }
+                        ],
+                        "name": {
+                            "prefix": "Dr.",
+                            "last": "Seven",
+                            "first": "Henry"
+                        }
+                    },
+                    "instructions": "label in spanish"
                 },
                 "administration": {
                     "route": {
@@ -393,6 +423,25 @@
                         "frequency": true
                     }
                 },
+                "performer": {
+                    "organization": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                            }
+                        ],
+                        "name": [
+                            "Get Well Clinic"
+                        ]
+                    }
+                },
+                "drug_vehicle": {
+                    "playingEntity": {
+                        "name": "Aerosol",
+                        "code": "324049",
+                        "code_system_name": "RXNORM"
+                    }
+                },
                 "precondition": {
                     "code": {
                         "code": "ASSERTION",
@@ -402,6 +451,69 @@
                         "name": "Wheezing",
                         "code": "56018004",
                         "code_system_name": "SNOMED CT"
+                    }
+                },
+                "indication": {
+                    "identifiers": [
+                        {
+                            "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                            "extension": "45665"
+                        }
+                    ],
+                    "code": "404684003",
+                    "date_time": {
+                        "high": {
+                            "date": "2012-08-06T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "value": {
+                        "name": "Pneumonia",
+                        "code": "233604007",
+                        "code_system_name": "SNOMED CT"
+                    }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "instruction",
+                        "code": "409073007",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Generic Substitition Allowed"
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "1.2.3.4.56789.1",
+                            "extension": "cb734647-fc99-424c-a864-7e3cda82e704"
+                        }
+                    ],
+                    "performer": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.456",
+                                "extension": "2981823"
+                            }
+                        ],
+                        "address": {
+                            "street_lines": [
+                                "1002 Healthcare Dr"
+                            ],
+                            "city": "Portland",
+                            "state": "OR",
+                            "zip": "97266",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                }
+                            ],
+                            "name": [
+                                "Get Well Clinic"
+                            ]
+                        }
                     }
                 }
             }
@@ -441,7 +553,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "1002 Healthcare Dr"
                                 ],
                                 "city": "Portland",
@@ -454,6 +566,18 @@
                 ],
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2012-08-06T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "name": "Pneumonia",
                         "code": "233604007",
                         "code_system_name": "SNOMED CT"
@@ -487,10 +611,33 @@
                     "code": "7982",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe",
-                "status": "Inactive",
+                "intolerance": {
+                    "date_time": {
+                        "high": {
+                            "date": "2012-08-06T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "419511003",
+                    "name": "Propensity to adverse reaction to drug",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                },
+                "status": {
+                    "code": "73425007",
+                    "status": "Inactive"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "2007-05-01T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Hives",
                             "code": "247472004",
@@ -524,10 +671,33 @@
                     "code": "2670",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2006-05-01T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "419511003",
+                    "name": "Propensity to adverse reaction to drug",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "2006-05-01T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Shortness of Breath",
                             "code": "267036007",
@@ -561,10 +731,37 @@
                     "code": "1191",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild to moderate",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2008-05-01T00:00:00Z",
+                            "precision": "day"
+                        },
+                        "high": {
+                            "date": "2012-08-06T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "419511003",
+                    "name": "Propensity to adverse reaction to drug",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "2008-05-01T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Hives",
                             "code": "247472004",
@@ -613,6 +810,14 @@
                         "value": 50,
                         "unit": "mcg"
                     }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
                 }
             },
             {
@@ -653,6 +858,14 @@
                         "value": 50,
                         "unit": "mcg"
                     }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
                 }
             }
         ],
@@ -668,6 +881,16 @@
                         "date": "2011-02-27T00:00:00Z",
                         "precision": "day"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             },
             {
@@ -681,7 +904,18 @@
                         "date": "2011-02-27T00:00:00Z",
                         "precision": "day"
                     }
-                }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"
+                    }
+                ],
+                "code": {
+                    "name": "Cigarette smoking",
+                    "code": "230056004",
+                    "code_system_name": "SNOMED CT"
+                },
+                "observation_value": "1 pack per day"
             },
             {
                 "value": "Current every day smoker",
@@ -690,6 +924,16 @@
                         "date": "2011-02-27T00:00:00Z",
                         "precision": "day"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "45efb604-7049-4a2e-ad33-d38556c9636c"
+                    }
+                ],
+                "code": {
+                    "name": "Cigarette smoking",
+                    "code": "230056004",
+                    "code_system_name": "SNOMED CT"
                 }
             }
         ],
@@ -697,6 +941,10 @@
             {
                 "date_time": {
                     "low": {
+                        "date": "2012-08-06T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
                         "date": "2012-08-06T00:00:00Z",
                         "precision": "day"
                     }
@@ -710,11 +958,19 @@
                 "problem": {
                     "name": "Pneumonia",
                     "code": "233604007",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-06T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
                     "code_system_name": "SNOMED CT"
                 },
                 "onset_age": "65",
                 "onset_age_unit": "Year",
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "patient_status": "Severly Ill",
                 "source_list_identifiers": [
                     {
@@ -725,6 +981,10 @@
             {
                 "date_time": {
                     "low": {
+                        "date": "2007-01-03T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
                         "date": "2012-08-06T00:00:00Z",
                         "precision": "day"
                     }
@@ -738,11 +998,19 @@
                 "problem": {
                     "name": "Asthma",
                     "code": "195967001",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-06T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
                     "code_system_name": "SNOMED CT"
                 },
                 "onset_age": "60",
                 "onset_age_unit": "Year",
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "patient_status": "Severly Ill",
                 "source_list_identifiers": [
                     {
@@ -761,7 +1029,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.19",
-                        "identifier_type": "123456789"
+                        "extension": "123456789"
                     }
                 ],
                 "status": "Completed",
@@ -778,21 +1046,28 @@
                         "code_system_name": "SNOMED CT"
                     }
                 ],
-                "providers": [
+                "priority": {
+                    "name": "Callback results",
+                    "code": "CR",
+                    "code_system_name": "OID 2.16.840.1.113883.5.7"
+                },
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "1002 Healthcare Dr"
-                            ],
-                            "city": "Portland",
-                            "state": "OR",
-                            "zip": "97266",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.19.5",
-                                "identifier_type": "1234"
+                                "extension": "1234"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1002 Healthcare Dr"
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97266",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -801,14 +1076,18 @@
                                 "type": "work place"
                             }
                         ],
-                        "organization": {
-                            "name": "Get Well Radiology",
-                            "identifiers": [
-                                {
-                                    "identifier": "2.16.840.1.113883.19.5"
-                                }
-                            ]
-                        }
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.19.5"
+                                    }
+                                ],
+                                "name": [
+                                    "Get Well Radiology"
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -821,7 +1100,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "1002 Healthcare Dr"
                                 ],
                                 "city": "Portland",
@@ -837,7 +1116,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -852,15 +1131,28 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD"
     ]

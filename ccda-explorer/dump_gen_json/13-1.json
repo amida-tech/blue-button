@@ -18,7 +18,7 @@
             "identifiers": [
                 {
                     "identifier": "1.3.6.1.4.1.22812.11.0.100610",
-                    "identifier_type": "101693"
+                    "extension": "101693"
                 }
             ],
             "race_ethnicity": "White",
@@ -34,7 +34,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "146181"
+                        "extension": "146181"
                     }
                 ],
                 "vital": {
@@ -59,7 +59,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "146191"
+                        "extension": "146191"
                     }
                 ],
                 "vital": {
@@ -84,7 +84,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "146211"
+                        "extension": "146211"
                     }
                 ],
                 "vital": {
@@ -109,7 +109,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "146221"
+                        "extension": "146221"
                     }
                 ],
                 "vital": {
@@ -136,7 +136,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                        "identifier_type": "12903100680"
+                        "extension": "12903100680"
                     }
                 ],
                 "result_set": {
@@ -149,7 +149,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "287300070"
+                                "extension": "287300070"
                             }
                         ],
                         "result": {
@@ -164,6 +164,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "13.5 - 18.0 g/dl"
+                        },
                         "value": 16,
                         "unit": "g/dl"
                     }
@@ -173,7 +176,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                        "identifier_type": "12903300680"
+                        "extension": "12903300680"
                     }
                 ],
                 "result_set": {
@@ -186,7 +189,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "287200070"
+                                "extension": "287200070"
                             }
                         ],
                         "result": {
@@ -201,6 +204,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "41 - 53 %"
+                        },
                         "value": 44,
                         "unit": "%"
                     }
@@ -210,7 +216,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                        "identifier_type": "12905100680"
+                        "extension": "12905100680"
                     }
                 ],
                 "result_set": {
@@ -223,7 +229,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "287100070"
+                                "extension": "287100070"
                             }
                         ],
                         "result": {
@@ -238,6 +244,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4.3 - 10.8 ul"
+                        },
                         "value": 6,
                         "unit": "ul"
                     }
@@ -255,7 +264,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.9",
-                        "identifier_type": "681"
+                        "extension": "681"
                     }
                 ],
                 "status": "Prescribed",
@@ -293,7 +302,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.9",
-                        "identifier_type": "682"
+                        "extension": "682"
                     }
                 ],
                 "status": "Prescribed",
@@ -337,7 +346,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.3.4",
-                        "identifier_type": "210300270"
+                        "extension": "210300270"
                     }
                 ],
                 "date_time": {
@@ -368,7 +377,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.3.4",
-                        "identifier_type": "209600270"
+                        "extension": "209600270"
                     }
                 ],
                 "date_time": {
@@ -383,11 +392,27 @@
                 },
                 "locations": [
                     {
-                        "name": " ",
+                        "name": "",
                         "location_type": {
                             "name": "Any Age Mixed Acuity Unit",
                             "code": "1212-0",
                             "code_system_name": "HealthcareServiceLocation"
+                        }
+                    }
+                ],
+                "findings": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.3",
+                                "extension": "963100500"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2011-03-12T10:32:00Z",
+                                "precision": "second"
+                            }
                         }
                     }
                 ]
@@ -399,7 +424,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.3.4",
-                        "identifier_type": "209500270"
+                        "extension": "209500270"
                     }
                 ],
                 "date_time": {
@@ -414,7 +439,7 @@
                 },
                 "locations": [
                     {
-                        "name": " ",
+                        "name": "",
                         "location_type": {
                             "name": "Any Age Mixed Acuity Unit",
                             "code": "1212-0",
@@ -430,7 +455,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.10.2",
-                        "identifier_type": "37900060"
+                        "extension": "37900060"
                     }
                 ],
                 "allergen": {
@@ -438,7 +463,21 @@
                     "code": "7982",
                     "code_system_name": "RXNORM"
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ]
             }
         ],
         "immunizations": [
@@ -452,7 +491,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.4",
-                        "identifier_type": "9856"
+                        "extension": "9856"
                     }
                 ],
                 "status": "complete",
@@ -480,7 +519,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "1276903451"
+                            "extension": "1276903451"
                         }
                     ],
                     "name": [
@@ -491,7 +530,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1004 Healthcare Dr"
                             ],
                             "city": "Portland",
@@ -504,21 +543,43 @@
                             "address": "Nancy.Nightingale@direct.medalliesdirect.com"
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "Annotation Comment",
+                        "code": "48767-8",
+                        "code_system_name": "LOINC"
+                    }
                 }
             }
         ],
         "social_history": [
             {
                 "value": "Former smoker",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             },
             {
                 "value": "Unknown if ever smoked",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             },
             {
                 "value": "Never smoker",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             }
         ],
         "problems": [
@@ -527,7 +588,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
-                        "identifier_type": "871400500"
+                        "extension": "871400500"
                     }
                 ],
                 "negation_indicator": false,
@@ -535,63 +596,15 @@
                     "name": "Urinary tract infection, site not specified",
                     "code": "61373006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Urinary tract infection, site not specified",
-                            "code": "N39.0",
-                            "code_system_name": "OID 1.3.6.1.4.1.22812.18.9.2"
-                        },
-                        {
-                            "name": "Urinary tract infection, site not specified",
-                            "code": "791.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        }
-                    ]
+                    "date_time": {}
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
-                        "identifier_type": "871400500"
-                    }
-                ]
-            },
-            {
-                "date_time": {
-                    "low": {
-                        "date": "2011-03-12T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
-                        "identifier_type": "735700500"
-                    }
-                ],
-                "negation_indicator": false,
-                "problem": {
-                    "name": "Asthma",
-                    "code": "195967001",
-                    "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Asthma",
-                            "code": "493.90",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Asthma",
-                            "code": "J45.909",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        }
-                    ]
-                },
-                "status": "Active",
-                "source_list_identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
-                        "identifier_type": "735700500"
+                        "extension": "871400500"
                     }
                 ]
             },
@@ -600,7 +613,37 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
-                        "identifier_type": "962200500"
+                        "extension": "735700500"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma",
+                    "code": "195967001",
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2011-03-12T00:00:00Z",
+                            "precision": "day"
+                        }
+                    }
+                },
+                "status": {
+                    "name": "Active"
+                },
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
+                        "extension": "735700500"
+                    }
+                ]
+            },
+            {
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
+                        "extension": "962200500"
                     }
                 ],
                 "negation_indicator": false,
@@ -608,24 +651,15 @@
                     "name": "Staggering gait",
                     "code": "78691002",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Staggering gait",
-                            "code": "781.2",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Staggering gait",
-                            "code": "R26.0",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        }
-                    ]
+                    "date_time": {}
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
-                        "identifier_type": "962200500"
+                        "extension": "962200500"
                     }
                 ]
             },
@@ -634,7 +668,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
-                        "identifier_type": "829800500"
+                        "extension": "829800500"
                     }
                 ],
                 "negation_indicator": false,
@@ -642,24 +676,15 @@
                     "name": "Asthma",
                     "code": "195967001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Asthma",
-                            "code": "493.90",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Asthma",
-                            "code": "J45.909",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        }
-                    ]
+                    "date_time": {}
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
-                        "identifier_type": "829800500"
+                        "extension": "829800500"
                     }
                 ]
             },
@@ -668,7 +693,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
-                        "identifier_type": "829900500"
+                        "extension": "829900500"
                     }
                 ],
                 "negation_indicator": false,
@@ -676,38 +701,24 @@
                     "name": "Flu-like symptoms",
                     "code": "95891005",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Flu-like symptoms",
-                            "code": "487.1",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Flu-like symptoms",
-                            "code": "J11.1",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        }
-                    ]
+                    "date_time": {}
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
-                        "identifier_type": "829900500"
+                        "extension": "829900500"
                     }
                 ]
             },
             {
-                "date_time": {
-                    "low": {
-                        "date": "2013-05-13T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
-                        "identifier_type": "830000500"
+                        "extension": "830000500"
                     }
                 ],
                 "negation_indicator": false,
@@ -715,24 +726,20 @@
                     "name": "Flu-like symptoms",
                     "code": "95891005",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Flu-like symptoms",
-                            "code": "487.1",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Flu-like symptoms",
-                            "code": "J11.1",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                    "date_time": {
+                        "low": {
+                            "date": "2013-05-13T00:00:00Z",
+                            "precision": "day"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
-                        "identifier_type": "830000500"
+                        "extension": "830000500"
                     }
                 ]
             }
@@ -742,7 +749,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.7",
-                        "identifier_type": "1898101"
+                        "extension": "1898101"
                     }
                 ],
                 "status": "Active",
@@ -760,7 +767,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.13.1",
-                        "identifier_type": "INT"
+                        "extension": "INT"
                     }
                 ],
                 "type": "act"
@@ -769,7 +776,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.13.2",
-                        "identifier_type": "18981803"
+                        "extension": "18981803"
                     }
                 ],
                 "type": "observation"
@@ -777,7 +784,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -793,11 +800,11 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

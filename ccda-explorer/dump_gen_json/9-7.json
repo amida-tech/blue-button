@@ -19,17 +19,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "12345"
+                    "extension": "12345"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-1234"
+                    "extension": "111-00-1234"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -64,7 +64,7 @@
                     "relation": "Grandfather",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "17 Daws Rd."
                             ],
                             "city": "Blue Bell",
@@ -266,6 +266,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "M 13-18 g/dl; F 12-16 g/dl"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -290,6 +293,11 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "low": "4.3",
+                            "high": "10.8",
+                            "unit": "10+3/ul"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -314,6 +322,11 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "low": "150",
+                            "high": "350",
+                            "unit": "10+3/ul"
+                        },
                         "interpretations": [
                             "Low"
                         ],
@@ -364,7 +377,16 @@
                         }
                     },
                     "repeatNumber": "1",
-                    "quantity": "75"
+                    "quantity": "75",
+                    "author": {
+                        "date_time": {},
+                        "name": {
+                            "prefix": "Dr.",
+                            "last": "Michaels",
+                            "first": "Robert"
+                        }
+                    },
+                    "instructions": "label in spanish"
                 },
                 "administration": {
                     "route": {
@@ -392,6 +414,25 @@
                         "frequency": true
                     }
                 },
+                "performer": {
+                    "organization": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5"
+                            }
+                        ],
+                        "name": [
+                            "Good Health Clinic"
+                        ]
+                    }
+                },
+                "drug_vehicle": {
+                    "playingEntity": {
+                        "name": "Diethylene Glycol",
+                        "code": "5955009",
+                        "code_system_name": "SNOMED CT"
+                    }
+                },
                 "precondition": {
                     "code": {
                         "code": "ASSERTION",
@@ -401,6 +442,57 @@
                         "name": "Wheezing",
                         "code": "56018004",
                         "code_system_name": "SNOMED CT"
+                    }
+                },
+                "indication": {
+                    "identifiers": [
+                        {
+                            "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                            "extension": "45665"
+                        }
+                    ],
+                    "code": "404684003",
+                    "value": {
+                        "name": "Bronchitis",
+                        "code": "32398004",
+                        "code_system_name": "SNOMED CT"
+                    }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "instruction",
+                        "code": "409073007",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "label in spanish"
+                },
+                "dispense": {
+                    "identifiers": [
+                        {
+                            "identifier": "1.2.3.4.56789.1",
+                            "extension": "cb734647-fc99-424c-a864-7e3cda82e704"
+                        }
+                    ],
+                    "performer": {
+                        "address": {
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ],
+                            "city": "Blue Bell",
+                            "state": "MA",
+                            "zip": "02368",
+                            "country": "US"
+                        },
+                        "organization": {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5"
+                                }
+                            ],
+                            "name": [
+                                "Good Health Clinic"
+                            ]
+                        }
                     }
                 }
             }
@@ -431,10 +523,33 @@
                     "code": "314422",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2011-02-15T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "282100009",
+                    "name": "Adverse reaction to substance",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "2009-07-11T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Hives",
                             "code": "247472004",
@@ -468,10 +583,33 @@
                     "code": "1191",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2011-02-15T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "282100009",
+                    "name": "Adverse reaction to substance",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "2009-07-11T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Wheezing",
                             "code": "56018004",
@@ -505,10 +643,33 @@
                     "code": "2670",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2011-02-15T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "282100009",
+                    "name": "Adverse reaction to substance",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "2009-07-11T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Nausea",
                             "code": "73879007",
@@ -531,7 +692,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2000-04-21T00:00:00Z",
                         "precision": "day"
                     }
@@ -550,7 +711,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2000-04-21T00:00:00Z",
                         "precision": "day"
                     }
@@ -577,7 +738,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2000-04-21T00:00:00Z",
                         "precision": "day"
                     }
@@ -587,7 +748,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -598,11 +759,26 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
+        "nullFlavor alert:  missing but required identifier in Identifier -> author -> MedicationSupplyOrder -> Prescription -> medicationsSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD"
     ]
 }

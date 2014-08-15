@@ -38,7 +38,50 @@
                 },
                 "site": {
                     "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                },
+                "interval": {
+                    "type": "object",
+                    "properties": {
+                        "xsiType": {
+                            "type": "string"
+                        },
+                        "phase": {
+                            "$ref": "http://local.com/common_models#/properties/cda_date"
+                        },
+                        "period": {
+                            "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                        },
+                        "frequency": {
+                            "type": "boolean"
+                        },
+                        "alignment": {
+                            "type": "string"
+                        },
+                        "event": {
+                            "type": "string"
+                        },
+                        "event_offset": {
+                            "type": "object",
+                            "properties": {
+                                "low": {
+                                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                                },
+                                "high": {
+                                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                                },
+                                "center": {
+                                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                                },
+                                "width": {
+                                    "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
+                                }
+
+                            }
+
+                        }
+                    }
                 }
+
             },
             "additionalProperties": false,
             "minProperties": 1
@@ -59,7 +102,11 @@
             "type": "object",
             "properties": {
                 "identifiers": {
-                    "$ref": "http://local.com/common_models#/properties/cda_id"
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_id"
+                    },
+                    "minItems": 1
                 },
                 "product": {
                     "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
@@ -84,6 +131,18 @@
             "quantity": {
                 "type": "string"
             }
+        },
+        "indication": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string"
+                },
+                "date_time": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date"
+                }
+            },
+            "additionalProperties": false
         }
     },
     "additionalProperties": false,

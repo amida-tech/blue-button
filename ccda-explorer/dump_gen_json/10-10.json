@@ -15,13 +15,13 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.441.1.50.300011.51",
-                    "identifier_type": "26933"
+                    "extension": "26933"
                 }
             ],
             "marital_status": "Never Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "1357 Amber Drive"
                     ],
                     "city": "Aloha",
@@ -48,7 +48,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
-                        "identifier_type": "2930"
+                        "extension": "2930"
                     }
                 ],
                 "vital": {
@@ -70,7 +70,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
-                        "identifier_type": "2931"
+                        "extension": "2931"
                     }
                 ],
                 "vital": {
@@ -92,7 +92,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
-                        "identifier_type": "2932"
+                        "extension": "2932"
                     }
                 ],
                 "vital": {
@@ -114,7 +114,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
-                        "identifier_type": "2934"
+                        "extension": "2934"
                     }
                 ],
                 "vital": {
@@ -136,7 +136,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.55",
-                        "identifier_type": "2935"
+                        "extension": "2935"
                     }
                 ],
                 "vital": {
@@ -160,7 +160,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
-                        "identifier_type": "2936"
+                        "extension": "2936"
                     }
                 ],
                 "results": [
@@ -168,7 +168,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
-                                "identifier_type": "2936"
+                                "extension": "2936"
                             }
                         ],
                         "result": {
@@ -192,7 +192,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
-                        "identifier_type": "2937"
+                        "extension": "2937"
                     }
                 ],
                 "results": [
@@ -200,7 +200,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
-                                "identifier_type": "2937"
+                                "extension": "2937"
                             }
                         ],
                         "result": {
@@ -224,7 +224,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
-                        "identifier_type": "2938"
+                        "extension": "2938"
                     }
                 ],
                 "results": [
@@ -232,7 +232,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
-                                "identifier_type": "2938"
+                                "extension": "2938"
                             }
                         ],
                         "result": {
@@ -256,7 +256,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
-                        "identifier_type": "2939"
+                        "extension": "2939"
                     }
                 ],
                 "results": [
@@ -264,7 +264,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.54",
-                                "identifier_type": "2939"
+                                "extension": "2939"
                             }
                         ],
                         "result": {
@@ -291,7 +291,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.58",
-                        "identifier_type": "2060"
+                        "extension": "2060"
                     }
                 ],
                 "status": "Completed",
@@ -323,7 +323,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.58",
-                        "identifier_type": "2061"
+                        "extension": "2061"
                     }
                 ],
                 "status": "Completed",
@@ -360,7 +360,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.58",
-                        "identifier_type": "2063"
+                        "extension": "2063"
                     }
                 ],
                 "status": "Prescribed",
@@ -401,7 +401,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.58",
-                        "identifier_type": "2106"
+                        "extension": "2106"
                     }
                 ],
                 "status": "Prescribed",
@@ -435,7 +435,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "8d02c92372b54b49b230d2295d3e8dea"
+                        "extension": "8d02c92372b54b49b230d2295d3e8dea"
                     }
                 ],
                 "allergen": {
@@ -450,7 +450,21 @@
                         }
                     ]
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "Allergy to substance (disorder)",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ],
                 "negation_indicator": false
             },
             {
@@ -458,10 +472,24 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "70491d668d034c30997bba033aa1d176"
+                        "extension": "70491d668d034c30997bba033aa1d176"
                     }
                 ],
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "Allergy to substance (disorder)",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ],
                 "negation_indicator": false
             },
             {
@@ -474,7 +502,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "8451e060f2044b7091b82b323030ab47"
+                        "extension": "8451e060f2044b7091b82b323030ab47"
                     }
                 ],
                 "allergen": {
@@ -489,7 +517,26 @@
                         }
                     ]
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "1-01-01T00:00:00Z",
+                            "precision": "month"
+                        }
+                    },
+                    "code": "419199007",
+                    "name": "Allergy to substance (disorder)",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ],
                 "negation_indicator": false
             }
         ],
@@ -504,7 +551,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.60",
-                        "identifier_type": "1235"
+                        "extension": "1235"
                     }
                 ],
                 "status": "complete",
@@ -520,7 +567,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.441",
-                            "identifier_type": "5be624e2d31549a2bdaaa5b54a3b8f34"
+                            "extension": "5be624e2d31549a2bdaaa5b54a3b8f34"
                         }
                     ],
                     "name": [
@@ -549,7 +596,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.441",
-                                    "identifier_type": "b390c1b82bad4eb3b04ed47d348e1247"
+                                    "extension": "b390c1b82bad4eb3b04ed47d348e1247"
                                 }
                             ],
                             "address": [
@@ -581,7 +628,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.60",
-                        "identifier_type": "1238"
+                        "extension": "1238"
                     }
                 ],
                 "status": "complete",
@@ -597,7 +644,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.441",
-                            "identifier_type": "1610ae3ae2e04e179860d1c3ed9e62a6"
+                            "extension": "1610ae3ae2e04e179860d1c3ed9e62a6"
                         }
                     ],
                     "name": [
@@ -611,7 +658,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1044 Healthcare Drive"
                             ],
                             "city": "Portland",
@@ -630,12 +677,12 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.441",
-                                    "identifier_type": "17adddfb8c224132a3c68a73b90ce280"
+                                    "extension": "17adddfb8c224132a3c68a73b90ce280"
                                 }
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "1044 Healthcare Drive"
                                     ],
                                     "city": "Portland",
@@ -664,7 +711,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.60",
-                        "identifier_type": "1400"
+                        "extension": "1400"
                     }
                 ],
                 "status": "complete",
@@ -680,7 +727,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.441",
-                            "identifier_type": "027bfaaf3fd24066b760241eedfcafe6"
+                            "extension": "027bfaaf3fd24066b760241eedfcafe6"
                         }
                     ],
                     "name": [
@@ -709,7 +756,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.441",
-                                    "identifier_type": "35bc05cc99f1418cb7e543e30f9c5aba"
+                                    "extension": "35bc05cc99f1418cb7e543e30f9c5aba"
                                 }
                             ],
                             "address": [
@@ -741,7 +788,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.60",
-                        "identifier_type": "1403"
+                        "extension": "1403"
                     }
                 ],
                 "status": "complete",
@@ -757,7 +804,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.441",
-                            "identifier_type": "ca5d0036222f4a08b5f4b693a0cdb047"
+                            "extension": "ca5d0036222f4a08b5f4b693a0cdb047"
                         }
                     ],
                     "name": [
@@ -786,7 +833,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.441",
-                                    "identifier_type": "b2920b445b21456d801da04e8b8009be"
+                                    "extension": "b2920b445b21456d801da04e8b8009be"
                                 }
                             ],
                             "address": [
@@ -818,7 +865,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.60",
-                        "identifier_type": "1404"
+                        "extension": "1404"
                     }
                 ],
                 "status": "complete",
@@ -834,7 +881,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.441",
-                            "identifier_type": "5d03e2ef8aaa419f8657cb4ff3a09ce2"
+                            "extension": "5d03e2ef8aaa419f8657cb4ff3a09ce2"
                         }
                     ],
                     "name": [
@@ -863,7 +910,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.441",
-                                    "identifier_type": "59288068942446b59cd7a0b30f92f00a"
+                                    "extension": "59288068942446b59cd7a0b30f92f00a"
                                 }
                             ],
                             "address": [
@@ -895,7 +942,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.60",
-                        "identifier_type": "1405"
+                        "extension": "1405"
                     }
                 ],
                 "status": "complete",
@@ -911,7 +958,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.441",
-                            "identifier_type": "66cf1bb2f0c942c4a8ff6d0176211442"
+                            "extension": "66cf1bb2f0c942c4a8ff6d0176211442"
                         }
                     ],
                     "name": [
@@ -940,7 +987,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.441",
-                                    "identifier_type": "ee92216b76534ddc8e125f76f5838374"
+                                    "extension": "ee92216b76534ddc8e125f76f5838374"
                                 }
                             ],
                             "address": [
@@ -972,7 +1019,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.60",
-                        "identifier_type": "1406"
+                        "extension": "1406"
                     }
                 ],
                 "status": "complete",
@@ -988,7 +1035,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.3.441",
-                            "identifier_type": "1f3863d4936c469e8bd98edc90a30eff"
+                            "extension": "1f3863d4936c469e8bd98edc90a30eff"
                         }
                     ],
                     "name": [
@@ -1017,7 +1064,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.3.441",
-                                    "identifier_type": "ab99e968e87f497bbb2064544232fd9f"
+                                    "extension": "ab99e968e87f497bbb2064544232fd9f"
                                 }
                             ],
                             "address": [
@@ -1048,6 +1095,16 @@
                         "date": "1900-01-01T00:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.68",
+                        "extension": "1331"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -1057,15 +1114,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.61",
-                        "identifier_type": "1427"
+                        "extension": "1427"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "9a22d201e1ac433c9bbcdf53b44aa1e6"
+                        "extension": "9a22d201e1ac433c9bbcdf53b44aa1e6"
                     }
                 ]
             },
@@ -1074,15 +1133,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.61",
-                        "identifier_type": "1428"
+                        "extension": "1428"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "d9acfc6133d84ce991edd910ede2ddc9"
+                        "extension": "d9acfc6133d84ce991edd910ede2ddc9"
                     }
                 ]
             },
@@ -1091,15 +1152,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.61",
-                        "identifier_type": "1429"
+                        "extension": "1429"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "697b75bb23fb488b9f7cce69ddaac540"
+                        "extension": "697b75bb23fb488b9f7cce69ddaac540"
                     }
                 ]
             }
@@ -1114,7 +1177,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
-                        "identifier_type": "61407"
+                        "extension": "61407"
                     }
                 ],
                 "status": "Completed",
@@ -1135,7 +1198,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
-                        "identifier_type": "61408"
+                        "extension": "61408"
                     }
                 ],
                 "status": "Completed",
@@ -1156,7 +1219,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
-                        "identifier_type": "61409"
+                        "extension": "61409"
                     }
                 ],
                 "status": "Completed",
@@ -1177,7 +1240,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
-                        "identifier_type": "61410"
+                        "extension": "61410"
                     }
                 ],
                 "status": "Completed",
@@ -1198,7 +1261,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.53",
-                        "identifier_type": "61411"
+                        "extension": "61411"
                     }
                 ],
                 "status": "Completed",
@@ -1216,7 +1279,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.72",
-                        "identifier_type": "1162"
+                        "extension": "1162"
                     }
                 ],
                 "date_time": {
@@ -1231,7 +1294,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.72",
-                        "identifier_type": "2940"
+                        "extension": "2940"
                     }
                 ],
                 "date_time": {
@@ -1246,7 +1309,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.72",
-                        "identifier_type": "2941"
+                        "extension": "2941"
                     }
                 ],
                 "date_time": {
@@ -1266,7 +1329,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.72",
-                        "identifier_type": "61407"
+                        "extension": "61407"
                     }
                 ],
                 "date_time": {
@@ -1286,7 +1349,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.72",
-                        "identifier_type": "61408"
+                        "extension": "61408"
                     }
                 ],
                 "date_time": {
@@ -1306,7 +1369,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.72",
-                        "identifier_type": "61409"
+                        "extension": "61409"
                     }
                 ],
                 "date_time": {
@@ -1326,7 +1389,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26933.72",
-                        "identifier_type": "61411"
+                        "extension": "61411"
                     }
                 ],
                 "date_time": {
@@ -1340,7 +1403,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1393,11 +1456,11 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -1411,11 +1474,11 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -1424,11 +1487,11 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -1437,11 +1500,11 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -1450,11 +1513,11 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -1463,20 +1526,20 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",

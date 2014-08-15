@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.1.13.99999.1",
-                    "identifier_type": "106"
+                    "extension": "106"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "8745 W Willenow Rd"
                     ],
                     "city": "Beaverton",
                     "state": "OR",
-                    "zip": "97005- ",
+                    "zip": "97005-",
                     "country": "US",
                     "use": "primary home"
                 }
@@ -213,6 +213,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "0.00-0.20 ng/mL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -250,6 +253,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "3.5-5.0 mmol/L"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -274,6 +280,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-18 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -298,6 +307,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "22-33 mmol/L"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -322,6 +334,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "135-145 mmol/L"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -346,6 +361,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "95-110 mmol/L"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -370,6 +388,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "65-110 mg/dL"
+                        },
                         "interpretations": [
                             "High"
                         ],
@@ -394,6 +415,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "0.5-1.2 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -587,7 +611,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.1.13.99999.2",
-                        "identifier_type": "162"
+                        "extension": "162"
                     }
                 ],
                 "date_time": {
@@ -601,12 +625,12 @@
                         "name": "Local Community Hospital Organization",
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "4000 Hospital Dr."
                                 ],
                                 "city": "Portland",
                                 "state": "OR",
-                                "zip": "97005- ",
+                                "zip": "97005-",
                                 "country": "US",
                                 "use": "work place"
                             }
@@ -641,8 +665,20 @@
                         }
                     ]
                 },
-                "severity": "Moderate",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -672,8 +708,20 @@
                         }
                     ]
                 },
-                "severity": "Moderate",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -727,13 +775,13 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1004 Healthcare Dr.",
                                 "Get Well Clinic"
                             ],
                             "city": "Portland",
                             "state": "OR",
-                            "zip": "97005- ",
+                            "zip": "97005-",
                             "country": "US",
                             "use": "work place"
                         }
@@ -750,7 +798,16 @@
         "social_history": [
             {
                 "value": "Never smoker",
-                "date_time": {}
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1C0B2012-3FBF-49DF-BC12-4C52C7F1060A"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             }
         ],
         "problems": [
@@ -770,7 +827,13 @@
                 "problem": {
                     "name": "Angina (disorder)",
                     "code": "194828000",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2013-07-10T00:00:00Z",
+                            "precision": "day"
+                        }
+                    }
                 },
                 "source_list_identifiers": [
                     {
@@ -794,7 +857,13 @@
                 "problem": {
                     "name": "Diabetes mellitus type 2 (disorder)",
                     "code": "44054006",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2009-01-09T00:00:00Z",
+                            "precision": "day"
+                        }
+                    }
                 },
                 "source_list_identifiers": [
                     {
@@ -818,7 +887,13 @@
                 "problem": {
                     "name": "Hypercholesterolemia (disorder)",
                     "code": "13644009",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2008-08-08T00:00:00Z",
+                            "precision": "day"
+                        }
+                    }
                 },
                 "source_list_identifiers": [
                     {
@@ -836,14 +911,20 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.1.13.99999.999239",
-                        "identifier_type": "121480397"
+                        "extension": "121480397"
                     }
                 ],
                 "negation_indicator": false,
                 "problem": {
                     "name": "Angina (disorder)",
                     "code": "194828000",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2013-07-17T00:00:00Z",
+                            "precision": "day"
+                        }
+                    }
                 },
                 "source_list_identifiers": [
                     {
@@ -861,7 +942,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.1.13.99999.999239",
-                        "identifier_type": "121387536"
+                        "extension": "121387536"
                     }
                 ],
                 "negation_indicator": false,
@@ -869,13 +950,12 @@
                     "name": "Angina (disorder)",
                     "code": "194828000",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Other and unspecified angina pectoris",
-                            "code": "413.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2013-07-11T00:00:00Z",
+                            "precision": "day"
                         }
-                    ]
+                    }
                 },
                 "source_list_identifiers": [
                     {
@@ -928,7 +1008,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -958,6 +1038,8 @@
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"

@@ -12,7 +12,15 @@
             }
         },
         "problem": {
-            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "date_time": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date"
+                }
+            }
         },
         "negation_indicator": {
             "type": "boolean"
@@ -27,7 +35,11 @@
             "type": "string"
         },
         "status": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+                "code": { "type": "string"},
+                "status": { "type": "string"}
+            }
         },
         "source_list_identifiers": {
             "type": "array",

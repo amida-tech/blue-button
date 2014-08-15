@@ -19,7 +19,7 @@
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "1122 Mystical Rt 3"
                     ],
                     "city": "Beaverton",
@@ -299,7 +299,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "a778b36c-2a08-4f41-bc2a-3f29293c4e3c"
+                        "extension": "a778b36c-2a08-4f41-bc2a-3f29293c4e3c"
                     }
                 ],
                 "date_time": {
@@ -317,7 +317,7 @@
                         "name": "Get Well Clinic",
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "1002 Healthcare Dr"
                                 ],
                                 "city": "Beaverton",
@@ -335,6 +335,16 @@
                                 "type": "work place"
                             }
                         ]
+                    }
+                ],
+                "findings": [
+                    {
+                        "date_time": {
+                            "point": {
+                                "date": "2013-01-25T00:00:00Z",
+                                "precision": "day"
+                            }
+                        }
                     }
                 ]
             }
@@ -364,7 +374,31 @@
                         }
                     ]
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-06T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {
+                            "low": {
+                                "date": "2012-08-06T00:00:00Z",
+                                "precision": "day"
+                            }
+                        }
+                    }
+                ]
             },
             {
                 "date_time": {
@@ -390,7 +424,31 @@
                         }
                     ]
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-06T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {
+                            "low": {
+                                "date": "2012-08-06T00:00:00Z",
+                                "precision": "day"
+                            }
+                        }
+                    }
+                ]
             },
             {
                 "date_time": {
@@ -416,7 +474,31 @@
                         }
                     ]
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-06T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {
+                            "low": {
+                                "date": "2012-08-06T00:00:00Z",
+                                "precision": "day"
+                            }
+                        }
+                    }
+                ]
             }
         ],
         "immunizations": [
@@ -446,7 +528,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.401",
-                            "identifier_type": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
+                            "extension": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
                         }
                     ],
                     "name": [
@@ -455,6 +537,14 @@
                             "first": "May"
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "ANNOTATION COMMENT",
+                        "code": "48767-8",
+                        "code_system_name": "LOINC"
+                    },
+                    "freeText": "- Completed reason: New"
                 }
             },
             {
@@ -483,7 +573,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.401",
-                            "identifier_type": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
+                            "extension": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
                         }
                     ],
                     "name": [
@@ -492,6 +582,14 @@
                             "first": "May"
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "ANNOTATION COMMENT",
+                        "code": "48767-8",
+                        "code_system_name": "LOINC"
+                    },
+                    "freeText": "- Completed reason: New"
                 }
             },
             {
@@ -520,7 +618,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.401",
-                            "identifier_type": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
+                            "extension": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
                         }
                     ],
                     "name": [
@@ -529,6 +627,14 @@
                             "first": "May"
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "ANNOTATION COMMENT",
+                        "code": "48767-8",
+                        "code_system_name": "LOINC"
+                    },
+                    "freeText": "- Completed reason: New"
                 }
             },
             {
@@ -557,7 +663,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.401",
-                            "identifier_type": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
+                            "extension": "f3fdfa1a-6d4b-4ecd-889b-fe6e7798425e"
                         }
                     ],
                     "name": [
@@ -566,6 +672,14 @@
                             "first": "May"
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "ANNOTATION COMMENT",
+                        "code": "48767-8",
+                        "code_system_name": "LOINC"
+                    },
+                    "freeText": "- Completed reason: New"
                 }
             }
         ],
@@ -577,6 +691,10 @@
                         "date": "1992-01-01T00:00:00Z",
                         "precision": "year"
                     }
+                },
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -614,7 +732,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "8e4b2fcb-13e8-4ce6-8737-61c3c9c328ec"
+                        "extension": "8e4b2fcb-13e8-4ce6-8737-61c3c9c328ec"
                     }
                 ],
                 "status": "Completed",
@@ -634,7 +752,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "771cb6f6-4a87-47aa-9133-6e0d7a118a1e"
+                        "extension": "771cb6f6-4a87-47aa-9133-6e0d7a118a1e"
                     }
                 ],
                 "status": "Completed",
@@ -654,7 +772,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "00878d81-7e30-4f90-86fd-71009a878dec"
+                        "extension": "00878d81-7e30-4f90-86fd-71009a878dec"
                     }
                 ],
                 "status": "Completed",
@@ -674,7 +792,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "cc7d378e-35fc-46f9-8007-da0300174bb7"
+                        "extension": "cc7d378e-35fc-46f9-8007-da0300174bb7"
                     }
                 ],
                 "status": "Completed",
@@ -694,7 +812,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "65704c23-2eae-4f35-989d-db02e68edbb8"
+                        "extension": "65704c23-2eae-4f35-989d-db02e68edbb8"
                     }
                 ],
                 "status": "Completed",
@@ -716,11 +834,11 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "8b413246-f47c-4a49-b654-c2313909d00e"
+                        "extension": "8b413246-f47c-4a49-b654-c2313909d00e"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2013-02-12T11:41:00Z",
                         "precision": "second"
                     }
@@ -736,11 +854,11 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "b5de3dd6-6cd9-4736-9de7-c4b61309a01e"
+                        "extension": "b5de3dd6-6cd9-4736-9de7-c4b61309a01e"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2013-02-15T10:29:00Z",
                         "precision": "second"
                     }
@@ -754,7 +872,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2013-02-20T09:00:00Z",
                         "precision": "second"
                     }
@@ -768,7 +886,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2013-02-19T08:10:00Z",
                         "precision": "second"
                     }
@@ -779,7 +897,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "af452bc7-440d-4932-8f91-4e49fefeca8c"
+                        "extension": "af452bc7-440d-4932-8f91-4e49fefeca8c"
                     }
                 ],
                 "date_time": {},
@@ -789,7 +907,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "045d121e-f408-4da3-ae3a-11d196af1891"
+                        "extension": "045d121e-f408-4da3-ae3a-11d196af1891"
                     }
                 ],
                 "date_time": {},
@@ -799,7 +917,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "9b42a726-9699-441d-a0ec-1631a5f3dd60"
+                        "extension": "9b42a726-9699-441d-a0ec-1631a5f3dd60"
                     }
                 ],
                 "date_time": {},
@@ -809,7 +927,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.201",
-                        "identifier_type": "c2183bda-c9e3-4216-aa97-021614fcd787"
+                        "extension": "c2183bda-c9e3-4216-aa97-021614fcd787"
                     }
                 ],
                 "date_time": {},
@@ -818,7 +936,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -864,6 +982,7 @@
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> finding -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
@@ -873,41 +992,41 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation/h:code/@code",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation/h:code/@code",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation/h:code/@code",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation/h:code/@code",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",

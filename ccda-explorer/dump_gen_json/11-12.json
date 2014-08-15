@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "4042 Pointe Lane"
                     ],
                     "city": "Hollywood",
@@ -60,7 +60,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "4242 Heritage Road"
                             ],
                             "city": "Terra Bella",
@@ -376,6 +376,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "NA"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -439,6 +442,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "NA"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -461,7 +467,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "ACE inhibitor or ARB + Lisinopril 10 MG Oral Tablet  ",
+                    "unencoded_name": "ACE inhibitor or ARB + Lisinopril 10 MG Oral Tablet",
                     "product": {
                         "name": "Lisinopril 10 MG Oral Tablet",
                         "code": "314076",
@@ -483,7 +489,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Beta Blocker Therapy + Metoprolol Tartrate 25 MG Oral Tablet  ",
+                    "unencoded_name": "Beta Blocker Therapy + Metoprolol Tartrate 25 MG Oral Tablet",
                     "product": {
                         "name": "Metoprolol Tartrate 25 MG Oral Tablet",
                         "code": "866924",
@@ -578,7 +584,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -587,7 +593,16 @@
                         }
                     ]
                 },
-                "severity": "Moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -606,7 +621,16 @@
                     "code": "892677",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild to moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -625,7 +649,16 @@
                     "code": "N0000011298",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -642,6 +675,16 @@
                         "date": "2010-09-08T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -663,20 +706,16 @@
                     "name": "Heart failure",
                     "code": "84114007",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Heart failure, unspecified",
-                            "code": "I50.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Heart failure, unspecified",
-                            "code": "428.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-10-05T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -700,20 +739,16 @@
                     "name": "Essential hypertension",
                     "code": "59621000",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Essential (primary) hypertension",
-                            "code": "I10",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Unspecified essential hypertension",
-                            "code": "401.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-10-05T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -787,7 +822,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -802,7 +837,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

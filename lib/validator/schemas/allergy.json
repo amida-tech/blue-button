@@ -16,10 +16,14 @@
                 }
         },
          "severity": {
-            "type": "string"
+            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
         },
         "status": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+                "code": { "type": "string"},
+                "status": { "type": "string"}
+            }
         },
         "reaction": {
             "type": "array",
@@ -31,7 +35,7 @@
                         "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                     },
                     "severity": {
-                        "type": "string"
+                        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                     }
                 }
             }

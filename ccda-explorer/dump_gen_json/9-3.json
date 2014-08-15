@@ -19,17 +19,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "12345"
+                    "extension": "12345"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-1234"
+                    "extension": "111-00-1234"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -64,7 +64,7 @@
                     "relation": "Grandfather",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "17 Daws Rd."
                             ],
                             "city": "Blue Bell",
@@ -261,10 +261,33 @@
                     "code": "314422",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2011-02-15T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "282100009",
+                    "name": "Adverse reaction to substance",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "2009-07-11T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Hives",
                             "code": "247472004",
@@ -298,10 +321,33 @@
                     "code": "1191",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2011-02-15T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "282100009",
+                    "name": "Adverse reaction to substance",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "2009-07-11T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Wheezing",
                             "code": "56018004",
@@ -335,10 +381,33 @@
                     "code": "2670",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2011-02-15T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "282100009",
+                    "name": "Adverse reaction to substance",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "2009-07-11T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Nausea",
                             "code": "73879007",
@@ -382,6 +451,14 @@
                         "code": "IM",
                         "code_system_name": "Route Code"
                     }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
                 }
             },
             {
@@ -417,6 +494,14 @@
                         "code": "IM",
                         "code_system_name": "Route Code"
                     }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
                 }
             },
             {
@@ -452,6 +537,14 @@
                         "code": "IM",
                         "code_system_name": "Route Code"
                     }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
                 }
             },
             {
@@ -488,6 +581,14 @@
                         "code_system_name": "Route Code"
                     }
                 },
+                "instructions": {
+                    "code": {
+                        "name": "immunization education",
+                        "code": "171044003",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Possible flu-like symptoms for three days."
+                },
                 "refusal_reason": "Patient objection"
             }
         ],
@@ -503,7 +604,18 @@
                         "date": "1972-01-01T00:00:00Z",
                         "precision": "year"
                     }
-                }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"
+                    }
+                ],
+                "code": {
+                    "name": "Cigarette smoking",
+                    "code": "230056004",
+                    "code_system_name": "SNOMED CT"
+                },
+                "observation_value": "1 pack per day"
             },
             {
                 "value": "Smoker, current status unknown",
@@ -512,7 +624,18 @@
                         "date": "1973-01-01T00:00:00Z",
                         "precision": "year"
                     }
-                }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "45efb604-7049-4a2e-ad33-d38556c9636c"
+                    }
+                ],
+                "code": {
+                    "name": "Cigarette smoking",
+                    "code": "230056004",
+                    "code_system_name": "SNOMED CT"
+                },
+                "observation_value": "None"
             },
             {
                 "value": "Alcohol intake",
@@ -521,7 +644,18 @@
                         "date": "1973-01-01T00:00:00Z",
                         "precision": "year"
                     }
-                }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "37f76c51-6411-4e1d-8a37-957fd49d2cef"
+                    }
+                ],
+                "code": {
+                    "name": "Alcohol consumption",
+                    "code": "160573003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "observation_value": "None"
             }
         ],
         "procedures": [
@@ -543,20 +677,34 @@
                         "precision": "day"
                     }
                 },
-                "providers": [
+                "specimen": {
+                    "identifiers": [
+                        {
+                            "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58683"
+                        }
+                    ],
+                    "code": {
+                        "name": "colonic polyp sample",
+                        "code": "309226005",
+                        "code_system_name": "SNOMED CT"
+                    }
+                },
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "17 Daws Rd."
-                            ],
-                            "city": "Blue Bell",
-                            "state": "MA",
-                            "zip": "02368",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58687"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -565,29 +713,35 @@
                                 "type": "work place"
                             }
                         ],
-                        "organization": {
-                            "name": "Good Health Clinic",
-                            "address": {
-                                "streetLines": [
-                                    "17 Daws Rd."
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58686"
+                                    }
                                 ],
-                                "city": "Blue Bell",
-                                "state": "MA",
-                                "zip": "02368",
-                                "country": "US"
-                            },
-                            "identifiers": [
-                                {
-                                    "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58686"
-                                }
-                            ],
-                            "phone": [
-                                {
-                                    "number": "(555)555-555-1234",
-                                    "type": "work place"
-                                }
-                            ]
-                        }
+                                "name": [
+                                    "Good Health Clinic"
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "17 Daws Rd."
+                                        ],
+                                        "city": "Blue Bell",
+                                        "state": "MA",
+                                        "zip": "02368",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "(555)555-555-1234",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "procedure_type": "procedure"
@@ -601,7 +755,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.19",
-                        "identifier_type": "123456789"
+                        "extension": "123456789"
                     }
                 ],
                 "status": "Aborted",
@@ -618,21 +772,28 @@
                         "code_system_name": "SNOMED CT"
                     }
                 ],
-                "providers": [
+                "priority": {
+                    "name": "Callback results",
+                    "code": "CR",
+                    "code_system_name": "OID 2.16.840.1.113883.5.7"
+                },
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "17 Daws Rd."
-                            ],
-                            "city": "Blue Bell",
-                            "state": "MA",
-                            "zip": "02368",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.19.5",
-                                "identifier_type": "1234"
+                                "extension": "1234"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -641,14 +802,18 @@
                                 "type": "work place"
                             }
                         ],
-                        "organization": {
-                            "name": "Good Health Clinic",
-                            "identifiers": [
-                                {
-                                    "identifier": "2.16.840.1.113883.19.5"
-                                }
-                            ]
-                        }
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.19.5"
+                                    }
+                                ],
+                                "name": [
+                                    "Good Health Clinic"
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -661,7 +826,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "17 Daws Rd."
                                 ],
                                 "city": "Blue Bell",
@@ -683,7 +848,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.2.3.4.5.6.7.8",
-                        "identifier_type": "1234567"
+                        "extension": "1234567"
                     }
                 ],
                 "status": "Completed",
@@ -693,21 +858,28 @@
                         "precision": "day"
                     }
                 },
-                "providers": [
+                "priority": {
+                    "name": "Callback results",
+                    "code": "CR",
+                    "code_system_name": "OID 2.16.840.1.113883.5.7"
+                },
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "17 Daws Rd."
-                            ],
-                            "city": "Blue Bell",
-                            "state": "MA",
-                            "zip": "02368",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.19",
-                                "identifier_type": "1234"
+                                "extension": "1234"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -716,14 +888,18 @@
                                 "type": "work place"
                             }
                         ],
-                        "organization": {
-                            "name": "Good Health Clinic",
-                            "identifiers": [
-                                {
-                                    "identifier": "2.16.840.1.113883.19.5"
-                                }
-                            ]
-                        }
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.19.5"
+                                    }
+                                ],
+                                "name": [
+                                    "Good Health Clinic"
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -736,7 +912,7 @@
                         },
                         "address": [
                             {
-                                "streetLines": [
+                                "street_lines": [
                                     "17 Daws Rd."
                                 ],
                                 "city": "Blue Bell",
@@ -763,7 +939,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2000-04-21T00:00:00Z",
                         "precision": "day"
                     }
@@ -782,7 +958,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2000-04-21T00:00:00Z",
                         "precision": "day"
                     }
@@ -809,7 +985,7 @@
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2000-04-21T00:00:00Z",
                         "precision": "day"
                     }
@@ -819,7 +995,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -831,7 +1007,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -840,17 +1016,17 @@
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> organization -> provider -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> organization -> provider -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD"

@@ -1,25 +1,27 @@
 {
-    "type": "object",
+    "type": "array",
     "$schema": "http://json-schema.org/draft-04/schema",
-    "properties": {
-        "smoking_statuses": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "date_time": {
-                            "$ref": "http://local.com/common_models#/properties/cda_date"
-                    },
-                    "value": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                "value"
-            ]
+
+    "items": {
+        "type": "object",
+        "properties": {
+            "date_time": {
+                "$ref": "http://local.com/common_models#/properties/cda_date"
+            },
+            "value": {
+                "type": "string"
+            },
+            "identifiers": {
+                "type": "array",
+                "items": {
+                    "$ref": "http://local.com/common_models#/properties/cda_id"
+                }
             }
-            
-        }
+        },
+        "required": [
+            "value"
+        ]
     },
+
     "additionalPropertes": true
 }

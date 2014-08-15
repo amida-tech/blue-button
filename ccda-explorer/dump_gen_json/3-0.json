@@ -15,12 +15,12 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                    "identifier_type": "DCD2261B-FB04-4FDF-A7E3-003B1E6FD57B"
+                    "extension": "DCD2261B-FB04-4FDF-A7E3-003B1E6FD57B"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "No Address Indicated"
                     ],
                     "city": "No City Indicated",
@@ -64,10 +64,12 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.4.1",
-                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.4.1"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.4.1",
+                            "extension": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.1.4.1"
+                        }
+                    ],
                     "product": {
                         "name": "albuterol CFC free 90 mcg/inh",
                         "code": "746763",
@@ -81,7 +83,7 @@
                 "identifiers": [
                     {
                         "identifier": "A94db41f8-15ab-4ec4-aa6a-97808b155d53",
-                        "identifier_type": "1"
+                        "extension": "1"
                     }
                 ],
                 "date_time": {}
@@ -98,7 +100,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "83899160"
+                        "extension": "83899160"
                     }
                 ],
                 "allergen": {
@@ -106,8 +108,20 @@
                     "code": "731570",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -128,7 +142,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "83899160"
+                        "extension": "83899160"
                     }
                 ],
                 "allergen": {
@@ -136,8 +150,20 @@
                     "code": "601263",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -184,6 +210,10 @@
                         "date": "2013-12-17T08:00:00Z",
                         "precision": "second"
                     }
+                },
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -198,22 +228,36 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.2.1",
-                        "identifier_type": "A71337134-4d92-4550-983c-561dc595dd59"
+                        "extension": "A71337134-4d92-4550-983c-561dc595dd59"
                     }
                 ],
                 "negation_indicator": false,
                 "problem": {
                     "name": "Asthma",
                     "code": "195967001",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2011-09-25T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
                 "onset_age": "51",
                 "onset_age_unit": "Year",
-                "status": "Active",
+                "status": {
+                    "name": "Active",
+                    "date_time": {
+                        "low": {
+                            "date": "2011-09-25T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "83899160"
+                        "extension": "83899160"
                     }
                 ]
             },
@@ -227,22 +271,36 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.83899160.2.1",
-                        "identifier_type": "A4c61f2bd-c5a7-4dc3-81be-d147cbef87cb"
+                        "extension": "A4c61f2bd-c5a7-4dc3-81be-d147cbef87cb"
                     }
                 ],
                 "negation_indicator": false,
                 "problem": {
                     "name": "Costal chondritis",
                     "code": "64109004",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-15T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
                 "onset_age": "51",
                 "onset_age_unit": "Year",
-                "status": "Active",
+                "status": {
+                    "name": "Active",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-15T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "83899160"
+                        "extension": "83899160"
                     }
                 ]
             }
@@ -261,7 +319,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "results",
@@ -287,12 +345,16 @@
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD"
     ]

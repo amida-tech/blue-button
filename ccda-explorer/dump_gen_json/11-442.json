@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "2761 Lost Creek Road"
                     ],
                     "city": "Northampton",
@@ -60,7 +60,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "3069 Cliffside Drive"
                             ],
                             "city": "Oneonta",
@@ -249,7 +249,10 @@
                             }
                         ],
                         "date_time": {},
-                        "status": "completed"
+                        "status": "completed",
+                        "referenceRange": {
+                            "range": "No data"
+                        }
                     }
                 ]
             }
@@ -269,7 +272,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "SSRI antidepressants + Fluvoxamine Maleate 100 MG Oral Tablet  ",
+                    "unencoded_name": "SSRI antidepressants + Fluvoxamine Maleate 100 MG Oral Tablet",
                     "product": {
                         "name": "Fluvoxamine Maleate 100 MG Oral Tablet",
                         "code": "903884",
@@ -291,7 +294,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "SSRI antidepressants + Fluvoxamine Maleate 100 MG Oral Tablet  ",
+                    "unencoded_name": "SSRI antidepressants + Fluvoxamine Maleate 100 MG Oral Tablet",
                     "product": {
                         "name": "Fluvoxamine Maleate 100 MG Oral Tablet",
                         "code": "903884",
@@ -345,6 +348,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-05-01T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Major Depression",
                         "code": "268621008",
                         "code_system_name": "SNOMED CT",
@@ -455,7 +470,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -464,7 +479,16 @@
                         }
                     ]
                 },
-                "severity": "Moderate to severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -483,7 +507,16 @@
                     "code": "905148",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -502,7 +535,16 @@
                     "code": "N0000006691",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -537,7 +579,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -548,7 +590,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -567,7 +609,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -575,7 +617,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -632,7 +674,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -643,7 +685,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -662,7 +704,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -670,7 +712,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -698,6 +740,16 @@
                         "date": "2010-04-30T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -719,20 +771,16 @@
                     "name": "Recurrent major depressive episodes",
                     "code": "268621008",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Major depressive disorder, recurrent, unspecified",
-                            "code": "F33.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Major depressive affective disorder, recurrent episode, unspecified",
-                            "code": "296.30",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-05-01T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -786,7 +834,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -801,7 +849,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
