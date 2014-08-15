@@ -163,6 +163,9 @@
                             },
                             "name": {
                                 "type": "string"
+                            },
+                            "nullFlavor": {
+                                "type": "string"
                             }
                         },
                         "additionalProperties": false,
