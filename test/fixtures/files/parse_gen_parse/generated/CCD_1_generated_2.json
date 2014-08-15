@@ -515,13 +515,61 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
+<<<<<<< HEAD
+                    "code_system_name": "CPT",
+                    "translations": [
+                        {
+                            "name": "Ambulatory",
+                            "code": "AMB",
+                            "code_system_name": "HL7ActCode"
+                        }
+                    ]
+=======
                     "code_system_name": "CPT"
+>>>>>>> a3f86dfcf2268f3ef4afe41216160d3bbbf14a84
                 },
                 "identifiers": [
                     {
                         "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
                     }
                 ],
+<<<<<<< HEAD
+                "date_time": {
+                    "point": {
+                        "date": "2009-02-27T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "performers": [
+                    {
+                        "name": "General Physician",
+                        "code": "59058001",
+                        "code_system_name": "SNOMED CT"
+                    }
+                ],
+                "locations": [
+                    {
+                        "name": "Community Urgent Care Center",
+                        "location_type": {
+                            "name": "Urgent Care Center",
+                            "code": "1160-1",
+                            "code_system_name": "HealthcareServiceLocation"
+                        },
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US"
+                            }
+                        ]
+                    }
+                ],
+=======
+>>>>>>> a3f86dfcf2268f3ef4afe41216160d3bbbf14a84
                 "findings": [
                     {
                         "identifiers": [
@@ -1666,7 +1714,12 @@
         "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+<<<<<<< HEAD
+        "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+=======
         "nullFlavor alert:  missing but required date_time in activity -> encountersSection -> CCD",
+>>>>>>> a3f86dfcf2268f3ef4afe41216160d3bbbf14a84
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
