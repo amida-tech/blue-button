@@ -15,13 +15,13 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.441.1.50.300011.51",
-                    "identifier_type": "26840"
+                    "extension": "26840"
                 }
             ],
             "marital_status": "Divorced",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "123 Test Ave"
                     ],
                     "city": "Norcross",
@@ -54,6 +54,16 @@
                         "date": "1900-01-01T00:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.68",
+                        "extension": "1313"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -68,15 +78,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
-                        "identifier_type": "1415"
+                        "extension": "1415"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "74e0957fcb2849c4a15713d5a6402b92"
+                        "extension": "74e0957fcb2849c4a15713d5a6402b92"
                     }
                 ]
             },
@@ -90,15 +102,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
-                        "identifier_type": "1416"
+                        "extension": "1416"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "75c2a915aa54458b82f9f26fcad015af"
+                        "extension": "75c2a915aa54458b82f9f26fcad015af"
                     }
                 ]
             },
@@ -112,15 +126,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
-                        "identifier_type": "1417"
+                        "extension": "1417"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "489f49cb8ee24b57b0714fc7c5f1bc50"
+                        "extension": "489f49cb8ee24b57b0714fc7c5f1bc50"
                     }
                 ]
             },
@@ -134,15 +150,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.61",
-                        "identifier_type": "1418"
+                        "extension": "1418"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "c95340b9d041420d9405a984e5a4dc73"
+                        "extension": "c95340b9d041420d9405a984e5a4dc73"
                     }
                 ]
             }
@@ -157,7 +175,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
-                        "identifier_type": "61434"
+                        "extension": "61434"
                     }
                 ],
                 "status": "Completed",
@@ -178,7 +196,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.53",
-                        "identifier_type": "61435"
+                        "extension": "61435"
                     }
                 ],
                 "status": "Completed",
@@ -201,7 +219,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
-                        "identifier_type": "61434"
+                        "extension": "61434"
                     }
                 ],
                 "date_time": {
@@ -221,7 +239,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26840.72",
-                        "identifier_type": "61435"
+                        "extension": "61435"
                     }
                 ],
                 "date_time": {
@@ -235,7 +253,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "social_history",
@@ -249,14 +267,14 @@
         "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
         "nullFlavor alert:  missing but required preferred in LanguageCommunication -> Patient -> CCD",
         "nullFlavor alert:  missing but required problemAct in allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD"
     ]

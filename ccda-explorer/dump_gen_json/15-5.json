@@ -15,12 +15,12 @@
             "identifiers": [
                 {
                     "identifier": "1.3.6.1.4.1.22812.3.99930.3",
-                    "identifier_type": "110107073916282"
+                    "extension": "110107073916282"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "1234 Six Forks"
                     ],
                     "city": "Portland",
@@ -49,11 +49,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "6660219000296"
+                        "extension": "6660219000296"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "6660219000356"
+                        "extension": "6660219000356"
                     }
                 ],
                 "vital": {
@@ -75,11 +75,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "1166602190002918"
+                        "extension": "1166602190002918"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "1166602190003518"
+                        "extension": "1166602190003518"
                     }
                 ],
                 "vital": {
@@ -101,11 +101,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900029181"
+                        "extension": "11666021900029181"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900035181"
+                        "extension": "11666021900035181"
                     }
                 ],
                 "vital": {
@@ -127,11 +127,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "1166602190002928"
+                        "extension": "1166602190002928"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "1166602190003528"
+                        "extension": "1166602190003528"
                     }
                 ],
                 "vital": {
@@ -153,11 +153,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "1166602190002939"
+                        "extension": "1166602190002939"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "1166602190003539"
+                        "extension": "1166602190003539"
                     }
                 ],
                 "vital": {
@@ -179,11 +179,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "66602190002961"
+                        "extension": "66602190002961"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "66602190003561"
+                        "extension": "66602190003561"
                     }
                 ],
                 "vital": {
@@ -205,11 +205,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900029182"
+                        "extension": "11666021900029182"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900035182"
+                        "extension": "11666021900035182"
                     }
                 ],
                 "vital": {
@@ -231,11 +231,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "116660219000291811"
+                        "extension": "116660219000291811"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "116660219000351811"
+                        "extension": "116660219000351811"
                     }
                 ],
                 "vital": {
@@ -257,11 +257,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900029281"
+                        "extension": "11666021900029281"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900035281"
+                        "extension": "11666021900035281"
                     }
                 ],
                 "vital": {
@@ -283,11 +283,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "1166602190002930"
+                        "extension": "1166602190002930"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "1166602190003530"
+                        "extension": "1166602190003530"
                     }
                 ],
                 "vital": {
@@ -309,11 +309,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "66602190002962"
+                        "extension": "66602190002962"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "66602190003562"
+                        "extension": "66602190003562"
                     }
                 ],
                 "vital": {
@@ -335,11 +335,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900029185"
+                        "extension": "11666021900029185"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900035185"
+                        "extension": "11666021900035185"
                     }
                 ],
                 "vital": {
@@ -361,11 +361,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "116660219000291819"
+                        "extension": "116660219000291819"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "116660219000351819"
+                        "extension": "116660219000351819"
                     }
                 ],
                 "vital": {
@@ -387,11 +387,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "116660219000292817"
+                        "extension": "116660219000292817"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "116660219000352819"
+                        "extension": "116660219000352819"
                     }
                 ],
                 "vital": {
@@ -413,11 +413,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900029391"
+                        "extension": "11666021900029391"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "identifier_type": "11666021900035391"
+                        "extension": "11666021900035391"
                     }
                 ],
                 "vital": {
@@ -441,7 +441,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
-                        "identifier_type": "659988700005"
+                        "extension": "659988700005"
                     }
                 ],
                 "result_set": {
@@ -454,11 +454,11 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
-                                "identifier_type": "659988700003"
+                                "extension": "659988700003"
                             },
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
-                                "identifier_type": "659988900003"
+                                "extension": "659988900003"
                             }
                         ],
                         "result": {
@@ -480,11 +480,11 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
-                                "identifier_type": "6599887000031"
+                                "extension": "6599887000031"
                             },
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
-                                "identifier_type": "6599889000031"
+                                "extension": "6599889000031"
                             }
                         ],
                         "result": {
@@ -506,11 +506,11 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
-                                "identifier_type": "6599887000032"
+                                "extension": "6599887000032"
                             },
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
-                                "identifier_type": "6599889000032"
+                                "extension": "6599889000032"
                             }
                         ],
                         "result": {
@@ -532,11 +532,11 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
-                                "identifier_type": "6599887000033"
+                                "extension": "6599887000033"
                             },
                             {
                                 "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.5",
-                                "identifier_type": "6599889000033"
+                                "extension": "6599889000033"
                             }
                         ],
                         "result": {
@@ -572,11 +572,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
-                        "identifier_type": "659122500005"
+                        "extension": "659122500005"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
-                        "identifier_type": "659122500007"
+                        "extension": "659122500007"
                     }
                 ],
                 "status": "Prescribed",
@@ -587,6 +587,9 @@
                         "code": "197517",
                         "code_system_name": "RXNORM"
                     }
+                },
+                "supply": {
+                    "instructions": ""
                 },
                 "administration": {
                     "form": {
@@ -604,6 +607,14 @@
                         },
                         "frequency": true
                     }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "Provider instructions for treatment",
+                        "code": "423564006",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Generic substitution allowed"
                 }
             },
             {
@@ -616,11 +627,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
-                        "identifier_type": "613618700089"
+                        "extension": "613618700089"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
-                        "identifier_type": "659084100001"
+                        "extension": "659084100001"
                     }
                 ],
                 "status": "Prescribed",
@@ -632,6 +643,22 @@
                         "code_system_name": "RXNORM"
                     }
                 },
+                "supply": {
+                    "author": {
+                        "date_time": {},
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "1111111111"
+                            }
+                        ],
+                        "name": {
+                            "prefix": "Dr",
+                            "last": "Stage",
+                            "first": "Stanley"
+                        }
+                    }
+                },
                 "administration": {
                     "form": {
                         "name": "AEROSOL, METERED",
@@ -641,6 +668,26 @@
                     "dose": {
                         "value": 2,
                         "unit": "Puff"
+                    }
+                },
+                "indication": {
+                    "identifiers": [
+                        {
+                            "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.3",
+                            "extension": "4242"
+                        }
+                    ],
+                    "code": "55607006",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-01-10T00:00:00Z",
+                            "precision": "subsecond"
+                        }
+                    },
+                    "value": {
+                        "name": "Hypertension",
+                        "code": "363746003",
+                        "code_system_name": "SNOMED CT"
                     }
                 }
             },
@@ -654,11 +701,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
-                        "identifier_type": "659932000003"
+                        "extension": "659932000003"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
-                        "identifier_type": "666024500007"
+                        "extension": "666024500007"
                     }
                 ],
                 "status": "Prescribed",
@@ -669,6 +716,9 @@
                         "code": "860978",
                         "code_system_name": "RXNORM"
                     }
+                },
+                "supply": {
+                    "instructions": ""
                 },
                 "administration": {
                     "route": {
@@ -691,6 +741,14 @@
                         },
                         "frequency": true
                     }
+                },
+                "instructions": {
+                    "code": {
+                        "name": "Provider instructions for treatment",
+                        "code": "423564006",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "freeText": "Generic substitution allowed"
                 }
             }
         ],
@@ -704,7 +762,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.3.4",
-                        "identifier_type": "5283815"
+                        "extension": "5283815"
                     }
                 ],
                 "date_time": {
@@ -733,7 +791,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.3.4",
-                        "identifier_type": "52838151"
+                        "extension": "52838151"
                     }
                 ],
                 "date_time": {
@@ -766,7 +824,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.3.4",
-                        "identifier_type": "52838152"
+                        "extension": "52838152"
                     }
                 ],
                 "date_time": {
@@ -798,11 +856,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
-                        "identifier_type": "613618700107"
+                        "extension": "613618700107"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
-                        "identifier_type": "613618700109"
+                        "extension": "613618700109"
                     }
                 ],
                 "allergen": {
@@ -810,9 +868,24 @@
                     "code": "7982",
                     "code_system_name": "RXNORM"
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "1998-01-10T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Hives",
                             "code": "247472004",
@@ -831,16 +904,31 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
-                        "identifier_type": "624373800001"
+                        "extension": "624373800001"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
-                        "identifier_type": "637073500005"
+                        "extension": "637073500005"
                     }
                 ],
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2001-01-10T00:00:00Z",
+                            "precision": "second"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Drug Induced Anaphylaxis",
                             "code": "241937000",
@@ -859,11 +947,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
-                        "identifier_type": "6136187001071"
+                        "extension": "6136187001071"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.10.2",
-                        "identifier_type": "6136187001091"
+                        "extension": "6136187001091"
                     }
                 ],
                 "allergen": {
@@ -871,9 +959,24 @@
                     "code": "1191",
                     "code_system_name": "RXNORM"
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2011-01-10T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
+                        "date_time": {},
                         "reaction": {
                             "name": "Swelling",
                             "code": "65124004",
@@ -894,11 +997,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.4",
-                        "identifier_type": "637382500009"
+                        "extension": "637382500009"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.4",
-                        "identifier_type": "637382500011"
+                        "extension": "637382500011"
                     }
                 ],
                 "status": "complete",
@@ -925,7 +1028,7 @@
                     "identifiers": [
                         {
                             "identifier": "1.3.6.1.4.1.22812.3.99930.3",
-                            "identifier_type": "3333"
+                            "extension": "3333"
                         }
                     ],
                     "name": [
@@ -946,112 +1049,126 @@
         "social_history": [
             {
                 "value": "Unknown if ever smoked",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             }
         ],
         "problems": [
             {
-                "date_time": {
-                    "low": {
-                        "date": "2013-01-30T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
-                        "identifier_type": "615028800003"
+                        "extension": "615028800003"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
-                        "identifier_type": "659935200001"
+                        "extension": "659935200001"
                     }
                 ],
                 "negation_indicator": false,
                 "problem": {
                     "name": "Asthma",
                     "code": "195967001",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2013-01-30T00:00:00Z",
+                            "precision": "day"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
-                        "identifier_type": "615028800003"
+                        "extension": "615028800003"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
-                        "identifier_type": "659935200001"
+                        "extension": "659935200001"
                     }
                 ]
             },
             {
-                "date_time": {
-                    "low": {
-                        "date": "2012-03-12T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
-                        "identifier_type": "636842200009"
+                        "extension": "636842200009"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
-                        "identifier_type": "659935200025"
+                        "extension": "659935200025"
                     }
                 ],
                 "negation_indicator": false,
                 "problem": {
                     "name": "Alzheimer disease",
                     "code": "26929004",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-03-12T00:00:00Z",
+                            "precision": "day"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
-                        "identifier_type": "636842200009"
+                        "extension": "636842200009"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
-                        "identifier_type": "659935200025"
+                        "extension": "659935200025"
                     }
                 ]
             },
             {
-                "date_time": {
-                    "low": {
-                        "date": "2011-03-10T00:00:00Z",
-                        "precision": "subsecond"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
-                        "identifier_type": "636842200007"
+                        "extension": "636842200007"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
-                        "identifier_type": "660100900011"
+                        "extension": "660100900011"
                     }
                 ],
                 "negation_indicator": false,
                 "problem": {
                     "name": "Type II DIabetes",
                     "code": "195967001",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2011-03-10T00:00:00Z",
+                            "precision": "subsecond"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
-                        "identifier_type": "636842200007"
+                        "extension": "636842200007"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
-                        "identifier_type": "660100900011"
+                        "extension": "660100900011"
                     }
                 ]
             }
@@ -1066,11 +1183,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.7",
-                        "identifier_type": "6239942000191"
+                        "extension": "6239942000191"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.7",
-                        "identifier_type": "6600086000011"
+                        "extension": "6600086000011"
                     }
                 ],
                 "status": "Completed",
@@ -1087,22 +1204,31 @@
                         "code_system_name": "SNOMED CT"
                     }
                 ],
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "Local Community Hospital",
-                                "1034 Healthcare Dr."
-                            ],
-                            "city": "Portland",
-                            "state": "OR",
-                            "zip": "97005",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.4.6",
-                                "identifier_type": "1111111111"
+                                "extension": "1111111111"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "prefix": "Dr",
+                                "last": "Stage",
+                                "first": "Stanley"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "Local Community Hospital",
+                                    "1034 Healthcare Dr."
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97005",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -1120,7 +1246,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.3.4",
-                        "identifier_type": "52487"
+                        "extension": "52487"
                     }
                 ],
                 "type": "encounter"
@@ -1134,11 +1260,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.13.2",
-                        "identifier_type": "55823"
+                        "extension": "55823"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2011-11-01T00:00:00Z",
                         "precision": "day"
                     }
@@ -1149,7 +1275,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.7",
-                        "identifier_type": "11144556"
+                        "extension": "11144556"
                     }
                 ],
                 "type": "procedure"
@@ -1157,7 +1283,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1184,7 +1310,7 @@
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required code in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",

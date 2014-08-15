@@ -15,12 +15,12 @@
             "identifiers": [
                 {
                     "identifier": "1.3.6.1.4.1.22812.4.111.0",
-                    "identifier_type": "170314e2"
+                    "extension": "170314e2"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "1234 DGI Blvd"
                     ],
                     "city": "Raleigh",
@@ -48,7 +48,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062995"
+                        "extension": "10062995"
                     }
                 ],
                 "vital": {
@@ -70,7 +70,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062996"
+                        "extension": "10062996"
                     }
                 ],
                 "vital": {
@@ -92,7 +92,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100629911"
+                        "extension": "100629911"
                     }
                 ],
                 "vital": {
@@ -114,7 +114,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "10062998"
+                        "extension": "10062998"
                     }
                 ],
                 "vital": {
@@ -136,7 +136,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100629913"
+                        "extension": "100629913"
                     }
                 ],
                 "vital": {
@@ -158,7 +158,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.6",
-                        "identifier_type": "100629914"
+                        "extension": "100629914"
                     }
                 ],
                 "vital": {
@@ -182,7 +182,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10171837"
+                        "extension": "10171837"
                     }
                 ],
                 "result_set": {
@@ -195,7 +195,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "1019280"
+                                "extension": "1019280"
                             }
                         ],
                         "date_time": {
@@ -215,7 +215,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10171832"
+                        "extension": "10171832"
                     }
                 ],
                 "result_set": {
@@ -228,7 +228,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194163"
+                                "extension": "10194163"
                             }
                         ],
                         "date_time": {
@@ -248,7 +248,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10031435"
+                        "extension": "10031435"
                     }
                 ],
                 "result_set": {
@@ -261,7 +261,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194182"
+                                "extension": "10194182"
                             }
                         ],
                         "result": {
@@ -276,6 +276,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "42.9 - 49.1"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -288,7 +291,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10031438"
+                        "extension": "10031438"
                     }
                 ],
                 "result_set": {
@@ -301,7 +304,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194179"
+                                "extension": "10194179"
                             }
                         ],
                         "result": {
@@ -316,6 +319,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "14.4 - 16.6"
+                        },
                         "interpretations": [
                             "Abnormal"
                         ],
@@ -328,7 +334,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10031437"
+                        "extension": "10031437"
                     }
                 ],
                 "result_set": {
@@ -341,7 +347,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194180"
+                                "extension": "10194180"
                             }
                         ],
                         "result": {
@@ -368,7 +374,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                        "identifier_type": "10031436"
+                        "extension": "10031436"
                     }
                 ],
                 "result_set": {
@@ -381,7 +387,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.4.111.0.4.5",
-                                "identifier_type": "10194181"
+                                "extension": "10194181"
                             }
                         ],
                         "result": {
@@ -396,6 +402,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4.5 - 11.0"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -416,7 +425,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.9",
-                        "identifier_type": "10127030"
+                        "extension": "10127030"
                     }
                 ],
                 "status": "Prescribed",
@@ -440,7 +449,25 @@
                 },
                 "supply": {
                     "repeatNumber": "1",
-                    "quantity": "14"
+                    "quantity": "14",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2012-08-06T15:27:19Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "1569874562"
+                            }
+                        ],
+                        "name": {
+                            "last": "Seven",
+                            "first": "Henry"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -471,7 +498,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.9",
-                        "identifier_type": "10127040"
+                        "extension": "10127040"
                     }
                 ],
                 "status": "Prescribed",
@@ -495,7 +522,25 @@
                 },
                 "supply": {
                     "repeatNumber": "1",
-                    "quantity": "30"
+                    "quantity": "30",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2012-08-06T15:27:15Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "1569874562"
+                            }
+                        ],
+                        "name": {
+                            "last": "Seven",
+                            "first": "Henry"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -526,7 +571,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.9",
-                        "identifier_type": "10127050"
+                        "extension": "10127050"
                     }
                 ],
                 "status": "Prescribed",
@@ -550,7 +595,25 @@
                 },
                 "supply": {
                     "repeatNumber": "1",
-                    "quantity": "1"
+                    "quantity": "1",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2012-08-06T15:27:11Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "1569874562"
+                            }
+                        ],
+                        "name": {
+                            "last": "Seven",
+                            "first": "Henry"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -575,7 +638,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
-                        "identifier_type": "10043698"
+                        "extension": "10043698"
                     }
                 ],
                 "date_time": {
@@ -593,6 +656,17 @@
                             "code_system_name": "HealthcareServiceLocation"
                         }
                     }
+                ],
+                "findings": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.3",
+                                "extension": "572"
+                            }
+                        ],
+                        "date_time": {}
+                    }
                 ]
             }
         ],
@@ -607,7 +681,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.10.2",
-                        "identifier_type": "10381931"
+                        "extension": "10381931"
                     }
                 ],
                 "allergen": {
@@ -622,7 +696,21 @@
                         }
                     ]
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2011-01-01T00:00:00Z",
+                            "precision": "year"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                }
             },
             {
                 "date_time": {
@@ -634,7 +722,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.10.2",
-                        "identifier_type": "10381930"
+                        "extension": "10381930"
                     }
                 ],
                 "allergen": {
@@ -649,7 +737,21 @@
                         }
                     ]
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2010-01-01T00:00:00Z",
+                            "precision": "year"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                }
             },
             {
                 "date_time": {
@@ -661,7 +763,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.10.2",
-                        "identifier_type": "10381929"
+                        "extension": "10381929"
                     }
                 ],
                 "allergen": {
@@ -676,7 +778,21 @@
                         }
                     ]
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2012-06-01T15:07:00Z",
+                            "precision": "subsecond"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                }
             }
         ],
         "immunizations": [
@@ -690,7 +806,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4",
-                        "identifier_type": "1049282"
+                        "extension": "1049282"
                     }
                 ],
                 "status": "complete",
@@ -717,7 +833,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4",
-                        "identifier_type": "1049283"
+                        "extension": "1049283"
                     }
                 ],
                 "status": "complete",
@@ -744,7 +860,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4",
-                        "identifier_type": "1049280"
+                        "extension": "1049280"
                     }
                 ],
                 "status": "complete",
@@ -772,7 +888,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "1569874562"
+                            "extension": "1569874562"
                         }
                     ],
                     "name": [
@@ -783,7 +899,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1002 Healthcare Dr."
                             ],
                             "city": "Portland",
@@ -797,6 +913,14 @@
                             "number": "+1-(555)555-1002"
                         }
                     ]
+                },
+                "instructions": {
+                    "code": {
+                        "name": "Annotation Comment",
+                        "code": "48767-8",
+                        "code_system_name": "LOINC"
+                    },
+                    "freeText": "Site: Deltoid (Left)"
                 }
             },
             {
@@ -809,7 +933,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4",
-                        "identifier_type": "1049284"
+                        "extension": "1049284"
                     }
                 ],
                 "status": "complete",
@@ -829,11 +953,23 @@
         ],
         "social_history": [
             {
-                "date_time": {}
+                "date_time": {},
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.4.111.0.4.12",
+                        "extension": "10381928"
+                    }
+                ],
+                "observation_value": "Current every day smoker."
             },
             {
                 "value": "Current every day smoker",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             }
         ],
         "problems": [
@@ -842,7 +978,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
-                        "identifier_type": "10241360"
+                        "extension": "10241360"
                     }
                 ],
                 "negation_indicator": false,
@@ -850,29 +986,15 @@
                     "name": "Asthma, moderate persistent",
                     "code": "427295004",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Asthma, moderate persistent",
-                            "code": "493.90",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Asthma, moderate persistent",
-                            "code": "J45.40",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Asthma, moderate persistent",
-                            "code": "513862",
-                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
-                        }
-                    ]
+                    "date_time": {}
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1",
-                        "identifier_type": "10241360"
+                        "extension": "10241360"
                     }
                 ]
             },
@@ -881,7 +1003,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
-                        "identifier_type": "10241359"
+                        "extension": "10241359"
                     }
                 ],
                 "negation_indicator": false,
@@ -889,29 +1011,15 @@
                     "name": "Community acquired pneumonia",
                     "code": "385093006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Community acquired pneumonia",
-                            "code": "486",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Community acquired pneumonia",
-                            "code": "J18.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Community acquired pneumonia",
-                            "code": "500208",
-                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
-                        }
-                    ]
+                    "date_time": {}
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1",
-                        "identifier_type": "10241359"
+                        "extension": "10241359"
                     }
                 ]
             },
@@ -920,7 +1028,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
-                        "identifier_type": "10241361"
+                        "extension": "10241361"
                     }
                 ],
                 "negation_indicator": false,
@@ -928,29 +1036,15 @@
                     "name": "Hypoxemia",
                     "code": "389087006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Hypoxemia",
-                            "code": "799.02",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Hypoxemia",
-                            "code": "R09.02",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Hypoxemia",
-                            "code": "38331",
-                            "code_system_name": "OID 2.16.840.1.113883.3.247.1.1"
-                        }
-                    ]
+                    "date_time": {}
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.1",
-                        "identifier_type": "10241361"
+                        "extension": "10241361"
                     }
                 ]
             }
@@ -965,7 +1059,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
-                        "identifier_type": "10171837"
+                        "extension": "10171837"
                     }
                 ],
                 "status": "Completed",
@@ -979,21 +1073,29 @@
                         "precision": "day"
                     }
                 },
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "1002 Healthcare Dr."
-                            ],
-                            "city": "Portland",
-                            "state": "OR",
-                            "zip": "97005",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.4.6",
-                                "identifier_type": "1569874562"
+                                "extension": "1569874562"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "last": "Seven",
+                                "first": "Henry"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1002 Healthcare Dr."
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97005",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -1014,7 +1116,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
-                        "identifier_type": "10171832"
+                        "extension": "10171832"
                     }
                 ],
                 "status": "Completed",
@@ -1028,21 +1130,29 @@
                         "precision": "day"
                     }
                 },
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "1002 Healthcare Dr."
-                            ],
-                            "city": "Portland",
-                            "state": "OR",
-                            "zip": "97005",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.4.6",
-                                "identifier_type": "1569874562"
+                                "extension": "1569874562"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "last": "Seven",
+                                "first": "Henry"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1002 Healthcare Dr."
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97005",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -1058,7 +1168,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
-                        "identifier_type": "10171829"
+                        "extension": "10171829"
                     }
                 ],
                 "status": "Completed",
@@ -1072,21 +1182,29 @@
                         "precision": "day"
                     }
                 },
-                "providers": [
+                "performer": [
                     {
-                        "address": {
-                            "streetLines": [
-                                "1002 Healthcare Dr."
-                            ],
-                            "city": "Portland",
-                            "state": "OR",
-                            "zip": "97005",
-                            "country": "US"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.4.6",
-                                "identifier_type": "1569874562"
+                                "extension": "1569874562"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "last": "Seven",
+                                "first": "Henry"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1002 Healthcare Dr."
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97005",
+                                "country": "US"
                             }
                         ],
                         "phone": [
@@ -1104,7 +1222,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
-                        "identifier_type": "2730"
+                        "extension": "2730"
                     }
                 ],
                 "type": "encounter"
@@ -1113,7 +1231,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
-                        "identifier_type": "2710"
+                        "extension": "2710"
                     }
                 ],
                 "type": "encounter"
@@ -1122,7 +1240,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.3.4",
-                        "identifier_type": "2724"
+                        "extension": "2724"
                     }
                 ],
                 "type": "encounter"
@@ -1136,11 +1254,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.13.2",
-                        "identifier_type": "10031434"
+                        "extension": "10031434"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-08-13T16:21:18Z",
                         "precision": "subsecond"
                     }
@@ -1156,11 +1274,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.13.2",
-                        "identifier_type": "10031425"
+                        "extension": "10031425"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-08-06T15:46:59Z",
                         "precision": "subsecond"
                     }
@@ -1171,7 +1289,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
-                        "identifier_type": "10171843"
+                        "extension": "10171843"
                     }
                 ],
                 "type": "procedure"
@@ -1180,7 +1298,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.4.111.0.4.7",
-                        "identifier_type": "10171842"
+                        "extension": "10171842"
                     }
                 ],
                 "type": "procedure"
@@ -1188,7 +1306,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1218,6 +1336,8 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required value in socialHistoryObservation -> socialHistorySection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",

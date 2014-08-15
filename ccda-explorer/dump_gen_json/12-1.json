@@ -18,17 +18,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.13.300.1.1.2.1",
-                    "identifier_type": "9473"
+                    "extension": "9473"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "266 York Street"
                     ],
                     "city": "Morton",
                     "state": "IL",
-                    "zip": "61550- ",
+                    "zip": "61550-",
                     "country": "US",
                     "use": "primary home"
                 }
@@ -80,7 +80,26 @@
                             "precision": "subsecond"
                         }
                     },
-                    "repeatNumber": "1"
+                    "repeatNumber": "1",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2010-10-28T08:58:53Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "6257677609"
+                            }
+                        ],
+                        "name": {
+                            "last": "Morris",
+                            "suffix": "MD",
+                            "first": "Lee"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -131,7 +150,26 @@
                     }
                 },
                 "supply": {
-                    "repeatNumber": "1"
+                    "repeatNumber": "1",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2010-10-28T08:59:25Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "6257677609"
+                            }
+                        ],
+                        "name": {
+                            "last": "Morris",
+                            "suffix": "MD",
+                            "first": "Lee"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -163,7 +201,26 @@
                     "unencoded_name": "Tavist"
                 },
                 "supply": {
-                    "repeatNumber": "1"
+                    "repeatNumber": "1",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2010-10-28T08:58:05Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "6257677609"
+                            }
+                        ],
+                        "name": {
+                            "last": "Morris",
+                            "suffix": "MD",
+                            "first": "Lee"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -195,7 +252,26 @@
                     "unencoded_name": "aspirin"
                 },
                 "supply": {
-                    "repeatNumber": "1"
+                    "repeatNumber": "1",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2010-10-28T08:58:32Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "6257677609"
+                            }
+                        ],
+                        "name": {
+                            "last": "Morris",
+                            "suffix": "MD",
+                            "first": "Lee"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -232,7 +308,26 @@
                     }
                 },
                 "supply": {
-                    "repeatNumber": "1"
+                    "repeatNumber": "1",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2010-10-28T08:59:48Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "6257677609"
+                            }
+                        ],
+                        "name": {
+                            "last": "Morris",
+                            "suffix": "MD",
+                            "first": "Lee"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -269,7 +364,26 @@
                     }
                 },
                 "supply": {
-                    "repeatNumber": "1"
+                    "repeatNumber": "1",
+                    "author": {
+                        "date_time": {
+                            "point": {
+                                "date": "2010-10-28T08:57:40Z",
+                                "precision": "subsecond"
+                            }
+                        },
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "6257677609"
+                            }
+                        ],
+                        "name": {
+                            "last": "Morris",
+                            "suffix": "MD",
+                            "first": "Lee"
+                        }
+                    }
                 },
                 "administration": {
                     "route": {
@@ -298,7 +412,9 @@
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "CFA98865-0D16-4045-9C25-D45B9751C101"
@@ -318,7 +434,9 @@
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "8A021706-C5A3-4E4C-B2D8-F7B4E7168B62"
@@ -338,7 +456,9 @@
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "BFBD2BC5-B5A3-4AB7-B273-5AE79D600E69"
@@ -358,7 +478,9 @@
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "8EC156B6-82D6-4F6D-ADD2-0C74F81281F5"
@@ -368,7 +490,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "medications",
@@ -392,13 +514,13 @@
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD"
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD"
     ]
 }

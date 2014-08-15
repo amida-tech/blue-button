@@ -15,16 +15,16 @@
             "identifiers": [
                 {
                     "identifier": "1.3.6.1.4.1.16517.1",
-                    "identifier_type": "107624082"
+                    "extension": "107624082"
                 },
                 {
                     "identifier": "1.3.6.1.4.1.16517.2.2",
-                    "identifier_type": "50068642"
+                    "extension": "50068642"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "2324 MAIN STREET"
                     ],
                     "city": "BOSTON",
@@ -57,7 +57,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030729-E38431F6-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030729-E38431F6-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -70,7 +70,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030729-E38431F6-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030729-E38431F6-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -85,6 +85,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "136-145 mmol/L"
+                        },
                         "value": 141,
                         "unit": "mmol/L"
                     }
@@ -94,7 +97,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030730-E38471A2-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030730-E38471A2-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -107,7 +110,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030730-E38471A2-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030730-E38471A2-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -122,6 +125,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "3.4-5.0 mmol/L"
+                        },
                         "value": 4.4,
                         "unit": "mmol/L"
                     }
@@ -131,7 +137,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030731-E38496DC-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030731-E38496DC-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -144,7 +150,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030731-E38496DC-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030731-E38496DC-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -159,6 +165,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "98-107 mmol/L"
+                        },
                         "value": 103,
                         "unit": "mmol/L"
                     }
@@ -168,7 +177,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030732-E384CB34-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030732-E384CB34-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -181,7 +190,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030732-E384CB34-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030732-E384CB34-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -196,6 +205,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "22-31 mmol/L"
+                        },
                         "value": 29,
                         "unit": "mmol/L"
                     }
@@ -205,7 +217,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030727-E38552A2-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030727-E38552A2-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -218,7 +230,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030727-E38552A2-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030727-E38552A2-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -233,6 +245,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "6-23 mg/dL"
+                        },
                         "value": 14,
                         "unit": "mg/dL"
                     }
@@ -242,7 +257,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030734-E3857F3E-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030734-E3857F3E-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -255,7 +270,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030734-E3857F3E-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030734-E3857F3E-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -270,6 +285,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "8.8-10.7 mg/dL"
+                        },
                         "value": 9.4,
                         "unit": "mg/dL"
                     }
@@ -279,7 +297,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030728-E385CBE2-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030728-E385CBE2-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -292,7 +310,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030728-E385CBE2-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030728-E385CBE2-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -307,6 +325,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "0.50-1.20 mg/dL"
+                        },
                         "value": 1.9,
                         "unit": "mg/dL"
                     }
@@ -316,7 +337,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030726-E386387A-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030726-E386387A-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -329,7 +350,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030726-E386387A-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030726-E386387A-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -344,6 +365,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "70-100 mg/dL"
+                        },
                         "value": 91,
                         "unit": "mg/dL"
                     }
@@ -353,7 +377,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030733-E3869EB4-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030733-E3869EB4-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -366,7 +390,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030733-E3869EB4-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030733-E3869EB4-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -381,6 +405,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "5-17 mmol/L"
+                        },
                         "value": 10,
                         "unit": "mmol/L"
                     }
@@ -390,7 +417,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -403,7 +430,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -426,7 +453,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030663-E3850202-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030663-E3850202-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -439,7 +466,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030663-E3850202-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030663-E3850202-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -454,6 +481,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "22-31 mmol/L"
+                        },
                         "value": 29,
                         "unit": "mmol/L"
                     }
@@ -463,7 +493,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030662-E3852566-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030662-E3852566-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -476,7 +506,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030662-E3852566-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030662-E3852566-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -491,6 +521,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "3.5-5.2 g/dL"
+                        },
                         "value": 4.1,
                         "unit": "g/dL"
                     }
@@ -500,7 +533,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030660-E385A464-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030660-E385A464-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -513,7 +546,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030660-E385A464-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030660-E385A464-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -528,6 +561,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "8.8-10.7 mg/dL"
+                        },
                         "value": 9.4,
                         "unit": "mg/dL"
                     }
@@ -537,7 +573,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030658-E385FB58-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030658-E385FB58-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -550,7 +586,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030658-E385FB58-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030658-E385FB58-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -565,6 +601,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "0.50-1.20 mg/dL"
+                        },
                         "value": 1.9,
                         "unit": "mg/dL"
                     }
@@ -574,7 +613,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030661-E3866F7A-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030661-E3866F7A-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -587,7 +626,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030661-E3866F7A-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030661-E3866F7A-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -602,6 +641,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "2.4-4.3 mg/dL"
+                        },
                         "value": 4.2,
                         "unit": "mg/dL"
                     }
@@ -611,7 +653,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -624,7 +666,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -647,7 +689,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030648-E386CBBE-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030648-E386CBBE-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -660,7 +702,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030648-E386CBBE-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030648-E386CBBE-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -675,6 +717,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "0.0-2.0 mg/dL"
+                        },
                         "value": 4.1,
                         "unit": "mg/dL"
                     }
@@ -684,7 +729,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030647-E386EF4A-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030647-E386EF4A-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -697,7 +742,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030647-E386EF4A-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030647-E386EF4A-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -712,6 +757,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "0.0-30 mgAlb/gCre"
+                        },
                         "value": 221,
                         "unit": "mgAlb/gCre"
                     }
@@ -721,7 +769,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030646-E3871A10-940F-11E3-B318-1CC4B7D83400"
+                        "extension": "100025030646-E3871A10-940F-11E3-B318-1CC4B7D83400"
                     }
                 ],
                 "result_set": {
@@ -734,7 +782,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030646-E3871A10-940F-11E3-B318-1CC4B7D83400"
+                                "extension": "100025030646-E3871A10-940F-11E3-B318-1CC4B7D83400"
                             }
                         ],
                         "result": {
@@ -793,10 +841,22 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "1"
+                        "extension": "1"
                     }
                 ],
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2014-02-12T13:02:51Z",
+                            "precision": "second"
+                        }
+                    },
+                    "code": "419199007"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                }
             }
         ],
         "immunizations": [
@@ -817,6 +877,16 @@
                         "date": "2014-02-12T00:00:00Z",
                         "precision": "day"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "1"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -856,7 +926,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -888,10 +958,10 @@
         "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> entry -> proceduresSection -> CCD",

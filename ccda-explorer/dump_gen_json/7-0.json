@@ -15,7 +15,7 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.3297.1.1.1",
-                    "identifier_type": "6"
+                    "extension": "6"
                 }
             ],
             "marital_status": "Never Married",
@@ -39,7 +39,7 @@
                     "relation": "Parent",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "119 Grattan St"
                             ],
                             "city": "San Francisco",
@@ -73,7 +73,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "206"
+                        "extension": "206"
                     }
                 ],
                 "vital": {
@@ -95,7 +95,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "189"
+                        "extension": "189"
                     }
                 ],
                 "vital": {
@@ -117,7 +117,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "40"
+                        "extension": "40"
                     }
                 ],
                 "vital": {
@@ -139,7 +139,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "110"
+                        "extension": "110"
                     }
                 ],
                 "vital": {
@@ -161,7 +161,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "20"
+                        "extension": "20"
                     }
                 ],
                 "vital": {
@@ -183,7 +183,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "15"
+                        "extension": "15"
                     }
                 ],
                 "vital": {
@@ -205,7 +205,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "10"
+                        "extension": "10"
                     }
                 ],
                 "vital": {
@@ -227,7 +227,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "3"
+                        "extension": "3"
                     }
                 ],
                 "vital": {
@@ -249,7 +249,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "4"
+                        "extension": "4"
                     }
                 ],
                 "vital": {
@@ -271,7 +271,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "5"
+                        "extension": "5"
                     }
                 ],
                 "vital": {
@@ -293,7 +293,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "6"
+                        "extension": "6"
                     }
                 ],
                 "vital": {
@@ -315,7 +315,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.1",
-                        "identifier_type": "7"
+                        "extension": "7"
                     }
                 ],
                 "vital": {
@@ -337,7 +337,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -359,7 +359,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -381,7 +381,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -403,7 +403,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -425,7 +425,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -447,7 +447,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -469,7 +469,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -491,7 +491,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -513,7 +513,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -535,7 +535,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.2",
-                        "identifier_type": ""
+                        "extension": ""
                     }
                 ],
                 "vital": {
@@ -557,7 +557,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "172"
+                        "extension": "172"
                     }
                 ],
                 "vital": {
@@ -579,7 +579,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "158"
+                        "extension": "158"
                     }
                 ],
                 "vital": {
@@ -601,7 +601,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "134"
+                        "extension": "134"
                     }
                 ],
                 "vital": {
@@ -623,7 +623,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "83"
+                        "extension": "83"
                     }
                 ],
                 "vital": {
@@ -645,7 +645,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "34"
+                        "extension": "34"
                     }
                 ],
                 "vital": {
@@ -667,7 +667,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "16"
+                        "extension": "16"
                     }
                 ],
                 "vital": {
@@ -689,7 +689,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "13"
+                        "extension": "13"
                     }
                 ],
                 "vital": {
@@ -711,7 +711,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "11"
+                        "extension": "11"
                     }
                 ],
                 "vital": {
@@ -733,7 +733,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "6"
+                        "extension": "6"
                     }
                 ],
                 "vital": {
@@ -755,7 +755,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "3"
+                        "extension": "3"
                     }
                 ],
                 "vital": {
@@ -777,7 +777,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.3",
-                        "identifier_type": "2"
+                        "extension": "2"
                     }
                 ],
                 "vital": {
@@ -799,7 +799,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.4",
-                        "identifier_type": "2"
+                        "extension": "2"
                     }
                 ],
                 "vital": {
@@ -821,7 +821,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.10.4",
-                        "identifier_type": "1"
+                        "extension": "1"
                     }
                 ],
                 "vital": {
@@ -851,7 +851,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.14",
-                        "identifier_type": "24"
+                        "extension": "24"
                     }
                 ],
                 "status": "Prescribed",
@@ -860,6 +860,20 @@
                         "name": "Desonide (Topical) Topical Ointment 0.0005 mg/mg",
                         "code": "204135",
                         "code_system_name": "RXNORM"
+                    }
+                },
+                "indication": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.13",
+                            "extension": "8"
+                        }
+                    ],
+                    "code": "404684003",
+                    "value": {
+                        "name": "Asthma",
+                        "code": "195967001",
+                        "code_system_name": "SNOMED CT"
                     }
                 }
             },
@@ -873,7 +887,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.14",
-                        "identifier_type": "2"
+                        "extension": "2"
                     }
                 ],
                 "status": "Prescribed",
@@ -882,6 +896,20 @@
                         "name": "Hydrocortisone (Topical) Topical Gel 0.01 mg/mg",
                         "code": "198706",
                         "code_system_name": "RXNORM"
+                    }
+                },
+                "indication": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.13",
+                            "extension": "7"
+                        }
+                    ],
+                    "code": "404684003",
+                    "value": {
+                        "name": "Eczema",
+                        "code": "43116000",
+                        "code_system_name": "SNOMED CT"
                     }
                 }
             }
@@ -904,14 +932,29 @@
                     "code": "1564HD0N96",
                     "code_system_name": "OID 2.2.16.840.1.113883.4.9"
                 },
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "allergy to substance",
+                    "code_system_name": "SNOMED CT"
+                },
                 "reaction": [
                     {
+                        "date_time": {
+                            "low": {
+                                "date": "1960-01-01T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
                         "reaction": {
                             "name": "Rash",
                             "code": "64144002",
                             "code_system_name": "SNOMED CT"
                         },
-                        "severity": "Moderate"
+                        "severity": {
+                            "code": "6736007",
+                            "name": "Moderate"
+                        }
                     }
                 ]
             }
@@ -927,7 +970,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "1"
+                        "extension": "1"
                     }
                 ],
                 "status": "complete",
@@ -950,7 +993,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "2"
+                        "extension": "2"
                     }
                 ],
                 "status": "complete",
@@ -973,7 +1016,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "3"
+                        "extension": "3"
                     }
                 ],
                 "status": "complete",
@@ -996,7 +1039,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "4"
+                        "extension": "4"
                     }
                 ],
                 "status": "complete",
@@ -1019,7 +1062,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "5"
+                        "extension": "5"
                     }
                 ],
                 "status": "complete",
@@ -1042,7 +1085,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "6"
+                        "extension": "6"
                     }
                 ],
                 "status": "complete",
@@ -1065,7 +1108,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "7"
+                        "extension": "7"
                     }
                 ],
                 "status": "complete",
@@ -1088,7 +1131,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "8"
+                        "extension": "8"
                     }
                 ],
                 "status": "complete",
@@ -1111,7 +1154,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "9"
+                        "extension": "9"
                     }
                 ],
                 "status": "complete",
@@ -1134,7 +1177,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "10"
+                        "extension": "10"
                     }
                 ],
                 "status": "complete",
@@ -1157,7 +1200,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "11"
+                        "extension": "11"
                     }
                 ],
                 "status": "complete",
@@ -1180,7 +1223,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "12"
+                        "extension": "12"
                     }
                 ],
                 "status": "complete",
@@ -1203,7 +1246,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "15"
+                        "extension": "15"
                     }
                 ],
                 "status": "complete",
@@ -1226,7 +1269,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "16"
+                        "extension": "16"
                     }
                 ],
                 "status": "complete",
@@ -1249,7 +1292,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "93"
+                        "extension": "93"
                     }
                 ],
                 "status": "complete",
@@ -1272,7 +1315,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "99"
+                        "extension": "99"
                     }
                 ],
                 "status": "complete",
@@ -1295,7 +1338,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "100"
+                        "extension": "100"
                     }
                 ],
                 "status": "complete",
@@ -1318,7 +1361,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "292"
+                        "extension": "292"
                     }
                 ],
                 "status": "complete",
@@ -1341,7 +1384,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3297.1.1.1.6.1.12",
-                        "identifier_type": "319"
+                        "extension": "319"
                     }
                 ],
                 "status": "complete",
@@ -1357,7 +1400,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",

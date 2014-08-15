@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "1204 Bird Spring Lane"
                     ],
                     "city": "Cleveland",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1177 Gore Street"
                             ],
                             "city": "Sugar Land",
@@ -304,6 +304,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -354,6 +357,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -404,6 +410,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -428,7 +437,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Insulin + 3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe  ",
+                    "unencoded_name": "Insulin + 3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe",
                     "product": {
                         "name": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe",
                         "code": "847207",
@@ -450,7 +459,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Long acting inhaled beta 2 agonist + salmeterol 0.05 MG/ACTUAT Inhalant Powder  ",
+                    "unencoded_name": "Long acting inhaled beta 2 agonist + salmeterol 0.05 MG/ACTUAT Inhalant Powder",
                     "product": {
                         "name": "salmeterol 0.05 MG/ACTUAT Inhalant Powder",
                         "code": "318142",
@@ -472,7 +481,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution",
                     "product": {
                         "name": "Albuterol 0.83 MG/ML Inhalant Solution",
                         "code": "630208",
@@ -501,6 +510,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma",
                         "code": "195979001",
                         "code_system_name": "SNOMED CT",
@@ -518,16 +539,52 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Daytime Symptoms Quantified",
                         "code": "370202007",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma Nighttime Symptoms Quantified",
                         "code": "370205009",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-16T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Diabetes",
                         "code": "44054006",
                         "code_system_name": "SNOMED CT",
@@ -656,7 +713,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -665,7 +722,16 @@
                         }
                     ]
                 },
-                "severity": "Severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "24484000",
+                        "name": "Severe"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -684,7 +750,16 @@
                     "code": "892677",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Fatal"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "399166001",
+                        "name": "Fatal"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -703,7 +778,16 @@
                     "code": "N0000006691",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -720,6 +804,16 @@
                         "date": "2010-04-16T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -741,20 +835,16 @@
                     "name": "Asthma unspecified",
                     "code": "195979001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Asthma",
-                            "code": "J45",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Asthma, unspecified type, with (acute) exacerbation",
-                            "code": "493.92",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-16T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -777,9 +867,17 @@
                 "problem": {
                     "name": "Asthma causes daytime symptoms 1 to 2 times per month",
                     "code": "370202007",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-16T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -802,9 +900,17 @@
                 "problem": {
                     "name": "Asthma causes night symptoms 1 to 2 times per month",
                     "code": "370205009",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-16T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -828,20 +934,16 @@
                     "name": "Diabetes mellitus type 2",
                     "code": "44054006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Type 2 diabetes mellitus without complications",
-                            "code": "E11.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
-                            "code": "250.00",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-16T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1039,7 +1141,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1054,7 +1156,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

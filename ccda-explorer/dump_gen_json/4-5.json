@@ -2,54 +2,265 @@
     "data": {
         "demographics": {
             "name": {
-                "last": "BWHCKDRISKTEST",
-                "first": "FIVETEST"
+                "last": "BWHLMREOVTEST",
+                "first": "ONEA"
             },
             "dob": {
                 "point": {
-                    "date": "1949-02-02T00:00:00Z",
+                    "date": "1955-01-01T00:00:00Z",
                     "precision": "day"
                 }
             },
             "gender": "Female",
             "identifiers": [
                 {
-                    "identifier": "1.3.6.1.4.1.16517.1",
-                    "identifier_type": "107624139"
+                    "identifier": "1.3.6.1.4.1.16517",
+                    "extension": "900646017"
                 },
                 {
                     "identifier": "1.3.6.1.4.1.16517.2.2",
-                    "identifier_type": "50068675"
+                    "extension": "21814165"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
-                        "567 MAIN STREET"
+                    "street_lines": [
+                        "ABC ST"
                     ],
                     "city": "BOSTON",
                     "state": "MA",
-                    "zip": "02109",
+                    "zip": "02198",
                     "country": "US"
                 }
             ],
-            "phone": [
+            "race_ethnicity": "Not Hispanic or Latino",
+            "languages": [
                 {
-                    "number": "(508)666-1616",
-                    "type": "primary home"
+                    "language": "eng",
+                    "preferred": true
                 }
-            ],
-            "race_ethnicity": "Hispanic or Latino"
+            ]
         },
         "vitals": [
             {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523570"
+                    }
+                ],
+                "vital": {
+                    "name": "Systolic blood pressure",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2014-02-12T13:04:31Z",
+                        "date": "2013-03-07T09:00:00Z",
                         "precision": "second"
                     }
-                }
+                },
+                "value": 135,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523570"
+                    }
+                ],
+                "vital": {
+                    "name": "Diastolic blood pressure",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-07T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 93,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523571"
+                    }
+                ],
+                "vital": {
+                    "name": "Body height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-07T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 177,
+                "unit": "cm"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523572"
+                    }
+                ],
+                "vital": {
+                    "name": "Body weight",
+                    "code": "29463-7",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-07T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 89,
+                "unit": "kg"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523571-135523572"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-03-07T09:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 28.4,
+                "unit": "kg/m2"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523559"
+                    }
+                ],
+                "vital": {
+                    "name": "Systolic blood pressure",
+                    "code": "8480-6",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-22T10:53:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 135,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523559"
+                    }
+                ],
+                "vital": {
+                    "name": "Diastolic blood pressure",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-22T10:53:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 92,
+                "unit": "mm[Hg]"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523560"
+                    }
+                ],
+                "vital": {
+                    "name": "Body height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-22T10:53:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 177,
+                "unit": "cm"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523561"
+                    }
+                ],
+                "vital": {
+                    "name": "Body weight",
+                    "code": "29463-7",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-22T10:53:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 88,
+                "unit": "kg"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "135523560-135523561"
+                    }
+                ],
+                "vital": {
+                    "name": "BMI",
+                    "code": "39156-5",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2013-02-22T10:53:00Z",
+                        "precision": "second"
+                    }
+                },
+                "value": 28.1,
+                "unit": "kg/m2"
             }
         ],
         "results": [
@@ -57,12 +268,12 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030702-1F106000-9410-11E3-A442-1CC4B7D83400"
+                        "extension": "1013854253-10C5E8A6-D8EC-11E2-BE1E-1708D1228400"
                     }
                 ],
                 "result_set": {
-                    "name": "Sodium [Moles/volume] in Serum or Plasma",
-                    "code": "2951-2",
+                    "name": "Leukocytes [#/volume] in Blood by Automated count",
+                    "code": "6690-2",
                     "code_system_name": "LOINC"
                 },
                 "results": [
@@ -70,23 +281,26 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030702-1F106000-9410-11E3-A442-1CC4B7D83400"
+                                "extension": "1013854253-10C5E8A6-D8EC-11E2-BE1E-1708D1228400"
                             }
                         ],
                         "result": {
-                            "name": "Sodium [Moles/volume] in Serum or Plasma",
-                            "code": "2951-2",
+                            "name": "Leukocytes [#/volume] in Blood by Automated count",
+                            "code": "6690-2",
                             "code_system_name": "LOINC"
                         },
                         "date_time": {
                             "point": {
-                                "date": "2014-02-11T13:49:00Z",
+                                "date": "2013-02-22T10:39:00Z",
                                 "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "value": 140,
-                        "unit": "mmol/L"
+                        "referenceRange": {
+                            "range": "4-10 K/uL"
+                        },
+                        "value": 7.6,
+                        "unit": "K/uL"
                     }
                 ]
             },
@@ -94,12 +308,12 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030703-1F109E9E-9410-11E3-A442-1CC4B7D83400"
+                        "extension": "1013854256-10C6BAF6-D8EC-11E2-BE1E-1708D1228400"
                     }
                 ],
                 "result_set": {
-                    "name": "Potassium [Moles/volume] in Serum or Plasma",
-                    "code": "2823-3",
+                    "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+                    "code": "4544-3",
                     "code_system_name": "LOINC"
                 },
                 "results": [
@@ -107,23 +321,26 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030703-1F109E9E-9410-11E3-A442-1CC4B7D83400"
+                                "extension": "1013854256-10C6BAF6-D8EC-11E2-BE1E-1708D1228400"
                             }
                         ],
                         "result": {
-                            "name": "Potassium [Moles/volume] in Serum or Plasma",
-                            "code": "2823-3",
+                            "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+                            "code": "4544-3",
                             "code_system_name": "LOINC"
                         },
                         "date_time": {
                             "point": {
-                                "date": "2014-02-11T13:49:00Z",
+                                "date": "2013-02-22T10:39:00Z",
                                 "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "value": 4,
-                        "unit": "mmol/L"
+                        "referenceRange": {
+                            "range": "40-54 %"
+                        },
+                        "value": 45,
+                        "unit": "%"
                     }
                 ]
             },
@@ -131,12 +348,12 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030704-1F10C61C-9410-11E3-A442-1CC4B7D83400"
+                        "extension": "1013854255-10C724B4-D8EC-11E2-BE1E-1708D1228400"
                     }
                 ],
                 "result_set": {
-                    "name": "Chloride [Moles/volume] in Serum or Plasma",
-                    "code": "2075-0",
+                    "name": "Hemoglobin [Mass/volume] in Blood",
+                    "code": "718-7",
                     "code_system_name": "LOINC"
                 },
                 "results": [
@@ -144,244 +361,25 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030704-1F10C61C-9410-11E3-A442-1CC4B7D83400"
+                                "extension": "1013854255-10C724B4-D8EC-11E2-BE1E-1708D1228400"
                             }
                         ],
                         "result": {
-                            "name": "Chloride [Moles/volume] in Serum or Plasma",
-                            "code": "2075-0",
+                            "name": "Hemoglobin [Mass/volume] in Blood",
+                            "code": "718-7",
                             "code_system_name": "LOINC"
                         },
                         "date_time": {
                             "point": {
-                                "date": "2014-02-11T13:49:00Z",
+                                "date": "2013-02-22T10:39:00Z",
                                 "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "value": 98,
-                        "unit": "mmol/L"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030705-1F10EAB6-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Carbon dioxide, total [Moles/volume] in Serum or Plasma",
-                    "code": "2028-9",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030705-1F10EAB6-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Carbon dioxide, total [Moles/volume] in Serum or Plasma",
-                            "code": "2028-9",
-                            "code_system_name": "LOINC"
+                        "referenceRange": {
+                            "range": "13.5-18.0 g/dL"
                         },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 30,
-                        "unit": "mmol/L"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030707-1F113CA0-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
-                    "code": "1742-6",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030707-1F113CA0-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
-                            "code": "1742-6",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 29,
-                        "unit": "U/L"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030708-1F1162F2-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
-                    "code": "1920-8",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030708-1F1162F2-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
-                            "code": "1920-8",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 28,
-                        "unit": "U/L"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030709-1F118782-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma",
-                    "code": "6768-6",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030709-1F118782-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma",
-                            "code": "6768-6",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 99,
-                        "unit": "U/L"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030710-1F11AC76-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Bilirubin.total [Mass/volume] in Serum or Plasma",
-                    "code": "1975-2",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030710-1F11AC76-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Bilirubin.total [Mass/volume] in Serum or Plasma",
-                            "code": "1975-2",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 0.5,
-                        "unit": "mg/dL"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030711-1F11D12E-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Protein [Mass/volume] in Serum or Plasma",
-                    "code": "2885-2",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030711-1F11D12E-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Protein [Mass/volume] in Serum or Plasma",
-                            "code": "2885-2",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 8.3,
+                        "value": 14.2,
                         "unit": "g/dL"
                     }
                 ]
@@ -390,12 +388,12 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030712-1F11F640-9410-11E3-A442-1CC4B7D83400"
+                        "extension": "1013854254-10C79CAA-D8EC-11E2-BE1E-1708D1228400"
                     }
                 ],
                 "result_set": {
-                    "name": "Albumin [Mass/volume] in Serum or Plasma",
-                    "code": "1751-7",
+                    "name": "Erythrocytes [#/volume] in Blood by Automated count",
+                    "code": "789-8",
                     "code_system_name": "LOINC"
                 },
                 "results": [
@@ -403,22 +401,185 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030712-1F11F640-9410-11E3-A442-1CC4B7D83400"
+                                "extension": "1013854254-10C79CAA-D8EC-11E2-BE1E-1708D1228400"
                             }
                         ],
                         "result": {
-                            "name": "Albumin [Mass/volume] in Serum or Plasma",
-                            "code": "1751-7",
+                            "name": "Erythrocytes [#/volume] in Blood by Automated count",
+                            "code": "789-8",
                             "code_system_name": "LOINC"
                         },
                         "date_time": {
                             "point": {
-                                "date": "2014-02-11T13:49:00Z",
+                                "date": "2013-02-22T10:39:00Z",
                                 "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "value": 4.2,
+                        "referenceRange": {
+                            "range": "4.5-6.4 M/uL"
+                        },
+                        "value": 3.65,
+                        "unit": "M/uL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "1013854261-10C81A36-D8EC-11E2-BE1E-1708D1228400"
+                    }
+                ],
+                "result_set": {
+                    "name": "Platelets [#/volume] in Blood by Automated count",
+                    "code": "777-3",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.16517",
+                                "extension": "1013854261-10C81A36-D8EC-11E2-BE1E-1708D1228400"
+                            }
+                        ],
+                        "result": {
+                            "name": "Platelets [#/volume] in Blood by Automated count",
+                            "code": "777-3",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-02-22T10:39:00Z",
+                                "precision": "minute"
+                            }
+                        },
+                        "status": "completed",
+                        "referenceRange": {
+                            "range": "150-450 K/uL"
+                        },
+                        "value": 220,
+                        "unit": "K/uL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "1013854257-10C89060-D8EC-11E2-BE1E-1708D1228400"
+                    }
+                ],
+                "result_set": {
+                    "name": "Erythrocyte mean corpuscular volume [Entitic volume] by Automated count",
+                    "code": "787-2",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.16517",
+                                "extension": "1013854257-10C89060-D8EC-11E2-BE1E-1708D1228400"
+                            }
+                        ],
+                        "result": {
+                            "name": "Erythrocyte mean corpuscular volume [Entitic volume] by Automated count",
+                            "code": "787-2",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-02-22T10:39:00Z",
+                                "precision": "minute"
+                            }
+                        },
+                        "status": "completed",
+                        "referenceRange": {
+                            "range": "80-95 um3"
+                        },
+                        "value": 97.5,
+                        "unit": "um3"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "1013854258-10C900E0-D8EC-11E2-BE1E-1708D1228400"
+                    }
+                ],
+                "result_set": {
+                    "name": "Erythrocyte mean corpuscular hemoglobin [Entitic mass] by Automated count",
+                    "code": "785-6",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.16517",
+                                "extension": "1013854258-10C900E0-D8EC-11E2-BE1E-1708D1228400"
+                            }
+                        ],
+                        "result": {
+                            "name": "Erythrocyte mean corpuscular hemoglobin [Entitic mass] by Automated count",
+                            "code": "785-6",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-02-22T10:39:00Z",
+                                "precision": "minute"
+                            }
+                        },
+                        "status": "completed",
+                        "referenceRange": {
+                            "range": "27-32 uug"
+                        },
+                        "value": 33.7,
+                        "unit": "uug"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "1013854259-10CDF56E-D8EC-11E2-BE1E-1708D1228400"
+                    }
+                ],
+                "result_set": {
+                    "name": "Erythrocyte mean corpuscular hemoglobin concentration [Mass/volume] by Automated count",
+                    "code": "786-4",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.16517",
+                                "extension": "1013854259-10CDF56E-D8EC-11E2-BE1E-1708D1228400"
+                            }
+                        ],
+                        "result": {
+                            "name": "Erythrocyte mean corpuscular hemoglobin concentration [Mass/volume] by Automated count",
+                            "code": "786-4",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2013-02-22T10:39:00Z",
+                                "precision": "minute"
+                            }
+                        },
+                        "status": "completed",
+                        "referenceRange": {
+                            "range": "32-36 g/dL"
+                        },
+                        "value": 34.6,
                         "unit": "g/dL"
                     }
                 ]
@@ -427,12 +588,12 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030713-1F123F06-9410-11E3-A442-1CC4B7D83400"
+                        "extension": "1013854260-10D2A636-D8EC-11E2-BE1E-1708D1228400"
                     }
                 ],
                 "result_set": {
-                    "name": "Globulin [Mass/volume] in Serum",
-                    "code": "2336-6",
+                    "name": "Erythrocyte distribution width [Ratio] by Automated count",
+                    "code": "788-0",
                     "code_system_name": "LOINC"
                 },
                 "results": [
@@ -440,23 +601,26 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030713-1F123F06-9410-11E3-A442-1CC4B7D83400"
+                                "extension": "1013854260-10D2A636-D8EC-11E2-BE1E-1708D1228400"
                             }
                         ],
                         "result": {
-                            "name": "Globulin [Mass/volume] in Serum",
-                            "code": "2336-6",
+                            "name": "Erythrocyte distribution width [Ratio] by Automated count",
+                            "code": "788-0",
                             "code_system_name": "LOINC"
                         },
                         "date_time": {
                             "point": {
-                                "date": "2014-02-11T13:49:00Z",
+                                "date": "2013-02-22T10:39:00Z",
                                 "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "value": 3.9,
-                        "unit": "g/dL"
+                        "referenceRange": {
+                            "range": "11.5-14.5 %"
+                        },
+                        "value": 13.2,
+                        "unit": "%"
                     }
                 ]
             },
@@ -464,12 +628,12 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030700-1F126A76-9410-11E3-A442-1CC4B7D83400"
+                        "extension": "1013854263-10D31922-D8EC-11E2-BE1E-1708D1228400"
                     }
                 ],
                 "result_set": {
-                    "name": "Urea nitrogen [Mass/volume] in Serum or Plasma",
-                    "code": "3094-0",
+                    "name": "Nucleated erythrocytes [#/volume] in Blood",
+                    "code": "30392-5",
                     "code_system_name": "LOINC"
                 },
                 "results": [
@@ -477,23 +641,25 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030700-1F126A76-9410-11E3-A442-1CC4B7D83400"
+                                "extension": "1013854263-10D31922-D8EC-11E2-BE1E-1708D1228400"
                             }
                         ],
                         "result": {
-                            "name": "Urea nitrogen [Mass/volume] in Serum or Plasma",
-                            "code": "3094-0",
+                            "name": "Nucleated erythrocytes [#/volume] in Blood",
+                            "code": "30392-5",
                             "code_system_name": "LOINC"
                         },
                         "date_time": {
                             "point": {
-                                "date": "2014-02-11T13:49:00Z",
+                                "date": "2013-02-22T10:39:00Z",
                                 "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "value": 8,
-                        "unit": "mg/dL"
+                        "referenceRange": {
+                            "range": "0.00-0.00"
+                        },
+                        "value": 0
                     }
                 ]
             },
@@ -501,12 +667,12 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030714-1F128F88-9410-11E3-A442-1CC4B7D83400"
+                        "extension": "1013854262-10D3906E-D8EC-11E2-BE1E-1708D1228400"
                     }
                 ],
                 "result_set": {
-                    "name": "Calcium [Mass/volume] in Serum or Plasma",
-                    "code": "17861-6",
+                    "name": "Nucleated erythrocytes/100 erythrocytes in Blood",
+                    "code": "26461-4",
                     "code_system_name": "LOINC"
                 },
                 "results": [
@@ -514,499 +680,25 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030714-1F128F88-9410-11E3-A442-1CC4B7D83400"
+                                "extension": "1013854262-10D3906E-D8EC-11E2-BE1E-1708D1228400"
                             }
                         ],
                         "result": {
-                            "name": "Calcium [Mass/volume] in Serum or Plasma",
-                            "code": "17861-6",
+                            "name": "Nucleated erythrocytes/100 erythrocytes in Blood",
+                            "code": "26461-4",
                             "code_system_name": "LOINC"
                         },
                         "date_time": {
                             "point": {
-                                "date": "2014-02-11T13:49:00Z",
+                                "date": "2013-02-22T10:39:00Z",
                                 "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "value": 9.4,
-                        "unit": "mg/dL"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030701-1F12FD88-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Creatinine [Mass/volume] in Serum or Plasma",
-                    "code": "2160-0",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030701-1F12FD88-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Creatinine [Mass/volume] in Serum or Plasma",
-                            "code": "2160-0",
-                            "code_system_name": "LOINC"
+                        "referenceRange": {
+                            "range": "0.0-0.0"
                         },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 1.9,
-                        "unit": "mg/dL"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030699-1F134A7C-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Deprecated Glucose [Mass/volume] in Serum or Plasma",
-                    "code": "6777-7",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030699-1F134A7C-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Deprecated Glucose [Mass/volume] in Serum or Plasma",
-                            "code": "6777-7",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 110,
-                        "unit": "mg/dL"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030706-1F13A4C2-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Anion gap 3 in Serum or Plasma",
-                    "code": "10466-1",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030706-1F13A4C2-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Anion gap 3 in Serum or Plasma",
-                            "code": "10466-1",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 14,
-                        "unit": "mmol/L"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030715-1F143F40-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)",
-                    "code": "33914-3",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030715-1F143F40-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)",
-                            "code": "33914-3",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-11T13:49:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 27
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030681-1F111568-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Carbon dioxide, total [Moles/volume] in Serum or Plasma",
-                    "code": "2028-9",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030681-1F111568-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Carbon dioxide, total [Moles/volume] in Serum or Plasma",
-                            "code": "2028-9",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-10T10:00:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 30,
-                        "unit": "mmol/L"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030680-1F121B5C-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Albumin [Mass/volume] in Serum or Plasma",
-                    "code": "1751-7",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030680-1F121B5C-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Albumin [Mass/volume] in Serum or Plasma",
-                            "code": "1751-7",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-10T10:00:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 4.2,
-                        "unit": "g/dL"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030678-1F12B530-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Calcium [Mass/volume] in Serum or Plasma",
-                    "code": "17861-6",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030678-1F12B530-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Calcium [Mass/volume] in Serum or Plasma",
-                            "code": "17861-6",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-10T10:00:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 9.4,
-                        "unit": "mg/dL"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030676-1F13240C-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Creatinine [Mass/volume] in Serum or Plasma",
-                    "code": "2160-0",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030676-1F13240C-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Creatinine [Mass/volume] in Serum or Plasma",
-                            "code": "2160-0",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-10T10:00:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 1.9,
-                        "unit": "mg/dL"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030679-1F137E5C-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Phosphate [Mass/volume] in Serum or Plasma",
-                    "code": "2777-1",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030679-1F137E5C-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Phosphate [Mass/volume] in Serum or Plasma",
-                            "code": "2777-1",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-10T10:00:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 4.3,
-                        "unit": "mg/dL"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030677-1F147FD2-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)",
-                    "code": "33914-3",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030677-1F147FD2-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)",
-                            "code": "33914-3",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-10T10:00:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 27
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030657-1F13D104-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Microalbumin [Mass/volume] in Urine",
-                    "code": "14957-5",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030657-1F13D104-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Microalbumin [Mass/volume] in Urine",
-                            "code": "14957-5",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-10T09:30:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 4.2,
-                        "unit": "mg/dL"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030656-1F13F422-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Microalbumin/Creatinine [Mass Ratio] in Urine",
-                    "code": "14959-1",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030656-1F13F422-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Microalbumin/Creatinine [Mass Ratio] in Urine",
-                            "code": "14959-1",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-10T09:30:00Z",
-                                "precision": "minute"
-                            }
-                        },
-                        "status": "completed",
-                        "value": 31,
-                        "unit": "mgAlb/gCre"
-                    }
-                ]
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "100025030655-1F1418C6-9410-11E3-A442-1CC4B7D83400"
-                    }
-                ],
-                "result_set": {
-                    "name": "Collection duration of Urine",
-                    "code": "13362-9",
-                    "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "1.3.6.1.4.1.16517",
-                                "identifier_type": "100025030655-1F1418C6-9410-11E3-A442-1CC4B7D83400"
-                            }
-                        ],
-                        "result": {
-                            "name": "Collection duration of Urine",
-                            "code": "13362-9",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2014-02-10T09:30:00Z",
-                                "precision": "minute"
-                            }
-                        }
+                        "value": 0
                     }
                 ]
             }
@@ -1015,28 +707,52 @@
             {
                 "date_time": {
                     "low": {
-                        "date": "2014-02-12T13:04:31Z",
-                        "precision": "second"
+                        "date": "2013-03-07T00:00:00Z",
+                        "precision": "day"
                     }
                 },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "4671088"
+                    }
+                ],
                 "status": "Completed",
-                "sig": "No medication data is applicable",
+                "sig": "ALBUTEROL INHALER HFA 90 MCG HFA AER AD",
                 "product": {
-                    "unencoded_name": "No medication data is applicable"
+                    "unencoded_name": "ALBUTEROL INHALER HFA 90 MCG HFA AER AD",
+                    "product": {
+                        "name": "Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler",
+                        "code": "1360201",
+                        "code_system_name": "RXNORM"
+                    }
                 }
-            }
-        ],
-        "encounters": [
+            },
             {
-                "encounter": {
-                    "name": "encounter report",
-                    "code": "371531000",
-                    "code_system_name": "SNOMED CT"
-                },
                 "date_time": {
-                    "point": {
-                        "date": "2014-02-12T13:04:31Z",
-                        "precision": "second"
+                    "low": {
+                        "date": "2013-02-22T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2013-03-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "4671089"
+                    }
+                ],
+                "status": "Completed",
+                "sig": "CLARITHROMYCIN 500 MG TABLET",
+                "product": {
+                    "unencoded_name": "CLARITHROMYCIN 500 MG TABLET",
+                    "product": {
+                        "name": "Clarithromycin 500 MG Oral Tablet",
+                        "code": "197517",
+                        "code_system_name": "RXNORM"
                     }
                 }
             }
@@ -1045,37 +761,164 @@
             {
                 "date_time": {
                     "low": {
-                        "date": "2014-02-12T13:04:31Z",
+                        "date": "2013-03-12T08:51:42Z",
                         "precision": "second"
                     }
                 },
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.16517",
-                        "identifier_type": "1"
+                        "extension": "3355135"
                     }
                 ],
-                "status": "Active"
-            }
-        ],
-        "immunizations": [
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2013-03-12T08:51:42Z",
+                            "precision": "second"
+                        }
+                    },
+                    "code": "419199007",
+                    "name": "Allergy to substance",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Hives",
+                            "code": "247472004",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            },
             {
                 "date_time": {
-                    "point": {
-                        "date": "2014-02-12T13:04:31Z",
+                    "low": {
+                        "date": "2013-02-22T10:51:07Z",
                         "precision": "second"
                     }
                 },
-                "status": "complete"
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "3355136"
+                    }
+                ],
+                "allergen": {
+                    "name": "Codeine",
+                    "code": "2670",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "codeine",
+                            "code": "1550",
+                            "code_system_name": "OID 2.16.840.1.113883.6.208"
+                        }
+                    ]
+                },
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2013-02-22T10:51:07Z",
+                            "precision": "second"
+                        }
+                    },
+                    "code": "419199007",
+                    "name": "Allergy to substance",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Shortness of Breath",
+                            "code": "267036007",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-02-22T10:51:07Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "3355137"
+                    }
+                ],
+                "allergen": {
+                    "name": "Aspirin",
+                    "code": "1191",
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "name": "aspirin",
+                            "code": "1587",
+                            "code_system_name": "OID 2.16.840.1.113883.6.208"
+                        }
+                    ]
+                },
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2013-02-22T10:51:07Z",
+                            "precision": "second"
+                        }
+                    },
+                    "code": "419199007",
+                    "name": "Allergy to substance",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Hives",
+                            "code": "247472004",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
             }
         ],
         "social_history": [
             {
+                "value": "Unknown if ever smoked",
                 "date_time": {
                     "low": {
-                        "date": "2014-02-12T00:00:00Z",
+                        "date": "2013-06-19T00:00:00Z",
                         "precision": "day"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "10D85234-D8EC-11E2-BEC0-1708D1228400"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -1083,82 +926,118 @@
             {
                 "date_time": {
                     "low": {
-                        "date": "2014-02-12T13:04:31Z",
-                        "precision": "second"
+                        "date": "2013-02-22T00:00:00Z",
+                        "precision": "day"
                     }
                 },
-                "negation_indicator": false
-            }
-        ],
-        "procedures": [
-            {
-                "status": "Completed",
-                "date_time": {
-                    "point": {
-                        "date": "2014-02-12T13:04:31Z",
-                        "precision": "second"
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "2862900"
                     }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Community acquired pneumonia",
+                    "code": "385093006",
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {}
                 },
-                "procedure_type": "procedure"
-            }
-        ],
-        "plan_of_care": [
+                "status": {
+                    "name": "Active"
+                },
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "2862900"
+                    }
+                ]
+            },
             {
                 "date_time": {
                     "low": {
-                        "date": "2014-02-12T13:04:00Z",
-                        "precision": "minute"
+                        "date": "2013-02-22T00:00:00Z",
+                        "precision": "day"
                     }
                 },
-                "type": "observation"
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "2862901"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Asthma",
+                    "code": "195967001",
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {}
+                },
+                "status": {
+                    "name": "Active"
+                },
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "2862901"
+                    }
+                ]
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2013-02-22T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "2862902"
+                    }
+                ],
+                "negation_indicator": false,
+                "problem": {
+                    "name": "Hypoxemia",
+                    "code": "389087006",
+                    "date_time": {},
+                    "code_system_name": "OID SNOMED"
+                },
+                "status": {
+                    "name": "Active"
+                },
+                "source_list_identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.16517",
+                        "extension": "2862902"
+                    }
+                ]
             }
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
             "results",
             "medications",
-            "encounters",
             "allergies",
-            "immunizations",
             "social_history",
-            "problems",
-            "procedures",
-            "plan_of_care"
+            "problems"
         ]
     },
     "errors": [
+        "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> RaceEthnicity -> Patient -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> RaceEthnicity -> Patient -> CCD",
-        "nullFlavor alert:  missing but required language in LanguageCommunication -> Patient -> CCD",
-        "nullFlavor alert:  missing but required preferred in LanguageCommunication -> Patient -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> VitalSignObservation -> vitalSignsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> VitalSignObservation -> vitalSignsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> VitalSignObservation -> vitalSignsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> VitalSignObservation -> vitalSignsSection -> CCD",
-        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required status in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> entry -> plan_of_care_section -> CCD"
+        "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD"
     ]
 }

@@ -10,11 +10,11 @@
       <substanceAdministration classCode="SBADM" moodCode="EVN">
         <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
         <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
-        <text>Proventil HFA <reference value="#MedSec_1"/></text>
+        <text>Proventil HFA<reference value="#MedSec_1"/></text>
         <statusCode code="completed"/>
-        <effectiveTime xsi:type="IVL_TS">
-          <low value="undefined"/>
-          <high value="undefined"/>
+        <effectiveTime>
+          <low value="20070103"/>
+          <high value="20120515"/>
         </effectiveTime>
         <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
           <period value="6" unit="h"/>
@@ -32,15 +32,15 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
             <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
             <manufacturedMaterial>
-              <code code="219483" displayName="Proventil HFA" codeSystem="2" codeSystemName="RXNORM">
+              <code code="219483" displayName="Proventil HFA" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                 <originalText>
                   <reference value="#MedSec_1"/>
                 </originalText>
-                <translation code="573621" codeSystem="2.16.840.1.113883.5.4" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystemName="RXNORM"/>
+                <translation code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
               </code>
             </manufacturedMaterial>
             <manufacturerOrganization>
-              <name/>
+              <name>Medication Factory Inc.</name>
             </manufacturerOrganization>
           </manufacturedProduct>
         </consumable>
@@ -62,7 +62,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
             <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
             <playingEntity classCode="MMAT">
-              <code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+              <code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
               <name>Aerosol</name>
             </playingEntity>
           </participantRole>
@@ -74,9 +74,9 @@
             <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             <statusCode code="completed"/>
             <effectiveTime>
-              <low value="undefined"/>
+              <low value="20070103"/>
             </effectiveTime>
-            <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
+            <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
           </observation>
         </entryRelationship>
         <entryRelationship typeCode="REFR">
@@ -85,8 +85,8 @@
             <id nullFlavor="NI"/>
             <statusCode code="completed"/>
             <effectiveTime xsi:type="IVL_TS">
-              <low value="undefined"/>
-              <high value="undefined"/>
+              <low value="20070103"/>
+              <high value="20120515"/>
             </effectiveTime>
             <repeatNumber value="1"/>
             <quantity value="75"/>
@@ -95,15 +95,15 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
                 <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
                 <manufacturedMaterial>
-                  <code code="219483" displayName="Proventil HFA" codeSystem="2" codeSystemName="RXNORM">
+                  <code code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#MedSec_1"/>
                     </originalText>
-                    <translation code="573621" codeSystem="2.16.840.1.113883.5.4" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystemName="RXNORM"/>
+                    <translation code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
                   </code>
                 </manufacturedMaterial>
                 <manufacturerOrganization>
-                  <name/>
+                  <name>Medication Factory Inc.</name>
                 </manufacturerOrganization>
               </manufacturedProduct>
             </product>
@@ -138,8 +138,8 @@
             <entryRelationship typeCode="SUBJ" inversionInd="true">
               <act classCode="ACT" moodCode="INT">
                 <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
-                <text>label in spanish<reference value="#MedSec_1"/></text>
+                <code code="409073007" displayName="instruction" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                <text>Proventil HFA<reference value="undefined"/></text>
                 <statusCode code="completed"/>
               </act>
             </entryRelationship>
@@ -150,7 +150,10 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
             <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704"/>
             <statusCode code="completed"/>
-            <effectiveTime value="undefined"/>
+            <effectiveTime>
+              <low value="20070103"/>
+              <high value="20120515"/>
+            </effectiveTime>
             <repeatNumber value="1"/>
             <quantity value="75"/>
             <product>
@@ -158,15 +161,15 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
                 <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
                 <manufacturedMaterial>
-                  <code code="219483" displayName="Proventil HFA" codeSystem="2" codeSystemName="RXNORM">
+                  <code code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM">
                     <originalText>
                       <reference value="#MedSec_1"/>
                     </originalText>
-                    <translation code="573621" codeSystem="2.16.840.1.113883.5.4" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystemName="RXNORM"/>
+                    <translation code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM"/>
                   </code>
                 </manufacturedMaterial>
                 <manufacturerOrganization>
-                  <name/>
+                  <name>Medication Factory Inc.</name>
                 </manufacturerOrganization>
               </manufacturedProduct>
             </product>

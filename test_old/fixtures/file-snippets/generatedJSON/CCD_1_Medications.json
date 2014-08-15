@@ -17,12 +17,14 @@
                 }
             ],
             "status": "Completed",
-            "sig": "Proventil HFA ",
+            "sig": "Proventil HFA",
             "product": {
-                "identifiers": {
-                    "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
-                },
-                "unencoded_name": "Proventil HFA ",
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                    }
+                ],
+                "unencoded_name": "Proventil HFA",
                 "product": {
                     "name": "Proventil HFA",
                     "code": "219483",
@@ -34,7 +36,8 @@
                         }
                     ],
                     "code_system_name": "RXNORM"
-                }
+                },
+                "manufacturer": "Medication Factory Inc."
             },
             "supply": {
                 "date_time": {
@@ -44,7 +47,21 @@
                     }
                 },
                 "repeatNumber": "1",
-                "quantity": "75"
+                "quantity": "75",
+                "author": {
+                    "date_time": {},
+                    "identifiers": [
+                        {
+                            "identifier": "2a620155-9d11-439e-92b3-5d9815fe4de8"
+                        }
+                    ],
+                    "name": {
+                        "prefix": "Dr.",
+                        "last": "Seven",
+                        "first": "Henry"
+                    }
+                },
+                "instructions": "label in spanish"
             },
             "administration": {
                 "route": {
@@ -73,6 +90,25 @@
                     "frequency": true
                 }
             },
+            "performer": {
+                "organization": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                        }
+                    ],
+                    "name": [
+                        "Community Health and Hospitals"
+                    ]
+                }
+            },
+            "drug_vehicle": {
+                "playingEntity": {
+                    "name": "Aerosol",
+                    "code": "324049",
+                    "code_system_name": "RXNORM"
+                }
+            },
             "precondition": {
                 "code": {
                     "code": "ASSERTION",
@@ -85,11 +121,65 @@
                 }
             },
             "indication": {
+                "identifiers": [
+                    {
+                        "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                        "extension": "45665"
+                    }
+                ],
                 "code": "404684003",
                 "date_time": {
                     "low": {
                         "date": "2007-01-03T00:00:00Z",
                         "precision": "day"
+                    }
+                },
+                "value": {
+                    "name": "Pneumonia",
+                    "code": "233604007",
+                    "code_system_name": "SNOMED CT"
+                }
+            },
+            "instructions": {
+                "code": {
+                    "name": "instruction",
+                    "code": "409073007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "freeText": "Proventil HFA"
+            },
+            "dispense": {
+                "identifiers": [
+                    {
+                        "identifier": "1.2.3.4.56789.1",
+                        "extension": "cb734647-fc99-424c-a864-7e3cda82e704"
+                    }
+                ],
+                "performer": {
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.19.5.9999.456",
+                            "extension": "2981823"
+                        }
+                    ],
+                    "address": {
+                        "street_lines": [
+                            "1001 Village Avenue"
+                        ],
+                        "city": "Portland",
+                        "state": "OR",
+                        "zip": "99123",
+                        "country": "US"
+                    },
+                    "organization": {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                            }
+                        ],
+                        "name": [
+                            "Community Health and Hospitals"
+                        ]
                     }
                 }
             }

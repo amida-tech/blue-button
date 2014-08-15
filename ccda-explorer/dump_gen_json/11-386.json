@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "843 Henery Street"
                     ],
                     "city": "Wichita",
@@ -60,7 +60,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "2194 Peck Court"
                             ],
                             "city": "Irvine",
@@ -249,7 +249,10 @@
                             }
                         ],
                         "date_time": {},
-                        "status": "completed"
+                        "status": "completed",
+                        "referenceRange": {
+                            "range": "No data"
+                        }
                     }
                 ]
             }
@@ -269,7 +272,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Antiasthmatic steroids + Albuterol 0.417 MG/ML Inhalant Solution  ",
+                    "unencoded_name": "Antiasthmatic steroids + Albuterol 0.417 MG/ML Inhalant Solution",
                     "product": {
                         "name": "Albuterol 0.417 MG/ML Inhalant Solution",
                         "code": "351136",
@@ -291,7 +294,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution  ",
+                    "unencoded_name": "Short acting beta 2 agonist + Albuterol 0.83 MG/ML Inhalant Solution",
                     "product": {
                         "name": "Albuterol 0.83 MG/ML Inhalant Solution",
                         "code": "630208",
@@ -313,7 +316,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "SSRI antidepressants + Fluvoxamine Maleate 100 MG Oral Tablet  ",
+                    "unencoded_name": "SSRI antidepressants + Fluvoxamine Maleate 100 MG Oral Tablet",
                     "product": {
                         "name": "Fluvoxamine Maleate 100 MG Oral Tablet",
                         "code": "903884",
@@ -342,6 +345,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-05-09T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Asthma",
                         "code": "195979001",
                         "code_system_name": "SNOMED CT",
@@ -422,6 +437,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-09-14T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Breast Cancer",
                         "code": "188161004",
                         "code_system_name": "SNOMED CT",
@@ -439,11 +466,35 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-09-14T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Breast Cancer ER or PR Positive",
                         "code": "417742002",
                         "code_system_name": "SNOMED CT"
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-09-14T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Breast Cancer Stage IC-IIIC",
                         "code": "261653007",
                         "code_system_name": "SNOMED CT"
@@ -487,6 +538,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-09-25T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Depression",
                         "code": "191615005",
                         "code_system_name": "SNOMED CT",
@@ -565,7 +628,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -574,7 +637,16 @@
                         }
                     ]
                 },
-                "severity": "Mild"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -593,7 +665,16 @@
                     "code": "905148",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild to moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -612,7 +693,16 @@
                     "code": "N0000006691",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "24484000",
+                        "name": "Severe"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -647,7 +737,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -658,7 +748,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -677,7 +767,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -685,7 +775,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -735,7 +825,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -746,7 +836,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -765,7 +855,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -773,7 +863,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -830,7 +920,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -841,7 +931,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -860,7 +950,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -868,7 +958,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -896,6 +986,16 @@
                         "date": "2010-05-09T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -917,20 +1017,16 @@
                     "name": "Type B viral hepatitis",
                     "code": "66071002",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Acute hepatitis B without delta-agent and without hepatic coma",
-                            "code": "B16.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Viral hepatitis B without mention of hepatic coma, acute or unspecified, without mention of hepatitis delta",
-                            "code": "070.30",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2009-10-25T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -954,20 +1050,16 @@
                     "name": "Asthma unspecified",
                     "code": "195979001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Asthma",
-                            "code": "J45",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Asthma, unspecified type, with (acute) exacerbation",
-                            "code": "493.92",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-05-09T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -991,20 +1083,16 @@
                     "name": "Malignant neoplasm of female breast NOS",
                     "code": "188161004",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Malignant neoplasm of breast",
-                            "code": "C50",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Malignant neoplasm of breast (female), unspecified",
-                            "code": "174.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-09-14T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1027,9 +1115,17 @@
                 "problem": {
                     "name": "Hormone receptor positive tumor",
                     "code": "417742002",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-09-14T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1052,9 +1148,17 @@
                 "problem": {
                     "name": "Tumor stage T2c",
                     "code": "261653007",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-09-14T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1078,20 +1182,16 @@
                     "name": "Recurrent major depressive episodes, in full remission",
                     "code": "191615005",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Major depressive disorder, recurrent, severe with psychotic symptoms",
-                            "code": "F33.3",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Major depressive affective disorder, recurrent episode, in full remission",
-                            "code": "296.36",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-09-25T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1330,7 +1430,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1345,7 +1445,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",

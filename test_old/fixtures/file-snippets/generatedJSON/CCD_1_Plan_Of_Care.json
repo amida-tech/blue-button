@@ -11,7 +11,7 @@
             }
         ],
         "date_time": {
-            "point": {
+            "center": {
                 "date": "2012-05-12T00:00:00Z",
                 "precision": "day"
             }
@@ -30,7 +30,7 @@
             }
         ],
         "date_time": {
-            "point": {
+            "center": {
                 "date": "2012-05-12T00:00:00Z",
                 "precision": "day"
             }
@@ -49,7 +49,7 @@
             }
         ],
         "date_time": {
-            "point": {
+            "center": {
                 "date": "2012-05-12T00:00:00Z",
                 "precision": "day"
             }
@@ -68,7 +68,7 @@
             }
         ],
         "date_time": {
-            "point": {
+            "center": {
                 "date": "2012-05-12T00:00:00Z",
                 "precision": "day"
             }

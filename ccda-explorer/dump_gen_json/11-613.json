@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "779 John Daniel Drive"
                     ],
                     "city": "Safe",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "3544 Godfrey Street"
                             ],
                             "city": "Salem",
@@ -304,6 +304,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -354,6 +357,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -404,6 +410,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -428,7 +437,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Insulin + 3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe  ",
+                    "unencoded_name": "Insulin + 3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe",
                     "product": {
                         "name": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe",
                         "code": "847207",
@@ -450,7 +459,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "ACE inhibitor or ARB + Lisinopril 10 MG Oral Tablet  ",
+                    "unencoded_name": "ACE inhibitor or ARB + Lisinopril 10 MG Oral Tablet",
                     "product": {
                         "name": "Lisinopril 10 MG Oral Tablet",
                         "code": "314076",
@@ -472,7 +481,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Anticoagulants + Warfarin Sodium 4 MG Oral Tablet [Coumadin]  ",
+                    "unencoded_name": "Anticoagulants + Warfarin Sodium 4 MG Oral Tablet [Coumadin]",
                     "product": {
                         "name": "Warfarin Sodium 4 MG Oral Tablet [Coumadin]",
                         "code": "855326",
@@ -494,7 +503,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Beta Blocker Therapy + Metoprolol Tartrate 25 MG Oral Tablet  ",
+                    "unencoded_name": "Beta Blocker Therapy + Metoprolol Tartrate 25 MG Oral Tablet",
                     "product": {
                         "name": "Metoprolol Tartrate 25 MG Oral Tablet",
                         "code": "866924",
@@ -530,6 +539,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-03T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Diabetes",
                         "code": "44054006",
                         "code_system_name": "SNOMED CT",
@@ -547,6 +568,18 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-04-03T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Hypertension",
                         "code": "59621000",
                         "code_system_name": "SNOMED CT",
@@ -591,6 +624,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-07-20T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Atrial Fibrillation",
                         "code": "49436004",
                         "code_system_name": "SNOMED CT",
@@ -608,6 +653,18 @@
                         ]
                     },
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-07-20T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "Heart Failure",
                         "code": "84114007",
                         "code_system_name": "SNOMED CT",
@@ -668,7 +725,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -677,7 +734,16 @@
                         }
                     ]
                 },
-                "severity": "Moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -696,7 +762,16 @@
                     "code": "N0000006691",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -715,7 +790,16 @@
                     "code": "866041",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate to severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -750,7 +834,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -761,7 +845,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -780,7 +864,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -788,7 +872,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -845,7 +929,7 @@
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.4.6",
-                            "identifier_type": "999999943252"
+                            "extension": "999999943252"
                         }
                     ],
                     "name": [
@@ -856,7 +940,7 @@
                     ],
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "101 Maple Street"
                             ],
                             "city": "Washington",
@@ -875,7 +959,7 @@
                             "identifiers": [
                                 {
                                     "identifier": "2.16.840.1.113883.19.5",
-                                    "identifier_type": "2981824"
+                                    "extension": "2981824"
                                 }
                             ],
                             "name": [
@@ -883,7 +967,7 @@
                             ],
                             "address": [
                                 {
-                                    "streetLines": [
+                                    "street_lines": [
                                         "101 Maple Street"
                                     ],
                                     "city": "Washington",
@@ -911,6 +995,16 @@
                         "date": "2010-04-03T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -932,20 +1026,16 @@
                     "name": "Diabetes mellitus type 2",
                     "code": "44054006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Type 2 diabetes mellitus without complications",
-                            "code": "E11.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
-                            "code": "250.00",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-03T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -969,20 +1059,16 @@
                     "name": "Essential hypertension",
                     "code": "59621000",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Essential (primary) hypertension",
-                            "code": "I10",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Unspecified essential hypertension",
-                            "code": "401.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-04-03T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1006,20 +1092,16 @@
                     "name": "Atrial fibrillation",
                     "code": "49436004",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Unspecified atrial fibrillation",
-                            "code": "I48.91",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Atrial fibrillation",
-                            "code": "427.31",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-07-20T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1043,20 +1125,16 @@
                     "name": "Heart failure",
                     "code": "84114007",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Heart failure, unspecified",
-                            "code": "I50.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Heart failure, unspecified",
-                            "code": "428.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-07-20T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1281,7 +1359,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1296,7 +1374,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

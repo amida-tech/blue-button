@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "2530 Breezewood Court"
                     ],
                     "city": "Wichita",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "1953 Wildrose Lane"
                             ],
                             "city": "Detroit",
@@ -277,6 +277,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "NA"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -299,7 +302,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Insulin + 3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe  ",
+                    "unencoded_name": "Insulin + 3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe",
                     "product": {
                         "name": "3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe",
                         "code": "847207",
@@ -376,7 +379,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -385,7 +388,16 @@
                         }
                     ]
                 },
-                "severity": "Mild"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -404,7 +416,16 @@
                     "code": "905148",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Fatal"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "399166001",
+                        "name": "Fatal"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -423,7 +444,16 @@
                     "code": "N0000006691",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Moderate to severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371924009",
+                        "name": "Moderate to severe"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -440,6 +470,16 @@
                         "date": "2010-05-16T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -461,20 +501,16 @@
                     "name": "Polycystic ovaries",
                     "code": "69878008",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Polycystic ovarian syndrome",
-                            "code": "E28.2",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Polycystic ovaries",
-                            "code": "256.4",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-03-31T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -555,7 +591,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -570,7 +606,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",

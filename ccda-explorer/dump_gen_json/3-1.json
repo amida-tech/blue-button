@@ -15,12 +15,12 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                    "identifier_type": "DCAC180E-B41C-4EF0-A066-A57429BAB8FF"
+                    "extension": "DCAC180E-B41C-4EF0-A066-A57429BAB8FF"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "No Address Indicated"
                     ],
                     "city": "No City Indicated",
@@ -44,7 +44,7 @@
                 "identifiers": [
                     {
                         "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
-                        "identifier_type": "9279-1"
+                        "extension": "9279-1"
                     }
                 ],
                 "vital": {
@@ -66,7 +66,7 @@
                 "identifiers": [
                     {
                         "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
-                        "identifier_type": "8867-4"
+                        "extension": "8867-4"
                     }
                 ],
                 "vital": {
@@ -88,7 +88,7 @@
                 "identifiers": [
                     {
                         "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
-                        "identifier_type": "8480-6"
+                        "extension": "8480-6"
                     }
                 ],
                 "vital": {
@@ -110,7 +110,7 @@
                 "identifiers": [
                     {
                         "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
-                        "identifier_type": "8310-5"
+                        "extension": "8310-5"
                     }
                 ],
                 "vital": {
@@ -132,7 +132,7 @@
                 "identifiers": [
                     {
                         "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
-                        "identifier_type": "8310-5"
+                        "extension": "8310-5"
                     }
                 ],
                 "vital": {
@@ -154,7 +154,7 @@
                 "identifiers": [
                     {
                         "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
-                        "identifier_type": "8302-2"
+                        "extension": "8302-2"
                     }
                 ],
                 "vital": {
@@ -176,7 +176,7 @@
                 "identifiers": [
                     {
                         "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
-                        "identifier_type": "8287-5"
+                        "extension": "8287-5"
                     }
                 ],
                 "vital": {
@@ -198,7 +198,7 @@
                 "identifiers": [
                     {
                         "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
-                        "identifier_type": "3141-9"
+                        "extension": "3141-9"
                     }
                 ],
                 "vital": {
@@ -220,7 +220,7 @@
                 "identifiers": [
                     {
                         "identifier": "09468747-F093-477D-A1D4-95227BC949E5",
-                        "identifier_type": "39156-5"
+                        "extension": "39156-5"
                     }
                 ],
                 "vital": {
@@ -354,10 +354,12 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
-                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
+                            "extension": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                        }
+                    ],
                     "product": {
                         "name": "albuterol 90 mcg/inh",
                         "code": "307782",
@@ -374,10 +376,12 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
-                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
+                            "extension": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                        }
+                    ],
                     "product": {
                         "name": "clarithromycin 500 mg",
                         "code": "197517",
@@ -394,10 +398,12 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
-                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
+                            "extension": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                        }
+                    ],
                     "product": {
                         "name": "metoprolol 25 mg",
                         "code": "866924",
@@ -414,10 +420,12 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "identifiers": {
-                        "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
-                        "identifier_type": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
-                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1",
+                            "extension": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.1.4.1"
+                        }
+                    ],
                     "product": {
                         "name": "albuterol 90 mcg/inh",
                         "code": "307782",
@@ -431,7 +439,7 @@
                 "identifiers": [
                     {
                         "identifier": "Ab87823e5-4247-46dc-838c-2f154dafdd99",
-                        "identifier_type": "1"
+                        "extension": "1"
                     }
                 ],
                 "date_time": {}
@@ -448,7 +456,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "82682824"
+                        "extension": "82682824"
                     }
                 ],
                 "allergen": {
@@ -456,8 +464,20 @@
                     "code": "731570",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -478,7 +498,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "82682824"
+                        "extension": "82682824"
                     }
                 ],
                 "allergen": {
@@ -486,8 +506,20 @@
                     "code": "601263",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Mild",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -508,7 +540,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "82682824"
+                        "extension": "82682824"
                     }
                 ],
                 "allergen": {
@@ -516,8 +548,20 @@
                     "code": "212033",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Moderate",
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT",
+                    "severity": {
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
                 "reaction": [
                     {
                         "reaction": {
@@ -639,6 +683,10 @@
                         "date": "1992-01-01T08:00:00Z",
                         "precision": "second"
                     }
+                },
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -653,22 +701,36 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.2.1",
-                        "identifier_type": "A72101f83-b18b-4f88-a6da-64a70c05e139"
+                        "extension": "A72101f83-b18b-4f88-a6da-64a70c05e139"
                     }
                 ],
                 "negation_indicator": false,
                 "problem": {
                     "name": "Viral pneumonia, unspecified",
                     "code": "480.9",
-                    "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "code_system_name": "OID 2.16.840.1.113883.6.103",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-01T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
                 "onset_age": "66",
                 "onset_age_unit": "Year",
-                "status": "Active",
+                "status": {
+                    "name": "Active",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-01T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "82682824"
+                        "extension": "82682824"
                     }
                 ]
             },
@@ -682,22 +744,36 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.2.1",
-                        "identifier_type": "A66621245-3082-4e9b-a59f-c19be04d7066"
+                        "extension": "A66621245-3082-4e9b-a59f-c19be04d7066"
                     }
                 ],
                 "negation_indicator": false,
                 "problem": {
                     "name": "Asthma, unspecified type, unspecified",
                     "code": "493.90",
-                    "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "code_system_name": "OID 2.16.840.1.113883.6.103",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-01T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
                 "onset_age": "66",
                 "onset_age_unit": "Year",
-                "status": "Active",
+                "status": {
+                    "name": "Active",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-01T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "82682824"
+                        "extension": "82682824"
                     }
                 ]
             },
@@ -711,22 +787,36 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3.82682824.2.1",
-                        "identifier_type": "A1403e1b0-bf2d-4842-b851-883efad323ce"
+                        "extension": "A1403e1b0-bf2d-4842-b851-883efad323ce"
                     }
                 ],
                 "negation_indicator": false,
                 "problem": {
                     "name": "Hypoxemia",
                     "code": "799.02",
-                    "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "code_system_name": "OID 2.16.840.1.113883.6.103",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-01T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
                 "onset_age": "66",
                 "onset_age_unit": "Year",
-                "status": "Active",
+                "status": {
+                    "name": "Active",
+                    "date_time": {
+                        "low": {
+                            "date": "2012-08-01T07:00:00Z",
+                            "precision": "second"
+                        }
+                    }
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.3",
-                        "identifier_type": "82682824"
+                        "extension": "82682824"
                     }
                 ]
             }
@@ -745,7 +835,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -768,6 +858,9 @@
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ImmunizationAdministration -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -783,6 +876,8 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD"
     ]

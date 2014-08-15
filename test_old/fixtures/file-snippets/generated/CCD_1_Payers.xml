@@ -28,11 +28,11 @@
                   <postalCode>02368</postalCode>
                   <country>US</country>
                 </addr>
-                <telecom value="tel:(781)555-1515" use="HP"/>
+                <telecom value="tel:(781)555-1515" use="WP"/>
                 <representedOrganization>
                   <id nullFlavor="UNK"/>
-                  <name/>
-                  <telecom nullFlavor="UNK"/>
+                  <name>Good Health Insurance</name>
+                  <telecom value="tel:(781)555-1515" use="WP"/>
                   <addr use="WP">
                     <streetAddressLine>123 Insurance Road</streetAddressLine>
                     <city>Blue Bell</city>
@@ -103,7 +103,7 @@
               <act classCode="ACT" moodCode="EVN">
                 <templateId root="2.16.840.1.113883.10.20.1.19"/>
                 <id root="f4dce790-8328-11db-9fe1-0800200c9a66"/>
-                <code codeSystem="2.16.840.1.113883.6.96"/>
+                <code nullFlavor="UNK"/>
                 <entryRelationship typeCode="SUBJ">
                   <procedure classCode="PROC" moodCode="PRMS">
                     <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>

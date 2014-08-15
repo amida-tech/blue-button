@@ -25,21 +25,35 @@
                     "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
                 }
             ],
-            "providers": [
+            "specimen": {
+                "identifiers": [
+                    {
+                        "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58683"
+                    }
+                ],
+                "code": {
+                    "name": "colonic polyp sample",
+                    "code": "309226005",
+                    "code_system_name": "SNOMED CT"
+                }
+            },
+            "performer": [
                 {
-                    "address": {
-                        "streetLines": [
-                            "1001 Village Avenue"
-                        ],
-                        "city": "Portland",
-                        "state": "OR",
-                        "zip": "99123",
-                        "country": "US"
-                    },
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.19.5.9999.456",
-                            "identifier_type": "2981823"
+                            "extension": "2981823"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "street_lines": [
+                                "1001 Village Avenue"
+                            ],
+                            "city": "Portland",
+                            "state": "OR",
+                            "zip": "99123",
+                            "country": "US"
                         }
                     ],
                     "phone": [
@@ -48,29 +62,35 @@
                             "type": "work place"
                         }
                     ],
-                    "organization": {
-                        "name": "Community Health and Hospitals",
-                        "address": {
-                            "streetLines": [
-                                "1001 Village Avenue"
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                }
                             ],
-                            "city": "Portland",
-                            "state": "OR",
-                            "zip": "99123",
-                            "country": "US"
-                        },
-                        "identifiers": [
-                            {
-                                "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                            }
-                        ],
-                        "phone": [
-                            {
-                                "number": "555-555-5000",
-                                "type": "work place"
-                            }
-                        ]
-                    }
+                            "name": [
+                                "Community Health and Hospitals"
+                            ],
+                            "address": [
+                                {
+                                    "street_lines": [
+                                        "1001 Village Avenue"
+                                    ],
+                                    "city": "Portland",
+                                    "state": "OR",
+                                    "zip": "99123",
+                                    "country": "US"
+                                }
+                            ],
+                            "phone": [
+                                {
+                                    "number": "555-555-5000",
+                                    "type": "work place"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "procedure_type": "procedure"
@@ -84,7 +104,7 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19",
-                    "identifier_type": "123456789"
+                    "extension": "123456789"
                 }
             ],
             "status": "Aborted",
@@ -101,21 +121,28 @@
                     "code_system_name": "SNOMED CT"
                 }
             ],
-            "providers": [
+            "priority": {
+                "name": "Callback results",
+                "code": "CR",
+                "code_system_name": "OID 2.16.840.1.113883.5.7"
+            },
+            "performer": [
                 {
-                    "address": {
-                        "streetLines": [
-                            "17 Daws Rd."
-                        ],
-                        "city": "Blue Bell",
-                        "state": "MA",
-                        "zip": "02368",
-                        "country": "US"
-                    },
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.19.5",
-                            "identifier_type": "1234"
+                            "extension": "1234"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ],
+                            "city": "Blue Bell",
+                            "state": "MA",
+                            "zip": "02368",
+                            "country": "US"
                         }
                     ],
                     "phone": [
@@ -124,14 +151,18 @@
                             "type": "work place"
                         }
                     ],
-                    "organization": {
-                        "name": "Community Health and Hospitals",
-                        "identifiers": [
-                            {
-                                "identifier": "2.16.840.1.113883.19.5"
-                            }
-                        ]
-                    }
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5"
+                                }
+                            ],
+                            "name": [
+                                "Community Health and Hospitals"
+                            ]
+                        }
+                    ]
                 }
             ],
             "locations": [
@@ -144,7 +175,7 @@
                     },
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "17 Daws Rd."
                             ],
                             "city": "Blue Bell",
@@ -166,7 +197,7 @@
             "identifiers": [
                 {
                     "identifier": "1.2.3.4.5.6.7.8",
-                    "identifier_type": "1234567"
+                    "extension": "1234567"
                 }
             ],
             "status": "Completed",
@@ -176,21 +207,28 @@
                     "precision": "day"
                 }
             },
-            "providers": [
+            "priority": {
+                "name": "Callback results",
+                "code": "CR",
+                "code_system_name": "OID 2.16.840.1.113883.5.7"
+            },
+            "performer": [
                 {
-                    "address": {
-                        "streetLines": [
-                            "17 Daws Rd."
-                        ],
-                        "city": "Blue Bell",
-                        "state": "MA",
-                        "zip": "02368",
-                        "country": "US"
-                    },
                     "identifiers": [
                         {
                             "identifier": "2.16.840.1.113883.19",
-                            "identifier_type": "1234"
+                            "extension": "1234"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ],
+                            "city": "Blue Bell",
+                            "state": "MA",
+                            "zip": "02368",
+                            "country": "US"
                         }
                     ],
                     "phone": [
@@ -199,14 +237,18 @@
                             "type": "work place"
                         }
                     ],
-                    "organization": {
-                        "name": "Community Health and Hospitals",
-                        "identifiers": [
-                            {
-                                "identifier": "2.16.840.1.113883.19.5"
-                            }
-                        ]
-                    }
+                    "organization": [
+                        {
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5"
+                                }
+                            ],
+                            "name": [
+                                "Community Health and Hospitals"
+                            ]
+                        }
+                    ]
                 }
             ],
             "locations": [
@@ -219,7 +261,7 @@
                     },
                     "address": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "17 Daws Rd."
                             ],
                             "city": "Blue Bell",

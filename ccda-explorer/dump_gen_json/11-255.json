@@ -15,17 +15,17 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
-                    "identifier_type": "998991"
+                    "extension": "998991"
                 },
                 {
                     "identifier": "2.16.840.1.113883.4.1",
-                    "identifier_type": "111-00-2330"
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "1666 Ridenour Street"
                     ],
                     "city": "Pompano Beach",
@@ -61,7 +61,7 @@
                     "relation": "friend",
                     "addresses": [
                         {
-                            "streetLines": [
+                            "street_lines": [
                                 "2239 Pinewood Drive"
                             ],
                             "city": "Arlington Heights",
@@ -293,6 +293,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "NA"
+                        },
                         "interpretations": [
                             "Normal"
                         ]
@@ -336,6 +339,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "2-10"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -386,6 +392,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "4-5.6%"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -436,6 +445,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": ">=40 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -472,6 +484,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "<130 mg/dL (calc)"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -522,6 +537,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "<2.5 ng/mL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -572,6 +590,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "125-200 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -608,6 +629,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | >60 years: 80-150 mg/dL | Therapeutic Target: <100 mg/dL"
+                        },
                         "interpretations": [
                             "Normal"
                         ],
@@ -632,7 +656,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Biguanides + Metformin hydrochloride 500 MG Oral Tablet  ",
+                    "unencoded_name": "Biguanides + Metformin hydrochloride 500 MG Oral Tablet",
                     "product": {
                         "name": "Metformin hydrochloride 500 MG Oral Tablet",
                         "code": "861007",
@@ -654,7 +678,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Smoking Cessation Agents + 24 HR Nicotine 0.313 MG/HR Transdermal Patch  ",
+                    "unencoded_name": "Smoking Cessation Agents + 24 HR Nicotine 0.313 MG/HR Transdermal Patch",
                     "product": {
                         "name": "24 HR Nicotine 0.313 MG/HR Transdermal Patch",
                         "code": "1046847",
@@ -676,7 +700,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "Statins + atorvastatin 10 MG Oral Tablet [Lipitor]  ",
+                    "unencoded_name": "Statins + atorvastatin 10 MG Oral Tablet [Lipitor]",
                     "product": {
                         "name": "atorvastatin 10 MG Oral Tablet [Lipitor]",
                         "code": "617314",
@@ -698,7 +722,7 @@
                 ],
                 "status": "Completed",
                 "product": {
-                    "unencoded_name": "ACE inhibitors + Lisinopril 10 MG Oral Tablet  ",
+                    "unencoded_name": "ACE inhibitors + Lisinopril 10 MG Oral Tablet",
                     "product": {
                         "name": "Lisinopril 10 MG Oral Tablet",
                         "code": "314076",
@@ -763,6 +787,18 @@
                 },
                 "findings": [
                     {
+                        "identifiers": [
+                            {
+                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
+                                "extension": "45665"
+                            }
+                        ],
+                        "date_time": {
+                            "low": {
+                                "date": "2010-06-10T10:00:00Z",
+                                "precision": "second"
+                            }
+                        },
                         "name": "AJCC Cancer Stage Low Risk Recurrence Prostat",
                         "code": "261650005",
                         "code_system_name": "SNOMED CT"
@@ -854,7 +890,7 @@
                 "allergen": {
                     "name": "Eggs",
                     "code": "291P45F896",
-                    "code_system_name": "OID 2.16.840.1.113883.4.9",
+                    "code_system_name": "UNII",
                     "translations": [
                         {
                             "name": "Allergy to eggs",
@@ -863,7 +899,16 @@
                         }
                     ]
                 },
-                "severity": "Mild to moderate"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -882,7 +927,16 @@
                     "code": "905148",
                     "code_system_name": "RXNORM"
                 },
-                "severity": "Severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "24484000",
+                        "name": "Severe"
+                    }
+                }
             },
             {
                 "date_time": {
@@ -901,7 +955,16 @@
                     "code": "N0000006691",
                     "code_system_name": "OID 2.16.840.1.113883.3.26.1.5"
                 },
-                "severity": "Severe"
+                "intolerance": {
+                    "date_time": {},
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)",
+                    "code_system_name": "SNOMED-CT",
+                    "severity": {
+                        "code": "24484000",
+                        "name": "Severe"
+                    }
+                }
             }
         ],
         "immunizations": [
@@ -918,6 +981,16 @@
                         "date": "2010-04-02T10:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -939,20 +1012,16 @@
                     "name": "Coronary arteriosclerosis",
                     "code": "53741008",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Atherosclerotic heart disease of native coronary artery",
-                            "code": "I25.1",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Coronary atherosclerosis of native coronary artery",
-                            "code": "414.01",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2009-12-07T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -976,20 +1045,16 @@
                     "name": "Diabetes mellitus type 2",
                     "code": "44054006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Type 2 diabetes mellitus without complications",
-                            "code": "E11.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled",
-                            "code": "250.00",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2009-12-07T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1013,20 +1078,16 @@
                     "name": "Open-angle glaucoma",
                     "code": "84494001",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Primary open-angle glaucoma, stage unspecified",
-                            "code": "H40.11X0",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Open-angle glaucoma, unspecified",
-                            "code": "365.10",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2009-12-07T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1050,20 +1111,16 @@
                     "name": "Malignant tumor of prostate",
                     "code": "399068003",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Malignant neoplasm of prostate",
-                            "code": "C61",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
-                        },
-                        {
-                            "name": "Malignant neoplasm of prostate",
-                            "code": "185",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
+                    "date_time": {
+                        "low": {
+                            "date": "2010-06-08T10:00:00Z",
+                            "precision": "second"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1086,9 +1143,17 @@
                 "problem": {
                     "name": "Tumor stage T1c",
                     "code": "261650005",
-                    "code_system_name": "SNOMED CT"
+                    "code_system_name": "SNOMED CT",
+                    "date_time": {
+                        "low": {
+                            "date": "2010-06-10T10:00:00Z",
+                            "precision": "second"
+                        }
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1374,7 +1439,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1389,7 +1454,7 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

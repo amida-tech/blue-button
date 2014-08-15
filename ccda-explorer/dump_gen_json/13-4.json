@@ -15,12 +15,12 @@
             "identifiers": [
                 {
                     "identifier": "1.3.6.1.4.1.22812.11.0.100610",
-                    "identifier_type": "101822"
+                    "extension": "101822"
                 }
             ],
             "addresses": [
                 {
-                    "streetLines": [
+                    "street_lines": [
                         "56 reef sting"
                     ],
                     "city": "BEAVERTON",
@@ -42,7 +42,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "155191"
+                        "extension": "155191"
                     }
                 ],
                 "vital": {
@@ -67,7 +67,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "155201"
+                        "extension": "155201"
                     }
                 ],
                 "vital": {
@@ -92,7 +92,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "155151"
+                        "extension": "155151"
                     }
                 ],
                 "vital": {
@@ -117,7 +117,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "155141"
+                        "extension": "155141"
                     }
                 ],
                 "vital": {
@@ -142,7 +142,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "155161"
+                        "extension": "155161"
                     }
                 ],
                 "vital": {
@@ -167,7 +167,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "155171"
+                        "extension": "155171"
                     }
                 ],
                 "vital": {
@@ -192,7 +192,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.6",
-                        "identifier_type": "155181"
+                        "extension": "155181"
                     }
                 ],
                 "vital": {
@@ -219,7 +219,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                        "identifier_type": "14262800680"
+                        "extension": "14262800680"
                     }
                 ],
                 "result_set": {
@@ -232,7 +232,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "337900070"
+                                "extension": "337900070"
                             }
                         ],
                         "result": {
@@ -247,6 +247,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "ng/mL"
+                        },
                         "value": 0.01,
                         "unit": "ng/mL"
                     }
@@ -256,7 +259,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                        "identifier_type": "14262600680"
+                        "extension": "14262600680"
                     }
                 ],
                 "result_set": {
@@ -269,7 +272,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "337100070"
+                                "extension": "337100070"
                             }
                         ],
                         "result": {
@@ -284,6 +287,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "mMol/L"
+                        },
                         "value": 3.5,
                         "unit": "mMol/L"
                     },
@@ -291,7 +297,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "337200070"
+                                "extension": "337200070"
                             }
                         ],
                         "result": {
@@ -306,6 +312,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "mMol/L"
+                        },
                         "value": 138,
                         "unit": "mMol/L"
                     },
@@ -313,7 +322,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "337300070"
+                                "extension": "337300070"
                             }
                         ],
                         "result": {
@@ -328,6 +337,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "mg/dL"
+                        },
                         "value": 195,
                         "unit": "mg/dL"
                     },
@@ -335,12 +347,12 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "337400070"
+                                "extension": "337400070"
                             }
                         ],
                         "result": {
                             "name": "CO2, Whole Blood",
-                            "code": "20565-8 ",
+                            "code": "20565-8",
                             "code_system_name": "LOINC"
                         },
                         "date_time": {
@@ -350,6 +362,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "mMol/L"
+                        },
                         "value": 26,
                         "unit": "mMol/L"
                     },
@@ -357,12 +372,12 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "337500070"
+                                "extension": "337500070"
                             }
                         ],
                         "result": {
                             "name": "Chloride, Whole Blood",
-                            "code": "2069-3 ",
+                            "code": "2069-3",
                             "code_system_name": "LOINC"
                         },
                         "date_time": {
@@ -372,6 +387,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "mMol/L"
+                        },
                         "value": 100,
                         "unit": "mMol/L"
                     },
@@ -379,7 +397,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "337600070"
+                                "extension": "337600070"
                             }
                         ],
                         "result": {
@@ -394,6 +412,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "mg/dL"
+                        },
                         "value": 1,
                         "unit": "mg/dL"
                     },
@@ -401,7 +422,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "337700070"
+                                "extension": "337700070"
                             }
                         ],
                         "result": {
@@ -416,6 +437,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "mg/dL"
+                        },
                         "value": 15,
                         "unit": "mg/dL"
                     }
@@ -425,7 +449,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                        "identifier_type": "14262700680"
+                        "extension": "14262700680"
                     }
                 ],
                 "result_set": {
@@ -438,7 +462,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "337800070"
+                                "extension": "337800070"
                             }
                         ],
                         "result": {
@@ -453,6 +477,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "ng/mL"
+                        },
                         "value": 0.01,
                         "unit": "ng/mL"
                     }
@@ -462,7 +489,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                        "identifier_type": "14294100680"
+                        "extension": "14294100680"
                     }
                 ],
                 "result_set": {
@@ -475,7 +502,7 @@
                         "identifiers": [
                             {
                                 "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.5",
-                                "identifier_type": "338200070"
+                                "extension": "338200070"
                             }
                         ],
                         "result": {
@@ -490,6 +517,9 @@
                             }
                         },
                         "status": "completed",
+                        "referenceRange": {
+                            "range": "mg/dL"
+                        },
                         "value": 1,
                         "unit": "mg/dL"
                     }
@@ -507,7 +537,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.9",
-                        "identifier_type": "795"
+                        "extension": "795"
                     }
                 ],
                 "status": "Prescribed",
@@ -557,7 +587,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.9",
-                        "identifier_type": "796"
+                        "extension": "796"
                     }
                 ],
                 "status": "Prescribed",
@@ -611,7 +641,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.9",
-                        "identifier_type": "797"
+                        "extension": "797"
                     }
                 ],
                 "status": "Prescribed",
@@ -665,7 +695,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.9",
-                        "identifier_type": "798"
+                        "extension": "798"
                     }
                 ],
                 "status": "Prescribed",
@@ -714,7 +744,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.3.4",
-                        "identifier_type": "230100270"
+                        "extension": "230100270"
                     }
                 ],
                 "date_time": {
@@ -750,7 +780,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.10.2",
-                        "identifier_type": "41700060"
+                        "extension": "41700060"
                     }
                 ],
                 "allergen": {
@@ -758,7 +788,26 @@
                     "code": "7982",
                     "code_system_name": "RXNORM"
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2012-10-02T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ]
             },
             {
                 "date_time": {
@@ -770,7 +819,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.10.2",
-                        "identifier_type": "41800060"
+                        "extension": "41800060"
                     }
                 ],
                 "allergen": {
@@ -778,7 +827,26 @@
                     "code": "2670",
                     "code_system_name": "RXNORM"
                 },
-                "status": "Active"
+                "intolerance": {
+                    "date_time": {
+                        "low": {
+                            "date": "2012-10-02T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "code": "416098002",
+                    "name": "drug allergy",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ]
             }
         ],
         "immunizations": [
@@ -792,7 +860,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.4",
-                        "identifier_type": "11230"
+                        "extension": "11230"
                     }
                 ],
                 "status": "complete",
@@ -802,28 +870,35 @@
                         "code": "88",
                         "code_system_name": "CVX"
                     },
-                    "lot_number": " "
+                    "lot_number": ""
+                },
+                "instructions": {
+                    "code": {
+                        "name": "Annotation Comment",
+                        "code": "48767-8",
+                        "code_system_name": "LOINC"
+                    }
                 }
             }
         ],
         "social_history": [
             {
                 "value": "Never smoker",
-                "date_time": {}
+                "date_time": {},
+                "code": {
+                    "name": "Assertion",
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
+                }
             }
         ],
         "problems": [
             {
-                "date_time": {
-                    "low": {
-                        "date": "2012-10-02T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
-                        "identifier_type": "845400500"
+                        "extension": "845400500"
                     }
                 ],
                 "negation_indicator": false,
@@ -831,38 +906,29 @@
                     "name": "Acute angina",
                     "code": "194828000",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Acute angina",
-                            "code": "413.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Acute angina",
-                            "code": "I20.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                    "date_time": {
+                        "low": {
+                            "date": "2012-10-02T00:00:00Z",
+                            "precision": "day"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
-                        "identifier_type": "845400500"
+                        "extension": "845400500"
                     }
                 ]
             },
             {
-                "date_time": {
-                    "low": {
-                        "date": "2009-01-09T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
-                        "identifier_type": "845500500"
+                        "extension": "845500500"
                     }
                 ],
                 "negation_indicator": false,
@@ -870,38 +936,29 @@
                     "name": "Type 2 diabetes mellitus",
                     "code": "44054006",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Type 2 diabetes mellitus",
-                            "code": "250.00",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Type 2 diabetes mellitus",
-                            "code": "E11.9",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                    "date_time": {
+                        "low": {
+                            "date": "2009-01-09T00:00:00Z",
+                            "precision": "day"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
-                        "identifier_type": "845500500"
+                        "extension": "845500500"
                     }
                 ]
             },
             {
-                "date_time": {
-                    "low": {
-                        "date": "2008-08-08T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
+                "date_time": {},
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1.2.1",
-                        "identifier_type": "845600500"
+                        "extension": "845600500"
                     }
                 ],
                 "negation_indicator": false,
@@ -909,24 +966,20 @@
                     "name": "Hypercholesterolemia",
                     "code": "13644009",
                     "code_system_name": "SNOMED CT",
-                    "translations": [
-                        {
-                            "name": "Hypercholesterolemia",
-                            "code": "272.0",
-                            "code_system_name": "OID 2.16.840.1.113883.6.103"
-                        },
-                        {
-                            "name": "Hypercholesterolemia",
-                            "code": "E78.0",
-                            "code_system_name": "OID 2.16.840.1.113883.6.90"
+                    "date_time": {
+                        "low": {
+                            "date": "2008-08-08T00:00:00Z",
+                            "precision": "day"
                         }
-                    ]
+                    }
                 },
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.1",
-                        "identifier_type": "845600500"
+                        "extension": "845600500"
                     }
                 ]
             }
@@ -936,7 +989,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.7",
-                        "identifier_type": "1898101"
+                        "extension": "1898101"
                     }
                 ],
                 "status": "Active",
@@ -954,11 +1007,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.13.1",
-                        "identifier_type": "14262400680"
+                        "extension": "14262400680"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-10-02T00:00:00Z",
                         "precision": "second"
                     }
@@ -974,7 +1027,7 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.13.1",
-                        "identifier_type": "INT"
+                        "extension": "INT"
                     }
                 ],
                 "type": "act"
@@ -988,11 +1041,11 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.11.0.100610.4.13.2",
-                        "identifier_type": "14262300680"
+                        "extension": "14262300680"
                     }
                 ],
                 "date_time": {
-                    "point": {
+                    "center": {
                         "date": "2012-10-02T00:00:00Z",
                         "precision": "second"
                     }
@@ -1002,7 +1055,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -1020,7 +1073,7 @@
     "errors": [
         "nullFlavor alert:  missing but required number in Phone -> Patient -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Patient -> CCD",
-        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",

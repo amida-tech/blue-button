@@ -18,14 +18,14 @@
             "identifiers": [
                 {
                     "identifier": "2.16.840.1.113883.3.441.1.50.300011.51",
-                    "identifier_type": "26775"
+                    "extension": "26775"
                 }
             ],
             "marital_status": "Never Married",
             "addresses": [
                 {
-                    "streetLines": [
-                        "123 test "
+                    "street_lines": [
+                        "123 test"
                     ],
                     "city": "Carrollton",
                     "state": "GA",
@@ -55,7 +55,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.55",
-                        "identifier_type": "2736"
+                        "extension": "2736"
                     }
                 ],
                 "vital": {
@@ -77,7 +77,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.55",
-                        "identifier_type": "2737"
+                        "extension": "2737"
                     }
                 ],
                 "vital": {
@@ -99,7 +99,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.55",
-                        "identifier_type": "2738"
+                        "extension": "2738"
                     }
                 ],
                 "vital": {
@@ -121,7 +121,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.55",
-                        "identifier_type": "2740"
+                        "extension": "2740"
                     }
                 ],
                 "vital": {
@@ -143,7 +143,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.55",
-                        "identifier_type": "2741"
+                        "extension": "2741"
                     }
                 ],
                 "vital": {
@@ -167,7 +167,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.54",
-                        "identifier_type": "2778"
+                        "extension": "2778"
                     }
                 ],
                 "results": [
@@ -175,7 +175,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.54",
-                                "identifier_type": "2778"
+                                "extension": "2778"
                             }
                         ],
                         "result": {
@@ -199,7 +199,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.54",
-                        "identifier_type": "2779"
+                        "extension": "2779"
                     }
                 ],
                 "results": [
@@ -207,7 +207,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.54",
-                                "identifier_type": "2779"
+                                "extension": "2779"
                             }
                         ],
                         "result": {
@@ -231,7 +231,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.54",
-                        "identifier_type": "2780"
+                        "extension": "2780"
                     }
                 ],
                 "results": [
@@ -239,7 +239,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.54",
-                                "identifier_type": "2780"
+                                "extension": "2780"
                             }
                         ],
                         "result": {
@@ -263,7 +263,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.54",
-                        "identifier_type": "2781"
+                        "extension": "2781"
                     }
                 ],
                 "results": [
@@ -271,7 +271,7 @@
                         "identifiers": [
                             {
                                 "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.54",
-                                "identifier_type": "2781"
+                                "extension": "2781"
                             }
                         ],
                         "result": {
@@ -307,7 +307,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.58",
-                        "identifier_type": "1954"
+                        "extension": "1954"
                     }
                 ],
                 "status": "Prescribed",
@@ -348,7 +348,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.58",
-                        "identifier_type": "1955"
+                        "extension": "1955"
                     }
                 ],
                 "status": "Prescribed",
@@ -382,7 +382,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "c0b6e54a1faf42bd86e5938d166d6500"
+                        "extension": "c0b6e54a1faf42bd86e5938d166d6500"
                     }
                 ],
                 "allergen": {
@@ -397,7 +397,21 @@
                         }
                     ]
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "Allergy to substance (disorder)",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ],
                 "negation_indicator": false
             },
             {
@@ -405,7 +419,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "43c6738c8180465eb1beb76d0053f9bd"
+                        "extension": "43c6738c8180465eb1beb76d0053f9bd"
                     }
                 ],
                 "allergen": {
@@ -420,7 +434,21 @@
                         }
                     ]
                 },
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "Allergy to substance (disorder)",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ],
                 "negation_indicator": false
             },
             {
@@ -428,10 +456,24 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "f4faeb2a9cd34830983d02a387b824b7"
+                        "extension": "f4faeb2a9cd34830983d02a387b824b7"
                     }
                 ],
-                "status": "Active",
+                "intolerance": {
+                    "date_time": {},
+                    "code": "419199007",
+                    "name": "Allergy to substance (disorder)",
+                    "code_system_name": "SNOMED CT"
+                },
+                "status": {
+                    "code": "55561003",
+                    "status": "Active"
+                },
+                "reaction": [
+                    {
+                        "date_time": {}
+                    }
+                ],
                 "negation_indicator": false
             }
         ],
@@ -443,6 +485,16 @@
                         "date": "1900-01-01T00:00:00Z",
                         "precision": "second"
                     }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.68",
+                        "extension": "1290"
+                    }
+                ],
+                "code": {
+                    "code": "ASSERTION",
+                    "code_system_name": "HL7ActCode"
                 }
             }
         ],
@@ -457,15 +509,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.61",
-                        "identifier_type": "1401"
+                        "extension": "1401"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "6e56f6f632264e33b746510ed00f801a"
+                        "extension": "6e56f6f632264e33b746510ed00f801a"
                     }
                 ]
             },
@@ -479,15 +533,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.61",
-                        "identifier_type": "1403"
+                        "extension": "1403"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "91fdcf6e8f1e4c5eb44fcbf8e6e39dfd"
+                        "extension": "91fdcf6e8f1e4c5eb44fcbf8e6e39dfd"
                     }
                 ]
             },
@@ -505,15 +561,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.61",
-                        "identifier_type": "1404"
+                        "extension": "1404"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Resolved",
+                "status": {
+                    "name": "Resolved"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "9bbaa5dbb210441faf5af16f24eff290"
+                        "extension": "9bbaa5dbb210441faf5af16f24eff290"
                     }
                 ]
             },
@@ -527,15 +585,17 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.61",
-                        "identifier_type": "1405"
+                        "extension": "1405"
                     }
                 ],
                 "negation_indicator": false,
-                "status": "Active",
+                "status": {
+                    "name": "Active"
+                },
                 "source_list_identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441",
-                        "identifier_type": "6f7a8de4880742f5b7809ef97e16a1ab"
+                        "extension": "6f7a8de4880742f5b7809ef97e16a1ab"
                     }
                 ]
             }
@@ -550,7 +610,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.53",
-                        "identifier_type": "61313"
+                        "extension": "61313"
                     }
                 ],
                 "status": "Completed",
@@ -571,7 +631,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.53",
-                        "identifier_type": "61314"
+                        "extension": "61314"
                     }
                 ],
                 "status": "Completed",
@@ -589,7 +649,7 @@
                 "identifiers": [
                     {
                         "identifier": "2.16.840.1.113883.3.441.1.50.300011.51.26775.72",
-                        "identifier_type": "1156"
+                        "extension": "1156"
                     }
                 ],
                 "date_time": {
@@ -603,7 +663,7 @@
         ]
     },
     "meta": {
-        "version": "1.0.3",
+        "version": "1.1.0-beta.5",
         "sections": [
             "demographics",
             "vitals",
@@ -644,14 +704,14 @@
         "nullFlavor alert:  missing but required system in allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
