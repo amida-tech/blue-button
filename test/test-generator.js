@@ -10,6 +10,7 @@ test.verbose = true; // log setting
 var TEST_CCDA_SAMPLES = false;
 var TEST_CCD = false;
 var TEST_SECTIONS = true;
+var TEST_PARSE_GENERATE = true;
 
 var supportedComponents = {
     payers: 'payers',
@@ -88,7 +89,11 @@ if (TEST_SECTIONS) {
     describe('sections', function () {
         it('should match respective sections', function () {
             Object.keys(supportedComponents).forEach(function (section) {
+<<<<<<< Updated upstream
                 if (section === "vitals") { // add section === "[section]" for specific section
+=======
+                if (section === "encounters") { // add section === "[section]" for specific section
+>>>>>>> Stashed changes
                     var XMLDOMs = test.generateXMLDOM(section);
 
                     assert.ok(test.isIdentical(XMLDOMs[0].documentElement, XMLDOMs[1].documentElement));
