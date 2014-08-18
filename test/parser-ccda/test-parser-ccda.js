@@ -13,7 +13,7 @@ describe('parser.js', function () {
         done();
     });
 
-    xit('CCDA parser/model validation', function (done) {
+    it('CCDA parser/model validation', function (done) {
         expect(xmlfile).to.exist;
 
         //convert string into JSON 
