@@ -339,8 +339,7 @@
                         "last": "Seven",
                         "first": "Henry"
                     }
-                },
-                "instructions": "label in spanish"
+                }
             },
             "administration": {
                 "route": {
@@ -370,21 +369,19 @@
                 }
             },
             "performer": {
-                "organization": {
+                "organization": [{
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19.5.9999.1393"
                     }],
                     "name": [
                         "Community Health and Hospitals"
                     ]
-                }
+                }]
             },
             "drug_vehicle": {
-                "playingEntity": {
-                    "name": "Aerosol",
-                    "code": "324049",
-                    "code_system_name": "RXNORM"
-                }
+                "name": "Aerosol",
+                "code": "324049",
+                "code_system_name": "RXNORM"
             },
             "precondition": {
                 "code": {
@@ -402,7 +399,11 @@
                     "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
                     "extension": "45665"
                 }],
-                "code": "404684003",
+                "code": {
+                    "name": "Finding",
+                    "code": "404684003",
+                    "code_system_name": "SNOMED CT"
+                },
                 "date_time": {
                     "low": {
                         "date": "2007-01-03T00:00:00Z",
@@ -415,14 +416,6 @@
                     "code_system_name": "SNOMED CT"
                 }
             },
-            "instructions": {
-                "code": {
-                    "name": "instruction",
-                    "code": "409073007",
-                    "code_system_name": "SNOMED CT"
-                },
-                "freeText": "Proventil HFA"
-            },
             "dispense": {
                 "identifiers": [{
                     "identifier": "1.2.3.4.56789.1",
@@ -433,7 +426,7 @@
                         "identifier": "2.16.840.1.113883.19.5.9999.456",
                         "extension": "2981823"
                     }],
-                    "address": {
+                    "address": [{
                         "street_lines": [
                             "1001 Village Avenue"
                         ],
@@ -441,15 +434,15 @@
                         "state": "OR",
                         "zip": "99123",
                         "country": "US"
-                    },
-                    "organization": {
+                    }],
+                    "organization": [{
                         "identifiers": [{
                             "identifier": "2.16.840.1.113883.19.5.9999.1393"
                         }],
                         "name": [
                             "Community Health and Hospitals"
                         ]
-                    }
+                    }]
                 }
             }
         }],
@@ -470,7 +463,7 @@
             "date_time": {
                 "point": {
                     "date": "2009-02-27T13:00:00Z",
-                    "precision": "subsecond"
+                    "precision": "second"
                 }
             },
             "performers": [{
@@ -535,6 +528,7 @@
                 "date_time": {
                     "low": {
                         "date": "2007-05-01T00:00:00Z",
+
                         "precision": "day"
                     }
                 },
@@ -558,7 +552,7 @@
                     },
                     "high": {
                         "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
+                        "precision": "second"
                     }
                 },
                 "reaction": {
@@ -613,7 +607,7 @@
                     },
                     "high": {
                         "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
+                        "precision": "second"
                     }
                 },
                 "reaction": {
@@ -668,7 +662,7 @@
                     },
                     "high": {
                         "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
+                        "precision": "second"
                     }
                 },
                 "reaction": {
@@ -751,7 +745,7 @@
                     "code": "171044003",
                     "code_system_name": "SNOMED CT"
                 },
-                "freeText": "Possible flu-like symptoms for three days."
+                "free_text": "Possible flu-like symptoms for three days."
             }
         }, {
             "date_time": {
@@ -822,7 +816,7 @@
                     "code": "171044003",
                     "code_system_name": "SNOMED CT"
                 },
-                "freeText": "Possible flu-like symptoms for three days."
+                "free_text": "Possible flu-like symptoms for three days."
             }
         }, {
             "date_time": {
@@ -961,7 +955,7 @@
                 },
                 "high": {
                     "date": "2009-02-27T13:00:00Z",
-                    "precision": "subsecond"
+                    "precision": "second"
                 }
             },
             "identifiers": [{
@@ -981,7 +975,7 @@
                 },
                 "high": {
                     "date": "2009-02-27T13:00:00Z",
-                    "precision": "subsecond"
+                    "precision": "second"
                 }
             },
             "identifiers": [{
@@ -998,7 +992,7 @@
             "date_time": {
                 "low": {
                     "date": "2009-02-27T13:00:00Z",
-                    "precision": "subsecond"
+                    "precision": "second"
                 }
             },
             "identifiers": [{
@@ -1069,7 +1063,7 @@
                     },
                     "high": {
                         "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
+                        "precision": "second"
                     }
                 }
             },
@@ -1118,7 +1112,7 @@
                     },
                     "high": {
                         "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
+                        "precision": "second"
                     }
                 }
             },
