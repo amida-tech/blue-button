@@ -4,10 +4,7 @@
     "properties": {
 
         "code": {
-            "type": "object",
-            "properties": {
-                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
-            }
+            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
         },
         "addresses": {
             "type": "array",
@@ -25,7 +22,7 @@
         "plan_information": {
             "type": "string"
         },
-        "performer":{
+        "performer": {
             "$ref": "http://local.com/common_models#/properties/cda_performer"
         },
         "plan_name": {

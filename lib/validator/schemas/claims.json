@@ -67,13 +67,17 @@
                     "value": "number",
                     "unit": "string"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "lines": {
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
+                    "line": {
+                        "type": "string"
+                    },
                     "charges": {
                         "type": "object",
                         "properties": {
@@ -92,7 +96,8 @@
                             "provider_paid": {
                                 "type": "string"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "drug": {
                         "type": "object",
@@ -106,9 +111,10 @@
                             "name": {
                                 "type": "string"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
-                    "modifiers": {
+                    "modifier": {
                         "type": "array",
                         "items": {
                             "properties": {
@@ -121,7 +127,8 @@
                                 "name": {
                                     "type": "string"
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         }
                     },
                     "number": {
@@ -139,7 +146,8 @@
                             "name": {
                                 "type": "string"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "procedure": {
                         "type": "object",
@@ -153,7 +161,8 @@
                             "name": {
                                 "type": "string"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "quantity": {
                         "type": "object",
@@ -164,7 +173,8 @@
                             "unit": {
                                 "type": "string"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "performer": {
                         "type": "array",
@@ -184,10 +194,26 @@
                             "name": {
                                 "type": "string"
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "date_time": {
                         "$ref": "http://local.com/common_models#/properties/cda_date"
+                    },
+                    "type": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
                     },
                     "type_of_service_code": {
                         "type": "string"
@@ -195,7 +221,8 @@
                     "type_of_service": {
                         "type": "number"
                     }
-                }
+                },
+                "additionalProperties": false
             }
         }
     },

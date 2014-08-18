@@ -54,7 +54,20 @@
             "additionalProperties": false
         },
         "performer": {
-             "$ref": "http://local.com/common_models#/properties/cda_performer"
+            "$ref": "http://local.com/common_models#/properties/cda_performer"
+        },
+        "instructions": {
+            "type": "object",
+            "properties": {
+                "free_text": {
+                    "type": "string"
+                },
+                "code": {
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                }
+            },
+
+            "additionalProperties": false
         },
         "refusal_reason": {
             "type": "string"
