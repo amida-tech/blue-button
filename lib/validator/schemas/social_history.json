@@ -11,6 +11,12 @@
             "value": {
                 "type": "string"
             },
+            "code": {
+                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+            },
+            "observation_value": {
+                "type": "string"
+            },
             "identifiers": {
                 "type": "array",
                 "items": {
@@ -20,7 +26,8 @@
         },
         "required": [
             "value"
-        ]
+        ],
+        "additionalProperties": false
     },
 
     "additionalPropertes": true

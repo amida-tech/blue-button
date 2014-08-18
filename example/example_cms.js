@@ -30,7 +30,7 @@ var val = validator.validateDocumentModel(data);
 //var val = validator.validateSectionObj(data.data.demographics, "demographics");
 var val = validator.validateSectionObj(data.data.claims[0], "claim");
 
-console.log(JSON.stringify(data.data.claims[0],null,4));
+console.log(JSON.stringify(data,null,4));
 
 console.log(data.meta.sections);
 console.log("---");

@@ -257,7 +257,8 @@
                         "$ref": "#/properties/cda_phone"
                     }
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "cda_performer": {
             "type": "object",
@@ -302,7 +303,8 @@
                 "code": {
                     "ref": "#/properties/cda_coded_entry"
                 }
-            }
+            },
+            "additionalProperties": false
         }
     }
 }

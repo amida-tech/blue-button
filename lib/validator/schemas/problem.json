@@ -17,10 +17,17 @@
                 "name": {
                     "type": "string"
                 },
+                "code": {
+                    "type": "string"
+                },
+                "code_system_name": {
+                    "type": "string"
+                },
                 "date_time": {
                     "$ref": "http://local.com/common_models#/properties/cda_date"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "negation_indicator": {
             "type": "boolean"

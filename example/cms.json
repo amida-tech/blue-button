@@ -1,0 +1,1762 @@
+{ type: 'cms', version: '2.0' }
+{
+    "data": {
+        "demographics": {
+            "name": {
+                "first": "JOHN",
+                "last": "DOE"
+            },
+            "dob": {
+                "point": {
+                    "date": "1910-01-01T00:00:00.000Z",
+                    "precision": "day"
+                }
+            },
+            "email": [
+                {
+                    "address": "JOHNDOE@example.com",
+                    "type": ""
+                }
+            ],
+            "phone": [
+                {
+                    "number": "123-456-7890",
+                    "type": "primary home"
+                }
+            ],
+            "addresses": [
+                {
+                    "use": "primary home",
+                    "street_lines": [
+                        "123 ANY ROAD"
+                    ],
+                    "city": "ANYTOWN",
+                    "state": "VA",
+                    "zip": "00001",
+                    "country": "United States"
+                }
+            ]
+        },
+        "vitals": [
+            {
+                "vital": {
+                    "code": "8480-6",
+                    "name": "Intravascular Systolic",
+                    "code_system_name": "LOINC"
+                },
+                "date_time": {
+                    "point": {
+                        "date": "2011-07-22T15:00:00.000Z",
+                        "precision": "hour"
+                    }
+                },
+                "value": 120,
+                "unit": "mm[Hg]",
+                "status": "completed"
+            },
+            {
+                "vital": {
+                    "code": "8462-4",
+                    "name": "Intravascular Diastolic",
+                    "code_system_name": "LOINC"
+                },
+                "date_time": {
+                    "point": {
+                        "date": "2011-07-22T15:00:00.000Z",
+                        "precision": "hour"
+                    }
+                },
+                "value": 80,
+                "unit": "mm[Hg]",
+                "status": "completed"
+            },
+            {
+                "vital": {
+                    "name": "Glucose"
+                },
+                "date_time": {
+                    "point": {
+                        "date": "2012-03-20T12:00:00.000Z",
+                        "precision": "hour"
+                    }
+                },
+                "value": 110,
+                "unit": "mg/dL",
+                "status": "completed"
+            }
+        ],
+        "results": [
+            {
+                "result_set": {
+                    "name": "Glucose Level"
+                },
+                "results": [
+                    {
+                        "date_time": {
+                            "point": {
+                                "date": "2008-03-21T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "result": {
+                            "name": "FBS"
+                        },
+                        "status": "completed",
+                        "value": 135,
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date_time": {
+                            "point": {
+                                "date": "2008-03-21T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "result": {
+                            "name": "RBS"
+                        },
+                        "status": "completed",
+                        "value": 170,
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date_time": {
+                            "point": {
+                                "date": "2008-03-21T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "result": {
+                            "name": "RBS"
+                        },
+                        "status": "completed",
+                        "value": 150,
+                        "unit": "mg/dL"
+                    },
+                    {
+                        "date_time": {
+                            "point": {
+                                "date": "2008-03-21T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "result": {
+                            "name": "RBS"
+                        },
+                        "status": "completed",
+                        "value": 120,
+                        "unit": "mg/dL"
+                    }
+                ]
+            }
+        ],
+        "medications": [
+            {
+                "date_time": {},
+                "product": {
+                    "product": {
+                        "name": "Aspirin"
+                    },
+                    "unencoded_name": "Aspirin"
+                },
+                "sig": "Aspirin",
+                "status": "Completed"
+            },
+            {
+                "date_time": {
+                    "point": {
+                        "date": "1949-09-28T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "product": {
+                    "product": {
+                        "name": "Erythromycin"
+                    },
+                    "unencoded_name": "Erythromycin"
+                },
+                "sig": "Erythromycin",
+                "status": "Completed"
+            }
+        ],
+        "allergies": [
+            {
+                "allergen": {
+                    "name": "Antibotic"
+                },
+                "date_time": {
+                    "low": {
+                        "date": "1926-01-08T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "1955-03-13T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Vomiting"
+                        },
+                        "severity": {
+                            "code": "24484000",
+                            "name": "Severe",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            },
+            {
+                "allergen": {
+                    "name": "Grasses"
+                },
+                "date_time": {
+                    "low": {
+                        "date": "1973-05-13T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "1996-07-20T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "reaction": [
+                    {
+                        "reaction": {
+                            "name": "Sneezing"
+                        },
+                        "severity": {
+                            "code": "24484000",
+                            "name": "Severe",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    }
+                ]
+            }
+        ],
+        "immunizations": [
+            {
+                "status": "complete",
+                "administration": {
+                    "route": {
+                        "name": "Nasal Spray(mist)"
+                    }
+                },
+                "product": {
+                    "product": {
+                        "name": "Varicella/Chicken Pox"
+                    }
+                },
+                "date_time": {
+                    "point": {
+                        "date": "2002-04-21T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "status": "complete",
+                "administration": {
+                    "route": {
+                        "name": "Nasal Spray(mist)"
+                    }
+                },
+                "product": {
+                    "product": {
+                        "name": "Varicella/Chicken Pox (booster 1)"
+                    }
+                },
+                "date_time": {
+                    "point": {
+                        "date": "1990-02-02T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "status": "complete",
+                "administration": {
+                    "route": {
+                        "name": "Injection"
+                    }
+                },
+                "product": {
+                    "product": {
+                        "name": "typhoid"
+                    }
+                },
+                "date_time": {
+                    "point": {
+                        "date": "2009-01-02T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            }
+        ],
+        "problems": [
+            {
+                "problem": {
+                    "name": "Arthritis"
+                },
+                "date_time": {
+                    "low": {
+                        "date": "2005-08-09T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2011-02-28T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "problem": {
+                    "name": "Asthma"
+                },
+                "date_time": {
+                    "low": {
+                        "date": "2008-01-25T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2010-01-25T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            }
+        ],
+        "insurance": [
+            {
+                "plan_id": {
+                    "identifier": "H9999/9999"
+                },
+                "payer_name": "HealthCare Payer",
+                "type": [
+                    "medicare",
+                    "A Medicare Plan Plus (HMO)",
+                    "3 - Coordinated Care Plan (HMO, PPO, PSO, SNP)"
+                ],
+                "addresses": [
+                    {
+                        "use": "primary home",
+                        "street_lines": [
+                            "123 Any Road"
+                        ],
+                        "city": "Anytown",
+                        "state": "PA",
+                        "zip": "00003",
+                        "country": "United States"
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2011-09-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan_id": {
+                    "identifier": "S9999/000"
+                },
+                "payer_name": "Another HealthCare Payer",
+                "type": [
+                    "medicare",
+                    "A Medicare Rx Plan (PDP)",
+                    "11 - Medicare Prescription Drug Plan"
+                ],
+                "addresses": [
+                    {
+                        "use": "primary home",
+                        "street_lines": [
+                            "123 Any Road"
+                        ],
+                        "city": "Anytown",
+                        "state": "PA",
+                        "zip": "00003",
+                        "country": "United States"
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2010-01-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan_name": "STATE HEALTH BENEFITS PROGRAM",
+                "type": [
+                    "employer subsidy"
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2011-01-01T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2011-12-31T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "policy_number": "1234567890",
+                "payer_name": "Insurer1",
+                "date_time": {
+                    "low": {
+                        "date": "2011-01-01T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2011-09-30T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "type": [
+                    "medicare msp:End stage Renal Disease (ESRD)"
+                ],
+                "addresses": [
+                    {
+                        "use": "primary home",
+                        "street_lines": [
+                            "PO BOX 0000"
+                        ],
+                        "city": "Anytown",
+                        "state": "CO",
+                        "zip": "00002-0000",
+                        "country": "United States"
+                    }
+                ]
+            },
+            {
+                "policy_number": "12345678901",
+                "payer_name": "Insurer2",
+                "date_time": {
+                    "low": {
+                        "date": "2010-01-01T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2010-12-31T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "type": [
+                    "medicare msp:End stage Renal Disease (ESRD)"
+                ],
+                "addresses": [
+                    {
+                        "use": "primary home",
+                        "street_lines": [
+                            "0000 Any ROAD"
+                        ],
+                        "city": "ANYWHERE",
+                        "state": "VA",
+                        "zip": "00000-0000",
+                        "country": "United States"
+                    }
+                ]
+            },
+            {
+                "policy_number": "00001",
+                "payer_name": "Insurer",
+                "date_time": {
+                    "low": {
+                        "date": "1984-10-01T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2008-11-30T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "addresses": [
+                    {
+                        "use": "primary home",
+                        "street_lines": [
+                            "00 Address STREET"
+                        ],
+                        "city": "ANYWHERE",
+                        "state": "PA",
+                        "zip": "00000",
+                        "country": "United States"
+                    }
+                ]
+            }
+        ],
+        "claims": [
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "1234567890000",
+                "date_time": {
+                    "low": {
+                        "date": "2012-10-18T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-10-18T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "lines": [
+                    {
+                        "line": "1",
+                        "date_time": {
+                            "low": {
+                                "date": "2012-10-18T00:00:00.000Z",
+                                "precision": "day"
+                            },
+                            "high": {
+                                "date": "2012-10-18T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "procedure": {
+                            "code": "98941",
+                            "description": "Chiropractic Manipulative Treatment (Cmt); Spinal, Three To Four Regions"
+                        },
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
+                        "modifier": [
+                            {
+                                "code": "AT",
+                                "description": "Acute Treatment (This Modifier Should Be Used When Reporting Service 98940, 98941, 98942)"
+                            }
+                        ],
+                        "charges": {
+                            "price_billed": "$60.00",
+                            "insurance_paid": "$34.00",
+                            "patient_responsibility": "$26.00"
+                        },
+                        "place_of_service": {
+                            "code": "11",
+                            "name": "Office"
+                        },
+                        "type": {
+                            "code": "1",
+                            "name": "Medical Care"
+                        },
+                        "performer": [
+                            {
+                                "type": "rendering provider",
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.4.6",
+                                        "extension": "123456789"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "charges": {
+                    "price_billed": "$60.00",
+                    "insurance_paid": "$34.00",
+                    "provider_paid": "$27.20",
+                    "patient_responsibility": "$6.80"
+                },
+                "type": [
+                    "medicare PartB"
+                ],
+                "diagnosis": [
+                    {
+                        "code": "3534"
+                    },
+                    {
+                        "code": "7393"
+                    },
+                    {
+                        "code": "7392"
+                    },
+                    {
+                        "code": "3533"
+                    }
+                ]
+            },
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "12345678900000VAA",
+                "date_time": {
+                    "low": {
+                        "date": "2012-09-22T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "lines": [
+                    {
+                        "line": "1",
+                        "date_time": {
+                            "low": {
+                                "date": "2012-09-22T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "revenue": {
+                            "code": "0250",
+                            "description": "General Classification PHARMACY"
+                        },
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
+                        "charges": {
+                            "price_billed": "$14.30",
+                            "insurance_paid": "$14.30",
+                            "patient_responsibility": "$0.00"
+                        }
+                    },
+                    {
+                        "line": "2",
+                        "date_time": {
+                            "low": {
+                                "date": "2012-09-22T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "revenue": {
+                            "code": "0320",
+                            "description": "General Classification DX X"
+                        },
+                        "procedure": {
+                            "code": "74020",
+                            "description": "Radiologic Examination, Abdomen; Complete, Including Decubitus And/Or Erect Views"
+                        },
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
+                        "charges": {
+                            "price_billed": "$175.50",
+                            "insurance_paid": "$175.50",
+                            "patient_responsibility": "$0.00"
+                        }
+                    },
+                    {
+                        "line": "3",
+                        "date_time": {
+                            "low": {
+                                "date": "2012-09-22T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "revenue": {
+                            "code": "0450",
+                            "description": "General Classification EMERG ROOM"
+                        },
+                        "procedure": {
+                            "code": "99283",
+                            "description": "Emergency Department Visit For The Evaluation And Management Of A Patient, Which Requires Th"
+                        },
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
+                        "modifier": [
+                            {
+                                "code": "25",
+                                "description": "Significant, Separately Identifiable Evaluation And Management Service By The Same Physician On"
+                            }
+                        ],
+                        "charges": {
+                            "price_billed": "$315.00",
+                            "insurance_paid": "$315.00",
+                            "patient_responsibility": "$0.00"
+                        }
+                    },
+                    {
+                        "line": "4",
+                        "revenue": {
+                            "code": "0001",
+                            "description": "Total Charges"
+                        },
+                        "quantity": {
+                            "value": 0,
+                            "unit": "line"
+                        },
+                        "charges": {
+                            "price_billed": "$504.80",
+                            "insurance_paid": "$504.80",
+                            "patient_responsibility": "$0.00"
+                        }
+                    }
+                ],
+                "charges": {
+                    "price_billed": "$504.80",
+                    "insurance_paid": "$504.80",
+                    "provider_paid": "$126.31",
+                    "patient_responsibility": "$38.84"
+                },
+                "type": [
+                    "medicare Outpatient"
+                ],
+                "diagnosis": [
+                    {
+                        "code": "56400"
+                    },
+                    {
+                        "code": "7245"
+                    },
+                    {
+                        "code": "V1588"
+                    }
+                ]
+            },
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "1234567890123",
+                "lines": [
+                    {
+                        "line": "1",
+                        "date_time": {
+                            "low": {
+                                "date": "2012-12-01T00:00:00.000Z",
+                                "precision": "day"
+                            },
+                            "high": {
+                                "date": "2012-12-01T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "procedure": {
+                            "code": "98941",
+                            "description": "Chiropractic Manipulative Treatment, 3 To 4 Spinal Regions"
+                        },
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
+                        "modifier": [
+                            {
+                                "code": "GA",
+                                "description": "Waiver Of Liability Statement Issued As Required By Payer Policy, Individual Case"
+                            }
+                        ],
+                        "place_of_service": {
+                            "code": "11",
+                            "name": "Office"
+                        },
+                        "type": {
+                            "code": "1",
+                            "name": "Medical Care"
+                        },
+                        "performer": [
+                            {
+                                "type": "rendering provider",
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.4.6",
+                                        "extension": "123456789"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "line": "2",
+                        "date_time": {
+                            "low": {
+                                "date": "2012-12-01T00:00:00.000Z",
+                                "precision": "day"
+                            },
+                            "high": {
+                                "date": "2012-12-01T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "procedure": {
+                            "code": "G0283",
+                            "description": "Electrical Stimulation (Unattended), To One Or More Areas For Indication(S) Other Than Wound"
+                        },
+                        "quantity": {
+                            "value": 1,
+                            "unit": "line"
+                        },
+                        "modifier": [
+                            {
+                                "code": "GY",
+                                "description": "Item Or Service Statutorily Excluded, Does Not Meet The Definition Of Any Medicare Benefit Or,"
+                            }
+                        ],
+                        "place_of_service": {
+                            "code": "11",
+                            "name": "Office"
+                        },
+                        "type": {
+                            "code": "1",
+                            "name": "Medical Care"
+                        },
+                        "performer": [
+                            {
+                                "type": "rendering provider",
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.4.6",
+                                        "extension": "123456789"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "date_time": {
+                    "low": {
+                        "date": "2012-12-01T00:00:00.000Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-12-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "123456789012",
+                "date_time": {
+                    "point": {
+                        "date": "2011-11-17T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "type": [
+                    "medicare Part D"
+                ],
+                "lines": [
+                    {
+                        "date_time": {
+                            "point": {
+                                "date": "2011-11-17T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "drug": {
+                            "code": "00093013505",
+                            "name": "CARVEDILOL"
+                        },
+                        "performer": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.4.6",
+                                        "extension": "123456789"
+                                    }
+                                ],
+                                "type": "prescriber",
+                                "name": [
+                                    {
+                                        "first": "Jane",
+                                        "last": "Doe"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "pharmacy",
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.4.6",
+                                        "extension": "123456789"
+                                    }
+                                ],
+                                "name": [
+                                    "PHARMACY2 #00000"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "performer": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "123456789"
+                            }
+                        ],
+                        "type": "prescriber",
+                        "name": [
+                            {
+                                "first": "Jane",
+                                "last": "Doe"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "pharmacy",
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "123456789"
+                            }
+                        ],
+                        "name": [
+                            "PHARMACY2 #00000"
+                        ]
+                    }
+                ]
+            },
+            {
+                "payer": [
+                    "medicare"
+                ],
+                "number": "123456789011",
+                "date_time": {
+                    "point": {
+                        "date": "2011-11-23T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                },
+                "type": [
+                    "medicare Part D"
+                ],
+                "lines": [
+                    {
+                        "date_time": {
+                            "point": {
+                                "date": "2011-11-23T00:00:00.000Z",
+                                "precision": "day"
+                            }
+                        },
+                        "drug": {
+                            "code": "00781223310",
+                            "name": "OMEPRAZOLE"
+                        },
+                        "performer": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.4.6",
+                                        "extension": "123456789"
+                                    }
+                                ],
+                                "type": "prescriber",
+                                "name": [
+                                    {
+                                        "first": "Jane",
+                                        "last": "Doe"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "pharmacy",
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.4.6",
+                                        "extension": "1234567890"
+                                    }
+                                ],
+                                "name": [
+                                    "PHARMACY3 #00000"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "performer": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "123456789"
+                            }
+                        ],
+                        "type": "prescriber",
+                        "name": [
+                            {
+                                "first": "Jane",
+                                "last": "Doe"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "pharmacy",
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "1234567890"
+                            }
+                        ],
+                        "name": [
+                            "PHARMACY3 #00000"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "plan_of_care": [
+            {
+                "plan": {
+                    "name": "DIABETES"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2011-10-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan": {
+                    "name": "PAP TEST DR"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2011-10-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan": {
+                    "name": "ABDOMINAL AORTIC ANEURYSM"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2012-07-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan": {
+                    "name": "ANNUAL WELLNESS VISIT"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2013-01-01T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            },
+            {
+                "plan": {
+                    "name": "DEPRESSION SCREENING"
+                },
+                "type": "medicare",
+                "date_time": {
+                    "low": {
+                        "date": "2012-10-14T00:00:00.000Z",
+                        "precision": "day"
+                    }
+                }
+            }
+        ],
+        "providers": [
+            {
+                "type": "organization",
+                "name": "ANY CARE",
+                "address": {
+                    "use": "primary home",
+                    "street_lines": [
+                        "123 Any Rd"
+                    ],
+                    "city": "Anywhere",
+                    "state": "MD",
+                    "zip": "99999",
+                    "country": "United States"
+                },
+                "role": {
+                    "name": "NHC"
+                }
+            },
+            {
+                "type": "person",
+                "address": {
+                    "use": "primary home",
+                    "street_lines": [
+                        "123 Road"
+                    ],
+                    "city": "Anywhere",
+                    "state": "VA",
+                    "zip": "00001",
+                    "country": "United States"
+                },
+                "role": {
+                    "name": "PHY"
+                },
+                "person": {
+                    "name": {
+                        "first": "Jane",
+                        "last": "Doe"
+                    }
+                }
+            }
+        ]
+    },
+    "meta": {
+        "type": "cms",
+        "version": "2.0",
+        "timestamp": {
+            "date": "2013-03-16T05:10:00.000Z",
+            "precision": "minute"
+        },
+        "sections": [
+            "demographics",
+            "vitals",
+            "results",
+            "medications",
+            "allergies",
+            "immunizations",
+            "problems",
+            "insurance",
+            "claims",
+            "plan_of_care",
+            "providers"
+        ]
+    },
+    "interim": {
+        "meta": {
+            "data": [
+                {
+                    "type": "cms",
+                    "version": "2.0",
+                    "timestamp": {
+                        "date": "2013-03-16T05:10:00.000Z",
+                        "precision": "minute"
+                    },
+                    "sections": [
+                        "demographics",
+                        "vitals",
+                        "results",
+                        "medications",
+                        "allergies",
+                        "immunizations",
+                        "problems",
+                        "insurance",
+                        "claims",
+                        "plan_of_care",
+                        "providers"
+                    ]
+                }
+            ]
+        },
+        "demographic": {
+            "source": "MyMedicare.gov",
+            "data": [
+                {
+                    "name": "JOHN DOE",
+                    "date of birth": "01/01/1910",
+                    "address line 1": "123 ANY ROAD",
+                    "address line 2": "",
+                    "city": "ANYTOWN",
+                    "state": "VA",
+                    "zip": "00001",
+                    "phone number": "123-456-7890",
+                    "email": "JOHNDOE@example.com",
+                    "part a effective date": "01/01/2012",
+                    "part b effective date": "01/01/2012"
+                }
+            ]
+        },
+        "emergency contact": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "contact name": "JANE DOE",
+                    "address type": "Home",
+                    "address line 1": "123 AnyWhere St",
+                    "address line 2": "",
+                    "city": "AnyWhere",
+                    "state": "DC",
+                    "zip": "00002-1111",
+                    "relationship": "Other",
+                    "home phone": "123-456-7890",
+                    "work phone": "000-001-0001",
+                    "mobile phone": "000-001-0002",
+                    "email address": "JANEDOE@example.com"
+                },
+                {
+                    "contact name": "STEVE DOE",
+                    "address type": "",
+                    "address line 1": "123 AnyWhere Rd",
+                    "address line 2": "",
+                    "city": "AnyWhere",
+                    "state": "VA",
+                    "zip": "00001",
+                    "relationship": "Other",
+                    "home phone": "123-456-7890",
+                    "work phone": "000-001-0001",
+                    "mobile phone": "000-001-0002",
+                    "email address": "STEVEDOE@example.com"
+                }
+            ]
+        },
+        "self reported medical conditions": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "condition name": "Arthritis",
+                    "medical condition start date": "08/09/2005",
+                    "medical condition end date": "02/28/2011"
+                },
+                {
+                    "condition name": "Asthma",
+                    "medical condition start date": "01/25/2008",
+                    "medical condition end date": "01/25/2010"
+                }
+            ]
+        },
+        "self reported allergies": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "allergy name": "Antibotic",
+                    "type": "Drugs",
+                    "diagnosed": "Yes",
+                    "treatment": "Allergy Shots",
+                    "first episode date": "01/08/1926",
+                    "last episode date": "03/13/1955",
+                    "last treatment date": "09/28/1949",
+                    "comments": "Erythromycin"
+                },
+                null
+            ]
+        },
+        "self reported implantable device": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "device name": "Artificial Eye Lenses",
+                    "date implanted": "1/27/1942"
+                }
+            ]
+        },
+        "self reported immunizations": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "immunization name": "Varicella/Chicken Pox",
+                    "date administered": "04/21/2002",
+                    "method": "Nasal Spray(mist)",
+                    "were you vaccinated in the us": "",
+                    "comments": "congestion",
+                    "booster 1 date": "02/02/1990",
+                    "booster 2 date": "",
+                    "booster 3 date": ""
+                },
+                {
+                    "immunization name": "typhoid",
+                    "date administered": "01/02/2009",
+                    "method": "Injection",
+                    "were you vaccinated in the us": "",
+                    "comments": "",
+                    "booster 1 date": "",
+                    "booster 2 date": "",
+                    "booster 3 date": ""
+                }
+            ]
+        },
+        "self reported labs and tests": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "test/lab type": "Glucose Level",
+                    "date taken": "03/21/2008",
+                    "administered by": "AnyLab",
+                    "requesting doctor": "Dr. Smith",
+                    "reason test/lab requested": "Ongoing elevated glucose",
+                    "results": "135, 170, 150, 120",
+                    "comments": "Fasting, hour 1, hour 2, hour 3"
+                }
+            ]
+        },
+        "self reported vital statistics": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "vital statistic type": "Blood Pressure",
+                    "date": "07/22/2011",
+                    "time": "3:00 PM",
+                    "reading": "120/80",
+                    "comments": ""
+                },
+                {
+                    "vital statistic type": "Glucose",
+                    "date": "03/20/2012",
+                    "time": "12:00 PM",
+                    "reading": "110",
+                    "comments": ""
+                }
+            ]
+        },
+        "family medical history": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "family member": "Brother",
+                    "type": "",
+                    "dob": "1/10/1915",
+                    "dod": "",
+                    "age": "",
+                    "type 1": "Allergy",
+                    "description": "Antiarrythmia",
+                    "description 1": "Antibiotic",
+                    "description 2": "Anticonvulsants",
+                    "type 2": "Condition",
+                    "description 3": "Allergies",
+                    "description 4": "Alzheimer's Disease",
+                    "description 5": "Angina (Heart Pain)",
+                    "description 6": "Cataracts"
+                }
+            ]
+        },
+        "drugs": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "drug name": "Aspirin",
+                    "supply": "Dialy",
+                    "orig drug entry": "Aspirin"
+                }
+            ]
+        },
+        "preventive services": {
+            "source": "MyMedicare.gov",
+            "data": [
+                {
+                    "description": "DIABETES",
+                    "next eligible date": "10/1/2011",
+                    "last date of service": ""
+                },
+                {
+                    "description": "PAP TEST DR",
+                    "next eligible date": "10/1/2011",
+                    "last date of service": ""
+                },
+                {
+                    "description": "ABDOMINAL AORTIC ANEURYSM",
+                    "next eligible date": "7/1/2012",
+                    "last date of service": ""
+                },
+                {
+                    "description": "ANNUAL WELLNESS VISIT",
+                    "next eligible date": "1/1/2013",
+                    "last date of service": ""
+                },
+                {
+                    "description": "DEPRESSION SCREENING",
+                    "next eligible date": "10/14/2012",
+                    "last date of service": ""
+                }
+            ]
+        },
+        "providers": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "provider name": "ANY CARE",
+                    "provider address": "123 Any Rd, Anywhere, MD 99999",
+                    "type": "NHC",
+                    "specialty": "",
+                    "medicare provider": "Not Available"
+                },
+                {
+                    "provider name": "ANY HOSPITAL1",
+                    "provider address": "123 Drive, Anywhere, VA 00001",
+                    "type": "HOS",
+                    "specialty": "",
+                    "medicare provider": "Not Available",
+                    "provider name 1": "Jane Doe",
+                    "provider address 1": "123 Road, Anywhere, VA 00001",
+                    "type 1": "PHY",
+                    "specialty 1": "Other",
+                    "medicare provider 1": "Not Available"
+                }
+            ]
+        },
+        "pharmacies": {
+            "source": "Self-Entered",
+            "data": [
+                {
+                    "pharmacy name": "PHARMACY, EAST STREET ANYWHERE, DC 00002",
+                    "pharmacy phone": "000-000-0001"
+                },
+                {
+                    "pharmacy name": "ANY PHARMACY, WEST STREET ANYWHERE, VA 00001",
+                    "pharmacy phone": "000-000-0002"
+                }
+            ]
+        },
+        "plans": {
+            "source": "MyMedicare.gov",
+            "data": [
+                {
+                    "contract id/plan id": "H9999/9999",
+                    "plan period": "09/01/2011 - current",
+                    "plan name": "A Medicare Plan Plus (HMO)",
+                    "marketing name": "HealthCare Payer",
+                    "plan address": "123 Any Road Anytown PA 00003",
+                    "plan type": "3 - Coordinated Care Plan (HMO, PPO, PSO, SNP)"
+                },
+                {
+                    "contract id/plan id": "S9999/000",
+                    "plan period": "01/01/2010 - current",
+                    "plan name": "A Medicare Rx Plan (PDP)",
+                    "marketing name": "Another HealthCare Payer",
+                    "plan address": "123 Any Road Anytown PA 00003",
+                    "plan type": "11 - Medicare Prescription Drug Plan"
+                }
+            ]
+        },
+        "employer subsidy": {
+            "source": "MyMedicare.gov",
+            "data": [
+                {
+                    "employer plan": "STATE HEALTH BENEFITS PROGRAM",
+                    "employer subsidy start date": "01/01/2011",
+                    "employer subsidy end date": "12/31/2011"
+                }
+            ]
+        },
+        "primary insurance": {
+            "source": "MyMedicare.gov",
+            "data": [
+                {
+                    "msp type": "End stage Renal Disease (ESRD)",
+                    "policy number": "1234567890",
+                    "insurer name": "Insurer1",
+                    "insurer address": "PO BOX 0000 Anytown, CO 00002-0000",
+                    "effective date": "01/01/2011",
+                    "termination date": "09/30/2011"
+                },
+                {
+                    "msp type": "End stage Renal Disease (ESRD)",
+                    "policy number": "12345678901",
+                    "insurer name": "Insurer2",
+                    "insurer address": "0000 Any ROAD ANYWHERE, VA 00000-0000",
+                    "effective date": "01/01/2010",
+                    "termination date": "12/31/2010"
+                }
+            ]
+        },
+        "other insurance": {
+            "source": "MyMedicare.gov",
+            "data": [
+                {
+                    "msp type": "",
+                    "policy number": "00001",
+                    "insurer name": "Insurer",
+                    "insurer address": "00 Address STREET ANYWHERE, PA 00000",
+                    "effective date": "10/01/1984",
+                    "termination date": "11/30/2008"
+                }
+            ]
+        },
+        "claim summary": {
+            "source": "MyMedicare.gov",
+            "data": [
+                {
+                    "claim number": "1234567890000",
+                    "provider": "No Information Available",
+                    "provider billing address": null,
+                    "service start date": "10/18/2012",
+                    "service end date": null,
+                    "amount charged": "$60.00",
+                    "medicare approved": "$34.00",
+                    "provider paid": "$27.20",
+                    "you may be billed": "$6.80",
+                    "claim type": "PartB",
+                    "diagnosis code 1": "3534",
+                    "diagnosis code 2": "7393",
+                    "diagnosis code 3": "7392",
+                    "diagnosis code 4": "3533",
+                    "claimLines": [
+                        {
+                            "line number": "1",
+                            "date of service from": "10/18/2012",
+                            "date of service to": "10/18/2012",
+                            "procedure code/description": "98941 - Chiropractic Manipulative Treatment (Cmt); Spinal, Three To Four Regions",
+                            "modifier 1/description": "AT - Acute Treatment (This Modifier Should Be Used When Reporting Service 98940, 98941, 98942)",
+                            "modifier 2/description": null,
+                            "modifier 3/description": null,
+                            "modifier 4/description": null,
+                            "quantity billed/units": "1",
+                            "submitted amount/charges": "$60.00",
+                            "allowed amount": "$34.00",
+                            "noncovered": "$26.00",
+                            "place of service/description": "11 - Office",
+                            "type of service/description": "1 - Medical Care",
+                            "rendering provider no": "0000001",
+                            "rendering provider npi": "123456789"
+                        }
+                    ]
+                },
+                {
+                    "claim number": "12345678900000VAA",
+                    "provider": "No Information Available",
+                    "provider billing address": null,
+                    "service start date": "09/22/2012",
+                    "service end date": null,
+                    "amount charged": "$504.80",
+                    "medicare approved": "$504.80",
+                    "provider paid": "$126.31",
+                    "you may be billed": "$38.84",
+                    "claim type": "Outpatient",
+                    "diagnosis code 1": "56400",
+                    "diagnosis code 2": "7245",
+                    "diagnosis code 3": "V1588",
+                    "claimLines": [
+                        {
+                            "line number": "1",
+                            "date of service from": "09/22/2012",
+                            "revenue code/description": "0250 - General Classification PHARMACY",
+                            "procedure code/description": null,
+                            "modifier 1/description": null,
+                            "modifier 2/description": null,
+                            "modifier 3/description": null,
+                            "modifier 4/description": null,
+                            "quantity billed/units": "1",
+                            "submitted amount/charges": "$14.30",
+                            "allowed amount": "$14.30",
+                            "noncovered": "$0.00"
+                        },
+                        {
+                            "line number": "2",
+                            "date of service from": "09/22/2012",
+                            "revenue code/description": "0320 - General Classification DX X-RAY",
+                            "procedure code/description": "74020 - Radiologic Examination, Abdomen; Complete, Including Decubitus And/Or Erect Views",
+                            "modifier 1/description": null,
+                            "modifier 2/description": null,
+                            "modifier 3/description": null,
+                            "modifier 4/description": null,
+                            "quantity billed/units": "1",
+                            "submitted amount/charges": "$175.50",
+                            "allowed amount": "$175.50",
+                            "noncovered": "$0.00"
+                        },
+                        {
+                            "line number": "3",
+                            "date of service from": "09/22/2012",
+                            "revenue code/description": "0450 - General Classification EMERG ROOM",
+                            "procedure code/description": "99283 - Emergency Department Visit For The Evaluation And Management Of A Patient, Which Requires Th",
+                            "modifier 1/description": "25 - Significant, Separately Identifiable Evaluation And Management Service By The Same Physician On",
+                            "modifier 2/description": null,
+                            "modifier 3/description": null,
+                            "modifier 4/description": null,
+                            "quantity billed/units": "1",
+                            "submitted amount/charges": "$315.00",
+                            "allowed amount": "$315.00",
+                            "noncovered": "$0.00"
+                        },
+                        {
+                            "line number": "4",
+                            "date of service from": null,
+                            "revenue code/description": "0001 - Total Charges",
+                            "procedure code/description": null,
+                            "modifier 1/description": null,
+                            "modifier 2/description": null,
+                            "modifier 3/description": null,
+                            "modifier 4/description": null,
+                            "quantity billed/units": "0",
+                            "submitted amount/charges": "$504.80",
+                            "allowed amount": "$504.80",
+                            "noncovered": "$0.00",
+                            "claim number": "1234567890123",
+                            "provider": "No Information Available",
+                            "provider billing address": null,
+                            "service start date": "12/01/2012",
+                            "service end date": null,
+                            "amount charged": "* Not Available *",
+                            "medicare approved": "* Not Available *",
+                            "provider paid": "* Not Available *",
+                            "you may be billed": "* Not Available *",
+                            "claim type": "PartB",
+                            "diagnosis code 1": "7392",
+                            "diagnosis code 2": "7241",
+                            "diagnosis code 3": "7393",
+                            "diagnosis code 4": "7391"
+                        }
+                    ]
+                },
+                {
+                    "claim number": "1234567890123",
+                    "claimLines": [
+                        {
+                            "line number": "1",
+                            "date of service from": "12/01/2012",
+                            "date of service to": "12/01/2012",
+                            "procedure code/description": "98941 - Chiropractic Manipulative Treatment, 3 To 4 Spinal Regions",
+                            "modifier 1/description": "GA - Waiver Of Liability Statement Issued As Required By Payer Policy, Individual Case",
+                            "modifier 2/description": null,
+                            "modifier 3/description": null,
+                            "modifier 4/description": null,
+                            "quantity billed/units": "1",
+                            "submitted amount/charges": "* Not Available *",
+                            "allowed amount": "* Not Available *",
+                            "noncovered": "* Not Available *",
+                            "place of service/description": "11 - Office",
+                            "type of service/description": "1 - Medical Care",
+                            "rendering provider no": "123456",
+                            "rendering provider npi": "123456789"
+                        },
+                        {
+                            "line number": "2",
+                            "date of service from": "12/01/2012",
+                            "date of service to": "12/01/2012",
+                            "procedure code/description": "G0283 - Electrical Stimulation (Unattended), To One Or More Areas For Indication(S) Other Than Wound",
+                            "modifier 1/description": "GY - Item Or Service Statutorily Excluded, Does Not Meet The Definition Of Any Medicare Benefit Or,",
+                            "modifier 2/description": null,
+                            "modifier 3/description": null,
+                            "modifier 4/description": null,
+                            "quantity billed/units": "1",
+                            "submitted amount/charges": "* Not Available *",
+                            "allowed amount": "* Not Available *",
+                            "noncovered": "* Not Available *",
+                            "place of service/description": "11 - Office",
+                            "type of service/description": "1 - Medical Care",
+                            "rendering provider no": "123456",
+                            "rendering provider npi": "123456789"
+                        }
+                    ]
+                },
+                {
+                    "claim number": "123456789012",
+                    "claimLines": [
+                        {
+                            "claim type": "Part D",
+                            "claim number": "123456789012",
+                            "claim service date": "11/17/2011",
+                            "pharmacy / service provider": "123456789",
+                            "pharmacy name": "PHARMACY2 #00000",
+                            "drug code": "00093013505",
+                            "drug name": "CARVEDILOL",
+                            "fill number": "0",
+                            "days' supply": "30",
+                            "prescriber identifer": "123456789",
+                            "prescriber name": "Jane Doe"
+                        }
+                    ]
+                },
+                {
+                    "claim number": "123456789011",
+                    "claimLines": [
+                        {
+                            "claim type": "Part D",
+                            "claim number": "123456789011",
+                            "claim service date": "11/23/2011",
+                            "pharmacy / service provider": "1234567890",
+                            "pharmacy name": "PHARMACY3 #00000",
+                            "drug code": "00781223310",
+                            "drug name": "OMEPRAZOLE",
+                            "fill number": "4",
+                            "days' supply": "30",
+                            "prescriber identifer": "123456789",
+                            "prescriber name": "Jane Doe"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+[ 'demographics',
+  'vitals',
+  'results',
+  'medications',
+  'allergies',
+  'immunizations',
+  'problems',
+  'insurance',
+  'claims',
+  'plan_of_care',
+  'providers' ]
+---
+false
+{
+    "valid": false,
+    "errors": [
+        {
+            "code": "OBJECT_ADDITIONAL_PROPERTIES",
+            "message": "Additional properties not allowed",
+            "path": "#/data/claims/[0]/lines/[0]",
+            "params": {
+                "properties": [
+                    "line",
+                    "modifier",
+                    "type"
+                ]
+            }
+        },
+        {
+            "code": "OBJECT_ADDITIONAL_PROPERTIES",
+            "message": "Additional properties not allowed",
+            "path": "#/data/claims/[1]/lines/[0]",
+            "params": {
+                "properties": [
+                    "line"
+                ]
+            }
+        },
+        {
+            "code": "OBJECT_ADDITIONAL_PROPERTIES",
+            "message": "Additional properties not allowed",
+            "path": "#/data/claims/[1]/lines/[1]",
+            "params": {
+                "properties": [
+                    "line"
+                ]
+            }
+        },
+        {
+            "code": "OBJECT_ADDITIONAL_PROPERTIES",
+            "message": "Additional properties not allowed",
+            "path": "#/data/claims/[1]/lines/[2]",
+            "params": {
+                "properties": [
+                    "line",
+                    "modifier"
+                ]
+            }
+        },
+        {
+            "code": "OBJECT_ADDITIONAL_PROPERTIES",
+            "message": "Additional properties not allowed",
+            "path": "#/data/claims/[1]/lines/[3]",
+            "params": {
+                "properties": [
+                    "line"
+                ]
+            }
+        },
+        {
+            "code": "OBJECT_ADDITIONAL_PROPERTIES",
+            "message": "Additional properties not allowed",
+            "path": "#/data/claims/[2]/lines/[0]",
+            "params": {
+                "properties": [
+                    "line",
+                    "modifier",
+                    "type"
+                ]
+            }
+        },
+        {
+            "code": "OBJECT_ADDITIONAL_PROPERTIES",
+            "message": "Additional properties not allowed",
+            "path": "#/data/claims/[2]/lines/[1]",
+            "params": {
+                "properties": [
+                    "line",
+                    "modifier",
+                    "type"
+                ]
+            }
+        }
+    ],
+    "warnings": []
+}

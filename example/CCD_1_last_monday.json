@@ -17,14 +17,14 @@
             "gender": "Female",
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19.5.99999.2",
-                "extension": "998991"
+                "identifier_type": "998991"
             }, {
                 "identifier": "2.16.840.1.113883.4.1",
-                "extension": "111-00-2330"
+                "identifier_type": "111-00-2330"
             }],
             "marital_status": "Married",
             "addresses": [{
-                "street_lines": [
+                "streetLines": [
                     "1357 Amber Drive"
                 ],
                 "city": "Beaverton",
@@ -54,7 +54,7 @@
             "guardians": [{
                 "relation": "Parent",
                 "addresses": [{
-                    "street_lines": [
+                    "streetLines": [
                         "1357 Amber Drive"
                     ],
                     "city": "Beaverton",
@@ -225,9 +225,6 @@
                     }
                 },
                 "status": "completed",
-                "reference_range": {
-                    "range": "M 13-18 g/dl; F 12-16 g/dl"
-                },
                 "interpretations": [
                     "Normal"
                 ],
@@ -249,11 +246,6 @@
                     }
                 },
                 "status": "completed",
-                "reference_range": {
-                    "low": "4.3",
-                    "high": "10.8",
-                    "unit": "10+3/ul"
-                },
                 "interpretations": [
                     "Normal"
                 ],
@@ -275,11 +267,6 @@
                     }
                 },
                 "status": "completed",
-                "reference_range": {
-                    "low": "150",
-                    "high": "350",
-                    "unit": "10+3/ul"
-                },
                 "interpretations": [
                     "Low"
                 ],
@@ -302,12 +289,12 @@
                 "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
             }],
             "status": "Completed",
-            "sig": "Proventil HFA",
+            "sig": "Proventil HFA ",
             "product": {
                 "identifiers": [{
                     "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
                 }],
-                "unencoded_name": "Proventil HFA",
+                "unencoded_name": "Proventil HFA ",
                 "product": {
                     "name": "Proventil HFA",
                     "code": "219483",
@@ -317,8 +304,7 @@
                         "code_system_name": "RXNORM"
                     }],
                     "code_system_name": "RXNORM"
-                },
-                "manufacturer": "Medication Factory Inc."
+                }
             },
             "supply": {
                 "date_time": {
@@ -328,19 +314,7 @@
                     }
                 },
                 "repeatNumber": "1",
-                "quantity": "75",
-                "author": {
-                    "date_time": {},
-                    "identifiers": [{
-                        "identifier": "2a620155-9d11-439e-92b3-5d9815fe4de8"
-                    }],
-                    "name": {
-                        "prefix": "Dr.",
-                        "last": "Seven",
-                        "first": "Henry"
-                    }
-                },
-                "instructions": "label in spanish"
+                "quantity": "75"
             },
             "administration": {
                 "route": {
@@ -369,23 +343,6 @@
                     "frequency": true
                 }
             },
-            "performer": {
-                "organization": {
-                    "identifiers": [{
-                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                    }],
-                    "name": [
-                        "Community Health and Hospitals"
-                    ]
-                }
-            },
-            "drug_vehicle": {
-                "playingEntity": {
-                    "name": "Aerosol",
-                    "code": "324049",
-                    "code_system_name": "RXNORM"
-                }
-            },
             "precondition": {
                 "code": {
                     "code": "ASSERTION",
@@ -395,61 +352,6 @@
                     "name": "Wheezing",
                     "code": "56018004",
                     "code_system_name": "SNOMED CT"
-                }
-            },
-            "indication": {
-                "identifiers": [{
-                    "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
-                    "extension": "45665"
-                }],
-                "code": "404684003",
-                "date_time": {
-                    "low": {
-                        "date": "2007-01-03T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "value": {
-                    "name": "Pneumonia",
-                    "code": "233604007",
-                    "code_system_name": "SNOMED CT"
-                }
-            },
-            "instructions": {
-                "code": {
-                    "name": "instruction",
-                    "code": "409073007",
-                    "code_system_name": "SNOMED CT"
-                },
-                "freeText": "Proventil HFA"
-            },
-            "dispense": {
-                "identifiers": [{
-                    "identifier": "1.2.3.4.56789.1",
-                    "extension": "cb734647-fc99-424c-a864-7e3cda82e704"
-                }],
-                "performer": {
-                    "identifiers": [{
-                        "identifier": "2.16.840.1.113883.19.5.9999.456",
-                        "extension": "2981823"
-                    }],
-                    "address": {
-                        "street_lines": [
-                            "1001 Village Avenue"
-                        ],
-                        "city": "Portland",
-                        "state": "OR",
-                        "zip": "99123",
-                        "country": "US"
-                    },
-                    "organization": {
-                        "identifiers": [{
-                            "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                        }],
-                        "name": [
-                            "Community Health and Hospitals"
-                        ]
-                    }
                 }
             }
         }],
@@ -474,14 +376,9 @@
                 }
             },
             "performers": [{
-                "identifiers": [{
-                    "identifier": "PseduoMD-3"
-                }],
-                "code": [{
-                    "name": "General Physician",
-                    "code": "59058001",
-                    "code_system_name": "SNOMED CT"
-                }]
+                "name": "General Physician",
+                "code": "59058001",
+                "code_system_name": "SNOMED CT"
             }],
             "locations": [{
                 "name": "Community Urgent Care Center",
@@ -491,7 +388,7 @@
                     "code_system_name": "HealthcareServiceLocation"
                 },
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -501,16 +398,6 @@
                 }]
             }],
             "findings": [{
-                "identifiers": [{
-                    "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
-                    "extension": "45665"
-                }],
-                "date_time": {
-                    "low": {
-                        "date": "2007-01-03T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
                 "name": "Pneumonia",
                 "code": "233604007",
                 "code_system_name": "SNOMED CT"
@@ -531,45 +418,15 @@
                 "code": "314422",
                 "code_system_name": "RXNORM"
             },
-            "intolerance": {
-                "date_time": {
-                    "low": {
-                        "date": "2007-05-01T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "code": "419511003",
-                "name": "Propensity to adverse reactions to drug",
-                "code_system_name": "SNOMED CT",
-                "severity": {
-                    "code": "371924009",
-                    "name": "Moderate to severe"
-                }
-            },
-            "status": {
-                "code": "73425007",
-                "status": "Inactive"
-            },
+            "severity": "Moderate to severe",
+            "status": "Inactive",
             "reaction": [{
-                "date_time": {
-                    "low": {
-                        "date": "2007-05-01T00:00:00Z",
-                        "precision": "day"
-                    },
-                    "high": {
-                        "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
-                    }
-                },
                 "reaction": {
                     "name": "Nausea",
                     "code": "422587007",
                     "code_system_name": "SNOMED CT"
                 },
-                "severity": {
-                    "code": "255604002",
-                    "name": "Mild"
-                }
+                "severity": "Mild"
             }]
         }, {
             "date_time": {
@@ -586,45 +443,15 @@
                 "code": "2670",
                 "code_system_name": "RXNORM"
             },
-            "intolerance": {
-                "date_time": {
-                    "low": {
-                        "date": "2006-05-01T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "code": "419511003",
-                "name": "Propensity to adverse reactions to drug",
-                "code_system_name": "SNOMED CT",
-                "severity": {
-                    "code": "6736007",
-                    "name": "Moderate"
-                }
-            },
-            "status": {
-                "code": "55561003",
-                "status": "Active"
-            },
+            "severity": "Moderate",
+            "status": "Active",
             "reaction": [{
-                "date_time": {
-                    "low": {
-                        "date": "2006-05-01T00:00:00Z",
-                        "precision": "day"
-                    },
-                    "high": {
-                        "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
-                    }
-                },
                 "reaction": {
                     "name": "Wheezing",
                     "code": "56018004",
                     "code_system_name": "SNOMED CT"
                 },
-                "severity": {
-                    "code": "255604002",
-                    "name": "Mild"
-                }
+                "severity": "Mild"
             }]
         }, {
             "date_time": {
@@ -641,45 +468,15 @@
                 "code": "1191",
                 "code_system_name": "RXNORM"
             },
-            "intolerance": {
-                "date_time": {
-                    "low": {
-                        "date": "2008-05-01T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "code": "59037007",
-                "name": "Drug intolerance",
-                "code_system_name": "SNOMED CT",
-                "severity": {
-                    "code": "371923003",
-                    "name": "Mild to moderate"
-                }
-            },
-            "status": {
-                "code": "55561003",
-                "status": "Active"
-            },
+            "severity": "Mild to moderate",
+            "status": "Active",
             "reaction": [{
-                "date_time": {
-                    "low": {
-                        "date": "2008-05-01T00:00:00Z",
-                        "precision": "day"
-                    },
-                    "high": {
-                        "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
-                    }
-                },
                 "reaction": {
                     "name": "Hives",
                     "code": "247472004",
                     "code_system_name": "SNOMED CT"
                 },
-                "severity": {
-                    "code": "371923003",
-                    "name": "Mild to moderate"
-                }
+                "severity": "Mild to moderate"
             }]
         }],
         "immunizations": [{
@@ -721,14 +518,14 @@
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.9999.456",
-                    "extension": "2981824"
+                    "identifier_type": "2981824"
                 }],
                 "name": [{
                     "last": "Assigned",
                     "first": "Amanda"
                 }],
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "1021 Health Drive"
                     ],
                     "city": "Ann Arbor",
@@ -744,14 +541,6 @@
                         "Good Health Clinic"
                     ]
                 }]
-            },
-            "instructions": {
-                "code": {
-                    "name": "immunization education",
-                    "code": "171044003",
-                    "code_system_name": "SNOMED CT"
-                },
-                "freeText": "Possible flu-like symptoms for three days."
             }
         }, {
             "date_time": {
@@ -792,14 +581,14 @@
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.9999.456",
-                    "extension": "2981824"
+                    "identifier_type": "2981824"
                 }],
                 "name": [{
                     "last": "Assigned",
                     "first": "Amanda"
                 }],
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "1021 Health Drive"
                     ],
                     "city": "Ann Arbor",
@@ -815,14 +604,6 @@
                         "Good Health Clinic"
                     ]
                 }]
-            },
-            "instructions": {
-                "code": {
-                    "name": "immunization education",
-                    "code": "171044003",
-                    "code_system_name": "SNOMED CT"
-                },
-                "freeText": "Possible flu-like symptoms for three days."
             }
         }, {
             "date_time": {
@@ -863,14 +644,14 @@
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.9999.456",
-                    "extension": "2981824"
+                    "identifier_type": "2981824"
                 }],
                 "name": [{
                     "last": "Assigned",
                     "first": "Amanda"
                 }],
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "1021 Health Drive"
                     ],
                     "city": "Ann Arbor",
@@ -926,14 +707,14 @@
             "performer": {
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.9999.456",
-                    "extension": "2981824"
+                    "identifier_type": "2981824"
                 }],
                 "name": [{
                     "last": "Assigned",
                     "first": "Amanda"
                 }],
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "1021 Health Drive"
                     ],
                     "city": "Ann Arbor",
@@ -963,14 +744,18 @@
                     "date": "2009-02-27T13:00:00Z",
                     "precision": "subsecond"
                 }
-            },
-            "identifiers": [{
-                "identifier": "2.16.840.1.113883.19",
-                "extension": "123456789"
-            }],
-            "code": {
-                "code": "ASSERTION",
-                "code_system_name": "HL7ActCode"
+            }
+        }, {
+            "value": "Former smoker",
+            "date_time": {
+                "low": {
+                    "date": "2005-05-01T00:00:00Z",
+                    "precision": "day"
+                },
+                "high": {
+                    "date": "2009-02-27T13:00:00Z",
+                    "precision": "subsecond"
+                }
             }
         }, {
             "value": "Tobacco use and exposure",
@@ -983,16 +768,7 @@
                     "date": "2009-02-27T13:00:00Z",
                     "precision": "subsecond"
                 }
-            },
-            "identifiers": [{
-                "identifier": "9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"
-            }],
-            "code": {
-                "name": "Tobacco use and exposure",
-                "code": "229819007",
-                "code_system_name": "SNOMED CT"
-            },
-            "observation_value": "1 pack per day"
+            }
         }, {
             "value": "Tobacco use and exposure",
             "date_time": {
@@ -1000,16 +776,7 @@
                     "date": "2009-02-27T13:00:00Z",
                     "precision": "subsecond"
                 }
-            },
-            "identifiers": [{
-                "identifier": "45efb604-7049-4a2e-ad33-d38556c9636c"
-            }],
-            "code": {
-                "name": "Tobacco use and exposure",
-                "code": "229819007",
-                "code_system_name": "SNOMED CT"
-            },
-            "observation_value": "None"
+            }
         }, {
             "value": "Alcohol intake",
             "date_time": {
@@ -1017,16 +784,7 @@
                     "date": "2005-05-01T00:00:00Z",
                     "precision": "day"
                 }
-            },
-            "identifiers": [{
-                "identifier": "37f76c51-6411-4e1d-8a37-957fd49d2cef"
-            }],
-            "code": {
-                "name": "Alcohol consumption",
-                "code": "160573003",
-                "code_system_name": "SNOMED CT"
-            },
-            "observation_value": "None"
+            }
         }],
         "problems": [{
             "date_time": {
@@ -1046,33 +804,11 @@
             "problem": {
                 "name": "Pneumonia",
                 "code": "233604007",
-                "date_time": {
-                    "low": {
-                        "date": "2008-01-03T00:00:00Z",
-                        "precision": "day"
-                    },
-                    "high": {
-                        "date": "2008-01-03T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
                 "code_system_name": "SNOMED CT"
             },
             "onset_age": "57",
             "onset_age_unit": "Year",
-            "status": {
-                "name": "Resolved",
-                "date_time": {
-                    "low": {
-                        "date": "2008-01-03T00:00:00Z",
-                        "precision": "day"
-                    },
-                    "high": {
-                        "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
-                    }
-                }
-            },
+            "status": "Resolved",
             "patient_status": "Alive and well",
             "source_list_identifiers": [{
                 "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1084,7 +820,7 @@
                     "precision": "day"
                 },
                 "high": {
-                    "date": "2007-01-03T00:00:00Z",
+                    "date": "2008-01-03T00:00:00Z",
                     "precision": "day"
                 }
             },
@@ -1095,33 +831,11 @@
             "problem": {
                 "name": "Asthma",
                 "code": "195967001",
-                "date_time": {
-                    "low": {
-                        "date": "2007-01-03T00:00:00Z",
-                        "precision": "day"
-                    },
-                    "high": {
-                        "date": "2008-01-03T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
                 "code_system_name": "SNOMED CT"
             },
             "onset_age": "57",
             "onset_age_unit": "Year",
-            "status": {
-                "name": "Active",
-                "date_time": {
-                    "low": {
-                        "date": "2008-01-03T00:00:00Z",
-                        "precision": "day"
-                    },
-                    "high": {
-                        "date": "2009-02-27T13:00:00Z",
-                        "precision": "subsecond"
-                    }
-                }
-            },
+            "status": "Active",
             "patient_status": "Alive and well",
             "source_list_identifiers": [{
                 "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
@@ -1148,23 +862,13 @@
                 "code": "appropriate_code",
                 "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
             }],
-            "specimen": {
-                "identifiers": [{
-                    "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58683"
-                }],
-                "code": {
-                    "name": "colonic polyp sample",
-                    "code": "309226005",
-                    "code_system_name": "SNOMED CT"
-                }
-            },
             "performer": [{
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.9999.456",
-                    "extension": "2981823"
+                    "identifier_type": "2981823"
                 }],
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "1001 Village Avenue"
                     ],
                     "city": "Portland",
@@ -1184,7 +888,7 @@
                         "Community Health and Hospitals"
                     ],
                     "address": [{
-                        "street_lines": [
+                        "streetLines": [
                             "1001 Village Avenue"
                         ],
                         "city": "Portland",
@@ -1207,7 +911,7 @@
             },
             "identifiers": [{
                 "identifier": "2.16.840.1.113883.19",
-                "extension": "123456789"
+                "identifier_type": "123456789"
             }],
             "status": "Aborted",
             "date_time": {
@@ -1221,18 +925,13 @@
                 "code": "416949008",
                 "code_system_name": "SNOMED CT"
             }],
-            "priority": {
-                "name": "Callback results",
-                "code": "CR",
-                "code_system_name": "OID 2.16.840.1.113883.5.7"
-            },
             "performer": [{
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5",
-                    "extension": "1234"
+                    "identifier_type": "1234"
                 }],
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -1261,7 +960,7 @@
                     "code_system_name": "HealthcareServiceLocation"
                 },
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -1279,7 +978,7 @@
             },
             "identifiers": [{
                 "identifier": "1.2.3.4.5.6.7.8",
-                "extension": "1234567"
+                "identifier_type": "1234567"
             }],
             "status": "Completed",
             "date_time": {
@@ -1288,18 +987,13 @@
                     "precision": "day"
                 }
             },
-            "priority": {
-                "name": "Callback results",
-                "code": "CR",
-                "code_system_name": "OID 2.16.840.1.113883.5.7"
-            },
             "performer": [{
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
-                    "extension": "1234"
+                    "identifier_type": "1234"
                 }],
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -1328,7 +1022,7 @@
                     "code_system_name": "HealthcareServiceLocation"
                 },
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -1349,7 +1043,7 @@
                 "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809b4a"
             }],
             "date_time": {
-                "center": {
+                "point": {
                     "date": "2012-05-12T00:00:00Z",
                     "precision": "day"
                 }
@@ -1365,7 +1059,7 @@
                 "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809a5c"
             }],
             "date_time": {
-                "center": {
+                "point": {
                     "date": "2012-05-12T00:00:00Z",
                     "precision": "day"
                 }
@@ -1381,7 +1075,7 @@
                 "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809b4d"
             }],
             "date_time": {
-                "center": {
+                "point": {
                     "date": "2012-05-12T00:00:00Z",
                     "precision": "day"
                 }
@@ -1397,7 +1091,7 @@
                 "identifier": "9a6d1bac-17d3-4195-89c4-1121bc809b5a"
             }],
             "date_time": {
-                "center": {
+                "point": {
                     "date": "2012-05-12T00:00:00Z",
                     "precision": "day"
                 }
@@ -1426,7 +1120,7 @@
                             "identifier": "2.16.840.1.113883.19"
                         }],
                         "address": [{
-                            "street_lines": [
+                            "streetLines": [
                                 "123 Insurance Road"
                             ],
                             "city": "Blue Bell",
@@ -1444,7 +1138,7 @@
                                 "Good Health Insurance"
                             ],
                             "address": [{
-                                "street_lines": [
+                                "streetLines": [
                                     "123 Insurance Road"
                                 ],
                                 "city": "Blue Bell",
@@ -1457,10 +1151,6 @@
                                 "number": "(781)555-1515",
                                 "type": "work place"
                             }]
-                        }],
-                        "code": [{
-                            "code": "PAYOR",
-                            "code_system_name": "HL7 RoleCode"
                         }]
                     }
                 }
@@ -1482,7 +1172,7 @@
                     "first": "Adam"
                 }],
                 "address": [{
-                    "street_lines": [
+                    "streetLines": [
                         "17 Daws Rd."
                     ],
                     "city": "Blue Bell",
@@ -1506,10 +1196,10 @@
                 "performer": {
                     "identifiers": [{
                         "identifier": "14d4a520-7aae-11db-9fe1-0800200c9a66",
-                        "extension": "1138345"
+                        "identifier_type": "1138345"
                     }],
                     "address": [{
-                        "street_lines": [
+                        "streetLines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1517,11 +1207,6 @@
                         "zip": "02368",
                         "country": "US",
                         "use": "primary home"
-                    }],
-                    "code": [{
-                        "name": "Self",
-                        "code": "SELF",
-                        "code_system_name": "HL7 Role"
                     }]
                 },
                 "name": [{
@@ -1537,10 +1222,10 @@
                 "performer": {
                     "identifiers": [{
                         "identifier": "2.16.840.1.113883.19",
-                        "extension": "1138345"
+                        "identifier_type": "1138345"
                     }],
                     "address": [{
-                        "street_lines": [
+                        "streetLines": [
                             "17 Daws Rd."
                         ],
                         "city": "Blue Bell",
@@ -1566,11 +1251,7 @@
         }]
     },
     "meta": {
-        "version": "1.1.0-beta.7",
-        "identifiers": [{
-            "identifier": "2.16.840.1.113883.19.5.99999.1",
-            "extension": "TT988"
-        }],
+        "version": "1.1.0-beta",
         "sections": [
             "demographics",
             "vitals",
@@ -1587,59 +1268,46 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
+        "nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required streetLines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",

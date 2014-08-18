@@ -76,10 +76,12 @@
                                     "$ref": "http://local.com/common_models#/properties/cda_physical_quantity"
                                 }
 
-                            }
+                            },
+                            "additionalProperties": false
 
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 }
 
             },
@@ -96,7 +98,8 @@
                 "value": {
                     "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "product": {
             "type": "object",
@@ -113,6 +116,9 @@
                 },
                 "unencoded_name": {
                     "type": "string"
+                },
+                "manufacturer": {
+                    "type": "string"
                 }
             },
             "additionalProperties": false,
@@ -122,24 +128,80 @@
             ]
         },
         "supply": {
-            "date_time": {
-                "$ref": "http://local.com/common_models#/properties/cda_date"
+            "type": "object",
+            "properties": {
+                "date_time": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date"
+                },
+                "repeatNumber": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "string"
+                },
+                "author": {
+                    "type": "object",
+                    "properties": {
+                        "identifiers": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://local.com/common_models#/properties/cda_id"
+                            },
+                            "minItems": 1
+                        },
+                        "date_time": {
+                            "$ref": "http://local.com/common_models#/properties/cda_date"
+                        },
+                        "name": {
+                            "$ref": "http://local.com/common_models#/properties/cda_name"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "additionalProperties": false
             },
-            "repeatNumber": {
-                "type": "string"
-            },
-            "quantity": {
-                "type": "string"
-            }
+            "additionalProperties": false
         },
         "indication": {
             "type": "object",
             "properties": {
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_id"
+                    },
+                    "minItems": 1
+                },
                 "code": {
-                    "type": "string"
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 },
                 "date_time": {
                     "$ref": "http://local.com/common_models#/properties/cda_date"
+                },
+                "value": {
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                }
+            },
+            "additionalProperties": false
+        },
+        "performer": {
+            "$ref": "http://local.com/common_models#/properties/cda_performer"
+        },
+        "drug_vehicle": {
+            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+        },
+        "dispense": {
+            "type": "object",
+            "properties": {
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_id"
+                    },
+                    "minItems": 1
+                },
+                "performer": {
+                    "$ref": "http://local.com/common_models#/properties/cda_performer"
                 }
             },
             "additionalProperties": false

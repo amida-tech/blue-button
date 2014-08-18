@@ -3027,20 +3027,6 @@
 							<value xsi:type="CD" code="8517006" displayName="Former smoker"
 								codeSystem="2.16.840.1.113883.6.96"/>
 						</observation>
-					</entry>					<entry typeCode="DRIV">
-						<observation classCode="OBS" moodCode="EVN">
-							<!-- ** Smoking status observation ** -->
-							<templateId root="2.16.840.1.113883.10.20.22.4.78"/>
-							<id extension="123456789" root="2.16.840.1.113883.19"/>
-							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
-							<statusCode code="completed"/>
-							<effectiveTime>
-								<low value="20050501"/>
-								<high value="20090227130000+0500"/>
-							</effectiveTime>
-							<value xsi:type="CD" code="8517006" displayName="Former smoker"
-								codeSystem="2.16.840.1.113883.6.96"/>
-						</observation>
 					</entry>
 					<entry typeCode="DRIV">
 						<observation classCode="OBS" moodCode="EVN">

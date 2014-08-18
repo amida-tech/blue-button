@@ -83,7 +83,8 @@
                         "$ref": "http://local.com/provider"
                     }
                 }
-            }
+            },
+            "additionalProperties": true
         },
         "errors": {
             "type": "array",
@@ -100,7 +101,8 @@
                 "version": {
                     "type": "string"
                 }
-            }
+            },
+            "additionalProperties": true
         }
     }
 }

@@ -27,17 +27,19 @@
                     "$ref": "http://local.com/common_models#/properties/cda_name"
                 },
                 "specialty": "string",
+                "organization": {
+                    "$ref": "http://local.com/common_models#/properties/cda_organization"
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_phone"
+                    }
+                },
                 "minProperties": 1
             },
-            "organization": {
-                "$ref": "http://local.com/common_models#/properties/cda_organization"
-            },
-            "phone": {
-                "type": "array",
-                "items": {
-                    "$ref": "http://local.com/common_models#/properties/cda_phone"
-                }
-            }
+            "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": false
 }
