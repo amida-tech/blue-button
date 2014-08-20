@@ -12,16 +12,7 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "properties": {
-                    "name": {
-                        "type": "string"
-                    },
-                    "code": {
-                        "type": "string"
-                    },
-                    "code_system_name": {
-                        "type": "string"
-                    },
+                "properties": {                    
                     "value": {
                         "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                     },

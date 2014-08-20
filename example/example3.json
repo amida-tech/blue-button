@@ -498,15 +498,17 @@
                     "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
                     "extension": "45665"
                 }],
+                "value": {
+                    "name": "Pneumonia",
+                    "code": "233604007",
+                    "code_system_name": "SNOMED CT"
+                },
                 "date_time": {
                     "low": {
                         "date": "2007-01-03T00:00:00Z",
                         "precision": "day"
                     }
-                },
-                "name": "Pneumonia",
-                "code": "233604007",
-                "code_system_name": "SNOMED CT"
+                }
             }]
         }],
         "allergies": [{
@@ -528,7 +530,6 @@
                 "date_time": {
                     "low": {
                         "date": "2007-05-01T00:00:00Z",
-
                         "precision": "day"
                     }
                 },
@@ -1038,8 +1039,11 @@
             }],
             "negation_indicator": false,
             "problem": {
-                "name": "Pneumonia",
-                "code": "233604007",
+                "code": {
+                    "name": "Pneumonia",
+                    "code": "233604007",
+                    "code_system_name": "SNOMED CT"
+                },
                 "date_time": {
                     "low": {
                         "date": "2008-01-03T00:00:00Z",
@@ -1049,8 +1053,7 @@
                         "date": "2008-01-03T00:00:00Z",
                         "precision": "day"
                     }
-                },
-                "code_system_name": "SNOMED CT"
+                }
             },
             "onset_age": "57",
             "onset_age_unit": "Year",
@@ -1087,8 +1090,11 @@
             }],
             "negation_indicator": false,
             "problem": {
-                "name": "Asthma",
-                "code": "195967001",
+                "code": {
+                    "name": "Asthma",
+                    "code": "195967001",
+                    "code_system_name": "SNOMED CT"
+                },
                 "date_time": {
                     "low": {
                         "date": "2007-01-03T00:00:00Z",
@@ -1098,8 +1104,7 @@
                         "date": "2008-01-03T00:00:00Z",
                         "precision": "day"
                     }
-                },
-                "code_system_name": "SNOMED CT"
+                }
             },
             "onset_age": "57",
             "onset_age_unit": "Year",
