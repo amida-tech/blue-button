@@ -14,14 +14,8 @@
         "problem": {
             "type": "object",
             "properties": {
-                "name": {
-                    "type": "string"
-                },
                 "code": {
-                    "type": "string"
-                },
-                "code_system_name": {
-                    "type": "string"
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
                 },
                 "date_time": {
                     "$ref": "http://local.com/common_models#/properties/cda_date"

@@ -297,7 +297,9 @@
         "problems": [
             {
                 "problem": {
-                    "name": "Arthritis"
+                    "code": {
+                        "name": "Arthritis"
+                    }
                 },
                 "date_time": {
                     "low": {
@@ -312,7 +314,9 @@
             },
             {
                 "problem": {
-                    "name": "Asthma"
+                    "code": {
+                        "name": "Asthma"
+                    }
                 },
                 "date_time": {
                     "low": {
@@ -1678,85 +1682,7 @@
 ---
 false
 {
-    "valid": false,
-    "errors": [
-        {
-            "code": "OBJECT_ADDITIONAL_PROPERTIES",
-            "message": "Additional properties not allowed",
-            "path": "#/data/claims/[0]/lines/[0]",
-            "params": {
-                "properties": [
-                    "line",
-                    "modifier",
-                    "type"
-                ]
-            }
-        },
-        {
-            "code": "OBJECT_ADDITIONAL_PROPERTIES",
-            "message": "Additional properties not allowed",
-            "path": "#/data/claims/[1]/lines/[0]",
-            "params": {
-                "properties": [
-                    "line"
-                ]
-            }
-        },
-        {
-            "code": "OBJECT_ADDITIONAL_PROPERTIES",
-            "message": "Additional properties not allowed",
-            "path": "#/data/claims/[1]/lines/[1]",
-            "params": {
-                "properties": [
-                    "line"
-                ]
-            }
-        },
-        {
-            "code": "OBJECT_ADDITIONAL_PROPERTIES",
-            "message": "Additional properties not allowed",
-            "path": "#/data/claims/[1]/lines/[2]",
-            "params": {
-                "properties": [
-                    "line",
-                    "modifier"
-                ]
-            }
-        },
-        {
-            "code": "OBJECT_ADDITIONAL_PROPERTIES",
-            "message": "Additional properties not allowed",
-            "path": "#/data/claims/[1]/lines/[3]",
-            "params": {
-                "properties": [
-                    "line"
-                ]
-            }
-        },
-        {
-            "code": "OBJECT_ADDITIONAL_PROPERTIES",
-            "message": "Additional properties not allowed",
-            "path": "#/data/claims/[2]/lines/[0]",
-            "params": {
-                "properties": [
-                    "line",
-                    "modifier",
-                    "type"
-                ]
-            }
-        },
-        {
-            "code": "OBJECT_ADDITIONAL_PROPERTIES",
-            "message": "Additional properties not allowed",
-            "path": "#/data/claims/[2]/lines/[1]",
-            "params": {
-                "properties": [
-                    "line",
-                    "modifier",
-                    "type"
-                ]
-            }
-        }
-    ],
+    "valid": true,
+    "errors": [],
     "warnings": []
 }
