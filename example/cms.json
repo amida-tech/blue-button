@@ -181,58 +181,76 @@
         ],
         "allergies": [
             {
-                "allergen": {
-                    "name": "Antibotic"
-                },
-                "date_time": {
-                    "low": {
-                        "date": "1926-01-08T00:00:00.000Z",
-                        "precision": "day"
+                "observation": {
+                    "allergen": {
+                        "name": "Antibotic"
                     },
-                    "high": {
-                        "date": "1955-03-13T00:00:00.000Z",
-                        "precision": "day"
-                    }
-                },
-                "reaction": [
-                    {
-                        "reaction": {
-                            "name": "Vomiting"
+                    "date_time": {
+                        "low": {
+                            "date": "1926-01-08T00:00:00.000Z",
+                            "precision": "day"
                         },
-                        "severity": {
-                            "code": "24484000",
-                            "name": "Severe",
-                            "code_system_name": "SNOMED CT"
+                        "high": {
+                            "date": "1955-03-13T00:00:00.000Z",
+                            "precision": "day"
                         }
+                    },
+                    "reactions": [
+                        {
+                            "reaction": {
+                                "name": "Vomiting"
+                            },
+                            "severity": {
+                                "code": {
+                                    "code": "24484000",
+                                    "name": "Severe",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            }
+                        }
+                    ],
+                    "status": {
+                        "name": "Active",
+                        "code": "55561003",
+                        "code_system_name": "SNOMED CT"
                     }
-                ]
+                }
             },
             {
-                "allergen": {
-                    "name": "Grasses"
-                },
-                "date_time": {
-                    "low": {
-                        "date": "1973-05-13T00:00:00.000Z",
-                        "precision": "day"
+                "observation": {
+                    "allergen": {
+                        "name": "Grasses"
                     },
-                    "high": {
-                        "date": "1996-07-20T00:00:00.000Z",
-                        "precision": "day"
-                    }
-                },
-                "reaction": [
-                    {
-                        "reaction": {
-                            "name": "Sneezing"
+                    "date_time": {
+                        "low": {
+                            "date": "1973-05-13T00:00:00.000Z",
+                            "precision": "day"
                         },
-                        "severity": {
-                            "code": "24484000",
-                            "name": "Severe",
-                            "code_system_name": "SNOMED CT"
+                        "high": {
+                            "date": "1996-07-20T00:00:00.000Z",
+                            "precision": "day"
                         }
+                    },
+                    "reactions": [
+                        {
+                            "reaction": {
+                                "name": "Sneezing"
+                            },
+                            "severity": {
+                                "code": {
+                                    "code": "24484000",
+                                    "name": "Severe",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            }
+                        }
+                    ],
+                    "status": {
+                        "name": "Active",
+                        "code": "55561003",
+                        "code_system_name": "SNOMED CT"
                     }
-                ]
+                }
             }
         ],
         "immunizations": [

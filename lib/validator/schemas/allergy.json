@@ -2,9 +2,6 @@
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
-        "allergen": {
-            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
-        },
         "date_time": {
             "$ref": "http://local.com/common_models#/properties/cda_date"
         },
@@ -15,42 +12,80 @@
                 "$ref": "http://local.com/common_models#/properties/cda_id"
             }
         },
-        "severity": {
-            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
-        },
-        "status": {
+        "observation": {
             "type": "object",
             "properties": {
-                "code": {
-                    "type": "string"
-                },
-                "status": {
-                    "type": "string"
-                }
-            }
-        },
-        "reaction": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-                "type": "object",
-                "properties": {
-                    "reaction": {
-                        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
-                    },
-                    "severity": {
-                        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
-                    },
-                    "date_time": {
-                        "$ref": "http://local.com/common_models#/properties/cda_date"
+                "identifiers": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_id"
                     }
                 },
-                "additionalProperties": false
+
+                "negation_indicator": {
+                    "type": "boolean"
+                },
+
+                "allergen": {
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                },
+                "intolerance": {
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                },
+                "date_time": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date"
+                },
+                "status": {
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                },
+
+                "reactions": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "date_time": {
+                                "$ref": "http://local.com/common_models#/properties/cda_date"
+                            },
+                            "reaction": {
+                                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                            },
+                            "severity": {
+                                "type": "object",
+                                "properties": {
+                                    "code": {
+                                        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                                    },
+                                    "interpretation": {
+                                        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "additionalProperties": false
 
 
-            }
-        }
-
+                    }
+                },
+                "severity": {
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                        },
+                        "interpretation": {
+                            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "additionalProperties": false
     },
-    "required": ["allergen"]
+    "additionalProperties": false
 }
