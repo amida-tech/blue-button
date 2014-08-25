@@ -490,7 +490,12 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "28A334FE-9348-4AE5-A48C-6174F3D766A4"
+            }
+        ],
         "sections": [
             "demographics",
             "medications",

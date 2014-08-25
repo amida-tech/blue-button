@@ -1,0 +1,1041 @@
+/*jshint expr: true*/
+var fs = require('fs');
+var expect = require('chai').expect;
+var path = require('path');
+
+var validator = require('../lib/validator/validator.js');
+describe('Test addresses', function () {
+    before(function (done) {
+        testAddressList = require(__dirname + '/fixtures/validator/samples/testAddress.js');
+        done();
+    });
+    it('regular address from CCD_1', function (done) {
+        var regAddr = testAddressList.regular;
+        var valid = validator.validateSectionObj(regAddr, 'cda_address');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('no address lines', function (done) {
+        var missingAddr = testAddressList.missingAddr;
+        var valid = validator.validateSectionObj(missingAddr, 'cda_address');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('no city', function (done) {
+        var noCity = testAddressList.noCity;
+        var valid = validator.validateSectionObj(noCity, 'cda_address');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty', function (done) {
+        var empty = testAddressList.empty;
+        var valid = validator.validateSectionObj(empty, 'cda_address');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('only city and address', function (done) {
+        var onlyCityAddr = testAddressList.onlyCityAddr;
+        var valid = validator.validateSectionObj(onlyCityAddr, 'cda_address');
+        expect(valid).to.true;
+        done();
+    });
+});
+
+describe('Test dates', function () {
+
+    it('date without precision', function (done) {
+        dateObj = {
+            'date_time': '1975-05-01T00:00:00Z'
+        };
+        var valid = validator.validateSectionObj(dateObj, 'cda_date');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('empty date obj', function (done) {
+        dateObj = {};
+        var valid = validator.validateSectionObj(dateObj, 'cda_date');
+        console.log(JSON.stringify(validator.getLastError()));
+        expect(valid).to.false;
+        done();
+    });
+
+    it('bad timedate format obj', function (done) {
+        dateObj = {
+            'date': '03/23/1992'
+        };
+        var valid = validator.validateSectionObj(dateObj, 'cda_date');
+        expect(valid).to.false;
+        done();
+    });
+    it('Precision no time date', function (done) {
+        dateObj = {
+            'precision': 'day'
+        };
+        var valid = validator.validateSectionObj(dateObj, 'cda_date');
+        expect(valid).to.false;
+        done();
+    });
+});
+
+describe('Test phone:', function () {
+    it('phone without type', function (done) {
+        phoneObj = {
+            "number": "703-354-6290"
+        };
+        var valid = validator.validateSectionObj(phoneObj, 'cda_phone');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('phone with only type', function (done) {
+        phoneObj = {
+            "type": "primary home"
+        };
+        var valid = validator.validateSectionObj(phoneObj, 'cda_phone');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty phone obj', function (done) {
+        phoneObj = {};
+        var valid = validator.validateSectionObj(phoneObj, 'cda_phone');
+        expect(valid).to.false;
+        done();
+    });
+});
+
+describe('Test email:', function () {
+
+    it('email without type', function (done) {
+        emailObj = {
+            "address": "amida@mountain.com"
+        };
+        var valid = validator.validateSectionObj(emailObj, 'cda_email');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('email with only type', function (done) {
+        emailObj = {
+            "type": "primary home"
+        };
+        var valid = validator.validateSectionObj(emailObj, 'cda_email');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty email obj', function (done) {
+        emailObj = {};
+        var valid = validator.validateSectionObj(emailObj, 'cda_email');
+        expect(valid).to.false;
+        done();
+    });
+});
+
+describe('Test identifier:', function () {
+
+    it('identifier all fields', function (done) {
+        identifierObj = {
+            "identifier": "2.16.840.1.113883.19.5.9999.456",
+            "extension": "2981824"
+        };
+        var valid = validator.validateSectionObj(identifierObj, 'cda_id');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('identifier without type', function (done) {
+        identifierObj = {
+            "identifier": "2.16.840.1.113883.19.5.9999.456"
+        };
+        var valid = validator.validateSectionObj(identifierObj, 'cda_id');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('email with only type', function (done) {
+        identifierObj = {
+            "extension": "2981824"
+        };
+        var valid = validator.validateSectionObj(identifierObj, 'cda_id');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty email obj', function (done) {
+        identifierObj = {};
+        var valid = validator.validateSectionObj(identifierObj, 'cda_id');
+        expect(valid).to.false;
+        done();
+    });
+});
+
+describe('Test name:', function () {
+
+    it('regular name', function (done) {
+        var nameObj = {
+            "middle": [
+                "Isa"
+            ],
+            "last": "Jones",
+            "first": "Isabella"
+        };
+        var valid = validator.validateSectionObj(nameObj, 'cda_name');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('no middle name', function (done) {
+        var nameObj = {
+            "middle": [],
+            "last": "Jones",
+            "first": "Isabella"
+        };
+        var valid = validator.validateSectionObj(nameObj, 'cda_name');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('multiple middle names', function (done) {
+        var nameObj = {
+            "middle": [
+                "Isa",
+                "Izzzy",
+                "Iggy"
+            ],
+            "last": "Jones",
+            "first": "Isabella"
+        };
+        var valid = validator.validateSectionObj(nameObj, 'cda_name');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('empty name obj', function (done) {
+        var nameObj = {};
+        var valid = validator.validateSectionObj(nameObj, 'cda_name');
+        expect(valid).to.false;
+        done();
+    });
+});
+
+describe('Test coded entries:', function () {
+
+    it('empty coded entry', function (done) {
+        codedEntryObj = {};
+        var valid = validator.validateSectionObj(codedEntryObj, 'cda_coded_entry');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('coded entry with undefined property', function (done) {
+        codedEntryObj = {
+            "kode": "1198000"
+        };
+        var valid = validator.validateSectionObj(codedEntryObj, 'cda_coded_entry');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('regular coded entry', function (done) {
+        codedEntryObj = {
+            "name": "Wheezing",
+            "code": "56018004",
+            "code_system_name": "SNOMED CT"
+        };
+        var valid = validator.validateSectionObj(codedEntryObj, 'cda_coded_entry');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('coded entry with only the code ', function (done) {
+        codedEntryObj = {
+            "code": "56018004",
+            "code_system_name": "SNOMED CT"
+        };
+        var valid = validator.validateSectionObj(codedEntryObj, 'cda_coded_entry');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('coded entry with a translation ', function (done) {
+        codedEntryObj = {
+            "name": "Influenza virus vaccine",
+            "code": "88",
+            "code_system_name": "CVX",
+            "translations": [{
+                "name": "Influenza, seasonal, injectable",
+                "code": "141",
+                "code_system_name": "CVX"
+            }]
+        };
+        var valid = validator.validateSectionObj(codedEntryObj, 'cda_coded_entry');
+        expect(valid).to.true;
+        done();
+    });
+    it('translation is empty ', function (done) {
+        codedEntryObj = {
+            "name": "Influenza virus vaccine",
+            "code": "88",
+            "code_system_name": "CVX",
+            "translations": []
+        };
+        var valid = validator.validateSectionObj(codedEntryObj, 'cda_coded_entry');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('translation has only one entry ', function (done) {
+        codedEntryObj = {
+            "name": "Influenza virus vaccine",
+            "code": "88",
+            "code_system_name": "CVX",
+            "translations": [{
+                "name": "Influenza, seasonal"
+            }]
+        };
+        var valid = validator.validateSectionObj(codedEntryObj, 'cda_coded_entry');
+        expect(valid).to.true;
+        done();
+    });
+
+});
+
+describe('Test physical quantities:', function () {
+
+    it('empty physical quanity', function (done) {
+        physObj = {};
+        var valid = validator.validateSectionObj(physObj, 'cda_physical_quantity');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('physical quanity value is string', function (done) {
+        physObj = {
+            'unit': 'mmHg',
+            'value': 'l337'
+        };
+        var valid = validator.validateSectionObj(physObj, 'cda_physical_quantity');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('correct physical quanitty', function (done) {
+        physObj = {
+            'unit': 'mmHg',
+            'value': 1337
+        };
+        var valid = validator.validateSectionObj(physObj, 'cda_physical_quantity');
+        expect(valid).to.true;
+        done();
+    });
+});
+
+describe('Test location:', function () {
+    before(function (done) {
+        testLocList = require(__dirname + '/fixtures/validator/samples/testLocations.js');
+        done();
+    });
+
+    it('empty location', function (done) {
+        locationObj = {};
+        var valid = validator.validateSectionObj(locationObj, 'cda_location');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('regular location # 1 ', function (done) {
+        locationObj = testLocList.regular1;
+        var valid = validator.validateSectionObj(locationObj, 'cda_location');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('regular location # 2 ', function (done) {
+        locationObj = testLocList.regular2;
+        var valid = validator.validateSectionObj(locationObj, 'cda_location');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('location type empty', function (done) {
+        locationObj = testLocList.emptyLocType;
+        var valid = validator.validateSectionObj(locationObj, 'cda_location');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('location type undefined', function (done) {
+        locationObj = testLocList.locTypeUndefined;
+        var valid = validator.validateSectionObj(locationObj, 'cda_location');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('empty addresses', function (done) {
+        locationObj = testLocList.emptyAddresses;
+        var valid = validator.validateSectionObj(locationObj, 'cda_location');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('no name', function (done) {
+        locationObj = testLocList.noName;
+        var valid = validator.validateSectionObj(locationObj, 'cda_location');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('bad number', function (done) {
+        locationObj = testLocList.badNumber;
+        var valid = validator.validateSectionObj(locationObj, 'cda_location');
+        expect(valid).to.false;
+        done();
+    });
+});
+
+describe('Test demographics:', function () {
+    before(function (done) {
+        testDemoList = require(__dirname + '/fixtures/validator/samples/testDemo.js');
+        done();
+    });
+
+    it('empty demographics obj', function (done) {
+        var demoObj = {};
+        var valid = validator.validateSectionObj(demoObj, 'demographics');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('test regular case, Isabella Jones', function (done) {
+        var demoObj = testDemoList.regular;
+        var valid = validator.validateSectionObj(demoObj, 'demographics');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('bad phone number', function (done) {
+        var demoObj = testDemoList.badNum;
+        var valid = validator.validateSectionObj(demoObj, 'demographics');
+        expect(valid).to.false;
+        done();
+    });
+
+    it("multiple bad children fields", function (done) {
+        var demoObj = testDemoList.badAddr;
+        var valid = validator.validateSectionObj(demoObj, 'demographics');
+        var result1 = expect(valid).to.false;
+        var error = validator.getLastError();
+        var result2 = expect(Object.keys(error)).length.least(3);
+        done();
+    });
+});
+
+describe('Test medications:', function () {
+    before(function (done) {
+        testMedicList = require(__dirname + '/fixtures/validator/samples/testMedic.js');
+        done();
+    });
+
+    it('empty medications obj', function (done) {
+        var medicObj = {};
+        var valid = validator.validateSectionObj(medicObj, 'medication');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('test normal medications obj', function (done) {
+        var medicObj = testMedicList.regular;
+        var valid = validator.validateSectionObj(medicObj, 'medication');
+        expect(valid).to.true;
+        var error = validator.getLastError();
+        done();
+    });
+
+    it('test bad format doses and numbers', function (done) {
+        var medicObj = testMedicList.badDoses;
+        var valid = validator.validateSectionObj(medicObj, 'medication');
+        expect(valid).to.false;
+        var error = validator.getLastError();
+        expect(Object.keys(error)).length.least(2);
+        done();
+    });
+
+    it('test missing product', function (done) {
+        var medicObj = testMedicList.missProd;
+        var valid = validator.validateSectionObj(medicObj, 'medication');
+        expect(valid).to.false;
+        done();
+    });
+
+});
+
+describe('Test problems', function () {
+    before(function (done) {
+        testProbList = require(__dirname + '/fixtures/validator/samples/testProb.js');
+        done();
+    });
+
+    it('empty problems obj', function (done) {
+        var probObj = {};
+        var valid = validator.validateSectionObj(probObj, 'problem');
+        expect(valid).to.false;
+        done();
+    });
+    it('normal problems object #1', function (done) {
+        var probObj = testProbList.regular1;
+        var valid = validator.validateSectionObj(probObj, 'problem');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('normal problems object #2', function (done) {
+        var probObj = testProbList.regular2;
+        var valid = validator.validateSectionObj(probObj, 'problem');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('test bad date', function (done) {
+        var probObj = testProbList.badDate;
+        var valid = validator.validateSectionObj(probObj, 'problem');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty problem', function (done) {
+        var probObj = testProbList.emptyProblem;
+        var valid = validator.validateSectionObj(probObj, 'problem');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('problem not defined', function (done) {
+        var probObj = testProbList.undefinedProblem;
+        var valid = validator.validateSectionObj(probObj, 'problem');
+        expect(valid).to.false;
+        done();
+    });
+});
+
+describe('Test results', function () {
+    before(function (done) {
+        testResultsList = require(__dirname + '/fixtures/validator/samples/testResult.js');
+        done();
+    });
+
+    it('empty results obj', function (done) {
+        var resultObj = {};
+        var valid = validator.validateSectionObj(resultObj, 'result');
+        expect(valid).to.false;
+        done();
+    });
+
+    it(' obj from sample', function (done) {
+        var resultObj = testResultsList.regular;
+        var valid = validator.validateSectionObj(resultObj, 'result');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('empty id', function (done) {
+        var resultObj = testResultsList.emptyId;
+        var valid = validator.validateSectionObj(resultObj, 'result');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty results set ', function (done) {
+        var resultObj = testResultsList.emptyResultsSet;
+        var valid = validator.validateSectionObj(resultObj, 'result');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('no results', function (done) {
+        var resultObj = testResultsList.noResults;
+        var valid = validator.validateSectionObj(resultObj, 'result');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('one bad short result', function (done) {
+        var resultObj = testResultsList.oneBadShortResult;
+        var valid = validator.validateSectionObj(resultObj, 'result');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('value is a string', function (done) {
+        var resultObj = testResultsList.valueIsString;
+        var valid = validator.validateSectionObj(resultObj, 'result');
+        expect(valid).to.false;
+        done();
+    });
+
+});
+
+describe('Test allergies', function () {
+    before(function (done) {
+        testAllergyList = require(__dirname + '/fixtures/validator/samples/testAllergy.js');
+        done();
+    });
+
+    it('empty allergy obj', function (done) {
+        var allergyObj = {};
+        var valid = validator.validateSectionObj(allergyObj, 'allergy');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('correct allergy obj from sample #1', function (done) {
+        var allergyObj = testAllergyList.regular1;
+        var valid = validator.validateSectionObj(allergyObj, 'allergy');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('correct allergy obj from sample #2', function (done) {
+        var allergyObj = testAllergyList.regular2;
+        var valid = validator.validateSectionObj(allergyObj, 'allergy');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('correct allergy obj from sample #3', function (done) {
+        var allergyObj = testAllergyList.regular2;
+        var valid = validator.validateSectionObj(allergyObj, 'allergy');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('no id in allergy object', function (done) {
+        var allergyObj = testAllergyList.noId;
+        var valid = validator.validateSectionObj(allergyObj, 'allergy');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('allergen is undefined', function (done) {
+        var allergyObj = testAllergyList.noAllergen;
+        var valid = validator.validateSectionObj(allergyObj, 'allergy');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('no dates in allergy object', function (done) {
+        var allergyObj = testAllergyList.noDates;
+        var valid = validator.validateSectionObj(allergyObj, 'allergy');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('empty reaction field', function (done) {
+        var allergyObj = testAllergyList.emptyReaction;
+        var valid = validator.validateSectionObj(allergyObj, 'allergy');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('bad reaction field(code entries wrong)', function (done) {
+        var allergyObj = testAllergyList.badReaction;
+        var valid = validator.validateSectionObj(allergyObj, 'allergy');
+        expect(valid).to.false;
+        done();
+    });
+
+});
+
+describe('Test encounter', function () {
+    before(function (done) {
+        testEncounterList = require(__dirname + '/fixtures/validator/samples/testEncounter.js');
+        done();
+    });
+
+    it('empty encounter obj', function (done) {
+        var encounterObj = {};
+        var valid = validator.validateSectionObj(encounterObj, 'encounter');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('regular encounter obj', function (done) {
+        var encounterObj = testEncounterList.regular;
+        var valid = validator.validateSectionObj(encounterObj, 'encounter');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('encounter field missing', function (done) {
+        var encounterObj = testEncounterList.missingEncounter;
+        var valid = validator.validateSectionObj(encounterObj, 'encounter');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('date and id missing', function (done) {
+        var encounterObj = testEncounterList.dateIdMissing;
+        var valid = validator.validateSectionObj(encounterObj, 'encounter');
+        expect(valid).to.true;
+        done();
+    });
+    it('address has a bad field', function (done) {
+        var encounterObj = testEncounterList.addressBadField;
+        var valid = validator.validateSectionObj(encounterObj, 'encounter');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('findings missing', function (done) {
+        var encounterObj = testEncounterList.findingsMissing;
+        var valid = validator.validateSectionObj(encounterObj, 'encounter');
+        expect(valid).to.true;
+        done();
+    });
+});
+
+describe('Test vitals', function () {
+    before(function (done) {
+        testVitalList = require(__dirname + '/fixtures/validator/samples/testVital.js');
+        done();
+    });
+
+    it('empty vital', function (done) {
+        var vitalObj = {};
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('vital sample #1', function (done) {
+        var vitalObj = testVitalList.regular1;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('vital sample #2', function (done) {
+        var vitalObj = testVitalList.regular2;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('vital sample #3', function (done) {
+        var vitalObj = testVitalList.regular3;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('vital sample #4', function (done) {
+        var vitalObj = testVitalList.regular4;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('vital sample #5', function (done) {
+        var vitalObj = testVitalList.regular5;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('vital sample #6', function (done) {
+        var vitalObj = testVitalList.regular6;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('vital has string for value(bad value)', function (done) {
+        var vitalObj = testVitalList.badValue;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty object vital field', function (done) {
+        var vitalObj = testVitalList.emptyVitals;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty date object', function (done) {
+        var vitalObj = testVitalList.emptyDate;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('file with only vital field', function (done) {
+        var vitalObj = testVitalList.onlyVitals;
+        var valid = validator.validateSectionObj(vitalObj, 'vital');
+        expect(valid).to.true;
+        done();
+    });
+});
+
+describe('Test social history', function () {
+    before(function (done) {
+        testSocialList = require(__dirname + '/fixtures/validator/samples/testSocial.js');
+        done();
+    });
+
+    //this is true for nows
+    it('empty social histoy', function (done) {
+        var socialObj = {};
+        var valid = validator.validateSectionObj(socialObj, 'socialHistory');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('regular social history', function (done) {
+        var socialObj = testSocialList.regular;
+        var valid = validator.validateSectionObj(socialObj, 'socialHistory');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('social history without smoking value', function (done) {
+        var socialObj = testSocialList.noSmokingValue;
+        var valid = validator.validateSectionObj(socialObj, 'socialHistory');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('social history with no smoking dates', function (done) {
+        var socialObj = testSocialList.noSmokingDate;
+        var valid = validator.validateSectionObj(socialObj, 'socialHistory');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('social history with empty array as smoking dates', function (done) {
+        var socialObj = testSocialList.emptySmokingDate;
+        var valid = validator.validateSectionObj(socialObj, 'socialHistory');
+        expect(valid).to.true;
+        done();
+    });
+});
+
+describe('Test procedures', function () {
+    before(function (done) {
+        testProcedList = require(__dirname + '/fixtures/validator/samples/testProcedures.js');
+        done();
+    });
+
+    it('test empty procedures object', function (done) {
+        var procedObj = {};
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('test sample procedures object #1', function (done) {
+        var procedObj = testProcedList.regular1;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('test sample procedures object #2', function (done) {
+        var procedObj = testProcedList.regular2;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('test sample procedures object #3', function (done) {
+        var procedObj = testProcedList.regular3;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('missing status', function (done) {
+        var procedObj = testProcedList.missingStatus;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('missing procedure field', function (done) {
+        var procedObj = testProcedList.missingProcedureField;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('procedure field has coded entry with only name field', function (done) {
+        var procedObj = testProcedList.procedureFieldNameOnly;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('no organization field', function (done) {
+        var procedObj = testProcedList.noOrganizationField;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('no organization name, only identifier', function (done) {
+        var procedObj = testProcedList.organizationNoName;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('bad address, street line', function (done) {
+        var procedObj = testProcedList.addressBadStreetLine;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('missing providers', function (done) {
+        var procedObj = testProcedList.missingProviders;
+        var valid = validator.validateSectionObj(procedObj, 'procedure');
+        expect(valid).to.true;
+        done();
+    });
+});
+
+describe('Test immunizations', function () {
+    before(function (done) {
+        testImmunList = require(__dirname + '/fixtures/validator/samples/testImmunization.js');
+        done();
+    });
+
+    it('empty immunization object', function (done) {
+        var immunObj = {};
+        var valid = validator.validateSectionObj(immunObj, 'immunization');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('sample number 1', function (done) {
+        var immunObj = testImmunList.regular1;
+        var valid = validator.validateSectionObj(immunObj, 'immunization');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('sample number 2', function (done) {
+        var immunObj = testImmunList.regular2;
+        var valid = validator.validateSectionObj(immunObj, 'immunization');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('sample number 3', function (done) {
+        var immunObj = testImmunList.regular3;
+        var valid = validator.validateSectionObj(immunObj, 'immunization');
+        expect(valid).to.true;
+        done();
+    });
+
+    it('missing product field', function (done) {
+        var immunObj = testImmunList.missingProductField;
+        var valid = validator.validateSectionObj(immunObj, 'immunization');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('empty object product field', function (done) {
+        var immunObj = testImmunList.emptyProduct;
+        var valid = validator.validateSectionObj(immunObj, 'immunization');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('missing status field', function (done) {
+        var immunObj = testImmunList.missingStatusField;
+        var valid = validator.validateSectionObj(immunObj, 'immunization');
+        expect(valid).to.false;
+        done();
+    });
+
+    it('unncecessary extra field in product', function (done) {
+        var immunObj = testImmunList.extraFieldInProduct;
+        var valid = validator.validateSectionObj(immunObj, 'immunization');
+        expect(valid).to.false;
+        done();
+    });
+});
+
+describe('Test Document Model', function () {
+    before(function (done) {
+        testDocumentList = require(__dirname + '/fixtures/validator/samples/testDocument.js');
+        done();
+    });
+
+    it('empty document model', function (done) {
+        var docObj = {};
+        var valid = validator.validateDocumentModel(docObj);
+        expect(valid).to.true;
+        done();
+    });
+
+    it('sample document', function (done) {
+        var docObj = testDocumentList.regular;
+        var valid = validator.validateDocumentModel(docObj);
+        console.log(JSON.stringify(validator.getLastError(), null, 4));
+        expect(valid).to.true;
+        done();
+    });
+
+    it('one bad date', function (done) {
+        var docObj = testDocumentList.badDate;
+        var valid = validator.validateDocumentModel(docObj);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('emptySections', function (done) {
+        var docObj = testDocumentList.emptySections;
+        var valid = validator.validateDocumentModel(docObj);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('find bad entries', function (done) {
+        var docObj = testDocumentList.findBadEntries;
+        var valid = validator.validateDocumentModel(docObj);
+        var error = validator.getLastError();
+        expect(Object.keys(error.errors).length).to.be.at.least(4);
+        expect(valid).to.false;
+        done();
+    });
+
+    it('test model generated from ccda, on the fly', function (done) {
+        var docObj = JSON.parse(fs.readFileSync(__dirname + '/fixtures/files/json/CCD_1.json'));
+        var valid = validator.validateDocumentModel(docObj);
+        var error = validator.getLastError();
+        expect(valid).to.true;
+        done();
+    });
+});
+
+describe('Test get document model', function () {
+    before(function (done) {
+        testDocumentList = require(__dirname + '/fixtures/validator/samples/testDocument.js');
+        done();
+    });
+
+    it('test get section insurance', function (done) {
+        var valid = validator.getSectionDocumentModel('insurance');
+        var error = validator.getLastError();
+        done();
+    });
+
+});

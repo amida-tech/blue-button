@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+ 
+<!-- Title: US_Realm_Header_Template -->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
+	xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+	<!-- ******************************************************** CDA Header 
+		******************************************************** -->
+	<realmCode code="US"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<!-- US General Header Template -->
+	<templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+	<!-- *** Note: The next templateId, code and title will differ depending 
+		on what type of document is being sent. *** -->
+	<!-- conforms to the document specific requirements -->
+	<templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+	<id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9"
+		displayName="Summarization of Episode Note"/>
+	<title>Community Health and Hospitals: Health Summary</title>
+	<effectiveTime value="201209150000-0400"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
+	<versionNumber value="1"/>
+	<!-- ******************************************************** CDA Body ******************************************************** -->
+	<component>
+		<structuredBody>
+			<!-- **************************** FUNCTIONAL STATUS ************************************ -->
+			<component>
+				<section>
+					<!-- Functional status section -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.14"/>
+					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1"/>
+					<title>Functional Status</title>
+					<text>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Functional or Cognitive Finding</th>
+									<th>Observation</th>
+									<th>Observation Date</th>
+									<th>Condition Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><content ID="FUNC1">Ambulation(Dependent to
+											Independent)</content></td>
+									<td>Independently able</td>
+									<td>March 11, 2009</td>
+									<td>Active</td>
+								</tr>
+								<tr>
+									<td><content ID="FUNC2">Finding of Functional Performance and
+											Activity</content></td>
+									<td>Dyspnea</td>
+									<td>February 2007</td>
+									<td>Active</td>
+								</tr>
+								<tr>
+									<td>Cognitive Function Finding</td>
+									<td><content ID="COG2">Memory impairment</content></td>
+									<td>April 2007</td>
+									<td>Active</td>
+								</tr>
+								<tr>
+									<td><content ID="COG1">Cognitive Function Finding(Non-Aggressive
+											to Aggressive)</content></td>
+									<td>Aggressive behavior</td>
+									<td>March 11, 2009</td>
+									<td>Active</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+							<!-- ** conforms to Result Organizer ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.66"/>
+							<!-- Functional Status Result Organizer template -->
+							<id root="9295dba4-df05-46bb-b94e-f2c4e4b156f8"/>
+							<code code="d5" displayName="Self-Care"
+								codeSystem="2.16.840.1.113883.6.254" codeSystemName="ICF"/>
+							<statusCode code="completed"/>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- ** conforms to Result observation ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<!-- ** Functional status result observation ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.67"/>
+									<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a"/>
+									<code code="57251-1" displayName="Ambulation"
+										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<text>
+										<reference value="#FUNC1"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="200903111230"/>
+									<value xsi:type="CD" code="371153006"
+										displayName="Independently able"
+										codeSystem="2.16.840.1.113883.6.96"
+										codeSystemName="SNOMED CT"/>
+									<interpretationCode code="B" codeSystem="2.16.840.1.113883.5.83"/>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<!-- ** Assessment scale observation ** -->
+											<templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+											<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0b"/>
+											<code code="54614-3"
+												displayName="Brief Interview for Mental Status"
+												codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC"/>
+											<derivationExpr>Text description of the
+												calculation</derivationExpr>
+											<statusCode code="completed"/>
+											<effectiveTime value="20120214"/>
+											<!-- Summed score of the component values -->
+											<value xsi:type="INT" value="7"/>
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+												<!-- ** Assessment scale supporting observation ** -->
+												<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+												<id root="f4dce790-8328-11db-9fe1-0800200c9a33"/>
+												<code code="52731-7"
+												displayName="Repetition of Three Words"
+												codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC"/>
+												<statusCode code="completed"/>
+												<value xsi:type="CD" code="LA6395-3"
+												displayName="Three"
+												codeSystem="2.16.840.1.113883.6.1"/>
+												</observation>
+											</entryRelationship>
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+												<!-- ** Assessment scale supporting observation ** -->
+												<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+												<id root="f4dce790-8328-11db-9fe1-0800200c9a22"/>
+												<code code="52732-5"
+												displayName="Temporal orientation - current year"
+												codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC"/>
+												<statusCode code="completed"/>
+												<value xsi:type="CD" code="LA10966-2"
+												displayName="Missed by 2-5 years"
+												codeSystem="2.16.840.1.113883.6.1"/>
+												</observation>
+											</entryRelationship>
+											<entryRelationship typeCode="REFR">
+												<observation classCode="OBS" moodCode="EVN">
+												<!-- ** Caregiver characteristics ** -->
+												<templateId root="2.16.840.1.113883.10.20.22.4.72"/>
+												<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0c"/>
+												<code code="ASSERTION"
+												codeSystem="2.16.840.1.113883.5.4"/>
+												<statusCode code="completed"/>
+												<value xsi:type="CD" code="422615001"
+												codeSystem="2.16.840.1.113883.6.96"
+												displayName="caregiver difficulty providing physical care"/>
+												<participant typeCode="IND">
+												<participantRole classCode="CAREGIVER">
+												<code code="MTH"
+												codeSystem="2.16.840.1.113883.5.111"
+												displayName="Mother"/>
+												</participantRole>
+												</participant>
+												</observation>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<!-- ** conforms to Problem observation ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+							<!-- ** Functional status problem observation ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.68"/>
+							<id root="08edb7c0-2111-43f2-a784-9a5fdfaa67f0"/>
+							<code code="248536006" codeSystem="2.16.840.1.113883.6.96"
+								displayName="Finding of Functional Performance and Activity"/>
+							<text>
+								<reference value="#FUNC2"/>
+							</text>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<low value="200702"/>
+								<high value="200704"/>
+							</effectiveTime>
+							<value xsi:type="CD" code=" 162891007"
+								codeSystem="2.16.840.1.113883.6.96" displayName="dyspnea"/>
+						</observation>
+					</entry>
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<!-- ** conforms to Problem observation ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+							<!-- ** Cognitive status problem observation ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.73"/>
+							<id root="08edb7c0-2111-43f2-a784-9a5fdfaa67f0"/>
+							<code code="373930000" codeSystem="2.16.840.1.113883.6.96"
+								displayName="Cognitive Function Finding"/>
+							<text>
+								<reference value="#COG2"/>
+							</text>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<low value="200704"/>
+								<high value="200706"/>
+							</effectiveTime>
+							<value xsi:type="CD" code="386807006"
+								codeSystem="2.16.840.1.113883.6.96" displayName="Memory impairment"
+							/>
+						</observation>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<!-- ** conforms to Result organizer ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+							<!-- ** Cognitive status result organizer ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.75"/>
+							<id root="9295dba4-df05-46bb-b94e-f2c4e4b156f8"/>
+							<code code="d3" displayName="Communication"
+								codeSystem="2.16.840.1.113883.6.254" codeSystemName="ICF"/>
+							<statusCode code="completed"/>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- ** conforms to Result observation ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<!-- ** Cognitive status result observation ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.74"/>
+									<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a"/>
+									<code code="373930000" displayName="Cognitive function finding"
+										codeSystem="2.16.840.1.113883.6.96"
+										codeSystemName="SNOMED CT"/>
+									<text>
+										<reference value="#COG1"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="200903111230"/>
+									<value xsi:type="CD" code="61372001"
+										displayName="Aggressive behavior"
+										codeSystem="2.16.840.1.113883.6.96"
+										codeSystemName="SNOMED CT"/>
+									<interpretationCode code="HH"
+										codeSystem="2.16.840.1.113883.5.83"/>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<!-- ** Assessment scale observation ** -->
+											<templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+											<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0b1"/>
+											<code code="248241002"
+												displayName="Brief Interview for Mental Status"
+												codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC"/>
+											<derivationExpr>Text description of the
+												calculation</derivationExpr>
+											<statusCode code="completed"/>
+											<effectiveTime value="20120214"/>
+											<!-- Summed score of the component values -->
+											<value xsi:type="INT" value="7"/>
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+												<!-- ** Assessment scale supporting observation ** -->
+												<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+												<id root="f4dce790-8328-11db-9fe1-0800200c9a33"/>
+												<code code="52731-7"
+												displayName="Repetition of Three Words"
+												codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC"/>
+												<statusCode code="completed"/>
+												<value xsi:type="CD" code="LA6395-3"
+												displayName="Three"
+												codeSystem="2.16.840.1.113883.6.1"/>
+												</observation>
+											</entryRelationship>
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+												<!-- ** Assessment scale supporting observation ** -->
+												<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+												<id root="f4dce790-8328-11db-9fe1-0800200c9a22"/>
+												<code code="52732-5"
+												displayName="Temporal orientation - current year"
+												codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC"/>
+												<statusCode code="completed"/>
+												<value xsi:type="CD" code="LA10966-2"
+												displayName="Missed by 2-5 years"
+												codeSystem="2.16.840.1.113883.6.1"/>
+												</observation>
+											</entryRelationship>
+											<entryRelationship typeCode="REFR">
+												<observation classCode="OBS" moodCode="EVN">
+												<!-- ** Caregiver characteristics ** -->
+												<templateId root="2.16.840.1.113883.10.20.22.4.72"/>
+												<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0c"/>
+												<code code="ASSERTION"
+												codeSystem="2.16.840.1.113883.5.4"/>
+												<statusCode code="completed"/>
+												<value xsi:type="CD" code="422615001"
+												codeSystem="2.16.840.1.113883.6.96"
+												displayName="caregiver difficulty providing physical care"/>
+												<participant typeCode="IND">
+												<participantRole classCode="CAREGIVER">
+												<code code="MTH"
+												codeSystem="2.16.840.1.113883.5.111"
+												displayName="Mother"/>
+												</participantRole>
+												</participant>
+												</observation>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+									<referenceRange>
+										<observationRange>
+											<text>Non Aggressive to Aggressive</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

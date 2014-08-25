@@ -247,7 +247,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "ng/mL"
                         },
                         "value": 0.01,
@@ -287,7 +287,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "mMol/L"
                         },
                         "value": 3.5,
@@ -312,7 +312,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "mMol/L"
                         },
                         "value": 138,
@@ -337,7 +337,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "mg/dL"
                         },
                         "value": 195,
@@ -362,7 +362,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "mMol/L"
                         },
                         "value": 26,
@@ -387,7 +387,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "mMol/L"
                         },
                         "value": 100,
@@ -412,7 +412,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "mg/dL"
                         },
                         "value": 1,
@@ -437,7 +437,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "mg/dL"
                         },
                         "value": 15,
@@ -477,7 +477,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "ng/mL"
                         },
                         "value": 0.01,
@@ -517,7 +517,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "mg/dL"
                         },
                         "value": 1,
@@ -757,6 +757,46 @@
                         "precision": "second"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "1108434006"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "last": "Admit",
+                                "first": "Aaron"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1006 Healthcare Drive"
+                                ],
+                                "city": "Portland",
+                                "zip": "97005-0001",
+                                "country": "US",
+                                "use": "work place"
+                            }
+                        ],
+                        "email": [
+                            null,
+                            {
+                                "address": "Aaron.Admit@direct.medalliesdirect.com"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-(555)555-1006",
+                                "type": "work place"
+                            },
+                            null
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "1 West-121-A S2V",
@@ -1055,7 +1095,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "1.3.6.1.4.1.22812.11.0.100610.1",
+                "extension": "0"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

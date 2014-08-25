@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+ 
+<!-- Title: US_Realm_Header_Template -->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
+	xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+	<!-- ******************************************************** CDA Header 
+		******************************************************** -->
+	<realmCode code="US"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<!-- US General Header Template -->
+	<templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+	<!-- *** Note: The next templateId, code and title will differ depending 
+		on what type of document is being sent. *** -->
+	<!-- conforms to the document specific requirements -->
+	<templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+	<id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9"
+		displayName="Summarization of Episode Note"/>
+	<title>Community Health and Hospitals: Health Summary</title>
+	<effectiveTime value="201209150000-0400"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
+	<versionNumber value="1"/>
+	<!-- ******************************************************** CDA Body ******************************************************** -->
+	<component>
+		<structuredBody>
+			<!-- *************************************** ADVANCE DIRECTIVES************************** -->
+			<component>
+				<section>
+					<!-- conforms to Advance Directives section with entries optional -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.21"/>
+					<!-- Advance Directives section with entries required -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.21.1"/>
+					<code code="42348-3" codeSystem="2.16.840.1.113883.6.1"/>
+					<title>ADVANCE DIRECTIVES</title>
+					<text>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Directive</th>
+									<th>Description</th>
+									<th>Verification</th>
+									<th>Supporting Document(s)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Resuscitation status</td>
+									<td>
+										<content ID="AD1">Do not resuscitate</content>
+									</td>
+									<td>Dr. Robert Dolin, Feb 13, 2011</td>
+									<td>
+										<linkHtml
+											href="AdvanceDirective.b50b7910-7ffb-4f4c-bbe4-177ed68cbbf3.pdf"
+											>Advance directive</linkHtml>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.48"/>
+							<!-- ** Advance Directive Observation ** -->
+							<id root="9b54c3c9-1673-49c7-aef9-b037ed72ed27"/>
+							<code code="304251008" codeSystem="2.16.840.1.113883.6.96"
+								displayName="Resuscitation"/>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<low value="20110213"/>
+								<high nullFlavor="NA"/>
+							</effectiveTime>
+							<value xsi:type="CD" code="304253006"
+								codeSystem="2.16.840.1.113883.6.96" displayName="Do not resuscitate">
+								<originalText>
+									<reference value="#AD1"/>
+								</originalText>
+							</value>
+							<participant typeCode="VRF">
+								<templateId root="2.16.840.1.113883.10.20.1.58"/>
+								<time value="201102013"/>
+								<participantRole>
+									<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+									<playingEntity>
+										<name>
+											<prefix>Dr.</prefix>
+											<family>Dolin</family>
+											<given>Robert</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<participant typeCode="CST">
+								<participantRole classCode="AGNT">
+									<addr>
+										<streetAddressLine>21 North Ave.</streetAddressLine>
+										<city>Burlington</city>
+										<state>MA</state>
+										<postalCode>02368</postalCode>
+										<country>US</country>
+									</addr>
+									<telecom value="tel:(555)555-1003"/>
+									<playingEntity>
+										<name>
+											<prefix>Dr.</prefix>
+											<family>Dolin</family>
+											<given>Robert</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<reference typeCode="REFR">
+								<seperatableInd value="false"/>
+								<externalDocument>
+									<id root="b50b7910-7ffb-4f4c-bbe4-177ed68cbbf3"/>
+									<text mediaType="application/pdf">
+										<reference
+											value="AdvanceDirective.b50b7910-7ffb-4f4c-bbe4-177ed68cbbf3.pdf"
+										/>
+									</text>
+								</externalDocument>
+							</reference>
+						</observation>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

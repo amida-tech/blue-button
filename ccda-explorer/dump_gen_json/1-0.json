@@ -699,7 +699,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(3.8-10.8)"
                         },
                         "interpretations": [
@@ -727,7 +727,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(3.80-5.10)"
                         },
                         "interpretations": [
@@ -755,7 +755,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(11.7-15.5)"
                         },
                         "interpretations": [
@@ -783,7 +783,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(35.0-45.0)"
                         },
                         "interpretations": [
@@ -811,7 +811,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(.0-100.0)"
                         },
                         "interpretations": [
@@ -839,7 +839,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(27.0-33.0)"
                         },
                         "interpretations": [
@@ -867,7 +867,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(32.0-36.0)"
                         },
                         "interpretations": [
@@ -1020,7 +1020,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(140-400)"
                         },
                         "interpretations": [
@@ -1048,7 +1048,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(1500-7800)"
                         },
                         "interpretations": [
@@ -1076,7 +1076,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(850-3900)"
                         },
                         "interpretations": [
@@ -1104,7 +1104,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(200-950)"
                         },
                         "interpretations": [
@@ -1132,7 +1132,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(15-500)"
                         },
                         "interpretations": [
@@ -1160,7 +1160,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0-200)"
                         },
                         "interpretations": [
@@ -1188,7 +1188,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(11.0-15.0)"
                         },
                         "interpretations": [
@@ -1237,7 +1237,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(4.0-10.5)"
                         },
                         "value": 5.3,
@@ -1262,7 +1262,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(3.80-5.10)"
                         },
                         "value": 3.86,
@@ -1287,7 +1287,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(11.5-15.0)"
                         },
                         "interpretations": [
@@ -1315,7 +1315,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(34.0-44.0)"
                         },
                         "interpretations": [
@@ -1343,7 +1343,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(80-98)"
                         },
                         "value": 86,
@@ -1368,7 +1368,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(27.0-34.0)"
                         },
                         "value": 28.6,
@@ -1393,7 +1393,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(32.0-36.0)"
                         },
                         "value": 33.2,
@@ -1418,7 +1418,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(40-74)"
                         },
                         "value": 57,
@@ -1443,7 +1443,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(14-46)"
                         },
                         "value": 29,
@@ -1468,7 +1468,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(4-13)"
                         },
                         "value": 11,
@@ -1493,7 +1493,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0-7)"
                         },
                         "value": 3,
@@ -1518,7 +1518,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0-3)"
                         },
                         "value": 0,
@@ -1543,7 +1543,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(140-415)"
                         },
                         "value": 258,
@@ -1588,7 +1588,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(1.8-7.8)"
                         },
                         "value": 3,
@@ -1613,7 +1613,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0.7-4.5)"
                         },
                         "value": 1.5,
@@ -1638,7 +1638,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0.1-1.0)"
                         },
                         "value": 0.6,
@@ -1663,7 +1663,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0.0-0.4)"
                         },
                         "value": 0.2,
@@ -1688,7 +1688,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0.0-0.2)"
                         },
                         "value": 0,
@@ -1713,7 +1713,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(11.7-15.0)"
                         },
                         "interpretations": [
@@ -1762,7 +1762,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(100-199)"
                         },
                         "interpretations": [
@@ -1790,7 +1790,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(6.0-8.5)"
                         },
                         "interpretations": [
@@ -1818,7 +1818,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(3.6-4.8)"
                         },
                         "value": 3.7,
@@ -1843,7 +1843,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0.1-1.2)"
                         },
                         "value": 0.8,
@@ -1868,7 +1868,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(25-165)"
                         },
                         "value": 142,
@@ -1893,7 +1893,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(100-250)"
                         },
                         "value": 108,
@@ -1918,7 +1918,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0-40)"
                         },
                         "value": 27,
@@ -1943,7 +1943,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0.00-0.40)"
                         },
                         "value": 0.31,
@@ -1968,7 +1968,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0-40)"
                         },
                         "value": 23,
@@ -1993,7 +1993,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0-60)"
                         },
                         "value": 36,
@@ -2039,7 +2039,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(4.5-12.0)"
                         },
                         "interpretations": [
@@ -2067,7 +2067,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(24-39)"
                         },
                         "interpretations": [
@@ -2095,7 +2095,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(1.2-4.9)"
                         },
                         "interpretations": [
@@ -2123,7 +2123,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0.35-5.50)"
                         },
                         "interpretations": [
@@ -2172,7 +2172,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(3.5-5.5)"
                         },
                         "interpretations": [
@@ -2200,7 +2200,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(135-148)"
                         },
                         "interpretations": [
@@ -2228,7 +2228,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(96-109)"
                         },
                         "interpretations": [
@@ -2277,7 +2277,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(Non-Reactive)"
                         },
                         "interpretations": [
@@ -2324,7 +2324,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(3.8-10.8)"
                         },
                         "interpretations": [
@@ -2352,7 +2352,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(3.80-5.10)"
                         },
                         "interpretations": [
@@ -2380,7 +2380,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(11.7-15.5)"
                         },
                         "interpretations": [
@@ -2408,7 +2408,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(35.0-45.0)"
                         },
                         "interpretations": [
@@ -2436,7 +2436,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(.0-100.0)"
                         },
                         "interpretations": [
@@ -2464,7 +2464,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(27.0-33.0)"
                         },
                         "interpretations": [
@@ -2492,7 +2492,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(32.0-36.0)"
                         },
                         "interpretations": [
@@ -2645,7 +2645,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(140-400)"
                         },
                         "interpretations": [
@@ -2673,7 +2673,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(1500-7800)"
                         },
                         "interpretations": [
@@ -2701,7 +2701,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(850-3900)"
                         },
                         "interpretations": [
@@ -2729,7 +2729,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(200-950)"
                         },
                         "interpretations": [
@@ -2757,7 +2757,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(15-500)"
                         },
                         "interpretations": [
@@ -2785,7 +2785,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(0-200)"
                         },
                         "interpretations": [
@@ -2813,7 +2813,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(11.0-15.0)"
                         },
                         "interpretations": [
@@ -2862,7 +2862,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(37-47)"
                         },
                         "interpretations": [
@@ -2890,7 +2890,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(40-54)"
                         },
                         "interpretations": [
@@ -2939,7 +2939,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(Clear-Mod Cloud)"
                         },
                         "interpretations": [
@@ -2965,7 +2965,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(Negative-Small)"
                         },
                         "interpretations": [
@@ -2991,7 +2991,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(Negative)"
                         },
                         "interpretations": [
@@ -3017,7 +3017,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(None-Yellow)"
                         },
                         "interpretations": [
@@ -3043,7 +3043,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(Negative-250)"
                         },
                         "interpretations": [
@@ -3069,7 +3069,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(1.000-1.010)"
                         },
                         "interpretations": [
@@ -3097,7 +3097,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(Negative-Trace)"
                         },
                         "interpretations": [
@@ -3123,7 +3123,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(Negative-Trace)"
                         },
                         "interpretations": [
@@ -3149,7 +3149,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(Negative)"
                         },
                         "interpretations": [
@@ -3175,7 +3175,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(5.0-6.5)"
                         },
                         "interpretations": [
@@ -3203,7 +3203,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "(Negative)"
                         },
                         "interpretations": [
@@ -4820,7 +4820,79 @@
                         "date": "2012-01-13T00:00:00Z",
                         "precision": "day"
                     }
-                }
+                },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9990058700"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "E"
+                                ],
+                                "last": "Ford",
+                                "suffix": "MD",
+                                "first": "David"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "87 Bayshore Drive"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "encounter": {
@@ -4839,7 +4911,79 @@
                         "date": "2010-03-01T00:00:00Z",
                         "precision": "day"
                     }
-                }
+                },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9990058700"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "E"
+                                ],
+                                "last": "Ford",
+                                "suffix": "MD",
+                                "first": "David"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "87 Bayshore Drive"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "encounter": {
@@ -4858,7 +5002,79 @@
                         "date": "2010-02-23T00:00:00Z",
                         "precision": "day"
                     }
-                }
+                },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9990058700"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "E"
+                                ],
+                                "last": "Ford",
+                                "suffix": "MD",
+                                "first": "David"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "87 Bayshore Drive"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "encounter": {
@@ -4877,7 +5093,79 @@
                         "date": "2009-11-02T00:00:00Z",
                         "precision": "day"
                     }
-                }
+                },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9990058700"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "E"
+                                ],
+                                "last": "Ford",
+                                "suffix": "MD",
+                                "first": "David"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "87 Bayshore Drive"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "encounter": {
@@ -4897,6 +5185,78 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9990054800"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "E"
+                                ],
+                                "last": "Shah",
+                                "suffix": "MD",
+                                "first": "Depak"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "8620 Palmetto Drive"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Office - Madison Medical Center, P.A.",
@@ -4943,6 +5303,78 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9990058700"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "E"
+                                ],
+                                "last": "Ford",
+                                "suffix": "MD",
+                                "first": "David"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "87 Bayshore Drive"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Office - Madison Medical Center, P.A.",
@@ -4972,6 +5404,76 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9990155200"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "last": "Madder",
+                                "suffix": "MD",
+                                "first": "Gary"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "34 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Office - Madison Medical Center, P.A.",
@@ -5018,6 +5520,78 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9080089000"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "T"
+                                ],
+                                "last": "Monroe",
+                                "suffix": "MD",
+                                "first": "James"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "11554 Weedside Lane"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Office - Madison Medical Center, P.A.",
@@ -5064,6 +5638,78 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9080089000"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "T"
+                                ],
+                                "last": "Monroe",
+                                "suffix": "MD",
+                                "first": "James"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "11554 Weedside Lane"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Office - Madison Medical Center, P.A.",
@@ -5110,6 +5756,78 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9080089000"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "T"
+                                ],
+                                "last": "Monroe",
+                                "suffix": "MD",
+                                "first": "James"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "11554 Weedside Lane"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Office - Madison Medical Center, P.A.",
@@ -5156,6 +5874,78 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9080089000"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "T"
+                                ],
+                                "last": "Monroe",
+                                "suffix": "MD",
+                                "first": "James"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "11554 Weedside Lane"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Office - Madison Medical Center, P.A.",
@@ -5202,6 +5992,78 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9080089000"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "T"
+                                ],
+                                "last": "Monroe",
+                                "suffix": "MD",
+                                "first": "James"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "11554 Weedside Lane"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Office - Madison Medical Center, P.A.",
@@ -5248,6 +6110,78 @@
                         "precision": "day"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "9990058700"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "middle": [
+                                    "E"
+                                ],
+                                "last": "Ford",
+                                "suffix": "MD",
+                                "first": "David"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "87 Bayshore Drive"
+                                ],
+                                "city": "Madison",
+                                "state": "CA",
+                                "zip": "95653",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                        "extension": "MMC"
+                                    }
+                                ],
+                                "name": [
+                                    "Madison Medical Center P. A."
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "99 Sycamore Street",
+                                            "Suite 3"
+                                        ],
+                                        "city": "Gainesville",
+                                        "state": "FL",
+                                        "zip": "32608",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "+1-916-555-7654",
+                                        "type": "work place"
+                                    },
+                                    {
+                                        "number": "+1-916-555-7657",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Office - Madison Medical Center, P.A.",
@@ -6061,6 +6995,13 @@
                                     "number": "+1-916-555-1020",
                                     "type": "work place"
                                 }
+                            ],
+                            "code": [
+                                {
+                                    "name": "Invoice Payor",
+                                    "code": "PAYOR",
+                                    "code_system_name": "HL7 RoleCode"
+                                }
                             ]
                         }
                     }
@@ -6108,6 +7049,13 @@
                             {
                                 "number": "+1-916-555-5544",
                                 "type": "work place"
+                            }
+                        ],
+                        "code": [
+                            {
+                                "name": "Self",
+                                "code": "SELF",
+                                "code_system_name": "HL7 Role"
                             }
                         ]
                     },
@@ -6192,6 +7140,13 @@
                                         "Medicare Part B of California - Northern California"
                                     ]
                                 }
+                            ],
+                            "code": [
+                                {
+                                    "name": "Invoice Payor",
+                                    "code": "PAYOR",
+                                    "code_system_name": "HL7 RoleCode"
+                                }
                             ]
                         }
                     }
@@ -6240,6 +7195,13 @@
                                 "number": "+1-916-555-5544",
                                 "type": "work place"
                             }
+                        ],
+                        "code": [
+                            {
+                                "name": "Self",
+                                "code": "SELF",
+                                "code_system_name": "HL7 Role"
+                            }
                         ]
                     },
                     "name": [
@@ -6264,7 +7226,12 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.1.13092597.12456139"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

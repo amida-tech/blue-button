@@ -1,0 +1,48 @@
+--------------------------------
+MYMEDICARE.GOV PERSONAL HEALTH INFORMATION
+
+--------------------------------
+**********CONFIDENTIAL***********
+
+Produced by the Blue Button (v2.0)
+
+03/16/2013 5:10 AM
+
+
+
+
+--------------------------------
+Demographic
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+Name: JOHN DOE
+
+Date of Birth: 01/01/1910
+
+Address Line 1: 123 ANY ROAD
+
+Address Line 2: 
+
+City: ANYTOWN
+
+State: VA
+
+Zip: 00001
+
+Phone Number: 123-456-7890
+
+Email: JOHNDOE@example.com
+
+Part A Effective Date: 01/01/2012
+
+Part B Effective Date: 01/01/2012
+
+
+
+
+----------------------------------

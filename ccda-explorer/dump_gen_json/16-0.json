@@ -616,7 +616,12 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "47c724fb-7ae1-402d-8d86-2cafd14e9c52"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

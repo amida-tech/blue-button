@@ -346,7 +346,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "4-5.6%"
                         },
                         "interpretations": [
@@ -394,7 +394,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "NA"
                         },
                         "interpretations": [
@@ -445,7 +445,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "3.6-5.1 mg/dL"
                         },
                         "interpretations": [
@@ -496,7 +496,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "NA"
                         },
                         "interpretations": [
@@ -547,7 +547,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "4-5.6%"
                         },
                         "interpretations": [
@@ -588,7 +588,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "NA"
                         },
                         "interpretations": [
@@ -639,7 +639,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "4-5.6%"
                         },
                         "interpretations": [
@@ -1282,7 +1282,12 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "db734647-fc99-424c-a864-7e3cda82e703"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

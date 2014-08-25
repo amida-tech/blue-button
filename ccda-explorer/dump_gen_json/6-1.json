@@ -266,7 +266,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "M 13-18 g/dl; F 12-16 g/dl"
                         },
                         "interpretations": [
@@ -293,7 +293,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "low": "4.3",
                             "high": "10.8",
                             "unit": "10+3/ul"
@@ -322,7 +322,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "low": "150",
                             "high": "350",
                             "unit": "10+3/ul"
@@ -538,9 +538,18 @@
                 },
                 "performers": [
                     {
-                        "name": "General Physician",
-                        "code": "59058001",
-                        "code_system_name": "SNOMED CT"
+                        "identifiers": [
+                            {
+                                "identifier": "2a620155-9d11-439e-92a3-5d9815ff4de8"
+                            }
+                        ],
+                        "code": [
+                            {
+                                "name": "General Physician",
+                                "code": "59058001",
+                                "code_system_name": "SNOMED CT"
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -1116,7 +1125,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "1.1.1.1.1.1.1.1.1",
+                "extension": "Test CCDA"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",
