@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.18"/>
+    <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payer"/>
+    <title>INSURANCE PROVIDERS</title>
+    <text/>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.60"/>
+        <id root="1fe2cdd0-7aad-11db-9fe1-0800200c9a66"/>
+        <code code="48768-6" displayName="Payment sources" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        <statusCode code="completed"/>
+        <entryRelationship typeCode="COMP">
+          <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
+            <id root="3e676a50-7aac-11db-9fe1-0800200c9a66"/>
+            <code code="SELF" codeSystem="HL7 RoleCode" codeSystemName="HL7 RoleCode"/>
+            <statusCode code="completed"/>
+            <performer typeCode="PRF">
+              <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
+              <assignedEntity>
+                <id root="2.16.840.1.113883.19"/>
+                <addr use="WP">
+                  <streetAddressLine>123 Insurance Road</streetAddressLine>
+                  <city>Blue Bell</city>
+                  <state>MA</state>
+                  <postalCode>02368</postalCode>
+                  <country>US</country>
+                </addr>
+                <telecom value="tel:(781)555-1515" use="WP"/>
+                <representedOrganization>
+                  <id nullFlavor="UNK"/>
+                  <name>Good Health Insurance</name>
+                  <telecom value="tel:(781)555-1515" use="WP"/>
+                  <addr use="WP">
+                    <streetAddressLine>123 Insurance Road</streetAddressLine>
+                    <city>Blue Bell</city>
+                    <state>MA</state>
+                    <postalCode>02368</postalCode>
+                    <country>US</country>
+                  </addr>
+                </representedOrganization>
+              </assignedEntity>
+            </performer>
+            <performer typeCode="PRF">
+              <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
+              <assignedEntity>
+                <id root="329fcdf0-7ab3-11db-9fe1-0800200c9a66"/>
+                <addr use="HP">
+                  <streetAddressLine>17 Daws Rd.</streetAddressLine>
+                  <city>Blue Bell</city>
+                  <state>MA</state>
+                  <postalCode>02368</postalCode>
+                  <country>US</country>
+                </addr>
+                <telecom value="tel:(781)555-1212" use="HP"/>
+                <assignedPerson>
+                  <name>
+                    <given>Adam</given>
+                    <family>Everyman</family>
+                  </name>
+                </assignedPerson>
+              </assignedEntity>
+            </performer>
+            <participant typeCode="COV">
+              <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
+              <time/>
+              <participantRole classCode="PAT">
+                <id root="14d4a520-7aae-11db-9fe1-0800200c9a66" extension="1138345"/>
+                <code code="SELF" displayName="Self" codeSystem="HL7 Role" codeSystemName="HL7 Role"/>
+                <addr use="HP">
+                  <streetAddressLine>17 Daws Rd.</streetAddressLine>
+                  <city>Blue Bell</city>
+                  <state>MA</state>
+                  <postalCode>02368</postalCode>
+                  <country>US</country>
+                </addr>
+                <playingEntity>
+                  <name>
+                    <prefix>Mr.</prefix>
+                    <given>Frank</given>
+                    <given>A.</given>
+                    <family>Everyman</family>
+                  </name>
+                </playingEntity>
+              </participantRole>
+            </participant>
+            <participant typeCode="HLD">
+              <templateId root="2.16.840.1.113883.10.20.22.4.90"/>
+              <participantRole>
+                <id root="2.16.840.1.113883.19" extension="1138345"/>
+                <addr use="HP">
+                  <streetAddressLine>17 Daws Rd.</streetAddressLine>
+                  <city>Blue Bell</city>
+                  <state>MA</state>
+                  <postalCode>02368</postalCode>
+                  <country>US</country>
+                </addr>
+              </participantRole>
+            </participant>
+            <entryRelationship typeCode="REFR">
+              <act classCode="ACT" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.1.19"/>
+                <id root="f4dce790-8328-11db-9fe1-0800200c9a66"/>
+                <code nullFlavor="UNK"/>
+                <entryRelationship typeCode="SUBJ">
+                  <procedure classCode="PROC" moodCode="PRMS">
+                    <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  </procedure>
+                </entryRelationship>
+              </act>
+            </entryRelationship>
+          </act>
+        </entryRelationship>
+      </act>
+    </entry>
+  </section>
+</ClinicalDocument>

@@ -1,0 +1,91 @@
+{
+    "social_history": [
+        {
+            "value": "Former smoker",
+            "date_time": {
+                "low": {
+                    "date": "2005-05-01T00:00:00Z",
+                    "precision": "day"
+                },
+                "high": {
+                    "date": "2009-02-27T13:00:00Z",
+                    "precision": "subsecond"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "2.16.840.1.113883.19",
+                    "extension": "123456789"
+                }
+            ],
+            "code": {
+                "code": "ASSERTION",
+                "code_system_name": "HL7ActCode"
+            }
+        },
+        {
+            "value": "Tobacco use and exposure",
+            "date_time": {
+                "low": {
+                    "date": "2005-05-01T00:00:00Z",
+                    "precision": "day"
+                },
+                "high": {
+                    "date": "2009-02-27T13:00:00Z",
+                    "precision": "subsecond"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"
+                }
+            ],
+            "code": {
+                "name": "Tobacco use and exposure",
+                "code": "229819007",
+                "code_system_name": "SNOMED CT"
+            },
+            "observation_value": "1 pack per day"
+        },
+        {
+            "value": "Tobacco use and exposure",
+            "date_time": {
+                "low": {
+                    "date": "2009-02-27T13:00:00Z",
+                    "precision": "subsecond"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "45efb604-7049-4a2e-ad33-d38556c9636c"
+                }
+            ],
+            "code": {
+                "name": "Tobacco use and exposure",
+                "code": "229819007",
+                "code_system_name": "SNOMED CT"
+            },
+            "observation_value": "None"
+        },
+        {
+            "value": "Alcohol intake",
+            "date_time": {
+                "low": {
+                    "date": "2005-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "37f76c51-6411-4e1d-8a37-957fd49d2cef"
+                }
+            ],
+            "code": {
+                "name": "Alcohol consumption",
+                "code": "160573003",
+                "code_system_name": "SNOMED CT"
+            },
+            "observation_value": "None"
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROBLEM LIST"/>
+    <title>PROBLEMS</title>
+    <text/>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+        <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
+        <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20080103"/>
+          <high value="20080103"/>
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+            <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
+            <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
+            <text>
+              <reference value="#problem1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20080103"/>
+              <high value="20080103"/>
+            </effectiveTime>
+            <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+            <entryRelationship typeCode="REFR">
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
+                <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                <text>
+                  <reference value="#STAT1"/>
+                </text>
+                <statusCode code="completed"/>
+                <effectiveTime>
+                  <low value="20080103"/>
+                  <high value="20090227"/>
+                </effectiveTime>
+                <value xsi:type="CD" code="undefined" displayName="[object Object]" codeSystem="2.16.840.1.113883.6.96" codeSystemName="HITSP Problem Status"/>
+              </observation>
+            </entryRelationship>
+            <entryRelationship typeCode="SUBJ" inversionInd="true">
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+                <code code="445518008" displayName="Age At Onset" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+                <statusCode code="completed"/>
+                <value xsi:type="PQ" value="57" unit="a"/>
+              </observation>
+            </entryRelationship>
+            <entryRelationship typeCode="REFR">
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+                <code code="11323-3" displayName="Health status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                <text>
+                  <reference value="#problems"/>
+                </text>
+                <statusCode code="completed"/>
+                <value xsi:type="CD" code="81323004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Alive and well"/>
+              </observation>
+            </entryRelationship>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+        <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
+        <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20070103"/>
+          <high value="20070103"/>
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+            <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
+            <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
+            <text>
+              <reference value="#problem2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20070103"/>
+              <high value="20080103"/>
+            </effectiveTime>
+            <value xsi:type="CD" code="195967001" displayName="Asthma" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+            <entryRelationship typeCode="REFR">
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
+                <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                <text>
+                  <reference value="#STAT2"/>
+                </text>
+                <statusCode code="completed"/>
+                <effectiveTime>
+                  <low value="20080103"/>
+                  <high value="20090227"/>
+                </effectiveTime>
+                <value xsi:type="CD" code="undefined" displayName="[object Object]" codeSystem="2.16.840.1.113883.6.96" codeSystemName="HITSP Problem Status"/>
+              </observation>
+            </entryRelationship>
+            <entryRelationship typeCode="SUBJ" inversionInd="true">
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+                <code code="445518008" displayName="Age At Onset" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+                <statusCode code="completed"/>
+                <value xsi:type="PQ" value="57" unit="a"/>
+              </observation>
+            </entryRelationship>
+            <entryRelationship typeCode="REFR">
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+                <code code="11323-3" displayName="Health status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                <text>
+                  <reference value="#problems"/>
+                </text>
+                <statusCode code="completed"/>
+                <value xsi:type="CD" code="81323004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Alive and well"/>
+              </observation>
+            </entryRelationship>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+  </section>
+</ClinicalDocument>

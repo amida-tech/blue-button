@@ -1,0 +1,78 @@
+[
+    {
+        "plan": {
+            "name": "Colonoscopy",
+            "code": "73761001",
+            "code_system_name": "SNOMED CT"
+        },
+        "identifiers": [
+            {
+                "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809b4a"
+            }
+        ],
+        "date_time": {
+            "center": {
+                "date": "2012-05-12T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "type": "observation"
+    },
+    {
+        "plan": {
+            "name": "Colonoscopy",
+            "code": "73761001",
+            "code_system_name": "SNOMED CT"
+        },
+        "identifiers": [
+            {
+                "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809a5c"
+            }
+        ],
+        "date_time": {
+            "center": {
+                "date": "2012-05-12T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "type": "act"
+    },
+    {
+        "plan": {
+            "name": "Colonoscopy",
+            "code": "73761001",
+            "code_system_name": "SNOMED CT"
+        },
+        "identifiers": [
+            {
+                "identifier": "9a6d1bac-17d3-4195-89a4-1121bc809b4d"
+            }
+        ],
+        "date_time": {
+            "center": {
+                "date": "2012-05-12T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "type": "encounter"
+    },
+    {
+        "plan": {
+            "name": "Colonoscopy",
+            "code": "73761001",
+            "code_system_name": "SNOMED CT"
+        },
+        "identifiers": [
+            {
+                "identifier": "9a6d1bac-17d3-4195-89c4-1121bc809b5a"
+            }
+        ],
+        "date_time": {
+            "center": {
+                "date": "2012-05-12T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "type": "procedure"
+    }
+]

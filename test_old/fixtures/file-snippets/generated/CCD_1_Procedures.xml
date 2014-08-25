@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+    <code code="47519-4" displayName="History of Procedures" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>PROCEDURES</title>
+    <text/>
+    <entry typeCode="DRIV">
+      <procedure classCode="PROC" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+        <id root="d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"/>
+        <code code="73761001" displayName="Colonoscopy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+          <originalText>
+            <reference value="#Proc1"/>
+          </originalText>
+        </code>
+        <statusCode code="Completed"/>
+        <effectiveTime value="20120512"/>
+        <priorityCode nullFlavor="UNK"/>
+        <methodCode nullFlavor="UNK"/>
+        <targetSiteCode code="appropriate_code" displayName="colon" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
+        <specimen typeCode="SPC">
+          <specimenRole classCode="SPEC">
+            <id nullFlavor="UNK"/>
+            <specimenPlayingEntity>
+              <code nullFlavor="UNK"/>
+            </specimenPlayingEntity>
+          </specimenRole>
+        </specimen>
+        <performer>
+          <assignedEntity>
+            <id nullFlavor="UNK"/>
+            <addr nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
+          </assignedEntity>
+        </performer>
+        <participant typeCode="DEV">
+          <participantRole classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+            <id root="742aee30-21c5-11e1-bfc2-0800200c9a66"/>
+            <playingDevice>
+              <code code="90412006" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscope"/>
+            </playingDevice>
+            <scopingEntity>
+              <id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
+            </scopingEntity>
+          </participantRole>
+        </participant>
+      </procedure>
+    </entry>
+    <entry typeCode="DRIV">
+      <observation classCode="OBS" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
+        <id root="2.16.840.1.113883.19" extension="123456789"/>
+        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+          <originalText>
+            <reference value="#Proc1"/>
+          </originalText>
+        </code>
+        <statusCode code="Aborted"/>
+        <effectiveTime value="20110203"/>
+        <priorityCode code="CR" displayName="Callback results" codeSystem="OID 2.16.840.1.113883.5.7" codeSystemName="OID 2.16.840.1.113883.5.7"/>
+        <value xsi:type="CD"/>
+        <methodCode nullFlavor="UNK"/>
+        <targetSiteCode code="416949008" displayName="Abdomen and pelvis" codeSystem="2.16.840.1.113883.3.88.12.3221.8.9" codeSystemName="Body Site Value Set"/>
+        <performer>
+          <assignedEntity>
+            <id nullFlavor="UNK"/>
+            <addr nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
+          </assignedEntity>
+        </performer>
+        <participant typeCode="LOC">
+          <participantRole classCode="SDLOC">
+            <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+            <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
+            <addr>
+              <streetAddressLine>17 Daws Rd.</streetAddressLine>
+              <city>Blue Bell</city>
+              <state>MA</state>
+              <postalCode>02368</postalCode>
+              <country>US</country>
+            </addr>
+            <telecom nullFlavor="UNK"/>
+            <playingEntity classCode="PLC">
+              <name>Community Gastroenterology Clinic</name>
+            </playingEntity>
+          </participantRole>
+        </participant>
+      </observation>
+    </entry>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
+        <id root="1.2.3.4.5.6.7.8" extension="1234567"/>
+        <code code="274025005" displayName="Colonic polypectomy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+          <originalText>
+            <reference value="#Proc1"/>
+          </originalText>
+        </code>
+        <statusCode code="Completed"/>
+        <effectiveTime value="20110203"/>
+        <priorityCode code="CR" displayName="Callback results" codeSystem="OID 2.16.840.1.113883.5.7" codeSystemName="OID 2.16.840.1.113883.5.7"/>
+        <performer>
+          <assignedEntity>
+            <id nullFlavor="UNK"/>
+            <addr nullFlavor="UNK"/>
+            <telecom nullFlavor="UNK"/>
+          </assignedEntity>
+        </performer>
+        <participant typeCode="LOC">
+          <participantRole classCode="SDLOC">
+            <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+            <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
+            <addr>
+              <streetAddressLine>17 Daws Rd.</streetAddressLine>
+              <city>Blue Bell</city>
+              <state>MA</state>
+              <postalCode>02368</postalCode>
+              <country>US</country>
+            </addr>
+            <telecom nullFlavor="UNK"/>
+            <playingEntity classCode="PLC">
+              <name>Community Gastroenterology Clinic</name>
+            </playingEntity>
+          </participantRole>
+        </participant>
+      </act>
+    </entry>
+  </section>
+</ClinicalDocument>

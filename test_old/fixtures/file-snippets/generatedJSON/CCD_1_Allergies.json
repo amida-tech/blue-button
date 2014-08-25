@@ -1,0 +1,184 @@
+{
+    "allergies": [
+        {
+            "date_time": {
+                "point": {
+                    "date": "2007-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                }
+            ],
+            "allergen": {
+                "name": "ALLERGENIC EXTRACT, PENICILLIN",
+                "code": "314422",
+                "code_system_name": "RXNORM"
+            },
+            "intolerance": {
+                "date_time": {
+                    "low": {
+                        "date": "2007-05-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "code": "419511003",
+                "name": "Propensity to adverse reactions to drug",
+                "code_system_name": "SNOMED CT",
+                "severity": {
+                    "code": "371924009",
+                    "name": "Moderate to severe"
+                }
+            },
+            "status": {
+                "code": "73425007",
+                "status": "Inactive"
+            },
+            "reaction": [
+                {
+                    "date_time": {
+                        "low": {
+                            "date": "2007-05-01T00:00:00Z",
+                            "precision": "day"
+                        },
+                        "high": {
+                            "date": "2009-02-27T13:00:00Z",
+                            "precision": "subsecond"
+                        }
+                    },
+                    "reaction": {
+                        "name": "Nausea",
+                        "code": "422587007",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                }
+            ]
+        },
+        {
+            "date_time": {
+                "point": {
+                    "date": "2006-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                }
+            ],
+            "allergen": {
+                "name": "Codeine",
+                "code": "2670",
+                "code_system_name": "RXNORM"
+            },
+            "intolerance": {
+                "date_time": {
+                    "low": {
+                        "date": "2006-05-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "code": "419511003",
+                "name": "Propensity to adverse reactions to drug",
+                "code_system_name": "SNOMED CT",
+                "severity": {
+                    "code": "6736007",
+                    "name": "Moderate"
+                }
+            },
+            "status": {
+                "code": "55561003",
+                "status": "Active"
+            },
+            "reaction": [
+                {
+                    "date_time": {
+                        "low": {
+                            "date": "2006-05-01T00:00:00Z",
+                            "precision": "day"
+                        },
+                        "high": {
+                            "date": "2009-02-27T13:00:00Z",
+                            "precision": "subsecond"
+                        }
+                    },
+                    "reaction": {
+                        "name": "Wheezing",
+                        "code": "56018004",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "severity": {
+                        "code": "255604002",
+                        "name": "Mild"
+                    }
+                }
+            ]
+        },
+        {
+            "date_time": {
+                "point": {
+                    "date": "2008-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                }
+            ],
+            "allergen": {
+                "name": "Aspirin",
+                "code": "1191",
+                "code_system_name": "RXNORM"
+            },
+            "intolerance": {
+                "date_time": {
+                    "low": {
+                        "date": "2008-05-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "code": "59037007",
+                "name": "Drug intolerance",
+                "code_system_name": "SNOMED CT",
+                "severity": {
+                    "code": "371923003",
+                    "name": "Mild to moderate"
+                }
+            },
+            "status": {
+                "code": "55561003",
+                "status": "Active"
+            },
+            "reaction": [
+                {
+                    "date_time": {
+                        "low": {
+                            "date": "2008-05-01T00:00:00Z",
+                            "precision": "day"
+                        },
+                        "high": {
+                            "date": "2009-02-27T13:00:00Z",
+                            "precision": "subsecond"
+                        }
+                    },
+                    "reaction": {
+                        "name": "Hives",
+                        "code": "247472004",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "severity": {
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                }
+            ]
+        }
+    ]
+}

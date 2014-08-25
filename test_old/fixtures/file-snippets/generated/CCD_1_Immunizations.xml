@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+    <code code="11369-6" displayName="Immunizations" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>IMMUNIZATIONS</title>
+    <text/>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+        <text>
+          <reference value="#immun1"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS" value="19991101"/>
+        <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
+        <doseQuantity value="50" unit="mcg"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <id nullFlavor="UNK"/>
+            <manufacturedMaterial>
+              <code code="88" displayName="Influenza virus vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+                <originalText>
+                  <reference value="#immi1"/>
+                </originalText>
+                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+              </code>
+              <lotNumberText/>
+            </manufacturedMaterial>
+            <manufacturerOrganization>
+              <name>Health LS - Immuno Inc.</name>
+            </manufacturerOrganization>
+          </manufacturedProduct>
+        </consumable>
+        <performer>
+          <assignedEntity>
+            <id root="2.16.840.1.113883.19.5.9999.456" extension="2981824"/>
+            <addr>
+              <streetAddressLine>1021 Health Drive</streetAddressLine>
+              <city>Ann Arbor</city>
+              <state>MI</state>
+              <postalCode>99099</postalCode>
+              <country>US</country>
+            </addr>
+            <telecom nullFlavor="UNK"/>
+            <assignedPerson>
+              <name>
+                <given>Amanda</given>
+                <family>Assigned</family>
+              </name>
+            </assignedPerson>
+            <representedOrganization>
+              <id root="2.16.840.1.113883.19.5.9999.1394"/>
+              <name>Good Health Clinic</name>
+              <telecom nullFlavor="UNK"/>
+              <addr nullFlavor="UNK"/>
+            </representedOrganization>
+          </assignedEntity>
+        </performer>
+        <entryRelationship typeCode="SUBJ" inversionInd="true">
+          <act classCode="ACT" moodCode="INT">
+            <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+            <code code="171044003" displayName="immunization education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+            <text>Possible flu-like symptoms for three days.<reference value="#immunSect"/></text>
+            <statusCode code="completed"/>
+          </act>
+        </entryRelationship>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+        <text>
+          <reference value="#immun2"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS" value="19981215"/>
+        <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
+        <doseQuantity value="50" unit="mcg"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <id nullFlavor="UNK"/>
+            <manufacturedMaterial>
+              <code code="88" displayName="Influenza virus vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+                <originalText>
+                  <reference value="#immi2"/>
+                </originalText>
+                <translation code="141" displayName="Influenza, seasonal, injectable" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+              </code>
+              <lotNumberText/>
+            </manufacturedMaterial>
+            <manufacturerOrganization>
+              <name>Health LS - Immuno Inc.</name>
+            </manufacturerOrganization>
+          </manufacturedProduct>
+        </consumable>
+        <performer>
+          <assignedEntity>
+            <id root="2.16.840.1.113883.19.5.9999.456" extension="2981824"/>
+            <addr>
+              <streetAddressLine>1021 Health Drive</streetAddressLine>
+              <city>Ann Arbor</city>
+              <state>MI</state>
+              <postalCode>99099</postalCode>
+              <country>US</country>
+            </addr>
+            <telecom nullFlavor="UNK"/>
+            <assignedPerson>
+              <name>
+                <given>Amanda</given>
+                <family>Assigned</family>
+              </name>
+            </assignedPerson>
+            <representedOrganization>
+              <id root="2.16.840.1.113883.19.5.9999.1394"/>
+              <name>Good Health Clinic</name>
+              <telecom nullFlavor="UNK"/>
+              <addr nullFlavor="UNK"/>
+            </representedOrganization>
+          </assignedEntity>
+        </performer>
+        <entryRelationship typeCode="SUBJ" inversionInd="true">
+          <act classCode="ACT" moodCode="INT">
+            <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+            <code code="171044003" displayName="immunization education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+            <text>Possible flu-like symptoms for three days.<reference value="#immunSect"/></text>
+            <statusCode code="completed"/>
+          </act>
+        </entryRelationship>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+        <text>
+          <reference value="#immun3"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS" value="19981215"/>
+        <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
+        <doseQuantity value="50" unit="mcg"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <id nullFlavor="UNK"/>
+            <manufacturedMaterial>
+              <code code="33" displayName="Pneumococcal polysaccharide vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+                <originalText>
+                  <reference value="#immi3"/>
+                </originalText>
+                <translation code="109" displayName="Pneumococcal NOS" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+              </code>
+              <lotNumberText/>
+            </manufacturedMaterial>
+            <manufacturerOrganization>
+              <name>Health LS - Immuno Inc.</name>
+            </manufacturerOrganization>
+          </manufacturedProduct>
+        </consumable>
+        <performer>
+          <assignedEntity>
+            <id root="2.16.840.1.113883.19.5.9999.456" extension="2981824"/>
+            <addr>
+              <streetAddressLine>1021 Health Drive</streetAddressLine>
+              <city>Ann Arbor</city>
+              <state>MI</state>
+              <postalCode>99099</postalCode>
+              <country>US</country>
+            </addr>
+            <telecom nullFlavor="UNK"/>
+            <assignedPerson>
+              <name>
+                <given>Amanda</given>
+                <family>Assigned</family>
+              </name>
+            </assignedPerson>
+            <representedOrganization>
+              <id root="2.16.840.1.113883.19.5.9999.1394"/>
+              <name>Good Health Clinic</name>
+              <telecom nullFlavor="UNK"/>
+              <addr nullFlavor="UNK"/>
+            </representedOrganization>
+          </assignedEntity>
+        </performer>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+        <text>
+          <reference value="#immun4"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS" value="19981215"/>
+        <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Intramuscular injection"/>
+        <doseQuantity value="50" unit="mcg"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <id nullFlavor="UNK"/>
+            <manufacturedMaterial>
+              <code code="103" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+                <originalText>
+                  <reference value="#immi4"/>
+                </originalText>
+                <translation code="09" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+              </code>
+              <lotNumberText/>
+            </manufacturedMaterial>
+            <manufacturerOrganization>
+              <name>Health LS - Immuno Inc.</name>
+            </manufacturerOrganization>
+          </manufacturedProduct>
+        </consumable>
+        <performer>
+          <assignedEntity>
+            <id root="2.16.840.1.113883.19.5.9999.456" extension="2981824"/>
+            <addr>
+              <streetAddressLine>1021 Health Drive</streetAddressLine>
+              <city>Ann Arbor</city>
+              <state>MI</state>
+              <postalCode>99099</postalCode>
+              <country>US</country>
+            </addr>
+            <telecom nullFlavor="UNK"/>
+            <assignedPerson>
+              <name>
+                <given>Amanda</given>
+                <family>Assigned</family>
+              </name>
+            </assignedPerson>
+            <representedOrganization>
+              <id root="2.16.840.1.113883.19.5.9999.1394"/>
+              <name>Good Health Clinic</name>
+              <telecom nullFlavor="UNK"/>
+              <addr nullFlavor="UNK"/>
+            </representedOrganization>
+          </assignedEntity>
+        </performer>
+      </substanceAdministration>
+    </entry>
+  </section>
+</ClinicalDocument>

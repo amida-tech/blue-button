@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<req>error but in</req>
+	<req>ignored</req>
+	<opt>allright</opt>
+	<reqchild>
+		<req>allright</req>
+		<opt>error but in</opt>
+		<opt>ignored</opt>
+		<multreq>allright 0</multreq>
+		<multreq>allright 1</multreq>
+		<multreq>allright 2</multreq>
+		<multopt>allright 0</multopt>
+		<multopt>allright 1</multopt>
+		<multopt>allright 2</multopt>
+	</reqchild>
+</document>
