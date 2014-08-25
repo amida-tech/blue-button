@@ -1,0 +1,544 @@
+{
+    "metadata": {
+        "type": "ccda"
+    },
+    "demographics": {
+        "name": {
+            "prefix": "Mr.",
+            "given": [
+                "Adam",
+                "Frankie"
+            ],
+            "family": "Everyman"
+        },
+        "dob": "1954-11-25T05:00:00Z",
+        "gender": "male",
+        "marital_status": "married",
+        "address": {
+            "street": [
+                "17 Daws Rd."
+            ],
+            "city": "Blue Bell",
+            "state": "MA",
+            "zip": "02368",
+            "country": "US"
+        },
+        "phone": {
+            "home": "tel:(781)555-1212",
+            "work": null,
+            "mobile": null
+        },
+        "email": null,
+        "language": "fr-CN",
+        "race": null,
+        "ethnicity": null,
+        "religion": null,
+        "birthplace": {
+            "state": "MA",
+            "zip": "02368",
+            "country": "USA"
+        },
+        "guardian": {
+            "name": {
+                "given": [
+                    "Ralph"
+                ],
+                "family": "Relative"
+            },
+            "relationship": null,
+            "address": {
+                "street": [
+                    "17 Daws Rd."
+                ],
+                "city": "Blue Bell",
+                "state": "MA",
+                "zip": "02368",
+                "country": "US"
+            },
+            "phone": {
+                "home": "tel:(781)555-1212"
+            }
+        },
+        "provider": {
+            "organization": "Good Health Clinic",
+            "phone": "tel:(781)555-1212",
+            "address": {
+                "street": [
+                    "21 North Ave"
+                ],
+                "city": "Burlington",
+                "state": "MA",
+                "zip": "02368",
+                "country": "USA"
+            }
+        }
+    },
+    "allergies": [
+        {
+            "date_range": {
+                "start": "2009-09-02T04:00:00Z",
+                "end": "2010-01-03T05:00:00Z"
+            },
+            "name": null,
+            "code": "416098002",
+            "code_system": null,
+            "code_system_name": null,
+            "status": null,
+            "severity": null,
+            "reaction": {
+                "name": null,
+                "code": "247472004",
+                "code_system": null
+            },
+            "reaction_type": {
+                "name": null,
+                "code": "282100009",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "allergen": {
+                "name": null,
+                "code": "314422",
+                "code_system": null,
+                "code_system_name": null
+            }
+        },
+        {
+            "date_range": {
+                "start": "2009-09-02T04:00:00Z",
+                "end": "2010-01-03T05:00:00Z"
+            },
+            "name": null,
+            "code": "416098002",
+            "code_system": null,
+            "code_system_name": null,
+            "status": null,
+            "severity": null,
+            "reaction": {
+                "name": null,
+                "code": "56018004",
+                "code_system": null
+            },
+            "reaction_type": {
+                "name": null,
+                "code": "282100009",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "allergen": {
+                "name": null,
+                "code": "R16CO5Y76E",
+                "code_system": null,
+                "code_system_name": null
+            }
+        },
+        {
+            "date_range": {
+                "start": "2009-09-02T04:00:00Z",
+                "end": "2010-01-03T05:00:00Z"
+            },
+            "name": null,
+            "code": "416098002",
+            "code_system": null,
+            "code_system_name": null,
+            "status": null,
+            "severity": null,
+            "reaction": {
+                "name": null,
+                "code": "73879007",
+                "code_system": null
+            },
+            "reaction_type": {
+                "name": null,
+                "code": "282100009",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "allergen": {
+                "name": null,
+                "code": "Q830PW7520",
+                "code_system": null,
+                "code_system_name": null
+            }
+        }
+    ],
+    "encounters": [
+        {
+            "date": "2000-04-07T04:00:00Z",
+            "name": null,
+            "code": "99241",
+            "code_system": null,
+            "code_system_name": null,
+            "code_system_version": null,
+            "finding": {
+                "name": null,
+                "code": "32398004",
+                "code_system": null
+            },
+            "translation": {
+                "name": null,
+                "code": "AMB",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "performer": {
+                "name": null,
+                "code": "59058001",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "location": {
+                "organization": null,
+                "street": [
+                    "17 Daws Rd."
+                ],
+                "city": "Blue Bell",
+                "state": "MA",
+                "zip": "02368",
+                "country": "US"
+            }
+        }
+    ],
+    "medications": [
+        {
+            "date_range": {
+                "start": "2011-03-01T05:00:00Z",
+                "end": "2012-03-01T05:00:00Z"
+            },
+            "product": {
+                "name": null,
+                "code": "329498",
+                "code_system": null,
+                "translation": {
+                    "name": null,
+                    "code": "573621",
+                    "code_system": null,
+                    "code_system_name": null
+                }
+            },
+            "dose_quantity": {
+                "value": "1",
+                "unit": null
+            },
+            "rate_quantity": {
+                "value": "90",
+                "unit": "ml/min"
+            },
+            "precondition": {
+                "name": null,
+                "code": "56018004",
+                "code_system": null
+            },
+            "reason": {
+                "name": null,
+                "code": "32398004",
+                "code_system": null
+            },
+            "route": {
+                "name": null,
+                "code": "C38216",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "vehicle": {
+                "name": null,
+                "code": "412307009",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "administration": {
+                "name": null,
+                "code": "C42944",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "prescriber": {
+                "organization": "Good Health Clinic",
+                "person": null
+            }
+        }
+    ],
+    "results": [
+        {
+            "name": null,
+            "code": "43789009",
+            "results": [
+                {
+                    "date": "2000-03-23T05:00:00Z",
+                    "name": null,
+                    "value": 13.2,
+                    "unit": "g/dl",
+                    "code": "30313-1"
+                },
+                {
+                    "date": "2000-03-23T05:00:00Z",
+                    "name": null,
+                    "value": 6.7,
+                    "unit": "10+3/ul",
+                    "code": "33765-9"
+                },
+                {
+                    "date": "2000-03-23T05:00:00Z",
+                    "name": null,
+                    "value": 123,
+                    "unit": "10+3/ul",
+                    "code": "26515-7"
+                }
+            ]
+        }
+    ],
+    "immunizations": [
+        {
+            "date": "1999-10-31T04:00:00Z",
+            "product": {
+                "name": null,
+                "code": "88",
+                "code_system": null,
+                "code_system_name": null,
+                "translation": {
+                    "name": null,
+                    "code": "111",
+                    "code_system": null,
+                    "code_system_name": null
+                }
+            },
+            "route": {
+                "name": null,
+                "code": "IM",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "instructions": "Possible flu-like symptoms for three days.",
+            "education_type": {
+                "name": null,
+                "code": "171044003",
+                "code_system": null
+            }
+        },
+        {
+            "date": "1998-12-15T05:00:00Z",
+            "product": {
+                "name": null,
+                "code": "88",
+                "code_system": null,
+                "code_system_name": null,
+                "translation": {
+                    "name": null,
+                    "code": "111",
+                    "code_system": null,
+                    "code_system_name": null
+                }
+            },
+            "route": {
+                "name": null,
+                "code": "IM",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "instructions": "Possible flu-like symptoms for three days.",
+            "education_type": {
+                "name": null,
+                "code": "171044003",
+                "code_system": null
+            }
+        },
+        {
+            "date": "1998-12-15T05:00:00Z",
+            "product": {
+                "name": null,
+                "code": "33",
+                "code_system": null,
+                "code_system_name": null,
+                "translation": {
+                    "name": null,
+                    "code": "109",
+                    "code_system": null,
+                    "code_system_name": null
+                }
+            },
+            "route": {
+                "name": null,
+                "code": "IM",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "instructions": "Possible flu-like symptoms for three days.",
+            "education_type": {
+                "name": null,
+                "code": "171044003",
+                "code_system": null
+            }
+        },
+        {
+            "date": "1998-12-15T05:00:00Z",
+            "product": {
+                "name": null,
+                "code": "103",
+                "code_system": null,
+                "code_system_name": null,
+                "translation": {
+                    "name": null,
+                    "code": "09",
+                    "code_system": null,
+                    "code_system_name": null
+                }
+            },
+            "route": {
+                "name": null,
+                "code": "IM",
+                "code_system": null,
+                "code_system_name": null
+            },
+            "instructions": "Possible flu-like symptoms for three days.",
+            "education_type": {
+                "name": null,
+                "code": "171044003",
+                "code_system": null
+            }
+        }
+    ],
+    "problems": [
+        {
+            "date_range": {
+                "start": "1998-02-28T05:00:00Z",
+                "end": "2011-01-03T05:00:00Z"
+            },
+            "name": null,
+            "status": null,
+            "age": 57,
+            "code": "233604007",
+            "code_system": null
+        }
+    ],
+    "vitals": [
+        {
+            "date": "1999-11-14T05:00:00Z",
+            "results": [
+                {
+                    "name": null,
+                    "code": "8302-2",
+                    "value": 177,
+                    "unit": "cm"
+                },
+                {
+                    "name": null,
+                    "code": "3141-9",
+                    "value": 86,
+                    "unit": "kg"
+                },
+                {
+                    "name": null,
+                    "code": "8480-6",
+                    "value": 132,
+                    "unit": "mm[Hg]"
+                }
+            ]
+        },
+        {
+            "date": "2000-04-07T04:00:00Z",
+            "results": [
+                {
+                    "name": null,
+                    "code": "8302-2",
+                    "value": 177,
+                    "unit": "cm"
+                },
+                {
+                    "name": null,
+                    "code": "3141-9",
+                    "value": 88,
+                    "unit": "kg"
+                },
+                {
+                    "name": null,
+                    "code": "8480-6",
+                    "value": 145,
+                    "unit": "mm[Hg]"
+                }
+            ]
+        }
+    ],
+    "procedures": [
+        {
+            "date": "2011-02-15T05:00:00Z",
+            "name": null,
+            "code": "274025005",
+            "code_system": null,
+            "specimen": {
+                "name": null,
+                "code": null,
+                "code_system": null
+            },
+            "performer": {
+                "organization": null,
+                "street": [
+                    "17 Daws Rd."
+                ],
+                "city": "Blue Bell",
+                "state": "MA",
+                "zip": "02368",
+                "country": "US",
+                "phone": null
+            },
+            "device": {
+                "name": null,
+                "code": "90412006",
+                "code_system": null
+            }
+        },
+        {
+            "date": "2011-02-03T05:00:00Z",
+            "name": null,
+            "code": "274025005",
+            "code_system": null,
+            "specimen": {
+                "name": null,
+                "code": null,
+                "code_system": null
+            },
+            "performer": {
+                "organization": null,
+                "street": [
+                    "17 Daws Rd."
+                ],
+                "city": "Blue Bell",
+                "state": "MA",
+                "zip": "02368",
+                "country": "US",
+                "phone": null
+            },
+            "device": {
+                "name": null,
+                "code": "GACH",
+                "code_system": null
+            }
+        },
+        {
+            "date": "2011-02-03T05:00:00Z",
+            "name": null,
+            "code": "274025005",
+            "code_system": null,
+            "specimen": {
+                "name": null,
+                "code": null,
+                "code_system": null
+            },
+            "performer": {
+                "organization": null,
+                "street": [
+                    "17 Daws Rd."
+                ],
+                "city": "Blue Bell",
+                "state": "MA",
+                "zip": "02368",
+                "country": "US",
+                "phone": null
+            },
+            "device": {
+                "name": null,
+                "code": "GACH",
+                "code_system": null
+            }
+        }
+    ]
+}
