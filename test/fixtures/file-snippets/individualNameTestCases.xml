@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
+    xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+    <section>
+        <templateId root="0.0.99"/>
+        <entry>
+            <name>
+                <given>JaneOne</given>
+                <given>A</given>
+                <family>DoeOne</family>
+            </name>
+        </entry>
+        <entry>    
+            <name>
+                <given>JaneTwo</given>
+                <family>DoeTwo</family>
+            </name>
+        </entry>
+        <entry>    
+            <name>JaneThree DoeThree</name>
+        </entry>
+        <entry>    
+            <name>JaneFour B DoeFour</name>
+        </entry>
+        <entry>    
+            <name>DoeFive</name>
+        </entry>
+    </section>
+</ClinicalDocument>

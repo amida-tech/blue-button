@@ -85,7 +85,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "136-145 mmol/L"
                         },
                         "value": 141,
@@ -125,7 +125,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "3.4-5.0 mmol/L"
                         },
                         "value": 4.4,
@@ -165,7 +165,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "98-107 mmol/L"
                         },
                         "value": 103,
@@ -205,7 +205,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "22-31 mmol/L"
                         },
                         "value": 26,
@@ -245,7 +245,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "6-23 mg/dL"
                         },
                         "value": 14,
@@ -285,7 +285,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "8.8-10.7 mg/dL"
                         },
                         "value": 8.6,
@@ -325,7 +325,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "0.50-1.20 mg/dL"
                         },
                         "value": 1.7,
@@ -365,7 +365,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "70-100 mg/dL"
                         },
                         "value": 91,
@@ -405,7 +405,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "5-17 mmol/L"
                         },
                         "value": 10,
@@ -481,7 +481,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "22-31 mmol/L"
                         },
                         "value": 26,
@@ -521,7 +521,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "3.5-5.2 g/dL"
                         },
                         "value": 3.6,
@@ -561,7 +561,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "8.8-10.7 mg/dL"
                         },
                         "value": 8.6,
@@ -601,7 +601,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "0.50-1.20 mg/dL"
                         },
                         "value": 1.7,
@@ -641,7 +641,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "2.4-4.3 mg/dL"
                         },
                         "value": 5,
@@ -717,7 +717,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "0.0-2.0 mg/dL"
                         },
                         "value": 3.6,
@@ -757,7 +757,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "0.0-30 mgAlb/gCre"
                         },
                         "value": 15,
@@ -926,7 +926,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "1.3.6.1.4.1.16517",
+                "extension": "FC5BB17C-940F-11E3-85B3-1CC4B7D83400"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

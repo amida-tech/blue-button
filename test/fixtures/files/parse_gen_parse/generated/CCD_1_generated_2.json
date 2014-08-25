@@ -19,6 +19,10 @@
                 {
                     "identifier": "2.16.840.1.113883.19.5.99999.2",
                     "extension": "998991"
+                },
+                {
+                    "identifier": "2.16.840.1.113883.4.1",
+                    "extension": "111-00-2330"
                 }
             ],
             "marital_status": "Married",
@@ -259,12 +263,12 @@
                         },
                         "date_time": {
                             "point": {
-                                "date": "2000-03-23T00:00:00Z",
-                                "precision": "day"
+                                "date": "2000-03-23T14:30:00Z",
+                                "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "M 13-18 g/dl; F 12-16 g/dl"
                         },
                         "interpretations": [
@@ -286,12 +290,12 @@
                         },
                         "date_time": {
                             "point": {
-                                "date": "2000-03-23T00:00:00Z",
-                                "precision": "day"
+                                "date": "2000-03-23T14:30:00Z",
+                                "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "low": "4.3",
                             "high": "10.8",
                             "unit": "10+3/ul"
@@ -315,12 +319,12 @@
                         },
                         "date_time": {
                             "point": {
-                                "date": "2000-03-23T00:00:00Z",
-                                "precision": "day"
+                                "date": "2000-03-23T14:30:00Z",
+                                "precision": "minute"
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "low": "150",
                             "high": "350",
                             "unit": "10+3/ul"
@@ -528,7 +532,6 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
-<<<<<<< HEAD
                     "code_system_name": "CPT",
                     "translations": [
                         {
@@ -537,27 +540,32 @@
                             "code_system_name": "HL7ActCode"
                         }
                     ]
-=======
-                    "code_system_name": "CPT"
->>>>>>> a3f86dfcf2268f3ef4afe41216160d3bbbf14a84
                 },
                 "identifiers": [
                     {
                         "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
                     }
                 ],
-<<<<<<< HEAD
                 "date_time": {
                     "point": {
-                        "date": "2009-02-27T00:00:00Z",
-                        "precision": "day"
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "second"
                     }
                 },
                 "performers": [
                     {
-                        "name": "General Physician",
-                        "code": "59058001",
-                        "code_system_name": "SNOMED CT"
+                        "identifiers": [
+                            {
+                                "identifier": "PseduoMD-3"
+                            }
+                        ],
+                        "code": [
+                            {
+                                "name": "General Physician",
+                                "code": "59058001",
+                                "code_system_name": "SNOMED CT"
+                            }
+                        ]
                     }
                 ],
                 "locations": [
@@ -581,8 +589,6 @@
                         ]
                     }
                 ],
-=======
->>>>>>> a3f86dfcf2268f3ef4afe41216160d3bbbf14a84
                 "findings": [
                     {
                         "identifiers": [
@@ -649,8 +655,8 @@
                                 "precision": "day"
                             },
                             "high": {
-                                "date": "2009-02-27T00:00:00Z",
-                                "precision": "day"
+                                "date": "2009-02-27T13:00:00Z",
+                                "precision": "second"
                             }
                         },
                         "reaction": {
@@ -709,8 +715,8 @@
                                 "precision": "day"
                             },
                             "high": {
-                                "date": "2009-02-27T00:00:00Z",
-                                "precision": "day"
+                                "date": "2009-02-27T13:00:00Z",
+                                "precision": "second"
                             }
                         },
                         "reaction": {
@@ -769,8 +775,8 @@
                                 "precision": "day"
                             },
                             "high": {
-                                "date": "2009-02-27T00:00:00Z",
-                                "precision": "day"
+                                "date": "2009-02-27T13:00:00Z",
+                                "precision": "second"
                             }
                         },
                         "reaction": {
@@ -791,7 +797,7 @@
                 "date_time": {
                     "point": {
                         "date": "1999-11-01T00:00:00Z",
-                        "precision": "day"
+                        "precision": "month"
                     }
                 },
                 "identifiers": [
@@ -813,7 +819,7 @@
                             }
                         ]
                     },
-                    "lot_number": "",
+                    "lot_number": "1",
                     "manufacturer": "Health LS - Immuno Inc."
                 },
                 "administration": {
@@ -885,7 +891,7 @@
                         "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
                     }
                 ],
-                "status": "complete",
+                "status": "refused",
                 "product": {
                     "product": {
                         "name": "Influenza virus vaccine",
@@ -899,7 +905,7 @@
                             }
                         ]
                     },
-                    "lot_number": "",
+                    "lot_number": "1",
                     "manufacturer": "Health LS - Immuno Inc."
                 },
                 "administration": {
@@ -985,7 +991,7 @@
                             }
                         ]
                     },
-                    "lot_number": "",
+                    "lot_number": "1",
                     "manufacturer": "Health LS - Immuno Inc."
                 },
                 "administration": {
@@ -1049,7 +1055,7 @@
                         "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
                     }
                 ],
-                "status": "complete",
+                "status": "refused",
                 "product": {
                     "product": {
                         "name": "Tetanus and diphtheria toxoids - preservative free",
@@ -1063,7 +1069,7 @@
                             }
                         ]
                     },
-                    "lot_number": "",
+                    "lot_number": "1",
                     "manufacturer": "Health LS - Immuno Inc."
                 },
                 "administration": {
@@ -1113,6 +1119,19 @@
                             ]
                         }
                     ]
+                },
+                "refusal": {
+                    "identifiers": [
+                        {
+                            "identifier": "2a620155-9d11-439e-92b3-5d9815ff4dd8"
+                        }
+                    ],
+                    "reason": "Patient objection",
+                    "code": {
+                        "name": "Patient Objection",
+                        "code": "PATOBJ",
+                        "code_system_name": "OID Act Reason"
+                    }
                 }
             }
         ],
@@ -1125,8 +1144,8 @@
                         "precision": "day"
                     },
                     "high": {
-                        "date": "2009-02-27T00:00:00Z",
-                        "precision": "day"
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "second"
                     }
                 },
                 "identifiers": [
@@ -1149,8 +1168,8 @@
                         "precision": "day"
                     },
                     "high": {
-                        "date": "2009-02-27T00:00:00Z",
-                        "precision": "day"
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "second"
                     }
                 },
                 "identifiers": [
@@ -1169,8 +1188,8 @@
                 "value": "Tobacco use and exposure",
                 "date_time": {
                     "low": {
-                        "date": "2009-02-27T00:00:00Z",
-                        "precision": "day"
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "second"
                     }
                 },
                 "identifiers": [
@@ -1249,8 +1268,8 @@
                             "precision": "day"
                         },
                         "high": {
-                            "date": "2009-02-27T00:00:00Z",
-                            "precision": "day"
+                            "date": "2009-02-27T13:00:00Z",
+                            "precision": "second"
                         }
                     }
                 },
@@ -1303,8 +1322,8 @@
                             "precision": "day"
                         },
                         "high": {
-                            "date": "2009-02-27T00:00:00Z",
-                            "precision": "day"
+                            "date": "2009-02-27T13:00:00Z",
+                            "precision": "second"
                         }
                     }
                 },
@@ -1345,6 +1364,74 @@
                         "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
                     }
                 ],
+                "specimen": {
+                    "identifiers": [
+                        {
+                            "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58683"
+                        }
+                    ],
+                    "code": {
+                        "name": "colonic polyp sample",
+                        "code": "309226005",
+                        "code_system_name": "SNOMED CT"
+                    }
+                },
+                "performer": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.456",
+                                "extension": "2981823"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1001 Village Avenue"
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "99123",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "555-555-5000",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                    }
+                                ],
+                                "name": [
+                                    "Community Health and Hospitals"
+                                ],
+                                "address": [
+                                    {
+                                        "street_lines": [
+                                            "1001 Village Avenue"
+                                        ],
+                                        "city": "Portland",
+                                        "state": "OR",
+                                        "zip": "99123",
+                                        "country": "US"
+                                    }
+                                ],
+                                "phone": [
+                                    {
+                                        "number": "555-555-5000",
+                                        "type": "work place"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "procedure_type": "procedure"
             },
             {
@@ -1381,6 +1468,45 @@
                     "code": "CR",
                     "code_system_name": "OID OID 2.16.840.1.113883.5.7"
                 },
+                "performer": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5",
+                                "extension": "1234"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "(555)555-555-1234",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.19.5"
+                                    }
+                                ],
+                                "name": [
+                                    "Community Health and Hospitals"
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Community Gastroenterology Clinic",
@@ -1431,6 +1557,45 @@
                     "code": "CR",
                     "code_system_name": "OID OID 2.16.840.1.113883.5.7"
                 },
+                "performer": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19",
+                                "extension": "1234"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "17 Daws Rd."
+                                ],
+                                "city": "Blue Bell",
+                                "state": "MA",
+                                "zip": "02368",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "(555)555-555-1234",
+                                "type": "work place"
+                            }
+                        ],
+                        "organization": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "identifier": "2.16.840.1.113883.19.5"
+                                    }
+                                ],
+                                "name": [
+                                    "Community Health and Hospitals"
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "name": "Community Gastroenterology Clinic",
@@ -1603,6 +1768,41 @@
                         }
                     }
                 },
+                "guarantor": {
+                    "identifiers": [
+                        {
+                            "identifier": "329fcdf0-7ab3-11db-9fe1-0800200c9a66"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "prefix": "Mr.",
+                            "middle": [
+                                "Frankie"
+                            ],
+                            "last": "Everyman",
+                            "first": "Adam"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ],
+                            "city": "Blue Bell",
+                            "state": "MA",
+                            "zip": "02368",
+                            "country": "US",
+                            "use": "primary home"
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "number": "(781)555-1212",
+                            "type": "primary home"
+                        }
+                    ]
+                },
                 "participant": {
                     "date_time": {},
                     "code": {
@@ -1627,6 +1827,13 @@
                                 "zip": "02368",
                                 "country": "US",
                                 "use": "primary home"
+                            }
+                        ],
+                        "code": [
+                            {
+                                "name": "Self",
+                                "code": "SELF",
+                                "code_system_name": "OID HL7 Role"
                             }
                         ]
                     },
@@ -1681,7 +1888,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.19.5.99999.1",
+                "extension": "TT988"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",
@@ -1714,12 +1927,8 @@
         "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-<<<<<<< HEAD
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
-=======
-        "nullFlavor alert:  missing but required date_time in activity -> encountersSection -> CCD",
->>>>>>> a3f86dfcf2268f3ef4afe41216160d3bbbf14a84
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -1745,38 +1954,28 @@
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required code in insurance -> policy -> entry -> payers_section -> CCD",
         "cardinality error: found 2 when expecting 1..1 at h:performer",
-        "nullFlavor alert:  missing but required guarantor in entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required code in guarantor -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required code in participant -> entry -> payers_section -> CCD",
         "cardinality error: found 2 when expecting 1..1 at h:entryRelationship/h:act/h:participant"
     ]

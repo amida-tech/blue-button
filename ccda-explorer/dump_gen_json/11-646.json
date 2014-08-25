@@ -235,7 +235,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "NA"
                         },
                         "interpretations": [
@@ -281,7 +281,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "NA"
                         },
                         "interpretations": [
@@ -332,7 +332,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "NA"
                         },
                         "interpretations": [
@@ -371,7 +371,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "NA"
                         },
                         "interpretations": [
@@ -396,7 +396,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "NA"
                         },
                         "interpretations": [
@@ -1285,7 +1285,12 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "db734647-fc99-424c-a864-7e3cda82e703"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

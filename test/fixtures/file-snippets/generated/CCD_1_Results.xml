@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+    <code code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>RESULTS</title>
+    <text/>
+    <entry typeCode="DRIV">
+      <organizer classCode="BATTERY" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+        <id root="7d5a02b0-67a4-11db-bd13-0800200c9a66"/>
+        <code code="43789009" displayName="CBC WO DIFFERENTIAL" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+        <statusCode code="completed"/>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+            <id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
+            <code code="30313-1" displayName="HGB" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <text>
+              <reference value="#result1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20000323"/>
+            <value xsi:type="PQ" value="13.2" unit="g/dl"/>
+            <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+            <referenceRange>
+              <observationRange>
+                <text>M 13-18 g/dl; F 12-16 g/dl</text>
+              </observationRange>
+            </referenceRange>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+            <id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
+            <code code="33765-9" displayName="WBC" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <text>
+              <reference value="#result2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20000323"/>
+            <value xsi:type="PQ" value="6.7" unit="10+3/ul"/>
+            <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+            <referenceRange>
+              <observationRange>
+                <value xsi:type="IVL_PQ">
+                  <low value="4.3" unit="10+3/ul"/>
+                  <high value="10.8" unit="10+3/ul"/>
+                </value>
+              </observationRange>
+            </referenceRange>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+            <id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
+            <code code="26515-7" displayName="PLT" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <text>
+              <reference value="#result3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20000323"/>
+            <value xsi:type="PQ" value="123" unit="10+3/ul"/>
+            <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
+            <referenceRange>
+              <observationRange>
+                <value xsi:type="IVL_PQ">
+                  <low value="150" unit="10+3/ul"/>
+                  <high value="350" unit="10+3/ul"/>
+                </value>
+              </observationRange>
+            </referenceRange>
+          </observation>
+        </component>
+      </organizer>
+    </entry>
+  </section>
+</ClinicalDocument>

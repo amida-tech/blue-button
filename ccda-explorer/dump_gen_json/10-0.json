@@ -402,7 +402,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "13.5 - 18"
                         },
                         "value": 13.5,
@@ -437,7 +437,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "41 - 53"
                         },
                         "value": 42,
@@ -472,7 +472,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "4.3 - 10.8"
                         },
                         "value": 6,
@@ -507,7 +507,7 @@
                             }
                         },
                         "status": "completed",
-                        "referenceRange": {
+                        "reference_range": {
                             "range": "150 - 400"
                         },
                         "value": 265,
@@ -1104,7 +1104,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.441",
+                "extension": "2ff573b6ddd84d8ab49fe9b4b3d600da"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

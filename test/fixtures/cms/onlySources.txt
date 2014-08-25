@@ -1,0 +1,209 @@
+--------------------------------
+MYMEDICARE.GOV PERSONAL HEALTH INFORMATION
+
+--------------------------------
+**********CONFIDENTIAL***********
+
+Produced by the Blue Button (v2.0)
+
+03/16/2013 5:10 AM
+
+
+
+
+--------------------------------
+Demographic
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+--------------------------------
+Emergency Contact
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+--------------------------------
+Self Reported Medical Conditions
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+
+--------------------------------
+Self Reported Allergies
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+
+--------------------------------
+Self Reported Implantable Device
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+--------------------------------
+Self Reported Immunizations
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+
+
+
+--------------------------------
+Self Reported Labs and Tests
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+
+--------------------------------
+Self Reported Vital Statistics
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+
+--------------------------------
+Family Medical History
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+--------------------------------
+Drugs
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+
+--------------------------------
+Preventive Services
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+
+
+
+--------------------------------
+Providers
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+
+--------------------------------
+Pharmacies
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+
+
+
+--------------------------------
+Plans
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+
+
+
+--------------------------------
+Employer Subsidy
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+
+--------------------------------
+Primary Insurance
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+
+
+
+--------------------------------
+Other Insurance
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+
+
+--------------------------------

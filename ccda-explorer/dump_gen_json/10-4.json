@@ -813,7 +813,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.441",
+                "extension": "eb890b4e409c4aeaaa1aa0312d5c52dc"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+    <code code="29762-2" displayName="Social History" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>SOCIAL HISTORY</title>
+    <text/>
+    <entry typeCode="DRIV">
+      <observation classCode="OBS" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+        <id root="2.16.840.1.113883.19" extension="123456789"/>
+        <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20050501"/>
+          <high value="20090227"/>
+        </effectiveTime>
+        <value xsi:type="CD" code="8517006" displayName="Former smoker" codeSystem="2.16.840.1.113883.6.96" codeSystemName="Smoking Status/Social History Observation"/>
+      </observation>
+    </entry>
+    <entry typeCode="DRIV">
+      <observation classCode="OBS" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+        <id root="9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"/>
+        <code code="229819007" displayName="Tobacco use and exposure" codeSystem="2.16.840.1.113883.11.20.9.38" codeSystemName="Smoking Status/Social History Observation">
+          <originalText>
+            <reference value="#soc1"/>
+          </originalText>
+        </code>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20050501"/>
+          <high value="20090227"/>
+        </effectiveTime>
+        <value xsi:type="ST">1 pack per day</value>
+      </observation>
+    </entry>
+    <entry typeCode="DRIV">
+      <observation classCode="OBS" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+        <id root="45efb604-7049-4a2e-ad33-d38556c9636c"/>
+        <code code="229819007" displayName="Tobacco use and exposure" codeSystem="2.16.840.1.113883.11.20.9.38" codeSystemName="Smoking Status/Social History Observation">
+          <originalText>
+            <reference value="#soc2"/>
+          </originalText>
+        </code>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20090227"/>
+        </effectiveTime>
+        <value xsi:type="ST">None</value>
+      </observation>
+    </entry>
+    <entry typeCode="DRIV">
+      <observation classCode="OBS" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+        <id root="37f76c51-6411-4e1d-8a37-957fd49d2cef"/>
+        <code code="160573003" displayName="Alcohol intake" codeSystem="2.16.840.1.113883.11.20.9.38" codeSystemName="Smoking Status/Social History Observation">
+          <originalText>
+            <reference value="#soc3"/>
+          </originalText>
+        </code>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20050501"/>
+        </effectiveTime>
+        <value xsi:type="ST">None</value>
+      </observation>
+    </entry>
+  </section>
+</ClinicalDocument>

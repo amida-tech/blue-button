@@ -1,0 +1,148 @@
+--------------------------------
+MYMEDICARE.GOV PERSONAL HEALTH INFORMATION
+
+--------------------------------
+**********CONFIDENTIAL***********
+
+Produced by the Blue Button (v2.0)
+
+03/16/2013 5:10 AM
+
+
+
+
+--------------------------------
+Demographic
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+Name: JOHN DOE
+
+Date of Birth: 01/01/1910
+
+Address Line 1: 123 ANY ROAD
+
+Address Line 2: 
+
+City: ANYTOWN
+
+State: VA
+
+Zip: 00001
+
+Phone Number: 123-456-7890
+
+Email: JOHNDOE@example.com
+
+Part A Effective Date: 01/01/2012
+
+Part B Effective Date: 01/01/2012
+
+
+
+-------------------------------
+Self Reported Medical Conditions
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Condition Name: Arthritis
+
+Medical Condition Start Date: 08/09/2005
+
+Medical Condition End Date: 02/28/2011
+
+
+
+Condition Name: Asthma
+
+Medical Condition Start Date: 01/25/2008
+
+Medical Condition End Date: 01/25/2010
+
+
+
+--------------------------------
+Family Medical History
+
+--------------------------------
+
+Source: Self-Entered
+
+
+
+Family Member: Brother
+
+Type: 
+
+DOB:1/10/1915
+
+DOD: 
+
+Age: 
+
+Type: Allergy
+
+Description: Antiarrythmia
+
+Description: Antibiotic
+
+Description: Anticonvulsants
+
+Type: Condition
+
+Description: Allergies
+
+Description: Alzheimer's Disease
+
+Description: Angina (Heart Pain)
+
+Description: Cataracts
+
+
+
+--------------------------------
+Plans
+
+--------------------------------
+
+Source: MyMedicare.gov
+
+
+
+Contract ID/Plan ID: H9999/9999
+
+Plan Period: 09/01/2011 - current
+
+Plan Name: A Medicare Plan Plus (HMO)
+
+Marketing Name: HealthCare Payer
+
+Plan Address: 123 Any Road Anytown PA 00003
+
+Plan Type: 3 - Coordinated Care Plan (HMO, PPO, PSO, SNP)
+
+
+
+Contract ID/Plan ID: S9999/000
+
+Plan Period: 01/01/2010 - current
+
+Plan Name: A Medicare Rx Plan (PDP)
+
+Marketing Name: Another HealthCare Payer
+
+Plan Address: 123 Any Road Anytown PA 00003
+
+Plan Type: 11 - Medicare Prescription Drug Plan
+
+
+
+--------------------------------

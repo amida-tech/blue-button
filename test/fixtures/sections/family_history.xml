@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+ 
+<!-- Title: US_Realm_Header_Template -->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
+	xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+	<!-- ******************************************************** CDA Header 
+		******************************************************** -->
+	<realmCode code="US"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<!-- US General Header Template -->
+	<templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+	<!-- *** Note: The next templateId, code and title will differ depending 
+		on what type of document is being sent. *** -->
+	<!-- conforms to the document specific requirements -->
+	<templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+	<id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9"
+		displayName="Summarization of Episode Note"/>
+	<title>Community Health and Hospitals: Health Summary</title>
+	<effectiveTime value="201209150000-0400"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
+	<versionNumber value="1"/>
+	<!-- ******************************************************** CDA Body ******************************************************** -->
+	<component>
+		<structuredBody>
+			<!-- ************************ FAMILY HISTORY ********************************** -->
+			<component>
+				<section>
+					<!-- Family history section -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.15"/>
+					<code code="10157-6" codeSystem="2.16.840.1.113883.6.1"/>
+					<title>FAMILY HISTORY</title>
+					<text>
+						<paragraph>Father (deceased)</paragraph>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Diagnosis</th>
+									<th>Age At Onset</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Myocardial Infarction (cause of death)</td>
+									<td>57</td>
+								</tr>
+								<tr>
+									<td>Diabetes</td>
+									<td>40</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<organizer moodCode="EVN" classCode="CLUSTER">
+							<!-- ** Family history organizer ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.45"/>
+							<statusCode code="completed"/>
+							<subject>
+								<relatedSubject classCode="PRS">
+									<code code="FTH" displayName="Father"
+										codeSystemName="FamilyRelationshipRoleType"
+										codeSystem="2.16.840.1.113883.5.111">
+										<translation code="9947008" displayName="Biological father"
+											codeSystemName="SNOMED"
+											codeSystem="2.16.840.1.113883.6.96"/>
+									</code>
+									<subject>
+										<sdtc:id root="2.16.840.1.113883.19.5.99999.2"
+											extension="99999999"/>
+										<administrativeGenderCode code="M"
+											codeSystem="2.16.840.1.113883.5.1" displayName="Male"/>
+										<birthTime value="1910"/>
+										<!-- Example use of sdtc extensions included below in comments -->
+										<!-- <sdtc:deceasedInd value="true"/> <sdtc:deceasedTime value="1967"/> -->
+									</subject>
+								</relatedSubject>
+							</subject>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- ** Family history observation ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.46"/>
+									<id root="d42ebf70-5c89-11db-b0de-0800200c9a66"/>
+									<code code="64572001" displayName="Condition"
+										codeSystemName="SNOMED CT"
+										codeSystem="2.16.840.1.113883.6.96"/>
+									<statusCode code="completed"/>
+									<effectiveTime value="1967"/>
+									<value xsi:type="CD" code="22298006"
+										codeSystem="2.16.840.1.113883.6.96"
+										displayName="Myocardial infarction"/>
+									<entryRelationship typeCode="CAUS">
+										<observation classCode="OBS" moodCode="EVN">
+											<!-- ** Family history death observation ** -->
+											<templateId root="2.16.840.1.113883.10.20.22.4.47"/>
+											<id root="6898fae0-5c8a-11db-b0de-0800200c9a66"/>
+											<code code="ASSERTION"
+												codeSystem="2.16.840.1.113883.5.4"/>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="419099009"
+												codeSystem="2.16.840.1.113883.6.96"
+												displayName="Dead"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SUBJ" inversionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<!-- ** Age observation ** -->
+											<templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+											<code code="445518008"
+												codeSystem="2.16.840.1.113883.6.96"
+												displayName="Age At Onset"/>
+											<statusCode code="completed"/>
+											<value xsi:type="PQ" value="57" unit="a"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- ** Family history observation ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.46"/>
+									<id root="5bfe3ec0-5c8b-11db-b0de-0800200c9a66"/>
+									<code code="64572001" displayName="Condition"
+										codeSystemName="SNOMED CT"
+										codeSystem="2.16.840.1.113883.6.96"/>
+									<statusCode code="completed"/>
+									<effectiveTime value="1950"/>
+									<value xsi:type="CD" code="44054006"
+										codeSystem="2.16.840.1.113883.6.96"
+										displayName="Diabetes mellitus type 2"/>
+									<entryRelationship typeCode="SUBJ" inversionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<!-- ** Age observation ** -->
+											<templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+											<code code="445518008"
+												codeSystem="2.16.840.1.113883.6.96"
+												displayName="Age At Onset"/>
+											<statusCode code="completed"/>
+											<value xsi:type="PQ" value="40" unit="a"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

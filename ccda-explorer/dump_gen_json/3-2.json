@@ -355,6 +355,40 @@
                         "precision": "second"
                     }
                 },
+                "performers": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.3388.1.1.1.310936.1.1.3",
+                                "extension": "605196"
+                            }
+                        ],
+                        "name": [
+                            {
+                                "last": "Lname",
+                                "first": "Fname"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1002 Healthcare Dr."
+                                ],
+                                "city": "Beaverton",
+                                "state": "OR",
+                                "zip": "97005",
+                                "country": "United States of America",
+                                "use": "work place"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "(415)427-2132",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ],
                 "locations": [
                     {
                         "address": [
@@ -588,7 +622,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.3388.1.1.1",
+                "extension": "310936"
+            }
+        ],
         "sections": [
             "demographics",
             "vitals",

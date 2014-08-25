@@ -253,7 +253,13 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.5",
+        "version": "1.1.0-beta.7",
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.441",
+                "extension": "75fdbb4a68d749d98cd42993bd48f8a5"
+            }
+        ],
         "sections": [
             "demographics",
             "social_history",
