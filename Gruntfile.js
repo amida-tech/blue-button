@@ -67,7 +67,7 @@ module.exports = function (grunt) {
                     timeout: '10000',
                     recursive: true
                 },
-                src: ['test_old/*.js', 'test_old/**/*.js', 'test/*.js', 'test/**/*.js'],
+                src: ['test/*.js', 'test/**/*.js'],
                 generator: ['test/test-generator.js']
             }
         },
