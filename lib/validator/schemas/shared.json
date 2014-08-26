@@ -45,9 +45,6 @@
                 },
                 "high": {
                     "$ref": "http://local.com/common_models#/properties/cda_date_element"
-                },
-                "null_flavor": {
-                    "type": "string"
                 }
             },
             "additionalProperties": false,
