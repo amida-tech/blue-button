@@ -7,7 +7,7 @@ var bbm = require('blue-button-meta');
 
 describe('parse generate parse generate', function () {
     it('should still be same', function () {
-        var data = fs.readFileSync("./test/fixtures/parser-ccda/CCD_1.xml").toString();
+        var data = fs.readFileSync("./test/fixtures/generator-ccda/CCD_1.xml").toString();
 
         //convert string into JSON 
         var result = bb.parseString(data);
