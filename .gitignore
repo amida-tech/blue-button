@@ -20,5 +20,7 @@ ccda-explorer/dump_gen_json/
 ccda-explorer/sample_ccdas/
 
 test/fixtures/files/generated/
+test/fixtures/files/parse_gen_parse/generated/
+
 
 
