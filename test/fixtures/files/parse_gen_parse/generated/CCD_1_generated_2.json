@@ -58,12 +58,11 @@
                 "city": "Beaverton",
                 "state": "OR",
                 "zip": "97867",
-                "country": "US",
-                "use": "primary home"
+                "country": "US"
             },
             "guardians": [
                 {
-                    "relation": "parent",
+                    "relation": "Parent",
                     "addresses": [
                         {
                             "street_lines": [
@@ -363,6 +362,7 @@
                             "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
                         }
                     ],
+                    "unencoded_name": "Proventil HFA",
                     "product": {
                         "name": "Proventil HFA",
                         "code": "219483",
@@ -382,21 +382,14 @@
                         "low": {
                             "date": "2007-01-03T00:00:00Z",
                             "precision": "day"
-                        },
-                        "high": {
-                            "date": "2012-05-15T00:00:00Z",
-                            "precision": "day"
                         }
                     },
                     "repeatNumber": "1",
                     "quantity": "75",
                     "author": {
-                        "date_time": {
-                            "null_flavor": "UNK"
-                        },
                         "identifiers": [
                             {
-                                "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                                "identifier": "2a620155-9d11-439e-92b3-5d9815fe4de8"
                             }
                         ],
                         "name": {
@@ -599,8 +592,8 @@
                             }
                         ],
                         "value": {
-                            "name": "undefined",
-                            "code": "undefined",
+                            "name": "Pneumonia",
+                            "code": "233604007",
                             "code_system_name": "SNOMED CT"
                         },
                         "date_time": {
@@ -629,27 +622,73 @@
                 "observation": {
                     "identifiers": [
                         {
-                            "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                            "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
                         }
                     ],
+                    "allergen": {
+                        "name": "ALLERGENIC EXTRACT, PENICILLIN",
+                        "code": "314422",
+                        "code_system_name": "RXNORM"
+                    },
                     "intolerance": {
                         "name": "Propensity to adverse reactions to drug",
                         "code": "419511003",
                         "code_system_name": "SNOMED CT"
                     },
-                    "date_time": {},
+                    "date_time": {
+                        "low": {
+                            "date": "2007-05-01T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "status": {
+                        "name": "Inactive",
+                        "code": "73425007",
+                        "code_system_name": "SNOMED CT"
+                    },
                     "reactions": [
                         {
-                            "date_time": {},
+                            "date_time": {
+                                "low": {
+                                    "date": "2007-05-01T00:00:00Z",
+                                    "precision": "day"
+                                },
+                                "high": {
+                                    "date": "2009-02-27T13:00:00Z",
+                                    "precision": "second"
+                                }
+                            },
+                            "reaction": {
+                                "name": "Nausea",
+                                "code": "422587007",
+                                "code_system_name": "SNOMED CT"
+                            },
                             "severity": {
+                                "code": {
+                                    "name": "Mild",
+                                    "code": "255604002",
+                                    "code_system_name": "SNOMED CT"
+                                },
                                 "interpretation": {
-                                    "name": "Susceptible",
+                                    "name": "Suceptible",
                                     "code": "S",
                                     "code_system_name": "OID 2.16.840.1.113883.1.11.78"
                                 }
                             }
                         }
-                    ]
+                    ],
+                    "severity": {
+                        "code": {
+                            "name": "Moderate to severe",
+                            "code": "371924009",
+                            "code_system_name": "SNOMED CT"
+                        },
+                        "interpretation": {
+                            "name": "Normal",
+                            "code": "N",
+                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                        }
+                    }
                 }
             },
             {
@@ -667,27 +706,73 @@
                 "observation": {
                     "identifiers": [
                         {
-                            "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                            "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
                         }
                     ],
+                    "allergen": {
+                        "name": "Codeine",
+                        "code": "2670",
+                        "code_system_name": "RXNORM"
+                    },
                     "intolerance": {
                         "name": "Propensity to adverse reactions to drug",
                         "code": "419511003",
                         "code_system_name": "SNOMED CT"
                     },
-                    "date_time": {},
+                    "date_time": {
+                        "low": {
+                            "date": "2006-05-01T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "status": {
+                        "name": "Active",
+                        "code": "55561003",
+                        "code_system_name": "SNOMED CT"
+                    },
                     "reactions": [
                         {
-                            "date_time": {},
+                            "date_time": {
+                                "low": {
+                                    "date": "2006-05-01T00:00:00Z",
+                                    "precision": "day"
+                                },
+                                "high": {
+                                    "date": "2009-02-27T13:00:00Z",
+                                    "precision": "second"
+                                }
+                            },
+                            "reaction": {
+                                "name": "Wheezing",
+                                "code": "56018004",
+                                "code_system_name": "SNOMED CT"
+                            },
                             "severity": {
+                                "code": {
+                                    "name": "Mild",
+                                    "code": "255604002",
+                                    "code_system_name": "SNOMED CT"
+                                },
                                 "interpretation": {
-                                    "name": "Susceptible",
+                                    "name": "Suceptible",
                                     "code": "S",
                                     "code_system_name": "OID 2.16.840.1.113883.1.11.78"
                                 }
                             }
                         }
-                    ]
+                    ],
+                    "severity": {
+                        "code": {
+                            "name": "Moderate",
+                            "code": "6736007",
+                            "code_system_name": "SNOMED CT"
+                        },
+                        "interpretation": {
+                            "name": "Normal",
+                            "code": "N",
+                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                        }
+                    }
                 }
             },
             {
@@ -705,27 +790,73 @@
                 "observation": {
                     "identifiers": [
                         {
-                            "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                            "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
                         }
                     ],
+                    "allergen": {
+                        "name": "Aspirin",
+                        "code": "1191",
+                        "code_system_name": "RXNORM"
+                    },
                     "intolerance": {
                         "name": "Drug intolerance",
                         "code": "59037007",
                         "code_system_name": "SNOMED CT"
                     },
-                    "date_time": {},
+                    "date_time": {
+                        "low": {
+                            "date": "2008-05-01T00:00:00Z",
+                            "precision": "day"
+                        }
+                    },
+                    "status": {
+                        "name": "Active",
+                        "code": "55561003",
+                        "code_system_name": "SNOMED CT"
+                    },
                     "reactions": [
                         {
-                            "date_time": {},
+                            "date_time": {
+                                "low": {
+                                    "date": "2008-05-01T00:00:00Z",
+                                    "precision": "day"
+                                },
+                                "high": {
+                                    "date": "2009-02-27T13:00:00Z",
+                                    "precision": "second"
+                                }
+                            },
+                            "reaction": {
+                                "name": "Hives",
+                                "code": "247472004",
+                                "code_system_name": "SNOMED CT"
+                            },
                             "severity": {
+                                "code": {
+                                    "name": "Mild to moderate",
+                                    "code": "371923003",
+                                    "code_system_name": "SNOMED CT"
+                                },
                                 "interpretation": {
-                                    "name": "Susceptible",
+                                    "name": "Suceptible",
                                     "code": "S",
                                     "code_system_name": "OID 2.16.840.1.113883.1.11.78"
                                 }
                             }
                         }
-                    ]
+                    ],
+                    "severity": {
+                        "code": {
+                            "name": "Mild to moderate",
+                            "code": "371923003",
+                            "code_system_name": "SNOMED CT"
+                        },
+                        "interpretation": {
+                            "name": "Normal",
+                            "code": "N",
+                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                        }
+                    }
                 }
             }
         ],
@@ -812,7 +943,8 @@
                         "name": "immunization education",
                         "code": "171044003",
                         "code_system_name": "SNOMED CT"
-                    }
+                    },
+                    "free_text": "Possible flu-like symptoms for three days."
                 }
             },
             {
@@ -897,7 +1029,8 @@
                         "name": "immunization education",
                         "code": "171044003",
                         "code_system_name": "SNOMED CT"
-                    }
+                    },
+                    "free_text": "Possible flu-like symptoms for three days."
                 }
             },
             {
@@ -1054,7 +1187,8 @@
                             ]
                         }
                     ]
-                }
+                },
+                "refusal_reason": "Patient objection"
             }
         ],
         "social_history": [
@@ -1097,9 +1231,11 @@
                     }
                 ],
                 "code": {
-                    "name": "1 pack per day",
-                    "code_system_name": "Smoking Status/Social History Observation"
-                }
+                    "name": "Tobacco use and exposure",
+                    "code": "229819007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "value": "1 pack per day"
             },
             {
                 "date_time": {
@@ -1114,9 +1250,11 @@
                     }
                 ],
                 "code": {
-                    "name": "None",
-                    "code_system_name": "Smoking Status/Social History Observation"
-                }
+                    "name": "Tobacco use and exposure",
+                    "code": "229819007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "value": "None"
             },
             {
                 "date_time": {
@@ -1131,9 +1269,11 @@
                     }
                 ],
                 "code": {
-                    "name": "None",
-                    "code_system_name": "Smoking Status/Social History Observation"
-                }
+                    "name": "Alcohol consumption",
+                    "code": "160573003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "value": "None"
             }
         ],
         "problems": [
@@ -1156,8 +1296,8 @@
                 "negation_indicator": false,
                 "problem": {
                     "code": {
-                        "name": "undefined",
-                        "code": "[object Object]",
+                        "name": "Pneumonia",
+                        "code": "233604007",
                         "code_system_name": "SNOMED CT"
                     },
                     "date_time": {
@@ -1174,7 +1314,7 @@
                 "onset_age": "57",
                 "onset_age_unit": "Year",
                 "status": {
-                    "name": "[object Object]",
+                    "name": "Resolved",
                     "date_time": {
                         "low": {
                             "date": "2008-01-03T00:00:00Z",
@@ -1212,8 +1352,8 @@
                 "negation_indicator": false,
                 "problem": {
                     "code": {
-                        "name": "undefined",
-                        "code": "[object Object]",
+                        "name": "Asthma",
+                        "code": "195967001",
                         "code_system_name": "SNOMED CT"
                     },
                     "date_time": {
@@ -1230,7 +1370,7 @@
                 "onset_age": "57",
                 "onset_age_unit": "Year",
                 "status": {
-                    "name": "[object Object]",
+                    "name": "Active",
                     "date_time": {
                         "low": {
                             "date": "2008-01-03T00:00:00Z",
@@ -1262,10 +1402,7 @@
                         "identifier": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
                     }
                 ],
-                "status": {
-                    "code": "Completed",
-                    "code_system_name": "OID undefined"
-                },
+                "status": "Completed",
                 "date_time": {
                     "point": {
                         "date": "2012-05-12T00:00:00Z",
@@ -1361,10 +1498,7 @@
                         "extension": "123456789"
                     }
                 ],
-                "status": {
-                    "code": "Aborted",
-                    "code_system_name": "OID undefined"
-                },
+                "status": "Aborted",
                 "date_time": {
                     "point": {
                         "date": "2011-02-03T00:00:00Z",
@@ -1375,13 +1509,13 @@
                     {
                         "name": "Abdomen and pelvis",
                         "code": "416949008",
-                        "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
+                        "code_system_name": "SNOMED CT"
                     }
                 ],
                 "priority": {
                     "name": "Callback results",
                     "code": "CR",
-                    "code_system_name": "OID OID 2.16.840.1.113883.5.7"
+                    "code_system_name": "OID 2.16.840.1.113883.5.7"
                 },
                 "performer": [
                     {
@@ -1457,10 +1591,7 @@
                         "extension": "1234567"
                     }
                 ],
-                "status": {
-                    "code": "Completed",
-                    "code_system_name": "OID undefined"
-                },
+                "status": "Completed",
                 "date_time": {
                     "point": {
                         "date": "2011-02-03T00:00:00Z",
@@ -1470,7 +1601,7 @@
                 "priority": {
                     "name": "Callback results",
                     "code": "CR",
-                    "code_system_name": "OID OID 2.16.840.1.113883.5.7"
+                    "code_system_name": "OID 2.16.840.1.113883.5.7"
                 },
                 "performer": [
                     {
@@ -1628,9 +1759,13 @@
                     ],
                     "code": {
                         "code": "SELF",
-                        "code_system_name": "OID HL7 RoleCode"
+                        "code_system_name": "HL7 RoleCode"
                     },
                     "insurance": {
+                        "code": {
+                            "code": "PAYOR",
+                            "code_system_name": "HL7 RoleCode"
+                        },
                         "performer": {
                             "identifiers": [
                                 {
@@ -1679,11 +1814,21 @@
                                         }
                                     ]
                                 }
+                            ],
+                            "code": [
+                                {
+                                    "code": "PAYOR",
+                                    "code_system_name": "HL7 RoleCode"
+                                }
                             ]
                         }
                     }
                 },
                 "guarantor": {
+                    "code": {
+                        "code": "GUAR",
+                        "code_system_name": "HL7 Role"
+                    },
                     "identifiers": [
                         {
                             "identifier": "329fcdf0-7ab3-11db-9fe1-0800200c9a66"
@@ -1719,11 +1864,10 @@
                     ]
                 },
                 "participant": {
-                    "date_time": {},
                     "code": {
                         "name": "Self",
                         "code": "SELF",
-                        "code_system_name": "OID HL7 Role"
+                        "code_system_name": "HL7 Role"
                     },
                     "performer": {
                         "identifiers": [
@@ -1748,7 +1892,7 @@
                             {
                                 "name": "Self",
                                 "code": "SELF",
-                                "code_system_name": "OID HL7 Role"
+                                "code_system_name": "HL7 Role"
                             }
                         ]
                     },
@@ -1803,7 +1947,7 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.11",
+        "version": "1.1.0-beta.14",
         "identifiers": [
             {
                 "identifier": "2.16.840.1.113883.19.5.99999.1",
@@ -1844,18 +1988,6 @@
         "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -1880,32 +2012,23 @@
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
-        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required code in insurance -> policy -> entry -> payers_section -> CCD",
         "cardinality error: found 2 when expecting 1..1 at h:performer",
-        "nullFlavor alert:  missing but required code in guarantor -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required code in participant -> entry -> payers_section -> CCD",
         "cardinality error: found 2 when expecting 1..1 at h:entryRelationship/h:act/h:participant"
     ]

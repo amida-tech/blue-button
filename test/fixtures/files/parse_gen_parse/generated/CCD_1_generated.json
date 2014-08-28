@@ -387,9 +387,6 @@
                     "repeatNumber": "1",
                     "quantity": "75",
                     "author": {
-                        "date_time": {
-                            "null_flavor": "UNK"
-                        },
                         "identifiers": [
                             {
                                 "identifier": "2a620155-9d11-439e-92b3-5d9815fe4de8"
@@ -1867,7 +1864,6 @@
                     ]
                 },
                 "participant": {
-                    "date_time": {},
                     "code": {
                         "name": "Self",
                         "code": "SELF",
@@ -1951,7 +1947,7 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.11",
+        "version": "1.1.0-beta.14",
         "identifiers": [
             {
                 "identifier": "2.16.840.1.113883.19.5.99999.1",
