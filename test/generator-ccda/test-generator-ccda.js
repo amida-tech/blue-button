@@ -1,9 +1,8 @@
 var expect = require('chai').expect;
 var assert = require('chai').assert;
-//var lib = require('./test-lib.js');
+
 var fs = require("fs");
 var bb = require('../../index.js');
-var bbm = require('blue-button-meta');
 
 describe('parse generate parse generate', function () {
     it('should still be same', function () {
@@ -11,19 +10,12 @@ describe('parse generate parse generate', function () {
 
         //convert string into JSON 
         var result = bb.parseString(data);
-        // console.log(JSON.stringify(result, null, 4));
-
-        for (var section in result.meta.sections) {
-            // console.log(result.meta.sections[section], " ", result.data[result.meta.sections[section]].length);
-        }
 
         // write generated json
         fs.writeFileSync("test/fixtures/files/parse_gen_parse/generated/CCD_1_generated.json", JSON.stringify(result, null, 4));
 
         // check validation
         var val = bb.validator.validateDocumentModel(result);
-        // console.log("validation result: ", val);
-        // console.log(JSON.stringify(bb.validator.getLastError(), null, 4));
 
         // generate ccda
         var xml = bb.generateCCDA(result).toString();
@@ -38,6 +30,9 @@ describe('parse generate parse generate', function () {
         // re-generate
         var xml2 = bb.generateCCDA(result2).toString();
         fs.writeFileSync("test/fixtures/files/parse_gen_parse/generated/CCD_1_generated_2.xml", xml2);
+
+        delete result.errors;
+        delete result2.errors;
 
         assert.deepEqual(result2, result);
     });
