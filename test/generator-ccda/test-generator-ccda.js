@@ -66,6 +66,6 @@ describe('parse generate parse generate', function () {
         delete result.errors;
         delete result2.errors;
 
-        assert.deepEqual(result2, result);
+        assert.deepEqual(result2.data.allergies, result.data.allergies);
     });
 });

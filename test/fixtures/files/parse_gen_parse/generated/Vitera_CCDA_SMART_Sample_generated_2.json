@@ -770,7 +770,14 @@
                 ],
                 "result_set": {
                     "name": "CBC w/ Differential & Platelet",
-                    "code_system_name": "OID undefined"
+                    "code_system_name": "OID undefined",
+                    "translations": [
+                        {
+                            "name": "Procedure",
+                            "code": "71388002",
+                            "code_system_name": "SNOMED CT"
+                        }
+                    ]
                 },
                 "results": [
                     {
@@ -2053,6 +2060,11 @@
                                 "name": "Imitrex",
                                 "code": "217713",
                                 "code_system_name": "RXNORM"
+                            },
+                            {
+                                "name": "Imitrex 25 MG TABS",
+                                "code": "40964",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
                             }
                         ]
                     },
@@ -2146,6 +2158,11 @@
                                 "name": "Valium",
                                 "code": "202472",
                                 "code_system_name": "RXNORM"
+                            },
+                            {
+                                "name": "Valium 5 MG TABS",
+                                "code": "23060",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
                             }
                         ]
                     },
@@ -2239,6 +2256,11 @@
                                 "name": "Imitrex",
                                 "code": "217713",
                                 "code_system_name": "RXNORM"
+                            },
+                            {
+                                "name": "Imitrex 25 MG TABS",
+                                "code": "40964",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
                             }
                         ]
                     },
@@ -2332,6 +2354,11 @@
                                 "name": "Imitrex",
                                 "code": "217713",
                                 "code_system_name": "RXNORM"
+                            },
+                            {
+                                "name": "Imitrex 25 MG TABS",
+                                "code": "40964",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
                             }
                         ]
                     },
@@ -2513,6 +2540,11 @@
                                 "name": "Imitrex",
                                 "code": "217713",
                                 "code_system_name": "RXNORM"
+                            },
+                            {
+                                "name": "Imitrex 25 MG TABS",
+                                "code": "40964",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
                             }
                         ]
                     },
@@ -2601,6 +2633,11 @@
                                 "name": "Fiorinal with Codeine",
                                 "code": "217127",
                                 "code_system_name": "RXNORM"
+                            },
+                            {
+                                "name": "Fiorinal/Codeine #3 50-325-40-30 MG CAPS",
+                                "code": "8430",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
                             }
                         ]
                     },
@@ -2694,6 +2731,11 @@
                                 "name": "Valium",
                                 "code": "202472",
                                 "code_system_name": "RXNORM"
+                            },
+                            {
+                                "name": "Valium 5 MG TABS",
+                                "code": "23060",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
                             }
                         ]
                     },
@@ -2773,14 +2815,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -2808,14 +2843,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -2843,14 +2871,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -2878,14 +2899,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -2913,14 +2927,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -2975,14 +2982,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -3020,14 +3020,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -3082,14 +3075,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -3144,14 +3130,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -3206,14 +3185,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -3268,14 +3240,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -3330,14 +3295,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -3392,14 +3350,7 @@
                 "encounter": {
                     "name": "General",
                     "code": "GENRL",
-                    "code_system_name": "CPT",
-                    "translations": [
-                        {
-                            "name": "General",
-                            "code": "GENRL",
-                            "code_system_name": "HL7ActCode"
-                        }
-                    ]
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -3438,7 +3389,8 @@
             {
                 "identifiers": [
                     {
-                        "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                        "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6",
+                        "extension": "109-RAG"
                     }
                 ],
                 "date_time": {
@@ -3453,10 +3405,11 @@
                             "identifier": "275e228d-979a-49cf-a866-6ea33c82d0c8"
                         }
                     ],
+                    "negation_indicator": false,
                     "allergen": {
                         "name": "Ragweed",
                         "code": "Unknown",
-                        "code_system_name": "OID UNII"
+                        "code_system_name": "UNII"
                     },
                     "intolerance": {
                         "name": "Allergy to substance",
@@ -3480,29 +3433,16 @@
                                 "name": "Itchy eyes and nasal congestion",
                                 "code": "NI",
                                 "code_system_name": "SNOMED CT"
-                            },
-                            "severity": {
-                                "interpretation": {
-                                    "name": "Suceptible",
-                                    "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                                }
                             }
                         }
-                    ],
-                    "severity": {
-                        "interpretation": {
-                            "name": "Normal",
-                            "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                        }
-                    }
+                    ]
                 }
             },
             {
                 "identifiers": [
                     {
-                        "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                        "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6",
+                        "extension": "109-LAT"
                     }
                 ],
                 "date_time": {
@@ -3517,10 +3457,11 @@
                             "identifier": "4303fc93-6feb-4646-967b-6be3f65315e0"
                         }
                     ],
+                    "negation_indicator": false,
                     "allergen": {
                         "name": "Latex",
                         "code": "Unknown",
-                        "code_system_name": "OID UNII"
+                        "code_system_name": "UNII"
                     },
                     "intolerance": {
                         "name": "Allergy to substance",
@@ -3544,29 +3485,16 @@
                                 "name": "Skin Rashes/Hives",
                                 "code": "64144002",
                                 "code_system_name": "SNOMED CT"
-                            },
-                            "severity": {
-                                "interpretation": {
-                                    "name": "Suceptible",
-                                    "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                                }
                             }
                         }
-                    ],
-                    "severity": {
-                        "interpretation": {
-                            "name": "Normal",
-                            "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                        }
-                    }
+                    ]
                 }
             },
             {
                 "identifiers": [
                     {
-                        "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                        "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6",
+                        "extension": "109-2"
                     }
                 ],
                 "date_time": {
@@ -3581,10 +3509,18 @@
                             "identifier": "00efa5d9-ba3d-4ec6-867f-220093c9a44a"
                         }
                     ],
+                    "negation_indicator": false,
                     "allergen": {
                         "name": "Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG / Codeine 30 MG Oral Capsule",
                         "code": "309471",
-                        "code_system_name": "RXNORM"
+                        "code_system_name": "RXNORM",
+                        "translations": [
+                            {
+                                "name": "Fiorinal/Codeine #3",
+                                "code": "8430",
+                                "code_system_name": "OID 2.16.840.1.113883.6.253"
+                            }
+                        ]
                     },
                     "intolerance": {
                         "name": "Drug intolerance",
@@ -3608,29 +3544,16 @@
                                 "name": "Nausea/Vomiting/Diarrhea",
                                 "code": "2919008",
                                 "code_system_name": "SNOMED CT"
-                            },
-                            "severity": {
-                                "interpretation": {
-                                    "name": "Suceptible",
-                                    "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                                }
                             }
                         }
-                    ],
-                    "severity": {
-                        "interpretation": {
-                            "name": "Normal",
-                            "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                        }
-                    }
+                    ]
                 }
             },
             {
                 "identifiers": [
                     {
-                        "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                        "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6",
+                        "extension": "109-cheese"
                     }
                 ],
                 "date_time": {
@@ -3645,10 +3568,11 @@
                             "identifier": "2313453e-0d88-4180-8039-ab93716c9afd"
                         }
                     ],
+                    "negation_indicator": false,
                     "allergen": {
                         "name": "Cheese",
                         "code": "Unknown",
-                        "code_system_name": "OID UNII"
+                        "code_system_name": "UNII"
                     },
                     "intolerance": {
                         "name": "Allergy to substance",
@@ -3672,29 +3596,16 @@
                                 "name": "Nausea/Vomiting/Diarrhea",
                                 "code": "2919008",
                                 "code_system_name": "SNOMED CT"
-                            },
-                            "severity": {
-                                "interpretation": {
-                                    "name": "Suceptible",
-                                    "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                                }
                             }
                         }
-                    ],
-                    "severity": {
-                        "interpretation": {
-                            "name": "Normal",
-                            "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                        }
-                    }
+                    ]
                 }
             },
             {
                 "identifiers": [
                     {
-                        "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                        "identifier": "2.16.840.1.113883.3.140.1.0.6.10.6",
+                        "extension": "109-bird"
                     }
                 ],
                 "date_time": {
@@ -3709,10 +3620,11 @@
                             "identifier": "d91b7e5e-bc47-4e4f-ac10-dcb8b6dfe80b"
                         }
                     ],
+                    "negation_indicator": false,
                     "allergen": {
                         "name": "Birds",
                         "code": "Unknown",
-                        "code_system_name": "OID UNII"
+                        "code_system_name": "UNII"
                     },
                     "intolerance": {
                         "name": "Allergy to substance",
@@ -3736,23 +3648,16 @@
                                 "name": "Skin Rashes/Hives",
                                 "code": "64144002",
                                 "code_system_name": "SNOMED CT"
-                            },
-                            "severity": {
-                                "interpretation": {
-                                    "name": "Suceptible",
-                                    "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                                }
+                            }
+                        },
+                        {
+                            "reaction": {
+                                "name": "Nausea/Vomiting/Diarrhea",
+                                "code": "2919008",
+                                "code_system_name": "SNOMED CT"
                             }
                         }
-                    ],
-                    "severity": {
-                        "interpretation": {
-                            "name": "Normal",
-                            "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                        }
-                    }
+                    ]
                 }
             }
         ],
@@ -4797,28 +4702,16 @@
         "nullFlavor alert:  missing but required city in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in conceptWoutTranslation -> ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
