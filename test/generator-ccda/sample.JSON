@@ -89,6 +89,21 @@
                                                   "name": "Codeine"
                                         }
                               }
+                    },
+                    {
+                              "_id": "5404d6a3f426400000d30774",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d6a3f7c69e0000fc19ca",
+                                                                      "filename": "bluebutton-01-original.xml"
+                                                            },
+                                                            "merged": "2014-09-01T20:27:15.857Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              }
                     }
           ],
           "vitals": [
@@ -202,6 +217,432 @@
                               },
                               "vital": {
                                         "name": "Height"
+                              }
+                    },
+                    {
+                              "_id": "5404d6a3f426400000d3077a",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d6a3f7c69e0000fc19ca",
+                                                                      "filename": "bluebutton-01-original.xml"
+                                                            },
+                                                            "merged": "2014-09-01T20:27:15.866Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "unit": "cm",
+                              "value": 177,
+                              "interpretations": [
+                                        "Normal"
+                              ],
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "2000-04-07T00:00:00Z"
+                                        }
+                              },
+                              "status": "completed",
+                              "vital": {
+                                        "code_system_name": "LOINC",
+                                        "code": "8302-2",
+                                        "name": "Height"
+                              },
+                              "identifiers": [
+                                        {
+                                                  "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                                        }
+                              ]
+                    },
+                    {
+                              "_id": "5404d6a3f426400000d3077b",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d6a3f7c69e0000fc19ca",
+                                                                      "filename": "bluebutton-01-original.xml"
+                                                            },
+                                                            "merged": "2014-09-01T20:27:15.867Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "unit": "kg",
+                              "value": 88,
+                              "interpretations": [
+                                        "Normal"
+                              ],
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "2000-04-07T00:00:00Z"
+                                        }
+                              },
+                              "status": "completed",
+                              "vital": {
+                                        "code_system_name": "LOINC",
+                                        "code": "3141-9",
+                                        "name": "Patient Body Weight - Measured"
+                              },
+                              "identifiers": [
+                                        {
+                                                  "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                                        }
+                              ]
+                    },
+                    {
+                              "_id": "5404d6a3f426400000d3077c",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d6a3f7c69e0000fc19ca",
+                                                                      "filename": "bluebutton-01-original.xml"
+                                                            },
+                                                            "merged": "2014-09-01T20:27:15.868Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "unit": "mm[Hg]",
+                              "value": 145,
+                              "interpretations": [
+                                        "Normal"
+                              ],
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "2000-04-07T00:00:00Z"
+                                        }
+                              },
+                              "status": "completed",
+                              "vital": {
+                                        "code_system_name": "LOINC",
+                                        "code": "8480-6",
+                                        "name": "Intravascular Systolic"
+                              },
+                              "identifiers": [
+                                        {
+                                                  "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                                        }
+                              ]
+                    }
+          ],
+          "procedures": [
+                    {
+                              "_id": "5404d6a3f426400000d30777",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d6a3f7c69e0000fc19ca",
+                                                                      "filename": "bluebutton-01-original.xml"
+                                                            },
+                                                            "merged": "2014-09-01T20:27:15.862Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "procedure_type": "act",
+                              "locations": [
+                                        {
+                                                  "address": [
+                                                            {
+                                                                      "country": "US",
+                                                                      "zip": "02368",
+                                                                      "state": "MA",
+                                                                      "city": "Blue Bell",
+                                                                      "street_lines": [
+                                                                                "17 Daws Rd."
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "location_type": {
+                                                            "code_system_name": "HealthcareServiceLocation",
+                                                            "code": "1118-9",
+                                                            "name": "Gastroenterology Clinic"
+                                                  },
+                                                  "name": "Community Gastroenterology Clinic"
+                                        }
+                              ],
+                              "performer": [
+                                        {
+                                                  "organization": [
+                                                            {
+                                                                      "name": [
+                                                                                "Community Health and Hospitals"
+                                                                      ],
+                                                                      "identifiers": [
+                                                                                {
+                                                                                          "identifier": "2.16.840.1.113883.19.5"
+                                                                                }
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "phone": [
+                                                            {
+                                                                      "type": "work place",
+                                                                      "number": "(555)555-555-1234"
+                                                            }
+                                                  ],
+                                                  "address": [
+                                                            {
+                                                                      "country": "US",
+                                                                      "zip": "02368",
+                                                                      "state": "MA",
+                                                                      "city": "Blue Bell",
+                                                                      "street_lines": [
+                                                                                "17 Daws Rd."
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "identifiers": [
+                                                            {
+                                                                      "extension": "1234",
+                                                                      "identifier": "2.16.840.1.113883.19"
+                                                            }
+                                                  ]
+                                        }
+                              ],
+                              "priority": {
+                                        "code_system_name": "OID 2.16.840.1.113883.5.7",
+                                        "code": "CR",
+                                        "name": "Callback results"
+                              },
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "2011-02-03T00:00:00Z"
+                                        }
+                              },
+                              "status": "Completed",
+                              "identifiers": [
+                                        {
+                                                  "extension": "1234567",
+                                                  "identifier": "1.2.3.4.5.6.7.8"
+                                        }
+                              ],
+                              "procedure": {
+                                        "code_system_name": "SNOMED CT",
+                                        "code": "274025005",
+                                        "name": "Colonic polypectomy"
+                              }
+                    },
+                    {
+                              "_id": "5404d6a3f426400000d30775",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d6a3f7c69e0000fc19ca",
+                                                                      "filename": "bluebutton-01-original.xml"
+                                                            },
+                                                            "merged": "2014-09-01T20:27:15.858Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "procedure_type": "procedure",
+                              "performer": [
+                                        {
+                                                  "organization": [
+                                                            {
+                                                                      "phone": [
+                                                                                {
+                                                                                          "type": "work place",
+                                                                                          "number": "555-555-5000"
+                                                                                }
+                                                                      ],
+                                                                      "address": [
+                                                                                {
+                                                                                          "country": "US",
+                                                                                          "zip": "99123",
+                                                                                          "state": "OR",
+                                                                                          "city": "Portland",
+                                                                                          "street_lines": [
+                                                                                                    "1001 Village Avenue"
+                                                                                          ]
+                                                                                }
+                                                                      ],
+                                                                      "name": [
+                                                                                "Community Health and Hospitals"
+                                                                      ],
+                                                                      "identifiers": [
+                                                                                {
+                                                                                          "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                                                                }
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "phone": [
+                                                            {
+                                                                      "type": "work place",
+                                                                      "number": "555-555-5000"
+                                                            }
+                                                  ],
+                                                  "address": [
+                                                            {
+                                                                      "country": "US",
+                                                                      "zip": "99123",
+                                                                      "state": "OR",
+                                                                      "city": "Portland",
+                                                                      "street_lines": [
+                                                                                "1001 Village Avenue"
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "identifiers": [
+                                                            {
+                                                                      "extension": "2981823",
+                                                                      "identifier": "2.16.840.1.113883.19.5.9999.456"
+                                                            }
+                                                  ]
+                                        }
+                              ],
+                              "specimen": {
+                                        "code": {
+                                                  "code_system_name": "SNOMED CT",
+                                                  "code": "309226005",
+                                                  "name": "colonic polyp sample"
+                                        },
+                                        "identifiers": [
+                                                  {
+                                                            "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58683"
+                                                  }
+                                        ]
+                              },
+                              "body_sites": [
+                                        {
+                                                  "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9",
+                                                  "code": "appropriate_code",
+                                                  "name": "colon"
+                                        }
+                              ],
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "2012-05-12T00:00:00Z"
+                                        }
+                              },
+                              "status": "Completed",
+                              "identifiers": [
+                                        {
+                                                  "identifier": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
+                                        }
+                              ],
+                              "procedure": {
+                                        "code_system_name": "SNOMED CT",
+                                        "code": "73761001",
+                                        "name": "Colonoscopy"
+                              }
+                    },
+                    {
+                              "_id": "5404d6a3f426400000d30776",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d6a3f7c69e0000fc19ca",
+                                                                      "filename": "bluebutton-01-original.xml"
+                                                            },
+                                                            "merged": "2014-09-01T20:27:15.861Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "procedure_type": "observation",
+                              "locations": [
+                                        {
+                                                  "address": [
+                                                            {
+                                                                      "country": "US",
+                                                                      "zip": "02368",
+                                                                      "state": "MA",
+                                                                      "city": "Blue Bell",
+                                                                      "street_lines": [
+                                                                                "17 Daws Rd."
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "location_type": {
+                                                            "code_system_name": "HealthcareServiceLocation",
+                                                            "code": "1118-9",
+                                                            "name": "Gastroenterology Clinic"
+                                                  },
+                                                  "name": "Community Gastroenterology Clinic"
+                                        }
+                              ],
+                              "performer": [
+                                        {
+                                                  "organization": [
+                                                            {
+                                                                      "name": [
+                                                                                "Community Health and Hospitals"
+                                                                      ],
+                                                                      "identifiers": [
+                                                                                {
+                                                                                          "identifier": "2.16.840.1.113883.19.5"
+                                                                                }
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "phone": [
+                                                            {
+                                                                      "type": "work place",
+                                                                      "number": "(555)555-555-1234"
+                                                            }
+                                                  ],
+                                                  "address": [
+                                                            {
+                                                                      "country": "US",
+                                                                      "zip": "02368",
+                                                                      "state": "MA",
+                                                                      "city": "Blue Bell",
+                                                                      "street_lines": [
+                                                                                "17 Daws Rd."
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "identifiers": [
+                                                            {
+                                                                      "extension": "1234",
+                                                                      "identifier": "2.16.840.1.113883.19.5"
+                                                            }
+                                                  ]
+                                        }
+                              ],
+                              "priority": {
+                                        "code_system_name": "OID 2.16.840.1.113883.5.7",
+                                        "code": "CR",
+                                        "name": "Callback results"
+                              },
+                              "body_sites": [
+                                        {
+                                                  "code_system_name": "SNOMED CT",
+                                                  "code": "416949008",
+                                                  "name": "Abdomen and pelvis"
+                                        }
+                              ],
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "2011-02-03T00:00:00Z"
+                                        }
+                              },
+                              "status": "Aborted",
+                              "identifiers": [
+                                        {
+                                                  "extension": "123456789",
+                                                  "identifier": "2.16.840.1.113883.19"
+                                        }
+                              ],
+                              "procedure": {
+                                        "code_system_name": "SNOMED CT",
+                                        "code": "274025005",
+                                        "name": "Colonic polypectomy"
                               }
                     }
           ],
@@ -399,51 +840,137 @@
                               "status": "complete"
                     }
           ],
-          "medications": [
-                    {
-                              "_id": "5404d4a55b022b000059e50c",
-                              "metadata": {
-                                        "attribution": [
-                                                  {
-                                                            "record": {
-                                                                      "_id": "5404d4a507c12400003564bd",
-                                                                      "filename": "bluebutton-03-cms.txt"
-                                                            },
-                                                            "merged": "2014-09-01T20:18:46.007Z",
-                                                            "merge_reason": "new"
-                                                  }
-                                        ]
-                              },
-                              "status": "Completed",
-                              "sig": "Proventil HFA",
-                              "product": {
-                                        "unencoded_name": "Proventil",
-                                        "product": {
-                                                  "name": "Proventil"
+          "social_history": {
+                    "_id": "5404d6a3f426400000d3077e",
+                    "metadata": {
+                              "attribution": [
+                                        {
+                                                  "record": {
+                                                            "_id": "5404d6a3f7c69e0000fc19ca",
+                                                            "filename": "bluebutton-01-original.xml"
+                                                  },
+                                                  "merged": "2014-09-01T20:27:15.870Z",
+                                                  "merge_reason": "new"
                                         }
-                              }
+                              ]
                     },
+                    "value": "1 pack per day",
+                    "code": {
+                              "code_system_name": "SNOMED CT",
+                              "code": "229819007",
+                              "name": "Tobacco use and exposure"
+                    },
+                    "identifiers": [
+                              {
+                                        "identifier": "9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"
+                              }
+                    ],
+                    "date_time": {
+                              "high": {
+                                        "precision": "second",
+                                        "date": "2009-02-27T13:00:00Z"
+                              },
+                              "low": {
+                                        "precision": "day",
+                                        "date": "2005-05-01T00:00:00Z"
+                              }
+                    }
+          },
+          "encounters": [
                     {
-                              "_id": "5404d4a55b022b000059e50d",
+                              "_id": "5404d6a3f426400000d30779",
                               "metadata": {
                                         "attribution": [
                                                   {
                                                             "record": {
-                                                                      "_id": "5404d4a507c12400003564bd",
-                                                                      "filename": "bluebutton-03-cms.txt"
+                                                                      "_id": "5404d6a3f7c69e0000fc19ca",
+                                                                      "filename": "bluebutton-01-original.xml"
                                                             },
-                                                            "merged": "2014-09-01T20:18:46.011Z",
+                                                            "merged": "2014-09-01T20:27:15.865Z",
                                                             "merge_reason": "new"
                                                   }
                                         ]
                               },
-                              "status": "Completed",
-                              "sig": "Aspirin",
-                              "product": {
-                                        "unencoded_name": "Aspirin",
-                                        "product": {
-                                                  "name": "Aspirin"
+                              "findings": [
+                                        {
+                                                  "date_time": {
+                                                            "low": {
+                                                                      "precision": "day",
+                                                                      "date": "2007-01-03T00:00:00Z"
+                                                            }
+                                                  },
+                                                  "value": {
+                                                            "code_system_name": "SNOMED CT",
+                                                            "code": "233604007",
+                                                            "name": "Pneumonia"
+                                                  },
+                                                  "identifiers": [
+                                                            {
+                                                                      "extension": "45665",
+                                                                      "identifier": "db734647-fc99-424c-a864-7e3cda82e703"
+                                                            }
+                                                  ]
                                         }
+                              ],
+                              "locations": [
+                                        {
+                                                  "address": [
+                                                            {
+                                                                      "country": "US",
+                                                                      "zip": "02368",
+                                                                      "state": "MA",
+                                                                      "city": "Blue Bell",
+                                                                      "street_lines": [
+                                                                                "17 Daws Rd."
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "location_type": {
+                                                            "code_system_name": "HealthcareServiceLocation",
+                                                            "code": "1160-1",
+                                                            "name": "Urgent Care Center"
+                                                  },
+                                                  "name": "Community Urgent Care Center"
+                                        }
+                              ],
+                              "performers": [
+                                        {
+                                                  "code": [
+                                                            {
+                                                                      "code_system_name": "SNOMED CT",
+                                                                      "code": "59058001",
+                                                                      "name": "General Physician"
+                                                            }
+                                                  ],
+                                                  "identifiers": [
+                                                            {
+                                                                      "identifier": "PseduoMD-3"
+                                                            }
+                                                  ]
+                                        }
+                              ],
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "second",
+                                                  "date": "2009-02-27T13:00:00Z"
+                                        }
+                              },
+                              "identifiers": [
+                                        {
+                                                  "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                                        }
+                              ],
+                              "encounter": {
+                                        "translations": [
+                                                  {
+                                                            "code_system_name": "HL7ActCode",
+                                                            "code": "AMB",
+                                                            "name": "Ambulatory"
+                                                  }
+                                        ],
+                                        "code_system_name": "CPT",
+                                        "code": "99213",
+                                        "name": "Office outpatient visit 15 minutes"
                               }
                     }
           ],
@@ -557,6 +1084,249 @@
                               "problem": {
                                         "code": {
                                                   "name": "Asthma"
+                                        }
+                              }
+                    }
+          ],
+          "medications": [
+                    {
+                              "_id": "5404d4a55b022b000059e50c",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.007Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "status": "Completed",
+                              "sig": "Proventil HFA",
+                              "product": {
+                                        "unencoded_name": "Proventil",
+                                        "product": {
+                                                  "name": "Proventil"
+                                        }
+                              }
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e50d",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.011Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "status": "Completed",
+                              "sig": "Aspirin",
+                              "product": {
+                                        "unencoded_name": "Aspirin",
+                                        "product": {
+                                                  "name": "Aspirin"
+                                        }
+                              }
+                    },
+                    {
+                              "_id": "5404d6a3f426400000d30778",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d6a3f7c69e0000fc19ca",
+                                                                      "filename": "bluebutton-01-original.xml"
+                                                            },
+                                                            "merged": "2014-09-01T20:27:15.863Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "dispense": {
+                                        "performer": {
+                                                  "organization": [
+                                                            {
+                                                                      "name": [
+                                                                                "Community Health and Hospitals"
+                                                                      ],
+                                                                      "identifiers": [
+                                                                                {
+                                                                                          "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                                                                }
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "address": [
+                                                            {
+                                                                      "country": "US",
+                                                                      "zip": "99123",
+                                                                      "state": "OR",
+                                                                      "city": "Portland",
+                                                                      "street_lines": [
+                                                                                "1001 Village Avenue"
+                                                                      ]
+                                                            }
+                                                  ],
+                                                  "identifiers": [
+                                                            {
+                                                                      "extension": "2981823",
+                                                                      "identifier": "2.16.840.1.113883.19.5.9999.456"
+                                                            }
+                                                  ]
+                                        },
+                                        "identifiers": [
+                                                  {
+                                                            "extension": "cb734647-fc99-424c-a864-7e3cda82e704",
+                                                            "identifier": "1.2.3.4.56789.1"
+                                                  }
+                                        ]
+                              },
+                              "indication": {
+                                        "value": {
+                                                  "code_system_name": "SNOMED CT",
+                                                  "code": "233604007",
+                                                  "name": "Pneumonia"
+                                        },
+                                        "date_time": {
+                                                  "low": {
+                                                            "precision": "day",
+                                                            "date": "2007-01-03T00:00:00Z"
+                                                  }
+                                        },
+                                        "code": {
+                                                  "code_system_name": "SNOMED CT",
+                                                  "code": "404684003",
+                                                  "name": "Finding"
+                                        },
+                                        "identifiers": [
+                                                  {
+                                                            "extension": "45665",
+                                                            "identifier": "db734647-fc99-424c-a864-7e3cda82e703"
+                                                  }
+                                        ]
+                              },
+                              "precondition": {
+                                        "value": {
+                                                  "code_system_name": "SNOMED CT",
+                                                  "code": "56018004",
+                                                  "name": "Wheezing"
+                                        },
+                                        "code": {
+                                                  "code_system_name": "HL7ActCode",
+                                                  "code": "ASSERTION"
+                                        }
+                              },
+                              "drug_vehicle": {
+                                        "code_system_name": "RXNORM",
+                                        "code": "324049",
+                                        "name": "Aerosol"
+                              },
+                              "performer": {
+                                        "organization": [
+                                                  {
+                                                            "name": [
+                                                                      "Community Health and Hospitals"
+                                                            ],
+                                                            "identifiers": [
+                                                                      {
+                                                                                "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                                                      }
+                                                            ]
+                                                  }
+                                        ]
+                              },
+                              "administration": {
+                                        "interval": {
+                                                  "frequency": true,
+                                                  "period": {
+                                                            "unit": "h",
+                                                            "value": 6
+                                                  }
+                                        },
+                                        "rate": {
+                                                  "unit": "ml/min",
+                                                  "value": 90
+                                        },
+                                        "dose": {
+                                                  "unit": "mg/actuat",
+                                                  "value": 1
+                                        },
+                                        "form": {
+                                                  "code_system_name": "Medication Route FDA",
+                                                  "code": "C42944",
+                                                  "name": "INHALANT"
+                                        },
+                                        "route": {
+                                                  "code_system_name": "Medication Route FDA",
+                                                  "code": "C38216",
+                                                  "name": "RESPIRATORY (INHALATION)"
+                                        }
+                              },
+                              "supply": {
+                                        "author": {
+                                                  "name": {
+                                                            "first": "Henry",
+                                                            "last": "Seven",
+                                                            "prefix": "Dr."
+                                                  },
+                                                  "identifiers": [
+                                                            {
+                                                                      "identifier": "2a620155-9d11-439e-92b3-5d9815fe4de8"
+                                                            }
+                                                  ]
+                                        },
+                                        "quantity": "75",
+                                        "repeatNumber": "1",
+                                        "date_time": {
+                                                  "low": {
+                                                            "precision": "day",
+                                                            "date": "2007-01-03T00:00:00Z"
+                                                  }
+                                        }
+                              },
+                              "product": {
+                                        "manufacturer": "Medication Factory Inc.",
+                                        "product": {
+                                                  "code_system_name": "RXNORM",
+                                                  "translations": [
+                                                            {
+                                                                      "code_system_name": "RXNORM",
+                                                                      "code": "573621",
+                                                                      "name": "Proventil 0.09 MG/ACTUAT inhalant solution"
+                                                            }
+                                                  ],
+                                                  "code": "219483",
+                                                  "name": "Proventil HFA"
+                                        },
+                                        "unencoded_name": "Proventil HFA",
+                                        "identifiers": [
+                                                  {
+                                                            "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                                                  }
+                                        ]
+                              },
+                              "sig": "Proventil HFA",
+                              "status": "Completed",
+                              "identifiers": [
+                                        {
+                                                  "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                                        }
+                              ],
+                              "date_time": {
+                                        "high": {
+                                                  "precision": "day",
+                                                  "date": "2012-05-15T00:00:00Z"
+                                        },
+                                        "low": {
+                                                  "precision": "day",
+                                                  "date": "2007-01-03T00:00:00Z"
                                         }
                               }
                     }
