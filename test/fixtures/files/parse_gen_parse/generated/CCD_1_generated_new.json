@@ -1,0 +1,3773 @@
+{
+    "allergies": [
+        {
+            "_id": "5404daa363cfe70000363f4b",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.336Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.427Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "observation": {
+                "severity": {
+                    "interpretation": {
+                        "code_system_name": "OID 2.16.840.1.113883.1.11.78",
+                        "code": "N",
+                        "name": "Normal"
+                    },
+                    "code": {
+                        "code_system_name": "SNOMED CT",
+                        "code": "6736007",
+                        "name": "Moderate"
+                    }
+                },
+                "reactions": [
+                    {
+                        "severity": {
+                            "interpretation": {
+                                "code_system_name": "OID 2.16.840.1.113883.1.11.78",
+                                "code": "S",
+                                "name": "Suceptible"
+                            },
+                            "code": {
+                                "code_system_name": "SNOMED CT",
+                                "code": "255604002",
+                                "name": "Mild"
+                            }
+                        },
+                        "reaction": {
+                            "code_system_name": "SNOMED CT",
+                            "code": "56018004",
+                            "name": "Wheezing"
+                        },
+                        "date_time": {
+                            "high": {
+                                "precision": "second",
+                                "date": "2009-02-27T13:00:00Z"
+                            },
+                            "low": {
+                                "precision": "day",
+                                "date": "2006-05-01T00:00:00Z"
+                            }
+                        }
+                    }
+                ],
+                "status": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "55561003",
+                    "name": "Active"
+                },
+                "date_time": {
+                    "low": {
+                        "precision": "day",
+                        "date": "2006-05-01T00:00:00Z"
+                    }
+                },
+                "intolerance": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "419511003",
+                    "name": "Propensity to adverse reactions to drug"
+                },
+                "allergen": {
+                    "code_system_name": "RXNORM",
+                    "code": "2670",
+                    "name": "Codeine"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ]
+            },
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2006-05-01T00:00:00Z"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f4c",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.336Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.437Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "observation": {
+                "severity": {
+                    "interpretation": {
+                        "code_system_name": "OID 2.16.840.1.113883.1.11.78",
+                        "code": "N",
+                        "name": "Normal"
+                    },
+                    "code": {
+                        "code_system_name": "SNOMED CT",
+                        "code": "371923003",
+                        "name": "Mild to moderate"
+                    }
+                },
+                "reactions": [
+                    {
+                        "severity": {
+                            "interpretation": {
+                                "code_system_name": "OID 2.16.840.1.113883.1.11.78",
+                                "code": "S",
+                                "name": "Suceptible"
+                            },
+                            "code": {
+                                "code_system_name": "SNOMED CT",
+                                "code": "371923003",
+                                "name": "Mild to moderate"
+                            }
+                        },
+                        "reaction": {
+                            "code_system_name": "SNOMED CT",
+                            "code": "247472004",
+                            "name": "Hives"
+                        },
+                        "date_time": {
+                            "high": {
+                                "precision": "second",
+                                "date": "2009-02-27T13:00:00Z"
+                            },
+                            "low": {
+                                "precision": "day",
+                                "date": "2008-05-01T00:00:00Z"
+                            }
+                        }
+                    }
+                ],
+                "status": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "55561003",
+                    "name": "Active"
+                },
+                "date_time": {
+                    "low": {
+                        "precision": "day",
+                        "date": "2008-05-01T00:00:00Z"
+                    }
+                },
+                "intolerance": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "59037007",
+                    "name": "Drug intolerance"
+                },
+                "allergen": {
+                    "code_system_name": "RXNORM",
+                    "code": "1191",
+                    "name": "Aspirin"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ]
+            },
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2008-05-01T00:00:00Z"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f88",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.460Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "observation": {
+                "reactions": [
+                    {
+                        "severity": {
+                            "interpretation": {
+                                "code_system_name": "OID 2.16.840.1.113883.1.11.78",
+                                "code": "S",
+                                "name": "Suceptible"
+                            },
+                            "code": {
+                                "code_system_name": "SNOMED CT",
+                                "code": "255604002",
+                                "name": "Mild"
+                            }
+                        },
+                        "reaction": {
+                            "code_system_name": "SNOMED CT",
+                            "code": "422587007",
+                            "name": "Nausea"
+                        },
+                        "date_time": {
+                            "high": {
+                                "precision": "second",
+                                "date": "2009-02-27T13:00:00Z"
+                            },
+                            "low": {
+                                "precision": "day",
+                                "date": "2007-05-01T00:00:00Z"
+                            }
+                        }
+                    }
+                ],
+                "status": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "73425007",
+                    "name": "Inactive"
+                },
+                "intolerance": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "414285001",
+                    "name": "Food allergy (disorder)"
+                },
+                "allergen": {
+                    "translations": [
+                        {
+                            "code_system_name": "OID 2.16.840.1.113883.6.2",
+                            "code": "V15.03",
+                            "name": "Allergy to eggs"
+                        }
+                    ],
+                    "code_system_name": "UNII",
+                    "code": "291P45F896",
+                    "name": "Eggs"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ]
+            },
+            "date_time": {
+                "low": {
+                    "precision": "second",
+                    "date": "1984-06-05T10:00:00Z"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f89",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.461Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "observation": {
+                "reactions": [
+                    {
+                        "severity": {
+                            "interpretation": {
+                                "code_system_name": "OID 2.16.840.1.113883.1.11.78",
+                                "code": "S",
+                                "name": "Suceptible"
+                            },
+                            "code": {
+                                "code_system_name": "SNOMED CT",
+                                "code": "255604002",
+                                "name": "Mild"
+                            }
+                        },
+                        "reaction": {
+                            "code_system_name": "SNOMED CT",
+                            "code": "422587007",
+                            "name": "Nausea"
+                        },
+                        "date_time": {
+                            "high": {
+                                "precision": "second",
+                                "date": "2009-02-27T13:00:00Z"
+                            },
+                            "low": {
+                                "precision": "day",
+                                "date": "2007-05-01T00:00:00Z"
+                            }
+                        }
+                    }
+                ],
+                "status": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "73425007",
+                    "name": "Inactive"
+                },
+                "intolerance": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "416098002",
+                    "name": "Drug allergy (disorder)"
+                },
+                "allergen": {
+                    "code_system_name": "RXNORM",
+                    "code": "866041",
+                    "name": "Neomycin Sulfate 500 MG"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ]
+            },
+            "date_time": {
+                "low": {
+                    "precision": "second",
+                    "date": "2009-08-26T10:00:00Z"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f4a",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.335Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.418Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daac56c9d900007d0e71",
+                            "filename": "bluebutton-03-cms.txt"
+                        },
+                        "merged": "2014-09-01T21:55:05.217Z",
+                        "merge_reason": "update"
+                    }
+                ]
+            },
+            "date_time": {
+                "point": {
+                    "date": "2007-05-01T00:00:00Z",
+                    "precision": "day"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "36e3e930-7b14-11db-9fe1-0800200c9a66"
+                }
+            ],
+            "observation": {
+                "identifiers": [
+                    {
+                        "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "allergen": {
+                    "name": "ALLERGENIC EXTRACT, PENICILLIN",
+                    "code": "314422",
+                    "code_system_name": "RXNORM"
+                },
+                "intolerance": {
+                    "name": "Propensity to adverse reactions to drug",
+                    "code": "419511003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "date_time": {
+                    "low": {
+                        "date": "2007-05-01T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "status": {
+                    "name": "Active",
+                    "code": "55561003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "reactions": [
+                    {
+                        "reaction": {
+                            "name": "Nausea"
+                        },
+                        "severity": {
+                            "code": {
+                                "code": "255604002",
+                                "name": "Mild",
+                                "code_system_name": "SNOMED CT"
+                            }
+                        }
+                    },
+                    {
+                        "date_time": {
+                            "low": {
+                                "date": "2007-05-01T00:00:00Z",
+                                "precision": "day"
+                            },
+                            "high": {
+                                "date": "2009-02-27T13:00:00Z",
+                                "precision": "second"
+                            }
+                        },
+                        "reaction": {
+                            "name": "Nausea",
+                            "code": "422587007",
+                            "code_system_name": "SNOMED CT"
+                        },
+                        "severity": {
+                            "code": {
+                                "name": "Mild",
+                                "code": "255604002",
+                                "code_system_name": "SNOMED CT"
+                            },
+                            "interpretation": {
+                                "name": "Suceptible",
+                                "code": "S",
+                                "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                            }
+                        }
+                    }
+                ],
+                "severity": {
+                    "code": {
+                        "name": "Moderate to severe",
+                        "code": "371924009",
+                        "code_system_name": "SNOMED CT"
+                    },
+                    "interpretation": {
+                        "name": "Normal",
+                        "code": "N",
+                        "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                    }
+                }
+            }
+        }
+    ],
+    "vitals": [
+        {
+            "_id": "5404daa863cfe70000363f8f",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.467Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "unit": "[lb_av]",
+            "value": 160,
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2012-10-02T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "3141-9",
+                "name": "Weight"
+            },
+            "identifiers": [
+                {
+                    "extension": "1166602190002918",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                },
+                {
+                    "extension": "1166602190003518",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f90",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.468Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "unit": "mm[Hg]",
+            "value": 120,
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2012-10-02T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "8480-6",
+                "name": "BP Systolic"
+            },
+            "identifiers": [
+                {
+                    "extension": "11666021900029181",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                },
+                {
+                    "extension": "11666021900035181",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f91",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.469Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.016Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "unit": "mm[Hg]",
+            "value": 78,
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2012-10-02T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "8462-4",
+                "name": "BP Diastolic"
+            },
+            "identifiers": [
+                {
+                    "extension": "1166602190002928",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                },
+                {
+                    "extension": "1166602190003528",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f92",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.469Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.019Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "unit": "1",
+            "value": 27.5,
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2012-10-02T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "39156-5",
+                "name": "Body Mass Index Calculated"
+            },
+            "identifiers": [
+                {
+                    "extension": "1166602190002939",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                },
+                {
+                    "extension": "1166602190003539",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f59",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.359Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.422Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.007Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "unit": "cm",
+            "value": 177,
+            "interpretations": [
+                "Normal"
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2000-04-07T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "8302-2",
+                "name": "Height"
+            },
+            "identifiers": [
+                {
+                    "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f5a",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.360Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.432Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.010Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "unit": "kg",
+            "value": 88,
+            "interpretations": [
+                "Normal"
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2000-04-07T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "3141-9",
+                "name": "Patient Body Weight - Measured"
+            },
+            "identifiers": [
+                {
+                    "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f56",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.356Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.439Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.014Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "unit": "cm",
+            "value": 177,
+            "interpretations": [
+                "Normal"
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "1999-11-14T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "8302-2",
+                "name": "Height"
+            },
+            "identifiers": [
+                {
+                    "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f5b",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.361Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.440Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.017Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "unit": "mm[Hg]",
+            "value": 145,
+            "interpretations": [
+                "Normal"
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2000-04-07T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "8480-6",
+                "name": "Intravascular Systolic"
+            },
+            "identifiers": [
+                {
+                    "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f57",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.357Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.446Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.020Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "unit": "kg",
+            "value": 86,
+            "interpretations": [
+                "Normal"
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "1999-11-14T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "3141-9",
+                "name": "Patient Body Weight - Measured"
+            },
+            "identifiers": [
+                {
+                    "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f58",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.358Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.455Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.008Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "unit": "mm[Hg]",
+            "value": 132,
+            "interpretations": [
+                "Normal"
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "1999-11-14T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "8480-6",
+                "name": "Intravascular Systolic"
+            },
+            "identifiers": [
+                {
+                    "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f8e",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.466Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "unit": "[in_us]",
+            "value": 64,
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2012-10-02T00:00:00Z"
+                }
+            },
+            "status": "completed",
+            "vital": {
+                "code_system_name": "LOINC",
+                "code": "8302-2",
+                "name": "Height"
+            },
+            "identifiers": [
+                {
+                    "extension": "6660219000296",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                },
+                {
+                    "extension": "6660219000356",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6"
+                }
+            ]
+        },
+        {
+            "_id": "5404daac63cfe70000363fcd",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daac56c9d900007d0e71",
+                            "filename": "bluebutton-03-cms.txt"
+                        },
+                        "merged": "2014-09-01T20:44:28.997Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "status": "completed",
+            "unit": "mm[Hg]",
+            "value": 80,
+            "date_time": {
+                "point": {
+                    "precision": "hour",
+                    "date": "1999-11-14T15:00:00Z"
+                }
+            },
+            "vital": {
+                "code_system_name": "LOINC",
+                "name": "Intravascular Diastolic",
+                "code": "8462-4"
+            }
+        }
+    ],
+    "procedures": [
+        {
+            "_id": "5404daa363cfe70000363f4f",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.345Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.444Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.006Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "procedure_type": "act",
+            "locations": [
+                {
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "02368",
+                            "state": "MA",
+                            "city": "Blue Bell",
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ]
+                        }
+                    ],
+                    "location_type": {
+                        "code_system_name": "HealthcareServiceLocation",
+                        "code": "1118-9",
+                        "name": "Gastroenterology Clinic"
+                    },
+                    "name": "Community Gastroenterology Clinic"
+                }
+            ],
+            "performer": [
+                {
+                    "organization": [
+                        {
+                            "name": [
+                                "Community Health and Hospitals"
+                            ],
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5"
+                                }
+                            ]
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "type": "work place",
+                            "number": "(555)555-555-1234"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "02368",
+                            "state": "MA",
+                            "city": "Blue Bell",
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ]
+                        }
+                    ],
+                    "identifiers": [
+                        {
+                            "extension": "1234",
+                            "identifier": "2.16.840.1.113883.19"
+                        }
+                    ]
+                }
+            ],
+            "priority": {
+                "code_system_name": "OID 2.16.840.1.113883.5.7",
+                "code": "CR",
+                "name": "Callback results"
+            },
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2011-02-03T00:00:00Z"
+                }
+            },
+            "status": "Completed",
+            "identifiers": [
+                {
+                    "extension": "1234567",
+                    "identifier": "1.2.3.4.5.6.7.8"
+                }
+            ],
+            "procedure": {
+                "code_system_name": "SNOMED CT",
+                "code": "274025005",
+                "name": "Colonic polypectomy"
+            }
+        },
+        {
+            "_id": "5404daa363cfe70000363f4d",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.340Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.452Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "procedure_type": "procedure",
+            "performer": [
+                {
+                    "organization": [
+                        {
+                            "phone": [
+                                {
+                                    "type": "work place",
+                                    "number": "555-555-5000"
+                                }
+                            ],
+                            "address": [
+                                {
+                                    "country": "US",
+                                    "zip": "99123",
+                                    "state": "OR",
+                                    "city": "Portland",
+                                    "street_lines": [
+                                        "1001 Village Avenue"
+                                    ]
+                                }
+                            ],
+                            "name": [
+                                "Community Health and Hospitals"
+                            ],
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                }
+                            ]
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "type": "work place",
+                            "number": "555-555-5000"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "99123",
+                            "state": "OR",
+                            "city": "Portland",
+                            "street_lines": [
+                                "1001 Village Avenue"
+                            ]
+                        }
+                    ],
+                    "identifiers": [
+                        {
+                            "extension": "2981823",
+                            "identifier": "2.16.840.1.113883.19.5.9999.456"
+                        }
+                    ]
+                }
+            ],
+            "specimen": {
+                "code": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "309226005",
+                    "name": "colonic polyp sample"
+                },
+                "identifiers": [
+                    {
+                        "identifier": "c2ee9ee9-ae31-4628-a919-fec1cbb58683"
+                    }
+                ]
+            },
+            "body_sites": [
+                {
+                    "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9",
+                    "code": "appropriate_code",
+                    "name": "colon"
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2012-05-12T00:00:00Z"
+                }
+            },
+            "status": "Completed",
+            "identifiers": [
+                {
+                    "identifier": "d68b7e32-7810-4f5b-9cc2-acd54b0fd85d"
+                }
+            ],
+            "procedure": {
+                "code_system_name": "SNOMED CT",
+                "code": "73761001",
+                "name": "Colonoscopy"
+            }
+        },
+        {
+            "_id": "5404daa363cfe70000363f4e",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.344Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.419Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "procedure_type": "observation",
+            "locations": [
+                {
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "02368",
+                            "state": "MA",
+                            "city": "Blue Bell",
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ]
+                        }
+                    ],
+                    "location_type": {
+                        "code_system_name": "HealthcareServiceLocation",
+                        "code": "1118-9",
+                        "name": "Gastroenterology Clinic"
+                    },
+                    "name": "Community Gastroenterology Clinic"
+                }
+            ],
+            "performer": [
+                {
+                    "organization": [
+                        {
+                            "name": [
+                                "Community Health and Hospitals"
+                            ],
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5"
+                                }
+                            ]
+                        }
+                    ],
+                    "phone": [
+                        {
+                            "type": "work place",
+                            "number": "(555)555-555-1234"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "02368",
+                            "state": "MA",
+                            "city": "Blue Bell",
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ]
+                        }
+                    ],
+                    "identifiers": [
+                        {
+                            "extension": "1234",
+                            "identifier": "2.16.840.1.113883.19.5"
+                        }
+                    ]
+                }
+            ],
+            "priority": {
+                "code_system_name": "OID 2.16.840.1.113883.5.7",
+                "code": "CR",
+                "name": "Callback results"
+            },
+            "body_sites": [
+                {
+                    "code_system_name": "SNOMED CT",
+                    "code": "416949008",
+                    "name": "Abdomen and pelvis"
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2011-02-03T00:00:00Z"
+                }
+            },
+            "status": "Aborted",
+            "identifiers": [
+                {
+                    "extension": "123456789",
+                    "identifier": "2.16.840.1.113883.19"
+                }
+            ],
+            "procedure": {
+                "code_system_name": "SNOMED CT",
+                "code": "274025005",
+                "name": "Colonic polypectomy"
+            }
+        },
+        {
+            "_id": "5404daa863cfe70000363f8a",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.462Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "procedure_type": "observation",
+            "performer": [
+                {
+                    "phone": [
+                        {
+                            "number": "+1-(555)555-1122"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "97005",
+                            "state": "OR",
+                            "city": "Portland",
+                            "street_lines": [
+                                "1002 Healthcare Dr."
+                            ]
+                        }
+                    ],
+                    "name": [
+                        {
+                            "first": "Martin",
+                            "last": "Rodriguez",
+                            "prefix": "Dr"
+                        }
+                    ],
+                    "identifiers": [
+                        {
+                            "extension": "1111111111",
+                            "identifier": "2.16.840.1.113883.4.6"
+                        }
+                    ]
+                }
+            ],
+            "body_sites": [
+                {
+                    "code_system_name": "SNOMED CT",
+                    "code": "82094008",
+                    "name": "Lower Respiratory Tract Structure"
+                }
+            ],
+            "date_time": {
+                "low": {
+                    "precision": "day",
+                    "date": "2012-10-02T00:00:00Z"
+                }
+            },
+            "status": "Active",
+            "identifiers": [
+                {
+                    "extension": "11144556",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.7"
+                }
+            ],
+            "procedure": {
+                "code_system_name": "SNOMED CT",
+                "code": "241526005",
+                "name": "Sinus CT"
+            }
+        }
+    ],
+    "results": [
+        {
+            "_id": "5404daa863cfe70000363f94",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.472Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "results": [
+                {
+                    "unit": "%",
+                    "value": 8,
+                    "interpretations": [
+                        "abnormal",
+                        "high alert"
+                    ],
+                    "reference_range": {
+                        "range": "normal: 4.0-5.6%"
+                    },
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "day",
+                            "date": "2012-11-26T00:00:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "4548-4",
+                        "name": "Hemoglobin A1c/Hemoglobin.total in Blood"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "dc16a671-c8f7-4125-a3f6-c8787606f576"
+                        }
+                    ]
+                }
+            ],
+            "result_set": {
+                "code_system_name": "LOINC",
+                "code": "4548-4",
+                "name": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            },
+            "identifiers": [
+                {
+                    "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f97",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.475Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.017Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "results": [
+                {
+                    "unit": "%",
+                    "value": 55,
+                    "interpretations": [
+                        "normal"
+                    ],
+                    "reference_range": {
+                        "range": "Normal: 50-75%"
+                    },
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "day",
+                            "date": "2012-11-26T00:00:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "18041-4",
+                        "name": "Aortic valve Ejection [Time] by US.doppler"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "aaa00f9e-0154-4eaa-be85-aeb34169f06a"
+                        }
+                    ]
+                },
+                {
+                    "unit": "cm2",
+                    "value": 1.5,
+                    "interpretations": [
+                        "abnormal"
+                    ],
+                    "reference_range": {
+                        "range": "Normal (3.0-4.0 cm2), mild (1.5–2.0 cm2), moderate (1.0–1.5 cm2), severe (less than 1.0 cm2)"
+                    },
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "day",
+                            "date": "2012-11-26T00:00:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "18089-3",
+                        "name": "AV Orifice Area US"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "347f958c-9b6b-4eeb-848d-624567117cb7"
+                        }
+                    ]
+                }
+            ],
+            "result_set": {
+                "code_system_name": "LOINC",
+                "code": "34552-0",
+                "name": "2D echocardiogram panel"
+            },
+            "identifiers": [
+                {
+                    "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f98",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.476Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.020Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "results": [
+                {
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "day",
+                            "date": "2012-11-26T00:00:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "18844-1",
+                        "name": "EKG impression Narrative"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "ba4f85fa-586c-4898-9aad-b592d4c2c383"
+                        }
+                    ]
+                }
+            ],
+            "result_set": {
+                "code_system_name": "LOINC",
+                "code": "34534-8",
+                "name": "EKG 12 channel panel"
+            },
+            "identifiers": [
+                {
+                    "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f93",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.471Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "results": [
+                {
+                    "unit": "m[IU]/L",
+                    "value": 6,
+                    "interpretations": [
+                        "abnormal",
+                        "high alert"
+                    ],
+                    "reference_range": {
+                        "range": "normal: 0.29–5.11 IU/ml"
+                    },
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "day",
+                            "date": "2012-11-26T00:00:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "3016-3",
+                        "name": "Thyrotropin [Units/volume] in Serum or Plasma"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "1331eea1-3efe-497e-96bc-de56796a253d"
+                        }
+                    ]
+                }
+            ],
+            "result_set": {
+                "code_system_name": "LOINC",
+                "code": "11579-0",
+                "name": "Thyrotropin [Units/volume] in Serum or Plasma by Detection limit less than or equal to 0.05 mIU/L"
+            },
+            "identifiers": [
+                {
+                    "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f95",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.474Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "results": [
+                {
+                    "unit": "mg/dL",
+                    "value": 1.5,
+                    "interpretations": [
+                        "abnormal"
+                    ],
+                    "reference_range": {
+                        "range": "normal: below 1.5 mg/dL"
+                    },
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "day",
+                            "date": "2012-11-26T00:00:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "2160-0",
+                        "name": "Creatinine [Mass/volume] in Serum or Plasma"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "9cd43fa7-db31-4c29-ab30-83f92fdcaa20"
+                        }
+                    ]
+                }
+            ],
+            "result_set": {
+                "code_system_name": "LOINC",
+                "code": "2160-0",
+                "name": "Creatinine [Mass/volume] in Serum or Plasma"
+            },
+            "identifiers": [
+                {
+                    "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f5c",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.362Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.447Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.011Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "results": [
+                {
+                    "unit": "g/dl",
+                    "value": 13.2,
+                    "interpretations": [
+                        "Normal"
+                    ],
+                    "reference_range": {
+                        "range": "M 13-18 g/dl; F 12-16 g/dl"
+                    },
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "minute",
+                            "date": "2000-03-23T14:30:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "30313-1",
+                        "name": "HGB"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                        }
+                    ]
+                },
+                {
+                    "unit": "10+3/ul",
+                    "value": 6.7,
+                    "interpretations": [
+                        "Normal"
+                    ],
+                    "reference_range": {
+                        "unit": "10+3/ul",
+                        "high": "10.8",
+                        "low": "4.3"
+                    },
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "minute",
+                            "date": "2000-03-23T14:30:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "33765-9",
+                        "name": "WBC"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                        }
+                    ]
+                },
+                {
+                    "unit": "10+3/ul",
+                    "value": 123,
+                    "interpretations": [
+                        "Low"
+                    ],
+                    "reference_range": {
+                        "unit": "10+3/ul",
+                        "high": "350",
+                        "low": "150"
+                    },
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "minute",
+                            "date": "2000-03-23T14:30:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "26515-7",
+                        "name": "PLT"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                        }
+                    ]
+                }
+            ],
+            "result_set": {
+                "code_system_name": "SNOMED CT",
+                "code": "43789009",
+                "name": "CBC WO DIFFERENTIAL"
+            },
+            "identifiers": [
+                {
+                    "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa863cfe70000363f96",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.474Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.014Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "results": [
+                {
+                    "unit": "1",
+                    "value": 1.5,
+                    "interpretations": [
+                        "abnormal",
+                        "high alert"
+                    ],
+                    "reference_range": {
+                        "range": "Normal reference range 1.0-1.5; Targeted INR 2.0-3.0"
+                    },
+                    "status": "completed",
+                    "date_time": {
+                        "point": {
+                            "precision": "day",
+                            "date": "2012-11-26T00:00:00Z"
+                        }
+                    },
+                    "result": {
+                        "code_system_name": "LOINC",
+                        "code": "6301-6",
+                        "name": "INR in Platelet poor plasma by Coagulation assay"
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "78df60b1-daf7-4838-b509-ec3a3f4116c1"
+                        }
+                    ]
+                }
+            ],
+            "result_set": {
+                "code_system_name": "LOINC",
+                "code": "6301-6",
+                "name": "INR in Platelet poor plasma by Coagulation assay"
+            },
+            "identifiers": [
+                {
+                    "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                }
+            ]
+        }
+    ],
+    "immunizations": [
+        {
+            "_id": "5404daa363cfe70000363f50",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.347Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.429Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "instructions": {
+                "free_text": "Possible flu-like symptoms for three days.",
+                "code": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "171044003",
+                    "name": "immunization education"
+                }
+            },
+            "performer": {
+                "organization": [
+                    {
+                        "name": [
+                            "Good Health Clinic"
+                        ],
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                            }
+                        ]
+                    }
+                ],
+                "address": [
+                    {
+                        "country": "US",
+                        "zip": "99099",
+                        "state": "MI",
+                        "city": "Ann Arbor",
+                        "street_lines": [
+                            "1021 Health Drive"
+                        ]
+                    }
+                ],
+                "name": [
+                    {
+                        "first": "Amanda",
+                        "last": "Assigned"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "extension": "2981824",
+                        "identifier": "2.16.840.1.113883.19.5.9999.456"
+                    }
+                ]
+            },
+            "administration": {
+                "dose": {
+                    "unit": "mcg",
+                    "value": 50
+                },
+                "route": {
+                    "code_system_name": "Medication Route FDA",
+                    "code": "C28161",
+                    "name": "Intramuscular injection"
+                }
+            },
+            "product": {
+                "manufacturer": "Health LS - Immuno Inc.",
+                "lot_number": "1",
+                "product": {
+                    "translations": [
+                        {
+                            "code_system_name": "CVX",
+                            "code": "141",
+                            "name": "Influenza, seasonal, injectable"
+                        }
+                    ],
+                    "code_system_name": "CVX",
+                    "code": "88",
+                    "name": "Influenza virus vaccine"
+                }
+            },
+            "status": "complete",
+            "identifiers": [
+                {
+                    "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "month",
+                    "date": "1999-11-01T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404daa363cfe70000363f51",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.349Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.438Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "instructions": {
+                "free_text": "Possible flu-like symptoms for three days.",
+                "code": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "171044003",
+                    "name": "immunization education"
+                }
+            },
+            "performer": {
+                "organization": [
+                    {
+                        "name": [
+                            "Good Health Clinic"
+                        ],
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                            }
+                        ]
+                    }
+                ],
+                "address": [
+                    {
+                        "country": "US",
+                        "zip": "99099",
+                        "state": "MI",
+                        "city": "Ann Arbor",
+                        "street_lines": [
+                            "1021 Health Drive"
+                        ]
+                    }
+                ],
+                "name": [
+                    {
+                        "first": "Amanda",
+                        "last": "Assigned"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "extension": "2981824",
+                        "identifier": "2.16.840.1.113883.19.5.9999.456"
+                    }
+                ]
+            },
+            "administration": {
+                "dose": {
+                    "unit": "mcg",
+                    "value": 50
+                },
+                "route": {
+                    "code_system_name": "Medication Route FDA",
+                    "code": "C28161",
+                    "name": "Intramuscular injection"
+                }
+            },
+            "product": {
+                "manufacturer": "Health LS - Immuno Inc.",
+                "lot_number": "1",
+                "product": {
+                    "translations": [
+                        {
+                            "code_system_name": "CVX",
+                            "code": "141",
+                            "name": "Influenza, seasonal, injectable"
+                        }
+                    ],
+                    "code_system_name": "CVX",
+                    "code": "88",
+                    "name": "Influenza virus vaccine"
+                }
+            },
+            "status": "refused",
+            "identifiers": [
+                {
+                    "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "1998-12-15T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404daa363cfe70000363f52",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.350Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.445Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.009Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "performer": {
+                "organization": [
+                    {
+                        "name": [
+                            "Good Health Clinic"
+                        ],
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                            }
+                        ]
+                    }
+                ],
+                "address": [
+                    {
+                        "country": "US",
+                        "zip": "99099",
+                        "state": "MI",
+                        "city": "Ann Arbor",
+                        "street_lines": [
+                            "1021 Health Drive"
+                        ]
+                    }
+                ],
+                "name": [
+                    {
+                        "first": "Amanda",
+                        "last": "Assigned"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "extension": "2981824",
+                        "identifier": "2.16.840.1.113883.19.5.9999.456"
+                    }
+                ]
+            },
+            "administration": {
+                "dose": {
+                    "unit": "mcg",
+                    "value": 50
+                },
+                "route": {
+                    "code_system_name": "Medication Route FDA",
+                    "code": "C28161",
+                    "name": "Intramuscular injection"
+                }
+            },
+            "product": {
+                "manufacturer": "Health LS - Immuno Inc.",
+                "lot_number": "1",
+                "product": {
+                    "translations": [
+                        {
+                            "code_system_name": "CVX",
+                            "code": "109",
+                            "name": "Pneumococcal NOS"
+                        }
+                    ],
+                    "code_system_name": "CVX",
+                    "code": "33",
+                    "name": "Pneumococcal polysaccharide vaccine"
+                }
+            },
+            "status": "complete",
+            "identifiers": [
+                {
+                    "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "1998-12-15T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404daa363cfe70000363f53",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.353Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.454Z",
+                        "merge_reason": "duplicate"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.013Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "refusal_reason": "Patient objection",
+            "performer": {
+                "organization": [
+                    {
+                        "name": [
+                            "Good Health Clinic"
+                        ],
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.1394"
+                            }
+                        ]
+                    }
+                ],
+                "address": [
+                    {
+                        "country": "US",
+                        "zip": "99099",
+                        "state": "MI",
+                        "city": "Ann Arbor",
+                        "street_lines": [
+                            "1021 Health Drive"
+                        ]
+                    }
+                ],
+                "name": [
+                    {
+                        "first": "Amanda",
+                        "last": "Assigned"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "extension": "2981824",
+                        "identifier": "2.16.840.1.113883.19.5.9999.456"
+                    }
+                ]
+            },
+            "administration": {
+                "dose": {
+                    "unit": "mcg",
+                    "value": 50
+                },
+                "route": {
+                    "code_system_name": "Medication Route FDA",
+                    "code": "C28161",
+                    "name": "Intramuscular injection"
+                }
+            },
+            "product": {
+                "manufacturer": "Health LS - Immuno Inc.",
+                "lot_number": "1",
+                "product": {
+                    "translations": [
+                        {
+                            "code_system_name": "CVX",
+                            "code": "09",
+                            "name": "Tetanus and diphtheria toxoids - preservative free"
+                        }
+                    ],
+                    "code_system_name": "CVX",
+                    "code": "103",
+                    "name": "Tetanus and diphtheria toxoids - preservative free"
+                }
+            },
+            "status": "refused",
+            "identifiers": [
+                {
+                    "identifier": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "1998-12-15T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404daac63cfe70000363fdc",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daac56c9d900007d0e71",
+                            "filename": "bluebutton-03-cms.txt"
+                        },
+                        "merged": "2014-09-01T20:44:29.020Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "1999-11-01T00:00:00Z"
+                }
+            },
+            "product": {
+                "product": {
+                    "name": "Influenza virus vaccine"
+                }
+            },
+            "administration": {
+                "route": {
+                    "name": "Intramuscular injection"
+                }
+            },
+            "status": "complete"
+        },
+        {
+            "_id": "5404dab263cfe70000364010",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.022Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "instructions": {
+                "code": {
+                    "code_system_name": "LOINC",
+                    "code": "48767-8",
+                    "name": "Annotation Comment"
+                }
+            },
+            "performer": {
+                "phone": [
+                    {
+                        "number": "+1-(555)555-1002"
+                    }
+                ],
+                "address": [
+                    {
+                        "country": "US",
+                        "zip": "97005",
+                        "state": "OR",
+                        "city": "Portland",
+                        "street_lines": [
+                            "1002 Healthcare Dr."
+                        ]
+                    }
+                ],
+                "name": [
+                    {
+                        "first": "Henry",
+                        "last": "Seven"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "extension": "1569874562",
+                        "identifier": "2.16.840.1.113883.4.6"
+                    }
+                ]
+            },
+            "administration": {
+                "dose": {
+                    "unit": "ml",
+                    "value": 0.5
+                },
+                "route": {
+                    "code_system_name": "Medication Route FDA",
+                    "code": "C28161",
+                    "name": "INTRAMUSCULAR"
+                }
+            },
+            "product": {
+                "manufacturer": "Merck and Co., Inc.",
+                "lot_number": "MK456987",
+                "product": {
+                    "code_system_name": "CVX",
+                    "code": "33",
+                    "name": "Pneumococcal (2 years and up)"
+                }
+            },
+            "status": "refused",
+            "identifiers": [
+                {
+                    "extension": "1049280",
+                    "identifier": "1.3.6.1.4.1.22812.4.111.0.4.4"
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2012-08-06T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404eb5dc91a97000032baed",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daac56c9d900007d0e71",
+                            "filename": "bluebutton-03-cms.txt"
+                        },
+                        "merged": "2014-09-01T21:55:41.153Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "status": "complete",
+            "administration": {
+                "route": {
+                    "name": "Intramuscular injection"
+                }
+            },
+            "product": {
+                "product": {
+                    "name": "Influenza virus vaccine"
+                }
+            },
+            "date_time": {
+                "point": {
+                    "date": "1998-12-15T00:00:00Z",
+                    "precision": "day"
+                }
+            }
+        }
+    ],
+    "social_history": {
+        "_id": "5404daa363cfe70000363f5d",
+        "metadata": {
+            "attribution": [
+                {
+                    "record": {
+                        "_id": "5404daa356c9d900007d0e6d",
+                        "filename": "bluebutton-01-original.xml"
+                    },
+                    "merged": "2014-09-01T20:44:19.363Z",
+                    "merge_reason": "new"
+                },
+                {
+                    "record": {
+                        "_id": "5404daa856c9d900007d0e6f",
+                        "filename": "bluebutton-02-updated.xml"
+                    },
+                    "merged": "2014-09-01T20:44:24.435Z",
+                    "merge_reason": "duplicate"
+                }
+            ]
+        },
+        "value": "Former smoker",
+        "code": {
+            "name": "Smoking Status"
+        },
+        "identifiers": [
+            {
+                "extension": "123456789",
+                "identifier": "2.16.840.1.113883.19"
+            }
+        ],
+        "date_time": {
+            "high": {
+                "precision": "second",
+                "date": "2009-02-27T13:00:00Z"
+            },
+            "low": {
+                "precision": "day",
+                "date": "2005-05-01T00:00:00Z"
+            }
+        }
+    },
+    "medications": [
+        {
+            "_id": "5404daa363cfe70000363f54",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.354Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.420Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "dispense": {
+                "performer": {
+                    "organization": [
+                        {
+                            "name": [
+                                "Community Health and Hospitals"
+                            ],
+                            "identifiers": [
+                                {
+                                    "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                                }
+                            ]
+                        }
+                    ],
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "99123",
+                            "state": "OR",
+                            "city": "Portland",
+                            "street_lines": [
+                                "1001 Village Avenue"
+                            ]
+                        }
+                    ],
+                    "identifiers": [
+                        {
+                            "extension": "2981823",
+                            "identifier": "2.16.840.1.113883.19.5.9999.456"
+                        }
+                    ]
+                },
+                "identifiers": [
+                    {
+                        "extension": "cb734647-fc99-424c-a864-7e3cda82e704",
+                        "identifier": "1.2.3.4.56789.1"
+                    }
+                ]
+            },
+            "indication": {
+                "value": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "233604007",
+                    "name": "Pneumonia"
+                },
+                "date_time": {
+                    "low": {
+                        "precision": "day",
+                        "date": "2007-01-03T00:00:00Z"
+                    }
+                },
+                "code": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "404684003",
+                    "name": "Finding"
+                },
+                "identifiers": [
+                    {
+                        "extension": "45665",
+                        "identifier": "db734647-fc99-424c-a864-7e3cda82e703"
+                    }
+                ]
+            },
+            "precondition": {
+                "value": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "56018004",
+                    "name": "Wheezing"
+                },
+                "code": {
+                    "code_system_name": "HL7ActCode",
+                    "code": "ASSERTION"
+                }
+            },
+            "drug_vehicle": {
+                "code_system_name": "RXNORM",
+                "code": "324049",
+                "name": "Aerosol"
+            },
+            "performer": {
+                "organization": [
+                    {
+                        "name": [
+                            "Community Health and Hospitals"
+                        ],
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.19.5.9999.1393"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "administration": {
+                "interval": {
+                    "frequency": true,
+                    "period": {
+                        "unit": "h",
+                        "value": 6
+                    }
+                },
+                "rate": {
+                    "unit": "ml/min",
+                    "value": 90
+                },
+                "dose": {
+                    "unit": "mg/actuat",
+                    "value": 1
+                },
+                "form": {
+                    "code_system_name": "Medication Route FDA",
+                    "code": "C42944",
+                    "name": "INHALANT"
+                },
+                "route": {
+                    "code_system_name": "Medication Route FDA",
+                    "code": "C38216",
+                    "name": "RESPIRATORY (INHALATION)"
+                }
+            },
+            "supply": {
+                "author": {
+                    "name": {
+                        "first": "Henry",
+                        "last": "Seven",
+                        "prefix": "Dr."
+                    },
+                    "identifiers": [
+                        {
+                            "identifier": "2a620155-9d11-439e-92b3-5d9815fe4de8"
+                        }
+                    ]
+                },
+                "quantity": "75",
+                "repeatNumber": "1",
+                "date_time": {
+                    "low": {
+                        "precision": "day",
+                        "date": "2007-01-03T00:00:00Z"
+                    }
+                }
+            },
+            "product": {
+                "manufacturer": "Medication Factory Inc.",
+                "product": {
+                    "code_system_name": "RXNORM",
+                    "translations": [
+                        {
+                            "code_system_name": "RXNORM",
+                            "code": "573621",
+                            "name": "Proventil 0.09 MG/ACTUAT inhalant solution"
+                        }
+                    ],
+                    "code": "219483",
+                    "name": "Proventil HFA"
+                },
+                "unencoded_name": "Proventil HFA",
+                "identifiers": [
+                    {
+                        "identifier": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+                    }
+                ]
+            },
+            "sig": "Proventil HFA",
+            "status": "Completed",
+            "identifiers": [
+                {
+                    "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                }
+            ],
+            "date_time": {
+                "high": {
+                    "precision": "day",
+                    "date": "2012-05-15T00:00:00Z"
+                },
+                "low": {
+                    "precision": "day",
+                    "date": "2007-01-03T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404daa863cfe70000363f8b",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.463Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "administration": {
+                "interval": {
+                    "frequency": false,
+                    "period": {
+                        "unit": "h",
+                        "value": 12
+                    }
+                },
+                "form": {
+                    "code_system_name": "Medication Route FDA",
+                    "code": "C42986",
+                    "name": "SOLUTION"
+                }
+            },
+            "product": {
+                "product": {
+                    "code_system_name": "RXNORM",
+                    "code": "329646",
+                    "name": "Cefepime 20 MG/ML"
+                }
+            },
+            "status": "Prescribed",
+            "identifiers": [
+                {
+                    "extension": "6591225000051",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9"
+                },
+                {
+                    "extension": "6591225000071",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9"
+                }
+            ],
+            "date_time": {
+                "low": {
+                    "precision": "day",
+                    "date": "2012-10-02T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404daa863cfe70000363f8c",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.464Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "administration": {
+                "interval": {
+                    "frequency": true,
+                    "period": {
+                        "unit": "h",
+                        "value": 6
+                    }
+                },
+                "dose": {
+                    "value": 1
+                },
+                "form": {
+                    "code_system_name": "Medication Route FDA",
+                    "code": "C42998",
+                    "name": "TABLET"
+                }
+            },
+            "product": {
+                "product": {
+                    "code_system_name": "RXNORM",
+                    "code": "309114",
+                    "name": "Cephalexin 500 MG Oral Tablet"
+                }
+            },
+            "status": "Prescribed",
+            "identifiers": [
+                {
+                    "extension": "659122500005",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9"
+                },
+                {
+                    "extension": "659122500007",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9"
+                }
+            ],
+            "date_time": {
+                "low": {
+                    "precision": "day",
+                    "date": "2012-09-20T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404daac63cfe70000363fcb",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daac56c9d900007d0e71",
+                            "filename": "bluebutton-03-cms.txt"
+                        },
+                        "merged": "2014-09-01T20:44:28.995Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "status": "Completed",
+            "sig": "Proventil HFA",
+            "product": {
+                "unencoded_name": "Proventil",
+                "product": {
+                    "name": "Proventil"
+                }
+            }
+        },
+        {
+            "_id": "5404daac63cfe70000363fcc",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daac56c9d900007d0e71",
+                            "filename": "bluebutton-03-cms.txt"
+                        },
+                        "merged": "2014-09-01T20:44:28.996Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "status": "Completed",
+            "sig": "Aspirin",
+            "product": {
+                "unencoded_name": "Aspirin",
+                "product": {
+                    "name": "Aspirin"
+                }
+            }
+        }
+    ],
+    "demographics": {
+        "_id": "5404daa363cfe70000363f61",
+        "metadata": {
+            "attribution": [
+                {
+                    "record": {
+                        "_id": "5404daa356c9d900007d0e6d",
+                        "filename": "bluebutton-01-original.xml"
+                    },
+                    "merged": "2014-09-01T20:44:19.368Z",
+                    "merge_reason": "new"
+                },
+                {
+                    "record": {
+                        "_id": "5404daa856c9d900007d0e6f",
+                        "filename": "bluebutton-02-updated.xml"
+                    },
+                    "merged": "2014-09-01T20:44:24.449Z",
+                    "merge_reason": "duplicate"
+                },
+                {
+                    "record": {
+                        "_id": "5404daac56c9d900007d0e71",
+                        "filename": "bluebutton-03-cms.txt"
+                    },
+                    "merged": "2014-09-01T21:55:20.585Z",
+                    "merge_reason": "update"
+                }
+            ]
+        },
+        "addresses": [
+            {
+                "street_lines": [
+                    "1357 Amber Drive"
+                ],
+                "city": "Beaverton",
+                "state": "OR",
+                "zip": "97867",
+                "country": "US",
+                "use": "primary home"
+            }
+        ],
+        "birthplace": {
+            "city": "Beaverton",
+            "state": "OR",
+            "zip": "97867",
+            "country": "US"
+        },
+        "dob": {
+            "point": {
+                "date": "1975-05-01T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "email": [
+            {
+                "address": "isabella@amida.com",
+                "type": ""
+            }
+        ],
+        "gender": "Female",
+        "guardians": [
+            {
+                "relation": "Parent",
+                "addresses": [
+                    {
+                        "street_lines": [
+                            "1357 Amber Drive"
+                        ],
+                        "city": "Beaverton",
+                        "state": "OR",
+                        "zip": "97867",
+                        "country": "US",
+                        "use": "primary home"
+                    }
+                ],
+                "names": [
+                    {
+                        "last": "Jones",
+                        "first": "Ralph"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "(816)276-6909",
+                        "type": "primary home"
+                    }
+                ]
+            }
+        ],
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.19.5.99999.2",
+                "extension": "998991"
+            },
+            {
+                "identifier": "2.16.840.1.113883.4.1",
+                "extension": "111-00-2330"
+            }
+        ],
+        "languages": [
+            {
+                "language": "en",
+                "preferred": true,
+                "mode": "Expressed spoken",
+                "proficiency": "Good"
+            }
+        ],
+        "marital_status": "Married",
+        "name": {
+            "middle": [
+                "Isa"
+            ],
+            "last": "Jones",
+            "first": "Isabella"
+        },
+        "phone": [
+            {
+                "number": "(816)276-6909",
+                "type": "primary home"
+            }
+        ],
+        "race_ethnicity": "White",
+        "religion": "Christian (non-Catholic, non-specific)"
+    },
+    "encounters": [
+        {
+            "_id": "5404daa363cfe70000363f55",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.355Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.431Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "findings": [
+                {
+                    "date_time": {
+                        "low": {
+                            "precision": "day",
+                            "date": "2007-01-03T00:00:00Z"
+                        }
+                    },
+                    "value": {
+                        "code_system_name": "SNOMED CT",
+                        "code": "233604007",
+                        "name": "Pneumonia"
+                    },
+                    "identifiers": [
+                        {
+                            "extension": "45665",
+                            "identifier": "db734647-fc99-424c-a864-7e3cda82e703"
+                        }
+                    ]
+                }
+            ],
+            "locations": [
+                {
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "02368",
+                            "state": "MA",
+                            "city": "Blue Bell",
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ]
+                        }
+                    ],
+                    "location_type": {
+                        "code_system_name": "HealthcareServiceLocation",
+                        "code": "1160-1",
+                        "name": "Urgent Care Center"
+                    },
+                    "name": "Community Urgent Care Center"
+                }
+            ],
+            "performers": [
+                {
+                    "code": [
+                        {
+                            "code_system_name": "SNOMED CT",
+                            "code": "59058001",
+                            "name": "General Physician"
+                        }
+                    ],
+                    "identifiers": [
+                        {
+                            "identifier": "PseduoMD-3"
+                        }
+                    ]
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "second",
+                    "date": "2009-02-27T13:00:00Z"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                }
+            ],
+            "encounter": {
+                "translations": [
+                    {
+                        "code_system_name": "HL7ActCode",
+                        "code": "AMB",
+                        "name": "Ambulatory"
+                    }
+                ],
+                "code_system_name": "CPT",
+                "code": "99213",
+                "name": "Office outpatient visit 15 minutes"
+            }
+        },
+        {
+            "_id": "5404daa863cfe70000363f8d",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.465Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "findings": [
+                {
+                    "identifiers": [
+                        {
+                            "extension": "147852",
+                            "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.3"
+                        }
+                    ]
+                }
+            ],
+            "locations": [
+                {
+                    "phone": [
+                        {
+                            "number": "+1-(555)555-1122"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "97005",
+                            "state": "OR",
+                            "city": "Portland",
+                            "street_lines": [
+                                "1000 Hospital Way"
+                            ]
+                        }
+                    ],
+                    "location_type": {
+                        "code_system_name": "HealthcareServiceLocation",
+                        "code": "1061-1",
+                        "name": "Inpatient Medical/Surgical Ward"
+                    },
+                    "name": "Local Community Hospital"
+                }
+            ],
+            "performers": [
+                {
+                    "phone": [
+                        {
+                            "number": "+1-(555)555-1122"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "97005",
+                            "state": "OR",
+                            "city": "Portland",
+                            "street_lines": [
+                                "1002 Healthcare Dr."
+                            ]
+                        }
+                    ],
+                    "name": [
+                        {
+                            "first": "Martin",
+                            "last": "Rodriguez",
+                            "prefix": "Dr"
+                        }
+                    ],
+                    "identifiers": [
+                        {
+                            "extension": "1111111111",
+                            "identifier": "2.16.840.1.113883.4.6"
+                        }
+                    ]
+                }
+            ],
+            "date_time": {
+                "high": {
+                    "precision": "day",
+                    "date": "2012-10-05T00:00:00Z"
+                },
+                "low": {
+                    "precision": "day",
+                    "date": "2012-10-02T00:00:00Z"
+                }
+            },
+            "identifiers": [
+                {
+                    "extension": "5283815",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.3.4"
+                }
+            ],
+            "encounter": {
+                "code_system_name": "CPT",
+                "code": "99231",
+                "name": "UNK"
+            }
+        },
+        {
+            "_id": "5404dab263cfe70000364011",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.024Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "findings": [
+                {
+                    "date_time": {
+                        "low": {
+                            "precision": "day",
+                            "date": "2007-01-03T00:00:00Z"
+                        }
+                    },
+                    "value": {
+                        "code_system_name": "SNOMED CT",
+                        "code": "233604007",
+                        "name": "Pneumonia"
+                    },
+                    "identifiers": [
+                        {
+                            "extension": "45665",
+                            "identifier": "db734647-fc99-424c-a864-7e3cda82e703"
+                        }
+                    ]
+                }
+            ],
+            "locations": [
+                {
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "02368",
+                            "state": "MA",
+                            "city": "Blue Bell",
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ]
+                        }
+                    ],
+                    "location_type": {
+                        "code_system_name": "HealthcareServiceLocation",
+                        "code": "1160-1",
+                        "name": "Urgent Care Center"
+                    },
+                    "name": "Community Urgent Care Center"
+                }
+            ],
+            "performers": [
+                {
+                    "code": [
+                        {
+                            "code_system_name": "SNOMED CT",
+                            "code": "59058001",
+                            "name": "General Physician"
+                        }
+                    ],
+                    "identifiers": [
+                        {
+                            "identifier": "PseduoMD-3"
+                        }
+                    ]
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2009-02-24T00:00:00Z"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                }
+            ],
+            "encounter": {
+                "translations": [
+                    {
+                        "code_system_name": "HL7ActCode",
+                        "code": "AMB",
+                        "name": "Ambulatory"
+                    }
+                ],
+                "code_system_name": "CPT",
+                "code": "99213",
+                "name": "Office outpatient visit 15 minutes"
+            }
+        },
+        {
+            "_id": "5404dab263cfe70000364012",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.025Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "findings": [
+                {
+                    "date_time": {
+                        "low": {
+                            "precision": "day",
+                            "date": "2007-01-03T00:00:00Z"
+                        }
+                    },
+                    "value": {
+                        "code_system_name": "SNOMED CT",
+                        "code": "233604007",
+                        "name": "Pneumonia"
+                    },
+                    "identifiers": [
+                        {
+                            "extension": "45665",
+                            "identifier": "db734647-fc99-424c-a864-7e3cda82e703"
+                        }
+                    ]
+                }
+            ],
+            "locations": [
+                {
+                    "address": [
+                        {
+                            "country": "US",
+                            "zip": "02368",
+                            "state": "MA",
+                            "city": "Blue Bell",
+                            "street_lines": [
+                                "17 Daws Rd."
+                            ]
+                        }
+                    ],
+                    "location_type": {
+                        "code_system_name": "HealthcareServiceLocation",
+                        "code": "1160-1",
+                        "name": "Urgent Care Center"
+                    },
+                    "name": "Community Urgent Care Center"
+                }
+            ],
+            "performers": [
+                {
+                    "code": [
+                        {
+                            "code_system_name": "SNOMED CT",
+                            "code": "59058001",
+                            "name": "General Physician"
+                        }
+                    ],
+                    "identifiers": [
+                        {
+                            "identifier": "PseduoMD-3"
+                        }
+                    ]
+                }
+            ],
+            "date_time": {
+                "point": {
+                    "precision": "day",
+                    "date": "2007-02-27T00:00:00Z"
+                }
+            },
+            "identifiers": [
+                {
+                    "identifier": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+                }
+            ],
+            "encounter": {
+                "translations": [
+                    {
+                        "code_system_name": "HL7ActCode",
+                        "code": "AMB",
+                        "name": "Ambulatory"
+                    }
+                ],
+                "code_system_name": "CPT",
+                "code": "99213",
+                "name": "Office outpatient visit 15 minutes"
+            }
+        }
+    ],
+    "problems": [
+        {
+            "_id": "5404daa363cfe70000363f63",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.386Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.426Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "source_list_identifiers": [
+                {
+                    "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                }
+            ],
+            "patient_status": "Alive and well",
+            "status": {
+                "date_time": {
+                    "high": {
+                        "precision": "second",
+                        "date": "2009-02-27T13:00:00Z"
+                    },
+                    "low": {
+                        "precision": "day",
+                        "date": "2008-01-03T00:00:00Z"
+                    }
+                },
+                "name": "Active"
+            },
+            "onset_age_unit": "Year",
+            "onset_age": "57",
+            "problem": {
+                "date_time": {
+                    "high": {
+                        "precision": "day",
+                        "date": "2008-01-03T00:00:00Z"
+                    },
+                    "low": {
+                        "precision": "day",
+                        "date": "2007-01-03T00:00:00Z"
+                    }
+                },
+                "code": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "195967001",
+                    "name": "Asthma"
+                }
+            },
+            "negation_indicator": false,
+            "identifiers": [
+                {
+                    "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+                }
+            ],
+            "date_time": {
+                "high": {
+                    "precision": "day",
+                    "date": "2007-01-03T00:00:00Z"
+                },
+                "low": {
+                    "precision": "day",
+                    "date": "2007-01-03T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404daa863cfe70000363f99",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.477Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "source_list_identifiers": [
+                {
+                    "extension": "615028800003",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1"
+                },
+                {
+                    "extension": "659935200001",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1"
+                }
+            ],
+            "status": {
+                "name": "Active"
+            },
+            "problem": {
+                "date_time": {
+                    "low": {
+                        "precision": "day",
+                        "date": "2012-09-20T00:00:00Z"
+                    }
+                },
+                "code": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "36971009",
+                    "name": "Sinusitis"
+                }
+            },
+            "negation_indicator": false,
+            "identifiers": [
+                {
+                    "extension": "615028800003",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1"
+                },
+                {
+                    "extension": "659935200001",
+                    "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1"
+                }
+            ]
+        },
+        {
+            "_id": "5404daa363cfe70000363f62",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404daa356c9d900007d0e6d",
+                            "filename": "bluebutton-01-original.xml"
+                        },
+                        "merged": "2014-09-01T20:44:19.369Z",
+                        "merge_reason": "new"
+                    },
+                    {
+                        "record": {
+                            "_id": "5404daa856c9d900007d0e6f",
+                            "filename": "bluebutton-02-updated.xml"
+                        },
+                        "merged": "2014-09-01T20:44:24.457Z",
+                        "merge_reason": "duplicate"
+                    }
+                ]
+            },
+            "source_list_identifiers": [
+                {
+                    "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                }
+            ],
+            "patient_status": "Alive and well",
+            "status": {
+                "date_time": {
+                    "high": {
+                        "precision": "second",
+                        "date": "2009-02-27T13:00:00Z"
+                    },
+                    "low": {
+                        "precision": "day",
+                        "date": "2008-01-03T00:00:00Z"
+                    }
+                },
+                "name": "Resolved"
+            },
+            "onset_age_unit": "Year",
+            "onset_age": "57",
+            "problem": {
+                "date_time": {
+                    "high": {
+                        "precision": "day",
+                        "date": "2008-01-03T00:00:00Z"
+                    },
+                    "low": {
+                        "precision": "day",
+                        "date": "2008-01-03T00:00:00Z"
+                    }
+                },
+                "code": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "233604007",
+                    "name": "Pneumonia"
+                }
+            },
+            "negation_indicator": false,
+            "identifiers": [
+                {
+                    "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+                }
+            ],
+            "date_time": {
+                "high": {
+                    "precision": "day",
+                    "date": "2008-01-03T00:00:00Z"
+                },
+                "low": {
+                    "precision": "day",
+                    "date": "2008-01-03T00:00:00Z"
+                }
+            }
+        },
+        {
+            "_id": "5404dab263cfe7000036402d",
+            "metadata": {
+                "attribution": [
+                    {
+                        "record": {
+                            "_id": "5404dab156c9d900007d0e73",
+                            "filename": "bluebutton-04-partial.xml"
+                        },
+                        "merged": "2014-09-01T20:44:34.073Z",
+                        "merge_reason": "new"
+                    }
+                ]
+            },
+            "source_list_identifiers": [
+                {
+                    "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
+                }
+            ],
+            "patient_status": "Alive and well",
+            "status": {
+                "date_time": {
+                    "high": {
+                        "precision": "second",
+                        "date": "2009-02-27T13:00:00Z"
+                    },
+                    "low": {
+                        "precision": "day",
+                        "date": "2008-01-03T00:00:00Z"
+                    }
+                },
+                "name": "Active"
+            },
+            "onset_age_unit": "Year",
+            "onset_age": "57",
+            "problem": {
+                "date_time": {
+                    "high": {
+                        "precision": "month",
+                        "date": "2008-01-01T00:00:00Z"
+                    },
+                    "low": {
+                        "precision": "month",
+                        "date": "2007-01-01T00:00:00Z"
+                    }
+                },
+                "code": {
+                    "code_system_name": "SNOMED CT",
+                    "code": "195967001",
+                    "name": "Asthma"
+                }
+            },
+            "negation_indicator": false,
+            "identifiers": [
+                {
+                    "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
+                }
+            ],
+            "date_time": {
+                "high": {
+                    "precision": "month",
+                    "date": "2007-01-01T00:00:00Z"
+                },
+                "low": {
+                    "precision": "month",
+                    "date": "2007-01-01T00:00:00Z"
+                }
+            }
+        }
+    ]
+}
