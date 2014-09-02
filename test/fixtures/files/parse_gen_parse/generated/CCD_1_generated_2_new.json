@@ -238,7 +238,7 @@
                 "interpretations": [
                     "Normal"
                 ],
-                "value": 88,
+                "value": 145,
                 "unit": "mm[Hg]"
             },
             {
@@ -263,7 +263,7 @@
                 "interpretations": [
                     "Normal"
                 ],
-                "value": 177,
+                "value": 86,
                 "unit": "1"
             },
             {
@@ -287,7 +287,7 @@
                 "interpretations": [
                     "Normal"
                 ],
-                "value": 145,
+                "value": 132,
                 "unit": "cm"
             },
             {
@@ -305,14 +305,14 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "1999-11-14T00:00:00Z",
+                        "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
                 },
                 "interpretations": [
                     "Normal"
                 ],
-                "value": 88,
+                "value": 145,
                 "unit": "[lb_av]"
             },
             {
@@ -330,14 +330,14 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "1999-11-14T00:00:00Z",
+                        "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
                 },
                 "interpretations": [
                     "Normal"
                 ],
-                "value": 177,
+                "value": 86,
                 "unit": "mm[Hg]"
             },
             {
@@ -355,14 +355,14 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "1999-11-14T00:00:00Z",
+                        "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
                 },
                 "interpretations": [
                     "Normal"
                 ],
-                "value": 145,
+                "value": 132,
                 "unit": "mm[Hg]"
             },
             {
@@ -380,14 +380,14 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "1999-11-14T00:00:00Z",
+                        "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
                 },
                 "interpretations": [
                     "Normal"
                 ],
-                "value": 86,
+                "value": 177,
                 "unit": "1"
             }
         ],
@@ -585,36 +585,7 @@
                     "name": "Creatinine [Mass/volume] in Serum or Plasma",
                     "code": "2160-0",
                     "code_system_name": "LOINC"
-                },
-                "results": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "9cd43fa7-db31-4c29-ab30-83f92fdcaa20"
-                            }
-                        ],
-                        "result": {
-                            "name": "Creatinine [Mass/volume] in Serum or Plasma",
-                            "code": "2160-0",
-                            "code_system_name": "LOINC"
-                        },
-                        "date_time": {
-                            "point": {
-                                "date": "2012-11-26T00:00:00Z",
-                                "precision": "day"
-                            }
-                        },
-                        "status": "completed",
-                        "reference_range": {
-                            "range": "normal: below 1.5 mg/dL"
-                        },
-                        "interpretations": [
-                            null
-                        ],
-                        "value": 1.5,
-                        "unit": "mg/dL"
-                    }
-                ]
+                }
             },
             {
                 "identifiers": [
@@ -1018,22 +989,22 @@
             },
             {
                 "status": "Completed",
-                "sig": "Proventil HFA",
+                "sig": "Aspirin",
                 "product": {
-                    "unencoded_name": "Proventil",
+                    "unencoded_name": "Aspirin",
                     "product": {
-                        "name": "Proventil",
+                        "name": "Aspirin",
                         "code_system_name": "SNOMED CT"
                     }
                 }
             },
             {
                 "status": "Completed",
-                "sig": "Aspirin",
+                "sig": "Proventil HFA",
                 "product": {
-                    "unencoded_name": "Aspirin",
+                    "unencoded_name": "Proventil",
                     "product": {
-                        "name": "Aspirin",
+                        "name": "Proventil",
                         "code_system_name": "SNOMED CT"
                     }
                 }
@@ -1414,37 +1385,6 @@
                         "code": "55561003",
                         "code_system_name": "SNOMED CT"
                     },
-                    "reactions": [
-                        {
-                            "date_time": {
-                                "low": {
-                                    "date": "2006-05-01T00:00:00Z",
-                                    "precision": "day"
-                                },
-                                "high": {
-                                    "date": "2009-02-27T13:00:00Z",
-                                    "precision": "second"
-                                }
-                            },
-                            "reaction": {
-                                "name": "Wheezing",
-                                "code": "56018004",
-                                "code_system_name": "SNOMED CT"
-                            },
-                            "severity": {
-                                "code": {
-                                    "name": "Mild",
-                                    "code": "255604002",
-                                    "code_system_name": "SNOMED CT"
-                                },
-                                "interpretation": {
-                                    "name": "Suceptible",
-                                    "code": "S",
-                                    "code_system_name": "Observation Interpretation"
-                                }
-                            }
-                        }
-                    ],
                     "severity": {
                         "code": {
                             "name": "Moderate",
@@ -1717,8 +1657,8 @@
                         }
                     },
                     "status": {
-                        "name": "Active",
-                        "code": "55561003",
+                        "name": "Inactive",
+                        "code": "73425007",
                         "code_system_name": "SNOMED CT"
                     },
                     "reactions": [
@@ -2113,28 +2053,6 @@
             {
                 "date_time": {
                     "point": {
-                        "date": "1999-11-01T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "status": "complete",
-                "product": {
-                    "product": {
-                        "name": "Influenza virus vaccine",
-                        "code_system_name": "SNOMED CT"
-                    }
-                },
-                "administration": {
-                    "route": {
-                        "name": "Intramuscular injection",
-                        "code": "undefined",
-                        "code_system_name": "Medication Route FDA"
-                    }
-                }
-            },
-            {
-                "date_time": {
-                    "point": {
                         "date": "2012-08-06T00:00:00Z",
                         "precision": "day"
                     }
@@ -2204,28 +2122,91 @@
                         "code_system_name": "LOINC"
                     }
                 }
-            },
+            }
+        ],
+        "social_history": [
             {
                 "date_time": {
-                    "point": {
-                        "date": "1998-12-15T00:00:00Z",
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
                         "precision": "day"
                     }
                 },
-                "status": "complete",
-                "product": {
-                    "product": {
-                        "name": "Influenza virus vaccine",
-                        "code_system_name": "SNOMED CT"
+                "identifiers": [
+                    {
+                        "identifier": "37f76c51-6411-4e1d-8a37-957fd49d2cef"
+                    }
+                ],
+                "code": {
+                    "name": "Alcohol consumption",
+                    "code": "160573003",
+                    "code_system_name": "SNOMED CT"
+                },
+                "value": "None"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2009-02-27T13:00:00Z",
+                        "precision": "second"
                     }
                 },
-                "administration": {
-                    "route": {
-                        "name": "Intramuscular injection",
-                        "code": "undefined",
-                        "code_system_name": "Medication Route FDA"
+                "identifiers": [
+                    {
+                        "identifier": "9b56c25d-9104-45ee-9fa4-e0f3afaa01c1"
                     }
-                }
+                ],
+                "code": {
+                    "name": "Tobacco use and exposure",
+                    "code": "229819007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "value": "1 pack per day"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2009-02-23T13:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "45efb604-7049-4a2e-ad33-d38556c9636c"
+                    }
+                ],
+                "code": {
+                    "name": "Tobacco use and exposure",
+                    "code": "229819007",
+                    "code_system_name": "SNOMED CT"
+                },
+                "value": "None"
+            },
+            {
+                "date_time": {
+                    "low": {
+                        "date": "2005-05-01T00:00:00Z",
+                        "precision": "day"
+                    },
+                    "high": {
+                        "date": "2012-02-27T13:00:00Z",
+                        "precision": "second"
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.19",
+                        "extension": "123456789"
+                    }
+                ],
+                "code": {
+                    "name": "Smoking Status"
+                },
+                "value": "Former smoker"
             }
         ],
         "problems": [
@@ -2336,80 +2317,13 @@
                 "problem": {
                     "code": {
                         "name": "Pneumonia",
-                        "code": "233604007",
                         "code_system_name": "SNOMED CT"
-                    },
-                    "date_time": {
-                        "low": {
-                            "date": "2008-01-03T00:00:00Z",
-                            "precision": "day"
-                        },
-                        "high": {
-                            "date": "2008-01-03T00:00:00Z",
-                            "precision": "day"
-                        }
                     }
                 },
                 "onset_age": "57",
                 "onset_age_unit": "Year",
                 "status": {
                     "name": "Resolved",
-                    "date_time": {
-                        "low": {
-                            "date": "2008-01-03T00:00:00Z",
-                            "precision": "day"
-                        },
-                        "high": {
-                            "date": "2009-02-27T13:00:00Z",
-                            "precision": "second"
-                        }
-                    }
-                },
-                "patient_status": "Alive and well",
-                "source_list_identifiers": [
-                    {
-                        "identifier": "ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"
-                    }
-                ]
-            },
-            {
-                "date_time": {
-                    "low": {
-                        "date": "2007-01-01T00:00:00Z",
-                        "precision": "month"
-                    },
-                    "high": {
-                        "date": "2007-01-01T00:00:00Z",
-                        "precision": "month"
-                    }
-                },
-                "identifiers": [
-                    {
-                        "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
-                    }
-                ],
-                "negation_indicator": false,
-                "problem": {
-                    "code": {
-                        "name": "Asthma",
-                        "code": "195967001",
-                        "code_system_name": "SNOMED CT"
-                    },
-                    "date_time": {
-                        "low": {
-                            "date": "2007-01-01T00:00:00Z",
-                            "precision": "month"
-                        },
-                        "high": {
-                            "date": "2008-01-01T00:00:00Z",
-                            "precision": "month"
-                        }
-                    }
-                },
-                "onset_age": "57",
-                "onset_age_unit": "Year",
-                "status": {
-                    "name": "Active",
                     "date_time": {
                         "low": {
                             "date": "2008-01-03T00:00:00Z",
@@ -2769,7 +2683,7 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.16",
+        "version": "1.1.0-beta.17",
         "identifiers": [
             {
                 "identifier": "2.16.840.1.113883.19.5.99999.1",
@@ -2784,6 +2698,7 @@
             "encounters",
             "allergies",
             "immunizations",
+            "social_history",
             "problems",
             "procedures"
         ]
@@ -2791,6 +2706,7 @@
     "errors": [
         "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required results in ResultsOrganizer -> resultsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
@@ -2925,20 +2841,7 @@
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
