@@ -432,6 +432,329 @@
                         "unit": "%"
                     }
                 ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                    }
+                ],
+                "result_set": {
+                    "name": "2D echocardiogram panel",
+                    "code": "34552-0",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "aaa00f9e-0154-4eaa-be85-aeb34169f06a"
+                            }
+                        ],
+                        "result": {
+                            "name": "Aortic valve Ejection [Time] by US.doppler",
+                            "code": "18041-4",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2012-11-26T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "status": "completed",
+                        "reference_range": {
+                            "range": "Normal: 50-75%"
+                        },
+                        "interpretations": [
+                            null
+                        ],
+                        "value": 55,
+                        "unit": "%"
+                    },
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "347f958c-9b6b-4eeb-848d-624567117cb7"
+                            }
+                        ],
+                        "result": {
+                            "name": "AV Orifice Area US",
+                            "code": "18089-3",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2012-11-26T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "status": "completed",
+                        "reference_range": {
+                            "range": "Normal (3.0-4.0 cm2), mild (1.5–2.0 cm2), moderate (1.0–1.5 cm2), severe (less than 1.0 cm2)"
+                        },
+                        "interpretations": [
+                            null
+                        ],
+                        "value": 1.5,
+                        "unit": "cm2"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                    }
+                ],
+                "result_set": {
+                    "name": "EKG 12 channel panel",
+                    "code": "34534-8",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "ba4f85fa-586c-4898-9aad-b592d4c2c383"
+                            }
+                        ],
+                        "result": {
+                            "name": "EKG impression Narrative",
+                            "code": "18844-1",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2012-11-26T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "status": "completed"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                    }
+                ],
+                "result_set": {
+                    "name": "Thyrotropin [Units/volume] in Serum or Plasma by Detection limit less than or equal to 0.05 mIU/L",
+                    "code": "11579-0",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1331eea1-3efe-497e-96bc-de56796a253d"
+                            }
+                        ],
+                        "result": {
+                            "name": "Thyrotropin [Units/volume] in Serum or Plasma",
+                            "code": "3016-3",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2012-11-26T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "status": "completed",
+                        "reference_range": {
+                            "range": "normal: 0.29–5.11 IU/ml"
+                        },
+                        "interpretations": [
+                            null
+                        ],
+                        "value": 6,
+                        "unit": "m[IU]/L"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                    }
+                ],
+                "result_set": {
+                    "name": "Creatinine [Mass/volume] in Serum or Plasma",
+                    "code": "2160-0",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "9cd43fa7-db31-4c29-ab30-83f92fdcaa20"
+                            }
+                        ],
+                        "result": {
+                            "name": "Creatinine [Mass/volume] in Serum or Plasma",
+                            "code": "2160-0",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2012-11-26T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "status": "completed",
+                        "reference_range": {
+                            "range": "normal: below 1.5 mg/dL"
+                        },
+                        "interpretations": [
+                            null
+                        ],
+                        "value": 1.5,
+                        "unit": "mg/dL"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "7d5a02b0-67a4-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "result_set": {
+                    "name": "CBC WO DIFFERENTIAL",
+                    "code": "43789009",
+                    "code_system_name": "SNOMED CT"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "HGB",
+                            "code": "30313-1",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2000-03-23T14:30:00Z",
+                                "precision": "minute"
+                            }
+                        },
+                        "status": "completed",
+                        "reference_range": {
+                            "range": "M 13-18 g/dl; F 12-16 g/dl"
+                        },
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 13.2,
+                        "unit": "g/dl"
+                    },
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "WBC",
+                            "code": "33765-9",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2000-03-23T14:30:00Z",
+                                "precision": "minute"
+                            }
+                        },
+                        "status": "completed",
+                        "reference_range": {
+                            "low": "4.3",
+                            "high": "10.8",
+                            "unit": "10+3/ul"
+                        },
+                        "interpretations": [
+                            "Normal"
+                        ],
+                        "value": 6.7,
+                        "unit": "10+3/ul"
+                    },
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "107c2dc0-67a5-11db-bd13-0800200c9a66"
+                            }
+                        ],
+                        "result": {
+                            "name": "PLT",
+                            "code": "26515-7",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2000-03-23T14:30:00Z",
+                                "precision": "minute"
+                            }
+                        },
+                        "status": "completed",
+                        "reference_range": {
+                            "low": "150",
+                            "high": "350",
+                            "unit": "10+3/ul"
+                        },
+                        "interpretations": [
+                            "Low"
+                        ],
+                        "value": 123,
+                        "unit": "10+3/ul"
+                    }
+                ]
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "ce19d2be-3d3b-44ea-95f1-5a0a04586377"
+                    }
+                ],
+                "result_set": {
+                    "name": "INR in Platelet poor plasma by Coagulation assay",
+                    "code": "6301-6",
+                    "code_system_name": "LOINC"
+                },
+                "results": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "78df60b1-daf7-4838-b509-ec3a3f4116c1"
+                            }
+                        ],
+                        "result": {
+                            "name": "INR in Platelet poor plasma by Coagulation assay",
+                            "code": "6301-6",
+                            "code_system_name": "LOINC"
+                        },
+                        "date_time": {
+                            "point": {
+                                "date": "2012-11-26T00:00:00Z",
+                                "precision": "day"
+                            }
+                        },
+                        "status": "completed",
+                        "reference_range": {
+                            "range": "Normal reference range 1.0-1.5; Targeted INR 2.0-3.0"
+                        },
+                        "interpretations": [
+                            null
+                        ],
+                        "value": 1.5,
+                        "unit": "1"
+                    }
+                ]
             }
         ],
         "medications": [
@@ -626,19 +949,16 @@
                 },
                 "identifiers": [
                     {
-                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
+                        "extension": "6591225000051"
                     }
                 ],
-                "status": "Completed",
-                "supply": {
-                    "repeatNumber": "1",
-                    "quantity": "75",
-                    "author": {
-                        "name": {
-                            "prefix": "Dr.",
-                            "last": "Seven",
-                            "first": "Henry"
-                        }
+                "status": "Prescribed",
+                "product": {
+                    "product": {
+                        "name": "Cefepime 20 MG/ML",
+                        "code": "329646",
+                        "code_system_name": "RXNORM"
                     }
                 },
                 "administration": {
@@ -654,46 +974,6 @@
                         },
                         "frequency": true
                     }
-                },
-                "indication": {
-                    "code": {
-                        "name": "Finding",
-                        "code": "404684003",
-                        "code_system_name": "SNOMED CT"
-                    }
-                },
-                "dispense": {
-                    "performer": {
-                        "identifiers": [
-                            {
-                                "identifier": "2.16.840.1.113883.19.5.9999.456",
-                                "extension": "2981823"
-                            }
-                        ],
-                        "address": [
-                            {
-                                "street_lines": [
-                                    "1001 Village Avenue"
-                                ],
-                                "city": "Portland",
-                                "state": "OR",
-                                "zip": "99123",
-                                "country": "US"
-                            }
-                        ],
-                        "organization": [
-                            {
-                                "identifiers": [
-                                    {
-                                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                                    }
-                                ],
-                                "name": [
-                                    "Community Health and Hospitals"
-                                ]
-                            }
-                        ]
-                    }
                 }
             },
             {
@@ -705,19 +985,16 @@
                 },
                 "identifiers": [
                     {
-                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
+                        "extension": "659122500005"
                     }
                 ],
-                "status": "Completed",
-                "supply": {
-                    "repeatNumber": "1",
-                    "quantity": "75",
-                    "author": {
-                        "name": {
-                            "prefix": "Dr.",
-                            "last": "Seven",
-                            "first": "Henry"
-                        }
+                "status": "Prescribed",
+                "product": {
+                    "product": {
+                        "name": "Cephalexin 500 MG Oral Tablet",
+                        "code": "309114",
+                        "code_system_name": "RXNORM"
                     }
                 },
                 "administration": {
@@ -737,127 +1014,20 @@
                         },
                         "frequency": true
                     }
-                },
-                "indication": {
-                    "code": {
-                        "name": "Finding",
-                        "code": "404684003",
-                        "code_system_name": "SNOMED CT"
-                    }
-                },
-                "dispense": {
-                    "performer": {
-                        "identifiers": [
-                            {
-                                "identifier": "2.16.840.1.113883.19.5.9999.456",
-                                "extension": "2981823"
-                            }
-                        ],
-                        "address": [
-                            {
-                                "street_lines": [
-                                    "1001 Village Avenue"
-                                ],
-                                "city": "Portland",
-                                "state": "OR",
-                                "zip": "99123",
-                                "country": "US"
-                            }
-                        ],
-                        "organization": [
-                            {
-                                "identifiers": [
-                                    {
-                                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                                    }
-                                ],
-                                "name": [
-                                    "Community Health and Hospitals"
-                                ]
-                            }
-                        ]
-                    }
                 }
             },
             {
-                "identifiers": [
-                    {
-                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
-                    }
-                ],
                 "status": "Completed",
-                "sig": "Proventil",
+                "sig": "Proventil HFA",
                 "product": {
                     "unencoded_name": "Proventil",
                     "product": {
                         "name": "Proventil",
                         "code_system_name": "SNOMED CT"
-                    },
-                    "manufacturer": ""
-                },
-                "supply": {
-                    "repeatNumber": "1",
-                    "quantity": "75",
-                    "author": {
-                        "name": {
-                            "prefix": "Dr.",
-                            "last": "Seven",
-                            "first": "Henry"
-                        }
-                    }
-                },
-                "administration": {
-                    "interval": {
-                        "frequency": true
-                    }
-                },
-                "indication": {
-                    "code": {
-                        "name": "Finding",
-                        "code": "404684003",
-                        "code_system_name": "SNOMED CT"
-                    }
-                },
-                "dispense": {
-                    "performer": {
-                        "identifiers": [
-                            {
-                                "identifier": "2.16.840.1.113883.19.5.9999.456",
-                                "extension": "2981823"
-                            }
-                        ],
-                        "address": [
-                            {
-                                "street_lines": [
-                                    "1001 Village Avenue"
-                                ],
-                                "city": "Portland",
-                                "state": "OR",
-                                "zip": "99123",
-                                "country": "US"
-                            }
-                        ],
-                        "organization": [
-                            {
-                                "identifiers": [
-                                    {
-                                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                                    }
-                                ],
-                                "name": [
-                                    "Community Health and Hospitals"
-                                ]
-                            }
-                        ]
                     }
                 }
             },
             {
-                "identifiers": [
-                    {
-                        "identifier": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
-                    }
-                ],
                 "status": "Completed",
                 "sig": "Aspirin",
                 "product": {
@@ -865,63 +1035,6 @@
                     "product": {
                         "name": "Aspirin",
                         "code_system_name": "SNOMED CT"
-                    },
-                    "manufacturer": ""
-                },
-                "supply": {
-                    "repeatNumber": "1",
-                    "quantity": "75",
-                    "author": {
-                        "name": {
-                            "prefix": "Dr.",
-                            "last": "Seven",
-                            "first": "Henry"
-                        }
-                    }
-                },
-                "administration": {
-                    "interval": {
-                        "frequency": true
-                    }
-                },
-                "indication": {
-                    "code": {
-                        "name": "Finding",
-                        "code": "404684003",
-                        "code_system_name": "SNOMED CT"
-                    }
-                },
-                "dispense": {
-                    "performer": {
-                        "identifiers": [
-                            {
-                                "identifier": "2.16.840.1.113883.19.5.9999.456",
-                                "extension": "2981823"
-                            }
-                        ],
-                        "address": [
-                            {
-                                "street_lines": [
-                                    "1001 Village Avenue"
-                                ],
-                                "city": "Portland",
-                                "state": "OR",
-                                "zip": "99123",
-                                "country": "US"
-                            }
-                        ],
-                        "organization": [
-                            {
-                                "identifiers": [
-                                    {
-                                        "identifier": "2.16.840.1.113883.19.5.9999.1393"
-                                    }
-                                ],
-                                "name": [
-                                    "Community Health and Hospitals"
-                                ]
-                            }
-                        ]
                     }
                 }
             }
@@ -1036,12 +1149,32 @@
                     {
                         "identifiers": [
                             {
-                                "identifier": "PseduoMD-3"
+                                "identifier": "2.16.840.1.113883.4.6",
+                                "extension": "1111111111"
                             }
                         ],
-                        "code": [
+                        "name": [
                             {
-                                "code_system_name": "SNOMED CT"
+                                "prefix": "Dr",
+                                "last": "Rodriguez",
+                                "first": "Martin"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "1002 Healthcare Dr."
+                                ],
+                                "city": "Portland",
+                                "state": "OR",
+                                "zip": "97005",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-(555)555-1122",
+                                "type": "primary home"
                             }
                         ]
                     }
@@ -1317,7 +1450,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -1331,7 +1464,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                            "code_system_name": "Observation Interpretation"
                         }
                     }
                 }
@@ -1401,7 +1534,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -1415,7 +1548,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                            "code_system_name": "Observation Interpretation"
                         }
                     }
                 }
@@ -1441,7 +1574,14 @@
                     "allergen": {
                         "name": "Eggs",
                         "code": "291P45F896",
-                        "code_system_name": "UNII"
+                        "code_system_name": "UNII",
+                        "translations": [
+                            {
+                                "name": "Allergy to eggs",
+                                "code": "V15.03",
+                                "code_system_name": "OID 2.16.840.1.113883.6.2"
+                            }
+                        ]
                     },
                     "intolerance": {
                         "name": "Food allergy (disorder)",
@@ -1479,18 +1619,11 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
-                    ],
-                    "severity": {
-                        "interpretation": {
-                            "name": "Normal",
-                            "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                        }
-                    }
+                    ]
                 }
             },
             {
@@ -1552,18 +1685,11 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
-                    ],
-                    "severity": {
-                        "interpretation": {
-                            "name": "Normal",
-                            "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
-                        }
-                    }
+                    ]
                 }
             },
             {
@@ -1609,7 +1735,30 @@
                         {
                             "reaction": {
                                 "name": "Nausea",
-                                "code": "undefined",
+                                "code_system_name": "SNOMED CT"
+                            },
+                            "severity": {
+                                "code": {
+                                    "name": "Mild",
+                                    "code": "255604002",
+                                    "code_system_name": "SNOMED CT"
+                                }
+                            }
+                        },
+                        {
+                            "date_time": {
+                                "low": {
+                                    "date": "2007-05-01T00:00:00Z",
+                                    "precision": "day"
+                                },
+                                "high": {
+                                    "date": "2009-02-27T13:00:00Z",
+                                    "precision": "second"
+                                }
+                            },
+                            "reaction": {
+                                "name": "Nausea",
+                                "code": "422587007",
                                 "code_system_name": "SNOMED CT"
                             },
                             "severity": {
@@ -1621,7 +1770,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -1635,7 +1784,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "OID 2.16.840.1.113883.1.11.78"
+                            "code_system_name": "Observation Interpretation"
                         }
                     }
                 }
@@ -1983,8 +2132,7 @@
                     "product": {
                         "name": "Influenza virus vaccine",
                         "code_system_name": "SNOMED CT"
-                    },
-                    "manufacturer": ""
+                    }
                 },
                 "administration": {
                     "route": {
@@ -2079,8 +2227,7 @@
                     "product": {
                         "name": "Influenza virus vaccine",
                         "code_system_name": "SNOMED CT"
-                    },
-                    "manufacturer": ""
+                    }
                 },
                 "administration": {
                     "route": {
@@ -2169,12 +2316,9 @@
                         }
                     }
                 },
-                "onset_age": "undefined",
-                "onset_age_unit": "Year",
                 "status": {
                     "name": "Active"
                 },
-                "patient_status": "undefined",
                 "source_list_identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
@@ -2656,6 +2800,7 @@
     },
     "errors": [
         "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
@@ -2671,7 +2816,7 @@
         "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required product in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> author -> MedicationSupplyOrder -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
@@ -2683,16 +2828,8 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required product in Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> author -> MedicationSupplyOrder -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
@@ -2704,19 +2841,10 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in conceptWoutTranslation -> ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> author -> MedicationSupplyOrder -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
@@ -2733,19 +2861,10 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in conceptWoutTranslation -> ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> author -> MedicationSupplyOrder -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
@@ -2762,22 +2881,27 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationIndication -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required address in Email -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> Organization -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required date_time in allergyObservation -> problemAct -> allergiesSection -> CCD",
@@ -2786,6 +2910,9 @@
         "nullFlavor alert:  missing but required date_time in allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -2812,19 +2939,13 @@
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in conceptWoutTranslation -> ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in conceptWoutTranslation -> ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in conceptWoutTranslation -> ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in conceptWoutTranslation -> ConceptDescriptor -> immunizationActivityProduct -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
