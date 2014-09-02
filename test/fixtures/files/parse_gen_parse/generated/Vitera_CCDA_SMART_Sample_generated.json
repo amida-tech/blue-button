@@ -46,12 +46,9 @@
                 {
                     "number": "+1-916-555-5544",
                     "type": "work place"
-                },
-                null
+                }
             ],
             "email": [
-                null,
-                null,
                 {
                     "address": "carlsonsa@e4health.com"
                 }
@@ -3264,9 +3261,6 @@
                         }
                     }
                 },
-                "administration": {
-                    "interval": {}
-                },
                 "dispense": {
                     "identifiers": [
                         {
@@ -3374,9 +3368,6 @@
                         }
                     }
                 },
-                "administration": {
-                    "interval": {}
-                },
                 "dispense": {
                     "identifiers": [
                         {
@@ -3482,9 +3473,6 @@
                         }
                     }
                 },
-                "administration": {
-                    "interval": {}
-                },
                 "dispense": {
                     "identifiers": [
                         {
@@ -3589,9 +3577,6 @@
                             "first": "David"
                         }
                     }
-                },
-                "administration": {
-                    "interval": {}
                 },
                 "dispense": {
                     "identifiers": [
@@ -3699,9 +3684,6 @@
                             "first": "David"
                         }
                     }
-                },
-                "administration": {
-                    "interval": {}
                 }
             },
             {
@@ -3753,9 +3735,6 @@
                             "first": "David"
                         }
                     }
-                },
-                "administration": {
-                    "interval": {}
                 },
                 "dispense": {
                     "identifiers": [
@@ -3864,9 +3843,6 @@
                         }
                     }
                 },
-                "administration": {
-                    "interval": {}
-                },
                 "dispense": {
                     "identifiers": [
                         {
@@ -3973,9 +3949,6 @@
                             "first": "David"
                         }
                     }
-                },
-                "administration": {
-                    "interval": {}
                 },
                 "dispense": {
                     "identifiers": [
@@ -4089,9 +4062,6 @@
                         }
                     }
                 },
-                "administration": {
-                    "interval": {}
-                },
                 "dispense": {
                     "identifiers": [
                         {
@@ -4203,9 +4173,6 @@
                             "first": "David"
                         }
                     }
-                },
-                "administration": {
-                    "interval": {}
                 },
                 "dispense": {
                     "identifiers": [
@@ -4319,9 +4286,6 @@
                         }
                     }
                 },
-                "administration": {
-                    "interval": {}
-                },
                 "dispense": {
                     "identifiers": [
                         {
@@ -4434,9 +4398,6 @@
                         }
                     }
                 },
-                "administration": {
-                    "interval": {}
-                },
                 "dispense": {
                     "identifiers": [
                         {
@@ -4543,9 +4504,6 @@
                             "first": "David"
                         }
                     }
-                },
-                "administration": {
-                    "interval": {}
                 }
             },
             {
@@ -4602,9 +4560,6 @@
                             "first": "David"
                         }
                     }
-                },
-                "administration": {
-                    "interval": {}
                 }
             },
             {
@@ -4661,9 +4616,6 @@
                             "first": "James"
                         }
                     }
-                },
-                "administration": {
-                    "interval": {}
                 },
                 "dispense": {
                     "identifiers": [
@@ -4776,9 +4728,6 @@
                             "first": "David"
                         }
                     }
-                },
-                "administration": {
-                    "interval": {}
                 },
                 "dispense": {
                     "identifiers": [
