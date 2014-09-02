@@ -38,7 +38,6 @@
         <raceCode displayName="Hispanic or Latino" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
         <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <guardian>
-          <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
           <addr>
             <streetAddressLine>3456 West Palm</streetAddressLine>
             <streetAddressLine>Apt. #34</streetAddressLine>
