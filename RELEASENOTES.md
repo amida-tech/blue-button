@@ -1,9 +1,12 @@
 # blue-button.js Release Notes
 
-# v1.0.4 - Jul 18, 2014
+# v.1.1.0 - September 2, 2014
+- 
+
+# v1.0.4 - July 18, 2014
 - Bug fix on handling null or UNK encounter in cleanup step
 
-# v1.0.3 - Jul 18, 2014
+# v1.0.3 - July 18, 2014
 - Updates to data models
 - CCDA export functionality
 - CMS parsing functionality
