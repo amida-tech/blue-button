@@ -44,7 +44,7 @@ describe('parse generate parse generate', function () {
         var result = bb.parseString(data);
 
         // write generated json
-        fs.writeFileSync("test/fixtures/files/parse_gen_parse/generated/Vitera_CCDA_SMART_Sample_generated.json", JSON.stringify(result.data.immunizations, null, 4));
+        fs.writeFileSync("test/fixtures/files/parse_gen_parse/generated/Vitera_CCDA_SMART_Sample_generated.json", JSON.stringify(result.data.payers, null, 4));
 
         // check validation
         var val = bb.validator.validateDocumentModel(result);
@@ -57,7 +57,7 @@ describe('parse generate parse generate', function () {
         // parse generated ccda
         var result2 = bb.parseString(xml);
         // write the parsed json from the generated ccda
-        fs.writeFileSync("test/fixtures/files/parse_gen_parse/generated/Vitera_CCDA_SMART_Sample_generated_2.json", JSON.stringify(result2.data.immunizations, null, 4));
+        fs.writeFileSync("test/fixtures/files/parse_gen_parse/generated/Vitera_CCDA_SMART_Sample_generated_2.json", JSON.stringify(result2.data.payers, null, 4));
 
         // re-generate
         var xml2 = bb.generateCCDA(result2).toString();
@@ -66,6 +66,6 @@ describe('parse generate parse generate', function () {
         delete result.errors;
         delete result2.errors;
 
-        assert.deepEqual(result2.data.immunizations, result.data.immunizations);
+        assert.deepEqual(result2.data.demographics, result.data.demographics);
     });
 });
