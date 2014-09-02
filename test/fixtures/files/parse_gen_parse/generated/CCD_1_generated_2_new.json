@@ -1205,16 +1205,6 @@
                             }
                         ]
                     }
-                ],
-                "findings": [
-                    {
-                        "identifiers": [
-                            {
-                                "identifier": "db734647-fc99-424c-a864-7e3cda82e703",
-                                "extension": "45665"
-                            }
-                        ]
-                    }
                 ]
             },
             {
@@ -2890,8 +2880,6 @@
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> activity -> encountersSection -> CCD",

@@ -630,16 +630,6 @@
                             </playingEntity>
                           </participantRole>
                         </participant>
-                        <entryRelationship typeCode="RSON">
-                          <observation classCode="OBS" moodCode="EVN">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                            <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
-                            <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                            <statusCode code="completed"/>
-                            <effectiveTime/>
-                            <value nullFlavor="UNK"/>
-                          </observation>
-                        </entryRelationship>
                       </encounter>
                     </entry>
                     <entry typeCode="DRIV">
