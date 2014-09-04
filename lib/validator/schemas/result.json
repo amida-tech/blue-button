@@ -44,6 +44,9 @@
                     "value": {
                         "type": "number"
                     },
+                    "text": {
+                        "type": "string"
+                    },
                     "reference_range": {
                         "type": "object",
                         "properties": {

@@ -32,7 +32,7 @@ describe('Parser C32 Support Testing', function () {
         expect(result.data.allergies.length).to.equal(10);
         expect(result.data.vitals.length).to.equal(2);
 
-        console.log(JSON.stringify(result.data.vitals, null, 10));
+        console.log(JSON.stringify(result.data.results, null, 10));
         done();
 
     });
