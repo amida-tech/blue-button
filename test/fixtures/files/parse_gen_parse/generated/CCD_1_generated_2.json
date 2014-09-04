@@ -1947,7 +1947,7 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.17",
+        "version": "1.1.0",
         "identifiers": [
             {
                 "identifier": "2.16.840.1.113883.19.5.99999.1",
