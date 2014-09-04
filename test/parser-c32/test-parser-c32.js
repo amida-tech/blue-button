@@ -15,11 +15,11 @@ describe('Parser C32 Support Testing', function () {
     it('C32 Allergies Demo File Check Sense', function (done) {
 
         var senseResult = bb.senseString(xmlfile);
-        expect(senseResult.type).to.equal('c32');
+        
         expect(senseResult.xml.errors.length).to.equal(0);
 
         var senseXml = bb.senseXml(senseResult.xml);
-        console.log(senseXml);
+        expect(senseResult.type).to.equal('c32');
 
         done();
 
@@ -29,7 +29,9 @@ describe('Parser C32 Support Testing', function () {
 
         var result = bb.parseString(xmlfile);
 
-        //console.log(result.data.allergies);
+        expect(result.data.allergies.length).to.equal(10);
+
+        console.log(JSON.stringify(result.data.allergies, null, 10));
         done();
 
     });
