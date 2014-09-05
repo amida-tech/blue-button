@@ -1,0 +1,564 @@
+{
+          "allergies": [
+                    {
+                              "_id": "5404d4a55b022b000059e506",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:45.983Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "observation": {
+                                        "status": {
+                                                  "code_system_name": "SNOMED CT",
+                                                  "code": "55561003",
+                                                  "name": "Active"
+                                        },
+                                        "reactions": [
+                                                  {
+                                                            "severity": {
+                                                                      "code": {
+                                                                                "code_system_name": "SNOMED CT",
+                                                                                "name": "Mild",
+                                                                                "code": "255604002"
+                                                                      }
+                                                            },
+                                                            "reaction": {
+                                                                      "name": "Nausea"
+                                                            }
+                                                  }
+                                        ],
+                                        "date_time": {
+                                                  "low": {
+                                                            "precision": "day",
+                                                            "date": "2007-05-01T00:00:00Z"
+                                                  }
+                                        },
+                                        "allergen": {
+                                                  "name": "ALLERGENIC EXTRACT, PENICILLIN"
+                                        }
+                              }
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e507",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:45.992Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "observation": {
+                                        "status": {
+                                                  "code_system_name": "SNOMED CT",
+                                                  "code": "55561003",
+                                                  "name": "Active"
+                                        },
+                                        "reactions": [
+                                                  {
+                                                            "severity": {
+                                                                      "code": {
+                                                                                "code_system_name": "SNOMED CT",
+                                                                                "name": "Mild",
+                                                                                "code": "255604002"
+                                                                      }
+                                                            },
+                                                            "reaction": {
+                                                                      "name": "Wheezing"
+                                                            }
+                                                  }
+                                        ],
+                                        "date_time": {
+                                                  "low": {
+                                                            "precision": "day",
+                                                            "date": "2006-05-01T00:00:00Z"
+                                                  }
+                                        },
+                                        "allergen": {
+                                                  "name": "Codeine"
+                                        }
+                              }
+                    }
+          ],
+          "vitals": [
+                    {
+                              "_id": "5404d4a55b022b000059e510",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.024Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "status": "completed",
+                              "unit": "kg",
+                              "value": 86,
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "hour",
+                                                  "date": "1999-11-14T12:00:00Z"
+                                        }
+                              },
+                              "vital": {
+                                        "name": "Patient Body Weight - Measured"
+                              }
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e50e",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.016Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "status": "completed",
+                              "unit": "mm[Hg]",
+                              "value": 132,
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "hour",
+                                                  "date": "1999-11-14T15:00:00Z"
+                                        }
+                              },
+                              "vital": {
+                                        "code_system_name": "LOINC",
+                                        "name": "Intravascular Systolic",
+                                        "code": "8480-6"
+                              }
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e50f",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.021Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "status": "completed",
+                              "unit": "mm[Hg]",
+                              "value": 80,
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "hour",
+                                                  "date": "1999-11-14T15:00:00Z"
+                                        }
+                              },
+                              "vital": {
+                                        "code_system_name": "LOINC",
+                                        "name": "Intravascular Diastolic",
+                                        "code": "8462-4"
+                              }
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e511",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.025Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "status": "completed",
+                              "unit": "cm",
+                              "value": 162,
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "hour",
+                                                  "date": "1999-11-14T12:00:00Z"
+                                        }
+                              },
+                              "vital": {
+                                        "name": "Height"
+                              }
+                    }
+          ],
+          "results": [
+                    {
+                              "_id": "5404d4a55b022b000059e512",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.026Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "results": [
+                                        {
+                                                  "status": "completed",
+                                                  "unit": "g/dl",
+                                                  "value": 13.2,
+                                                  "result": {
+                                                            "name": "HGB"
+                                                  },
+                                                  "date_time": {
+                                                            "point": {
+                                                                      "precision": "day",
+                                                                      "date": "2000-03-23T00:00:00Z"
+                                                            }
+                                                  }
+                                        },
+                                        {
+                                                  "status": "completed",
+                                                  "unit": "10+3/ul",
+                                                  "value": 6.7,
+                                                  "result": {
+                                                            "name": "WBC"
+                                                  },
+                                                  "date_time": {
+                                                            "point": {
+                                                                      "precision": "day",
+                                                                      "date": "2000-03-23T00:00:00Z"
+                                                            }
+                                                  }
+                                        },
+                                        {
+                                                  "status": "completed",
+                                                  "unit": "10+3/ul",
+                                                  "value": 123,
+                                                  "result": {
+                                                            "name": "PLT"
+                                                  },
+                                                  "date_time": {
+                                                            "point": {
+                                                                      "precision": "day",
+                                                                      "date": "2000-03-23T00:00:00Z"
+                                                            }
+                                                  }
+                                        }
+                              ],
+                              "result_set": {
+                                        "name": "CBC WO DIFFERENTIAL"
+                              }
+                    }
+          ],
+          "immunizations": [
+                    {
+                              "_id": "5404d4a55b022b000059e50a",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.004Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "1998-12-15T00:00:00Z"
+                                        }
+                              },
+                              "product": {
+                                        "product": {
+                                                  "name": "Pneumococcal polysaccharide vaccine"
+                                        }
+                              },
+                              "administration": {
+                                        "route": {
+                                                  "name": "Intramuscular injection"
+                                        }
+                              },
+                              "status": "complete"
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e508",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:45.998Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "1999-11-01T00:00:00Z"
+                                        }
+                              },
+                              "product": {
+                                        "product": {
+                                                  "name": "Influenza virus vaccine"
+                                        }
+                              },
+                              "administration": {
+                                        "route": {
+                                                  "name": "Intramuscular injection"
+                                        }
+                              },
+                              "status": "complete"
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e509",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.000Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "1998-12-15T00:00:00Z"
+                                        }
+                              },
+                              "product": {
+                                        "product": {
+                                                  "name": "Influenza virus vaccine"
+                                        }
+                              },
+                              "administration": {
+                                        "route": {
+                                                  "name": "Intramuscular injection"
+                                        }
+                              },
+                              "status": "complete"
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e50b",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.005Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "date_time": {
+                                        "point": {
+                                                  "precision": "day",
+                                                  "date": "1998-12-15T00:00:00Z"
+                                        }
+                              },
+                              "product": {
+                                        "product": {
+                                                  "name": "Tetanus and diphtheria toxoids - preservative free"
+                                        }
+                              },
+                              "administration": {
+                                        "route": {
+                                                  "name": "Intramuscular injection"
+                                        }
+                              },
+                              "status": "complete"
+                    }
+          ],
+          "medications": [
+                    {
+                              "_id": "5404d4a55b022b000059e50c",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.007Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "status": "Completed",
+                              "sig": "Proventil HFA",
+                              "product": {
+                                        "unencoded_name": "Proventil",
+                                        "product": {
+                                                  "name": "Proventil"
+                                        }
+                              }
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e50d",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.011Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "status": "Completed",
+                              "sig": "Aspirin",
+                              "product": {
+                                        "unencoded_name": "Aspirin",
+                                        "product": {
+                                                  "name": "Aspirin"
+                                        }
+                              }
+                    }
+          ],
+          "demographics": {
+                    "_id": "5404d4a55b022b000059e513",
+                    "metadata": {
+                              "attribution": [
+                                        {
+                                                  "record": {
+                                                            "_id": "5404d4a507c12400003564bd",
+                                                            "filename": "bluebutton-03-cms.txt"
+                                                  },
+                                                  "merged": "2014-09-01T20:18:46.027Z",
+                                                  "merge_reason": "new"
+                                        }
+                              ]
+                    },
+                    "addresses": [
+                              {
+                                        "country": "US",
+                                        "zip": "97867",
+                                        "state": "OR",
+                                        "city": "Beaverton",
+                                        "street_lines": [
+                                                  "1357 Amber Drive"
+                                        ],
+                                        "use": "primary home"
+                              }
+                    ],
+                    "phone": [
+                              {
+                                        "type": "primary home",
+                                        "number": "(816)276-6909"
+                              }
+                    ],
+                    "email": [
+                              {
+                                        "type": "",
+                                        "address": "isabella@amida.com"
+                              }
+                    ],
+                    "dob": {
+                              "point": {
+                                        "precision": "day",
+                                        "date": "1975-05-01T00:00:00Z"
+                              }
+                    },
+                    "name": {
+                              "last": "Jones",
+                              "middle": [
+                                        "Isa"
+                              ],
+                              "first": "Isabella"
+                    }
+          },
+          "problems": [
+                    {
+                              "_id": "5404d4a55b022b000059e514",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.030Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "date_time": {
+                                        "high": {
+                                                  "precision": "day",
+                                                  "date": "2008-01-03T00:00:00Z"
+                                        },
+                                        "low": {
+                                                  "precision": "day",
+                                                  "date": "2008-01-03T00:00:00Z"
+                                        }
+                              },
+                              "problem": {
+                                        "code": {
+                                                  "name": "Pneumonia"
+                                        }
+                              }
+                    },
+                    {
+                              "_id": "5404d4a55b022b000059e515",
+                              "metadata": {
+                                        "attribution": [
+                                                  {
+                                                            "record": {
+                                                                      "_id": "5404d4a507c12400003564bd",
+                                                                      "filename": "bluebutton-03-cms.txt"
+                                                            },
+                                                            "merged": "2014-09-01T20:18:46.037Z",
+                                                            "merge_reason": "new"
+                                                  }
+                                        ]
+                              },
+                              "date_time": {
+                                        "high": {
+                                                  "precision": "day",
+                                                  "date": "2008-01-03T00:00:00Z"
+                                        },
+                                        "low": {
+                                                  "precision": "day",
+                                                  "date": "2007-01-03T00:00:00Z"
+                                        }
+                              },
+                              "problem": {
+                                        "code": {
+                                                  "name": "Asthma"
+                                        }
+                              }
+                    }
+          ]
+}

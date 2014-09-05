@@ -1,9 +1,21 @@
 # blue-button.js Release Notes
 
-# v1.0.4 - Jul 18, 2014
+# v.1.1.0 - September 2, 2014
+- Complete review and overhaul of Blue Button JSON data model
+	- Includes standard way to handle date_time and coded entries
+- Implemented JSON Schema based model validation
+- Sense method to detect variety of health record formats
+- CCDA parser is updated for latest changes in data model
+- CMS parser is updated for latest changes in data model
+- CCDA generator update for latest model changes 
+	- including data parsed from CMS (only sections covered by CCDA standard)
+- Switched to blue-button-meta.js library for all standard lookups 
+- Simplified test harness
+
+# v1.0.4 - July 18, 2014
 - Bug fix on handling null or UNK encounter in cleanup step
 
-# v1.0.3 - Jul 18, 2014
+# v1.0.3 - July 18, 2014
 - Updates to data models
 - CCDA export functionality
 - CMS parsing functionality

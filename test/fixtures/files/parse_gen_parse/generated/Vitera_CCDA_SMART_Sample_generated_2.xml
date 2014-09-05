@@ -26,7 +26,6 @@
       </addr>
       <telecom value="tel:+1-916-555-3293" use="HP"/>
       <telecom value="tel:+1-916-555-5544" use="WP"/>
-      <telecom value="mailto:carlsonsa@e4health.com"/>
       <patient>
         <name use="L">
           <given>Sharon</given>
@@ -36,7 +35,21 @@
         <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female"/>
         <birthTime value="19381212"/>
         <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
-        <ethnicGroupCode code="2135-2" displayName="Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC"/>
+        <raceCode displayName="[object Object]" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
+        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+        <guardian>
+          <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+          <addr>
+            <streetAddressLine>3456 West Palm</streetAddressLine>
+            <streetAddressLine>Apt. #34</streetAddressLine>
+            <city>Madison</city>
+            <state>CA</state>
+            <postalCode>95653</postalCode>
+            <country>US</country>
+          </addr>
+          <telecom value="tel:+1-916-555-3293" use="HP"/>
+          <telecom value="tel:+1-916-555-5544" use="WP"/>
+        </guardian>
         <birthplace>
           <place>
             <addr nullFlavor="UNK"/>
@@ -44,10 +57,23 @@
         </birthplace>
         <languageCommunication>
           <languageCode code="eng"/>
+          <modeCode code="ESP" displayName="undefined" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
           <proficiencyLevelCode nullFlavor="UNK"/>
           <preferenceInd value="true"/>
         </languageCommunication>
       </patient>
+      <providerOrganization>
+        <id root="2.16.840.1.113883.4.6"/>
+        <name>Community Health and Hospitals</name>
+        <telecom use="WP" value="tel: 555-555-5000"/>
+        <addr>
+          <streetAddressLine>1001 Village Avenue</streetAddressLine>
+          <city>Portland</city>
+          <state>OR</state>
+          <postalCode>99123</postalCode>
+          <country>US</country>
+        </addr>
+      </providerOrganization>
     </patientRole>
   </recordTarget>
   <component>
@@ -1268,7 +1294,7 @@
                         </text>
                         <statusCode code="complete"/>
                         <effectiveTime xsi:type="IVL_TS" value="200606281424"/>
-                        <approachSiteCode code="72098002" displayName="Entire left upper arm (body structure)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                        <routeCode code="72098002" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Entire left upper arm (body structure)"/>
                         <consumable>
                           <manufacturedProduct classCode="MANU">
                             <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
@@ -3564,10 +3590,7 @@
                             </performer>
                             <participant typeCode="COV">
                               <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
-                              <time>
-                                <low value="20071003"/>
-                                <high value="20081001"/>
-                              </time>
+                              <time/>
                               <participantRole classCode="PAT">
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.3" extension="643005639"/>
                                 <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
@@ -3579,8 +3602,6 @@
                                   <postalCode>95653</postalCode>
                                   <country>US</country>
                                 </addr>
-                                <telecom value="tel:+1-916-555-3293" use="HP"/>
-                                <telecom value="tel:+1-916-555-5544" use="WP"/>
                                 <playingEntity>
                                   <name>
                                     <given>Sharon</given>
@@ -3650,10 +3671,7 @@
                             </performer>
                             <participant typeCode="COV">
                               <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
-                              <time>
-                                <low value="20071003"/>
-                                <high value="20081001"/>
-                              </time>
+                              <time/>
                               <participantRole classCode="PAT">
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.3" extension="643005639"/>
                                 <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
@@ -3665,8 +3683,6 @@
                                   <postalCode>95653</postalCode>
                                   <country>US</country>
                                 </addr>
-                                <telecom value="tel:+1-916-555-3293" use="HP"/>
-                                <telecom value="tel:+1-916-555-5544" use="WP"/>
                                 <playingEntity>
                                   <name>
                                     <given>Sharon</given>
@@ -3857,18 +3873,6 @@
                             <scopingEntity>
                               <id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
                             </scopingEntity>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="undefined" codeSystemName="OID undefined"/>
-                            <addr>
-                              <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
-                              <city>Gainesville</city>
-                              <state>FL</state>
-                              <postalCode>32608</postalCode>
-                              <country>US</country>
-                            </addr>
-                            <telecom value="tel:+1-916-555-7654" use="WP"/>
-                            <playingEntity classCode="PLC">
-                              <name>Office - Madison Medical Center, P.A.</name>
-                            </playingEntity>
                           </participantRole>
                         </participant>
                       </procedure>
@@ -3940,18 +3944,6 @@
                             <scopingEntity>
                               <id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
                             </scopingEntity>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="undefined" codeSystemName="OID undefined"/>
-                            <addr>
-                              <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
-                              <city>Gainesville</city>
-                              <state>FL</state>
-                              <postalCode>32608</postalCode>
-                              <country>US</country>
-                            </addr>
-                            <telecom value="tel:+1-916-555-7654" use="WP"/>
-                            <playingEntity classCode="PLC">
-                              <name>Office - Madison Medical Center, P.A.</name>
-                            </playingEntity>
                           </participantRole>
                         </participant>
                       </procedure>
@@ -4418,7 +4410,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="5.3" unit="X_10-3/uL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(4.0-10.5)</text>
@@ -4437,7 +4428,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="3.86" unit="X_10-6/uL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(3.80-5.10)</text>
@@ -4494,7 +4484,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="86" unit="fL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(80-98)</text>
@@ -4513,7 +4502,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="28.6" unit="pg"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(27.0-34.0)</text>
@@ -4532,7 +4520,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="33.2" unit="g/dL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(32.0-36.0)</text>
@@ -4551,7 +4538,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="57" unit="%"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(40-74)</text>
@@ -4570,7 +4556,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="29" unit="%"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(14-46)</text>
@@ -4589,7 +4574,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="11" unit="%"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(4-13)</text>
@@ -4608,7 +4592,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="3" unit="%"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0-7)</text>
@@ -4627,7 +4610,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="0" unit="%"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0-3)</text>
@@ -4646,7 +4628,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="258" unit="X_10-3/uL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(140-415)</text>
@@ -4665,7 +4646,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange/>
                           </referenceRange>
@@ -4682,7 +4662,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="3" unit="X_10-3/uL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(1.8-7.8)</text>
@@ -4701,7 +4680,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="1.5" unit="X_10-3/uL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0.7-4.5)</text>
@@ -4720,7 +4698,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="0.6" unit="X_10-3/uL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0.1-1.0)</text>
@@ -4739,7 +4716,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="0.2" unit="X_10-3/uL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0.0-0.4)</text>
@@ -4758,7 +4734,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="0" unit="X_10-3/uL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0.0-0.2)</text>
@@ -4843,7 +4818,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="3.7" unit="g/dL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(3.6-4.8)</text>
@@ -4862,7 +4836,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="0.8" unit="mg/dL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0.1-1.2)</text>
@@ -4881,7 +4854,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="142" unit="IU/L"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(25-165)</text>
@@ -4900,7 +4872,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="108" unit="IU/L"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(100-250)</text>
@@ -4919,7 +4890,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="27" unit="IU/L"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0-40)</text>
@@ -4938,7 +4908,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="0.31" unit="mg/dL"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0.00-0.40)</text>
@@ -4957,7 +4926,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="23" unit="IU/L"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0-40)</text>
@@ -4976,7 +4944,6 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20071102150000"/>
                           <value xsi:type="PQ" value="36" unit="IU/L"/>
-                          <interpretationCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.83"/>
                           <referenceRange>
                             <observationRange>
                               <text>(0-60)</text>
@@ -5870,11 +5837,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-18"/>
                               <code code="8480-6" displayName="Blood Pressure Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit0"/>
+                                <reference value="#vit1"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="133" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5883,11 +5851,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-19"/>
                               <code code="8462-4" displayName="Blood Pressure Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit1"/>
+                                <reference value="#vit2"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="76" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5896,11 +5865,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-10"/>
                               <code code="8867-4" displayName="Heart Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit2"/>
+                                <reference value="#vit3"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="86" unit="/min"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5909,11 +5879,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-5"/>
                               <code code="9279-1" displayName="Respiratory Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit3"/>
+                                <reference value="#vit4"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="29" unit="/min"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5922,11 +5893,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-15"/>
                               <code code="8310-5" displayName="Body Temperature" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit4"/>
+                                <reference value="#vit5"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="98.6" unit="[degF]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5935,11 +5907,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-2"/>
                               <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit5"/>
+                                <reference value="#vit6"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="66" unit="[in_us]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5948,11 +5921,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-1"/>
                               <code code="3141-9" displayName="Weight Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit6"/>
+                                <reference value="#vit7"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="160" unit="[lb_av]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5961,11 +5935,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-8"/>
                               <code code="39156-5" displayName="BMI (Body Mass Index)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit7"/>
+                                <reference value="#vit8"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="25.8" unit="kg/m2"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5974,11 +5949,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-9"/>
                               <code code="3140-1" displayName="BSA (Body Surface Area)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit8"/>
+                                <reference value="#vit9"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="1.82" unit="m2"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5987,11 +5963,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-18"/>
                               <code code="8480-6" displayName="Blood Pressure Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit9"/>
+                                <reference value="#vit10"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071005100600"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="131" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6000,11 +5977,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-19"/>
                               <code code="8462-4" displayName="Blood Pressure Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit10"/>
+                                <reference value="#vit11"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071005100600"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="75" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6013,11 +5991,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-10"/>
                               <code code="8867-4" displayName="Heart Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit11"/>
+                                <reference value="#vit12"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071005100600"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="82" unit="/min"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6026,11 +6005,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-5"/>
                               <code code="9279-1" displayName="Respiratory Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit12"/>
+                                <reference value="#vit13"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071005100600"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="30" unit="/min"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6039,11 +6019,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-15"/>
                               <code code="8310-5" displayName="Body Temperature" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit13"/>
+                                <reference value="#vit14"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071005100600"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="98.6" unit="[degF]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6052,11 +6033,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-2"/>
                               <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit14"/>
+                                <reference value="#vit15"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071005100600"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="66" unit="[in_us]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6065,11 +6047,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-1"/>
                               <code code="3141-9" displayName="Weight Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit15"/>
+                                <reference value="#vit16"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071005100600"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="160" unit="[lb_av]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6078,11 +6061,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-8"/>
                               <code code="39156-5" displayName="BMI (Body Mass Index)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit16"/>
+                                <reference value="#vit17"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071005100600"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="25.8" unit="kg/m2"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6091,11 +6075,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-9"/>
                               <code code="3140-1" displayName="BSA (Body Surface Area)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit17"/>
+                                <reference value="#vit18"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071005100600"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="1.82" unit="m2"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6104,11 +6089,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-18"/>
                               <code code="8480-6" displayName="Blood Pressure Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit18"/>
+                                <reference value="#vit19"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20070903100500"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="130" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6117,11 +6103,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-19"/>
                               <code code="8462-4" displayName="Blood Pressure Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit19"/>
+                                <reference value="#vit20"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20070903100500"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="76" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6130,11 +6117,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-10"/>
                               <code code="8867-4" displayName="Heart Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit20"/>
+                                <reference value="#vit21"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20070903100500"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="82" unit="/min"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6143,11 +6131,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-5"/>
                               <code code="9279-1" displayName="Respiratory Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit21"/>
+                                <reference value="#vit22"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20070903100500"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="30" unit="/min"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6156,11 +6145,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-15"/>
                               <code code="8310-5" displayName="Body Temperature" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit22"/>
+                                <reference value="#vit23"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20070903100500"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="98.6" unit="[degF]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6169,11 +6159,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-2"/>
                               <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit23"/>
+                                <reference value="#vit24"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20070903100500"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="66" unit="[in_us]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6182,11 +6173,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-1"/>
                               <code code="3141-9" displayName="Weight Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit24"/>
+                                <reference value="#vit25"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20070903100500"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="166" unit="[lb_av]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6195,11 +6187,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-8"/>
                               <code code="39156-5" displayName="BMI (Body Mass Index)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit25"/>
+                                <reference value="#vit26"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20070903100500"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="26.8" unit="kg/m2"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6208,11 +6201,12 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-9"/>
                               <code code="3140-1" displayName="BSA (Body Surface Area)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit26"/>
+                                <reference value="#vit27"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20070903100500"/>
+                              <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="1.85" unit="m2"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                         </organizer>
