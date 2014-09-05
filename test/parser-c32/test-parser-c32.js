@@ -29,13 +29,14 @@ describe('Parser C32 Support Testing', function () {
 
         var result = bb.parseString(xmlfile);
 
+        console.log(JSON.stringify(result.data.allergies, null, 10));
+
         expect(result.data.allergies.length).to.equal(10);
         expect(result.data.vitals.length).to.equal(2);
         expect(result.data.results.length).to.equal(2);
         expect(result.data.problems.length).to.equal(10);
         expect(result.data.demographics).to.exist;
 
-        console.log(JSON.stringify(result.data.procedures, null, 10));
         done();
 
     });
