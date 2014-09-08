@@ -27,7 +27,6 @@
     },
     "additionalProperties": false,
     "required": [
-        "first",
         "last"
     ]
 }
