@@ -44,6 +44,11 @@
                     "type": "primary home"
                 }
             ],
+            "email": [
+                {
+                    "address": "isabella@amida.com"
+                }
+            ],
             "race_ethnicity": "White",
             "languages": [
                 {
@@ -110,9 +115,6 @@
                         "precision": "day"
                     }
                 },
-                "interpretations": [
-                    "Normal"
-                ],
                 "value": 160,
                 "unit": "[lb_av]"
             },
@@ -135,9 +137,6 @@
                         "precision": "day"
                     }
                 },
-                "interpretations": [
-                    "Normal"
-                ],
                 "value": 120,
                 "unit": "mm[Hg]"
             },
@@ -160,9 +159,6 @@
                         "precision": "day"
                     }
                 },
-                "interpretations": [
-                    "Normal"
-                ],
                 "value": 78,
                 "unit": "mm[Hg]"
             },
@@ -185,11 +181,8 @@
                         "precision": "day"
                     }
                 },
-                "interpretations": [
-                    "Normal"
-                ],
                 "value": 27.5,
-                "unit": "[lb_av]"
+                "unit": "1"
             },
             {
                 "identifiers": [
@@ -206,7 +199,7 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2012-10-02T00:00:00Z",
+                        "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
                 },
@@ -214,7 +207,7 @@
                     "Normal"
                 ],
                 "value": 177,
-                "unit": "mm[Hg]"
+                "unit": "cm"
             },
             {
                 "identifiers": [
@@ -231,7 +224,7 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2012-10-02T00:00:00Z",
+                        "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
                 },
@@ -256,7 +249,7 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2012-10-02T00:00:00Z",
+                        "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
                 },
@@ -264,7 +257,7 @@
                     "Normal"
                 ],
                 "value": 86,
-                "unit": "1"
+                "unit": "kg"
             },
             {
                 "identifiers": [
@@ -280,15 +273,15 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2012-10-02T00:00:00Z",
-                        "precision": "day"
+                        "date": "1999-11-14T15:00:00Z",
+                        "precision": "hour"
                     }
                 },
                 "interpretations": [
                     "Normal"
                 ],
                 "value": 132,
-                "unit": "cm"
+                "unit": "mm[Hg]"
             },
             {
                 "identifiers": [
@@ -313,7 +306,7 @@
                     "Normal"
                 ],
                 "value": 145,
-                "unit": "[lb_av]"
+                "unit": "mm[Hg]"
             },
             {
                 "identifiers": [
@@ -330,7 +323,7 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2000-04-07T00:00:00Z",
+                        "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
                 },
@@ -338,7 +331,7 @@
                     "Normal"
                 ],
                 "value": 86,
-                "unit": "mm[Hg]"
+                "unit": "kg"
             },
             {
                 "identifiers": [
@@ -355,8 +348,8 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2000-04-07T00:00:00Z",
-                        "precision": "day"
+                        "date": "1999-11-14T15:00:00Z",
+                        "precision": "hour"
                     }
                 },
                 "interpretations": [
@@ -388,7 +381,7 @@
                     "Normal"
                 ],
                 "value": 177,
-                "unit": "1"
+                "unit": "cm"
             }
         ],
         "results": [
@@ -2683,7 +2676,7 @@
         ]
     },
     "meta": {
-        "version": "1.1.0",
+        "version": "1.2.0-beta.0",
         "identifiers": [
             {
                 "identifier": "2.16.840.1.113883.19.5.99999.1",
