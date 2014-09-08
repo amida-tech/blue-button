@@ -24,6 +24,7 @@
         <country>US</country>
       </addr>
       <telecom value="tel:(816)276-6909" use="HP"/>
+      <telecom value="mailto:isabella@amida.com"/>
       <patient>
         <name use="L">
           <given>Isabella</given>
@@ -35,7 +36,6 @@
         <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
         <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="HL7 Religious Affiliation" codeSystemName="HL7 Religious Affiliation"/>
         <raceCode code="2106-3" displayName="White" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
-        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <guardian>
           <code code="PRN" displayName="Parent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
           <addr use="HP">
@@ -70,18 +70,6 @@
           <preferenceInd value="true"/>
         </languageCommunication>
       </patient>
-      <providerOrganization>
-        <id root="2.16.840.1.113883.4.6"/>
-        <name>Community Health and Hospitals</name>
-        <telecom use="WP" value="tel: 555-555-5000"/>
-        <addr>
-          <streetAddressLine>1001 Village Avenue</streetAddressLine>
-          <city>Portland</city>
-          <state>OR</state>
-          <postalCode>99123</postalCode>
-          <country>US</country>
-        </addr>
-      </providerOrganization>
     </patientRole>
   </recordTarget>
   <component>
@@ -2306,12 +2294,11 @@
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
                               <code code="3141-9" displayName="Weight" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit1"/>
+                                <reference value="#vit0"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20121002"/>
                               <value xsi:type="PQ" value="160" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -2320,12 +2307,11 @@
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900029181"/>
                               <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit3"/>
+                                <reference value="#vit1"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20121002"/>
                               <value xsi:type="PQ" value="120" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -2334,12 +2320,11 @@
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002928"/>
                               <code code="8462-4" displayName="BP Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit5"/>
+                                <reference value="#vit2"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20121002"/>
                               <value xsi:type="PQ" value="78" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -2348,68 +2333,11 @@
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
                               <code code="3141-9" displayName="Weight" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit7"/>
+                                <reference value="#vit3"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20121002"/>
-                              <value xsi:type="PQ" value="27.5" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-                            </observation>
-                          </component>
-                          <component>
-                            <observation classCode="OBS" moodCode="EVN">
-                              <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900029181"/>
-                              <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                              <text>
-                                <reference value="#vit9"/>
-                              </text>
-                              <statusCode code="completed"/>
-                              <effectiveTime value="20121002"/>
-                              <value xsi:type="PQ" value="177" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-                            </observation>
-                          </component>
-                          <component>
-                            <observation classCode="OBS" moodCode="EVN">
-                              <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002928"/>
-                              <code code="8462-4" displayName="BP Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                              <text>
-                                <reference value="#vit11"/>
-                              </text>
-                              <statusCode code="completed"/>
-                              <effectiveTime value="20121002"/>
-                              <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-                            </observation>
-                          </component>
-                          <component>
-                            <observation classCode="OBS" moodCode="EVN">
-                              <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002939"/>
-                              <code code="39156-5" displayName="Body Mass Index Calculated" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                              <text>
-                                <reference value="#vit13"/>
-                              </text>
-                              <statusCode code="completed"/>
-                              <effectiveTime value="20121002"/>
-                              <value xsi:type="PQ" value="86" unit="1"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-                            </observation>
-                          </component>
-                          <component>
-                            <observation classCode="OBS" moodCode="EVN">
-                              <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-                              <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-                              <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                              <text>
-                                <reference value="#vit15"/>
-                              </text>
-                              <statusCode code="completed"/>
-                              <effectiveTime value="20121002"/>
-                              <value xsi:type="PQ" value="132" unit="cm"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <value xsi:type="PQ" value="27.5" unit="1"/>
                             </observation>
                           </component>
                         </organizer>
@@ -2420,19 +2348,19 @@
                           <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
                           <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
                           <statusCode code="completed"/>
-                          <effectiveTime value="20000407"/>
+                          <effectiveTime value="19991114"/>
                           <component>
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
                               <code code="3141-9" displayName="Weight" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit2"/>
+                                <reference value="#vit4"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20000407"/>
-                              <value xsi:type="PQ" value="145" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <effectiveTime value="19991114"/>
+                              <value xsi:type="PQ" value="177" unit="cm"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                           <component>
@@ -2441,12 +2369,12 @@
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900029181"/>
                               <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit4"/>
+                                <reference value="#vit5"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20000407"/>
-                              <value xsi:type="PQ" value="86" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                           <component>
@@ -2458,9 +2386,9 @@
                                 <reference value="#vit6"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20000407"/>
-                              <value xsi:type="PQ" value="132" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <effectiveTime value="19991114"/>
+                              <value xsi:type="PQ" value="86" unit="kg"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                           <component>
@@ -2469,12 +2397,77 @@
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
                               <code code="3141-9" displayName="Weight" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
+                                <reference value="#vit7"/>
+                              </text>
+                              <statusCode code="completed"/>
+                              <effectiveTime value="1999111415"/>
+                              <value xsi:type="PQ" value="132" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
+                            </observation>
+                          </component>
+                          <component>
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900029181"/>
+                              <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                              <text>
                                 <reference value="#vit8"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20000407"/>
-                              <value xsi:type="PQ" value="177" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
+                            </observation>
+                          </component>
+                        </organizer>
+                      </entry>
+                      <entry typeCode="DRIV">
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+                          <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
+                          <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+                          <statusCode code="completed"/>
+                          <effectiveTime value="19991114"/>
+                          <component>
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
+                              <code code="3141-9" displayName="Weight" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                              <text>
+                                <reference value="#vit5"/>
+                              </text>
+                              <statusCode code="completed"/>
+                              <effectiveTime value="20000407"/>
+                              <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
+                            </observation>
+                          </component>
+                          <component>
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900029181"/>
+                              <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                              <text>
+                                <reference value="#vit6"/>
+                              </text>
+                              <statusCode code="completed"/>
+                              <effectiveTime value="19991114"/>
+                              <value xsi:type="PQ" value="86" unit="kg"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
+                            </observation>
+                          </component>
+                          <component>
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002928"/>
+                              <code code="8462-4" displayName="BP Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                              <text>
+                                <reference value="#vit7"/>
+                              </text>
+                              <statusCode code="completed"/>
+                              <effectiveTime value="1999111415"/>
+                              <value xsi:type="PQ" value="132" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                         </organizer>
