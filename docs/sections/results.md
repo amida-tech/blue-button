@@ -52,6 +52,9 @@
                     "value": {
                         "type": "number"
                     },
+                    "text": {
+                        "type": "string"
+                    },
                     "reference_range": {
                         "type": "object",
                         "properties": {
@@ -148,6 +151,12 @@
 - //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/value@unit
 - Reference 2.28 of CDA spec for PQ style.  All I've seen so far.
 - Optional, but results are largely worthless without it.
+
+####Result_set.results.text
+- 0..1
+- //ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/observation/text
+- Amended as freetext alternative to value/units pairing; this is possible in C32 data.
+
 
 ####Result_set.results.reference_range
 - 0..1
