@@ -35,7 +35,6 @@
         <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
         <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="HL7 Religious Affiliation" codeSystemName="HL7 Religious Affiliation"/>
         <raceCode code="2106-3" displayName="White" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
-        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <guardian>
           <code code="PRN" displayName="Parent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
           <addr use="HP">
@@ -70,18 +69,6 @@
           <preferenceInd value="true"/>
         </languageCommunication>
       </patient>
-      <providerOrganization>
-        <id root="2.16.840.1.113883.4.6"/>
-        <name>Community Health and Hospitals</name>
-        <telecom use="WP" value="tel: 555-555-5000"/>
-        <addr>
-          <streetAddressLine>1001 Village Avenue</streetAddressLine>
-          <city>Portland</city>
-          <state>OR</state>
-          <postalCode>99123</postalCode>
-          <country>US</country>
-        </addr>
-      </providerOrganization>
     </patientRole>
   </recordTarget>
   <component>
@@ -1485,12 +1472,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit1"/>
+                            <reference value="#vit0"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="19991114"/>
                           <value xsi:type="PQ" value="177" unit="cm"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                       <component>
@@ -1499,12 +1486,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="3141-9" displayName="Patient Body Weight - Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit3"/>
+                            <reference value="#vit1"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="19991114"/>
                           <value xsi:type="PQ" value="86" unit="kg"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                       <component>
@@ -1513,12 +1500,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit5"/>
+                            <reference value="#vit2"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="19991114"/>
                           <value xsi:type="PQ" value="132" unit="mm[Hg]"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                     </organizer>
@@ -1536,12 +1523,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit2"/>
+                            <reference value="#vit3"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20000407"/>
                           <value xsi:type="PQ" value="177" unit="cm"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                       <component>
@@ -1555,7 +1542,7 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20000407"/>
                           <value xsi:type="PQ" value="88" unit="kg"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                       <component>
@@ -1564,12 +1551,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit6"/>
+                            <reference value="#vit5"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20000407"/>
                           <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                     </organizer>
