@@ -154,6 +154,9 @@
                         },
                         "name": {
                             "$ref": "http://local.com/common_models#/properties/cda_name"
+                        },
+                        "organization": {
+                            "$ref": "http://local.com/common_models#/properties/cda_organization"  
                         }
                     },
                     "additionalProperties": false
