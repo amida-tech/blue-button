@@ -12,7 +12,7 @@ describe('Parser C32 Support Testing', function () {
         done();
     });
 
-    it('C32 Allergies Demo File Check Sense', function (done) {
+    it('C32 Demo File Check Sense', function (done) {
 
         var senseResult = bb.senseString(xmlfile);
 
@@ -26,7 +26,7 @@ describe('Parser C32 Support Testing', function () {
 
     });
 
-    it('C32 Allergies Demo File Check Allergies', function (done) {
+    it('C32 Demo File Check Sections', function (done) {
 
         var result = bb.parseString(xmlfile);
 
