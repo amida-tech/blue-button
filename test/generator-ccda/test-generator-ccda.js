@@ -80,4 +80,36 @@ describe('parse generate parse generate', function () {
 
         assert.deepEqual(result2.data, result.data);
     });
+
+    it('cms_sample.xml should not crash', function () {
+        var data = fs.readFileSync("./test/fixtures/generator-ccda/cms_sample.txt").toString();
+
+        //convert string into JSON 
+        var result = bb.parseText(data);
+
+        // write generated json
+        fs.writeFileSync(path.join(generatedDir, "cms_sample_generated.json"), JSON.stringify(result, null, 4));
+
+        // check validation
+        var val = bb.validator.validateDocumentModel(result);
+
+        // generate ccda
+        var xml = bb.generateCCDA(result).toString();
+        // write ccda
+        fs.writeFileSync(path.join(generatedDir, "cms_sample_generated.xml"), xml);
+
+        // parse generated ccda
+        var result2 = bb.parseString(xml);
+        // write the parsed json from the generated ccda
+        fs.writeFileSync(path.join(generatedDir, "cms_sample_generated_2.json"), JSON.stringify(result2, null, 4));
+
+        // re-generate
+        var xml2 = bb.generateCCDA(result2).toString();
+        fs.writeFileSync(path.join(generatedDir, "cms_sample_generated_2.xml"), xml2);
+
+        delete result.errors;
+        delete result2.errors;
+
+        //assert.deepEqual(result2.data, result.data);
+    });
 });
