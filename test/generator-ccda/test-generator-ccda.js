@@ -26,6 +26,8 @@ describe('parse generate parse generate', function () {
 
         // check validation
         var val = bb.validator.validateDocumentModel(result);
+        var err = bb.validator.getLastError();
+        expect(err.valid).to.be.true;
 
         // generate ccda
         var xml = bb.generateCCDA(result).toString();
@@ -34,6 +36,9 @@ describe('parse generate parse generate', function () {
 
         // parse generated ccda
         var result2 = bb.parseString(xml);
+        var err2 = bb.validator.getLastError();
+        expect(err2.valid).to.be.true;
+
         // write the parsed json from the generated ccda
         fs.writeFileSync(path.join(generatedDir, "CCD_1_generated_2.json"), JSON.stringify(result2, null, 4));
 
@@ -78,7 +83,7 @@ describe('parse generate parse generate', function () {
         delete result.data.social_history;
         delete result2.data.social_history; // To be fixed.
 
-        assert.deepEqual(result2.data, result.data);
+        assert.deepEqual(result2, result);
     });
 
     it('cms_sample.xml should not crash', function () {
