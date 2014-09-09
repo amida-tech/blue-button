@@ -20,6 +20,8 @@ describe('parser.js', function () {
         var result = bb.parseText(txtfile);
         expect(result).to.exist;
 
+        //console.log(JSON.stringify(result.data.payers, null, 10));
+
         val = bb.validator.validateDocumentModel(result);
 
         var err = bb.validator.getLastError();
