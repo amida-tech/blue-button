@@ -13,8 +13,8 @@ console.log(info);
 
 //parse CMS data
 
-var data = bb.parseText2(data);
-//var data = bb.parseText(data);
+
+var data = bb.parseText(data);
 
 //console.log(JSON.stringify(data.interim,null,4));
 //console.log(JSON.stringify(data.data.demographics,null,4));

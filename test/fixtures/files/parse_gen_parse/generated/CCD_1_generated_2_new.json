@@ -44,6 +44,11 @@
                     "type": "primary home"
                 }
             ],
+            "email": [
+                {
+                    "address": "isabella@amida.com"
+                }
+            ],
             "race_ethnicity": "White",
             "languages": [
                 {
@@ -96,6 +101,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "1166602190002918"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "1166602190003518"
                     }
                 ],
                 "vital": {
@@ -110,9 +119,6 @@
                         "precision": "day"
                     }
                 },
-                "interpretations": [
-                    "Normal"
-                ],
                 "value": 160,
                 "unit": "[lb_av]"
             },
@@ -121,6 +127,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "11666021900029181"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "11666021900035181"
                     }
                 ],
                 "vital": {
@@ -135,9 +145,6 @@
                         "precision": "day"
                     }
                 },
-                "interpretations": [
-                    "Normal"
-                ],
                 "value": 120,
                 "unit": "mm[Hg]"
             },
@@ -146,6 +153,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "1166602190002928"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "1166602190003528"
                     }
                 ],
                 "vital": {
@@ -160,9 +171,6 @@
                         "precision": "day"
                     }
                 },
-                "interpretations": [
-                    "Normal"
-                ],
                 "value": 78,
                 "unit": "mm[Hg]"
             },
@@ -171,6 +179,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "1166602190002918"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "1166602190003518"
                     }
                 ],
                 "vital": {
@@ -185,17 +197,18 @@
                         "precision": "day"
                     }
                 },
-                "interpretations": [
-                    "Normal"
-                ],
                 "value": 27.5,
-                "unit": "[lb_av]"
+                "unit": "1"
             },
             {
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "11666021900029181"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "11666021900035181"
                     }
                 ],
                 "vital": {
@@ -206,7 +219,7 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2012-10-02T00:00:00Z",
+                        "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
                 },
@@ -214,13 +227,17 @@
                     "Normal"
                 ],
                 "value": 177,
-                "unit": "mm[Hg]"
+                "unit": "cm"
             },
             {
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "1166602190002928"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "1166602190003528"
                     }
                 ],
                 "vital": {
@@ -231,7 +248,7 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2012-10-02T00:00:00Z",
+                        "date": "2000-04-07T00:00:00Z",
                         "precision": "day"
                     }
                 },
@@ -246,6 +263,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "1166602190002939"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "1166602190003539"
                     }
                 ],
                 "vital": {
@@ -256,7 +277,7 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2012-10-02T00:00:00Z",
+                        "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
                 },
@@ -264,7 +285,7 @@
                     "Normal"
                 ],
                 "value": 86,
-                "unit": "1"
+                "unit": "kg"
             },
             {
                 "identifiers": [
@@ -280,21 +301,25 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2012-10-02T00:00:00Z",
-                        "precision": "day"
+                        "date": "1999-11-14T15:00:00Z",
+                        "precision": "hour"
                     }
                 },
                 "interpretations": [
                     "Normal"
                 ],
                 "value": 132,
-                "unit": "cm"
+                "unit": "mm[Hg]"
             },
             {
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "1166602190002918"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "1166602190003518"
                     }
                 ],
                 "vital": {
@@ -313,13 +338,17 @@
                     "Normal"
                 ],
                 "value": 145,
-                "unit": "[lb_av]"
+                "unit": "mm[Hg]"
             },
             {
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "11666021900029181"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "11666021900035181"
                     }
                 ],
                 "vital": {
@@ -330,7 +359,7 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2000-04-07T00:00:00Z",
+                        "date": "1999-11-14T00:00:00Z",
                         "precision": "day"
                     }
                 },
@@ -338,13 +367,17 @@
                     "Normal"
                 ],
                 "value": 86,
-                "unit": "mm[Hg]"
+                "unit": "kg"
             },
             {
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "1166602190002928"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "1166602190003528"
                     }
                 ],
                 "vital": {
@@ -355,8 +388,8 @@
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "2000-04-07T00:00:00Z",
-                        "precision": "day"
+                        "date": "1999-11-14T15:00:00Z",
+                        "precision": "hour"
                     }
                 },
                 "interpretations": [
@@ -370,6 +403,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
                         "extension": "1166602190002939"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "1166602190003539"
                     }
                 ],
                 "vital": {
@@ -388,7 +425,7 @@
                     "Normal"
                 ],
                 "value": 177,
-                "unit": "1"
+                "unit": "cm"
             }
         ],
         "results": [
@@ -922,6 +959,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
                         "extension": "6591225000051"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
+                        "extension": "6591225000071"
                     }
                 ],
                 "status": "Prescribed",
@@ -958,6 +999,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
                         "extension": "659122500005"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.9",
+                        "extension": "659122500007"
                     }
                 ],
                 "status": "Prescribed",
@@ -1015,7 +1060,7 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
-                    "code_system_name": "OID CPT",
+                    "code_system_name": "CPT",
                     "translations": [
                         {
                             "name": "Ambulatory",
@@ -1057,7 +1102,7 @@
                         "location_type": {
                             "name": "Urgent Care Center",
                             "code": "1160-1",
-                            "code_system_name": "OID HealthcareServiceLocation"
+                            "code_system_name": "HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1098,7 +1143,7 @@
                 "encounter": {
                     "name": "UNK",
                     "code": "99231",
-                    "code_system_name": "OID CPT"
+                    "code_system_name": "CPT"
                 },
                 "identifiers": [
                     {
@@ -1156,7 +1201,7 @@
                         "location_type": {
                             "name": "Inpatient Medical/Surgical Ward",
                             "code": "1061-1",
-                            "code_system_name": "OID HealthcareServiceLocation"
+                            "code_system_name": "HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1182,7 +1227,7 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
-                    "code_system_name": "OID CPT",
+                    "code_system_name": "CPT",
                     "translations": [
                         {
                             "name": "Ambulatory",
@@ -1224,7 +1269,7 @@
                         "location_type": {
                             "name": "Urgent Care Center",
                             "code": "1160-1",
-                            "code_system_name": "OID HealthcareServiceLocation"
+                            "code_system_name": "HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1265,7 +1310,7 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
-                    "code_system_name": "OID CPT",
+                    "code_system_name": "CPT",
                     "translations": [
                         {
                             "name": "Ambulatory",
@@ -1307,7 +1352,7 @@
                         "location_type": {
                             "name": "Urgent Care Center",
                             "code": "1160-1",
-                            "code_system_name": "OID HealthcareServiceLocation"
+                            "code_system_name": "HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1394,7 +1439,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "OID Observation Interpretation"
+                            "code_system_name": "Observation Interpretation"
                         }
                     }
                 }
@@ -1464,7 +1509,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID Observation Interpretation"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -1478,7 +1523,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "OID Observation Interpretation"
+                            "code_system_name": "Observation Interpretation"
                         }
                     }
                 }
@@ -1504,7 +1549,7 @@
                     "allergen": {
                         "name": "Eggs",
                         "code": "291P45F896",
-                        "code_system_name": "OID UNII",
+                        "code_system_name": "UNII",
                         "translations": [
                             {
                                 "name": "Allergy to eggs",
@@ -1549,7 +1594,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID Observation Interpretation"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -1615,7 +1660,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID Observation Interpretation"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -1700,7 +1745,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID Observation Interpretation"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -1714,7 +1759,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "OID Observation Interpretation"
+                            "code_system_name": "Observation Interpretation"
                         }
                     }
                 }
@@ -2271,6 +2316,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
                         "extension": "615028800003"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.2.1",
+                        "extension": "659935200001"
                     }
                 ],
                 "negation_indicator": false,
@@ -2294,6 +2343,10 @@
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
                         "extension": "615028800003"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1",
+                        "extension": "659935200001"
                     }
                 ]
             },
@@ -2413,7 +2466,7 @@
                         "location_type": {
                             "name": "Gastroenterology Clinic",
                             "code": "1118-9",
-                            "code_system_name": "OID HealthcareServiceLocation"
+                            "code_system_name": "HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -2601,7 +2654,7 @@
                         "location_type": {
                             "name": "Gastroenterology Clinic",
                             "code": "1118-9",
-                            "code_system_name": "OID HealthcareServiceLocation"
+                            "code_system_name": "HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -2683,13 +2736,7 @@
         ]
     },
     "meta": {
-        "version": "1.1.0",
-        "identifiers": [
-            {
-                "identifier": "2.16.840.1.113883.19.5.99999.1",
-                "extension": "TT988"
-            }
-        ],
+        "version": "1.2.0-beta.1",
         "sections": [
             "demographics",
             "vitals",
@@ -2704,6 +2751,7 @@
         ]
     },
     "errors": [
+        "nullFlavor alert:  missing but required identifier in Identifier -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required results in ResultsOrganizer -> resultsSection -> CCD",
@@ -2731,8 +2779,6 @@
         "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
@@ -2744,8 +2790,6 @@
         "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> Prescription -> medicationsSection -> CCD",
@@ -2764,8 +2808,6 @@
         "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> Prescription -> medicationsSection -> CCD",
@@ -2784,8 +2826,6 @@
         "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> CCD",
@@ -2850,7 +2890,6 @@
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",

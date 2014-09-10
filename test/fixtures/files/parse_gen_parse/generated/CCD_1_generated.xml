@@ -4,7 +4,7 @@
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
-  <id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
+  <id root="2.16.840.1.113883.19.5.99999.1" extension="TT988"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9" displayName="Summarization of Episode Note"/>
   <title>Community Health and Hospitals: Health Summary</title>
   <effectiveTime value="TODO"/>
@@ -14,8 +14,8 @@
   <versionNumber value="1"/>
   <recordTarget>
     <patientRole>
-      <id extension="998991" root="2.16.840.1.113883.19.5.99999.2"/>
-      <id extension="111-00-2330" root="2.16.840.1.113883.4.1"/>
+      <id root="2.16.840.1.113883.19.5.99999.2" extension="998991"/>
+      <id root="2.16.840.1.113883.4.1" extension="111-00-2330"/>
       <addr use="HP">
         <streetAddressLine>1357 Amber Drive</streetAddressLine>
         <city>Beaverton</city>
@@ -35,9 +35,8 @@
         <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
         <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="HL7 Religious Affiliation" codeSystemName="HL7 Religious Affiliation"/>
         <raceCode code="2106-3" displayName="White" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
-        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <guardian>
-          <code code="PRN" displayName="Parent" codeSystem="HL7 Role" codeSystemName="HL7 Role"/>
+          <code code="PRN" displayName="Parent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
           <addr use="HP">
             <streetAddressLine>1357 Amber Drive</streetAddressLine>
             <city>Beaverton</city>
@@ -70,18 +69,6 @@
           <preferenceInd value="true"/>
         </languageCommunication>
       </patient>
-      <providerOrganization>
-        <id root="2.16.840.1.113883.4.6"/>
-        <name>Community Health and Hospitals</name>
-        <telecom use="WP" value="tel: 555-555-5000"/>
-        <addr>
-          <streetAddressLine>1001 Village Avenue</streetAddressLine>
-          <city>Portland</city>
-          <state>OR</state>
-          <postalCode>99123</postalCode>
-          <country>US</country>
-        </addr>
-      </providerOrganization>
     </patientRole>
   </recordTarget>
   <component>
@@ -155,7 +142,7 @@
                           </text>
                           <statusCode code="completed"/>
                           <value code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                          <interpretationCode code="S" displayName="Suceptible" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                          <interpretationCode code="S" displayName="Suceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                         </observation>
                       </entryRelationship>
                     </observation>
@@ -169,7 +156,7 @@
                       </text>
                       <statusCode code="completed"/>
                       <value code="371924009" displayName="Moderate to severe" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                      <interpretationCode code="N" displayName="Normal" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                      <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                     </observation>
                   </entryRelationship>
                 </observation>
@@ -237,7 +224,7 @@
                             </text>
                             <statusCode code="completed"/>
                             <value code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                            <interpretationCode code="S" displayName="Suceptible" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                            <interpretationCode code="S" displayName="Suceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                           </observation>
                         </entryRelationship>
                       </observation>
@@ -251,7 +238,7 @@
                         </text>
                         <statusCode code="completed"/>
                         <value code="6736007" displayName="Moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                        <interpretationCode code="N" displayName="Normal" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                        <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                       </observation>
                     </entryRelationship>
                   </observation>
@@ -319,7 +306,7 @@
                               </text>
                               <statusCode code="completed"/>
                               <value code="371923003" displayName="Mild to moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                              <interpretationCode code="S" displayName="Suceptible" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                              <interpretationCode code="S" displayName="Suceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                             </observation>
                           </entryRelationship>
                         </observation>
@@ -333,7 +320,7 @@
                           </text>
                           <statusCode code="completed"/>
                           <value code="371923003" displayName="Mild to moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                          <interpretationCode code="N" displayName="Normal" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                          <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                         </observation>
                       </entryRelationship>
                     </observation>
@@ -352,7 +339,7 @@
                   <encounter classCode="ENC" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
                     <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-                    <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystem="CPT" codeSystemName="CPT">
+                    <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
                       <translation code="AMB" displayName="Ambulatory" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
                       <originalText>Checkup Examination<reference value="#Encounter1"/></originalText>
                     </code>
@@ -368,7 +355,7 @@
                     <participant typeCode="LOC">
                       <participantRole classCode="SDLOC">
                         <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                        <code code="1160-1" displayName="Urgent Care Center" codeSystem="HealthcareServiceLocation" codeSystemName="HealthcareServiceLocation"/>
+                        <code code="1160-1" displayName="Urgent Care Center" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
                         <addr>
                           <streetAddressLine>17 Daws Rd.</streetAddressLine>
                           <city>Blue Bell</city>
@@ -460,6 +447,7 @@
                     <entryRelationship typeCode="SUBJ" inversionInd="true">
                       <act classCode="ACT" moodCode="INT">
                         <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                        <id nullFlavor="UNK"/>
                         <code code="171044003" displayName="immunization education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                         <text>Possible flu-like symptoms for three days.<reference value="#immunSect"/></text>
                         <statusCode code="completed"/>
@@ -522,6 +510,7 @@
                     <entryRelationship typeCode="SUBJ" inversionInd="true">
                       <act classCode="ACT" moodCode="INT">
                         <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                        <id nullFlavor="UNK"/>
                         <code code="171044003" displayName="immunization education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                         <text>Possible flu-like symptoms for three days.<reference value="#immunSect"/></text>
                         <statusCode code="completed"/>
@@ -637,7 +626,8 @@
                     </performer>
                     <entryRelationship typeCode="RSON" inversionInd="true">
                       <observation classCode="OBS" moodCode="EVN">
-                        <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
+                        <id nullFlavor="UNK"/>
                         <code code="PATOBJ" displayName="Patient objection" codeSystem="Act Reason" codeSystemName="Act Reason"/>
                         <statusCode code="completed"/>
                       </observation>
@@ -727,7 +717,7 @@
                     <entryRelationship typeCode="REFR">
                       <supply classCode="SPLY" moodCode="INT">
                         <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                        <id nullFlavor="NI"/>
+                        <id nullFlavor="UNK"/>
                         <statusCode code="completed"/>
                         <effectiveTime xsi:type="IVL_TS">
                           <low value="20070103"/>
@@ -748,25 +738,10 @@
                             </manufacturerOrganization>
                           </manufacturedProduct>
                         </product>
-                        <performer>
-                          <assignedEntity>
-                            <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                            <addr>
-                              <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                              <city>Portland</city>
-                              <state>OR</state>
-                              <postalCode>99123</postalCode>
-                              <country>US</country>
-                            </addr>
-                            <telecom nullFlavor="UNK"/>
-                          </assignedEntity>
-                        </performer>
                         <author>
                           <time nullFlavor="UNK"/>
                           <assignedAuthor>
                             <id root="2a620155-9d11-439e-92b3-5d9815fe4de8"/>
-                            <addr nullFlavor="UNK"/>
-                            <telecom nullFlavor="UNK"/>
                             <assignedPerson>
                               <name>
                                 <prefix>Dr.</prefix>
@@ -787,8 +762,6 @@
                           <low value="20070103"/>
                           <high value="20120515"/>
                         </effectiveTime>
-                        <repeatNumber value="1"/>
-                        <quantity value="75"/>
                         <product>
                           <manufacturedProduct classCode="MANU">
                             <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -828,7 +801,7 @@
                       <templateId root="2.16.840.1.113883.10.20.22.4.25"/>
                       <criterion>
                         <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
-                        <value xsi:type="CE" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
+                        <value code="56018004" displayName="Wheezing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CE"/>
                       </criterion>
                     </precondition>
                   </substanceAdministration>
@@ -851,12 +824,12 @@
                       <act classCode="ACT" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
                         <id root="3e676a50-7aac-11db-9fe1-0800200c9a66"/>
-                        <code code="SELF" codeSystem="HL7 RoleCode" codeSystemName="HL7 RoleCode"/>
+                        <code code="SELF" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode"/>
                         <statusCode code="completed"/>
                         <performer typeCode="PRF">
                           <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
                           <assignedEntity>
-                            <code code="PAYOR" codeSystem="HL7 RoleCode" codeSystemName="HL7 RoleCode"/>
+                            <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode"/>
                             <id root="2.16.840.1.113883.19"/>
                             <addr use="WP">
                               <streetAddressLine>123 Insurance Road</streetAddressLine>
@@ -883,7 +856,7 @@
                         <performer typeCode="PRF">
                           <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
                           <assignedEntity>
-                            <code code="GUAR" codeSystem="HL7 Role" codeSystemName="HL7 Role"/>
+                            <code code="GUAR" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <id root="329fcdf0-7ab3-11db-9fe1-0800200c9a66"/>
                             <addr use="HP">
                               <streetAddressLine>17 Daws Rd.</streetAddressLine>
@@ -908,7 +881,6 @@
                           <time/>
                           <participantRole classCode="PAT">
                             <id root="14d4a520-7aae-11db-9fe1-0800200c9a66" extension="1138345"/>
-                            <code code="SELF" displayName="Self" codeSystem="HL7 Role" codeSystemName="HL7 Role"/>
                             <addr use="HP">
                               <streetAddressLine>17 Daws Rd.</streetAddressLine>
                               <city>Blue Bell</city>
@@ -916,6 +888,8 @@
                               <postalCode>02368</postalCode>
                               <country>US</country>
                             </addr>
+                            <telecom nullFlavor="UNK"/>
+                            <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <playingEntity>
                               <name>
                                 <prefix>Mr.</prefix>
@@ -1030,7 +1004,6 @@
                       <observation classCode="OBS" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
                         <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
-                        <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
                         <text>
                           <reference value="#problem1"/>
                         </text>
@@ -1093,7 +1066,6 @@
                       <observation classCode="OBS" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
                         <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
-                        <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
                         <text>
                           <reference value="#problem2"/>
                         </text>
@@ -1198,18 +1170,7 @@
                         </representedOrganization>
                       </assignedEntity>
                     </performer>
-                    <participant typeCode="DEV">
-                      <participantRole classCode="MANU">
-                        <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
-                        <id root="742aee30-21c5-11e1-bfc2-0800200c9a66"/>
-                        <playingDevice>
-                          <code code="90412006" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscope"/>
-                        </playingDevice>
-                        <scopingEntity>
-                          <id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
-                        </scopingEntity>
-                      </participantRole>
-                    </participant>
+                    <participant nullFlavor="UNK"/>
                   </procedure>
                 </entry>
                 <entry typeCode="DRIV">
@@ -1249,7 +1210,7 @@
                     <participant typeCode="LOC">
                       <participantRole classCode="SDLOC">
                         <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                        <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="HealthcareServiceLocation" codeSystemName="HealthcareServiceLocation"/>
+                        <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
                         <addr>
                           <streetAddressLine>17 Daws Rd.</streetAddressLine>
                           <city>Blue Bell</city>
@@ -1299,7 +1260,7 @@
                     <participant typeCode="LOC">
                       <participantRole classCode="SDLOC">
                         <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                        <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="HealthcareServiceLocation" codeSystemName="HealthcareServiceLocation"/>
+                        <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
                         <addr>
                           <streetAddressLine>17 Daws Rd.</streetAddressLine>
                           <city>Blue Bell</city>
@@ -1485,12 +1446,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit1"/>
+                            <reference value="#vit0"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="19991114"/>
                           <value xsi:type="PQ" value="177" unit="cm"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                       <component>
@@ -1499,12 +1460,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="3141-9" displayName="Patient Body Weight - Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit3"/>
+                            <reference value="#vit1"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="19991114"/>
                           <value xsi:type="PQ" value="86" unit="kg"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                       <component>
@@ -1513,12 +1474,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit5"/>
+                            <reference value="#vit2"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="19991114"/>
                           <value xsi:type="PQ" value="132" unit="mm[Hg]"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                     </organizer>
@@ -1536,12 +1497,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit2"/>
+                            <reference value="#vit3"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20000407"/>
                           <value xsi:type="PQ" value="177" unit="cm"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                       <component>
@@ -1555,7 +1516,7 @@
                           <statusCode code="completed"/>
                           <effectiveTime value="20000407"/>
                           <value xsi:type="PQ" value="88" unit="kg"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                       <component>
@@ -1564,12 +1525,12 @@
                           <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                           <code code="8480-6" displayName="Intravascular Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                           <text>
-                            <reference value="#vit6"/>
+                            <reference value="#vit5"/>
                           </text>
                           <statusCode code="completed"/>
                           <effectiveTime value="20000407"/>
                           <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                         </observation>
                       </component>
                     </organizer>
