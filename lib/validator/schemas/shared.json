@@ -135,8 +135,7 @@
             },
             "additionalProperties": false,
             "required": [
-                "first",
-                "last"
+                "first"
             ]
         },
         "cda_coded_entry": {
