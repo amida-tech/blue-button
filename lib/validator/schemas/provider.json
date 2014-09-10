@@ -26,7 +26,9 @@
                 "name": {
                     "$ref": "http://local.com/common_models#/properties/cda_name"
                 },
-                "specialty": "string",
+                "specialty": {
+                    "type": "string"
+                },
                 "organization": {
                     "$ref": "http://local.com/common_models#/properties/cda_organization"
                 },
