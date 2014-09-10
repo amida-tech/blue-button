@@ -1,0 +1,1392 @@
+[
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "780"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2012-01-13T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9990058700"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "E"
+                        ],
+                        "last": "Ford",
+                        "suffix": "MD",
+                        "first": "David"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "87 Bayshore Drive"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "596"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2010-03-01T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9990058700"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "E"
+                        ],
+                        "last": "Ford",
+                        "suffix": "MD",
+                        "first": "David"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "87 Bayshore Drive"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "592"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2010-02-23T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9990058700"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "E"
+                        ],
+                        "last": "Ford",
+                        "suffix": "MD",
+                        "first": "David"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "87 Bayshore Drive"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "511"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2009-11-02T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9990058700"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "E"
+                        ],
+                        "last": "Ford",
+                        "suffix": "MD",
+                        "first": "David"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "87 Bayshore Drive"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "115"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2008-01-08T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9990054800"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "E"
+                        ],
+                        "last": "Shah",
+                        "suffix": "MD",
+                        "first": "Depak"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "8620 Palmetto Drive"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "name": "Office - Madison Medical Center, P.A.",
+                "location_type": {
+                    "name": "Provider's Office",
+                    "code": "PROFF",
+                    "code_system_name": "OID HL7 Role"
+                },
+                "address": [
+                    {
+                        "street_lines": [
+                            "34 Sycamore Street, Suite 3"
+                        ],
+                        "city": "Gainesville",
+                        "state": "FL",
+                        "zip": "32608",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7654",
+                        "type": "work place"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "130"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2008-01-08T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9990058700"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "E"
+                        ],
+                        "last": "Ford",
+                        "suffix": "MD",
+                        "first": "David"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "87 Bayshore Drive"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "name": "Office - Madison Medical Center, P.A.",
+                "location_type": {
+                    "name": "Provider's Office",
+                    "code": "PROFF",
+                    "code_system_name": "OID HL7 Role"
+                }
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "289"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2008-01-08T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9990155200"
+                    }
+                ],
+                "name": [
+                    {
+                        "last": "Madder",
+                        "suffix": "MD",
+                        "first": "Gary"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "34 Sycamore Street",
+                            "Suite 3"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "name": "Office - Madison Medical Center, P.A.",
+                "location_type": {
+                    "name": "Provider's Office",
+                    "code": "PROFF",
+                    "code_system_name": "OID HL7 Role"
+                },
+                "address": [
+                    {
+                        "street_lines": [
+                            "34 Sycamore Street, Suite 3"
+                        ],
+                        "city": "Gainesville",
+                        "state": "FL",
+                        "zip": "32608",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7654",
+                        "type": "work place"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "415"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2008-01-03T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9080089000"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "T"
+                        ],
+                        "last": "Monroe",
+                        "suffix": "MD",
+                        "first": "James"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "11554 Weedside Lane"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "name": "Office - Madison Medical Center, P.A.",
+                "location_type": {
+                    "name": "Provider's Office",
+                    "code": "PROFF",
+                    "code_system_name": "OID HL7 Role"
+                },
+                "address": [
+                    {
+                        "street_lines": [
+                            "34 Sycamore Street, Suite 3"
+                        ],
+                        "city": "Gainesville",
+                        "state": "FL",
+                        "zip": "32608",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7654",
+                        "type": "work place"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "112"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2008-01-03T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9080089000"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "T"
+                        ],
+                        "last": "Monroe",
+                        "suffix": "MD",
+                        "first": "James"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "11554 Weedside Lane"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "name": "Office - Madison Medical Center, P.A.",
+                "location_type": {
+                    "name": "Provider's Office",
+                    "code": "PROFF",
+                    "code_system_name": "OID HL7 Role"
+                },
+                "address": [
+                    {
+                        "street_lines": [
+                            "34 Sycamore Street, Suite 3"
+                        ],
+                        "city": "Gainesville",
+                        "state": "FL",
+                        "zip": "32608",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7654",
+                        "type": "work place"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "30"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2007-11-02T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9080089000"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "T"
+                        ],
+                        "last": "Monroe",
+                        "suffix": "MD",
+                        "first": "James"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "11554 Weedside Lane"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "name": "Office - Madison Medical Center, P.A.",
+                "location_type": {
+                    "name": "Provider's Office",
+                    "code": "PROFF",
+                    "code_system_name": "OID HL7 Role"
+                },
+                "address": [
+                    {
+                        "street_lines": [
+                            "34 Sycamore Street, Suite 3"
+                        ],
+                        "city": "Gainesville",
+                        "state": "FL",
+                        "zip": "32608",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7654",
+                        "type": "work place"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "21"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2007-10-05T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9080089000"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "T"
+                        ],
+                        "last": "Monroe",
+                        "suffix": "MD",
+                        "first": "James"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "11554 Weedside Lane"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "name": "Office - Madison Medical Center, P.A.",
+                "location_type": {
+                    "name": "Provider's Office",
+                    "code": "PROFF",
+                    "code_system_name": "OID HL7 Role"
+                },
+                "address": [
+                    {
+                        "street_lines": [
+                            "34 Sycamore Street, Suite 3"
+                        ],
+                        "city": "Gainesville",
+                        "state": "FL",
+                        "zip": "32608",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7654",
+                        "type": "work place"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "20"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2007-09-03T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9080089000"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "T"
+                        ],
+                        "last": "Monroe",
+                        "suffix": "MD",
+                        "first": "James"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "11554 Weedside Lane"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "name": "Office - Madison Medical Center, P.A.",
+                "location_type": {
+                    "name": "Provider's Office",
+                    "code": "PROFF",
+                    "code_system_name": "OID HL7 Role"
+                },
+                "address": [
+                    {
+                        "street_lines": [
+                            "34 Sycamore Street, Suite 3"
+                        ],
+                        "city": "Gainesville",
+                        "state": "FL",
+                        "zip": "32608",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7654",
+                        "type": "work place"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "encounter": {
+            "name": "General",
+            "code": "GENRL",
+            "code_system_name": "HL7ActCode"
+        },
+        "identifiers": [
+            {
+                "identifier": "2.16.840.1.113883.3.140.1.0.6.10.16",
+                "extension": "126"
+            }
+        ],
+        "date_time": {
+            "low": {
+                "date": "2006-06-28T00:00:00Z",
+                "precision": "day"
+            }
+        },
+        "performers": [
+            {
+                "identifiers": [
+                    {
+                        "identifier": "2.16.840.1.113883.4.6",
+                        "extension": "9990058700"
+                    }
+                ],
+                "name": [
+                    {
+                        "middle": [
+                            "E"
+                        ],
+                        "last": "Ford",
+                        "suffix": "MD",
+                        "first": "David"
+                    }
+                ],
+                "address": [
+                    {
+                        "street_lines": [
+                            "87 Bayshore Drive"
+                        ],
+                        "city": "Madison",
+                        "state": "CA",
+                        "zip": "95653",
+                        "country": "US"
+                    }
+                ],
+                "phone": [
+                    {
+                        "number": "+1-916-555-7657",
+                        "type": "work place"
+                    }
+                ],
+                "organization": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "2.16.840.1.113883.3.140.1.0.6",
+                                "extension": "MMC"
+                            }
+                        ],
+                        "name": [
+                            "Madison Medical Center P. A."
+                        ],
+                        "address": [
+                            {
+                                "street_lines": [
+                                    "99 Sycamore Street",
+                                    "Suite 3"
+                                ],
+                                "city": "Gainesville",
+                                "state": "FL",
+                                "zip": "32608",
+                                "country": "US"
+                            }
+                        ],
+                        "phone": [
+                            {
+                                "number": "+1-916-555-7654",
+                                "type": "work place"
+                            },
+                            {
+                                "number": "+1-916-555-7657",
+                                "type": "work place"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "name": "Office - Madison Medical Center, P.A.",
+                "location_type": {
+                    "name": "Provider's Office",
+                    "code": "PROFF",
+                    "code_system_name": "OID HL7 Role"
+                }
+            }
+        ]
+    }
+]

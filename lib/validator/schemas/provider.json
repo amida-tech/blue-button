@@ -35,8 +35,32 @@
                 "$ref": "http://local.com/common_models#/properties/cda_phone"
             }
         },
+<<<<<<< HEAD
         "organization": {
             "$ref": "http://local.com/common_models#/properties/cda_organization"
+=======
+        "person": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "$ref": "http://local.com/common_models#/properties/cda_name"
+                },
+                "specialty": {
+                    "type": "string"
+                },
+                "organization": {
+                    "$ref": "http://local.com/common_models#/properties/cda_organization"
+                },
+                "phone": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_phone"
+                    }
+                },
+                "minProperties": 1
+            },
+            "additionalProperties": false
+>>>>>>> master
         }
     },
     "additionalProperties": false
