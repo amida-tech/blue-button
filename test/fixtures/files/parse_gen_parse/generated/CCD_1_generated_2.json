@@ -2032,6 +2032,8 @@
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "cardinality error: found 2 when expecting 1..1 at h:performer",
+        "nullFlavor alert:  missing but required address in Email -> assignedEntity -> participant -> entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> assignedEntity -> participant -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required code in participant -> entry -> payers_section -> CCD",
         "cardinality error: found 2 when expecting 1..1 at h:entryRelationship/h:act/h:participant"
     ]

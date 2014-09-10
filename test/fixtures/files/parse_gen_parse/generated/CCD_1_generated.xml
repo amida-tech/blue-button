@@ -881,7 +881,6 @@
                           <time/>
                           <participantRole classCode="PAT">
                             <id root="14d4a520-7aae-11db-9fe1-0800200c9a66" extension="1138345"/>
-                            <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr use="HP">
                               <streetAddressLine>17 Daws Rd.</streetAddressLine>
                               <city>Blue Bell</city>
@@ -889,6 +888,8 @@
                               <postalCode>02368</postalCode>
                               <country>US</country>
                             </addr>
+                            <telecom nullFlavor="UNK"/>
+                            <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <playingEntity>
                               <name>
                                 <prefix>Mr.</prefix>

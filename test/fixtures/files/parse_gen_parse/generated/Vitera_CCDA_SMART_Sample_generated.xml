@@ -3139,7 +3139,6 @@
                               </time>
                               <participantRole classCode="PAT">
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.3" extension="643005639"/>
-                                <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                                 <addr>
                                   <streetAddressLine>3456 West Palm</streetAddressLine>
                                   <streetAddressLine>Apt. #34</streetAddressLine>
@@ -3150,6 +3149,7 @@
                                 </addr>
                                 <telecom value="tel:+1-916-555-3293" use="HP"/>
                                 <telecom value="tel:+1-916-555-5544" use="WP"/>
+                                <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                                 <playingEntity>
                                   <name>
                                     <given>Sharon</given>
@@ -3225,7 +3225,6 @@
                               </time>
                               <participantRole classCode="PAT">
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.3" extension="643005639"/>
-                                <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                                 <addr>
                                   <streetAddressLine>3456 West Palm</streetAddressLine>
                                   <streetAddressLine>Apt. #34</streetAddressLine>
@@ -3236,6 +3235,7 @@
                                 </addr>
                                 <telecom value="tel:+1-916-555-3293" use="HP"/>
                                 <telecom value="tel:+1-916-555-5544" use="WP"/>
+                                <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                                 <playingEntity>
                                   <name>
                                     <given>Sharon</given>
