@@ -4,7 +4,7 @@
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
-  <id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
+  <id nullFlavor="UNK"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9" displayName="Summarization of Episode Note"/>
   <title>Community Health and Hospitals: Health Summary</title>
   <effectiveTime value="TODO"/>
@@ -14,8 +14,8 @@
   <versionNumber value="1"/>
   <recordTarget>
     <patientRole>
-      <id extension="998991" root="2.16.840.1.113883.19.5.99999.2"/>
-      <id extension="111-00-2330" root="2.16.840.1.113883.4.1"/>
+      <id root="2.16.840.1.113883.19.5.99999.2" extension="998991"/>
+      <id root="2.16.840.1.113883.4.1" extension="111-00-2330"/>
       <addr use="HP">
         <streetAddressLine>1357 Amber Drive</streetAddressLine>
         <city>Beaverton</city>
@@ -24,6 +24,7 @@
         <country>US</country>
       </addr>
       <telecom value="tel:(816)276-6909" use="HP"/>
+      <telecom value="mailto:isabella@amida.com"/>
       <patient>
         <name use="L">
           <given>Isabella</given>
@@ -35,9 +36,8 @@
         <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
         <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="HL7 Religious Affiliation" codeSystemName="HL7 Religious Affiliation"/>
         <raceCode code="2106-3" displayName="White" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
-        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <guardian>
-          <code code="PRN" displayName="Parent" codeSystem="HL7 Role" codeSystemName="HL7 Role"/>
+          <code code="PRN" displayName="Parent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
           <addr use="HP">
             <streetAddressLine>1357 Amber Drive</streetAddressLine>
             <city>Beaverton</city>
@@ -70,18 +70,6 @@
           <preferenceInd value="true"/>
         </languageCommunication>
       </patient>
-      <providerOrganization>
-        <id root="2.16.840.1.113883.4.6"/>
-        <name>Community Health and Hospitals</name>
-        <telecom use="WP" value="tel: 555-555-5000"/>
-        <addr>
-          <streetAddressLine>1001 Village Avenue</streetAddressLine>
-          <city>Portland</city>
-          <state>OR</state>
-          <postalCode>99123</postalCode>
-          <country>US</country>
-        </addr>
-      </providerOrganization>
     </patientRole>
   </recordTarget>
   <component>
@@ -142,7 +130,7 @@
                       </text>
                       <statusCode code="completed"/>
                       <value code="6736007" displayName="Moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                      <interpretationCode code="N" displayName="Normal" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                      <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                     </observation>
                   </entryRelationship>
                 </observation>
@@ -210,7 +198,7 @@
                             </text>
                             <statusCode code="completed"/>
                             <value code="371923003" displayName="Mild to moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                            <interpretationCode code="S" displayName="Suceptible" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                            <interpretationCode code="S" displayName="Suceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                           </observation>
                         </entryRelationship>
                       </observation>
@@ -224,7 +212,7 @@
                         </text>
                         <statusCode code="completed"/>
                         <value code="371923003" displayName="Mild to moderate" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                        <interpretationCode code="N" displayName="Normal" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                        <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                       </observation>
                     </entryRelationship>
                   </observation>
@@ -253,7 +241,7 @@
                       <participant typeCode="CSM">
                         <participantRole classCode="MANU">
                           <playingEntity classCode="MMAT">
-                            <code code="291P45F896" displayName="Eggs" codeSystem="UNII" codeSystemName="UNII">
+                            <code code="291P45F896" displayName="Eggs" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
                               <translation code="V15.03" displayName="Allergy to eggs" codeSystem="2.16.840.1.113883.6.2" codeSystemName="OID 2.16.840.1.113883.6.2"/>
                               <originalText>
                                 <reference value="#reaction3"/>
@@ -292,7 +280,7 @@
                               </text>
                               <statusCode code="completed"/>
                               <value code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                              <interpretationCode code="S" displayName="Suceptible" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                              <interpretationCode code="S" displayName="Suceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                             </observation>
                           </entryRelationship>
                         </observation>
@@ -372,7 +360,7 @@
                                 </text>
                                 <statusCode code="completed"/>
                                 <value code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                                <interpretationCode code="S" displayName="Suceptible" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                                <interpretationCode code="S" displayName="Suceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                               </observation>
                             </entryRelationship>
                           </observation>
@@ -477,7 +465,7 @@
                                   </text>
                                   <statusCode code="completed"/>
                                   <value code="255604002" displayName="Mild" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                                  <interpretationCode code="S" displayName="Suceptible" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                                  <interpretationCode code="S" displayName="Suceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                                 </observation>
                               </entryRelationship>
                             </observation>
@@ -491,7 +479,7 @@
                               </text>
                               <statusCode code="completed"/>
                               <value code="371924009" displayName="Moderate to severe" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"/>
-                              <interpretationCode code="N" displayName="Normal" codeSystem="Observation Interpretation" codeSystemName="Observation Interpretation"/>
+                              <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
                             </observation>
                           </entryRelationship>
                         </observation>
@@ -510,7 +498,7 @@
                       <encounter classCode="ENC" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
                         <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-                        <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystem="CPT" codeSystemName="CPT">
+                        <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
                           <translation code="AMB" displayName="Ambulatory" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
                           <originalText>Checkup Examination<reference value="#Encounter1"/></originalText>
                         </code>
@@ -526,7 +514,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="1160-1" displayName="Urgent Care Center" codeSystem="HealthcareServiceLocation" codeSystemName="HealthcareServiceLocation"/>
+                            <code code="1160-1" displayName="Urgent Care Center" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
                             <addr>
                               <streetAddressLine>17 Daws Rd.</streetAddressLine>
                               <city>Blue Bell</city>
@@ -558,7 +546,7 @@
                       <encounter classCode="ENC" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
                         <id root="1.3.6.1.4.1.22812.3.99930.3.3.4" extension="5283815"/>
-                        <code code="99231" displayName="UNK" codeSystem="CPT" codeSystemName="CPT">
+                        <code code="99231" displayName="UNK" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
                           <originalText>Checkup Examination<reference value="#Encounter2"/></originalText>
                         </code>
                         <effectiveTime>
@@ -589,7 +577,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="1061-1" displayName="Inpatient Medical/Surgical Ward" codeSystem="HealthcareServiceLocation" codeSystemName="HealthcareServiceLocation"/>
+                            <code code="1061-1" displayName="Inpatient Medical/Surgical Ward" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
                             <addr>
                               <streetAddressLine>1000 Hospital Way</streetAddressLine>
                               <city>Portland</city>
@@ -609,7 +597,7 @@
                       <encounter classCode="ENC" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
                         <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-                        <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystem="CPT" codeSystemName="CPT">
+                        <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
                           <translation code="AMB" displayName="Ambulatory" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
                           <originalText>Checkup Examination<reference value="#Encounter3"/></originalText>
                         </code>
@@ -625,7 +613,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="1160-1" displayName="Urgent Care Center" codeSystem="HealthcareServiceLocation" codeSystemName="HealthcareServiceLocation"/>
+                            <code code="1160-1" displayName="Urgent Care Center" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
                             <addr>
                               <streetAddressLine>17 Daws Rd.</streetAddressLine>
                               <city>Blue Bell</city>
@@ -657,7 +645,7 @@
                       <encounter classCode="ENC" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
                         <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-                        <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystem="CPT" codeSystemName="CPT">
+                        <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
                           <translation code="AMB" displayName="Ambulatory" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
                           <originalText>Checkup Examination<reference value="#Encounter4"/></originalText>
                         </code>
@@ -673,7 +661,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="1160-1" displayName="Urgent Care Center" codeSystem="HealthcareServiceLocation" codeSystemName="HealthcareServiceLocation"/>
+                            <code code="1160-1" displayName="Urgent Care Center" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
                             <addr>
                               <streetAddressLine>17 Daws Rd.</streetAddressLine>
                               <city>Blue Bell</city>
@@ -765,6 +753,7 @@
                         <entryRelationship typeCode="SUBJ" inversionInd="true">
                           <act classCode="ACT" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                            <id nullFlavor="UNK"/>
                             <code code="171044003" displayName="immunization education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                             <text>Possible flu-like symptoms for three days.<reference value="#immunSect"/></text>
                             <statusCode code="completed"/>
@@ -827,6 +816,7 @@
                         <entryRelationship typeCode="SUBJ" inversionInd="true">
                           <act classCode="ACT" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                            <id nullFlavor="UNK"/>
                             <code code="171044003" displayName="immunization education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                             <text>Possible flu-like symptoms for three days.<reference value="#immunSect"/></text>
                             <statusCode code="completed"/>
@@ -942,7 +932,8 @@
                         </performer>
                         <entryRelationship typeCode="RSON" inversionInd="true">
                           <observation classCode="OBS" moodCode="EVN">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
+                            <id nullFlavor="UNK"/>
                             <code code="PATOBJ" displayName="Patient objection" codeSystem="Act Reason" codeSystemName="Act Reason"/>
                             <statusCode code="completed"/>
                           </observation>
@@ -997,6 +988,7 @@
                         <entryRelationship typeCode="SUBJ" inversionInd="true">
                           <act classCode="ACT" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                            <id nullFlavor="UNK"/>
                             <code code="48767-8" displayName="Annotation Comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                             <statusCode code="completed"/>
                           </act>
@@ -1086,7 +1078,7 @@
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <effectiveTime xsi:type="IVL_TS">
                               <low value="20070103"/>
@@ -1107,25 +1099,10 @@
                                 </manufacturerOrganization>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time nullFlavor="UNK"/>
                               <assignedAuthor>
                                 <id root="2a620155-9d11-439e-92b3-5d9815fe4de8"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <prefix>Dr.</prefix>
@@ -1146,8 +1123,6 @@
                               <low value="20070103"/>
                               <high value="20120515"/>
                             </effectiveTime>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1187,7 +1162,7 @@
                           <templateId root="2.16.840.1.113883.10.20.22.4.25"/>
                           <criterion>
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
-                            <value xsi:type="CE" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing"/>
+                            <value code="56018004" displayName="Wheezing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CE"/>
                           </criterion>
                         </precondition>
                       </substanceAdministration>
@@ -1196,6 +1171,7 @@
                       <substanceAdministration classCode="SBADM" moodCode="INT">
                         <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
                         <id root="1.3.6.1.4.1.22812.3.99930.3.4.9" extension="6591225000051"/>
+                        <id root="1.3.6.1.4.1.22812.3.99930.3.4.9" extension="6591225000071"/>
                         <text>
                           <reference value="#MedSec_1"/>
                         </text>
@@ -1230,20 +1206,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
@@ -1256,26 +1222,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time nullFlavor="UNK"/>
                               <assignedAuthor>
                                 <id nullFlavor="UNK"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
-                                <assignedPerson/>
                               </assignedAuthor>
                             </author>
                           </supply>
@@ -1288,8 +1238,6 @@
                             <effectiveTime>
                               <low value="20121002"/>
                             </effectiveTime>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1309,6 +1257,7 @@
                       <substanceAdministration classCode="SBADM" moodCode="INT">
                         <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
                         <id root="1.3.6.1.4.1.22812.3.99930.3.4.9" extension="659122500005"/>
+                        <id root="1.3.6.1.4.1.22812.3.99930.3.4.9" extension="659122500007"/>
                         <text>
                           <reference value="#MedSec_1"/>
                         </text>
@@ -1344,20 +1293,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
@@ -1370,26 +1309,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time nullFlavor="UNK"/>
                               <assignedAuthor>
                                 <id nullFlavor="UNK"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
-                                <assignedPerson/>
                               </assignedAuthor>
                             </author>
                           </supply>
@@ -1402,8 +1325,6 @@
                             <effectiveTime>
                               <low value="20120920"/>
                             </effectiveTime>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1452,20 +1373,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
@@ -1478,26 +1389,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time nullFlavor="UNK"/>
                               <assignedAuthor>
                                 <id nullFlavor="UNK"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
-                                <assignedPerson/>
                               </assignedAuthor>
                             </author>
                           </supply>
@@ -1508,8 +1403,6 @@
                             <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1558,20 +1451,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
@@ -1584,26 +1467,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time nullFlavor="UNK"/>
                               <assignedAuthor>
                                 <id nullFlavor="UNK"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
-                                <assignedPerson/>
                               </assignedAuthor>
                             </author>
                           </supply>
@@ -1614,8 +1481,6 @@
                             <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1654,7 +1519,6 @@
                           <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
                             <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
-                            <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
                             <text>
                               <reference value="#problem1"/>
                             </text>
@@ -1707,6 +1571,7 @@
                       <act classCode="ACT" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
                         <id root="1.3.6.1.4.1.22812.3.99930.3.4.1" extension="615028800003"/>
+                        <id root="1.3.6.1.4.1.22812.3.99930.3.4.1" extension="659935200001"/>
                         <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
                         <statusCode code="completed"/>
                         <effectiveTime/>
@@ -1714,7 +1579,7 @@
                           <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
                             <id root="1.3.6.1.4.1.22812.3.99930.3.4.1.2.1" extension="615028800003"/>
-                            <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
+                            <id root="1.3.6.1.4.1.22812.3.99930.3.4.1.2.1" extension="659935200001"/>
                             <text>
                               <reference value="#problem2"/>
                             </text>
@@ -1727,6 +1592,7 @@
                               <observation classCode="OBS" moodCode="EVN">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
                                 <id root="1.3.6.1.4.1.22812.3.99930.3.4.1.2.1" extension="615028800003"/>
+                                <id root="1.3.6.1.4.1.22812.3.99930.3.4.1.2.1" extension="659935200001"/>
                                 <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                                 <text>
                                   <reference value="#STAT2"/>
@@ -1754,7 +1620,6 @@
                           <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
                             <id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
-                            <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
                             <text>
                               <reference value="#problem3"/>
                             </text>
@@ -1843,7 +1708,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="HealthcareServiceLocation" codeSystemName="HealthcareServiceLocation"/>
+                            <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
                             <addr>
                               <streetAddressLine>17 Daws Rd.</streetAddressLine>
                               <city>Blue Bell</city>
@@ -1906,18 +1771,7 @@
                             </representedOrganization>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="DEV">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
-                            <id root="742aee30-21c5-11e1-bfc2-0800200c9a66"/>
-                            <playingDevice>
-                              <code code="90412006" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscope"/>
-                            </playingDevice>
-                            <scopingEntity>
-                              <id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
-                            </scopingEntity>
-                          </participantRole>
-                        </participant>
+                        <participant nullFlavor="UNK"/>
                       </procedure>
                     </entry>
                     <entry typeCode="DRIV">
@@ -1957,7 +1811,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="HealthcareServiceLocation" codeSystemName="HealthcareServiceLocation"/>
+                            <code code="1118-9" displayName="Gastroenterology Clinic" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation"/>
                             <addr>
                               <streetAddressLine>17 Daws Rd.</streetAddressLine>
                               <city>Blue Bell</city>
@@ -2327,6 +2181,7 @@
                         <organizer classCode="CLUSTER" moodCode="EVN">
                           <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
                           <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
+                          <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003518"/>
                           <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
                           <statusCode code="completed"/>
                           <effectiveTime value="20121002"/>
@@ -2334,42 +2189,42 @@
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003518"/>
                               <code code="3141-9" displayName="Weight" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit1"/>
+                                <reference value="#vit0"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20121002"/>
                               <value xsi:type="PQ" value="160" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900029181"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900035181"/>
                               <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit4"/>
+                                <reference value="#vit1"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20121002"/>
                               <value xsi:type="PQ" value="120" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002928"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003528"/>
                               <code code="8462-4" displayName="BP Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit7"/>
+                                <reference value="#vit2"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20121002"/>
                               <value xsi:type="PQ" value="78" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                         </organizer>
@@ -2378,6 +2233,7 @@
                         <organizer classCode="CLUSTER" moodCode="EVN">
                           <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
                           <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
+                          <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003518"/>
                           <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
                           <statusCode code="completed"/>
                           <effectiveTime value="20121002"/>
@@ -2385,56 +2241,59 @@
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003518"/>
                               <code code="3141-9" displayName="Weight" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit2"/>
+                                <reference value="#vit3"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20121002"/>
-                              <value xsi:type="PQ" value="27.5" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <value xsi:type="PQ" value="27.5" unit="1"/>
                             </observation>
                           </component>
                           <component>
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900029181"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900035181"/>
                               <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit5"/>
+                                <reference value="#vit4"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20121002"/>
-                              <value xsi:type="PQ" value="177" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <effectiveTime value="19991114"/>
+                              <value xsi:type="PQ" value="177" unit="cm"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                           <component>
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002928"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003528"/>
                               <code code="8462-4" displayName="BP Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit8"/>
+                                <reference value="#vit5"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20121002"/>
+                              <effectiveTime value="20000407"/>
                               <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                           <component>
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002939"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003539"/>
                               <code code="39156-5" displayName="Body Mass Index Calculated" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit11"/>
+                                <reference value="#vit6"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20121002"/>
-                              <value xsi:type="PQ" value="86" unit="1"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <effectiveTime value="19991114"/>
+                              <value xsi:type="PQ" value="86" unit="kg"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                           <component>
@@ -2443,12 +2302,12 @@
                               <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
                               <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit14"/>
+                                <reference value="#vit7"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20121002"/>
-                              <value xsi:type="PQ" value="132" unit="cm"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <effectiveTime value="1999111415"/>
+                              <value xsi:type="PQ" value="132" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                         </organizer>
@@ -2457,6 +2316,7 @@
                         <organizer classCode="CLUSTER" moodCode="EVN">
                           <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
                           <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
+                          <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003518"/>
                           <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
                           <statusCode code="completed"/>
                           <effectiveTime value="20000407"/>
@@ -2464,56 +2324,60 @@
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002918"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003518"/>
                               <code code="3141-9" displayName="Weight" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit3"/>
+                                <reference value="#vit5"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20000407"/>
-                              <value xsi:type="PQ" value="145" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <value xsi:type="PQ" value="145" unit="mm[Hg]"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                           <component>
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900029181"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="11666021900035181"/>
                               <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
                                 <reference value="#vit6"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20000407"/>
-                              <value xsi:type="PQ" value="86" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <effectiveTime value="19991114"/>
+                              <value xsi:type="PQ" value="86" unit="kg"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                           <component>
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002928"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003528"/>
                               <code code="8462-4" displayName="BP Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit9"/>
+                                <reference value="#vit7"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20000407"/>
+                              <effectiveTime value="1999111415"/>
                               <value xsi:type="PQ" value="132" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                           <component>
                             <observation classCode="OBS" moodCode="EVN">
                               <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
                               <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190002939"/>
+                              <id root="1.3.6.1.4.1.22812.3.99930.3.4.6" extension="1166602190003539"/>
                               <code code="39156-5" displayName="Body Mass Index Calculated" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit12"/>
+                                <reference value="#vit8"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20000407"/>
-                              <value xsi:type="PQ" value="177" unit="1"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                              <value xsi:type="PQ" value="177" unit="cm"/>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Result Interpretation"/>
                             </observation>
                           </component>
                         </organizer>

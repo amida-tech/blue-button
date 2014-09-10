@@ -4,7 +4,7 @@
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
-  <id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
+  <id root="2.16.840.1.113883.3.140.1.0.6.1.13092597.12456139"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9" displayName="Summarization of Episode Note"/>
   <title>Community Health and Hospitals: Health Summary</title>
   <effectiveTime value="TODO"/>
@@ -14,8 +14,8 @@
   <versionNumber value="1"/>
   <recordTarget>
     <patientRole>
-      <id extension="11" root="2.16.840.1.113883.3.140.1.0.6.4"/>
-      <id extension="643-00-5639" root="2.16.840.1.113883.4.1"/>
+      <id root="2.16.840.1.113883.3.140.1.0.6.4" extension="11"/>
+      <id root="2.16.840.1.113883.4.1" extension="643-00-5639"/>
       <addr>
         <streetAddressLine>3456 West Palm</streetAddressLine>
         <streetAddressLine>Apt. #34</streetAddressLine>
@@ -26,6 +26,7 @@
       </addr>
       <telecom value="tel:+1-916-555-3293" use="HP"/>
       <telecom value="tel:+1-916-555-5544" use="WP"/>
+      <telecom value="mailto:carlsonsa@e4health.com"/>
       <patient>
         <name use="L">
           <given>Sharon</given>
@@ -35,21 +36,7 @@
         <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female"/>
         <birthTime value="19381212"/>
         <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
-        <raceCode displayName="[object Object]" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
-        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
-        <guardian>
-          <code codeSystem="HL7 Role" codeSystemName="HL7 Role"/>
-          <addr>
-            <streetAddressLine>3456 West Palm</streetAddressLine>
-            <streetAddressLine>Apt. #34</streetAddressLine>
-            <city>Madison</city>
-            <state>CA</state>
-            <postalCode>95653</postalCode>
-            <country>US</country>
-          </addr>
-          <telecom value="tel:+1-916-555-3293" use="HP"/>
-          <telecom value="tel:+1-916-555-5544" use="WP"/>
-        </guardian>
+        <ethnicGroupCode code="2135-2" displayName="Hispanic or Latino" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
         <birthplace>
           <place>
             <addr nullFlavor="UNK"/>
@@ -57,23 +44,10 @@
         </birthplace>
         <languageCommunication>
           <languageCode code="eng"/>
-          <modeCode code="ESP" displayName="undefined" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
           <proficiencyLevelCode nullFlavor="UNK"/>
           <preferenceInd value="true"/>
         </languageCommunication>
       </patient>
-      <providerOrganization>
-        <id root="2.16.840.1.113883.4.6"/>
-        <name>Community Health and Hospitals</name>
-        <telecom use="WP" value="tel: 555-555-5000"/>
-        <addr>
-          <streetAddressLine>1001 Village Avenue</streetAddressLine>
-          <city>Portland</city>
-          <state>OR</state>
-          <postalCode>99123</postalCode>
-          <country>US</country>
-        </addr>
-      </providerOrganization>
     </patientRole>
   </recordTarget>
   <component>
@@ -111,7 +85,7 @@
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
-                        <code code="Unknown" displayName="Ragweed" codeSystem="UNII" codeSystemName="OID UNII">
+                        <code code="Unknown" displayName="Ragweed" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
                           <originalText>
                             <reference value="#reaction1"/>
                           </originalText>
@@ -189,7 +163,7 @@
                     <participant typeCode="CSM">
                       <participantRole classCode="MANU">
                         <playingEntity classCode="MMAT">
-                          <code code="Unknown" displayName="Latex" codeSystem="UNII" codeSystemName="OID UNII">
+                          <code code="Unknown" displayName="Latex" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
                             <originalText>
                               <reference value="#reaction2"/>
                             </originalText>
@@ -346,7 +320,7 @@
                         <participant typeCode="CSM">
                           <participantRole classCode="MANU">
                             <playingEntity classCode="MMAT">
-                              <code code="Unknown" displayName="Cheese" codeSystem="UNII" codeSystemName="OID UNII">
+                              <code code="Unknown" displayName="Cheese" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
                                 <originalText>
                                   <reference value="#reaction4"/>
                                 </originalText>
@@ -424,7 +398,7 @@
                           <participant typeCode="CSM">
                             <participantRole classCode="MANU">
                               <playingEntity classCode="MMAT">
-                                <code code="Unknown" displayName="Birds" codeSystem="UNII" codeSystemName="OID UNII">
+                                <code code="Unknown" displayName="Birds" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
                                   <originalText>
                                     <reference value="#reaction5"/>
                                   </originalText>
@@ -752,7 +726,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -817,7 +791,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr nullFlavor="UNK"/>
                             <telecom nullFlavor="UNK"/>
                             <playingEntity classCode="PLC">
@@ -876,7 +850,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -941,7 +915,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1006,7 +980,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1071,7 +1045,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1136,7 +1110,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1201,7 +1175,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1266,7 +1240,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                             <addr nullFlavor="UNK"/>
                             <telecom nullFlavor="UNK"/>
                             <playingEntity classCode="PLC">
@@ -1294,7 +1268,7 @@
                         </text>
                         <statusCode code="complete"/>
                         <effectiveTime xsi:type="IVL_TS" value="200606281424"/>
-                        <routeCode code="72098002" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="Medication Route FDA" displayName="Entire left upper arm (body structure)"/>
+                        <approachSiteCode code="72098002" displayName="Entire left upper arm (body structure)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                         <consumable>
                           <manufacturedProduct classCode="MANU">
                             <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
@@ -1348,6 +1322,7 @@
                         <entryRelationship typeCode="SUBJ" inversionInd="true">
                           <act classCode="ACT" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                            <id nullFlavor="UNK"/>
                             <code code="48767-8" displayName="Immunization Registry comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                             <statusCode code="completed"/>
                           </act>
@@ -1397,20 +1372,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="45"/>
@@ -1425,25 +1390,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20100223"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -1462,8 +1412,6 @@
                             <id root="521c6b8b-5854-4ae1-a1a8-f3d06d7d4e65"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1538,20 +1486,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="3"/>
                             <quantity value="2"/>
@@ -1566,25 +1504,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20120113"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -1603,8 +1526,6 @@
                             <id root="4027e4ad-ec47-4883-915d-a000e45a1105"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1679,20 +1600,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="3"/>
                             <quantity value="2"/>
@@ -1707,25 +1618,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20120113"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -1744,8 +1640,6 @@
                             <id root="e6874797-cb2e-4972-9db3-41809c30b5d7"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1820,20 +1714,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="3"/>
                             <quantity value="1"/>
@@ -1848,25 +1732,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20100216"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -1885,8 +1754,6 @@
                             <id root="7c160703-ff41-4b21-8971-de54bba99cb3"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -1961,20 +1828,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="10"/>
@@ -1989,25 +1846,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20091102"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -2026,8 +1868,6 @@
                             <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -2077,20 +1917,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="60"/>
@@ -2105,25 +1935,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20080108"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -2142,8 +1957,6 @@
                             <id root="4f499a10-f9f6-43d0-8672-140bc99d8897"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -2218,20 +2031,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="2"/>
                             <quantity value="120"/>
@@ -2246,25 +2049,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20080108"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -2283,8 +2071,6 @@
                             <id root="56b000e3-40dd-4fc7-81e9-35e8abe4da87"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -2359,20 +2145,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="2"/>
                             <quantity value="120"/>
@@ -2387,25 +2163,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20080108"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -2424,8 +2185,6 @@
                             <id root="82141772-3c04-474a-9661-af73dfece66c"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -2501,20 +2260,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="30"/>
@@ -2529,25 +2278,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20080103"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="42"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>James</given>
@@ -2566,8 +2300,6 @@
                             <id root="c33cab07-0319-4a4b-a02a-f070c492070d"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -2643,20 +2375,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="30"/>
@@ -2671,25 +2393,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20071102"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -2708,8 +2415,6 @@
                             <id root="2246419a-4439-4294-a3ae-cc89e4a89592"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -2785,20 +2490,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="15"/>
@@ -2813,25 +2508,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20071102"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -2850,8 +2530,6 @@
                             <id root="5a13ddb0-23b5-4fe9-aaa0-17545974958d"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -2927,20 +2605,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="15"/>
@@ -2955,25 +2623,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20071005"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -2992,8 +2645,6 @@
                             <id root="23ccf81e-b86d-4141-8fad-1d7eb4a6da6b"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -3068,20 +2719,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="3"/>
                             <quantity value="30"/>
@@ -3096,25 +2737,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20071005"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -3133,8 +2759,6 @@
                             <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -3185,20 +2809,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="15"/>
@@ -3213,25 +2827,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20070903"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -3250,8 +2849,6 @@
                             <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -3302,20 +2899,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="30"/>
@@ -3330,25 +2917,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20070903"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="42"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>James</given>
@@ -3367,8 +2939,6 @@
                             <id root="7e94b013-75d8-45c4-bb35-44abb0c2e58c"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -3444,20 +3014,10 @@
                             <telecom nullFlavor="UNK"/>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="CSM">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                            <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96"/>
-                            <playingEntity classCode="MMAT">
-                              <code nullFlavor="UNK"/>
-                              <name/>
-                            </playingEntity>
-                          </participantRole>
-                        </participant>
                         <entryRelationship typeCode="REFR">
                           <supply classCode="SPLY" moodCode="INT">
                             <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                            <id nullFlavor="NI"/>
+                            <id nullFlavor="UNK"/>
                             <statusCode code="completed"/>
                             <repeatNumber value="1"/>
                             <quantity value="30"/>
@@ -3472,25 +3032,10 @@
                                 </manufacturedMaterial>
                               </manufacturedProduct>
                             </product>
-                            <performer>
-                              <assignedEntity>
-                                <id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
-                                <addr>
-                                  <streetAddressLine>1001 Village Avenue</streetAddressLine>
-                                  <city>Portland</city>
-                                  <state>OR</state>
-                                  <postalCode>99123</postalCode>
-                                  <country>US</country>
-                                </addr>
-                                <telecom nullFlavor="UNK"/>
-                              </assignedEntity>
-                            </performer>
                             <author>
                               <time value="20070201"/>
                               <assignedAuthor>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.3" extension="36"/>
-                                <addr nullFlavor="UNK"/>
-                                <telecom nullFlavor="UNK"/>
                                 <assignedPerson>
                                   <name>
                                     <given>David</given>
@@ -3509,8 +3054,6 @@
                             <id root="b1d5ba1e-7214-4dfa-b6e7-4fa610f67d72"/>
                             <statusCode code="completed"/>
                             <effectiveTime/>
-                            <repeatNumber value="1"/>
-                            <quantity value="75"/>
                             <product>
                               <manufacturedProduct classCode="MANU">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
@@ -3574,7 +3117,7 @@
                             <performer typeCode="PRF">
                               <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
                               <assignedEntity>
-                                <code code="PAYOR" displayName="Invoice Payor" codeSystem="HL7 RoleCode" codeSystemName="OID HL7 RoleCode"/>
+                                <code code="PAYOR" displayName="Invoice Payor" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode"/>
                                 <id nullFlavor="UNK"/>
                                 <addr>
                                   <streetAddressLine>8147 NW 128th Place</streetAddressLine>
@@ -3590,10 +3133,13 @@
                             </performer>
                             <participant typeCode="COV">
                               <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
-                              <time/>
+                              <time>
+                                <low value="20071003"/>
+                                <high value="20081001"/>
+                              </time>
                               <participantRole classCode="PAT">
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.3" extension="643005639"/>
-                                <code code="SELF" displayName="Self" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                                <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                                 <addr>
                                   <streetAddressLine>3456 West Palm</streetAddressLine>
                                   <streetAddressLine>Apt. #34</streetAddressLine>
@@ -3602,6 +3148,8 @@
                                   <postalCode>95653</postalCode>
                                   <country>US</country>
                                 </addr>
+                                <telecom value="tel:+1-916-555-3293" use="HP"/>
+                                <telecom value="tel:+1-916-555-5544" use="WP"/>
                                 <playingEntity>
                                   <name>
                                     <given>Sharon</given>
@@ -3649,7 +3197,7 @@
                             <performer typeCode="PRF">
                               <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
                               <assignedEntity>
-                                <code code="PAYOR" displayName="Invoice Payor" codeSystem="HL7 RoleCode" codeSystemName="OID HL7 RoleCode"/>
+                                <code code="PAYOR" displayName="Invoice Payor" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode"/>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.2" extension="SMCA1"/>
                                 <addr>
                                   <streetAddressLine>263 Sunnydale Way</streetAddressLine>
@@ -3671,10 +3219,13 @@
                             </performer>
                             <participant typeCode="COV">
                               <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
-                              <time/>
+                              <time>
+                                <low value="20071003"/>
+                                <high value="20081001"/>
+                              </time>
                               <participantRole classCode="PAT">
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.3" extension="643005639"/>
-                                <code code="SELF" displayName="Self" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
+                                <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
                                 <addr>
                                   <streetAddressLine>3456 West Palm</streetAddressLine>
                                   <streetAddressLine>Apt. #34</streetAddressLine>
@@ -3683,6 +3234,8 @@
                                   <postalCode>95653</postalCode>
                                   <country>US</country>
                                 </addr>
+                                <telecom value="tel:+1-916-555-3293" use="HP"/>
+                                <telecom value="tel:+1-916-555-5544" use="WP"/>
                                 <playingEntity>
                                   <name>
                                     <given>Sharon</given>
@@ -3769,7 +3322,6 @@
                           <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
                             <id root="22352a21-a27f-4a2f-a79f-e6205cfef389"/>
-                            <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
                             <text>
                               <reference value="#problem1"/>
                             </text>
@@ -3810,7 +3362,7 @@
                       <procedure classCode="PROC" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
                         <id root="2.16.840.1.113883.3.140.1.0.6.10.17.2" extension="94"/>
-                        <code code="85014" displayName="Hematocrit" codeSystem="CPT" codeSystemName="OID CPT">
+                        <code code="85014" displayName="Hematocrit" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
                           <originalText>
                             <reference value="#Proc1"/>
                           </originalText>
@@ -3863,16 +3415,21 @@
                             </representedOrganization>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="DEV">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
-                            <id root="742aee30-21c5-11e1-bfc2-0800200c9a66"/>
-                            <playingDevice>
-                              <code code="90412006" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscope"/>
-                            </playingDevice>
-                            <scopingEntity>
-                              <id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
-                            </scopingEntity>
+                        <participant typeCode="LOC">
+                          <participantRole classCode="SDLOC">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="undefined" codeSystemName="OID undefined"/>
+                            <addr>
+                              <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
+                              <city>Gainesville</city>
+                              <state>FL</state>
+                              <postalCode>32608</postalCode>
+                              <country>US</country>
+                            </addr>
+                            <telecom value="tel:+1-916-555-7654" use="WP"/>
+                            <playingEntity classCode="PLC">
+                              <name>Office - Madison Medical Center, P.A.</name>
+                            </playingEntity>
                           </participantRole>
                         </participant>
                       </procedure>
@@ -3881,7 +3438,7 @@
                       <procedure classCode="PROC" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
                         <id root="2.16.840.1.113883.3.140.1.0.6.10.17.2" extension="95"/>
-                        <code code="81000" displayName="Urinalysis" codeSystem="CPT" codeSystemName="OID CPT">
+                        <code code="81000" displayName="Urinalysis" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
                           <originalText>
                             <reference value="#Proc1"/>
                           </originalText>
@@ -3934,16 +3491,21 @@
                             </representedOrganization>
                           </assignedEntity>
                         </performer>
-                        <participant typeCode="DEV">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
-                            <id root="742aee30-21c5-11e1-bfc2-0800200c9a66"/>
-                            <playingDevice>
-                              <code code="90412006" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscope"/>
-                            </playingDevice>
-                            <scopingEntity>
-                              <id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
-                            </scopingEntity>
+                        <participant typeCode="LOC">
+                          <participantRole classCode="SDLOC">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="undefined" codeSystemName="OID undefined"/>
+                            <addr>
+                              <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
+                              <city>Gainesville</city>
+                              <state>FL</state>
+                              <postalCode>32608</postalCode>
+                              <country>US</country>
+                            </addr>
+                            <telecom value="tel:+1-916-555-7654" use="WP"/>
+                            <playingEntity classCode="PLC">
+                              <name>Office - Madison Medical Center, P.A.</name>
+                            </playingEntity>
                           </participantRole>
                         </participant>
                       </procedure>
@@ -3971,18 +3533,7 @@
                             </specimenPlayingEntity>
                           </specimenRole>
                         </specimen>
-                        <participant typeCode="DEV">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
-                            <id root="742aee30-21c5-11e1-bfc2-0800200c9a66"/>
-                            <playingDevice>
-                              <code code="90412006" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscope"/>
-                            </playingDevice>
-                            <scopingEntity>
-                              <id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
-                            </scopingEntity>
-                          </participantRole>
-                        </participant>
+                        <participant nullFlavor="UNK"/>
                       </procedure>
                     </entry>
                     <entry typeCode="DRIV">
@@ -4008,18 +3559,7 @@
                             </specimenPlayingEntity>
                           </specimenRole>
                         </specimen>
-                        <participant typeCode="DEV">
-                          <participantRole classCode="MANU">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
-                            <id root="742aee30-21c5-11e1-bfc2-0800200c9a66"/>
-                            <playingDevice>
-                              <code code="90412006" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscope"/>
-                            </playingDevice>
-                            <scopingEntity>
-                              <id root="eb936010-7b17-11db-9fe1-0800200c9b65"/>
-                            </scopingEntity>
-                          </participantRole>
-                        </participant>
+                        <participant nullFlavor="UNK"/>
                       </procedure>
                     </entry>
                   </section>
@@ -5837,12 +5377,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-18"/>
                               <code code="8480-6" displayName="Blood Pressure Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit1"/>
+                                <reference value="#vit0"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="133" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5851,12 +5390,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-19"/>
                               <code code="8462-4" displayName="Blood Pressure Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit2"/>
+                                <reference value="#vit1"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="76" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5865,12 +5403,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-10"/>
                               <code code="8867-4" displayName="Heart Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit3"/>
+                                <reference value="#vit2"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="86" unit="/min"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5879,12 +5416,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-5"/>
                               <code code="9279-1" displayName="Respiratory Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit4"/>
+                                <reference value="#vit3"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="29" unit="/min"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5893,12 +5429,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-15"/>
                               <code code="8310-5" displayName="Body Temperature" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit5"/>
+                                <reference value="#vit4"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="98.6" unit="[degF]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5907,12 +5442,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-2"/>
                               <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit6"/>
+                                <reference value="#vit5"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="66" unit="[in_us]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5921,12 +5455,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-1"/>
                               <code code="3141-9" displayName="Weight Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit7"/>
+                                <reference value="#vit6"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="160" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5935,12 +5468,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-8"/>
                               <code code="39156-5" displayName="BMI (Body Mass Index)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit8"/>
+                                <reference value="#vit7"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="25.8" unit="kg/m2"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5949,12 +5481,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="44-9"/>
                               <code code="3140-1" displayName="BSA (Body Surface Area)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit9"/>
+                                <reference value="#vit8"/>
                               </text>
                               <statusCode code="completed"/>
                               <effectiveTime value="20071102100700"/>
                               <value xsi:type="PQ" value="1.82" unit="m2"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5963,12 +5494,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-18"/>
                               <code code="8480-6" displayName="Blood Pressure Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit10"/>
+                                <reference value="#vit9"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20071005100600"/>
                               <value xsi:type="PQ" value="131" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5977,12 +5507,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-19"/>
                               <code code="8462-4" displayName="Blood Pressure Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit11"/>
+                                <reference value="#vit10"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20071005100600"/>
                               <value xsi:type="PQ" value="75" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -5991,12 +5520,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-10"/>
                               <code code="8867-4" displayName="Heart Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit12"/>
+                                <reference value="#vit11"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20071005100600"/>
                               <value xsi:type="PQ" value="82" unit="/min"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6005,12 +5533,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-5"/>
                               <code code="9279-1" displayName="Respiratory Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit13"/>
+                                <reference value="#vit12"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20071005100600"/>
                               <value xsi:type="PQ" value="30" unit="/min"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6019,12 +5546,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-15"/>
                               <code code="8310-5" displayName="Body Temperature" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit14"/>
+                                <reference value="#vit13"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20071005100600"/>
                               <value xsi:type="PQ" value="98.6" unit="[degF]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6033,12 +5559,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-2"/>
                               <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit15"/>
+                                <reference value="#vit14"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20071005100600"/>
                               <value xsi:type="PQ" value="66" unit="[in_us]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6047,12 +5572,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-1"/>
                               <code code="3141-9" displayName="Weight Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit16"/>
+                                <reference value="#vit15"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20071005100600"/>
                               <value xsi:type="PQ" value="160" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6061,12 +5585,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-8"/>
                               <code code="39156-5" displayName="BMI (Body Mass Index)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit17"/>
+                                <reference value="#vit16"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20071005100600"/>
                               <value xsi:type="PQ" value="25.8" unit="kg/m2"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6075,12 +5598,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="43-9"/>
                               <code code="3140-1" displayName="BSA (Body Surface Area)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit18"/>
+                                <reference value="#vit17"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20071005100600"/>
                               <value xsi:type="PQ" value="1.82" unit="m2"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6089,12 +5611,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-18"/>
                               <code code="8480-6" displayName="Blood Pressure Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit19"/>
+                                <reference value="#vit18"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20070903100500"/>
                               <value xsi:type="PQ" value="130" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6103,12 +5624,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-19"/>
                               <code code="8462-4" displayName="Blood Pressure Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit20"/>
+                                <reference value="#vit19"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20070903100500"/>
                               <value xsi:type="PQ" value="76" unit="mm[Hg]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6117,12 +5637,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-10"/>
                               <code code="8867-4" displayName="Heart Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit21"/>
+                                <reference value="#vit20"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20070903100500"/>
                               <value xsi:type="PQ" value="82" unit="/min"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6131,12 +5650,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-5"/>
                               <code code="9279-1" displayName="Respiratory Rate" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit22"/>
+                                <reference value="#vit21"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20070903100500"/>
                               <value xsi:type="PQ" value="30" unit="/min"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6145,12 +5663,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-15"/>
                               <code code="8310-5" displayName="Body Temperature" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit23"/>
+                                <reference value="#vit22"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20070903100500"/>
                               <value xsi:type="PQ" value="98.6" unit="[degF]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6159,12 +5676,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-2"/>
                               <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit24"/>
+                                <reference value="#vit23"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20070903100500"/>
                               <value xsi:type="PQ" value="66" unit="[in_us]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6173,12 +5689,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-1"/>
                               <code code="3141-9" displayName="Weight Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit25"/>
+                                <reference value="#vit24"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20070903100500"/>
                               <value xsi:type="PQ" value="166" unit="[lb_av]"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6187,12 +5702,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-8"/>
                               <code code="39156-5" displayName="BMI (Body Mass Index)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit26"/>
+                                <reference value="#vit25"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20070903100500"/>
                               <value xsi:type="PQ" value="26.8" unit="kg/m2"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                           <component>
@@ -6201,12 +5715,11 @@
                               <id root="2.16.840.1.113883.3.140.1.0.6.10.14.1" extension="42-9"/>
                               <code code="3140-1" displayName="BSA (Body Surface Area)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                               <text>
-                                <reference value="#vit27"/>
+                                <reference value="#vit26"/>
                               </text>
                               <statusCode code="completed"/>
-                              <effectiveTime value="20071102100700"/>
+                              <effectiveTime value="20070903100500"/>
                               <value xsi:type="PQ" value="1.85" unit="m2"/>
-                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                             </observation>
                           </component>
                         </organizer>

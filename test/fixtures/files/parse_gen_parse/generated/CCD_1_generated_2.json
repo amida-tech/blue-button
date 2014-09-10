@@ -526,7 +526,7 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
-                    "code_system_name": "OID CPT",
+                    "code_system_name": "CPT",
                     "translations": [
                         {
                             "name": "Ambulatory",
@@ -568,7 +568,7 @@
                         "location_type": {
                             "name": "Urgent Care Center",
                             "code": "1160-1",
-                            "code_system_name": "OID HealthcareServiceLocation"
+                            "code_system_name": "HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -672,7 +672,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID Observation Interpretation"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -686,7 +686,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "OID Observation Interpretation"
+                            "code_system_name": "Observation Interpretation"
                         }
                     }
                 }
@@ -756,7 +756,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID Observation Interpretation"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -770,7 +770,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "OID Observation Interpretation"
+                            "code_system_name": "Observation Interpretation"
                         }
                     }
                 }
@@ -840,7 +840,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "OID Observation Interpretation"
+                                    "code_system_name": "Observation Interpretation"
                                 }
                             }
                         }
@@ -854,7 +854,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "OID Observation Interpretation"
+                            "code_system_name": "Observation Interpretation"
                         }
                     }
                 }
@@ -1562,7 +1562,7 @@
                         "location_type": {
                             "name": "Gastroenterology Clinic",
                             "code": "1118-9",
-                            "code_system_name": "OID HealthcareServiceLocation"
+                            "code_system_name": "HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1648,7 +1648,7 @@
                         "location_type": {
                             "name": "Gastroenterology Clinic",
                             "code": "1118-9",
-                            "code_system_name": "OID HealthcareServiceLocation"
+                            "code_system_name": "HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1759,12 +1759,12 @@
                     ],
                     "code": {
                         "code": "SELF",
-                        "code_system_name": "OID HL7 RoleCode"
+                        "code_system_name": "HL7 RoleCode"
                     },
                     "insurance": {
                         "code": {
                             "code": "PAYOR",
-                            "code_system_name": "OID HL7 RoleCode"
+                            "code_system_name": "HL7 RoleCode"
                         },
                         "performer": {
                             "identifiers": [
@@ -1818,7 +1818,7 @@
                             "code": [
                                 {
                                     "code": "PAYOR",
-                                    "code_system_name": "OID HL7 RoleCode"
+                                    "code_system_name": "HL7 RoleCode"
                                 }
                             ]
                         }
@@ -1827,7 +1827,7 @@
                 "guarantor": {
                     "code": {
                         "code": "GUAR",
-                        "code_system_name": "OID HL7 Role"
+                        "code_system_name": "HL7 Role"
                     },
                     "identifiers": [
                         {
@@ -1867,7 +1867,7 @@
                     "code": {
                         "name": "Self",
                         "code": "SELF",
-                        "code_system_name": "OID HL7 Role"
+                        "code_system_name": "HL7 Role"
                     },
                     "performer": {
                         "identifiers": [
@@ -1892,7 +1892,7 @@
                             {
                                 "name": "Self",
                                 "code": "SELF",
-                                "code_system_name": "OID HL7 Role"
+                                "code_system_name": "HL7 Role"
                             }
                         ]
                     },
@@ -1947,7 +1947,7 @@
         ]
     },
     "meta": {
-        "version": "1.1.0",
+        "version": "1.2.0-beta.1",
         "identifiers": [
             {
                 "identifier": "2.16.840.1.113883.19.5.99999.1",
@@ -2018,7 +2018,6 @@
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
