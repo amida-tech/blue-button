@@ -82,6 +82,12 @@
                     "items": {
                         "$ref": "http://local.com/provider"
                     }
+                },
+                 "medical_devices": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/medical_device"
+                    }
                 }
             },
             "additionalProperties": true

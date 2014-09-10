@@ -38,7 +38,7 @@
         <raceCode displayName="[object Object]" codeSystem="Race and Ethnicity - CDC" codeSystemName="Race and Ethnicity - CDC"/>
         <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
         <guardian>
-          <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+          <code codeSystem="HL7 Role" codeSystemName="HL7 Role"/>
           <addr>
             <streetAddressLine>3456 West Palm</streetAddressLine>
             <streetAddressLine>Apt. #34</streetAddressLine>
@@ -111,7 +111,7 @@
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
-                        <code code="Unknown" displayName="Ragweed" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
+                        <code code="Unknown" displayName="Ragweed" codeSystem="UNII" codeSystemName="OID UNII">
                           <originalText>
                             <reference value="#reaction1"/>
                           </originalText>
@@ -189,7 +189,7 @@
                     <participant typeCode="CSM">
                       <participantRole classCode="MANU">
                         <playingEntity classCode="MMAT">
-                          <code code="Unknown" displayName="Latex" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
+                          <code code="Unknown" displayName="Latex" codeSystem="UNII" codeSystemName="OID UNII">
                             <originalText>
                               <reference value="#reaction2"/>
                             </originalText>
@@ -346,7 +346,7 @@
                         <participant typeCode="CSM">
                           <participantRole classCode="MANU">
                             <playingEntity classCode="MMAT">
-                              <code code="Unknown" displayName="Cheese" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
+                              <code code="Unknown" displayName="Cheese" codeSystem="UNII" codeSystemName="OID UNII">
                                 <originalText>
                                   <reference value="#reaction4"/>
                                 </originalText>
@@ -424,7 +424,7 @@
                           <participant typeCode="CSM">
                             <participantRole classCode="MANU">
                               <playingEntity classCode="MMAT">
-                                <code code="Unknown" displayName="Birds" codeSystem="2.16.840.1.113883.4.9" codeSystemName="UNII">
+                                <code code="Unknown" displayName="Birds" codeSystem="UNII" codeSystemName="OID UNII">
                                   <originalText>
                                     <reference value="#reaction5"/>
                                   </originalText>
@@ -752,7 +752,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -817,7 +817,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                             <addr nullFlavor="UNK"/>
                             <telecom nullFlavor="UNK"/>
                             <playingEntity classCode="PLC">
@@ -876,7 +876,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -941,7 +941,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1006,7 +1006,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1071,7 +1071,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1136,7 +1136,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1201,7 +1201,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                             <addr>
                               <streetAddressLine>34 Sycamore Street, Suite 3</streetAddressLine>
                               <city>Gainesville</city>
@@ -1266,7 +1266,7 @@
                         <participant typeCode="LOC">
                           <participantRole classCode="SDLOC">
                             <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                            <code code="PROFF" displayName="Provider's Office" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                            <code code="PROFF" displayName="Provider's Office" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                             <addr nullFlavor="UNK"/>
                             <telecom nullFlavor="UNK"/>
                             <playingEntity classCode="PLC">
@@ -3574,7 +3574,7 @@
                             <performer typeCode="PRF">
                               <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
                               <assignedEntity>
-                                <code code="PAYOR" displayName="Invoice Payor" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode"/>
+                                <code code="PAYOR" displayName="Invoice Payor" codeSystem="HL7 RoleCode" codeSystemName="OID HL7 RoleCode"/>
                                 <id nullFlavor="UNK"/>
                                 <addr>
                                   <streetAddressLine>8147 NW 128th Place</streetAddressLine>
@@ -3593,7 +3593,7 @@
                               <time/>
                               <participantRole classCode="PAT">
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.3" extension="643005639"/>
-                                <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                                <code code="SELF" displayName="Self" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                                 <addr>
                                   <streetAddressLine>3456 West Palm</streetAddressLine>
                                   <streetAddressLine>Apt. #34</streetAddressLine>
@@ -3649,7 +3649,7 @@
                             <performer typeCode="PRF">
                               <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
                               <assignedEntity>
-                                <code code="PAYOR" displayName="Invoice Payor" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode"/>
+                                <code code="PAYOR" displayName="Invoice Payor" codeSystem="HL7 RoleCode" codeSystemName="OID HL7 RoleCode"/>
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.2" extension="SMCA1"/>
                                 <addr>
                                   <streetAddressLine>263 Sunnydale Way</streetAddressLine>
@@ -3674,7 +3674,7 @@
                               <time/>
                               <participantRole classCode="PAT">
                                 <id root="2.16.840.1.113883.3.140.1.0.6.10.6.3" extension="643005639"/>
-                                <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role"/>
+                                <code code="SELF" displayName="Self" codeSystem="HL7 Role" codeSystemName="OID HL7 Role"/>
                                 <addr>
                                   <streetAddressLine>3456 West Palm</streetAddressLine>
                                   <streetAddressLine>Apt. #34</streetAddressLine>
@@ -3810,7 +3810,7 @@
                       <procedure classCode="PROC" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
                         <id root="2.16.840.1.113883.3.140.1.0.6.10.17.2" extension="94"/>
-                        <code code="85014" displayName="Hematocrit" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
+                        <code code="85014" displayName="Hematocrit" codeSystem="CPT" codeSystemName="OID CPT">
                           <originalText>
                             <reference value="#Proc1"/>
                           </originalText>
@@ -3881,7 +3881,7 @@
                       <procedure classCode="PROC" moodCode="EVN">
                         <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
                         <id root="2.16.840.1.113883.3.140.1.0.6.10.17.2" extension="95"/>
-                        <code code="81000" displayName="Urinalysis" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
+                        <code code="81000" displayName="Urinalysis" codeSystem="CPT" codeSystemName="OID CPT">
                           <originalText>
                             <reference value="#Proc1"/>
                           </originalText>

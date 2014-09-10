@@ -1015,7 +1015,7 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
-                    "code_system_name": "CPT",
+                    "code_system_name": "OID CPT",
                     "translations": [
                         {
                             "name": "Ambulatory",
@@ -1057,7 +1057,7 @@
                         "location_type": {
                             "name": "Urgent Care Center",
                             "code": "1160-1",
-                            "code_system_name": "HealthcareServiceLocation"
+                            "code_system_name": "OID HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1098,7 +1098,7 @@
                 "encounter": {
                     "name": "UNK",
                     "code": "99231",
-                    "code_system_name": "CPT"
+                    "code_system_name": "OID CPT"
                 },
                 "identifiers": [
                     {
@@ -1156,7 +1156,7 @@
                         "location_type": {
                             "name": "Inpatient Medical/Surgical Ward",
                             "code": "1061-1",
-                            "code_system_name": "HealthcareServiceLocation"
+                            "code_system_name": "OID HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1182,7 +1182,7 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
-                    "code_system_name": "CPT",
+                    "code_system_name": "OID CPT",
                     "translations": [
                         {
                             "name": "Ambulatory",
@@ -1224,7 +1224,7 @@
                         "location_type": {
                             "name": "Urgent Care Center",
                             "code": "1160-1",
-                            "code_system_name": "HealthcareServiceLocation"
+                            "code_system_name": "OID HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1265,7 +1265,7 @@
                 "encounter": {
                     "name": "Office outpatient visit 15 minutes",
                     "code": "99213",
-                    "code_system_name": "CPT",
+                    "code_system_name": "OID CPT",
                     "translations": [
                         {
                             "name": "Ambulatory",
@@ -1307,7 +1307,7 @@
                         "location_type": {
                             "name": "Urgent Care Center",
                             "code": "1160-1",
-                            "code_system_name": "HealthcareServiceLocation"
+                            "code_system_name": "OID HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -1394,7 +1394,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "Observation Interpretation"
+                            "code_system_name": "OID Observation Interpretation"
                         }
                     }
                 }
@@ -1464,7 +1464,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "Observation Interpretation"
+                                    "code_system_name": "OID Observation Interpretation"
                                 }
                             }
                         }
@@ -1478,7 +1478,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "Observation Interpretation"
+                            "code_system_name": "OID Observation Interpretation"
                         }
                     }
                 }
@@ -1504,7 +1504,7 @@
                     "allergen": {
                         "name": "Eggs",
                         "code": "291P45F896",
-                        "code_system_name": "UNII",
+                        "code_system_name": "OID UNII",
                         "translations": [
                             {
                                 "name": "Allergy to eggs",
@@ -1549,7 +1549,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "Observation Interpretation"
+                                    "code_system_name": "OID Observation Interpretation"
                                 }
                             }
                         }
@@ -1615,7 +1615,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "Observation Interpretation"
+                                    "code_system_name": "OID Observation Interpretation"
                                 }
                             }
                         }
@@ -1700,7 +1700,7 @@
                                 "interpretation": {
                                     "name": "Suceptible",
                                     "code": "S",
-                                    "code_system_name": "Observation Interpretation"
+                                    "code_system_name": "OID Observation Interpretation"
                                 }
                             }
                         }
@@ -1714,7 +1714,7 @@
                         "interpretation": {
                             "name": "Normal",
                             "code": "N",
-                            "code_system_name": "Observation Interpretation"
+                            "code_system_name": "OID Observation Interpretation"
                         }
                     }
                 }
@@ -2413,7 +2413,7 @@
                         "location_type": {
                             "name": "Gastroenterology Clinic",
                             "code": "1118-9",
-                            "code_system_name": "HealthcareServiceLocation"
+                            "code_system_name": "OID HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -2601,7 +2601,7 @@
                         "location_type": {
                             "name": "Gastroenterology Clinic",
                             "code": "1118-9",
-                            "code_system_name": "HealthcareServiceLocation"
+                            "code_system_name": "OID HealthcareServiceLocation"
                         },
                         "address": [
                             {
@@ -2683,7 +2683,7 @@
         ]
     },
     "meta": {
-        "version": "1.1.0-beta.17",
+        "version": "1.1.0",
         "identifiers": [
             {
                 "identifier": "2.16.840.1.113883.19.5.99999.1",
