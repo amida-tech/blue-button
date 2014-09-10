@@ -77,10 +77,28 @@
                         "$ref": "http://local.com/claims"
                     }
                 },
-                 "providers": {
+                "providers": {
                     "type": "array",
                     "items": {
                         "$ref": "http://local.com/provider"
+                    }
+                },
+                "medical_devices": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/medical_device"
+                    }
+                },
+                "family_history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/family_history"
+                    }
+                },
+                "participants": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/participant"
                     }
                 }
             },
