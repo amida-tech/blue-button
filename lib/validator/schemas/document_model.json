@@ -94,6 +94,12 @@
                     "items": {
                         "$ref": "http://local.com/family_history"
                     }
+                },
+                "participants": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://local.com/participant"
+                    }
                 }
             },
             "additionalProperties": true
