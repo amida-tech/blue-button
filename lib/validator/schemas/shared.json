@@ -133,10 +133,7 @@
                     "type": "string"
                 }
             },
-            "additionalProperties": false,
-            "required": [
-                "first"
-            ]
+            "additionalProperties": false
         },
         "cda_coded_entry": {
             "type": "object",

@@ -27,7 +27,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "blue-button-meta": "^1.1.0",
+    "blue-button-meta": "^1.2.0",
     "deep-equal": "*",
     "libxmljs": "*",
     "node-uuid": "*",
@@ -56,7 +56,8 @@
     "should": "3.1.x",
     "walk": "^2.3.3",
     "winston": "^0.7.3",
-    "xmldom": "^0.1.19"
+    "xmldom": "^0.1.19",
+    "mkdirp": "0.5.x"
   },
   "repository": {
     "type": "git",

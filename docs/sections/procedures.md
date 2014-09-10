@@ -104,7 +104,6 @@
         }
     },
     "required": [
-        "status",
         "procedure"
     ],
     "additionalProperties": false
