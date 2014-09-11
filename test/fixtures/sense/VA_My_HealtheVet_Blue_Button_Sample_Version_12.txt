@@ -1,0 +1,1476 @@
+------------------ MY HEALTHEVET PERSONAL INFORMATION REPORT ------------
+                     *************CONFIDENTIAL*************
+                           Produced by the Blue Button (v12)
+                              02 Dec 2011 @ 1023
+
+This summary is a copy of information from your My HealtheVet Personal
+Health Record. Your summary contains information that you entered and
+may also include a copy of some of the information in your VA medical
+record as it becomes available in My HealtheVet. Please let your health
+care team know if you have questions about your health information. For
+some Veterans, information from the Department of Defense (DoD) is
+available. You will see this in VA Blue Button as DoD Military Service
+Information.
+
+Name: MHVVETERAN, ONE A                         Date of Birth: 01 Mar 1948
+
+------------------------ DOWNLOAD REQUEST SUMMARY -----------------------
+
+System Request Date/Time: 02 Dec 2011 @ 1023
+User Request Type:        Download all of my available data from My HealtheVet
+File Name:                mhv_MHVVETERAN_20111202.txt
+
+Data Types Selected:
+  My HealtheVet Account Summary
+  Demographics
+  Health Care Providers
+  Treatment Facilities
+  Health Insurance
+  VA Wellness Reminders
+  VA Appointments (Future)
+  VA Appointments (Limited to past 2 years)
+  VA Medication History
+  Medications and Supplements
+  VA Allergies
+  Allergies/Adverse Reactions
+  Medical Events
+  Immunizations
+  VA Laboratory Results
+  Labs and Tests
+  Vitals and Readings
+  Family Health History
+  Military Health History
+  DoD Military Service Information
+
+--------------------- MY HEALTHEVET ACCOUNT SUMMARY ---------------------
+
+Source: VA
+
+Authentication Status: Authenticated
+Authentication Date: 19 Aug 2010
+Authentication Facility ID: 979
+Authentication Facility Name: SLC10 TEST LAB
+
+   VA Treating Facility                     Type
+   ----------------------------            -----------  
+   DAYT29                                  M&ROC
+   AUSTIN HDR INT                          OTHER
+   AUSTIN PSIM                             OTHER
+
+----------------------------- DEMOGRAPHICS ----------------------------
+
+Source: Self-Entered
+
+First Name: ONE
+Middle Initial: A
+Last Name: MHVVETERAN
+Suffix: 
+Alias: MHVVET
+Relationship to VA: Patient, Veteran, Employee
+
+Gender: Male   Blood Type: AB+         Organ Donor: Yes
+
+Date of Birth: 01 Mar 1948
+Marital Status: Married
+Current Occupation: Truck Driver
+
+Mailing or Destination Address: 123 Anywhere Road
+Mailing or Destination Address2: Apartment 123
+Mailing or Destination City: Anywhere
+Mailing or Destination State: DC
+Mailing or Destination Country: United States
+Mailing or Destination Province: 
+Mailing or Destination Zip/Postal Code: 00001
+
+Home Phone Number: 000-010-0101
+Work Phone Number: 000-020-0202
+Pager Number: 000-030-0303
+Cell Phone Number: 000-040-0404
+FAX Number: 000-050-0505
+Email Address: mhvveteran@emailaddress.com
+Preferred Method of Contact: Email
+
+EMERGENCY CONTACTS
+
+Contact First Name: Two
+Contact Last Name: MHVVeteran
+Relationship: 
+Home Phone Number: 000-010-0101
+Work Phone Number: 000-060-0606  Extension: 
+Cell Phone Number: 000-070-0707
+Address Line 1: 123 Anywhere Road
+Address Line 2: Apartment 123
+City: Anywhere
+State: DC
+Country: United States
+Province: 
+Zip/Post Code: 00001
+Email Address: twomhvveteran@domain.com
+
+Contact First Name: Three
+Contact Last Name: MHVVeteran
+Relationship: 
+Home Phone Number: 000-010-0101
+Work Phone Number: 000-080-0808  Extension: 
+Cell Phone Number: 000-090-0909
+Address Line 1: 123 Anywhere Road
+Address Line 2: Apartment 123
+City: Anywhere
+State: DC
+Country: United States
+Province: 
+Zip/Post Code: 00001
+Email Address: threemhvveteran@domain.com
+
+------------------------- HEALTH CARE PROVIDERS -------------------------
+
+Source: Self-Entered
+
+Provider Name: John Doe
+Type of Provider: Primary
+Other Clinician Information:  
+Phone Number: 000-000-0000    Ext: 1234
+Email: provider@institution.org
+Comments: Dr. Doe can be reached on the weekend if needed by leaving a message 
+with the clinic. 
+
+Provider Name: Jane Smith
+Type of Provider: Specialist
+Other Clinician Information: Seen as needed
+Phone Number: 000-000-0001    Ext: 1234
+Email: specialist@institution.org
+Comments: Dr. Smith should be notified of any changes in my medical condition. 
+Requires a referral from my health insurance company. 
+
+------------------------- TREATMENT FACILITIES --------------------------
+
+Source: Self-Entered
+
+Facility Name: Anywhere VA Medical Center
+Facility Type: VA            VA Home Facility: Yes
+Phone Number: 000-000-0001   Ext: 1234
+Mailing Address: 123 VA Drive
+Mailing Address2: Suite 4
+Mailing City: Anywhere
+Mailing State: DC
+Mailing Country: United States
+Mailing Province:  
+Mailing Zip/Postal Code: 00001
+Comments: Contact clinic when calling to make my appointments. 
+
+Facility Name: Health Care Inc.
+Facility Type: Non-VA        VA Home Facility: No
+Phone Number: 000-000-0002   Ext: 5678
+Mailing Address: 123 Anywhere Road
+Mailing Address2: B-Wing
+Mailing City: Anywhere
+Mailing State: DC
+Mailing Country: United States
+Mailing Province:  
+Mailing Zip/Postal Code: 00001
+Comments: Reminder to bring My HealtheVet printouts for all visits 
+
+--------------------------- HEALTH INSURANCE ----------------------------
+
+Source: Self-Entered
+
+Health Insurance Company: My Health Insurance Company
+Primary Insurance Provider: Yes
+ID Number: 0001234                      Group Number: 0000000
+Insured: One Mhvveteran
+Start Date: 01 Jan 2000                 Stop Date: 
+Pre-Approval Phone Number:              000-000-0003
+Health Insurance Company Phone Number:  000-000-0004
+Comments: Need to get pre-authorization for special services. 
+
+Health Insurance Company: My Other Health Insurance Company
+Primary Insurance Provider: No
+ID Number: 000567891010                 Group Number: ABC123456789
+Insured: One Mhvveteran
+Start Date: 01 Jan 2009                 Stop Date: 
+Pre-Approval Phone Number:              000-000-0005
+Health Insurance Company Phone Number:  000-000-0005
+Comments: Coverage only for vision and dental. 
+
+---------------------------- VA WELLNESS REMINDERS -------------------------
+
+Source: VA
+Last Updated: 02 Dec 2011 @ 0706
+
+Wellness Reminder                  Due Date    Last Completed   Location
+----------------------------------------------------------------------------    
+Colon Cancer Screening             DUE NOW     UNKNOWN          DAYT29      
+Influenza Vaccine                  DUE NOW     UNKNOWN          DAYT29      
+
+Learn more about these Wellness Reminders by visiting My HealtheVet.
+Please contact your health care team with any questions about your VA
+Wellness Reminders.
+
+
+--------------------------- VA APPOINTMENTS -----------------------------
+
+Source: VA
+Last Updated: 02 Dec 2011 @ 0706
+
+VA Past Appointments are limited to two years from the date of your
+download request.
+
+FUTURE APPOINTMENTS:
+--------------------
+Date/Time:      13 Oct 2012 @ 1100
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         C&P CHRISTIE
+Phone Number:   3929
+Type:           Compensation and Pension Appointment
+
+
+PAST APPOINTMENTS:
+--------------------
+Date/Time:      13 Oct 2011 @ 1600
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         C&P CHRISTIE
+Phone Number:   3929
+Type:           Compensation and Pension Appointment
+
+Date/Time:      07 Sep 2011 @ 1100
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         TELEPHONE CALLS/GERIATRICS
+Phone Number:   3742
+
+Date/Time:      27 Jul 2011 @ 1400
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         DIABETIC-BURKE
+Phone Number:   800-123-1234
+Note:           This appointment has pre-appointment activity scheduled:
+                Lab:    27 Jul 2011 @ 1000
+
+Date/Time:      15 Jun 2011 @ 1300
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         DIABETIC-BURKE
+Phone Number:   800-123-1234
+Note:           This appointment has pre-appointment activity scheduled:
+                Lab:    15 Jun 2011 @ 0800
+                EKG:    15 Jun 2011 @ 1030
+                X-Ray:  15 Jun 2011 @ 0900
+
+Date/Time:      03 May 2011 @ 1100
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         TELEPHONE CALLS/GERIATRICS
+Phone Number:   3742
+Note:           This appointment has pre-appointment activity scheduled:
+                X-Ray:  03 May 2011 @ 0800
+
+Date/Time:      15 Mar 2011 @ 1000
+Location:       MIDDLETOWN
+Status:         CANCELLED
+Clinic:         MD/DENTAL FOSTER
+Phone Number:   2449
+Note:           This appointment has pre-appointment activity scheduled:
+                Lab:    15 Mar 2011 @ 0930
+
+Date/Time:      06 Jan 2011 @ 1000
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         PRP JOHNSON,C (GRP)
+Phone Number:   2188
+Note:           This appointment has pre-appointment activity scheduled:
+                Lab:    06 Jan 2011 @ 0900
+                EKG:    06 Jan 2011 @ 0930
+
+Date/Time:      03 Jan 2011 @ 1300
+Location:       DAYT29 TEST LAB
+Status:         NOT APPLICABLE
+Clinic:         PRP JOHNSON,C (GRP)
+Phone Number:   2188
+
+Date/Time:      29 Dec 2010 @ 1000
+Location:       MIDDLETOWN
+Status:         NOT APPLICABLE
+Clinic:         MD/PODIATRY NGUYEN (Follow-Up)
+Phone Number:   5416
+
+Date/Time:      30 Aug 2010 @ 1400
+Location:       DAYT29 TEST LAB
+Status:         APPOINTMENT KEPT
+Clinic:         TELEPHONE CALLS/GERIATRICS
+Phone Number:   3742
+
+Date/Time:      14 Jul 2010 @ 0900
+Location:       MIDDLETOWN
+Status:         NOT APPLICABLE
+Clinic:         MD/PODIATRY NGUYEN (Follow-Up)
+Phone Number:   5416
+
+
+-------------------------- VA MEDICATION HISTORY ----------------------
+
+Source: VA
+Last Updated: 11 Apr 2011 @ 1737
+
+VA Medication History includes up to two years of medication history
+unless you select a different date range in your download request.
+
+Medication: AMLODIPINE BESYLATE 10MG TAB 
+Instructions: TAKE ONE TABLET BY MOUTH TAKE ONE-HALF TABLET FOR 1 DAY --AVOID 
+GRAPEFRUIT JUICE-- 
+Status: Active
+Refills Remaining: 3
+Last Filled On: 20 Aug 2010
+Initially Ordered On: 13 Aug 2010
+Quantity: 45
+Days Supply: 90
+Pharmacy: DAYTON
+Prescription Number: 2718953
+
+Medication: IBUPROFEN 600MG TAB 
+Instructions: TAKE ONE TABLET BY MOUTH FOUR TIMES A DAY WITH FOOD AS NEEDED 
+Status: Active
+Refills Remaining: 3
+Last Filled On: 20 Aug 2010
+Initially Ordered On: 01 Jul 2010
+Quantity: 240
+Days Supply: 60
+Pharmacy: DAYTON
+Prescription Number: 2718960
+
+Medication: INSULIN,GLARGINE,HUMAN 100 UNT/ML INJ 
+Instructions: INJECT 10 ML VIAL UNDER THE SKIN AS DIRECTED FOR 28 DAYS INJECT 
+25 UNITS UNDER THE SKIN AT BEDTIME DO NOT MIX WITH OTHER INSULINS/DISCARD OPEN 
+VIALS AFTER 28 DAYS 
+Status: Active
+Refills Remaining: 3
+Last Filled On: 20 Aug 2010
+Initially Ordered On: 01 Jul 2010
+Quantity: 30
+Days Supply: 30
+Pharmacy: DAYTON
+Prescription Number: 2718956
+
+Medication: TERAZOSIN HCL 2MG CAP 
+Instructions: TAKE THREE CAPSULES BY MOUTH AT BEDTIME. 
+Status: Active
+Refills Remaining: 2
+Last Filled On: 20 Aug 2010
+Initially Ordered On: 01 Jul 2010
+Quantity: 270
+Days Supply: 90
+Pharmacy: DAYTON
+Prescription Number: 2718958
+
+Medication: METFORMIN HCL 1000MG TAB 
+Instructions: TAKE ONE TABLET BY MOUTH TWICE A DAY WITH MEALS FOR DIABETES 
+Status: Active
+Refills Remaining: 3
+Last Filled On: 20 Aug 2010
+Initially Ordered On: 01 Jul 2010
+Quantity: 180
+Days Supply: 90
+Pharmacy: DAYTON
+Prescription Number: 2718955
+
+Medication: SIMVASTATIN 20MG TAB 
+Instructions: TAKE ONE TABLET BY MOUTH AT BEDTIME FOR CHOLESTEROL - CALL YOUR 
+PROVIDER IF YOU HAVE UNEXPLAINED MUSCLE PAIN, TENDERNESS OR WEAKNESS. 
+Status: Active
+Refills Remaining: 3
+Last Filled On: 20 Aug 2010
+Initially Ordered On: 01 Jul 2010
+Quantity: 90
+Days Supply: 90
+Pharmacy: DAYTON
+Prescription Number: 2718957
+
+Medication: LISINOPRIL 10MG TAB 
+Instructions: TAKE ONE TABLET BY MOUTH DAILY 
+Status: Active
+Refills Remaining: 3
+Last Filled On: 20 Aug 2010
+Initially Ordered On: 01 Jul 2010
+Quantity: 90
+Days Supply: 90
+Pharmacy: DAYTON
+Prescription Number: 2718954
+
+Medication: INSULIN NPH HUMAN 100 U/ML INJ NOVOLIN N 
+Instructions: INJECT 16 UNITS UNDER THE SKIN EVERY MORNING AND INJECT 18 UNITS 
+AT BEDTIMEnull 
+Status: Discontinued
+Refills Remaining: 3
+Last Filled On: 20 Aug 2010
+Initially Ordered On: 24 May 2010
+Quantity: 30
+Days Supply: 30
+Pharmacy: DAYTON
+Prescription Number: 2718962
+
+Medication: FREESTYLE (GLUCOSE) TEST STRIP 
+Instructions: USE 1 STRIP FOR TESTING AS DIRECTED 
+Status: Submitted
+Refills Remaining: 2
+Last Filled On: 20 Aug 2010
+Initially Ordered On: 01 Jul 2010
+Quantity: 200
+Days Supply: 50
+Pharmacy: DAYTON
+Prescription Number: 2718959
+
+Medication: COLON ELECTROLYTE LAVAGE PWD FOR SOLN 
+Instructions: TAKE 1 CONTAINER MOUTH AS DIRECTED FOR 1 DAY DISSOLVE 1 BOTTLE BY 
+Status: Expired
+Refills Remaining: 0
+Last Filled On: 01 Jul 2010
+Initially Ordered On: 01 Jul 2010
+Quantity: 1
+Days Supply: 2
+Pharmacy: DAYTON
+Prescription Number: 2718961
+
+Medication: TABLET CUTTER 
+Instructions: USE AS DIRECTED MOUTH AS DIRECTED FOR 3 DAYS USE AS DIRECTED TO 
+SPLIT 
+Status: Expired
+Refills Remaining: 0
+Last Filled On: 24 May 2010
+Initially Ordered On: 24 May 2010
+Quantity: 1
+Days Supply: 30
+Pharmacy: DAYTON
+Prescription Number: 2718963
+
+
+-------------------------- MEDICATIONS AND SUPPLEMENTS ----------------------
+
+Source: Self-Entered
+
+Category: RX Medication
+Drug Name: Aspirin EC
+Prescription Number: 010101B
+Strength: 81mg
+Dose: 1 tab
+Frequency: daily
+Start Date: 15 Jun 2005                         Stop Date:  
+Pharmacy Name: My Local Drugstore               Pharmacy Phone: 000-010-0000
+
+Reason for taking: Daily regimen for heart health 
+
+Comments:  
+
+Category: OTC
+Drug Name: Cough Medicine
+Prescription Number:  
+Strength: 1000mg
+Dose: 2 TBS
+Frequency: morning and night
+Start Date: 01 Feb 2010                         Stop Date: 21 Feb 2010
+Pharmacy Name: My Local Drugstore               Pharmacy Phone: 000-010-0000
+
+Reason for taking: Cough was keeping me up at night 
+
+Comments: Cleared up after a few weeks 
+
+Category: Herbal
+Drug Name: Ginkgo biloba
+Prescription Number:  
+Strength:  
+Dose: 2 capsules
+Frequency: once a day
+Start Date: 08 Mar 2008                         Stop Date:  
+Pharmacy Name: My Local Drugstore               Pharmacy Phone: 000-010-0000
+
+Reason for taking: Wife suggested to improve concentration 
+
+Comments: Take in the morning with breakfast 
+
+Category: Supplement
+Drug Name: Multi-vitamin
+Prescription Number:  
+Strength: 100% RDA
+Dose: 1 tablet daily
+Frequency: morning
+Start Date: 18 Mar 2010                         Stop Date:  
+Pharmacy Name: My Local Drugstore               Pharmacy Phone: 000-010-0000
+
+Reason for taking: To stay healthy 
+
+Comments: Feeling more energetic since I started taking vitamin 
+
+---------------------------- VA ALLERGIES -------------------------
+
+Source: VA
+Last Updated: 01 Dec 2011 @ 0851
+
+
+Allergy Name:        TRIMETHOPRIM
+Location:            DAYT29
+Date Entered:        09 Mar 2011
+Reaction:             
+Allergy Type:        DRUG 
+VA Drug Class:       ANTI-INFECTIVES,OTHER 
+Observed/Historical: HISTORICAL
+Comments:            The reaction to this allergy was MILD (NO SQUELAE) 
+
+Allergy Name:        TRAMADOL
+Location:            DAYT29
+Date Entered:        09 Mar 2011
+Reaction:            URINARY RETENTION 
+Allergy Type:        DRUG 
+VA Drug Class:       NON-OPIOID ANALGESICS 
+Observed/Historical: HISTORICAL
+Comments:            gradually worsening difficulty emptying bladder -- might 
+try tramadol again cautiously because pt. reported pain releif 
+
+Allergy Name:        BACTRIM
+Location:            DAYT29
+Date Entered:        09 Mar 2011
+Reaction:             
+Allergy Type:        DRUG 
+VA Drug Class:       SULFONAMIDE/RELATED ANTIMICROBIALS 
+Observed/Historical: HISTORICAL
+Comments:            Causes Swelling of the Extremeties 
+
+Allergy Name:        TERAZOSIN
+Location:            DAYT29
+Date Entered:        09 Mar 2011
+Reaction:            DIZZINESS 
+Allergy Type:        DRUG 
+VA Drug Class:       ALPHA BLOCKERS/RELATED 
+Observed/Historical: HISTORICAL
+Comments:            Lightheadedness on 10mg qhs Terazoin resolved upon
+stopping Terazoin. 
+
+Allergy Name:        METHOCARBAMOL
+Location:            DAYT29
+Date Entered:        09 Mar 2011
+Reaction:            CONFUSION, DROWSINESS 
+Allergy Type:        DRUG 
+VA Drug Class:       SKELETAL MUSCLE RELAXANTS 
+Observed/Historical: OBSERVED
+Comments:            Drowsiness and hallucinations while on methocarbamol plus
+carbamazepine and other sedatives 
+
+Please contact your health care team with any questions about your VA
+Allergy information.
+
+
+
+-------------------------- ALLERGIES/ADVERSE REACTIONS ---------------------
+
+Source: Self-Entered
+
+
+Allergy Name: Peanuts
+Date:         01 Aug 1980
+Severity:     Moderate
+Diagnosed:    Yes
+
+Reaction: Hives 
+
+Comments: Avoid peanuts and peanut based foods.  Foods cooked with peanut oil 
+also cause the reaction 
+
+Allergy Name: Pollen
+Date:         18 Mar 2010
+Severity:     Mild
+Diagnosed:    Yes
+
+Reaction: Watery eyes, itchy nose 
+
+Comments: Took an over the counter antihistamine 
+
+
+------------------------------ MEDICAL EVENTS -------------------------------
+
+Source: Self-Entered
+
+Medical Event:   Colonoscopy
+Start Date:      18 Mar 2000
+Stop Date:       18 Mar 2000
+
+Response: Colonoscopy when well 
+
+Comments: Polyps were removed.  Doctor said these were benign 
+
+Medical Event:   Broken right arm
+Start Date:      04 Jan 2010
+Stop Date:       17 Feb 2010
+
+Response: Placed in cast from my hand to my elbow 
+
+Comments: Went to community hospital emergency room since I was on vacation.  
+Followed up with my VA doctor when I returned home. 
+
+
+----------------------------- IMMUNIZATIONS ---------------------------------
+
+Source: Self-Entered
+
+Immunization: Measles + Rubella (German Measles)
+Other: none 
+Method: Injection
+Date Received: 01 Mar 1950
+
+Reactions:
+---------------------------------
+Pain
+
+Comments: Received as a child 
+
+Immunization: Flu
+Other: H1N1 
+Method: Inhalant
+Date Received: 01 Sep 2009
+
+Reactions:
+---------------------------------
+
+Comments: Had no reaction 
+
+Immunization: Tetanus
+Other: none 
+Method: Injection
+Date Received: 18 Jul 2010
+
+Reactions:
+---------------------------------
+Pain
+
+Comments: stepped on a rusty nail 
+
+
+-------------------------- VA LABORATORY RESULTS ----------------------------
+
+Source: VA
+Last Updated: 01 Dec 2011 @ 0851
+Sorted By: Date Specimen Collected (Descending)
+
+VA Laboratory Results includes up to two years of history
+unless you select a different date range in your download request.
+
+=============================================================================
+Lab Test: Prothrombin Time+PTT
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Plasma
+Date/Time Collected: 27 Jun 2011
+
+-----------------------------------------------------------------------------
+Test Name: COAGULATION SURFACE INDUCED.FACTOR SUBSTITUTION~IMMEDIATELY AFTER ADDITION OF NORMAL PLASMA
+Result: 13.2 Low
+Units: SECONDS
+Reference Range: (59.0-104.0)
+Interpretation: Current normal range = 20.3 -35.8 seconds.
+Normal range prior to 7/5/02 was 25.3 - 40.4 sec.
+Normal range prior to 2/26/98 was 26.1 - 43.0 sec.
+Therapeutic range prior to 7/5/02 was 67.0 - 118.0 sec.
+Therapeutic range prior to 2/26/98 was 72.0 - 126.0 sec. 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: COAGULATION TISSUE FACTOR INDUCED
+Result: 9.9 Low
+Units: SECONDS
+Reference Range: (23.0-33.0)
+Interpretation: Current normal range = 10.8 - 13.7 seconds.
+Normal range prior to 7/5/02 was 10.7 - 14.1 seconds.
+INR should be used for therapeutic decisions. 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: COAGULATION TISSUE FACTOR INDUCED.INR
+Result: .7 
+Units: 
+Reference Range: (2-3)
+Interpretation: FOR ADDITIONAL INFORMATION - CHECK INR UNDER "TEST DESCRIPTION 
+INFO" 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+-----------------------------------------------------------------------------
+Comments: For Test: COAGULATION (PT & PTT)
+ANTICOAGULANT: PT 
+
+=============================================================================
+Lab Test: Hemogram V
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Whole blood
+Date/Time Collected: 22 Mar 2011 @ 1000
+
+-----------------------------------------------------------------------------
+Test Name: ERYTHROCYTE DISTRIBUTION WIDTH
+Result: 40 High
+Units: %
+Reference Range: (11.5-14.5)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: ERYTHROCYTE MEAN CORPUSCULAR HEMOGLOBIN
+Result: 20 Low
+Units: pg
+Reference Range: (27-31)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: ERYTHROCYTE MEAN CORPUSCULAR HEMOGLOBIN CONCENTRATION
+Result: 30 Low
+Units: gm/dl
+Reference Range: (33-37)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: ERYTHROCYTES
+Result: 4.44 Low
+Units: m/cmm
+Reference Range: (4.7-6.1)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: HEMATOCRIT
+Result: 47.1 
+Units: %
+Reference Range: (42-52)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: HEMOGLOBIN
+Result: 15.5 
+Units: g/dl
+Reference Range: (14-18)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: LEUKOCYTES
+Result: 20 High
+Units: t/cmm
+Reference Range: (4.8-10.8)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: LYMPHOCYTES/100 LEUKOCYTES
+Result: 14.9 Low
+Units: %
+Reference Range: (20.5-51.1)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: MEAN CORPUSCULAR VOLUME
+Result: 100.2 High
+Units: fl
+Reference Range: (80-94)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: PLATELET MEAN VOLUME
+Result: 60 High
+Units: fl
+Reference Range: (7.4-10.4)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: PLATELETS
+Result: 50 Low
+Units: t/cmm
+Reference Range: (130-400)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+-----------------------------------------------------------------------------
+Comments: This is a comment entered for this lab panel. 
+
+=============================================================================
+Lab Test: Carbon Dioxide Content
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 01 Dec 2010
+
+-----------------------------------------------------------------------------
+Test Name: CARBON DIOXIDE
+Result:  
+Units: mEq/L
+Reference Range: (23-33)
+Interpretation: Reference range prior to 5/25/01 was 22-31 mEq/L. 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Renal Panel
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 01 Dec 2010
+
+-----------------------------------------------------------------------------
+Test Name: CALCIUM
+Result: 150 Critical High
+Units: mg/dl
+Reference Range: (8.5-10.5)
+Interpretation: Critical high prior to 6/13/00 = 13 mg/dl 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: CHLORIDE
+Result: 13 Low
+Units: mEq/L
+Reference Range: (98-108)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: CREATININE
+Result: 63 High
+Units: mg/dl
+Reference Range: (.5-1.4)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: CREATININE EGFR
+Result: 0.7 Low
+Units: 
+Reference Range: (>60)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: GLUCOSE
+Result: 110 
+Units: mg/dl
+Reference Range: (65-110)
+Interpretation: ***PLEASE NOTE NEW CRITICAL VALUE EFFECTIVE 2/2/98*** 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: POTASSIUM
+Result: 50 Critical High
+Units: mEq/L
+Reference Range: (3.6-5.1)
+Interpretation: Normal Range Prior to 8-22-02 was: 3.6 - 5.0 mEq/L. 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: SODIUM
+Result: 130 Low
+Units: mEq/L
+Reference Range: (136-145)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+----------------------
+Test Name: UREA NITROGEN
+Result: 27 High
+Units: mg/dl
+Reference Range: (6-20)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+=============================================================================
+Lab Test: Albumin
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: ALBUMIN
+Result:  
+Units: g/dl
+Reference Range: (3.4-5.0)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Bilirubin Total
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: BILIRUBIN
+Result:  
+Units: mg/dl
+Reference Range: (.2-1.5)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Calcium
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: CALCIUM
+Result:  
+Units: mg/dl
+Reference Range: (8.5-10.5)
+Interpretation: Critical high prior to 6/13/00 = 13 mg/dl 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Carbon Dioxide Content
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: CARBON DIOXIDE
+Result:  
+Units: mEq/L
+Reference Range: (23-33)
+Interpretation: Reference range prior to 5/25/01 was 22-31 mEq/L. 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Chemistry Analysis Profile
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: GLUCOSE
+Result: 110 
+Units: mg/dl
+Reference Range: (65-110)
+Interpretation: ***PLEASE NOTE NEW CRITICAL VALUE EFFECTIVE 2/2/98*** 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Final
+=============================================================================
+Lab Test: Chloride
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: CHLORIDE
+Result:  
+Units: mEq/L
+Reference Range: (98-108)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Creatinine
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: CREATININE
+Result:  
+Units: mg/dl
+Reference Range: (.5-1.4)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Gen Chem Specimen
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: CREATININE EGFR
+Result:  
+Units: 
+Reference Range: (>60)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Phosphatase Alkaline
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: ALKALINE PHOSPHATASE
+Result:  
+Units: U/L
+Reference Range: (32-122)
+Interpretation: REFERENCE RANGE PRIOR TO 9/26/00 = 43-122 U/L 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Potassium
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: POTASSIUM
+Result:  
+Units: mEq/L
+Reference Range: (3.6-5.1)
+Interpretation: Normal Range Prior to 8-22-02 was: 3.6 - 5.0 mEq/L. 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Protein Total
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: PROTEIN
+Result:  
+Units: g/dl
+Reference Range: (6.0-8.5)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Sodium
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: SODIUM
+Result:  
+Units: mEq/L
+Reference Range: (136-145)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Transferase Alanine Amino  SGPT
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: ALANINE AMINOTRANSFERASE
+Result:  
+Units: U/L
+Reference Range: (8-63)
+Interpretation: MALE REFERENCE RANGE PRIOR TO 9/26/00 = 21-72 U/L
+FEMALE REFERENCE RANGE PRIOR TO 9/26/00 = 9-52 U/L 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Transferase Aspartate  SGOT
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: ASPARTATE AMINOTRANSFERASE
+Result:  
+Units: U/L
+Reference Range: (9-45)
+Interpretation: MALE REFERENCE RANGE PRIOR TO 9/26/00 = 14-50 U/L
+FEMALE REFERENCE RANGE PRIOR TO 9/26/00 = 8-39 U/L 
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+=============================================================================
+Lab Test: Urea Nitrogen
+Lab Type: Chemistry/Hematology
+Ordering Provider: PROVIDER, ONE
+Ordering Location: DAYTON, OH VAMC
+Specimen: Serum
+Date/Time Collected: 04 Jun 2010 @ 0900
+
+-----------------------------------------------------------------------------
+Test Name: UREA NITROGEN
+Result:  
+Units: mg/dl
+Reference Range: (6-20)
+Interpretation:  
+Performing Location: DAYTON, OH VAMC 4100 W. THIRD STREET , DAYTON, OH 45428 
+Status: Pending
+
+=============================================================================
+
+Test results slightly outside the reference range are not unusual.
+Your provider has reviewed your test results and will contact you
+for any important issues. If you have further questions, please
+do not hesitate to contact your primary care provider.
+
+
+----------------------------- LABS AND TESTS --------------------------------
+
+Source: Self-Entered
+
+Test Name: Blood Test
+Date: 06 Jun 2010
+Location performed: Community Center
+Provider: Red Cross Blood Drive
+
+Results: Was not able to donate blood because iron was low 
+
+Comments: Will ask doctor at next visit 
+
+Test Name: Colonoscopy
+Date: 01 Jul 2010
+Location performed: VAMC
+Provider: Provider One
+
+Results: No new polyps 
+
+Comments: Keep high fiber diet 
+
+
+
+----------------------------- VITALS AND READINGS ---------------------------
+
+Source: Self-Entered
+
+===============================================================================
+Measurement Type: Blood pressure
+Date: 02 Aug 2010
+Time: 1720
+Systolic: 130
+Diastolic: 76
+
+Comments: BP taken lying down 
+===============================================================================
+Measurement Type: Blood pressure
+Date: 02 Aug 2010
+Time: 1730
+Systolic: 132
+Diastolic: 76
+
+Comments: BP taken standing.  BP continues at goal.  Doctor says to continue BP 
+medications as directed 
+===============================================================================
+Measurement Type: Heart rate 
+Date: 02 Jun 2010
+Time: 1720
+Heart Rate: 160
+
+Comments: Started taking Beta-Blockers after visit with physician 
+===============================================================================
+Measurement Type: Body weight
+Date: 02 Apr 2010
+Time: 1720
+Body Weight: 246
+Measure: Pounds
+
+Comments: Talk to provider about weight management program at next visit 
+===============================================================================
+Measurement Type: Body weight
+Date: 02 May 2010
+Time: 1720
+Body Weight: 244
+Measure: Pounds
+
+Comments: Lost a few pounds and feel better.  Walking daily 
+===============================================================================
+Measurement Type: Body weight
+Date: 02 Jun 2010
+Time: 1720
+Body Weight: 242
+Measure: Pounds
+
+Comments: still walking when I have time off from work 
+===============================================================================
+Measurement Type: Body temperature
+Date: 02 Mar 2010
+Time: 1720
+Body temperature: 98.5
+Measure: Fahrenheit
+Method: Mouth
+
+Comments: I wasn't feeling well but temperature is normal 
+===============================================================================
+Measurement Type: Pain
+Date: 01 Jan 2010
+Time: 1720
+Pain Level: 7
+
+Comments: Lower back pain - took 1 Ibuprofen with food for pain 
+===============================================================================
+Measurement Type: Blood sugar
+Date: 02 Jan 2010
+Time: 1720
+Method: Sterile Lancet
+Blood sugar count: 166
+
+Comments: BS taken before meal 
+===============================================================================
+Measurement Type: Cholesterol
+Date: 15 Aug 2010
+Time: 2359
+Total cholesterol: 142
+HDL: 45
+LDL: 
+
+Comments: Lab result from community health fair. 
+
+
+-------------------------- FAMILY HEALTH HISTORY ----------------------------
+
+Source: Self-Entered
+
+Relationship: Self
+First Name: ONE
+Last Name: MHVVETERAN
+Living or Deceased: Living
+Health Issues: 
+-----------------------------
+Back Pain
+Insomnia
+>1 beer/wine a day
+Hearing Loss
+Pneumonia
+Smoking >1 pack/day
+Allergies
+Chicken Pox
+Current Smoker
+Diabetics Type 2
+Overweight
+High Blood Pressure
+Depression
+High Blood Cholesterol
+Stomach/Bowel Other
+Smoking >20 Years
+
+Other Health Issues: 
+-----------------------------
+trouble sleeping
+
+Comments: I sometimes have trouble sleeping when stress is high at work 
+
+Relationship: Mother
+First Name: Four
+Last Name: MHVVeteranMother
+Living or Deceased: Deceased
+Health Issues: 
+-----------------------------
+Cancer Other
+Diabetics Type 2
+Overweight
+Joint Pain
+Stroke
+
+Other Health Issues: 
+-----------------------------
+Chronic joint pain
+
+Comments: Mother died of cancer at age 40 
+
+
+--------------------------- MILITARY HEALTH HISTORY -------------------------
+
+Source: Self-Entered
+
+Event Title: Exposure to Burning Chemicals
+Event Date: 01 Jan 2007
+Service Branch: Army                             Rank: COL
+Exposures: Yes
+Location of Service: Overseas            Onboard Ship: No
+Military Occupational Specialty: Intelligence Officer
+Assignment: 1st Recon 
+
+Exposures: Exposed to burning chemicals 
+
+Military Service Description: Unit was in charge of security 
+
+
+--------------------- DOD MILITARY SERVICE INFORMATION ---------------------
+
+Source: DoD
+Last Updated: 02 Dec 2011 @ 1013
+
+NOTE: This report may not show your complete DoD Military Service
+      Information. For more information go to the FAQ tab.
+
+-- Regular Active Service
+Service      Begin Date  End Date    Character of Service   Rank
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Army         06/11/2005  03/26/2007  Honorable              COL
+Army         02/22/2009  02/21/2010  Honorable              COL
+Army         04/10/2010  04/08/2011  Honorable              COL
+
+-- Reserve/Guard Association Periods
+Service      Begin Date  End Date    Character of Service   Rank
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Army Guard   01/11/1987  08/24/1993  Unknown                
+Army Reserve 08/25/1993  10/25/2004  Unknown                COL
+Army Reserve 03/27/2007  10/31/2008  Unknown                COL
+
+-- Reserve/Guard Activation Periods
+Service      Begin Date  End Date    Activated Under (Title 10, 32, etc.)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Army Reserve 11/10/2001  11/09/2002  
+Army Reserve 04/14/2003  10/13/2004  
+Army Reserve 10/24/2004  10/25/2004  
+Army Reserve 03/27/2007  10/24/2007  
+Army Reserve 02/04/2008  10/31/2008  
+
+-- Deployment Periods
+Service      Begin Date  End Date    Conflict               Location
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Army Reserve 03/01/2004  03/31/2004  OEF                    ZZ
+Army         01/01/2007  03/26/2007  OEF                    IZ
+
+-- DoD MOS/Occupation Codes 
+-- Note: Both Service and DoD Generic codes may not be present in all records
+Service      Begin Date  Enl/Off   Type       Svc Occ Code       DoD Occ Code
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Army Reserve 01/16/1975  Officer   Duty       35B00              3A  
+Army Reserve 01/16/1975  Officer   Primary    35D00              3A  
+Army Reserve 03/31/2002  Officer   Duty       35D                3A  
+Army Reserve 03/31/2002  Officer   Primary    35D                3A  
+Army Reserve 06/30/2002  Officer   Duty       00A                9E  
+Army Reserve 11/30/2002  Officer   Duty       01A                9E  
+Army Reserve 10/31/2003  Officer   Duty       35D                3A  
+Army         06/11/2005  Officer   Primary    35D5K              3A  
+Army         05/31/2006  Officer   Duty       35D                3A  
+Army Reserve 03/27/2007  Officer   Primary    35D5K              3A  
+Army Reserve 06/27/2007  Officer   Duty       35D5K              3A  
+Army         02/22/2009  Officer   Duty       35D00              3A  
+Army         02/22/2009  Officer   Secondary  66HD5              6E18
+Army         02/22/2009  Officer   Primary    35D5K              3A  
+
+-- Military/Combat Pay Details
+Service      Begin Date  End Date    Military Pay Type      Location
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Army Reserve 03/01/2004  03/31/2004  02                     
+Army         01/01/2007              02                     
+Army         01/01/2007              01                     IZ
+
+-- Separation Pay Details
+Service      Begin Date  End Date    Separation Pay Type
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+-- Retirement Periods
+Service      Begin Date  End Date    Retirement Type                     Rank
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Army         11/01/2008  02/21/2009  F                                    COL
+Army         02/22/2010  04/09/2010  F                                    COL
+Army         04/09/2011              F                                    COL
+
+-- DoD Retirement Pay
+Service      Begin Date  End Date  Dsblty %  Pay Stat  Term Rsn  Stop Pay Rsn
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Army         10/31/2008  11/30/2008      00           1       C             Z
+Army         12/01/2008                  00           1       W             Z
+Army         03/01/2010  07/31/2010      00           1       C             Z
+Army         08/01/2010                  00           5       W             B
+Army         05/01/2011  05/31/2011      00           1       C             Z
+Army         06/01/2011                  00           1       W             Z
+
+Translations of Codes Used in this Section:
+
+Service Occupation Codes
+00A     Officer      Duties Unassigned
+01A     Officer      Officer Generalist
+35B00   Officer      Land Combat Support Systems (LCSS) Test Specialist
+35B00   Officer      Strategic Intelligence (RC)
+35D     Officer      Air Traffic Control Equipment Repairer
+35D     Officer      All Source Intelligence
+35D     Officer      Meteorological Equipment Repairman
+35D00   Officer      Air Traffic Control Equipment Repairer
+35D00   Officer      All Source Intelligence
+35D00   Officer      Meteorological Equipment Repairman
+35D5K   Officer      Air Traffic Control Equipment Repairer
+35D5K   Officer      All Source Intelligence
+35D5K   Officer      Meteorological Equipment Repairman
+66HD5   Officer      Medical Surgical Nurse
+66HD5   Officer      Observation Airplane Technical Inspector
+
+DoD Occupation Codes
+3A      Officer      Intelligence, General                                                                               
+9E      Officer      Other                                                                                               
+
+Military Pay Type Code
+01      Combat Zone Tax Exclusion (CZTE)
+02      Hostile Fire/Imminent Danger
+03      Hazardous Duty incentive
+
+Separation Pay Type Code
+01      Separation Pay
+02      Readjustment Pay
+03      Non-Disability Severance Pay
+04      Disability Severance Pay
+05      Discharge Gratuity
+06      Death Gratuity
+07      Special Separation Benefit
+08      Voluntary Separation Incentive Pay
+09      Voluntary Separation Pay (VSP)
+
+Retirement Type Code
+A       Mandatory
+B       Voluntary
+C       Fleet Reserve
+D       Temporary Disability Retirement List
+E       Permanent Disability Retirement List
+F       Title III
+G       Special Act
+H       Philippine Scouts
+
+Retired Pay Status Code
+1       Receiving retired pay
+2       Eligible, not receiving pay
+3       Eligible, not receiving direct SBP remittance
+4       Terminated
+5       Suspended
+
+Retired Pay Termination Reason Code
+C       Pay condition terminated
+S       Pay terminated for the reason reported in the Stop Payment Reason Code
+W       Not terminated
+
+Stop Payment Reason Code
+A       Member died
+B       Recalled to Active Duty
+C       Removed from TDRL, returned to Active Duty
+D       Removed from TDRL, returned to Civilian
+E       Pay suspended, failure to report for TDRL physical
+F       Civil Service retirement waiver
+G       VA compensation waiver
+H       Dual compensation, pay cap offset
+J       Refused retired pay
+K       Pay suspended, whereabouts unknown
+L       Suspected death
+M       Pay suspended, miscellaneous
+Z       Not applicable
+
+-------------- END OF MY HEALTHEVET PERSONAL INFORMATION REPORT ----------
