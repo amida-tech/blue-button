@@ -178,16 +178,16 @@
                 "identifiers": [
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190002918"
+                        "extension": "1166602190002939"
                     },
                     {
                         "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190003518"
+                        "extension": "1166602190003539"
                     }
                 ],
                 "vital": {
-                    "name": "Weight",
-                    "code": "3141-9",
+                    "name": "Body Mass Index Calculated",
+                    "code": "39156-5",
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
@@ -203,17 +203,12 @@
             {
                 "identifiers": [
                     {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "11666021900029181"
-                    },
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "11666021900035181"
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
                     }
                 ],
                 "vital": {
-                    "name": "BP Systolic",
-                    "code": "8480-6",
+                    "name": "Height",
+                    "code": "8302-2",
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
@@ -232,17 +227,12 @@
             {
                 "identifiers": [
                     {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190002928"
-                    },
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190003528"
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
                     }
                 ],
                 "vital": {
-                    "name": "BP Diastolic",
-                    "code": "8462-4",
+                    "name": "Intravascular Systolic",
+                    "code": "8480-6",
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
@@ -261,17 +251,12 @@
             {
                 "identifiers": [
                     {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190002939"
-                    },
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190003539"
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
                     }
                 ],
                 "vital": {
-                    "name": "Body Mass Index Calculated",
-                    "code": "39156-5",
+                    "name": "Patient Body Weight - Measured",
+                    "code": "3141-9",
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
@@ -294,100 +279,13 @@
                     }
                 ],
                 "vital": {
-                    "name": "Height",
-                    "code": "8302-2",
-                    "code_system_name": "LOINC"
-                },
-                "status": "completed",
-                "date_time": {
-                    "point": {
-                        "date": "1999-11-14T15:00:00Z",
-                        "precision": "hour"
-                    }
-                },
-                "interpretations": [
-                    "Normal"
-                ],
-                "value": 132,
-                "unit": "mm[Hg]"
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190002918"
-                    },
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190003518"
-                    }
-                ],
-                "vital": {
-                    "name": "Weight",
-                    "code": "3141-9",
-                    "code_system_name": "LOINC"
-                },
-                "status": "completed",
-                "date_time": {
-                    "point": {
-                        "date": "2000-04-07T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "interpretations": [
-                    "Normal"
-                ],
-                "value": 145,
-                "unit": "mm[Hg]"
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "11666021900029181"
-                    },
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "11666021900035181"
-                    }
-                ],
-                "vital": {
-                    "name": "BP Systolic",
+                    "name": "Intravascular Systolic",
                     "code": "8480-6",
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
                 "date_time": {
                     "point": {
-                        "date": "1999-11-14T00:00:00Z",
-                        "precision": "day"
-                    }
-                },
-                "interpretations": [
-                    "Normal"
-                ],
-                "value": 86,
-                "unit": "kg"
-            },
-            {
-                "identifiers": [
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190002928"
-                    },
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190003528"
-                    }
-                ],
-                "vital": {
-                    "name": "BP Diastolic",
-                    "code": "8462-4",
-                    "code_system_name": "LOINC"
-                },
-                "status": "completed",
-                "date_time": {
-                    "point": {
                         "date": "1999-11-14T15:00:00Z",
                         "precision": "hour"
                     }
@@ -401,17 +299,12 @@
             {
                 "identifiers": [
                     {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190002939"
-                    },
-                    {
-                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
-                        "extension": "1166602190003539"
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
                     }
                 ],
                 "vital": {
-                    "name": "Body Mass Index Calculated",
-                    "code": "39156-5",
+                    "name": "Height",
+                    "code": "8302-2",
                     "code_system_name": "LOINC"
                 },
                 "status": "completed",
@@ -426,6 +319,72 @@
                 ],
                 "value": 177,
                 "unit": "cm"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "c6f88321-67ad-11db-bd13-0800200c9a66"
+                    }
+                ],
+                "vital": {
+                    "name": "Patient Body Weight - Measured",
+                    "code": "3141-9",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2000-04-07T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "interpretations": [
+                    "Normal"
+                ],
+                "value": 88,
+                "unit": "kg"
+            },
+            {
+                "identifiers": [
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "6660219000296"
+                    },
+                    {
+                        "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.6",
+                        "extension": "6660219000356"
+                    }
+                ],
+                "vital": {
+                    "name": "Height",
+                    "code": "8302-2",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "2012-10-02T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "value": 64,
+                "unit": "[in_us]"
+            },
+            {
+                "vital": {
+                    "name": "Intravascular Diastolic",
+                    "code": "8462-4",
+                    "code_system_name": "LOINC"
+                },
+                "status": "completed",
+                "date_time": {
+                    "point": {
+                        "date": "1999-11-14T15:00:00Z",
+                        "precision": "hour"
+                    }
+                },
+                "value": 80,
+                "unit": "mm[Hg]"
             }
         ],
         "results": [
@@ -1038,8 +997,7 @@
                 "product": {
                     "unencoded_name": "Aspirin",
                     "product": {
-                        "name": "Aspirin",
-                        "code_system_name": "SNOMED CT"
+                        "name": "Aspirin"
                     }
                 }
             },
@@ -1049,8 +1007,7 @@
                 "product": {
                     "unencoded_name": "Proventil",
                     "product": {
-                        "name": "Proventil",
-                        "code_system_name": "SNOMED CT"
+                        "name": "Proventil"
                     }
                 }
             }
@@ -1709,8 +1666,7 @@
                     "reactions": [
                         {
                             "reaction": {
-                                "name": "Nausea",
-                                "code_system_name": "SNOMED CT"
+                                "name": "Nausea"
                             },
                             "severity": {
                                 "code": {
@@ -2369,8 +2325,7 @@
                 "negation_indicator": false,
                 "problem": {
                     "code": {
-                        "name": "Pneumonia",
-                        "code_system_name": "SNOMED CT"
+                        "name": "Pneumonia"
                     }
                 },
                 "onset_age": "57",
@@ -2753,6 +2708,7 @@
     "errors": [
         "nullFlavor alert:  missing but required identifier in Identifier -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
+        "nullFlavor alert:  missing but required identifier in Identifier -> VitalSignObservation -> vitalSignsSection -> CCD",
         "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required results in ResultsOrganizer -> resultsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
@@ -2795,6 +2751,7 @@
         "nullFlavor alert:  missing but required identifier in Identifier -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> author -> MedicationSupplyOrder -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
@@ -2813,6 +2770,7 @@
         "nullFlavor alert:  missing but required identifier in Identifier -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> author -> MedicationSupplyOrder -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
@@ -2855,6 +2813,7 @@
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyReaction -> allergyObservation -> problemAct -> allergiesSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
@@ -2882,6 +2841,7 @@
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation2 -> ProblemConcernAct -> problemsSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> entry -> proceduresSection -> CCD",
