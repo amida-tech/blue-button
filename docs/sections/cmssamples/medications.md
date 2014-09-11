@@ -6,32 +6,32 @@ Data model description - [Medications](../medications.md)
 
 ```javascript
 [
-    {
-        "product": {
-            "product": {
-                "name": "Aspirin"
-            },
-            "unencoded_name": "Aspirin"
-        },
-        "sig": "aspirin",
-        "status": "Completed"
-    },
-    {
-        "date": [
             {
-                "date": "1949-09-28T00:00:00Z",
-                "precision": "day"
-            }
-        ],
-        "product": {
-            "product": {
-                "name": "Erythromycin"
+                "product": {
+                    "product": {
+                        "name": "Aspirin"
+                    },
+                    "unencoded_name": "Aspirin"
+                },
+                "sig": "Aspirin",
+                "status": "Completed"
             },
-            "unencoded_name": "Erythromycin"
-        },
-        "sig": "erythromycin",
-        "status": "Completed"
-    }
+            {
+                "date_time": {
+                    "point": {
+                        "date": "1949-09-28T00:00:00Z",
+                        "precision": "day"
+                    }
+                },
+                "product": {
+                    "product": {
+                        "name": "Erythromycin"
+                    },
+                    "unencoded_name": "Erythromycin"
+                },
+                "sig": "Erythromycin",
+                "status": "Completed"
+            }
 ]
 ```
 
