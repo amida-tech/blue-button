@@ -667,14 +667,14 @@
                 ],
                 "result_set": {
                     "name": "CBC w/ Differential & Platelet",
-                    "code_system_name": "OID undefined",
                     "translations": [
                         {
                             "name": "Procedure",
                             "code": "71388002",
                             "code_system_name": "SNOMED CT"
                         }
-                    ]
+                    ],
+                    "code_system_name": "OID undefined"
                 },
                 "results": [
                     {
@@ -1205,14 +1205,14 @@
                 ],
                 "result_set": {
                     "name": "CBC WITH DIFFERENTIAL/PLATELET",
-                    "code_system_name": "OID undefined",
                     "translations": [
                         {
                             "name": "Procedure",
                             "code": "71388002",
                             "code_system_name": "SNOMED CT"
                         }
-                    ]
+                    ],
+                    "code_system_name": "OID undefined"
                 },
                 "results": [
                     {
@@ -1730,14 +1730,14 @@
                 ],
                 "result_set": {
                     "name": "HFP7+3AC",
-                    "code_system_name": "OID undefined",
                     "translations": [
                         {
                             "name": "Procedure",
                             "code": "71388002",
                             "code_system_name": "SNOMED CT"
                         }
-                    ]
+                    ],
+                    "code_system_name": "OID undefined"
                 },
                 "results": [
                     {
@@ -2007,14 +2007,14 @@
                 ],
                 "result_set": {
                     "name": "THYROID PANEL WITH TSH",
-                    "code_system_name": "OID undefined",
                     "translations": [
                         {
                             "name": "Procedure",
                             "code": "71388002",
                             "code_system_name": "SNOMED CT"
                         }
-                    ]
+                    ],
+                    "code_system_name": "OID undefined"
                 },
                 "results": [
                     {
@@ -2140,14 +2140,14 @@
                 ],
                 "result_set": {
                     "name": "Cl+K+Na",
-                    "code_system_name": "OID undefined",
                     "translations": [
                         {
                             "name": "Procedure",
                             "code": "71388002",
                             "code_system_name": "SNOMED CT"
                         }
-                    ]
+                    ],
+                    "code_system_name": "OID undefined"
                 },
                 "results": [
                     {
@@ -2245,14 +2245,14 @@
                 ],
                 "result_set": {
                     "name": "RPR",
-                    "code_system_name": "OID undefined",
                     "translations": [
                         {
                             "name": "Procedure",
                             "code": "71388002",
                             "code_system_name": "SNOMED CT"
                         }
-                    ]
+                    ],
+                    "code_system_name": "OID undefined"
                 },
                 "results": [
                     {
@@ -2292,14 +2292,14 @@
                 ],
                 "result_set": {
                     "name": "CBC w/ Differential & Platelet",
-                    "code_system_name": "OID undefined",
                     "translations": [
                         {
                             "name": "Procedure",
                             "code": "71388002",
                             "code_system_name": "SNOMED CT"
                         }
-                    ]
+                    ],
+                    "code_system_name": "OID undefined"
                 },
                 "results": [
                     {
@@ -2830,14 +2830,14 @@
                 ],
                 "result_set": {
                     "name": "Hematocrit",
-                    "code_system_name": "OID undefined",
                     "translations": [
                         {
                             "name": "Procedure",
                             "code": "71388002",
                             "code_system_name": "SNOMED CT"
                         }
-                    ]
+                    ],
+                    "code_system_name": "OID undefined"
                 },
                 "results": [
                     {
@@ -2907,14 +2907,14 @@
                 ],
                 "result_set": {
                     "name": "Urinalysis",
-                    "code_system_name": "OID undefined",
                     "translations": [
                         {
                             "name": "Procedure",
                             "code": "71388002",
                             "code_system_name": "SNOMED CT"
                         }
-                    ]
+                    ],
+                    "code_system_name": "OID undefined"
                 },
                 "results": [
                     {
@@ -6574,8 +6574,7 @@
                     }
                 ],
                 "code": {
-                    "name": "Smoking Status",
-                    "code_system_name": "SNOMED CT"
+                    "name": "Smoking Status"
                 }
             },
             {
@@ -6586,8 +6585,7 @@
                     }
                 ],
                 "code": {
-                    "name": "Smoking Status",
-                    "code_system_name": "SNOMED CT"
+                    "name": "Smoking Status"
                 }
             },
             {
@@ -6598,8 +6596,7 @@
                     }
                 ],
                 "code": {
-                    "name": "Smoking Status",
-                    "code_system_name": "SNOMED CT"
+                    "name": "Smoking Status"
                 }
             },
             {
@@ -7272,370 +7269,109 @@
         ]
     },
     "errors": [
-        "nullFlavor alert:  missing but required code in SimpifiedCode -> LanguageCommunication -> Patient -> CCD",
-        "nullFlavor alert:  missing but required system in SimpifiedCode -> LanguageCommunication -> Patient -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> Patient -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+        "nullFlavor alert:  missing but required physicalQuantity in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
-        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationInformation -> Prescription -> medicationsSection -> CCD",
         "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required precondition in Prescription -> medicationsSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> MedicationPerformer -> MedicationDispense -> Prescription -> medicationsSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergySeverityObservation -> allergyObservation -> problemAct -> allergiesSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> socialHistoryObservation -> socialHistorySection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> socialHistoryObservation -> socialHistorySection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
+        "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation/h:code/@code",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> serviceDeliveryLocation -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProcedureSpecimen -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
+        "nullFlavor alert:  missing but required plan in entry -> plan_of_care_section -> CCD",
         "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required guarantor in entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required code in participant -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> participant -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> participant -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> participant -> entry -> payers_section -> CCD",
-        "cardinality error: found 2 when expecting 1..1 at h:entryRelationship/h:act/h:participant",
-        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> policy_holder -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> policy_holder -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> policy_holder -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> procedure -> authorization -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> procedure -> authorization -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
         "nullFlavor alert:  missing but required guarantor in entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required code in participant -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> participant -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> participant -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> participant -> entry -> payers_section -> CCD",
-        "cardinality error: found 2 when expecting 1..1 at h:entryRelationship/h:act/h:participant",
-        "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> policy_holder -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> policy_holder -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required city in Address -> assignedEntity -> policy_holder -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required code in ConceptDescriptor -> procedure -> authorization -> entry -> payers_section -> CCD",
-        "nullFlavor alert:  missing but required system in ConceptDescriptor -> procedure -> authorization -> entry -> payers_section -> CCD"
+        "nullFlavor alert:  missing but required policy_holder in entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required procedure in authorization -> entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required street_lines in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required city in Address -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required address in Email -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required number in Phone -> Organization -> assignedEntity -> insurance -> policy -> entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required guarantor in entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required policy_holder in entry -> payers_section -> CCD",
+        "nullFlavor alert:  missing but required procedure in authorization -> entry -> payers_section -> CCD"
     ]
 }

@@ -114,7 +114,13 @@ describe('parse generate parse generate', function () {
 
         delete result.errors;
         delete result2.errors;
+        delete result.data.claims;
+        delete result2.data.claims;
+        delete result.data.plan_of_care;
+        delete result2.data.plan_of_care;
+        delete result.data.providers;
+        delete result2.data.providers;
 
-        //assert.deepEqual(result2.data, result.data);
+        assert.deepEqual(result2.data, result.data);
     });
 });
