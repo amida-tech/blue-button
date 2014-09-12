@@ -6,47 +6,92 @@
     "type": "object",
     "$schema": "http://json-schema.org/draft-04/schema",
     "properties": {
-        "allergen": {
-            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
-        },
-        "date": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-                "$ref": "http://local.com/common_models#/properties/cda_date"
-            }
+        "date_time": {
+            "$ref": "http://local.com/common_models#/properties/cda_date"
         },
         "identifiers": {
             "type": "array",
             "minItems": 1,
             "items": {
                 "$ref": "http://local.com/common_models#/properties/cda_id"
-                }
-        },
-         "severity": {
-            "type": "string"
-        },
-        "status": {
-            "type": "string"
-        },
-        "reaction": {
-            "type": "array",
-            "minItems":1,
-            "items": {
-                "type": "object",
-                "properties": {
-                    "reaction": {
-                        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
-                    },
-                    "severity": {
-                        "type": "string"
-                    }
-                }
             }
-        }
-       
+        },
+        "observation": {
+            "type": "object",
+            "properties": {
+                "identifiers": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "$ref": "http://local.com/common_models#/properties/cda_id"
+                    }
+                },
+
+                "negation_indicator": {
+                    "type": "boolean"
+                },
+
+                "allergen": {
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                },
+                "intolerance": {
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                },
+                "date_time": {
+                    "$ref": "http://local.com/common_models#/properties/cda_date"
+                },
+                "status": {
+                    "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                },
+
+                "reactions": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "date_time": {
+                                "$ref": "http://local.com/common_models#/properties/cda_date"
+                            },
+                            "reaction": {
+                                "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                            },
+                            "severity": {
+                                "type": "object",
+                                "properties": {
+                                    "code": {
+                                        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                                    },
+                                    "interpretation": {
+                                        "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "additionalProperties": false
+
+
+                    }
+                },
+                "severity": {
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                        },
+                        "interpretation": {
+                            "$ref": "http://local.com/common_models#/properties/cda_coded_entry"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "additionalProperties": false
     },
-    "required":["allergen"]
+    "additionalProperties": false
 }
 ```
 
@@ -55,11 +100,9 @@
 
 ####Notes
 - Name and code are optional in the spec.  In this model we assume they are required.
-- Allergies can be translated using translation object.
 - All fields except date are based on allergy observation.  Date is based on Problem Act.
 - Observations can be multiple in the spec.  In this model they are assumed to be unique.
 - Observation and reactions have dates independent of problem act in the spec.  They are ignored in this model.
-- All text fields are ignored.
 - Severities can have interpretation codes.  These are ignored in this model.
 - Status comes from observation status.  Problem Act status is ignored.
 - Reaction Procedure Activity and Medication Activity relationships are ignored.
