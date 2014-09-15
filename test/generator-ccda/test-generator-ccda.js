@@ -124,6 +124,45 @@ describe('parse generate parse generate', function () {
         assert.deepEqual(result2, result);
     });
 
+    it('SampleCCDDocument.xml should still be same', function () {
+        var data = fs.readFileSync("./test/fixtures/generator-ccda/SampleCCDDocument.xml").toString();
+
+        //convert string into JSON 
+        var result = bb.parseString(data);
+        result.meta.sections.sort();
+
+        // write generated json
+        fs.writeFileSync(path.join(generatedDir, "SampleCCDDocument_generated.json"), JSON.stringify(result, null, 4));
+
+        // check validation
+        var val = bb.validator.validateDocumentModel(result);
+
+        // generate ccda
+        var xml = bb.generateCCDA(result).toString();
+        // write ccda
+        fs.writeFileSync(path.join(generatedDir, "SampleCCDDocument_generated.xml"), xml);
+
+        // parse generated ccda
+        var result2 = bb.parseString(xml);
+        result2.meta.sections.sort();
+
+        // write the parsed json from the generated ccda
+        fs.writeFileSync(path.join(generatedDir, "SampleCCDDocument_generated_2.json"), JSON.stringify(result2, null, 4));
+
+        // re-generate
+        var xml2 = bb.generateCCDA(result2).toString();
+        fs.writeFileSync(path.join(generatedDir, "SampleCCDDocument_generated_2.xml"), xml2);
+
+        delete result.errors;
+        delete result2.errors;
+        delete result.data.providers;
+        result.meta.sections = result.meta.sections.filter(function(v) {
+            return v !== 'providers';
+        });
+
+        assert.deepEqual(result2, result);
+    });
+
     it('cms_sample.xml should not crash', function () {
         var data = fs.readFileSync("./test/fixtures/generator-ccda/cms_sample.txt").toString();
 
