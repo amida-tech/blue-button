@@ -1,5 +1,13 @@
 # blue-button.js Release Notes
 
+
+# v.1.2.0 - September 15, 2014
+- Enhanced to include support for US VA 32 Files.
+- Standardized Insurance Objects Across CMS/CCDA Files.
+- Initial CDA R1 CCD Support.
+- Fixed several hardcoding issues in CCDA Generation.
+- Added more condititionals for durable CCDA Generation.
+
 # v.1.1.0 - September 2, 2014
 - Complete review and overhaul of Blue Button JSON data model
 	- Includes standard way to handle date_time and coded entries
