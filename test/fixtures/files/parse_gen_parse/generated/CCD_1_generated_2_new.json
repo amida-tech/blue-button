@@ -1149,8 +1149,7 @@
                         ],
                         "phone": [
                             {
-                                "number": "+1-(555)555-1122",
-                                "type": "primary home"
+                                "number": "+1-(555)555-1122"
                             }
                         ]
                     }
@@ -1176,8 +1175,17 @@
                         ],
                         "phone": [
                             {
-                                "number": "+1-(555)555-1122",
-                                "type": "primary home"
+                                "number": "+1-(555)555-1122"
+                            }
+                        ]
+                    }
+                ],
+                "findings": [
+                    {
+                        "identifiers": [
+                            {
+                                "identifier": "1.3.6.1.4.1.22812.3.99930.3.4.1.3",
+                                "extension": "147852"
                             }
                         ]
                     }
@@ -2114,8 +2122,7 @@
                     ],
                     "phone": [
                         {
-                            "number": "+1-(555)555-1002",
-                            "type": "primary home"
+                            "number": "+1-(555)555-1002"
                         }
                     ]
                 },
@@ -2683,8 +2690,7 @@
                         ],
                         "phone": [
                             {
-                                "number": "+1-(555)555-1122",
-                                "type": "primary home"
+                                "number": "+1-(555)555-1122"
                             }
                         ]
                     }
@@ -2770,6 +2776,9 @@
         "nullFlavor alert:  missing but required number in Phone -> serviceDeliveryLocation -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required code in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required system in ConceptDescriptor -> assignedEntity -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required code in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required system in ConceptDescriptor -> finding -> activity -> encountersSection -> CCD",
+        "nullFlavor alert:  missing but required date_time in finding -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> CCD",
         "nullFlavor alert:  missing but required address in Email -> assignedEntity -> activity -> encountersSection -> CCD",
