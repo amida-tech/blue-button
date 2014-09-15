@@ -115,8 +115,8 @@ describe('parse generate parse generate', function () {
 
         delete result.errors;
         delete result2.errors;
-        result.data.results.forEach(function(entry) {
-            entry.results.forEach(function(r) {
+        result.data.results.forEach(function (entry) {
+            entry.results.forEach(function (r) {
                 delete r.text;
             })
         });
@@ -156,7 +156,7 @@ describe('parse generate parse generate', function () {
         delete result.errors;
         delete result2.errors;
         delete result.data.providers;
-        result.meta.sections = result.meta.sections.filter(function(v) {
+        result.meta.sections = result.meta.sections.filter(function (v) {
             return v !== 'providers';
         });
 
