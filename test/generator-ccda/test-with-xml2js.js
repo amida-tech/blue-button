@@ -1,7 +1,6 @@
 "use strict;";
 
 var expect = require('chai').expect;
-var assert = require('chai').assert;
 
 var fs = require("fs");
 var path = require('path');
@@ -84,6 +83,11 @@ describe('xml vs parse generate xml ', function () {
             var allergies = findSection(sections, "2.16.840.1.113883.10.20.22.2.6");
             var allergiesGenerated = findSection(sectionsGenerated, "2.16.840.1.113883.10.20.22.2.6");
             expect(allergies).to.exist;
+
+            // ignore allergies text
+            delete allergies.text;
+            delete allergiesGenerated.text;
+
             expect(allergiesGenerated).to.exist;
             //expect(allergiesGenerated).to.deep.equal(allergies);
         });
