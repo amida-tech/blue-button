@@ -46,6 +46,14 @@
                     "items": {
                         "type": "object",
                         "properties": {
+                            "identifiers": {
+                                "type": "array",
+                                "minItems": 1,
+                                "items": {
+                                    "$ref": "http://local.com/common_models#/properties/cda_id"
+                                }
+                            },
+
                             "date_time": {
                                 "$ref": "http://local.com/common_models#/properties/cda_date"
                             },

@@ -85,6 +85,7 @@ describe('xml vs parse generate xml ', function () {
             var allergiesGenerated = findSection(sectionsGenerated, "2.16.840.1.113883.10.20.22.2.6");
             expect(allergies).to.exist;
             expect(allergiesGenerated).to.exist;
+            //expect(allergiesGenerated).to.deep.equal(allergies);
         });
     });
 });

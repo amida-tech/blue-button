@@ -648,6 +648,11 @@
                     },
                     "reactions": [
                         {
+                            "identifiers": [
+                                {
+                                    "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a64"
+                                }
+                            ],
                             "date_time": {
                                 "low": {
                                     "date": "2007-05-01T00:00:00Z",
@@ -732,6 +737,11 @@
                     },
                     "reactions": [
                         {
+                            "identifiers": [
+                                {
+                                    "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a64"
+                                }
+                            ],
                             "date_time": {
                                 "low": {
                                     "date": "2006-05-01T00:00:00Z",
@@ -816,6 +826,11 @@
                     },
                     "reactions": [
                         {
+                            "identifiers": [
+                                {
+                                    "identifier": "4adc1020-7b14-11db-9fe1-0800200c9a64"
+                                }
+                            ],
                             "date_time": {
                                 "low": {
                                     "date": "2008-05-01T00:00:00Z",
