@@ -45,6 +45,17 @@ describe('xml vs parse generate xml ', function () {
             return null;
         };
 
+        var normalizedDisplayNames = {
+            "History of immunizations": 'Immunizations',
+            "Patient Objection": "Patient objection"
+        };
+
+        var normalizedCodeSystemNames = {
+            "National Cancer Institute (NCI) Thesaurus": "Medication Route FDA",
+            "HL7 ActNoImmunizationReason": "Act Reason",
+            "RxNorm": "RXNORM"
+        };
+
         var cleanIntroducedCodeAttrs = function cleanIntroducedCodeAttrs(original, generated) {
             Object.keys(generated).forEach(function (key) {
                 if ((key === '$') && original[key]) {
@@ -56,11 +67,16 @@ describe('xml vs parse generate xml ', function () {
                         }
                     });
                     if (originalAttrs.codeSystemName && (originalAttrs.codeSystemName !== generatedAttrs.codeSystemName)) {
-                        if (originalAttrs.codeSystemName.toUpperCase() === generatedAttrs.codeSystemName.toUpperCase()) {
-                            originalAttrs.codeSystemName = generatedAttrs.codeSystemName;
+                        if (normalizedCodeSystemNames[originalAttrs.codeSystemName]) {
+                            originalAttrs.codeSystemName = normalizedCodeSystemNames[originalAttrs.codeSystemName];
                         }
                     }
-                } else if (generated[key] && (typeof original[key] === 'object')) {
+                    if (originalAttrs.displayName && (originalAttrs.displayName !== generatedAttrs.displayName)) {
+                        if (normalizedDisplayNames[originalAttrs.displayName]) {
+                            originalAttrs.displayName = normalizedDisplayNames[originalAttrs.displayName];
+                        }
+                    }
+                } else if (original[key] && (typeof original[key] === 'object') && (typeof generated[key] === 'object')) {
                     cleanIntroducedCodeAttrs(original[key], generated[key]);
                 }
             });
@@ -102,6 +118,31 @@ describe('xml vs parse generate xml ', function () {
             });
         };
 
+        var trimText = function (original, generated) {
+            Object.keys(original).forEach(function (key) {
+                if ((key === '_') && generated[key]) {
+                    original[key] = original[key].replace(/[\r\t\n ]/g, '');
+                    generated[key] = generated[key].replace(/[\r\t\n ]/g, '');
+                } else if (generated[key] && (typeof original[key] === 'object') && (typeof generated[key] === 'object')) {
+                    trimText(original[key], generated[key]);
+                }
+            });
+        };
+
+        var removeId = function (original, generated, templateId) {
+            Object.keys(original).forEach(function (key) {
+                if ((key === 'templateId') && original.templateId) {
+                    console.log(original.templateId[0]);
+                }
+                if ((key === 'templateId') && original.templateId && original.templateId[0]['$'] && (original.templateId[0]['$'].root !== "2.16.840.1.113883.10.20.22.4.53")) {
+                    console.log('here;');
+                    delete original.id;
+                } else if (generated[key] && (typeof original[key] === 'object') && (typeof generated[key] === 'object')) {
+                    removeId(original[key], generated[key], templateId);
+                }
+            });
+        };
+
         var xml;
         var xmlGenerated;
         var sections;
@@ -136,21 +177,35 @@ describe('xml vs parse generate xml ', function () {
             });
         });
 
+        var compareSection = function (templateId) {
+            var section = findSection(sections, templateId);
+            var sectionGenerated = findSection(sectionsGenerated, templateId);
+            expect(section).to.exist;
+            expect(sectionGenerated).to.exist;
+
+            // ignore text
+            delete section.text;
+            delete sectionGenerated.text;
+
+            cleanIntroducedCodeAttrs(section, sectionGenerated);
+            removeTimeZones(section);
+            removeOriginalText(section, sectionGenerated);
+            trimText(section, sectionGenerated);
+            //removeId(section, sectionGenerated, "2.16.840.1.113883.10.20.22.4.53");
+
+            expect(sectionGenerated).to.deep.equal(section);
+        }
+
         it('allergies', function () {
-            var allergies = findSection(sections, "2.16.840.1.113883.10.20.22.2.6");
-            var allergiesGenerated = findSection(sectionsGenerated, "2.16.840.1.113883.10.20.22.2.6");
-            expect(allergies).to.exist;
-            expect(allergiesGenerated).to.exist;
-
-            // ignore allergies text
-            delete allergies.text;
-            delete allergiesGenerated.text;
-
-            cleanIntroducedCodeAttrs(allergies, allergiesGenerated);
-            removeTimeZones(allergies);
-            removeOriginalText(allergies, allergiesGenerated);
-            //console.log(allergies);
-            expect(allergiesGenerated).to.deep.equal(allergies);
+            compareSection("2.16.840.1.113883.10.20.22.2.6");
         });
+
+        //it('immunizations', function () {
+        //    compareSection("2.16.840.1.113883.10.20.22.2.2");
+        //});
+
+        //it('medications', function () {
+        //    compareSection("2.16.840.1.113883.10.20.22.2.1");
+        //});
     });
 });
