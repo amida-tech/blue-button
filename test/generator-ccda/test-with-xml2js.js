@@ -45,6 +45,63 @@ describe('xml vs parse generate xml ', function () {
             return null;
         };
 
+        var cleanIntroducedCodeAttrs = function cleanIntroducedCodeAttrs(original, generated) {
+            Object.keys(generated).forEach(function (key) {
+                if ((key === '$') && original[key]) {
+                    var originalAttrs = original[key];
+                    var generatedAttrs = generated[key];
+                    ['codeSystem', 'codeSystemName', 'displayName'].forEach(function (attr) {
+                        if (generatedAttrs[attr] && !originalAttrs[attr]) {
+                            delete generatedAttrs[attr];
+                        }
+                    });
+                    if (originalAttrs.codeSystemName && (originalAttrs.codeSystemName !== generatedAttrs.codeSystemName)) {
+                        if (originalAttrs.codeSystemName.toUpperCase() === generatedAttrs.codeSystemName.toUpperCase()) {
+                            originalAttrs.codeSystemName = generatedAttrs.codeSystemName;
+                        }
+                    }
+                } else if (generated[key] && (typeof original[key] === 'object')) {
+                    cleanIntroducedCodeAttrs(original[key], generated[key]);
+                }
+            });
+        };
+
+        // Parser does not keep time zones.  This removes them from original until that is fixed
+        var removeTimeZones = function (original) {
+            Object.keys(original).forEach(function (key) {
+                if ((key === '$') && original[key]) {
+                    var t = original[key].value;
+                    if (t && (typeof t === 'string')) {
+                        if (t.length > 14) {
+                            var index = t.indexOf('-');
+                            if (index < 0) {
+                                index = t.indexOf('+');
+                            }
+                            if ((index + 5) === t.length) {
+                                original[key].value = t.slice(0, index);
+                            }
+                        }
+                    }
+                } else if (original[key] && (typeof original[key] === 'object')) {
+                    removeTimeZones(original[key]);
+                }
+            });
+        };
+
+        // Parser does not keep time zones.  This removes them from original until that is fixed
+        var removeOriginalText = function (original, generated) {
+            Object.keys(original).forEach(function (key) {
+                if ((key === 'originalText') || (key === 'reference')) {
+                    delete original[key];
+                    if (generated[key]) {
+                        delete generated[key];
+                    }
+                } else if (generated[key] && (typeof original[key] === 'object')) {
+                    removeOriginalText(original[key], generated[key]);
+                }
+            });
+        };
+
         var xml;
         var xmlGenerated;
         var sections;
@@ -83,13 +140,17 @@ describe('xml vs parse generate xml ', function () {
             var allergies = findSection(sections, "2.16.840.1.113883.10.20.22.2.6");
             var allergiesGenerated = findSection(sectionsGenerated, "2.16.840.1.113883.10.20.22.2.6");
             expect(allergies).to.exist;
+            expect(allergiesGenerated).to.exist;
 
             // ignore allergies text
             delete allergies.text;
             delete allergiesGenerated.text;
 
-            expect(allergiesGenerated).to.exist;
-            //expect(allergiesGenerated).to.deep.equal(allergies);
+            cleanIntroducedCodeAttrs(allergies, allergiesGenerated);
+            removeTimeZones(allergies);
+            removeOriginalText(allergies, allergiesGenerated);
+            //console.log(allergies);
+            expect(allergiesGenerated).to.deep.equal(allergies);
         });
     });
 });
