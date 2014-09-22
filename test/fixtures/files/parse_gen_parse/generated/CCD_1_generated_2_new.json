@@ -2384,7 +2384,7 @@
                 "priority": {
                     "name": "Callback results",
                     "code": "CR",
-                    "code_system_name": "OID 2.16.840.1.113883.5.7"
+                    "code_system_name": "ActPriority"
                 },
                 "performer": [
                     {
@@ -2470,7 +2470,7 @@
                     {
                         "name": "colon",
                         "code": "appropriate_code",
-                        "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
+                        "code_system_name": "Body Site Value Set"
                     }
                 ],
                 "specimen": {
@@ -2572,7 +2572,7 @@
                 "priority": {
                     "name": "Callback results",
                     "code": "CR",
-                    "code_system_name": "OID 2.16.840.1.113883.5.7"
+                    "code_system_name": "ActPriority"
                 },
                 "performer": [
                     {
@@ -2700,7 +2700,7 @@
         ]
     },
     "meta": {
-        "version": "1.2.0",
+        "version": "1.3.0-beta.1",
         "sections": [
             "demographics",
             "vitals",
