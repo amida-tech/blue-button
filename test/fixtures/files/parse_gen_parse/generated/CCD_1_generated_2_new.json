@@ -2700,7 +2700,7 @@
         ]
     },
     "meta": {
-        "version": "1.3.0-beta.3",
+        "version": "1.3.0-beta.4",
         "sections": [
             "demographics",
             "vitals",
