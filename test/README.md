@@ -43,14 +43,3 @@ Parse valid CCDA from XML file and run it through validator
 Parse valid CMS from text file and run it through validator
 
 ### CCDA r1 Parser
-
-TODO:
-
-### CCDA Generator
-
-TODO:
-
-Parse CCDA file -> BB JSON -> Generate CCDA XML file - > Parse CCDA file -> BB JSON #2 - > Generate CCDA XML file #2
-
-BB JSON should be equal BB JSON #2
-Generated CCDA XML file should be equal Generated CCDA XML file #2

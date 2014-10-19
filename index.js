@@ -18,7 +18,7 @@ exports.parseText2 = parser.parseText2;
 exports.parse = parser.parse;
 
 // ccda generation
-exports.generateCCDA = require("./lib/generator/ccda/generator.js").genWholeCCDA;
+exports.generateCCDA = require("blue-button-generate").generateCCD;
 
 // testing for ccda generation
 //exports.testCCDA = require("./test/test-lib.js").testXML;
