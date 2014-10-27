@@ -233,6 +233,9 @@ getting:
 See [/example](./example) for example above as well as how to parse individual sections.
 ***
 
+## Data Model
+
+Data model details and validation can be found in [blue-button-model](https://github.com/amida-tech/blue-button-model).
 
 ## Goals
 
