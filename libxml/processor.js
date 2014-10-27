@@ -32,20 +32,14 @@ var asString = processor.asString = function (v) {
     return ret;
 };
 
-asString.type = 'string';
-
 var asBoolean = processor.asBoolean = function (v) {
     var t = processor.asString(v);
     return t === 'true';
 };
 
-asBoolean.type = 'boolean';
-
 var asFloat = processor.asFloat = function (v) {
     return parseFloat(processor.asString(v));
 };
-
-asFloat.type = 'number';
 
 var asTimestamp = processor.asTimestamp = function (v) {
     var t = processor.asString(v);
@@ -69,8 +63,6 @@ var asTimestamp = processor.asTimestamp = function (v) {
     return ret.toISOString();
 };
 
-asTimestamp.type = 'datetime';
-
 var asTimestampResolution = processor.asTimestampResolution = function (v) {
     var t = processor.asString(v);
     // TODO handle timezones in dates like 
@@ -91,5 +83,3 @@ var asTimestampResolution = processor.asTimestampResolution = function (v) {
 
     return 'subsecond';
 };
-
-asTimestampResolution.type = 'string';
