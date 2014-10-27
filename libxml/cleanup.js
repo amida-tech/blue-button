@@ -39,3 +39,59 @@ cleanup.clearNulls = function () {
         }
     }
 };
+
+cleanup.renameField = function (oldn, newn) {
+    var f = function () {
+        if (this.js && this.js[oldn]) {
+            this.js[newn] = this.js[oldn];
+            delete this.js[oldn];
+        }
+    };
+    return f;
+};
+
+cleanup.replaceWithObject = function (field, value) {
+    var f = function () {
+        if (this.js && this.js[field]) {
+            this.js[field] = value;
+        }
+    };
+    return f;
+};
+
+cleanup.extractAllFields = function (flist) { // We need cleanup function to become objects
+    var r = function () {
+        flist.forEach(function (k) {
+            var tmp;
+            if (this.js !== undefined && this.js !== null) {
+                tmp = this.js[k];
+                delete this.js[k]
+            };
+            if (tmp) { //HACK: added this if
+                if (tmp.js) {
+                    Object.keys(tmp.js).forEach(function (m) {
+                        if (this.js[m] === undefined) {
+                            this.js[m] = tmp.js[m];
+                        }
+                    }, this);
+                }
+            }
+        }, this);
+    };
+    return r;
+};
+
+cleanup.replaceWithField = function (field) {
+    var r = function () {
+        this.js = this.js && this.js[field];
+    };
+    return r;
+};
+
+cleanup.removeField = function (field) {
+    var r = function () {
+        if (this.js) //HACK: added if
+            delete this.js[field];
+    }
+    return r;
+};
