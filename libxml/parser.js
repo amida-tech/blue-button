@@ -1,4 +1,6 @@
-var Processor = require("./processor");
+"use strict";
+
+var processor = require("./processor");
 var common = require("./common");
 var xpath = common.xpath;
 var util = require('util');
@@ -31,13 +33,13 @@ Parser.prototype.run = function (parentInstance, node, sourceKey) {
             if (component.hasParsers()) {
                 instance.run(match, sourceKey);
             } else {
-                instance.run(Processor.asString(match), sourceKey);
+                instance.run(processor.asString(match), sourceKey);
             }
             return instance;
         } else if (component) {
             return component(match);
         } else {
-            return Processor.asString(match);
+            return processor.asString(match);
         }
     });
 

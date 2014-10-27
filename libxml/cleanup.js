@@ -1,16 +1,10 @@
 "use strict";
 
-
-var common = require("./common");
-var Processor = require("./processor");
-
 var _ = require("underscore");
 
-var ComponentInstance = require("./componentInstance");
+var cleanup = module.exports = {};
 
-var Cleanup = module.exports = {};
-
-Cleanup.clearNulls = function () {
+cleanup.clearNulls = function () {
 
     //Purges empty objects from arrays, added to improve phone/email support.
     for (var obj in this.js) {
@@ -44,5 +38,4 @@ Cleanup.clearNulls = function () {
             this.js = null;
         }
     }
-
 };

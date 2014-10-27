@@ -1,13 +1,13 @@
 "use strict";
 
-var common = require("./common");
 var assert = require("assert");
+var common = require("./common");
 
 var deepForEach = common.deepForEach;
 
-var ComponentInstance = {};
+var componentInstance = {};
 
-ComponentInstance.pathToTop = function () {
+componentInstance.pathToTop = function () {
     function chainUp(c) {
         var ret = [c];
         if (!c.parent) {
@@ -20,10 +20,10 @@ ComponentInstance.pathToTop = function () {
     return chainUp(this);
 };
 
-ComponentInstance.cleanupTree = function (sourceKey) {
+componentInstance.cleanupTree = function (sourceKey) {
     deepForEach(this, {
         pre: function (v) {
-            if (ComponentInstance.isPrototypeOf(v)) {
+            if (componentInstance.isPrototypeOf(v)) {
                 return v.js;
             }
             return v;
@@ -34,7 +34,7 @@ ComponentInstance.cleanupTree = function (sourceKey) {
     });
 };
 
-ComponentInstance.cleanup = function (sourceKey) {
+componentInstance.cleanup = function (sourceKey) {
     var steps = this.component.overallCleanupSteps(sourceKey);
     steps.forEach(function (stepObj) {
         stepObj.value.call(this);
@@ -42,7 +42,7 @@ ComponentInstance.cleanup = function (sourceKey) {
     return this;
 };
 
-ComponentInstance.setJs = function (path, val) {
+componentInstance.setJs = function (path, val) {
     var parts = path.split(/\./);
     var hook = this.js;
     var i;
@@ -53,7 +53,7 @@ ComponentInstance.setJs = function (path, val) {
     hook[parts[i]] = val;
 };
 
-ComponentInstance.run = function (node, sourceKey) {
+componentInstance.run = function (node, sourceKey) {
     this.node = node;
     var parsers = this.component.overallParsers(sourceKey);
     if (0 === parsers.length) {
@@ -67,10 +67,10 @@ ComponentInstance.run = function (node, sourceKey) {
     }
 };
 
-ComponentInstance.toJSON = function () {
+componentInstance.toJSON = function () {
     return deepForEach(this, {
         pre: function (o) {
-            if (ComponentInstance.isPrototypeOf(o)) {
+            if (componentInstance.isPrototypeOf(o)) {
                 return o.js;
             }
             return o;
@@ -78,4 +78,4 @@ ComponentInstance.toJSON = function () {
     });
 };
 
-module.exports = ComponentInstance;
+module.exports = componentInstance;

@@ -2,33 +2,31 @@
 
 var util = require("util");
 var common = require("./common");
-var assert = require("assert");
+var cleanup = require("./cleanup");
+var componentInstance = require("./componentInstance");
+
 var Parser = require("./parser");
-var Processor = require("./processor");
-var Cleanup = require("./cleanup");
-var XDate = require("xdate");
-var ComponentInstance = require("./componentInstance");
 
 var deepForEach = common.deepForEach;
 
-var Component = {};
+var component = {};
 
-Component.classInit = function (name) {
+component.classInit = function (name) {
     this.componentName = name;
     this.cleanupSteps = [];
     this.parsers = [];
 };
 
-Component.classInit("Component");
+component.classInit("Component");
 
-Component.define = function (name) {
+component.define = function (name) {
     var r = Object.create(this);
     r.classInit(name);
     return r;
 };
 
-Component.instance = function (parent) {
-    var r = Object.create(ComponentInstance);
+component.instance = function (parent) {
+    var r = Object.create(componentInstance);
     r.js = {};
     r.hidden = {};
     r.component = this;
@@ -41,7 +39,7 @@ Component.instance = function (parent) {
     return r;
 };
 
-Component.templateRoot = function (roots) {
+component.templateRoot = function (roots) {
     this.templateRoots = [];
 
     if (!Array.isArray(roots)) {
@@ -55,7 +53,7 @@ Component.templateRoot = function (roots) {
     return this;
 };
 
-Component.xpath = function () {
+component.xpath = function () {
     //console.log(this.templateRoots);
     var ret = this.templateRoots.map(function (r) {
         return util.format(".//h:templateId[@root='%s']/..", r);
@@ -64,12 +62,12 @@ Component.xpath = function () {
     return ret;
 };
 
-Component.withNegationStatus = function (t) {
+component.withNegationStatus = function (t) {
     this._negationStatus = t;
     return this;
 };
 
-Component.withMood = function (m) {
+component.withMood = function (m) {
     if (!util.isArray(m)) {
         m = [m];
     }
@@ -77,7 +75,7 @@ Component.withMood = function (m) {
     return this;
 };
 
-Component.fields = function (parsers) {
+component.fields = function (parsers) {
     this.parsers = [];
     parsers.forEach(function (p, i) {
         var np = new Parser();
@@ -107,7 +105,7 @@ var normalizeInputKeys = function (input) {
     }
 }
 
-Component.cleanupStep = function (steps, inclusiveKeys, exclusiveKeys) {
+component.cleanupStep = function (steps, inclusiveKeys, exclusiveKeys) {
     if (!Array.isArray(steps)) {
         steps = [steps];
     }
@@ -135,7 +133,7 @@ var cleanupSourceKeyFilter = function (step, sourceKey) {
     }
 }
 
-Component.overallCleanupSteps = function (sourceKey) {
+component.overallCleanupSteps = function (sourceKey) {
     var result = [];
     var sourceKeyFilter = function (step) {
         if (!(step.inclusiveKeys || step.exclusiveKeys)) {
@@ -157,7 +155,7 @@ Component.overallCleanupSteps = function (sourceKey) {
     return result;
 };
 
-Component.hasParsers = function () {
+component.hasParsers = function () {
     for (var obj = this; obj; obj = Object.getPrototypeOf(obj)) {
         if (obj.parsers && obj.parsers.length > 0) {
             return true;
@@ -166,7 +164,7 @@ Component.hasParsers = function () {
     return false;
 };
 
-Component.overallParsers = function (sourceKey) {
+component.overallParsers = function (sourceKey) {
     var result = [];
     var pathMap = Object.create(null);
     componentHiearcy(this).forEach(function (obj) {
@@ -192,8 +190,8 @@ Component.overallParsers = function (sourceKey) {
     return result;
 };
 
-Component
+component
     .withNegationStatus(false)
-    .cleanupStep(Cleanup.clearNulls);
+    .cleanupStep(cleanup.clearNulls);
 
-module.exports = Component;
+module.exports = component;

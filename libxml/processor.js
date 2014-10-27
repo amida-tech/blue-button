@@ -1,8 +1,12 @@
-var XDate = require("xdate");
-var xpath = require("./common").xpath;
-var Processor = module.exports = {};
+"use strict";
 
-var asString = Processor.asString = function (v) {
+var XDate = require("xdate");
+
+var xpath = require("./common").xpath;
+
+var processor = module.exports = {};
+
+var asString = processor.asString = function (v) {
     var ret = null;
 
     if (v.text) {
@@ -30,21 +34,21 @@ var asString = Processor.asString = function (v) {
 
 asString.type = 'string';
 
-var asBoolean = Processor.asBoolean = function (v) {
-    var t = Processor.asString(v);
+var asBoolean = processor.asBoolean = function (v) {
+    var t = processor.asString(v);
     return t === 'true';
 };
 
 asBoolean.type = 'boolean';
 
-var asFloat = Processor.asFloat = function (v) {
-    return parseFloat(Processor.asString(v));
+var asFloat = processor.asFloat = function (v) {
+    return parseFloat(processor.asString(v));
 };
 
 asFloat.type = 'number';
 
-var asTimestamp = Processor.asTimestamp = function (v) {
-    var t = Processor.asString(v);
+var asTimestamp = processor.asTimestamp = function (v) {
+    var t = processor.asString(v);
 
     var ret = new XDate(0, 0, 1, 0, 0, 0, 0, true); // UTC mode
 
@@ -67,8 +71,8 @@ var asTimestamp = Processor.asTimestamp = function (v) {
 
 asTimestamp.type = 'datetime';
 
-var asTimestampResolution = Processor.asTimestampResolution = function (v) {
-    var t = Processor.asString(v);
+var asTimestampResolution = processor.asTimestampResolution = function (v) {
+    var t = processor.asString(v);
     // TODO handle timezones in dates like 
     // Error: unexpected timestamp length 19540323000000.000-0600:23
 
