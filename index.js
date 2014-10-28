@@ -6,7 +6,7 @@ var sense = require("./lib/sense.js");
 exports.senseXml = sense.senseXml;
 exports.senseString = sense.senseString;
 
-exports.xml = require("./libxml/xml.js").parse;
+exports.xml = require("blue-button-xml").xmlParser;
 
 var parser = require("./lib/parser.js");
 exports.parseXml = parser.parseXml;
