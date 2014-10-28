@@ -23,8 +23,7 @@ exports.generateCCDA = require("blue-button-generate").generateCCD;
 // testing for ccda generation
 //exports.testCCDA = require("./test/test-lib.js").testXML;
 
-//remove old validator.js from /lib
-exports.validator = require("./lib/validator/validator.js");
+exports.validator = require("blue-button-model").validator;
 
 /*
 	//get access to current version of NPM package
