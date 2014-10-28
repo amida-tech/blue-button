@@ -1,12 +1,12 @@
 "use strict";
 
-var isPlainObject = function (o) {
+var isPlainObject = exports.isPlainObject = function (o) {
     if (o === null) return false;
     if (o instanceof Date) return false;
     return (['object'].indexOf(typeof o) !== -1);
 };
 
-function deepForEach(obj, fns) {
+exports.deepForEach = function deepForEach(obj, fns) {
     var inobj = obj;
     fns = fns || {};
 
@@ -41,7 +41,7 @@ var DEFAULT_NS = {
     "xsi": "http://www.w3.org/2001/XMLSchema-instance"
 };
 
-var xpath = function (doc, p, ns) {
+exports.xpath = function (doc, p, ns) {
     var r;
 
     if (doc.find) {
@@ -64,12 +64,6 @@ var xpath = function (doc, p, ns) {
     return r;
 };
 
-var exists = function (obj) {
+exports.exists = function (obj) {
     return obj !== undefined && obj !== null;
-};
-
-module.exports = {
-    deepForEach: deepForEach,
-    xpath: xpath,
-    exists: exists
 };
