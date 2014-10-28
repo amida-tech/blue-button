@@ -67,14 +67,6 @@ component.withNegationStatus = function (t) {
     return this;
 };
 
-component.withMood = function (m) {
-    if (!util.isArray(m)) {
-        m = [m];
-    }
-    this._moods = m;
-    return this;
-};
-
 component.fields = function (parsers) {
     this.parsers = [];
     parsers.forEach(function (p, i) {
