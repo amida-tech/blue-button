@@ -31,6 +31,7 @@
     "blue-button-generate": "^1.3.0",
     "blue-button-model": "^1.3.0",
     "blue-button-xml": "^1.3.0",
+    "blue-button-cms": "^1.3.0",
     "deep-equal": "*",
     "libxmljs": "*",
     "node-uuid": "*",
