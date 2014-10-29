@@ -3,6 +3,13 @@ var fs = require('fs');
 var path = require('path');
 var bb = require('../../index.js');
 
+var JSONToFile = function (json, filename) {
+    var filepath = path.join(__dirname, '../fixtures/generated');
+    var p = path.join(filepath, filename);
+    var content = JSON.stringify(json, null, 2);
+    fs.writeFileSync(p, content);
+};
+
 describe('Parser CDA R2 CCD Support Testing', function () {
     var xmlfile = null;
 
@@ -81,6 +88,8 @@ describe('Parser CDA R2 CCD Support Testing', function () {
 
             console.log("Errors: \n", JSON.stringify(bb.validator.getLastError(), null, 4));
             console.log("Errors summary: \n ", JSON.stringify(result, null, 4));
+        } else {
+            JSONToFile(result, "SampleCCDDocument.json");
         }
 
         expect(err.valid).to.equal(true);
