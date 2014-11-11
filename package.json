@@ -45,6 +45,7 @@
     "grunt-istanbul-coverage": "*",
     "grunt-jsbeautifier": "^0.2.7",
     "grunt-mocha-test": "0.8.x",
+    "grunt-browserify": "3.2.x",
     "mocha": "1.17.x",
     "mocha-lcov-reporter": "0.0.1",
     "path": "^0.4.9"

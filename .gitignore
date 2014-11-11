@@ -23,3 +23,5 @@ test/fixtures/files/generated/
 test/fixtures/files/parse_gen_parse
 
 test/proprietary
+
+dist

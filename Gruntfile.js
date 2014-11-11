@@ -8,6 +8,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-istanbul-coverage');
     grunt.loadNpmTasks('grunt-coveralls');
     grunt.loadNpmTasks('grunt-jsbeautifier');
+    grunt.loadNpmTasks('grunt-browserify');
 
     // Project configuration.
     grunt.initConfig({
@@ -94,6 +95,16 @@ module.exports = function (grunt) {
                 },
                 dir: 'coverage/',
                 root: '.'
+            }
+        },
+        browserify: {
+            options: {
+                debug: true,
+                alias: "./index.js:bbparser"
+            },
+            dev: {
+                src: 'index.js',
+                dest: 'dist/bbparser.js'
             }
         }
     });
