@@ -8,6 +8,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-istanbul-coverage');
     grunt.loadNpmTasks('grunt-coveralls');
     grunt.loadNpmTasks('grunt-jsbeautifier');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-karma');
 
@@ -102,11 +103,24 @@ module.exports = function (grunt) {
             options: {
                 debug: true,
                 alias: ["./index.js:bbparser"],
-                ignore: ["blue-button-generate", 'blue-button-cms', "blue-button-model"]
+                ignore: ["blue-button-generate", 'blue-button-cms']
             },
             dev: {
                 src: 'index.js',
                 dest: 'dist/bbparser.js',
+            }
+        },
+        copy: {
+            main: {
+                files: [{
+                    cwd: 'bower_components/',
+                    expand: true,
+                    src: '**',
+                    dest: 'angulartest/app/lib/'
+                }, {
+                    src: 'dist/*',
+                    dest: 'angulartest/app/lib/'
+                }]
             }
         },
         karma: {
@@ -135,6 +149,8 @@ module.exports = function (grunt) {
             done(err);
         });
     });
+
+    grunt.registerTask('browsertest', ['browserify', 'copy', 'karma']);
 
     //JS beautifier
     grunt.registerTask('beautify', ['jsbeautifier:beautify']);

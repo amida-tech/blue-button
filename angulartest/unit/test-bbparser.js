@@ -31,7 +31,7 @@ describe('blue-button browser test', function () {
          it('CCDA', function() {
 			var content = FileSupplyService.getFileContent();
             expect(content).to.exist;
-            var json = ParserService.parseString(content);
+            var json = ParserService.parse(content);
             expect(json).to.exists;
             var result = ParserService.validate(json);
             expect(result).to.be.true;
