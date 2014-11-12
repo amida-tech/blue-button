@@ -1067,8 +1067,6 @@
     ]
   },
   "errors": [
-    "cardinality error: found 2 when expecting 0..1 at ../h:name",
-    "cardinality error: found 2 when expecting 0..1 at ../h:name",
     "cardinality error: found 2 when expecting 1..1 at h:patient/h:name",
     "nullFlavor alert:  missing but required code in ConceptDescriptor -> RaceEthnicity -> Patient -> C32",
     "nullFlavor alert:  missing but required code in ConceptDescriptor -> RaceEthnicity -> Patient -> C32",

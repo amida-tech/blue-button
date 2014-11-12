@@ -132,8 +132,10 @@ module.exports = function (grunt) {
         },
     });
 
+    grunt.registerTask('browsertest', ['browserify', 'copy', 'karma']);
+
     // Default task.
-    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest']);
+    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest', 'browsertest']);
     //Express omitted for travis build.
     grunt.registerTask('commit', ['jshint', 'mochaTest']);
     grunt.registerTask('mocha', ['mochaTest']);
@@ -149,8 +151,6 @@ module.exports = function (grunt) {
             done(err);
         });
     });
-
-    grunt.registerTask('browsertest', ['browserify', 'copy', 'karma']);
 
     //JS beautifier
     grunt.registerTask('beautify', ['jsbeautifier:beautify']);

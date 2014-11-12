@@ -9,7 +9,7 @@ bbTesting.factory('ParserService', function() {
             return parser.parseString(xmlContent);
         },
         validate: function(document) {
-			return parser.validator.validateDocumentModel(result)
+			return parser.validator.validateDocumentModel(document)
         }
     };
 });
