@@ -24,4 +24,6 @@ test/fixtures/files/parse_gen_parse
 
 test/proprietary
 
+angulartest/app/lib
+
 dist

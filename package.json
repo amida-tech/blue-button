@@ -3,6 +3,12 @@
   "version": "1.3.0-beta.7",
   "description": "Blue Button (CCDA) to JSON Parser.",
   "main": "/index.js",
+  "browser": {
+    "./node_modules/blue-button-xml/lib/xml.js": "./node_modules/blue-button-xml/browser/lib/xml.js"
+  },
+  "browserify": {
+    "transform": ["brfs"]
+  },
   "directories": {
     "doc": "doc",
     "lib": "lib"
@@ -36,6 +42,7 @@
     "winston": "^0.7.3"
   },
   "devDependencies": {
+  	"brfs": "*",
     "chai": "1.8.x",
     "coveralls": "~2.10.0",
     "grunt": "0.4.x",
@@ -46,8 +53,13 @@
     "grunt-jsbeautifier": "^0.2.7",
     "grunt-mocha-test": "0.8.x",
     "grunt-browserify": "3.2.x",
+    "grunt-karma": "0.9.x",
     "mocha": "1.17.x",
     "mocha-lcov-reporter": "0.0.1",
+    "karma-ng-scenario": "0.1.x",
+    "karma-mocha": "0.1.x",
+    "karma-chai": "0.1.x",
+    "karma-firefox-launcher": "0.1.x",
     "path": "^0.4.9"
   },
   "repository": {

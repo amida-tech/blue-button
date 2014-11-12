@@ -9,6 +9,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-coveralls');
     grunt.loadNpmTasks('grunt-jsbeautifier');
     grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-karma');
 
     // Project configuration.
     grunt.initConfig({
@@ -100,13 +101,21 @@ module.exports = function (grunt) {
         browserify: {
             options: {
                 debug: true,
-                alias: "./index.js:bbparser"
+                alias: ["./index.js:bbparser"],
+                ignore: ["blue-button-generate", 'blue-button-cms', "blue-button-model"]
             },
             dev: {
                 src: 'index.js',
-                dest: 'dist/bbparser.js'
+                dest: 'dist/bbparser.js',
             }
-        }
+        },
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js',
+                singleRun: true,
+                browsers: ['Firefox']
+            }
+        },
     });
 
     // Default task.
