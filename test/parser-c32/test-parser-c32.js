@@ -60,37 +60,16 @@ describe('Parser C32 Support Testing', function () {
 
         expect(result).to.exist;
 
-        val = bb.validator.validateDocumentModel(result);
+        var valid = bb.validator.validateDocumentModel(result);
 
-        var err = bb.validator.getLastError();
-
-        //if validation failed print all validation errors and summary by category of error
-        if (!err.valid) {
-
-            var _ = require("underscore");
-
-            function count(numbers) {
-                return _.reduce(numbers, function (result, current) {
-                    return result + 1;
-                }, 0);
-            }
-            var result = _.chain(err.errors)
-                .groupBy("code")
-                .map(function (value, key) {
-                    return {
-                        code: key,
-                        count: count(_.pluck(value, "code"))
-                    }
-                })
-                .value();
-
+        //if validation failed print all validation errors
+        if (!valid) {
             console.log("Errors: \n", JSON.stringify(bb.validator.getLastError(), null, 4));
-            console.log("Errors summary: \n ", JSON.stringify(result, null, 4));
         } else {
             JSONToFile(result, "VA_CCD_Sample_File_Version_12_5_1.json");
         }
 
-        expect(err.valid).to.equal(true);
+        expect(valid).to.be.true;
 
         done();
     });
