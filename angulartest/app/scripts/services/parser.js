@@ -1,7 +1,7 @@
 "use strict";
 
 bbTesting.factory('ParserService', function() {
-	var parser = require('bbparser');
+	var parser = require('blue-button');
 
     // Public API
     return {

@@ -102,12 +102,12 @@ module.exports = function (grunt) {
         browserify: {
             options: {
                 debug: true,
-                alias: ["./index.js:bbparser"],
+                alias: ["./index.js:blue-button"],
                 ignore: ["blue-button-generate", 'blue-button-cms']
             },
             dev: {
                 src: 'index.js',
-                dest: 'dist/bbparser.js',
+                dest: 'dist/blue-button.js',
             }
         },
         copy: {
