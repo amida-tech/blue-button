@@ -8,6 +8,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-istanbul-coverage');
     grunt.loadNpmTasks('grunt-coveralls');
     grunt.loadNpmTasks('grunt-jsbeautifier');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-karma');
 
     // Project configuration.
     grunt.initConfig({
@@ -95,11 +98,44 @@ module.exports = function (grunt) {
                 dir: 'coverage/',
                 root: '.'
             }
-        }
+        },
+        browserify: {
+            options: {
+                debug: true,
+                alias: ["./index.js:blue-button"],
+                ignore: ["blue-button-generate", 'blue-button-cms']
+            },
+            dev: {
+                src: 'index.js',
+                dest: 'dist/blue-button.js',
+            }
+        },
+        copy: {
+            main: {
+                files: [{
+                    cwd: 'bower_components/',
+                    expand: true,
+                    src: '**',
+                    dest: 'angulartest/app/lib/'
+                }, {
+                    src: 'dist/*',
+                    dest: 'angulartest/app/lib/'
+                }]
+            }
+        },
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js',
+                singleRun: true,
+                browsers: ['Firefox']
+            }
+        },
     });
 
+    grunt.registerTask('browsertest', ['browserify', 'copy', 'karma']);
+
     // Default task.
-    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest']);
+    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest', 'browsertest']);
     //Express omitted for travis build.
     grunt.registerTask('commit', ['jshint', 'mochaTest']);
     grunt.registerTask('mocha', ['mochaTest']);

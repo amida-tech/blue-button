@@ -3,6 +3,9 @@ node_modules/
 npm-debug.log
 coverage
 
+# Bower
+bower_components
+
 # Mac OSX
 .DS_Store
 realsample.txt
@@ -23,3 +26,7 @@ test/fixtures/files/generated/
 test/fixtures/files/parse_gen_parse
 
 test/proprietary
+
+angulartest/app/lib
+
+dist

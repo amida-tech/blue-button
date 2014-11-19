@@ -1048,7 +1048,7 @@
     ]
   },
   "meta": {
-    "version": "1.3.0-beta.7",
+    "version": "1.3.0-beta.8",
     "identifiers": [
       {
         "identifier": "2.16.840.1.113883.4.349",
@@ -1067,8 +1067,6 @@
     ]
   },
   "errors": [
-    "cardinality error: found 2 when expecting 0..1 at ../h:name",
-    "cardinality error: found 2 when expecting 0..1 at ../h:name",
     "cardinality error: found 2 when expecting 1..1 at h:patient/h:name",
     "nullFlavor alert:  missing but required code in ConceptDescriptor -> RaceEthnicity -> Patient -> C32",
     "nullFlavor alert:  missing but required code in ConceptDescriptor -> RaceEthnicity -> Patient -> C32",
