@@ -1,14 +1,8 @@
 {
   "name": "blue-button",
-  "version": "1.3.0-beta.10",
+  "version": "1.3.0-beta.11",
   "description": "Blue Button (CCDA) to JSON Parser.",
   "main": "/index.js",
-  "browser": {
-    "./node_modules/blue-button-xml/lib/xml.js": "./node_modules/blue-button-xml/browser/lib/xml.js"
-  },
-  "browserify": {
-    "transform": ["brfs"]
-  },
   "directories": {
     "doc": "doc",
     "lib": "lib"

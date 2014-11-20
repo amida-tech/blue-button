@@ -14,6 +14,7 @@ module.exports = function (config) {
             'angulartest/app/lib/angular/angular.js',
             'angulartest/app/lib/angular-route/angular-route.js',
             'angulartest/app/lib/angular-mocks/angular-mocks.js',
+            'angulartest/app/lib/blue-button-xml/dist/blue-button-xml.js',
             'angulartest/app/lib/dist/blue-button.js',
             'angulartest/app/scripts/app.js',
             'angulartest/app/scripts/**/*.js',

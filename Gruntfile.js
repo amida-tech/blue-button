@@ -103,7 +103,8 @@ module.exports = function (grunt) {
             options: {
                 debug: true,
                 alias: ["./index.js:blue-button"],
-                ignore: ["blue-button-generate", 'blue-button-cms']
+                ignore: ["blue-button-generate", 'blue-button-cms'],
+                external: ['blue-button-xml']
             },
             dev: {
                 src: 'index.js',
