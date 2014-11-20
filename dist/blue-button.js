@@ -238,7 +238,7 @@ var exportAllergiesSection = function (version) {
     var allergenDescriptor = component.define('allergenDescriptor');
     allergenDescriptor.fields([
 
-        ["name", "0..1", "h:name"],
+        ["name", "0..1", "h:name/text()"],
         ["code", "0..1", "h:code", shared.ConceptDescriptor]
     ]).cleanupStep(function () {
 
@@ -762,7 +762,7 @@ var exportResultsSection = function (version) {
             ["date_time", "1..1", "h:effectiveTime", shared.EffectiveTime],
             //["physicalQuantity.text", "1..1", "h:value[@xsi:type='ST']", shared.PhysicalQuantity],
             ["status", "1..1", "h:statusCode/@code"],
-            ["text", "0..1", "h:value[@xsi:type='ST']"],
+            ["text", "0..1", "h:value[@xsi:type='ST']/text()"],
             ["reference_range", "0..1", "h:referenceRange/h:observationRange", referenceRange],
             //["codedValue", "0..1", "h:value[@xsi:type='CD']", shared.ConceptDescriptor],
             //["freeTextValue", "0..1", "h:text", shared.TextWithReference],
@@ -14148,7 +14148,7 @@ function hasOwnProperty(obj, prop) {
 },{}],90:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.3.0-beta.11",
+  "version": "1.3.0-beta.13",
   "description": "Blue Button (CCDA) to JSON Parser.",
   "main": "/index.js",
   "directories": {
