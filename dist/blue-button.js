@@ -8425,6 +8425,22 @@ module.exports = [{
             "city"
         ]
     }, {
+        "id": "cda_date_element",
+        "type": "object",
+        "properties": {
+            "date": {
+                "type": "string",
+                "format": "date-time"
+            },
+            "precision": {
+                "type": "string"
+            }
+        },
+        "additionalProperties": false,
+        "required": [
+            "date"
+        ]
+    }, {
         "id": "cda_date",
         "type": "object",
         "properties": {
@@ -8443,22 +8459,6 @@ module.exports = [{
         },
         "additionalProperties": false,
         "minProperties": 1
-    }, {
-    	"id": "cda_date_element",
-        "type": "object",
-        "properties": {
-            "date": {
-                "type": "string",
-                "format": "date-time"
-            },
-            "precision": {
-                "type": "string"
-            }
-        },
-        "additionalProperties": false,
-        "required": [
-            "date"
-        ]
     }, {
     	"id": "cda_phone",
         "type": "object",
@@ -11196,7 +11196,6 @@ exports.compileSchema = function (report, schema) {
                 Array.prototype.push.apply(report.path, refObj.path);
                 report.addError("UNRESOLVABLE_REFERENCE", [refObj.ref]);
                 report.path.slice(0, -refObj.path.length);
-                return false;
             }
         }
         // this might create circular references
