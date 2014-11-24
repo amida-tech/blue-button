@@ -1,19 +1,44 @@
 /*global module*/
 
-module.exports = function (grunt) {
+var bb = require('./index');
+var path = require('path');
 
+var generateChangeDetectionFiles = function (grunt) {
+    var srcs = [
+        'test/fixtures/parser-c32/VA_CCD_Sample_File_Version_12_5_1.xml',
+        'test/fixtures/parser-ccd/SampleCCDDocument.xml',
+        'test/fixtures/parser-ccda/CCD_1.xml'
+    ];
+    var dest = 'test/fixtures/generated';
+
+    srcs.forEach(function (src) {
+        var content = grunt.file.read(src);
+        var sensed = bb.senseString(content);
+        var cms = sensed.type === 'cms';
+        var result = cms ? bb.parseText(content) : bb.parseString(content);
+
+        var baseName = path.basename(src, path.extname(src));
+        var destName = baseName + '.json';
+        var destPath = path.join(dest, destName);
+        var destContent = JSON.stringify(result, undefined, 2);
+        grunt.file.write(destPath, destContent);
+    });
+};
+
+module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-istanbul-coverage');
     grunt.loadNpmTasks('grunt-coveralls');
     grunt.loadNpmTasks('grunt-jsbeautifier');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-browserify');
-    grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-mocha-phantomjs');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     // Project configuration.
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
         jshint: {
             files: ['*.js', './lib/*.js', './test/*.js'],
             options: {
@@ -100,43 +125,49 @@ module.exports = function (grunt) {
             }
         },
         browserify: {
-            options: {
-                debug: true,
-                alias: ["./index.js:blue-button"],
-                ignore: ["blue-button-generate", 'blue-button-cms'],
-                external: ['blue-button-xml']
+            require: {
+                src: ['<%=pkg.main%>'],
+                dest: 'dist/<%=pkg.name%>.js',
+                options: {
+                    alias: ["<%=pkg.main%>:<%=pkg.name%>"],
+                    external: ["blue-button-xml", "blue-button-generate", "blue-button-cms"]
+                }
             },
-            dev: {
-                src: 'index.js',
-                dest: 'dist/blue-button.js',
+            tests: {
+                src: ['test/**/*.js'],
+                dest: 'dist/mocha_tests.js',
+                options: {
+                    external: ["blue-button-xml", "blue-button-generate", "blue-button-cms"],
+                    transform: ['brfs']
+                }
             }
         },
-        copy: {
-            main: {
-                files: [{
-                    cwd: 'bower_components/',
-                    expand: true,
-                    src: '**',
-                    dest: 'angulartest/app/lib/'
-                }, {
-                    src: 'dist/*',
-                    dest: 'angulartest/app/lib/'
-                }]
+        connect: {
+            server: {
+                options: {
+                    port: 8000,
+                    hostname: '127.0.0.1'
+                }
             }
         },
-        karma: {
-            unit: {
-                configFile: 'karma.conf.js',
-                singleRun: true,
-                browsers: ['Firefox']
+        'mocha_phantomjs': {
+            all: {
+                options: {
+                    urls: [
+                        'http://127.0.0.1:8000/dist/mocha_runner.html'
+                    ]
+                }
             }
-        },
+        }
     });
 
-    grunt.registerTask('browsertest', ['browserify', 'copy', 'karma']);
+    grunt.registerTask('browser-test', ['browserify:require', 'browserify:tests', 'connect:server', 'mocha_phantomjs']);
+    grunt.registerTask('gen-change-detect', 'generates files to detect changes in generation', function () {
+        generateChangeDetectionFiles(grunt);
+    });
 
     // Default task.
-    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest', 'browsertest']);
+    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest', 'browser-test', 'gen-change-detect']);
     //Express omitted for travis build.
     grunt.registerTask('commit', ['jshint', 'mochaTest']);
     grunt.registerTask('mocha', ['mochaTest']);

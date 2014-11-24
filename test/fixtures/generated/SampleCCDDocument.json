@@ -8,7 +8,7 @@
       },
       "dob": {
         "point": {
-          "date": "1932-09-24T00:00:00Z",
+          "date": "1932-09-24T00:00:00.000Z",
           "precision": "day"
         }
       },
@@ -24,11 +24,11 @@
       {
         "date_time": {
           "low": {
-            "date": "1990-01-01T00:00:00Z",
+            "date": "1990-01-01T00:00:00.000Z",
             "precision": "year"
           },
           "high": {
-            "date": "2000-04-07T00:00:00Z",
+            "date": "2000-04-07T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -70,7 +70,7 @@
           },
           "date_time": {
             "low": {
-              "date": "1950-01-01T00:00:00Z",
+              "date": "1950-01-01T00:00:00.000Z",
               "precision": "year"
             }
           }
@@ -99,7 +99,7 @@
           },
           "date_time": {
             "low": {
-              "date": "1997-01-01T00:00:00Z",
+              "date": "1997-01-01T00:00:00.000Z",
               "precision": "month"
             }
           }
@@ -128,7 +128,7 @@
           },
           "date_time": {
             "low": {
-              "date": "1999-03-01T00:00:00Z",
+              "date": "1999-03-01T00:00:00.000Z",
               "precision": "month"
             }
           }
@@ -152,7 +152,7 @@
           },
           "date_time": {
             "low": {
-              "date": "1997-01-01T00:00:00Z",
+              "date": "1997-01-01T00:00:00.000Z",
               "precision": "month"
             }
           }
@@ -181,7 +181,7 @@
         ],
         "date_time": {
           "point": {
-            "date": "2000-04-07T00:00:00Z",
+            "date": "2000-04-07T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -207,7 +207,7 @@
         "status": "Completed",
         "date_time": {
           "point": {
-            "date": "1998-01-01T00:00:00Z",
+            "date": "1998-01-01T00:00:00.000Z",
             "precision": "year"
           }
         },
@@ -240,8 +240,8 @@
             },
             "date_time": {
               "point": {
-                "date": "2000-03-23T14:30:00Z",
-                "precision": "minute"
+                "date": "2000-03-23T00:00:00.000Z",
+                "precision": "day"
               }
             },
             "status": "completed",
@@ -267,8 +267,8 @@
             },
             "date_time": {
               "point": {
-                "date": "2000-03-23T14:30:00Z",
-                "precision": "minute"
+                "date": "2000-03-23T00:00:00.000Z",
+                "precision": "day"
               }
             },
             "status": "completed",
@@ -296,8 +296,8 @@
             },
             "date_time": {
               "point": {
-                "date": "2000-03-23T14:30:00Z",
-                "precision": "minute"
+                "date": "2000-03-23T00:00:00.000Z",
+                "precision": "day"
               }
             },
             "status": "completed",
@@ -339,8 +339,8 @@
             },
             "date_time": {
               "point": {
-                "date": "2000-04-06T13:00:00Z",
-                "precision": "minute"
+                "date": "2000-04-06T00:00:00.000Z",
+                "precision": "day"
               }
             },
             "status": "completed",
@@ -368,8 +368,8 @@
             },
             "date_time": {
               "point": {
-                "date": "2000-04-06T13:00:00Z",
-                "precision": "minute"
+                "date": "2000-04-06T00:00:00.000Z",
+                "precision": "day"
               }
             },
             "status": "completed",
@@ -397,8 +397,8 @@
             },
             "date_time": {
               "point": {
-                "date": "2000-04-06T13:00:00Z",
-                "precision": "minute"
+                "date": "2000-04-06T00:00:00.000Z",
+                "precision": "day"
               }
             },
             "status": "completed",
@@ -426,8 +426,8 @@
             },
             "date_time": {
               "point": {
-                "date": "2000-04-06T13:00:00Z",
-                "precision": "minute"
+                "date": "2000-04-06T00:00:00.000Z",
+                "precision": "day"
               }
             },
             "status": "completed",

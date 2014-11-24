@@ -7,7 +7,7 @@
       },
       "dob": {
         "point": {
-          "date": "1981-01-01T00:00:00Z",
+          "date": "1981-01-01T00:00:00.000Z",
           "precision": "day"
         }
       },
@@ -50,8 +50,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2012-06-26T14:10:26Z",
-              "precision": "second"
+              "date": "2012-06-26T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -75,8 +75,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2012-10-15T10:57:02Z",
-              "precision": "second"
+              "date": "2012-10-15T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -100,8 +100,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2012-10-16T16:34:25Z",
-              "precision": "second"
+              "date": "2012-10-16T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -125,8 +125,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2012-11-13T13:26:29Z",
-              "precision": "second"
+              "date": "2012-11-13T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -155,8 +155,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2012-11-13T16:22:51Z",
-              "precision": "second"
+              "date": "2012-11-13T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -185,8 +185,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2011-10-24T15:31:37Z",
-              "precision": "second"
+              "date": "2011-10-24T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -210,8 +210,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2012-01-23T09:55:24Z",
-              "precision": "second"
+              "date": "2012-01-23T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -235,8 +235,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2012-01-23T14:49:39Z",
-              "precision": "second"
+              "date": "2012-01-23T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -270,8 +270,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2012-01-24T13:22:40Z",
-              "precision": "second"
+              "date": "2012-01-24T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -300,8 +300,8 @@
           },
           "date_time": {
             "low": {
-              "date": "2012-05-01T16:54:48Z",
-              "precision": "second"
+              "date": "2012-05-01T00:00:00.000Z",
+              "precision": "day"
             }
           },
           "reactions": [
@@ -323,8 +323,8 @@
         },
         "date_time": {
           "low": {
-            "date": "2012-12-10T17:16:12Z",
-            "precision": "second"
+            "date": "2012-12-10T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "performers": [
@@ -344,8 +344,8 @@
         },
         "date_time": {
           "low": {
-            "date": "2012-02-01T10:38:58Z",
-            "precision": "second"
+            "date": "2012-02-01T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "performers": [
@@ -365,8 +365,8 @@
         },
         "date_time": {
           "low": {
-            "date": "2012-01-11T15:59:50Z",
-            "precision": "second"
+            "date": "2012-01-11T00:00:00.000Z",
+            "precision": "day"
           }
         }
       },
@@ -376,8 +376,8 @@
         },
         "date_time": {
           "low": {
-            "date": "2012-01-10T13:45:36Z",
-            "precision": "second"
+            "date": "2012-01-10T00:00:00.000Z",
+            "precision": "day"
           }
         }
       },
@@ -387,8 +387,8 @@
         },
         "date_time": {
           "low": {
-            "date": "2011-11-02T14:26:04Z",
-            "precision": "second"
+            "date": "2011-11-02T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "performers": [
@@ -408,8 +408,8 @@
         },
         "date_time": {
           "low": {
-            "date": "2011-11-01T08:02:41Z",
-            "precision": "second"
+            "date": "2011-11-01T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "performers": [
@@ -428,7 +428,7 @@
       {
         "date_time": {
           "point": {
-            "date": "2012-12-10T00:00:00Z",
+            "date": "2012-12-10T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -459,7 +459,7 @@
       {
         "date_time": {
           "point": {
-            "date": "2012-05-25T00:00:00Z",
+            "date": "2012-05-25T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -490,7 +490,7 @@
       {
         "date_time": {
           "point": {
-            "date": "2011-11-02T00:00:00Z",
+            "date": "2011-11-02T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -521,7 +521,7 @@
       {
         "date_time": {
           "point": {
-            "date": "2011-11-02T00:00:00Z",
+            "date": "2011-11-02T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -552,7 +552,7 @@
       {
         "date_time": {
           "point": {
-            "date": "2011-11-01T00:00:00Z",
+            "date": "2011-11-01T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -583,7 +583,7 @@
       {
         "date_time": {
           "point": {
-            "date": "2011-11-01T00:00:00Z",
+            "date": "2011-11-01T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -616,7 +616,7 @@
       {
         "date_time": {
           "low": {
-            "date": "2012-03-14T00:00:00Z",
+            "date": "2012-03-14T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -639,7 +639,7 @@
       {
         "date_time": {
           "low": {
-            "date": "2012-03-10T00:00:00Z",
+            "date": "2012-03-10T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -679,7 +679,7 @@
       {
         "date_time": {
           "low": {
-            "date": "2011-10-20T00:00:00Z",
+            "date": "2011-10-20T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -702,7 +702,7 @@
       {
         "date_time": {
           "low": {
-            "date": "2011-10-24T00:00:00Z",
+            "date": "2011-10-24T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -725,7 +725,7 @@
       {
         "date_time": {
           "low": {
-            "date": "2011-10-11T00:00:00Z",
+            "date": "2011-10-11T00:00:00.000Z",
             "precision": "day"
           }
         },
@@ -823,8 +823,8 @@
         },
         "date_time": {
           "point": {
-            "date": "2012-12-06T18:06:00Z",
-            "precision": "minute"
+            "date": "2012-12-06T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "performer": [
@@ -847,8 +847,8 @@
         },
         "date_time": {
           "point": {
-            "date": "2012-12-04T18:24:00Z",
-            "precision": "minute"
+            "date": "2012-12-04T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "performer": [
@@ -871,8 +871,8 @@
         },
         "date_time": {
           "point": {
-            "date": "2012-08-23T12:33:00Z",
-            "precision": "minute"
+            "date": "2012-08-23T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "performer": [
@@ -894,8 +894,8 @@
         },
         "date_time": {
           "point": {
-            "date": "2012-08-23T12:24:00Z",
-            "precision": "minute"
+            "date": "2012-08-23T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "performer": [
@@ -933,8 +933,8 @@
         "status": "completed",
         "date_time": {
           "point": {
-            "date": "2012-05-15T13:24:32Z",
-            "precision": "second"
+            "date": "2012-05-15T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "value": 85,
@@ -962,8 +962,8 @@
         "status": "completed",
         "date_time": {
           "point": {
-            "date": "2012-05-15T13:24:32Z",
-            "precision": "second"
+            "date": "2012-05-15T00:00:00.000Z",
+            "precision": "day"
           }
         },
         "value": 99,
@@ -996,8 +996,8 @@
             },
             "date_time": {
               "point": {
-                "date": "2012-12-06T09:00:00Z",
-                "precision": "hour"
+                "date": "2012-12-06T00:00:00.000Z",
+                "precision": "day"
               }
             },
             "status": "completed",
@@ -1033,8 +1033,8 @@
             },
             "date_time": {
               "point": {
-                "date": "2012-12-06T09:00:00Z",
-                "precision": "hour"
+                "date": "2012-12-06T00:00:00.000Z",
+                "precision": "day"
               }
             },
             "status": "completed",
