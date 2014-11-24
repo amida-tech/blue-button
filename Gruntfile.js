@@ -1,5 +1,30 @@
 /*global module*/
 
+var bb = require('./index');
+var path = require('path');
+
+var generateChangeDetectionFiles = function (grunt) {
+    var srcs = [
+        'test/fixtures/parser-c32/VA_CCD_Sample_File_Version_12_5_1.xml',
+        'test/fixtures/parser-ccd/SampleCCDDocument.xml',
+        'test/fixtures/parser-ccda/CCD_1.xml'
+    ];
+    var dest = 'test/fixtures/generated';
+
+    srcs.forEach(function (src) {
+        var content = grunt.file.read(src);
+        var sensed = bb.senseString(content);
+        var cms = sensed.type === 'cms';
+        var result = cms ? bb.parseText(content) : bb.parseString(content);
+
+        var baseName = path.basename(src, path.extname(src));
+        var destName = baseName + '.json';
+        var destPath = path.join(dest, destName);
+        var destContent = JSON.stringify(result, undefined, 2);
+        grunt.file.write(destPath, destContent);
+    });
+};
+
 module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -133,9 +158,12 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('browsertest', ['browserify', 'copy', 'karma']);
+    grunt.registerTask('gen-change-detect', 'generates files to detect changes in generation', function () {
+        generateChangeDetectionFiles(grunt);
+    });
 
     // Default task.
-    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest', 'browsertest']);
+    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest', 'browsertest', 'gen-change-detect']);
     //Express omitted for travis build.
     grunt.registerTask('commit', ['jshint', 'mochaTest']);
     grunt.registerTask('mocha', ['mochaTest']);
