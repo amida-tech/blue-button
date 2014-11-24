@@ -15,8 +15,7 @@ describe('parser.js', function () {
     var xmlfile = null;
 
     before(function (done) {
-        var filepath = path.join(__dirname, '../fixtures/parser-ccda/CCD_1.xml');
-        xmlfile = fs.readFileSync(filepath, 'utf-8').toString();
+        xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-ccda/CCD_1.xml', 'utf-8').toString();
         done();
     });
 

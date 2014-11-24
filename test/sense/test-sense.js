@@ -28,11 +28,14 @@ describe('sense.js test', function () {
         broken_xml = fs.readFileSync('./test/fixtures/sense/broken.xml').toString();
         pdf = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_6.pdf').toString();
 
-        var va_versions = ["12", "12_2", "12_2_1", "12_3", "12_4", "12_5", "12_5_1", "12_6"];
-        for (var v in va_versions) {
-            va[va_versions[v]] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_' + va_versions[v] + '.txt').toString();
-        };
-
+        va["12"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12.txt').toString();
+        va["12_2"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_2.txt').toString();
+        va["12_2_1"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_2_1.txt').toString();
+        va["12_3"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_3.txt').toString();
+        va["12_4"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_4.txt').toString();
+        va["12_5"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_5.txt').toString();
+        va["12_5_1"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_5_1.txt').toString();
+        va["12_6"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_6.txt').toString();
     });
 
     it('should return NULL for no string with data passed', function () {

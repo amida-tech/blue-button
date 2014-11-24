@@ -14,8 +14,7 @@ describe('Parser C32 Support Testing', function () {
     var xmlfile = null;
 
     before(function (done) {
-        var filepath = path.join(__dirname, '../fixtures/parser-c32/VA_CCD_Sample_File_Version_12_5_1.xml');
-        xmlfile = fs.readFileSync(filepath, 'utf-8').toString();
+        xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-c32/VA_CCD_Sample_File_Version_12_5_1.xml', 'utf-8').toString();
         done();
     });
 

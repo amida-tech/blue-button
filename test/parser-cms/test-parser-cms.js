@@ -8,8 +8,7 @@ describe('parser.js', function () {
     var txtfile = null;
 
     before(function (done) {
-        var filepath = path.join(__dirname, '../fixtures/parser-cms/sample.txt');
-        txtfile = fs.readFileSync(filepath, 'utf-8').toString();
+        txtfile = fs.readFileSync(__dirname + '/../fixtures/parser-cms/sample.txt', 'utf-8').toString();
         done();
     });
 

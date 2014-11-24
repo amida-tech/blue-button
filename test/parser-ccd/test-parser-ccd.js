@@ -14,8 +14,7 @@ describe('Parser CDA R2 CCD Support Testing', function () {
     var xmlfile = null;
 
     before(function (done) {
-        var filepath = path.join(__dirname, '../fixtures/parser-ccd/SampleCCDDocument.xml');
-        xmlfile = fs.readFileSync(filepath, 'utf-8').toString();
+        xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-ccd/SampleCCDDocument.xml', 'utf-8').toString();
         done();
     });
 
