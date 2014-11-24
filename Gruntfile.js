@@ -32,9 +32,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-istanbul-coverage');
     grunt.loadNpmTasks('grunt-coveralls');
     grunt.loadNpmTasks('grunt-jsbeautifier');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-browserify');
-    grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-mocha-phantomjs');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
@@ -144,26 +142,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        copy: {
-            main: {
-                files: [{
-                    cwd: 'bower_components/',
-                    expand: true,
-                    src: '**',
-                    dest: 'angulartest/app/lib/'
-                }, {
-                    src: 'dist/*',
-                    dest: 'angulartest/app/lib/'
-                }]
-            }
-        },
-        karma: {
-            unit: {
-                configFile: 'karma.conf.js',
-                singleRun: true,
-                browsers: ['Firefox']
-            }
-        },
         connect: {
             server: {
                 options: {
@@ -183,7 +161,6 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('browsertest', ['browserify:require', 'copy', 'karma']);
     grunt.registerTask('browser-test', ['browserify:require', 'browserify:tests', 'connect:server', 'mocha_phantomjs']);
     grunt.registerTask('gen-change-detect', 'generates files to detect changes in generation', function () {
         generateChangeDetectionFiles(grunt);
