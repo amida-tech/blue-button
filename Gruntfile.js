@@ -26,7 +26,6 @@ var generateChangeDetectionFiles = function (grunt) {
 };
 
 module.exports = function (grunt) {
-
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -36,6 +35,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-mocha-phantomjs');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     // Project configuration.
     grunt.initConfig({
@@ -163,15 +164,33 @@ module.exports = function (grunt) {
                 browsers: ['Firefox']
             }
         },
+        connect: {
+            server: {
+                options: {
+                    port: 8000,
+                    hostname: '127.0.0.1'
+                }
+            }
+        },
+        'mocha_phantomjs': {
+            all: {
+                options: {
+                    urls: [
+                        'http://127.0.0.1:8000/dist/mocha_runner.html'
+                    ]
+                }
+            }
+        }
     });
 
     grunt.registerTask('browsertest', ['browserify:require', 'copy', 'karma']);
+    grunt.registerTask('browser-test', ['browserify:require', 'browserify:tests', 'connect:server', 'mocha_phantomjs']);
     grunt.registerTask('gen-change-detect', 'generates files to detect changes in generation', function () {
         generateChangeDetectionFiles(grunt);
     });
 
     // Default task.
-    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest', 'browsertest', 'gen-change-detect']);
+    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest', 'browser-test', 'gen-change-detect']);
     //Express omitted for travis build.
     grunt.registerTask('commit', ['jshint', 'mochaTest']);
     grunt.registerTask('mocha', ['mochaTest']);
