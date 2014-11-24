@@ -14147,7 +14147,7 @@ module.exports={
   "name": "blue-button",
   "version": "1.3.0-beta.13",
   "description": "Blue Button (CCDA) to JSON Parser.",
-  "main": "/index.js",
+  "main": "./index.js",
   "directories": {
     "doc": "doc",
     "lib": "lib"

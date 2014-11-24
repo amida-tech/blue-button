@@ -13,11 +13,9 @@ describe('Parser C32 Support Testing', function () {
     it('C32 Demo File Check Sense', function (done) {
 
         var senseResult = bb.senseString(xmlfile);
-
-        expect(senseResult.xml.errors.length).to.equal(0);
+        expect(senseResult.type).to.equal('c32');
 
         var senseXml = bb.senseXml(senseResult.xml);
-        expect(senseResult.type).to.equal('c32');
         expect(senseXml.type).to.equal('c32');
 
         done();

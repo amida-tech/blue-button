@@ -39,6 +39,7 @@ module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
         jshint: {
             files: ['*.js', './lib/*.js', './test/*.js'],
             options: {
@@ -125,14 +126,21 @@ module.exports = function (grunt) {
             }
         },
         browserify: {
-            options: {
-                debug: true,
-                alias: ["./index.js:blue-button"],
-                external: ["blue-button-xml", "blue-button-generate", "blue-button-cms"]
+            require: {
+                src: ['<%=pkg.main%>'],
+                dest: 'dist/<%=pkg.name%>.js',
+                options: {
+                    alias: ["<%=pkg.main%>:<%=pkg.name%>"],
+                    external: ["blue-button-xml", "blue-button-generate", "blue-button-cms"]
+                }
             },
-            dev: {
-                src: 'index.js',
-                dest: 'dist/blue-button.js',
+            tests: {
+                src: ['test/**/*.js'],
+                dest: 'dist/mocha_tests.js',
+                options: {
+                    external: ["blue-button-xml", "blue-button-generate", "blue-button-cms"],
+                    transform: ['brfs']
+                }
             }
         },
         copy: {
@@ -157,7 +165,7 @@ module.exports = function (grunt) {
         },
     });
 
-    grunt.registerTask('browsertest', ['browserify', 'copy', 'karma']);
+    grunt.registerTask('browsertest', ['browserify:require', 'copy', 'karma']);
     grunt.registerTask('gen-change-detect', 'generates files to detect changes in generation', function () {
         generateChangeDetectionFiles(grunt);
     });

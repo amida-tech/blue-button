@@ -13,16 +13,12 @@ describe('Parser CDA R2 CCD Support Testing', function () {
     it('CDA R2 CCD Demo File 1 Check Sense', function (done) {
 
         var senseResult = bb.senseString(xmlfile);
-
-        expect(senseResult.xml.errors.length).to.equal(0);
+        expect(senseResult.type).to.equal('cda');
 
         var senseXml = bb.senseXml(senseResult.xml);
-
-        expect(senseResult.type).to.equal('cda');
         expect(senseXml.type).to.equal('cda');
 
         done();
-
     });
 
     it('CDA R2 CCD Demo File 1 Check Sections', function (done) {
