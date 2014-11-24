@@ -92,7 +92,7 @@ module.exports = {
     parseText: parseText
 };
 
-},{"../package.json":90,"./parser/router":41,"./sense.js":42,"blue-button-cms":84,"blue-button-xml":"blue-button-xml","util":88}],2:[function(require,module,exports){
+},{"../package.json":89,"./parser/router":41,"./sense.js":42,"blue-button-cms":"blue-button-cms","blue-button-xml":"blue-button-xml","util":87}],2:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -616,7 +616,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":43,"blue-button-xml":"blue-button-xml","underscore":89}],9:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":43,"blue-button-xml":"blue-button-xml","underscore":88}],9:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -10885,7 +10885,7 @@ Report.prototype.addError = function (errorCode, params, subReports, schemaDescr
 module.exports = Report;
 
 }).call(this,require('_process'))
-},{"./Errors":74,"_process":86}],79:[function(require,module,exports){
+},{"./Errors":74,"_process":85}],79:[function(require,module,exports){
 "use strict";
 
 var SchemaCompilation   = require("./SchemaCompilation");
@@ -12089,8 +12089,6 @@ ZSchema.registerFormatter = function (/* formatterName, formatterFunction */) {
 module.exports = ZSchema;
 
 },{"./FormatValidators":75,"./JsonValidation":76,"./Polyfills":77,"./Report":78,"./SchemaCache":79,"./SchemaCompilation":80,"./SchemaValidation":81,"./Utils":82}],84:[function(require,module,exports){
-
-},{}],85:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -12115,7 +12113,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],86:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -12203,14 +12201,14 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 
-},{}],87:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],88:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -12800,7 +12798,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":87,"_process":86,"inherits":85}],89:[function(require,module,exports){
+},{"./support/isBuffer":86,"_process":85,"inherits":84}],88:[function(require,module,exports){
 //     Underscore.js 1.6.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -14145,7 +14143,7 @@ function hasOwnProperty(obj, prop) {
   }
 }).call(this);
 
-},{}],90:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
   "version": "1.3.0-beta.13",
@@ -14253,4 +14251,4 @@ exports.validator = require("blue-button-model").validator;
 	console.log(version);
 */
 
-},{"./lib/parser.js":1,"./lib/sense.js":42,"blue-button-generate":84,"blue-button-model":53,"blue-button-xml":"blue-button-xml"}]},{},["blue-button"]);
+},{"./lib/parser.js":1,"./lib/sense.js":42,"blue-button-generate":"blue-button-generate","blue-button-model":53,"blue-button-xml":"blue-button-xml"}]},{},["blue-button"]);
