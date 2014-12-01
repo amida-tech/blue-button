@@ -172,7 +172,7 @@
         "encounter": {
           "name": "General",
           "code": "GENRL",
-          "code_system_name": "HL7ActCode"
+          "code_system_name": "ActCode"
         },
         "identifiers": [
           {
@@ -461,7 +461,7 @@
           "code": {
             "name": "Extended healthcare",
             "code": "EHCPOL",
-            "code_system_name": "HL7ActCode"
+            "code_system_name": "ActCode"
           },
           "insurance": {
             "performer": {
@@ -519,7 +519,7 @@
     ]
   },
   "meta": {
-    "version": "1.3.0-beta.13",
+    "version": "1.3.0-beta.15",
     "identifiers": [
       {
         "identifier": "db734647-fc99-424c-a864-7e3cda82e703"
