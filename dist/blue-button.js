@@ -92,7 +92,7 @@ module.exports = {
     parseText: parseText
 };
 
-},{"../package.json":89,"./parser/router":41,"./sense.js":42,"blue-button-cms":"blue-button-cms","blue-button-xml":"blue-button-xml","util":87}],2:[function(require,module,exports){
+},{"../package.json":90,"./parser/router":42,"./sense.js":43,"blue-button-cms":"blue-button-cms","blue-button-xml":"blue-button-xml","util":88}],2:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -352,7 +352,7 @@ var exportEncountersSection = function (version) {
 exports.encountersSection = exportEncountersSection;
 exports.encountersEntry = exportEncountersSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],7:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],7:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -434,7 +434,7 @@ var exportImmunizationsSection = function (version) {
 exports.immunizationsSection = exportImmunizationsSection;
 exports.immunizationsEntry = exportImmunizationsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],8:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],8:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -616,7 +616,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":43,"blue-button-xml":"blue-button-xml","underscore":88}],9:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml","underscore":89}],9:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -682,7 +682,7 @@ var exportProblemsSection = function (version) {
 exports.problemsSection = exportProblemsSection;
 exports.problemsEntry = exportProblemsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],10:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],10:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -734,7 +734,7 @@ var exportProceduresSection = function (version) {
 exports.proceduresSection = exportProceduresSection;
 exports.proceduresEntry = exportProceduresSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],11:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],11:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -796,7 +796,7 @@ var exportResultsSection = function (version) {
 exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],12:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],12:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -871,7 +871,7 @@ exports.vitalSignsSection = exportVitalSignsSection;
 
 exports.vitalSignsEntry = exportVitalSignsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],13:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],13:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -879,7 +879,9 @@ var processor = require("blue-button-xml").processor;
 var cleanup = require("./cleanup");
 var common = require("blue-button-xml").common;
 
-var shared = module.exports = {}
+var commonShared = require('../common/shared');
+
+var shared = module.exports = Object.create(commonShared);
 
 var Identifier = shared.Identifier = component.define("Identifier")
     .fields([
@@ -937,13 +939,6 @@ AgeDescriptor.fields([
     ])
     .cleanupStep(cleanup.augmentAge);
 
-var SimpleCode = shared.SimpleCode = function (oid) {
-    var r = component.define("SimpleCode." + oid);
-    r.fields([]);
-    r.cleanupStep(cleanup.augmentSimpleCode(oid));
-    return r;
-};
-
 var SimplifiedCode = shared.SimplifiedCode = ConceptDescriptor.define("SimpifiedCode")
     .cleanupStep(cleanup.augmentSimplifiedCode);
 
@@ -996,63 +991,16 @@ var Address = shared.Address = component.define("Address")
         ["state", "0..1", "h:state/text()"],
         ["zip", "0..1", "h:postalCode/text()"],
         ["country", "0..1", "h:country/text()"],
-        ["use", "0..1", "@use", SimpleCode("2.16.840.1.113883.5.1119")]
+        ["use", "0..1", "@use", shared.SimpleCode("2.16.840.1.113883.5.1119")]
     ]);
-
-var Email = shared.Email = component.define("Email")
-    .fields([
-        ["address", "1..1", "@value"],
-        ["type", "0..1", "@use", SimpleCode("2.16.840.1.113883.5.1119")]
-    ]).cleanupStep(function () {
-        if (this.js && this.js.address) {
-            if (this.js.address.substring(0, 7) === "mailto:") {
-                this.js.address = this.js.address.substring(7);
-                //NOTE: type for email should be empty (per PragueExpat)
-                if (this.js.type) {
-                    this.js.type = '';
-                }
-            } else {
-                this.js = {};
-            }
-        }
-
-        if (this.js) {
-            if (!this.js.address) {
-                this.js = {};
-            }
-        }
-    }).cleanupStep(cleanup.clearNulls);
-
-var Phone = shared.Phone = component.define("Phone")
-    .fields([
-        ["number", "1..1", "@value"],
-        ["type", "0..1", "@use", SimpleCode("2.16.840.1.113883.5.1119")]
-    ]).cleanupStep(function () {
-        if (this.js && this.js.number) {
-            if (this.js.number.substring(0, 4) === "tel:") {
-                this.js.number = this.js.number.substring(4);
-            }
-            //Remove emails as phone numbers.
-            if (this.js.number.substring(0, 7) === "mailto:") {
-                this.js = {};
-            }
-        }
-
-        if (this.js) {
-            if (!this.js.number) {
-                this.js = {};
-            }
-        }
-
-    }).cleanupStep(cleanup.clearNulls);
 
 var Organization = shared.Organization = component.define("Organization")
     .fields([
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:name/text()"],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", Email],
-        ["phone", "0..*", "h:telecom", Phone]
+        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.Phone]
     ]);
 
 var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
@@ -1060,8 +1008,8 @@ var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", Email],
-        ["phone", "0..*", "h:telecom", Phone],
+        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.Phone],
         ["organization", "0..*", "h:representedOrganization", Organization],
         ["code", "0..*", "h:code", ConceptDescriptor],
     ]);
@@ -1080,11 +1028,11 @@ shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
         ["name", "0:1", "h:playingEntity/h:name/text()"],
         ["location_type", "1..1", "h:code", ConceptDescriptor],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", Email],
-        ["phone", "0..*", "h:telecom", Phone]
+        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.Phone]
     ]);
 
-},{"./cleanup":3,"blue-button-xml":"blue-button-xml"}],14:[function(require,module,exports){
+},{"../common/shared":41,"./cleanup":3,"blue-button-xml":"blue-button-xml"}],14:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -1343,7 +1291,7 @@ var exportEncountersSection = function (version) {
 exports.encountersSection = exportEncountersSection;
 exports.encountersEntry = exportEncountersSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],19:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],19:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1429,7 +1377,7 @@ var exportImmunizationsSection = function (version) {
 exports.immunizationsSection = exportImmunizationsSection;
 exports.immunizationsEntry = exportImmunizationsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],20:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],20:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1679,7 +1627,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],21:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],21:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1770,7 +1718,7 @@ var exportPayersSection = function (version) {
 exports.payers_section = exportPayersSection;
 exports.payers_entry = exportPayersSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],22:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],22:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1828,7 +1776,7 @@ var exportPlanOfCareSection = function (version) {
 exports.plan_of_care_section = exportPlanOfCareSection;
 exports.plan_of_care_entry = exportPlanOfCareSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],23:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],23:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1902,7 +1850,7 @@ var exportProblemsSection = function (version) {
 exports.problemsSection = exportProblemsSection;
 exports.problemsEntry = exportProblemsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],24:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],24:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1979,7 +1927,7 @@ var exportProceduresSection = function (version) {
 exports.proceduresSection = exportProceduresSection;
 exports.proceduresEntry = exportProceduresSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],25:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],25:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2040,7 +1988,7 @@ var exportResultsSection = function (version) {
 exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],26:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],26:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2086,7 +2034,7 @@ var exportSocialHistorySection = function (version) {
 }
 exports.socialHistorySection = exportSocialHistorySection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],27:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],27:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2161,7 +2109,7 @@ exports.vitalSignsSection = exportVitalSignsSection;
 
 exports.vitalSignsEntry = exportVitalSignsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],28:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],28:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -2169,7 +2117,9 @@ var processor = require("blue-button-xml").processor;
 var cleanup = require("./cleanup");
 var common = require("blue-button-xml").common;
 
-var shared = module.exports = {}
+var commonShared = require('../common/shared');
+
+var shared = module.exports = Object.create(commonShared);
 
 var Identifier = shared.Identifier = component.define("Identifier")
     .fields([
@@ -2221,13 +2171,6 @@ AgeDescriptor.fields([
         ["units", "0..1", "@unit"],
     ])
     .cleanupStep(cleanup.augmentAge);
-
-var SimpleCode = shared.SimpleCode = function (oid) {
-    var r = component.define("SimpleCode." + oid);
-    r.fields([]);
-    r.cleanupStep(cleanup.augmentSimpleCode(oid));
-    return r;
-};
 
 var SimplifiedCode = shared.SimplifiedCode = ConceptDescriptor.define("SimpifiedCode")
     .cleanupStep(cleanup.augmentSimplifiedCode);
@@ -2281,50 +2224,16 @@ var Address = shared.Address = component.define("Address")
         ["state", "0..1", "h:state/text()"],
         ["zip", "0..1", "h:postalCode/text()"],
         ["country", "0..1", "h:country/text()"],
-        ["use", "0..1", "@use", SimpleCode("2.16.840.1.113883.5.1119")]
+        ["use", "0..1", "@use", shared.SimpleCode("2.16.840.1.113883.5.1119")]
     ]);
-
-var Email = shared.Email = component.define("Email")
-    .fields([
-        ["address", "1..1", "@value"],
-        ["type", "0..1", "@use", SimpleCode("2.16.840.1.113883.5.1119")]
-    ]).cleanupStep(function () {
-        if (this.js && this.js.address) {
-            if (this.js.address.substring(0, 7) === "mailto:") {
-                this.js.address = this.js.address.substring(7);
-                //NOTE: type for email should be empty (per PragueExpat)
-                if (this.js.type) {
-                    this.js.type = '';
-                }
-            } else {
-                this.js = {};
-            }
-        }
-    });
-
-var Phone = shared.Phone = component.define("Phone")
-    .fields([
-        ["number", "1..1", "@value"],
-        ["type", "0..1", "@use", SimpleCode("2.16.840.1.113883.5.1119")]
-    ]).cleanupStep(function () {
-        if (this.js && this.js.number) {
-            if (this.js.number.substring(0, 4) === "tel:") {
-                this.js.number = this.js.number.substring(4);
-            }
-            //Remove emails as phone numbers.
-            if (this.js.number.substring(0, 7) === "mailto:") {
-                this.js = {};
-            }
-        }
-    });
 
 var Organization = shared.Organization = component.define("Organization")
     .fields([
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:name/text()"],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", Email],
-        ["phone", "0..*", "h:telecom", Phone]
+        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.Phone]
     ]);
 
 var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
@@ -2332,8 +2241,8 @@ var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", Email],
-        ["phone", "0..*", "h:telecom", Phone],
+        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.Phone],
         ["organization", "0..*", "h:representedOrganization", Organization],
         ["code", "0..*", "h:code", ConceptDescriptor],
     ]);
@@ -2352,11 +2261,11 @@ shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
         ["name", "0:1", "h:playingEntity/h:name/text()"],
         ["location_type", "1..1", "h:code", ConceptDescriptor],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", Email],
-        ["phone", "0..*", "h:telecom", Phone]
+        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.Phone]
     ]);
 
-},{"./cleanup":15,"blue-button-xml":"blue-button-xml"}],29:[function(require,module,exports){
+},{"../common/shared":41,"./cleanup":15,"blue-button-xml":"blue-button-xml"}],29:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -2461,7 +2370,7 @@ var exportEncountersSection = function (version) {
 exports.encountersSection = exportEncountersSection;
 exports.encountersEntry = exportEncountersSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],33:[function(require,module,exports){
+},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],33:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2632,7 +2541,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],34:[function(require,module,exports){
+},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],34:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2723,7 +2632,7 @@ var exportPayersSection = function (version) {
 exports.payers_section = exportPayersSection;
 exports.payers_entry = exportPayersSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],35:[function(require,module,exports){
+},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],35:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2789,7 +2698,7 @@ var exportProblemsSection = function (version) {
 exports.problemsSection = exportProblemsSection;
 exports.problemsEntry = exportProblemsSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],36:[function(require,module,exports){
+},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],36:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2840,7 +2749,7 @@ var exportProceduresSection = function (version) {
 exports.proceduresSection = exportProceduresSection;
 exports.proceduresEntry = exportProceduresSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],37:[function(require,module,exports){
+},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],37:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2869,7 +2778,7 @@ var exportProvidersSection = function (version) {
 
 exports.providersSection = exportProvidersSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],38:[function(require,module,exports){
+},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],38:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2931,7 +2840,7 @@ var exportResultsSection = function (version) {
 exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],39:[function(require,module,exports){
+},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],39:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -2939,7 +2848,9 @@ var processor = require("blue-button-xml").processor;
 var cleanup = require("./cleanup");
 var common = require("blue-button-xml").common;
 
-var shared = module.exports = {}
+var commonShared = require('../common/shared');
+
+var shared = module.exports = Object.create(commonShared);
 
 var Identifier = shared.Identifier = component.define("Identifier")
     .fields([
@@ -2997,13 +2908,6 @@ AgeDescriptor.fields([
     ])
     .cleanupStep(cleanup.augmentAge);
 
-var SimpleCode = shared.SimpleCode = function (oid) {
-    var r = component.define("SimpleCode." + oid);
-    r.fields([]);
-    r.cleanupStep(cleanup.augmentSimpleCode(oid));
-    return r;
-};
-
 var SimplifiedCode = shared.SimplifiedCode = ConceptDescriptor.define("SimpifiedCode")
     .cleanupStep(cleanup.augmentSimplifiedCode);
 
@@ -3056,59 +2960,16 @@ var Address = shared.Address = component.define("Address")
         ["state", "0..1", "h:state/text()"],
         ["zip", "0..1", "h:postalCode/text()"],
         ["country", "0..1", "h:country/text()"],
-        ["use", "0..1", "@use", SimpleCode("2.16.840.1.113883.5.1119")]
+        ["use", "0..1", "@use", shared.SimpleCode("2.16.840.1.113883.5.1119")]
     ]);
-
-var Email = shared.Email = component.define("Email")
-    .fields([
-        ["address", "1..1", "@value"],
-        ["type", "0..1", "@use", SimpleCode("2.16.840.1.113883.5.1119")]
-    ]).cleanupStep(function () {
-        if (this.js && this.js.address) {
-            if (this.js.address.substring(0, 7) === "mailto:") {
-                this.js.address = this.js.address.substring(7);
-                //NOTE: type for email should be empty (per PragueExpat)
-                if (this.js.type) {
-                    this.js.type = '';
-                }
-            } else {
-                this.js = {};
-            }
-        }
-
-        if (!this.js.number) {
-            this.js = {};
-        }
-    }).cleanupStep(cleanup.clearNulls);
-
-var Phone = shared.Phone = component.define("Phone")
-    .fields([
-        ["number", "1..1", "@value"],
-        ["type", "0..1", "@use", SimpleCode("2.16.840.1.113883.5.1119")]
-    ]).cleanupStep(function () {
-        if (this.js && this.js.number) {
-            if (this.js.number.substring(0, 4) === "tel:") {
-                this.js.number = this.js.number.substring(4);
-            }
-            //Remove emails as phone numbers.
-            if (this.js.number.substring(0, 7) === "mailto:") {
-                this.js = {};
-            }
-        }
-
-        if (!this.js.number) {
-            this.js = {};
-        }
-
-    }).cleanupStep(cleanup.clearNulls);
 
 var Organization = shared.Organization = component.define("Organization")
     .fields([
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:name/text()"],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", Email],
-        ["phone", "0..*", "h:telecom", Phone]
+        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.Phone]
     ]);
 
 var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
@@ -3116,8 +2977,8 @@ var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", Email],
-        ["phone", "0..*", "h:telecom", Phone],
+        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.Phone],
         ["organization", "0..*", "h:representedOrganization", Organization],
         ["code", "0..*", "h:code", ConceptDescriptor],
     ]);
@@ -3136,11 +2997,11 @@ shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
         ["name", "0:1", "h:playingEntity/h:name/text()"],
         ["location_type", "1..1", "h:code", ConceptDescriptor],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", Email],
-        ["phone", "0..*", "h:telecom", Phone]
+        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.Phone]
     ]);
 
-},{"./cleanup":30,"blue-button-xml":"blue-button-xml"}],40:[function(require,module,exports){
+},{"../common/shared":41,"./cleanup":30,"blue-button-xml":"blue-button-xml"}],40:[function(require,module,exports){
 "use strict";
 
 var bbxml = require("blue-button-xml");
@@ -3335,7 +3196,62 @@ cleanup.augmentSimplifiedCodeOID = function (oid) {
     return f;
 };
 
-},{"blue-button-meta":43,"blue-button-xml":"blue-button-xml"}],41:[function(require,module,exports){
+},{"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],41:[function(require,module,exports){
+"use strict";
+
+var bbxml = require("blue-button-xml");
+
+var component = bbxml.component;
+var processor = bbxml.processor;
+
+var cleanup = require('./cleanup');
+
+var shared = module.exports = {};
+
+var simpleCode = shared.SimpleCode = function (oid) {
+    var r = component.define("SimpleCode." + oid);
+    r.fields([]);
+    r.cleanupStep(cleanup.augmentSimpleCode(oid));
+    return r;
+};
+
+var email = shared.Email = component.define("Email");
+email.fields([
+    ["address", "1..1", "@value"],
+    ["type", "0..1", "@use", simpleCode("2.16.840.1.113883.5.1119")]
+]);
+email.cleanupStep(function () {
+    if (this.js && this.js.address) {
+        if (this.js.address.substring(0, 7) === "mailto:") {
+            this.js.address = this.js.address.substring(7);
+            //NOTE: type for email should be empty (per PragueExpat)
+            if (this.js.type) {
+                this.js.type = '';
+            }
+        } else {
+            this.js = {};
+        }
+    }
+});
+
+var phone = shared.Phone = component.define("Phone");
+phone.fields([
+    ["number", "1..1", "@value"],
+    ["type", "0..1", "@use", simpleCode("2.16.840.1.113883.5.1119")]
+]);
+phone.cleanupStep(function () {
+    if (this.js && this.js.number) {
+        if (this.js.number.substring(0, 4) === "tel:") {
+            this.js.number = this.js.number.substring(4);
+        }
+        //Remove emails as phone numbers.
+        if (this.js.number.substring(0, 7) === "mailto:") {
+            this.js = {};
+        }
+    }
+});
+
+},{"./cleanup":40,"blue-button-xml":"blue-button-xml"}],42:[function(require,module,exports){
 //CCDA to JSON parser.
 
 "use strict";
@@ -3419,7 +3335,7 @@ var generateComponents = function (version) {
 
 module.exports.componentRouter = componentRouter;
 
-},{"./c32/ccd":2,"./c32/demographics":4,"./c32/sections/allergies":5,"./c32/sections/encounters":6,"./c32/sections/immunizations":7,"./c32/sections/medications":8,"./c32/sections/problems":9,"./c32/sections/procedures":10,"./c32/sections/results":11,"./c32/sections/vitals":12,"./ccda/ccd":14,"./ccda/demographics":16,"./ccda/sections/allergies":17,"./ccda/sections/encounters":18,"./ccda/sections/immunizations":19,"./ccda/sections/medications":20,"./ccda/sections/payers":21,"./ccda/sections/plan_of_care":22,"./ccda/sections/problems":23,"./ccda/sections/procedures":24,"./ccda/sections/results":25,"./ccda/sections/social_history":26,"./ccda/sections/vitals":27,"./cda/ccd":29}],42:[function(require,module,exports){
+},{"./c32/ccd":2,"./c32/demographics":4,"./c32/sections/allergies":5,"./c32/sections/encounters":6,"./c32/sections/immunizations":7,"./c32/sections/medications":8,"./c32/sections/problems":9,"./c32/sections/procedures":10,"./c32/sections/results":11,"./c32/sections/vitals":12,"./ccda/ccd":14,"./ccda/demographics":16,"./ccda/sections/allergies":17,"./ccda/sections/encounters":18,"./ccda/sections/immunizations":19,"./ccda/sections/medications":20,"./ccda/sections/payers":21,"./ccda/sections/plan_of_care":22,"./ccda/sections/problems":23,"./ccda/sections/procedures":24,"./ccda/sections/results":25,"./ccda/sections/social_history":26,"./ccda/sections/vitals":27,"./cda/ccd":29}],43:[function(require,module,exports){
 //sense.js - Determining file content type e.g. CCDA or C32 or BB.json/JSON or text/other formats.
 
 "use strict";
@@ -3579,7 +3495,7 @@ module.exports = {
     senseString: senseString
 };
 
-},{"blue-button-xml":"blue-button-xml"}],43:[function(require,module,exports){
+},{"blue-button-xml":"blue-button-xml"}],44:[function(require,module,exports){
 var CCDA = require("./lib/CCDA/index.js");
 
 //CCDA metadata stuff
@@ -3608,7 +3524,7 @@ meta.code_systems = require("./lib/code-systems");
 
 module.exports = exports = meta;
 
-},{"./lib/CCDA/index.js":46,"./lib/code-systems":51}],44:[function(require,module,exports){
+},{"./lib/CCDA/index.js":47,"./lib/code-systems":52}],45:[function(require,module,exports){
 var clinicalstatements = {
     "AdmissionMedication": "2.16.840.1.113883.10.20.22.4.36",
     "AdvanceDirectiveObservation": "2.16.840.1.113883.10.20.22.4.48",
@@ -3738,7 +3654,7 @@ var clinicalstatements_r1 = {
 module.exports.clinicalstatements = clinicalstatements;
 module.exports.clinicalstatements_r1 = clinicalstatements_r1;
 
-},{}],45:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 var codeSystems = {
     "LOINC": ["2.16.840.1.113883.6.1", "8716-3"],
     "SNOMED CT": ["2.16.840.1.113883.6.96", "46680005"],
@@ -4520,7 +4436,7 @@ var sections_entries_codes = {
 module.exports.codeSystems = codeSystems;
 module.exports.sections_entries_codes = sections_entries_codes;
 
-},{}],46:[function(require,module,exports){
+},{}],47:[function(require,module,exports){
 var templates = require("./templates.js");
 var sections = require("./sections.js");
 var statements = require("./clinicalstatements.js");
@@ -4625,7 +4541,7 @@ var CCDA = {
 //and http://cdatools.org/ClinicalStatementMatrix.html
 
 module.exports = exports = CCDA;
-},{"./clinicalstatements.js":44,"./code-systems.js":45,"./sections-constraints.js":47,"./sections.js":48,"./templates-constraints.js":49,"./templates.js":50}],47:[function(require,module,exports){
+},{"./clinicalstatements.js":45,"./code-systems.js":46,"./sections-constraints.js":48,"./sections.js":49,"./templates-constraints.js":50,"./templates.js":51}],48:[function(require,module,exports){
 var sectionsconstraints = {
     "VitalSignsSection": {
         "full": {
@@ -5623,7 +5539,7 @@ var sectionsconstraints = {
 module.exports = exports = sectionsconstraints;
 
 
-},{}],48:[function(require,module,exports){
+},{}],49:[function(require,module,exports){
 var sections = {
     "AdvanceDirectivesSection": "2.16.840.1.113883.10.20.22.2.21.1",
     "AdvanceDirectivesSectionEntriesOptional": "2.16.840.1.113883.10.20.22.2.21",
@@ -5719,7 +5635,7 @@ var sections_r1 = {
 module.exports.sections = sections;
 module.exports.sections_r1 = sections_r1;
 
-},{}],49:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 var templatesconstraints = {
     "ContinuityOfCareDocument": {
         "may": {
@@ -6507,7 +6423,7 @@ var templatesconstraints = {
 module.exports = exports = templatesconstraints;
 
 
-},{}],50:[function(require,module,exports){
+},{}],51:[function(require,module,exports){
 var templates = {
     "ConsultationNote": "2.16.840.1.113883.10.20.22.1.4",
     "ContinuityOfCareDocument": "2.16.840.1.113883.10.20.22.1.2",
@@ -6523,7 +6439,7 @@ var templates = {
 module.exports = exports = templates;
 
 
-},{}],51:[function(require,module,exports){
+},{}],52:[function(require,module,exports){
 "use strict";
 
 var oids = require("./oids");
@@ -6596,7 +6512,7 @@ exports.findFromName = (function() {
     };
 })();
 
-},{"./oids":52}],52:[function(require,module,exports){
+},{"./oids":53}],53:[function(require,module,exports){
 module.exports = OIDs = {
     "2.16.840.1.113883.11.20.9.19": {
         name: "Problem Status",
@@ -8059,12 +7975,12 @@ module.exports = OIDs = {
     }
 };
 
-},{}],53:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 "use strict";
 
 exports.validator = require("./lib/validator.js");
 
-},{"./lib/validator.js":73}],54:[function(require,module,exports){
+},{"./lib/validator.js":74}],55:[function(require,module,exports){
 module.exports = {
 	"id": "allergy",
     "type": "object",
@@ -8163,7 +8079,7 @@ module.exports = {
     "additionalProperties": false
 };
 
-},{}],55:[function(require,module,exports){
+},{}],56:[function(require,module,exports){
 module.exports = {
     "id": "claim",
     "type": "object",
@@ -8390,7 +8306,7 @@ module.exports = {
     "additionalProperties": false
 };
 
-},{}],56:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 module.exports = [{
     	"id": "cda_address",
         "type": "object",
@@ -8698,7 +8614,7 @@ module.exports = [{
     }
 ];
 
-},{}],57:[function(require,module,exports){
+},{}],58:[function(require,module,exports){
 module.exports = {
     "id": "demographics",
     "type": "object",
@@ -8840,7 +8756,7 @@ module.exports = {
     ]
 };
 
-},{}],58:[function(require,module,exports){
+},{}],59:[function(require,module,exports){
 module.exports = {
 	"id": "document_model",
     "type": "object",
@@ -8920,7 +8836,7 @@ module.exports = {
     }
 };
 
-},{}],59:[function(require,module,exports){
+},{}],60:[function(require,module,exports){
 module.exports = {
     "id": "encounter",
     "type": "object",
@@ -8977,7 +8893,7 @@ module.exports = {
     "required": ["encounter"]
 };
 
-},{}],60:[function(require,module,exports){
+},{}],61:[function(require,module,exports){
 module.exports = {
 	"id": "family_history_entry",
     "type": "object",
@@ -9013,7 +8929,7 @@ module.exports = {
     "required": ["name", "relationship"]
 };
 
-},{}],61:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 module.exports = {
 	"id": "immunization",
     "type": "object",
@@ -9096,7 +9012,7 @@ module.exports = {
     ]
 };
 
-},{}],62:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
 "use strict";
 
 var common_models = require('./common_models');
@@ -9166,7 +9082,7 @@ Object.keys(sections).forEach(function(sectionName) {
 
 schemas.push(document_model);
 
-},{"./allergy":54,"./claim":55,"./common_models":56,"./demographics":57,"./document_model":58,"./encounter":59,"./family_history_entry":60,"./immunization":61,"./medical_device":63,"./medication":64,"./payers":65,"./plan_of_care_entry":66,"./problem":67,"./procedure":68,"./provider":69,"./result":70,"./social_history":71,"./vital":72}],63:[function(require,module,exports){
+},{"./allergy":55,"./claim":56,"./common_models":57,"./demographics":58,"./document_model":59,"./encounter":60,"./family_history_entry":61,"./immunization":62,"./medical_device":64,"./medication":65,"./payers":66,"./plan_of_care_entry":67,"./problem":68,"./procedure":69,"./provider":70,"./result":71,"./social_history":72,"./vital":73}],64:[function(require,module,exports){
 module.exports = {
 	"id": "medical_device",
     "type": "object",
@@ -9192,7 +9108,7 @@ module.exports = {
     "required": ["product"]
 };
 
-},{}],64:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 module.exports = {
 	"id": "medication",
     "type": "object",
@@ -9412,7 +9328,7 @@ module.exports = {
     ]
 };
 
-},{}],65:[function(require,module,exports){
+},{}],66:[function(require,module,exports){
 module.exports = {
 	"id": "payers",
     "type": "array",
@@ -9569,7 +9485,7 @@ module.exports = {
     }
 };
 
-},{}],66:[function(require,module,exports){
+},{}],67:[function(require,module,exports){
 module.exports = {
 	"id": "plan_of_care_entry",
     "type": "object",
@@ -9600,7 +9516,7 @@ module.exports = {
     "additionalProperties": false
 };
 
-},{}],67:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 module.exports = {
 	"id": "problem",
     "type": "object",
@@ -9660,7 +9576,7 @@ module.exports = {
     "required": ["problem"]
 };
 
-},{}],68:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 module.exports = {
 	"id": "procedure",
     "type": "object",
@@ -9728,7 +9644,7 @@ module.exports = {
     "additionalProperties": false
 }
 
-},{}],69:[function(require,module,exports){
+},{}],70:[function(require,module,exports){
 module.exports = {
 	"id": "provider",
     "type": "object",
@@ -9773,7 +9689,7 @@ module.exports = {
     "additionalProperties": false
 };
 
-},{}],70:[function(require,module,exports){
+},{}],71:[function(require,module,exports){
 module.exports = {
 	"id": "result",
     "type": "object",
@@ -9861,7 +9777,7 @@ module.exports = {
     ]
 };
 
-},{}],71:[function(require,module,exports){
+},{}],72:[function(require,module,exports){
 module.exports = {
 	"id": "social_history",
     "type": "array",
@@ -9895,7 +9811,7 @@ module.exports = {
     "additionalProperties": true
 };
 
-},{}],72:[function(require,module,exports){
+},{}],73:[function(require,module,exports){
 module.exports = {
 	"id": "vital",
     "type": "object",
@@ -9933,7 +9849,7 @@ module.exports = {
     "required": ["vital"]
 };
 
-},{}],73:[function(require,module,exports){
+},{}],74:[function(require,module,exports){
 "use strict";
 
 var ZSchema = require("z-schema");
@@ -9979,7 +9895,7 @@ Validator.prototype.validateDocumentModel = function (documentModel) {
 
 module.exports = new Validator();
 
-},{"./schemas":62,"z-schema":83}],74:[function(require,module,exports){
+},{"./schemas":63,"z-schema":84}],75:[function(require,module,exports){
 "use strict";
 
 module.exports = {
@@ -10040,7 +9956,7 @@ module.exports = {
 
 };
 
-},{}],75:[function(require,module,exports){
+},{}],76:[function(require,module,exports){
 /*jshint maxlen: false*/
 
 var FormatValidators = {
@@ -10209,7 +10125,7 @@ var FormatValidators = {
 
 module.exports = FormatValidators;
 
-},{}],76:[function(require,module,exports){
+},{}],77:[function(require,module,exports){
 "use strict";
 
 var FormatValidators  = require("./FormatValidators"),
@@ -10727,7 +10643,7 @@ exports.validate = function (report, schema, json) {
 
 };
 
-},{"./FormatValidators":75,"./Report":78,"./Utils":82}],77:[function(require,module,exports){
+},{"./FormatValidators":76,"./Report":79,"./Utils":83}],78:[function(require,module,exports){
 // Number.isFinite polyfill
 // http://people.mozilla.org/~jorendorff/es6-draft.html#sec-number.isfinite
 if (typeof Number.isFinite !== "function") {
@@ -10745,7 +10661,7 @@ if (typeof Number.isFinite !== "function") {
     };
 }
 
-},{}],78:[function(require,module,exports){
+},{}],79:[function(require,module,exports){
 (function (process){
 "use strict";
 
@@ -10885,7 +10801,7 @@ Report.prototype.addError = function (errorCode, params, subReports, schemaDescr
 module.exports = Report;
 
 }).call(this,require('_process'))
-},{"./Errors":74,"_process":85}],79:[function(require,module,exports){
+},{"./Errors":75,"_process":86}],80:[function(require,module,exports){
 "use strict";
 
 var Report              = require("./Report");
@@ -11016,7 +10932,7 @@ exports.getSchemaByUri = function (report, uri, root) {
 
 exports.getRemotePath = getRemotePath;
 
-},{"./Report":78,"./SchemaCompilation":80,"./SchemaValidation":81}],80:[function(require,module,exports){
+},{"./Report":79,"./SchemaCompilation":81,"./SchemaValidation":82}],81:[function(require,module,exports){
 "use strict";
 
 var Report = require("./Report");
@@ -11228,7 +11144,7 @@ exports.compileSchema = function (report, schema) {
 
 };
 
-},{"./Report":78,"./SchemaCache":79}],81:[function(require,module,exports){
+},{"./Report":79,"./SchemaCache":80}],82:[function(require,module,exports){
 "use strict";
 
 var FormatValidators = require("./FormatValidators"),
@@ -11781,7 +11697,7 @@ exports.validateSchema = function (report, schema) {
 
 };
 
-},{"./FormatValidators":75,"./JsonValidation":76,"./Report":78,"./Utils":82}],82:[function(require,module,exports){
+},{"./FormatValidators":76,"./JsonValidation":77,"./Report":79,"./Utils":83}],83:[function(require,module,exports){
 "use strict";
 
 exports.whatIs = function (what) {
@@ -11913,7 +11829,7 @@ exports.clone = function (src) {
     return res;
 };
 
-},{}],83:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 "use strict";
 
 require("./Polyfills");
@@ -12100,7 +12016,7 @@ ZSchema.registerFormatter = function (/* formatterName, formatterFunction */) {
 
 module.exports = ZSchema;
 
-},{"./FormatValidators":75,"./JsonValidation":76,"./Polyfills":77,"./Report":78,"./SchemaCache":79,"./SchemaCompilation":80,"./SchemaValidation":81,"./Utils":82}],84:[function(require,module,exports){
+},{"./FormatValidators":76,"./JsonValidation":77,"./Polyfills":78,"./Report":79,"./SchemaCache":80,"./SchemaCompilation":81,"./SchemaValidation":82,"./Utils":83}],85:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -12125,7 +12041,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],85:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -12213,14 +12129,14 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 
-},{}],86:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],87:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -12810,7 +12726,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":86,"_process":85,"inherits":84}],88:[function(require,module,exports){
+},{"./support/isBuffer":87,"_process":86,"inherits":85}],89:[function(require,module,exports){
 //     Underscore.js 1.6.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -14155,7 +14071,7 @@ function hasOwnProperty(obj, prop) {
   }
 }).call(this);
 
-},{}],89:[function(require,module,exports){
+},{}],90:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
   "version": "1.3.0-beta.15",
@@ -14259,4 +14175,4 @@ exports.validator = require("blue-button-model").validator;
 	console.log(version);
 */
 
-},{"./lib/parser.js":1,"./lib/sense.js":42,"blue-button-generate":"blue-button-generate","blue-button-model":53,"blue-button-xml":"blue-button-xml"}]},{},["blue-button"]);
+},{"./lib/parser.js":1,"./lib/sense.js":43,"blue-button-generate":"blue-button-generate","blue-button-model":54,"blue-button-xml":"blue-button-xml"}]},{},["blue-button"]);
