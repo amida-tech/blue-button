@@ -122,7 +122,7 @@ var exportC32 = function (version) {
             ["results", "0..1", resultsSection.xpath(), resultsSection]
         ]);
 
-}
+};
 
 exports.C32 = exportC32;
 
@@ -294,7 +294,7 @@ var exportAllergiesSection = function (version) {
     allergiesSection.cleanupStep(cleanup.replaceWithField(["problemAct"]));
 
     return [allergiesSection, problemAct];
-}
+};
 exports.allergiesSection = exportAllergiesSection;
 exports.allergiesEntry = exportAllergiesSection;
 
@@ -348,7 +348,7 @@ var exportEncountersSection = function (version) {
     ]);
     encountersSection.cleanupStep(cleanup.replaceWithField(["activity"]));
     return [encountersSection, activity];
-}
+};
 exports.encountersSection = exportEncountersSection;
 exports.encountersEntry = exportEncountersSection;
 
@@ -428,8 +428,8 @@ var exportImmunizationsSection = function (version) {
 
     immunizationsSection.cleanupStep(cleanup.replaceWithField('immunizations'));
 
-    return [immunizationsSection, ImmunizationActivity]
-}
+    return [immunizationsSection, ImmunizationActivity];
+};
 
 exports.immunizationsSection = exportImmunizationsSection;
 exports.immunizationsEntry = exportImmunizationsSection;
@@ -488,8 +488,8 @@ var exportMedicationsSection = function (version) {
         .fields([
             ["date_time", "0..1", "h:time", shared.EffectiveTime],
             ["identifiers", "0..*", "h:assignedAuthor/h:id", shared.Identifier],
-            [version == "" ? "name" : "organization", "0..1",
-                "(h:assignedAuthor/h:representedOrganization | h:assignedAuthor/h:assignedPerson/h:name)[last()]", (version == "" ? shared.IndividualName : shared.Organization)
+            [version === "" ? "name" : "organization", "0..1",
+                "(h:assignedAuthor/h:representedOrganization | h:assignedAuthor/h:assignedPerson/h:name)[last()]", (version === "" ? shared.IndividualName : shared.Organization)
             ]
         ]);
 
@@ -567,7 +567,7 @@ var exportMedicationsSection = function (version) {
                 } else {
                     return true;
                 }
-            })
+            });
 
             //Cleanup Status.
 
@@ -611,7 +611,7 @@ var exportMedicationsSection = function (version) {
     medicationsSection.cleanupStep(cleanup.replaceWithField('medications'));
     return [medicationsSection, MedicationActivity];
 
-}
+};
 
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
@@ -677,7 +677,7 @@ var exportProblemsSection = function (version) {
 
     problemsSection.cleanupStep(cleanup.replaceWithField("problems"));
     return [problemsSection, ProblemConcernAct];
-}
+};
 
 exports.problemsSection = exportProblemsSection;
 exports.problemsEntry = exportProblemsSection;
@@ -729,7 +729,7 @@ var exportProceduresSection = function (version) {
     ]);
     proceduresSection.cleanupStep(cleanup.replaceWithField('entry'));
     return [proceduresSection, entry];
-}
+};
 
 exports.proceduresSection = exportProceduresSection;
 exports.proceduresEntry = exportProceduresSection;
@@ -790,7 +790,7 @@ var exportResultsSection = function (version) {
     resultsSection.cleanupStep(cleanup.replaceWithField('panels'));
 
     return [resultsSection, ResultsOrganizer];
-}
+};
 
 exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
@@ -829,7 +829,7 @@ var exportVitalSignsSection = function (version) {
     ]);
     vitalSignsSection.cleanupStep(cleanup.replaceWithField('entry'));
     return [vitalSignsSection, VitalSignObservation];
-}
+};
 
 // var VitalSignObservation = component.define("VitalSignObservation")
 //     .templateRoot(clinicalStatementsIDs.VitalSignObservation)
@@ -1058,7 +1058,7 @@ var exportCCD = function (version) {
             ["plan_of_care", "0..1", plan_of_care_section.xpath(), plan_of_care_section],
             ["payers", "0..1", payers_section.xpath(), payers_section],
         ]);
-}
+};
 
 exports.CCD = exportCCD;
 
@@ -1208,7 +1208,7 @@ var exportAllergiesSection = function (version) {
     allergiesSection.cleanupStep(cleanup.replaceWithField(["problemAct"]));
 
     return [allergiesSection, problemAct];
-}
+};
 exports.allergiesSection = exportAllergiesSection;
 exports.allergiesEntry = exportAllergiesSection;
 
@@ -1260,7 +1260,7 @@ var exportEncountersSection = function (version) {
     ]);
     encountersSection.cleanupStep(cleanup.replaceWithField(["activity"]));
     return [encountersSection, activity];
-}
+};
 exports.encountersSection = exportEncountersSection;
 exports.encountersEntry = exportEncountersSection;
 
@@ -1344,8 +1344,8 @@ var exportImmunizationsSection = function (version) {
     ]);
 
     immunizationsSection.cleanupStep(cleanup.replaceWithField('immunizations'));
-    return [immunizationsSection, ImmunizationActivity]
-}
+    return [immunizationsSection, ImmunizationActivity];
+};
 
 exports.immunizationsSection = exportImmunizationsSection;
 exports.immunizationsEntry = exportImmunizationsSection;
@@ -1422,8 +1422,8 @@ var exportMedicationsSection = function (version) {
         .fields([
             ["date_time", "0..1", "h:time", shared.EffectiveTime],
             ["identifiers", "0..*", "h:assignedAuthor/h:id", shared.Identifier],
-            [version == "" ? "name" : "organization", "0..1",
-                "(h:assignedAuthor/h:representedOrganization | h:assignedAuthor/h:assignedPerson/h:name)[last()]", (version == "" ? shared.IndividualName : shared.Organization)
+            [version === "" ? "name" : "organization", "0..1",
+                "(h:assignedAuthor/h:representedOrganization | h:assignedAuthor/h:assignedPerson/h:name)[last()]", (version === "" ? shared.IndividualName : shared.Organization)
             ]
         ]);
 
@@ -1431,8 +1431,14 @@ var exportMedicationsSection = function (version) {
     // ***************************************************************************
     // *                      ccda-r1.1 (LATEST VERSION)                         *
     // ***************************************************************************
-    if (version == "") {
-        var MedicationInformation = component.define("MedicationInformation")
+
+    var medicationInformation;
+    var medicationSupplyOrder;
+    var medicationActivity;
+    var medicationsSection;
+
+    if (version === "") {
+        medicationInformation = component.define("medicationInformation")
             .templateRoot("2.16.840.1.113883.10.20.22.4.23")
             .fields([
                 ["identifiers", "0..*", "h:id", shared.Identifier],
@@ -1441,7 +1447,7 @@ var exportMedicationsSection = function (version) {
                 ["manufacturer", "0..1", "h:manufacturerOrganization/h:name/text()"]
             ]);
 
-        var MedicationSupplyOrder = component.define("MedicationSupplyOrder")
+        medicationSupplyOrder = component.define("medicationSupplyOrder")
             .fields([
                 ["identifiers", "0..*", "h:assignedEntity/h:id", shared.Identifier],
                 ["date_time", "0..1", "h:effectiveTime", shared.EffectiveTime],
@@ -1477,18 +1483,18 @@ var exportMedicationsSection = function (version) {
             .fields([
                 ["identifiers", "0..*", "h:id", shared.Identifier],
                 ["performer", "0..1", "h:performer", MedicationPerformer],
-                ["supply", "0..1", "h:entryRelationship[@typeCode='REFR']/h:supply", MedicationSupplyOrder]
+                ["supply", "0..1", "h:entryRelationship[@typeCode='REFR']/h:supply", medicationSupplyOrder]
             ]);
 
-        var MedicationActivity = component.define("MedicationActivity")
+        medicationActivity = component.define("medicationActivity")
             .templateRoot("2.16.840.1.113883.10.20.22.4.16")
             .fields([
                 ["date_time", "0..1", "h:effectiveTime[not (@operator='A')]", shared.EffectiveTime],
                 ["identifiers", "0..*", "h:id", shared.Identifier],
                 ["status", "1..1", "./../h:substanceAdministration/@moodCode"],
                 ["sig", "0..1", "h:text", shared.TextWithReference],
-                ["product", "1..1", "h:consumable/h:manufacturedProduct", MedicationInformation],
-                ["supply", "0..1", "h:entryRelationship[@typeCode='REFR']/h:supply", MedicationSupplyOrder],
+                ["product", "1..1", "h:consumable/h:manufacturedProduct", medicationInformation],
+                ["supply", "0..1", "h:entryRelationship[@typeCode='REFR']/h:supply", medicationSupplyOrder],
                 ["administration", "0..1", "../h:substanceAdministration", MedicationAdministration],
                 ["performer", "0..1", "h:performer", MedicationPerformer],
                 ["drug_vehicle", "0..1", "h:participant[@typeCode='CSM']/h:participantRole/h:playingEntity[@classCode='MMAT']/h:code", shared.ConceptDescriptor],
@@ -1534,27 +1540,27 @@ var exportMedicationsSection = function (version) {
 
             });
 
-        var medicationsSection = component.define("medicationsSection");
+        medicationsSection = component.define("medicationsSection");
         medicationsSection.templateRoot(["2.16.840.1.113883.10.20.22.2.1", "2.16.840.1.113883.10.20.22.2.1.1"]);
         medicationsSection.fields([
-            ["medications", "0..*", MedicationActivity.xpath(), MedicationActivity]
+            ["medications", "0..*", medicationActivity.xpath(), medicationActivity]
         ]);
         medicationsSection.cleanupStep(cleanup.replaceWithField('medications'));
-        return [medicationsSection, MedicationActivity];
+        return [medicationsSection, medicationActivity];
 
         // ***************************************************************************
         // *                      ccda-r1.0 (OLD VERSION)                            *
         // ***************************************************************************
     } else {
 
-        var MedicationInformation = component.define("MedicationInformation")
+        medicationInformation = component.define("medicationInformation")
             .templateRoot("2.16.840.1.113883.10.20.1.53")
             .fields([
                 ["unencoded_name", "0..1", "h:manufacturedProduct/h:manufacturedMaterial/h:code/h:originalText", shared.TextWithReference],
                 ["product", "1..1", "h:manufacturedProduct/h:manufacturedMaterial/h:code", shared.ConceptDescriptor],
             ]);
 
-        var MedicationSupplyOrder = component.define("MedicationSupplyOrder")
+        medicationSupplyOrder = component.define("medicationSupplyOrder")
             .templateRoot("2.16.840.1.113883.10.20.1.34")
             .fields([
                 ["date_time", "0..1", "h:effectiveTime", shared.EffectiveTime],
@@ -1563,15 +1569,15 @@ var exportMedicationsSection = function (version) {
                 ["author", "0..1", "h:author", author]
             ]);
 
-        var MedicationActivity = component.define("Medications")
+        medicationActivity = component.define("Medications")
             .templateRoot(["2.16.840.1.113883.10.20.1.34", "2.16.840.1.113883.10.20.1.24"])
             .fields([
                 ["date_time", "0..1", "h:effectiveTime", shared.EffectiveTime],
                 ["identifiers", "0..*", "h:id", shared.Identifier],
                 ["status", "1..1", "h:statusCode/@code"],
                 ["sig", "0..1", "h:text", shared.TextWithReference],
-                ["product", "1..1", "(h:product | h:consumable)", MedicationInformation],
-                ["supply", "0..1", "../h:supply", MedicationSupplyOrder],
+                ["product", "1..1", "(h:product | h:consumable)", medicationInformation],
+                ["supply", "0..1", "../h:supply", medicationSupplyOrder],
                 ["administration", "0..1", "../h:substanceAdministration", MedicationAdministration],
                 ["precondition", "1..1", "h:precondition/h:criterion", MedicationPrecondition]
             ])
@@ -1587,15 +1593,15 @@ var exportMedicationsSection = function (version) {
                 }
             });
 
-        var medicationsSection = component.define("medicationsSection");
+        medicationsSection = component.define("medicationsSection");
         medicationsSection.templateRoot("2.16.840.1.113883.10.20.1.8");
         medicationsSection.fields([
-            ["Medications", "0..*", MedicationActivity.xpath(), MedicationActivity]
+            ["Medications", "0..*", medicationActivity.xpath(), medicationActivity]
         ]);
         medicationsSection.cleanupStep(cleanup.replaceWithField('medications'));
-        return [medicationsSection, MedicationActivity];
+        return [medicationsSection, medicationActivity];
     }
-}
+};
 
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
@@ -1686,7 +1692,7 @@ var exportPayersSection = function (version) {
     payers_section.cleanupStep(cleanup.replaceWithField('entry'));
 
     return [payers_section, entry];
-}
+};
 
 exports.payers_section = exportPayersSection;
 exports.payers_entry = exportPayersSection;
@@ -1744,7 +1750,7 @@ var exportPlanOfCareSection = function (version) {
     plan_of_care_section.cleanupStep(cleanup.replaceWithField('entry'));
 
     return [plan_of_care_section, entry];
-}
+};
 
 exports.plan_of_care_section = exportPlanOfCareSection;
 exports.plan_of_care_entry = exportPlanOfCareSection;
@@ -1818,7 +1824,7 @@ var exportProblemsSection = function (version) {
 
     problemsSection.cleanupStep(cleanup.replaceWithField("problems"));
     return [problemsSection, ProblemConcernAct];
-}
+};
 
 exports.problemsSection = exportProblemsSection;
 exports.problemsEntry = exportProblemsSection;
@@ -1895,7 +1901,7 @@ var exportProceduresSection = function (version) {
     ]);
     proceduresSection.cleanupStep(cleanup.replaceWithField('entry'));
     return [proceduresSection, entry];
-}
+};
 
 exports.proceduresSection = exportProceduresSection;
 exports.proceduresEntry = exportProceduresSection;
@@ -1956,7 +1962,7 @@ var exportResultsSection = function (version) {
     resultsSection.cleanupStep(cleanup.replaceWithField('panels'));
 
     return [resultsSection, ResultsOrganizer];
-}
+};
 
 exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
@@ -2004,7 +2010,7 @@ var exportSocialHistorySection = function (version) {
     socialHistorySection.cleanupStep(cleanup.replaceWithField('smoking_statuses'));
 
     return [socialHistorySection, socialHistoryObservation];
-}
+};
 exports.socialHistorySection = exportSocialHistorySection;
 
 },{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],27:[function(require,module,exports){
@@ -2041,7 +2047,7 @@ var exportVitalSignsSection = function (version) {
     ]);
     vitalSignsSection.cleanupStep(cleanup.replaceWithField('entry'));
     return [vitalSignsSection, VitalSignObservation];
-}
+};
 
 // var VitalSignObservation = component.define("VitalSignObservation")
 //     .templateRoot(clinicalStatementsIDs.VitalSignObservation)
@@ -2258,7 +2264,7 @@ var exportCCD = function (version) {
             ["payers", "0..1", payers_section.xpath(), payers_section],
         ]);
 
-}
+};
 
 exports.CCD = exportCCD;
 
@@ -2279,7 +2285,7 @@ cleanup.augmentObservation = function () {
         }
     }
 
-}
+};
 
 },{"../common/cleanup":40}],31:[function(require,module,exports){
 arguments[4][4][0].apply(exports,arguments)
@@ -2330,7 +2336,7 @@ var exportEncountersSection = function (version) {
     ]);
     encountersSection.cleanupStep(cleanup.replaceWithField(["activity"]));
     return [encountersSection, activity];
-}
+};
 exports.encountersSection = exportEncountersSection;
 exports.encountersEntry = exportEncountersSection;
 
@@ -2500,7 +2506,7 @@ var exportMedicationsSection = function (version) {
     medicationsSection.cleanupStep(cleanup.replaceWithField('medications'));
     return [medicationsSection, MedicationActivity];
 
-}
+};
 
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
@@ -2591,7 +2597,7 @@ var exportPayersSection = function (version) {
     payers_section.cleanupStep(cleanup.replaceWithField('entry'));
 
     return [payers_section, entry];
-}
+};
 
 exports.payers_section = exportPayersSection;
 exports.payers_entry = exportPayersSection;
@@ -2657,7 +2663,7 @@ var exportProblemsSection = function (version) {
 
     problemsSection.cleanupStep(cleanup.replaceWithField("problems"));
     return [problemsSection, ProblemConcernAct];
-}
+};
 
 exports.problemsSection = exportProblemsSection;
 exports.problemsEntry = exportProblemsSection;
@@ -2708,7 +2714,7 @@ var exportProceduresSection = function (version) {
     ]);
     proceduresSection.cleanupStep(cleanup.replaceWithField('entry'));
     return [proceduresSection, entry];
-}
+};
 
 exports.proceduresSection = exportProceduresSection;
 exports.proceduresEntry = exportProceduresSection;
@@ -2737,8 +2743,8 @@ var exportProvidersSection = function (version) {
             ["organization", "0..1", "h:assignedEntity/h:representedOrganization", shared.Organization]
         ]);
 
-    return [providers]
-}
+    return [providers];
+};
 
 exports.providersSection = exportProvidersSection;
 
@@ -2799,7 +2805,7 @@ var exportResultsSection = function (version) {
     resultsSection.cleanupStep(cleanup.replaceWithField('panels'));
 
     return [resultsSection, ResultsOrganizer];
-}
+};
 
 exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
@@ -2978,7 +2984,7 @@ var resolveReference = cleanup.resolveReference = function () {
 
     var r = this.js.reference && this.js.reference.match(/#(.*)/);
     var resolved = null;
-    if (r && r.length == 2) {
+    if (r && r.length === 2) {
         resolved = xmlUtil.xpath(this.node, "//*[@ID='" + r[1] + "']/text()");
     }
     var ret = null;
@@ -3185,7 +3191,7 @@ email.cleanupStep(function () {
         }
     }
 });
-email.setXPath("h:telecom[starts-with(@value, 'mailto:')]")
+email.setXPath("h:telecom[starts-with(@value, 'mailto:')]");
 
 var phone = shared.phone = component.define("phone");
 phone.fields([
@@ -3199,28 +3205,12 @@ phone.cleanupStep(function () {
         }
     }
 });
-phone.setXPath("h:telecom[not(starts-with(@value, 'mailto:'))]")
+phone.setXPath("h:telecom[not(starts-with(@value, 'mailto:'))]");
 
 },{"./cleanup":40,"blue-button-xml":"blue-button-xml"}],42:[function(require,module,exports){
 //CCDA to JSON parser.
 
 "use strict";
-
-var componentRouter = function (componentName, type) {
-
-    if (componentName) {
-        return generateComponents(type["type"])[componentName];
-    } else {
-
-        if (type["type"] === 'c32') {
-            return generateComponents(type["type"]).c32_ccd;
-        } else if (type["type"] === 'cda') {
-            return generateComponents(type["type"]).cda_ccd;
-        } else {
-            return generateComponents(type["type"]).ccda_ccd;
-        }
-    }
-};
 
 var generateComponents = function (version) {
 
@@ -3281,7 +3271,23 @@ var generateComponents = function (version) {
         ccda_payers_entry: require("./ccda/sections/payers").payers_entry(version)[1],
 
     };
-}
+};
+
+var componentRouter = function (componentName, type) {
+
+    if (componentName) {
+        return generateComponents(type["type"])[componentName];
+    } else {
+
+        if (type["type"] === 'c32') {
+            return generateComponents(type["type"]).c32_ccd;
+        } else if (type["type"] === 'cda') {
+            return generateComponents(type["type"]).cda_ccd;
+        } else {
+            return generateComponents(type["type"]).ccda_ccd;
+        }
+    }
+};
 
 module.exports.componentRouter = componentRouter;
 

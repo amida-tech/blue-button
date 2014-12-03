@@ -40,7 +40,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         jshint: {
-            files: ['*.js', './lib/*.js', './test/*.js'],
+            files: ['*.js', './lib/**/*.js', './test/*.js'],
             options: {
                 browser: true,
                 smarttabs: true,
