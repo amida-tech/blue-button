@@ -155,8 +155,8 @@ var Guardian = component.define("Guardian")
         ["relation", "0..1", "h:code", shared.SimplifiedCode],
         ["addresses", "0..*", "h:addr", shared.Address],
         ["names", "1..*", "h:guardianPerson/h:name", shared.IndividualName],
-        ["phone", "0..*", "h:telecom[starts-with(@value,'tel:')]", shared.Phone],
-        ["email", "0..*", "h:telecom[starts-with(@value,'mailto:')]", shared.Email],
+        ["phone", "0..*", "h:telecom[starts-with(@value,'tel:')]", shared.phone],
+        ["email", "0..*", "h:telecom[starts-with(@value,'mailto:')]", shared.email],
     ]);
 
 var LanguageCommunication = component.define("LanguageCommunication")
@@ -195,8 +195,8 @@ exports.patient = component.define("Patient")
         ["identifiers", "1..*", "h:id", shared.Identifier],
         ["marital_status", "0..1", "h:patient/h:maritalStatusCode", shared.SimplifiedCode],
         ["addresses", "0..*", "h:addr", shared.Address],
-        ["phone", "0..*", "h:telecom", shared.Phone],
-        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.phone],
+        ["email", "0..*", "h:telecom", shared.email],
         ["race_ethnicity", "0..1", "h:patient", RaceEthnicity],
         ["languages", "0..*", "h:patient/h:languageCommunication", LanguageCommunication],
         ["religion", "0..1", "h:patient/h:religiousAffiliationCode/@code", shared.SimpleCode("2.16.840.1.113883.5.1076")],
@@ -517,7 +517,7 @@ var exportMedicationsSection = function (version) {
         .fields([
             ["identifiers", "0..*", "h:assignedEntity/h:id", shared.Identifier],
             ["address", "0..*", "h:assignedEntity/h:addr", shared.Address],
-            ["phone", "0..1", "h:assignedEntity/h:telecom", shared.Phone],
+            ["phone", "0..1", "h:assignedEntity/h:telecom", shared.phone],
             ["organization", "0..*", "h:assignedEntity/h:representedOrganization", shared.Organization]
         ]);
     /*
@@ -999,8 +999,8 @@ var Organization = shared.Organization = component.define("Organization")
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:name/text()"],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", shared.Email],
-        ["phone", "0..*", "h:telecom", shared.Phone]
+        ["email", "0..*", "h:telecom", shared.email],
+        ["phone", "0..*", "h:telecom", shared.phone]
     ]);
 
 var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
@@ -1008,8 +1008,8 @@ var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", shared.Email],
-        ["phone", "0..*", "h:telecom", shared.Phone],
+        ["email", "0..*", "h:telecom", shared.email],
+        ["phone", "0..*", "h:telecom", shared.phone],
         ["organization", "0..*", "h:representedOrganization", Organization],
         ["code", "0..*", "h:code", ConceptDescriptor],
     ]);
@@ -1018,8 +1018,8 @@ var Provider = shared.Provider = component.define('Provider')
     .fields([
         ["address", "1..1", "h:addr", Address],
         ["identifiers", "1..*", "h:id", Identifier],
-        ["phone", "0..*", "h:telecom", Phone],
-        ["email", "0..*", "h:telecom", Email],
+        ["phone", "0..*", "h:telecom", phone],
+        ["email", "0..*", "h:telecom", email],
         ["organization", "0..1", "h:representedOrganization", Organization]
     ]);
 */
@@ -1028,8 +1028,8 @@ shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
         ["name", "0:1", "h:playingEntity/h:name/text()"],
         ["location_type", "1..1", "h:code", ConceptDescriptor],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", shared.Email],
-        ["phone", "0..*", "h:telecom", shared.Phone]
+        ["email", "0..*", "h:telecom", shared.email],
+        ["phone", "0..*", "h:telecom", shared.phone]
     ]);
 
 },{"../common/shared":41,"./cleanup":3,"blue-button-xml":"blue-button-xml"}],14:[function(require,module,exports){
@@ -1091,8 +1091,8 @@ var Guardian = component.define("Guardian")
         ["relation", "0..1", "h:code", shared.SimplifiedCode],
         ["addresses", "0..*", "h:addr", shared.Address],
         ["names", "1..*", "h:guardianPerson/h:name", shared.IndividualName],
-        ["phone", "0..*", "h:telecom", shared.Phone],
-        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.phone],
+        ["email", "0..*", "h:telecom", shared.email],
     ]);
 
 var LanguageCommunication = component.define("LanguageCommunication")
@@ -1134,8 +1134,8 @@ module.exports.patient = component.define("Patient")
         ["identifiers", "0..*", "h:id", shared.Identifier],
         ["marital_status", "0..1", "h:patient/h:maritalStatusCode", shared.SimplifiedCode],
         ["addresses", "0..*", "h:addr", shared.Address],
-        ["phone", "0..*", "h:telecom", shared.Phone],
-        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.phone],
+        ["email", "0..*", "h:telecom", shared.email],
         ["race_ethnicity", "0..1", "h:patient", RaceEthnicity],
         ["languages", "0..*", "h:patient/h:languageCommunication", LanguageCommunication],
         ["religion", "0..1", "h:patient/h:religiousAffiliationCode/@code", shared.SimpleCode("2.16.840.1.113883.5.1076")],
@@ -1483,7 +1483,7 @@ var exportMedicationsSection = function (version) {
             .fields([
                 ["identifiers", "0..*", "h:assignedEntity/h:id", shared.Identifier],
                 ["address", "0..*", "h:assignedEntity/h:addr", shared.Address],
-                ["phone", "0..1", "h:assignedEntity/h:telecom", shared.Phone],
+                ["phone", "0..1", "h:assignedEntity/h:telecom", shared.phone],
                 ["organization", "0..*", "h:assignedEntity/h:representedOrganization", shared.Organization]
             ]);
         /*
@@ -1669,16 +1669,16 @@ var exportPayersSection = function (version) {
         ["identifiers", "0..*", "../h:assignedEntity/h:id", shared.Identifier],
         ["name", "0..*", "../h:assignedEntity/h:assignedPerson/h:name", shared.IndividualName],
         ["address", "0..*", "../h:assignedEntity/h:addr", shared.Address],
-        ["email", "0..*", "../h:assignedEntity/h:telecom", shared.Email],
-        ["phone", "0..*", "../h:assignedEntity/h:telecom", shared.Phone]
+        ["email", "0..*", "../h:assignedEntity/h:telecom", shared.email],
+        ["phone", "0..*", "../h:assignedEntity/h:telecom", shared.phone]
     ]);
 
     var organization = component.define('organization');
     organization.fields([
         ["address", "0..1", "h:addr", shared.Address],
         ["identifiers", "0..*", "h:id", shared.Identifier],
-        ["phone", "0..*", "h:telecom", shared.Phone],
-        ["email", "0..*", "h:telecom[starts-with(@value,'mailto:')]", shared.Email]
+        ["phone", "0..*", "h:telecom", shared.phone],
+        ["email", "0..*", "h:telecom[starts-with(@value,'mailto:')]", shared.email]
     ]);
 
     var insurance = component.define('insurance');
@@ -1868,8 +1868,8 @@ var exportProceduresSection = function (version) {
         ["name", "0:1", "h:name"],
         ["address", "0..1", "h:addr", shared.Address],
         ["identifiers", "0..*", "h:id", shared.Identifier],
-        ["phone", "0..*", "h:telecom", shared.Phone],
-        ["email", "0..*", "h:telecom", shared.Email]
+        ["phone", "0..*", "h:telecom", shared.phone],
+        ["email", "0..*", "h:telecom", shared.email]
     ]);
 
     //replaced with shared.assignedEntity to normalize with performer in other sections
@@ -1877,8 +1877,8 @@ var exportProceduresSection = function (version) {
     provider.fields([
         ["address", "1..1", "h:addr", shared.Address],
         ["identifiers", "0..*", "h:id", shared.Identifier],
-        ["phone", "0..*", "h:telecom", shared.Phone],
-        ["email", "0..*", "h:telecom", shared.Email],
+        ["phone", "0..*", "h:telecom", shared.phone],
+        ["email", "0..*", "h:telecom", shared.email],
         ["organization", "0..1", "h:representedOrganization", organization]
     ]);
     */
@@ -2232,8 +2232,8 @@ var Organization = shared.Organization = component.define("Organization")
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:name/text()"],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", shared.Email],
-        ["phone", "0..*", "h:telecom", shared.Phone]
+        ["email", "0..*", "h:telecom", shared.email],
+        ["phone", "0..*", "h:telecom", shared.phone]
     ]);
 
 var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
@@ -2241,8 +2241,8 @@ var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", shared.Email],
-        ["phone", "0..*", "h:telecom", shared.Phone],
+        ["email", "0..*", "h:telecom", shared.email],
+        ["phone", "0..*", "h:telecom", shared.phone],
         ["organization", "0..*", "h:representedOrganization", Organization],
         ["code", "0..*", "h:code", ConceptDescriptor],
     ]);
@@ -2251,8 +2251,8 @@ var Provider = shared.Provider = component.define('Provider')
     .fields([
         ["address", "1..1", "h:addr", Address],
         ["identifiers", "1..*", "h:id", Identifier],
-        ["phone", "0..*", "h:telecom", Phone],
-        ["email", "0..*", "h:telecom", Email],
+        ["phone", "0..*", "h:telecom", phone],
+        ["email", "0..*", "h:telecom", email],
         ["organization", "0..1", "h:representedOrganization", Organization]
     ]);
 */
@@ -2261,8 +2261,8 @@ shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
         ["name", "0:1", "h:playingEntity/h:name/text()"],
         ["location_type", "1..1", "h:code", ConceptDescriptor],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", shared.Email],
-        ["phone", "0..*", "h:telecom", shared.Phone]
+        ["email", "0..*", "h:telecom", shared.email],
+        ["phone", "0..*", "h:telecom", shared.phone]
     ]);
 
 },{"../common/shared":41,"./cleanup":15,"blue-button-xml":"blue-button-xml"}],29:[function(require,module,exports){
@@ -2450,7 +2450,7 @@ var exportMedicationsSection = function (version) {
         .fields([
             ["identifiers", "0..*", "h:assignedEntity/h:id", shared.Identifier],
             ["address", "0..*", "h:assignedEntity/h:addr", shared.Address],
-            ["phone", "0..1", "h:assignedEntity/h:telecom", shared.Phone],
+            ["phone", "0..1", "h:assignedEntity/h:telecom", shared.phone],
             ["organization", "0..*", "h:assignedEntity/h:representedOrganization", shared.Organization]
         ]);
     /*
@@ -2583,16 +2583,16 @@ var exportPayersSection = function (version) {
         ["identifiers", "0..*", "../h:assignedEntity/h:id", shared.Identifier],
         ["name", "0..*", "../h:assignedEntity/h:assignedPerson/h:name", shared.IndividualName],
         ["address", "0..*", "../h:assignedEntity/h:addr", shared.Address],
-        ["email", "0..*", "../h:assignedEntity/h:telecom", shared.Email],
-        ["phone", "0..*", "../h:assignedEntity/h:telecom", shared.Phone]
+        ["email", "0..*", "../h:assignedEntity/h:telecom", shared.email],
+        ["phone", "0..*", "../h:assignedEntity/h:telecom", shared.phone]
     ]);
 
     var organization = component.define('organization');
     organization.fields([
         ["address", "0..1", "h:addr", shared.Address],
         ["identifiers", "0..*", "h:id", shared.Identifier],
-        ["phone", "0..*", "h:telecom", shared.Phone],
-        ["email", "0..*", "h:telecom[starts-with(@value,'mailto:')]", shared.Email]
+        ["phone", "0..*", "h:telecom", shared.phone],
+        ["email", "0..*", "h:telecom[starts-with(@value,'mailto:')]", shared.email]
     ]);
 
     var insurance = component.define('insurance');
@@ -2768,8 +2768,8 @@ var exportProvidersSection = function (version) {
             ["role", "0..1", "h:functionCode/h:code", shared.ConceptDescriptor],
             ["name", "0..1", "h:assignedEntity/h:assignedPerson/h:name", shared.IndividualName],
             ["addresses", "0..*", "h:assignedEntity/h:addr", shared.Address],
-            ["phone", "0..*", "h:assignedEntity/h:telecom", shared.Phone],
-            ["email", "0..*", "h:assignedEntity/h:telecom", shared.Email],
+            ["phone", "0..*", "h:assignedEntity/h:telecom", shared.phone],
+            ["email", "0..*", "h:assignedEntity/h:telecom", shared.email],
             ["organization", "0..1", "h:assignedEntity/h:representedOrganization", shared.Organization]
         ]);
 
@@ -2968,8 +2968,8 @@ var Organization = shared.Organization = component.define("Organization")
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:name/text()"],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", shared.Email],
-        ["phone", "0..*", "h:telecom", shared.Phone]
+        ["email", "0..*", "h:telecom", shared.email],
+        ["phone", "0..*", "h:telecom", shared.phone]
     ]);
 
 var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
@@ -2977,8 +2977,8 @@ var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
         ["identifiers", "0..*", "h:id", Identifier],
         ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", shared.Email],
-        ["phone", "0..*", "h:telecom", shared.Phone],
+        ["email", "0..*", "h:telecom", shared.email],
+        ["phone", "0..*", "h:telecom", shared.phone],
         ["organization", "0..*", "h:representedOrganization", Organization],
         ["code", "0..*", "h:code", ConceptDescriptor],
     ]);
@@ -2987,8 +2987,8 @@ var Provider = shared.Provider = component.define('Provider')
     .fields([
         ["address", "1..1", "h:addr", Address],
         ["identifiers", "1..*", "h:id", Identifier],
-        ["phone", "0..*", "h:telecom", Phone],
-        ["email", "0..*", "h:telecom", Email],
+        ["phone", "0..*", "h:telecom", phone],
+        ["email", "0..*", "h:telecom", email],
         ["organization", "0..1", "h:representedOrganization", Organization]
     ]);
 */
@@ -2997,8 +2997,8 @@ shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
         ["name", "0:1", "h:playingEntity/h:name/text()"],
         ["location_type", "1..1", "h:code", ConceptDescriptor],
         ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", "h:telecom", shared.Email],
-        ["phone", "0..*", "h:telecom", shared.Phone]
+        ["email", "0..*", "h:telecom", shared.email],
+        ["phone", "0..*", "h:telecom", shared.phone]
     ]);
 
 },{"../common/shared":41,"./cleanup":30,"blue-button-xml":"blue-button-xml"}],40:[function(require,module,exports){
@@ -3215,7 +3215,7 @@ var simpleCode = shared.SimpleCode = function (oid) {
     return r;
 };
 
-var email = shared.Email = component.define("Email");
+var email = shared.email = component.define("email");
 email.fields([
     ["address", "1..1", "@value"],
     ["type", "0..1", "@use", simpleCode("2.16.840.1.113883.5.1119")]
@@ -3234,7 +3234,7 @@ email.cleanupStep(function () {
     }
 });
 
-var phone = shared.Phone = component.define("Phone");
+var phone = shared.phone = component.define("phone");
 phone.fields([
     ["number", "1..1", "@value"],
     ["type", "0..1", "@use", simpleCode("2.16.840.1.113883.5.1119")]
