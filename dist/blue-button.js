@@ -659,12 +659,10 @@ var exportProblemsSection = function (version) {
             //Patient Status not supported.
             //["patient_status", "0..1", "h:entryRelationship/h:observation/h:entryRelationship/h:observation/h:templateId[@root='2.16.840.1.113883.10.20.22.4.5']/../h:value/@displayName"],
             ["source_list_identifiers", "0..*", "h:id", shared.Identifier],
-        ]).withNegationStatus(true);
-    //ProblemConcernAct.cleanupStep(cleanup.extractAllFields(['value']));
+        ]);
 
     var NonProblemObservation = ProblemConcernAct
-        .define("ProblemObservation")
-        .withNegationStatus(true);
+        .define("ProblemObservation");
 
     var ProblemOrganizer = component.define("ProblemOrganizer")
         .templateRoot(["2.16.840.1.113883.3.88.11.83.7"]);
@@ -1806,12 +1804,10 @@ var exportProblemsSection = function (version) {
             ["status", "0..1", ProblemStatus.xpath(), ProblemStatus],
             ["patient_status", "0..1", "h:entryRelationship/h:observation/h:entryRelationship/h:observation/h:templateId[@root='2.16.840.1.113883.10.20.22.4.5']/../h:value/@displayName"],
             ["source_list_identifiers", "0..*", "h:id", shared.Identifier],
-        ]).withNegationStatus(true);
-    //ProblemConcernAct.cleanupStep(cleanup.extractAllFields(['value']));
+        ]);
 
     var NonProblemObservation = ProblemConcernAct
-        .define("ProblemObservation")
-        .withNegationStatus(true);
+        .define("ProblemObservation");
 
     var ProblemOrganizer = component.define("ProblemOrganizer")
         .templateRoot([clinicalStatementsIDs.ProblemAct, clinicalStatementsIDs.ProblemConcernAct]);
@@ -2645,12 +2641,10 @@ var exportProblemsSection = function (version) {
             //Patient Status not supported.
             //["patient_status", "0..1", "h:entryRelationship/h:observation/h:entryRelationship/h:observation/h:templateId[@root='2.16.840.1.113883.10.20.22.4.5']/../h:value/@displayName"],
             ["source_list_identifiers", "0..*", "h:id", shared.Identifier],
-        ]).withNegationStatus(true);
-    //ProblemConcernAct.cleanupStep(cleanup.extractAllFields(['value']));
+        ]);
 
     var NonProblemObservation = ProblemConcernAct
-        .define("ProblemObservation")
-        .withNegationStatus(true);
+        .define("ProblemObservation");
 
     var ProblemOrganizer = component.define("ProblemOrganizer")
         .templateRoot(["2.16.840.1.113883.10.20.1.27"]);
