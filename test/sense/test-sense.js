@@ -76,7 +76,7 @@ describe('sense.js test', function () {
     });
 
     it('should return VA and version for VA BB text input', function () {
-        for (v in Object.keys(va)) {
+        for (var v in Object.keys(va)) {
             var key = Object.keys(va)[v];
             //console.log(key);
             var ver = key.split("_");

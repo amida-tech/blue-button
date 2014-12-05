@@ -1,4 +1,39 @@
 require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+//main module that exports all other sub modules
+
+"use strict";
+
+var sense = require("./lib/sense.js");
+exports.senseXml = sense.senseXml;
+exports.senseString = sense.senseString;
+
+exports.xml = require("blue-button-xml").xmlUtil;
+
+var parser = require("./lib/parser.js");
+exports.parseXml = parser.parseXml;
+exports.parseString = parser.parseString;
+exports.parseText = parser.parseText;
+exports.parseText2 = parser.parseText2;
+
+//need to review if this is still needed
+exports.parse = parser.parse;
+
+// ccda generation
+exports.generateCCDA = require("blue-button-generate").generateCCD;
+
+// testing for ccda generation
+//exports.testCCDA = require("./test/test-lib.js").testXML;
+
+exports.validator = require("blue-button-model").validator;
+
+/*
+	//get access to current version of NPM package
+
+	var version = require('./package.json').version;
+	console.log(version);
+*/
+
+},{"./lib/parser.js":2,"./lib/sense.js":44,"blue-button-generate":"blue-button-generate","blue-button-model":55,"blue-button-xml":"blue-button-xml"}],2:[function(require,module,exports){
 "use strict";
 
 var parseCMS = require("blue-button-cms");
@@ -92,7 +127,7 @@ module.exports = {
     parseText: parseText
 };
 
-},{"../package.json":90,"./parser/router":42,"./sense.js":43,"blue-button-cms":"blue-button-cms","blue-button-xml":"blue-button-xml","util":88}],2:[function(require,module,exports){
+},{"../package.json":91,"./parser/router":43,"./sense.js":44,"blue-button-cms":"blue-button-cms","blue-button-xml":"blue-button-xml","util":89}],3:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -126,7 +161,7 @@ var exportC32 = function (version) {
 
 exports.C32 = exportC32;
 
-},{"./demographics":4,"./sections/allergies":5,"./sections/encounters":6,"./sections/immunizations":7,"./sections/medications":8,"./sections/problems":9,"./sections/procedures":10,"./sections/results":11,"./sections/vitals":12,"./shared":13,"blue-button-xml":"blue-button-xml"}],3:[function(require,module,exports){
+},{"./demographics":5,"./sections/allergies":6,"./sections/encounters":7,"./sections/immunizations":8,"./sections/medications":9,"./sections/problems":10,"./sections/procedures":11,"./sections/results":12,"./sections/vitals":13,"./shared":14,"blue-button-xml":"blue-button-xml"}],4:[function(require,module,exports){
 "use strict";
 
 var includeCleanup = require("../common/cleanup");
@@ -143,7 +178,7 @@ cleanup.augmentObservation = function () {
 
 };
 
-},{"../common/cleanup":40}],4:[function(require,module,exports){
+},{"../common/cleanup":41}],5:[function(require,module,exports){
 "use strict";
 
 var shared = require('./shared');
@@ -204,7 +239,7 @@ exports.patient = component.define("Patient")
         ["guardians", "0..*", "h:patient/h:guardian", Guardian]
     ]);
 
-},{"./shared":13,"blue-button-xml":"blue-button-xml"}],5:[function(require,module,exports){
+},{"./shared":14,"blue-button-xml":"blue-button-xml"}],6:[function(require,module,exports){
 "use strict";
 
 // NOTE: allergies section not present in ccda-r1.0, so just kept
@@ -298,7 +333,7 @@ var exportAllergiesSection = function (version) {
 exports.allergiesSection = exportAllergiesSection;
 exports.allergiesEntry = exportAllergiesSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-xml":"blue-button-xml"}],6:[function(require,module,exports){
+},{"../cleanup":4,"../shared":14,"blue-button-xml":"blue-button-xml"}],7:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -352,7 +387,7 @@ var exportEncountersSection = function (version) {
 exports.encountersSection = exportEncountersSection;
 exports.encountersEntry = exportEncountersSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],7:[function(require,module,exports){
+},{"../cleanup":4,"../shared":14,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],8:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -434,7 +469,7 @@ var exportImmunizationsSection = function (version) {
 exports.immunizationsSection = exportImmunizationsSection;
 exports.immunizationsEntry = exportImmunizationsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],8:[function(require,module,exports){
+},{"../cleanup":4,"../shared":14,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],9:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -616,7 +651,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml","underscore":89}],9:[function(require,module,exports){
+},{"../cleanup":4,"../shared":14,"blue-button-meta":45,"blue-button-xml":"blue-button-xml","underscore":90}],10:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -680,7 +715,7 @@ var exportProblemsSection = function (version) {
 exports.problemsSection = exportProblemsSection;
 exports.problemsEntry = exportProblemsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],10:[function(require,module,exports){
+},{"../cleanup":4,"../shared":14,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],11:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -732,7 +767,7 @@ var exportProceduresSection = function (version) {
 exports.proceduresSection = exportProceduresSection;
 exports.proceduresEntry = exportProceduresSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],11:[function(require,module,exports){
+},{"../cleanup":4,"../shared":14,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],12:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -793,7 +828,7 @@ var exportResultsSection = function (version) {
 exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],12:[function(require,module,exports){
+},{"../cleanup":4,"../shared":14,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],13:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -868,7 +903,7 @@ exports.vitalSignsSection = exportVitalSignsSection;
 
 exports.vitalSignsEntry = exportVitalSignsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],13:[function(require,module,exports){
+},{"../cleanup":4,"../shared":14,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],14:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -1020,7 +1055,7 @@ shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
         ["phone", "0..*", shared.phone.xpath(), shared.phone]
     ]);
 
-},{"../common/shared":41,"./cleanup":3,"blue-button-xml":"blue-button-xml"}],14:[function(require,module,exports){
+},{"../common/shared":42,"./cleanup":4,"blue-button-xml":"blue-button-xml"}],15:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -1060,14 +1095,14 @@ var exportCCD = function (version) {
 
 exports.CCD = exportCCD;
 
-},{"./demographics":16,"./sections/allergies":17,"./sections/encounters":18,"./sections/immunizations":19,"./sections/medications":20,"./sections/payers":21,"./sections/plan_of_care":22,"./sections/problems":23,"./sections/procedures":24,"./sections/results":25,"./sections/social_history":26,"./sections/vitals":27,"./shared":28,"blue-button-xml":"blue-button-xml"}],15:[function(require,module,exports){
+},{"./demographics":17,"./sections/allergies":18,"./sections/encounters":19,"./sections/immunizations":20,"./sections/medications":21,"./sections/payers":22,"./sections/plan_of_care":23,"./sections/problems":24,"./sections/procedures":25,"./sections/results":26,"./sections/social_history":27,"./sections/vitals":28,"./shared":29,"blue-button-xml":"blue-button-xml"}],16:[function(require,module,exports){
 "use strict";
 
 var includeCleanup = require("../common/cleanup");
 
 var cleanup = module.exports = Object.create(includeCleanup);
 
-},{"../common/cleanup":40}],16:[function(require,module,exports){
+},{"../common/cleanup":41}],17:[function(require,module,exports){
 "use strict";
 
 var shared = require('./shared');
@@ -1131,7 +1166,7 @@ module.exports.patient = component.define("Patient")
         ["guardians", "0..*", "h:patient/h:guardian", Guardian]
     ]);
 
-},{"./shared":28,"blue-button-xml":"blue-button-xml"}],17:[function(require,module,exports){
+},{"./shared":29,"blue-button-xml":"blue-button-xml"}],18:[function(require,module,exports){
 "use strict";
 
 // NOTE: allergies section not present in ccda-r1.0, so just kept
@@ -1210,7 +1245,7 @@ var exportAllergiesSection = function (version) {
 exports.allergiesSection = exportAllergiesSection;
 exports.allergiesEntry = exportAllergiesSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-xml":"blue-button-xml"}],18:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-xml":"blue-button-xml"}],19:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1262,7 +1297,7 @@ var exportEncountersSection = function (version) {
 exports.encountersSection = exportEncountersSection;
 exports.encountersEntry = exportEncountersSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],19:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],20:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1348,7 +1383,7 @@ var exportImmunizationsSection = function (version) {
 exports.immunizationsSection = exportImmunizationsSection;
 exports.immunizationsEntry = exportImmunizationsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],20:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],21:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1604,7 +1639,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],21:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],22:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1695,7 +1730,7 @@ var exportPayersSection = function (version) {
 exports.payers_section = exportPayersSection;
 exports.payers_entry = exportPayersSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],22:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],23:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1753,7 +1788,7 @@ var exportPlanOfCareSection = function (version) {
 exports.plan_of_care_section = exportPlanOfCareSection;
 exports.plan_of_care_entry = exportPlanOfCareSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],23:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],24:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1825,7 +1860,7 @@ var exportProblemsSection = function (version) {
 exports.problemsSection = exportProblemsSection;
 exports.problemsEntry = exportProblemsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],24:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],25:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1902,7 +1937,7 @@ var exportProceduresSection = function (version) {
 exports.proceduresSection = exportProceduresSection;
 exports.proceduresEntry = exportProceduresSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],25:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],26:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1963,7 +1998,7 @@ var exportResultsSection = function (version) {
 exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],26:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],27:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2009,7 +2044,7 @@ var exportSocialHistorySection = function (version) {
 };
 exports.socialHistorySection = exportSocialHistorySection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],27:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],28:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2084,7 +2119,7 @@ exports.vitalSignsSection = exportVitalSignsSection;
 
 exports.vitalSignsEntry = exportVitalSignsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],28:[function(require,module,exports){
+},{"../cleanup":16,"../shared":29,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],29:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -2231,7 +2266,7 @@ shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
         ["phone", "0..*", shared.phone.xpath(), shared.phone]
     ]);
 
-},{"../common/shared":41,"./cleanup":15,"blue-button-xml":"blue-button-xml"}],29:[function(require,module,exports){
+},{"../common/shared":42,"./cleanup":16,"blue-button-xml":"blue-button-xml"}],30:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -2264,7 +2299,7 @@ var exportCCD = function (version) {
 
 exports.CCD = exportCCD;
 
-},{"./demographics":31,"./sections/encounters":32,"./sections/medications":33,"./sections/payers":34,"./sections/problems":35,"./sections/procedures":36,"./sections/providers":37,"./sections/results":38,"./shared":39,"blue-button-xml":"blue-button-xml"}],30:[function(require,module,exports){
+},{"./demographics":32,"./sections/encounters":33,"./sections/medications":34,"./sections/payers":35,"./sections/problems":36,"./sections/procedures":37,"./sections/providers":38,"./sections/results":39,"./shared":40,"blue-button-xml":"blue-button-xml"}],31:[function(require,module,exports){
 "use strict";
 
 var includeCleanup = require("../common/cleanup");
@@ -2283,9 +2318,9 @@ cleanup.augmentObservation = function () {
 
 };
 
-},{"../common/cleanup":40}],31:[function(require,module,exports){
-arguments[4][4][0].apply(exports,arguments)
-},{"./shared":39,"/Work/git/blue-button/lib/parser/c32/demographics.js":4,"blue-button-xml":"blue-button-xml"}],32:[function(require,module,exports){
+},{"../common/cleanup":41}],32:[function(require,module,exports){
+arguments[4][5][0].apply(exports,arguments)
+},{"./shared":40,"/Work/git/blue-button/lib/parser/c32/demographics.js":5,"blue-button-xml":"blue-button-xml"}],33:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2336,7 +2371,7 @@ var exportEncountersSection = function (version) {
 exports.encountersSection = exportEncountersSection;
 exports.encountersEntry = exportEncountersSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],33:[function(require,module,exports){
+},{"../cleanup":31,"../shared":40,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],34:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2507,7 +2542,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],34:[function(require,module,exports){
+},{"../cleanup":31,"../shared":40,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],35:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2598,7 +2633,7 @@ var exportPayersSection = function (version) {
 exports.payers_section = exportPayersSection;
 exports.payers_entry = exportPayersSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],35:[function(require,module,exports){
+},{"../cleanup":31,"../shared":40,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],36:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2662,7 +2697,7 @@ var exportProblemsSection = function (version) {
 exports.problemsSection = exportProblemsSection;
 exports.problemsEntry = exportProblemsSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],36:[function(require,module,exports){
+},{"../cleanup":31,"../shared":40,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],37:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2713,7 +2748,7 @@ var exportProceduresSection = function (version) {
 exports.proceduresSection = exportProceduresSection;
 exports.proceduresEntry = exportProceduresSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],37:[function(require,module,exports){
+},{"../cleanup":31,"../shared":40,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],38:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2742,7 +2777,7 @@ var exportProvidersSection = function (version) {
 
 exports.providersSection = exportProvidersSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],38:[function(require,module,exports){
+},{"../cleanup":31,"../shared":40,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],39:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2804,7 +2839,7 @@ var exportResultsSection = function (version) {
 exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],39:[function(require,module,exports){
+},{"../cleanup":31,"../shared":40,"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],40:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -2956,7 +2991,7 @@ shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
         ["phone", "0..*", shared.phone.xpath(), shared.phone]
     ]);
 
-},{"../common/shared":41,"./cleanup":30,"blue-button-xml":"blue-button-xml"}],40:[function(require,module,exports){
+},{"../common/shared":42,"./cleanup":31,"blue-button-xml":"blue-button-xml"}],41:[function(require,module,exports){
 "use strict";
 
 var bbxml = require("blue-button-xml");
@@ -3151,7 +3186,7 @@ cleanup.augmentSimplifiedCodeOID = function (oid) {
     return f;
 };
 
-},{"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],41:[function(require,module,exports){
+},{"blue-button-meta":45,"blue-button-xml":"blue-button-xml"}],42:[function(require,module,exports){
 "use strict";
 
 var bbxml = require("blue-button-xml");
@@ -3201,7 +3236,7 @@ phone.cleanupStep(function () {
 });
 phone.setXPath("h:telecom[not(starts-with(@value, 'mailto:'))]");
 
-},{"./cleanup":40,"blue-button-xml":"blue-button-xml"}],42:[function(require,module,exports){
+},{"./cleanup":41,"blue-button-xml":"blue-button-xml"}],43:[function(require,module,exports){
 //CCDA to JSON parser.
 
 "use strict";
@@ -3285,7 +3320,7 @@ var componentRouter = function (componentName, type) {
 
 module.exports.componentRouter = componentRouter;
 
-},{"./c32/ccd":2,"./c32/demographics":4,"./c32/sections/allergies":5,"./c32/sections/encounters":6,"./c32/sections/immunizations":7,"./c32/sections/medications":8,"./c32/sections/problems":9,"./c32/sections/procedures":10,"./c32/sections/results":11,"./c32/sections/vitals":12,"./ccda/ccd":14,"./ccda/demographics":16,"./ccda/sections/allergies":17,"./ccda/sections/encounters":18,"./ccda/sections/immunizations":19,"./ccda/sections/medications":20,"./ccda/sections/payers":21,"./ccda/sections/plan_of_care":22,"./ccda/sections/problems":23,"./ccda/sections/procedures":24,"./ccda/sections/results":25,"./ccda/sections/social_history":26,"./ccda/sections/vitals":27,"./cda/ccd":29}],43:[function(require,module,exports){
+},{"./c32/ccd":3,"./c32/demographics":5,"./c32/sections/allergies":6,"./c32/sections/encounters":7,"./c32/sections/immunizations":8,"./c32/sections/medications":9,"./c32/sections/problems":10,"./c32/sections/procedures":11,"./c32/sections/results":12,"./c32/sections/vitals":13,"./ccda/ccd":15,"./ccda/demographics":17,"./ccda/sections/allergies":18,"./ccda/sections/encounters":19,"./ccda/sections/immunizations":20,"./ccda/sections/medications":21,"./ccda/sections/payers":22,"./ccda/sections/plan_of_care":23,"./ccda/sections/problems":24,"./ccda/sections/procedures":25,"./ccda/sections/results":26,"./ccda/sections/social_history":27,"./ccda/sections/vitals":28,"./cda/ccd":30}],44:[function(require,module,exports){
 //sense.js - Determining file content type e.g. CCDA or C32 or BB.json/JSON or text/other formats.
 
 "use strict";
@@ -3445,7 +3480,7 @@ module.exports = {
     senseString: senseString
 };
 
-},{"blue-button-xml":"blue-button-xml"}],44:[function(require,module,exports){
+},{"blue-button-xml":"blue-button-xml"}],45:[function(require,module,exports){
 var CCDA = require("./lib/CCDA/index.js");
 
 //CCDA metadata stuff
@@ -3474,7 +3509,7 @@ meta.code_systems = require("./lib/code-systems");
 
 module.exports = exports = meta;
 
-},{"./lib/CCDA/index.js":47,"./lib/code-systems":52}],45:[function(require,module,exports){
+},{"./lib/CCDA/index.js":48,"./lib/code-systems":53}],46:[function(require,module,exports){
 var clinicalstatements = {
     "AdmissionMedication": "2.16.840.1.113883.10.20.22.4.36",
     "AdvanceDirectiveObservation": "2.16.840.1.113883.10.20.22.4.48",
@@ -3604,7 +3639,7 @@ var clinicalstatements_r1 = {
 module.exports.clinicalstatements = clinicalstatements;
 module.exports.clinicalstatements_r1 = clinicalstatements_r1;
 
-},{}],46:[function(require,module,exports){
+},{}],47:[function(require,module,exports){
 var codeSystems = {
     "LOINC": ["2.16.840.1.113883.6.1", "8716-3"],
     "SNOMED CT": ["2.16.840.1.113883.6.96", "46680005"],
@@ -4386,7 +4421,7 @@ var sections_entries_codes = {
 module.exports.codeSystems = codeSystems;
 module.exports.sections_entries_codes = sections_entries_codes;
 
-},{}],47:[function(require,module,exports){
+},{}],48:[function(require,module,exports){
 var templates = require("./templates.js");
 var sections = require("./sections.js");
 var statements = require("./clinicalstatements.js");
@@ -4491,7 +4526,7 @@ var CCDA = {
 //and http://cdatools.org/ClinicalStatementMatrix.html
 
 module.exports = exports = CCDA;
-},{"./clinicalstatements.js":45,"./code-systems.js":46,"./sections-constraints.js":48,"./sections.js":49,"./templates-constraints.js":50,"./templates.js":51}],48:[function(require,module,exports){
+},{"./clinicalstatements.js":46,"./code-systems.js":47,"./sections-constraints.js":49,"./sections.js":50,"./templates-constraints.js":51,"./templates.js":52}],49:[function(require,module,exports){
 var sectionsconstraints = {
     "VitalSignsSection": {
         "full": {
@@ -5489,7 +5524,7 @@ var sectionsconstraints = {
 module.exports = exports = sectionsconstraints;
 
 
-},{}],49:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 var sections = {
     "AdvanceDirectivesSection": "2.16.840.1.113883.10.20.22.2.21.1",
     "AdvanceDirectivesSectionEntriesOptional": "2.16.840.1.113883.10.20.22.2.21",
@@ -5585,7 +5620,7 @@ var sections_r1 = {
 module.exports.sections = sections;
 module.exports.sections_r1 = sections_r1;
 
-},{}],50:[function(require,module,exports){
+},{}],51:[function(require,module,exports){
 var templatesconstraints = {
     "ContinuityOfCareDocument": {
         "may": {
@@ -6373,7 +6408,7 @@ var templatesconstraints = {
 module.exports = exports = templatesconstraints;
 
 
-},{}],51:[function(require,module,exports){
+},{}],52:[function(require,module,exports){
 var templates = {
     "ConsultationNote": "2.16.840.1.113883.10.20.22.1.4",
     "ContinuityOfCareDocument": "2.16.840.1.113883.10.20.22.1.2",
@@ -6389,7 +6424,7 @@ var templates = {
 module.exports = exports = templates;
 
 
-},{}],52:[function(require,module,exports){
+},{}],53:[function(require,module,exports){
 "use strict";
 
 var oids = require("./oids");
@@ -6462,7 +6497,7 @@ exports.findFromName = (function() {
     };
 })();
 
-},{"./oids":53}],53:[function(require,module,exports){
+},{"./oids":54}],54:[function(require,module,exports){
 module.exports = OIDs = {
     "2.16.840.1.113883.11.20.9.19": {
         name: "Problem Status",
@@ -7925,12 +7960,12 @@ module.exports = OIDs = {
     }
 };
 
-},{}],54:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
 "use strict";
 
 exports.validator = require("./lib/validator.js");
 
-},{"./lib/validator.js":74}],55:[function(require,module,exports){
+},{"./lib/validator.js":75}],56:[function(require,module,exports){
 module.exports = {
 	"id": "allergy",
     "type": "object",
@@ -8029,7 +8064,7 @@ module.exports = {
     "additionalProperties": false
 };
 
-},{}],56:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 module.exports = {
     "id": "claim",
     "type": "object",
@@ -8256,7 +8291,7 @@ module.exports = {
     "additionalProperties": false
 };
 
-},{}],57:[function(require,module,exports){
+},{}],58:[function(require,module,exports){
 module.exports = [{
     	"id": "cda_address",
         "type": "object",
@@ -8570,7 +8605,7 @@ module.exports = [{
     }
 ];
 
-},{}],58:[function(require,module,exports){
+},{}],59:[function(require,module,exports){
 module.exports = {
     "id": "demographics",
     "type": "object",
@@ -8712,7 +8747,7 @@ module.exports = {
     ]
 };
 
-},{}],59:[function(require,module,exports){
+},{}],60:[function(require,module,exports){
 module.exports = {
 	"id": "document_model",
     "type": "object",
@@ -8792,7 +8827,7 @@ module.exports = {
     }
 };
 
-},{}],60:[function(require,module,exports){
+},{}],61:[function(require,module,exports){
 module.exports = {
     "id": "encounter",
     "type": "object",
@@ -8849,7 +8884,7 @@ module.exports = {
     "required": ["encounter"]
 };
 
-},{}],61:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 module.exports = {
 	"id": "family_history_entry",
     "type": "object",
@@ -8885,7 +8920,7 @@ module.exports = {
     "required": ["name", "relationship"]
 };
 
-},{}],62:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
 module.exports = {
 	"id": "immunization",
     "type": "object",
@@ -8968,7 +9003,7 @@ module.exports = {
     ]
 };
 
-},{}],63:[function(require,module,exports){
+},{}],64:[function(require,module,exports){
 "use strict";
 
 var common_models = require('./common_models');
@@ -9038,7 +9073,7 @@ Object.keys(sections).forEach(function(sectionName) {
 
 schemas.push(document_model);
 
-},{"./allergy":55,"./claim":56,"./common_models":57,"./demographics":58,"./document_model":59,"./encounter":60,"./family_history_entry":61,"./immunization":62,"./medical_device":64,"./medication":65,"./payers":66,"./plan_of_care_entry":67,"./problem":68,"./procedure":69,"./provider":70,"./result":71,"./social_history":72,"./vital":73}],64:[function(require,module,exports){
+},{"./allergy":56,"./claim":57,"./common_models":58,"./demographics":59,"./document_model":60,"./encounter":61,"./family_history_entry":62,"./immunization":63,"./medical_device":65,"./medication":66,"./payers":67,"./plan_of_care_entry":68,"./problem":69,"./procedure":70,"./provider":71,"./result":72,"./social_history":73,"./vital":74}],65:[function(require,module,exports){
 module.exports = {
 	"id": "medical_device",
     "type": "object",
@@ -9064,7 +9099,7 @@ module.exports = {
     "required": ["product"]
 };
 
-},{}],65:[function(require,module,exports){
+},{}],66:[function(require,module,exports){
 module.exports = {
 	"id": "medication",
     "type": "object",
@@ -9284,7 +9319,7 @@ module.exports = {
     ]
 };
 
-},{}],66:[function(require,module,exports){
+},{}],67:[function(require,module,exports){
 module.exports = {
 	"id": "payers",
     "type": "array",
@@ -9441,7 +9476,7 @@ module.exports = {
     }
 };
 
-},{}],67:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 module.exports = {
 	"id": "plan_of_care_entry",
     "type": "object",
@@ -9472,7 +9507,7 @@ module.exports = {
     "additionalProperties": false
 };
 
-},{}],68:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 module.exports = {
 	"id": "problem",
     "type": "object",
@@ -9532,7 +9567,7 @@ module.exports = {
     "required": ["problem"]
 };
 
-},{}],69:[function(require,module,exports){
+},{}],70:[function(require,module,exports){
 module.exports = {
 	"id": "procedure",
     "type": "object",
@@ -9600,7 +9635,7 @@ module.exports = {
     "additionalProperties": false
 }
 
-},{}],70:[function(require,module,exports){
+},{}],71:[function(require,module,exports){
 module.exports = {
 	"id": "provider",
     "type": "object",
@@ -9645,7 +9680,7 @@ module.exports = {
     "additionalProperties": false
 };
 
-},{}],71:[function(require,module,exports){
+},{}],72:[function(require,module,exports){
 module.exports = {
 	"id": "result",
     "type": "object",
@@ -9733,7 +9768,7 @@ module.exports = {
     ]
 };
 
-},{}],72:[function(require,module,exports){
+},{}],73:[function(require,module,exports){
 module.exports = {
 	"id": "social_history",
     "type": "array",
@@ -9767,7 +9802,7 @@ module.exports = {
     "additionalProperties": true
 };
 
-},{}],73:[function(require,module,exports){
+},{}],74:[function(require,module,exports){
 module.exports = {
 	"id": "vital",
     "type": "object",
@@ -9805,7 +9840,7 @@ module.exports = {
     "required": ["vital"]
 };
 
-},{}],74:[function(require,module,exports){
+},{}],75:[function(require,module,exports){
 "use strict";
 
 var ZSchema = require("z-schema");
@@ -9851,7 +9886,7 @@ Validator.prototype.validateDocumentModel = function (documentModel) {
 
 module.exports = new Validator();
 
-},{"./schemas":63,"z-schema":84}],75:[function(require,module,exports){
+},{"./schemas":64,"z-schema":85}],76:[function(require,module,exports){
 "use strict";
 
 module.exports = {
@@ -9912,7 +9947,7 @@ module.exports = {
 
 };
 
-},{}],76:[function(require,module,exports){
+},{}],77:[function(require,module,exports){
 /*jshint maxlen: false*/
 
 var FormatValidators = {
@@ -10081,7 +10116,7 @@ var FormatValidators = {
 
 module.exports = FormatValidators;
 
-},{}],77:[function(require,module,exports){
+},{}],78:[function(require,module,exports){
 "use strict";
 
 var FormatValidators  = require("./FormatValidators"),
@@ -10599,7 +10634,7 @@ exports.validate = function (report, schema, json) {
 
 };
 
-},{"./FormatValidators":76,"./Report":79,"./Utils":83}],78:[function(require,module,exports){
+},{"./FormatValidators":77,"./Report":80,"./Utils":84}],79:[function(require,module,exports){
 // Number.isFinite polyfill
 // http://people.mozilla.org/~jorendorff/es6-draft.html#sec-number.isfinite
 if (typeof Number.isFinite !== "function") {
@@ -10617,7 +10652,7 @@ if (typeof Number.isFinite !== "function") {
     };
 }
 
-},{}],79:[function(require,module,exports){
+},{}],80:[function(require,module,exports){
 (function (process){
 "use strict";
 
@@ -10757,7 +10792,7 @@ Report.prototype.addError = function (errorCode, params, subReports, schemaDescr
 module.exports = Report;
 
 }).call(this,require('_process'))
-},{"./Errors":75,"_process":86}],80:[function(require,module,exports){
+},{"./Errors":76,"_process":87}],81:[function(require,module,exports){
 "use strict";
 
 var Report              = require("./Report");
@@ -10888,7 +10923,7 @@ exports.getSchemaByUri = function (report, uri, root) {
 
 exports.getRemotePath = getRemotePath;
 
-},{"./Report":79,"./SchemaCompilation":81,"./SchemaValidation":82}],81:[function(require,module,exports){
+},{"./Report":80,"./SchemaCompilation":82,"./SchemaValidation":83}],82:[function(require,module,exports){
 "use strict";
 
 var Report = require("./Report");
@@ -11100,7 +11135,7 @@ exports.compileSchema = function (report, schema) {
 
 };
 
-},{"./Report":79,"./SchemaCache":80}],82:[function(require,module,exports){
+},{"./Report":80,"./SchemaCache":81}],83:[function(require,module,exports){
 "use strict";
 
 var FormatValidators = require("./FormatValidators"),
@@ -11653,7 +11688,7 @@ exports.validateSchema = function (report, schema) {
 
 };
 
-},{"./FormatValidators":76,"./JsonValidation":77,"./Report":79,"./Utils":83}],83:[function(require,module,exports){
+},{"./FormatValidators":77,"./JsonValidation":78,"./Report":80,"./Utils":84}],84:[function(require,module,exports){
 "use strict";
 
 exports.whatIs = function (what) {
@@ -11785,7 +11820,7 @@ exports.clone = function (src) {
     return res;
 };
 
-},{}],84:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 "use strict";
 
 require("./Polyfills");
@@ -11972,7 +12007,7 @@ ZSchema.registerFormatter = function (/* formatterName, formatterFunction */) {
 
 module.exports = ZSchema;
 
-},{"./FormatValidators":76,"./JsonValidation":77,"./Polyfills":78,"./Report":79,"./SchemaCache":80,"./SchemaCompilation":81,"./SchemaValidation":82,"./Utils":83}],85:[function(require,module,exports){
+},{"./FormatValidators":77,"./JsonValidation":78,"./Polyfills":79,"./Report":80,"./SchemaCache":81,"./SchemaCompilation":82,"./SchemaValidation":83,"./Utils":84}],86:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -11997,7 +12032,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],86:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -12085,14 +12120,14 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 
-},{}],87:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],88:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -12682,7 +12717,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":87,"_process":86,"inherits":85}],89:[function(require,module,exports){
+},{"./support/isBuffer":88,"_process":87,"inherits":86}],90:[function(require,module,exports){
 //     Underscore.js 1.6.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -14027,10 +14062,10 @@ function hasOwnProperty(obj, prop) {
   }
 }).call(this);
 
-},{}],90:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.3.0-beta.16",
+  "version": "1.3.0-beta.17",
   "description": "Blue Button (CCDA) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -14096,39 +14131,4 @@ module.exports={
   "homepage": "https://github.com/amida-tech/blue-button"
 }
 
-},{}],"blue-button":[function(require,module,exports){
-//main module that exports all other sub modules
-
-"use strict";
-
-var sense = require("./lib/sense.js");
-exports.senseXml = sense.senseXml;
-exports.senseString = sense.senseString;
-
-exports.xml = require("blue-button-xml").xmlUtil;
-
-var parser = require("./lib/parser.js");
-exports.parseXml = parser.parseXml;
-exports.parseString = parser.parseString;
-exports.parseText = parser.parseText;
-exports.parseText2 = parser.parseText2;
-
-//need to review if this is still needed
-exports.parse = parser.parse;
-
-// ccda generation
-exports.generateCCDA = require("blue-button-generate").generateCCD;
-
-// testing for ccda generation
-//exports.testCCDA = require("./test/test-lib.js").testXML;
-
-exports.validator = require("blue-button-model").validator;
-
-/*
-	//get access to current version of NPM package
-
-	var version = require('./package.json').version;
-	console.log(version);
-*/
-
-},{"./lib/parser.js":1,"./lib/sense.js":43,"blue-button-generate":"blue-button-generate","blue-button-model":54,"blue-button-xml":"blue-button-xml"}]},{},["blue-button"]);
+},{}]},{},[1]);
