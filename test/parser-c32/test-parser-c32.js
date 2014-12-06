@@ -44,7 +44,7 @@ describe('Parser C32 Support Testing', function () {
     it('C32 parser/model validation', function (done) {
         expect(xmlfile).to.exist;
 
-        var result = bb.parseString(xmlfile);
+        var result = bb.parse(xmlfile);
         //convert string into JSON 
 
         expect(result).to.exist;

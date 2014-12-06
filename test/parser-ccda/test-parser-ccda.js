@@ -15,7 +15,7 @@ describe('parser.js', function () {
         expect(xmlfile).to.exist;
 
         //convert string into JSON 
-        var result = bb.parseString(xmlfile);
+        var result = bb.parse(xmlfile);
         expect(result).to.exist;
 
         var valid = bb.validator.validateDocumentModel(result);

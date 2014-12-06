@@ -55,10 +55,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amida-tech/bluebutton.git"
+    "url": "https://github.com/amida-tech/blue-button.git"
   },
   "keywords": [
-    "bluebutton"
+    "bluebutton", "blue-button", "XML", "JSON", "CCDA", "CMS", "C32"
   ],
   "bugs": {
     "url": "https://github.com/amida-tech/blue-button/issues"
