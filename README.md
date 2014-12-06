@@ -1,7 +1,7 @@
 blue-button
 ==========
 
-Blue Button JavaScript (Node.js) library
+Blue Button JavaScript library
 
 [![NPM](https://nodei.co/npm/blue-button.png)](https://nodei.co/npm/blue-button/)
 
@@ -14,13 +14,18 @@ Blue Button JavaScript (Node.js) library
 
 This library provides the following functionality
 
-- Parse XML documents (via libxmljs)
+- Parse XML documents
 - Sense type of data (e.g. CCDA, CMS, C32, etc)
 - Parse CCDA into JSON representation
 	- Parse CCDA elements (sections) into JSON representation
+- Parse C32 into JSON representation
+	- Parse C32 elements (sections) into JSON representation
 - Parse CMS into JSON representation
   - Parse CMS elements (sections) into JSON representation
 - Generate JSON object based on data model
+- Generate CCDA from JSON object
+
+Actual implementation of sensing type of data and parsing CCDA and C32 reside in this repository.  Implementation of other functionalities reside in [blue-button-xml](https://github.com/amida-tech/blue-button-xml) (parse XML), [blue-button-cms](https://github.com/amida-tech/blue-button-cms) (parse CMS), [blue-button-model](https://github.com/amida-tech/blue-button-model) (data model schema and validation), and [blue-button-generate](https://github.com/amida-tech/blue-button-generate) (CCDA generation from JSON).
 
 ### Usage example
 
@@ -239,18 +244,17 @@ Data model details and validation can be found in [blue-button-model](https://gi
 
 ## Goals
 
-- Full support of CCDA
-- Ability to extend to support other data formats (e.g. C32)
+- Full support of CCDA, C32 and CMS
+- Ability to extend to support other data formats
 - Solid, well-documented JSON-based data model for patient health data
-- Modularity - easy to extend (both parser and data model) in the future
+- Modularity - easy to extend (both parser and data model)
 - Node.js support
-- Browser support (sometime later)
+- Browser support
 - Speed of parsing
 - Well tested on entire corpora of CCDA samples from https://github.com/jmandel/sample_ccdas
 
 ## Future Roadmap
 
-- C32 support reintroduced
 - Merge back into bluebutton.js repo
 - Refactoring into smaller components (sub-modules)
 
