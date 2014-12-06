@@ -29,7 +29,7 @@ Actual implementation of sensing type of data and parsing CCDA and C32 reside in
 - [blue-button-model](https://github.com/amida-tech/blue-button-model) provides data model schema and validation
 - [blue-button-generate](https://github.com/amida-tech/blue-button-generate) provides generation from JSON
 
-This library is primarily for implemented for [node.js](http://nodejs.org) however a browser version is made available in `dist` directory using [browserify](http://browserify.org).
+This library is primarily implemented for [node.js](http://nodejs.org) however a browser version is made available in `dist` directory using [browserify](http://browserify.org).
 
 ## Usage
 
