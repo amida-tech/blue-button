@@ -10,8 +10,6 @@ Blue Button JavaScript library
 
 ![blue-button.js](./docs/blue-button-js.png)
 
-## Library interfaces/APIs
-
 This library provides the following functionality
 
 - Parse XML documents
@@ -25,9 +23,15 @@ This library provides the following functionality
 - Generate JSON object based on data model
 - Generate CCDA from JSON object
 
-Actual implementation of sensing type of data and parsing CCDA and C32 reside in this repository.  Implementation of other functionalities reside in [blue-button-xml](https://github.com/amida-tech/blue-button-xml) (parse XML), [blue-button-cms](https://github.com/amida-tech/blue-button-cms) (parse CMS), [blue-button-model](https://github.com/amida-tech/blue-button-model) (data model schema and validation), and [blue-button-generate](https://github.com/amida-tech/blue-button-generate) (CCDA generation from JSON).
+Actual implementation of sensing type of data and parsing CCDA and C32 reside in this repository.  Implementation of other functionalities reside in 
+- [blue-button-xml](https://github.com/amida-tech/blue-button-xml) provides XML parsing infrastructure
+- [blue-button-cms](https://github.com/amida-tech/blue-button-cms) provides CMS parsing
+- [blue-button-model](https://github.com/amida-tech/blue-button-model) provides data model schema and validation
+- [blue-button-generate](https://github.com/amida-tech/blue-button-generate) provides generation from JSON
 
-### Usage example
+This library is primarily for implemented for [node.js](http://nodejs.org) however a browser version is made available in `dist` directory using [browserify](http://browserify.org).
+
+## Usage
 
 Require blue-button module
 
