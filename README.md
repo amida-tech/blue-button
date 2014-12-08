@@ -13,13 +13,12 @@ Blue Button JavaScript library
 This library provides the following functionality
 
 - Parse XML documents
-- Sense type of data (e.g. CCDA, CMS, C32, etc)
+- Sense type of data (CCDA, CMS, C32, etc.)
 - Parse CCDA into JSON representation
 	- Parse CCDA elements (sections) into JSON representation
 - Parse C32 into JSON representation
 	- Parse C32 elements (sections) into JSON representation
 - Parse CMS into JSON representation
-  - Parse CMS elements (sections) into JSON representation
 - Generate JSON object based on data model
 - Generate CCDA from JSON object
 
@@ -27,9 +26,9 @@ Actual implementation of sensing type of data and parsing CCDA and C32 reside in
 - [blue-button-xml](https://github.com/amida-tech/blue-button-xml) provides XML parsing infrastructure
 - [blue-button-cms](https://github.com/amida-tech/blue-button-cms) provides CMS parsing
 - [blue-button-model](https://github.com/amida-tech/blue-button-model) provides data model schema and validation
-- [blue-button-generate](https://github.com/amida-tech/blue-button-generate) provides generation from JSON
+- [blue-button-generate](https://github.com/amida-tech/blue-button-generate) provides CCDA generation from JSON
 
-This library is primarily implemented for [node.js](http://nodejs.org) and is available through [npm](https://www.npmjs.org/doc/cli/npm.html). A browser version is also available through [bower](http://bower.io/). The browser version is created using [browserify](http://browserify.org) and can be used in the same way that you would use it in [node.js](http://nodejs.org).  
+This library is primarily implemented for [node.js](http://nodejs.org) and is available via [npm](https://www.npmjs.org/doc/cli/npm.html). A browser version is also available via [bower](http://bower.io/). The browser version is created using [browserify](http://browserify.org) and can be used in the same way that you would use it in [node.js](http://nodejs.org).  
 
 ## Usage
 
@@ -45,7 +44,7 @@ Generate JSON representation of the health data
 ``` javascript
 var doc = bb.parse(data);
 ```
-`parse` method senses the type of the health data, parses and converts it into JSON.  All types of health data is converted into a common model.  Schema validate `doc` according to the data model 
+[`parse`](#parse) method senses the type of the health data, parses and converts it into JSON.  All types of health data is converted into a [common model](https://github.com/amida-tech/blue-button-model/blob/master/docs/model.md).  Validate `doc` according to the [common model](https://github.com/amida-tech/blue-button-model/blob/master/docs/model.md) schema 
 ``` javascript
 var valid = bb.validator.validateDocumentModel(doc);
 if (! valid) {
@@ -56,27 +55,29 @@ Do changes to `doc` in your application
 ``` javascript
 doc.data.demographics.phone.number = "(555)555-5555";
 ```
-Create CCDA (CCD) document that includes your changes
+Create a CCDA (CCD) document that includes your changes
 ``` javascript
 var modifiedDataCCD = bb.generateCCDA(doc);
 ```
 
+<a name="dataModel" />
 ## Data Model
 
-blue-button converts all types of health (CCDA, C32, CMS) data into a common model.  Data model schema can be found in [blue-button-model](https://github.com/amida-tech/blue-button-model).
+Blue Button library converts all types of health data (CCDA, C32, CMS) into a [common model](https://github.com/amida-tech/blue-button-model/blob/master/docs/model.md).  Data model schema and validation implementation can be found in [blue-button-model](https://github.com/amida-tech/blue-button-model).
 
 ## API
 
 ### XML Utilities
 
-Blue-button provides basic XML parsing and [XPath](http://www.w3.org/TR/xpath) functionality via [libxmljs](https://github.com/polotek/libxmljs) (node.js) and [DomParser](http://www.w3schools.com/dom/dom_parser.asp) (browsers).  All XML related API methods are inherited from [blue-button-xml](https://github.com/amida-tech/blue-button-xml) and available from `xml` object
+Blue Button library provides basic XML parsing and [XPath](http://www.w3.org/TR/xpath) functionality via [libxmljs](https://github.com/polotek/libxmljs) (node.js) and [DomParser](http://www.w3schools.com/dom/dom_parser.asp) (browsers).  All XML related API methods are inherited from [blue-button-xml](https://github.com/amida-tech/blue-button-xml) and available from `xml` object
 ``` javascript
 var xml = bb.xml;
 ```
 
+<a name="parse" />
 #### parse(src)
 
-Parses XML content string into an XML Object which can be used with in other API methods.  Details of the actual object can be found in the documentation of underlying libraries [libxmljs](https://github.com/polotek/libxmljs) (node.js) and [DomParser](http://www.w3schools.com/dom/dom_parser.asp) (browsers).
+Parses XML content string into an XML Object which can be used in other API methods.  Details of the actual XML object can be found in the documentation of underlying libraries [libxmljs](https://github.com/polotek/libxmljs) (node.js) and [DomParser](http://www.w3schools.com/dom/dom_parser.asp) (browsers).
 
 __Arguments__
 
@@ -84,7 +85,7 @@ __Arguments__
 
 #### xpath(doc, p, ns)
 
-Finds the XML nodes that are specified by [XPath](http://www.w3.org/TR/xpath) `p`.
+Finds the XML nodes that are specified by `p`.
 
 __Arguments__
 
@@ -92,6 +93,7 @@ __Arguments__
 * `p` - A valid [XPath](http://www.w3.org/TR/xpath) string.
 * `ns` - XML namespace specifications.  By default `h: urn:hl7-org:v3"` and `xsi: http://www.w3.org/2001/XMLSchema-instance` are used as they are the namespaces used in CCDA.
 
+<a name="parse" />
 ### Sensing
 
 #### senseString(data)
@@ -101,45 +103,45 @@ Senses the type of the string content.
 __Arguments__
 
 * data - String content for which the type is to be found.
-* returns - A result object.  In case of an error either `null` is returned or and error is thrown.  Result object has the following properties
+* returns - A result object.  In the case of an error either `null` is returned or an error is thrown.  Result object has the following properties
   * type -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `cms`, `va`, `format-x`, `json`, `blue-button.js`, `va`, `pdf` and `unknown`.
   * xml - In the case of XML content (`ccda`, `c32`, `cda`, `xml`) this is set to the parsed XML object.
   * json - In the case of JSON content (`blue-button.js`, `json`) this is set to the pased JSON object.
 
 #### senseXml(data)
 
-Senses the type of the XML object content.
+Senses the type of an XML object.
 
 __Arguments__
 
-* data - XML object content for which the type is to be found.
-* returns - A result object.  In case of an error either `null` is returned or and error is thrown.  Result object has the following properties
+* data - XML object for which the type is to be found.
+* returns - A result object.  In the case of an error either `null` is returned or an error is thrown.  Result object has the following properties
   * type -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `unknown`.
 
 ### JSON Generation
 
 #### parse(data, options)
 
-This is a generic method that both senses the underlying `data` content and generates JSON out of it.  Underneath it calls to other sensing and JSON generation methods.
+This is the primary method in Blue Button library that both senses the type of the input content and generates JSON out of it.  Underneath it calls to other [sensing](#sensing) and JSON generation methods.
 
 __Arguments__
 
-* data - Any data string data content.  Currently CCDA (CCD), C32 and CMS are supported.
+* data - Any string data content.  Currently CCDA (CCD), C32 and CMS are supported.
 * options - The following properties are supported
-  * component - Specifies a component of CCDA or C32 document; not used for CMS documents.  `data` should only contain content for the component.    The following CCDA (CCD) sections are supported: ccda_demographics:, ccda_vitals, ccda_medications, ccda_problems, ccda_immunizations, ccda_results, ccda_allergies, ccda_encounters, ccda_procedures, ccda_social_history, ccda_plan_of_care, ccda_payers.  The following C32 sections are supported: c32_demographics, c32_vitals, c32_medications, c32_problems, c32_immunizations, c32_results, c32_allergies, c32_encounters:, c32_procedures.In additions individual entries in each section can also be specified (ccda_vitals_entry, ccda_medications_entry, ..., c32_vitals_entry, ...)
-* returns - JSON representation of the data.  See the data model.
+  * component - Specifies a component of CCDA or C32 document; not used for CMS documents.  `data` should only contain content for the component.    The following CCDA (CCD) sections are supported: `ccda_demographics`, `ccda_vitals`, `ccda_medications`, `ccda_problems`, `ccda_immunizations`, `ccda_results`, `ccda_allergies`, `ccda_encounters`, `ccda_procedures`, `ccda_social_history`, `ccda_plan_of_care`, `ccda_payers`.  The following C32 sections are supported: `c32_demographics`, `c32_vitals`, `c32_medications`, `c32_problems`, `c32_immunizations`, `c32_results`, `c32_allergies`, `c32_encounters`, `c32_procedures`.  In addition individual entries in each section can also be specified (`ccda_vitals_entry`, `ccda_medications_entry`, ..., `c32_vitals_entry`, ...).
+* returns - [JSON representation](#dataModel) of the data.
 
 #### parseString(data, options)
 
-This is similar to `parse` but it assumes string XML content `data`.
+This is similar to [`parse`](#parse) but it assumes `data` to be valid XML.
 
 #### parseXml(data, options)
 
-This is similar to parse but it assumes XML object `data`.
+This is similar to [`parse`](#parse) but it assumes `data` to be an XML object.
 
 #### parseText(data)
 
-This is similar to parse but it assumes Text (ASCII) data.  Currently only CMS format is supported.
+This is similar to [`parse`](#parse) but it assumes `data` to be Text (ASCII) and `options` is not used.  Currently only Text content in CMS format is supported.
 
 ### CCDA (CCD) Generation
 
@@ -147,8 +149,8 @@ This is similar to parse but it assumes Text (ASCII) data.  Currently only CMS f
 
 This generates a CCDA (CCD) document from a JSON object.
 
-* doc -  A JSON object that is in format specified by the data model.
-* returns - CCD document in string.
+* doc -  A JSON object that in format similar to specified by specified by [`parse`](#parse).
+* returns - CCD document as a string.
 
 ## Examples
 
