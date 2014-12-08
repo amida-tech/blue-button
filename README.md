@@ -29,222 +29,130 @@ Actual implementation of sensing type of data and parsing CCDA and C32 reside in
 - [blue-button-model](https://github.com/amida-tech/blue-button-model) provides data model schema and validation
 - [blue-button-generate](https://github.com/amida-tech/blue-button-generate) provides generation from JSON
 
-This library is primarily implemented for [node.js](http://nodejs.org) however a browser version is made available in `dist` directory using [browserify](http://browserify.org).
+This library is primarily implemented for [node.js](http://nodejs.org) and is available through [npm](https://www.npmjs.org/doc/cli/npm.html). A browser version is also available through [bower](http://bower.io/). The browser version is created using [browserify](http://browserify.org) and can be used in the same way that you would use it in [node.js](http://nodejs.org).  
 
 ## Usage
 
 Require blue-button module
-
 ``` javascript
 var bb = require("blue-button")
 ```
-
-Load some XML and parse it
-
+Load some health data content.  Currently CCDA (CCD), C32 and CMS are supported
 ``` javascript
-var data = "some CCDA.xml data here...";
-
-//parse xml into JS object
-var doc = bb.parseXml(data);
+var data = "some CCDA.xml, C32.xml or CMS.txt here...";
 ```
-
-Check XML parsing errors
-
+Generate JSON representation of the health data
 ``` javascript
-console.log(doc.errors);
+var doc = bb.parse(data);
 ```
-
-should be:
-
+`parse` method senses the type of the health data, parses and converts it into JSON.  All types of health data is converted into a common model.  Schema validate `doc` according to the data model 
 ``` javascript
-[]
-``` 
-
-here is XML itself:
-
-``` javascript
-console.log(doc.toString());
+var valid = bb.validator.validateDocumentModel(doc);
+if (! valid) {
+	throw new Error('failed');
+}
 ```
-
-should be:
-
-``` xml
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
-<!-- Title: US_Realm_Header_Template -->
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
-  <!-- ******************************************************** CDA Header 
-		******************************************************** -->
-  <realmCode code="US"/>
-  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
-  <!-- US General Header Template -->
-  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
-  <!-- *** Note: The next templateId, code and title will differ depending 
-		on what type of document is being sent. *** -->
-  <!-- conforms to the document specific requirements -->
-  <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
-  
-  ...and so on
-```
-
-Let's sense document type from parsed XML:
-
+Do changes to `doc` in your application
 ``` javascript
-//get document type (e.g. CCDA) of parsed document
-var type = bb.senseXml(doc);
-
-console.log(type);
+doc.data.demographics.phone.number = "(555)555-5555";
 ```
-
-getting:
-
+Create CCDA (CCD) document that includes your changes
 ``` javascript
-{ type: 'ccda' }
+var modifiedDataCCD = bb.generateCCDA(doc);
 ```
-
-Let's sense document type from string with health data:
-
-``` javascript
-//get document type (e.g. CCDA) of document from string (and return parsed xml if it is xml based type)
-var result = bb.senseString(data);
-
-//printing result:
-console.log(result);
-```
-
-getting type as well as parsed XML for later user:
-
-``` javascript
-{ type: 'ccda', xml: { errors: [] } }
-//xml "errors" is just default print of libxmljs parsed XML object
-
-//in case of JSON stringified input, it will return {type: 'json', json: [json object here]}
-```
-
-Sensing CMS Blue Button data in text file:
-
-``` javascript
-//get document type (e.g. CMS) of document from string (and return format version)
-var result = bb.senseString(data);
-
-//printing result:
-console.log(result); 
-```
-getting:
-
-``` javascript
-{ type: 'cms', version: '2.0' }
-```
-
-getting type as well as parsed XML for later user:
-
-``` javascript
-
-{ type: 'ccda', xml: { errors: [] } }
-//xml "errors" is just default print of libxmljs parsed XML object
-
-//in case of JSON stringified input, it will return {type: 'json', json: [json object here]}
-
-```
-
-Parsing into JSON data model from CMS text file
-
-``` javascript
-//read in the file
-var textString = fs.readFileSync("cms_sample.txt").toString(); 
-
-//convert the string text file into blue button model
-var result = bb.parseText(textString); 
-
-console.log(result);
-```
-getting:
-
-``` javascript
-
-{ data: 
-   { demographics: 
-      { name: [Object],
-        dob: [Object],
-        email: [Object],
-        phone: [Object],
-        address: [Object] },
-     vitals: [ [Object], [Object] ],
-     results: [ [Object] ],
-     medications: [ [Object], [Object] ],
-     allergies: [ [Object], [Object] ],
-     immunizations: [ [Object], [Object], [Object] ],
-     problems: [ [Object], [Object] ],
-     insurance: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
-     claims: [ [Object], [Object], [Object], [Object], [Object] ] },
-  meta: 
-   { type: 'cms',
-     version: '2.0',
-     timestamp: { date: '2013-03-16T05:10:00Z', precision: 'minute' },
-     sections: ['demographics', ..., 'claims'] } }
-
-``` 
-
-Parsing into JSON data model from XML or from string
-
-``` javascript
-//convert Xml document into JSON
-var result = bb.parseXml(doc);
-
-//convert string into JSON
-var result = bb.parseString(data);
-
-console.log(result);
-```
-
-getting:
-
-``` javascript
-{ data: 
-   { demographics: 
-      { name: [Object],
-        dob: [Object],
-        ...
-        birthplace: [Object],
-        guardians: [Object] },
-     vitals: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
-     results: [ [Object] ],
-     medications: [ [Object] ],
-     encounters: [ [Object] ],
-     allergies: [ [Object], [Object], [Object] ],
-     immunizations: [ [Object], [Object], [Object], [Object] ],
-     socialHistory: [ [Object] ],
-     problems: [ [Object], [Object] ],
-     procedures: [ [Object], [Object], [Object] ] },
-  meta: {
-        version: "1.1.0-beta.1",
-        sections: [
-            "demographics",
-            "vitals",
-            "results",
-            "medications",
-            "encounters",
-            "allergies",
-            "immunizations",
-            "social_history",
-            "problems",
-            "procedures",
-            "plan_of_care",
-            "payers"
-        ]
-  },
-  errors: 
-   [ 'nullFlavor alert:  missing but required streetLines in Address -> Patient -> CCD',
-     'nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> Prescription -> MedicationsSection -> CCD'
-     ] }
-```
-
-See [/example](./example) for example above as well as how to parse individual sections.
-***
 
 ## Data Model
 
-Data model details and validation can be found in [blue-button-model](https://github.com/amida-tech/blue-button-model).
+blue-button converts all types of health (CCDA, C32, CMS) data into a common model.  Data model schema can be found in [blue-button-model](https://github.com/amida-tech/blue-button-model).
+
+## API
+
+### XML Utilities
+
+Blue-button provides basic XML parsing and [XPath](http://www.w3.org/TR/xpath) functionality via [libxmljs](https://github.com/polotek/libxmljs) (node.js) and [DomParser](http://www.w3schools.com/dom/dom_parser.asp) (browsers).  All XML related API methods are inherited from [blue-button-xml](https://github.com/amida-tech/blue-button-xml) and available from `xml` object
+``` javascript
+var xml = bb.xml;
+```
+
+#### parse(src)
+
+Parses XML content string into an XML Object which can be used with in other API methods.  Details of the actual object can be found in the documentation of underlying libraries [libxmljs](https://github.com/polotek/libxmljs) (node.js) and [DomParser](http://www.w3schools.com/dom/dom_parser.asp) (browsers).
+
+__Arguments__
+
+* `src` - XML content in string.
+
+#### xpath(doc, p, ns)
+
+Finds the XML nodes that are specified by [XPath](http://www.w3.org/TR/xpath) `p`.
+
+__Arguments__
+
+* `doc` - XML document or any parent XML node inside the document that is found by a previous `xpath` call.
+* `p` - A valid [XPath](http://www.w3.org/TR/xpath) string.
+* `ns` - XML namespace specifications.  By default `h: urn:hl7-org:v3"` and `xsi: http://www.w3.org/2001/XMLSchema-instance` are used as they are the namespaces used in CCDA.
+
+### Sensing
+
+#### senseString(data)
+
+Senses the type of the string content.  
+
+__Arguments__
+
+* data - String content for which the type is to be found.
+* returns - A result object.  In case of an error either `null` is returned or and error is thrown.  Result object has the following properties
+  * type -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `cms`, `va`, `format-x`, `json`, `blue-button.js`, `va`, `pdf` and `unknown`.
+  * xml - In the case of XML content (`ccda`, `c32`, `cda`, `xml`) this is set to the parsed XML object.
+  * json - In the case of JSON content (`blue-button.js`, `json`) this is set to the pased JSON object.
+
+#### senseXml(data)
+
+Senses the type of the XML object content.
+
+__Arguments__
+
+* data - XML object content for which the type is to be found.
+* returns - A result object.  In case of an error either `null` is returned or and error is thrown.  Result object has the following properties
+  * type -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `unknown`.
+
+### JSON Generation
+
+#### parse(data, options)
+
+This is a generic method that both senses the underlying `data` content and generates JSON out of it.  Underneath it calls to other sensing and JSON generation methods.
+
+__Arguments__
+
+* data - Any data string data content.  Currently CCDA (CCD), C32 and CMS are supported.
+* options - The following properties are supported
+  * component - Specifies a component of CCDA or C32 document; not used for CMS documents.  `data` should only contain content for the component.    The following CCDA (CCD) sections are supported: ccda_demographics:, ccda_vitals, ccda_medications, ccda_problems, ccda_immunizations, ccda_results, ccda_allergies, ccda_encounters, ccda_procedures, ccda_social_history, ccda_plan_of_care, ccda_payers.  The following C32 sections are supported: c32_demographics, c32_vitals, c32_medications, c32_problems, c32_immunizations, c32_results, c32_allergies, c32_encounters:, c32_procedures.In additions individual entries in each section can also be specified (ccda_vitals_entry, ccda_medications_entry, ..., c32_vitals_entry, ...)
+* returns - JSON representation of the data.  See the data model.
+
+#### parseString(data, options)
+
+This is similar to `parse` but it assumes string XML content `data`.
+
+#### parseXml(data, options)
+
+This is similar to parse but it assumes XML object `data`.
+
+#### parseText(data)
+
+This is similar to parse but it assumes Text (ASCII) data.  Currently only CMS format is supported.
+
+### CCDA (CCD) Generation
+
+#### generateCCDA(doc)
+
+This generates a CCDA (CCD) document from a JSON object.
+
+* doc -  A JSON object that is in format specified by the data model.
+* returns - CCD document in string.
+
+## Examples
+
+See scripts in [/example](./example) directory that use the above API methods for CCDA, C32 and CMS examples.
 
 ## Goals
 
