@@ -82,7 +82,7 @@ Parses XML content string into an XML Object which can be used in other API meth
 __Arguments__
 
 * `src` - XML content in string.
-* returns - XML object (document)
+* returns - XML Object.
 
 #### xpath(doc, p, ns)
 
@@ -93,7 +93,7 @@ __Arguments__
 * `doc` - XML document or any parent XML node inside the document that is found by a previous `xpath` call.
 * `p` - A valid [XPath](http://www.w3.org/TR/xpath) string.
 * `ns` - XML namespace specifications.  By default `h: urn:hl7-org:v3"` and `xsi: http://www.w3.org/2001/XMLSchema-instance` are used as they are the namespaces used in CCDA.
-* returns - XML object (document or node)
+* returns - XML object node.
 
 <a name="parse" />
 ### Sensing
@@ -106,9 +106,9 @@ __Arguments__
 
 * `data` - String content for which the type is to be found.
 * returns - A result object.  In the case of an error either `null` is returned or an error is thrown.  Result object has the following properties
-  * `type` -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `cms`, `va`, `format-x`, `json`, `blue-button.js`, `va`, `pdf` and `unknown`.
+  * `type` -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `cms`, `va`, `format-x`, `json`, `blue-button.js`, `va`, `pdf` or `unknown`.
   * `xml` - In the case of XML content (`ccda`, `c32`, `cda`, `xml`) this is set to the parsed XML object.
-  * `json` - In the case of JSON content (`blue-button.js`, `json`) this is set to the pased JSON object.
+  * `json` - In the case of JSON content (`blue-button.js`, `json`) this is set to the passed JSON object.
 
 #### senseXml(data)
 
@@ -122,6 +122,7 @@ __Arguments__
 
 ### JSON Generation
 
+<a name="parseJSON" />
 #### parse(data, options)
 
 This is the primary method in Blue Button library that both senses the type of the input content and generates JSON out of it.  Underneath it calls to other [sensing](#sensing) and JSON generation methods.
@@ -135,15 +136,15 @@ __Arguments__
 
 #### parseString(data, options)
 
-This is similar to [`parse`](#parse) but it assumes `data` to be valid XML.
+This is similar to [`parse`](#parseJSON) but it assumes `data` to be valid XML.
 
 #### parseXml(data, options)
 
-This is similar to [`parse`](#parse) but it assumes `data` to be an XML object.
+This is similar to [`parse`](#parseJSON) but it assumes `data` to be an XML object.
 
 #### parseText(data)
 
-This is similar to [`parse`](#parse) but it assumes `data` to be Text (ASCII) and `options` is not used.  Currently only Text content in CMS format is supported.
+This is similar to [`parse`](#parseJSON) but it assumes `data` to be Text (ASCII) and `options` is not used.  Currently only Text content in CMS format is supported.
 
 ### CCDA (CCD) Generation
 
@@ -151,12 +152,12 @@ This is similar to [`parse`](#parse) but it assumes `data` to be Text (ASCII) an
 
 This generates a CCDA (CCD) document from a JSON object.
 
-* `doc` -  A JSON object that in format similar to specified by specified by [`parse`](#parse).
+* `doc` -  A JSON object that in format similar to specified by specified by [`parse`](#parseJSON).
 * returns - CCD document as a string.
 
 ## Examples
 
-See scripts in [/example](./example) directory that use the above API methods for CCDA, C32 and CMS examples.
+See scripts in [/example](./example) or [/test](./test) directories that use the above API methods for CCDA, C32 and CMS examples.
 
 ## Goals
 
