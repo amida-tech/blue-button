@@ -82,6 +82,7 @@ Parses XML content string into an XML Object which can be used in other API meth
 __Arguments__
 
 * `src` - XML content in string.
+* returns - XML object (document)
 
 #### xpath(doc, p, ns)
 
@@ -92,6 +93,7 @@ __Arguments__
 * `doc` - XML document or any parent XML node inside the document that is found by a previous `xpath` call.
 * `p` - A valid [XPath](http://www.w3.org/TR/xpath) string.
 * `ns` - XML namespace specifications.  By default `h: urn:hl7-org:v3"` and `xsi: http://www.w3.org/2001/XMLSchema-instance` are used as they are the namespaces used in CCDA.
+* returns - XML object (document or node)
 
 <a name="parse" />
 ### Sensing
@@ -102,11 +104,11 @@ Senses the type of the string content.
 
 __Arguments__
 
-* data - String content for which the type is to be found.
+* `data` - String content for which the type is to be found.
 * returns - A result object.  In the case of an error either `null` is returned or an error is thrown.  Result object has the following properties
-  * type -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `cms`, `va`, `format-x`, `json`, `blue-button.js`, `va`, `pdf` and `unknown`.
-  * xml - In the case of XML content (`ccda`, `c32`, `cda`, `xml`) this is set to the parsed XML object.
-  * json - In the case of JSON content (`blue-button.js`, `json`) this is set to the pased JSON object.
+  * `type` -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `cms`, `va`, `format-x`, `json`, `blue-button.js`, `va`, `pdf` and `unknown`.
+  * `xml` - In the case of XML content (`ccda`, `c32`, `cda`, `xml`) this is set to the parsed XML object.
+  * `json` - In the case of JSON content (`blue-button.js`, `json`) this is set to the pased JSON object.
 
 #### senseXml(data)
 
@@ -114,9 +116,9 @@ Senses the type of an XML object.
 
 __Arguments__
 
-* data - XML object for which the type is to be found.
+* `data` - XML object for which the type is to be found.
 * returns - A result object.  In the case of an error either `null` is returned or an error is thrown.  Result object has the following properties
-  * type -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `unknown`.
+  * `type` -  A string that identifies the type of the content.  Currently can be `ccda`, `c32`, `cda`, `xml`, `unknown`.
 
 ### JSON Generation
 
@@ -126,9 +128,9 @@ This is the primary method in Blue Button library that both senses the type of t
 
 __Arguments__
 
-* data - Any string data content.  Currently CCDA (CCD), C32 and CMS are supported.
+* `data` - Any string data content.  Currently CCDA (CCD), C32 and CMS are supported.
 * options - The following properties are supported
-  * component - Specifies a component of CCDA or C32 document; not used for CMS documents.  `data` should only contain content for the component.    The following CCDA (CCD) sections are supported: `ccda_demographics`, `ccda_vitals`, `ccda_medications`, `ccda_problems`, `ccda_immunizations`, `ccda_results`, `ccda_allergies`, `ccda_encounters`, `ccda_procedures`, `ccda_social_history`, `ccda_plan_of_care`, `ccda_payers`.  The following C32 sections are supported: `c32_demographics`, `c32_vitals`, `c32_medications`, `c32_problems`, `c32_immunizations`, `c32_results`, `c32_allergies`, `c32_encounters`, `c32_procedures`.  In addition individual entries in each section can also be specified (`ccda_vitals_entry`, `ccda_medications_entry`, ..., `c32_vitals_entry`, ...).
+  * `component` - Specifies a component of CCDA or C32 document; not used for CMS documents.  `data` should only contain content for the component.    The following CCDA (CCD) sections are supported: `ccda_demographics`, `ccda_vitals`, `ccda_medications`, `ccda_problems`, `ccda_immunizations`, `ccda_results`, `ccda_allergies`, `ccda_encounters`, `ccda_procedures`, `ccda_social_history`, `ccda_plan_of_care`, `ccda_payers`.  The following C32 sections are supported: `c32_demographics`, `c32_vitals`, `c32_medications`, `c32_problems`, `c32_immunizations`, `c32_results`, `c32_allergies`, `c32_encounters`, `c32_procedures`.  In addition individual entries in each section can also be specified (`ccda_vitals_entry`, `ccda_medications_entry`, ..., `c32_vitals_entry`, ...).
 * returns - [JSON representation](#dataModel) of the data.
 
 #### parseString(data, options)
@@ -149,7 +151,7 @@ This is similar to [`parse`](#parse) but it assumes `data` to be Text (ASCII) an
 
 This generates a CCDA (CCD) document from a JSON object.
 
-* doc -  A JSON object that in format similar to specified by specified by [`parse`](#parse).
+* `doc` -  A JSON object that in format similar to specified by specified by [`parse`](#parse).
 * returns - CCD document as a string.
 
 ## Examples
