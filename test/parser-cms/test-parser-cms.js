@@ -16,7 +16,7 @@ describe('parser.js', function () {
         expect(txtfile).to.exist;
 
         //convert string into JSON 
-        var result = bb.parseText(txtfile);
+        var result = bb.parse(txtfile);
         expect(result).to.exist;
 
         //console.log(JSON.stringify(result.data.providers, null, 10));

@@ -44,7 +44,7 @@ describe('Parser CDA R2 CCD Support Testing', function () {
     it('CCD 1 parser/model validation', function (done) {
         expect(xmlfile).to.exist;
 
-        var result = bb.parseString(xmlfile);
+        var result = bb.parse(xmlfile);
         //convert string into JSON 
 
         expect(result).to.exist;

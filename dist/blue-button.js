@@ -3,35 +3,26 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
 "use strict";
 
+// sense file type
 var sense = require("./lib/sense.js");
 exports.senseXml = sense.senseXml;
 exports.senseString = sense.senseString;
 
+// xml utilities
 exports.xml = require("blue-button-xml").xmlUtil;
 
+// CCDA, C32, and CMS parser
 var parser = require("./lib/parser.js");
 exports.parseXml = parser.parseXml;
 exports.parseString = parser.parseString;
 exports.parseText = parser.parseText;
-exports.parseText2 = parser.parseText2;
-
-//need to review if this is still needed
 exports.parse = parser.parse;
 
-// ccda generation
+// CCDA (CCD) generation
 exports.generateCCDA = require("blue-button-generate").generateCCD;
 
-// testing for ccda generation
-//exports.testCCDA = require("./test/test-lib.js").testXML;
-
+// Data model schema validation
 exports.validator = require("blue-button-model").validator;
-
-/*
-	//get access to current version of NPM package
-
-	var version = require('./package.json').version;
-	console.log(version);
-*/
 
 },{"./lib/parser.js":2,"./lib/sense.js":44,"blue-button-generate":"blue-button-generate","blue-button-model":55,"blue-button-xml":"blue-button-xml"}],2:[function(require,module,exports){
 "use strict";
@@ -68,10 +59,9 @@ function parseText(txt) {
     }
 
     return sections(parseCMS.parseText(txt));
-
 }
 
-function parseXml(doc, options) {
+function parseXml(doc, options, sensed) {
     //data must be an object
     if (!doc || typeof (doc) !== "object") {
         //TODO: throw a proper error here
@@ -82,7 +72,11 @@ function parseXml(doc, options) {
         options = {};
     }
 
-    var componentParser = componentRouter(options.component, sense.senseXml(doc));
+    if (!sensed) {
+        sensed = sense.senseXml(doc);
+    }
+
+    var componentParser = componentRouter(options.component, sensed);
 
     if (!componentParser) {
         var msg = util.format("Component %s is not supported.", options.component);
@@ -102,7 +96,6 @@ function parseXml(doc, options) {
         },
         "errors": ret.errors
     });
-
 }
 
 function parseString(data, options) {
@@ -120,8 +113,34 @@ function parseString(data, options) {
     return parseXml(doc, options);
 }
 
+var parse = function (data, options) {
+    //data must be a string
+    if (!data || typeof (data) !== "string") {
+        //TODO: throw a proper error here
+        return null;
+    }
+
+    if (arguments.length === 1) {
+        options = {};
+    }
+
+    var sensed = sense.senseString(data);
+
+    if (sensed) {
+        if (sensed.xml) {
+            return parseXml(sensed.xml, options, sensed);
+        } else if (sensed.json) {
+            return sensed.json;
+        } else {
+            return parseText(data);
+        }
+    } else {
+        return null;
+    }
+};
+
 module.exports = {
-    //parse_retired: parse_retired,
+    parse: parse,
     parseXml: parseXml,
     parseString: parseString,
     parseText: parseText
@@ -14120,10 +14139,10 @@ module.exports={
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amida-tech/bluebutton.git"
+    "url": "https://github.com/amida-tech/blue-button.git"
   },
   "keywords": [
-    "bluebutton"
+    "bluebutton", "blue-button", "XML", "JSON", "CCDA", "CMS", "C32"
   ],
   "bugs": {
     "url": "https://github.com/amida-tech/blue-button/issues"
