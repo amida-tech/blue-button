@@ -1,5 +1,10 @@
 # blue-button.js Release Notes
 
+# v.1.3.0 - December 12, 2014
+- Created smaller modules: blue-button-xml, blue-button-generate, blue-button-model, blue-button-cms
+- Time zones are now used when they are specified in CCDA files.
+- Browser version using browserify
+- Added to Bower
 
 # v.1.2.0 - September 15, 2014
 - Enhanced to include support for US VA 32 Files.
