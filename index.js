@@ -17,8 +17,5 @@ exports.parseString = parser.parseString;
 exports.parseText = parser.parseText;
 exports.parse = parser.parse;
 
-// CCDA (CCD) generation
-exports.generateCCDA = require("blue-button-generate").generateCCD;
-
 // Data model schema validation
 exports.validator = require("blue-button-model").validator;

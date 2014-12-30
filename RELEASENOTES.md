@@ -1,5 +1,8 @@
 # blue-button.js Release Notes
 
+# v.1.4.0 - TBD
+- Removed blue-button-generate methods from API (breaking change, applications should use blue-button-generate directly)
+
 # v.1.3.0 - December 12, 2014
 - Created smaller modules: blue-button-xml, blue-button-generate, blue-button-model, blue-button-cms
 - Time zones are now used when they are specified in CCDA files.

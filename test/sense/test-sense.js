@@ -6,6 +6,8 @@ var fs = require("fs");
 var senseString = require("../../index.js").senseString;
 
 describe('sense.js test', function () {
+    this.timeout(5000);
+
     var ccda = "";
     var xml = "";
     var json = "";
