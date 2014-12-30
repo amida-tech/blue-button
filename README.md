@@ -20,13 +20,13 @@ This library provides the following functionality
 	- Parse C32 elements (sections) into JSON representation
 - Parse CMS into JSON representation
 - Generate JSON object based on data model
-- Generate CCDA from JSON object
 
 Actual implementation of sensing type of data and parsing CCDA and C32 reside in this repository.  Implementation of other functionalities reside in 
 - [blue-button-xml](https://github.com/amida-tech/blue-button-xml) provides XML parsing infrastructure
 - [blue-button-cms](https://github.com/amida-tech/blue-button-cms) provides CMS parsing
 - [blue-button-model](https://github.com/amida-tech/blue-button-model) provides data model schema and validation
-- [blue-button-generate](https://github.com/amida-tech/blue-button-generate) provides CCDA generation from JSON
+
+In addition CCDA generation from blue-button JSON objects is available in [blue-button-generate](https://github.com/amida-tech/blue-button-generate).
 
 This library is primarily implemented for [node.js](http://nodejs.org) and is available via [npm](https://www.npmjs.org/doc/cli/npm.html). A browser version is also available via [bower](http://bower.io/). The browser version is created using [browserify](http://browserify.org) and can be used in the same way that you would use it in [node.js](http://nodejs.org).  
 
@@ -57,7 +57,8 @@ doc.data.demographics.phone.number = "(555)555-5555";
 ```
 Create a CCDA (CCD) document that includes your changes
 ``` javascript
-var modifiedDataCCD = bb.generateCCDA(doc);
+var bbg = require("blue-button-generate")
+var modifiedDataCCD = bbg.generateCCD(doc);
 ```
 
 <a name="dataModel" />
@@ -145,15 +146,6 @@ This is similar to [`parse`](#parseJSON) but it assumes `data` to be an XML obje
 #### parseText(data)
 
 This is similar to [`parse`](#parseJSON) but it assumes `data` to be Text (ASCII) and `options` is not used.  Currently only Text content in CMS format is supported.
-
-### CCDA (CCD) Generation
-
-#### generateCCDA(doc)
-
-This generates a CCDA (CCD) document from a JSON object.
-
-* `doc` -  A JSON object that in format similar to specified by specified by [`parse`](#parseJSON).
-* returns - CCD document as a string.
 
 ## Examples
 
