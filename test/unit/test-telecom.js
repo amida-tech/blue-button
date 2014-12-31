@@ -22,7 +22,9 @@ describe('telecom unit tests', function () {
 
         var testCases = component.define("testCases");
         testCases.fields([
-            ["multiple_tel_email", "1..1", "//h:case[@title='multiple_tel_email']", testCase]
+            ["multiple_tel_email", "1..1", "//h:case[@title='multiple_tel_email']", testCase],
+            ["nullFlavor_noTel", "1..1", "//h:case[@title='nullFlavor_noTel']", testCase],
+            ["emptyValue", "1..1", "//h:case[@title='emptyValue']", testCase]
         ]);
 
         var xmlfile = fs.readFileSync(__dirname + '/../fixtures/unit/telecom.xml', 'utf-8').toString();
@@ -48,5 +50,18 @@ describe('telecom unit tests', function () {
                 address: "p1@amida-tech.com"
             }]
         });
+    });
+
+    it('nullFlavor_noTel', function () {
+        expect(jsonCases.nullFlavor_noTel).to.deep.equal({
+            phone: [{
+                number: "5555550003",
+                type: "primary home"
+            }]
+        });
+    });
+
+    it('emptyValue', function () {
+        expect(jsonCases).to.not.have.property("emptyValue");
     });
 });

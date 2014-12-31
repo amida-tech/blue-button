@@ -7,4 +7,11 @@
         <telecom value="mailto:p0@amida-tech.com"/>
 		<telecom value="mailto:p1@amida-tech.com"/>
 	</case>
+	<case title='nullFlavor_noTel'>
+		<telecom use="HP" value="5555550003"/>
+		<telecom nullFlavor="UNK" use="WP"/>
+	</case>
+	<case title='emptyValue'>
+		<telecom use="WP" value=""/>
+	</case>
 </TelecomTestCases>

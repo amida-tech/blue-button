@@ -3227,7 +3227,7 @@ phone.cleanupStep(function () {
         }
     }
 });
-phone.setXPath("h:telecom[not(starts-with(@value, 'mailto:'))]");
+phone.setXPath("h:telecom[@value and @value!='' and not(starts-with(@value, 'mailto:'))]");
 
 },{"./cleanup":40,"blue-button-xml":"blue-button-xml"}],42:[function(require,module,exports){
 //CCDA to JSON parser.
