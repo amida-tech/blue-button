@@ -1448,9 +1448,8 @@ var exportMedicationsSection = function (version) {
         .fields([
             ["date_time", "0..1", "h:time", shared.EffectiveTime],
             ["identifiers", "0..*", "h:assignedAuthor/h:id", shared.Identifier],
-            [version === "" ? "name" : "organization", "0..1",
-                "(h:assignedAuthor/h:representedOrganization | h:assignedAuthor/h:assignedPerson/h:name)[last()]", (version === "" ? shared.IndividualName : shared.Organization)
-            ]
+            ["name", "0..1", "h:assignedAuthor/h:assignedPerson/h:name", shared.IndividualName],
+            ["organization", "0..1", "h:assignedAuthor/h:representedOrganization", shared.Organization]
         ]);
 
     // below entries differ between ccda-r1.1 and ccda-r1.0
