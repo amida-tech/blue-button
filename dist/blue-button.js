@@ -20921,7 +20921,7 @@ function hasOwnProperty(obj, prop) {
 },{}],91:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.4.0-beta.1",
+  "version": "1.4.0-beta.2",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
