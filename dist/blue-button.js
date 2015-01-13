@@ -163,7 +163,7 @@ var cleanup = module.exports = Object.create(includeCleanup);
 
 cleanup.augmentObservation = function () {
 
-    if (this.js.problem_text.js) {
+    if (this.js.problem_text && this.js.problem_text.js) {
         if (!this.js.code.js.name) {
             this.js.code.js.name = this.js.problem_text.js;
         }
@@ -1448,9 +1448,8 @@ var exportMedicationsSection = function (version) {
         .fields([
             ["date_time", "0..1", "h:time", shared.EffectiveTime],
             ["identifiers", "0..*", "h:assignedAuthor/h:id", shared.Identifier],
-            [version === "" ? "name" : "organization", "0..1",
-                "(h:assignedAuthor/h:representedOrganization | h:assignedAuthor/h:assignedPerson/h:name)[last()]", (version === "" ? shared.IndividualName : shared.Organization)
-            ]
+            ["name", "0..1", "h:assignedAuthor/h:assignedPerson/h:name", shared.IndividualName],
+            ["organization", "0..1", "h:assignedAuthor/h:representedOrganization", shared.Organization]
         ]);
 
     // below entries differ between ccda-r1.1 and ccda-r1.0
@@ -3227,7 +3226,7 @@ phone.cleanupStep(function () {
         }
     }
 });
-phone.setXPath("h:telecom[not(starts-with(@value, 'mailto:'))]");
+phone.setXPath("h:telecom[@value and @value!='' and not(starts-with(@value, 'mailto:'))]");
 
 },{"./cleanup":40,"blue-button-xml":"blue-button-xml"}],42:[function(require,module,exports){
 //CCDA to JSON parser.
@@ -20922,7 +20921,7 @@ function hasOwnProperty(obj, prop) {
 },{}],91:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.4.0-beta.1",
+  "version": "1.4.0-beta.2",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {

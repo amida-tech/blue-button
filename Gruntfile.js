@@ -130,14 +130,14 @@ module.exports = function (grunt) {
                 dest: 'dist/<%=pkg.name%>.js',
                 options: {
                     alias: [__dirname + "/index.js:<%=pkg.name%>"],
-                    external: ["blue-button-xml", "blue-button-generate", "blue-button-cms"]
+                    external: ["blue-button-xml", "blue-button-cms"]
                 }
             },
             tests: {
                 src: ['test/**/*.js'],
                 dest: 'dist/mocha_tests.js',
                 options: {
-                    external: ["blue-button-xml", "blue-button-generate", "blue-button-cms"],
+                    external: ["blue-button-xml", "blue-button-cms"],
                     transform: ['brfs']
                 }
             }

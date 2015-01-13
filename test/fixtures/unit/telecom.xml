@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<TelecomTestCases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+	<case title='multiple_tel_email'>
+		<telecom value="tel:(555)555-0001" use="HP"/>
+		<telecom use="WP" value="tel:555-555-0002"/>
+        <telecom value="mailto:p0@amida-tech.com"/>
+		<telecom value="mailto:p1@amida-tech.com"/>
+	</case>
+	<case title='nullFlavor_noTel'>
+		<telecom use="HP" value="5555550003"/>
+		<telecom nullFlavor="UNK" use="WP"/>
+	</case>
+	<case title='emptyValue'>
+		<telecom use="WP" value=""/>
+	</case>
+</TelecomTestCases>
