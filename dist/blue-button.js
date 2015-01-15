@@ -3406,7 +3406,7 @@ var senseXml = function (doc) {
         };
     }
 
-    var ccdResult = xml.xpath(doc, 'h:templateId[@root=\"2.16.840.1.113883.10.20.22.1.1\"]');
+    var ccdResult = xml.xpath(doc, 'h:templateId[@root=\"2.16.840.1.113883.10.20.22.1.1\"] | h:templateId[@root=\"2.16.840.1.113883.10.20.22.1.2\"]');
     if (ccdResult && ccdResult.length > 0) {
         return {
             type: "ccda"
@@ -20986,7 +20986,7 @@ function hasOwnProperty(obj, prop) {
 },{}],91:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.4.0-beta.2",
+  "version": "1.4.0-beta.3",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {

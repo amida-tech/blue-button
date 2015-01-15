@@ -2,6 +2,13 @@
 
 # v.1.4.0 - TBD
 - Removed blue-button-generate methods from API (breaking change, applications should use blue-button-generate directly)
+- Supported sections of US Realm CCDA documents are now parsed even when they are not CCD.
+- Medications with medication activity that has negationInd attribute true are now ignored.
+- Results of xsi:type ST are now handled
+- Free text allergen name is now put into allergen name field when allergen is otherwise not specified.
+- Free text reaction name is now put into reaction name field when reaction is otherwise not specified.
+- Medication author now supoorts name and organization at the same time.
+- Null flavored email and telephone entries are properly handled.
 
 # v.1.3.0 - December 12, 2014
 - Created smaller modules: blue-button-xml, blue-button-generate, blue-button-model, blue-button-cms
