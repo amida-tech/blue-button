@@ -1573,9 +1573,7 @@ var exportMedicationsSection = function (version) {
             ]);
 
         medicationActivity = component.define("medicationActivity")
-            .templateRoot("2.16.840.1.113883.10.20.22.4.16")
             .fields([
-                ["negation_indicator", "0..1", "./@negationInd", processor.asBoolean],
                 ["date_time", "0..1", "h:effectiveTime[not (@operator='A')]", shared.EffectiveTime],
                 ["identifiers", "0..*", "h:id", shared.Identifier],
                 ["status", "1..1", "./../h:substanceAdministration/@moodCode"],
@@ -1626,6 +1624,9 @@ var exportMedicationsSection = function (version) {
           }*/
 
             });
+        medicationActivity.setXPath(".//h:templateId[@root=\"2.16.840.1.113883.10.20.22.4.16\" and not(../@negationInd=\"true\")]/..");
+
+        // ignore negationInd medications
 
         medicationsSection = component.define("medicationsSection");
         medicationsSection.templateRoot(["2.16.840.1.113883.10.20.22.2.1", "2.16.840.1.113883.10.20.22.2.1.1"]);
