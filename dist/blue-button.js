@@ -1095,6 +1095,71 @@ var includeCleanup = require("../common/cleanup");
 
 var cleanup = module.exports = Object.create(includeCleanup);
 
+cleanup.allergiesProblemStatusToHITSP = (function () {
+    var dict = {};
+    dict.active = {
+        "name": "Active",
+        "code": "55561003",
+        "code_system_name": "SNOMED CT"
+    };
+    dict.suspended = dict.aborted = {
+        "name": "Inactive",
+        "code": "73425007",
+        "code_system_name": "SNOMED CT"
+    };
+    dict.completed = {
+        "name": "Resolved",
+        "code": "413322009",
+        "code_system_name": "SNOMED CT"
+    };
+
+    return function () {
+        var status = this.js && this.js.problemStatus;
+        if (status) {
+            var value = dict[status];
+            if (value) {
+                var observation = this.js.observation;
+                if (!observation) {
+                    this.js.observation = {
+                        status: value
+                    };
+                } else if (!observation.js) {
+                    observation.js = {
+                        status: value
+                    };
+                } else if (!observation.js.status) {
+                    observation.js.status = value;
+                }
+            }
+            delete this.js.problemStatus;
+        }
+    };
+})();
+
+cleanup.promoteAllergenNameIfNoAllergen = function () {
+    if (this.js && (!this.js.allergen)) {
+        var name = this.js.allergenName && this.js.allergenName.js;
+        if (name) {
+            this.js.allergen = {
+                name: name
+            };
+        }
+    }
+    delete this.js.allergenName;
+};
+
+cleanup.promoteFreeTextIfNoReaction = function () {
+    if (this.js && (!this.js.reaction)) {
+        var name = this.js.free_text_reaction && this.js.free_text_reaction.js;
+        if (name) {
+            this.js.reaction = {
+                name: name
+            };
+        }
+    }
+    delete this.js.free_text_reaction;
+};
+
 },{"../common/cleanup":40}],16:[function(require,module,exports){
 "use strict";
 
@@ -1174,7 +1239,6 @@ var exportAllergiesSection = function (version) {
     var allergySeverityObservation = component.define("allergySeverityObservation")
         .fields([
             ["code", "0..1", "h:value", shared.ConceptDescriptor],
-            //["name", "0..1", "@code", shared.SimpleCode("2.16.840.1.113883.3.88.12.3221.6.8")]
             ["interpretation", "0..1", "h:interpretationCode", shared.ConceptDescriptor]
         ]);
 
@@ -1184,21 +1248,15 @@ var exportAllergiesSection = function (version) {
         ["identifiers", "0..*", "h:id", shared.Identifier],
         ["date_time", "1..1", "h:effectiveTime", shared.EffectiveTime],
         ["reaction", "1..1", "h:value", shared.ConceptDescriptor],
+        ["free_text_reaction", "0..1", "h:text", shared.TextWithReference],
         ["severity", "0..1", "h:entryRelationship/h:observation", allergySeverityObservation]
     ]);
+    allergyReaction.cleanupStep(cleanup.promoteFreeTextIfNoReaction);
 
     var allergenDescriptor = shared.ConceptDescriptor.define('allergenDescriptor');
     allergenDescriptor.fields([
         ["name", "0..1", "h:originalText", shared.TextWithReference, 'epic']
     ]);
-
-    /*
-    var allergyStatusObservation = component.define("allergyStatusObservation");
-    allergyStatusObservation.fields([
-        ["code", "0..1", "@code"],
-        ["status", "0..1", "@code", shared.SimpleCode("2.16.840.1.113883.3.88.12.80.68")],
-    ]);
-    */
 
     var allergyObservation = component.define("allergyObservation"); // this is status observation
     allergyObservation.templateRoot(["2.16.840.1.113883.10.20.22.4.7"]);
@@ -1208,6 +1266,7 @@ var exportAllergiesSection = function (version) {
         ["negation_indicator", "0..1", "./@negationInd", Processor.asBoolean],
         //NOTE allergen must be optional in case of negationInd = true (per PragueExpat)
         ["allergen", "0..1", "h:participant/h:participantRole/h:playingEntity/h:code", allergenDescriptor], // (see above) - was 1..1 //Require (optional in spec)
+        ["allergenName", "0..1", "h:participant/h:participantRole/h:playingEntity/h:name", shared.TextWithReference],
 
         ["intolerance", "0..1", "h:value", shared.ConceptDescriptor],
         ["date_time", "1..1", "h:effectiveTime", shared.EffectiveTime],
@@ -1216,15 +1275,17 @@ var exportAllergiesSection = function (version) {
         ["reactions", "0..*", allergyReaction.xpath(), allergyReaction],
         ["severity", "0..1", "h:entryRelationship/h:observation[h:templateId/@root='2.16.840.1.113883.10.20.22.4.8']", allergySeverityObservation]
     ]);
+    allergyObservation.cleanupStep(cleanup.promoteAllergenNameIfNoAllergen);
 
     var problemAct = component.define('problemAct');
     problemAct.templateRoot(['2.16.840.1.113883.10.20.22.4.30']);
     problemAct.fields([
         ["identifiers", "0..*", "h:id", shared.Identifier],
         ["date_time", "1..1", "h:effectiveTime", shared.EffectiveTime],
+        ["problemStatus", "1..1", "h:statusCode/@code"],
         ["observation", "1..1", allergyObservation.xpath(), allergyObservation] // Ignore observation cardinality (in spec can be more than 1)
     ]);
-    //problemAct.cleanupStep(cleanup.extractAllFields(['observation']));
+    problemAct.cleanupStep(cleanup.allergiesProblemStatusToHITSP);
 
     var allergiesSection = component.define('allergiesSection');
     allergiesSection.templateRoot(['2.16.840.1.113883.10.20.22.2.6', '2.16.840.1.113883.10.20.22.2.6.1']);
@@ -1512,7 +1573,6 @@ var exportMedicationsSection = function (version) {
             ]);
 
         medicationActivity = component.define("medicationActivity")
-            .templateRoot("2.16.840.1.113883.10.20.22.4.16")
             .fields([
                 ["date_time", "0..1", "h:effectiveTime[not (@operator='A')]", shared.EffectiveTime],
                 ["identifiers", "0..*", "h:id", shared.Identifier],
@@ -1564,6 +1624,9 @@ var exportMedicationsSection = function (version) {
           }*/
 
             });
+        medicationActivity.setXPath(".//h:templateId[@root=\"2.16.840.1.113883.10.20.22.4.16\" and not(../@negationInd=\"true\")]/..");
+
+        // ignore negationInd medications
 
         medicationsSection = component.define("medicationsSection");
         medicationsSection.templateRoot(["2.16.840.1.113883.10.20.22.2.1", "2.16.840.1.113883.10.20.22.2.1.1"]);
@@ -1957,6 +2020,7 @@ var exportResultsSection = function (version) {
             ["date_time", "1..1", "h:effectiveTime", shared.EffectiveTime],
             ["physicalQuantity", "1..1", "h:value[@xsi:type='PQ']", shared.PhysicalQuantity],
             ["status", "1..1", "h:statusCode/@code"],
+            ["text", "1..1", "h:value[@xsi:type='ST']", shared.TextWithReference],
             ["reference_range", "0..1", "h:referenceRange/h:observationRange", referenceRange],
             //["codedValue", "0..1", "h:value[@xsi:type='CD']", shared.ConceptDescriptor],
             //["freeTextValue", "0..1", "h:text", shared.TextWithReference],
@@ -3342,7 +3406,7 @@ var senseXml = function (doc) {
         };
     }
 
-    var ccdResult = xml.xpath(doc, 'h:templateId[@root=\"2.16.840.1.113883.10.20.22.1.2\"]');
+    var ccdResult = xml.xpath(doc, 'h:templateId[@root=\"2.16.840.1.113883.10.20.22.1.1\"] | h:templateId[@root=\"2.16.840.1.113883.10.20.22.1.2\"]');
     if (ccdResult && ccdResult.length > 0) {
         return {
             type: "ccda"
@@ -9546,13 +9610,14 @@ module.exports = {
         "status": {
             "type": "object",
             "properties": {
-                "code": {
+                "name": {
                     "type": "string"
                 },
-                "status": {
-                    "type": "string"
+                "date_time": {
+                    "$ref": "cda_date"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "source_list_identifiers": {
             "type": "array",
@@ -9631,7 +9696,7 @@ module.exports = {
         "procedure"
     ],
     "additionalProperties": false
-}
+};
 
 },{}],70:[function(require,module,exports){
 module.exports = {
@@ -20921,7 +20986,7 @@ function hasOwnProperty(obj, prop) {
 },{}],91:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.4.0-beta.2",
+  "version": "1.4.0-beta.3",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
