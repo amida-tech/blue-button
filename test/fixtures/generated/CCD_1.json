@@ -1984,6 +1984,9 @@
   },
   "errors": [
     "nullFlavor alert:  missing but required street_lines in Address -> Patient -> CCD",
+    "nullFlavor alert:  missing but required textResult in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+    "nullFlavor alert:  missing but required textResult in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
+    "nullFlavor alert:  missing but required textResult in ResultObservation -> ResultsOrganizer -> resultsSection -> CCD",
     "cardinality error: found 2 when expecting 0..1 at h:entryRelationship[@typeCode='REFR']/h:supply",
     "nullFlavor alert:  missing but required value in PhysicalQuantity -> MedicationAdministration -> medicationActivity -> medicationsSection -> CCD",
     "nullFlavor alert:  missing but required identifier in Identifier -> MedicationPerformer -> medicationActivity -> medicationsSection -> CCD",
