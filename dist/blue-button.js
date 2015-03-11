@@ -310,9 +310,10 @@ var exportAllergiesSection = function (version) {
     problemAct.fields([
         ["identifiers", "0..*", "h:id", shared.Identifier],
         ["date_time", "1..1", "h:effectiveTime", shared.EffectiveTime],
+        ["problemStatus", "1..1", "h:statusCode/@code"],
         ["observation", "1..1", allergyObservation.xpath(), allergyObservation] // Ignore observation cardinality (in spec can be more than 1)
     ]);
-    //problemAct.cleanupStep(cleanup.extractAllFields(['observation']));
+    problemAct.cleanupStep(cleanup.allergiesProblemStatusToHITSP);
 
     var allergiesSection = component.define('allergiesSection');
     allergiesSection.templateRoot(['2.16.840.1.113883.3.88.11.83.102']);
@@ -1094,47 +1095,6 @@ exports.CCD = exportCCD;
 var includeCleanup = require("../common/cleanup");
 
 var cleanup = module.exports = Object.create(includeCleanup);
-
-cleanup.allergiesProblemStatusToHITSP = (function () {
-    var dict = {};
-    dict.active = {
-        "name": "Active",
-        "code": "55561003",
-        "code_system_name": "SNOMED CT"
-    };
-    dict.suspended = dict.aborted = {
-        "name": "Inactive",
-        "code": "73425007",
-        "code_system_name": "SNOMED CT"
-    };
-    dict.completed = {
-        "name": "Resolved",
-        "code": "413322009",
-        "code_system_name": "SNOMED CT"
-    };
-
-    return function () {
-        var status = this.js && this.js.problemStatus;
-        if (status) {
-            var value = dict[status];
-            if (value) {
-                var observation = this.js.observation;
-                if (!observation) {
-                    this.js.observation = {
-                        status: value
-                    };
-                } else if (!observation.js) {
-                    observation.js = {
-                        status: value
-                    };
-                } else if (!observation.js.status) {
-                    observation.js.status = value;
-                }
-            }
-            delete this.js.problemStatus;
-        }
-    };
-})();
 
 cleanup.promoteAllergenNameIfNoAllergen = function () {
     if (this.js && (!this.js.allergen)) {
@@ -3241,6 +3201,47 @@ cleanup.augmentSimplifiedCodeOID = function (oid) {
     };
     return f;
 };
+
+cleanup.allergiesProblemStatusToHITSP = (function () {
+    var dict = {};
+    dict.active = {
+        "name": "Active",
+        "code": "55561003",
+        "code_system_name": "SNOMED CT"
+    };
+    dict.suspended = dict.aborted = {
+        "name": "Inactive",
+        "code": "73425007",
+        "code_system_name": "SNOMED CT"
+    };
+    dict.completed = {
+        "name": "Resolved",
+        "code": "413322009",
+        "code_system_name": "SNOMED CT"
+    };
+
+    return function () {
+        var status = this.js && this.js.problemStatus;
+        if (status) {
+            var value = dict[status];
+            if (value) {
+                var observation = this.js.observation;
+                if (!observation) {
+                    this.js.observation = {
+                        status: value
+                    };
+                } else if (!observation.js) {
+                    observation.js = {
+                        status: value
+                    };
+                } else if (!observation.js.status) {
+                    observation.js.status = value;
+                }
+            }
+            delete this.js.problemStatus;
+        }
+    };
+})();
 
 },{"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],41:[function(require,module,exports){
 "use strict";
