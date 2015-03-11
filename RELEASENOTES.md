@@ -1,6 +1,9 @@
 # blue-button.js Release Notes
 
-# v.1.4.0 - TBD
+# v.1.4.1 - March 11, 2015
+- c32 parser now uses allergy problem act statusCode as the allergy status
+
+# v.1.4.0 - February 27, 2015
 - Removed blue-button-generate methods from API (breaking change, applications should use blue-button-generate directly)
 - Supported sections of US Realm CCDA documents are now parsed even when they are not CCD.
 - Medications with medication activity that has negationInd attribute true are now ignored.
