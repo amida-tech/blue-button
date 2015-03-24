@@ -29,12 +29,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-istanbul-coverage');
     grunt.loadNpmTasks('grunt-coveralls');
     grunt.loadNpmTasks('grunt-jsbeautifier');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-mocha-phantomjs');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-shell');
 
     // Project configuration.
     grunt.initConfig({
@@ -112,18 +112,6 @@ module.exports = function (grunt) {
             //src: 'coverage-results/extra-results-*.info'
             //},
         },
-        coverage: {
-            options: {
-                thresholds: {
-                    'statements': 50,
-                    'branches': 25,
-                    'lines': 50,
-                    'functions': 50
-                },
-                dir: 'coverage/',
-                root: '.'
-            }
-        },
         browserify: {
             require: {
                 src: ['<%=pkg.main%>'],
@@ -158,6 +146,11 @@ module.exports = function (grunt) {
                     ]
                 }
             }
+        },
+        shell: {
+            run_istanbul: {
+                command: "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec --recursive"
+            }
         }
     });
 
@@ -174,6 +167,7 @@ module.exports = function (grunt) {
     grunt.registerTask('timestamp', function () {
         grunt.log.subhead(Date());
     });
+    grunt.registerTask('coverage', ['shell:run_istanbul']);
 
     // Alias the `generator:ccda_samples` task to run `mocha test --recursive --grep generator` instead
     grunt.registerTask('generator:ccda_samples', 'mocha test --recursive --grep [ccda_samples]', function () {

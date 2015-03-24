@@ -20962,6 +20962,7 @@ module.exports={
     "grunt-jsbeautifier": "~0.2.7",
     "grunt-mocha-phantomjs": "~0.6.0",
     "grunt-mocha-test": "~0.8.0",
+    "grunt-shell": "^1.1.2",
     "mocha": "~1.17.0",
     "mocha-lcov-reporter": "~0.0.1"
   },
