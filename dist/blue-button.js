@@ -195,26 +195,6 @@ var LanguageCommunication = component.define("LanguageCommunication")
         ["proficiency", "0..1", "h:proficiencyLevelCode", shared.SimplifiedCode]
     ]);
 
-var augmentRaceEthnicity = function () {
-    //Ethnicity only exists to account for hispanic/latino; using to override race if needed.
-    //The actually have the same coding system too.
-    if (this.js && this.js.ethnicity) { //HACK: addded if
-        if (this.js.ethnicity.js.code === "2135-2") {
-            this.js = this.js.ethnicity.js.name;
-        } else {
-            if (this.js.race.js.code) {
-                this.js = this.js.race.js.name;
-            }
-        }
-    }
-};
-
-var RaceEthnicity = component.define("RaceEthnicity")
-    .fields([
-        ["race", "0..1", "h:raceCode", shared.ConceptDescriptor],
-        ["ethnicity", "0..1", "h:ethnicGroupCode", shared.ConceptDescriptor]
-    ]).cleanupStep(augmentRaceEthnicity);
-
 exports.patient = component.define("Patient")
     .fields([
         ["name", "1..1", "h:patient/h:name", shared.IndividualName],
@@ -225,7 +205,8 @@ exports.patient = component.define("Patient")
         ["addresses", "0..*", "h:addr", shared.Address],
         ["phone", "0..*", shared.phone.xpath(), shared.phone],
         ["email", "0..*", shared.email.xpath(), shared.email],
-        ["race_ethnicity", "0..1", "h:patient", RaceEthnicity],
+        ["race", "0..1", "h:patient/h:raceCode", shared.SimplifiedCodeOID("2.16.840.1.113883.6.238")],
+        ["ethnicity", "0..1", "h:patient/h:ethnicGroupCode", shared.SimplifiedCodeOID("2.16.840.1.113883.6.238")],
         ["languages", "0..*", "h:patient/h:languageCommunication", LanguageCommunication],
         ["religion", "0..1", "h:patient/h:religiousAffiliationCode/@code", shared.SimpleCode("2.16.840.1.113883.5.1076")],
         ["birthplace", "0..1", "h:patient/h:birthplace/h:place/h:addr", shared.Address],
@@ -1144,30 +1125,7 @@ var LanguageCommunication = component.define("LanguageCommunication")
         ["proficiency", "0..1", "h:proficiencyLevelCode", shared.SimplifiedCode]
     ]);
 
-var augmentRaceEthnicity = function () {
-    //Ethnicity only exists to account for hispanic/latino; using to override race if needed.
-    //The actually have the same coding system too.
-
-    if (this.js && (this.js.ethnicity || this.js.race)) { //HACK: addded if
-        if (this.js.ethnicity && (this.js.ethnicity.js.code === "2135-2")) {
-            this.js = this.js.ethnicity.js.name;
-        } else if (this.js.race) { //FIX: if race is nullFlavor fallback to ethnicity
-            if (this.js.race.js.code) {
-                this.js = this.js.race.js.name;
-            }
-        } else {
-            this.js = this.js.ethnicity.js.name;
-        }
-    }
-};
-
-var RaceEthnicity = component.define("RaceEthnicity")
-    .fields([
-        ["race", "0..1", "h:raceCode", shared.ConceptDescriptor],
-        ["ethnicity", "0..1", "h:ethnicGroupCode", shared.ConceptDescriptor]
-    ]).cleanupStep(augmentRaceEthnicity);
-
-module.exports.patient = component.define("Patient")
+exports.patient = component.define("Patient")
     .fields([
         ["name", "1..1", "h:patient/h:name", shared.IndividualName],
         ["dob", "1..1", "h:patient/h:birthTime", shared.EffectiveTime],
@@ -1177,7 +1135,8 @@ module.exports.patient = component.define("Patient")
         ["addresses", "0..*", "h:addr", shared.Address],
         ["phone", "0..*", shared.phone.xpath(), shared.phone],
         ["email", "0..*", shared.email.xpath(), shared.email],
-        ["race_ethnicity", "0..1", "h:patient", RaceEthnicity],
+        ["race", "0..1", "h:patient/h:raceCode", shared.SimplifiedCodeOID("2.16.840.1.113883.6.238")],
+        ["ethnicity", "0..1", "h:patient/h:ethnicGroupCode", shared.SimplifiedCodeOID("2.16.840.1.113883.6.238")],
         ["languages", "0..*", "h:patient/h:languageCommunication", LanguageCommunication],
         ["religion", "0..1", "h:patient/h:religiousAffiliationCode/@code", shared.SimpleCode("2.16.840.1.113883.5.1076")],
         ["birthplace", "0..1", "h:patient/h:birthplace/h:place/h:addr", shared.Address],
@@ -7841,7 +7800,8 @@ module.exports = OIDs = {
             "1834-1": "Wrangell",
             "1835-8": "Yakutat",
             "1838-2": "Metlakatla",
-            "2135-2": "Hispanic or Latino"
+            "2135-2": "Hispanic or Latino",
+            "2186-5": "Not Hispanic or Latino"
         }
     },
     "2.16.840.1.113883.3.26.1.1": {
@@ -8694,7 +8654,10 @@ module.exports = {
                 "$ref": "cda_email"
             }
         },
-        "race_ethnicity": {
+        "race": {
+            "type": "string"
+        },
+        "ethnicity": {
             "type": "string"
         },
         "religion": {
@@ -20915,7 +20878,7 @@ function hasOwnProperty(obj, prop) {
 },{}],91:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.4.1",
+  "version": "1.5.0-beta.1",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -20941,8 +20904,8 @@ module.exports={
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "blue-button-meta": "~1.3.0",
-    "blue-button-model": "~1.4.0",
+    "blue-button-meta": "~1.5.0",
+    "blue-button-model": "~1.5.0",
     "blue-button-xml": "~1.3.0",
     "blue-button-cms": "~1.3.0",
     "underscore": "~1.6.0",
@@ -20962,6 +20925,7 @@ module.exports={
     "grunt-jsbeautifier": "~0.2.7",
     "grunt-mocha-phantomjs": "~0.6.0",
     "grunt-mocha-test": "~0.8.0",
+    "grunt-shell": "^1.1.2",
     "mocha": "~1.17.0",
     "mocha-lcov-reporter": "~0.0.1"
   },
