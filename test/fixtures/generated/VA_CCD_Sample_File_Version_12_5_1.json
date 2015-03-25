@@ -1118,8 +1118,8 @@
   },
   "errors": [
     "cardinality error: found 2 when expecting 1..1 at h:patient/h:name",
-    "nullFlavor alert:  missing but required code in ConceptDescriptor -> RaceEthnicity -> Patient -> C32",
-    "nullFlavor alert:  missing but required code in ConceptDescriptor -> RaceEthnicity -> Patient -> C32",
+    "nullFlavor alert:  missing but required code in SC 2.16.840.1.113883.6.238 -> Patient -> C32",
+    "nullFlavor alert:  missing but required code in SC 2.16.840.1.113883.6.238 -> Patient -> C32",
     "nullFlavor alert:  missing but required language in LanguageCommunication -> Patient -> C32",
     "nullFlavor alert:  missing but required preferred in LanguageCommunication -> Patient -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
