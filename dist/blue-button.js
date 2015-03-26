@@ -2,6 +2,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 "use strict";
 
 var parseCMS = require("blue-button-cms");
+var _ = require('underscore');
 
 var componentRouter = require("./parser/router").componentRouter;
 var xmlParser = require("blue-button-xml").xmlUtil;
@@ -17,13 +18,9 @@ function sections(data) {
         data.meta = {};
     }
 
-    if (data.data.doc_identifiers) {
-        data.meta.identifiers = data.data.doc_identifiers;
-        delete data.data.doc_identifiers;
-    }
-    if (data.data.confidentiality) {
-        data.meta.confidentiality = data.data.confidentiality;
-        delete data.data.confidentiality;
+    if (data.data.meta) {
+        _.extend(data.meta, data.data.meta);
+        delete data.data.meta;
     }
     data.meta.sections = Object.keys(data.data);
     return data;
@@ -124,7 +121,7 @@ module.exports = {
     parseText: parseText
 };
 
-},{"../package.json":91,"./parser/router":42,"./sense.js":43,"blue-button-cms":"blue-button-cms","blue-button-xml":"blue-button-xml","util":89}],2:[function(require,module,exports){
+},{"../package.json":91,"./parser/router":42,"./sense.js":43,"blue-button-cms":"blue-button-cms","blue-button-xml":"blue-button-xml","underscore":90,"util":89}],2:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -142,8 +139,7 @@ var exportC32 = function (version) {
     var encountersSection = require("./sections/encounters").encountersSection(version)[0];
     return component.define("C32")
         .fields([
-            ["doc_identifiers", "0..*", "h:id", shared.Identifier],
-            ["confidentiality", '0..1', "h:confidentialityCode", shared.SimplifiedCodeOID("2.16.840.1.113883.5.25")],
+            ["meta", "0..1", ".", shared.metaData],
             ["demographics", "1..1", "(/ | //h:recordTarget/h:patientRole)[last()]", patient],
             ["allergies", "0..1", allergiesSection.xpath(), allergiesSection],
             ["encounters", "0..1", encountersSection.xpath(), encountersSection],
@@ -210,8 +206,8 @@ exports.patient = component.define("Patient")
         ["addresses", "0..*", "h:addr", shared.Address],
         ["phone", "0..*", shared.phone.xpath(), shared.phone],
         ["email", "0..*", shared.email.xpath(), shared.email],
-        ["race", "0..1", "h:patient/h:raceCode", shared.SimplifiedCodeOID("2.16.840.1.113883.6.238")],
-        ["ethnicity", "0..1", "h:patient/h:ethnicGroupCode", shared.SimplifiedCodeOID("2.16.840.1.113883.6.238")],
+        ["race", "0..1", "h:patient/h:raceCode", shared.simplifiedCodeOID("2.16.840.1.113883.6.238")],
+        ["ethnicity", "0..1", "h:patient/h:ethnicGroupCode", shared.simplifiedCodeOID("2.16.840.1.113883.6.238")],
         ["languages", "0..*", "h:patient/h:languageCommunication", LanguageCommunication],
         ["religion", "0..1", "h:patient/h:religiousAffiliationCode/@code", shared.SimpleCode("2.16.840.1.113883.5.1076")],
         ["birthplace", "0..1", "h:patient/h:birthplace/h:place/h:addr", shared.Address],
@@ -713,7 +709,7 @@ var exportProceduresSection = function (version) {
         ["procedure", "1..1", "h:code", shared.ConceptDescriptor],
         ["identifiers", "0..*", "h:id", shared.Identifier],
         //Not C32 Supported.
-        //["status", "1..1", "h:statusCode", shared.SimplifiedCodeOID('2.16.840.1.113883.11.20.9.22')],
+        //["status", "1..1", "h:statusCode", shared.simplifiedCodeOID('2.16.840.1.113883.11.20.9.22')],
         ["date_time", "0..1", "h:effectiveTime", shared.EffectiveTime],
         ["body_sites", "0..*", "h:targetSiteCode", shared.ConceptDescriptor],
 
@@ -895,12 +891,6 @@ var commonShared = require('../common/shared');
 
 var shared = module.exports = Object.create(commonShared);
 
-var Identifier = shared.Identifier = component.define("Identifier")
-    .fields([
-        ["identifier", "1..1", "@root"],
-        ["extension", "0..1", "@extension"],
-    ]);
-
 var TextWithReference = shared.TextWithReference = component.define("TextWithReference");
 TextWithReference.fields([
         ["text", "0..*", "text()"],
@@ -954,12 +944,6 @@ AgeDescriptor.fields([
 var SimplifiedCode = shared.SimplifiedCode = ConceptDescriptor.define("SimpifiedCode")
     .cleanupStep(cleanup.augmentSimplifiedCode);
 
-var SimplifiedCodeOID = shared.SimplifiedCodeOID = function (oid) {
-    var r = ConceptDescriptor.define("SC " + oid);
-    r.cleanupStep(cleanup.augmentSimplifiedCodeOID(oid));
-    return r;
-};
-
 var PhysicalQuantity = shared.PhysicalQuantity = component.define("PhysicalQuantity")
     .fields([
         ["value", "1..1", "@value", processor.asFloat],
@@ -1008,7 +992,7 @@ var Address = shared.Address = component.define("Address")
 
 var Organization = shared.Organization = component.define("Organization")
     .fields([
-        ["identifiers", "0..*", "h:id", Identifier],
+        ["identifiers", "0..*", "h:id", shared.Identifier],
         ["name", "0..*", "h:name/text()"],
         ["address", "0..*", "h:addr", Address],
         ["email", "0..*", shared.email.xpath(), shared.email],
@@ -1017,7 +1001,7 @@ var Organization = shared.Organization = component.define("Organization")
 
 var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
     .fields([
-        ["identifiers", "0..*", "h:id", Identifier],
+        ["identifiers", "0..*", "h:id", shared.Identifier],
         ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
         ["address", "0..*", "h:addr", Address],
         ["email", "0..*", shared.email.xpath(), shared.email],
@@ -1057,8 +1041,7 @@ var exportCCD = function (version) {
 
     return component.define("CCD")
         .fields([
-            ["doc_identifiers", "0..*", "h:id", shared.Identifier],
-            ["confidentiality", '0..1', "h:confidentialityCode", shared.SimplifiedCodeOID("2.16.840.1.113883.5.25")],
+            ["meta", "0..1", ".", shared.metaData],
             ["demographics", "1..1", "(/ | //h:recordTarget/h:patientRole)[last()]", patient],
             ["vitals", "0..1", vitalSignsSection.xpath(), vitalSignsSection],
             ["results", "0..1", resultsSection.xpath(), resultsSection],
@@ -1141,8 +1124,8 @@ exports.patient = component.define("Patient")
         ["addresses", "0..*", "h:addr", shared.Address],
         ["phone", "0..*", shared.phone.xpath(), shared.phone],
         ["email", "0..*", shared.email.xpath(), shared.email],
-        ["race", "0..1", "h:patient/h:raceCode", shared.SimplifiedCodeOID("2.16.840.1.113883.6.238")],
-        ["ethnicity", "0..1", "h:patient/h:ethnicGroupCode", shared.SimplifiedCodeOID("2.16.840.1.113883.6.238")],
+        ["race", "0..1", "h:patient/h:raceCode", shared.simplifiedCodeOID("2.16.840.1.113883.6.238")],
+        ["ethnicity", "0..1", "h:patient/h:ethnicGroupCode", shared.simplifiedCodeOID("2.16.840.1.113883.6.238")],
         ["languages", "0..*", "h:patient/h:languageCommunication", LanguageCommunication],
         ["religion", "0..1", "h:patient/h:religiousAffiliationCode/@code", shared.SimpleCode("2.16.840.1.113883.5.1076")],
         ["birthplace", "0..1", "h:patient/h:birthplace/h:place/h:addr", shared.Address],
@@ -1884,7 +1867,7 @@ var exportProceduresSection = function (version) {
     entry.fields([
         ["procedure", "1..1", "h:code", shared.ConceptDescriptor],
         ["identifiers", "0..*", "h:id", shared.Identifier],
-        ["status", "1..1", "h:statusCode", shared.SimplifiedCodeOID('2.16.840.1.113883.11.20.9.22')],
+        ["status", "1..1", "h:statusCode", shared.simplifiedCodeOID('2.16.840.1.113883.11.20.9.22')],
         ["date_time", "0..1", "h:effectiveTime", shared.EffectiveTime],
         ["body_sites", "0..*", "h:targetSiteCode", shared.ConceptDescriptor],
         ["specimen", "0..1", "h:specimen", ProcedureSpecimen],
@@ -2112,12 +2095,6 @@ var commonShared = require('../common/shared');
 
 var shared = module.exports = Object.create(commonShared);
 
-var Identifier = shared.Identifier = component.define("Identifier")
-    .fields([
-        ["identifier", "1..1", "@root"],
-        ["extension", "0..1", "@extension"],
-    ]);
-
 var TextWithReference = shared.TextWithReference = component.define("TextWithReference");
 TextWithReference.fields([
         ["text", "0..*", "text()"],
@@ -2165,12 +2142,6 @@ AgeDescriptor.fields([
 
 var SimplifiedCode = shared.SimplifiedCode = ConceptDescriptor.define("SimpifiedCode")
     .cleanupStep(cleanup.augmentSimplifiedCode);
-
-var SimplifiedCodeOID = shared.SimplifiedCodeOID = function (oid) {
-    var r = ConceptDescriptor.define("SC " + oid);
-    r.cleanupStep(cleanup.augmentSimplifiedCodeOID(oid));
-    return r;
-};
 
 var PhysicalQuantity = shared.PhysicalQuantity = component.define("PhysicalQuantity")
     .fields([
@@ -2220,7 +2191,7 @@ var Address = shared.Address = component.define("Address")
 
 var Organization = shared.Organization = component.define("Organization")
     .fields([
-        ["identifiers", "0..*", "h:id", Identifier],
+        ["identifiers", "0..*", "h:id", shared.Identifier],
         ["name", "0..*", "h:name/text()"],
         ["address", "0..*", "h:addr", Address],
         ["email", "0..*", shared.email.xpath(), shared.email],
@@ -2229,7 +2200,7 @@ var Organization = shared.Organization = component.define("Organization")
 
 var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
     .fields([
-        ["identifiers", "0..*", "h:id", Identifier],
+        ["identifiers", "0..*", "h:id", shared.Identifier],
         ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
         ["address", "0..*", "h:addr", Address],
         ["email", "0..*", shared.email.xpath(), shared.email],
@@ -2265,8 +2236,7 @@ var exportCCD = function (version) {
 
     return component.define("CCD")
         .fields([
-            ["doc_identifiers", "0..*", "h:id", shared.Identifier],
-            ["confidentiality", '0..1', "h:confidentialityCode", shared.SimplifiedCodeOID("2.16.840.1.113883.5.25")],
+            ["meta", "0..1", ".", shared.metaData],
             ["demographics", "1..1", "(/ | //h:recordTarget/h:patientRole)[last()]", patient],
             ["providers", "0..*", "//h:documentationOf/h:serviceEvent/h:performer", providersSection],
             ["problems", "0..1", problemsSection.xpath(), problemsSection],
@@ -2696,7 +2666,7 @@ var exportProceduresSection = function (version) {
     entry.fields([
         ["procedure", "1..1", "h:code", shared.ConceptDescriptor],
         ["identifiers", "0..*", "h:id", shared.Identifier],
-        ["status", "1..1", "h:statusCode", shared.SimplifiedCodeOID('2.16.840.1.113883.11.20.9.22')],
+        ["status", "1..1", "h:statusCode", shared.simplifiedCodeOID('2.16.840.1.113883.11.20.9.22')],
         ["date_time", "0..1", "h:effectiveTime", shared.EffectiveTime],
         ["body_sites", "0..*", "h:targetSiteCode", shared.ConceptDescriptor],
 
@@ -2833,12 +2803,6 @@ var commonShared = require('../common/shared');
 
 var shared = module.exports = Object.create(commonShared);
 
-var Identifier = shared.Identifier = component.define("Identifier")
-    .fields([
-        ["identifier", "1..1", "@root"],
-        ["extension", "0..1", "@extension"],
-    ]);
-
 var TextWithReference = shared.TextWithReference = component.define("TextWithReference");
 TextWithReference.fields([
         ["text", "0..*", "text()"],
@@ -2892,12 +2856,6 @@ AgeDescriptor.fields([
 var SimplifiedCode = shared.SimplifiedCode = ConceptDescriptor.define("SimpifiedCode")
     .cleanupStep(cleanup.augmentSimplifiedCode);
 
-var SimplifiedCodeOID = shared.SimplifiedCodeOID = function (oid) {
-    var r = ConceptDescriptor.define("SC " + oid);
-    r.cleanupStep(cleanup.augmentSimplifiedCodeOID(oid));
-    return r;
-};
-
 var PhysicalQuantity = shared.PhysicalQuantity = component.define("PhysicalQuantity")
     .fields([
         ["value", "1..1", "@value", processor.asFloat],
@@ -2946,7 +2904,7 @@ var Address = shared.Address = component.define("Address")
 
 var Organization = shared.Organization = component.define("Organization")
     .fields([
-        ["identifiers", "0..*", "h:id", Identifier],
+        ["identifiers", "0..*", "h:id", shared.Identifier],
         ["name", "0..*", "h:name/text()"],
         ["address", "0..*", "h:addr", Address],
         ["email", "0..*", shared.email.xpath(), shared.email],
@@ -2955,7 +2913,7 @@ var Organization = shared.Organization = component.define("Organization")
 
 var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
     .fields([
-        ["identifiers", "0..*", "h:id", Identifier],
+        ["identifiers", "0..*", "h:id", shared.Identifier],
         ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
         ["address", "0..*", "h:addr", Address],
         ["email", "0..*", shared.email.xpath(), shared.email],
@@ -3221,6 +3179,12 @@ var cleanup = require('./cleanup');
 
 var shared = module.exports = {};
 
+var Identifier = shared.Identifier = component.define("Identifier")
+    .fields([
+        ["identifier", "1..1", "@root"],
+        ["extension", "0..1", "@extension"],
+    ]);
+
 var simpleCode = shared.SimpleCode = function (oid) {
     var r = component.define("SimpleCode." + oid);
     r.fields([]);
@@ -3258,6 +3222,23 @@ phone.cleanupStep(function () {
     }
 });
 phone.setXPath("h:telecom[@value and @value!='' and not(starts-with(@value, 'mailto:'))]");
+
+var simplifiedCodeOID = shared.simplifiedCodeOID = function (oid) {
+    var r = component.define("SC " + oid);
+    r.fields([
+        ["name", "0..1", "@displayName"],
+        ["code", "1..1", "@code"],
+    ]);
+    r.cleanupStep(cleanup.augmentSimplifiedCodeOID(oid));
+    return r;
+};
+
+shared.metaData = component.define("metaData")
+    .fields([
+        ["identifiers", "0..*", "h:id", Identifier],
+        ["confidentiality", '0..1', "h:confidentialityCode", simplifiedCodeOID("2.16.840.1.113883.5.25")],
+        ["set_id", "0..1", "h:setId", Identifier]
+    ]);
 
 },{"./cleanup":40,"blue-button-xml":"blue-button-xml"}],42:[function(require,module,exports){
 //CCDA to JSON parser.

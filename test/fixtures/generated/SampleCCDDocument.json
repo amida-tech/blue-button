@@ -540,7 +540,6 @@
     "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation",
     "cardinality error: found 2 when expecting 1:1 at h:entryRelationship/h:observation/h:value",
     "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> activity -> encountersSection -> CCD",
-    "nullFlavor alert:  missing but required system in SC 2.16.840.1.113883.11.20.9.22 -> entry -> proceduresSection -> CCD",
     "nullFlavor alert:  missing but required code in insurance -> policy -> entry -> payers_section -> CCD",
     "nullFlavor alert:  missing but required guarantor in entry -> payers_section -> CCD",
     "nullFlavor alert:  missing but required policy_holder in entry -> payers_section -> CCD"
