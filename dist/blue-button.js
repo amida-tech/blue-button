@@ -21,6 +21,10 @@ function sections(data) {
         data.meta.identifiers = data.data.doc_identifiers;
         delete data.data.doc_identifiers;
     }
+    if (data.data.confidentiality) {
+        data.meta.confidentiality = data.data.confidentiality;
+        delete data.data.confidentiality;
+    }
     data.meta.sections = Object.keys(data.data);
     return data;
 }
@@ -139,6 +143,7 @@ var exportC32 = function (version) {
     return component.define("C32")
         .fields([
             ["doc_identifiers", "0..*", "h:id", shared.Identifier],
+            ["confidentiality", '0..1', "h:confidentialityCode", shared.SimplifiedCodeOID("2.16.840.1.113883.5.25")],
             ["demographics", "1..1", "(/ | //h:recordTarget/h:patientRole)[last()]", patient],
             ["allergies", "0..1", allergiesSection.xpath(), allergiesSection],
             ["encounters", "0..1", encountersSection.xpath(), encountersSection],
@@ -1053,6 +1058,7 @@ var exportCCD = function (version) {
     return component.define("CCD")
         .fields([
             ["doc_identifiers", "0..*", "h:id", shared.Identifier],
+            ["confidentiality", '0..1', "h:confidentialityCode", shared.SimplifiedCodeOID("2.16.840.1.113883.5.25")],
             ["demographics", "1..1", "(/ | //h:recordTarget/h:patientRole)[last()]", patient],
             ["vitals", "0..1", vitalSignsSection.xpath(), vitalSignsSection],
             ["results", "0..1", resultsSection.xpath(), resultsSection],
@@ -2260,6 +2266,7 @@ var exportCCD = function (version) {
     return component.define("CCD")
         .fields([
             ["doc_identifiers", "0..*", "h:id", shared.Identifier],
+            ["confidentiality", '0..1', "h:confidentialityCode", shared.SimplifiedCodeOID("2.16.840.1.113883.5.25")],
             ["demographics", "1..1", "(/ | //h:recordTarget/h:patientRole)[last()]", patient],
             ["providers", "0..*", "//h:documentationOf/h:serviceEvent/h:performer", providersSection],
             ["problems", "0..1", problemsSection.xpath(), problemsSection],
@@ -6632,6 +6639,15 @@ module.exports = OIDs = {
     "2.16.840.1.113883.5.2": {
         name: "HL7 Marital Status",
         uri: "http://hl7.org/codes/MaritalStatus#"
+    },
+    "2.16.840.1.113883.5.25": {
+        name: "Confidentiality Code",
+        table: {
+            "N": "Normal",
+            "R": "Restricted",
+            "V": "Very Restricted",
+            "U": "Unrestricted"
+        }
     },
     "2.16.840.1.113883.5.83": {
         name: "HL7 Result Interpretation",
@@ -20878,7 +20894,7 @@ function hasOwnProperty(obj, prop) {
 },{}],91:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.5.0-beta.1",
+  "version": "1.5.0-beta.2",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {

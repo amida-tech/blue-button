@@ -1098,13 +1098,14 @@
     ]
   },
   "meta": {
-    "version": "1.5.0-beta.1",
+    "version": "1.5.0-beta.2",
     "identifiers": [
       {
         "identifier": "2.16.840.1.113883.4.349",
         "extension": "2.25.153967320391171260195869192743051876940"
       }
     ],
+    "confidentiality": "Normal",
     "sections": [
       "demographics",
       "allergies",
