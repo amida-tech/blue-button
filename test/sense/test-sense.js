@@ -102,9 +102,12 @@ describe('sense.js test', function () {
         assert.equal('pdf', senseString(pdf).type);
     });
 
-    it('should return NCPDP for NCPDP file input', function () {
-      assert.equal('ncpdp', senseString(ncpdp).type);
-    })
+    try {
+        require.resolve("blue-button-ncpdp");
+        it('should return NCPDP for NCPDP file input', function () {
+            assert.equal('ncpdp', senseString(ncpdp).type);
+        });
+    } catch (ex) {}
 
     it('should return FORMAT-X for format X text input', function () {
         assert.equal('format-x', senseString(format_x).type);

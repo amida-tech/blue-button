@@ -12,25 +12,27 @@ describe('parser.js', function () {
         done();
     });
 
-    it('NCPDP parser/model validation', function (done) {
-        expect(xmlfile).to.exist;
+    try {
+        require.resolve("blue-button-ncpdp");
+        it('NCPDP parser/model validation', function (done) {
+            expect(xmlfile).to.exist;
 
-        //convert string into JSON
-        var result = bb.parse(xmlfile);
-        expect(result).to.exist;
+            //convert string into JSON
+            var result = bb.parse(xmlfile);
+            expect(result).to.exist;
 
-        //console.log(JSON.stringify(result.data.providers, null, 10));
+            //console.log(JSON.stringify(result.data.providers, null, 10));
 
-        var valid = bb.validator.validateDocumentModel(result);
+            var valid = bb.validator.validateDocumentModel(result);
 
-        //if validation failed print all validation errors and summary by category of error
-        if (!valid) {
-            console.log("Errors: \n", JSON.stringify(bb.validator.getLastError(), null, 4));
-        }
+            //if validation failed print all validation errors and summary by category of error
+            if (!valid) {
+                console.log("Errors: \n", JSON.stringify(bb.validator.getLastError(), null, 4));
+            }
 
-        expect(valid).to.be.true;
+            expect(valid).to.be.true;
 
-        done();
-    });
-
+            done();
+        });
+    } catch (ex) {}
 });
