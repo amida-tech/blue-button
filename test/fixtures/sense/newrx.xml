@@ -1,0 +1,217 @@
+<Message>
+    <Header>
+        <To>mailto:9922222.ncpdp@surescripts.com</To>
+        <From>mailto:1572564792001.spi@surescripts.com</From>
+        <MessageID>b58592aa6f9d45e0b7aa1be7bf907fc7</MessageID>
+        <SentTime>2008-02-20T16:10:34.0Z</SentTime>
+    </Header>
+
+    <Body>
+        <NewRx>
+            <RxReferenceNumber>RxRef-814407P451</RxReferenceNumber>
+            <PrescriberOrderNumber>0OG085VV762N</PrescriberOrderNumber>
+            <Pharmacy>
+                <Identification>
+                    <NCPDPID>9922222</NCPDPID>
+                    <FileID>UD75G7314W47U365</FileID>
+                    <MutuallyDefined>ZZZZZZ</MutuallyDefined>
+                </Identification>
+                <StoreName>QA SureScripts Test 4.20</StoreName>
+                <Pharmacist>
+                    <LastName>Pharmacist last name</LastName>
+                    <FirstName>Pharmacist First name</FirstName>
+                    <MiddleName>Pharmacist Middle</MiddleName>
+                    <Suffix>Junior iii</Suffix>
+                    <Prefix>Pharmacist</Prefix>
+                </Pharmacist>
+                <PharmacistAgent>
+                    <LastName>Pharmacist agent Last name</LastName>
+                    <FirstName>Pharmacist agent First name</FirstName>
+                    <MiddleName>Pharmacist agent Middle name</MiddleName>
+                    <Suffix>Junior iii</Suffix>
+                    <Prefix>Pharmacist</Prefix>
+                </PharmacistAgent>
+                <Address>
+                    <AddressLine1>123 Main St</AddressLine1>
+                    <AddressLine2>Pharmacy AddressLine 2</AddressLine2>
+                    <City>Alexandria</City>
+                    <State>VA</State>
+                    <ZipCode>22315</ZipCode>
+                </Address>
+                <Email>Pharmacistagent@pharmacy.com</Email>
+                <PhoneNumbers>
+                    <Phone>
+                        <Number>7035556677</Number>
+                        <Qualifier>TE</Qualifier>
+                    </Phone>
+                    <Phone>
+                        <Number>5555555555</Number>
+                        <Qualifier>FX</Qualifier>
+                    </Phone>
+                </PhoneNumbers>
+            </Pharmacy>
+            <Prescriber>
+                <Identification>
+                    <SPI>1572564792001</SPI>
+                    <NPI>1234567890</NPI> ￼
+                    <MutuallyDefined>Prescriber ZZZ</MutuallyDefined>
+                </Identification>
+                <ClinicName>The prescribers Clinic</ClinicName>
+                <Name>
+                    <LastName>Gentry 4.20</LastName>
+                    <FirstName>Waldo</FirstName>
+                    <MiddleName>Middle</MiddleName>
+                    <Suffix>Junior iii</Suffix>
+                    <Prefix>Prescriber</Prefix>
+                </Name>
+                <Specialty>
+                    <Qualifier>AM</Qualifier>
+                    <SpecialtyCode>OCC</SpecialtyCode>
+                </Specialty>
+                <PrescriberAgent>
+                    <LastName>Prescriber agent Last</LastName>
+                    <FirstName>Prescriber agent First</FirstName>
+                    <MiddleName>Prescriber agent middle name</MiddleName>
+                    <Suffix>Junior iii</Suffix>
+                    <Prefix>Nurse12345</Prefix>
+                </PrescriberAgent>
+                <Address>
+                    <AddressLine1>6344 S.R. 90</AddressLine1>
+                    <AddressLine2>Prescriber address line 2</AddressLine2>
+                    <City>Philadelphia</City>
+                    <State>PA</State>
+                    <ZipCode>19102</ZipCode>
+                </Address>
+                <Email>prescriber@prescriber.com</Email>
+                <PhoneNumbers>
+                    <Phone>
+                        <Number>2158520098</Number>
+                        <Qualifier>TE</Qualifier>
+                    </Phone>
+                    <Phone>
+                        <Number>2158520098</Number>
+                        <Qualifier>FX</Qualifier>
+                    </Phone>
+                </PhoneNumbers>
+            </Prescriber>
+            <Supervisor>
+                <Identification>
+                    <SPI>1572564792001</SPI>
+                    <FileID>R52FQB6KAJL7320BX8E3D</FileID>
+                    <StateLicenseNumber>KK416IH02WE6</StateLicenseNumber>
+                </Identification>
+                <ClinicName>This is the supervisors clinic</ClinicName>
+                <Name>
+                    <LastName>Supervisor Last name</LastName>
+                    <FirstName>Supervisor First Name</FirstName>
+                    <MiddleName>Supervisor Middle Name</MiddleName>
+                    <Suffix>Suffix 123</Suffix>
+                    <Prefix>Supervisor</Prefix>
+                </Name>
+                <Specialty>
+                    <Qualifier>AM</Qualifier>
+                    <SpecialtyCode>OTR</SpecialtyCode>
+                </Specialty> ￼
+                <PrescriberAgent>
+                    <LastName>Supervisor agent Last name</LastName>
+                    <FirstName>Supervisor agent First name</FirstName>
+                    <MiddleName>Supervisor agent middle name</MiddleName>
+                    <Suffix>Junior iii</Suffix>
+                    <Prefix>Supervisor</Prefix>
+                </PrescriberAgent>
+                <Address>
+                    <AddressLine1>Supervisor address line 1</AddressLine1>
+                    <AddressLine2>Supervisor address line 2</AddressLine2>
+                    <City>Supervisor city name</City>
+                    <State>VA</State>
+                    <ZipCode>803695432</ZipCode>
+                </Address>
+                <Email>Supervisor@emailaddress.com</Email>
+                <PhoneNumbers>
+                    <Phone>
+                        <Number>01141222123456789x1234567</Number>
+                        <Qualifier>HP</Qualifier>
+                    </Phone>
+                    <Phone>
+                        <Number>7032224441x1231</Number>
+                        <Qualifier>NP</Qualifier>
+                    </Phone>
+                </PhoneNumbers>
+            </Supervisor>
+            <Patient>
+                <Identification>
+                    <FileID>U801OQG2PQ7X3L3QO6VQDHT328E15W17DS4</FileID>
+                    <MutuallyDefined>patient zz 000</MutuallyDefined>
+                </Identification>
+                <Name>
+                    <LastName>Pt Last Name</LastName>
+                    <FirstName>First Name</FirstName>
+                    <MiddleName>Middle Name</MiddleName>
+                    <Suffix>Junior iii</Suffix>
+                    <Prefix>Patient II</Prefix>
+                </Name>
+                <Gender>F</Gender>
+                <DateOfBirth>19840101</DateOfBirth>
+                <Address>
+                    <AddressLine1>Patient address line 1</AddressLine1>
+                    <AddressLine2>Patient address line 2</AddressLine2>
+                    <City>Patient city name</City>
+                    <State>CO</State>
+                    <ZipCode>803615977</ZipCode>
+                </Address>
+                <Email>patientemailaddress@email.com</Email>
+                <PhoneNumbers>
+                    <Phone>
+                        <Number>57192121221234567890x4444</Number>
+                        <Qualifier>NP</Qualifier>
+                    </Phone>
+                </PhoneNumbers>
+            </Patient>
+            <MedicationPrescribed>
+                <DrugDescription>AVANDAMET 2MG/1000MG TABLET(ROSIGLITAZONE/METFOR MIN Hydrochloride tablet manufactured by GLAXOSMITHKLINE)</DrugDescription> ￼
+                <DrugCoded>
+                    <DosageForm>104</DosageForm>
+                    <Strength>Drug Strength Drug Strength Drug Strength Drug Stren gth Drug Strengthh</Strength>
+                    <StrengthUnits>DJ</StrengthUnits>
+                    <DrugDBCode>062IU65A08J35KT2BCF0L058Y2MD42MQOPM</DrugDBCode>
+                    <DrugDBCodeQualifier>MC</DrugDBCodeQualifier>
+                </DrugCoded>
+                <Quantity>
+                    <Qualifier>U2</Qualifier>
+                    <Value>123456789.12345</Value>
+                </Quantity>
+                <DaysSupply>501</DaysSupply>
+                <Sig>Take one tablet by mouth in the morning after you wake up ********and before you have any breakfast or any other diet or anything to drink</Sig>
+                <Note>THIS IS A TEST MESSAGE PLEASE DISREGARD. Acid reflux is a c ondition caused by hyper secretion of the acid in your stomach, the most freq uent manifestation is heartburn. You should take frequent meals bland diet</Note>
+                    <Refills>
+                        <Qualifier>R</Qualifier>
+                        <Quantity>101</Quantity>
+                    </Refills>
+                    <Substitutions>0</Substitutions>
+                    <WrittenDate>20070101</WrittenDate>
+                    <Diagnosis>
+                        <ClinicalInformationQualifier>PrescriberSupplied</ClinicalInfo rmationQualifier>
+                            <Primary>
+                                <Qualifier>ICD-9</Qualifier>
+                                <Value>303EV41V31Q52WU6S</Value>
+                            </Primary>
+                            <Secondary>
+                                <Qualifier>ICD-9</Qualifier>
+                                <Value>456HC48O73A13HS8Y</Value>
+                            </Secondary>
+                    </Diagnosis>
+                    <Diagnosis>
+                        <ClinicalInformationQualifier>PrescriberSupplied</ClinicalInformationQualifier>
+                        <Primary>
+                            <Qualifier>ICD-9</Qualifier>
+                            <Value>146DO81O08M03FL0R</Value>
+                        </Primary>
+                        <Secondary>
+                            <Qualifier>ICD-9</Qualifier>
+                            <Value>688JL30F24W70IH2B</Value>
+                        </Secondary>
+                    </Diagnosis>
+            </MedicationPrescribed>
+        </NewRx>
+    </Body>
+</Message>
