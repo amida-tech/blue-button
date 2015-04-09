@@ -190,7 +190,7 @@
                     <Substitutions>0</Substitutions>
                     <WrittenDate>20070101</WrittenDate>
                     <Diagnosis>
-                        <ClinicalInformationQualifier>PrescriberSupplied</ClinicalInfo rmationQualifier>
+                        <ClinicalInformationQualifier>PrescriberSupplied</ClinicalInformationQualifier>
                             <Primary>
                                 <Qualifier>ICD-9</Qualifier>
                                 <Value>303EV41V31Q52WU6S</Value>
