@@ -2,7 +2,14 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 "use strict";
 
 var parseCMS = require("blue-button-cms");
+var parseNCPDP;
 var _ = require('underscore');
+
+try {
+    parseNCPDP = require("blue-button-ncpdp").parseXml;
+} catch (ex) {
+    parseNCPDP = null;
+}
 
 var componentRouter = require("./parser/router").componentRouter;
 var xmlParser = require("blue-button-xml").xmlUtil;
@@ -63,7 +70,7 @@ function parseXml(doc, options, sensed) {
     var ret = componentParser.instance();
 
     ret.run(doc, options.sourceKey);
-    ret.cleanupTree(options.sourceKey); // first build the data objects up 
+    ret.cleanupTree(options.sourceKey); // first build the data objects up
     return sections({
         "data": ret.toJSON(),
         "meta": {
@@ -103,6 +110,9 @@ var parse = function (data, options) {
 
     if (sensed) {
         if (sensed.xml) {
+            if (sensed.type === 'ncpdp' && parseNCPDP) {
+                return parseNCPDP(sensed.xml);
+            }
             return parseXml(sensed.xml, options, sensed);
         } else if (sensed.json) {
             return sensed.json;
@@ -121,7 +131,7 @@ module.exports = {
     parseText: parseText
 };
 
-},{"../package.json":91,"./parser/router":42,"./sense.js":43,"blue-button-cms":"blue-button-cms","blue-button-xml":"blue-button-xml","underscore":90,"util":89}],2:[function(require,module,exports){
+},{"../package.json":98,"./parser/router":42,"./sense.js":43,"blue-button-cms":"blue-button-cms","blue-button-ncpdp":86,"blue-button-xml":"blue-button-xml","underscore":97,"util":96}],2:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -627,7 +637,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml","underscore":90}],9:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml","underscore":97}],9:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2272,7 +2282,7 @@ cleanup.augmentObservation = function () {
 
 },{"../common/cleanup":40}],31:[function(require,module,exports){
 arguments[4][4][0].apply(exports,arguments)
-},{"./shared":39,"/Work/git/blue-button/lib/parser/c32/demographics.js":4,"blue-button-xml":"blue-button-xml"}],32:[function(require,module,exports){
+},{"./shared":39,"/Users/Jacob/Documents/dev/blue-button/lib/parser/c32/demographics.js":4,"blue-button-xml":"blue-button-xml"}],32:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -3359,6 +3369,16 @@ var senseXml = function (doc) {
         return {
             type: "ccda"
         };
+    }
+
+    var ncpdpResult = xml.xpath(doc, '//Message/Body/*');
+    if (ncpdpResult && ncpdpResult.length > 0) {
+        try {
+            require.resolve("blue-button-ncpdp"); // check if the module is present
+            return {
+                type: "ncpdp"
+            };
+        } catch (ex) {}
     }
 
     return {
@@ -6619,7 +6639,19 @@ module.exports = OIDs = {
     },
     "2.16.840.1.113883.5.2": {
         name: "HL7 Marital Status",
-        uri: "http://hl7.org/codes/MaritalStatus#"
+        uri: "http://hl7.org/codes/MaritalStatus#",
+        table: {
+            "A": "Annulled",
+            "D": "Divorced",
+            "I": "Interlocutory",
+            "L": "Legally Separated",
+            "M": "Married",
+            "P": "Polygamous",
+            "S": "Never Married",
+            "T": "Domestic partner",
+            "U": "Unmarried",
+            "W": "Widowed"
+        }
     },
     "2.16.840.1.113883.5.25": {
         name: "Confidentiality Code",
@@ -9552,6 +9584,18 @@ module.exports = {
                 },
                 "date_time": {
                     "$ref": "cda_date"
+                },
+                "severity": {
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "$ref": "cda_coded_entry"
+                        },
+                        "interpretation": {
+                            "$ref": "cda_coded_entry"
+                        }
+                    },
+                    "additionalProperties": false
                 }
             },
             "additionalProperties": false
@@ -17602,7 +17646,7 @@ Report.prototype.addError = function (errorCode, params, subReports, schemaDescr
 module.exports = Report;
 
 }).call(this,require('_process'))
-},{"./Errors":76,"_process":87}],81:[function(require,module,exports){
+},{"./Errors":76,"_process":94}],81:[function(require,module,exports){
 "use strict";
 
 var Report              = require("./Report");
@@ -18818,6 +18862,176 @@ ZSchema.registerFormatter = function (/* formatterName, formatterFunction */) {
 module.exports = ZSchema;
 
 },{"./FormatValidators":77,"./JsonValidation":78,"./Polyfills":79,"./Report":80,"./SchemaCache":81,"./SchemaCompilation":82,"./SchemaValidation":83,"./Utils":84}],86:[function(require,module,exports){
+"use strict";
+
+exports.parseXml = require('./lib/parse');
+
+},{"./lib/parse":91}],87:[function(require,module,exports){
+var bbxml = require('blue-button-xml');
+var shared = require('./shared');
+var component = bbxml.component;
+var processor = bbxml.processor;
+
+// TODO figure out all of the codes
+
+var newRx = component.define('newRx')
+    .fields([
+        ['medication', '1:1', '//Message/Body/NewRx/MedicationPrescribed', shared.medicationPrescribed],
+        ['demographics', '1:1', '//Message/Body/NewRx/Patient', shared.patient]
+    ]);
+
+module.exports = newRx;
+
+},{"./shared":90,"blue-button-xml":"blue-button-xml"}],88:[function(require,module,exports){
+var bbxml = require('blue-button-xml');
+var shared = require('./shared');
+var component = bbxml.component;
+var processor = bbxml.processor;
+
+var refillResponse = component.define('refillResponse')
+    .fields([
+        ['medication', '1:1', '//Message/Body/RxRenewalResponse/MedicationPrescribed', shared.medicationPrescribed],
+        ['demographics', '1:1', '//Message/Body/RxRenewalResponse/Patient', shared.patient]
+    ]);
+
+module.exports = refillResponse;
+
+},{"./shared":90,"blue-button-xml":"blue-button-xml"}],89:[function(require,module,exports){
+var bbxml = require('blue-button-xml');
+var shared = require('./shared');
+var component = bbxml.component;
+var processor = bbxml.processor;
+
+var medHistory = component.define('medHistory')
+    .fields([
+        ['medication', '1..*', '//Message/Body/RxHistoryResponse/MedicationPrescribed', shared.medicationPrescribed],
+        ['demographics', '1:1', '//Message/Body/RxHistoryResponse/Patient', shared.patient]
+    ]);
+
+module.exports = medHistory;
+
+},{"./shared":90,"blue-button-xml":"blue-button-xml"}],90:[function(require,module,exports){
+var bbxml = require('blue-button-xml');
+
+var component = bbxml.component;
+var processor = bbxml.processor;
+
+var shared = module.exports = {};
+
+// Demographics
+var address = shared.address = component.define('address')
+    .fields([
+        ['street_lines', '0..4', '*[contains(local-name(), "AddressLine")]/text()'],
+        ['city', '1..1', 'City/text()'],
+        ['state', '0..1', 'State/text()'],
+        ['zip', '0..1', 'ZipCode/text()']
+    ]);
+
+// Name
+var nameComp = shared.nameComp = component.define('nameComp')
+    .fields([
+        ['last', '0..1', 'LastName/text()'],
+        ['first', '0..1', 'FirstName/text()'],
+        ['middle', '0..1', 'MiddleName/text()']
+    ]);
+
+// Pharmacy
+var pharmacy = shared.pharmacy = component.define('pharmacy')
+    .fields([
+        ['performer.address', '0..1', 'Address', address],
+        ['performer.organization.name', '0..1', 'StoreName/text()']
+        // TODO communication
+    ]);
+
+// Prescriber
+// TODO NPI
+
+// Patient
+var patient = shared.patient = component.define('patient')
+    .fields([
+        ['name', '1..1', 'Name', nameComp],
+        ['dob', '0..1', 'DateOfBirth/Date/text()'],
+        ['gender', '0..1', 'Gender/text()'],
+        ['addresses', '0..1', 'Address', address]
+        // TODO communication
+    ]);
+
+// Medication Prescribed
+var medicationPrescribed = shared.medicationPrescribed = component.define('medicationPrescribed')
+    .fields([
+        ['sig', '1..1', 'Directions/text()'],
+        ['product.product.name', '1..1', 'MedicationPrescribed/DrugDescription/text()'],
+        ['product.product.code', '1..1', 'MedicationPrescribed/DrugCoded/ProductCode/text()'],
+        ['supply.date_time.low.date', '0..1', 'WrittenDate/Date/text()', processor.asTimestamp],
+        ['supply.repeatNumber', '0..1', 'Refills/Value/text()'],
+        ['supply.quantity', '0..1', 'Quantity/Value/text()'],
+        ['supply.author', '0..1', '../Prescriber', nameComp],
+        ['drug_vehicle.code', '0..1', 'MedicationPrescribed/DrugCoded/FormCode/text()'],
+        ['dispense', '0..1', '../Pharmacy', shared.pharmacy],
+    ]);
+
+// Address
+
+// Communication numbers
+
+},{"blue-button-xml":"blue-button-xml"}],91:[function(require,module,exports){
+var sense = require('./sense');
+var xmlUtil = require('blue-button-xml').xmlUtil;
+
+var messageTypes = {
+    'NewRx': newRx = require('./components/newrx'),
+    'RxRenewalResponse': refillResponse = require('./components/refres'),
+    'RxHistoryResponse': medHistory = require('./components/rxhist')
+};
+
+// TODO split sense and parse appropriately, clarify doc/file notation
+
+function parse(xml) {
+
+    var doc;
+
+    try {
+        doc = xmlUtil.parse(xml);
+    } catch (ex) {
+        return ex;
+    }
+
+    var type = sense(doc);
+    var comp = messageTypes[type]; // TODO invalid message types
+
+    var instance = comp.run(doc);
+    var r = instance.toJSON(); // TODO error handling
+    return r;
+}
+
+module.exports = parse;
+
+},{"./components/newrx":87,"./components/refres":88,"./components/rxhist":89,"./sense":92,"blue-button-xml":"blue-button-xml"}],92:[function(require,module,exports){
+"use strict";
+
+var xmlUtil = require("blue-button-xml").xmlUtil;
+
+//Sense document type based on XML object
+module.exports = function senseXml(doc) {
+
+    if (!doc || typeof (doc) !== "object") {
+        //TODO: throw a proper error here
+        return null;
+    }
+
+    // TODO deeper error handling
+    var messageType;
+
+    try {
+        messageType = xmlUtil.xpath(doc, 'name(//Message/Body/*)');
+    } catch (ex) {
+        return ex;
+    }
+
+    return messageType;
+};
+
+},{"blue-button-xml":"blue-button-xml"}],93:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -18842,7 +19056,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],87:[function(require,module,exports){
+},{}],94:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -18930,14 +19144,14 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 
-},{}],88:[function(require,module,exports){
+},{}],95:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],89:[function(require,module,exports){
+},{}],96:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -19527,7 +19741,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":88,"_process":87,"inherits":86}],90:[function(require,module,exports){
+},{"./support/isBuffer":95,"_process":94,"inherits":93}],97:[function(require,module,exports){
 //     Underscore.js 1.6.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -20872,10 +21086,10 @@ function hasOwnProperty(obj, prop) {
   }
 }).call(this);
 
-},{}],91:[function(require,module,exports){
+},{}],98:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.5.0-beta.2",
+  "version": "1.5.0-beta.3",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -20901,8 +21115,8 @@ module.exports={
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "blue-button-meta": "~1.5.0",
-    "blue-button-model": "~1.5.0",
+    "blue-button-meta": "~1.5.0-beta",
+    "blue-button-model": "~1.5.0-beta",
     "blue-button-xml": "~1.3.0",
     "blue-button-cms": "~1.3.0",
     "underscore": "~1.6.0",
