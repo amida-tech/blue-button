@@ -15,6 +15,7 @@ describe('sense.js test', function () {
     var text = "";
     var broken_xml = "";
     var va = {};
+    var ncpdp = "";
 
     before(function () {
         ccda = fs.readFileSync('./test/fixtures/sense/CCD.example.xml').toString();
@@ -38,6 +39,8 @@ describe('sense.js test', function () {
         va["12_5"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_5.txt').toString();
         va["12_5_1"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_5_1.txt').toString();
         va["12_6"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_6.txt').toString();
+
+        ncpdp = fs.readFileSync('./test/fixtures/sense/newrx.xml').toString();
     });
 
     it('should return NULL for no string with data passed', function () {
@@ -98,6 +101,13 @@ describe('sense.js test', function () {
     it('should return PDF for PDF file input', function () {
         assert.equal('pdf', senseString(pdf).type);
     });
+
+    try {
+        require.resolve("blue-button-ncpdp");
+        it('should return NCPDP for NCPDP file input', function () {
+            assert.equal('ncpdp', senseString(ncpdp).type);
+        });
+    } catch (ex) {}
 
     it('should return FORMAT-X for format X text input', function () {
         assert.equal('format-x', senseString(format_x).type);

@@ -2,7 +2,14 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 "use strict";
 
 var parseCMS = require("blue-button-cms");
+var parseNCPDP;
 var _ = require('underscore');
+
+try {
+    parseNCPDP = require("blue-button-ncpdp").parseXml;
+} catch (ex) {
+    parseNCPDP = null;
+}
 
 var componentRouter = require("./parser/router").componentRouter;
 var xmlParser = require("blue-button-xml").xmlUtil;
@@ -63,7 +70,7 @@ function parseXml(doc, options, sensed) {
     var ret = componentParser.instance();
 
     ret.run(doc, options.sourceKey);
-    ret.cleanupTree(options.sourceKey); // first build the data objects up 
+    ret.cleanupTree(options.sourceKey); // first build the data objects up
     return sections({
         "data": ret.toJSON(),
         "meta": {
@@ -103,6 +110,9 @@ var parse = function (data, options) {
 
     if (sensed) {
         if (sensed.xml) {
+            if (sensed.type === 'ncpdp' && parseNCPDP) {
+                return parseNCPDP(sensed.xml);
+            }
             return parseXml(sensed.xml, options, sensed);
         } else if (sensed.json) {
             return sensed.json;
@@ -121,7 +131,7 @@ module.exports = {
     parseText: parseText
 };
 
-},{"../package.json":91,"./parser/router":42,"./sense.js":43,"blue-button-cms":"blue-button-cms","blue-button-xml":"blue-button-xml","underscore":90,"util":89}],2:[function(require,module,exports){
+},{"../package.json":91,"./parser/router":42,"./sense.js":43,"blue-button-cms":"blue-button-cms","blue-button-ncpdp":undefined,"blue-button-xml":"blue-button-xml","underscore":90,"util":89}],2:[function(require,module,exports){
 "use strict";
 
 var component = require("blue-button-xml").component;
@@ -2272,7 +2282,7 @@ cleanup.augmentObservation = function () {
 
 },{"../common/cleanup":40}],31:[function(require,module,exports){
 arguments[4][4][0].apply(exports,arguments)
-},{"./shared":39,"/Work/git/blue-button/lib/parser/c32/demographics.js":4,"blue-button-xml":"blue-button-xml"}],32:[function(require,module,exports){
+},{"./shared":39,"/Users/Jacob/Documents/dev/blue-button/lib/parser/c32/demographics.js":4,"blue-button-xml":"blue-button-xml"}],32:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -3359,6 +3369,16 @@ var senseXml = function (doc) {
         return {
             type: "ccda"
         };
+    }
+
+    var ncpdpResult = xml.xpath(doc, '//Message/Body/*');
+    if (ncpdpResult && ncpdpResult.length > 0) {
+        try {
+            require.resolve("blue-button-ncpdp"); // check if the module is present
+            return {
+                type: "ncpdp"
+            };
+        } catch (ex) {}
     }
 
     return {
@@ -6619,7 +6639,19 @@ module.exports = OIDs = {
     },
     "2.16.840.1.113883.5.2": {
         name: "HL7 Marital Status",
-        uri: "http://hl7.org/codes/MaritalStatus#"
+        uri: "http://hl7.org/codes/MaritalStatus#",
+        table: {
+            "A": "Annulled",
+            "D": "Divorced",
+            "I": "Interlocutory",
+            "L": "Legally Separated",
+            "M": "Married",
+            "P": "Polygamous",
+            "S": "Never Married",
+            "T": "Domestic partner",
+            "U": "Unmarried",
+            "W": "Widowed"
+        }
     },
     "2.16.840.1.113883.5.25": {
         name: "Confidentiality Code",
@@ -9552,6 +9584,18 @@ module.exports = {
                 },
                 "date_time": {
                     "$ref": "cda_date"
+                },
+                "severity": {
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "$ref": "cda_coded_entry"
+                        },
+                        "interpretation": {
+                            "$ref": "cda_coded_entry"
+                        }
+                    },
+                    "additionalProperties": false
                 }
             },
             "additionalProperties": false
@@ -20875,7 +20919,7 @@ function hasOwnProperty(obj, prop) {
 },{}],91:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.5.0-beta.2",
+  "version": "1.5.0-beta.4",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -20901,8 +20945,8 @@ module.exports={
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "blue-button-meta": "~1.5.0",
-    "blue-button-model": "~1.5.0",
+    "blue-button-meta": "~1.5.0-beta",
+    "blue-button-model": "~1.5.0-beta",
     "blue-button-xml": "~1.3.0",
     "blue-button-cms": "~1.3.0",
     "underscore": "~1.6.0",
