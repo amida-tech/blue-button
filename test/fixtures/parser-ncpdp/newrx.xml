@@ -151,7 +151,9 @@
                     <Prefix>Patient II</Prefix>
                 </Name>
                 <Gender>F</Gender>
-                <DateOfBirth>19840101</DateOfBirth>
+                <DateOfBirth>
+                    <Date>1984-01-01</Date>
+                </DateOfBirth>
                 <Address>
                     <AddressLine1>Patient address line 1</AddressLine1>
                     <AddressLine2>Patient address line 2</AddressLine2>
