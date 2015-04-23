@@ -1,6 +1,6 @@
 {
   "name": "blue-button",
-  "version": "1.5.0-beta.4",
+  "version": "1.5.0-beta.5",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -19,6 +19,10 @@
     {
       "name": "Afsin Ustundag",
       "email": "afsin.ustundag@us.pwc.com"
+    },
+    {
+      "name": "Matt Martz",
+      "email": "matt.martz@gmail.com"
     }
   ],
   "license": "Apache-2.0",
