@@ -30,8 +30,8 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "blue-button-meta": "~1.5.0-beta.4",
-    "blue-button-model": "1.5.0-beta.3",
+    "blue-button-meta": "amida-tech/blue-button-meta#martz-npi",
+    "blue-button-model": "amida-tech/blue-button-model#martz-npi",
     "blue-button-xml": "~1.3.0",
     "blue-button-cms": "~1.3.0",
     "underscore": "~1.6.0",
