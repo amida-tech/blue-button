@@ -16,7 +16,7 @@
                     <FileID>UD75G7314W47U365</FileID>
                     <MutuallyDefined>ZZZZZZ</MutuallyDefined>
                 </Identification>
-                <StoreName>QA SureScripts Test 4.20</StoreName>
+                <BusinessName>QA SureScripts Test 4.20</BusinessName>
                 <Pharmacist>
                     <LastName>Pharmacist last name</LastName>
                     <FirstName>Pharmacist First name</FirstName>
@@ -172,7 +172,7 @@
                 <DrugCoded>
                     <DosageForm>104</DosageForm>
                     <Strength>Drug Strength Drug Strength Drug Strength Drug Stren gth Drug Strengthh</Strength>
-                    <StrengthUnits>DJ</StrengthUnits>
+                    <StrengthCode>DJ</StrengthCode>
                     <DrugDBCode>062IU65A08J35KT2BCF0L058Y2MD42MQOPM</DrugDBCode>
                     <DrugDBCodeQualifier>MC</DrugDBCodeQualifier>
                 </DrugCoded>
