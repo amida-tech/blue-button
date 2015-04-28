@@ -33,7 +33,7 @@
     "blue-button-meta": "amida-tech/blue-button-meta#martz-npi",
     "blue-button-model": "amida-tech/blue-button-model#martz-npi",
     "blue-button-xml": "~1.5.0-beta",
-    "blue-button-cms": "~1.3.1",
+    "blue-button-cms": "amida-tech/blue-button-cms#martz-npi",
     "underscore": "~1.8.3",
     "winston": "~1.0.0"
   },
