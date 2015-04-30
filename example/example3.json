@@ -1219,7 +1219,7 @@
                     "code_system_name": "SNOMED CT"
                 }
             },
-            "performer": [{
+            "performers": [{
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.9999.456",
                     "extension": "2981823"
@@ -1287,7 +1287,7 @@
                 "code": "CR",
                 "code_system_name": "OID 2.16.840.1.113883.5.7"
             },
-            "performer": [{
+            "performers": [{
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5",
                     "extension": "1234"
@@ -1354,7 +1354,7 @@
                 "code": "CR",
                 "code_system_name": "OID 2.16.840.1.113883.5.7"
             },
-            "performer": [{
+            "performers": [{
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
                     "extension": "1234"

@@ -862,7 +862,7 @@
                 "code": "appropriate_code",
                 "code_system_name": "OID 2.16.840.1.113883.3.88.12.3221.8.9"
             }],
-            "performer": [{
+            "performers": [{
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5.9999.456",
                     "identifier_type": "2981823"
@@ -925,7 +925,7 @@
                 "code": "416949008",
                 "code_system_name": "SNOMED CT"
             }],
-            "performer": [{
+            "performers": [{
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19.5",
                     "identifier_type": "1234"
@@ -987,7 +987,7 @@
                     "precision": "day"
                 }
             },
-            "performer": [{
+            "performers": [{
                 "identifiers": [{
                     "identifier": "2.16.840.1.113883.19",
                     "identifier_type": "1234"

@@ -2282,7 +2282,7 @@ cleanup.augmentObservation = function () {
 
 },{"../common/cleanup":40}],31:[function(require,module,exports){
 arguments[4][4][0].apply(exports,arguments)
-},{"./shared":39,"blue-button-xml":"blue-button-xml","dup":4}],32:[function(require,module,exports){
+},{"./shared":39,"/amida/bb-npi/lib/parser/c32/demographics.js":4,"blue-button-xml":"blue-button-xml"}],32:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -25224,6 +25224,7 @@ ZSchema.prototype.validateSchema = function (schema) {
     return report.isValid();
 };
 ZSchema.prototype.validate = function (json, schema, callback) {
+    var foundError = false;
     var whatIs = Utils.whatIs(schema);
     if (whatIs !== "string" && whatIs !== "object") {
         var e = new Error("Invalid .validate call - schema must be an string or object but " + whatIs + " was passed!");
@@ -25240,19 +25241,27 @@ ZSchema.prototype.validate = function (json, schema, callback) {
 
     schema = SchemaCache.getSchema.call(this, report, schema);
 
-    var compiled = SchemaCompilation.compileSchema.call(this, report, schema);
+    var compiled = false;
+    if (!foundError) {
+        compiled = SchemaCompilation.compileSchema.call(this, report, schema);
+    }
     if (!compiled) {
         this.lastReport = report;
-        return false;
+        foundError = true;
     }
 
-    var validated = SchemaValidation.validateSchema.call(this, report, schema);
+    var validated = false;
+    if (!foundError) {
+        validated = SchemaValidation.validateSchema.call(this, report, schema);
+    }
     if (!validated) {
         this.lastReport = report;
-        return false;
+        foundError = true;
     }
 
-    JsonValidation.validate.call(this, report, schema, json);
+    if (!foundError) {
+        JsonValidation.validate.call(this, report, schema, json);
+    }
 
     if (callback) {
         report.processAsyncTasks(this.options.asyncTimeout, callback);
@@ -25723,40 +25732,69 @@ if (typeof Object.create === 'function') {
 // shim for using process in browser
 
 var process = module.exports = {};
-var queue = [];
-var draining = false;
 
-function drainQueue() {
-    if (draining) {
-        return;
+process.nextTick = (function () {
+    var canSetImmediate = typeof window !== 'undefined'
+    && window.setImmediate;
+    var canMutationObserver = typeof window !== 'undefined'
+    && window.MutationObserver;
+    var canPost = typeof window !== 'undefined'
+    && window.postMessage && window.addEventListener
+    ;
+
+    if (canSetImmediate) {
+        return function (f) { return window.setImmediate(f) };
     }
-    draining = true;
-    var currentQueue;
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        var i = -1;
-        while (++i < len) {
-            currentQueue[i]();
-        }
-        len = queue.length;
+
+    var queue = [];
+
+    if (canMutationObserver) {
+        var hiddenDiv = document.createElement("div");
+        var observer = new MutationObserver(function () {
+            var queueList = queue.slice();
+            queue.length = 0;
+            queueList.forEach(function (fn) {
+                fn();
+            });
+        });
+
+        observer.observe(hiddenDiv, { attributes: true });
+
+        return function nextTick(fn) {
+            if (!queue.length) {
+                hiddenDiv.setAttribute('yes', 'no');
+            }
+            queue.push(fn);
+        };
     }
-    draining = false;
-}
-process.nextTick = function (fun) {
-    queue.push(fun);
-    if (!draining) {
-        setTimeout(drainQueue, 0);
+
+    if (canPost) {
+        window.addEventListener('message', function (ev) {
+            var source = ev.source;
+            if ((source === window || source === null) && ev.data === 'process-tick') {
+                ev.stopPropagation();
+                if (queue.length > 0) {
+                    var fn = queue.shift();
+                    fn();
+                }
+            }
+        }, true);
+
+        return function nextTick(fn) {
+            queue.push(fn);
+            window.postMessage('process-tick', '*');
+        };
     }
-};
+
+    return function nextTick(fn) {
+        setTimeout(fn, 0);
+    };
+})();
 
 process.title = 'browser';
 process.browser = true;
 process.env = {};
 process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
 
 function noop() {}
 
@@ -25777,7 +25815,6 @@ process.cwd = function () { return '/' };
 process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
-process.umask = function() { return 0; };
 
 },{}],92:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
