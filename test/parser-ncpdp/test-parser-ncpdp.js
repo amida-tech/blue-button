@@ -34,5 +34,6 @@ describe('parser.js', function () {
 
             done();
         });
-    } catch (ex) {}
+    } catch (ex) {
+    }
 });
