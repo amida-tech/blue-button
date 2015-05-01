@@ -1,6 +1,6 @@
 {
   "name": "blue-button",
-  "version": "1.5.0-beta.2",
+  "version": "1.5.0-beta.5",
   "main": "dist/blue-button.js",
   "license": "Apache-2.0",
   "ignore": [
@@ -11,7 +11,7 @@
     "!LICENSE"
   ],
   "dependencies": {
-    "blue-button-xml": "~1.3.1",
-    "blue-button-cms": "~1.3.1"
+    "blue-button-xml": "~1.5.0-beta",
+    "blue-button-cms": "~1.5.0-beta.1"
   }
 }

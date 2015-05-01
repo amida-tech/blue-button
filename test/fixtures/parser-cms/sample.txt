@@ -20,23 +20,23 @@ Source: MyMedicare.gov
 
 
 
-Name: JOHN DOE
+Name: Isabella Isa Jones
 
-Date of Birth: 01/01/1910
+Date of Birth: 05/01/1975
 
-Address Line 1: 123 ANY ROAD
+Address Line 1: 1357 Amber Drive
 
 Address Line 2: 
 
-City: ANYTOWN
+City: Beaverton
 
-State: VA
+State: OR
 
-Zip: 00001
+Zip: 97867
 
-Phone Number: 123-456-7890
+Phone Number: (816)276-6909
 
-Email: JOHNDOE@example.com
+Email: isabella@amida.com
 
 Part A Effective Date: 01/01/2012
 
@@ -114,19 +114,19 @@ Source: Self-Entered
 
 
 
-Condition Name: Arthritis
+Condition Name: Pneumonia
 
-Medical Condition Start Date: 08/09/2005
+Medical Condition Start Date: 01/03/2008
 
-Medical Condition End Date: 02/28/2011
+Medical Condition End Date: 01/03/2008
 
 
 
 Condition Name: Asthma
 
-Medical Condition Start Date: 01/25/2008
+Medical Condition Start Date: 01/03/2007
 
-Medical Condition End Date: 01/25/2010
+Medical Condition End Date: 01/03/2008
 
 
 
@@ -139,45 +139,35 @@ Source: Self-Entered
 
 
 
-Allergy Name: Antibotic
+Allergy Name: ALLERGENIC EXTRACT, PENICILLIN
 
 Type: Drugs
 
-Reaction: Vomiting
+Reaction: Nausea
 
-Severity: Severe
+Severity: Mild
 
 Diagnosed: Yes
 
 Treatment: Allergy Shots
 
-First Episode Date: 01/08/1926
-
-Last Episode Date: 03/13/1955
-
-Last Treatment Date: 09/28/1949
-
-Comments: Erythromycin 
+First Episode Date: 05/01/2007
 
 
 
-Allergy Name: Grasses
+Allergy Name: Codeine
 
-Type: Environmental
+Type: Drugs
 
-Reaction: Sneezing
+Reaction: Wheezing
 
-Severity: Severe
+Severity: Mild
 
 Diagnosed: Yes
 
 Treatment: Avoidance
 
-First Episode Date: 05/13/1973
-
-Last Episode Date: 07/20/1996
-
-Last Treatment Date: 09/27/2008
+First Episode Date: 05/01/2006
 
 Comments: 
 
@@ -207,17 +197,25 @@ Source: Self-Entered
 
 
 
-Immunization Name: Varicella/Chicken Pox
+Immunization Name: Influenza virus vaccine
 
-Date Administered:04/21/2002
+Date Administered: 11/01/1999
 
-Method: Nasal Spray(mist)
+Method: Intramuscular injection
+
+
+
+Immunization Name: Influenza virus vaccine
+
+Date Administered: 12/15/1998
+
+Method: Intramuscular injection
 
 Were you vaccinated in the US: 
 
-Comments: congestion
+Comments: 
 
-Booster 1 Date: 02/02/1990
+Booster 1 Date: 
 
 Booster 2 Date: 
 
@@ -225,11 +223,29 @@ Booster 3 Date:
 
 
 
-Immunization Name: typhoid
+Immunization Name: Pneumococcal polysaccharide vaccine
 
-Date Administered:01/02/2009
+Date Administered: 12/15/1998
 
-Method: Injection
+Method: Intramuscular injection
+
+Were you vaccinated in the US: 
+
+Comments: 
+
+Booster 1 Date: 
+
+Booster 2 Date: 
+
+Booster 3 Date: 
+
+
+
+Immunization Name: Tetanus and diphtheria toxoids - preservative free
+
+Date Administered: 12/15/1998
+
+Method: Intramuscular injection
 
 Were you vaccinated in the US: 
 
@@ -252,18 +268,18 @@ Source: Self-Entered
 
 
 
-Test/Lab Type: Glucose Level
-Date Taken: 03/21/2008
+Test/Lab Type: CBC WO DIFFERENTIAL
+Date Taken: 03/23/2000
 
-Administered by: AnyLab
+Administered by: QUEST DIAGNOSTICS
 
 Requesting Doctor: Dr. Smith
 
-Reason Test/Lab Requested: Ongoing elevated glucose
+Reason Test/Lab Requested: 
 
-Results: 135, 170, 150, 120
+Results: 13.2, 6.7, 123
 
-Comments: Fasting, hour 1, hour 2, hour 3
+Comments: HGB, WBC, PLT
 
 
 
@@ -278,25 +294,36 @@ Source: Self-Entered
 
 Vital Statistic Type: Blood Pressure
 
-Date: 07/22/2011
+Date: 11/14/1999
 
 Time: 3:00 PM
 
-Reading: 120/80
+Reading: 132/80
 
-Comments: 
+Comments: mmHg
 
 
 
-Vital Statistic Type: Glucose
+Vital Statistic Type: Patient Body Weight - Measured
 
-Date: 03/20/2012
+Date: 11/14/1999
 
 Time: 12:00 PM
 
-Reading: 110
+Reading: 86
 
 Comments: 
+
+
+Vital Statistic Type: Height
+
+Date: 11/14/1999
+
+Time: 12:00 PM
+
+Reading: 177
+
+Comments: cm
 
 
 
@@ -347,9 +374,17 @@ Source: Self-Entered
 
 
 
+Drug Name: Proventil HFA INH 1MG/ACTUAT
+
+Supply: Daily
+
+Orig Drug Entry: Proventil HFA
+
+
+
 Drug Name: Aspirin
 
-Supply: Dialy
+Supply: Daily
 
 Orig Drug Entry: Aspirin
 
@@ -481,9 +516,9 @@ Contract ID/Plan ID: H9999/9999
 
 Plan Period: 09/01/2011 - current
 
-Plan Name: A Medicare Plan Plus (HMO)
+Plan Name: Aetna Medicare Value Plan (HMO)
 
-Marketing Name: HealthCare Payer
+Marketing Name: Aetna Medicare
 
 Plan Address: 123 Any Road Anytown PA 00003
 
@@ -495,9 +530,9 @@ Contract ID/Plan ID: S9999/000
 
 Plan Period: 01/01/2010 - current
 
-Plan Name: A Medicare Rx Plan (PDP)
+Plan Name: AARP MedicareRx Saver Plus (PDP)
 
-Marketing Name: Another HealthCare Payer
+Marketing Name: UnitedHealthcare
 
 Plan Address: 123 Any Road Anytown PA 00003
 
@@ -520,65 +555,6 @@ Employer Subsidy Start Date: 01/01/2011
 Employer Subsidy End Date: 12/31/2011
 
 
---------------------------------
-Primary Insurance
-
---------------------------------
-
-Source: MyMedicare.gov
-
-
-
-MSP Type: End stage Renal Disease (ESRD)
-
-Policy Number: 1234567890
-
-Insurer Name: Insurer1
-
-Insurer Address: PO BOX 0000 Anytown, CO 00002-0000
-
-Effective Date: 01/01/2011
-
-Termination Date: 09/30/2011
-
-
-
-MSP Type: End stage Renal Disease (ESRD)
-
-Policy Number: 12345678901
-
-Insurer Name: Insurer2
-
-Insurer Address: 0000 Any ROAD ANYWHERE, VA 00000-0000
-
-Effective Date: 01/01/2010
-
-Termination Date: 12/31/2010
-
-
-
---------------------------------
-Other Insurance
-
---------------------------------
-
-Source: MyMedicare.gov
-
-
-
-MSP Type: 
-
-Policy Number: 00001
-
-Insurer Name: Insurer
-
-Insurer Address: 00 Address STREET ANYWHERE, PA 00000
-
-Effective Date: 10/01/1984
-
-Termination Date: 11/30/2008
-
-
 
 --------------------------------
 Claim Summary
@@ -589,32 +565,30 @@ Source: MyMedicare.gov
 
 
 
-Claim Number: 1234567890000
+Claim Number: 4830293857102
 
-Provider: No Information Available 
-Provider Billing Address:    
+Provider: SAFEWAY INC
 
-Service Start Date: 10/18/2012
+Provider Billing Address: PO BOX 742382 SAFEWAY INC PHARMACY LOS ANGELES CA 900742382
 
-Service End Date: 
+Service Start Date: 10/09/2013
 
-Amount Charged: $60.00
+Service End Date: 10/09/2013
 
-Medicare Approved: $34.00
+Amount Charged: $57.20
 
-Provider Paid: $27.20
+Medicare Approved: $57.20
 
-You May be Billed: $6.80
+Provider Paid: $57.20
+
+You May be Billed: $0.00
 
 Claim Type: PartB
 
-Diagnosis Code 1: 3534
-Diagnosis Code 2: 7393
-Diagnosis Code 3: 7392
-Diagnosis Code 4: 3533 
+Diagnosis Code 1: V0481
 
 --------------------------------
-Claim Lines for Claim Number: 1234567890000
+Claim Lines for Claim Number: 4830293857102
 
 --------------------------------
 
@@ -622,84 +596,11 @@ Claim Lines for Claim Number: 1234567890000
 
 Line number:  1
 
-Date of Service From:  10/18/2012
+Date of Service From:  11/01/1999
 
-Date of Service To:  10/18/2012
+Date of Service To:  11/01/1999
 
-Procedure Code/Description:  98941 - Chiropractic Manipulative Treatment (Cmt); Spinal, Three To Four Regions
-
-Modifier 1/Description:  AT - Acute Treatment (This Modifier Should Be Used When Reporting Service 98940, 98941, 98942)
-
-Modifier 2/Description:  
-
-Modifier 3/Description:  
-
-Modifier 4/Description:  
-
-Quantity Billed/Units:  1
-
-Submitted Amount/Charges:  $60.00
-
-Allowed Amount:  $34.00
-
-Non-Covered:  $26.00
-
-Place of Service/Description:  11 - Office
-
-Type of Service/Description:  1 - Medical Care
-
-Rendering Provider No:  0000001
-
-Rendering Provider NPI:  123456789
-
-
-
---------------------------------
-
-
-
---------------------------------
-
-
-
-Claim Number: 12345678900000VAA
-
-Provider: No Information Available
- 
-Provider Billing Address:    
-
-Service Start Date: 09/22/2012
-
-Service End Date: 
-
-Amount Charged: $504.80
-
-Medicare Approved: $504.80
-
-Provider Paid: $126.31
-
-You May be Billed: $38.84
-
-Claim Type: Outpatient
-
-Diagnosis Code 1: 56400
-Diagnosis Code 2: 7245
-Diagnosis Code 3: V1588
-
---------------------------------
-Claim Lines for Claim Number: 12345678900000VAA
-
---------------------------------
-
-
-
-Line number:  1
-
-Date of Service From:  09/22/2012
-
-Revenue Code/Description: 0250 - General Classification PHARMACY
-
-Procedure Code/Description:  
+Procedure Code/Description:  90662 - Vaccine For Influenza For Injection Into Muscle
 
 Modifier 1/Description:  
 
@@ -711,21 +612,29 @@ Modifier 4/Description:
 
 Quantity Billed/Units:  1
 
-Submitted Amount/Charges:  $14.30
+Submitted Amount/Charges:  $31.90
 
-Allowed Amount:  $14.30
+Allowed Amount:  $31.90
 
 Non-Covered:  $0.00
+
+Place of Service/Description:  60 - Mass Immunization Center
+
+Type of Service/Description:  V - Pneumococcal/Flu Vaccine
+
+Rendering Provider No:  PHC011
+
+Rendering Provider NPI:  4839202847
 
 
 
 Line number:  2
 
-Date of Service From:  09/22/2012
+Date of Service From:  11/01/1999
 
-Revenue Code/Description: 0320 - General Classification DX X-RAY
+Date of Service To:  11/01/1999
 
-Procedure Code/Description:  74020 - Radiologic Examination, Abdomen; Complete, Including Decubitus And/Or Erect Views
+Procedure Code/Description:  G0008 - Administration Of Influenza Virus Vaccine
 
 Modifier 1/Description:  
 
@@ -737,47 +646,135 @@ Modifier 4/Description:
 
 Quantity Billed/Units:  1
 
-Submitted Amount/Charges:  $175.50
+Submitted Amount/Charges:  $25.30
 
-Allowed Amount:  $175.50
+Allowed Amount:  $25.30
 
 Non-Covered:  $0.00
+
+Place of Service/Description:  60 - Mass Immunization Center
+
+Type of Service/Description:  V - Pneumococcal/Flu Vaccine
+
+Rendering Provider No:  PHC011
+
+Rendering Provider NPI:  4839202847
+
+
+
+--------------------------------
+
+
+
+--------------------------------
+
+
+
+Claim Number: 5834920430293
+
+Provider: QUEST DIAGNOSTICS INC MD
+
+Provider Billing Address: 1901 SULPHUR SPRING ROAD BALTIMORE MD 212272997
+
+Service Start Date: 03/23/2000
+
+Service End Date: 03/23/2000
+
+Amount Charged: $308.62
+
+Medicare Approved: $308.62
+
+Provider Paid: $38.89
+
+You May be Billed: $269.73
+
+Claim Type: PartB
+
+Diagnosis Code 1: 2720
+Diagnosis Code 2: 4019
+
+--------------------------------
+Claim Lines for Claim Number: 5834920430293
+
+--------------------------------
+
+
+
+Line number:  1
+
+Date of Service From:  03/23/2000
+
+Date of Service To:  03/23/2000
+
+Procedure Code/Description:  36415 - Insertion Of Needle Into Vein For Collection Of Blood Sample
+
+Modifier 1/Description:  
+
+Modifier 2/Description:  
+
+Modifier 3/Description:  
+
+Modifier 4/Description:  
+
+Quantity Billed/Units:  1
+
+Submitted Amount/Charges:  $18.87
+
+Allowed Amount:  $3.00
+
+Non-Covered:  $15.87
+
+Place of Service/Description:  81 - Independent Laboratory
+
+Type of Service/Description:  5 - Diagnostic Lab
+
+Rendering Provider No:  W520
+
+Rendering Provider NPI:  5493844123
+
+
+
+Line number:  2
+
+Date of Service From:  03/23/2000
+
+Date of Service To:  03/23/2000
+
+Procedure Code/Description:  80053 - Blood Test, Comprehensive Group Of Blood Chemicals
+
+Modifier 1/Description:  QP - Documentation Is On File Showing That The Laboratory Test(S) Was Ordered Individually Or Ordere
+
+Modifier 2/Description:  
+
+Modifier 3/Description:  
+
+Modifier 4/Description:  
+
+Quantity Billed/Units:  1
+
+Submitted Amount/Charges:  $80.98
+
+Allowed Amount:  $8.84
+
+Non-Covered:  $72.14
+
+Place of Service/Description:  81 - Independent Laboratory
+
+Type of Service/Description:  5 - Diagnostic Lab
+
+Rendering Provider No:  W520
+
+Rendering Provider NPI:  5493844123
 
 
 
 Line number:  3
 
-Date of Service From:  09/22/2012
+Date of Service From:  03/23/2000
 
-Revenue Code/Description: 0450 - General Classification EMERG ROOM
+Date of Service To:  03/23/2000
 
-Procedure Code/Description:  99283 - Emergency Department Visit For The Evaluation And Management Of A Patient, Which Requires Th
-
-Modifier 1/Description:  25 - Significant, Separately Identifiable Evaluation And Management Service By The Same Physician On
-
-Modifier 2/Description:  
-
-Modifier 3/Description:  
-
-Modifier 4/Description:  
-
-Quantity Billed/Units:  1
-
-Submitted Amount/Charges:  $315.00
-
-Allowed Amount:  $315.00
-
-Non-Covered:  $0.00
-
-
-
-Line number:  4
-
-Date of Service From:  
-
-Revenue Code/Description: 0001 - Total Charges
-
-Procedure Code/Description:  
+Procedure Code/Description:  80061 - Blood Test, Lipids (Cholesterol And Triglycerides)
 
 Modifier 1/Description:  
 
@@ -787,55 +784,33 @@ Modifier 3/Description:
 
 Modifier 4/Description:  
 
-Quantity Billed/Units:  0
+Quantity Billed/Units:  1
 
-Submitted Amount/Charges:  $504.80
+Submitted Amount/Charges:  $146.80
 
-Allowed Amount:  $504.80
+Allowed Amount:  $16.03
 
-Non-Covered:  $0.00
+Non-Covered:  $130.77
 
-Claim Number: 1234567890123
+Place of Service/Description:  81 - Independent Laboratory
 
-Provider: No Information Available
+Type of Service/Description:  5 - Diagnostic Lab
 
-Provider Billing Address:    
+Rendering Provider No:  W520
 
-Service Start Date: 12/01/2012
-
-Service End Date: 
-
-Amount Charged: * Not Available *
-
-Medicare Approved: * Not Available *
-
-Provider Paid: * Not Available *
-
-You May be Billed: * Not Available *
-
-Claim Type: PartB
-
-Diagnosis Code 1: 7392
-Diagnosis Code 2: 7241
-Diagnosis Code 3: 7393
-Diagnosis Code 4: 7391
-
---------------------------------
-Claim Lines for Claim Number: 1234567890123
-
---------------------------------
+Rendering Provider NPI:  5493844123
 
 
 
-Line number:  1
+Line number:  4
 
-Date of Service From:  12/01/2012
+Date of Service From:  03/23/2000
 
-Date of Service To:  12/01/2012
+Date of Service To:  03/23/2000
 
-Procedure Code/Description:  98941 - Chiropractic Manipulative Treatment, 3 To 4 Spinal Regions
+Procedure Code/Description:  85025 - Complete Blood Cell Count (Red Cells, White Blood Cell, Platelets), Automated Test
 
-Modifier 1/Description:  GA - Waiver Of Liability Statement Issued As Required By Payer Policy, Individual Case
+Modifier 1/Description:  
 
 Modifier 2/Description:  
 
@@ -845,119 +820,22 @@ Modifier 4/Description:
 
 Quantity Billed/Units:  1
 
-Submitted Amount/Charges:  * Not Available *
+Submitted Amount/Charges:  $61.97
 
-Allowed Amount:  * Not Available *
+Allowed Amount:  $11.02
 
-Non-Covered:  * Not Available *
+Non-Covered:  $50.95
 
-Place of Service/Description:  11 - Office
+Place of Service/Description:  81 - Independent Laboratory
 
-Type of Service/Description:  1 - Medical Care
+Type of Service/Description:  5 - Diagnostic Lab
 
-Rendering Provider No:  123456
+Rendering Provider No:  W520
 
-Rendering Provider NPI:  123456789
-
-
-
-Line number:  2
-
-Date of Service From:  12/01/2012
-
-Date of Service To:  12/01/2012
-
-Procedure Code/Description:  G0283 - Electrical Stimulation (Unattended), To One Or More Areas For Indication(S) Other Than Wound
-
-Modifier 1/Description:  GY - Item Or Service Statutorily Excluded, Does Not Meet The Definition Of Any Medicare Benefit Or,
-
-Modifier 2/Description:  
-
-Modifier 3/Description:  
-
-Modifier 4/Description:  
-
-Quantity Billed/Units:  1
-
-Submitted Amount/Charges:  * Not Available *
-
-Allowed Amount:  * Not Available *
-
-Non-Covered:  * Not Available *
-
-Place of Service/Description:  11 - Office
-
-Type of Service/Description:  1 - Medical Care
-
-Rendering Provider No:  123456
-
-Rendering Provider NPI:  123456789
+Rendering Provider NPI:  5493844123
 
 
 
 --------------------------------
-Claim Lines for Claim Number: 123456789012
-
---------------------------------
-
-
-
-Claim Type: Part D
-
-Claim Number: 123456789012
-
-Claim Service Date: 11/17/2011
-
-Pharmacy / Service Provider: 123456789
-
-Pharmacy Name: PHARMACY2 #00000
-
-Drug Code: 00093013505
-
-Drug Name: CARVEDILOL
-
-Fill Number: 0
-
-Days' Supply: 30
-
-Prescriber Identifer: 123456789
-
-Prescriber Name: Jane Doe
-
-
-
---------------------------------
-Claim Lines for Claim Number: 123456789011
-
---------------------------------
-
-
-
-Claim Type: Part D
-
-Claim Number: 123456789011
-
-Claim Service Date: 11/23/2011
-
-Pharmacy / Service Provider: 1234567890
-
-Pharmacy Name: PHARMACY3 #00000
-
-Drug Code: 00781223310
-
-Drug Name: OMEPRAZOLE
-
-Fill Number: 4
-
-Days' Supply: 30
-
-Prescriber Identifer: 123456789
-
-Prescriber Name: Jane Doe
-
-
-
---------------------------------
-
 
 

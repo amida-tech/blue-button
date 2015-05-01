@@ -6,7 +6,7 @@ var fs = require("fs");
 var senseString = require("../../index.js").senseString;
 
 describe('sense.js test', function () {
-    this.timeout(5000);
+    this.timeout(10000);
 
     var ccda = "";
     var xml = "";
@@ -17,7 +17,7 @@ describe('sense.js test', function () {
     var va = {};
     var ncpdp = "";
 
-    before(function () {
+    before(function (done) {
         ccda = fs.readFileSync('./test/fixtures/sense/CCD.example.xml').toString();
         xml = fs.readFileSync('./test/fixtures/sense/empty.xml').toString();
         xml_no_declaration = fs.readFileSync('./test/fixtures/sense/empty_no_declaration.xml').toString();
@@ -41,6 +41,7 @@ describe('sense.js test', function () {
         va["12_6"] = fs.readFileSync('./test/fixtures/sense/VA_My_HealtheVet_Blue_Button_Sample_Version_12_6.txt').toString();
 
         ncpdp = fs.readFileSync('./test/fixtures/sense/newrx.xml').toString();
+        done();
     });
 
     it('should return NULL for no string with data passed', function () {
