@@ -1,0 +1,1281 @@
+{
+  "data": {
+    "demographics": {
+      "name": {
+        "last": "NWHINZZZTESTPATIENT",
+        "first": "NWHINONE"
+      },
+      "dob": {
+        "point": {
+          "date": "1981-01-01T00:00:00.000Z",
+          "precision": "day"
+        }
+      },
+      "gender": "Male",
+      "identifiers": [
+        {
+          "identifier": "2.16.840.1.113883.4.349",
+          "extension": "1012638924V546709"
+        }
+      ],
+      "marital_status": "Married",
+      "addresses": [
+        {
+          "street_lines": [
+            "123 Anywhere Road"
+          ],
+          "city": "Anywhere",
+          "state": "DC",
+          "zip": "00001",
+          "use": "primary home"
+        }
+      ],
+      "phone": [
+        {
+          "number": "+1-000-000-0001",
+          "type": "primary home"
+        }
+      ]
+    },
+    "allergies": [
+      {
+        "observation": {
+          "allergen": {
+            "name": "LATEX STRAP"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions to drug",
+            "code": "419511003",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2012-06-26T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "URTICARIA"
+              }
+            }
+          ],
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      },
+      {
+        "observation": {
+          "allergen": {
+            "name": "BEE VENOM"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions",
+            "code": "420134006",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2012-10-15T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "ANXIETY"
+              }
+            }
+          ],
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      },
+      {
+        "observation": {
+          "allergen": {
+            "name": "BEEF PRODUCTS"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions to food",
+            "code": "418471000",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2012-10-16T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "ANXIETY"
+              }
+            }
+          ],
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      },
+      {
+        "observation": {
+          "allergen": {
+            "name": "SOY MILK"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions to substance",
+            "code": "418038007",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2012-11-13T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "NAUSEA AND VOMITING"
+              }
+            }
+          ],
+          "severity": {
+            "code": {
+              "name": "MODERATE"
+            }
+          },
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      },
+      {
+        "observation": {
+          "allergen": {
+            "name": "BAKED BEANS"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions to food",
+            "code": "418471000",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2012-11-13T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "DIARRHEA"
+              }
+            }
+          ],
+          "severity": {
+            "code": {
+              "name": "MODERATE"
+            }
+          },
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      },
+      {
+        "observation": {
+          "allergen": {
+            "name": "WATERMELONS"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions to food",
+            "code": "418471000",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2011-10-24T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "DIARRHEA"
+              }
+            }
+          ],
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      },
+      {
+        "observation": {
+          "allergen": {
+            "name": "HONEY"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions to food",
+            "code": "418471000",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2012-01-23T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "WHEEZING"
+              }
+            }
+          ],
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      },
+      {
+        "observation": {
+          "allergen": {
+            "name": "NUTS"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions to substance",
+            "code": "418038007",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2012-01-23T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "NAUSEA AND VOMITING"
+              }
+            },
+            {
+              "reaction": {
+                "name": "DIARRHEA"
+              }
+            }
+          ],
+          "severity": {
+            "code": {
+              "name": "MODERATE"
+            }
+          },
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      },
+      {
+        "observation": {
+          "allergen": {
+            "name": "OATS"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions to substance",
+            "code": "418038007",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2012-01-24T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "DIARRHEA"
+              }
+            }
+          ],
+          "severity": {
+            "code": {
+              "name": "MODERATE"
+            }
+          },
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      },
+      {
+        "observation": {
+          "allergen": {
+            "name": "CHOCOLATE"
+          },
+          "intolerance": {
+            "name": "Propensity to adverse reactions to substance",
+            "code": "418038007",
+            "code_system_name": "SNOMED CT"
+          },
+          "date_time": {
+            "low": {
+              "date": "2012-05-01T00:00:00.000Z",
+              "precision": "day"
+            }
+          },
+          "reactions": [
+            {
+              "reaction": {
+                "name": "ANXIETY"
+              }
+            }
+          ],
+          "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+          }
+        }
+      }
+    ],
+    "encounters": [
+      {
+        "encounter": {
+          "name": "OFFICE/OUTPATIENT VISIT EST",
+          "code": "99211",
+          "code_system_name": "CPT"
+        },
+        "date_time": {
+          "low": {
+            "date": "2012-12-10T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "performers": [
+          {
+            "name": [
+              {
+                "last": "One",
+                "first": "Provider,"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "encounter": {
+          "name": "PRIMARY CARE/MEDICINE"
+        },
+        "date_time": {
+          "low": {
+            "date": "2012-02-01T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "performers": [
+          {
+            "name": [
+              {
+                "last": "One",
+                "first": "Provider,"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "encounter": {
+          "name": "GENERAL INTERNAL MEDICINE"
+        },
+        "date_time": {
+          "low": {
+            "date": "2012-01-11T00:00:00.000Z",
+            "precision": "day"
+          }
+        }
+      },
+      {
+        "encounter": {
+          "name": "ADMIN PAT ACTIVTIES (MASNONCT)"
+        },
+        "date_time": {
+          "low": {
+            "date": "2012-01-10T00:00:00.000Z",
+            "precision": "day"
+          }
+        }
+      },
+      {
+        "encounter": {
+          "name": "PRIMARY CARE/MEDICINE with associated notes REFERRAL NOTE"
+        },
+        "date_time": {
+          "low": {
+            "date": "2011-11-02T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "performers": [
+          {
+            "name": [
+              {
+                "last": "One",
+                "first": "Provider,"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "encounter": {
+          "name": "PRIMARY CARE/MEDICINE"
+        },
+        "date_time": {
+          "low": {
+            "date": "2011-11-01T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "performers": [
+          {
+            "name": [
+              {
+                "last": "One",
+                "first": "Provider,"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "immunizations": [
+      {
+        "date_time": {
+          "point": {
+            "date": "2012-12-10T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "status": "complete",
+        "sequence_number": "",
+        "product": {
+          "product": {
+            "code": "UNK",
+            "code_system_name": "CVX Vaccine",
+            "name": "ADENOVIRUS,TYPE 4"
+          }
+        },
+        "performer": {
+          "identifiers": [
+            {
+              "identifier": "2.16.840.1.113883.4.349",
+              "extension": "65587"
+            }
+          ],
+          "name": [
+            {
+              "last": "One",
+              "first": "Provider,"
+            }
+          ]
+        }
+      },
+      {
+        "date_time": {
+          "point": {
+            "date": "2012-05-25T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "status": "complete",
+        "sequence_number": "",
+        "product": {
+          "product": {
+            "code": "UNK",
+            "code_system_name": "CVX Vaccine",
+            "name": "MEASLES"
+          }
+        },
+        "performer": {
+          "identifiers": [
+            {
+              "identifier": "2.16.840.1.113883.4.349",
+              "extension": "65365"
+            }
+          ],
+          "name": [
+            {
+              "last": "P",
+              "first": "CPRSDOCTOR,BETH"
+            }
+          ]
+        }
+      },
+      {
+        "date_time": {
+          "point": {
+            "date": "2011-11-02T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "status": "complete",
+        "sequence_number": "",
+        "product": {
+          "product": {
+            "code": "UNK",
+            "code_system_name": "CVX Vaccine",
+            "name": "ADENOVIRUS,TYPE 7"
+          }
+        },
+        "performer": {
+          "identifiers": [
+            {
+              "identifier": "2.16.840.1.113883.4.349",
+              "extension": "65587"
+            }
+          ],
+          "name": [
+            {
+              "last": "One",
+              "first": "Provider,"
+            }
+          ]
+        }
+      },
+      {
+        "date_time": {
+          "point": {
+            "date": "2011-11-02T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "status": "complete",
+        "sequence_number": "",
+        "product": {
+          "product": {
+            "code": "UNK",
+            "code_system_name": "CVX Vaccine",
+            "name": "CHOLERA, ORAL"
+          }
+        },
+        "performer": {
+          "identifiers": [
+            {
+              "identifier": "2.16.840.1.113883.4.349",
+              "extension": "65587"
+            }
+          ],
+          "name": [
+            {
+              "last": "One",
+              "first": "Provider,"
+            }
+          ]
+        }
+      },
+      {
+        "date_time": {
+          "point": {
+            "date": "2011-11-01T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "status": "complete",
+        "sequence_number": "",
+        "product": {
+          "product": {
+            "code": "UNK",
+            "code_system_name": "CVX Vaccine",
+            "name": "CHICKENPOX"
+          }
+        },
+        "performer": {
+          "identifiers": [
+            {
+              "identifier": "2.16.840.1.113883.4.349",
+              "extension": "65587"
+            }
+          ],
+          "name": [
+            {
+              "last": "One",
+              "first": "Provider,"
+            }
+          ]
+        }
+      },
+      {
+        "date_time": {
+          "point": {
+            "date": "2011-11-01T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "status": "complete",
+        "sequence_number": "",
+        "product": {
+          "product": {
+            "code": "UNK",
+            "code_system_name": "CVX Vaccine",
+            "name": "CHOLERA"
+          }
+        },
+        "performer": {
+          "identifiers": [
+            {
+              "identifier": "2.16.840.1.113883.4.349",
+              "extension": "65587"
+            }
+          ],
+          "name": [
+            {
+              "last": "One",
+              "first": "Provider,"
+            }
+          ]
+        }
+      }
+    ],
+    "problems": [
+      {
+        "date_time": {
+          "low": {
+            "date": "2012-03-14T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "786.2",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Cough (ICD-9-CM 786.2)"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      },
+      {
+        "date_time": {
+          "low": {
+            "date": "2012-03-10T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "716.29",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Allergic arthritis of multiple sites (ICD-9-CM 716.29)"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      },
+      {
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "728.87",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Weakness of limb (ICD-9-CM 728.87)"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      },
+      {
+        "date_time": {
+          "low": {
+            "date": "2011-10-20T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "714.0",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Arthritis, Rheumatoid (ICD-9-CM 714.0)"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      },
+      {
+        "date_time": {
+          "low": {
+            "date": "2011-10-24T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "278.00",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Obesity in Diabetes (ICD-9-CM 278.00)"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      },
+      {
+        "date_time": {
+          "low": {
+            "date": "2011-10-11T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "250.80",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Diabetic Foot Ulcer"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      },
+      {
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "441.4",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Aneurysm, Aorta, Abdominal"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      },
+      {
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "786.2",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Cough"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      },
+      {
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "710.3",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Dermatomyositis"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      },
+      {
+        "negation_indicator": false,
+        "problem": {
+          "code": {
+            "translations": [
+              {
+                "code": "401.9",
+                "code_system_name": "ICD-9-CM"
+              }
+            ],
+            "name": "Hypertension"
+          }
+        },
+        "status": {
+          "name": "Active"
+        }
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": {
+          "name": "RADIOLOGIC EXAMINATION, SHOULDER; COMPLETE, MINIMUM OF 2 VIEWS",
+          "code": "73030",
+          "code_system_name": "CPT"
+        },
+        "date_time": {
+          "point": {
+            "date": "2012-12-06T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "performers": [
+          {
+            "name": [
+              {
+                "last": "One",
+                "first": "Provider,"
+              }
+            ]
+          }
+        ],
+        "procedure_type": "procedure"
+      },
+      {
+        "procedure": {
+          "name": "RADIOLOGIC EXAMINATION, HIP, UNILATERAL; COMPLETE, MINIMUM OF 2 VIEWS",
+          "code": "73510",
+          "code_system_name": "CPT"
+        },
+        "date_time": {
+          "point": {
+            "date": "2012-12-04T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "performers": [
+          {
+            "name": [
+              {
+                "last": "One",
+                "first": "Provider,"
+              }
+            ]
+          }
+        ],
+        "procedure_type": "procedure"
+      },
+      {
+        "procedure": {
+          "name": "RADIOLOGIC EXAMINATION, WRIST; 2 VIEWS",
+          "code": "73100",
+          "code_system_name": "CPT"
+        },
+        "date_time": {
+          "point": {
+            "date": "2012-08-23T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "performers": [
+          {
+            "name": [
+              {
+                "last": "Unknown"
+              }
+            ]
+          }
+        ],
+        "procedure_type": "procedure"
+      },
+      {
+        "procedure": {
+          "name": "RADIOLOGIC EXAMINATION, ABDOMEN; SINGLE ANTEROPOSTERIOR VIEW",
+          "code": "74000",
+          "code_system_name": "CPT"
+        },
+        "date_time": {
+          "point": {
+            "date": "2012-08-23T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "performers": [
+          {
+            "name": [
+              {
+                "last": "Unknown"
+              }
+            ]
+          }
+        ],
+        "procedure_type": "procedure"
+      }
+    ],
+    "vitals": [
+      {
+        "identifiers": [
+          {
+            "identifier": "2.16.840.1.113883.4.349",
+            "extension": "7002034"
+          }
+        ],
+        "vital": {
+          "name": "Heart rate",
+          "code": "8867-4",
+          "translations": [
+            {
+              "name": "PULSE",
+              "code": "4500636",
+              "code_system_name": "US Department of Veterans Affairs"
+            }
+          ],
+          "code_system_name": "LOINC"
+        },
+        "status": "completed",
+        "date_time": {
+          "point": {
+            "date": "2012-05-15T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "value": 85,
+        "unit": "/min"
+      },
+      {
+        "identifiers": [
+          {
+            "identifier": "2.16.840.1.113883.4.349",
+            "extension": "7002033"
+          }
+        ],
+        "vital": {
+          "name": "Body temperature",
+          "code": "8310-5",
+          "translations": [
+            {
+              "name": "TEMPERATURE",
+              "code": "4500638",
+              "code_system_name": "US Department of Veterans Affairs"
+            }
+          ],
+          "code_system_name": "LOINC"
+        },
+        "status": "completed",
+        "date_time": {
+          "point": {
+            "date": "2012-05-15T00:00:00.000Z",
+            "precision": "day"
+          }
+        },
+        "value": 99,
+        "unit": "[degF]"
+      }
+    ],
+    "results": [
+      {
+        "identifiers": [
+          {
+            "identifier": "2.16.840.1.113883.4.349",
+            "extension": "613;1519481;3121206;1;1"
+          }
+        ],
+        "result_set": {
+          "name": "GLUCOSE"
+        },
+        "results": [
+          {
+            "identifiers": [
+              {
+                "identifier": "2.16.840.1.113883.4.349",
+                "extension": "CH;6878792.91;601"
+              }
+            ],
+            "result": {
+              "code": "UNK",
+              "code_system_name": "LOINC",
+              "name": "GLUCOSE"
+            },
+            "date_time": {
+              "point": {
+                "date": "2012-12-06T00:00:00.000Z",
+                "precision": "day"
+              }
+            },
+            "status": "completed",
+            "text": "155 MG/DL",
+            "reference_range": {
+              "range": "74-118"
+            }
+          }
+        ]
+      },
+      {
+        "identifiers": [
+          {
+            "identifier": "2.16.840.1.113883.4.349",
+            "extension": "613;1519481;3121206;1;1"
+          }
+        ],
+        "result_set": {
+          "name": "GLUCOSE"
+        },
+        "results": [
+          {
+            "identifiers": [
+              {
+                "identifier": "2.16.840.1.113883.4.349",
+                "extension": "CH;6878792.91;601"
+              }
+            ],
+            "result": {
+              "code": "UNK",
+              "code_system_name": "LOINC",
+              "name": "GLUCOSE"
+            },
+            "date_time": {
+              "point": {
+                "date": "2012-12-06T00:00:00.000Z",
+                "precision": "day"
+              }
+            },
+            "status": "completed",
+            "text": "152 MG/DL",
+            "reference_range": {
+              "range": "74-118"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "version": "1.5.0-beta.5",
+    "identifiers": [
+      {
+        "identifier": "2.16.840.1.113883.4.349",
+        "extension": "2.25.153967320391171260195869192743051876940"
+      }
+    ],
+    "confidentiality": "Normal",
+    "sections": [
+      "demographics",
+      "allergies",
+      "encounters",
+      "immunizations",
+      "problems",
+      "procedures",
+      "vitals",
+      "results"
+    ]
+  },
+  "errors": [
+    "cardinality error: found 2 when expecting 1..1 at h:patient/h:name",
+    "nullFlavor alert:  missing but required code in SC 2.16.840.1.113883.6.238 -> Patient -> C32",
+    "nullFlavor alert:  missing but required code in SC 2.16.840.1.113883.6.238 -> Patient -> C32",
+    "nullFlavor alert:  missing but required language in LanguageCommunication -> Patient -> C32",
+    "nullFlavor alert:  missing but required preferred in LanguageCommunication -> Patient -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> activity -> encountersSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> ImmunizationActivity -> immunizationsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ProblemObservation -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> ProblemConcernAct -> problemsSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> C32",
+    "cardinality error: found 3 when expecting 1..1 at h:templateId/@root",
+    "nullFlavor alert:  missing but required identifier in Identifier -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> C32",
+    "cardinality error: found 3 when expecting 1..1 at h:templateId/@root",
+    "nullFlavor alert:  missing but required identifier in Identifier -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> C32",
+    "cardinality error: found 3 when expecting 1..1 at h:templateId/@root",
+    "nullFlavor alert:  missing but required identifier in Identifier -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required identifier in Identifier -> assignedEntity -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required street_lines in Address -> assignedEntity -> entry -> proceduresSection -> C32",
+    "nullFlavor alert:  missing but required city in Address -> assignedEntity -> entry -> proceduresSection -> C32",
+    "cardinality error: found 3 when expecting 1..1 at h:templateId/@root",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> C32",
+    "nullFlavor alert:  missing but required code in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> C32",
+    "nullFlavor alert:  missing but required system in ConceptDescriptor -> ResultsOrganizer -> resultsSection -> C32"
+  ]
+}
