@@ -8,7 +8,7 @@ describe('parser.js', function () {
     var xmlfile = null;
 
     before(function (done) {
-        xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-ncpdp/newrx.xml', 'utf-8').toString();
+        xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-ncpdp/newrx_1.xml', 'utf-8').toString();
         done();
     });
 
@@ -34,6 +34,5 @@ describe('parser.js', function () {
 
             done();
         });
-    } catch (ex) {
-    }
+    } catch (ex) {}
 });

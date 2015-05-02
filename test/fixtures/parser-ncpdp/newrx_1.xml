@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Message version="010" release="006">
+    <!-- TODO remove namespace before running XPATH -->
+    <!-- TODO remove xsi -->
+    <Header>
+        <To Qualifier="P">RECIPIENT_ID</To>
+        <From Qualifier="D">SENDER_ID</From>
+        <MessageID>MU101</MessageID>
+        <SentTime>2012-01-02T10:20:10</SentTime>
+        <Security>
+            <Sender>
+                <SecondaryIdentification>PASSWORD</SecondaryIdentification>
+                <TertiaryIdentification>3RYIDENTIFIER</TertiaryIdentification>
+            </Sender>
+            <Receiver></Receiver>
+        </Security>
+        <PrescriberOrderNumber>ORDMU201</PrescriberOrderNumber>
+    </Header>
+
+    <Body>
+        <NewRx>
+            <Pharmacy>
+                <Identification>
+                    <NCPDPID>0999017</NCPDPID>
+                    <NPI>2010000000</NPI>
+                </Identification>
+                <BusinessName>Test One Pharmacy</BusinessName>
+                <Address>
+                    <AddressLine1>90001 1ST ST</AddressLine1>
+                    <AddressLine2>1ST FL</AddressLine2>
+                    <City>Washington</City>
+                    <State>DC</State>
+                    <ZipCode>20000</ZipCode>
+                </Address>
+                <CommunicationNumbers>
+                    <Communication>
+                        <Number>2025551212</Number>
+                        <Qualifier>TE</Qualifier>
+                    </Communication>
+                </CommunicationNumbers>
+            </Pharmacy>
+            <Prescriber>
+                <Identification>
+                    <NPI>1010000002</NPI>
+                    <DEANumber>AP9010000</DEANumber>
+                </Identification>
+                <ClinicName>Clinic One</ClinicName>
+                <Name>
+                    <LastName>PrescriberOne</LastName>
+                    <FirstName>One</FirstName>
+                    <MiddleName>Test</MiddleName>
+                </Name>
+                <Address>
+                    <AddressLine1>90001 1ST AVE</AddressLine1>
+                    <AddressLine2>STE 100</AddressLine2>
+                    <City>Washington</City>
+                    <State>DC</State>
+                    <ZipCode>20000</ZipCode>
+                </Address>
+                <CommunicationNumbers>
+                    <Communication>
+                        <Number>2025551212</Number>
+                        <Qualifier>TE</Qualifier>
+                    </Communication>
+                </CommunicationNumbers>
+            </Prescriber>
+            <Patient>
+                <Name>
+                    <LastName>PatientOne</LastName>
+                    <FirstName>One</FirstName>
+                    <MiddleName>Test</MiddleName>
+                </Name>
+                <Gender>M</Gender>
+                <DateOfBirth>
+                    <Date>1960-01-01</Date>
+                </DateOfBirth>
+                <Address>
+                    <AddressLine1>1 Test BLVD</AddressLine1>
+                    <AddressLine2>APT 1</AddressLine2>
+                    <City>Washington</City>
+                    <State>DC</State>
+                    <ZipCode>20000</ZipCode>
+                </Address>
+                <CommunicationNumbers>
+                    <Communication>
+                        <Number>2025551212</Number>
+                        <Qualifier>TE</Qualifier>
+                    </Communication>
+                </CommunicationNumbers>
+            </Patient>
+            <MedicationPrescribed>
+                <DrugDescription>Hydrochlorothiazide 50 MG Oral Tablet</DrugDescription>
+                <DrugCoded>
+                    <ProductCode>00143125701</ProductCode>
+                    <ProductCodeQualifier>ND</ProductCodeQualifier>
+                    <Strength>50</Strength>
+                    <DrugDBCode>197770</DrugDBCode>
+                    <DrugDBCodeQualifier>SCD</DrugDBCodeQualifier>
+                    <FormSourceCode>AA</FormSourceCode>
+                    <FormCode>C42998</FormCode>
+                    <StrengthSourceCode>AB</StrengthSourceCode>
+                    <StrengthCode>C28253</StrengthCode>
+                </DrugCoded>
+                <Quantity>
+                    <Value>30</Value>
+                    <CodeListQualifier>38</CodeListQualifier>
+                    <UnitSourceCode>AC</UnitSourceCode>
+                    <PotencyUnitCode>C48542</PotencyUnitCode>
+                </Quantity>
+                <DaysSupply>30</DaysSupply>
+                <Directions>Take 1 tablet every day by mouth</Directions>
+                <Refills>
+                    <Qualifier>R</Qualifier>
+                    <Value>1</Value>
+                </Refills>
+                <Substitutions>0</Substitutions>
+                <WrittenDate>
+                    <Date>2012-01-02</Date>
+                </WrittenDate>
+            </MedicationPrescribed>
+        </NewRx>
+    </Body>
+</Message>
+<!-- ************************************************ -->
+<!-- Scenario: MU2-01: New Prescription - Hydrochlorothiazide 50 mg tablet | MU2 Test 01 | Ambulatory | One PatientOne -->
+<!-- ************************************************ -->
