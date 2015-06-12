@@ -28126,7 +28126,7 @@ module.exports={
   },
   "devDependencies": {
     "brfs": "~1.4.0",
-    "chai": "~2.3.0",
+    "chai": "~3.0.0",
     "coveralls": "~2.11.2",
     "grunt": "~0.4.5",
     "grunt-browserify": "~3.7.0",
