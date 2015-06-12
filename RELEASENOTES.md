@@ -1,8 +1,9 @@
 # blue-button.js Release Notes
 
-# v.1.5.0 - TBD
+# v.1.5.0 - June 12, 2015
 - Demographics race and ethnicity are now seperated.
 - Confidentiality Code and Set Identifier are now parsed into results meta attribute for ccda and c32.
+- Performer consistency
 
 # v.1.4.1 - March 11, 2015
 - c32 parser now uses allergy problem act statusCode as the allergy status

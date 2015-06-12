@@ -11,7 +11,7 @@
     "!LICENSE"
   ],
   "dependencies": {
-    "blue-button-xml": "~1.5.0-beta",
-    "blue-button-cms": "~1.5.0-beta.1"
+    "blue-button-xml": "~1.5.0",
+    "blue-button-cms": "~1.5.0"
   }
 }
