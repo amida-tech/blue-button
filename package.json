@@ -1,6 +1,6 @@
 {
   "name": "blue-button",
-  "version": "1.5.1",
+  "version": "1.6.0-beta.1",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -27,14 +27,14 @@
   ],
   "license": "Apache-2.0",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.12.0"
   },
   "dependencies": {
+    "blue-button-cms": "~1.5.0",
     "blue-button-meta": "~1.5.0",
     "blue-button-model": "~1.5.0",
-    "blue-button-xml": "~1.5.1",
-    "blue-button-cms": "~1.5.0",
-    "underscore": "~1.8.3",
+    "blue-button-xml": "^1.6.0-beta",
+    "lodash": "^3.10.0",
     "winston": "~1.0.0"
   },
   "devDependencies": {
