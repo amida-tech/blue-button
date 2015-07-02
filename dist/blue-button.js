@@ -38925,7 +38925,7 @@ module.exports={
     "blue-button-cms": "~1.5.0",
     "blue-button-meta": "~1.5.0",
     "blue-button-model": "~1.5.0",
-    "blue-button-xml": "~1.5.1",
+    "blue-button-xml": "^1.6.0-beta",
     "lodash": "^3.10.0",
     "winston": "~1.0.0"
   },
