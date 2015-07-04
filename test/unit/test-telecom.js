@@ -9,7 +9,7 @@ var shared = require('../../lib/parser/common/shared');
 var expect = chai.expect;
 
 describe('telecom unit tests', function () {
-    var jsonCases = null;
+    var result = null;
 
     it('prepare', function () {
         var component = bbxml.component;
@@ -29,14 +29,12 @@ describe('telecom unit tests', function () {
 
         var xmlfile = fs.readFileSync(__dirname + '/../fixtures/unit/telecom.xml', 'utf-8').toString();
         expect(xmlfile).to.exist;
-        var result = testCases.run(xmlfile);
+        result = testCases.run(xmlfile);
         expect(result).to.exist;
-        jsonCases = result.toJSON();
-        expect(jsonCases).to.exist;
     });
 
     it('multiple_tel_email', function () {
-        expect(jsonCases.multiple_tel_email).to.deep.equal({
+        expect(result.multiple_tel_email).to.deep.equal({
             phone: [{
                 number: "(555)555-0001",
                 type: "primary home"
@@ -53,7 +51,7 @@ describe('telecom unit tests', function () {
     });
 
     it('nullFlavor_noTel', function () {
-        expect(jsonCases.nullFlavor_noTel).to.deep.equal({
+        expect(result.nullFlavor_noTel).to.deep.equal({
             phone: [{
                 number: "5555550003",
                 type: "primary home"
@@ -62,6 +60,6 @@ describe('telecom unit tests', function () {
     });
 
     it('emptyValue', function () {
-        expect(jsonCases).to.not.have.property("emptyValue");
+        expect(result).to.not.have.property("emptyValue");
     });
 });
