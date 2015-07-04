@@ -58,7 +58,9 @@ function parseXml(doc, options, sensed) {
         sensed = sense.senseXml(doc);
     }
 
+    console.time('load');
     var componentParser = componentRouter(options.component, sensed);
+    console.timeEnd('load');
 
     if (!componentParser) {
         var msg = util.format("Component %s is not supported.", options.component);
@@ -67,10 +69,14 @@ function parseXml(doc, options, sensed) {
             "errors": new Error(msg)
         };
     }
+    console.time('instance');
     var ret = componentParser.instance();
+    console.timeEnd('instance');
 
+    console.time('build');
     ret.run(doc, options.sourceKey);
-    ret.cleanupTree(options.sourceKey); // first build the data objects up
+    console.timeEnd('build');
+    console.time('return');
     return sections({
         "data": ret.toJSON(),
         "meta": {
@@ -96,6 +102,7 @@ function parseString(data, options) {
 }
 
 var parse = function (data, options) {
+    console.time('sensing');
     //data must be a string
     if (!data || typeof (data) !== "string") {
         //TODO: throw a proper error here
@@ -113,6 +120,7 @@ var parse = function (data, options) {
             if (sensed.type === 'ncpdp' && parseNCPDP) {
                 return parseNCPDP(sensed.xml);
             }
+            console.timeEnd('sensing');
             return parseXml(sensed.xml, options, sensed);
         } else if (sensed.json) {
             return sensed.json;
@@ -174,7 +182,7 @@ var cleanup = module.exports = Object.create(includeCleanup);
 
 cleanup.augmentObservation = function () {
 
-    if (this.js.problem_text && this.js.problem_text.js) {
+    if (this.js && this.js.problem_text && this.js.problem_text.js) {
         if (!this.js.code.js.name) {
             this.js.code.js.name = this.js.problem_text.js;
         }
@@ -263,7 +271,7 @@ var exportAllergiesSection = function (version) {
     ]).cleanupStep(function () {
 
         //Custom VA C32 Shim.
-        if (this.js.code) {
+        if (this.js && this.js.code) {
             if (this.js.code.js.name === "Coded Allergy Name Not Available") {
                 delete this.js.code;
             }
@@ -581,22 +589,23 @@ var exportMedicationsSection = function (version) {
         ])
         //.cleanupStep(Cleanup.extractAllFields(["medicationName"]))
         .cleanupStep(function () {
+            if (this.js) {
+                this.js.identifiers = _.filter(this.js.identifiers, function (identifier) {
+                    if (identifier.js === null) {
+                        return false;
+                    } else {
+                        return true;
+                    }
+                });
 
-            this.js.identifiers = _.filter(this.js.identifiers, function (identifier) {
-                if (identifier.js === null) {
-                    return false;
-                } else {
-                    return true;
+                //Cleanup Status.
+
+                if (this.js.status === "EVN") {
+                    this.js.status = "Completed";
                 }
-            });
-
-            //Cleanup Status.
-
-            if (this.js.status === "EVN") {
-                this.js.status = "Completed";
-            }
-            if (this.js.status === "INT") {
-                this.js.status = "Prescribed";
+                if (this.js.status === "INT") {
+                    this.js.status = "Prescribed";
+                }
             }
 
             // separate out two effectiveTimes
@@ -734,11 +743,13 @@ var exportProceduresSection = function (version) {
     ]);
 
     entry.cleanupStep(function () {
-        var typeMap = {
-            "2.16.840.1.113883.3.88.11.83.17": "procedure" // ccda-r1
-        };
-        var t = this.js['procedure_type'];
-        this.js['procedure_type'] = typeMap[t];
+        if (this.js) {
+            var typeMap = {
+                "2.16.840.1.113883.3.88.11.83.17": "procedure" // ccda-r1
+            };
+            var t = this.js['procedure_type'];
+            this.js['procedure_type'] = typeMap[t];
+        }
     });
 
     var proceduresSection = component.define('proceduresSection');
@@ -988,7 +999,7 @@ var IndividualName = shared.IndividualName = component.define('IndividualName')
         ["last", "0..1", "h:family/text()"],
         ["suffix", "0..1", "h:suffix/text()"],
         ["freetext_name", "0..1", "../h:name/text()", processor.asString]
-    ]).cleanupStep(cleanup.augmentIndividualName).cleanupStep(cleanup.clearNulls);
+    ]).cleanupStep(cleanup.augmentIndividualName);
 
 var Address = shared.Address = component.define("Address")
     .fields([
@@ -2270,7 +2281,7 @@ var cleanup = module.exports = Object.create(includeCleanup);
 
 cleanup.augmentObservation = function () {
 
-    if (this.js.problem_text) {
+    if (this.js && this.js.problem_text) {
         if (this.js.problem_text.js) {
             if (!this.js.code.js.name) {
                 this.js.code.js.name = this.js.problem_text.js;
@@ -2802,146 +2813,8 @@ exports.resultsSection = exportResultsSection;
 exports.resultsEntry = exportResultsSection;
 
 },{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],39:[function(require,module,exports){
-"use strict";
-
-var component = require("blue-button-xml").component;
-var processor = require("blue-button-xml").processor;
-var cleanup = require("./cleanup");
-var common = require("blue-button-xml").common;
-
-var commonShared = require('../common/shared');
-
-var shared = module.exports = Object.create(commonShared);
-
-var TextWithReference = shared.TextWithReference = component.define("TextWithReference");
-TextWithReference.fields([
-        ["text", "0..*", "text()"],
-        ["reference", "0..1", "./h:reference/@value"],
-    ])
-    .cleanupStep(cleanup.resolveReference);
-
-var NegationIndicator = shared.NegationIndicator = component.define("NegationIndicator");
-NegationIndicator.fields([
-        ["negation_indicator", "0..1", "@negationInd", processor.asBoolean]
-    ]).cleanupStep(function () {
-        //Flag missing negations as false.
-        if (this.js) {
-            if (!common.exists(this.js)) {
-                this.js.negation_indicator = false;
-            }
-            if (this.js.negation_indicator === 'true') {
-                this.js.negation_indicator = true;
-            }
-        } else {
-            this.js = {
-                negation_indicator: false
-            };
-        }
-    })
-    .cleanupStep(cleanup.replaceWithField('negation_indicator'));
-
-var conceptWoutTranslation = component.define("conceptWoutTranslation");
-conceptWoutTranslation.fields([
-    ["name", "0..1", "@displayName"],
-    ["code", "1..1", "@code"],
-    ["system", "1..1", "@codeSystem"],
-    ["code_system_name", "0..1", "@codeSystemName"],
-    ["nullFlavor", "0..1", "@nullFlavor"],
-    ["original_text", "0..1", "h:originalText", TextWithReference]
-]);
-conceptWoutTranslation.cleanupStep(cleanup.augmentConcept);
-conceptWoutTranslation.cleanupStep(cleanup.removeField('system'));
-
-var ConceptDescriptor = shared.ConceptDescriptor = conceptWoutTranslation.define("ConceptDescriptor");
-ConceptDescriptor.fields([
-    ["translations", "0..*", "h:translation", conceptWoutTranslation],
-]);
-
-var AgeDescriptor = shared.AgeDescriptor = component.define("AgeDescriptor");
-AgeDescriptor.fields([
-        ["units", "0..1", "@unit"],
-    ])
-    .cleanupStep(cleanup.augmentAge);
-
-var SimplifiedCode = shared.SimplifiedCode = ConceptDescriptor.define("SimpifiedCode")
-    .cleanupStep(cleanup.augmentSimplifiedCode);
-
-var PhysicalQuantity = shared.PhysicalQuantity = component.define("PhysicalQuantity")
-    .fields([
-        ["value", "1..1", "@value", processor.asFloat],
-        ["unit", "0..1", "@unit"]
-    ]);
-
-var EventOffset = shared.EventOffset = component.define("EventOffset")
-    .fields([
-        ["low", "0..1", "h:/low", PhysicalQuantity],
-        ["high", "0..1", "h:/high", PhysicalQuantity],
-        ["center", "0..1", "h:/center", PhysicalQuantity],
-        ["width", "0..1", "h:/width", PhysicalQuantity],
-    ]);
-
-var EffectiveTime = shared.EffectiveTime = component.define("EffectiveTime")
-    .fields([
-        ["point", "0..1", "@value", processor.asTimestamp],
-        ["point_resolution", "0..1", "@value", processor.asTimestampResolution],
-        ["low", "0..1", "h:low/@value", processor.asTimestamp],
-        ["low_resolution", "0..1", "h:low/@value", processor.asTimestampResolution],
-        ["high", "0..1", "h:high/@value", processor.asTimestamp],
-        ["high_resolution", "0..1", "h:high/@value", processor.asTimestampResolution],
-        ["center", "0..1", "h:center/@value", processor.asTimestamp],
-        ["center_resolution", "0..1", "h:center/@value", processor.asTimestampResolution]
-    ])
-    .cleanupStep(cleanup.augmentEffectiveTime);
-
-var IndividualName = shared.IndividualName = component.define('IndividualName')
-    .fields([
-        ["prefix", "0..1", "h:prefix/text()"],
-        ["middle", "0..*", "h:given/text()"],
-        ["last", "0..1", "h:family/text()"],
-        ["suffix", "0..1", "h:suffix/text()"],
-        ["freetext_name", "0..1", "../h:name/text()", processor.asString]
-    ]).cleanupStep(cleanup.augmentIndividualName);
-
-var Address = shared.Address = component.define("Address")
-    .fields([
-        ["street_lines", "1..4", "h:streetAddressLine/text()"],
-        ["city", "1..1", "h:city/text()", processor.asString],
-        ["state", "0..1", "h:state/text()"],
-        ["zip", "0..1", "h:postalCode/text()"],
-        ["country", "0..1", "h:country/text()"],
-        ["use", "0..1", "@use", shared.SimpleCode("2.16.840.1.113883.5.1119")]
-    ]);
-
-var Organization = shared.Organization = component.define("Organization")
-    .fields([
-        ["identifiers", "0..*", "h:id", shared.Identifier],
-        ["name", "0..*", "h:name/text()"],
-        ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", shared.email.xpath(), shared.email],
-        ["phone", "0..*", shared.phone.xpath(), shared.phone]
-    ]);
-
-var assignedEntity = shared.assignedEntity = component.define("assignedEntity")
-    .fields([
-        ["identifiers", "0..*", "h:id", shared.Identifier],
-        ["name", "0..*", "h:assignedPerson/h:name", IndividualName],
-        ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", shared.email.xpath(), shared.email],
-        ["phone", "0..*", shared.phone.xpath(), shared.phone],
-        ["organization", "0..*", "h:representedOrganization", Organization],
-        ["code", "0..*", "h:code", ConceptDescriptor],
-    ]);
-
-shared.serviceDeliveryLocation = component.define('serviceDeliveryLocation')
-    .fields([
-        ["name", "0:1", "h:playingEntity/h:name/text()"],
-        ["location_type", "1..1", "h:code", ConceptDescriptor],
-        ["address", "0..*", "h:addr", Address],
-        ["email", "0..*", shared.email.xpath(), shared.email],
-        ["phone", "0..*", shared.phone.xpath(), shared.phone]
-    ]);
-
-},{"../common/shared":41,"./cleanup":30,"blue-button-xml":"blue-button-xml"}],40:[function(require,module,exports){
+arguments[4][13][0].apply(exports,arguments)
+},{"../common/shared":41,"./cleanup":30,"blue-button-xml":"blue-button-xml","dup":13}],40:[function(require,module,exports){
 "use strict";
 
 var bbxml = require("blue-button-xml");
@@ -3032,55 +2905,55 @@ var augmentIndividualName = cleanup.augmentIndividualName = function () {
 };
 
 cleanup.augmentConcept = function () {
-    if (!this.js) {
-        this.js = {};
-    }
+    if (this.js) {
+        if (common.exists(this.js.nullFlavor) && !this.js.original_text) {
+            this.js = null;
+            return;
+        }
 
-    if (common.exists(this.js.nullFlavor) && !this.js.original_text) {
-        this.js = null;
-        return;
-    }
-
-    if (this.js.system) {
-        var cs = css.find(this.js.system);
-        if (cs) {
-            // Keep existing name if present
-            if (!common.exists(this.js.name)) {
-                var newName = cs.codeDisplayName(this.js.code);
-                if (newName) {
-                    this.js.name = newName;
+        if (this.js.system) {
+            var cs = css.find(this.js.system);
+            if (cs) {
+                // Keep existing name if present
+                if (!common.exists(this.js.name)) {
+                    var newName = cs.codeDisplayName(this.js.code);
+                    if (newName) {
+                        this.js.name = newName;
+                    }
+                }
+                // but preferentially use our canonical names for the coding system
+                var systemName = cs.name();
+                if (systemName) {
+                    this.js.code_system_name = systemName;
                 }
             }
-            // but preferentially use our canonical names for the coding system
-            var systemName = cs.name();
-            if (systemName) {
-                this.js.code_system_name = systemName;
-            }
         }
-    }
 
-    //If original text is present w/out name, use it.
-    if (this.js.original_text && !this.js.name) {
-        this.js.name = this.js.original_text.js;
-        delete this.js.original_text;
-    } else {
-        delete this.js.original_text;
-    }
+        //If original text is present w/out name, use it.
+        if (this.js.original_text && !this.js.name) {
+            this.js.name = this.js.original_text.js;
+            delete this.js.original_text;
+        } else {
+            delete this.js.original_text;
+        }
 
-    if (this.js.nullFlavor) {
-        delete this.js.nullFlavor;
+        if (this.js.nullFlavor) {
+            delete this.js.nullFlavor;
+        }
     }
 };
 
 cleanup.augmentEffectiveTime = function () {
     if (this.js) {
         var returnArray = {};
+        var empty = true;
 
         if (this.js.point) {
             returnArray.point = {
                 "date": this.js.point,
                 "precision": this.js.point_resolution
             };
+            empty = false;
         }
 
         if (this.js.low) {
@@ -3088,6 +2961,7 @@ cleanup.augmentEffectiveTime = function () {
                 "date": this.js.low,
                 "precision": this.js.low_resolution
             };
+            empty = false;
         }
 
         if (this.js.high) {
@@ -3095,6 +2969,7 @@ cleanup.augmentEffectiveTime = function () {
                 "date": this.js.high,
                 "precision": this.js.high_resolution
             };
+            empty = false;
         }
 
         if (this.js.center) {
@@ -3102,9 +2977,14 @@ cleanup.augmentEffectiveTime = function () {
                 "date": this.js.center,
                 "precision": this.js.center_resolution
             };
+            empty = false;
         }
 
-        this.js = returnArray;
+        if (empty) {
+            delete this.js;
+        } else {
+            this.js = returnArray;
+        }
     }
 };
 

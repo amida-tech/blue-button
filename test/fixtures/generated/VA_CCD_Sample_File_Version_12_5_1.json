@@ -670,7 +670,6 @@
             "precision": "day"
           }
         },
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -693,7 +692,6 @@
             "precision": "day"
           }
         },
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -710,7 +708,6 @@
         }
       },
       {
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -733,7 +730,6 @@
             "precision": "day"
           }
         },
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -756,7 +752,6 @@
             "precision": "day"
           }
         },
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -779,7 +774,6 @@
             "precision": "day"
           }
         },
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -796,7 +790,6 @@
         }
       },
       {
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -813,7 +806,6 @@
         }
       },
       {
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -830,7 +822,6 @@
         }
       },
       {
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -847,7 +838,6 @@
         }
       },
       {
-        "negation_indicator": false,
         "problem": {
           "code": {
             "translations": [
@@ -1118,39 +1108,48 @@
     ]
   },
   "errors": [
-    "cardinality error: found 2 when expecting 1..1 at h:patient/h:name",
     "nullFlavor alert:  missing but required code in SC 2.16.840.1.113883.6.238 -> Patient -> C32",
     "nullFlavor alert:  missing but required code in SC 2.16.840.1.113883.6.238 -> Patient -> C32",
     "nullFlavor alert:  missing but required language in LanguageCommunication -> Patient -> C32",
     "nullFlavor alert:  missing but required preferred in LanguageCommunication -> Patient -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> problemAct -> allergiesSection -> C32",
+    "nullFlavor alert:  missing but required date_time in problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required system in ConceptDescriptor -> allergenDescriptor -> allergyObservation -> problemAct -> allergiesSection -> C32",
     "nullFlavor alert:  missing but required identifier in Identifier -> activity -> encountersSection -> C32",

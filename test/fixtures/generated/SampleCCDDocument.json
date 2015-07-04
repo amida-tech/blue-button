@@ -61,7 +61,6 @@
             "identifier": "d11275e7-67ae-11db-bd13-0800200c9a66"
           }
         ],
-        "negation_indicator": false,
         "problem": {
           "code": {
             "name": "Asthma",
@@ -90,7 +89,6 @@
             "identifier": "ab1791b0-5c71-11db-b0de-0800200c9a66"
           }
         ],
-        "negation_indicator": false,
         "problem": {
           "code": {
             "name": "Pneumonia",
@@ -119,7 +117,6 @@
             "identifier": "9d3d416d-45ab-4da1-912f-4583e0632000"
           }
         ],
-        "negation_indicator": false,
         "problem": {
           "code": {
             "name": "Pneumonia",
@@ -143,7 +140,6 @@
         ]
       },
       {
-        "negation_indicator": false,
         "problem": {
           "code": {
             "name": "Myocardial infarction",
@@ -537,7 +533,6 @@
     ]
   },
   "errors": [
-    "cardinality error: found 2 when expecting 0..1 at h:entryRelationship/h:observation",
     "cardinality error: found 2 when expecting 1:1 at h:entryRelationship/h:observation/h:value",
     "nullFlavor alert:  missing but required location_type in serviceDeliveryLocation -> activity -> encountersSection -> CCD",
     "nullFlavor alert:  missing but required code in insurance -> policy -> entry -> payers_section -> CCD",
