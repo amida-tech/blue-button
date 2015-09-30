@@ -172,17 +172,19 @@ var includeCleanup = require("../common/cleanup");
 
 var cleanup = module.exports = Object.create(includeCleanup);
 
+var _ = require("lodash");
+
 cleanup.augmentObservation = function () {
 
-    if (this.js.problem_text && this.js.problem_text.js) {
-        if (!this.js.code.js.name) {
+    if (_.get(this, "js.problem_text") && _.get(this, "js.problem_text.js")) {
+        if (!_.get(this, "js.code.js.name")) {
             this.js.code.js.name = this.js.problem_text.js;
         }
     }
 
 };
 
-},{"../common/cleanup":40}],4:[function(require,module,exports){
+},{"../common/cleanup":40,"lodash":94}],4:[function(require,module,exports){
 "use strict";
 
 var shared = require('./shared');
@@ -233,6 +235,7 @@ var shared = require("../shared");
 var component = require("blue-button-xml").component;
 var cleanup = require("../cleanup");
 var processor = require("blue-button-xml").processor;
+var _ = require("lodash");
 
 var exportAllergiesSection = function (version) {
 
@@ -263,8 +266,8 @@ var exportAllergiesSection = function (version) {
     ]).cleanupStep(function () {
 
         //Custom VA C32 Shim.
-        if (this.js.code) {
-            if (this.js.code.js.name === "Coded Allergy Name Not Available") {
+        if (_.get(this, "js.code")) {
+            if (_.get(this, "js.code.js.name") === "Coded Allergy Name Not Available") {
                 delete this.js.code;
             }
         }
@@ -319,7 +322,7 @@ var exportAllergiesSection = function (version) {
 exports.allergiesSection = exportAllergiesSection;
 exports.allergiesEntry = exportAllergiesSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-xml":"blue-button-xml"}],6:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-xml":"blue-button-xml","lodash":94}],6:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -380,14 +383,15 @@ var shared = require("../shared");
 var component = require("blue-button-xml").component;
 var cleanup = require("../cleanup");
 var bbm = require("blue-button-meta");
+var _ = require("lodash");
 
 var augmentImmunizationStatus = function () {
     var tmpStatus = "";
-    if (this.js.negation_ind === "true") {
+    if (_.get(this, 'js.negation_ind') === "true") {
         tmpStatus = "refused";
-    } else if (this.js.mood_code === "INT") {
+    } else if (_.get(this, 'js.mood_code') === "INT") {
         tmpStatus = "pending";
-    } else if (this.js.mood_code === "EVN") {
+    } else if (_.get(this, 'js.mood_code') === "EVN") {
         tmpStatus = "complete";
     } else {
         tmpStatus = "unknown";
@@ -455,7 +459,7 @@ var exportImmunizationsSection = function (version) {
 exports.immunizationsSection = exportImmunizationsSection;
 exports.immunizationsEntry = exportImmunizationsSection;
 
-},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],8:[function(require,module,exports){
+},{"../cleanup":3,"../shared":13,"blue-button-meta":44,"blue-button-xml":"blue-button-xml","lodash":94}],8:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -583,19 +587,23 @@ var exportMedicationsSection = function (version) {
         .cleanupStep(function () {
 
             this.js.identifiers = _.filter(this.js.identifiers, function (identifier) {
-                if (identifier.js === null) {
-                    return false;
+                if (identifier) {
+                    if (identifier.js === null) {
+                        return false;
+                    } else {
+                        return true;
+                    }
                 } else {
-                    return true;
+                    return false;
                 }
             });
 
             //Cleanup Status.
 
-            if (this.js.status === "EVN") {
+            if (_.get(this, "js.status") === "EVN") {
                 this.js.status = "Completed";
             }
-            if (this.js.status === "INT") {
+            if (_.get(this, "js.status") === "INT") {
                 this.js.status = "Prescribed";
             }
 
@@ -1076,8 +1084,10 @@ var includeCleanup = require("../common/cleanup");
 
 var cleanup = module.exports = Object.create(includeCleanup);
 
+var _ = require("lodash");
+
 cleanup.promoteAllergenNameIfNoAllergen = function () {
-    if (this.js && (!this.js.allergen)) {
+    if (this.js && (!_.get(this, "js.allergen"))) {
         var name = this.js.allergenName && this.js.allergenName.js;
         if (name) {
             this.js.allergen = {
@@ -1089,7 +1099,7 @@ cleanup.promoteAllergenNameIfNoAllergen = function () {
 };
 
 cleanup.promoteFreeTextIfNoReaction = function () {
-    if (this.js && (!this.js.reaction)) {
+    if (this.js && (!_.get(this, "js.reaction"))) {
         var name = this.js.free_text_reaction && this.js.free_text_reaction.js;
         if (name) {
             this.js.reaction = {
@@ -1100,7 +1110,7 @@ cleanup.promoteFreeTextIfNoReaction = function () {
     delete this.js.free_text_reaction;
 };
 
-},{"../common/cleanup":40}],16:[function(require,module,exports){
+},{"../common/cleanup":40,"lodash":94}],16:[function(require,module,exports){
 "use strict";
 
 var shared = require('./shared');
@@ -1276,14 +1286,15 @@ var shared = require("../shared");
 var component = require("blue-button-xml").component;
 var cleanup = require("../cleanup");
 var bbm = require("blue-button-meta");
+var _ = require("lodash");
 
 var augmentImmunizationStatus = function () {
     var tmpStatus = "";
-    if (this.js.negation_ind === "true") {
+    if (_.get(this, "js.negation_ind") === "true") {
         tmpStatus = "refused";
-    } else if (this.js.mood_code === "INT") {
+    } else if (_.get(this, "js.mood_code") === "INT") {
         tmpStatus = "pending";
-    } else if (this.js.mood_code === "EVN") {
+    } else if (_.get(this, "js.mood_code") === "EVN") {
         tmpStatus = "complete";
     } else {
         tmpStatus = "unknown";
@@ -1336,7 +1347,7 @@ var exportImmunizationsSection = function (version) {
             ["refusal_reason", "0..1", "h:entryRelationship/h:observation/h:code/@code", shared.SimpleCode("2.16.840.1.113883.5.8")],
         ]).cleanupStep(function () { // Quick and dirty fix for when refusal_reason catches other observations in Vitera.
             if (this.js) { // Refusal reason should use the template id
-                if (this.js.refusal_reason && (!this.js.refusal_reason.js)) {
+                if (this.js.refusal_reason && (!_.get(this, "js.refusal_reason.js"))) {
                     delete this.js.refusal_reason;
                 }
             }
@@ -1355,7 +1366,7 @@ var exportImmunizationsSection = function (version) {
 exports.immunizationsSection = exportImmunizationsSection;
 exports.immunizationsEntry = exportImmunizationsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],20:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml","lodash":94}],20:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -1363,6 +1374,7 @@ var component = require("blue-button-xml").component;
 var cleanup = require("../cleanup");
 var processor = require("blue-button-xml").processor;
 var bbm = require("blue-button-meta");
+var _ = require("lodash");
 
 var exportMedicationsSection = function (version) {
     var sectionIDs = bbm.CCDA["sections" + version];
@@ -1511,10 +1523,10 @@ var exportMedicationsSection = function (version) {
 
                 //Cleanup Status.
 
-                if (this.js.status === "EVN") {
+                if (_.get(this, "js.status") === "EVN") {
                     this.js.status = "Completed";
                 }
-                if (this.js.status === "INT") {
+                if (_.get(this, "js.status") === "INT") {
                     this.js.status = "Prescribed";
                 }
 
@@ -1591,10 +1603,10 @@ var exportMedicationsSection = function (version) {
 
                 //Cleanup Status.
 
-                if (this.js.status === "EVN") {
+                if (_.get(this, "js.status") === "EVN") {
                     this.js.status = "Completed";
                 }
-                if (this.js.status === "INT") {
+                if (_.get(this, "js.status") === "INT") {
                     this.js.status = "Prescribed";
                 }
             });
@@ -1612,7 +1624,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],21:[function(require,module,exports){
+},{"../cleanup":15,"../shared":28,"blue-button-meta":44,"blue-button-xml":"blue-button-xml","lodash":94}],21:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -2341,6 +2353,7 @@ var component = require("blue-button-xml").component;
 var cleanup = require("../cleanup");
 var processor = require("blue-button-xml").processor;
 var bbm = require("blue-button-meta");
+var _ = require("lodash");
 
 var exportMedicationsSection = function (version) {
     var sectionIDs = bbm.CCDA["sections" + version];
@@ -2459,10 +2472,10 @@ var exportMedicationsSection = function (version) {
 
             //Cleanup Status.
 
-            if (this.js.status === "EVN") {
+            if (_.get(this, "js.status") === "EVN") {
                 this.js.status = "Completed";
             }
-            if (this.js.status === "INT") {
+            if (_.get(this, "js.status") === "INT") {
                 this.js.status = "Prescribed";
             }
 
@@ -2504,7 +2517,7 @@ var exportMedicationsSection = function (version) {
 exports.medicationsSection = exportMedicationsSection;
 exports.medicationsEntry = exportMedicationsSection;
 
-},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml"}],34:[function(require,module,exports){
+},{"../cleanup":30,"../shared":39,"blue-button-meta":44,"blue-button-xml":"blue-button-xml","lodash":94}],34:[function(require,module,exports){
 "use strict";
 
 var shared = require("../shared");
@@ -26538,7 +26551,7 @@ function hasOwnProperty(obj, prop) {
 (function (global){
 /**
  * @license
- * lodash 3.10.0 (Custom Build) <https://lodash.com/>
+ * lodash 3.10.1 (Custom Build) <https://lodash.com/>
  * Build: `lodash modern -d -o ./index.js`
  * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
@@ -26551,7 +26564,7 @@ function hasOwnProperty(obj, prop) {
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '3.10.0';
+  var VERSION = '3.10.1';
 
   /** Used to compose bitmasks for wrapper metadata. */
   var BIND_FLAG = 1,
@@ -38892,7 +38905,7 @@ function hasOwnProperty(obj, prop) {
 },{}],95:[function(require,module,exports){
 module.exports={
   "name": "blue-button",
-  "version": "1.6.0-beta.1",
+  "version": "1.6.0-beta.3",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -38941,7 +38954,7 @@ module.exports={
     "grunt-coveralls": "~1.0.0",
     "grunt-istanbul-coverage": "~0.1.1",
     "grunt-jsbeautifier": "~0.2.10",
-    "grunt-mocha-phantomjs": "~0.6.1",
+    "grunt-mocha-phantomjs": "~2.0.0",
     "grunt-mocha-test": "~0.12.7",
     "grunt-shell": "^1.1.2",
     "mocha": "~2.2.4",
