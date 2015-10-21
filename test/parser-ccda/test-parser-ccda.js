@@ -18,7 +18,8 @@ describe('parser.js', function () {
         var result = bb.parse(xmlfile);
         expect(result).to.exist;
 
-        console.log(JSON.stringify(result.data.header, null, 4));
+        //console.log(JSON.stringify(result.data.header, null, 4));
+        console.log(result.data.header);
 
         var valid = bb.validator.validateDocumentModel(result);
 
