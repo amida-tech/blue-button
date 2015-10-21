@@ -166,7 +166,7 @@ module.exports = function (grunt) {
     });
 
     // Default task.
-    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest', 'browser-test', 'gen-change-detect']);
+    grunt.registerTask('default', ['beautify', 'jshint', 'mochaTest']); //, 'browser-test', 'gen-change-detect']);
     //Express omitted for travis build.
     grunt.registerTask('commit', ['jshint', 'mochaTest']);
     grunt.registerTask('mocha', ['mochaTest']);
