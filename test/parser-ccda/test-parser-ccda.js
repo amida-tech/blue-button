@@ -25,8 +25,8 @@ describe('parser.js', function () {
 
         //if validation failed print all validation errors
         if (!valid) {
-            console.log(JSON.stringify(result.data.header, null, 4));
-            console.log(JSON.stringify(result.data.demographics, null, 4));
+            //console.log(JSON.stringify(result.data.header, null, 4));
+            //console.log(JSON.stringify(result.data.demographics, null, 4));
             console.log("Errors: \n", JSON.stringify(bb.validator.getLastError(), null, 4));
         }
 
