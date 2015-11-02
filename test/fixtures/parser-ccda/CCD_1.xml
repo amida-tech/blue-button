@@ -265,8 +265,8 @@
 			<code code="73761001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
 				displayName="Colonoscopy"/>
 			<effectiveTime>
-				<low value="201209080000-0400"/>
-				<high value="201209150000-0400"/>
+				<low value="201209081245-0400"/>
+				<high value="20150723175100"/>
 			</effectiveTime>
 			<performer typeCode="PRF">
 				<functionCode code="PP" displayName="Primary Performer"
