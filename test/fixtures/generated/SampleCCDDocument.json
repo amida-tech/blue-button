@@ -249,7 +249,9 @@
               "range": "M 13-18 g/dl; F 12-16 g/dl"
             },
             "interpretations": [
-              "Normal"
+              {"name": "Normal",
+                    "code": "N/A",
+                    "code_system_name": "N/A"}
             ],
             "value": 13.2,
             "unit": "g/dl"
@@ -278,7 +280,9 @@
               "unit": "10+3/ul"
             },
             "interpretations": [
-              "Normal"
+              {"name": "Normal",
+                    "code": "N/A",
+                    "code_system_name": "N/A"}
             ],
             "value": 6.7,
             "unit": "10+3/ul"
@@ -307,7 +311,9 @@
               "unit": "10+3/ul"
             },
             "interpretations": [
-              "Low"
+              {"name": "Low",
+                    "code": "N/A",
+                    "code_system_name": "N/A"}
             ],
             "value": 123,
             "unit": "10+3/ul"
@@ -350,7 +356,9 @@
               "unit": "meq/l"
             },
             "interpretations": [
-              "Normal"
+              {"name": "Normal",
+                    "code": "N/A",
+                    "code_system_name": "N/A"}
             ],
             "value": 140,
             "unit": "meq/l"
@@ -379,7 +387,9 @@
               "unit": "meq/l"
             },
             "interpretations": [
-              "Normal"
+              {"name": "Normal",
+                    "code": "N/A",
+                    "code_system_name": "N/A"}
             ],
             "value": 4,
             "unit": "meq/l"
@@ -408,7 +418,9 @@
               "unit": "meq/l"
             },
             "interpretations": [
-              "Normal"
+              {"name": "Normal",
+                    "code": "N/A",
+                    "code_system_name": "N/A"}
             ],
             "value": 102,
             "unit": "meq/l"
@@ -437,7 +449,9 @@
               "unit": "meq/l"
             },
             "interpretations": [
-              "High"
+              {"name": "High",
+                    "code": "N/A",
+                    "code_system_name": "N/A"}
             ],
             "value": 35,
             "unit": "meq/l"
