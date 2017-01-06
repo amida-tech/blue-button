@@ -68,19 +68,19 @@ module.exports = function (grunt) {
         },
         watch: {
             all: {
-                files: ['./lib/*.js', '*.js', './test/*.js'],
+                files: ['./lib/**/*.js', '*.js', './test/**/*.js'],
                 tasks: ['default']
             }
         },
         jsbeautifier: {
             beautify: {
-                src: ['Gruntfile.js', 'lib/*.js', 'lib/**/*.js', 'test/*.js', 'test/**/*.js'],
+                src: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js'],
                 options: {
                     config: '.jsbeautifyrc'
                 }
             },
             check: {
-                src: ['Gruntfile.js', 'lib/*.js', 'lib/**/*.js', 'test/*.js', 'test/**/*.js'],
+                src: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js'],
                 options: {
                     mode: 'VERIFY_ONLY',
                     config: '.jsbeautifyrc'
@@ -94,7 +94,7 @@ module.exports = function (grunt) {
                     timeout: '10000',
                     recursive: true
                 },
-                src: ['test/*.js', 'test/**/*.js']
+                src: ['test/**/*.js']
             }
         },
         coveralls: {

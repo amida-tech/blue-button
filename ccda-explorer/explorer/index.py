@@ -185,7 +185,7 @@ for item in js:
 		params2["en"]=pf(js[item]["sections"][i]["ccda_encounters"])
 		params2["me"]=pf(js[item]["sections"][i]["ccda_medications"])
 		params2["pbs"]=pf(js[item]["sections"][i]["ccda_problems"])
-		params2["im"]=pf(js[item]["sections"][i]["ccda_imm'unizations"])
+		params2["im"]=pf(js[item]["sections"][i]["ccda_immunizations"])
 		params2["vi"]=pf(js[item]["sections"][i]["ccda_vitals"])
 		params2["re"]=pf(js[item]["sections"][i]["ccda_results"])
 		params2["full"]=pf(js[item]["sections"][i]["full"])
