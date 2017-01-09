@@ -32,7 +32,6 @@ describe('nullFlavor testing', function () {
 
         //console.log("Demographics: \n", JSON.stringify(result.data.demographics, null, 4));
 
-
         expect(valid).to.be.true;
 
         done();

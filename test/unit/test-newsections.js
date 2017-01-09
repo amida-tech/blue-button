@@ -32,7 +32,6 @@ describe('new sections testing', function () {
 
         //console.log("All: \n", JSON.stringify(result, null, 4));
 
-
         expect(valid).to.be.true;
 
         done();
