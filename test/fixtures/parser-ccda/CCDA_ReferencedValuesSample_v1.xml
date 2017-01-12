@@ -772,7 +772,7 @@ ENCOUNTERS
 							<tbody>
 								<tr>
 									<td>
-										<content ID="Encounter1"/> Pnuemonia</td>
+										<content ID="Encounter1"> Pnuemonia</content></td>
 									<td>Dr Henry Seven</td>
 									<td>Community Health and Hospitals</td>
 									<td>20120806</td>
@@ -2125,18 +2125,18 @@ SOCIAL HISTORY
 							<tbody>
 								<tr>
 									<td>
-										<content ID="sh11"/>Smoker Status
+										<content ID="sh11">Smoker Status</content>
 								   </td>
 									<td>
-										<content ID="sh12"/>Former smoker (3 packs/day from 2005-2011)
+										<content ID="sh12">Former smoker (3 packs/day from 2005-2011)</content>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<content ID="sh21"/>Alcohol Intake
+										<content ID="sh21">Alcohol Intake</content>
 								   </td>
 									<td>
-										<content ID="sh22"/>2 drinks a week
+										<content ID="sh22">2 drinks a week</content>
 									</td>
 								</tr>
 							</tbody>
