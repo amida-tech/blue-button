@@ -3,8 +3,6 @@ var fs = require('fs');
 
 var bb = require('../../index.js');
 
-var beautify = require('js-beautify');
-
 describe('functional status section parser', function () {
     var xmlfile = null;
 
