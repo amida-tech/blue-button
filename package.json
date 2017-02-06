@@ -1,6 +1,6 @@
 {
   "name": "blue-button",
-  "version": "1.9.1-beta.6",
+  "version": "1.9.1-beta.7",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
