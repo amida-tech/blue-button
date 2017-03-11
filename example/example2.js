@@ -8,7 +8,7 @@ var fs = require("fs");
 var data = fs.readFileSync("CCD_Vitals.xml").toString();
 
 //parse xml into JS object 
-var doc = bb.xml(data);
+var doc = bb.xml.parse(data);
 
 //here are result of parsing
 //console.log(doc.errors);
