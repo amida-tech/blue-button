@@ -144,10 +144,6 @@ This is similar to [`parse`](#parseJSON) but it assumes `data` to be valid XML.
 
 This is similar to [`parse`](#parseJSON) but it assumes `data` to be an XML object.
 
-#### parseText(data)
-
-This is similar to [`parse`](#parseJSON) but it assumes `data` to be Text (ASCII) and `options` is not used.  Currently only Text content in CMS format is supported.
-
 ## Examples
 
 See scripts in [/example](./example) or [/test](./test) directories that use the above API methods for CCDA, C32 and CMS examples.

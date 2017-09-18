@@ -14,7 +14,6 @@ exports.xml = require("blue-button-xml").xmlUtil;
 var parser = require("./lib/parser.js");
 exports.parseXml = parser.parseXml;
 exports.parseString = parser.parseString;
-exports.parseText = parser.parseText;
 exports.parse = parser.parse;
 
 // Data model schema validation
