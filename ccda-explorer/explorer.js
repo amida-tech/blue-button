@@ -15,7 +15,8 @@ function getExtension(filename) {
 
 var DEFAULT_NS = {
   "h": "urn:hl7-org:v3",
-  "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+  "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+  "sdtc": "urn:hl7-org:sdtc"
 };
 
 var root_path="./dump/";
@@ -28,7 +29,7 @@ function parse(vendor, vendor_id, file_id, filename) {
     // readfile
     var data = fs.readFileSync(filename).toString();
 
-    var xmlDoc = libxmljs.parseXmlString(data);    
+    var xmlDoc = libxmljs.parseXmlString(data);
     var item;
     for (item in meta.templates) {
         var templates = xmlDoc.get('/h:ClinicalDocument/h:templateId[@root="' + meta.templates[item]["templateId"] + '"]', DEFAULT_NS);
@@ -118,7 +119,7 @@ function explore(path){
                 //var d = bb.parseXml(r, {component:"ccda_results"}); //errors: 119
 
                 //var d = bb.parseXml(r); //errors: 346
-                
+
                 //console.log(d);
 
 
