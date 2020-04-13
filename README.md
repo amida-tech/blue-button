@@ -1,3 +1,9 @@
+STEPS to use this in a lambda layer:
+1. create root folder called "nodejs"
+2. npm install --save blue-button-from-codecommit
+3. zip nodejs directory into blue-button.zip
+4. move to s3
+
 blue-button
 ==========
 
