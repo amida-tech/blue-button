@@ -1,6 +1,6 @@
 {
-  "name": "blue-button",
-  "version": "1.10.3",
+  "name": "@amida-tech/blue-button",
+  "version": "1.10.4",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -8,7 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "grunt mocha"
+    "test": "grunt"
   },
   "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
   "contributors": [
@@ -31,37 +31,33 @@
     {
       "name": "Christopher Best",
       "email": "christopher@amida-tech.com"
+    },
+    {
+      "name": "Marc Sylvestre",
+      "email": "marc.sylvestre@manhydra.com"
     }
   ],
   "license": "Apache-2.0",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 14.19.1"
   },
   "dependencies": {
-    "blue-button-cms": "~1.5.2",
-    "blue-button-meta": "1.7.0",
-    "blue-button-model": "~1.10.0",
-    "blue-button-xml": "~1.8.0",
-    "lodash": "^3.10.0",
-    "winston": "~1.0.0"
+    "@amida-tech/blue-button-cms": "^1.5.4",
+    "@amida-tech/blue-button-meta": "^1.7.2",
+    "@amida-tech/blue-button-model": "^1.10.2",
+    "@amida-tech/blue-button-xml": "^1.8.3",
+    "lodash": "^4.17.21",
+    "winston": "^3.7.2"
   },
   "devDependencies": {
-    "brfs": "~1.4.0",
-    "chai": "~3.0.0",
-    "coveralls": "~2.11.2",
-    "grunt": "~0.4.5",
-    "grunt-browserify": "~3.7.0",
-    "grunt-contrib-connect": "~0.10.1",
-    "grunt-contrib-jshint": "~0.11.2",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-coveralls": "~1.0.0",
-    "grunt-istanbul-coverage": "~0.1.1",
-    "grunt-jsbeautifier": "~0.2.10",
-    "grunt-mocha-phantomjs": "~2.0.0",
-    "grunt-mocha-test": "~0.12.7",
-    "grunt-shell": "^1.1.2",
-    "mocha": "~2.2.4",
-    "mocha-lcov-reporter": "~0.0.2"
+    "brfs": "^2.0.2",
+    "grunt": "^1.5.2",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-jsbeautifier": "^0.2.13",
+    "grunt-run": "^0.8.1",
+    "jest": "^27.5.1"
   },
   "repository": {
     "type": "git",

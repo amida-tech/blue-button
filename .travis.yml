@@ -1,20 +1,13 @@
-sudo: false
-
 language: node_js
 node_js:
-    - "4"
+  - "14.19.1"
 
 before_script:
-    - npm install -g grunt-cli
-    - npm install --quiet
-    - npm install -g mocha
-    - npm install -g istanbul
-    - npm install -g bower
-    - bower install
+  - npm install -g grunt-cli
+  - npm install --quiet
+
+#services:
+#    - mongodb
 
 script:
-    - grunt
-    - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec --recursive && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
-
-notifications:
-  slack: amida:GclZqFLfLqmjWZ4bwUbRIw5M
+  - grunt
