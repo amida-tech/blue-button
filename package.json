@@ -1,6 +1,6 @@
 {
   "name": "@amida-tech/blue-button",
-  "version": "1.10.4",
+  "version": "1.10.5",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -39,13 +39,13 @@
   ],
   "license": "Apache-2.0",
   "engines": {
-    "node": ">= 14.19.1"
+    "node": ">= 14.19.2"
   },
   "dependencies": {
     "@amida-tech/blue-button-cms": "^1.5.4",
     "@amida-tech/blue-button-meta": "^1.7.2",
     "@amida-tech/blue-button-model": "^1.10.2",
-    "@amida-tech/blue-button-xml": "^1.8.3",
+    "@amida-tech/blue-button-xml": "^1.8.4",
     "lodash": "^4.17.21",
     "winston": "^3.7.2"
   },
