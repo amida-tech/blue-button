@@ -59,4 +59,17 @@ describe('parser.js', function () {
     done();
   });
 
+  it('Parses social history PQ value', function (done) {
+    var xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-ccda/CCD_SocialHistory_PQ_value.xml', 'utf-8').toString();
+    expect(xmlfile).toBeDefined();
+
+    //convert string into JSON
+    var result = bb.parse(xmlfile);
+    expect(result).toBeDefined();
+
+    // social_history value was parsed
+    expect(result.data.social_history[0].value).toBe('12');
+
+    done();
+  });
 });
