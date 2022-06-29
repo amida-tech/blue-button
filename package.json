@@ -1,6 +1,6 @@
 {
   "name": "@amida-tech/blue-button",
-  "version": "1.10.6",
+  "version": "1.10.7",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {

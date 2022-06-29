@@ -1,5 +1,10 @@
 # blue-button Release Notes
 
+## v.1.10.7 - June 29, 2022
+
+- Parse performer phone as an array; Fixes #261
+- Parse PQ values for social_history; fixes #262
+
 ## v.1.5.0 - June 12, 2015
 - Demographics race and ethnicity are now seperated.
 - Confidentiality Code and Set Identifier are now parsed into results meta attribute for ccda and c32.
