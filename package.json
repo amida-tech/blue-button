@@ -47,7 +47,7 @@
     "@amida-tech/blue-button-model": "^1.10.3",
     "@amida-tech/blue-button-xml": "^1.8.4",
     "lodash": "^4.17.21",
-    "winston": "^3.7.2"
+    "winston": "^3.8.0"
   },
   "devDependencies": {
     "brfs": "^2.0.2",
