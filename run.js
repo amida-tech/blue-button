@@ -1,9 +1,9 @@
-const fs = require('fs');
-const path = require('path');
-const bb = require('./');
+var fs = require('fs');
+var path = require('path');
+var bb = require('./');
 
-const file = path.join('test/fixtures/parser-ccda/CCD_SocialHistory_PQ_value.xml');
-const xml = fs.readFileSync(file, {encoding: 'utf-8'});
-const result = bb.parse(xml);
+var file = path.join(__dirname, 'test/fixtures/parser-ccda/CCD_SocialHistory_PQ_value.xml');
+var xml = fs.readFileSync(file, {encoding: 'utf-8'});
+var result = bb.parse(xml);
 
 console.log(JSON.stringify(result, null, 2));
