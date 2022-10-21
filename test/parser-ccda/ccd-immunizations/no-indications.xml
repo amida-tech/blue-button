@@ -901,7 +901,7 @@ Immunizations section
 					</text>
 					<entry>
 
-            <!-- Begin Immunuzation activity that contains 1 indication -->
+            <!-- Begin Immunuzation activity -->
 
             <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
               <!-- ** Immunization activity ** -->
@@ -959,7 +959,7 @@ Immunizations section
               </performer>
             </substanceAdministration>
 
-            <!-- End Immunuzation activity that contains 1 indication -->
+            <!-- End Immunuzation activity -->
 
 					</entry>
 				</section>
