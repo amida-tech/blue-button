@@ -901,7 +901,7 @@ Immunizations section
 					</text>
 					<entry>
 
-            <!-- Begin Immunuzation activity -->
+            <!-- Begin Immunuzation activity that contains 1 reaction -->
 
             <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
               <!-- ** Immunization activity ** -->
@@ -957,9 +957,51 @@ Immunizations section
                   </representedOrganization>
                 </assignedEntity>
               </performer>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09" />
+                  <!-- Note that this id equals the problem observation/id -->
+                  <id root="db734647-fc99-424c-a864-7e3cda82e703" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+									<effectiveTime>
+											<low value="20100501100000"/>
+									</effectiveTime>
+                  <value xsi:type="CD" code="32398004" displayName="Bronchitis" codeSystem="2.16.840.1.113883.6.96" />
+                </observation>
+              </entryRelationship>
+							<!-- Begin reaction observation -->
+							<entryRelationship typeCode="CAUS">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09" />
+									<id root="4adc1020-7b14-11db-9fe1-0800200c9a64" />
+									<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+									<text>
+										<reference value="#reaction1" />
+									</text>
+									<statusCode code="completed" />
+									<effectiveTime>
+										<low value="200802260805-0800" />
+										<high value="200802281205-0800" />
+									</effectiveTime>
+									<value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" displayName="Nausea" />
+									<entryRelationship typeCode="SUBJ" inversionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.8" extension="2014-06-09" />
+											<code code="SEV" displayName="Severity Observation" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+											<text>
+												<reference value="#allergyseverity1" />
+											</text>
+											<statusCode code="completed" />
+											<value xsi:type="CD" code="371924009" displayName="Moderate to severe" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+							<!-- End reaction observation -->
             </substanceAdministration>
 
-            <!-- End Immunuzation activity -->
+            <!-- End Immunuzation activity that contains 1 reaction -->
 
 					</entry>
 				</section>
