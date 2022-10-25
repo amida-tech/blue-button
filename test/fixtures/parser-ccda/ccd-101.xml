@@ -991,16 +991,16 @@ Medications section
 											<!-- ** Immunization medication information ** -->
 											<templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
 											<manufacturedMaterial>
-											  <code code="33" codeSystem="2.16.840.1.113762.1.4.1010.6" displayName="CVX Vaccines Administered Vaccine Set" codeSystemName="CVX">
-												<translation code="854981" displayName="CVX Vaccines Administered Vaccine Set" codeSystemName="RxNORM" codeSystem="2.16.840.1.113883.6.881"></translation>
-												<!-- <translation code="854981" displayName="Pneumovax 23 (Pneumococcal vaccine polyvalent) Injectable Solution" codeSystemName="RxNORM" codeSystem="2.16.840.1.113883.6.88" /> -->
-											  </code>
-											  <lotNumberText>1</lotNumberText>
+												<code code="33" codeSystem="2.16.840.1.113762.1.4.1010.6" displayName="CVX Vaccines Administered Vaccine Set" codeSystemName="CVX">
+													<translation code="854981" displayName="CVX Vaccines Administered Vaccine Set" codeSystemName="RxNORM" codeSystem="2.16.840.1.113883.6.881"></translation>
+													<!-- <translation code="854981" displayName="Pneumovax 23 (Pneumococcal vaccine polyvalent) Injectable Solution" codeSystemName="RxNORM" codeSystem="2.16.840.1.113883.6.88" /> -->
+												</code>
+												<lotNumberText>1</lotNumberText>
 											</manufacturedMaterial>
 											<manufacturerOrganization>
-											  <name>Health LS - Immunopop Inc.</name>
+												<name>Health LS - Immunopop Inc.</name>
 											</manufacturerOrganization>
-										  </manufacturedProduct>
+										</manufacturedProduct>
 									</product>
 									<performer>
 										<assignedEntity></assignedEntity>
@@ -1034,6 +1034,140 @@ Medications section
 									</manufacturedMaterial>
 								</manufacturedProduct>
 							</consumable>
+						</substanceAdministration>
+					</entry>
+
+
+				</section>
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.22.2.2.1" />
+					<!-- Medications section template -->
+					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1"
+						codeSystemName="LOINC" displayName="History of Medication Use" />
+					<title>Medications</title>
+					<text>
+
+						<table>
+							<thead>
+								<tr>
+									<th>Group Description</th>
+									<th>Code System</th>
+									<th>Code</th>
+									<th>Code Description</th>
+									<th>Date and Time</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Antihypertensive combinations</td>
+									<td>RxNorm</td>
+									<td>858828</td>
+									<td>
+										<content ID="Medication1" />
+										Enalapril Maleate 10 MG / Hydrochlorothiazide 25 MG Oral Tablet
+									</td>
+									<td>04-25-2010 10:00:00</td>
+									<td>Active</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<informant>
+						<assignedEntity>
+							<id extension="KP00017" root="2.16.840.1.113883.19.5" />
+							<representedOrganization>
+								<id root="2.16.840.1.113883.4.6" />
+								<name>Community Health and Hospitals</name>
+								<telecom use="WP" value="tel: 555-555-5000" />
+								<addr>
+									<streetAddressLine>1001 Village Avenue</streetAddressLine>
+									<city>Portland</city>
+									<state>OR</state>
+									<postalCode>99123</postalCode>
+									<country>US</country>
+								</addr>
+							</representedOrganization>
+						</assignedEntity>
+					</informant>
+					<entry typeCode="DRIV">
+
+						<substanceAdministration classCode="SBADM" moodCode="EVN">
+							<!-- ** Medication Activity (V2) ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.16"
+								extension="2014-06-09" />
+							<id root="6c844c75-aa34-411c-b7bd-5e4a9f206e29" />
+							<statusCode code="active" />
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="20120318" />
+							</effectiveTime>
+							<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+								<period value="12" unit="h" />
+							</effectiveTime>
+							<routeCode code="C38288"
+								codeSystem="2.16.840.1.113883.3.26.1.1"
+								codeSystemName="NCI Thesaurus"
+								displayName="ORAL" />
+							<doseQuantity value="1" />
+							<consumable>
+								<manufacturedProduct classCode="MANU">
+									<!-- ** Medication information ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.23"
+										extension="2014-06-09" />
+									<id root="2a620155-9d11-439e-92b3-5d9815ff4ee8" />
+									<manufacturedMaterial>
+										<code code="197380"
+											displayName="Atenolol 25 MG Oral Tablet"
+											codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+							<entryRelationship typeCode="RSON">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- ** Indication ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.19"
+										extension="2014-06-09" />
+									<id root="e63166c7-6482-4a44-83a1-37ccdbde725b" />
+									<code code="75321-0"
+										codeSystem="2.16.840.1.113883.6.1"
+										codeSystemName="LOINC"
+										displayName="Clinical finding" />
+									<statusCode code="completed" />
+									<value xsi:type="CD"
+										code="38341003"
+										displayName="Hypertension"
+										codeSystem="2.16.840.1.113883.6.96" />
+								</observation>
+								<supply classCode="SPLY" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.18" extension="2014-06-09" />
+									<id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704" />
+									<statusCode code="completed" />
+									<effectiveTime value="201208151450-0800" />
+									<repeatNumber value="1" />
+									<quantity value="75" />
+									<product>
+										<manufacturedProduct classCode="MANU">
+											<!-- ** Immunization medication information ** -->
+											<templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
+											<manufacturedMaterial>
+												<code code="33" codeSystem="2.16.840.1.113762.1.4.1010.6" displayName="CVX Vaccines Administered Vaccine Set" codeSystemName="CVX">
+													<translation code="854981" displayName="CVX Vaccines Administered Vaccine Set" codeSystemName="RxNORM" codeSystem="2.16.840.1.113883.6.881"></translation>
+													<!-- <translation code="854981" displayName="Pneumovax 23 (Pneumococcal vaccine polyvalent) Injectable Solution" codeSystemName="RxNORM" codeSystem="2.16.840.1.113883.6.88" /> -->
+												</code>
+												<lotNumberText>1</lotNumberText>
+											</manufacturedMaterial>
+											<manufacturerOrganization>
+												<name>Health LS - Immunopop2 Inc.</name>
+											</manufacturerOrganization>
+										</manufacturedProduct>
+									</product>
+									<performer>
+									  <assignedEntity>
+
+										  </assignedEntity>
+									</performer>
+								  </supply>
+							</entryRelationship>
 						</substanceAdministration>
 					</entry>
 
