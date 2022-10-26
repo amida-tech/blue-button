@@ -10,7 +10,6 @@ describe('parser.js', function () {
 
     //convert string into JSON
     var result = bb.parse(xmlfile);
-    console.log(result.data.review_of_systems);
     expect(result).toBeDefined();
 
     //console.log(JSON.stringify(result.data.header, null, 4));
