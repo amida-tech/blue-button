@@ -13,7 +13,6 @@ describe('review of systems', function () {
   it('with', function () {
     var xmlfile = fs.readFileSync(__dirname + '/with.xml', 'utf-8').toString();
     var result = bb.parse(xmlfile);
-
     expect(result.data.results[0].author).toBeDefined();
   });
 
