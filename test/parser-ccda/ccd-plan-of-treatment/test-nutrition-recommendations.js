@@ -17,13 +17,18 @@ describe('plan of treatment', function () {
 
       expect(result.data.plan_of_treatment.nutrition_recommendations.length).toBe(1);
 
-      console.log(result.data.plan_of_treatment);
-
       var recommendation = result.data.plan_of_treatment.nutrition_recommendations[0];
-      expect(recommendation.identifiers[0]).toEqual({"identifier": "db734647-fc99-424c-a864-7e3cda82e703"});
-      expect(recommendation.code).toEqual({"code": "ASSERTION", "code_system_name": "ActCode"});
-      expect(recommendation.date_time).toEqual({"low": {"date": "2010-05-01T00:00:00.000Z", "precision": "day"}});
-      expect(recommendation.value).toEqual({"code": "32398004", "code_system_name": "SNOMED CT", "name": "Bronchitis"});
+      expect(recommendation.identifiers[0]).toEqual({"identifier": "9a6d1bac-17d3-4195-89a4-1121bc809a5c"});
+      expect(recommendation.code).toEqual({
+        "code": "61310001",
+        "code_system_name": "SNOMED CT",
+        "name": "nutrition education"
+      });
+      expect(recommendation.date_time).toEqual({
+        "point": {
+          "date": "2013-05-12T00:00:00.000Z", "precision": "day"
+        }
+      });
     });
 
     it('multiple recommendations', function () {
