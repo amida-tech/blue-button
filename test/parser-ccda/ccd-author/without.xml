@@ -833,23 +833,6 @@
 					</entry>
 				</section>
 			</component>
-			<!-- ************************************ REVIEW OF SYSTEMS ************************************ -->
-			<component>
-				<section>
-					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
-					<code	code="10187-3" codeSystem="2.16.840.1.113883.6.1" 
-								codeSystemName="LOINC" 
-								displayName="REVIEW OF SYSTEMS"/>
-					<title>REVIEW OF SYSTEMS</title>
-					<text>
-						<paragraph>
-								Patient denies recent history of fever or malaise. Positive 
-								For weakness and shortness of breath. One episode of melena. No recent
-								headaches. Positive for osteoarthritis in hips, knees and hands.
-							</paragraph>
-					</text>
-				</section>
-			</component>
 			<!-- ************************************ ASSESSMENT ************************************ -->
 			<component>
 				<section>
@@ -2918,25 +2901,6 @@
 							<code code="43789009" displayName="CBC WO DIFFERENTIAL"
 								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<statusCode code="completed"/>
-							<author>
-								<templateId root="2.16.840.1.113883.10.20.22.4.119" />
-								<time value="201308011235-0800" />
-								<assignedAuthor>
-									<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
-									<code code="163W00000X" codeSystem="2.16.840.1.113883.5.53" codeSystemName="Health Care Provider Taxonomy" displayName="Registered nurse" />
-									<assignedPerson>
-										<name>
-											<given>Nurse</given>
-											<family>Nightingale</family>
-											<suffix>RN</suffix>
-										</name>
-									</assignedPerson>
-									<representedOrganization>
-										<id root="2.16.840.1.113883.19.5" />
-										<name>Good Health Hospital</name>
-									</representedOrganization>
-								</assignedAuthor>
-							</author>
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- ** Result observation ** -->
