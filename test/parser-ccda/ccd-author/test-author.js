@@ -1,7 +1,7 @@
 var fs = require('fs');
 var bb = require('../../../index.js');
 
-describe('review of systems', function () {
+describe('results', function () {
   it('without', function () {
     var xmlfile = fs.readFileSync(__dirname + '/without.xml', 'utf-8').toString();
     var result = bb.parse(xmlfile);
