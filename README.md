@@ -9,15 +9,14 @@ blue-button
 
 Blue Button JavaScript library
 
-[![NPM](https://nodei.co/npm/blue-button.png)](https://nodei.co/npm/blue-button/)
+[![NPM](https://nodei.co/npm/@amida-tech/blue-button.png)](https://nodei.co/npm/@amida-tech/blue-button/)
 
 [![Build Status](https://travis-ci.org/amida-tech/blue-button.svg)](https://travis-ci.org/amida-tech/blue-button)
 [![Coverage Status](https://coveralls.io/repos/amida-tech/blue-button/badge.png)](https://coveralls.io/r/amida-tech/blue-button)
-[![Dependency Status](https://david-dm.org/amida-tech/blue-button.svg)](https://david-dm.org/amida-tech/blue-button)
 
 ![blue-button.js](./docs/blue-button-js.png)
 
-This library provides the following functionality
+This library is part of [blue-button](https://github.com/amida-tech/blue-button) family of parsers and provides the following functionality:
 
 - Parse XML documents
 - Sense type of data (CCDA, CMS, C32, etc.)
@@ -33,15 +32,31 @@ Actual implementation of sensing type of data and parsing CCDA and C32 reside in
 - [blue-button-cms](https://github.com/amida-tech/blue-button-cms) provides CMS parsing
 - [blue-button-model](https://github.com/amida-tech/blue-button-model) provides data model schema and validation
 
-In addition CCDA generation from blue-button JSON objects is available in [blue-button-generate](https://github.com/amida-tech/blue-button-generate).
+In addition CCDA generation from blue-button, JSON objects is available in [blue-button-generate](https://github.com/amida-tech/blue-button-generate).
 
-This library is primarily implemented for [node.js](http://nodejs.org) and is available via [npm](https://www.npmjs.org/doc/cli/npm.html). A browser version is also available via [bower](http://bower.io/). The browser version is created using [browserify](http://browserify.org) and can be used in the same way that you would use it in [node.js](http://nodejs.org).  
+## Quick up and running guide
+
+### Prerequisites
+
+- Node.js (v14.19+) and NPM
+- Grunt.js
+
+```sh
+# Install dependencies
+npm i
+
+# Install grunt
+npm i -g grunt
+
+# Test
+grunt
+```
 
 ## Usage
 
 Require blue-button module
 ``` javascript
-var bb = require("blue-button")
+var bb = require("@amida-tech/blue-button")
 ```
 Load some health data content.  Currently CCDA (CCD), C32 and CMS are supported
 ``` javascript
@@ -64,11 +79,10 @@ doc.data.demographics.phone.number = "(555)555-5555";
 ```
 Create a CCDA (CCD) document that includes your changes
 ``` javascript
-var bbg = require("blue-button-generate")
+var bbg = require("@amida-tech/blue-button-generate")
 var modifiedDataCCD = bbg.generateCCD(doc);
 ```
 
-<a name="dataModel" />
 ## Data Model
 
 Blue Button library converts all types of health data (CCDA, C32, CMS) into a [common model](https://github.com/amida-tech/blue-button-model/blob/master/docs/model.md).  Data model schema and validation implementation can be found in [blue-button-model](https://github.com/amida-tech/blue-button-model).
@@ -82,8 +96,7 @@ Blue Button library provides basic XML parsing and [XPath](http://www.w3.org/TR/
 var xml = bb.xml;
 ```
 
-<a name="parse" />
-#### parse(src)
+`parse(src)`
 
 Parses XML content string into an XML Object which can be used in other API methods.  Details of the actual XML object can be found in the documentation of underlying libraries [libxmljs](https://github.com/polotek/libxmljs) (node.js) and [DomParser](http://www.w3schools.com/dom/dom_parser.asp) (browsers).
 
@@ -92,7 +105,7 @@ __Arguments__
 * `src` - XML content in string.
 * returns - XML Object.
 
-#### xpath(doc, p, ns)
+`xpath(doc, p, ns)`
 
 Finds the XML nodes that are specified by `p`.
 
@@ -103,10 +116,9 @@ __Arguments__
 * `ns` - XML namespace specifications.  By default `h: urn:hl7-org:v3"` and `xsi: http://www.w3.org/2001/XMLSchema-instance` are used as they are the namespaces used in CCDA.
 * returns - XML object node.
 
-<a name="parse" />
 ### Sensing
 
-#### senseString(data)
+`senseString(data)`
 
 Senses the type of the string content.  
 
@@ -118,7 +130,7 @@ __Arguments__
   * `xml` - In the case of XML content (`ccda`, `c32`, `cda`, `xml`) this is set to the parsed XML object.
   * `json` - In the case of JSON content (`blue-button.js`, `json`) this is set to the passed JSON object.
 
-#### senseXml(data)
+`senseXml(data)`
 
 Senses the type of an XML object.
 
@@ -130,8 +142,7 @@ __Arguments__
 
 ### JSON Generation
 
-<a name="parseJSON" />
-#### parse(data, options)
+`parse(data, options)`
 
 This is the primary method in Blue Button library that both senses the type of the input content and generates JSON out of it.  Underneath it calls to other [sensing](#sensing) and JSON generation methods.
 
@@ -142,15 +153,15 @@ __Arguments__
   * `component` - Specifies a component of CCDA or C32 document; not used for CMS documents.  `data` should only contain content for the component.    The following CCDA (CCD) sections are supported: `ccda_demographics`, `ccda_vitals`, `ccda_medications`, `ccda_problems`, `ccda_immunizations`, `ccda_results`, `ccda_allergies`, `ccda_encounters`, `ccda_procedures`, `ccda_social_history`, `ccda_plan_of_care`, `ccda_payers`.  The following C32 sections are supported: `c32_demographics`, `c32_vitals`, `c32_medications`, `c32_problems`, `c32_immunizations`, `c32_results`, `c32_allergies`, `c32_encounters`, `c32_procedures`.  In addition individual entries in each section can also be specified (`ccda_vitals_entry`, `ccda_medications_entry`, ..., `c32_vitals_entry`, ...).
 * returns - [JSON representation](#dataModel) of the data.
 
-#### parseString(data, options)
+`parseString(data, options)`
 
 This is similar to [`parse`](#parseJSON) but it assumes `data` to be valid XML.
 
-#### parseXml(data, options)
+`parseXml(data, options)`
 
 This is similar to [`parse`](#parseJSON) but it assumes `data` to be an XML object.
 
-#### parseText(data)
+`parseText(data)`
 
 This is similar to [`parse`](#parseJSON) but it assumes `data` to be Text (ASCII) and `options` is not used.  Currently only Text content in CMS format is supported.
 
@@ -180,7 +191,7 @@ Contributors are welcome. See issues https://github.com/amida-tech/blue-button/i
 
 ## Release Notes
 
-See release notes [here] (./RELEASENOTES.md)
+See release notes [here](./RELEASENOTES.md)
 
 ## License
 
