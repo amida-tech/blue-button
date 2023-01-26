@@ -44,7 +44,7 @@
   "dependencies": {
     "@amida-tech/blue-button-cms": "^1.5.6",
     "@amida-tech/blue-button-meta": "^1.7.3",
-    "@amida-tech/blue-button-model": "^1.10.3",
+    "@amida-tech/blue-button-model": "^1.10.4",
     "@amida-tech/blue-button-xml": "^1.8.7",
     "lodash": "^4.17.21",
     "winston": "^3.8.2"
