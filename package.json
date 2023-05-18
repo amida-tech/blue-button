@@ -1,6 +1,6 @@
 {
-  "name": "@amida-tech/blue-button",
-  "version": "1.10.8",
+  "name": "blue-button",
+  "version": "1.10.9",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
   "main": "./index.js",
   "directories": {
@@ -47,7 +47,7 @@
     "@amida-tech/blue-button-model": "^1.10.3",
     "@amida-tech/blue-button-xml": "https://github.com/elationemr/blue-button-xml#develop",
     "lodash": "^4.17.21",
-    "winston": "^3.8.1"
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "brfs": "^2.0.2",
@@ -57,7 +57,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-jsbeautifier": "^0.2.13",
     "grunt-run": "^0.8.1",
-    "jest": "^27.5.1"
+    "jest": "^29.3.1"
   },
   "repository": {
     "type": "git",
