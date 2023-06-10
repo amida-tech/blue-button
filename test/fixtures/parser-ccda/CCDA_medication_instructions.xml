@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="cda.xsl" type="text/xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <realmCode code="US"/>
+    <effectiveTime value="201209150000-0400"/>
+    <recordTarget>
+        <patientRole>
+            <patient>
+                <name use="L">
+                </name>
+                <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"
+					displayName="Female"/>
+                <birthTime value="19750501"/>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <!-- US General Header Template -->
+	<templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+    <component>
+        <structuredBody>
+            <component>
+				<section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+                    <title>MEDICATIONS</title>
+                    <text>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Medication</th>
+									<th>SIG (Take, Route, Frequency, Duration)</th>
+									<th>Notes</th>
+									<th>Start Date</th>
+									<th>End Date</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+                                <tr>
+									<td ID="medication2">ZyrTEC 10 mg</td>
+									<td ID="instruction2">1 tab(s) orally once a day</td>
+									<td/>
+									<td/>
+									<td/>
+									<td>Active</td>
+								</tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+						<substanceAdministration classCode="SBADM" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                            <text>
+								<reference value="#medication2"/>
+							</text>
+                            <consumable>
+                                <manufacturedProduct classCode="MANU">
+                                    <manufacturedMaterial>
+										<code code="1020026" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="cetirizine hydrochloride 10 MG Oral Tablet [Zyrtec]">
+                                        </code>
+									</manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship typeCode="COMP">
+                                <substanceAdministration classCode="SBADM" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.147"/>
+                                    <code code="76662-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication Instructions"/>
+									<text>
+										<reference value="#instruction2"/> 
+									</text>
+                                </substanceAdministration>
+                            </entryRelationship>
+                            <precondition typeCode="PRCN">
+                                <criterion>
+                                </criterion>
+                            </precondition>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
