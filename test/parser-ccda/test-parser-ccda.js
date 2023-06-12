@@ -3,6 +3,25 @@ var fs = require('fs');
 var bb = require('../../index.js');
 
 describe('parser.js', function () {
+  it('CCDA parse medication free text sig', function(done) {
+    //Medication Free Text Sig
+    //The template is available to explicitly identify the free text Sig within each medication.
+
+    //An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning.
+    //details at https://build.fhir.org/ig/HL7/cda-ccda-2.2/StructureDefinition-2.16.840.1.113883.10.20.22.4.147.html
+
+    var xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-ccda/CCDA_medication_instructions.xml', 'utf-8').toString();
+    expect(xmlfile).toBeDefined();
+
+    //convert string into JSON
+    var result = bb.parse(xmlfile);
+    expect(result).toBeDefined();
+
+    expect(result.data.medications[0].sig).toBe('ZyrTEC 10 mg');
+    expect(result.data.medications[0].free_text_sig.sig).toBe('1 tab(s) orally once a day');
+
+    done();
+  });
 
   it('CCDA parser/model validation', function (done) {
     var xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-ccda/CCD_1.xml', 'utf-8').toString();
