@@ -23,6 +23,19 @@ describe('parser.js', function () {
     done();
   });
 
+  it('CCDA parse problem_text', function(done) {
+    var xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-ccda/CCDA_ProblemSample.xml', 'utf-8').toString();
+    expect(xmlfile).toBeDefined();
+
+    //convert string into JSON
+    var result = bb.parse(xmlfile);
+    expect(result).toBeDefined();
+
+    expect(result.data.problems[1].problem.code.name).toBe('Anxiety');
+
+    done();
+  });
+
   it('CCDA parser/model validation', function (done) {
     var xmlfile = fs.readFileSync(__dirname + '/../fixtures/parser-ccda/CCD_1.xml', 'utf-8').toString();
     expect(xmlfile).toBeDefined();

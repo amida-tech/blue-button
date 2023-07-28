@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+    <realmCode code="US"/>
+	<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+	<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.1.2"/>
+	<templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+	<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.1.1"/>
+	<id assigningAuthorityName="Kareo Clinical" extension="aaa4ee41-beee-463e-b863-f51d2ee837f4" root="2.16.840.1.113883.19"/>
+    <effectiveTime value="20230721"/>
+	<confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
+	<languageCode code="en-US"/>
+    <component>
+		<structuredBody>
+            <component>
+				<section>
+					<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.5.1"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+					<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.5"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+					<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+					<title>PROBLEMS</title>
+					<text>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Problem</th>
+									<th>Effective Dates</th>
+									<th>Problem Status</th>
+									<th>Problem Type</th>
+									<th>Problem Comments</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ID="Problem1">
+									<td>Depression</td>
+									<td>May 18, 2023</td>
+									<td>ACTIVE</td>
+									<td/>
+									<td>No additional comments</td>
+								</tr>
+								<tr ID="Problem2">
+									<td>Anxiety</td>
+									<td>May 18, 2023</td>
+									<td>ACTIVE</td>
+									<td/>
+									<td>No additional comments</td>
+								</tr>
+								<tr ID="Problem3">
+									<td>HRT</td>
+									<td>May 18, 2023</td>
+									<td>ACTIVE</td>
+									<td/>
+									<td>No additional comments</td>
+								</tr>
+								<tr ID="Problem4">
+									<td>Insomnia</td>
+									<td>May 18, 2023</td>
+									<td>ACTIVE</td>
+									<td/>
+									<td>No additional comments</td>
+								</tr>
+								<tr ID="Problem5">
+									<td>Severe headaches, migraines</td>
+									<td>May 18, 2023</td>
+									<td>ACTIVE</td>
+									<td/>
+									<td>No additional comments</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.3"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+							<id extension="67530812" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+							<code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20230518"/>
+								<high nullFlavor="NI"/>
+							</effectiveTime>
+							<author>
+								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+								<time value="20230518135554+0000"/>
+								<assignedAuthor>
+									<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+									<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<addr use="WP">
+										<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+										<city>The Woodlands</city>
+										<state>TX</state>
+										<postalCode>77384-5066</postalCode>
+										<country nullFlavor="NI"/>
+									</addr>
+									<telecom use="WP" value="tel:+1(832)-536-7662"/>
+									<assignedPerson>
+										<name>
+											<given>PATRICIA</given>
+											<family>ALLAMON</family>
+										</name>
+									</assignedPerson>
+									<representedOrganization>
+										<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+										<name>Patricia Allamon M.D.</name>
+									</representedOrganization>
+								</assignedAuthor>
+							</author>
+							<entryRelationship typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.4"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id extension="67530812" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Problem">
+										<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									</code>
+									<text>
+										<reference value="#Problem1"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20230518"/>
+										<high nullFlavor="UNK"/>
+									</effectiveTime>
+									<value code="161469008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Depression" xsi:type="CD"/>
+									<author>
+										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+										<time value="20230518135554+0000"/>
+										<assignedAuthor>
+											<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+											<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+											<addr use="WP">
+												<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+												<city>The Woodlands</city>
+												<state>TX</state>
+												<postalCode>77384-5066</postalCode>
+												<country nullFlavor="NI"/>
+											</addr>
+											<telecom use="WP" value="tel:+1(832)-536-7662"/>
+											<assignedPerson>
+												<name>
+													<given>PATRICIA</given>
+													<family>ALLAMON</family>
+												</name>
+											</assignedPerson>
+											<representedOrganization>
+												<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+												<name>Patricia Allamon M.D.</name>
+											</representedOrganization>
+										</assignedAuthor>
+									</author>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.3"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+							<id extension="67530813" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+							<code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20230518"/>
+								<high nullFlavor="NI"/>
+							</effectiveTime>
+							<author>
+								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+								<time value="20230518135554+0000"/>
+								<assignedAuthor>
+									<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+									<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<addr use="WP">
+										<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+										<city>The Woodlands</city>
+										<state>TX</state>
+										<postalCode>77384-5066</postalCode>
+										<country nullFlavor="NI"/>
+									</addr>
+									<telecom use="WP" value="tel:+1(832)-536-7662"/>
+									<assignedPerson>
+										<name>
+											<given>PATRICIA</given>
+											<family>ALLAMON</family>
+										</name>
+									</assignedPerson>
+									<representedOrganization>
+										<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+										<name>Patricia Allamon M.D.</name>
+									</representedOrganization>
+								</assignedAuthor>
+							</author>
+							<entryRelationship typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.4"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id extension="67530813" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Problem">
+										<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									</code>
+									<text>
+										<reference value="#Problem2"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20230518"/>
+										<high nullFlavor="UNK"/>
+									</effectiveTime>
+									<value nullFlavor="NI" xsi:type="CD"/>
+									<author>
+										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+										<time value="20230518135554+0000"/>
+										<assignedAuthor>
+											<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+											<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+											<addr use="WP">
+												<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+												<city>The Woodlands</city>
+												<state>TX</state>
+												<postalCode>77384-5066</postalCode>
+												<country nullFlavor="NI"/>
+											</addr>
+											<telecom use="WP" value="tel:+1(832)-536-7662"/>
+											<assignedPerson>
+												<name>
+													<given>PATRICIA</given>
+													<family>ALLAMON</family>
+												</name>
+											</assignedPerson>
+											<representedOrganization>
+												<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+												<name>Patricia Allamon M.D.</name>
+											</representedOrganization>
+										</assignedAuthor>
+									</author>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.3"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+							<id extension="67530814" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+							<code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20230518"/>
+								<high nullFlavor="NI"/>
+							</effectiveTime>
+							<author>
+								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+								<time value="20230518135554+0000"/>
+								<assignedAuthor>
+									<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+									<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<addr use="WP">
+										<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+										<city>The Woodlands</city>
+										<state>TX</state>
+										<postalCode>77384-5066</postalCode>
+										<country nullFlavor="NI"/>
+									</addr>
+									<telecom use="WP" value="tel:+1(832)-536-7662"/>
+									<assignedPerson>
+										<name>
+											<given>PATRICIA</given>
+											<family>ALLAMON</family>
+										</name>
+									</assignedPerson>
+									<representedOrganization>
+										<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+										<name>Patricia Allamon M.D.</name>
+									</representedOrganization>
+								</assignedAuthor>
+							</author>
+							<entryRelationship typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.4"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id extension="67530814" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Problem">
+										<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									</code>
+									<text>
+										<reference value="#Problem3"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20230518"/>
+										<high nullFlavor="UNK"/>
+									</effectiveTime>
+									<value nullFlavor="NI" xsi:type="CD"/>
+									<author>
+										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+										<time value="20230518135554+0000"/>
+										<assignedAuthor>
+											<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+											<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+											<addr use="WP">
+												<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+												<city>The Woodlands</city>
+												<state>TX</state>
+												<postalCode>77384-5066</postalCode>
+												<country nullFlavor="NI"/>
+											</addr>
+											<telecom use="WP" value="tel:+1(832)-536-7662"/>
+											<assignedPerson>
+												<name>
+													<given>PATRICIA</given>
+													<family>ALLAMON</family>
+												</name>
+											</assignedPerson>
+											<representedOrganization>
+												<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+												<name>Patricia Allamon M.D.</name>
+											</representedOrganization>
+										</assignedAuthor>
+									</author>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.3"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+							<id extension="67530815" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+							<code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20230518"/>
+								<high nullFlavor="NI"/>
+							</effectiveTime>
+							<author>
+								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+								<time value="20230518135554+0000"/>
+								<assignedAuthor>
+									<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+									<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<addr use="WP">
+										<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+										<city>The Woodlands</city>
+										<state>TX</state>
+										<postalCode>77384-5066</postalCode>
+										<country nullFlavor="NI"/>
+									</addr>
+									<telecom use="WP" value="tel:+1(832)-536-7662"/>
+									<assignedPerson>
+										<name>
+											<given>PATRICIA</given>
+											<family>ALLAMON</family>
+										</name>
+									</assignedPerson>
+									<representedOrganization>
+										<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+										<name>Patricia Allamon M.D.</name>
+									</representedOrganization>
+								</assignedAuthor>
+							</author>
+							<entryRelationship typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.4"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id extension="67530815" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Problem">
+										<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									</code>
+									<text>
+										<reference value="#Problem4"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20230518"/>
+										<high nullFlavor="UNK"/>
+									</effectiveTime>
+									<value nullFlavor="NI" xsi:type="CD"/>
+									<author>
+										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+										<time value="20230518135554+0000"/>
+										<assignedAuthor>
+											<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+											<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+											<addr use="WP">
+												<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+												<city>The Woodlands</city>
+												<state>TX</state>
+												<postalCode>77384-5066</postalCode>
+												<country nullFlavor="NI"/>
+											</addr>
+											<telecom use="WP" value="tel:+1(832)-536-7662"/>
+											<assignedPerson>
+												<name>
+													<given>PATRICIA</given>
+													<family>ALLAMON</family>
+												</name>
+											</assignedPerson>
+											<representedOrganization>
+												<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+												<name>Patricia Allamon M.D.</name>
+											</representedOrganization>
+										</assignedAuthor>
+									</author>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.3"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+							<id extension="67530811" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+							<code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20230518"/>
+								<high nullFlavor="NI"/>
+							</effectiveTime>
+							<author>
+								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+								<time value="20230518135554+0000"/>
+								<assignedAuthor>
+									<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+									<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<addr use="WP">
+										<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+										<city>The Woodlands</city>
+										<state>TX</state>
+										<postalCode>77384-5066</postalCode>
+										<country nullFlavor="NI"/>
+									</addr>
+									<telecom use="WP" value="tel:+1(832)-536-7662"/>
+									<assignedPerson>
+										<name>
+											<given>PATRICIA</given>
+											<family>ALLAMON</family>
+										</name>
+									</assignedPerson>
+									<representedOrganization>
+										<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+										<name>Patricia Allamon M.D.</name>
+									</representedOrganization>
+								</assignedAuthor>
+							</author>
+							<entryRelationship typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.4"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id extension="67530811" root="2.16.840.1.113883.3.7220.14.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+									<code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Problem">
+										<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									</code>
+									<text>
+										<reference value="#Problem5"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20230518"/>
+										<high nullFlavor="UNK"/>
+									</effectiveTime>
+									<value code="230461009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Severe headaches, migraines" xsi:type="CD"/>
+									<author>
+										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+										<time value="20230518135554+0000"/>
+										<assignedAuthor>
+											<id extension="1740308923" root="2.16.840.1.113883.4.6"/>
+											<id extension="315322421590382107469367841193494483376" root="2.16.840.1.113883.3.7220.22.98392.55993488246425866036890936072197438318.151358143004081989500006579758524641164"/>
+											<addr use="WP">
+												<streetAddressLine>66 E Burberry Cir</streetAddressLine>
+												<city>The Woodlands</city>
+												<state>TX</state>
+												<postalCode>77384-5066</postalCode>
+												<country nullFlavor="NI"/>
+											</addr>
+											<telecom use="WP" value="tel:+1(832)-536-7662"/>
+											<assignedPerson>
+												<name>
+													<given>PATRICIA</given>
+													<family>ALLAMON</family>
+												</name>
+											</assignedPerson>
+											<representedOrganization>
+												<id extension="55993488246425866036890936072197438318" root="2.16.840.1.113883.3.7220.3.98392"/>
+												<name>Patricia Allamon M.D.</name>
+											</representedOrganization>
+										</assignedAuthor>
+									</author>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
