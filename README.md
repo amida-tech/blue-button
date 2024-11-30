@@ -60,7 +60,7 @@ Generate JSON representation of the health data
 ``` javascript
 var doc = bb.parse(data);
 ```
-[`parse`](#parse) method senses the type of the health data, parses and converts it into JSON.  All types of health data is converted into a [common model](http://developers.amida-tech.com/document_model.html).  Validate `doc` according to the [common model](http://developers.amida-tech.com/document_model.html) schema 
+[parse method](https://www.scaler.com/topics/javascript/parse-json-javascript/) senses the type of the health data, parses and converts it into JSON.  All types of health data is converted into a [common model](http://developers.amida-tech.com/document_model.html).  Validate `doc` according to the [common model](http://developers.amida-tech.com/document_model.html) schema 
 ``` javascript
 var valid = bb.validator.validateDocumentModel(doc);
 if (! valid) {
